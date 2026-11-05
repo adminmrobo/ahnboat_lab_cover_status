@@ -1,0 +1,120 @@
+{
+  "series_ko": "논문 해설 07 · 미디어 블록체인",
+  "title_ko": "미디어 블록체인 연구실",
+  "site_title": "미디어 토큰 경제 연구실 · 미디어 콘텐츠 기반의 블록체인 토큰의 경제적 효과",
+  "site_url": "https://adminmrobo.github.io/my_article_07_media_blockchain/",
+  "ontology": {
+    "pages": [
+      {
+        "path": "index.html",
+        "kg": true,
+        "export": true
+      },
+      {
+        "path": "media_token_lab.html",
+        "kg": true,
+        "export": true
+      }
+    ],
+    "files": [
+      "KG_00_registry.json"
+    ]
+  },
+  "i18n": {
+    "langs": [
+      "ko",
+      "en",
+      "zh",
+      "ja",
+      "uz",
+      "ru",
+      "vi"
+    ],
+    "pages": {
+      "ko": 5,
+      "en": 5,
+      "zh": 5,
+      "ja": 5,
+      "uz": 5,
+      "ru": 5,
+      "vi": 5
+    },
+    "readme_langs": [
+      "ko",
+      "en",
+      "zh",
+      "ja",
+      "uz",
+      "ru",
+      "vi"
+    ]
+  },
+  "languages": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+  ],
+  "items": [
+    {
+      "id": "cover",
+      "role": "cover",
+      "path": "img/cover.jpg",
+      "size": [
+        1600,
+        900
+      ],
+      "characters": [
+        "doc",
+        "asst",
+        "fly",
+        "jupanbot"
+      ],
+      "robot": "jupanbot-v2",
+      "prompt_en": "detailed 16-bit SNES-era pixel art, wide hero illustration of a newsroom lab ... no text, no letters, no logos",
+      "source_of": null,
+      "status": "ok"
+    },
+    {
+      "id": "og",
+      "role": "og",
+      "path": "img/og_index.jpg",
+      "size": [
+        1200,
+        630
+      ],
+      "characters": [
+        "doc",
+        "asst",
+        "fly",
+        "jupanbot"
+      ],
+      "robot": "jupanbot-v2",
+      "prompt_en": null,
+      "source_of": "cover",
+      "status": "ok"
+    },
+    {
+      "id": "sc_meeting",
+      "role": "scene",
+      "embedded_in": "index.html",
+      "key": "section#ch2 img.scene",
+      "size": [
+        760,
+        507
+      ],
+      "characters": [
+        "doc",
+        "jupanbot"
+      ],
+      "robot": "money-robo",
+      "prompt_en": "detailed 16-bit SNES-era pixel art, a small meeting room ...",
+      "source_of": null,
+      "status": "redraw"
+    }
+  ],
+  "updated": "2026-11-05"
+}

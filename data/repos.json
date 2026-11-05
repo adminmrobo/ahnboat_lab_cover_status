@@ -1,0 +1,5547 @@
+[
+ {
+  "repo": "ahn_boat_lab_town",
+  "series_ko": "안보트 연구실 타운",
+  "title_ko": "Ahn Lab Town",
+  "repo_url": "https://github.com/adminmrobo/ahn_boat_lab_town",
+  "pages_url": "https://adminmrobo.github.io/ahn_boat_lab_town/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T00:49:54+09:00",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 3,
+  "redraw_ids": [
+   "R019",
+   "R020",
+   "R021"
+  ],
+  "thumb": "thumbs/R019.jpg",
+  "status": "redraw",
+  "checked_at": "2026-11-05",
+  "site_title": "Ahn Lab Town",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 1,
+   "pages_checked": 1,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 1
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/ahn_boat_lab_town/projects.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 1
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "ahnboat_lab_character_add_packs",
+  "series_ko": "ahnboat_lab_character_add_packs",
+  "title_ko": null,
+  "repo_url": "https://github.com/adminmrobo/ahnboat_lab_character_add_packs",
+  "pages_url": "https://adminmrobo.github.io/ahnboat_lab_character_add_packs/",
+  "default_branch": null,
+  "pushed_at": null,
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-05",
+  "local_copy": false,
+  "site_title": null,
+  "ontology": null,
+  "i18n": null,
+  "languages": null,
+  "note": "로컬 사본 없음 (빈 저장소이거나 받기 실패) — 다음 API 수집 때 채워짐"
+ },
+ {
+  "repo": "ahnboat_lab_langpack",
+  "series_ko": "ahnboat_lab_langpack",
+  "title_ko": null,
+  "repo_url": "https://github.com/adminmrobo/ahnboat_lab_langpack",
+  "pages_url": "https://adminmrobo.github.io/ahnboat_lab_langpack/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-04T23:31:41+09:00",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-05",
+  "site_title": null,
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 0,
+   "pages_checked": 0,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [],
+   "count": 0,
+   "pages": {},
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {}
+  },
+  "languages": {
+   "codes": [],
+   "count": 0,
+   "complete": true,
+   "pages_by_lang": {}
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "ahnboat_lab_town_floor_b01",
+  "series_ko": "ahnboat_lab_town_floor_b01",
+  "title_ko": null,
+  "repo_url": "https://github.com/adminmrobo/ahnboat_lab_town_floor_b01",
+  "pages_url": "https://adminmrobo.github.io/ahnboat_lab_town_floor_b01/",
+  "default_branch": "main",
+  "pushed_at": "2026-10-28T19:45:20+09:00",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-05",
+  "site_title": null,
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 0,
+   "pages_checked": 0,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [],
+   "count": 0,
+   "pages": {},
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {}
+  },
+  "languages": {
+   "codes": [],
+   "count": 0,
+   "complete": true,
+   "pages_by_lang": {}
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "ai_for_cement_produce_07",
+  "series_ko": "시멘트 품질, AI로 미리 본다",
+  "title_ko": "시멘트 품질, AI로 미리 본다",
+  "repo_url": "https://github.com/adminmrobo/ai_for_cement_produce_07",
+  "pages_url": "https://adminmrobo.github.io/ai_for_cement_produce_07/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T00:58:46+09:00",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-05",
+  "site_title": "시멘트 품질, AI로 미리 본다",
+  "ontology": {
+   "status": "partial",
+   "pages_with_kg": 1,
+   "pages_total": 2,
+   "pages_checked": 2,
+   "kg_links": [
+    "https://adminmrobo.github.io/ai_for_cement_produce_07/cement_quality.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/ai_for_cement_produce_07/cement_quality.html#export"
+   ],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 2
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/ai_for_cement_produce_07/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 2
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "ai_for_cement_produce_08",
+  "series_ko": "시멘트 공정 AI 해설",
+  "title_ko": "시멘트 공정 AI 해설",
+  "repo_url": "https://github.com/adminmrobo/ai_for_cement_produce_08",
+  "pages_url": "https://adminmrobo.github.io/ai_for_cement_produce_08/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T00:59:04+09:00",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-05",
+  "site_title": "시멘트 공정 AI 해설",
+  "ontology": {
+   "status": "partial",
+   "pages_with_kg": 1,
+   "pages_total": 2,
+   "pages_checked": 2,
+   "kg_links": [
+    "https://adminmrobo.github.io/ai_for_cement_produce_08/cement_strength_cost.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/ai_for_cement_produce_08/cement_strength_cost.html#export"
+   ],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 2
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/ai_for_cement_produce_08/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 2
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "AI_image_classification",
+  "series_ko": "AI는 이미지를 어떻게 구분할까? — 긴급 미션 네 개",
+  "title_ko": "AI는 이미지를 어떻게 구분할까? — 긴급 미션 네 개",
+  "repo_url": "https://github.com/adminmrobo/AI_image_classification",
+  "pages_url": "https://adminmrobo.github.io/AI_image_classification/",
+  "default_branch": "main",
+  "pushed_at": "2026-10-08T21:08:30+09:00",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-05",
+  "site_title": "AI는 이미지를 어떻게 구분할까? — 긴급 미션 네 개",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 5,
+   "pages_checked": 5,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "count": 6,
+   "pages": {
+    "ko": 5,
+    "en": 5,
+    "zh": 5,
+    "ja": 5,
+    "uz": 5,
+    "ru": 5
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "links": {
+    "ko": "https://adminmrobo.github.io/AI_image_classification/index.html",
+    "en": "https://adminmrobo.github.io/AI_image_classification/en/index.html",
+    "zh": "https://adminmrobo.github.io/AI_image_classification/zh/index.html",
+    "ja": "https://adminmrobo.github.io/AI_image_classification/ja/index.html",
+    "uz": "https://adminmrobo.github.io/AI_image_classification/uz/index.html",
+    "ru": "https://adminmrobo.github.io/AI_image_classification/ru/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "count": 6,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 5,
+    "en": 5,
+    "zh": 5,
+    "ja": 5,
+    "uz": 5,
+    "ru": 5
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "AI_Model_Review",
+  "series_ko": "AI Model Review — 초파리 연구실의 딥러닝 A to Z",
+  "title_ko": "AI Model Review — 초파리 연구실의 딥러닝 A to Z",
+  "repo_url": "https://github.com/adminmrobo/AI_Model_Review",
+  "pages_url": "https://adminmrobo.github.io/AI_Model_Review/",
+  "default_branch": "main",
+  "pushed_at": "2026-10-08T21:10:53+09:00",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-05",
+  "site_title": "AI Model Review — 초파리 연구실의 딥러닝 A to Z",
+  "ontology": {
+   "status": "partial",
+   "pages_with_kg": 1,
+   "pages_total": 10,
+   "pages_checked": 10,
+   "kg_links": [
+    "https://adminmrobo.github.io/AI_Model_Review/3-7_sequence_models.html#kg"
+   ],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "count": 6,
+   "pages": {
+    "ko": 10,
+    "en": 10,
+    "zh": 10,
+    "ja": 10,
+    "uz": 10,
+    "ru": 10
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/AI_Model_Review/index.html",
+    "en": "https://adminmrobo.github.io/AI_Model_Review/en/index.html",
+    "zh": "https://adminmrobo.github.io/AI_Model_Review/zh/index.html",
+    "ja": "https://adminmrobo.github.io/AI_Model_Review/ja/index.html",
+    "uz": "https://adminmrobo.github.io/AI_Model_Review/uz/index.html",
+    "ru": "https://adminmrobo.github.io/AI_Model_Review/ru/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "count": 6,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 10,
+    "en": 10,
+    "zh": 10,
+    "ja": 10,
+    "uz": 10,
+    "ru": 10
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "AI_Model_Review_Fruit_fly_special",
+  "series_ko": "딥러닝 A to Z · 초파리 특별편 — 초파리 연구실",
+  "title_ko": "딥러닝 A to Z · 초파리 특별편 — 초파리 연구실",
+  "repo_url": "https://github.com/adminmrobo/AI_Model_Review_Fruit_fly_special",
+  "pages_url": "https://adminmrobo.github.io/AI_Model_Review_Fruit_fly_special/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-01T23:00:31+09:00",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-05",
+  "site_title": "딥러닝 A to Z · 초파리 특별편 — 초파리 연구실",
+  "ontology": {
+   "status": "partial",
+   "pages_with_kg": 3,
+   "pages_total": 5,
+   "pages_checked": 5,
+   "kg_links": [
+    "https://adminmrobo.github.io/AI_Model_Review_Fruit_fly_special/1_fruitfly_brain_deep_learning.html#kg",
+    "https://adminmrobo.github.io/AI_Model_Review_Fruit_fly_special/2_fruitfly_memory_retrieval_paper.html#kg",
+    "https://adminmrobo.github.io/AI_Model_Review_Fruit_fly_special/3_fruitfly_minecraft_connectome.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/AI_Model_Review_Fruit_fly_special/1_fruitfly_brain_deep_learning.html#export",
+    "https://adminmrobo.github.io/AI_Model_Review_Fruit_fly_special/2_fruitfly_memory_retrieval_paper.html#export",
+    "https://adminmrobo.github.io/AI_Model_Review_Fruit_fly_special/3_fruitfly_minecraft_connectome.html#export"
+   ],
+   "files": [
+    {
+     "path": "kg/1/kg.json",
+     "url": "https://github.com/adminmrobo/AI_Model_Review_Fruit_fly_special/blob/main/kg/1/kg.json"
+    },
+    {
+     "path": "kg/2/kg.json",
+     "url": "https://github.com/adminmrobo/AI_Model_Review_Fruit_fly_special/blob/main/kg/2/kg.json"
+    },
+    {
+     "path": "kg/3/kg.json",
+     "url": "https://github.com/adminmrobo/AI_Model_Review_Fruit_fly_special/blob/main/kg/3/kg.json"
+    }
+   ]
+  },
+  "i18n": {
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "count": 6,
+   "pages": {
+    "ko": 5,
+    "en": 5,
+    "zh": 5,
+    "ja": 5,
+    "uz": 5,
+    "ru": 5
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [
+    "ko",
+    "zh",
+    "ja",
+    "ru"
+   ],
+   "links": {
+    "ko": "https://adminmrobo.github.io/AI_Model_Review_Fruit_fly_special/index.html",
+    "en": "https://adminmrobo.github.io/AI_Model_Review_Fruit_fly_special/en/index.html",
+    "zh": "https://adminmrobo.github.io/AI_Model_Review_Fruit_fly_special/zh/index.html",
+    "ja": "https://adminmrobo.github.io/AI_Model_Review_Fruit_fly_special/ja/index.html",
+    "uz": "https://adminmrobo.github.io/AI_Model_Review_Fruit_fly_special/uz/index.html",
+    "ru": "https://adminmrobo.github.io/AI_Model_Review_Fruit_fly_special/ru/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "count": 6,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 5,
+    "en": 5,
+    "zh": 5,
+    "ja": 5,
+    "uz": 5,
+    "ru": 5
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "ai_rendering",
+  "series_ko": "ai_rendering",
+  "title_ko": null,
+  "repo_url": "https://github.com/adminmrobo/ai_rendering",
+  "pages_url": "https://adminmrobo.github.io/ai_rendering/",
+  "default_branch": null,
+  "pushed_at": null,
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-05",
+  "local_copy": false,
+  "site_title": null,
+  "ontology": null,
+  "i18n": null,
+  "languages": null,
+  "note": "로컬 사본 없음 (빈 저장소이거나 받기 실패) — 다음 API 수집 때 채워짐"
+ },
+ {
+  "repo": "article_02_crypto_asset_price_predict",
+  "series_ko": "article_02_crypto_asset_price_predict",
+  "title_ko": null,
+  "repo_url": "https://github.com/adminmrobo/article_02_crypto_asset_price_predict",
+  "pages_url": "https://adminmrobo.github.io/article_02_crypto_asset_price_predict/",
+  "default_branch": null,
+  "pushed_at": null,
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-05",
+  "local_copy": false,
+  "site_title": null,
+  "ontology": null,
+  "i18n": null,
+  "languages": null,
+  "note": "로컬 사본 없음 (빈 저장소이거나 받기 실패) — 다음 API 수집 때 채워짐"
+ },
+ {
+  "repo": "blockchain_finance_ch01",
+  "series_ko": "블록체인 1장 장부의 진화",
+  "title_ko": "블록체인 1장 장부의 진화",
+  "repo_url": "https://github.com/adminmrobo/blockchain_finance_ch01",
+  "pages_url": "https://adminmrobo.github.io/blockchain_finance_ch01/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T00:49:56+09:00",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-05",
+  "site_title": "블록체인 1장 장부의 진화",
+  "ontology": {
+   "status": "partial",
+   "pages_with_kg": 7,
+   "pages_total": 8,
+   "pages_checked": 8,
+   "kg_links": [
+    "https://adminmrobo.github.io/blockchain_finance_ch01/1-01_money-is-record.html#kg",
+    "https://adminmrobo.github.io/blockchain_finance_ch01/1-02_central-vs-distributed.html#kg",
+    "https://adminmrobo.github.io/blockchain_finance_ch01/1-03_memory-and-ledger.html#kg",
+    "https://adminmrobo.github.io/blockchain_finance_ch01/1-04_contract-and-seal.html#kg",
+    "https://adminmrobo.github.io/blockchain_finance_ch01/1-05_witness-and-notary.html#kg",
+    "https://adminmrobo.github.io/blockchain_finance_ch01/1-06_bank-ledger.html#kg",
+    "https://adminmrobo.github.io/blockchain_finance_ch01/1-07_many-witnesses.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/blockchain_finance_ch01/1-01_money-is-record.html#export",
+    "https://adminmrobo.github.io/blockchain_finance_ch01/1-02_central-vs-distributed.html#export",
+    "https://adminmrobo.github.io/blockchain_finance_ch01/1-03_memory-and-ledger.html#export",
+    "https://adminmrobo.github.io/blockchain_finance_ch01/1-04_contract-and-seal.html#export",
+    "https://adminmrobo.github.io/blockchain_finance_ch01/1-05_witness-and-notary.html#export",
+    "https://adminmrobo.github.io/blockchain_finance_ch01/1-06_bank-ledger.html#export",
+    "https://adminmrobo.github.io/blockchain_finance_ch01/1-07_many-witnesses.html#export"
+   ],
+   "files": [
+    {
+     "path": "docs/KG_00_registry.json",
+     "url": "https://github.com/adminmrobo/blockchain_finance_ch01/blob/main/docs/KG_00_registry.json"
+    }
+   ]
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 8
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/blockchain_finance_ch01/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 8
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "blockchain_finance_ch02",
+  "series_ko": "블록체인 2장 블록체인 기술",
+  "title_ko": "블록체인 2장 블록체인 기술",
+  "repo_url": "https://github.com/adminmrobo/blockchain_finance_ch02",
+  "pages_url": "https://adminmrobo.github.io/blockchain_finance_ch02/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T00:50:16+09:00",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-05",
+  "site_title": "블록체인 2장 블록체인 기술",
+  "ontology": {
+   "status": "partial",
+   "pages_with_kg": 7,
+   "pages_total": 8,
+   "pages_checked": 8,
+   "kg_links": [
+    "https://adminmrobo.github.io/blockchain_finance_ch02/2-01_block-bundle.html#kg",
+    "https://adminmrobo.github.io/blockchain_finance_ch02/2-02_hash-fingerprint.html#kg",
+    "https://adminmrobo.github.io/blockchain_finance_ch02/2-03_hash-chain.html#kg",
+    "https://adminmrobo.github.io/blockchain_finance_ch02/2-04_history-not-database.html#kg",
+    "https://adminmrobo.github.io/blockchain_finance_ch02/2-05_provenance-cases.html#kg",
+    "https://adminmrobo.github.io/blockchain_finance_ch02/2-06_mining-race.html#kg",
+    "https://adminmrobo.github.io/blockchain_finance_ch02/2-07_difficulty-and-confirmation.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/blockchain_finance_ch02/2-01_block-bundle.html#export",
+    "https://adminmrobo.github.io/blockchain_finance_ch02/2-02_hash-fingerprint.html#export",
+    "https://adminmrobo.github.io/blockchain_finance_ch02/2-03_hash-chain.html#export",
+    "https://adminmrobo.github.io/blockchain_finance_ch02/2-04_history-not-database.html#export",
+    "https://adminmrobo.github.io/blockchain_finance_ch02/2-05_provenance-cases.html#export",
+    "https://adminmrobo.github.io/blockchain_finance_ch02/2-06_mining-race.html#export",
+    "https://adminmrobo.github.io/blockchain_finance_ch02/2-07_difficulty-and-confirmation.html#export"
+   ],
+   "files": [
+    {
+     "path": "docs/KG_00_registry.json",
+     "url": "https://github.com/adminmrobo/blockchain_finance_ch02/blob/main/docs/KG_00_registry.json"
+    }
+   ]
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 8
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/blockchain_finance_ch02/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 8
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "blockchain_finance_ch03",
+  "series_ko": "블록체인 3장 비트코인",
+  "title_ko": "블록체인 3장 비트코인",
+  "repo_url": "https://github.com/adminmrobo/blockchain_finance_ch03",
+  "pages_url": "https://adminmrobo.github.io/blockchain_finance_ch03/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T00:50:21+09:00",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-05",
+  "site_title": "블록체인 3장 비트코인",
+  "ontology": {
+   "status": "partial",
+   "pages_with_kg": 7,
+   "pages_total": 8,
+   "pages_checked": 8,
+   "kg_links": [
+    "https://adminmrobo.github.io/blockchain_finance_ch03/3-01_pow-vs-pos.html#kg",
+    "https://adminmrobo.github.io/blockchain_finance_ch03/3-02_mining-farms.html#kg",
+    "https://adminmrobo.github.io/blockchain_finance_ch03/3-03_halving-and-cap.html#kg",
+    "https://adminmrobo.github.io/blockchain_finance_ch03/3-04_tx-is-the-note.html#kg",
+    "https://adminmrobo.github.io/blockchain_finance_ch03/3-05_pseudonymous-wallet.html#kg",
+    "https://adminmrobo.github.io/blockchain_finance_ch03/3-06_is-it-money.html#kg",
+    "https://adminmrobo.github.io/blockchain_finance_ch03/3-07_misuse-and-tracing.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/blockchain_finance_ch03/3-01_pow-vs-pos.html#export",
+    "https://adminmrobo.github.io/blockchain_finance_ch03/3-02_mining-farms.html#export",
+    "https://adminmrobo.github.io/blockchain_finance_ch03/3-03_halving-and-cap.html#export",
+    "https://adminmrobo.github.io/blockchain_finance_ch03/3-04_tx-is-the-note.html#export",
+    "https://adminmrobo.github.io/blockchain_finance_ch03/3-05_pseudonymous-wallet.html#export",
+    "https://adminmrobo.github.io/blockchain_finance_ch03/3-06_is-it-money.html#export",
+    "https://adminmrobo.github.io/blockchain_finance_ch03/3-07_misuse-and-tracing.html#export"
+   ],
+   "files": [
+    {
+     "path": "docs/KG_00_registry.json",
+     "url": "https://github.com/adminmrobo/blockchain_finance_ch03/blob/main/docs/KG_00_registry.json"
+    }
+   ]
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 8
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/blockchain_finance_ch03/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 8
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "Data_visuialization_lecture_01",
+  "series_ko": "데이터시각화 강의",
+  "title_ko": "1주차 · 과정 안내(OT) — 표지 — Language",
+  "repo_url": "https://github.com/adminmrobo/Data_visuialization_lecture_01",
+  "pages_url": "https://adminmrobo.github.io/Data_visuialization_lecture_01/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T01:26:46+09:00",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 1,
+  "redraw_ids": [
+   "R001"
+  ],
+  "thumb": "thumbs/R001.jpg",
+  "status": "redraw",
+  "checked_at": "2026-11-05",
+  "site_title": "1주차 · 과정 안내(OT) — 표지 — Language",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 6,
+   "pages_checked": 6,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "count": 6,
+   "pages": {
+    "ko": 6,
+    "en": 5,
+    "zh": 5,
+    "ja": 5,
+    "uz": 5,
+    "ru": 5
+   },
+   "partial": [
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "complete": false,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/Data_visuialization_lecture_01/index.html",
+    "en": "https://adminmrobo.github.io/Data_visuialization_lecture_01/en/week1_1_intro.html",
+    "zh": "https://adminmrobo.github.io/Data_visuialization_lecture_01/zh/week1_1_intro.html",
+    "ja": "https://adminmrobo.github.io/Data_visuialization_lecture_01/ja/week1_1_intro.html",
+    "uz": "https://adminmrobo.github.io/Data_visuialization_lecture_01/uz/week1_1_intro.html",
+    "ru": "https://adminmrobo.github.io/Data_visuialization_lecture_01/ru/week1_1_intro.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "count": 6,
+   "complete": false,
+   "pages_by_lang": {
+    "ko": 6,
+    "en": 5,
+    "zh": 5,
+    "ja": 5,
+    "uz": 5,
+    "ru": 5
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "Data_visuialization_lecture_02",
+  "series_ko": "데이터시각화 강의",
+  "title_ko": "2주차 · 그래프 이론과 첫 실습 — 표지 — Language",
+  "repo_url": "https://github.com/adminmrobo/Data_visuialization_lecture_02",
+  "pages_url": "https://adminmrobo.github.io/Data_visuialization_lecture_02/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T01:29:02+09:00",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 1,
+  "redraw_ids": [
+   "R002"
+  ],
+  "thumb": "thumbs/R002.jpg",
+  "status": "redraw",
+  "checked_at": "2026-11-05",
+  "site_title": "2주차 · 그래프 이론과 첫 실습 — 표지 — Language",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 7,
+   "pages_checked": 7,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "count": 6,
+   "pages": {
+    "ko": 7,
+    "en": 6,
+    "zh": 6,
+    "ja": 6,
+    "uz": 6,
+    "ru": 6
+   },
+   "partial": [
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "complete": false,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/Data_visuialization_lecture_02/index.html",
+    "en": "https://adminmrobo.github.io/Data_visuialization_lecture_02/en/week2_1_theory_a.html",
+    "zh": "https://adminmrobo.github.io/Data_visuialization_lecture_02/zh/week2_1_theory_a.html",
+    "ja": "https://adminmrobo.github.io/Data_visuialization_lecture_02/ja/week2_1_theory_a.html",
+    "uz": "https://adminmrobo.github.io/Data_visuialization_lecture_02/uz/week2_1_theory_a.html",
+    "ru": "https://adminmrobo.github.io/Data_visuialization_lecture_02/ru/week2_1_theory_a.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "count": 6,
+   "complete": false,
+   "pages_by_lang": {
+    "ko": 7,
+    "en": 6,
+    "zh": 6,
+    "ja": 6,
+    "uz": 6,
+    "ru": 6
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "Data_visuialization_lecture_03",
+  "series_ko": "3주차 · 생성형 AI 데이터 전처리 — 표지 — Language",
+  "title_ko": "3주차 · 생성형 AI 데이터 전처리 — 표지 — Language",
+  "repo_url": "https://github.com/adminmrobo/Data_visuialization_lecture_03",
+  "pages_url": "https://adminmrobo.github.io/Data_visuialization_lecture_03/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T01:29:06+09:00",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-05",
+  "site_title": "3주차 · 생성형 AI 데이터 전처리 — 표지 — Language",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 7,
+   "pages_checked": 7,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "count": 6,
+   "pages": {
+    "ko": 7,
+    "en": 6,
+    "zh": 6,
+    "ja": 6,
+    "uz": 6,
+    "ru": 6
+   },
+   "partial": [
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "complete": false,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/Data_visuialization_lecture_03/index.html",
+    "en": "https://adminmrobo.github.io/Data_visuialization_lecture_03/en/week3_1_dirty.html",
+    "zh": "https://adminmrobo.github.io/Data_visuialization_lecture_03/zh/week3_1_dirty.html",
+    "ja": "https://adminmrobo.github.io/Data_visuialization_lecture_03/ja/week3_1_dirty.html",
+    "uz": "https://adminmrobo.github.io/Data_visuialization_lecture_03/uz/week3_1_dirty.html",
+    "ru": "https://adminmrobo.github.io/Data_visuialization_lecture_03/ru/week3_1_dirty.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "count": 6,
+   "complete": false,
+   "pages_by_lang": {
+    "ko": 7,
+    "en": 6,
+    "zh": 6,
+    "ja": 6,
+    "uz": 6,
+    "ru": 6
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "Data_visuialization_lecture_04",
+  "series_ko": "데이터시각화 강의",
+  "title_ko": "4주차 · 산업별 데이터 시각화 — 표지 — Language",
+  "repo_url": "https://github.com/adminmrobo/Data_visuialization_lecture_04",
+  "pages_url": "https://adminmrobo.github.io/Data_visuialization_lecture_04/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T11:31:06+09:00",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 1,
+  "redraw_ids": [
+   "R003"
+  ],
+  "thumb": "thumbs/R003.jpg",
+  "status": "redraw",
+  "checked_at": "2026-11-05",
+  "site_title": "4주차 · 산업별 데이터 시각화 — 표지 — Language",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 7,
+   "pages_checked": 7,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "count": 6,
+   "pages": {
+    "ko": 7,
+    "en": 6,
+    "zh": 6,
+    "ja": 6,
+    "uz": 6,
+    "ru": 6
+   },
+   "partial": [
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "complete": false,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/Data_visuialization_lecture_04/index.html",
+    "en": "https://adminmrobo.github.io/Data_visuialization_lecture_04/en/week4_1_class.html",
+    "zh": "https://adminmrobo.github.io/Data_visuialization_lecture_04/zh/week4_1_class.html",
+    "ja": "https://adminmrobo.github.io/Data_visuialization_lecture_04/ja/week4_1_class.html",
+    "uz": "https://adminmrobo.github.io/Data_visuialization_lecture_04/uz/week4_1_class.html",
+    "ru": "https://adminmrobo.github.io/Data_visuialization_lecture_04/ru/week4_1_class.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "count": 6,
+   "complete": false,
+   "pages_by_lang": {
+    "ko": 7,
+    "en": 6,
+    "zh": 6,
+    "ja": 6,
+    "uz": 6,
+    "ru": 6
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "database_01of04",
+  "series_ko": "OVERVIEW — 데이터베이스 설계 전체 안내",
+  "title_ko": "OVERVIEW — 데이터베이스 설계 전체 안내",
+  "repo_url": "https://github.com/adminmrobo/database_01of04",
+  "pages_url": "https://adminmrobo.github.io/database_01of04/",
+  "default_branch": "main",
+  "pushed_at": "2026-10-19T19:06:32+09:00",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-05",
+  "site_title": "OVERVIEW — 데이터베이스 설계 전체 안내",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 54,
+   "pages_checked": 54,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 54
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/database_01of04/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 54
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "deep_learning_00_neural_net_learns",
+  "series_ko": "딥러닝 00 · 신경망은 어떻게 배우나",
+  "title_ko": "신경망은 틀리면서 배운다 · 처음 화면",
+  "repo_url": "https://github.com/adminmrobo/deep_learning_00_neural_net_learns",
+  "pages_url": "https://adminmrobo.github.io/deep_learning_00_neural_net_learns/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T01:32:29+09:00",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "img/og.jpg",
+    "role": "og",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 3,
+  "redraw_ids": [
+   "R022",
+   "R023",
+   "R024"
+  ],
+  "thumb": "thumbs/repos/deep_learning_00_neural_net_learns.jpg",
+  "status": "redraw",
+  "checked_at": "2026-11-05",
+  "site_title": "신경망은 틀리면서 배운다 · 처음 화면",
+  "ontology": {
+   "status": "partial",
+   "pages_with_kg": 1,
+   "pages_total": 8,
+   "pages_checked": 8,
+   "kg_links": [
+    "https://adminmrobo.github.io/deep_learning_00_neural_net_learns/6_regions_probability.html#kg"
+   ],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "count": 6,
+   "pages": {
+    "ko": 8,
+    "en": 8,
+    "zh": 8,
+    "ja": 8,
+    "uz": 8,
+    "ru": 8
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "links": {
+    "ko": "https://adminmrobo.github.io/deep_learning_00_neural_net_learns/index.html",
+    "en": "https://adminmrobo.github.io/deep_learning_00_neural_net_learns/en/index.html",
+    "zh": "https://adminmrobo.github.io/deep_learning_00_neural_net_learns/zh/index.html",
+    "ja": "https://adminmrobo.github.io/deep_learning_00_neural_net_learns/ja/index.html",
+    "uz": "https://adminmrobo.github.io/deep_learning_00_neural_net_learns/uz/index.html",
+    "ru": "https://adminmrobo.github.io/deep_learning_00_neural_net_learns/ru/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "count": 6,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 8,
+    "en": 8,
+    "zh": 8,
+    "ja": 8,
+    "uz": 8,
+    "ru": 8
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "DL_model_hiring_committee",
+  "series_ko": "6-0 2차 채용 공고 · 딥러닝 치트시트 | 모델 채용 위원회 2차 공채",
+  "title_ko": "6-0 2차 채용 공고 · 딥러닝 치트시트 | 모델 채용 위원회 2차 공채",
+  "repo_url": "https://github.com/adminmrobo/DL_model_hiring_committee",
+  "pages_url": "https://adminmrobo.github.io/DL_model_hiring_committee/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T00:41:32+09:00",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 2,
+  "redraw_ids": [
+   "R007",
+   "R008"
+  ],
+  "thumb": "thumbs/R007.jpg",
+  "status": "redraw",
+  "checked_at": "2026-11-05",
+  "site_title": "6-0 2차 채용 공고 · 딥러닝 치트시트 | 모델 채용 위원회 2차 공채",
+  "ontology": {
+   "status": "full",
+   "pages_with_kg": 17,
+   "pages_total": 17,
+   "pages_checked": 17,
+   "kg_links": [
+    "https://adminmrobo.github.io/DL_model_hiring_committee/6-0_job_posting.html#kg",
+    "https://adminmrobo.github.io/DL_model_hiring_committee/6-10_som.html#kg",
+    "https://adminmrobo.github.io/DL_model_hiring_committee/6-11_autoencoder.html#kg",
+    "https://adminmrobo.github.io/DL_model_hiring_committee/6-12_denoising_ae.html#kg",
+    "https://adminmrobo.github.io/DL_model_hiring_committee/6-13_vae.html#kg",
+    "https://adminmrobo.github.io/DL_model_hiring_committee/6-14_gan.html#kg",
+    "https://adminmrobo.github.io/DL_model_hiring_committee/6-15_diffusion.html#kg",
+    "https://adminmrobo.github.io/DL_model_hiring_committee/6-1_perceptron.html#kg",
+    "https://adminmrobo.github.io/DL_model_hiring_committee/6-2_mlp.html#kg",
+    "https://adminmrobo.github.io/DL_model_hiring_committee/6-3_resnet.html#kg",
+    "https://adminmrobo.github.io/DL_model_hiring_committee/6-4_cnn.html#kg",
+    "https://adminmrobo.github.io/DL_model_hiring_committee/6-5_siamese.html#kg",
+    "https://adminmrobo.github.io/DL_model_hiring_committee/6-6_rnn.html#kg",
+    "https://adminmrobo.github.io/DL_model_hiring_committee/6-7_lstm.html#kg",
+    "https://adminmrobo.github.io/DL_model_hiring_committee/6-8_gru.html#kg",
+    "https://adminmrobo.github.io/DL_model_hiring_committee/6-9_transformer.html#kg",
+    "https://adminmrobo.github.io/DL_model_hiring_committee/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/DL_model_hiring_committee/6-0_job_posting.html#export",
+    "https://adminmrobo.github.io/DL_model_hiring_committee/6-10_som.html#export",
+    "https://adminmrobo.github.io/DL_model_hiring_committee/6-11_autoencoder.html#export",
+    "https://adminmrobo.github.io/DL_model_hiring_committee/6-12_denoising_ae.html#export",
+    "https://adminmrobo.github.io/DL_model_hiring_committee/6-13_vae.html#export",
+    "https://adminmrobo.github.io/DL_model_hiring_committee/6-14_gan.html#export",
+    "https://adminmrobo.github.io/DL_model_hiring_committee/6-15_diffusion.html#export",
+    "https://adminmrobo.github.io/DL_model_hiring_committee/6-1_perceptron.html#export",
+    "https://adminmrobo.github.io/DL_model_hiring_committee/6-2_mlp.html#export",
+    "https://adminmrobo.github.io/DL_model_hiring_committee/6-3_resnet.html#export",
+    "https://adminmrobo.github.io/DL_model_hiring_committee/6-4_cnn.html#export",
+    "https://adminmrobo.github.io/DL_model_hiring_committee/6-5_siamese.html#export",
+    "https://adminmrobo.github.io/DL_model_hiring_committee/6-6_rnn.html#export",
+    "https://adminmrobo.github.io/DL_model_hiring_committee/6-7_lstm.html#export",
+    "https://adminmrobo.github.io/DL_model_hiring_committee/6-8_gru.html#export",
+    "https://adminmrobo.github.io/DL_model_hiring_committee/6-9_transformer.html#export",
+    "https://adminmrobo.github.io/DL_model_hiring_committee/index.html#export"
+   ],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "count": 7,
+   "pages": {
+    "ko": 17,
+    "en": 17,
+    "zh": 17,
+    "ja": 17,
+    "uz": 17,
+    "ru": 17,
+    "vi": 17
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/DL_model_hiring_committee/index.html",
+    "en": "https://adminmrobo.github.io/DL_model_hiring_committee/en/index.html",
+    "zh": "https://adminmrobo.github.io/DL_model_hiring_committee/zh/index.html",
+    "ja": "https://adminmrobo.github.io/DL_model_hiring_committee/ja/index.html",
+    "uz": "https://adminmrobo.github.io/DL_model_hiring_committee/uz/index.html",
+    "ru": "https://adminmrobo.github.io/DL_model_hiring_committee/ru/index.html",
+    "vi": "https://adminmrobo.github.io/DL_model_hiring_committee/vi/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "count": 7,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 17,
+    "en": 17,
+    "zh": 17,
+    "ja": 17,
+    "uz": 17,
+    "ru": 17,
+    "vi": 17
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "drug-crime-social-cost",
+  "series_ko": "마약류 사회적 비용 연구",
+  "title_ko": "마약류 사회적 비용 연구",
+  "repo_url": "https://github.com/adminmrobo/drug-crime-social-cost",
+  "pages_url": "https://adminmrobo.github.io/drug-crime-social-cost/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T11:10:15+09:00",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-05",
+  "site_title": "마약류 사회적 비용 연구",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 2,
+   "pages_checked": 2,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 2
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/drug-crime-social-cost/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 2
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "fintech_business_01_payment",
+  "series_ko": "이산확률분포 일곱 가지",
+  "title_ko": "이산확률분포 일곱 가지",
+  "repo_url": "https://github.com/adminmrobo/fintech_business_01_payment",
+  "pages_url": "https://adminmrobo.github.io/fintech_business_01_payment/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T00:50:42+09:00",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-05",
+  "site_title": "이산확률분포 일곱 가지",
+  "ontology": {
+   "status": "full",
+   "pages_with_kg": 1,
+   "pages_total": 1,
+   "pages_checked": 1,
+   "kg_links": [
+    "https://adminmrobo.github.io/fintech_business_01_payment/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/fintech_business_01_payment/index.html#export"
+   ],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 1
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/fintech_business_01_payment/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 1
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "Fish_Market_Data_Machine_Learning",
+  "series_ko": "Fish Market Data로 쉽게 따라하는 머신러닝 — 초파리 연구실",
+  "title_ko": "Fish Market Data로 쉽게 따라하는 머신러닝 — 초파리 연구실",
+  "repo_url": "https://github.com/adminmrobo/Fish_Market_Data_Machine_Learning",
+  "pages_url": "https://adminmrobo.github.io/Fish_Market_Data_Machine_Learning/",
+  "default_branch": "main",
+  "pushed_at": "2026-10-14T22:43:48+09:00",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-05",
+  "site_title": "Fish Market Data로 쉽게 따라하는 머신러닝 — 초파리 연구실",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 7,
+   "pages_checked": 7,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "count": 6,
+   "pages": {
+    "ko": 7,
+    "en": 6,
+    "zh": 6,
+    "ja": 6,
+    "uz": 6,
+    "ru": 6
+   },
+   "partial": [
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "complete": false,
+   "readme_langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "links": {
+    "ko": "https://adminmrobo.github.io/Fish_Market_Data_Machine_Learning/index.html",
+    "en": "https://adminmrobo.github.io/Fish_Market_Data_Machine_Learning/en/index.html",
+    "zh": "https://adminmrobo.github.io/Fish_Market_Data_Machine_Learning/zh/index.html",
+    "ja": "https://adminmrobo.github.io/Fish_Market_Data_Machine_Learning/ja/index.html",
+    "uz": "https://adminmrobo.github.io/Fish_Market_Data_Machine_Learning/uz/index.html",
+    "ru": "https://adminmrobo.github.io/Fish_Market_Data_Machine_Learning/ru/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "count": 6,
+   "complete": false,
+   "pages_by_lang": {
+    "ko": 7,
+    "en": 6,
+    "zh": 6,
+    "ja": 6,
+    "uz": 6,
+    "ru": 6
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "fruitfly-lab-expressions",
+  "series_ko": "초파리 연구실 · 캐릭터 표정 라이브러리",
+  "title_ko": "초파리 연구실 · 캐릭터 표정 라이브러리",
+  "repo_url": "https://github.com/adminmrobo/fruitfly-lab-expressions",
+  "pages_url": "https://adminmrobo.github.io/fruitfly-lab-expressions/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T10:44:32+09:00",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-05",
+  "site_title": "초파리 연구실 · 캐릭터 표정 라이브러리",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 2,
+   "pages_checked": 2,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 2
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/fruitfly-lab-expressions/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 2
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "g2b-bid-strategy",
+  "series_ko": "g2b-bid-strategy",
+  "title_ko": null,
+  "repo_url": "https://github.com/adminmrobo/g2b-bid-strategy",
+  "pages_url": "https://adminmrobo.github.io/g2b-bid-strategy/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T17:09:54+09:00",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-05",
+  "site_title": "입찰 전략실",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 1,
+   "pages_checked": 1,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 1
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/g2b-bid-strategy/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 1
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "Gen_AI_Hannam_univ",
+  "series_ko": "중간고사 시뮬레이션 — 생성형 AI의 활용전략",
+  "title_ko": "중간고사 시뮬레이션 — 생성형 AI의 활용전략",
+  "repo_url": "https://github.com/adminmrobo/Gen_AI_Hannam_univ",
+  "pages_url": "https://adminmrobo.github.io/Gen_AI_Hannam_univ/",
+  "default_branch": "main",
+  "pushed_at": "2026-10-09T16:15:48+09:00",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-05",
+  "site_title": "중간고사 시뮬레이션 — 생성형 AI의 활용전략",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 1,
+   "pages_checked": 1,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 1
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/Gen_AI_Hannam_univ/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 1
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "Gen_AI_strategy_ch05",
+  "series_ko": "생성형AI활용전략 5장",
+  "title_ko": "생성형 AI 활용 전략 — AI 연구실 해설",
+  "repo_url": "https://github.com/adminmrobo/Gen_AI_strategy_ch05",
+  "pages_url": "https://adminmrobo.github.io/Gen_AI_strategy_ch05/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T00:57:58+09:00",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "cover_05_960.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "og_05.webp",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "thumb_05.webp",
+    "role": "thumb",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 3,
+  "redraw_ids": [
+   "R004",
+   "R005",
+   "R006"
+  ],
+  "thumb": "thumbs/repos/Gen_AI_strategy_ch05.jpg",
+  "status": "redraw",
+  "checked_at": "2026-11-05",
+  "site_title": "생성형 AI 활용 전략 — AI 연구실 해설",
+  "ontology": {
+   "status": "partial",
+   "pages_with_kg": 1,
+   "pages_total": 2,
+   "pages_checked": 2,
+   "kg_links": [
+    "https://adminmrobo.github.io/Gen_AI_strategy_ch05/05_startup_prompt.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/Gen_AI_strategy_ch05/05_startup_prompt.html#export"
+   ],
+   "files": [
+    {
+     "path": "docs/KG_00_registry.json",
+     "url": "https://github.com/adminmrobo/Gen_AI_strategy_ch05/blob/main/docs/KG_00_registry.json"
+    }
+   ]
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 2
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/Gen_AI_strategy_ch05/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 2
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "Gen_AI_strategy_ch06",
+  "series_ko": "생성형 AI 활용 전략 — AI 연구실 해설",
+  "title_ko": "생성형 AI 활용 전략 — AI 연구실 해설",
+  "repo_url": "https://github.com/adminmrobo/Gen_AI_strategy_ch06",
+  "pages_url": "https://adminmrobo.github.io/Gen_AI_strategy_ch06/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T00:58:30+09:00",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "cover_06_960.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "og_06.webp",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "thumb_06.webp",
+    "role": "thumb",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": "thumbs/repos/Gen_AI_strategy_ch06.jpg",
+  "status": "ok",
+  "checked_at": "2026-11-05",
+  "site_title": "생성형 AI 활용 전략 — AI 연구실 해설",
+  "ontology": {
+   "status": "partial",
+   "pages_with_kg": 1,
+   "pages_total": 2,
+   "pages_checked": 2,
+   "kg_links": [
+    "https://adminmrobo.github.io/Gen_AI_strategy_ch06/06_prompt_startup.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/Gen_AI_strategy_ch06/06_prompt_startup.html#export"
+   ],
+   "files": [
+    {
+     "path": "docs/KG_00_registry.json",
+     "url": "https://github.com/adminmrobo/Gen_AI_strategy_ch06/blob/main/docs/KG_00_registry.json"
+    }
+   ]
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 2
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/Gen_AI_strategy_ch06/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 2
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "google-sheets-lab",
+  "series_ko": "구글 시트 연구실",
+  "title_ko": "전체 목차 | 하루의 구글시트 연구실",
+  "repo_url": "https://github.com/adminmrobo/google-sheets-lab",
+  "pages_url": "https://adminmrobo.github.io/google-sheets-lab/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T01:24:15+09:00",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "assets/covers/cover-07-01.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/covers/cover-07-02.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/covers/cover-08-01.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/covers/cover-09-01.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/covers/cover-09-02.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/covers/cover-09-03.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/covers/cover-09-04.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/covers/cover-10-01.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/covers/cover-10-02.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/covers/cover-10-03.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/covers/cover-10-04.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/covers/cover-index.webp",
+    "role": "cover",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 12,
+  "redraw_ids": [
+   "R025",
+   "R026",
+   "R027",
+   "R028",
+   "R029",
+   "R030",
+   "R031",
+   "R032",
+   "R033",
+   "R034",
+   "R035",
+   "R036"
+  ],
+  "thumb": "thumbs/repos/google-sheets-lab.jpg",
+  "status": "redraw",
+  "checked_at": "2026-11-05",
+  "site_title": "전체 목차 | 하루의 구글시트 연구실",
+  "ontology": {
+   "status": "full",
+   "pages_with_kg": 12,
+   "pages_total": 12,
+   "pages_checked": 12,
+   "kg_links": [
+    "https://adminmrobo.github.io/google-sheets-lab/index.html#kg",
+    "https://adminmrobo.github.io/google-sheets-lab/section-07-01.html#kg",
+    "https://adminmrobo.github.io/google-sheets-lab/section-07-02.html#kg",
+    "https://adminmrobo.github.io/google-sheets-lab/section-08-01.html#kg",
+    "https://adminmrobo.github.io/google-sheets-lab/section-09-01.html#kg",
+    "https://adminmrobo.github.io/google-sheets-lab/section-09-02.html#kg",
+    "https://adminmrobo.github.io/google-sheets-lab/section-09-03.html#kg",
+    "https://adminmrobo.github.io/google-sheets-lab/section-09-04.html#kg",
+    "https://adminmrobo.github.io/google-sheets-lab/section-10-01.html#kg",
+    "https://adminmrobo.github.io/google-sheets-lab/section-10-02.html#kg",
+    "https://adminmrobo.github.io/google-sheets-lab/section-10-03.html#kg",
+    "https://adminmrobo.github.io/google-sheets-lab/section-10-04.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/google-sheets-lab/index.html#export",
+    "https://adminmrobo.github.io/google-sheets-lab/section-07-01.html#export",
+    "https://adminmrobo.github.io/google-sheets-lab/section-07-02.html#export",
+    "https://adminmrobo.github.io/google-sheets-lab/section-08-01.html#export",
+    "https://adminmrobo.github.io/google-sheets-lab/section-09-01.html#export",
+    "https://adminmrobo.github.io/google-sheets-lab/section-09-02.html#export",
+    "https://adminmrobo.github.io/google-sheets-lab/section-09-03.html#export",
+    "https://adminmrobo.github.io/google-sheets-lab/section-09-04.html#export",
+    "https://adminmrobo.github.io/google-sheets-lab/section-10-01.html#export",
+    "https://adminmrobo.github.io/google-sheets-lab/section-10-02.html#export",
+    "https://adminmrobo.github.io/google-sheets-lab/section-10-03.html#export",
+    "https://adminmrobo.github.io/google-sheets-lab/section-10-04.html#export"
+   ],
+   "files": [
+    {
+     "path": "KG_00_registry.json",
+     "url": "https://github.com/adminmrobo/google-sheets-lab/blob/main/KG_00_registry.json"
+    }
+   ]
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 12
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/google-sheets-lab/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 12
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "inference_engineering_study_week_01_article_01",
+  "series_ko": "추론 엔지니어링 스터디",
+  "title_ko": null,
+  "repo_url": "https://github.com/adminmrobo/inference_engineering_study_week_01_article_01",
+  "pages_url": "https://adminmrobo.github.io/inference_engineering_study_week_01_article_01/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T00:52:14+09:00",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "images/og_lb.png",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "images/thumb_lb.png",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "images/sc_lb_hero.png",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "images/sc_lb_outro.png",
+    "role": "scene",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 4,
+  "redraw_ids": [
+   "R037",
+   "R041",
+   "R042",
+   "R044"
+  ],
+  "thumb": "thumbs/repos/inference_engineering_study_week_01_article_01.jpg",
+  "status": "redraw",
+  "checked_at": "2026-11-05",
+  "site_title": "LiveBench: 오염 없는 객관적 LLM 벤치마크 대시보드",
+  "ontology": {
+   "status": "full",
+   "pages_with_kg": 1,
+   "pages_total": 1,
+   "pages_checked": 1,
+   "kg_links": [
+    "https://adminmrobo.github.io/inference_engineering_study_week_01_article_01/LiveBench_%ED%95%B4%EC%84%A4_%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/inference_engineering_study_week_01_article_01/LiveBench_%ED%95%B4%EC%84%A4_%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C.html#export"
+   ],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "count": 7,
+   "pages": {
+    "ko": 1,
+    "en": 1,
+    "zh": 1,
+    "ja": 1,
+    "uz": 1,
+    "ru": 1,
+    "vi": 1
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "links": {
+    "ko": "https://adminmrobo.github.io/inference_engineering_study_week_01_article_01/LiveBench_%ED%95%B4%EC%84%A4_%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C.html",
+    "en": "https://adminmrobo.github.io/inference_engineering_study_week_01_article_01/LiveBench_%ED%95%B4%EC%84%A4_%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C.en.html",
+    "zh": "https://adminmrobo.github.io/inference_engineering_study_week_01_article_01/LiveBench_%ED%95%B4%EC%84%A4_%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C.zh.html",
+    "ja": "https://adminmrobo.github.io/inference_engineering_study_week_01_article_01/LiveBench_%ED%95%B4%EC%84%A4_%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C.ja.html",
+    "uz": "https://adminmrobo.github.io/inference_engineering_study_week_01_article_01/LiveBench_%ED%95%B4%EC%84%A4_%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C.uz.html",
+    "ru": "https://adminmrobo.github.io/inference_engineering_study_week_01_article_01/LiveBench_%ED%95%B4%EC%84%A4_%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C.ru.html",
+    "vi": "https://adminmrobo.github.io/inference_engineering_study_week_01_article_01/LiveBench_%ED%95%B4%EC%84%A4_%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C.vi.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "count": 7,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 1,
+    "en": 1,
+    "zh": 1,
+    "ja": 1,
+    "uz": 1,
+    "ru": 1,
+    "vi": 1
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "inference_engineering_study_week_01_textbook_ch00",
+  "series_ko": "inference_engineering_study_week_01_textbook_ch00",
+  "title_ko": null,
+  "repo_url": "https://github.com/adminmrobo/inference_engineering_study_week_01_textbook_ch00",
+  "pages_url": "https://adminmrobo.github.io/inference_engineering_study_week_01_textbook_ch00/",
+  "default_branch": null,
+  "pushed_at": null,
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-05",
+  "local_copy": false,
+  "site_title": null,
+  "ontology": null,
+  "i18n": null,
+  "languages": null,
+  "note": "로컬 사본 없음 (빈 저장소이거나 받기 실패) — 다음 API 수집 때 채워짐"
+ },
+ {
+  "repo": "inference_engineering_study_week_01_textbook_ch01",
+  "series_ko": "추론 엔지니어링 스터디",
+  "title_ko": "AI Lab Explainer — 추론 엔지니어링 시리즈",
+  "repo_url": "https://github.com/adminmrobo/inference_engineering_study_week_01_textbook_ch01",
+  "pages_url": "https://adminmrobo.github.io/inference_engineering_study_week_01_textbook_ch01/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T00:50:09+09:00",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "og_01.png",
+    "role": "og",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 1,
+  "redraw_ids": [
+   "R038"
+  ],
+  "thumb": "thumbs/repos/inference_engineering_study_week_01_textbook_ch01.jpg",
+  "status": "redraw",
+  "checked_at": "2026-11-05",
+  "site_title": "AI Lab Explainer — 추론 엔지니어링 시리즈",
+  "ontology": {
+   "status": "partial",
+   "pages_with_kg": 1,
+   "pages_total": 2,
+   "pages_checked": 2,
+   "kg_links": [
+    "https://adminmrobo.github.io/inference_engineering_study_week_01_textbook_ch01/01_inference_prerequisites.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/inference_engineering_study_week_01_textbook_ch01/01_inference_prerequisites.html#export"
+   ],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "count": 7,
+   "pages": {
+    "ko": 2,
+    "en": 2,
+    "zh": 2,
+    "ja": 2,
+    "uz": 2,
+    "ru": 2,
+    "vi": 2
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "links": {
+    "ko": "https://adminmrobo.github.io/inference_engineering_study_week_01_textbook_ch01/index.html",
+    "en": "https://adminmrobo.github.io/inference_engineering_study_week_01_textbook_ch01/index.en.html",
+    "zh": "https://adminmrobo.github.io/inference_engineering_study_week_01_textbook_ch01/index.zh.html",
+    "ja": "https://adminmrobo.github.io/inference_engineering_study_week_01_textbook_ch01/index.ja.html",
+    "uz": "https://adminmrobo.github.io/inference_engineering_study_week_01_textbook_ch01/index.uz.html",
+    "ru": "https://adminmrobo.github.io/inference_engineering_study_week_01_textbook_ch01/index.ru.html",
+    "vi": "https://adminmrobo.github.io/inference_engineering_study_week_01_textbook_ch01/index.vi.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "count": 7,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 2,
+    "en": 2,
+    "zh": 2,
+    "ja": 2,
+    "uz": 2,
+    "ru": 2,
+    "vi": 2
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "inference_engineering_study_week_01_textbook_preface",
+  "series_ko": "inference_engineering_study_week_01_textbook_preface",
+  "title_ko": null,
+  "repo_url": "https://github.com/adminmrobo/inference_engineering_study_week_01_textbook_preface",
+  "pages_url": "https://adminmrobo.github.io/inference_engineering_study_week_01_textbook_preface/",
+  "default_branch": null,
+  "pushed_at": null,
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-05",
+  "local_copy": false,
+  "site_title": null,
+  "ontology": null,
+  "i18n": null,
+  "languages": null,
+  "note": "로컬 사본 없음 (빈 저장소이거나 받기 실패) — 다음 API 수집 때 채워짐"
+ },
+ {
+  "repo": "inference_engineering_study_week_02_article_01",
+  "series_ko": "추론 엔지니어링 스터디",
+  "title_ko": "AI 연구실 해설 — 목차",
+  "repo_url": "https://github.com/adminmrobo/inference_engineering_study_week_02_article_01",
+  "pages_url": "https://adminmrobo.github.io/inference_engineering_study_week_02_article_01/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T00:48:52+09:00",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "assets/img/cover_01.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_01_960.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/og_01.webp",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/thumb_01.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/sc_01_outro.webp",
+    "role": "scene",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 2,
+  "redraw_ids": [
+   "R039",
+   "R043"
+  ],
+  "thumb": "thumbs/repos/inference_engineering_study_week_02_article_01.jpg",
+  "status": "redraw",
+  "checked_at": "2026-11-05",
+  "site_title": "AI 연구실 해설 — 목차",
+  "ontology": {
+   "status": "partial",
+   "pages_with_kg": 1,
+   "pages_total": 2,
+   "pages_checked": 2,
+   "kg_links": [
+    "https://adminmrobo.github.io/inference_engineering_study_week_02_article_01/01_transformer.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/inference_engineering_study_week_02_article_01/01_transformer.html#export"
+   ],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "count": 7,
+   "pages": {
+    "ko": 2,
+    "en": 1,
+    "zh": 1,
+    "ja": 1,
+    "uz": 1,
+    "ru": 1,
+    "vi": 1
+   },
+   "partial": [
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "complete": false,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/inference_engineering_study_week_02_article_01/index.html",
+    "en": "https://adminmrobo.github.io/inference_engineering_study_week_02_article_01/01_transformer.en.html",
+    "zh": "https://adminmrobo.github.io/inference_engineering_study_week_02_article_01/01_transformer.zh.html",
+    "ja": "https://adminmrobo.github.io/inference_engineering_study_week_02_article_01/01_transformer.ja.html",
+    "uz": "https://adminmrobo.github.io/inference_engineering_study_week_02_article_01/01_transformer.uz.html",
+    "ru": "https://adminmrobo.github.io/inference_engineering_study_week_02_article_01/01_transformer.ru.html",
+    "vi": "https://adminmrobo.github.io/inference_engineering_study_week_02_article_01/01_transformer.vi.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "count": 7,
+   "complete": false,
+   "pages_by_lang": {
+    "ko": 2,
+    "en": 1,
+    "zh": 1,
+    "ja": 1,
+    "uz": 1,
+    "ru": 1,
+    "vi": 1
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "inference_engineering_study_week_02_textbook_ch02_p1_p2",
+  "series_ko": "추론 엔지니어링 스터디",
+  "title_ko": "인퍼런스 엔지니어링 해설",
+  "repo_url": "https://github.com/adminmrobo/inference_engineering_study_week_02_textbook_ch02_p1_p2",
+  "pages_url": "https://adminmrobo.github.io/inference_engineering_study_week_02_textbook_ch02_p1_p2/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T00:47:48+09:00",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "assets/img/cover_ch2.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_ch2_960.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/src/cover_ch2_1920.png",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/og_02.jpg",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/src/og_02.png",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/thumb_02.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/src/thumb_02.png",
+    "role": "thumb",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 1,
+  "redraw_ids": [
+   "R040"
+  ],
+  "thumb": "thumbs/repos/inference_engineering_study_week_02_textbook_ch02_p1_p2.jpg",
+  "status": "redraw",
+  "checked_at": "2026-11-05",
+  "site_title": "인퍼런스 엔지니어링 해설",
+  "ontology": {
+   "status": "partial",
+   "pages_with_kg": 1,
+   "pages_total": 2,
+   "pages_checked": 2,
+   "kg_links": [
+    "https://adminmrobo.github.io/inference_engineering_study_week_02_textbook_ch02_p1_p2/02_models.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/inference_engineering_study_week_02_textbook_ch02_p1_p2/02_models.html#export"
+   ],
+   "files": [
+    {
+     "path": "KG_00_registry.json",
+     "url": "https://github.com/adminmrobo/inference_engineering_study_week_02_textbook_ch02_p1_p2/blob/main/KG_00_registry.json"
+    }
+   ]
+  },
+  "i18n": {
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "count": 7,
+   "pages": {
+    "ko": 2,
+    "en": 1,
+    "zh": 1,
+    "ja": 1,
+    "uz": 1,
+    "ru": 1,
+    "vi": 1
+   },
+   "partial": [
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "complete": false,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/inference_engineering_study_week_02_textbook_ch02_p1_p2/index.html",
+    "en": "https://adminmrobo.github.io/inference_engineering_study_week_02_textbook_ch02_p1_p2/02_models.en.html",
+    "zh": "https://adminmrobo.github.io/inference_engineering_study_week_02_textbook_ch02_p1_p2/02_models.zh.html",
+    "ja": "https://adminmrobo.github.io/inference_engineering_study_week_02_textbook_ch02_p1_p2/02_models.ja.html",
+    "uz": "https://adminmrobo.github.io/inference_engineering_study_week_02_textbook_ch02_p1_p2/02_models.uz.html",
+    "ru": "https://adminmrobo.github.io/inference_engineering_study_week_02_textbook_ch02_p1_p2/02_models.ru.html",
+    "vi": "https://adminmrobo.github.io/inference_engineering_study_week_02_textbook_ch02_p1_p2/02_models.vi.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "count": 7,
+   "complete": false,
+   "pages_by_lang": {
+    "ko": 2,
+    "en": 1,
+    "zh": 1,
+    "ja": 1,
+    "uz": 1,
+    "ru": 1,
+    "vi": 1
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "inference_korea_study_page",
+  "series_ko": "Inference Korea 스터디 보드",
+  "title_ko": "Inference Korea 스터디 보드",
+  "repo_url": "https://github.com/adminmrobo/inference_korea_study_page",
+  "pages_url": "https://adminmrobo.github.io/inference_korea_study_page/",
+  "default_branch": "main",
+  "pushed_at": "2026-10-31T18:39:40+09:00",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-05",
+  "site_title": "Inference Korea 스터디 보드",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 4,
+   "pages_checked": 4,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko",
+    "en",
+    "zh"
+   ],
+   "count": 3,
+   "pages": {
+    "ko": 4,
+    "en": 4,
+    "zh": 4
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [
+    "ko",
+    "en",
+    "zh"
+   ],
+   "links": {
+    "ko": "https://adminmrobo.github.io/inference_korea_study_page/index.html",
+    "en": "https://adminmrobo.github.io/inference_korea_study_page/en/index.html",
+    "zh": "https://adminmrobo.github.io/inference_korea_study_page/zh/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko",
+    "en",
+    "zh"
+   ],
+   "count": 3,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 4,
+    "en": 4,
+    "zh": 4
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "insurtech__case_classification_model_01",
+  "series_ko": "인슈어테크 사례 연구",
+  "title_ko": "AI(인공지능) x 비즈니스 #1 인슈어테크_01_분류모델",
+  "repo_url": "https://github.com/adminmrobo/insurtech__case_classification_model_01",
+  "pages_url": "https://adminmrobo.github.io/insurtech__case_classification_model_01/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T00:48:44+09:00",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "assets/hero.webp",
+    "role": "hero",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 7,
+  "redraw_ids": [
+   "R045",
+   "R049",
+   "R050",
+   "R051",
+   "R052",
+   "R053",
+   "R054"
+  ],
+  "thumb": "thumbs/repos/insurtech__case_classification_model_01.jpg",
+  "status": "redraw",
+  "checked_at": "2026-11-05",
+  "site_title": "AI(인공지능) x 비즈니스 #1 인슈어테크_01_분류모델",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 8,
+   "pages_checked": 8,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 8
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/insurtech__case_classification_model_01/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 8
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "insurtech__case_classification_model_02",
+  "series_ko": "인슈어테크 사례 연구",
+  "title_ko": "AI(인공지능) x 비즈니스 #1 인슈어테크_02_분류모델_실전",
+  "repo_url": "https://github.com/adminmrobo/insurtech__case_classification_model_02",
+  "pages_url": "https://adminmrobo.github.io/insurtech__case_classification_model_02/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T00:48:49+09:00",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "assets/hero.webp",
+    "role": "hero",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 6,
+  "redraw_ids": [
+   "R046",
+   "R055",
+   "R056",
+   "R057",
+   "R058",
+   "R059"
+  ],
+  "thumb": "thumbs/repos/insurtech__case_classification_model_02.jpg",
+  "status": "redraw",
+  "checked_at": "2026-11-05",
+  "site_title": "AI(인공지능) x 비즈니스 #1 인슈어테크_02_분류모델_실전",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 7,
+   "pages_checked": 7,
+   "kg_links": [],
+   "export_links": [
+    "https://adminmrobo.github.io/insurtech__case_classification_model_02/4_html_deploy.html#export"
+   ],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 7
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/insurtech__case_classification_model_02/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 7
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "insurtech__case_regreesion_model_01",
+  "series_ko": "인슈어테크 사례 연구",
+  "title_ko": "인슈어테크 #3 | 처음 화면",
+  "repo_url": "https://github.com/adminmrobo/insurtech__case_regreesion_model_01",
+  "pages_url": "https://adminmrobo.github.io/insurtech__case_regreesion_model_01/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T00:48:51+09:00",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "assets/hero.webp",
+    "role": "hero",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 7,
+  "redraw_ids": [
+   "R047",
+   "R060",
+   "R061",
+   "R062",
+   "R063",
+   "R064",
+   "R065"
+  ],
+  "thumb": "thumbs/repos/insurtech__case_regreesion_model_01.jpg",
+  "status": "redraw",
+  "checked_at": "2026-11-05",
+  "site_title": "인슈어테크 #3 | 처음 화면",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 8,
+   "pages_checked": 8,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 8
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/insurtech__case_regreesion_model_01/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 8
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "insurtech__case_regreesion_model_02",
+  "series_ko": "인슈어테크 사례 연구",
+  "title_ko": "인슈어테크 #4 실전 | 처음 화면",
+  "repo_url": "https://github.com/adminmrobo/insurtech__case_regreesion_model_02",
+  "pages_url": "https://adminmrobo.github.io/insurtech__case_regreesion_model_02/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T00:48:54+09:00",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "assets/hero.webp",
+    "role": "hero",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 6,
+  "redraw_ids": [
+   "R048",
+   "R066",
+   "R067",
+   "R068",
+   "R069",
+   "R070"
+  ],
+  "thumb": "thumbs/repos/insurtech__case_regreesion_model_02.jpg",
+  "status": "redraw",
+  "checked_at": "2026-11-05",
+  "site_title": "인슈어테크 #4 실전 | 처음 화면",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 7,
+   "pages_checked": 7,
+   "kg_links": [],
+   "export_links": [
+    "https://adminmrobo.github.io/insurtech__case_regreesion_model_02/4_html_deploy.html#export"
+   ],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 7
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/insurtech__case_regreesion_model_02/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 7
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "learn-pandas-visually_korean",
+  "series_ko": "판다스 시각화 배우기",
+  "title_ko": "보면서 배우는 pandas",
+  "repo_url": "https://github.com/adminmrobo/learn-pandas-visually_korean",
+  "pages_url": "https://adminmrobo.github.io/learn-pandas-visually_korean/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T01:23:32+09:00",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "assets/hero/hero.jpg",
+    "role": "hero",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 1,
+  "redraw_ids": [
+   "R071"
+  ],
+  "thumb": "thumbs/repos/learn-pandas-visually_korean.jpg",
+  "status": "redraw",
+  "checked_at": "2026-11-05",
+  "site_title": "보면서 배우는 pandas",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 1,
+   "pages_checked": 1,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 1
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/learn-pandas-visually_korean/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 1
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "learn-python-by-doing",
+  "series_ko": "해보며 배우는 파이썬",
+  "title_ko": null,
+  "repo_url": "https://github.com/adminmrobo/learn-python-by-doing",
+  "pages_url": "https://adminmrobo.github.io/learn-python-by-doing/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T01:23:07+09:00",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "docs/assets/hero/hero.jpg",
+    "role": "hero",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 1,
+  "redraw_ids": [
+   "R072"
+  ],
+  "thumb": "thumbs/repos/learn-python-by-doing.jpg",
+  "status": "redraw",
+  "checked_at": "2026-11-05",
+  "site_title": null,
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 0,
+   "pages_checked": 0,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [],
+   "count": 0,
+   "pages": {},
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {}
+  },
+  "languages": {
+   "codes": [],
+   "count": 0,
+   "complete": true,
+   "pages_by_lang": {}
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "learn-python-by-doing_Korean",
+  "series_ko": "해보며 배우는 파이썬",
+  "title_ko": null,
+  "repo_url": "https://github.com/adminmrobo/learn-python-by-doing_Korean",
+  "pages_url": "https://adminmrobo.github.io/learn-python-by-doing_Korean/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T01:22:33+09:00",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "docs/assets/hero/hero.jpg",
+    "role": "hero",
+    "estimated": true
+   },
+   {
+    "path": "src/assets/hero/hero.jpg",
+    "role": "hero",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 1,
+  "redraw_ids": [
+   "R073"
+  ],
+  "thumb": "thumbs/repos/learn-python-by-doing_Korean.jpg",
+  "status": "redraw",
+  "checked_at": "2026-11-05",
+  "site_title": "쉽게 따라 해 보면서 배우는 파이썬 - 쉽게 따라 해 보면서 배우는 파이썬",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 53,
+   "pages_checked": 53,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 53
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/learn-python-by-doing_Korean/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 53
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "ML_00_Algorithm-family-build_00",
+  "series_ko": "ML 알고리즘 가족 만들기",
+  "title_ko": null,
+  "repo_url": "https://github.com/adminmrobo/ML_00_Algorithm-family-build_00",
+  "pages_url": "https://adminmrobo.github.io/ML_00_Algorithm-family-build_00/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T00:45:18+09:00",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "4-6_regression_seven.html/idx_hero_1280.png",
+    "role": "hero",
+    "estimated": true
+   },
+   {
+    "path": "4-6_regression_seven.html/idx_hero_390.png",
+    "role": "hero",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_alley.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_board.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_border.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_carpet.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_estate.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_family.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_final.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_grove.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_lab.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_ledger.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_magic.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_maze.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_meeting.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_mirror.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_moons.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_night.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_party.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_registry.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_scale.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_vault.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets_orig/sc_board.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets_orig/sc_lab.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets_orig/sc_magic.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets_orig/sc_night.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets_orig/sc_party.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets_src/sc_alley.png",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets_src/sc_border.png",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets_src/sc_carpet.png",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets_src/sc_estate.png",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets_src/sc_family.png",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets_src/sc_final.png",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets_src/sc_grove.png",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets_src/sc_ledger.png",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets_src/sc_maze.png",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets_src/sc_meeting.png",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets_src/sc_mirror.png",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets_src/sc_moons.png",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets_src/sc_registry.png",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets_src/sc_scale.png",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets_src/sc_vault.png",
+    "role": "scene",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 12,
+  "redraw_ids": [
+   "R007",
+   "R008",
+   "R009",
+   "R010",
+   "R011",
+   "R012",
+   "R013",
+   "R014",
+   "R015",
+   "R016",
+   "R017",
+   "R018"
+  ],
+  "thumb": "thumbs/repos/ML_00_Algorithm-family-build_00.jpg",
+  "status": "redraw",
+  "checked_at": "2026-11-05",
+  "site_title": null,
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 0,
+   "pages_checked": 0,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [],
+   "count": 0,
+   "pages": {},
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {}
+  },
+  "languages": {
+   "codes": [],
+   "count": 0,
+   "complete": true,
+   "pages_by_lang": {}
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "ML_00_Algorithm-family-build_01",
+  "series_ko": "인공지능 알고리즘 패밀리 조직도 — 목차",
+  "title_ko": "인공지능 알고리즘 패밀리 조직도 — 목차",
+  "repo_url": "https://github.com/adminmrobo/ML_00_Algorithm-family-build_01",
+  "pages_url": "https://adminmrobo.github.io/ML_00_Algorithm-family-build_01/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T01:09:32+09:00",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "assets/sc_alley.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_board.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_family.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_final.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_lab.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_magic.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_meeting.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_night.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_party.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_registry.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_vault.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets_src/sc_alley.png",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets_src/sc_family.png",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets_src/sc_final.png",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets_src/sc_meeting.png",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets_src/sc_registry.png",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets_src/sc_vault.png",
+    "role": "scene",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 5,
+  "redraw_ids": [
+   "R007",
+   "R008",
+   "R009",
+   "R010",
+   "R015"
+  ],
+  "thumb": "thumbs/repos/ML_00_Algorithm-family-build_01.jpg",
+  "status": "redraw",
+  "checked_at": "2026-11-05",
+  "site_title": "인공지능 알고리즘 패밀리 조직도 — 목차",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 8,
+   "pages_checked": 8,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "count": 6,
+   "pages": {
+    "ko": 8,
+    "en": 8,
+    "zh": 8,
+    "ja": 8,
+    "uz": 8,
+    "ru": 8
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/ML_00_Algorithm-family-build_01/index.html",
+    "en": "https://adminmrobo.github.io/ML_00_Algorithm-family-build_01/en/index.html",
+    "zh": "https://adminmrobo.github.io/ML_00_Algorithm-family-build_01/zh/index.html",
+    "ja": "https://adminmrobo.github.io/ML_00_Algorithm-family-build_01/ja/index.html",
+    "uz": "https://adminmrobo.github.io/ML_00_Algorithm-family-build_01/uz/index.html",
+    "ru": "https://adminmrobo.github.io/ML_00_Algorithm-family-build_01/ru/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "count": 6,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 8,
+    "en": 8,
+    "zh": 8,
+    "ja": 8,
+    "uz": 8,
+    "ru": 8
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "ML_00_Algorithm-family-build_02",
+  "series_ko": "인공지능 알고리즘 패밀리 조직도 — 목차",
+  "title_ko": "인공지능 알고리즘 패밀리 조직도 — 목차",
+  "repo_url": "https://github.com/adminmrobo/ML_00_Algorithm-family-build_02",
+  "pages_url": "https://adminmrobo.github.io/ML_00_Algorithm-family-build_02/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T01:12:21+09:00",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "assets/sc_alley.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_border.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_estate.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_family.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_grove.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_maze.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_meeting.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_moons.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_registry.webp",
+    "role": "scene",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 7,
+  "redraw_ids": [
+   "R007",
+   "R008",
+   "R009",
+   "R011",
+   "R013",
+   "R014",
+   "R017"
+  ],
+  "thumb": "thumbs/repos/ML_00_Algorithm-family-build_02.jpg",
+  "status": "redraw",
+  "checked_at": "2026-11-05",
+  "site_title": "인공지능 알고리즘 패밀리 조직도 — 목차",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 7,
+   "pages_checked": 7,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "count": 6,
+   "pages": {
+    "ko": 7,
+    "en": 7,
+    "zh": 7,
+    "ja": 7,
+    "uz": 7,
+    "ru": 7
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/ML_00_Algorithm-family-build_02/index.html",
+    "en": "https://adminmrobo.github.io/ML_00_Algorithm-family-build_02/en/index.html",
+    "zh": "https://adminmrobo.github.io/ML_00_Algorithm-family-build_02/zh/index.html",
+    "ja": "https://adminmrobo.github.io/ML_00_Algorithm-family-build_02/ja/index.html",
+    "uz": "https://adminmrobo.github.io/ML_00_Algorithm-family-build_02/uz/index.html",
+    "ru": "https://adminmrobo.github.io/ML_00_Algorithm-family-build_02/ru/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "count": 6,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 7,
+    "en": 7,
+    "zh": 7,
+    "ja": 7,
+    "uz": 7,
+    "ru": 7
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "ML_00_Algorithm-family-build_03",
+  "series_ko": "인공지능 알고리즘 패밀리 조직도 — 목차",
+  "title_ko": "인공지능 알고리즘 패밀리 조직도 — 목차",
+  "repo_url": "https://github.com/adminmrobo/ML_00_Algorithm-family-build_03",
+  "pages_url": "https://adminmrobo.github.io/ML_00_Algorithm-family-build_03/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T01:12:27+09:00",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "assets/sc_alley.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_carpet.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_family.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_final.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_ledger.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_meeting.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_mirror.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_registry.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_scale.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_vault.webp",
+    "role": "scene",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 8,
+  "redraw_ids": [
+   "R007",
+   "R008",
+   "R009",
+   "R010",
+   "R012",
+   "R015",
+   "R016",
+   "R018"
+  ],
+  "thumb": "thumbs/repos/ML_00_Algorithm-family-build_03.jpg",
+  "status": "redraw",
+  "checked_at": "2026-11-05",
+  "site_title": "인공지능 알고리즘 패밀리 조직도 — 목차",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 7,
+   "pages_checked": 7,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "count": 6,
+   "pages": {
+    "ko": 7,
+    "en": 7,
+    "zh": 7,
+    "ja": 7,
+    "uz": 7,
+    "ru": 7
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/ML_00_Algorithm-family-build_03/index.html",
+    "en": "https://adminmrobo.github.io/ML_00_Algorithm-family-build_03/en/index.html",
+    "zh": "https://adminmrobo.github.io/ML_00_Algorithm-family-build_03/zh/index.html",
+    "ja": "https://adminmrobo.github.io/ML_00_Algorithm-family-build_03/ja/index.html",
+    "uz": "https://adminmrobo.github.io/ML_00_Algorithm-family-build_03/uz/index.html",
+    "ru": "https://adminmrobo.github.io/ML_00_Algorithm-family-build_03/ru/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "count": 6,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 7,
+    "en": 7,
+    "zh": 7,
+    "ja": 7,
+    "uz": 7,
+    "ru": 7
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "ML_model_hiring_committee",
+  "series_ko": "5-0 채용 공고 — 판단을 데이터로 | 모델 채용 위원회",
+  "title_ko": "5-0 채용 공고 — 판단을 데이터로 | 모델 채용 위원회",
+  "repo_url": "https://github.com/adminmrobo/ML_model_hiring_committee",
+  "pages_url": "https://adminmrobo.github.io/ML_model_hiring_committee/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T01:11:49+09:00",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "assets/sc_alley.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_board.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_family.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_final.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_lab.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_magic.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_meeting.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_night.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_party.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_registry.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/sc_vault.webp",
+    "role": "scene",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 4,
+  "redraw_ids": [
+   "R007",
+   "R008",
+   "R009",
+   "R010"
+  ],
+  "thumb": "thumbs/repos/ML_model_hiring_committee.jpg",
+  "status": "redraw",
+  "checked_at": "2026-11-05",
+  "site_title": "5-0 채용 공고 — 판단을 데이터로 | 모델 채용 위원회",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 34,
+   "pages_checked": 34,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "count": 6,
+   "pages": {
+    "ko": 34,
+    "en": 34,
+    "zh": 34,
+    "ja": 34,
+    "uz": 34,
+    "ru": 34
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/ML_model_hiring_committee/index.html",
+    "en": "https://adminmrobo.github.io/ML_model_hiring_committee/en/index.html",
+    "zh": "https://adminmrobo.github.io/ML_model_hiring_committee/zh/index.html",
+    "ja": "https://adminmrobo.github.io/ML_model_hiring_committee/ja/index.html",
+    "uz": "https://adminmrobo.github.io/ML_model_hiring_committee/uz/index.html",
+    "ru": "https://adminmrobo.github.io/ML_model_hiring_committee/ru/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "count": 6,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 34,
+    "en": 34,
+    "zh": 34,
+    "ja": 34,
+    "uz": 34,
+    "ru": 34
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "motion_ai_series_01",
+  "series_ko": "모션 AI 시리즈",
+  "title_ko": "AI는 동작을 어떻게 알아보고 만들까? — 긴급 미션 다섯 개",
+  "repo_url": "https://github.com/adminmrobo/motion_ai_series_01",
+  "pages_url": "https://adminmrobo.github.io/motion_ai_series_01/",
+  "default_branch": "main",
+  "pushed_at": "2026-10-08T21:06:06+09:00",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 2,
+  "redraw_ids": [
+   "R074",
+   "R075"
+  ],
+  "thumb": "thumbs/R074.jpg",
+  "status": "redraw",
+  "checked_at": "2026-11-05",
+  "site_title": "AI는 동작을 어떻게 알아보고 만들까? — 긴급 미션 다섯 개",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 6,
+   "pages_checked": 6,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "count": 6,
+   "pages": {
+    "ko": 6,
+    "en": 6,
+    "zh": 6,
+    "ja": 6,
+    "uz": 6,
+    "ru": 6
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "links": {
+    "ko": "https://adminmrobo.github.io/motion_ai_series_01/index.html",
+    "en": "https://adminmrobo.github.io/motion_ai_series_01/index.en.html",
+    "zh": "https://adminmrobo.github.io/motion_ai_series_01/index.zh.html",
+    "ja": "https://adminmrobo.github.io/motion_ai_series_01/index.ja.html",
+    "uz": "https://adminmrobo.github.io/motion_ai_series_01/index.uz.html",
+    "ru": "https://adminmrobo.github.io/motion_ai_series_01/index.ru.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "count": 6,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 6,
+    "en": 6,
+    "zh": 6,
+    "ja": 6,
+    "uz": 6,
+    "ru": 6
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "my_article_00_Korean_stockmarket_volatility_study",
+  "series_ko": "박사논문 해설 (우리나라 주식시장 변동성)",
+  "title_ko": "우리나라 주식시장의 변동성 분해 분석 — 연구실 해설",
+  "repo_url": "https://github.com/adminmrobo/my_article_00_Korean_stockmarket_volatility_study",
+  "pages_url": "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T01:26:49+09:00",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "img/cover.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "ch1/img/thumb.jpg",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "ch2/img/thumb.jpg",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "ch3/img/thumb.jpg",
+    "role": "thumb",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 3,
+  "redraw_ids": [
+   "R076",
+   "R077",
+   "R078"
+  ],
+  "thumb": "thumbs/repos/my_article_00_Korean_stockmarket_volatility_study.jpg",
+  "status": "redraw",
+  "checked_at": "2026-11-05",
+  "site_title": "우리나라 주식시장의 변동성 분해 분석 — 연구실 해설",
+  "ontology": {
+   "status": "partial",
+   "pages_with_kg": 20,
+   "pages_total": 24,
+   "pages_checked": 24,
+   "kg_links": [
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch1/1-1_time-series.html#kg",
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch1/1-2_efficient-market.html#kg",
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch1/1-3_risk-measures.html#kg",
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch1/1-4_clustering-tests.html#kg",
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch1/1-5_arch-garch.html#kg",
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch1/1-6_asymmetry-decomposition.html#kg",
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch1/1-7_volatility-index.html#kg",
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch2/2-1_literature-map.html#kg",
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch2/2-2_sector-questions.html#kg",
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch2/2-3_research-model.html#kg",
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch2/2-4_periods-chow.html#kg",
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch2/2-5_descriptive-stats.html#kg",
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch2/2-6_independence-correlation.html#kg",
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch3/3-1_garch-m-risk-premium.html#kg",
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch3/3-2_volatility-decomposition.html#kg",
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch3/3-3_decomposition-check.html#kg",
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch3/3-4_sector-contribution.html#kg",
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch3/3-5_vkospi-return-effect.html#kg",
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch3/3-6_usdf-k200f.html#kg",
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch3/3-7_conclusion.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch1/1-1_time-series.html#export",
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch1/1-2_efficient-market.html#export",
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch1/1-3_risk-measures.html#export",
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch1/1-4_clustering-tests.html#export",
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch1/1-5_arch-garch.html#export",
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch1/1-6_asymmetry-decomposition.html#export",
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch1/1-7_volatility-index.html#export",
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch2/2-1_literature-map.html#export",
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch2/2-2_sector-questions.html#export",
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch2/2-3_research-model.html#export",
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch2/2-4_periods-chow.html#export",
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch2/2-5_descriptive-stats.html#export",
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch2/2-6_independence-correlation.html#export",
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch3/3-1_garch-m-risk-premium.html#export",
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch3/3-2_volatility-decomposition.html#export",
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch3/3-3_decomposition-check.html#export",
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch3/3-4_sector-contribution.html#export",
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch3/3-5_vkospi-return-effect.html#export",
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch3/3-6_usdf-k200f.html#export",
+    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch3/3-7_conclusion.html#export"
+   ],
+   "files": [
+    {
+     "path": "ch1/KG_00_registry.json",
+     "url": "https://github.com/adminmrobo/my_article_00_Korean_stockmarket_volatility_study/blob/main/ch1/KG_00_registry.json"
+    },
+    {
+     "path": "ch2/KG_00_registry.json",
+     "url": "https://github.com/adminmrobo/my_article_00_Korean_stockmarket_volatility_study/blob/main/ch2/KG_00_registry.json"
+    },
+    {
+     "path": "ch3/KG_00_registry.json",
+     "url": "https://github.com/adminmrobo/my_article_00_Korean_stockmarket_volatility_study/blob/main/ch3/KG_00_registry.json"
+    }
+   ]
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 24
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 24
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "my_article_01_bitcoin_price_analytics",
+  "series_ko": "암호화폐 정보 효율성 해설",
+  "title_ko": "암호화폐 정보 효율성 해설",
+  "repo_url": "https://github.com/adminmrobo/my_article_01_bitcoin_price_analytics",
+  "pages_url": "https://adminmrobo.github.io/my_article_01_bitcoin_price_analytics/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T01:27:14+09:00",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-05",
+  "site_title": "암호화폐 정보 효율성 해설",
+  "ontology": {
+   "status": "full",
+   "pages_with_kg": 1,
+   "pages_total": 1,
+   "pages_checked": 1,
+   "kg_links": [
+    "https://adminmrobo.github.io/my_article_01_bitcoin_price_analytics/crypto_info_efficiency.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/my_article_01_bitcoin_price_analytics/crypto_info_efficiency.html#export"
+   ],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "count": 7,
+   "pages": {
+    "ko": 1,
+    "en": 1,
+    "zh": 1,
+    "ja": 1,
+    "uz": 1,
+    "ru": 1,
+    "vi": 1
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "links": {
+    "ko": "https://adminmrobo.github.io/my_article_01_bitcoin_price_analytics/crypto_info_efficiency.html",
+    "en": "https://adminmrobo.github.io/my_article_01_bitcoin_price_analytics/crypto_info_efficiency.en.html",
+    "zh": "https://adminmrobo.github.io/my_article_01_bitcoin_price_analytics/crypto_info_efficiency.zh.html",
+    "ja": "https://adminmrobo.github.io/my_article_01_bitcoin_price_analytics/crypto_info_efficiency.ja.html",
+    "uz": "https://adminmrobo.github.io/my_article_01_bitcoin_price_analytics/crypto_info_efficiency.uz.html",
+    "ru": "https://adminmrobo.github.io/my_article_01_bitcoin_price_analytics/crypto_info_efficiency.ru.html",
+    "vi": "https://adminmrobo.github.io/my_article_01_bitcoin_price_analytics/crypto_info_efficiency.vi.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "count": 7,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 1,
+    "en": 1,
+    "zh": 1,
+    "ja": 1,
+    "uz": 1,
+    "ru": 1,
+    "vi": 1
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "my_article_02_crypto_predict_model_analytics",
+  "series_ko": "논문 해설 02 · 암호화폐 가격 예측 모형",
+  "title_ko": "가상자산 시계열 데이터의 분석과 예측 - 연구실 대시보드",
+  "repo_url": "https://github.com/adminmrobo/my_article_02_crypto_predict_model_analytics",
+  "pages_url": "https://adminmrobo.github.io/my_article_02_crypto_predict_model_analytics/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T01:29:24+09:00",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "img/og_02.png",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "img/thumb_01.png",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "img/sc_01_hero.png",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "img/sc_01_outro.png",
+    "role": "scene",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 5,
+  "redraw_ids": [
+   "R079",
+   "R080",
+   "R081",
+   "R082",
+   "R083"
+  ],
+  "thumb": "thumbs/repos/my_article_02_crypto_predict_model_analytics.jpg",
+  "status": "redraw",
+  "checked_at": "2026-11-05",
+  "site_title": "가상자산 시계열 데이터의 분석과 예측 - 연구실 대시보드",
+  "ontology": {
+   "status": "partial",
+   "pages_with_kg": 1,
+   "pages_total": 2,
+   "pages_checked": 2,
+   "kg_links": [
+    "https://adminmrobo.github.io/my_article_02_crypto_predict_model_analytics/01_crypto_timeseries.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/my_article_02_crypto_predict_model_analytics/01_crypto_timeseries.html#export"
+   ],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "count": 7,
+   "pages": {
+    "ko": 2,
+    "en": 1,
+    "zh": 1,
+    "ja": 1,
+    "uz": 1,
+    "ru": 1,
+    "vi": 1
+   },
+   "partial": [
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "complete": false,
+   "readme_langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "links": {
+    "ko": "https://adminmrobo.github.io/my_article_02_crypto_predict_model_analytics/index.html",
+    "en": "https://adminmrobo.github.io/my_article_02_crypto_predict_model_analytics/01_crypto_timeseries.en.html",
+    "zh": "https://adminmrobo.github.io/my_article_02_crypto_predict_model_analytics/01_crypto_timeseries.zh.html",
+    "ja": "https://adminmrobo.github.io/my_article_02_crypto_predict_model_analytics/01_crypto_timeseries.ja.html",
+    "uz": "https://adminmrobo.github.io/my_article_02_crypto_predict_model_analytics/01_crypto_timeseries.uz.html",
+    "ru": "https://adminmrobo.github.io/my_article_02_crypto_predict_model_analytics/01_crypto_timeseries.ru.html",
+    "vi": "https://adminmrobo.github.io/my_article_02_crypto_predict_model_analytics/01_crypto_timeseries.vi.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "count": 7,
+   "complete": false,
+   "pages_by_lang": {
+    "ko": 2,
+    "en": 1,
+    "zh": 1,
+    "ja": 1,
+    "uz": 1,
+    "ru": 1,
+    "vi": 1
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "my_article_03_drug-slang-detection",
+  "series_ko": "논문 해설 03 · 마약 은어 탐지",
+  "title_ko": "SNS 은어와 이상탐지 — AI Lab Explainer #01",
+  "repo_url": "https://github.com/adminmrobo/my_article_03_drug-slang-detection",
+  "pages_url": "https://adminmrobo.github.io/my_article_03_drug-slang-detection/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T01:29:31+09:00",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "og_01.png",
+    "role": "og",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 3,
+  "redraw_ids": [
+   "R084",
+   "R085",
+   "R086"
+  ],
+  "thumb": "thumbs/repos/my_article_03_drug-slang-detection.jpg",
+  "status": "redraw",
+  "checked_at": "2026-11-05",
+  "site_title": "SNS 은어와 이상탐지 — AI Lab Explainer #01",
+  "ontology": {
+   "status": "full",
+   "pages_with_kg": 1,
+   "pages_total": 1,
+   "pages_checked": 1,
+   "kg_links": [
+    "https://adminmrobo.github.io/my_article_03_drug-slang-detection/01_drug-slang-detection.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/my_article_03_drug-slang-detection/01_drug-slang-detection.html#export"
+   ],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "count": 7,
+   "pages": {
+    "ko": 1,
+    "en": 1,
+    "zh": 1,
+    "ja": 1,
+    "uz": 1,
+    "ru": 1,
+    "vi": 1
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "links": {
+    "ko": "https://adminmrobo.github.io/my_article_03_drug-slang-detection/01_drug-slang-detection.html",
+    "en": "https://adminmrobo.github.io/my_article_03_drug-slang-detection/01_drug-slang-detection.en.html",
+    "zh": "https://adminmrobo.github.io/my_article_03_drug-slang-detection/01_drug-slang-detection.zh.html",
+    "ja": "https://adminmrobo.github.io/my_article_03_drug-slang-detection/01_drug-slang-detection.ja.html",
+    "uz": "https://adminmrobo.github.io/my_article_03_drug-slang-detection/01_drug-slang-detection.uz.html",
+    "ru": "https://adminmrobo.github.io/my_article_03_drug-slang-detection/01_drug-slang-detection.ru.html",
+    "vi": "https://adminmrobo.github.io/my_article_03_drug-slang-detection/01_drug-slang-detection.vi.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "count": 7,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 1,
+    "en": 1,
+    "zh": 1,
+    "ja": 1,
+    "uz": 1,
+    "ru": 1,
+    "vi": 1
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "my_article_04_adversarial_finance_attack",
+  "series_ko": "논문 해설 04 · 금융 적대적 공격 방어",
+  "title_ko": "AI FinSec Lab — 금융 이상탐지 모델 보안 · 인터랙티브 해설",
+  "repo_url": "https://github.com/adminmrobo/my_article_04_adversarial_finance_attack",
+  "pages_url": "https://adminmrobo.github.io/my_article_04_adversarial_finance_attack/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T01:29:03+09:00",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "og_01.png",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "thumb_01.png",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "sc_01_hero.png",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "sc_01_outro.png",
+    "role": "scene",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 4,
+  "redraw_ids": [
+   "R087",
+   "R088",
+   "R089",
+   "R090"
+  ],
+  "thumb": "thumbs/repos/my_article_04_adversarial_finance_attack.jpg",
+  "status": "redraw",
+  "checked_at": "2026-11-05",
+  "site_title": "AI FinSec Lab — 금융 이상탐지 모델 보안 · 인터랙티브 해설",
+  "ontology": {
+   "status": "partial",
+   "pages_with_kg": 1,
+   "pages_total": 2,
+   "pages_checked": 2,
+   "kg_links": [
+    "https://adminmrobo.github.io/my_article_04_adversarial_finance_attack/01_adversarial_finance.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/my_article_04_adversarial_finance_attack/01_adversarial_finance.html#export"
+   ],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "count": 7,
+   "pages": {
+    "ko": 2,
+    "en": 1,
+    "zh": 1,
+    "ja": 1,
+    "uz": 1,
+    "ru": 1,
+    "vi": 1
+   },
+   "partial": [
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "complete": false,
+   "readme_langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "links": {
+    "ko": "https://adminmrobo.github.io/my_article_04_adversarial_finance_attack/index.html",
+    "en": "https://adminmrobo.github.io/my_article_04_adversarial_finance_attack/01_adversarial_finance.en.html",
+    "zh": "https://adminmrobo.github.io/my_article_04_adversarial_finance_attack/01_adversarial_finance.zh.html",
+    "ja": "https://adminmrobo.github.io/my_article_04_adversarial_finance_attack/01_adversarial_finance.ja.html",
+    "uz": "https://adminmrobo.github.io/my_article_04_adversarial_finance_attack/01_adversarial_finance.uz.html",
+    "ru": "https://adminmrobo.github.io/my_article_04_adversarial_finance_attack/01_adversarial_finance.ru.html",
+    "vi": "https://adminmrobo.github.io/my_article_04_adversarial_finance_attack/01_adversarial_finance.vi.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "count": 7,
+   "complete": false,
+   "pages_by_lang": {
+    "ko": 2,
+    "en": 1,
+    "zh": 1,
+    "ja": 1,
+    "uz": 1,
+    "ru": 1,
+    "vi": 1
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "my_article_05_consumer_expenditure_predict",
+  "series_ko": "논문 해설 05 · 가구 소비지출 예측",
+  "title_ko": "노후 가계부와 AI 예측 모형 — KReIS",
+  "repo_url": "https://github.com/adminmrobo/my_article_05_consumer_expenditure_predict",
+  "pages_url": "https://adminmrobo.github.io/my_article_05_consumer_expenditure_predict/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T11:31:09+09:00",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "og_01.png",
+    "role": "og",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 3,
+  "redraw_ids": [
+   "R091",
+   "R092",
+   "R093"
+  ],
+  "thumb": "thumbs/repos/my_article_05_consumer_expenditure_predict.jpg",
+  "status": "redraw",
+  "checked_at": "2026-11-05",
+  "site_title": "노후 가계부와 AI 예측 모형 — KReIS",
+  "ontology": {
+   "status": "full",
+   "pages_with_kg": 1,
+   "pages_total": 1,
+   "pages_checked": 1,
+   "kg_links": [
+    "https://adminmrobo.github.io/my_article_05_consumer_expenditure_predict/01_kreis_expenditure.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/my_article_05_consumer_expenditure_predict/01_kreis_expenditure.html#export"
+   ],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "count": 7,
+   "pages": {
+    "ko": 1,
+    "en": 1,
+    "zh": 1,
+    "ja": 1,
+    "uz": 1,
+    "ru": 1,
+    "vi": 1
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "links": {
+    "ko": "https://adminmrobo.github.io/my_article_05_consumer_expenditure_predict/01_kreis_expenditure.html",
+    "en": "https://adminmrobo.github.io/my_article_05_consumer_expenditure_predict/01_kreis_expenditure.en.html",
+    "zh": "https://adminmrobo.github.io/my_article_05_consumer_expenditure_predict/01_kreis_expenditure.zh.html",
+    "ja": "https://adminmrobo.github.io/my_article_05_consumer_expenditure_predict/01_kreis_expenditure.ja.html",
+    "uz": "https://adminmrobo.github.io/my_article_05_consumer_expenditure_predict/01_kreis_expenditure.uz.html",
+    "ru": "https://adminmrobo.github.io/my_article_05_consumer_expenditure_predict/01_kreis_expenditure.ru.html",
+    "vi": "https://adminmrobo.github.io/my_article_05_consumer_expenditure_predict/01_kreis_expenditure.vi.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "count": 7,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 1,
+    "en": 1,
+    "zh": 1,
+    "ja": 1,
+    "uz": 1,
+    "ru": 1,
+    "vi": 1
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "my_article_06_AI_effect_to_labor_demand",
+  "series_ko": "조건부 노동수요와 생성형 AI — 산업별 구인수요의 반사실 실험실 · 7개 언어판",
+  "title_ko": "조건부 노동수요와 생성형 AI — 산업별 구인수요의 반사실 실험실 · 7개 언어판",
+  "repo_url": "https://github.com/adminmrobo/my_article_06_AI_effect_to_labor_demand",
+  "pages_url": "https://adminmrobo.github.io/my_article_06_AI_effect_to_labor_demand/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T01:30:26+09:00",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "hero_01_ledger.webp",
+    "role": "hero",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 1,
+  "redraw_ids": [
+   "R071"
+  ],
+  "thumb": "thumbs/repos/my_article_06_AI_effect_to_labor_demand.jpg",
+  "status": "redraw",
+  "checked_at": "2026-11-05",
+  "site_title": "조건부 노동수요와 생성형 AI — 산업별 구인수요의 반사실 실험실 · 7개 언어판",
+  "ontology": {
+   "status": "partial",
+   "pages_with_kg": 1,
+   "pages_total": 2,
+   "pages_checked": 2,
+   "kg_links": [
+    "https://adminmrobo.github.io/my_article_06_AI_effect_to_labor_demand/01_labor_demand_ai.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/my_article_06_AI_effect_to_labor_demand/01_labor_demand_ai.html#export"
+   ],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "count": 7,
+   "pages": {
+    "ko": 2,
+    "en": 1,
+    "zh": 1,
+    "ja": 1,
+    "uz": 1,
+    "ru": 1,
+    "vi": 1
+   },
+   "partial": [
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "complete": false,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/my_article_06_AI_effect_to_labor_demand/index.html",
+    "en": "https://adminmrobo.github.io/my_article_06_AI_effect_to_labor_demand/01_labor_demand_ai.en.html",
+    "zh": "https://adminmrobo.github.io/my_article_06_AI_effect_to_labor_demand/01_labor_demand_ai.zh.html",
+    "ja": "https://adminmrobo.github.io/my_article_06_AI_effect_to_labor_demand/01_labor_demand_ai.ja.html",
+    "uz": "https://adminmrobo.github.io/my_article_06_AI_effect_to_labor_demand/01_labor_demand_ai.uz.html",
+    "ru": "https://adminmrobo.github.io/my_article_06_AI_effect_to_labor_demand/01_labor_demand_ai.ru.html",
+    "vi": "https://adminmrobo.github.io/my_article_06_AI_effect_to_labor_demand/01_labor_demand_ai.vi.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "count": 7,
+   "complete": false,
+   "pages_by_lang": {
+    "ko": 2,
+    "en": 1,
+    "zh": 1,
+    "ja": 1,
+    "uz": 1,
+    "ru": 1,
+    "vi": 1
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "my_article_07_media_blockchain",
+  "series_ko": "논문 해설 07 · 미디어 블록체인",
+  "title_ko": "미디어 토큰 경제 연구실 · 미디어 콘텐츠 기반의 블록체인 토큰의 경제적 성과 분석 — 가격 변동성 및 탈중앙화 성과를 중심으로",
+  "repo_url": "https://github.com/adminmrobo/my_article_07_media_blockchain",
+  "pages_url": "https://adminmrobo.github.io/my_article_07_media_blockchain/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T01:31:38+09:00",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "img/og_01.jpg",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "img/og_02.jpg",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "img/og_03.jpg",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "img/og_04.jpg",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "img/og_index.jpg",
+    "role": "og",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 5,
+  "redraw_ids": [
+   "R094",
+   "R095",
+   "R096",
+   "R097",
+   "R098"
+  ],
+  "thumb": "thumbs/repos/my_article_07_media_blockchain.jpg",
+  "status": "redraw",
+  "checked_at": "2026-11-05",
+  "site_title": "미디어 토큰 경제 연구실 · 미디어 콘텐츠 기반의 블록체인 토큰의 경제적 성과 분석 — 가격 변동성 및 탈중앙화 성과를 중심으로",
+  "ontology": {
+   "status": "partial",
+   "pages_with_kg": 4,
+   "pages_total": 5,
+   "pages_checked": 5,
+   "kg_links": [
+    "https://adminmrobo.github.io/my_article_07_media_blockchain/01_steem_reward_tokens.html#kg",
+    "https://adminmrobo.github.io/my_article_07_media_blockchain/02_volatility_garch.html#kg",
+    "https://adminmrobo.github.io/my_article_07_media_blockchain/03_efficient_market_news.html#kg",
+    "https://adminmrobo.github.io/my_article_07_media_blockchain/04_decentralization_gini.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/my_article_07_media_blockchain/01_steem_reward_tokens.html#export",
+    "https://adminmrobo.github.io/my_article_07_media_blockchain/02_volatility_garch.html#export",
+    "https://adminmrobo.github.io/my_article_07_media_blockchain/03_efficient_market_news.html#export",
+    "https://adminmrobo.github.io/my_article_07_media_blockchain/04_decentralization_gini.html#export"
+   ],
+   "files": [
+    {
+     "path": "KG_00_registry.json",
+     "url": "https://github.com/adminmrobo/my_article_07_media_blockchain/blob/main/KG_00_registry.json"
+    }
+   ]
+  },
+  "i18n": {
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "count": 7,
+   "pages": {
+    "ko": 5,
+    "en": 5,
+    "zh": 5,
+    "ja": 5,
+    "uz": 5,
+    "ru": 5,
+    "vi": 5
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "links": {
+    "ko": "https://adminmrobo.github.io/my_article_07_media_blockchain/index.html",
+    "en": "https://adminmrobo.github.io/my_article_07_media_blockchain/index.en.html",
+    "zh": "https://adminmrobo.github.io/my_article_07_media_blockchain/index.zh.html",
+    "ja": "https://adminmrobo.github.io/my_article_07_media_blockchain/index.ja.html",
+    "uz": "https://adminmrobo.github.io/my_article_07_media_blockchain/index.uz.html",
+    "ru": "https://adminmrobo.github.io/my_article_07_media_blockchain/index.ru.html",
+    "vi": "https://adminmrobo.github.io/my_article_07_media_blockchain/index.vi.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "count": 7,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 5,
+    "en": 5,
+    "zh": 5,
+    "ja": 5,
+    "uz": 5,
+    "ru": 5,
+    "vi": 5
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "my_article_08_poll_reweighting_lab",
+  "series_ko": "논문 해설 08 · 여론조사 보정 연구실",
+  "title_ko": "여론조사 보정 연구실",
+  "repo_url": "https://github.com/adminmrobo/my_article_08_poll_reweighting_lab",
+  "pages_url": "https://adminmrobo.github.io/my_article_08_poll_reweighting_lab/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T11:31:13+09:00",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "images/cover_frame.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "images/cover_frame_800.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "images/cover_index.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "images/cover_index_800.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "images/cover_x1_c1.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "images/cover_x1_c1_800.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "images/cover_x1_c2.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "images/cover_x1_c2_800.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "images/cover_x1_c3.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "images/cover_x1_c3_800.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "images/cover_x1_c4.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "images/cover_x1_c4_800.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "images/cover_x1_c5.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "images/cover_x1_c5_800.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "images/cover_x1_c6.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "images/cover_x1_c6_800.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "docs/images/og_x1.png",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "docs/images/thumb_x1.png",
+    "role": "thumb",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 8,
+  "redraw_ids": [
+   "R099",
+   "R100",
+   "R101",
+   "R102",
+   "R103",
+   "R104",
+   "R105",
+   "R106"
+  ],
+  "thumb": "thumbs/repos/my_article_08_poll_reweighting_lab.jpg",
+  "status": "redraw",
+  "checked_at": "2026-11-05",
+  "site_title": "여론조사 보정 연구실",
+  "ontology": {
+   "status": "partial",
+   "pages_with_kg": 1,
+   "pages_total": 3,
+   "pages_checked": 3,
+   "kg_links": [
+    "https://adminmrobo.github.io/my_article_08_poll_reweighting_lab/X1_poll_reweighting.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/my_article_08_poll_reweighting_lab/X1_poll_reweighting.html#export"
+   ],
+   "files": [
+    {
+     "path": "docs/KG_00_registry_X1_additions.json",
+     "url": "https://github.com/adminmrobo/my_article_08_poll_reweighting_lab/blob/main/docs/KG_00_registry_X1_additions.json"
+    }
+   ]
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 3
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/my_article_08_poll_reweighting_lab/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 3
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "neural_network_atlas",
+  "series_ko": "신경망 구조 도감 · 초파리 로봇 대전",
+  "title_ko": "신경망 구조 도감 · 초파리 로봇 대전",
+  "repo_url": "https://github.com/adminmrobo/neural_network_atlas",
+  "pages_url": "https://adminmrobo.github.io/neural_network_atlas/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T00:48:01+09:00",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-05",
+  "site_title": "신경망 구조 도감 · 초파리 로봇 대전",
+  "ontology": {
+   "status": "partial",
+   "pages_with_kg": 4,
+   "pages_total": 5,
+   "pages_checked": 5,
+   "kg_links": [
+    "https://adminmrobo.github.io/neural_network_atlas/1_neural_network_atlas_chart.html#kg",
+    "https://adminmrobo.github.io/neural_network_atlas/2_neural_network_atlas_after.html#kg",
+    "https://adminmrobo.github.io/neural_network_atlas/3_fruitfly_robot_rules.html#kg",
+    "https://adminmrobo.github.io/neural_network_atlas/4_fruitfly_robot_match.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/neural_network_atlas/1_neural_network_atlas_chart.html#export",
+    "https://adminmrobo.github.io/neural_network_atlas/2_neural_network_atlas_after.html#export",
+    "https://adminmrobo.github.io/neural_network_atlas/3_fruitfly_robot_rules.html#export",
+    "https://adminmrobo.github.io/neural_network_atlas/4_fruitfly_robot_match.html#export"
+   ],
+   "files": [
+    {
+     "path": "docs/KG_00_registry.json",
+     "url": "https://github.com/adminmrobo/neural_network_atlas/blob/main/docs/KG_00_registry.json"
+    }
+   ]
+  },
+  "i18n": {
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "count": 7,
+   "pages": {
+    "ko": 5,
+    "en": 5,
+    "zh": 5,
+    "ja": 5,
+    "uz": 5,
+    "ru": 5,
+    "vi": 5
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "links": {
+    "ko": "https://adminmrobo.github.io/neural_network_atlas/index.html",
+    "en": "https://adminmrobo.github.io/neural_network_atlas/index.en.html",
+    "zh": "https://adminmrobo.github.io/neural_network_atlas/index.zh.html",
+    "ja": "https://adminmrobo.github.io/neural_network_atlas/index.ja.html",
+    "uz": "https://adminmrobo.github.io/neural_network_atlas/index.uz.html",
+    "ru": "https://adminmrobo.github.io/neural_network_atlas/index.ru.html",
+    "vi": "https://adminmrobo.github.io/neural_network_atlas/index.vi.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "count": 7,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 5,
+    "en": 5,
+    "zh": 5,
+    "ja": 5,
+    "uz": 5,
+    "ru": 5,
+    "vi": 5
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "statistics_note_ch03_discrete-probability-distribution",
+  "series_ko": "우연의 과학통계학",
+  "title_ko": "우연의 과학통계학",
+  "repo_url": "https://github.com/adminmrobo/statistics_note_ch03_discrete-probability-distribution",
+  "pages_url": "https://adminmrobo.github.io/statistics_note_ch03_discrete-probability-distribution/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T00:55:04+09:00",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "assets/og_1_1.png",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "assets/og_1_1_2.png",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "assets/og_1_2.png",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "assets/thumb_1_1.png",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "assets/thumb_1_1_2.png",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "assets/thumb_1_2.png",
+    "role": "thumb",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": "thumbs/repos/statistics_note_ch03_discrete-probability-distribution.jpg",
+  "status": "ok",
+  "checked_at": "2026-11-05",
+  "site_title": "우연의 과학통계학",
+  "ontology": {
+   "status": "partial",
+   "pages_with_kg": 2,
+   "pages_total": 3,
+   "pages_checked": 3,
+   "kg_links": [
+    "https://adminmrobo.github.io/statistics_note_ch03_discrete-probability-distribution/1-1_discrete_distributions.html#kg",
+    "https://adminmrobo.github.io/statistics_note_ch03_discrete-probability-distribution/1-2_pmf_pdf.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/statistics_note_ch03_discrete-probability-distribution/1-1_discrete_distributions.html#export",
+    "https://adminmrobo.github.io/statistics_note_ch03_discrete-probability-distribution/1-2_pmf_pdf.html#export"
+   ],
+   "files": [
+    {
+     "path": "production/KG_00_registry.json",
+     "url": "https://github.com/adminmrobo/statistics_note_ch03_discrete-probability-distribution/blob/main/production/KG_00_registry.json"
+    }
+   ]
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 3
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/statistics_note_ch03_discrete-probability-distribution/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 3
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "statistics_note_ch04_02",
+  "series_ko": "statistics_note_ch04_02",
+  "title_ko": null,
+  "repo_url": "https://github.com/adminmrobo/statistics_note_ch04_02",
+  "pages_url": "https://adminmrobo.github.io/statistics_note_ch04_02/",
+  "default_branch": null,
+  "pushed_at": null,
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-05",
+  "local_copy": false,
+  "site_title": null,
+  "ontology": null,
+  "i18n": null,
+  "languages": null,
+  "note": "로컬 사본 없음 (빈 저장소이거나 받기 실패) — 다음 API 수집 때 채워짐"
+ },
+ {
+  "repo": "statistics_note_ch04_Statistical-Estimation_01_a",
+  "series_ko": "점추정과 신뢰구간",
+  "title_ko": "점추정과 신뢰구간",
+  "repo_url": "https://github.com/adminmrobo/statistics_note_ch04_Statistical-Estimation_01_a",
+  "pages_url": "https://adminmrobo.github.io/statistics_note_ch04_Statistical-Estimation_01_a/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T00:55:22+09:00",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-05",
+  "site_title": "점추정과 신뢰구간",
+  "ontology": {
+   "status": "full",
+   "pages_with_kg": 2,
+   "pages_total": 2,
+   "pages_checked": 2,
+   "kg_links": [
+    "https://adminmrobo.github.io/statistics_note_ch04_Statistical-Estimation_01_a/index.html#kg",
+    "https://adminmrobo.github.io/statistics_note_ch04_Statistical-Estimation_01_a/pages/2-1a_point_interval_estimation.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/statistics_note_ch04_Statistical-Estimation_01_a/index.html#export",
+    "https://adminmrobo.github.io/statistics_note_ch04_Statistical-Estimation_01_a/pages/2-1a_point_interval_estimation.html#export"
+   ],
+   "files": [
+    {
+     "path": "data/KG_00_registry.json",
+     "url": "https://github.com/adminmrobo/statistics_note_ch04_Statistical-Estimation_01_a/blob/main/data/KG_00_registry.json"
+    }
+   ]
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 2
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/statistics_note_ch04_Statistical-Estimation_01_a/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 2
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "who_am_i",
+  "series_ko": "초파리 연구원과 주판봇이 소개하는 안상선 (Reon Ahn)",
+  "title_ko": "초파리 연구원과 주판봇이 소개하는 안상선 (Reon Ahn)",
+  "repo_url": "https://github.com/adminmrobo/who_am_i",
+  "pages_url": "https://adminmrobo.github.io/who_am_i/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T00:56:52+09:00",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-05",
+  "site_title": "초파리 연구원과 주판봇이 소개하는 안상선 (Reon Ahn)",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 1,
+   "pages_checked": 1,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "count": 6,
+   "pages": {
+    "ko": 1,
+    "en": 1,
+    "zh": 1,
+    "ja": 1,
+    "uz": 1,
+    "ru": 1
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/who_am_i/who_am_i.html",
+    "en": "https://adminmrobo.github.io/who_am_i/who_am_i.en.html",
+    "zh": "https://adminmrobo.github.io/who_am_i/who_am_i.zh.html",
+    "ja": "https://adminmrobo.github.io/who_am_i/who_am_i.ja.html",
+    "uz": "https://adminmrobo.github.io/who_am_i/who_am_i.uz.html",
+    "ru": "https://adminmrobo.github.io/who_am_i/who_am_i.ru.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "count": 6,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 1,
+    "en": 1,
+    "zh": 1,
+    "ja": 1,
+    "uz": 1,
+    "ru": 1
+   }
+  },
+  "local_copy": true
+ },
+ {
+  "repo": "who_am_i_package",
+  "series_ko": "who_am_i_package",
+  "title_ko": null,
+  "repo_url": "https://github.com/adminmrobo/who_am_i_package",
+  "pages_url": "https://adminmrobo.github.io/who_am_i_package/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-05T00:56:36+09:00",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "img/sc_night.webp",
+    "role": "scene",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": "thumbs/repos/who_am_i_package.jpg",
+  "status": "ok",
+  "checked_at": "2026-11-05",
+  "site_title": "초파리 연구원과 주판봇이 소개하는 안상선 (Reon Ahn)",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 2,
+   "pages_checked": 2,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 2
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/who_am_i_package/template.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 2
+   }
+  },
+  "local_copy": true
+ }
+]

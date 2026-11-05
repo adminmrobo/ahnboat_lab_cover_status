@@ -1,0 +1,365 @@
+[
+ {
+  "id": "MEbwkVpxzsXQQKXhBnfKte",
+  "kind": "web_page",
+  "series_ko": "웹 결과물 페이지",
+  "title_ko": "AI(인공지능) x 비즈니스 #1 인슈어테크_01_분류모델",
+  "money_robo_text": 0,
+  "robo_sprites": "old-moneyrobo",
+  "scene_images_old_robot": 13,
+  "redraw_ids": [
+   "R045",
+   "R049",
+   "R050",
+   "R051",
+   "R052",
+   "R053",
+   "R054"
+  ],
+  "note": "published robo_*.webp sprites are old Money-Robo; hero/c/s scenes = R045, R049-R054",
+  "checked_at": "2026-11-05"
+ },
+ {
+  "id": "EkwoC9Ef95mTtGVeNPthGV",
+  "kind": "web_page",
+  "series_ko": "웹 결과물 페이지",
+  "title_ko": "데이터로 말 걸기",
+  "money_robo_text": 16,
+  "robo_sprites": "old-moneyrobo",
+  "scene_images_old_robot": 7,
+  "redraw_ids": [
+   "A005",
+   "A006",
+   "A007",
+   "A008",
+   "A009",
+   "A010",
+   "A011"
+  ],
+  "note": "",
+  "checked_at": "2026-11-05"
+ },
+ {
+  "id": "GRGi7knVdymBFqfNMy4Zjd",
+  "kind": "web_page",
+  "series_ko": "웹 결과물 페이지",
+  "title_ko": "인슈어테크 #3 | 처음 화면",
+  "money_robo_text": 0,
+  "robo_sprites": "pack-1.3",
+  "scene_images_old_robot": 13,
+  "redraw_ids": [
+   "R047",
+   "R060",
+   "R061",
+   "R062",
+   "R063",
+   "R064",
+   "R065"
+  ],
+  "note": "page text says Money-Robo was replaced by 주판봇, sprites are pack-1.3, but hero/c1-c6/s1-s6 scenes still show the old robot (= R047, R060-R065)",
+  "checked_at": "2026-11-05"
+ },
+ {
+  "id": "Y33kkpCjbbdXvox3AgXWqX",
+  "kind": "web_page",
+  "series_ko": "웹 결과물 페이지",
+  "title_ko": "AI(인공지능) x 비즈니스 #1 인슈어테크_02_분류모델_실전",
+  "money_robo_text": 0,
+  "robo_sprites": "old-moneyrobo",
+  "scene_images_old_robot": 11,
+  "redraw_ids": [
+   "R046",
+   "R055",
+   "R056",
+   "R057",
+   "R058",
+   "R059"
+  ],
+  "note": "published robo_*.webp sprites are old Money-Robo; hero/c/s scenes = R046, R055-R059",
+  "checked_at": "2026-11-05"
+ },
+ {
+  "id": "QWaKXkeeveRGAQvwCv5zAu",
+  "kind": "web_page",
+  "series_ko": "웹 결과물 페이지",
+  "title_ko": "여론조사 보정 사다리",
+  "money_robo_text": 0,
+  "robo_sprites": "pack-1.3",
+  "scene_images_old_robot": 6,
+  "redraw_ids": [
+   "R101",
+   "R102",
+   "R103",
+   "R104",
+   "R105",
+   "R106"
+  ],
+  "note": "6 covers (+6 _800 srcset copies) = R101-R106",
+  "checked_at": "2026-11-05"
+ },
+ {
+  "id": "WVBJ4bKmyQjXeLA2w8Hfuk",
+  "kind": "web_page",
+  "series_ko": "웹 결과물 페이지",
+  "title_ko": "여론조사 보정 사다리",
+  "money_robo_text": 16,
+  "robo_sprites": "old-moneyrobo",
+  "scene_images_old_robot": 6,
+  "redraw_ids": [
+   "R101",
+   "R102",
+   "R103",
+   "R104",
+   "R105",
+   "R106"
+  ],
+  "note": "6 covers (+6 _800 srcset copies), same paths/byte sizes as QWaK copy = R101-R106 (not re-downloaded)",
+  "checked_at": "2026-11-05"
+ },
+ {
+  "id": "3w6pMnXK4NH8ngedu8qoxB",
+  "kind": "web_page",
+  "series_ko": "웹 결과물 페이지",
+  "title_ko": "인슈어테크 #4 실전 | 처음 화면",
+  "money_robo_text": 0,
+  "robo_sprites": "pack-1.3",
+  "scene_images_old_robot": 11,
+  "redraw_ids": [
+   "R048",
+   "R066",
+   "R067",
+   "R068",
+   "R069",
+   "R070"
+  ],
+  "note": "sprites pack-1.3; hero/c1-c5/s1-s5 scenes show the old robot (= R048, R066-R070; c2/c3 are crops of s2/s3)",
+  "checked_at": "2026-11-05"
+ },
+ {
+  "id": "EoD7xFnPYf2PBqZREtVihm",
+  "kind": "web_page",
+  "series_ko": "웹 결과물 페이지",
+  "title_ko": "6-0 2차 채용 공고 · 딥러닝 치트시트 | 모델 채용 위원회 2차 공채",
+  "money_robo_text": 0,
+  "robo_sprites": "old-moneyrobo",
+  "scene_images_old_robot": 1,
+  "redraw_ids": [
+   "R007"
+  ],
+  "note": "sc_meeting 760x507 = R007",
+  "checked_at": "2026-11-05"
+ },
+ {
+  "id": "WTPUbXzM7LajYTwL6F3R4N",
+  "kind": "web_page",
+  "series_ko": "웹 결과물 페이지",
+  "title_ko": "강화학습이 꿰는 실",
+  "money_robo_text": 0,
+  "robo_sprites": "pack-1.3",
+  "scene_images_old_robot": 1,
+  "redraw_ids": [
+   "A004"
+  ],
+  "note": "",
+  "checked_at": "2026-11-05"
+ },
+ {
+  "id": "UM1D2c2VbvpQch34nv72kJ",
+  "kind": "web_page",
+  "series_ko": "웹 결과물 페이지",
+  "title_ko": "눈금을 맞추는 저울",
+  "money_robo_text": 0,
+  "robo_sprites": "pack-1.3",
+  "scene_images_old_robot": 1,
+  "redraw_ids": [
+   "A003"
+  ],
+  "note": "",
+  "checked_at": "2026-11-05"
+ },
+ {
+  "id": "51VEfgYQTwfM1n19eYNqgq",
+  "kind": "web_page",
+  "series_ko": "웹 결과물 페이지",
+  "title_ko": "보는 법을 배우는 기계",
+  "money_robo_text": 0,
+  "robo_sprites": "pack-1.3",
+  "scene_images_old_robot": 1,
+  "redraw_ids": [
+   "A002"
+  ],
+  "note": "",
+  "checked_at": "2026-11-05"
+ },
+ {
+  "id": "5fNUgC2C8nHeNH9YK2qusk",
+  "kind": "web_page",
+  "series_ko": "웹 결과물 페이지",
+  "title_ko": "태엽 기계와 rule base",
+  "money_robo_text": 0,
+  "robo_sprites": "pack-1.3",
+  "scene_images_old_robot": 1,
+  "redraw_ids": [
+   "A001"
+  ],
+  "note": "",
+  "checked_at": "2026-11-05"
+ },
+ {
+  "id": "5SKmVg55FAw1Wb1gRSpv5b",
+  "kind": "web_page",
+  "series_ko": "웹 결과물 페이지",
+  "title_ko": "AI(인공지능) x 비즈니스 #1 인슈어테크_02_회귀모델",
+  "money_robo_text": 0,
+  "robo_sprites": "old-moneyrobo",
+  "scene_images_old_robot": 0,
+  "redraw_ids": [],
+  "note": "published robo_*.webp sprites old Money-Robo; no scene images published",
+  "checked_at": "2026-11-05"
+ },
+ {
+  "id": "NjdFYTHDWsQiDU1FppnL3V",
+  "kind": "web_page",
+  "series_ko": "웹 결과물 페이지",
+  "title_ko": "AI(인공지능) x 비즈니스 #1 인슈어테크_02_회귀모델_실전",
+  "money_robo_text": 0,
+  "robo_sprites": "old-moneyrobo",
+  "scene_images_old_robot": 0,
+  "redraw_ids": [],
+  "note": "published robo_*.webp sprites old Money-Robo; no scene images published (sub-pages reference none)",
+  "checked_at": "2026-11-05"
+ },
+ {
+  "id": "YMurYS27PHGiwhe4hv29pi",
+  "kind": "web_page",
+  "series_ko": "웹 결과물 페이지",
+  "title_ko": "Ahn Lab Town",
+  "money_robo_text": 2,
+  "robo_sprites": "old-moneyrobo",
+  "scene_images_old_robot": 0,
+  "redraw_ids": [],
+  "note": "Money-Robo is a town character (role table, data terminal label); 2 old robot sprites",
+  "checked_at": "2026-11-05"
+ },
+ {
+  "id": "1EskA5tFHqeWbUoua9EPXg",
+  "kind": "web_page",
+  "series_ko": "웹 결과물 페이지",
+  "title_ko": "Reon Ahn's Lab",
+  "money_robo_text": 2,
+  "robo_sprites": "none",
+  "scene_images_old_robot": 0,
+  "redraw_ids": [],
+  "note": "no images; Money-Robo named as a lab member in intro text and role table (canvas-drawn characters)",
+  "checked_at": "2026-11-05"
+ },
+ {
+  "id": "JPKuvYThdUw7NSbCRr1CgH",
+  "kind": "web_page",
+  "series_ko": "웹 결과물 페이지",
+  "title_ko": "간편결제의 장부",
+  "money_robo_text": 17,
+  "robo_sprites": "old-moneyrobo",
+  "scene_images_old_robot": 0,
+  "redraw_ids": [],
+  "note": "hero <canvas id=heroArt data-img=sc_07_hero> draws Money-Robo + gold coins in JS (code art)",
+  "checked_at": "2026-11-05"
+ },
+ {
+  "id": "HpuJrbMEDu96hMnwc6rPoK",
+  "kind": "web_page",
+  "series_ko": "웹 결과물 페이지",
+  "title_ko": "단어에 주소를 붙이는 법",
+  "money_robo_text": 0,
+  "robo_sprites": "jupanbot-v1",
+  "scene_images_old_robot": 0,
+  "redraw_ids": [],
+  "note": "rule-base series page still on jupanbot-v1 vector sprites",
+  "checked_at": "2026-11-05"
+ },
+ {
+  "id": "8CCXBMMA2CEtKbjNsJ43a9",
+  "kind": "web_page",
+  "series_ko": "웹 결과물 페이지",
+  "title_ko": "로보어드바이저",
+  "money_robo_text": 20,
+  "robo_sprites": "old-moneyrobo",
+  "scene_images_old_robot": 0,
+  "redraw_ids": [],
+  "note": "hero <canvas id=heroArt> draws Money-Robo with gold-coin towers in JS (code art, not an image file); scene stages are sprite compositions",
+  "checked_at": "2026-11-05"
+ },
+ {
+  "id": "PJVUtHRbKkMfi5yB6zr4dK",
+  "kind": "web_page",
+  "series_ko": "웹 결과물 페이지",
+  "title_ko": "모르면 묻는 로봇",
+  "money_robo_text": 15,
+  "robo_sprites": "old-moneyrobo",
+  "scene_images_old_robot": 0,
+  "redraw_ids": [],
+  "note": "hero <canvas id=heroArt> draws Money-Robo + gold coins in JS (code art)",
+  "checked_at": "2026-11-05"
+ },
+ {
+  "id": "KHyWL8TnuWSLJYTYdBGr5D",
+  "kind": "web_page",
+  "series_ko": "웹 결과물 페이지",
+  "title_ko": "블록체인 장부 사다리",
+  "money_robo_text": 17,
+  "robo_sprites": "old-moneyrobo",
+  "scene_images_old_robot": 0,
+  "redraw_ids": [],
+  "note": "",
+  "checked_at": "2026-11-05"
+ },
+ {
+  "id": "A5wJAw6TtnRQ4QVff7QMpw",
+  "kind": "web_page",
+  "series_ko": "웹 결과물 페이지",
+  "title_ko": "신경망은 틀리면서 배운다",
+  "money_robo_text": 0,
+  "robo_sprites": "old-moneyrobo",
+  "scene_images_old_robot": 0,
+  "redraw_ids": [],
+  "note": "ROBO pose map (smile/happy/.../chart/count/stack, 156-300px) is old Money-Robo; no scene shows the robot",
+  "checked_at": "2026-11-05"
+ },
+ {
+  "id": "1RArU1XLpTKx1g8aeJ8h2x",
+  "kind": "web_page",
+  "series_ko": "웹 결과물 페이지",
+  "title_ko": "영역 지도 합치기",
+  "money_robo_text": 1,
+  "robo_sprites": "none",
+  "scene_images_old_robot": 0,
+  "redraw_ids": [],
+  "note": "one dialogue line spoken by Money-Robo",
+  "checked_at": "2026-11-05"
+ },
+ {
+  "id": "XhhCchMJed4GJZZrMPoz8A",
+  "kind": "web_page",
+  "series_ko": "웹 결과물 페이지",
+  "title_ko": "초파리 연구실 작업 지도",
+  "money_robo_text": 1,
+  "robo_sprites": "none",
+  "scene_images_old_robot": 0,
+  "redraw_ids": [],
+  "note": "one dialogue line spoken by Money-Robo",
+  "checked_at": "2026-11-05"
+ },
+ {
+  "id": "dlss-rendering-trilogy",
+  "kind": "zip",
+  "series_ko": "AI 렌더링 연구실 (DLSS 3부작)",
+  "title_ko": "비지도학습 → 렌더링 → DLSS 3부작",
+  "url": null,
+  "money_robo_text": null,
+  "robo_sprites": null,
+  "scene_images_old_robot": null,
+  "redraw_ids": [],
+  "note": "GitHub 없음, zip만 있음. 표지·장면 그림 확인 안 됨.",
+  "checked_at": "2026-11-05"
+ }
+]
