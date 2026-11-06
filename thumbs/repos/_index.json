@@ -1,0 +1,343 @@
+{
+ "ahn_boat_lab_town": {
+  "src": "redraw:R019:assets/cut1_panic.webp",
+  "pushed_at": "2026-11-05T11:16:33Z",
+  "made": "2026-11-07"
+ },
+ "ahnboat_lab_character_add_packs": {
+  "src": null,
+  "pushed_at": "2026-11-02T03:02:54Z"
+ },
+ "ahnboat_lab_explainer": {
+  "src": null,
+  "pushed_at": "2026-11-05T12:47:56Z"
+ },
+ "ahnboat_lab_langpack": {
+  "src": null,
+  "pushed_at": "2026-11-04T14:31:47Z"
+ },
+ "ahnboat_lab_town_floor_b01": {
+  "src": null,
+  "pushed_at": "2026-10-28T10:45:21Z"
+ },
+ "ai_for_cement_produce_07": {
+  "src": null,
+  "pushed_at": "2026-11-05T11:16:36Z"
+ },
+ "ai_for_cement_produce_08": {
+  "src": null,
+  "pushed_at": "2026-11-05T11:16:41Z"
+ },
+ "AI_image_classification": {
+  "src": "embedded:index.html#hero",
+  "pushed_at": "2026-10-08T12:08:40Z",
+  "made": "2026-11-07"
+ },
+ "AI_Model_Review": {
+  "src": "embedded:index.html#hero",
+  "pushed_at": "2026-10-08T12:11:10Z",
+  "made": "2026-11-07"
+ },
+ "AI_Model_Review_Fruit_fly_special": {
+  "src": "embedded:index.html#hero",
+  "pushed_at": "2026-11-01T14:00:36Z",
+  "made": "2026-11-07"
+ },
+ "ai_rendering": {
+  "src": null,
+  "pushed_at": "2026-11-02T03:09:58Z"
+ },
+ "article_02_crypto_asset_price_predict": {
+  "src": null,
+  "pushed_at": "2026-10-22T14:40:31Z"
+ },
+ "blockchain_finance_ch01": {
+  "src": null,
+  "pushed_at": "2026-11-05T11:16:46Z"
+ },
+ "blockchain_finance_ch02": {
+  "src": null,
+  "pushed_at": "2026-11-05T11:16:50Z"
+ },
+ "blockchain_finance_ch03": {
+  "src": null,
+  "pushed_at": "2026-11-05T11:16:53Z"
+ },
+ "data_set_2024_fintech": {
+  "src": null,
+  "pushed_at": "2024-07-19T11:29:10Z"
+ },
+ "Data_visuialization_lecture_01": {
+  "src": "redraw:R001:en/week1_index.html#hero-img",
+  "pushed_at": "2026-11-05T11:14:57Z",
+  "made": "2026-11-07"
+ },
+ "Data_visuialization_lecture_02": {
+  "src": "redraw:R002:en/week2_index.html#hero-img",
+  "pushed_at": "2026-11-05T11:15:19Z",
+  "made": "2026-11-07"
+ },
+ "Data_visuialization_lecture_03": {
+  "src": "embedded:week3_index.html#hero",
+  "pushed_at": "2026-11-05T11:15:29Z",
+  "made": "2026-11-07"
+ },
+ "Data_visuialization_lecture_04": {
+  "src": "redraw:R003:en/week4_index.html#hero-img",
+  "pushed_at": "2026-11-05T11:15:24Z",
+  "made": "2026-11-07"
+ },
+ "database_01of04": {
+  "src": "embedded:index.html#hero",
+  "pushed_at": "2026-10-19T10:06:42Z",
+  "made": "2026-11-07"
+ },
+ "deep_learning_00_neural_net_learns": {
+  "src": "redraw:R022:en/index.html#hero-img",
+  "pushed_at": "2026-11-05T11:17:18Z",
+  "made": "2026-11-07"
+ },
+ "DL_model_hiring_committee": {
+  "src": "redraw:R007:6-0_job_posting.html#sc_meeting",
+  "pushed_at": "2026-11-05T11:15:14Z",
+  "made": "2026-11-07"
+ },
+ "drug-crime-social-cost": {
+  "src": null,
+  "pushed_at": "2026-11-05T18:14:05Z"
+ },
+ "fintech_business_01_payment": {
+  "src": null,
+  "pushed_at": "2026-11-05T11:17:04Z"
+ },
+ "Fish_Market_Data_Machine_Learning": {
+  "src": "embedded:index.html#hero",
+  "pushed_at": "2026-10-14T13:43:51Z",
+  "made": "2026-11-07"
+ },
+ "fruitfly-lab-expressions": {
+  "src": "file:.thumbnail.jpg",
+  "pushed_at": "2026-11-05T11:17:30Z",
+  "made": "2026-11-07"
+ },
+ "g2b-bid-strategy": {
+  "src": null,
+  "pushed_at": "2026-11-06T01:08:08Z"
+ },
+ "Gen_AI_Hannam_univ": {
+  "src": "embedded:index.html#hero",
+  "pushed_at": "2026-10-09T07:15:52Z",
+  "made": "2026-11-07"
+ },
+ "Gen_AI_strategy_ch05": {
+  "src": "redraw:R004:05_startup_prompt.html#cover_05",
+  "pushed_at": "2026-11-05T11:15:36Z",
+  "made": "2026-11-07"
+ },
+ "Gen_AI_strategy_ch06": {
+  "src": "og:og_06.webp",
+  "pushed_at": "2026-11-05T11:15:33Z",
+  "made": "2026-11-07"
+ },
+ "google-sheets-lab": {
+  "src": "redraw:R025:assets/covers/cover-index.webp",
+  "pushed_at": "2026-11-05T11:17:35Z",
+  "made": "2026-11-07"
+ },
+ "green_route": {
+  "src": null,
+  "pushed_at": "2025-12-07T14:22:07Z"
+ },
+ "inference_engineering_study_week_01_article_01": {
+  "src": "redraw:R037:images/sc_lb_hero.png",
+  "pushed_at": "2026-11-05T11:17:40Z",
+  "made": "2026-11-07"
+ },
+ "inference_engineering_study_week_01_textbook_ch00": {
+  "src": null,
+  "pushed_at": "2026-10-25T17:43:03Z"
+ },
+ "inference_engineering_study_week_01_textbook_ch01": {
+  "src": "redraw:R038:og_01.png",
+  "pushed_at": "2026-11-05T11:17:58Z",
+  "made": "2026-11-07"
+ },
+ "inference_engineering_study_week_01_textbook_preface": {
+  "src": null,
+  "pushed_at": "2026-10-25T17:43:36Z"
+ },
+ "inference_engineering_study_week_02_article_01": {
+  "src": "redraw:R039:assets/img/cover_01.webp",
+  "pushed_at": "2026-11-05T11:17:44Z",
+  "made": "2026-11-07"
+ },
+ "inference_engineering_study_week_02_textbook_ch02_p1_p2": {
+  "src": "redraw:R040:assets/img/src/cover_ch2_1920.png",
+  "pushed_at": "2026-11-05T11:17:48Z",
+  "made": "2026-11-07"
+ },
+ "inference_korea_study_page": {
+  "src": null,
+  "pushed_at": "2026-10-31T09:39:49Z"
+ },
+ "insurtech__case_classification_model_01": {
+  "src": "redraw:R045:assets/hero.webp",
+  "pushed_at": "2026-11-05T11:17:52Z",
+  "made": "2026-11-07"
+ },
+ "insurtech__case_classification_model_02": {
+  "src": "redraw:R046:assets/hero.webp",
+  "pushed_at": "2026-11-05T11:17:55Z",
+  "made": "2026-11-07"
+ },
+ "insurtech__case_regreesion_model_01": {
+  "src": "redraw:R047:assets/hero.webp",
+  "pushed_at": "2026-11-05T11:18:05Z",
+  "made": "2026-11-07"
+ },
+ "insurtech__case_regreesion_model_02": {
+  "src": "redraw:R048:assets/hero.webp",
+  "pushed_at": "2026-11-05T11:18:02Z",
+  "made": "2026-11-07"
+ },
+ "kma_2023_01": {
+  "src": null,
+  "pushed_at": "2023-07-28T07:40:49Z"
+ },
+ "kwangju_data_learn": {
+  "src": null,
+  "pushed_at": "2023-08-27T09:24:23Z"
+ },
+ "learn-pandas-visually_korean": {
+  "src": "redraw:R071:assets/hero/hero.jpg",
+  "pushed_at": "2026-11-05T11:18:08Z",
+  "made": "2026-11-07"
+ },
+ "learn-python-by-doing": {
+  "src": "redraw:R072:docs/assets/hero/hero.jpg",
+  "pushed_at": "2026-11-05T11:18:11Z",
+  "made": "2026-11-07"
+ },
+ "learn-python-by-doing_Korean": {
+  "src": "redraw:R073:docs/assets/hero/hero.jpg",
+  "pushed_at": "2026-11-05T11:18:15Z",
+  "made": "2026-11-07"
+ },
+ "LLM_evaluation": {
+  "src": null,
+  "pushed_at": "2026-11-05T13:38:26Z"
+ },
+ "ML_00_Algorithm-family-build_00": {
+  "src": "name:4-6_regression_seven.html/idx_hero_1280.png",
+  "pushed_at": "2026-11-05T11:15:44Z",
+  "made": "2026-11-07"
+ },
+ "ML_00_Algorithm-family-build_01": {
+  "src": "name:assets/sc_alley.webp",
+  "pushed_at": "2026-11-05T11:15:59Z",
+  "made": "2026-11-07"
+ },
+ "ML_00_Algorithm-family-build_02": {
+  "src": "name:assets/sc_alley.webp",
+  "pushed_at": "2026-11-05T11:15:51Z",
+  "made": "2026-11-07"
+ },
+ "ML_00_Algorithm-family-build_03": {
+  "src": "name:assets/sc_alley.webp",
+  "pushed_at": "2026-11-05T11:16:28Z",
+  "made": "2026-11-07"
+ },
+ "ML_model_hiring_committee": {
+  "src": "name:assets/sc_alley.webp",
+  "pushed_at": "2026-11-05T11:16:21Z",
+  "made": "2026-11-07"
+ },
+ "motion_ai_series_01": {
+  "src": "redraw:R074:5-2_recognize_to_generate.en.html#pixelart",
+  "pushed_at": "2026-10-08T12:06:17Z",
+  "made": "2026-11-07"
+ },
+ "my_article_00_Korean_stockmarket_volatility_study": {
+  "src": "redraw:R076:img/cover.jpg",
+  "pushed_at": "2026-11-05T11:18:20Z",
+  "made": "2026-11-07"
+ },
+ "my_article_01_bitcoin_price_analytics": {
+  "src": null,
+  "pushed_at": "2026-11-05T11:18:23Z"
+ },
+ "my_article_02_crypto_predict_model_analytics": {
+  "src": "redraw:R079:img/sc_01_hero.png",
+  "pushed_at": "2026-11-05T11:18:29Z",
+  "made": "2026-11-07"
+ },
+ "my_article_03_drug-slang-detection": {
+  "src": "redraw:R084:01_drug-slang-detection.en.html#sc_01_hero",
+  "pushed_at": "2026-11-05T11:18:47Z",
+  "made": "2026-11-07"
+ },
+ "my_article_04_adversarial_finance_attack": {
+  "src": "redraw:R087:sc_01_hero.png",
+  "pushed_at": "2026-11-05T11:18:36Z",
+  "made": "2026-11-07"
+ },
+ "my_article_05_consumer_expenditure_predict": {
+  "src": "redraw:R091:01_kreis_expenditure.en.html#img",
+  "pushed_at": "2026-11-05T11:18:42Z",
+  "made": "2026-11-07"
+ },
+ "my_article_06_AI_effect_to_labor_demand": {
+  "src": "redraw:R071:hero_01_ledger.webp",
+  "pushed_at": "2026-11-05T11:18:50Z",
+  "made": "2026-11-07"
+ },
+ "my_article_07_media_blockchain": {
+  "src": "redraw:R094:index.en.html#cover_index",
+  "pushed_at": "2026-11-05T11:19:02Z",
+  "made": "2026-11-07"
+ },
+ "my_article_08_poll_reweighting_lab": {
+  "src": "redraw:R099:images/cover_index.webp",
+  "pushed_at": "2026-11-05T11:19:05Z",
+  "made": "2026-11-07"
+ },
+ "neural_network_atlas": {
+  "src": null,
+  "pushed_at": "2026-11-05T11:19:25Z"
+ },
+ "statistics_note_ch03_discrete-probability-distribution": {
+  "src": "name:assets/og_1_1.png",
+  "pushed_at": "2026-11-05T11:19:09Z",
+  "made": "2026-11-07"
+ },
+ "statistics_note_ch04_02": {
+  "src": null,
+  "pushed_at": "2026-11-04T00:03:44Z"
+ },
+ "statistics_note_ch04_Statistical-Estimation_01_a": {
+  "src": null,
+  "pushed_at": "2026-11-05T11:19:12Z"
+ },
+ "test": {
+  "src": null,
+  "pushed_at": "2026-02-03T11:52:44Z"
+ },
+ "The-Ultimate-Bitcoin-Price-Prediction-Model": {
+  "src": null,
+  "pushed_at": "2026-03-02T12:35:34Z"
+ },
+ "usa_stock_reporter_project_python_version": {
+  "src": null,
+  "pushed_at": "2023-07-01T04:29:03Z"
+ },
+ "who_am_i": {
+  "src": "embedded:who_am_i.en.html#hero",
+  "pushed_at": "2026-11-05T11:19:16Z",
+  "made": "2026-11-07"
+ },
+ "who_am_i_package": {
+  "src": "name:img/sc_night.webp",
+  "pushed_at": "2026-11-05T11:19:20Z",
+  "made": "2026-11-07"
+ }
+}
