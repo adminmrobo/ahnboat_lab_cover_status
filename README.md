@@ -20,7 +20,9 @@
 1. adminmrobo의 공개 저장소를 모두 읽습니다 (`newsreporter_*`, 이 저장소, fork는 뺍니다).
 2. 저장소마다 `cover_manifest.json`을 읽습니다. 없으면 그림 파일 이름(`cover`·`og`·`hero`·`thumb`·`sc_`)으로 표지를 추정합니다.
 3. 사이트 HTML(저장소당 최대 40개)을 읽어 첫 페이지 제목, 온톨로지(`#kg`·`#export`, 온톨로지 파일), 번역 언어를 셉니다.
-4. 결과를 `data/repos.json`에 쓰고, 바뀐 것이 있으면 `github-actions[bot]`이 커밋합니다.
+4. 결과를 `data/repos.json`에 씁니다.
+5. 지난 수집 뒤로 바뀐 저장소만 받아 `scripts/make_thumbs.py`가 카드 대표 그림(`thumbs/repos/<저장소>.jpg`)을 다시 만듭니다. 썸네일은 **지금 사이트에 걸린 그림**을 기준으로 하며, 고르는 순서는 `cover_manifest.json`의 표지 → 다시 그리기 목록의 표지·첫 화면 그림 → `og:image` → 파일 이름(`cover`·`og`·`hero`·`thumb`, 없으면 `sc_`) → 본문 장면 → 페이지에 박힌 첫 화면 그림입니다. 무엇을 골랐는지는 `thumbs/repos/_index.json`에 남습니다.
+6. 바뀐 것이 있으면 `github-actions[bot]`이 커밋합니다.
 
 **새 해설 저장소를 만들 때 `cover_manifest.json`을 맨 위 폴더에 넣으면 다음 날 자동으로 잡힙니다.** 규격은 [`docs/cover_manifest_schema.md`](docs/cover_manifest_schema.md), 예시는 [`docs/cover_manifest.example.json`](docs/cover_manifest.example.json).
 
@@ -32,7 +34,8 @@
 | `data/external.json` | 관리자 | **GitHub 밖 시리즈** — 웹 결과물 페이지, zip으로만 전달한 시리즈(DLSS 3부작 등). 새 시리즈가 생기면 여기에 한 줄 더합니다 |
 | `data/redraw.json` | 관리자 | 다시 그릴 그림 117장 (프롬프트, 비율, 반영 위치 `targets`) |
 | `data/redraw_status.json` | 관리자 (커밋) | 그림별 진행 상태 `todo` / `received` / `applied`, 날짜, 메모 |
-| `thumbs/` | 관리자 | 카드 썸네일 (`R001.jpg`…, `A001.jpg`…, `repos/<저장소>.jpg`, `refs/` 참조 그림) |
+| `data/old_robot.json` | 관리자 | 다시 그리기 목록 **밖**에서 옛 하얀 로봇이 아직 보이는 저장소. 카드에 "옛 로봇 남음" 표시 |
+| `thumbs/` | 관리자·자동 수집 | 카드 썸네일. `R001.jpg`…·`A001.jpg`…는 지금 사이트에 걸린 그림, `before/`는 바꾸기 전 옛 그림, `repos/<저장소>.jpg`는 저장소 대표 그림(자동), `refs/`는 참조 그림 |
 
 ## GitHub Pages 켜기
 
@@ -46,7 +49,8 @@ python3 -m http.server 8000         # http://localhost:8000/ (파일을 바로 �
 GITHUB_TOKEN=... python3 scripts/scan_repos.py
 # API를 못 쓸 때: 저장소 사본(git clone)으로 같은 형식 만들기
 python3 scripts/scan_repos.py --local --list list.txt --repos-dir ./repos
-python3 scripts/make_thumbs.py --repos-dir ./repos   # 선택, Pillow 필요: 대표 표지 썸네일 만들기
+python3 scripts/make_thumbs.py --repos-dir ./repos --all   # Pillow 필요: 대표 그림 썸네일 모두 다시 만들기
+python3 scripts/make_thumbs.py --fetch                     # 바뀐 저장소만 받아서 (Actions와 같은 방식)
 ```
 
 글 · 안상선 ((주)M-Robo 대표)
