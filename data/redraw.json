@@ -7895,5 +7895,659 @@
     "old_sha1": "5894fd61f923a505236e0bff800d75e1c783631c"
    }
   ]
+ },
+ {
+  "id": "R107",
+  "priority": "P1",
+  "series_ko": "딥러닝 A to Z · 초파리 특별편 — 초파리 연구실",
+  "title_ko": "히어로: 빛나는 초파리 뇌 홀로그램과 제어판, 왼쪽에서 뇌 스캔 태블릿을 든 주판봇",
+  "ratio": "3:2",
+  "min_px": [
+   1280,
+   853
+  ],
+  "refs": [
+   "jupanbot",
+   "doc",
+   "asst",
+   "fly"
+  ],
+  "prompt": "detailed 16-bit SNES-era pixel art, crisp pixels, dithering shading, thick dark outlines, bright high-tech laboratory with glowing cyan and violet holograms, 3:2 scene. a giant glowing blue-violet fruit fly brain hologram floating above a round platform in the center, a control console with sliders and knobs on the right, server racks with glowing cables, glass flasks on shelves. Characters: JUPANBOT (AbaBot), a cute retro computer robot: a boxy beige CRT-monitor head with rounded corners and thick dark brown outlines, its front almost entirely a large dark green screen where the face is drawn only with big bold glowing mint-green pixel eyes and a small pixel mouth, a short thin antenna on a small square base topped with one red-brown abacus bead, a smaller beige box body with corner screws, gray segmented arms with rounded gray mitten hands, two dark gray tank treads instead of legs, holding a traditional wooden abacus with red-brown beads, shoulder-high to the girl researcher, standing on the left, holding up a small tablet that shows a glowing brain scan, a happy round pixel face; the Professor, a chibi male scientist with dark charcoal spiky hair with a white streak at the front, very thick black eyebrows, teal-framed rectangular glasses, white lab coat over a black vest and black tie; Haru the assistant, an anime girl with long pink hair in two buns with a navy streak, white lab coat over a lavender hoodie; the Fruit Fly Researcher, a tiny cartoon fruit fly with a charcoal body, large glossy red compound eyes and a retro dark blue helmet with colorful dangling cables, in a white lab coat. Haru and the Professor stand at the console smiling, the Fruit Fly Researcher flies above the hologram holding a tiny wand. Keep the other lab characters exactly as in their own reference images. no watermark, no text, no letters, no numbers, no logos, no white round robot head, no yellow or golden eyes, no floating robot, no gold coins",
+  "targets_count": 1,
+  "targets": [
+   {
+    "repo": "AI_Model_Review_Fruit_fly_special",
+    "path": "index.html",
+    "kind": "base64",
+    "format": "webp",
+    "size": [
+     1280,
+     853
+    ],
+    "crop": "resize",
+    "crop_spec": {
+     "mode": "resize"
+    },
+    "embedded_in": [
+     "en/index.html",
+     "index.html",
+     "ja/index.html",
+     "ru/index.html",
+     "uz/index.html",
+     "zh/index.html"
+    ],
+    "key": "header.hero > img.bg",
+    "occurrences": 6,
+    "old_sha1": "3390a0f6331b46f2525595fed00a3bccea37bcbc"
+   }
+  ]
+ },
+ {
+  "id": "R108",
+  "priority": "P2",
+  "series_ko": "딥러닝 A to Z · 초파리 특별편 — 초파리 연구실",
+  "title_ko": "특별 장면: 데이터 폭풍 속을 바퀴로 질주하는 화난 주판봇",
+  "ratio": "1:1",
+  "min_px": [
+   960,
+   880
+  ],
+  "refs": [
+   "jupanbot"
+  ],
+  "prompt": "detailed 16-bit SNES-era pixel art, crisp pixels, dithering shading, thick dark outlines, bright high-tech laboratory with glowing cyan and violet holograms, 1:1 scene. a speed-lines tunnel of glowing cyan data streams, lightning bolts and flying translucent cubes, dramatic motion. Characters: JUPANBOT (AbaBot), a cute retro computer robot: a boxy beige CRT-monitor head with rounded corners and thick dark brown outlines, its front almost entirely a large dark green screen where the face is drawn only with big bold glowing mint-green pixel eyes and a small pixel mouth, a short thin antenna on a small square base topped with one red-brown abacus bead, a smaller beige box body with corner screws, gray segmented arms with rounded gray mitten hands, two dark gray tank treads instead of legs, holding a traditional wooden abacus with red-brown beads, shoulder-high to the girl researcher, rushing forward on its tank treads through the storm, one gray arm raised, an angry frowning pixel face on its green screen, a bright beam bursting from its chest. Keep the other lab characters exactly as in their own reference images. no watermark, no text, no letters, no numbers, no logos, no white round robot head, no yellow or golden eyes, no floating robot, no gold coins",
+  "targets_count": 1,
+  "targets": [
+   {
+    "repo": "AI_Model_Review_Fruit_fly_special",
+    "path": "index.html",
+    "kind": "base64",
+    "format": "webp",
+    "size": [
+     480,
+     439
+    ],
+    "crop": "cover-center",
+    "crop_spec": {
+     "mode": "cover",
+     "anchor": [
+      0.5,
+      0.5
+     ]
+    },
+    "embedded_in": [
+     "en/index.html",
+     "index.html",
+     "ja/index.html",
+     "ru/index.html",
+     "uz/index.html",
+     "zh/index.html"
+    ],
+    "key": "figure > img (조수의 논문 폭풍 — 특별 1 다음 그림)",
+    "occurrences": 6,
+    "old_sha1": "f497496604c6c59290db7393ce5ad42c90892ab5"
+   }
+  ]
+ },
+ {
+  "id": "R109",
+  "priority": "P1",
+  "series_ko": "중간고사 시뮬레이션 — 생성형 AI의 활용전략",
+  "title_ko": "타이틀 화면: 픽셀 노이즈 속 고양이 화면, 스톱워치 든 하루·초파리, 화면을 닦아 내는 주판봇",
+  "ratio": "3:2",
+  "min_px": [
+   900,
+   600
+  ],
+  "refs": [
+   "jupanbot",
+   "asst",
+   "fly"
+  ],
+  "prompt": "detailed 16-bit SNES-era pixel art, crisp pixels, dithering shading, thick dark outlines, cozy night laboratory mood, purple light, soft magenta and green fluorescent accents, 3:2 scene. a dark lab with tangled cables and coffee mugs, a big wall screen half covered in gray pixel noise that is being wiped away to reveal a clear photo of a brown tabby cat. Characters: JUPANBOT (AbaBot), a cute retro computer robot: a boxy beige CRT-monitor head with rounded corners and thick dark brown outlines, its front almost entirely a large dark green screen where the face is drawn only with big bold glowing mint-green pixel eyes and a small pixel mouth, a short thin antenna on a small square base topped with one red-brown abacus bead, a smaller beige box body with corner screws, gray segmented arms with rounded gray mitten hands, two dark gray tank treads instead of legs, holding a traditional wooden abacus with red-brown beads, shoulder-high to the girl researcher, on the right, wiping the noisy screen with a cloth in one mitten hand, a cheerful pixel face; Haru the assistant, an anime girl with long pink hair in two buns with a navy streak, white lab coat over a lavender hoodie; the Fruit Fly Researcher, a tiny cartoon fruit fly with a charcoal body, large glossy red compound eyes and a retro dark blue helmet with colorful dangling cables, in a white lab coat. Haru on the left holds a stopwatch and smiles, the Fruit Fly Researcher stands beside her. Keep the other lab characters exactly as in their own reference images. no watermark, no text, no letters, no numbers, no logos, no white round robot head, no yellow or golden eyes, no floating robot, no gold coins",
+  "targets_count": 1,
+  "targets": [
+   {
+    "repo": "Gen_AI_Hannam_univ",
+    "path": "index.html",
+    "kind": "base64",
+    "format": "jpg",
+    "size": [
+     900,
+     600
+    ],
+    "crop": "resize",
+    "crop_spec": {
+     "mode": "resize"
+    },
+    "embedded_in": [
+     "index.html"
+    ],
+    "key": "section#scr-title .hero > img.px",
+    "occurrences": 1,
+    "old_sha1": "76ec6c7b3180240e7e14b17f86bd69a1d067893e"
+   }
+  ],
+  "note": "반영 뒤 저장소의 screenshot.png(미리보기)도 다시 찍어야 함"
+ },
+ {
+  "id": "R110",
+  "priority": "P1",
+  "series_ko": "OVERVIEW — 데이터베이스 설계 전체 안내",
+  "title_ko": "OVERVIEW 히어로: 연구실 대형 화면을 바라보는 연구실 식구들 뒷모습, 화면 속 주판봇 얼굴 아이콘",
+  "ratio": "16:9",
+  "min_px": [
+   1600,
+   900
+  ],
+  "refs": [
+   "jupanbot",
+   "doc",
+   "asst",
+   "fly"
+  ],
+  "prompt": "detailed 16-bit SNES-era pixel art, crisp pixels, dithering shading, thick dark outlines, cozy night laboratory mood, purple light, soft magenta and green fluorescent accents, 16:9 scene. a cozy night lab with bookshelves, potted plants and a glowing purple wall screen showing small bar charts, a pie chart and, in the middle, a simple mint-green pixel icon of a boxy CRT robot face. The characters are seen from behind, looking up at the screen. Characters: JUPANBOT (AbaBot), a cute retro computer robot: a boxy beige CRT-monitor head with rounded corners and thick dark brown outlines, its front almost entirely a large dark green screen where the face is drawn only with big bold glowing mint-green pixel eyes and a small pixel mouth, a short thin antenna on a small square base topped with one red-brown abacus bead, a smaller beige box body with corner screws, gray segmented arms with rounded gray mitten hands, two dark gray tank treads instead of legs, holding a traditional wooden abacus with red-brown beads, shoulder-high to the girl researcher, shown only as the pixel icon on the screen; the Professor, a chibi male scientist with dark charcoal spiky hair with a white streak at the front, very thick black eyebrows, teal-framed rectangular glasses, white lab coat over a black vest and black tie; Haru the assistant, an anime girl with long pink hair in two buns with a navy streak, white lab coat over a lavender hoodie; the Fruit Fly Researcher, a tiny cartoon fruit fly with a charcoal body, large glossy red compound eyes and a retro dark blue helmet with colorful dangling cables, in a white lab coat. Keep the other lab characters exactly as in their own reference images. no watermark, no text, no letters, no numbers, no logos, no white round robot head, no yellow or golden eyes, no floating robot, no gold coins",
+  "targets_count": 1,
+  "targets": [
+   {
+    "repo": "database_01of04",
+    "path": "index.html",
+    "kind": "base64",
+    "format": "webp",
+    "size": [
+     1600,
+     900
+    ],
+    "crop": "resize",
+    "crop_spec": {
+     "mode": "resize"
+    },
+    "embedded_in": [
+     "docs/index.html",
+     "index.html"
+    ],
+    "key": "img.heroimg",
+    "occurrences": 2,
+    "old_sha1": "96443b598d6d6c1764c74ff10fa92a61c0c02b24"
+   }
+  ]
+ },
+ {
+  "id": "R111",
+  "priority": "P1",
+  "series_ko": "OVERVIEW — 데이터베이스 설계 전체 안내",
+  "title_ko": "3주차 히어로: 넘치는 낡은 서류장에 끼인 하루, 오른쪽 서버 탑 옆에서 정리 서류를 든 주판봇",
+  "ratio": "16:9",
+  "min_px": [
+   1600,
+   900
+  ],
+  "refs": [
+   "jupanbot",
+   "asst"
+  ],
+  "prompt": "detailed 16-bit SNES-era pixel art, crisp pixels, dithering shading, thick dark outlines, deep indigo-purple background with warm golden glow, clean storybook composition, 16:9 scene. on the left an old overflowing wooden filing cabinet bursting with papers, on the right a tall modern glowing server tower with blue lights. Characters: JUPANBOT (AbaBot), a cute retro computer robot: a boxy beige CRT-monitor head with rounded corners and thick dark brown outlines, its front almost entirely a large dark green screen where the face is drawn only with big bold glowing mint-green pixel eyes and a small pixel mouth, a short thin antenna on a small square base topped with one red-brown abacus bead, a smaller beige box body with corner screws, gray segmented arms with rounded gray mitten hands, two dark gray tank treads instead of legs, holding a traditional wooden abacus with red-brown beads, shoulder-high to the girl researcher, standing beside the server tower, holding a neat labeled folder and pointing at the tower, a proud pixel face; Haru the assistant, an anime girl with long pink hair in two buns with a navy streak, white lab coat over a lavender hoodie. Haru is comically stuck in the cabinet drawers with papers flying around her. Keep the other lab characters exactly as in their own reference images. no watermark, no text, no letters, no numbers, no logos, no white round robot head, no yellow or golden eyes, no floating robot, no gold coins",
+  "targets_count": 1,
+  "targets": [
+   {
+    "repo": "database_01of04",
+    "path": "docs/week3/index.html",
+    "kind": "base64",
+    "format": "webp",
+    "size": [
+     1600,
+     900
+    ],
+    "crop": "resize",
+    "crop_spec": {
+     "mode": "resize"
+    },
+    "embedded_in": [
+     "docs/week3/index.html",
+     "week3/index.html"
+    ],
+    "key": "img.heroimg",
+    "occurrences": 2,
+    "old_sha1": "f41a5f17ac483f0da48610e47cc8227a384bc694"
+   }
+  ]
+ },
+ {
+  "id": "R112",
+  "priority": "P1",
+  "series_ko": "OVERVIEW — 데이터베이스 설계 전체 안내",
+  "title_ko": "1주차 히어로: 칠판 앞 탁자에서 고민하는 박사·하루, 오른쪽의 주판봇 (칠판 제목 자리는 비움)",
+  "ratio": "16:9",
+  "min_px": [
+   1600,
+   900
+  ],
+  "refs": [
+   "jupanbot",
+   "doc",
+   "asst"
+  ],
+  "prompt": "detailed 16-bit SNES-era pixel art, crisp pixels, dithering shading, thick dark outlines, deep indigo-purple background with warm golden glow, clean storybook composition, 16:9 scene. a dim study room with a large dark green chalkboard on the upper right that is left completely blank for a title, a small wooden table with an old book and a candle. Characters: JUPANBOT (AbaBot), a cute retro computer robot: a boxy beige CRT-monitor head with rounded corners and thick dark brown outlines, its front almost entirely a large dark green screen where the face is drawn only with big bold glowing mint-green pixel eyes and a small pixel mouth, a short thin antenna on a small square base topped with one red-brown abacus bead, a smaller beige box body with corner screws, gray segmented arms with rounded gray mitten hands, two dark gray tank treads instead of legs, holding a traditional wooden abacus with red-brown beads, shoulder-high to the girl researcher, on the right side of the table, tilting its head with a curious question-mark pixel face; the Professor, a chibi male scientist with dark charcoal spiky hair with a white streak at the front, very thick black eyebrows, teal-framed rectangular glasses, white lab coat over a black vest and black tie; Haru the assistant, an anime girl with long pink hair in two buns with a navy streak, white lab coat over a lavender hoodie. the Professor and Haru sit at the table thinking hard. Keep the other lab characters exactly as in their own reference images. no watermark, no text, no letters, no numbers, no logos, no white round robot head, no yellow or golden eyes, no floating robot, no gold coins",
+  "targets_count": 1,
+  "targets": [
+   {
+    "repo": "database_01of04",
+    "path": "docs/week1/index.html",
+    "kind": "base64",
+    "format": "webp",
+    "size": [
+     1600,
+     900
+    ],
+    "crop": "resize",
+    "crop_spec": {
+     "mode": "resize"
+    },
+    "embedded_in": [
+     "docs/week1/index.html",
+     "week1/index.html"
+    ],
+    "key": "img.heroimg",
+    "occurrences": 2,
+    "old_sha1": "de151c23ce669bb2ab2f17503a9bb5d787e75577"
+   }
+  ],
+  "note": "옛 그림 안의 칠판 제목 \"데이터베이스?\"는 받은 뒤 관리자가 넣음"
+ },
+ {
+  "id": "R113",
+  "priority": "P1",
+  "series_ko": "OVERVIEW — 데이터베이스 설계 전체 안내",
+  "title_ko": "2주차 히어로: 종이 더미가 금빛 리본으로 빛나는 표 화면에 빨려 드는 장면, 별 지팡이를 든 주판봇",
+  "ratio": "16:9",
+  "min_px": [
+   1600,
+   900
+  ],
+  "refs": [
+   "jupanbot"
+  ],
+  "prompt": "detailed 16-bit SNES-era pixel art, crisp pixels, dithering shading, thick dark outlines, deep indigo-purple background with warm golden glow, clean storybook composition, 16:9 scene. a big messy pile of paper slips on the left turning into a flowing golden ribbon that streams into a glowing computer monitor on the right that shows a clean spreadsheet grid. Characters: JUPANBOT (AbaBot), a cute retro computer robot: a boxy beige CRT-monitor head with rounded corners and thick dark brown outlines, its front almost entirely a large dark green screen where the face is drawn only with big bold glowing mint-green pixel eyes and a small pixel mouth, a short thin antenna on a small square base topped with one red-brown abacus bead, a smaller beige box body with corner screws, gray segmented arms with rounded gray mitten hands, two dark gray tank treads instead of legs, holding a traditional wooden abacus with red-brown beads, shoulder-high to the girl researcher, small, standing in front of the monitor, conducting the paper ribbon with a tiny star wand in one mitten hand, a happy pixel face. Keep the other lab characters exactly as in their own reference images. no watermark, no text, no letters, no numbers, no logos, no white round robot head, no yellow or golden eyes, no floating robot, no gold coins",
+  "targets_count": 1,
+  "targets": [
+   {
+    "repo": "database_01of04",
+    "path": "docs/week2/index.html",
+    "kind": "base64",
+    "format": "webp",
+    "size": [
+     1600,
+     900
+    ],
+    "crop": "resize",
+    "crop_spec": {
+     "mode": "resize"
+    },
+    "embedded_in": [
+     "docs/week2/index.html",
+     "week2/index.html"
+    ],
+    "key": "img.heroimg",
+    "occurrences": 2,
+    "old_sha1": "553452bd4cbe2c71a2d1b136cbd49711c8fdbf9c"
+   }
+  ]
+ },
+ {
+  "id": "R114",
+  "priority": "P2",
+  "series_ko": "OVERVIEW — 데이터베이스 설계 전체 안내",
+  "title_ko": "RPG 사례 그림: 게임 화면(지도·인벤토리)의 초상 칸에 주판봇 얼굴",
+  "ratio": "16:9",
+  "min_px": [
+   1200,
+   675
+  ],
+  "refs": [
+   "jupanbot"
+  ],
+  "prompt": "detailed 16-bit SNES-era pixel art, crisp pixels, dithering shading, thick dark outlines, deep indigo-purple background with warm golden glow, clean storybook composition, 16:9 scene. a retro RPG game screen: top-left a top-down grassy island map with a river and a small hero character, right side an inventory grid of potions, gems, keys and scrolls, bottom-left a portrait box. Characters: JUPANBOT (AbaBot), a cute retro computer robot: a boxy beige CRT-monitor head with rounded corners and thick dark brown outlines, its front almost entirely a large dark green screen where the face is drawn only with big bold glowing mint-green pixel eyes and a small pixel mouth, a short thin antenna on a small square base topped with one red-brown abacus bead, a smaller beige box body with corner screws, gray segmented arms with rounded gray mitten hands, two dark gray tank treads instead of legs, holding a traditional wooden abacus with red-brown beads, shoulder-high to the girl researcher, shown only as a small portrait in the bottom-left portrait box, next to a row of tiny status icons (stars, heart, drops). Keep the other lab characters exactly as in their own reference images. no watermark, no text, no letters, no numbers, no logos, no white round robot head, no yellow or golden eyes, no floating robot, no gold coins",
+  "targets_count": 1,
+  "targets": [
+   {
+    "repo": "database_01of04",
+    "path": "docs/week4/05_rpg_case.html",
+    "kind": "base64",
+    "format": "webp",
+    "size": [
+     1200,
+     675
+    ],
+    "crop": "resize",
+    "crop_spec": {
+     "mode": "resize"
+    },
+    "embedded_in": [
+     "docs/week4/05_rpg_case.html",
+     "week4/05_rpg_case.html"
+    ],
+    "key": "div.figwrap > img.figimg",
+    "occurrences": 2,
+    "old_sha1": "c6ecebba01b0903913b4132c98ae3ec0fcbee4c5"
+   }
+  ]
+ },
+ {
+  "id": "R115",
+  "priority": "P1",
+  "series_ko": "OVERVIEW — 데이터베이스 설계 전체 안내",
+  "title_ko": "4주차 히어로: 화이트보드의 E-R 상자 그림을 가리키는 하루, 오른쪽의 주판봇",
+  "ratio": "16:9",
+  "min_px": [
+   1600,
+   900
+  ],
+  "refs": [
+   "jupanbot",
+   "asst"
+  ],
+  "prompt": "detailed 16-bit SNES-era pixel art, crisp pixels, dithering shading, thick dark outlines, deep indigo-purple background with warm golden glow, clean storybook composition, 16:9 scene. a large whiteboard on an easel filled with simple connected boxes like an entity-relationship diagram (no writing inside the boxes). Characters: JUPANBOT (AbaBot), a cute retro computer robot: a boxy beige CRT-monitor head with rounded corners and thick dark brown outlines, its front almost entirely a large dark green screen where the face is drawn only with big bold glowing mint-green pixel eyes and a small pixel mouth, a short thin antenna on a small square base topped with one red-brown abacus bead, a smaller beige box body with corner screws, gray segmented arms with rounded gray mitten hands, two dark gray tank treads instead of legs, holding a traditional wooden abacus with red-brown beads, shoulder-high to the girl researcher, on the right, holding up a mitten hand as if adding a new box, a smiling pixel face; Haru the assistant, an anime girl with long pink hair in two buns with a navy streak, white lab coat over a lavender hoodie. Haru stands on the left pointing at the diagram with a marker. Keep the other lab characters exactly as in their own reference images. no watermark, no text, no letters, no numbers, no logos, no white round robot head, no yellow or golden eyes, no floating robot, no gold coins",
+  "targets_count": 1,
+  "targets": [
+   {
+    "repo": "database_01of04",
+    "path": "docs/week4/index.html",
+    "kind": "base64",
+    "format": "webp",
+    "size": [
+     1600,
+     900
+    ],
+    "crop": "resize",
+    "crop_spec": {
+     "mode": "resize"
+    },
+    "embedded_in": [
+     "docs/week4/index.html",
+     "week4/index.html"
+    ],
+    "key": "img.heroimg",
+    "occurrences": 2,
+    "old_sha1": "29b12b1d8d0140ee5ee9a43c1651c730e9cb9abd"
+   }
+  ]
+ },
+ {
+  "id": "R116",
+  "priority": "P2",
+  "series_ko": "Fish Market Data로 쉽게 따라하는 머신러닝 — 초파리 연구실",
+  "title_ko": "미션 카드 그림: 생선 카드를 컨베이어에 올리는 주판봇, 파랑·분홍 상자로 나뉘는 길, 기록판 든 하루",
+  "ratio": "1:1",
+  "min_px": [
+   960,
+   854
+  ],
+  "refs": [
+   "jupanbot",
+   "asst"
+  ],
+  "prompt": "clean 16-bit pixel art sticker illustration, crisp pixels, thick dark outlines, plain pure white background, no scenery, 1:1 scene. a small conveyor belt carrying square cards with fish pictures; at the end the belt splits with arrows into a blue bin with a gear icon and a pink bin with a target icon. Characters: JUPANBOT (AbaBot), a cute retro computer robot: a boxy beige CRT-monitor head with rounded corners and thick dark brown outlines, its front almost entirely a large dark green screen where the face is drawn only with big bold glowing mint-green pixel eyes and a small pixel mouth, a short thin antenna on a small square base topped with one red-brown abacus bead, a smaller beige box body with corner screws, gray segmented arms with rounded gray mitten hands, two dark gray tank treads instead of legs, holding a traditional wooden abacus with red-brown beads, shoulder-high to the girl researcher, on the left, placing a fish card onto the belt, a cheerful pixel face; Haru the assistant, an anime girl with long pink hair in two buns with a navy streak, white lab coat over a lavender hoodie. Haru stands on the right holding a clipboard. Keep the other lab characters exactly as in their own reference images. no watermark, no text, no letters, no numbers, no logos, no white round robot head, no yellow or golden eyes, no floating robot, no gold coins",
+  "targets_count": 1,
+  "targets": [
+   {
+    "repo": "Fish_Market_Data_Machine_Learning",
+    "path": "index.html",
+    "kind": "base64",
+    "format": "webp",
+    "size": [
+     480,
+     427
+    ],
+    "crop": "cover-center",
+    "crop_spec": {
+     "mode": "cover",
+     "anchor": [
+      0.5,
+      0.5
+     ]
+    },
+    "embedded_in": [
+     "en/index.html",
+     "index.html",
+     "ja/index.html",
+     "ru/index.html",
+     "uz/index.html",
+     "zh/index.html"
+    ],
+    "key": "mission card img (4번째 미션 카드, \"누수·꼬리 비율\" 다음 그림)",
+    "occurrences": 6,
+    "old_sha1": "ddc147c86931af7111882edb832bd5b9cee4b6d7"
+   }
+  ]
+ },
+ {
+  "id": "R117",
+  "priority": "P1",
+  "series_ko": "AI는 이미지를 어떻게 구분할까? — 긴급 미션 네 개",
+  "title_ko": "첫 화면 장면: 해 질 녘 연구실, 하마 잠옷 하루를 끌고 가는 박사, 등불 든 초파리, 머그잔 탑을 나르는 주판봇",
+  "ratio": "3:2",
+  "min_px": [
+   1200,
+   800
+  ],
+  "refs": [
+   "jupanbot",
+   "doc",
+   "asst",
+   "fly"
+  ],
+  "prompt": "detailed 16-bit SNES-era pixel art, crisp pixels, dithering shading, thick dark outlines, cozy dark laboratory at night, warm lamp light, many coffee mugs, glowing wall panels of network diagrams, 3:2 scene. a lab hallway at sunset with a big orange window on the left, glowing screens of network diagrams, a polished floor. Characters: JUPANBOT (AbaBot), a cute retro computer robot: a boxy beige CRT-monitor head with rounded corners and thick dark brown outlines, its front almost entirely a large dark green screen where the face is drawn only with big bold glowing mint-green pixel eyes and a small pixel mouth, a short thin antenna on a small square base topped with one red-brown abacus bead, a smaller beige box body with corner screws, gray segmented arms with rounded gray mitten hands, two dark gray tank treads instead of legs, holding a traditional wooden abacus with red-brown beads, shoulder-high to the girl researcher, on the right, carefully carrying a wobbly tall tower of coffee mugs, a nervous smiling pixel face; the Professor, a chibi male scientist with dark charcoal spiky hair with a white streak at the front, very thick black eyebrows, teal-framed rectangular glasses, white lab coat over a black vest and black tie; Haru the assistant, an anime girl with long pink hair in two buns with a navy streak, white lab coat over a lavender hoodie; the Fruit Fly Researcher, a tiny cartoon fruit fly with a charcoal body, large glossy red compound eyes and a retro dark blue helmet with colorful dangling cables, in a white lab coat. the Professor laughs and pulls sleepy Haru (yawning, holding a magnifying glass, wearing bunny slippers and dragging a blanket) by the hand, the Fruit Fly Researcher hurries along holding a little lantern. Keep the other lab characters exactly as in their own reference images. no watermark, no text, no letters, no numbers, no logos, no white round robot head, no yellow or golden eyes, no floating robot, no gold coins",
+  "targets_count": 1,
+  "targets": [
+   {
+    "repo": "AI_image_classification",
+    "path": "index.html",
+    "kind": "base64",
+    "format": "jpg",
+    "size": [
+     1200,
+     800
+    ],
+    "crop": "resize",
+    "crop_spec": {
+     "mode": "resize"
+    },
+    "embedded_in": [
+     "en/index.html",
+     "index.html",
+     "ja/index.html",
+     "ru/index.html",
+     "uz/index.html",
+     "zh/index.html"
+    ],
+    "key": "figure.scene > img",
+    "occurrences": 6,
+    "old_sha1": "d438efc23674d7f02ca4b694450f52e8db504891"
+   }
+  ]
+ },
+ {
+  "id": "R118",
+  "priority": "P2",
+  "series_ko": "AI는 이미지를 어떻게 구분할까? — 긴급 미션 네 개",
+  "title_ko": "4-1 마무리: 조명 아래 손 흔드는 하루·박사·초파리·주판봇",
+  "ratio": "3:2",
+  "min_px": [
+   1100,
+   733
+  ],
+  "refs": [
+   "jupanbot",
+   "doc",
+   "asst",
+   "fly"
+  ],
+  "prompt": "detailed 16-bit SNES-era pixel art, crisp pixels, dithering shading, thick dark outlines, cozy dark laboratory at night, warm lamp light, many coffee mugs, glowing wall panels of network diagrams, 3:2 scene. two warm spotlights from above, network diagrams glowing on the wall, coffee mugs on the floor. Characters: JUPANBOT (AbaBot), a cute retro computer robot: a boxy beige CRT-monitor head with rounded corners and thick dark brown outlines, its front almost entirely a large dark green screen where the face is drawn only with big bold glowing mint-green pixel eyes and a small pixel mouth, a short thin antenna on a small square base topped with one red-brown abacus bead, a smaller beige box body with corner screws, gray segmented arms with rounded gray mitten hands, two dark gray tank treads instead of legs, holding a traditional wooden abacus with red-brown beads, shoulder-high to the girl researcher, on the right, waving one mitten hand, a big smiling pixel face; the Professor, a chibi male scientist with dark charcoal spiky hair with a white streak at the front, very thick black eyebrows, teal-framed rectangular glasses, white lab coat over a black vest and black tie; Haru the assistant, an anime girl with long pink hair in two buns with a navy streak, white lab coat over a lavender hoodie; the Fruit Fly Researcher, a tiny cartoon fruit fly with a charcoal body, large glossy red compound eyes and a retro dark blue helmet with colorful dangling cables, in a white lab coat. everyone waves goodbye to the viewer. Keep the other lab characters exactly as in their own reference images. no watermark, no text, no letters, no numbers, no logos, no white round robot head, no yellow or golden eyes, no floating robot, no gold coins",
+  "targets_count": 1,
+  "targets": [
+   {
+    "repo": "AI_image_classification",
+    "path": "4-1_bream_smelt.html",
+    "kind": "base64",
+    "format": "jpg",
+    "size": [
+     1100,
+     733
+    ],
+    "crop": "resize",
+    "crop_spec": {
+     "mode": "resize"
+    },
+    "embedded_in": [
+     "4-1_bream_smelt.html",
+     "en/4-1_bream_smelt.html",
+     "ja/4-1_bream_smelt.html",
+     "ru/4-1_bream_smelt.html",
+     "uz/4-1_bream_smelt.html",
+     "zh/4-1_bream_smelt.html"
+    ],
+    "key": "div.stage > figure > img (4-1 수고하셨습니다)",
+    "occurrences": 6,
+    "old_sha1": "280663cfde2b2b372c02d15f1cef5c9d60a42d70"
+   }
+  ]
+ },
+ {
+  "id": "R119",
+  "priority": "P2",
+  "series_ko": "AI는 이미지를 어떻게 구분할까? — 긴급 미션 네 개",
+  "title_ko": "4-2 마무리: 브이 하는 하루, 손 흔드는 박사, 날아오는 초파리, 빛나는 상자를 연 주판봇",
+  "ratio": "5:4",
+  "min_px": [
+   1100,
+   880
+  ],
+  "refs": [
+   "jupanbot",
+   "doc",
+   "asst",
+   "fly"
+  ],
+  "prompt": "detailed 16-bit SNES-era pixel art, crisp pixels, dithering shading, thick dark outlines, cozy dark laboratory at night, warm lamp light, many coffee mugs, glowing wall panels of network diagrams, 5:4 scene. coffee mugs scattered on the floor, wall panels of glowing patterns. Characters: JUPANBOT (AbaBot), a cute retro computer robot: a boxy beige CRT-monitor head with rounded corners and thick dark brown outlines, its front almost entirely a large dark green screen where the face is drawn only with big bold glowing mint-green pixel eyes and a small pixel mouth, a short thin antenna on a small square base topped with one red-brown abacus bead, a smaller beige box body with corner screws, gray segmented arms with rounded gray mitten hands, two dark gray tank treads instead of legs, holding a traditional wooden abacus with red-brown beads, shoulder-high to the girl researcher, on the right, opening a small box that bursts with warm light, a delighted pixel face; the Professor, a chibi male scientist with dark charcoal spiky hair with a white streak at the front, very thick black eyebrows, teal-framed rectangular glasses, white lab coat over a black vest and black tie; Haru the assistant, an anime girl with long pink hair in two buns with a navy streak, white lab coat over a lavender hoodie; the Fruit Fly Researcher, a tiny cartoon fruit fly with a charcoal body, large glossy red compound eyes and a retro dark blue helmet with colorful dangling cables, in a white lab coat. Haru makes a peace sign, the Professor waves, the Fruit Fly Researcher flies in from above. Keep the other lab characters exactly as in their own reference images. no watermark, no text, no letters, no numbers, no logos, no white round robot head, no yellow or golden eyes, no floating robot, no gold coins",
+  "targets_count": 1,
+  "targets": [
+   {
+    "repo": "AI_image_classification",
+    "path": "4-2_cat_human.html",
+    "kind": "base64",
+    "format": "jpg",
+    "size": [
+     1100,
+     880
+    ],
+    "crop": "resize",
+    "crop_spec": {
+     "mode": "resize"
+    },
+    "embedded_in": [
+     "4-2_cat_human.html",
+     "en/4-2_cat_human.html",
+     "ja/4-2_cat_human.html",
+     "ru/4-2_cat_human.html",
+     "uz/4-2_cat_human.html",
+     "zh/4-2_cat_human.html"
+    ],
+    "key": "div.stage > figure > img (4-2 수고하셨습니다)",
+    "occurrences": 6,
+    "old_sha1": "9443753e75ae3400e199e7af6a8d3eeac1c96bf3"
+   }
+  ]
+ },
+ {
+  "id": "R120",
+  "priority": "P2",
+  "series_ko": "AI는 이미지를 어떻게 구분할까? — 긴급 미션 네 개",
+  "title_ko": "4-3 마무리: 달 뜬 창가에서 손 흔드는 하루·박사·초파리와 주판봇",
+  "ratio": "5:4",
+  "min_px": [
+   1100,
+   880
+  ],
+  "refs": [
+   "jupanbot",
+   "doc",
+   "asst",
+   "fly"
+  ],
+  "prompt": "detailed 16-bit SNES-era pixel art, crisp pixels, dithering shading, thick dark outlines, cozy dark laboratory at night, warm lamp light, many coffee mugs, glowing wall panels of network diagrams, 5:4 scene. a big window showing a night city skyline and a full moon, wall panels of glowing patterns, mugs on the floor. Characters: JUPANBOT (AbaBot), a cute retro computer robot: a boxy beige CRT-monitor head with rounded corners and thick dark brown outlines, its front almost entirely a large dark green screen where the face is drawn only with big bold glowing mint-green pixel eyes and a small pixel mouth, a short thin antenna on a small square base topped with one red-brown abacus bead, a smaller beige box body with corner screws, gray segmented arms with rounded gray mitten hands, two dark gray tank treads instead of legs, holding a traditional wooden abacus with red-brown beads, shoulder-high to the girl researcher, on the right, waving, a calm smiling pixel face; the Professor, a chibi male scientist with dark charcoal spiky hair with a white streak at the front, very thick black eyebrows, teal-framed rectangular glasses, white lab coat over a black vest and black tie; Haru the assistant, an anime girl with long pink hair in two buns with a navy streak, white lab coat over a lavender hoodie; the Fruit Fly Researcher, a tiny cartoon fruit fly with a charcoal body, large glossy red compound eyes and a retro dark blue helmet with colorful dangling cables, in a white lab coat. everyone waves goodbye. Keep the other lab characters exactly as in their own reference images. no watermark, no text, no letters, no numbers, no logos, no white round robot head, no yellow or golden eyes, no floating robot, no gold coins",
+  "targets_count": 1,
+  "targets": [
+   {
+    "repo": "AI_image_classification",
+    "path": "4-3_cat_dog.html",
+    "kind": "base64",
+    "format": "jpg",
+    "size": [
+     1100,
+     880
+    ],
+    "crop": "resize",
+    "crop_spec": {
+     "mode": "resize"
+    },
+    "embedded_in": [
+     "4-3_cat_dog.html",
+     "en/4-3_cat_dog.html",
+     "ja/4-3_cat_dog.html",
+     "ru/4-3_cat_dog.html",
+     "uz/4-3_cat_dog.html",
+     "zh/4-3_cat_dog.html"
+    ],
+    "key": "div.stage > figure > img (4-3 수고하셨습니다)",
+    "occurrences": 6,
+    "old_sha1": "42e31722d13e15912ddd2afbae37818e3fa3c411"
+   }
+  ]
+ },
+ {
+  "id": "R121",
+  "priority": "P2",
+  "series_ko": "AI는 이미지를 어떻게 구분할까? — 긴급 미션 네 개",
+  "title_ko": "4-4 마무리: 불 끄는 박사, 머그잔 든 하루, 등불 든 초파리, 손 흔드는 주판봇",
+  "ratio": "3:2",
+  "min_px": [
+   1100,
+   777
+  ],
+  "refs": [
+   "jupanbot",
+   "doc",
+   "asst",
+   "fly"
+  ],
+  "prompt": "detailed 16-bit SNES-era pixel art, crisp pixels, dithering shading, thick dark outlines, cozy dark laboratory at night, warm lamp light, many coffee mugs, glowing wall panels of network diagrams, 3:2 scene. the lab door at the end of the day, a light switch on the wall by the door, warm lamp light. Characters: JUPANBOT (AbaBot), a cute retro computer robot: a boxy beige CRT-monitor head with rounded corners and thick dark brown outlines, its front almost entirely a large dark green screen where the face is drawn only with big bold glowing mint-green pixel eyes and a small pixel mouth, a short thin antenna on a small square base topped with one red-brown abacus bead, a smaller beige box body with corner screws, gray segmented arms with rounded gray mitten hands, two dark gray tank treads instead of legs, holding a traditional wooden abacus with red-brown beads, shoulder-high to the girl researcher, on the right, waving goodbye, a sleepy smiling pixel face; the Professor, a chibi male scientist with dark charcoal spiky hair with a white streak at the front, very thick black eyebrows, teal-framed rectangular glasses, white lab coat over a black vest and black tie; Haru the assistant, an anime girl with long pink hair in two buns with a navy streak, white lab coat over a lavender hoodie; the Fruit Fly Researcher, a tiny cartoon fruit fly with a charcoal body, large glossy red compound eyes and a retro dark blue helmet with colorful dangling cables, in a white lab coat. the Professor reaches for the light switch and waves, Haru holds a mug and waves, the Fruit Fly Researcher holds a little lantern. Keep the other lab characters exactly as in their own reference images. no watermark, no text, no letters, no numbers, no logos, no white round robot head, no yellow or golden eyes, no floating robot, no gold coins",
+  "targets_count": 1,
+  "targets": [
+   {
+    "repo": "AI_image_classification",
+    "path": "4-4_chihuahua_muffin.html",
+    "kind": "base64",
+    "format": "jpg",
+    "size": [
+     1100,
+     777
+    ],
+    "crop": "resize",
+    "crop_spec": {
+     "mode": "resize"
+    },
+    "embedded_in": [
+     "4-4_chihuahua_muffin.html",
+     "en/4-4_chihuahua_muffin.html",
+     "ja/4-4_chihuahua_muffin.html",
+     "ru/4-4_chihuahua_muffin.html",
+     "uz/4-4_chihuahua_muffin.html",
+     "zh/4-4_chihuahua_muffin.html"
+    ],
+    "key": "div.stage > figure > img (4-4 수고하셨습니다)",
+    "occurrences": 6,
+    "old_sha1": "b2546e1277f7a6a91c9ca344e50e9a3445ebb674"
+   }
+  ]
  }
 ]

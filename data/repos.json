@@ -354,10 +354,16 @@
   "pushed_at": "2026-10-08T12:08:40Z",
   "has_manifest": false,
   "covers": [],
-  "redraw_count": 0,
-  "redraw_ids": [],
+  "redraw_count": 5,
+  "redraw_ids": [
+   "R117",
+   "R118",
+   "R119",
+   "R120",
+   "R121"
+  ],
   "thumb": "thumbs/repos/AI_image_classification.jpg",
-  "status": "unknown",
+  "status": "redraw",
   "checked_at": "2026-11-06",
   "site_title": "AI는 이미지를 어떻게 구분할까? — 긴급 미션 네 개",
   "ontology": {
@@ -517,10 +523,13 @@
   "pushed_at": "2026-11-01T14:00:36Z",
   "has_manifest": false,
   "covers": [],
-  "redraw_count": 0,
-  "redraw_ids": [],
+  "redraw_count": 2,
+  "redraw_ids": [
+   "R107",
+   "R108"
+  ],
   "thumb": "thumbs/repos/AI_Model_Review_Fruit_fly_special.jpg",
-  "status": "unknown",
+  "status": "redraw",
   "checked_at": "2026-11-06",
   "site_title": "딥러닝 A to Z · 초파리 특별편 — 초파리 연구실",
   "ontology": {
@@ -1303,10 +1312,17 @@
   "pushed_at": "2026-10-19T10:06:42Z",
   "has_manifest": false,
   "covers": [],
-  "redraw_count": 0,
-  "redraw_ids": [],
+  "redraw_count": 6,
+  "redraw_ids": [
+   "R110",
+   "R111",
+   "R112",
+   "R113",
+   "R114",
+   "R115"
+  ],
   "thumb": "thumbs/repos/database_01of04.jpg",
-  "status": "unknown",
+  "status": "redraw",
   "checked_at": "2026-11-06",
   "site_title": "OVERVIEW — 데이터베이스 설계 전체 안내",
   "ontology": {
@@ -1680,10 +1696,12 @@
   "pushed_at": "2026-10-14T13:43:51Z",
   "has_manifest": false,
   "covers": [],
-  "redraw_count": 0,
-  "redraw_ids": [],
+  "redraw_count": 1,
+  "redraw_ids": [
+   "R116"
+  ],
   "thumb": "thumbs/repos/Fish_Market_Data_Machine_Learning.jpg",
-  "status": "unknown",
+  "status": "redraw",
   "checked_at": "2026-11-06",
   "site_title": "Fish Market Data로 쉽게 따라하는 머신러닝 — 초파리 연구실",
   "ontology": {
@@ -1874,10 +1892,12 @@
   "pushed_at": "2026-10-09T07:15:52Z",
   "has_manifest": false,
   "covers": [],
-  "redraw_count": 0,
-  "redraw_ids": [],
+  "redraw_count": 1,
+  "redraw_ids": [
+   "R109"
+  ],
   "thumb": "thumbs/repos/Gen_AI_Hannam_univ.jpg",
-  "status": "unknown",
+  "status": "redraw",
   "checked_at": "2026-11-06",
   "site_title": "중간고사 시뮬레이션 — 생성형 AI의 활용전략",
   "ontology": {
