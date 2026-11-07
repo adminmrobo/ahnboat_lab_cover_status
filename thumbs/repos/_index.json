@@ -1,7 +1,7 @@
 {
  "ahn_boat_lab_town": {
   "src": "redraw:R019:assets/cut1_panic.webp",
-  "pushed_at": "2026-11-05T11:16:33Z",
+  "pushed_at": "2026-11-06T12:34:23Z",
   "made": "2026-11-07"
  },
  "ahnboat_lab_character_add_packs": {
@@ -19,6 +19,10 @@
  "ahnboat_lab_town_floor_b01": {
   "src": null,
   "pushed_at": "2026-10-28T10:45:21Z"
+ },
+ "ai-power-chain-simulator": {
+  "src": null,
+  "pushed_at": "2026-11-06T03:12:38Z"
  },
  "ai_for_cement_produce_07": {
   "src": null,
@@ -39,13 +43,19 @@
   "made": "2026-11-07"
  },
  "AI_Model_Review_Fruit_fly_special": {
-  "src": "embedded:index.html#hero",
-  "pushed_at": "2026-11-01T14:00:36Z",
+  "src": "redraw:R107:en/index.html#bg",
+  "pushed_at": "2026-11-06T22:22:50Z",
   "made": "2026-11-07"
  },
  "ai_rendering": {
-  "src": null,
-  "pushed_at": "2026-11-02T03:09:58Z"
+  "src": "name:specs/assets/covers/cover_1-1.webp",
+  "pushed_at": "2026-11-06T18:30:46Z",
+  "made": "2026-11-07"
+ },
+ "ai_text_read_ability": {
+  "src": "og:og_07.jpg",
+  "pushed_at": "2026-11-06T22:16:09Z",
+  "made": "2026-11-07"
  },
  "article_02_crypto_asset_price_predict": {
   "src": null,
@@ -63,18 +73,22 @@
   "src": null,
   "pushed_at": "2026-11-05T11:16:53Z"
  },
+ "cashflow-lab": {
+  "src": null,
+  "pushed_at": "2026-11-06T04:32:07Z"
+ },
  "data_set_2024_fintech": {
   "src": null,
   "pushed_at": "2024-07-19T11:29:10Z"
  },
  "Data_visuialization_lecture_01": {
   "src": "redraw:R001:en/week1_index.html#hero-img",
-  "pushed_at": "2026-11-05T11:14:57Z",
+  "pushed_at": "2026-11-06T12:32:38Z",
   "made": "2026-11-07"
  },
  "Data_visuialization_lecture_02": {
   "src": "redraw:R002:en/week2_index.html#hero-img",
-  "pushed_at": "2026-11-05T11:15:19Z",
+  "pushed_at": "2026-11-06T12:33:30Z",
   "made": "2026-11-07"
  },
  "Data_visuialization_lecture_03": {
@@ -84,7 +98,7 @@
  },
  "Data_visuialization_lecture_04": {
   "src": "redraw:R003:en/week4_index.html#hero-img",
-  "pushed_at": "2026-11-05T11:15:24Z",
+  "pushed_at": "2026-11-06T12:33:34Z",
   "made": "2026-11-07"
  },
  "database_01of04": {
@@ -94,17 +108,17 @@
  },
  "deep_learning_00_neural_net_learns": {
   "src": "redraw:R022:en/index.html#hero-img",
-  "pushed_at": "2026-11-05T11:17:18Z",
+  "pushed_at": "2026-11-06T12:34:51Z",
   "made": "2026-11-07"
  },
  "DL_model_hiring_committee": {
   "src": "redraw:R007:6-0_job_posting.html#sc_meeting",
-  "pushed_at": "2026-11-05T11:15:14Z",
+  "pushed_at": "2026-11-06T12:33:53Z",
   "made": "2026-11-07"
  },
  "drug-crime-social-cost": {
   "src": null,
-  "pushed_at": "2026-11-05T18:14:05Z"
+  "pushed_at": "2026-11-06T04:24:52Z"
  },
  "fintech_business_01_payment": {
   "src": null,
@@ -115,14 +129,19 @@
   "pushed_at": "2026-10-14T13:43:51Z",
   "made": "2026-11-07"
  },
+ "fof-money-meridian-": {
+  "src": "name:cover_fof01.webp",
+  "pushed_at": "2026-11-06T22:39:43Z",
+  "made": "2026-11-07"
+ },
  "fruitfly-lab-expressions": {
   "src": "file:.thumbnail.jpg",
-  "pushed_at": "2026-11-05T11:17:30Z",
+  "pushed_at": "2026-11-06T11:34:02Z",
   "made": "2026-11-07"
  },
  "g2b-bid-strategy": {
   "src": null,
-  "pushed_at": "2026-11-06T01:08:08Z"
+  "pushed_at": "2026-11-07T00:16:31Z"
  },
  "Gen_AI_Hannam_univ": {
   "src": "embedded:index.html#hero",
@@ -131,7 +150,7 @@
  },
  "Gen_AI_strategy_ch05": {
   "src": "redraw:R004:05_startup_prompt.html#cover_05",
-  "pushed_at": "2026-11-05T11:15:36Z",
+  "pushed_at": "2026-11-06T12:34:56Z",
   "made": "2026-11-07"
  },
  "Gen_AI_strategy_ch06": {
@@ -141,7 +160,7 @@
  },
  "google-sheets-lab": {
   "src": "redraw:R025:assets/covers/cover-index.webp",
-  "pushed_at": "2026-11-05T11:17:35Z",
+  "pushed_at": "2026-11-06T12:36:32Z",
   "made": "2026-11-07"
  },
  "green_route": {
@@ -150,7 +169,7 @@
  },
  "inference_engineering_study_week_01_article_01": {
   "src": "redraw:R037:images/sc_lb_hero.png",
-  "pushed_at": "2026-11-05T11:17:40Z",
+  "pushed_at": "2026-11-06T12:38:24Z",
   "made": "2026-11-07"
  },
  "inference_engineering_study_week_01_textbook_ch00": {
@@ -159,7 +178,7 @@
  },
  "inference_engineering_study_week_01_textbook_ch01": {
   "src": "redraw:R038:og_01.png",
-  "pushed_at": "2026-11-05T11:17:58Z",
+  "pushed_at": "2026-11-06T12:34:00Z",
   "made": "2026-11-07"
  },
  "inference_engineering_study_week_01_textbook_preface": {
@@ -168,12 +187,12 @@
  },
  "inference_engineering_study_week_02_article_01": {
   "src": "redraw:R039:assets/img/cover_01.webp",
-  "pushed_at": "2026-11-05T11:17:44Z",
+  "pushed_at": "2026-11-06T12:35:21Z",
   "made": "2026-11-07"
  },
  "inference_engineering_study_week_02_textbook_ch02_p1_p2": {
   "src": "redraw:R040:assets/img/src/cover_ch2_1920.png",
-  "pushed_at": "2026-11-05T11:17:48Z",
+  "pushed_at": "2026-11-06T12:36:03Z",
   "made": "2026-11-07"
  },
  "inference_korea_study_page": {
@@ -182,22 +201,22 @@
  },
  "insurtech__case_classification_model_01": {
   "src": "redraw:R045:assets/hero.webp",
-  "pushed_at": "2026-11-05T11:17:52Z",
+  "pushed_at": "2026-11-06T12:36:40Z",
   "made": "2026-11-07"
  },
  "insurtech__case_classification_model_02": {
   "src": "redraw:R046:assets/hero.webp",
-  "pushed_at": "2026-11-05T11:17:55Z",
+  "pushed_at": "2026-11-06T12:36:10Z",
   "made": "2026-11-07"
  },
  "insurtech__case_regreesion_model_01": {
   "src": "redraw:R047:assets/hero.webp",
-  "pushed_at": "2026-11-05T11:18:05Z",
+  "pushed_at": "2026-11-06T12:36:47Z",
   "made": "2026-11-07"
  },
  "insurtech__case_regreesion_model_02": {
   "src": "redraw:R048:assets/hero.webp",
-  "pushed_at": "2026-11-05T11:18:02Z",
+  "pushed_at": "2026-11-06T12:35:42Z",
   "made": "2026-11-07"
  },
  "kma_2023_01": {
@@ -210,56 +229,57 @@
  },
  "learn-pandas-visually_korean": {
   "src": "redraw:R071:assets/hero/hero.jpg",
-  "pushed_at": "2026-11-05T11:18:08Z",
+  "pushed_at": "2026-11-06T12:33:38Z",
   "made": "2026-11-07"
  },
  "learn-python-by-doing": {
   "src": "redraw:R072:docs/assets/hero/hero.jpg",
-  "pushed_at": "2026-11-05T11:18:11Z",
+  "pushed_at": "2026-11-06T12:33:45Z",
   "made": "2026-11-07"
  },
  "learn-python-by-doing_Korean": {
   "src": "redraw:R073:docs/assets/hero/hero.jpg",
-  "pushed_at": "2026-11-05T11:18:15Z",
+  "pushed_at": "2026-11-06T12:34:04Z",
   "made": "2026-11-07"
  },
  "LLM_evaluation": {
-  "src": null,
-  "pushed_at": "2026-11-05T13:38:26Z"
+  "src": "name:assets/cover_llmeval.webp",
+  "pushed_at": "2026-11-06T18:33:31Z",
+  "made": "2026-11-07"
  },
  "ML_00_Algorithm-family-build_00": {
   "src": "name:4-6_regression_seven.html/idx_hero_1280.png",
-  "pushed_at": "2026-11-05T11:15:44Z",
+  "pushed_at": "2026-11-06T12:37:53Z",
   "made": "2026-11-07"
  },
  "ML_00_Algorithm-family-build_01": {
   "src": "name:assets/sc_alley.webp",
-  "pushed_at": "2026-11-05T11:15:59Z",
+  "pushed_at": "2026-11-06T12:36:22Z",
   "made": "2026-11-07"
  },
  "ML_00_Algorithm-family-build_02": {
   "src": "name:assets/sc_alley.webp",
-  "pushed_at": "2026-11-05T11:15:51Z",
+  "pushed_at": "2026-11-06T12:36:55Z",
   "made": "2026-11-07"
  },
  "ML_00_Algorithm-family-build_03": {
   "src": "name:assets/sc_alley.webp",
-  "pushed_at": "2026-11-05T11:16:28Z",
+  "pushed_at": "2026-11-06T12:37:21Z",
   "made": "2026-11-07"
  },
  "ML_model_hiring_committee": {
   "src": "name:assets/sc_alley.webp",
-  "pushed_at": "2026-11-05T11:16:21Z",
+  "pushed_at": "2026-11-06T12:35:06Z",
   "made": "2026-11-07"
  },
  "motion_ai_series_01": {
   "src": "redraw:R074:5-2_recognize_to_generate.en.html#pixelart",
-  "pushed_at": "2026-10-08T12:06:17Z",
+  "pushed_at": "2026-11-06T12:34:17Z",
   "made": "2026-11-07"
  },
  "my_article_00_Korean_stockmarket_volatility_study": {
   "src": "redraw:R076:img/cover.jpg",
-  "pushed_at": "2026-11-05T11:18:20Z",
+  "pushed_at": "2026-11-06T12:34:28Z",
   "made": "2026-11-07"
  },
  "my_article_01_bitcoin_price_analytics": {
@@ -268,42 +288,56 @@
  },
  "my_article_02_crypto_predict_model_analytics": {
   "src": "redraw:R079:img/sc_01_hero.png",
-  "pushed_at": "2026-11-05T11:18:29Z",
+  "pushed_at": "2026-11-06T12:35:53Z",
   "made": "2026-11-07"
  },
  "my_article_03_drug-slang-detection": {
   "src": "redraw:R084:01_drug-slang-detection.en.html#sc_01_hero",
-  "pushed_at": "2026-11-05T11:18:47Z",
+  "pushed_at": "2026-11-06T12:34:34Z",
   "made": "2026-11-07"
  },
  "my_article_04_adversarial_finance_attack": {
   "src": "redraw:R087:sc_01_hero.png",
-  "pushed_at": "2026-11-05T11:18:36Z",
+  "pushed_at": "2026-11-06T12:35:35Z",
   "made": "2026-11-07"
  },
  "my_article_05_consumer_expenditure_predict": {
   "src": "redraw:R091:01_kreis_expenditure.en.html#img",
-  "pushed_at": "2026-11-05T11:18:42Z",
+  "pushed_at": "2026-11-06T12:34:43Z",
   "made": "2026-11-07"
  },
  "my_article_06_AI_effect_to_labor_demand": {
   "src": "redraw:R071:hero_01_ledger.webp",
-  "pushed_at": "2026-11-05T11:18:50Z",
+  "pushed_at": "2026-11-06T12:33:42Z",
   "made": "2026-11-07"
  },
  "my_article_07_media_blockchain": {
   "src": "redraw:R094:index.en.html#cover_index",
-  "pushed_at": "2026-11-05T11:19:02Z",
+  "pushed_at": "2026-11-06T12:49:32Z",
   "made": "2026-11-07"
  },
  "my_article_08_poll_reweighting_lab": {
   "src": "redraw:R099:images/cover_index.webp",
-  "pushed_at": "2026-11-05T11:19:05Z",
+  "pushed_at": "2026-11-06T12:37:29Z",
   "made": "2026-11-07"
  },
  "neural_network_atlas": {
   "src": null,
-  "pushed_at": "2026-11-05T11:19:25Z"
+  "pushed_at": "2026-11-06T22:14:12Z"
+ },
+ "neuralink_animal_brain_ai": {
+  "src": null,
+  "pushed_at": "2026-11-06T18:48:31Z"
+ },
+ "Regression_ridge_lasso": {
+  "src": "manifest:og_rg.jpg",
+  "pushed_at": "2026-11-06T22:35:39Z",
+  "made": "2026-11-07"
+ },
+ "rulebase_to_agent": {
+  "src": "embedded:1-1_rulebase.en.html#hero",
+  "pushed_at": "2026-11-06T18:36:29Z",
+  "made": "2026-11-07"
  },
  "statistics_note_ch03_discrete-probability-distribution": {
   "src": "name:assets/og_1_1.png",
@@ -326,9 +360,17 @@
   "src": null,
   "pushed_at": "2026-03-02T12:35:34Z"
  },
+ "timeseries-trilogy": {
+  "src": null,
+  "pushed_at": "2026-11-06T18:47:57Z"
+ },
  "usa_stock_reporter_project_python_version": {
   "src": null,
   "pushed_at": "2023-07-01T04:29:03Z"
+ },
+ "valuation_without_revenue": {
+  "src": null,
+  "pushed_at": "2026-11-06T04:27:09Z"
  },
  "who_am_i": {
   "src": "embedded:who_am_i.en.html#hero",
