@@ -104,7 +104,7 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_lab_explainer",
   "pages_url": "https://adminmrobo.github.io/ahnboat_lab_explainer/",
   "default_branch": "main",
-  "pushed_at": "2026-11-05T12:47:56Z",
+  "pushed_at": "2026-11-08T02:26:14Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -2290,7 +2290,7 @@
   "repo_url": "https://github.com/adminmrobo/fish_market_learning_epoch_etc",
   "pages_url": "https://adminmrobo.github.io/fish_market_learning_epoch_etc/",
   "default_branch": "main",
-  "pushed_at": "2026-11-07T23:44:36Z",
+  "pushed_at": "2026-11-08T01:33:40Z",
   "has_manifest": false,
   "covers": [
    {
@@ -2626,7 +2626,7 @@
   "repo_url": "https://github.com/adminmrobo/fruitfly-lab-expressions",
   "pages_url": "https://adminmrobo.github.io/fruitfly-lab-expressions/",
   "default_branch": "main",
-  "pushed_at": "2026-11-06T11:34:02Z",
+  "pushed_at": "2026-11-08T02:25:12Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -2638,8 +2638,8 @@
   "ontology": {
    "status": "none",
    "pages_with_kg": 0,
-   "pages_total": 2,
-   "pages_checked": 2,
+   "pages_total": 3,
+   "pages_checked": 3,
    "kg_links": [],
    "export_links": [],
    "files": []
@@ -2650,7 +2650,7 @@
    ],
    "count": 1,
    "pages": {
-    "ko": 2
+    "ko": 3
    },
    "partial": [],
    "complete": true,
@@ -2666,7 +2666,7 @@
    "count": 1,
    "complete": true,
    "pages_by_lang": {
-    "ko": 2
+    "ko": 3
    }
   },
   "has_pages": true
@@ -3797,7 +3797,7 @@
   "repo_url": "https://github.com/adminmrobo/inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide",
   "pages_url": "https://adminmrobo.github.io/inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide/",
   "default_branch": "main",
-  "pushed_at": "2026-11-07T23:55:00Z",
+  "pushed_at": "2026-11-08T01:24:40Z",
   "has_manifest": false,
   "covers": [
    {
@@ -8057,7 +8057,7 @@
   "repo_url": "https://github.com/adminmrobo/what_is_tensor",
   "pages_url": "https://adminmrobo.github.io/what_is_tensor/",
   "default_branch": "main",
-  "pushed_at": "2026-11-07T15:17:57Z",
+  "pushed_at": "2026-11-08T02:29:42Z",
   "has_manifest": false,
   "covers": [
    {
