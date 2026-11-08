@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>안보트 연구실 콘텐츠</title>
+<title>Reon Ahn's Lab Server</title>
 <meta name="description" content="안상선의 해설 시리즈와 연구 실적을 분야별로 둘러보는 목록">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -101,8 +101,8 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
 </head>
 <body>
 <header class="site wrap">
-  <p class="kicker">AHNBOAT LAB · CONTENTS</p>
-  <h1>안보트 연구실 콘텐츠</h1>
+  <p class="kicker">AHNBOAT LAB · 10 RACKS</p>
+  <h1>Reon Ahn's Lab Server</h1>
   <p class="lede">박사·조수·초파리 연구원·주판봇이 진행하는 해설 시리즈와 연구 실적을 분야별로 모았습니다. 분야와 중분류를 고르면 주제별 콘텐츠가 바로 나옵니다.</p>
 </header>
 <nav class="crumb wrap" id="crumb" aria-label="현재 위치"></nav>
@@ -166,7 +166,7 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
     box.appendChild(bg);
     var t=el('div','htext');
     t.appendChild(el('p','hk',h.kicker||'AHNBOAT LAB'));
-    t.appendChild(el('h2','',h.title||'안보트 연구실 콘텐츠'));
+    t.appendChild(el('h2','',h.title||"Reon Ahn's Lab Server"));
     if(h.desc)t.appendChild(el('p','hd',h.desc));
     var st=el('p','hs');st.appendChild(el('b','',String(ITEMS.length)));st.appendChild(document.createTextNode(' 개 콘텐츠 · '));st.appendChild(el('b','',String(CATS.filter(function(c){return inCat(c.name).length;}).length)));st.appendChild(document.createTextNode(' 개 분야'));t.appendChild(st);
     box.appendChild(t);m.appendChild(box);
