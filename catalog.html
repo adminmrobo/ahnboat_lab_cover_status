@@ -66,6 +66,20 @@ h2.sec{margin:0 0 4px;font-size:clamp(20px,3vw,26px)}
 .note{font-size:12.5px;color:var(--muted)}
 .err{color:#b3402a}
 footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
+.grid.big{grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+.tile.big{padding:0;overflow:hidden;gap:0}
+.tile.big::before{display:none}
+.tile.big .pic{position:relative;display:block;aspect-ratio:16/9;background:var(--c);overflow:hidden;border-bottom:3px solid var(--c)}
+.tile.big .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;image-rendering:pixelated}
+.tile.big .pic .ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:19px;padding:12px;text-align:center;line-height:1.25;background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.09) 0 8px,transparent 8px 16px)}
+.tile.big .tbody{display:flex;flex-direction:column;gap:7px;padding:12px 15px 14px;flex:1}
+.kw{display:flex;flex-wrap:wrap;gap:4px 8px;font-size:12.5px;color:var(--c)}
+.kw span{font-weight:500}
+.jump{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 18px}
+.jump a{font-size:13px;text-decoration:none;color:var(--ink);background:var(--panel);border:1px solid var(--rule);border-radius:99px;padding:4px 12px}
+.subsec{margin:0 0 26px;scroll-margin-top:12px}
+.subh{display:flex;align-items:baseline;gap:8px;margin:0 0 10px;font-size:17px;padding-left:10px;border-left:4px solid var(--c)}
+.subh small{font-size:12.5px;color:var(--muted);font-weight:500}
 @media (prefers-reduced-motion:reduce){.tile{transition:none}.tile:hover{transform:none}}
 </style>
 </head>
@@ -73,7 +87,7 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
 <header class="site wrap">
   <p class="kicker">AHNBOAT LAB · CONTENTS</p>
   <h1>안보트 연구실 콘텐츠</h1>
-  <p class="lede">박사·조수·초파리 연구원·주판봇이 진행하는 해설 시리즈와 연구 실적을 분야별로 모았습니다. 분야, 갈래, 주제 순서로 골라 콘텐츠로 들어가세요.</p>
+  <p class="lede">박사·조수·초파리 연구원·주판봇이 진행하는 해설 시리즈와 연구 실적을 분야별로 모았습니다. 분야와 중분류를 고르면 주제별 콘텐츠가 바로 나옵니다.</p>
 </header>
 <nav class="crumb wrap" id="crumb" aria-label="현재 위치"></nav>
 <main class="wrap" id="main" aria-live="polite"></main>
@@ -87,85 +101,66 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
   if(EMBED)document.documentElement.classList.add('embed');
   if(Q.get('theme')==='light'||Q.get('theme')==='dark')document.documentElement.setAttribute('data-theme',Q.get('theme'));
   var LANG_SHORT={ko:'한국어',en:'English',zh:'中文',ja:'日本語',uz:'Oʻzbekcha',ru:'Русский',vi:'Tiếng Việt'};
-  var D=null,CATS=[],ITEMS=[],FIRST=true;
+  var D=null,CATS=[],ITEMS=[],MIDS=[],FIRST=true;
   function el(t,c,txt){var e=document.createElement(t);if(c)e.className=c;if(txt!=null)e.textContent=txt;return e;}
   function rackNo(c){return 'RACK '+String(c.rack).padStart(2,'0');}
   function enc(s){return encodeURIComponent(s);}
   function H(a){var p=[];for(var k=0;k<a.length&&a[k];k++)p.push(enc(a[k]));return '#/'+p.join('/');}
-  function parse(){var p=location.hash.replace(/^#\/?/,'').split('/').filter(Boolean).map(decodeURIComponent);return {cat:p[0]||'',mid:p[1]||'',sub:p[2]||''};}
+  function parse(){var p=location.hash.replace(/^#\/?/,'').split('/').filter(Boolean).map(decodeURIComponent);return {cat:p[0]||'',mid:p[1]||''};}
   function inCat(n){return ITEMS.filter(function(i){return i.cat===n;});}
   function M(i){return i.mid||'기타';}
   function S(i){return i.sub||'기타';}
   function uniq(list,f){var o=[];list.forEach(function(i){var v=f(i);if(o.indexOf(v)<0)o.push(v);});return o;}
-  function midsOf(n){return uniq(inCat(n),M);}
+  function midInfo(cat,name){return MIDS.filter(function(x){return x.cat===cat&&x.name===name;})[0]||{name:name,keywords:[]};}
+  function midsOf(n){
+    var have=uniq(inCat(n),M);
+    var ord=MIDS.filter(function(x){return x.cat===n;}).map(function(x){return x.name;});
+    return have.sort(function(a,b){var ia=ord.indexOf(a),ib=ord.indexOf(b);if(a==='외부_콘텐츠')ia=999;if(b==='외부_콘텐츠')ib=999;return (ia<0?500:ia)-(ib<0?500:ib);});
+  }
   function inMid(n,m){return inCat(n).filter(function(i){return M(i)===m;});}
-  function subsOf(n,m){return uniq(m?inMid(n,m):inCat(n),S);}
+  function subsOf(n,m){return uniq(inMid(n,m),S);}
 
   function crumb(st){
     var nav=document.getElementById('crumb');nav.textContent='';
-    var path=[st.cat,st.mid,st.sub].filter(Boolean);
-    if(path.length){var b=el('button','back','← 뒤로');b.type='button';b.addEventListener('click',function(){
-      var up=path.slice(0,-1);
-      if(up.length===2&&subsOf(up[0],up[1]).length<2)up=up.slice(0,1);
-      location.hash=H(up);});nav.appendChild(b);}
+    var path=[st.cat,st.mid].filter(Boolean);
+    if(path.length){var b=el('button','back','← 뒤로');b.type='button';b.addEventListener('click',function(){location.hash=H(path.slice(0,-1));});nav.appendChild(b);}
     function link(txt,a){var x=el('a','',txt);x.href=H(a);return x;}
     nav.appendChild(path.length?link('전체 분야',[]):el('b','','전체 분야'));
-    path.forEach(function(v,k){nav.appendChild(el('span','sep','›'));
-      var last=k===path.length-1;
-      if(!last&&k===1&&subsOf(path[0],v).length<2)last=true;
-      nav.appendChild(last?el('b','',v):link(v,path.slice(0,k+1)));});
+    path.forEach(function(v,k){nav.appendChild(el('span','sep','›'));nav.appendChild(k===path.length-1?el('b','',v):link(v,path.slice(0,k+1)));});
+  }
+  /* 그림·소개·콘텐츠 수·주요 색인어가 있는 카드 (대분류·중분류 공통) */
+  function bigTile(c,o,href,count,label){
+    var t=el('a','tile big');t.href=href;t.style.setProperty('--c',c.color);
+    var f=el('span','pic');var ph=el('span','ph',o.name);
+    if(o.image){var im=el('img');im.alt='';im.loading='lazy';im.src=o.image;im.addEventListener('load',function(){ph.remove();post();});im.addEventListener('error',function(){im.remove();});f.appendChild(im);}
+    f.appendChild(ph);t.appendChild(f);
+    var b=el('span','tbody');
+    b.appendChild(el('span','rack',label));
+    b.appendChild(el('h3','',o.name));
+    if(o.desc)b.appendChild(el('p','',o.desc));
+    if(o.keywords&&o.keywords.length){var s=el('span','kw');s.setAttribute('aria-label','주요 색인어');o.keywords.forEach(function(x){s.appendChild(el('span','','#'+x.replace(/\s+/g,'')));});b.appendChild(s);}
+    var n=el('span','n');n.appendChild(el('b','',String(count)));n.appendChild(document.createTextNode(' 개 콘텐츠'));b.appendChild(n);
+    t.appendChild(b);return t;
   }
   function step1(m){
     m.appendChild(el('p','step','1단계 · 분야 고르기'));
-    var g=el('div','grid');
-    CATS.forEach(function(c){
-      var its=inCat(c.name);if(!its.length)return;
-      var t=el('a','tile');t.href='#/'+enc(c.name);t.style.setProperty('--c',c.color);
-      t.appendChild(el('span','rack',rackNo(c)));
-      t.appendChild(el('h3','',c.name));
-      if(c.desc)t.appendChild(el('p','',c.desc));
-      var s=el('div','subs');midsOf(c.name).forEach(function(x){s.appendChild(el('span','',x));});t.appendChild(s);
-      var n=el('span','n');n.appendChild(el('b','',String(its.length)));n.appendChild(document.createTextNode(' 개 콘텐츠'));t.appendChild(n);
-      g.appendChild(t);
-    });
+    var g=el('div','grid big');
+    CATS.forEach(function(c){var its=inCat(c.name);if(its.length)g.appendChild(bigTile(c,c,H([c.name]),its.length,rackNo(c)));});
     m.appendChild(g);
-  }
-  function tile(c,label,href,its,chips){
-    var t=el('a','tile');t.href=href;t.style.setProperty('--c',c.color);
-    t.appendChild(el('span','rack',rackNo(c)));
-    t.appendChild(el('h3','',label));
-    if(chips&&chips.length>1){var s=el('div','subs');chips.forEach(function(x){s.appendChild(el('span','',x));});t.appendChild(s);}
-    else t.appendChild(el('p','',its.slice(0,3).map(function(i){return i.title;}).join(' · ')+(its.length>3?' …':'')));
-    var n=el('span','n');n.appendChild(el('b','',String(its.length)));n.appendChild(document.createTextNode(' 개'));t.appendChild(n);
-    return t;
   }
   function step2(m,c){
-    m.appendChild(el('p','step','2단계 · 갈래 고르기 (중분류)'));
+    m.appendChild(el('p','step','2단계 · 중분류 고르기'));
     m.appendChild(el('h2','sec',c.name));
     if(c.desc)m.appendChild(el('p','secdesc',c.desc));
-    var g=el('div','grid');
-    midsOf(c.name).forEach(function(md){
-      var subs=subsOf(c.name,md);
-      var href=subs.length<2?H([c.name,md,subs[0]]):H([c.name,md]);
-      g.appendChild(tile(c,md,href,inMid(c.name,md),subs));
-    });
-    m.appendChild(g);
-  }
-  function step2b(m,c,md){
-    m.appendChild(el('p','step','3단계 · 주제 고르기 (소분류)'));
-    m.appendChild(el('h2','sec',md));
-    m.appendChild(el('p','secdesc',c.name));
-    var g=el('div','grid');
-    subsOf(c.name,md).forEach(function(s){
-      g.appendChild(tile(c,s,H([c.name,md,s]),inMid(c.name,md).filter(function(i){return S(i)===s;})));
-    });
+    var g=el('div','grid big');
+    midsOf(c.name).forEach(function(md){g.appendChild(bigTile(c,midInfo(c.name,md),H([c.name,md]),inMid(c.name,md).length,rackNo(c)+' · '+c.name));});
     m.appendChild(g);
   }
   function card(i,c){
     var k=el('article','card'+(i.kind==='ext'&&!i.thumb?' ext':''));k.style.setProperty('--c',c.color);
     var th=el(i.site_url?'a':'div','thumb');if(i.site_url){th.href=i.site_url;th.target='_blank';th.rel='noopener';th.setAttribute('aria-label',i.title+' 열기');}
-    if(i.thumb){var im=el('img');im.src=i.thumb;im.alt='';im.loading='lazy';im.addEventListener('error',function(){im.remove();th.appendChild(el('span','ph',i.sub||c.name));});th.appendChild(im);}
-    else th.appendChild(el('span','ph',i.kind==='ext'?(i.sub||c.name):(i.sub||c.name)));
+    if(i.thumb){var im=el('img');im.src=i.thumb;im.alt='';im.loading='lazy';im.addEventListener('load',post);im.addEventListener('error',function(){im.remove();th.appendChild(el('span','ph',S(i)));});th.appendChild(im);}
+    else th.appendChild(el('span','ph',S(i)));
     k.appendChild(th);
     var b=el('div','cbody');
     b.appendChild(el('h3','',i.title));
@@ -181,24 +176,30 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
     if(acts.childNodes.length)b.appendChild(acts);
     k.appendChild(b);return k;
   }
-  function step3(m,c,md,s){
-    m.appendChild(el('p','step','마지막 단계 · 콘텐츠 열기'));
-    m.appendChild(el('h2','sec',s));
-    m.appendChild(el('p','secdesc',c.name+' › '+md));
-    var g=el('div','cards');
-    inMid(c.name,md).filter(function(i){return S(i)===s;}).forEach(function(i){g.appendChild(card(i,c));});
-    m.appendChild(g);
+  /* 3단계: 중분류 안의 소분류를 묶음 제목으로, 항목을 바로 보여 준다 */
+  function step3(m,c,md){
+    var info=midInfo(c.name,md);
+    m.appendChild(el('p','step','3단계 · 콘텐츠 열기'));
+    m.appendChild(el('h2','sec',md));
+    m.appendChild(el('p','secdesc',c.name+(info.desc?' · '+info.desc:'')));
+    var subs=subsOf(c.name,md);
+    if(subs.length>1){var jump=el('nav','jump');jump.setAttribute('aria-label','소분류');subs.forEach(function(s,k){var a=el('a','',s+' '+inMid(c.name,md).filter(function(i){return S(i)===s;}).length);a.href='#';a.addEventListener('click',function(e){e.preventDefault();var t=document.getElementById('sub'+k);if(t)t.scrollIntoView({behavior:'smooth',block:'start'});});jump.appendChild(a);});m.appendChild(jump);}
+    subs.forEach(function(s,k){
+      var sec=el('section','subsec');sec.id='sub'+k;sec.style.setProperty('--c',c.color);
+      var its=inMid(c.name,md).filter(function(i){return S(i)===s;});
+      var h=el('h3','subh',s);h.appendChild(el('small','',its.length+'개'));sec.appendChild(h);
+      var g=el('div','cards');its.forEach(function(i){g.appendChild(card(i,c));});sec.appendChild(g);
+      m.appendChild(sec);
+    });
   }
   function render(){
     if(!D)return;
     var st=parse(),m=document.getElementById('main');m.textContent='';
     var c=CATS.filter(function(x){return x.name===st.cat;})[0];
-    if(st.cat&&!c){st={cat:'',mid:'',sub:''};}
-    if(c&&st.mid&&midsOf(c.name).indexOf(st.mid)<0){st.mid='';st.sub='';}
-    if(c&&st.mid&&st.sub&&subsOf(c.name,st.mid).indexOf(st.sub)<0)st.sub='';
-    if(c&&st.mid&&!st.sub&&subsOf(c.name,st.mid).length<2)st.sub=subsOf(c.name,st.mid)[0];
+    if(st.cat&&!c){st={cat:'',mid:''};}
+    if(c&&st.mid&&midsOf(c.name).indexOf(st.mid)<0){st.mid='';}
     crumb(st);
-    if(!c)step1(m);else if(!st.mid)step2(m,c);else if(!st.sub)step2b(m,c,st.mid);else step3(m,c,st.mid,st.sub);
+    if(!c)step1(m);else if(!st.mid)step2(m,c);else step3(m,c,st.mid);
     if(!EMBED)window.scrollTo(0,0);
     post(FIRST?false:true);FIRST=false;
   }
@@ -206,7 +207,7 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
   window.addEventListener('hashchange',render);
   window.addEventListener('resize',post);
   fetch('data/hub.json',{cache:'no-cache'}).then(function(r){if(!r.ok)throw new Error(r.status);return r.json();}).then(function(d){
-    D=d;CATS=d.categories||[];
+    D=d;CATS=d.categories||[];MIDS=d.mids||[];
     ITEMS=(d.items||[]).filter(function(i){return i.public==='Y'&&i.exists==='Y'&&CATS.some(function(c){return c.name===i.cat;});});
     document.getElementById('foot').textContent='콘텐츠 '+ITEMS.length+'개 · 갱신 '+d.updated+' · 랩타운 지하 1층 서버실의 랙과 같은 분류입니다.';
     render();

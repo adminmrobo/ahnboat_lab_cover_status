@@ -101,7 +101,13 @@ def main():
     if added:
         write_csv(hub_p, COLS, rows)
 
-    cats = meta.get("categories", [])
+    def _img(o):  # 그림 파일이 아직 없으면 비워 둔다 (카드에는 색 상자가 보인다)
+        o = dict(o)
+        if o.get("image") and not os.path.exists(os.path.join(ROOT, o["image"])):
+            o["image"] = ""
+        return o
+    cats = [_img(c) for c in meta.get("categories", [])]
+    meta["mids"] = [_img(m) for m in meta.get("mids", [])]
     cat_order = {c["name"]: i for i, c in enumerate(cats)}
     items = []
     for i, h in enumerate(rows):
@@ -144,7 +150,7 @@ def main():
         })
     items.sort(key=lambda x: (cat_order.get(x["cat"], 99), x["mid"], x["sub"], x["order"]))
     kst = dt.timezone(dt.timedelta(hours=9))
-    out = {"updated": dt.datetime.now(kst).date().isoformat(), "categories": cats, "items": items,
+    out = {"updated": dt.datetime.now(kst).date().isoformat(), "categories": cats, "mids": meta.get("mids", []), "items": items,
            "added_today": added}
     with open(os.path.join(DATA, "hub.json"), "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=1)
