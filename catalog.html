@@ -19,7 +19,7 @@
 :root[data-theme="dark"]{--bg:#121614; --panel:#1b211e; --ink:#e8ece9; --muted:#9aa5a0; --rule:#2e3833; --blue:#8fb8ff; color-scheme:dark}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{background:var(--bg);color:var(--ink);font-family:var(--font);font-size:15px;line-height:1.55;margin:0;overflow-x:hidden;word-break:keep-all}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:15px;line-height:1.55;margin:0;overflow-x:hidden;word-break:keep-all}
 a{color:var(--blue)}
 .wrap{max-width:1100px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 header.site{padding-block:28px 6px}
@@ -87,7 +87,7 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
   if(EMBED)document.documentElement.classList.add('embed');
   if(Q.get('theme')==='light'||Q.get('theme')==='dark')document.documentElement.setAttribute('data-theme',Q.get('theme'));
   var LANG_SHORT={ko:'한국어',en:'English',zh:'中文',ja:'日本語',uz:'Oʻzbekcha',ru:'Русский',vi:'Tiếng Việt'};
-  var D=null,CATS=[],ITEMS=[];
+  var D=null,CATS=[],ITEMS=[],FIRST=true;
   function el(t,c,txt){var e=document.createElement(t);if(c)e.className=c;if(txt!=null)e.textContent=txt;return e;}
   function rackNo(c){return 'RACK '+String(c.rack).padStart(2,'0');}
   function enc(s){return encodeURIComponent(s);}
@@ -200,9 +200,9 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
     crumb(st);
     if(!c)step1(m);else if(!st.mid)step2(m,c);else if(!st.sub)step2b(m,c,st.mid);else step3(m,c,st.mid,st.sub);
     if(!EMBED)window.scrollTo(0,0);
-    post();
+    post(FIRST?false:true);FIRST=false;
   }
-  function post(){if(window.parent!==window){try{window.parent.postMessage({type:'ahnboat-catalog-height',height:document.documentElement.scrollHeight},'*');}catch(e){}}}
+  function post(nav){if(window.parent!==window){try{var h=Math.ceil(document.body.getBoundingClientRect().height);window.parent.postMessage({type:'ahnboat-catalog-height',height:h,nav:!!nav},'*');}catch(e){}}}
   window.addEventListener('hashchange',render);
   window.addEventListener('resize',post);
   fetch('data/hub.json',{cache:'no-cache'}).then(function(r){if(!r.ok)throw new Error(r.status);return r.json();}).then(function(d){
