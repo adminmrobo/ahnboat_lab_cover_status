@@ -129,6 +129,11 @@
   "pushed_at": "2026-10-14T13:43:51Z",
   "made": "2026-11-07"
  },
+ "fish_market_learning_epoch_etc": {
+  "src": "og:assets/img/og_index.webp",
+  "pushed_at": "2026-11-07T23:44:36Z",
+  "made": "2026-11-08"
+ },
  "fof-money-meridian-": {
   "src": "name:cover_fof01.webp",
   "pushed_at": "2026-11-06T22:39:43Z",
@@ -141,7 +146,7 @@
  },
  "g2b-bid-strategy": {
   "src": null,
-  "pushed_at": "2026-11-07T00:16:31Z"
+  "pushed_at": "2026-11-07T23:42:56Z"
  },
  "Gen_AI_Hannam_univ": {
   "src": "embedded:index.html#hero",
@@ -195,6 +200,21 @@
   "pushed_at": "2026-11-06T12:36:03Z",
   "made": "2026-11-07"
  },
+ "inference_engineering_study_week_02_textbook_ch02_p3_to_end": {
+  "src": "name:images/cover_03.webp",
+  "pushed_at": "2026-11-07T23:55:03Z",
+  "made": "2026-11-08"
+ },
+ "inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide": {
+  "src": "name:images/s03_cover.webp",
+  "pushed_at": "2026-11-07T23:55:00Z",
+  "made": "2026-11-08"
+ },
+ "inference_engineering_study_week_03_article_01": {
+  "src": "name:assets/img/cover_03.webp",
+  "pushed_at": "2026-11-07T05:49:35Z",
+  "made": "2026-11-08"
+ },
  "inference_korea_study_page": {
   "src": null,
   "pushed_at": "2026-10-31T09:39:49Z"
@@ -246,6 +266,11 @@
   "src": "name:assets/cover_llmeval.webp",
   "pushed_at": "2026-11-06T18:33:31Z",
   "made": "2026-11-07"
+ },
+ "markov_player": {
+  "src": "name:assets/og_mk.jpg",
+  "pushed_at": "2026-11-07T05:41:16Z",
+  "made": "2026-11-08"
  },
  "ML_00_Algorithm-family-build_00": {
   "src": "name:4-6_regression_seven.html/idx_hero_1280.png",
@@ -326,8 +351,9 @@
   "pushed_at": "2026-11-06T22:14:12Z"
  },
  "neuralink_animal_brain_ai": {
-  "src": null,
-  "pushed_at": "2026-11-06T18:48:31Z"
+  "src": "manifest:assets/img/cover_index.webp",
+  "pushed_at": "2026-11-07T05:04:08Z",
+  "made": "2026-11-08"
  },
  "Regression_ridge_lasso": {
   "src": "manifest:og_rg.jpg",
@@ -371,6 +397,11 @@
  "valuation_without_revenue": {
   "src": null,
   "pushed_at": "2026-11-06T04:27:09Z"
+ },
+ "what_is_tensor": {
+  "src": "name:assets/img/og_w01.jpg",
+  "pushed_at": "2026-11-07T15:17:57Z",
+  "made": "2026-11-08"
  },
  "who_am_i": {
   "src": "embedded:who_am_i.en.html#hero",
