@@ -1,5 +1,5 @@
 {
- "_guide": "categories 순서가 서버실 랙 순서(RACK 01~10, 최대 10개). tr은 서버실 외국어 이름. server_translations는 서버실 외국어 제목·소개(옛 servers.csv에서 가져옴). mids는 중분류 카드(소개·색인어·그림). 그림은 thumbs/cats/<id>.webp, 없으면 색 상자로 보인다.",
+ "_guide": "categories 순서가 서버실 랙 순서(RACK 01~10, 최대 10개). tr은 서버실 외국어 이름. server_translations는 서버실 외국어 제목·소개(옛 servers.csv에서 가져옴). mids는 중분류 카드(소개·색인어·그림). 그림은 thumbs/cats/<id>.webp, 없으면 색 상자로 보인다. 현황판 표(hub.csv)·합본(hub.json)은 관리자 키로 잠근 .enc 파일로만 저장한다.",
  "categories": [
   {
    "name": "머신러닝",
