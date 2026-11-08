@@ -15,7 +15,12 @@
    "kicker": "AHNBOAT LAB · PAPERS",
    "title": "Ahn's Articles & Presentations",
    "desc": "안상선(Reon Ahn)의 학술 논문과 발표를 인터랙티브 해설로 다시 읽습니다. 갈래를 고르면 논문 해설과 원문이 이어집니다.",
-   "pos": "center 35%"
+   "pos": "center 35%",
+   "style": "light",
+   "sprites": [
+    "thumbs/chars/pose/doc_write.webp",
+    "thumbs/chars/pose/asst_present.webp"
+   ]
   },
   "foot": "논문과 발표는 Lab Server의 RACK 05와 같은 목록입니다.",
   "mid_info": {
@@ -38,7 +43,12 @@
    "image": "",
    "kicker": "AHNBOAT LAB · PORTFOLIO",
    "title": "Ahn's Portfolio",
-   "desc": "프로젝트, 특허, 저서와 이러닝, 공공 사업, 블로그를 모았습니다. 분야를 고르면 항목과 링크가 이어집니다."
+   "desc": "프로젝트, 특허, 저서와 이러닝, 공공 사업, 블로그를 모았습니다. 분야를 고르면 항목과 링크가 이어집니다.",
+   "style": "light",
+   "sprites": [
+    "thumbs/chars/pose/asst_check.webp",
+    "thumbs/chars/pose/doc_ok.webp"
+   ]
   },
   "foot": "포트폴리오 목록은 data/portfolio.csv에서 고칩니다."
  }

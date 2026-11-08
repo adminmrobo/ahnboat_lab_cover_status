@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>주인장은 누구? · Reon Ahn's page</title>
+<meta name="description" content="Reon Ahn(안상선)과 연구실 식구들, Ahn Lab Town 입장">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@500;700&display=swap">
+<style>
+:root{
+  --bg:#ffffff; --paper:#fbfaf7; --ink:#1f2224; --muted:#5f6663; --line:#1f2224; --rule:#e4e0d8;
+  --mint:#1f9e66; --pink:#d9668f; --sky:#2f6fbf; --sun:#e0a92a;
+  --font:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace; color-scheme:light;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;font-size:17px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);line-height:1.55;overflow-x:hidden;word-break:keep-all}
+a{color:inherit}
+.wrap{max-width:1760px;margin:0 auto;padding:16px max(16px,env(safe-area-inset-left,0px)) 24px}
+.head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:0 0 14px}
+.kicker{display:inline-block;font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;border:1.5px solid var(--line);border-radius:99px;padding:3px 10px;background:#fff}
+h2{margin:0;font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.15}
+.top{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:18px}
+.card{border:2px solid var(--line);border-radius:20px;background:#fff;box-shadow:5px 5px 0 var(--line);overflow:hidden;min-width:0}
+.me{padding:24px 26px;background:radial-gradient(circle at 1px 1px,#e9e5dc 1px,transparent 1.5px) 0 0/18px 18px,var(--paper);display:flex;flex-direction:column;gap:12px}
+.me .nm{margin:0;font-size:1.6rem;font-weight:700;line-height:1.2}
+.me .nm small{display:block;font-size:.95rem;font-weight:500;color:var(--muted);margin-top:2px}
+.me ul{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:6px}
+.me li{border:1.5px solid var(--line);border-radius:99px;padding:2px 11px;font-size:.85rem;background:#fff}
+.me p{margin:0;color:var(--muted);font-size:.95rem}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto;padding-top:6px}
+.btn{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font-weight:700;font-size:.95rem;border:2px solid var(--line);border-radius:12px;padding:9px 16px;background:var(--sun);box-shadow:3px 3px 0 var(--line);transition:transform .12s,box-shadow .12s}
+.btn.ghost{background:#fff}
+.btn:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--line)}
+.btn:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--line)}
+.town{position:relative;display:block;text-decoration:none;min-height:260px}
+.town img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;image-rendering:pixelated}
+.town .cap{position:absolute;left:14px;bottom:14px;right:14px;display:flex;justify-content:space-between;align-items:flex-end;gap:10px}
+.town .cap span{background:#fff;border:2px solid var(--line);border-radius:12px;padding:6px 12px;font-weight:700;box-shadow:3px 3px 0 var(--line)}
+.town .cap small{display:block;font-weight:500;font-size:.75rem;color:var(--muted)}
+.town:hover img{filter:brightness(1.05)}
+.crew{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:18px}
+.mate{border:2px solid var(--line);border-radius:18px;background:#fff;box-shadow:4px 4px 0 var(--line);padding:12px 14px 14px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;cursor:pointer;font:inherit;color:inherit;min-width:0}
+.mate .pic{height:150px;display:flex;align-items:flex-end;justify-content:center;width:100%;border-radius:12px;background:radial-gradient(circle at 1px 1px,#ece8df 1px,transparent 1.5px) 0 0/14px 14px,var(--paper)}
+.mate img{max-height:140px;max-width:100%;image-rendering:pixelated;transform-origin:50% 100%}
+.mate.fly img{max-height:96px;margin-bottom:24px}
+.mate.robo img{max-height:104px}
+.mate.hop img{animation:hop .5s ease}
+@keyframes hop{30%{transform:translateY(-8px)}60%{transform:none}}
+.mate b{font-size:1rem;margin-top:4px}
+.mate .role{font-family:var(--mono);font-size:.68rem;letter-spacing:.06em;color:var(--muted)}
+.mate p{margin:0;font-size:.86rem;color:var(--muted)}
+.mate .ln{min-height:2.6em;font-size:.86rem;color:var(--ink);background:var(--paper);border-radius:10px;padding:4px 8px;width:100%}
+@media (max-width:900px){.top{grid-template-columns:1fr}.crew{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (prefers-reduced-motion:reduce){.mate.hop img{animation:none}.btn{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="head"><span class="kicker">MEET ME</span><h2>주인장은 누구?</h2></div>
+  <div class="top">
+    <section class="card me" aria-label="주인장 소개">
+      <p class="nm">안상선 <small>Reon Ahn · Ahn boat</small></p>
+      <ul><li>경제학 박사</li><li>인공지능 연구</li><li>대학·기관 강의</li></ul>
+      <p>어려운 개념을 박사·조수·초파리 연구원·주판봇이 진행하는 작은 실험으로 바꿔 보여 주는 연구실을 운영합니다. 학술적 주장은 논문으로, 콘텐츠는 함께 해 보는 해설로 만듭니다.</p>
+      <div class="btns">
+        <a class="btn" href="https://adminmrobo.github.io/ahn_boat_lab_town/" target="_blank" rel="noopener">🚪 Ahn Lab Town 입장하기</a>
+        <a class="btn ghost" href="https://adminmrobo.github.io/who_am_i/who_am_i.html" target="_blank" rel="noopener">저자 소개 보기</a>
+      </div>
+    </section>
+    <a class="card town" href="https://adminmrobo.github.io/ahn_boat_lab_town/" target="_blank" rel="noopener" aria-label="Ahn Lab Town 입장하기">
+      <img src="thumbs/chars/labtown_map.webp" alt="">
+      <span class="cap"><span>Ahn Lab Town<small>연구실 식구들이 일하는 마을 · 지하 1층 서버실</small></span></span>
+    </a>
+  </div>
+  <div class="crew" id="crew" aria-label="연구실 식구들 (눌러 보세요)"></div>
+</div>
+<script>
+(function(){
+  'use strict';
+  var P='thumbs/chars/pose/';
+  var CREW=[
+    {k:'doc',name:'박사',role:'DOCTOR',desc:'연구실을 이끌며 개념을 실험으로 풀어 줍니다.',poses:['doc_ok','doc_think','doc_write','doc_data','doc_flask','doc_rush','doc_sleep'],
+     lines:['어서 오게!','이건 실험해 보면 금방 알 수 있다네.','어디 보자… 데이터부터!','앗, 마감이다!','(쿨쿨…)']},
+    {k:'asst',name:'조수 하루',role:'ASSISTANT',desc:'자료를 정리하고 콘텐츠 진행 상황을 챙깁니다.',poses:['asst_wave','asst_idea','asst_present','asst_type','asst_check','asst_cheer','asst_think'],
+     lines:['안녕하세요!','좋은 생각이 났어요!','발표 자료 준비 완료!','정리하는 중이에요.','확인했어요 ✓','해냈다!','음… 다시 생각해 볼게요.']},
+    {k:'fly',name:'초파리 연구원',role:'RESEARCHER',desc:'작은 몸으로 큰 데이터를 살피는 연구원입니다.',poses:['fly_hover','fly_idea','fly_report','fly_scan','fly_analyze','fly_panic'],
+     lines:['윙윙~','아이디어!','보고드립니다!','스캔 중…','분석 완료.','으악, 오류다!']},
+    {k:'robo',name:'주판봇',role:'ABABOT',desc:'주판으로 숫자를 세고 서버실 랙을 지킵니다.',poses:['robo_scan','robo_search','robo_delivery','robo_dance','robo_battery','robo_alert','robo_lock'],
+     lines:['스캔 중.','찾는 중…','배달 왔습니다!','♪ 딸깍딸깍','충전 중…','경고! 경고!','랙 잠금 확인.']}
+  ];
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e;}
+  var box=document.getElementById('crew');
+  CREW.forEach(function(c){
+    var b=el('button','mate '+c.k);b.type='button';b.setAttribute('aria-label',c.name+' — 눌러서 다른 동작 보기');
+    var pic=el('span','pic');c.img=el('img');c.img.alt='';c.img.src=P+c.poses[0]+'.webp';pic.appendChild(c.img);b.appendChild(pic);
+    b.appendChild(el('span','role',c.role));b.appendChild(el('b','',c.name));b.appendChild(el('p','',c.desc));
+    c.ln=el('span','ln',c.lines[0]);b.appendChild(c.ln);c.i=0;c.btn=b;
+    b.addEventListener('click',function(){next(c);});box.appendChild(b);
+    c.poses.forEach(function(p){var i=new Image();i.src=P+p+'.webp';});
+  });
+  function next(c){c.i=(c.i+1)%c.poses.length;c.img.src=P+c.poses[c.i]+'.webp';c.ln.textContent=c.lines[c.i%c.lines.length];
+    if(!reduce){c.btn.classList.remove('hop');void c.btn.offsetWidth;c.btn.classList.add('hop');}}
+  if(!reduce){var t=0;setInterval(function(){next(CREW[t%CREW.length]);t++;},2400);}
+  function post(){if(window.parent!==window){try{window.parent.postMessage({type:'ahnboat-catalog-height',height:Math.ceil(document.body.getBoundingClientRect().height),nav:false},'*');}catch(e){}}}
+  window.addEventListener('resize',post);document.querySelectorAll('img').forEach(function(im){im.addEventListener('load',post);});post();
+})();
+</script>
+</body>
+</html>
