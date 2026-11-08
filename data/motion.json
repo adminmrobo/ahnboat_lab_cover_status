@@ -1,0 +1,335 @@
+{
+ "unit_note": "scale = 화면 높이 1(박사 키)당 프레임 픽셀 배율. 쓰는 쪽은 프레임 높이*scale*박사키px 로 그린다.",
+ "sheets": {
+  "D1": {
+   "who": "doctor",
+   "facing": "right",
+   "frame_size": [
+    186,
+    317
+   ],
+   "ground_y": 311,
+   "seg": {
+    "idle": [
+     1,
+     4
+    ],
+    "walk": [
+     5,
+     8
+    ]
+   },
+   "scale": 0.003289,
+   "frames": [
+    "thumbs/chars/motion/doctor/D1_f01.webp",
+    "thumbs/chars/motion/doctor/D1_f02.webp",
+    "thumbs/chars/motion/doctor/D1_f03.webp",
+    "thumbs/chars/motion/doctor/D1_f04.webp",
+    "thumbs/chars/motion/doctor/D1_f05.webp",
+    "thumbs/chars/motion/doctor/D1_f06.webp",
+    "thumbs/chars/motion/doctor/D1_f07.webp",
+    "thumbs/chars/motion/doctor/D1_f08.webp"
+   ]
+  },
+  "D2": {
+   "who": "doctor",
+   "facing": "right",
+   "frame_size": [
+    266,
+    306
+   ],
+   "ground_y": 269,
+   "seg": {
+    "jump": [
+     1,
+     4
+    ],
+    "dash": [
+     5,
+     8
+    ]
+   },
+   "scale": 0.004082,
+   "frames": [
+    "thumbs/chars/motion/doctor/D2_f01.webp",
+    "thumbs/chars/motion/doctor/D2_f02.webp",
+    "thumbs/chars/motion/doctor/D2_f03.webp",
+    "thumbs/chars/motion/doctor/D2_f04.webp",
+    "thumbs/chars/motion/doctor/D2_f05.webp",
+    "thumbs/chars/motion/doctor/D2_f06.webp",
+    "thumbs/chars/motion/doctor/D2_f07.webp",
+    "thumbs/chars/motion/doctor/D2_f08.webp"
+   ]
+  },
+  "D4": {
+   "who": "doctor",
+   "facing": "front",
+   "frame_size": [
+    262,
+    320
+   ],
+   "ground_y": 306,
+   "seg": {
+    "win": [
+     1,
+     4
+    ],
+    "ko": [
+     5,
+     8
+    ]
+   },
+   "scale": 0.003257,
+   "frames": [
+    "thumbs/chars/motion/doctor/D4_f01.webp",
+    "thumbs/chars/motion/doctor/D4_f02.webp",
+    "thumbs/chars/motion/doctor/D4_f03.webp",
+    "thumbs/chars/motion/doctor/D4_f04.webp",
+    "thumbs/chars/motion/doctor/D4_f05.webp",
+    "thumbs/chars/motion/doctor/D4_f06.webp",
+    "thumbs/chars/motion/doctor/D4_f07.webp",
+    "thumbs/chars/motion/doctor/D4_f08.webp"
+   ]
+  },
+  "A1": {
+   "who": "haru",
+   "facing": "left",
+   "frame_size": [
+    182,
+    280
+   ],
+   "ground_y": 272,
+   "seg": {
+    "idle": [
+     1,
+     4
+    ],
+    "walk": [
+     5,
+     8
+    ]
+   },
+   "scale": 0.003422,
+   "frames": [
+    "thumbs/chars/motion/haru/A1_f01.webp",
+    "thumbs/chars/motion/haru/A1_f02.webp",
+    "thumbs/chars/motion/haru/A1_f03.webp",
+    "thumbs/chars/motion/haru/A1_f04.webp",
+    "thumbs/chars/motion/haru/A1_f05.webp",
+    "thumbs/chars/motion/haru/A1_f06.webp",
+    "thumbs/chars/motion/haru/A1_f07.webp",
+    "thumbs/chars/motion/haru/A1_f08.webp"
+   ]
+  },
+  "A2": {
+   "who": "haru",
+   "facing": "left",
+   "frame_size": [
+    263,
+    304
+   ],
+   "ground_y": 279,
+   "seg": {
+    "jump": [
+     1,
+     4
+    ],
+    "dash": [
+     5,
+     8
+    ]
+   },
+   "scale": 0.00383,
+   "frames": [
+    "thumbs/chars/motion/haru/A2_f01.webp",
+    "thumbs/chars/motion/haru/A2_f02.webp",
+    "thumbs/chars/motion/haru/A2_f03.webp",
+    "thumbs/chars/motion/haru/A2_f04.webp",
+    "thumbs/chars/motion/haru/A2_f05.webp",
+    "thumbs/chars/motion/haru/A2_f06.webp",
+    "thumbs/chars/motion/haru/A2_f07.webp",
+    "thumbs/chars/motion/haru/A2_f08.webp"
+   ]
+  },
+  "A4": {
+   "who": "haru",
+   "facing": "front",
+   "frame_size": [
+    269,
+    323
+   ],
+   "ground_y": 304,
+   "seg": {
+    "win": [
+     1,
+     4
+    ],
+    "ko": [
+     5,
+     8
+    ]
+   },
+   "scale": 0.002857,
+   "frames": [
+    "thumbs/chars/motion/haru/A4_f01.webp",
+    "thumbs/chars/motion/haru/A4_f02.webp",
+    "thumbs/chars/motion/haru/A4_f03.webp",
+    "thumbs/chars/motion/haru/A4_f04.webp",
+    "thumbs/chars/motion/haru/A4_f05.webp",
+    "thumbs/chars/motion/haru/A4_f06.webp",
+    "thumbs/chars/motion/haru/A4_f07.webp",
+    "thumbs/chars/motion/haru/A4_f08.webp"
+   ]
+  },
+  "F1": {
+   "who": "fruitfly",
+   "facing": "front",
+   "frame_size": [
+    269,
+    273
+   ],
+   "ground_y": 264,
+   "seg": {
+    "idle": [
+     1,
+     4
+    ],
+    "start": [
+     5,
+     8
+    ]
+   },
+   "scale": 0.001778,
+   "frames": [
+    "thumbs/chars/motion/fruitfly/F1_f01.webp",
+    "thumbs/chars/motion/fruitfly/F1_f02.webp",
+    "thumbs/chars/motion/fruitfly/F1_f03.webp",
+    "thumbs/chars/motion/fruitfly/F1_f04.webp",
+    "thumbs/chars/motion/fruitfly/F1_f05.webp",
+    "thumbs/chars/motion/fruitfly/F1_f06.webp",
+    "thumbs/chars/motion/fruitfly/F1_f07.webp",
+    "thumbs/chars/motion/fruitfly/F1_f08.webp"
+   ]
+  },
+  "F2": {
+   "who": "fruitfly",
+   "facing": "front",
+   "frame_size": [
+    293,
+    261
+   ],
+   "ground_y": 250,
+   "seg": {
+    "point_left": [
+     1,
+     4
+    ],
+    "point_right": [
+     5,
+     8
+    ]
+   },
+   "scale": 0.001688,
+   "frames": [
+    "thumbs/chars/motion/fruitfly/F2_f01.webp",
+    "thumbs/chars/motion/fruitfly/F2_f02.webp",
+    "thumbs/chars/motion/fruitfly/F2_f03.webp",
+    "thumbs/chars/motion/fruitfly/F2_f04.webp",
+    "thumbs/chars/motion/fruitfly/F2_f05.webp",
+    "thumbs/chars/motion/fruitfly/F2_f06.webp",
+    "thumbs/chars/motion/fruitfly/F2_f07.webp",
+    "thumbs/chars/motion/fruitfly/F2_f08.webp"
+   ]
+  },
+  "F3": {
+   "who": "fruitfly",
+   "facing": "front",
+   "frame_size": [
+    255,
+    238
+   ],
+   "ground_y": 231,
+   "seg": {
+    "draw": [
+     1,
+     4
+    ],
+    "suspect": [
+     5,
+     8
+    ]
+   },
+   "scale": 0.001739,
+   "frames": [
+    "thumbs/chars/motion/fruitfly/F3_f01.webp",
+    "thumbs/chars/motion/fruitfly/F3_f02.webp",
+    "thumbs/chars/motion/fruitfly/F3_f03.webp",
+    "thumbs/chars/motion/fruitfly/F3_f04.webp",
+    "thumbs/chars/motion/fruitfly/F3_f05.webp",
+    "thumbs/chars/motion/fruitfly/F3_f06.webp",
+    "thumbs/chars/motion/fruitfly/F3_f07.webp",
+    "thumbs/chars/motion/fruitfly/F3_f08.webp"
+   ]
+  },
+  "R1": {
+   "who": "jupanbot",
+   "facing": "front",
+   "frame_size": [
+    291,
+    351
+   ],
+   "ground_y": 327,
+   "seg": {
+    "idle": [
+     1,
+     4
+    ],
+    "count": [
+     5,
+     8
+    ]
+   },
+   "scale": 0.002121,
+   "frames": [
+    "thumbs/chars/motion/jupanbot/R1_f01.webp",
+    "thumbs/chars/motion/jupanbot/R1_f02.webp",
+    "thumbs/chars/motion/jupanbot/R1_f03.webp",
+    "thumbs/chars/motion/jupanbot/R1_f04.webp",
+    "thumbs/chars/motion/jupanbot/R1_f05.webp",
+    "thumbs/chars/motion/jupanbot/R1_f06.webp",
+    "thumbs/chars/motion/jupanbot/R1_f07.webp",
+    "thumbs/chars/motion/jupanbot/R1_f08.webp"
+   ]
+  },
+  "R2": {
+   "who": "jupanbot",
+   "facing": "front",
+   "frame_size": [
+    202,
+    260
+   ],
+   "ground_y": 238,
+   "seg": {
+    "cheer": [
+     1,
+     4
+    ],
+    "sad": [
+     5,
+     8
+    ]
+   },
+   "scale": 0.003211,
+   "frames": [
+    "thumbs/chars/motion/jupanbot/R2_f01.webp",
+    "thumbs/chars/motion/jupanbot/R2_f02.webp",
+    "thumbs/chars/motion/jupanbot/R2_f03.webp",
+    "thumbs/chars/motion/jupanbot/R2_f04.webp",
+    "thumbs/chars/motion/jupanbot/R2_f05.webp",
+    "thumbs/chars/motion/jupanbot/R2_f06.webp",
+    "thumbs/chars/motion/jupanbot/R2_f07.webp",
+    "thumbs/chars/motion/jupanbot/R2_f08.webp"
+   ]
+  }
+ }
+}

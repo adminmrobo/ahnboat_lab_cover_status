@@ -18,8 +18,16 @@
    "pos": "center 35%",
    "style": "light",
    "sprites": [
-    "thumbs/chars/pose/doc_write.webp",
-    "thumbs/chars/pose/asst_present.webp"
+    {
+     "src": "thumbs/chars/motion/doctor/D1_f01.webp",
+     "h": 177,
+     "mb": -3
+    },
+    {
+     "src": "thumbs/chars/motion/haru/A1_f01.webp",
+     "h": 163,
+     "mb": -5
+    }
    ]
   },
   "foot": "논문과 발표는 Lab Server의 RACK 05와 같은 목록입니다.",
@@ -46,8 +54,16 @@
    "desc": "프로젝트, 특허, 저서와 이러닝, 공공 사업, 블로그를 모았습니다. 분야를 고르면 항목과 링크가 이어집니다.",
    "style": "light",
    "sprites": [
-    "thumbs/chars/pose/asst_check.webp",
-    "thumbs/chars/pose/doc_ok.webp"
+    {
+     "src": "thumbs/chars/motion/haru/A4_f01.webp",
+     "h": 157,
+     "mb": -9
+    },
+    {
+     "src": "thumbs/chars/motion/jupanbot/R1_f05.webp",
+     "h": 127,
+     "mb": -9
+    }
    ]
   },
   "foot": "포트폴리오 목록은 data/portfolio.csv에서 고칩니다."

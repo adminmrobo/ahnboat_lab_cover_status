@@ -29,16 +29,10 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
 .tag{margin:8px 0 0;font-size:1.15rem;color:var(--muted)}
 .boat{margin:14px 0 0;font-size:.9rem;color:var(--muted)}
 .boat b{color:var(--ink)}
-.crew{position:relative;display:flex;justify-content:center;align-items:flex-end;gap:clamp(4px,1.6vw,22px);padding:20px 16px 0;height:100%}
+.crew{position:relative;display:flex;justify-content:center;align-items:flex-end;gap:clamp(0px,1vw,14px);padding:20px 16px 10px;height:100%}
 .crew::after{content:"";position:absolute;left:6%;right:6%;bottom:0;height:16px;border-radius:50%;background:rgba(31,34,36,.08)}
 .mate{position:relative;display:flex;flex-direction:column;align-items:center;cursor:pointer;background:none;border:0;padding:0;font:inherit}
-.mate img{display:block;width:auto;image-rendering:pixelated;transform-origin:50% 100%;filter:drop-shadow(2px 2px 0 rgba(31,34,36,.12))}
-.mate.doc img{height:clamp(130px,17vw,210px)}
-.mate.asst img{height:clamp(124px,16vw,200px)}
-.mate.robo img{height:clamp(84px,10.5vw,132px)}
-.mate.fly img{height:clamp(70px,9vw,112px);margin-bottom:clamp(30px,5vw,60px)}
-.mate.hop img{animation:hop .5s ease}
-@keyframes hop{30%{transform:translateY(-10px) scale(1.02)}60%{transform:translateY(0)}}
+.mate .crewsprite img{filter:drop-shadow(2px 2px 0 rgba(31,34,36,.12))}
 .mate .nm{position:absolute;bottom:-2px;transform:translateY(100%);font-size:.7rem;color:var(--muted);white-space:nowrap;opacity:0;transition:opacity .2s}
 .mate:hover .nm,.mate:focus-visible .nm{opacity:1}
 .say{position:absolute;top:14px;right:16px;max-width:min(320px,70%);background:#fff;border:2px solid var(--line);border-radius:14px 14px 4px 14px;padding:8px 12px;font-size:.85rem;box-shadow:3px 3px 0 var(--line);opacity:0;transform:translateY(-4px);transition:opacity .25s,transform .25s;pointer-events:none}
@@ -60,7 +54,7 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
   .notice .lb{padding:8px 14px;border-right:0;border-bottom:2px solid var(--line)}
   .notice .t{white-space:normal}
 }
-@media (prefers-reduced-motion:reduce){.mate.hop img{animation:none}.say{transition:none}}
+@media (prefers-reduced-motion:reduce){.say{transition:none}}
 </style>
 </head>
 <body>
@@ -81,45 +75,39 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
     <ul id="nlist"><li><a href="#"><span class="t">공지를 불러오는 중…</span></a></li></ul>
   </section>
 </div>
+<script src="crew.js"></script>
 <script>
 (function(){
   'use strict';
-  var P='thumbs/chars/pose/';
-  var CREW=[
-    {k:'doc',name:'박사',poses:['doc_ok','doc_think','doc_write','doc_data','doc_flask','doc_rush'],
-     lines:['어서 오게! 오늘은 어떤 실험을 해 볼까?','개념은 실험으로 풀면 쉬워진다네.','논문 해설은 아래 Articles에 있다네.']},
-    {k:'asst',name:'조수 하루',poses:['asst_wave','asst_idea','asst_present','asst_type','asst_check','asst_cheer','asst_think'],
-     lines:['안녕하세요! 새 소식은 아래 공지에 있어요.','콘텐츠 진행 상황은 Progress Board에서 볼 수 있어요.','Lab Server의 랙을 눌러 보세요!']},
-    {k:'fly',name:'초파리 연구원',poses:['fly_hover','fly_idea','fly_report','fly_scan','fly_analyze'],
-     lines:['윙윙~ 작은 몸으로 큰 데이터를 살펴봐요.','딥러닝 랙에는 제 특별편도 있어요!']},
-    {k:'robo',name:'주판봇',poses:['robo_scan','robo_search','robo_delivery','robo_dance','robo_battery'],
-     lines:['딸깍딸깍, 콘텐츠 수를 세는 중입니다.','열 개의 랙, 이상 없음!']}
-  ];
+  var LINES={doctor:['어서 오게! 오늘은 어떤 실험을 해 볼까?','개념은 실험으로 풀면 쉬워진다네.','논문 해설은 아래 Articles에 있다네.'],
+    haru:['안녕하세요! 새 소식은 아래 공지에 있어요.','콘텐츠 진행 상황은 Progress Board에서 볼 수 있어요.','Lab Server의 랙을 눌러 보세요!'],
+    jupanbot:['딸깍딸깍, 콘텐츠 수를 세는 중입니다.','열 개의 랙, 이상 없음!'],
+    fruitfly:['윙윙~ 작은 몸으로 큰 데이터를 살펴봐요.','딥러닝 랙에는 제 특별편도 있어요!']};
+  var NAME={doctor:'박사',haru:'조수 하루',jupanbot:'주판봇',fruitfly:'초파리 연구원'};
   var crew=document.getElementById('crew'),say=document.getElementById('say');
   var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
   function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e;}
-  var order=[CREW[0],CREW[1],CREW[3],CREW[2]];  // 박사, 하루, 주판봇, 초파리 (키 순서)
-  var mates=order.map(function(c){
-    var b=el('button','mate '+c.k);b.type='button';b.setAttribute('aria-label',c.name);
-    var im=el('img');im.alt='';im.src=P+c.poses[0]+'.webp';b.appendChild(im);b.appendChild(el('span','nm',c.name));
-    c.i=0;c.img=im;c.btn=b;
-    b.addEventListener('click',function(){next(c,true);});
-    crew.insertBefore(b,say);return c;
-  });
-  // 미리 받아 두기
-  CREW.forEach(function(c){c.poses.forEach(function(p){var i=new Image();i.src=P+p+'.webp';});});
   var sayT;
-  function speak(c){
-    document.getElementById('sayWho').textContent=c.name;
-    document.getElementById('sayTxt').textContent=c.lines[Math.floor(Math.random()*c.lines.length)];
-    say.classList.add('on');clearTimeout(sayT);sayT=setTimeout(function(){say.classList.remove('on');},3200);
+  function speak(w){document.getElementById('sayWho').textContent=NAME[w];
+    document.getElementById('sayTxt').textContent=LINES[w][Math.floor(Math.random()*LINES[w].length)];
+    say.classList.add('on');clearTimeout(sayT);sayT=setTimeout(function(){say.classList.remove('on');},3200);}
+  function H(){return Math.max(150,Math.min(240,window.innerWidth*0.15));}
+  var mates=[];
+  function build(){
+    crew.querySelectorAll('.mate').forEach(function(n){n.remove();});mates=[];
+    var h=H();
+    ['doctor','haru','jupanbot','fruitfly'].forEach(function(w){
+      var b=el('button','mate '+w);b.type='button';b.setAttribute('aria-label',NAME[w]);
+      var sp=AhnCrew.make(w,h);b.appendChild(sp.el);b.appendChild(el('span','nm',NAME[w]));
+      b.addEventListener('click',function(){sp.act();speak(w);});
+      crew.insertBefore(b,say);mates.push(sp);
+    });
+    post();
   }
-  function next(c,talk){
-    c.i=(c.i+1)%c.poses.length;c.img.src=P+c.poses[c.i]+'.webp';
-    if(!reduce){c.btn.classList.remove('hop');void c.btn.offsetWidth;c.btn.classList.add('hop');}
-    if(talk)speak(c);
-  }
-  if(!reduce){var turn=0;setInterval(function(){var c=mates[turn%mates.length];next(c,turn%3===1);turn++;},2600);}
+  AhnCrew.load().then(function(){build();
+    if(!reduce){var t=0;setInterval(function(){var m=mates[t%mates.length];m.act();if(t%3===1)speak(m.who);t++;},3200);}
+    var rw;window.addEventListener('resize',function(){clearTimeout(rw);rw=setTimeout(build,250);});
+  });
 
   // 공지: data/notices.csv (날짜, 제목, 링크, 표시)
   function parseCSV(t){
