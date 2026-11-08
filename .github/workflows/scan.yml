@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: "0 21 * * *"   # 매일 한국 시간 오전 6시
   workflow_dispatch:
+  push:                    # 엑셀로 고친 현황판 표를 올리면 바로 다시 만든다
+    branches: [main]
+    paths: ["data/hub.csv", "data/hub_meta.json"]
 
 permissions:
   contents: write
@@ -32,10 +35,13 @@ jobs:
           pip install --quiet pillow
           python scripts/make_thumbs.py --fetch
 
+      - name: 콘텐츠 현황판 DB와 서버실 목록 만들기
+        run: python scripts/build_hub.py
+
       - name: 바뀐 것이 있으면 커밋
         run: |
           # 날짜(checked_at)만 바뀐 경우는 커밋하지 않는다. 썸네일이 바뀌면 커밋한다.
-          if [ -z "$(git diff -U0 -- data/ | grep '^[+-]' | grep -v '^[+-][+-][+-]' | grep -v '"checked_at"')" ] \
+          if [ -z "$(git diff -U0 -- data/ | grep '^[+-]' | grep -v '^[+-][+-][+-]' | grep -v '"checked_at"' | grep -v '"updated"')" ] \
              && [ -z "$(git status --porcelain -- thumbs/)" ]; then
             echo "변경 없음"
             git checkout -- data/

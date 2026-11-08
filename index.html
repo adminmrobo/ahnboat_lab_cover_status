@@ -42,8 +42,8 @@ h1{margin:0;font-size:clamp(24px,4vw,34px);line-height:1.2;text-wrap:balance}
 h2{margin:0;font-size:17px}
 .lede{margin:0;color:var(--muted);max-width:66ch}
 .themebtn{flex:none;font:inherit;font-size:13px;background:var(--panel);color:var(--ink);border:1px solid var(--rule);border-radius:99px;padding:5px 12px;cursor:pointer}
-nav.tabs{display:flex;gap:4px;border-bottom:1px solid var(--rule);margin-top:6px}
-nav.tabs a{flex:0 1 auto;text-decoration:none;color:var(--muted);font-weight:700;padding:10px 14px;border-bottom:3px solid transparent;margin-bottom:-1px;white-space:nowrap}
+nav.tabs{display:flex;gap:4px;border-bottom:1px solid var(--rule);margin-top:6px;overflow-x:auto}
+nav.tabs a{flex:0 0 auto;text-decoration:none;color:var(--muted);font-weight:700;padding:10px 14px;border-bottom:3px solid transparent;margin-bottom:-1px;white-space:nowrap}
 nav.tabs a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--mint)}
 @media (max-width:420px){nav.tabs a{padding:10px 8px;font-size:14px}}
 .view[hidden]{display:none}
@@ -154,6 +154,8 @@ dl.facts details li{overflow-wrap:anywhere}
   <nav class="tabs" aria-label="페이지">
     <a href="#all" id="tabAll">전체 표지 현황</a>
     <a href="#jupanbot" id="tabJb">주판봇 변환 상황</a>
+    <a href="hub.html">콘텐츠 현황판</a>
+    <a href="catalog.html">공개 카탈로그</a>
   </nav>
 </header>
 

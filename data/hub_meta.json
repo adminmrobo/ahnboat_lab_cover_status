@@ -1,0 +1,686 @@
+{
+ "_guide": "categories 순서가 서버실 랙 순서(RACK 01~10, 최대 10개). tr은 서버실 외국어 이름. server_translations는 서버실 외국어 제목·소개(옛 servers.csv에서 가져옴).",
+ "categories": [
+  {
+   "name": "머신러닝",
+   "rack": 1,
+   "color": "#2f7d5b",
+   "desc": "물고기 시장 데이터부터 알고리즘 가계도, 모델 채용 위원회까지 머신러닝을 처음 배우는 시리즈",
+   "tr": {
+    "en": "Machine Learning",
+    "zh": "机器学习",
+    "ja": "機械学習",
+    "uz": "Mashinaviy o'rganish",
+    "ru": "Машинное обучение"
+   }
+  },
+  {
+   "name": "딥러닝·뇌과학",
+   "rack": 2,
+   "color": "#6a4fb3",
+   "desc": "초파리 연구원과 함께 신경망, 딥러닝 모델, 초파리 뇌 연구를 따라가는 시리즈",
+   "tr": {
+    "en": "Deep Learning & Neuroscience",
+    "zh": "深度学习·脑科学",
+    "ja": "ディープラーニング・脳科学",
+    "uz": "Chuqur o'rganish va neyrofan",
+    "ru": "Глубокое обучение и нейронаука"
+   }
+  },
+  {
+   "name": "AI 감각·생성",
+   "rack": 3,
+   "color": "#c0613a",
+   "desc": "AI가 보고, 움직임을 알아보고, 그리고, 읽는 방식을 긴급 미션으로 풀어 보는 시리즈",
+   "tr": {
+    "en": "AI Senses & Generation",
+    "zh": "AI 感知与生成",
+    "ja": "AIの感覚と生成",
+    "uz": "AI sezgilari va generatsiya",
+    "ru": "Чувства ИИ и генерация"
+   }
+  },
+  {
+   "name": "LLM·추론 엔지니어링",
+   "rack": 4,
+   "color": "#2f5f9e",
+   "desc": "LLM 추론 서빙과 평가, rule base에서 에이전트까지 다루는 추론 엔지니어링 스터디",
+   "tr": {
+    "en": "LLM & Inference Engineering",
+    "zh": "LLM·推理工程",
+    "ja": "LLM・推論エンジニアリング",
+    "uz": "LLM va inferens muhandisligi",
+    "ru": "LLM и инженерия инференса"
+   }
+  },
+  {
+   "name": "논문 해설",
+   "rack": 5,
+   "color": "#8b5a2b",
+   "desc": "안상선의 논문을 인터랙티브 해설로 다시 읽는 시리즈",
+   "tr": {
+    "en": "Paper Explainers",
+    "zh": "论文解读",
+    "ja": "論文解説",
+    "uz": "Maqolalar sharhi",
+    "ru": "Разбор статей"
+   }
+  },
+  {
+   "name": "금융·핀테크·블록체인",
+   "rack": 6,
+   "color": "#a07d12",
+   "desc": "블록체인 금융, 인슈어테크 사례, 회계와 기업가치, 자금순환",
+   "tr": {
+    "en": "Finance, Fintech & Blockchain",
+    "zh": "金融·金融科技·区块链",
+    "ja": "金融・フィンテック・ブロックチェーン",
+    "uz": "Moliya, fintex va blokcheyn",
+    "ru": "Финансы, финтех и блокчейн"
+   }
+  },
+  {
+   "name": "통계·데이터 기초",
+   "rack": 7,
+   "color": "#1f8a8a",
+   "desc": "확률·통계, 파이썬과 판다스, 시계열의 기초",
+   "tr": {
+    "en": "Statistics & Data Basics",
+    "zh": "统计与数据基础",
+    "ja": "統計・データの基礎",
+    "uz": "Statistika va ma'lumot asoslari",
+    "ru": "Статистика и основы данных"
+   }
+  },
+  {
+   "name": "강의·저서",
+   "rack": 8,
+   "color": "#a33d6b",
+   "desc": "데이터시각화, 생성형 AI 활용전략, 시멘트 공정 AI 등 강의 자료와 저서·이러닝",
+   "tr": {
+    "en": "Courses & Books",
+    "zh": "课程与著作",
+    "ja": "講義・著書",
+    "uz": "Kurslar va kitoblar",
+    "ru": "Курсы и книги"
+   }
+  },
+  {
+   "name": "공공·사회 프로젝트",
+   "rack": 9,
+   "color": "#4d7a2a",
+   "desc": "공공 입찰, 전력, 모빌리티, 사회적 비용을 데이터로 다룬 프로젝트",
+   "tr": {
+    "en": "Public & Social Projects",
+    "zh": "公共·社会项目",
+    "ja": "公共・社会プロジェクト",
+    "uz": "Jamoat va ijtimoiy loyihalar",
+    "ru": "Общественные проекты"
+   }
+  },
+  {
+   "name": "연구실 운영",
+   "rack": 10,
+   "color": "#5f6663",
+   "desc": "랩타운, 소개 페이지, 캐릭터와 제작 도구",
+   "tr": {
+    "en": "Lab Operations",
+    "zh": "研究室运营",
+    "ja": "研究室の運営",
+    "uz": "Laboratoriya faoliyati",
+    "ru": "Работа лаборатории"
+   }
+  }
+ ],
+ "server_translations": {
+  "Fish_Market_Data_Machine_Learning": {
+   "en": {
+    "title": "Easy Machine Learning with Fish Market Data",
+    "desc": "An introductory course that walks through regression and classification models step by step using fish-market data"
+   },
+   "zh": {
+    "title": "用鱼市数据轻松学机器学习",
+    "desc": "用鱼市数据从零开始跟着做回归与分类模型的入门课程"
+   },
+   "ja": {
+    "title": "Fish Market Dataで楽しく学ぶ機械学習",
+    "desc": "魚市場データで回帰・分類モデルを一から体験する入門講座"
+   },
+   "uz": {
+    "title": "Fish Market Data bilan oson mashinaviy o'rganish",
+    "desc": "Baliq bozori ma'lumotlari bilan regressiya va tasniflash modellarini noldan o'rganadigan kirish kursi"
+   },
+   "ru": {
+    "title": "Машинное обучение на данных рыбного рынка",
+    "desc": "Вводный курс: регрессия и классификация с нуля на данных рыбного рынка"
+   }
+  },
+  "deep_learning_00_neural_net_learns": {
+   "en": {
+    "title": "Understanding Neural Nets: Perceptron vs Function Model",
+    "desc": "Puts the perceptron and the function model side by side to compare how neural networks learn"
+   },
+   "zh": {
+    "title": "理解神经网络：感知机 vs 函数模型",
+    "desc": "把感知机和函数模型放在一起，比较神经网络的学习方式"
+   },
+   "ja": {
+    "title": "ニューラルネットの理解：パーセプトロン vs 関数モデル",
+    "desc": "パーセプトロンと関数モデルを並べ、ニューラルネットの学び方を比べる"
+   },
+   "uz": {
+    "title": "Neyron tarmoqlarni tushunish: perseptron va funksiya modeli",
+    "desc": "Perseptron va funksiya modelini yonma-yon qo'yib, neyron tarmoq qanday o'rganishini solishtiradi"
+   },
+   "ru": {
+    "title": "Понимание нейросетей: перцептрон и функциональная модель",
+    "desc": "Сравнение перцептрона и функциональной модели: как учится нейросеть"
+   }
+  },
+  "AI_Model_Review": {
+   "en": {
+    "title": "Deep Learning A to Z in the Fruit-Fly Lab",
+    "desc": "A series that tours deep-learning models like a map, guided by the Fruit-Fly Researcher"
+   },
+   "zh": {
+    "title": "果蝇研究室的深度学习 A to Z",
+    "desc": "跟着果蝇研究员，像看地图一样浏览深度学习模型的系列"
+   },
+   "ja": {
+    "title": "ショウジョウバエ研究室のディープラーニング A to Z",
+    "desc": "ショウジョウバエ研究員と一緒に、ディープラーニングのモデルを地図のように巡るシリーズ"
+   },
+   "uz": {
+    "title": "Meva pashshasi laboratoriyasida chuqur o'rganish A dan Z gacha",
+    "desc": "Meva pashshasi tadqiqotchisi bilan chuqur o'rganish modellarini xaritadek ko'zdan kechiradigan turkum"
+   },
+   "ru": {
+    "title": "Глубокое обучение от А до Я в лаборатории дрозофилы",
+    "desc": "Серия, где исследователь-дрозофила проводит по моделям глубокого обучения, как по карте"
+   }
+  },
+  "AI_Model_Review_Fruit_fly_special": {
+   "en": {
+    "title": "Fruit-Fly Brain Research Review",
+    "desc": "A review of the hints fruit-fly brain research offers to artificial intelligence"
+   },
+   "zh": {
+    "title": "果蝇大脑研究综述",
+    "desc": "整理果蝇大脑研究给人工智能带来启示的综述"
+   },
+   "ja": {
+    "title": "ショウジョウバエ脳研究レビュー",
+    "desc": "ショウジョウバエの脳研究がAIに与えるヒントをまとめたレビュー"
+   },
+   "uz": {
+    "title": "Meva pashshasi miyasi tadqiqoti sharhi",
+    "desc": "Meva pashshasi miyasi tadqiqotlari sun'iy intellektga beradigan g'oyalar sharhi"
+   },
+   "ru": {
+    "title": "Обзор исследований мозга дрозофилы",
+    "desc": "Обзор того, что исследования мозга дрозофилы подсказывают ИИ"
+   }
+  },
+  "AI_image_classification": {
+   "en": {
+    "title": "How Does AI Tell Images Apart?",
+    "desc": "A hands-on course on how image classification works"
+   },
+   "zh": {
+    "title": "AI 如何区分图像？",
+    "desc": "边动手边理解图像分类原理的课程"
+   },
+   "ja": {
+    "title": "AIは画像をどう見分ける？",
+    "desc": "画像分類の仕組みを手を動かしながら理解する講座"
+   },
+   "uz": {
+    "title": "AI tasvirlarni qanday farqlaydi?",
+    "desc": "Tasvir tasnifi qanday ishlashini amalda tushuntiradigan kurs"
+   },
+   "ru": {
+    "title": "Как ИИ различает изображения?",
+    "desc": "Практический курс о том, как работает классификация изображений"
+   }
+  },
+  "motion_ai_series_01": {
+   "en": {
+    "title": "How Does AI Recognize and Create Motion?",
+    "desc": "How motion-recognition AI and motion-generation AI work"
+   },
+   "zh": {
+    "title": "AI 如何识别并生成动作？",
+    "desc": "识别动作的 AI 与生成动作的 AI 的原理"
+   },
+   "ja": {
+    "title": "AIは動きをどう認識し、つくる？",
+    "desc": "動きを見分けるAIと動きをつくるAIの仕組み"
+   },
+   "uz": {
+    "title": "AI harakatni qanday taniydi va yaratadi?",
+    "desc": "Harakatni taniydigan va yaratadigan AI qanday ishlaydi"
+   },
+   "ru": {
+    "title": "Как ИИ распознаёт и создаёт движения?",
+    "desc": "Как работает ИИ, распознающий и создающий движения"
+   }
+  },
+  "ML_00_Algorithm-family-build_01": {
+   "en": {
+    "title": "AI Algorithm Family: the Family Tree",
+    "desc": "Special part 1: AI algorithms arranged as one family's tree"
+   },
+   "zh": {
+    "title": "人工智能算法家族：家谱",
+    "desc": "特别篇第 1 部：把人工智能算法整理成一个家族的家谱"
+   },
+   "ja": {
+    "title": "人工知能アルゴリズム・ファミリー：家系図",
+    "desc": "特別編第1部：AIアルゴリズムを一つの家系図にまとめる"
+   },
+   "uz": {
+    "title": "Sun'iy intellekt algoritmlari oilasi: shajara",
+    "desc": "Maxsus 1-qism: AI algoritmlari bitta oila shajarasi sifatida"
+   },
+   "ru": {
+    "title": "Семейство алгоритмов ИИ: родословная",
+    "desc": "Спецвыпуск, часть 1: алгоритмы ИИ как одно генеалогическое древо"
+   }
+  },
+  "ML_00_Algorithm-family-build_02": {
+   "en": {
+    "title": "AI Algorithm Family: the Member Roster",
+    "desc": "Special part 2: the traits of each family member (algorithm)"
+   },
+   "zh": {
+    "title": "人工智能算法家族：成员名册",
+    "desc": "特别篇第 2 部：整理家族成员（算法）各自的特点"
+   },
+   "ja": {
+    "title": "人工知能アルゴリズム・ファミリー：構成員名簿",
+    "desc": "特別編第2部：一族のメンバー（アルゴリズム）ごとの特徴"
+   },
+   "uz": {
+    "title": "Sun'iy intellekt algoritmlari oilasi: a'zolar ro'yxati",
+    "desc": "Maxsus 2-qism: har bir oila a'zosi (algoritm) xususiyatlari"
+   },
+   "ru": {
+    "title": "Семейство алгоритмов ИИ: список членов",
+    "desc": "Спецвыпуск, часть 2: черты каждого члена семьи (алгоритма)"
+   }
+  },
+  "ML_00_Algorithm-family-build_03": {
+   "en": {
+    "title": "AI Algorithm Family: the Family Gathering",
+    "desc": "Special part 3: the algorithms meet in one place and compare one another"
+   },
+   "zh": {
+    "title": "人工智能算法家族：家族聚会",
+    "desc": "特别篇第 3 部：算法们齐聚一堂，互相比较"
+   },
+   "ja": {
+    "title": "人工知能アルゴリズム・ファミリー：一族の会合",
+    "desc": "特別編第3部：アルゴリズムたちが一堂に会して互いを比べる"
+   },
+   "uz": {
+    "title": "Sun'iy intellekt algoritmlari oilasi: oila yig'ini",
+    "desc": "Maxsus 3-qism: algoritmlar bir joyga yig'ilib, bir-birini solishtiradi"
+   },
+   "ru": {
+    "title": "Семейство алгоритмов ИИ: семейный совет",
+    "desc": "Спецвыпуск, часть 3: алгоритмы собираются вместе и сравнивают друг друга"
+   }
+  },
+  "외부:Money-Robo 로봇저널리즘 신문": {
+   "en": {
+    "title": "Money-Robo Robot Journalism Paper",
+    "desc": "An AI news outlet that writes articles automatically from disclosure and market data",
+    "note": "http://www.money-robo.com"
+   },
+   "zh": {
+    "title": "Money-Robo 机器人新闻报",
+    "desc": "利用公告与行情数据自动撰写报道的 AI 新闻报",
+    "note": "http://www.money-robo.com"
+   },
+   "ja": {
+    "title": "Money-Robo ロボットジャーナリズム新聞",
+    "desc": "開示情報と相場データから記事を自動作成するAIニュース新聞",
+    "note": "http://www.money-robo.com"
+   },
+   "uz": {
+    "title": "Money-Robo robot jurnalistikasi gazetasi",
+    "desc": "Oshkor qilingan ma'lumotlar va bozor narxlaridan maqolalarni avtomatik yozadigan AI gazetasi",
+    "note": "http://www.money-robo.com"
+   },
+   "ru": {
+    "title": "Робо-газета Money-Robo",
+    "desc": "ИИ-издание, которое само пишет статьи по данным раскрытия и котировкам",
+    "note": "http://www.money-robo.com"
+   }
+  },
+  "외부:주식 기사 생성 장치 및 방법 (특허)": {
+   "en": {
+    "title": "Stock Article Generation Device and Method (patent)",
+    "desc": "A device and method that turn stock data into articles",
+    "note": "Patent No. 10-2135712"
+   },
+   "zh": {
+    "title": "股票报道生成装置及方法（专利）",
+    "desc": "把股票数据转换成报道的装置与方法",
+    "note": "专利 第10-2135712号"
+   },
+   "ja": {
+    "title": "株式記事生成装置及び方法（特許）",
+    "desc": "株式データを記事に変える装置と方法",
+    "note": "特許 第10-2135712号"
+   },
+   "uz": {
+    "title": "Aksiyalar haqida maqola yaratish qurilmasi va usuli (patent)",
+    "desc": "Aksiya ma'lumotlarini maqolaga aylantiradigan qurilma va usul",
+    "note": "Patent № 10-2135712"
+   },
+   "ru": {
+    "title": "Устройство и способ генерации статей об акциях (патент)",
+    "desc": "Устройство и способ превращения биржевых данных в статьи",
+    "note": "Патент № 10-2135712"
+   }
+  },
+  "외부:로봇 저널리즘을 이용한 암호 화폐 분석 뉴스 서비스 (특허)": {
+   "en": {
+    "title": "Crypto Analysis News Service Using Robot Journalism (patent)",
+    "desc": "A system that turns cryptocurrency data into analytical articles",
+    "note": "Patent No. 10-2618473"
+   },
+   "zh": {
+    "title": "利用机器人新闻的加密货币分析新闻服务（专利）",
+    "desc": "把加密货币数据做成分析报道并提供的系统",
+    "note": "专利 第10-2618473号"
+   },
+   "ja": {
+    "title": "ロボットジャーナリズムを用いた暗号通貨分析ニュースサービス（特許）",
+    "desc": "暗号通貨データを分析記事にして提供するシステム",
+    "note": "特許 第10-2618473号"
+   },
+   "uz": {
+    "title": "Robot jurnalistikasi asosidagi kriptovalyuta tahlili yangiliklari xizmati (patent)",
+    "desc": "Kriptovalyuta ma'lumotlarini tahliliy maqolaga aylantiradigan tizim",
+    "note": "Patent № 10-2618473"
+   },
+   "ru": {
+    "title": "Сервис аналитических новостей о криптовалютах на основе робожурналистики (патент)",
+    "desc": "Система, превращающая данные о криптовалютах в аналитические статьи",
+    "note": "Патент № 10-2618473"
+   }
+  },
+  "외부:핀테크 데이터분석 기초 (이러닝)": {
+   "en": {
+    "title": "Fintech Data Analysis Basics (e-learning)",
+    "desc": "A 13-hour e-learning course on the basics of working with financial data",
+    "note": "STEP e-learning · https://link.step.or.kr/brqEyc"
+   },
+   "zh": {
+    "title": "金融科技数据分析基础（网课）",
+    "desc": "学习处理金融数据基础的 13 小时网课",
+    "note": "STEP 网课 · https://link.step.or.kr/brqEyc"
+   },
+   "ja": {
+    "title": "フィンテックデータ分析の基礎（eラーニング）",
+    "desc": "金融データの扱い方の基礎を学ぶ13時間のeラーニング",
+    "note": "STEP eラーニング・https://link.step.or.kr/brqEyc"
+   },
+   "uz": {
+    "title": "Fintex ma'lumotlarini tahlil qilish asoslari (onlayn kurs)",
+    "desc": "Moliyaviy ma'lumotlar bilan ishlash asoslari bo'yicha 13 soatlik onlayn kurs",
+    "note": "STEP onlayn kurs · https://link.step.or.kr/brqEyc"
+   },
+   "ru": {
+    "title": "Основы анализа финтех-данных (онлайн-курс)",
+    "desc": "13-часовой онлайн-курс по основам работы с финансовыми данными",
+    "note": "Онлайн-курс STEP · https://link.step.or.kr/brqEyc"
+   }
+  },
+  "외부:블록체인 데이터 모니터링을 통한 이상징후 탐지시스템 (특허)": {
+   "en": {
+    "title": "Anomaly Detection System via Blockchain Data Monitoring (patent)",
+    "desc": "A system that watches blockchain data to find warning signs",
+    "note": "Patent No. 10-2555652"
+   },
+   "zh": {
+    "title": "通过监控区块链数据的异常征兆检测系统（专利）",
+    "desc": "监控区块链数据、发现异常征兆的系统",
+    "note": "专利 第10-2555652号"
+   },
+   "ja": {
+    "title": "ブロックチェーンデータ監視による異常兆候検知システム（特許）",
+    "desc": "ブロックチェーンデータを監視して異常の兆候を見つけるシステム",
+    "note": "特許 第10-2555652号"
+   },
+   "uz": {
+    "title": "Blokcheyn ma'lumotlarini kuzatish orqali anomaliyalarni aniqlash tizimi (patent)",
+    "desc": "Blokcheyn ma'lumotlarini kuzatib, xavf belgilarini topadigan tizim",
+    "note": "Patent № 10-2555652"
+   },
+   "ru": {
+    "title": "Система обнаружения аномалий через мониторинг данных блокчейна (патент)",
+    "desc": "Система, которая следит за данными блокчейна и находит признаки аномалий",
+    "note": "Патент № 10-2555652"
+   }
+  },
+  "외부:ERC-20 경제적 성과 분석": {
+   "en": {
+    "title": "Economic Performance of ERC-20 Tokens",
+    "desc": "A talk analyzing the economic performance of ERC-20 tokens",
+    "note": "Talk at EDCON 2018 · https://decenter.kr/NewsView/1VJB0BLUD4"
+   },
+   "zh": {
+    "title": "ERC-20 经济绩效分析",
+    "desc": "分析 ERC-20 代币经济绩效的报告",
+    "note": "EDCON 2018 报告 · https://decenter.kr/NewsView/1VJB0BLUD4"
+   },
+   "ja": {
+    "title": "ERC-20の経済的成果分析",
+    "desc": "ERC-20トークンの経済的成果を分析した発表",
+    "note": "EDCON 2018 発表・https://decenter.kr/NewsView/1VJB0BLUD4"
+   },
+   "uz": {
+    "title": "ERC-20 tokenlarining iqtisodiy samaradorligi",
+    "desc": "ERC-20 tokenlarining iqtisodiy natijalarini tahlil qilgan ma'ruza",
+    "note": "EDCON 2018 ma'ruzasi · https://decenter.kr/NewsView/1VJB0BLUD4"
+   },
+   "ru": {
+    "title": "Экономическая эффективность токенов ERC-20",
+    "desc": "Доклад об экономической эффективности токенов ERC-20",
+    "note": "Доклад на EDCON 2018 · https://decenter.kr/NewsView/1VJB0BLUD4"
+   }
+  },
+  "외부:산업재해 패널 데이터를 활용한 머신러닝 모델": {
+   "en": {
+    "title": "Machine-Learning Models with Industrial Accident Panel Data",
+    "desc": "A poster analyzing workers'-compensation panel data with machine learning",
+    "note": "10th Workers' Compensation Insurance Panel Conference"
+   },
+   "zh": {
+    "title": "利用工伤面板数据的机器学习模型",
+    "desc": "用机器学习分析工伤保险面板数据的海报发表",
+    "note": "第十届工伤保险面板学术会议"
+   },
+   "ja": {
+    "title": "労災パネルデータを用いた機械学習モデル",
+    "desc": "労災保険パネルデータを機械学習で分析したポスター発表",
+    "note": "第10回労災保険パネル学術大会"
+   },
+   "uz": {
+    "title": "Ishlab chiqarishdagi baxtsiz hodisalar panel ma'lumotlari bo'yicha ML modellari",
+    "desc": "Ishchilar sug'urtasi panel ma'lumotlarini mashinaviy o'rganish bilan tahlil qilgan poster",
+    "note": "Ishchilar sug'urtasi paneli bo'yicha 10-ilmiy konferensiya"
+   },
+   "ru": {
+    "title": "Модели машинного обучения на панельных данных о производственном травматизме",
+    "desc": "Постер: анализ панельных данных о страховании от несчастных случаев методами МО",
+    "note": "10-я конференция по панели страхования от несчастных случаев"
+   }
+  },
+  "외부:태양광 데이터를 이용한 폭염피해 예측 시스템 (특허)": {
+   "en": {
+    "title": "Heatwave Damage Forecasting System Using Solar Data (patent)",
+    "desc": "A system that forecasts heatwave damage from solar-power data",
+    "note": "Patent No. 10-2486672"
+   },
+   "zh": {
+    "title": "利用太阳能数据的高温灾害预测系统（专利）",
+    "desc": "用太阳能数据预测高温灾害的系统",
+    "note": "专利 第10-2486672号"
+   },
+   "ja": {
+    "title": "太陽光データを用いた猛暑被害予測システム（特許）",
+    "desc": "太陽光データで猛暑被害を予測するシステム",
+    "note": "特許 第10-2486672号"
+   },
+   "uz": {
+    "title": "Quyosh ma'lumotlari asosida jaziramadan zararni bashorat qilish tizimi (patent)",
+    "desc": "Quyosh energiyasi ma'lumotlaridan jazirama zararini bashorat qiladigan tizim",
+    "note": "Patent № 10-2486672"
+   },
+   "ru": {
+    "title": "Система прогноза ущерба от жары по данным солнечной энергетики (патент)",
+    "desc": "Система, прогнозирующая ущерб от жары по данным солнечной генерации",
+    "note": "Патент № 10-2486672"
+   }
+  },
+  "외부:AI 범죄와 자기 방어": {
+   "en": {
+    "title": "AI Crime and Self-Defense",
+    "desc": "A book that uses the economics of crime to explain how AI changed the cost structure and revenue model of crime",
+    "note": "CommunicationBooks · AI Series"
+   },
+   "zh": {
+    "title": "AI 犯罪与自我防卫",
+    "desc": "用犯罪经济学解读 AI 如何改变犯罪的成本结构与收益模式的书",
+    "note": "CommunicationBooks · 人工智能丛书"
+   },
+   "ja": {
+    "title": "AI犯罪と自己防衛",
+    "desc": "AIが犯罪のコスト構造と収益モデルをどう変えたかを犯罪経済学で読み解く本",
+    "note": "コミュニケーションブックス・人工知能叢書"
+   },
+   "uz": {
+    "title": "AI jinoyati va o'zini himoya qilish",
+    "desc": "AI jinoyatning xarajat tuzilmasi va daromad modelini qanday o'zgartirganini jinoyat iqtisodiyoti nuqtai nazaridan tushuntiradigan kitob",
+    "note": "CommunicationBooks · Sun'iy intellekt turkumi"
+   },
+   "ru": {
+    "title": "ИИ-преступность и самозащита",
+    "desc": "Книга о том, как ИИ изменил структуру затрат и модель доходов преступности, с точки зрения экономики преступлений",
+    "note": "CommunicationBooks · серия «Искусственный интеллект»"
+   }
+  },
+  "외부:[K-디지털] 인공지능 자연어 처리 (이러닝)": {
+   "en": {
+    "title": "[K-Digital] AI Natural Language Processing (e-learning)",
+    "desc": "An 8-hour course on the flow and models of natural-language data analysis",
+    "note": "STEP e-learning"
+   },
+   "zh": {
+    "title": "[K-Digital] 人工智能自然语言处理（网课）",
+    "desc": "按课时学习自然语言数据分析流程与模型的 8 小时课程",
+    "note": "STEP 网课"
+   },
+   "ja": {
+    "title": "[K-デジタル] 人工知能 自然言語処理（eラーニング）",
+    "desc": "自然言語データ分析の流れとモデルを回ごとに学ぶ8時間の講座",
+    "note": "STEP eラーニング"
+   },
+   "uz": {
+    "title": "[K-Digital] Sun'iy intellekt: tabiiy tilni qayta ishlash (onlayn kurs)",
+    "desc": "Tabiiy til ma'lumotlarini tahlil qilish jarayoni va modellari bo'yicha 8 soatlik kurs",
+    "note": "STEP onlayn kurs"
+   },
+   "ru": {
+    "title": "[K-Digital] ИИ: обработка естественного языка (онлайн-курс)",
+    "desc": "8-часовой курс о процессе и моделях анализа текстовых данных",
+    "note": "Онлайн-курс STEP"
+   }
+  },
+  "외부:현장형 AX 전문강사 양성과정 — 제조현장 AX": {
+   "en": {
+    "title": "Field AX Instructor Training — Manufacturing AX",
+    "desc": "Course design and teaching for the manufacturing and business-support AX tracks",
+    "note": "Korea Women IT Business Association · NIPA"
+   },
+   "zh": {
+    "title": "现场型 AX 专业讲师培养课程——制造现场 AX",
+    "desc": "负责制造业·经营支持方向 AX 课程的教案设计与授课",
+    "note": "韩国IT女性企业家协会 · 信息通信产业振兴院"
+   },
+   "ja": {
+    "title": "現場型AX専門講師養成課程 — 製造現場AX",
+    "desc": "製造業・経営支援分野のAX課程の教案設計と講義",
+    "note": "韓国IT女性企業人協会・情報通信産業振興院"
+   },
+   "uz": {
+    "title": "Amaliy AX mutaxassis o'qituvchilarini tayyorlash — ishlab chiqarishda AX",
+    "desc": "Ishlab chiqarish va biznesni qo'llab-quvvatlash bo'yicha AX kurslarini loyihalash va dars berish",
+    "note": "Koreya IT ayol tadbirkorlar uyushmasi · NIPA"
+   },
+   "ru": {
+    "title": "Подготовка преподавателей AX — AX на производстве",
+    "desc": "Разработка программы и преподавание AX для производства и поддержки бизнеса",
+    "note": "Ассоциация женщин-предпринимателей в IT Кореи · NIPA"
+   }
+  },
+  "외부:핀테크 API 개발지원사업 (총괄 PM)": {
+   "en": {
+    "title": "Fintech API Development Support Program (lead PM)",
+    "desc": "Led KISA's Fintech API Development Support Program",
+    "note": "Run in 2017, 2019 and 2021"
+   },
+   "zh": {
+    "title": "金融科技 API 开发支援项目（总负责 PM）",
+    "desc": "担任韩国互联网振兴院金融科技 API 开发支援项目总负责人",
+    "note": "于 2017、2019、2021 年执行"
+   },
+   "ja": {
+    "title": "フィンテックAPI開発支援事業（総括PM）",
+    "desc": "韓国インターネット振興院のフィンテックAPI開発支援事業を総括",
+    "note": "2017・2019・2021年に実施"
+   },
+   "uz": {
+    "title": "Fintex API ishlab chiqishni qo'llab-quvvatlash dasturi (bosh PM)",
+    "desc": "Koreya internet agentligining Fintex API dasturiga rahbarlik qilgan",
+    "note": "2017, 2019 va 2021-yillarda bajarilgan"
+   },
+   "ru": {
+    "title": "Программа поддержки разработки финтех-API (ведущий PM)",
+    "desc": "Руководство программой KISA по поддержке разработки финтех-API",
+    "note": "Проводился в 2017, 2019 и 2021 гг."
+   }
+  },
+  "외부:뉴스 빅데이터 스타트업 지원사업 (총괄 PM)": {
+   "en": {
+    "title": "News Big Data Startup Support Program (lead PM)",
+    "desc": "Led the Korea Press Foundation's news big-data program",
+    "note": "Korea Press Foundation"
+   },
+   "zh": {
+    "title": "新闻大数据创业支援项目（总负责 PM）",
+    "desc": "担任韩国言论振兴财团新闻大数据项目总负责人",
+    "note": "韩国言论振兴财团"
+   },
+   "ja": {
+    "title": "ニュースビッグデータ・スタートアップ支援事業（総括PM）",
+    "desc": "韓国言論振興財団のニュースビッグデータ事業を総括",
+    "note": "韓国言論振興財団"
+   },
+   "uz": {
+    "title": "Yangiliklar katta ma'lumotlari startaplarini qo'llab-quvvatlash dasturi (bosh PM)",
+    "desc": "Koreya matbuot jamg'armasining yangiliklar katta ma'lumotlari dasturiga rahbarlik qilgan",
+    "note": "Koreya matbuot jamg'armasi"
+   },
+   "ru": {
+    "title": "Программа поддержки стартапов в области новостных больших данных (ведущий PM)",
+    "desc": "Руководство программой новостных больших данных Корейского фонда прессы",
+    "note": "Корейский фонд прессы"
+   }
+  }
+ }
+}
