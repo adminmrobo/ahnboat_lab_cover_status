@@ -1,0 +1,288 @@
+{
+ "updated": "2026-11-08",
+ "categories": [
+  {
+   "name": "프로젝트·서비스",
+   "label": "PROJECT",
+   "color": "#2f5f9e",
+   "desc": "직접 만들고 운영한 서비스와 프로젝트입니다.",
+   "keywords": [
+    "로봇저널리즘",
+    "AI 뉴스",
+    "서비스"
+   ],
+   "image": ""
+  },
+  {
+   "name": "특허",
+   "label": "PATENT",
+   "color": "#a07d12",
+   "desc": "로봇저널리즘, 블록체인 모니터링, 폭염 예측 등 등록 특허입니다.",
+   "keywords": [
+    "특허",
+    "로봇저널리즘",
+    "블록체인",
+    "폭염 예측"
+   ],
+   "image": ""
+  },
+  {
+   "name": "저서·이러닝",
+   "label": "BOOK · E-LEARNING",
+   "color": "#a33d6b",
+   "desc": "저서와 온라인 강좌입니다.",
+   "keywords": [
+    "저서",
+    "이러닝",
+    "자연어 처리",
+    "핀테크"
+   ],
+   "image": ""
+  },
+  {
+   "name": "공공 사업",
+   "label": "PUBLIC",
+   "color": "#4d7a2a",
+   "desc": "총괄 PM과 강사로 수행한 공공 지원 사업입니다.",
+   "keywords": [
+    "총괄 PM",
+    "핀테크 API",
+    "뉴스 빅데이터",
+    "AX 강사"
+   ],
+   "image": ""
+  },
+  {
+   "name": "블로그",
+   "label": "BLOG",
+   "color": "#1f8a8a",
+   "desc": "해외 비즈니스와 연구·분석 글을 모은 블로그입니다.",
+   "keywords": [
+    "해외 비즈니스",
+    "연구 노트"
+   ],
+   "image": ""
+  }
+ ],
+ "mids": [
+  {
+   "cat": "저서·이러닝",
+   "name": "저서",
+   "desc": "AI와 범죄경제학을 다룬 책입니다.",
+   "keywords": [
+    "저서",
+    "범죄경제학"
+   ],
+   "image": ""
+  },
+  {
+   "cat": "저서·이러닝",
+   "name": "이러닝",
+   "desc": "STEP 등에서 운영하는 온라인 강좌입니다.",
+   "keywords": [
+    "이러닝",
+    "핀테크",
+    "자연어 처리"
+   ],
+   "image": ""
+  }
+ ],
+ "hero": {},
+ "items": [
+  {
+   "title": "Money-Robo : 로봇저널리즘 프로젝트",
+   "summary": "공시·시세 데이터로 기사를 자동 작성하는 AI 뉴스 신문",
+   "cat": "프로젝트·서비스",
+   "mid": "로봇저널리즘",
+   "sub": "",
+   "kind": "portfolio",
+   "repo_url": "",
+   "site_url": "http://www.money-robo.com",
+   "link": "http://www.money-robo.com",
+   "langs": [],
+   "thumb": "https://ahnboat.xyz/wp-content/uploads/2026/10/reon-ahn039s-blog-6ac1551829219.png",
+   "button": "사이트 열기",
+   "note": ""
+  },
+  {
+   "title": "주식 기사 생성 장치 및 방법",
+   "summary": "주식 데이터를 기사로 바꾸는 장치와 방법",
+   "cat": "특허",
+   "mid": "등록 특허",
+   "sub": "",
+   "kind": "portfolio",
+   "repo_url": "",
+   "site_url": "",
+   "link": "",
+   "langs": [],
+   "thumb": "",
+   "button": "",
+   "note": "제 10-2135712 호"
+  },
+  {
+   "title": "로봇 저널리즘을 이용한 암호 화폐 분석 뉴스 서비스",
+   "summary": "암호화폐 데이터를 분석 기사로 만들어 제공하는 시스템",
+   "cat": "특허",
+   "mid": "등록 특허",
+   "sub": "",
+   "kind": "portfolio",
+   "repo_url": "",
+   "site_url": "",
+   "link": "",
+   "langs": [],
+   "thumb": "",
+   "button": "",
+   "note": "제 10-2618473 호"
+  },
+  {
+   "title": "블록체인 데이터 모니터링을 통한 이상징후 탐지시스템",
+   "summary": "블록체인 데이터를 감시해 이상 징후를 찾아내는 시스템",
+   "cat": "특허",
+   "mid": "등록 특허",
+   "sub": "",
+   "kind": "portfolio",
+   "repo_url": "",
+   "site_url": "",
+   "link": "",
+   "langs": [],
+   "thumb": "",
+   "button": "",
+   "note": "제 10-2555652 호"
+  },
+  {
+   "title": "태양광 데이터를 이용한 폭염피해 예측 시스템",
+   "summary": "태양광 데이터로 폭염 피해를 예측하는 시스템",
+   "cat": "특허",
+   "mid": "등록 특허",
+   "sub": "",
+   "kind": "portfolio",
+   "repo_url": "",
+   "site_url": "",
+   "link": "",
+   "langs": [],
+   "thumb": "",
+   "button": "",
+   "note": "제 10-2486672 호"
+  },
+  {
+   "title": "AI 범죄와 자기 방어",
+   "summary": "AI가 범죄의 비용 구조와 수익 모델을 어떻게 바꾸었는지 범죄경제학으로 풀어낸 책",
+   "cat": "저서·이러닝",
+   "mid": "저서",
+   "sub": "",
+   "kind": "portfolio",
+   "repo_url": "",
+   "site_url": "",
+   "link": "",
+   "langs": [],
+   "thumb": "",
+   "button": "",
+   "note": "커뮤니케이션북스 · 인공지능총서"
+  },
+  {
+   "title": "핀테크 데이터분석 기초",
+   "summary": "금융 데이터를 다루는 기초를 배우는 13시간 이러닝 과정",
+   "cat": "저서·이러닝",
+   "mid": "이러닝",
+   "sub": "",
+   "kind": "portfolio",
+   "repo_url": "",
+   "site_url": "https://link.step.or.kr/brqEyc",
+   "link": "https://link.step.or.kr/brqEyc",
+   "langs": [],
+   "thumb": "",
+   "button": "강좌 보기",
+   "note": "STEP 이러닝"
+  },
+  {
+   "title": "[K-디지털] 인공지능 자연어 처리",
+   "summary": "자연어 데이터 분석의 흐름과 모델을 차시별로 배우는 8시간 과정",
+   "cat": "저서·이러닝",
+   "mid": "이러닝",
+   "sub": "",
+   "kind": "portfolio",
+   "repo_url": "",
+   "site_url": "",
+   "link": "",
+   "langs": [],
+   "thumb": "",
+   "button": "",
+   "note": "STEP 이러닝"
+  },
+  {
+   "title": "핀테크 API 개발지원사업 (총괄 PM)",
+   "summary": "한국인터넷진흥원 핀테크 API 개발지원사업 총괄",
+   "cat": "공공 사업",
+   "mid": "수행 사업",
+   "sub": "",
+   "kind": "portfolio",
+   "repo_url": "",
+   "site_url": "",
+   "link": "",
+   "langs": [],
+   "thumb": "",
+   "button": "",
+   "note": "2017·2019·2021년 수행"
+  },
+  {
+   "title": "뉴스 빅데이터 스타트업 지원사업 (총괄 PM)",
+   "summary": "한국언론진흥재단 뉴스 빅데이터 사업 총괄",
+   "cat": "공공 사업",
+   "mid": "수행 사업",
+   "sub": "",
+   "kind": "portfolio",
+   "repo_url": "",
+   "site_url": "",
+   "link": "",
+   "langs": [],
+   "thumb": "",
+   "button": "",
+   "note": "한국언론진흥재단"
+  },
+  {
+   "title": "현장형 AX 전문강사 양성과정 — 제조현장 AX",
+   "summary": "제조업·경영지원 분야 AX 과정 교안 설계와 강의",
+   "cat": "공공 사업",
+   "mid": "수행 사업",
+   "sub": "",
+   "kind": "portfolio",
+   "repo_url": "",
+   "site_url": "",
+   "link": "",
+   "langs": [],
+   "thumb": "",
+   "button": "",
+   "note": "한국IT여성기업인협회 · 정보통신산업진흥원"
+  },
+  {
+   "title": "Global Business : 해외 비즈니스 블로그",
+   "summary": "",
+   "cat": "블로그",
+   "mid": "블로그",
+   "sub": "",
+   "kind": "portfolio",
+   "repo_url": "",
+   "site_url": "https://ahnboat.xyz/global_business/",
+   "link": "https://ahnboat.xyz/global_business/",
+   "langs": [],
+   "thumb": "https://ahnboat.xyz/wp-content/uploads/2026/10/t08_global_business_c1.png",
+   "button": "블로그 열기",
+   "note": ""
+  },
+  {
+   "title": "Article & Study : 연구 및 분석",
+   "summary": "",
+   "cat": "블로그",
+   "mid": "블로그",
+   "sub": "",
+   "kind": "portfolio",
+   "repo_url": "",
+   "site_url": "https://ahnboat.xyz/articlestudy/",
+   "link": "https://ahnboat.xyz/articlestudy/",
+   "langs": [],
+   "thumb": "https://ahnboat.xyz/wp-content/uploads/2026/10/t09_article_study_c1.png",
+   "button": "블로그 열기",
+   "note": ""
+  }
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "_guide": "공개 카탈로그(catalog.html)의 화면 설정. ?view=이름 으로 고른다. server=Lab Server(기본), articles=논문·발표, portfolio=포트폴리오.",
+ "server": {},
+ "articles": {
+  "only": "논문 해설",
+  "root_label": "Articles & Presentations",
+  "mid_label": "ARTICLES",
+  "unit": " 편",
+  "page_title": "Ahn's Articles & Presentations",
+  "mid_alias": {
+   "외부_콘텐츠": "학술대회 발표"
+  },
+  "hero": {
+   "image": "thumbs/cats/C05.webp",
+   "kicker": "AHNBOAT LAB · PAPERS",
+   "title": "Ahn's Articles & Presentations",
+   "desc": "안상선(Reon Ahn)의 학술 논문과 발표를 인터랙티브 해설로 다시 읽습니다. 갈래를 고르면 논문 해설과 원문이 이어집니다.",
+   "pos": "center 35%"
+  },
+  "foot": "논문과 발표는 Lab Server의 RACK 05와 같은 목록입니다.",
+  "mid_info": {
+   "외부_콘텐츠": {
+    "desc": "학술대회와 컨퍼런스에서 발표한 연구입니다. 해설 페이지 대신 발표 기사나 자료로 이어집니다.",
+    "keywords": [
+     "학술대회",
+     "발표",
+     "포스터"
+    ]
+   }
+  }
+ },
+ "portfolio": {
+  "source": "data/portfolio.json",
+  "root_label": "Portfolio",
+  "unit": " 건",
+  "page_title": "Ahn's Portfolio",
+  "hero": {
+   "image": "",
+   "kicker": "AHNBOAT LAB · PORTFOLIO",
+   "title": "Ahn's Portfolio",
+   "desc": "프로젝트, 특허, 저서와 이러닝, 공공 사업, 블로그를 모았습니다. 분야를 고르면 항목과 링크가 이어집니다."
+  },
+  "foot": "포트폴리오 목록은 data/portfolio.csv에서 고칩니다."
+ }
+}

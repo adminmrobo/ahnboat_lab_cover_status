@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
   push:                    # 엑셀로 고친 현황판 표를 올리면 바로 다시 만든다
     branches: [main]
-    paths: ["data/hub.csv.enc", "data/hub_meta.json"]
+    paths: ["data/hub.csv.enc", "data/hub_meta.json", "data/portfolio.csv", "data/portfolio_meta.json"]
 
 permissions:
   contents: write
@@ -41,6 +41,7 @@ jobs:
         run: |
           pip install --quiet cryptography
           python scripts/hub_secure.py
+          python scripts/build_portfolio.py
           # 평문 관리 데이터가 남아 있으면 멈춘다
           if [ -e data/hub.csv ] || [ -e data/hub.json ]; then
             if [ -n "$HUB_KEY" ]; then echo "평문 관리 데이터가 남아 있습니다"; exit 1; fi

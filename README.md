@@ -70,3 +70,13 @@ python3 scripts/make_thumbs.py --fetch                     # 바뀐 저장소만
 2. 엑셀에서 고친 뒤 CSV UTF-8로 저장.
 3. 현황판의 **고친 표를 잠긴 파일로 만들기**에 넣어 `hub.csv.enc`를 받는다.
 4. 저장소 `data/` 폴더에 `hub.csv.enc`를 올린다(덮어쓰기). 평문 `hub.csv`는 올리지 않는다.
+
+## 홈페이지(ahnboat.xyz)에 붙이는 화면
+
+- `catalog.html` — Reon Ahn's Lab Server (콘텐츠 10개 랙)
+- `catalog.html?view=articles` — Ahn's Articles & Presentations (논문 해설·학술대회 발표, RACK 05와 같은 목록)
+- `catalog.html?view=portfolio` — Ahn's Portfolio. 목록은 `data/portfolio.csv`(엑셀로 고쳐 그대로 올림: 대분류, 중분류, 제목, 소개, 링크, 이미지, 버튼글씨, 비고, 순서, 공개), 분야 설정은 `data/portfolio_meta.json`. 링크가 비면 '링크 준비 중'.
+- `progress.html` — Progress Board. 공개 콘텐츠만, 랙별 온톨로지·외국어팩 진행, 언어별 콘텐츠, 최근 업데이트, 다음에 손볼 곳.
+- 화면 설정(제목·배너·갈래 이름 바꾸기)은 `data/views.json`.
+- 모두 `?embed=1&theme=light`를 붙여 끼워 넣으면 머리글 없이 보이고, 높이를 바깥 페이지에 알려 준다.
+

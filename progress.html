@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Progress Board · Reon Ahn's Lab</title>
+<meta name="description" content="안보트 연구실 공개 콘텐츠의 진행 상황 — 분야별 콘텐츠, 외국어팩·온톨로지 현황, 최근 업데이트">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@500;700&display=swap">
+<style>
+:root{
+  --bg:#f3f1ec; --panel:#ffffff; --ink:#1f2224; --muted:#5f6663; --rule:#dcd8cf; --track:#ebe8e2;
+  --done:#1f9e66; --prog:#2f6fbf; --wip:#c99a1c; --none:#c9c4ba;
+  --font:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace; color-scheme:light;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#121614; --panel:#1b211e; --ink:#e8ece9; --muted:#9aa5a0; --rule:#2e3833; --track:#262c29;
+  --done:#4fd391; --prog:#7fb0ff; --wip:#e6c35a; --none:#4a524e; color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121614; --panel:#1b211e; --ink:#e8ece9; --muted:#9aa5a0; --rule:#2e3833; --track:#262c29;
+  --done:#4fd391; --prog:#7fb0ff; --wip:#e6c35a; --none:#4a524e; color-scheme:dark}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:15px;line-height:1.55;overflow-x:hidden;word-break:keep-all}
+a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header{padding-block:26px 8px}
+.embed header .top{display:none}
+.kicker{font-family:var(--mono);font-size:12px;letter-spacing:.1em;color:var(--muted);margin:0 0 4px}
+h1{margin:0;font-size:clamp(26px,4vw,36px);line-height:1.15}
+.haru{display:flex;gap:14px;align-items:flex-end;margin-top:16px}
+.haru img{width:76px;height:76px;border-radius:50%;object-fit:cover;border:3px solid var(--panel);box-shadow:0 0 0 1px var(--rule);flex:none;background:var(--track)}
+.bubble{position:relative;background:var(--panel);border:1px solid var(--rule);border-radius:14px 14px 14px 4px;padding:10px 14px;max-width:70ch;font-size:14.5px}
+.bubble b.name{display:block;font-size:12px;color:var(--muted);font-weight:700;margin-bottom:2px}
+main{padding-block:12px 40px;display:flex;flex-direction:column;gap:16px}
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:0;padding:0;list-style:none}
+.kpis li{background:var(--panel);border:1px solid var(--rule);border-radius:12px;padding:12px 16px;min-width:0}
+.kpis b{display:block;font-family:var(--mono);font-size:28px;line-height:1.15;font-variant-numeric:tabular-nums}
+.kpis small{font-family:var(--mono);font-size:14px;color:var(--muted);font-weight:500}
+.kpis span{font-size:13px;color:var(--muted)}
+@media (max-width:760px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.panel{background:var(--panel);border:1px solid var(--rule);border-radius:14px;padding:16px 18px;min-width:0}
+.panel h2{margin:0 0 2px;font-size:17px}
+.panel .sub{margin:0 0 12px;font-size:13px;color:var(--muted)}
+.cols{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:16px}
+@media (max-width:900px){.cols{grid-template-columns:1fr}}
+.legend{display:flex;flex-wrap:wrap;gap:12px;font-size:12.5px;color:var(--muted);margin:0 0 10px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+.mode{display:inline-flex;border:1px solid var(--rule);border-radius:99px;overflow:hidden;margin:0 0 12px}
+.mode button{font:inherit;font-size:13px;background:transparent;color:var(--muted);border:0;padding:5px 14px;cursor:pointer}
+.mode button[aria-pressed="true"]{background:var(--ink);color:var(--bg);font-weight:700}
+.racks{display:flex;flex-direction:column;gap:7px}
+.rack{display:grid;grid-template-columns:minmax(0,170px) minmax(0,1fr) 34px;gap:10px;align-items:center;font:inherit;color:inherit;background:none;border:0;padding:3px 4px;border-radius:8px;text-align:left;cursor:pointer;width:100%}
+.rack:hover{background:var(--bg)}
+.rack[aria-pressed="true"]{background:var(--bg);box-shadow:inset 0 0 0 1px var(--rule)}
+.rack .nm{font-size:13.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rack .nm i{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:6px}
+.rack .no{font-family:var(--mono);font-size:11px;color:var(--muted);margin-right:4px}
+.bar{display:flex;height:16px;border-radius:5px;overflow:hidden;background:var(--track)}
+.bar span{display:block;height:100%;width:0;transition:width .8s cubic-bezier(.2,.7,.2,1)}
+.rack .ct{font-family:var(--mono);font-size:13px;text-align:right}
+@media (max-width:520px){.rack{grid-template-columns:minmax(0,110px) minmax(0,1fr) 28px}}
+.langs{display:flex;flex-direction:column;gap:8px}
+.lang{display:grid;grid-template-columns:86px minmax(0,1fr) 40px;gap:10px;align-items:center;font-size:13.5px}
+.lang .ct{font-family:var(--mono);text-align:right;font-size:13px}
+.lang .bar span{background:var(--prog)}
+.lang.ko .bar span{background:var(--done)}
+.recent{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.recent li{display:grid;grid-template-columns:72px minmax(0,1fr);gap:10px;padding:8px 0;border-bottom:1px solid var(--rule);font-size:14px;align-items:baseline}
+.recent li:last-child{border-bottom:0}
+.recent time{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.recent a{text-decoration:none}
+.recent a:hover{text-decoration:underline}
+.recent .c{display:block;font-size:12px;color:var(--muted)}
+.recent .c i{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:5px}
+.todo{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.todo li{display:flex;gap:8px;align-items:baseline;font-size:13.5px}
+.todo .tg{font-family:var(--mono);font-size:11px;font-weight:700;border-radius:5px;padding:1px 6px;flex:none}
+.tg.WIP{background:color-mix(in srgb,var(--wip) 22%,transparent);color:var(--ink)}
+.tg.PROGRESS{background:color-mix(in srgb,var(--prog) 22%,transparent);color:var(--ink)}
+.filterinfo{font-size:13px;color:var(--muted);margin:0 0 8px;min-height:1.3em}
+.filterinfo button{font:inherit;font-size:12.5px;background:none;border:1px solid var(--rule);border-radius:99px;padding:1px 9px;color:var(--ink);cursor:pointer;margin-left:6px}
+footer{color:var(--muted);font-size:12.5px;padding-block:0 30px}
+.err{color:#b3402a}
+@media (prefers-reduced-motion:reduce){.bar span{transition:none}}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <div class="top">
+    <p class="kicker">AHNBOAT LAB · PROGRESS</p>
+    <h1>Progress Board</h1>
+  </div>
+  <div class="haru">
+    <img src="thumbs/chars/haru.webp" alt="조수 하루">
+    <p class="bubble" id="bubble"><b class="name">조수 하루</b><span id="say">진행 상황을 모으는 중이에요…</span></p>
+  </div>
+</header>
+<main class="wrap" id="main">
+  <ul class="kpis" id="kpis" aria-label="요약"></ul>
+  <section class="panel" aria-labelledby="hRacks">
+    <h2 id="hRacks">랙별 진행 상황</h2>
+    <p class="sub">Lab Server의 열 개 랙(분야)마다 공개 콘텐츠가 몇 개이고 어디까지 손질됐는지 보여 줍니다. 줄을 누르면 아래 목록이 그 분야로 좁혀집니다.</p>
+    <div class="mode" role="group" aria-label="보는 기준">
+      <button type="button" data-mode="onto" aria-pressed="true">온톨로지</button>
+      <button type="button" data-mode="lang" aria-pressed="false">외국어팩</button>
+    </div>
+    <p class="legend" id="legend"></p>
+    <div class="racks" id="racks"></div>
+  </section>
+  <div class="cols">
+    <section class="panel" aria-labelledby="hRecent">
+      <h2 id="hRecent">최근 업데이트</h2>
+      <p class="filterinfo" id="fi1"></p>
+      <ul class="recent" id="recent"></ul>
+    </section>
+    <div style="display:flex;flex-direction:column;gap:16px;min-width:0">
+      <section class="panel" aria-labelledby="hLang">
+        <h2 id="hLang">언어별 콘텐츠</h2>
+        <p class="sub">각 언어로 읽을 수 있는 공개 콘텐츠 수</p>
+        <div class="langs" id="langs"></div>
+      </section>
+      <section class="panel" aria-labelledby="hTodo">
+        <h2 id="hTodo">다음에 손볼 곳</h2>
+        <p class="filterinfo" id="fi2"></p>
+        <ul class="todo" id="todo"></ul>
+      </section>
+    </div>
+  </div>
+</main>
+<footer class="wrap" id="foot"></footer>
+
+<script>
+(function(){
+  'use strict';
+  var Q=new URLSearchParams(location.search);
+  var EMBED=Q.get('embed')==='1';
+  if(EMBED)document.documentElement.classList.add('embed');
+  if(Q.get('theme')==='light'||Q.get('theme')==='dark')document.documentElement.setAttribute('data-theme',Q.get('theme'));
+  var LANGS=[['ko','한국어'],['en','English'],['zh','中文'],['ja','日本語'],['uz','Oʻzbekcha'],['ru','Русский'],['vi','Tiếng Việt']];
+  var COL={DONE:'var(--done)',PROGRESS:'var(--prog)',WIP:'var(--wip)','-':'var(--none)'};
+  var NAME={DONE:'DONE',PROGRESS:'PROGRESS',WIP:'WIP','-':'해당 없음'};
+  var CATS=[],ITEMS=[],MODE='onto',FILTER='';
+  function el(t,c,txt){var e=document.createElement(t);if(c)e.className=c;if(txt!=null)e.textContent=txt;return e;}
+  function getJSON(p){return fetch(p,{cache:'no-cache'}).then(function(r){if(!r.ok)throw new Error(p+' '+r.status);return r.json();});}
+  function post(){if(window.parent!==window){try{window.parent.postMessage({type:'ahnboat-catalog-height',height:Math.ceil(document.body.getBoundingClientRect().height),nav:false},'*');}catch(e){}}}
+  function daysAgo(iso){if(!iso)return 1e9;return Math.floor((Date.now()-Date.parse(iso))/86400000);}
+  function rel(iso){var d=daysAgo(iso);if(d>=1e9)return '—';if(d<1)return '오늘';if(d<7)return d+'일 전';if(d<35)return Math.floor(d/7)+'주 전';return iso.slice(0,10);}
+  function count(target,dur){
+    var t0=null,from=0,to=target.value;var node=target.node;
+    if(matchMedia('(prefers-reduced-motion: reduce)').matches){node.textContent=to;return;}
+    function f(ts){if(!t0)t0=ts;var p=Math.min(1,(ts-t0)/dur);node.textContent=Math.round(from+(to-from)*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(f);}
+    requestAnimationFrame(f);
+  }
+  function scoped(){return FILTER?ITEMS.filter(function(i){return i.cat===FILTER;}):ITEMS;}
+
+  function kpis(){
+    var ul=document.getElementById('kpis');ul.textContent='';
+    var repo=ITEMS.filter(function(i){return i.repo;});
+    var full=repo.filter(function(i){return i.lang==='DONE';}).length;
+    var onto=repo.filter(function(i){return i.onto==='DONE';}).length;
+    var recent=ITEMS.filter(function(i){return daysAgo(i.pushed)<30;}).length;
+    [[ITEMS.length,'','공개 콘텐츠'],[full,' / '+repo.length,'7개 언어 완성'],[onto,' / '+repo.length,'온톨로지 완성'],[recent,'','최근 30일 업데이트']].forEach(function(k){
+      var li=el('li');var b=el('b');var n=el('span','', '0');n.style.cssText='font:inherit;color:inherit';b.appendChild(n);if(k[1])b.appendChild(el('small','',k[1]));li.appendChild(b);li.appendChild(el('span','',k[2]));ul.appendChild(li);
+      count({node:n,value:k[0]},900);
+    });
+  }
+  function legend(){
+    var p=document.getElementById('legend');p.textContent='';
+    ['DONE','PROGRESS','WIP','-'].forEach(function(s){var x=el('span');var i=el('i');i.style.background=COL[s];x.appendChild(i);x.appendChild(document.createTextNode(NAME[s]));p.appendChild(x);});
+  }
+  function racks(){
+    var box=document.getElementById('racks');box.textContent='';
+    var max=Math.max.apply(null,CATS.map(function(c){return ITEMS.filter(function(i){return i.cat===c.name;}).length;}).concat([1]));
+    CATS.forEach(function(c){
+      var its=ITEMS.filter(function(i){return i.cat===c.name;});if(!its.length)return;
+      var b=el('button','rack');b.type='button';b.setAttribute('aria-pressed',FILTER===c.name?'true':'false');
+      var nm=el('span','nm');var i=el('i');i.style.background=c.color;nm.appendChild(i);nm.appendChild(el('span','no','R'+String(c.rack).padStart(2,'0')));nm.appendChild(document.createTextNode(c.name));b.appendChild(nm);
+      var bar=el('span','bar');bar.style.width=(its.length/max*100)+'%';
+      var segs=[];['DONE','PROGRESS','WIP','-'].forEach(function(s){var n=its.filter(function(x){return x[MODE]===s;}).length;if(!n)return;var sp=el('span');sp.style.background=COL[s];sp.title=NAME[s]+' '+n+'개';bar.appendChild(sp);segs.push([sp,n/its.length*100]);});
+      b.appendChild(bar);b.appendChild(el('span','ct',String(its.length)));
+      b.setAttribute('aria-label',c.name+' '+its.length+'개, '+['DONE','PROGRESS','WIP','-'].map(function(s){return NAME[s]+' '+its.filter(function(x){return x[MODE]===s;}).length;}).join(', '));
+      b.addEventListener('click',function(){FILTER=FILTER===c.name?'':c.name;racks();lists();});
+      box.appendChild(b);
+      requestAnimationFrame(function(){requestAnimationFrame(function(){segs.forEach(function(s){s[0].style.width=s[1]+'%';});});});
+    });
+  }
+  function langs(){
+    var box=document.getElementById('langs');box.textContent='';
+    var repo=ITEMS.filter(function(i){return i.repo;});
+    LANGS.forEach(function(l){
+      var n=repo.filter(function(i){return (i.langs||[]).indexOf(l[0])>=0;}).length;
+      var row=el('div','lang '+l[0]);row.appendChild(el('span','',l[1]));
+      var bar=el('span','bar');var sp=el('span');bar.appendChild(sp);row.appendChild(bar);row.appendChild(el('span','ct',String(n)));
+      box.appendChild(row);
+      var w=repo.length?n/repo.length*100:0;requestAnimationFrame(function(){requestAnimationFrame(function(){sp.style.width=w+'%';});});
+    });
+  }
+  function lists(){
+    var info=FILTER?'분야: '+FILTER:'';
+    ['fi1','fi2'].forEach(function(id){var p=document.getElementById(id);p.textContent=info;if(FILTER){var x=el('button','','전체 보기');x.type='button';x.addEventListener('click',function(){FILTER='';racks();lists();});p.appendChild(x);}});
+    var ul=document.getElementById('recent');ul.textContent='';
+    scoped().filter(function(i){return i.pushed;}).sort(function(a,b){return a.pushed<b.pushed?1:-1;}).slice(0,12).forEach(function(i){
+      var li=el('li');var t=el('time','',rel(i.pushed));t.dateTime=i.pushed;li.appendChild(t);
+      var d=el('div');var a=el('a','',i.title);a.href=i.site_url||i.repo_url||'#';a.target='_blank';a.rel='noopener';d.appendChild(a);
+      var c=el('span','c');var dot=el('i');dot.style.background=i.color;c.appendChild(dot);c.appendChild(document.createTextNode(i.cat+(i.mid&&i.mid!=='외부_콘텐츠'?' › '+i.mid:'')));d.appendChild(c);
+      li.appendChild(d);ul.appendChild(li);
+    });
+    if(!ul.childNodes.length)ul.appendChild(el('li','','기록이 없습니다.'));
+    var td=document.getElementById('todo');td.textContent='';
+    var need=[];
+    scoped().forEach(function(i){if(!i.repo)return;
+      if(i.onto!=='DONE')need.push({i:i,t:i.onto,w:'온톨로지'});
+      if(i.lang!=='DONE')need.push({i:i,t:i.lang,w:'외국어팩'});});
+    need.sort(function(a,b){var r={PROGRESS:0,WIP:1};return (r[a.t]-r[b.t])||(a.i.pushed<b.i.pushed?1:-1);});
+    need.slice(0,10).forEach(function(n){var li=el('li');li.appendChild(el('span','tg '+n.t,n.t));li.appendChild(document.createTextNode(n.w+' · '+n.i.title));td.appendChild(li);});
+    if(!need.length)td.appendChild(el('li','','모두 끝났어요.'));
+    post();
+  }
+  function say(){
+    var repo=ITEMS.filter(function(i){return i.repo;});
+    var week=ITEMS.filter(function(i){return daysAgo(i.pushed)<7;});
+    var wip=repo.filter(function(i){return i.onto!=='DONE';}).length;
+    var top=CATS.map(function(c){return [c.name,ITEMS.filter(function(i){return i.cat===c.name;}).length];}).sort(function(a,b){return b[1]-a[1];})[0];
+    var s='지금 공개된 콘텐츠는 '+ITEMS.length+'개예요. ';
+    s+=week.length?'이번 주에 '+week.length+'개가 새로 손질됐고, ':'이번 주에는 새로 손질된 콘텐츠가 없고, ';
+    s+='가장 큰 랙은 '+top[0]+'('+top[1]+'개)예요. ';
+    s+=wip?'온톨로지가 아직 덜 붙은 곳이 '+wip+'개 남아 있어요.':'온톨로지는 모두 붙었어요!';
+    document.getElementById('say').textContent=s;
+  }
+  document.querySelectorAll('.mode button').forEach(function(b){b.addEventListener('click',function(){MODE=b.dataset.mode;document.querySelectorAll('.mode button').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false');});racks();});});
+  window.addEventListener('resize',post);
+
+  Promise.all([getJSON('data/catalog.json'),getJSON('data/repos.json')]).then(function(r){
+    var cat=r[0],scan=r[1];var R={};(scan.repos||scan).forEach(function(x){R[x.repo]=x;});
+    CATS=cat.categories||[];var color={};CATS.forEach(function(c){color[c.name]=c.color;});
+    ITEMS=(cat.items||[]).map(function(i){
+      var name=i.repo_url?i.repo_url.replace(/\/$/,'').split('/').pop():'';var s=R[name]||null;
+      var n=s&&s.i18n?s.i18n.count||0:0;
+      var lang=!s?'-':(n>=7&&s.i18n.complete!==false?'DONE':(n>1?'PROGRESS':'WIP'));
+      var o=s&&s.ontology?s.ontology.status:'';
+      var onto=!s?'-':({full:'DONE',partial:'PROGRESS'}[o]||'WIP');
+      return {title:i.title,cat:i.cat,mid:i.mid,site_url:i.site_url,repo_url:i.repo_url,repo:s?name:'',langs:s&&s.i18n?s.i18n.langs:[],lang:lang,onto:onto,pushed:s?s.pushed_at:'',color:color[i.cat]||'#999'};
+    });
+    kpis();legend();racks();langs();lists();say();
+    document.getElementById('foot').textContent='공개 콘텐츠만 집계합니다 · 갱신 '+cat.updated+' · 외국어팩 DONE = 한국어 포함 7개 언어, 온톨로지 DONE = 모든 원본 페이지에 지식 색인';
+    document.querySelectorAll('img').forEach(function(im){im.addEventListener('load',post);});
+  }).catch(function(e){document.getElementById('main').appendChild(el('p','err','진행 상황을 읽지 못했습니다 ('+e.message+').'));});
+})();
+</script>
+</body>
+</html>
