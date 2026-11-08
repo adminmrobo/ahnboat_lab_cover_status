@@ -150,7 +150,7 @@ def main():
         })
     items.sort(key=lambda x: (cat_order.get(x["cat"], 99), x["mid"], x["sub"], x["order"]))
     kst = dt.timezone(dt.timedelta(hours=9))
-    out = {"updated": dt.datetime.now(kst).date().isoformat(), "categories": cats, "mids": meta.get("mids", []), "items": items,
+    out = {"updated": dt.datetime.now(kst).date().isoformat(), "categories": cats, "mids": meta.get("mids", []), "hero": _img(meta["hero"]) if meta.get("hero") else {}, "items": items,
            "added_today": added}
     with open(os.path.join(DATA, "hub.json"), "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=1)
