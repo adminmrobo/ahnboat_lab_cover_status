@@ -118,7 +118,7 @@
  },
  "drug-crime-social-cost": {
   "src": null,
-  "pushed_at": "2026-11-06T04:24:52Z"
+  "pushed_at": "2026-11-08T08:25:22Z"
  },
  "fintech_business_01_payment": {
   "src": null,
@@ -146,7 +146,7 @@
  },
  "g2b-bid-strategy": {
   "src": null,
-  "pushed_at": "2026-11-07T23:42:56Z"
+  "pushed_at": "2026-11-08T10:43:56Z"
  },
  "Gen_AI_Hannam_univ": {
   "src": "embedded:index.html#hero",
@@ -405,8 +405,8 @@
  },
  "who_am_i": {
   "src": "embedded:who_am_i.en.html#hero",
-  "pushed_at": "2026-11-05T11:19:16Z",
-  "made": "2026-11-07"
+  "pushed_at": "2026-11-08T07:30:25Z",
+  "made": "2026-11-08"
  },
  "who_am_i_package": {
   "src": "name:img/sc_night.webp",
