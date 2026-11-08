@@ -23,7 +23,7 @@ a{color:inherit}
 .head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:0 0 14px}
 .kicker{display:inline-block;font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;border:1.5px solid var(--line);border-radius:99px;padding:3px 10px;background:#fff}
 h2{margin:0;font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.15}
-.top{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:18px}
+.top{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px}
 .card{border:2px solid var(--line);border-radius:20px;background:#fff;box-shadow:5px 5px 0 var(--line);overflow:hidden;min-width:0}
 .me{padding:24px 26px;background:radial-gradient(circle at 1px 1px,#e9e5dc 1px,transparent 1.5px) 0 0/18px 18px,var(--paper);display:flex;flex-direction:column;gap:12px}
 .me .nm{margin:0;font-size:1.6rem;font-weight:700;line-height:1.2}
@@ -36,20 +36,23 @@ h2{margin:0;font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.15}
 .btn.ghost{background:#fff}
 .btn:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--line)}
 .btn:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--line)}
-.town{position:relative;display:block;text-decoration:none;min-height:260px}
-.town img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;image-rendering:pixelated}
-.town .cap{position:absolute;left:14px;bottom:14px;right:14px;display:flex;justify-content:space-between;align-items:flex-end;gap:10px}
-.town .cap span{background:#fff;border:2px solid var(--line);border-radius:12px;padding:6px 12px;font-weight:700;box-shadow:3px 3px 0 var(--line)}
+.stage{position:relative;display:flex;flex-direction:column;justify-content:flex-end;min-height:300px;background:radial-gradient(circle at 1px 1px,#e9e5dc 1px,transparent 1.5px) 0 0/18px 18px,var(--paper)}
+.line{display:flex;justify-content:center;align-items:flex-end;gap:clamp(6px,2vw,28px);padding:56px 16px 0;position:relative}
+.line::after{content:"";position:absolute;left:8%;right:8%;bottom:30px;height:14px;border-radius:50%;background:rgba(31,34,36,.08)}
+.mate{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:6px;cursor:pointer;background:none;border:0;padding:0;font:inherit;color:inherit}
+.mate .crewsprite img{filter:drop-shadow(2px 2px 0 rgba(31,34,36,.12))}
+.mate .tag{font-size:clamp(.66rem,1.6vw,.78rem);font-weight:700;background:#fff;border:1.5px solid var(--line);border-radius:99px;padding:1px 9px;white-space:nowrap;margin-bottom:12px}
+.mate:hover .tag,.mate:focus-visible .tag{background:var(--sun)}
+.say{position:absolute;top:14px;left:50%;transform:translateX(-50%);max-width:calc(100% - 28px);background:#fff;border:2px solid var(--line);border-radius:14px;padding:6px 14px;font-size:.9rem;box-shadow:3px 3px 0 var(--line);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.say b{font-size:.75rem;color:var(--muted);margin-right:6px}
+.town{position:relative;display:block;text-decoration:none;height:clamp(180px,22vw,260px);margin-top:18px}
+.town img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%;image-rendering:pixelated}
+.town .cap{position:absolute;left:16px;bottom:16px;right:16px;display:flex;justify-content:space-between;align-items:flex-end;gap:10px;flex-wrap:wrap}
+.town .cap .nm{background:#fff;border:2px solid var(--line);border-radius:12px;padding:6px 12px;font-weight:700;box-shadow:3px 3px 0 var(--line)}
 .town .cap small{display:block;font-weight:500;font-size:.75rem;color:var(--muted)}
-.town:hover img{filter:brightness(1.05)}
-.crew{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:18px}
-.mate{border:2px solid var(--line);border-radius:18px;background:#fff;box-shadow:4px 4px 0 var(--line);padding:12px 14px 14px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;cursor:pointer;font:inherit;color:inherit;min-width:0}
-.mate .pic{height:150px;display:flex;align-items:flex-end;justify-content:center;width:100%;padding-bottom:10px;overflow:hidden;border-radius:12px;background:radial-gradient(circle at 1px 1px,#ece8df 1px,transparent 1.5px) 0 0/14px 14px,var(--paper)}
-.mate b{font-size:1rem;margin-top:4px}
-.mate .role{font-family:var(--mono);font-size:.68rem;letter-spacing:.06em;color:var(--muted)}
-.mate p{margin:0;font-size:.86rem;color:var(--muted)}
-.mate .ln{min-height:2.6em;font-size:.86rem;color:var(--ink);background:var(--paper);border-radius:10px;padding:4px 8px;width:100%}
-@media (max-width:900px){.top{grid-template-columns:1fr}.crew{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.town .cap .go{background:var(--sun);border:2px solid var(--line);border-radius:12px;padding:8px 16px;font-weight:700;box-shadow:3px 3px 0 var(--line)}
+.town:hover img{filter:brightness(1.06)}
+@media (max-width:900px){.top{grid-template-columns:1fr}.stage{min-height:260px}}
 @media (prefers-reduced-motion:reduce){.btn{transition:none}}
 </style>
 </head>
@@ -66,12 +69,15 @@ h2{margin:0;font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.15}
         <a class="btn ghost" href="https://adminmrobo.github.io/who_am_i/who_am_i.html" target="_blank" rel="noopener">저자 소개 보기</a>
       </div>
     </section>
-    <a class="card town" href="https://adminmrobo.github.io/ahn_boat_lab_town/" target="_blank" rel="noopener" aria-label="Ahn Lab Town 입장하기">
-      <img src="thumbs/chars/labtown_map.webp" alt="">
-      <span class="cap"><span>Ahn Lab Town<small>연구실 식구들이 일하는 마을 · 지하 1층 서버실</small></span></span>
-    </a>
+    <section class="card stage" aria-label="연구실 식구들 (눌러 보세요)">
+      <p class="say" id="say" aria-live="polite"><b id="sayWho">조수 하루</b><span id="sayTxt">안녕하세요! 저희를 눌러 보세요.</span></p>
+      <div class="line" id="crew"></div>
+    </section>
   </div>
-  <div class="crew" id="crew" aria-label="연구실 식구들 (눌러 보세요)"></div>
+  <a class="card town" href="https://adminmrobo.github.io/ahn_boat_lab_town/" target="_blank" rel="noopener" aria-label="Ahn Lab Town 입장하기">
+    <img src="thumbs/chars/labtown_map.webp" alt="">
+    <span class="cap"><span class="nm">Ahn Lab Town<small>연구실 식구들이 일하는 마을 · 지하 1층 서버실</small></span><span class="go">🚪 입장하기</span></span>
+  </a>
 </div>
 <script src="crew.js"></script>
 <script>
@@ -86,18 +92,21 @@ h2{margin:0;font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.15}
   var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
   function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e;}
   var box=document.getElementById('crew');
-  AhnCrew.load().then(function(){
-    CREW.forEach(function(c,i){
-      var b=el('button','mate '+c.k);b.type='button';b.setAttribute('aria-label',c.name+' — 눌러서 동작 보기');
-      var pic=el('span','pic');c.sp=AhnCrew.make(c.k,128);pic.appendChild(c.sp.el);b.appendChild(pic);
-      b.appendChild(el('span','role',c.role));b.appendChild(el('b','',c.name));b.appendChild(el('p','',c.desc));
-      c.ln=el('span','ln',c.lines[0]);b.appendChild(c.ln);c.n=0;
-      b.addEventListener('click',function(){go(c);});box.appendChild(b);
-    });
+  function H(){return Math.max(90,Math.min(200,(box.clientWidth-60)/2.6));}
+  function build(){
+    box.textContent='';
+    var order=['doctor','haru','jupanbot','fruitfly'],h=H();
+    order.forEach(function(k){var c=CREW.filter(function(x){return x.k===k;})[0];
+      var b=el('button','mate '+c.k);b.type='button';b.title=c.desc;b.setAttribute('aria-label',c.name+' — '+c.desc);
+      c.sp=AhnCrew.make(c.k,h);b.appendChild(c.sp.el);b.appendChild(el('span','tag',c.name));c.n=c.n||0;
+      b.addEventListener('click',function(){go(c);});box.appendChild(b);});
     post();
+  }
+  AhnCrew.load().then(function(){build();
     if(!reduce){var t=0;setInterval(function(){go(CREW[t%CREW.length]);t++;},2800);}
+    var rw;window.addEventListener('resize',function(){clearTimeout(rw);rw=setTimeout(build,250);});
   });
-  function go(c){c.n++;c.sp.act(c.n);c.ln.textContent=c.lines[c.n%c.lines.length];}
+  function go(c){c.n++;c.sp.act(c.n);document.getElementById('sayWho').textContent=c.name;document.getElementById('sayTxt').textContent=c.lines[c.n%c.lines.length];}
   function post(){if(window.parent!==window){try{window.parent.postMessage({type:'ahnboat-catalog-height',height:Math.ceil(document.body.getBoundingClientRect().height),nav:false},'*');}catch(e){}}}
   window.addEventListener('resize',post);document.querySelectorAll('img').forEach(function(im){im.addEventListener('load',post);});post();
 })();

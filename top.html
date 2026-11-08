@@ -91,7 +91,7 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
   function speak(w){document.getElementById('sayWho').textContent=NAME[w];
     document.getElementById('sayTxt').textContent=LINES[w][Math.floor(Math.random()*LINES[w].length)];
     say.classList.add('on');clearTimeout(sayT);sayT=setTimeout(function(){say.classList.remove('on');},3200);}
-  function H(){return Math.max(150,Math.min(240,window.innerWidth*0.15));}
+  function H(){var w=crew.clientWidth||window.innerWidth;return Math.max(90,Math.min(240,window.innerWidth*0.15,(w-50)/2.6));}
   var mates=[];
   function build(){
     crew.querySelectorAll('.mate').forEach(function(n){n.remove();});mates=[];
