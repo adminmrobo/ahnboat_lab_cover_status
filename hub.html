@@ -57,7 +57,7 @@ input[type=search]{flex:1 1 200px}
 .count{font-size:13px;color:var(--muted);margin-left:auto}
 main{padding-block:14px 40px}
 .tablebox{overflow-x:auto;border:1px solid var(--rule);border-radius:12px;background:var(--panel)}
-table{border-collapse:collapse;width:100%;min-width:1180px;font-size:13.5px}
+table{border-collapse:collapse;width:100%;min-width:1260px;font-size:13.5px}
 th,td{padding:8px 10px;border-bottom:1px solid var(--rule);text-align:left;vertical-align:top}
 th{position:sticky;top:0;background:var(--panel);font-size:12px;color:var(--muted);font-weight:700;white-space:nowrap}
 tbody tr:hover{background:var(--bg)}
@@ -110,7 +110,7 @@ footer{color:var(--muted);font-size:13px;padding-block:0 40px}
     <summary>표 고치는 법 (엑셀)</summary>
     <ol>
       <li>저장소의 <a href="https://github.com/adminmrobo/ahnboat_lab_cover_status/blob/main/data/hub.csv" target="_blank" rel="noopener"><code>data/hub.csv</code></a>를 내려받아 엑셀로 엽니다.</li>
-      <li>사람이 정하는 칸만 고칩니다: 제목, 주요내용, 대분류, 소분류, 공개대상여부(Y/N), 연구실 시리즈·외국어팩·온톨로지 대상 여부(Y/N), 순서, 외부링크, 비고.</li>
+      <li>사람이 정하는 칸만 고칩니다: 제목, 주요내용, 대분류, 중분류, 소분류, 공개대상여부(Y/N), 연구실 시리즈·외국어팩·온톨로지 대상 여부(Y/N), 순서, 외부링크, 비고.</li>
       <li>대분류 이름과 순서(=서버실 랙, 최대 10개)는 <code>data/hub_meta.json</code>에 있습니다. 새 대분류를 쓰려면 여기에도 추가해야 서버실·카탈로그에 나옵니다.</li>
       <li>CSV로 저장해 같은 이름으로 GitHub에 올리면, 다음 수집 때(또는 Actions에서 바로 실행하면) 현황판·서버실·카탈로그가 함께 바뀝니다.</li>
       <li>새 저장소를 만들면 다음 수집 때 표 맨 아래에 <b>미분류 · 검토</b>로 자동 추가됩니다. 분류하고 공개대상여부를 Y로 바꾸면 공개됩니다.</li>
@@ -120,6 +120,7 @@ footer{color:var(--muted);font-size:13px;padding-block:0 40px}
 </div>
 <div class="filters" role="search">
   <div class="wrap">
+    <select id="fMid" aria-label="중분류"><option value="">중분류 모두</option></select>
     <select id="fSub" aria-label="소분류"><option value="">소분류 모두</option></select>
     <select id="fPub" aria-label="공개대상여부"><option value="">공개 여부 모두</option><option value="Y">공개 대상</option><option value="N">공개 안 함</option><option value="검토">검토 필요</option></select>
     <select id="fLang" aria-label="외국어팩 현황"><option value="">외국어팩 모두</option><option>WIP</option><option>PROGRESS</option><option>DONE</option><option value="-">대상 아님</option></select>
@@ -133,7 +134,7 @@ footer{color:var(--muted);font-size:13px;padding-block:0 40px}
   <div class="tablebox">
     <table>
       <thead><tr>
-        <th>제목</th><th>GitHub 주소 · 사이트</th><th>대분류</th><th>소분류</th><th>공개대상</th><th>콘텐츠 존재</th>
+        <th>제목</th><th>GitHub 주소 · 사이트</th><th>대분류</th><th>중분류</th><th>소분류</th><th>공개대상</th><th>콘텐츠 존재</th>
         <th>연구실 시리즈 대상</th><th>외국어팩 대상</th><th>외국어팩 현황</th><th>온톨로지 대상</th><th>온톨로지 현황</th>
       </tr></thead>
       <tbody id="rows"></tbody>
@@ -154,7 +155,7 @@ footer{color:var(--muted);font-size:13px;padding-block:0 40px}
 
   function el(t,c,txt){var e=document.createElement(t);if(c)e.className=c;if(txt!=null)e.textContent=txt;return e;}
   function a(href,txt){var x=el('a','',txt);x.href=href;x.target='_blank';x.rel='noopener';return x;}
-  var D={items:[],categories:[]},F={cat:'',sub:'',pub:'',lang:'',onto:'',kind:'',text:''};
+  var D={items:[],categories:[]},F={cat:'',mid:'',sub:'',pub:'',lang:'',onto:'',kind:'',text:''};
   var COLOR={};
   var LANG_SHORT={ko:'한',en:'영',zh:'중',ja:'일',uz:'우',ru:'러',vi:'베'};
 
@@ -162,12 +163,13 @@ footer{color:var(--muted);font-size:13px;padding-block:0 40px}
   function stt(v){return el('span','st '+(v==='-'?'none':v),v==='-'?'—':v);}
   function match(i){
     if(F.cat&&i.cat!==F.cat)return false;
+    if(F.mid&&i.mid!==F.mid)return false;
     if(F.sub&&i.sub!==F.sub)return false;
     if(F.pub&&i.public!==F.pub)return false;
     if(F.lang&&i.lang_status!==F.lang)return false;
     if(F.onto&&i.onto_status!==F.onto)return false;
     if(F.kind&&i.kind!==F.kind)return false;
-    if(F.text){var q=F.text.toLowerCase();if((i.title+' '+i.repo+' '+i.summary+' '+i.sub).toLowerCase().indexOf(q)<0)return false;}
+    if(F.text){var q=F.text.toLowerCase();if((i.title+' '+i.repo+' '+i.summary+' '+i.mid+' '+i.sub).toLowerCase().indexOf(q)<0)return false;}
     return true;
   }
   function stats(){
@@ -190,13 +192,16 @@ footer{color:var(--muted);font-size:13px;padding-block:0 40px}
         b.appendChild(document.createTextNode((c?'R'+String(c.rack).padStart(2,'0')+' ':'')+n));}
       else b.appendChild(document.createTextNode('전체'));
       b.appendChild(el('small','',String(D.items.filter(function(x){return !n||x.cat===n;}).length)));
-      b.addEventListener('click',function(){F.cat=n;F.sub='';cats();subs();render();});
+      b.addEventListener('click',function(){F.cat=n;F.mid='';F.sub='';cats();subs();render();});
       box.appendChild(b);
     });
   }
   function subs(){
+    var m=document.getElementById('fMid');m.textContent='';m.appendChild(new Option('중분류 모두',''));
+    var mm=[];D.items.forEach(function(i){if((!F.cat||i.cat===F.cat)&&i.mid&&mm.indexOf(i.mid)<0)mm.push(i.mid);});
+    mm.forEach(function(v){m.appendChild(new Option(v,v));});m.value=F.mid;
     var s=document.getElementById('fSub');s.textContent='';s.appendChild(new Option('소분류 모두',''));
-    var seen=[];D.items.forEach(function(i){if((!F.cat||i.cat===F.cat)&&i.sub&&seen.indexOf(i.sub)<0)seen.push(i.sub);});
+    var seen=[];D.items.forEach(function(i){if((!F.cat||i.cat===F.cat)&&(!F.mid||i.mid===F.mid)&&i.sub&&seen.indexOf(i.sub)<0)seen.push(i.sub);});
     seen.forEach(function(v){s.appendChild(new Option(v,v));});s.value=F.sub;
   }
   function render(){
@@ -217,6 +222,7 @@ footer{color:var(--muted);font-size:13px;padding-block:0 40px}
       if(i.kind==='repo'&&i.link){var m=(i.link.match(/https?:\/\/\S+/)||[])[0];if(m){var o=a(m,'원문');l.appendChild(o);}}
       tr.appendChild(l);
       var c=el('td','c');var d=el('span','dot');d.style.background=COLOR[i.cat]||'#999';c.appendChild(d);c.appendChild(document.createTextNode(i.cat));tr.appendChild(c);
+      tr.appendChild(el('td','',i.mid||'—'));
       tr.appendChild(el('td','',i.sub||'—'));
       [i.public,i.exists,i.lab,i.lang_target].forEach(function(v){var td=el('td');td.appendChild(yn(v));tr.appendChild(td);});
       var ls=el('td');ls.appendChild(stt(i.lang_status));
@@ -228,6 +234,7 @@ footer{color:var(--muted);font-size:13px;padding-block:0 40px}
     });
     document.getElementById('count').textContent=list.length+' / '+D.items.length+'개';
   }
+  document.getElementById('fMid').addEventListener('change',function(e){F.mid=e.target.value;F.sub='';subs();render();});
   [['fSub','sub'],['fPub','pub'],['fLang','lang'],['fOnto','onto'],['fKind','kind']].forEach(function(p){
     document.getElementById(p[0]).addEventListener('change',function(e){F[p[1]]=e.target.value;render();});});
   document.getElementById('fText').addEventListener('input',function(e){F.text=e.target.value.trim();render();});
@@ -236,7 +243,7 @@ footer{color:var(--muted);font-size:13px;padding-block:0 40px}
     D=d;D.categories.forEach(function(c){COLOR[c.name]=c.color;});
     stats();cats();subs();render();
     document.getElementById('foot').textContent='마지막 갱신 '+d.updated+' · 외국어팩 현황: DONE = 한국어 포함 7개 언어 모두, PROGRESS = 2개 언어 이상이거나 일부 페이지만, WIP = 대상이지만 한국어만. 온톨로지 현황: DONE = 모든 원본 페이지에 지식 색인(#kg), PROGRESS = 일부 페이지만, WIP = 아직 없음.';
-  }).catch(function(e){document.getElementById('rows').innerHTML='';var td=el('td','err','데이터를 읽지 못했습니다 ('+e.message+').');td.colSpan=11;var tr=el('tr');tr.appendChild(td);document.getElementById('rows').appendChild(tr);});
+  }).catch(function(e){document.getElementById('rows').innerHTML='';var td=el('td','err','데이터를 읽지 못했습니다 ('+e.message+').');td.colSpan=12;var tr=el('tr');tr.appendChild(td);document.getElementById('rows').appendChild(tr);});
 })();
 </script>
 </body>

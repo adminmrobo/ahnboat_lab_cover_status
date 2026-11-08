@@ -19,7 +19,7 @@ EXCLUDE_PREFIX = "newsreporter_"
 EXCLUDE_NAMES = {"adminmrobo"}
 LANGS_FULL = 7  # 한국어 + en·zh·ja·uz·ru·vi
 
-COLS = ["저장소", "제목", "주요내용", "콘텐츠_카테고리_대분류", "콘텐츠_카테고리_소분류",
+COLS = ["저장소", "제목", "주요내용", "콘텐츠_카테고리_대분류", "콘텐츠_카테고리_중분류", "콘텐츠_카테고리_소분류",
         "공개대상여부", "연구실_시리즈_적용대상_여부", "외국어팩대상_여부", "온톨로지_적용대상_여부", "순서", "외부링크", "비고"]
 EXT = "외부:"  # GitHub 밖 실적(논문·특허·저서·사업)은 저장소 칸을 '외부:이름'으로 적는다
 SERVER_LANGS = ["en", "zh", "ja", "uz", "ru"]
@@ -94,7 +94,7 @@ def main():
             continue
         r = by[name]
         rows.append({"저장소": name, "제목": r.get("title_ko") or r.get("site_title") or name,
-                     "콘텐츠_카테고리_대분류": "미분류", "콘텐츠_카테고리_소분류": "",
+                     "콘텐츠_카테고리_대분류": "미분류", "콘텐츠_카테고리_중분류": "", "콘텐츠_카테고리_소분류": "",
                      "공개대상여부": "검토", "연구실_시리즈_적용대상_여부": "", "외국어팩대상_여부": "",
                      "온톨로지_적용대상_여부": "", "비고": "새 저장소 · 분류 필요"})
         added.append(name)
@@ -122,6 +122,7 @@ def main():
             "title": h.get("제목") or name,
             "summary": h.get("주요내용", ""),
             "cat": h.get("콘텐츠_카테고리_대분류") or "미분류",
+            "mid": h.get("콘텐츠_카테고리_중분류") or "",
             "sub": h.get("콘텐츠_카테고리_소분류") or "",
             "public": "Y" if yes(pub) else ("검토" if pub == "검토" else "N"),
             "kind": "ext" if ext else "repo",
@@ -141,7 +142,7 @@ def main():
             "note": h.get("비고", ""),
             "order": int(h["순서"]) if (h.get("순서") or "").isdigit() else 1000 + i,
         })
-    items.sort(key=lambda x: (cat_order.get(x["cat"], 99), x["sub"], x["order"]))
+    items.sort(key=lambda x: (cat_order.get(x["cat"], 99), x["mid"], x["sub"], x["order"]))
     kst = dt.timezone(dt.timedelta(hours=9))
     out = {"updated": dt.datetime.now(kst).date().isoformat(), "categories": cats, "items": items,
            "added_today": added}
@@ -162,7 +163,7 @@ def main():
             continue
         t = tr.get(it["repo"], {})
         row = {"카테고리": it["cat"], "제목": it["title"], "내용소개": it["summary"],
-               "해시태그": " ".join("#" + s.replace(" ", "") for s in [it["cat"], it["sub"]] if s),
+               "해시태그": " ".join("#" + s.replace(" ", "") for s in [it["cat"], it["mid"], it["sub"]] if s),
                "생성일": "", "비고": it["link"] if it["kind"] == "ext" else it["site_url"]}
         if it["cat"] not in first:
             for l in SERVER_LANGS:
