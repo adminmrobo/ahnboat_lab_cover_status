@@ -36,15 +36,30 @@ h2{margin:0;font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.15}
 .btn.ghost{background:#fff}
 .btn:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--line)}
 .btn:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--line)}
-.stage{position:relative;display:flex;flex-direction:column;justify-content:flex-end;min-height:300px;background:radial-gradient(circle at 1px 1px,#e9e5dc 1px,transparent 1.5px) 0 0/18px 18px,var(--paper)}
-.line{display:flex;justify-content:center;align-items:flex-end;gap:clamp(6px,2vw,28px);padding:56px 16px 0;position:relative}
-.line::after{content:"";position:absolute;left:8%;right:8%;bottom:30px;height:14px;border-radius:50%;background:rgba(31,34,36,.08)}
-.mate{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:6px;cursor:pointer;background:none;border:0;padding:0;font:inherit;color:inherit}
-.mate .crewsprite img{filter:drop-shadow(2px 2px 0 rgba(31,34,36,.12))}
-.mate .tag{font-size:clamp(.66rem,1.6vw,.78rem);font-weight:700;background:#fff;border:1.5px solid var(--line);border-radius:99px;padding:1px 9px;white-space:nowrap;margin-bottom:12px}
-.mate:hover .tag,.mate:focus-visible .tag{background:var(--sun)}
-.say{position:absolute;top:14px;left:50%;transform:translateX(-50%);max-width:calc(100% - 28px);background:#fff;border:2px solid var(--line);border-radius:14px;padding:6px 14px;font-size:.9rem;box-shadow:3px 3px 0 var(--line);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.say b{font-size:.75rem;color:var(--muted);margin-right:6px}
+.ids{padding:18px 20px 20px;display:flex;flex-direction:column;gap:12px;background:radial-gradient(circle at 1px 1px,#e9e5dc 1px,transparent 1.5px) 0 0/18px 18px,var(--paper)}
+.ids .hd{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.ids .hd b{font-size:1.05rem}
+.ids .hd span{font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;color:var(--muted)}
+.say{margin:0;background:#fff;border:2px solid var(--line);border-radius:12px;padding:6px 12px;font-size:.88rem;box-shadow:2px 2px 0 var(--line);min-height:2.3em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.say b{font-size:.72rem;color:var(--muted);margin-right:6px}
+.grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px}
+.idc{display:flex;flex-direction:column;align-items:stretch;gap:0;background:#fff;border:2px solid var(--line);border-radius:8px;padding:5px 5px 7px;box-shadow:3px 3px 0 var(--line);cursor:pointer;font:inherit;color:inherit;text-align:left;min-width:0;transition:transform .12s}
+.idc:hover{transform:translate(-1px,-2px) rotate(-.6deg)}
+.idc .ph{position:relative;aspect-ratio:3/4;border-radius:5px;overflow:hidden;background:linear-gradient(#dfeaf6,#cfdff0);border:1.5px solid #b9cbe0}
+.idc .ph img{position:absolute;left:50%;top:5%;width:134%;transform:translateX(-50%);image-rendering:pixelated}
+.idc.fruitfly .ph img{top:12%;width:128%}
+.idc.jupanbot .ph img{top:6%;width:128%}
+.idc .no{position:absolute;left:5px;top:5px;font-family:var(--mono);font-size:.62rem;background:rgba(255,255,255,.85);border-radius:4px;padding:0 4px;color:var(--muted)}
+.idc .nm{display:block;margin-top:6px;font-weight:700;font-size:.84rem;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.idc .rl{display:block;font-family:var(--mono);font-size:.62rem;letter-spacing:.06em;color:var(--muted)}
+.idc.npc .ph{background:repeating-linear-gradient(45deg,#eef2f6 0 8px,#e3e9f0 8px 16px);display:flex;align-items:center;justify-content:center}
+.idc.npc .q{font-size:2rem;font-weight:700;color:#9fb1c6}
+.idc.npc .nm{color:var(--muted)}
+@media (max-width:1180px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:900px){.grid{grid-template-columns:repeat(6,minmax(0,1fr))}}
+@media (max-width:620px){.grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.idc .nm{font-size:.8rem}}
+@media (max-width:900px){.top{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){.idc{transition:none}}
 .town{position:relative;display:block;text-decoration:none;height:clamp(180px,22vw,260px);margin-top:18px}
 .town img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%;image-rendering:pixelated}
 .town .cap{position:absolute;left:16px;bottom:16px;right:16px;display:flex;justify-content:space-between;align-items:flex-end;gap:10px;flex-wrap:wrap}
@@ -69,9 +84,10 @@ h2{margin:0;font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.15}
         <a class="btn ghost" href="https://adminmrobo.github.io/who_am_i/who_am_i.html" target="_blank" rel="noopener">저자 소개 보기</a>
       </div>
     </section>
-    <section class="card stage" aria-label="연구실 식구들 (눌러 보세요)">
-      <p class="say" id="say" aria-live="polite"><b id="sayWho">조수 하루</b><span id="sayTxt">안녕하세요! 저희를 눌러 보세요.</span></p>
-      <div class="line" id="crew"></div>
+    <section class="card ids" aria-label="연구실 식구 명부">
+      <div class="hd"><b>연구실 식구 명부</b><span>AHNBOAT LAB · ID</span></div>
+      <p class="say" id="say" aria-live="polite"><b id="sayWho">조수 하루</b><span id="sayTxt">사진을 눌러 보세요!</span></p>
+      <div class="grid" id="crew"></div>
     </section>
   </div>
   <a class="card town" href="https://adminmrobo.github.io/ahn_boat_lab_town/" target="_blank" rel="noopener" aria-label="Ahn Lab Town 입장하기">
@@ -79,34 +95,35 @@ h2{margin:0;font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.15}
     <span class="cap"><span class="nm">Ahn Lab Town<small>연구실 식구들이 일하는 마을 · 지하 1층 서버실</small></span><span class="go">🚪 입장하기</span></span>
   </a>
 </div>
-<script src="crew.js"></script>
 <script>
 (function(){
   'use strict';
+  var P='thumbs/chars/idphoto/',EX=['E13','E01','E07','E09','E12'];
   var CREW=[
-    {k:'doctor',name:'박사',role:'DOCTOR',desc:'연구실을 이끌며 개념을 실험으로 풀어 줍니다.',lines:['어서 오게!','이건 실험해 보면 금방 알 수 있다네.','어디 보자… 데이터부터!']},
-    {k:'haru',name:'조수 하루',role:'ASSISTANT',desc:'자료를 정리하고 콘텐츠 진행 상황을 챙깁니다.',lines:['안녕하세요!','정리 끝! 확인해 주세요.','해냈다!']},
-    {k:'fruitfly',name:'초파리 연구원',role:'RESEARCHER',desc:'작은 몸으로 큰 데이터를 살피는 연구원입니다.',lines:['윙윙~','시작합니다!','음… 수상한데요?']},
-    {k:'jupanbot',name:'주판봇',role:'ABABOT',desc:'주판으로 숫자를 세고 서버실 랙을 지킵니다.',lines:['딸깍딸깍, 계산 중.','만세! 계산 완료!']}
+    {k:'doctor',name:'박사',role:'DOCTOR',lines:['어서 오게!','이건 실험해 보면 금방 알 수 있다네.','어디 보자… 데이터부터!','흠, 이건 좀 더 생각해 봐야겠군.','좋아, 해 보세!']},
+    {k:'haru',name:'조수 하루',role:'ASSISTANT',lines:['안녕하세요!','정리 끝! 확인해 주세요.','이렇게 하면 돼요!','음… 다시 볼게요.','해냈다!']},
+    {k:'fruitfly',name:'초파리 연구원',role:'RESEARCHER',lines:['윙윙~','데이터 발견!','돋보기로 살펴보는 중.','음… 수상한데요?','만세!']},
+    {k:'jupanbot',name:'주판봇',role:'ABABOT',lines:['딸깍딸깍.','계산 완료!','설명해 드릴게요.','숫자가 이상한데요?','열 개의 랙, 이상 없음!']},
+    {k:'npc1',npc:true,name:'NPC 합류 예정',role:'COMING SOON'},
+    {k:'npc2',npc:true,name:'NPC 합류 예정',role:'COMING SOON'}
   ];
   var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
   function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e;}
-  var box=document.getElementById('crew');
-  function H(){return Math.max(90,Math.min(200,(box.clientWidth-60)/2.6));}
-  function build(){
-    box.textContent='';
-    var order=['doctor','haru','jupanbot','fruitfly'],h=H();
-    order.forEach(function(k){var c=CREW.filter(function(x){return x.k===k;})[0];
-      var b=el('button','mate '+c.k);b.type='button';b.title=c.desc;b.setAttribute('aria-label',c.name+' — '+c.desc);
-      c.sp=AhnCrew.make(c.k,h);b.appendChild(c.sp.el);b.appendChild(el('span','tag',c.name));c.n=c.n||0;
-      b.addEventListener('click',function(){go(c);});box.appendChild(b);});
-    post();
-  }
-  AhnCrew.load().then(function(){build();
-    if(!reduce){var t=0;setInterval(function(){go(CREW[t%CREW.length]);t++;},2800);}
-    var rw;window.addEventListener('resize',function(){clearTimeout(rw);rw=setTimeout(build,250);});
+  var box=document.getElementById('crew'),live=CREW.filter(function(c){return !c.npc;});
+  CREW.forEach(function(c,i){
+    var b=el('button','idc '+c.k+(c.npc?' npc':''));b.type='button';
+    var ph=el('span','ph');
+    if(c.npc){ph.appendChild(el('span','q','?'));}
+    else{c.img=el('img');c.img.alt='';c.img.src=P+c.k+'_'+EX[0]+'.webp';ph.appendChild(c.img);EX.forEach(function(e){var x=new Image();x.src=P+c.k+'_'+e+'.webp';});}
+    ph.appendChild(el('span','no','No.'+String(i+1).padStart(3,'0')));
+    b.appendChild(ph);b.appendChild(el('span','nm',c.name));b.appendChild(el('span','rl',c.role));
+    b.setAttribute('aria-label',c.name+(c.npc?'':' — 눌러서 표정 보기'));
+    c.n=0;b.addEventListener('click',function(){if(c.npc){say('주판봇','새 식구 사진은 곧 붙을 예정입니다!');return;}go(c);});
+    box.appendChild(b);
   });
-  function go(c){c.n++;c.sp.act(c.n);document.getElementById('sayWho').textContent=c.name;document.getElementById('sayTxt').textContent=c.lines[c.n%c.lines.length];}
+  function say(w,t){document.getElementById('sayWho').textContent=w;document.getElementById('sayTxt').textContent=t;}
+  function go(c){c.n=(c.n+1)%EX.length;c.img.src=P+c.k+'_'+EX[c.n]+'.webp';say(c.name,c.lines[c.n%c.lines.length]);}
+  if(!reduce){var t=0;setInterval(function(){go(live[t%live.length]);t++;},2600);}
   function post(){if(window.parent!==window){try{window.parent.postMessage({type:'ahnboat-catalog-height',height:Math.ceil(document.body.getBoundingClientRect().height),nav:false},'*');}catch(e){}}}
   window.addEventListener('resize',post);document.querySelectorAll('img').forEach(function(im){im.addEventListener('load',post);});post();
 })();
