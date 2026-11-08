@@ -3,8 +3,10 @@
 
 사람이 고치는 표  : data/hub.csv          (엑셀로 열어 고친 뒤 CSV로 저장)
 자동으로 채우는 값: data/repos.json       (scan_repos.py가 매일 모음)
-만드는 파일      : data/hub.json          (현황판 탭·카탈로그 페이지가 읽음)
-                   data/servers.csv       (랩타운 지하 1층 서버실이 읽음)
+만드는 파일      : data/hub.json          (관리용 현황판이 읽음 · 저장소에는 잠긴 hub.json.enc 만 올라감)
+                   data/catalog.json      (공개 카탈로그가 읽음 · 공개 항목만)
+                   data/servers.csv       (랩타운 지하 1층 서버실이 읽음 · 공개 항목만)
+hub.csv·hub.json 평문은 커밋하지 않는다. 잠그고 푸는 일은 hub_secure.py·hubcrypt.py가 한다.
 
 - repos.json에 있는데 hub.csv에 없는 새 저장소는 hub.csv 맨 아래에 '미분류'로 덧붙인다.
   공개대상여부는 '검토'로 두어, 사람이 분류하기 전에는 서버실·카탈로그에 나오지 않는다.
@@ -154,6 +156,17 @@ def main():
            "added_today": added}
     with open(os.path.join(DATA, "hub.json"), "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=1)
+
+    # 공개 카탈로그용: 공개 대상이면서 콘텐츠가 있는 항목만, 화면에 필요한 칸만 (관리 메모·대상 여부는 넣지 않음)
+    names = {c["name"] for c in cats}
+    pub = [it for it in items if it["public"] == "Y" and it["exists"] == "Y" and it["cat"] in names]
+    keep = ["title", "summary", "cat", "mid", "sub", "kind", "repo_url", "site_url", "link", "langs", "thumb"]
+    used = {(it["cat"], it["mid"]) for it in pub}
+    catalog = {"updated": out["updated"], "categories": cats,
+               "mids": [m for m in out["mids"] if (m.get("cat"), m.get("name")) in used],
+               "hero": out["hero"], "items": [{k: it[k] for k in keep} for it in pub]}
+    with open(os.path.join(DATA, "catalog.json"), "w", encoding="utf-8") as f:
+        json.dump(catalog, f, ensure_ascii=False, indent=1)
 
     # 서버실 servers.csv: 공개대상 Y이고 사이트가 있는 콘텐츠만, 대분류 순서대로 (랙 10개)
     tr = meta.get("server_translations", {})

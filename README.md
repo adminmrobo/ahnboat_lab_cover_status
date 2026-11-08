@@ -57,9 +57,16 @@ python3 scripts/make_thumbs.py --fetch                     # 바뀐 저장소만
 
 ## 콘텐츠 현황판 · 공개 카탈로그
 
-- `hub.html` — 콘텐츠 현황판. GitHub 저장소와 GitHub 밖 실적(논문·특허·저서·사업)을 한 표로 보여 준다.
-- `catalog.html` — 공개 카탈로그. 분야(대분류) → 갈래(중분류) → 주제(소분류) → 콘텐츠 순서로 (소분류가 하나뿐인 갈래는 바로 콘텐츠로) 들어간다. `?embed=1`을 붙이면 머리글 없이 보여 주어 다른 사이트(ahnboat.xyz)에 끼워 넣기 좋다.
-- `data/hub.csv` — 사람이 고치는 표(엑셀). 제목, 주요내용, 대분류, 중분류, 소분류, 공개대상여부, 연구실 시리즈·외국어팩·온톨로지 대상 여부, 순서, 외부링크, 비고.
-- `data/hub_meta.json` — 대분류 이름·순서·색·외국어 이름. 순서가 랩타운 지하 1층 서버실의 랙 순서(최대 10개).
-- `scripts/build_hub.py` — `hub.csv`와 매일 수집한 `repos.json`을 합쳐 `data/hub.json`(현황판·카탈로그)과 `data/servers.csv`(서버실)를 만든다. 새 저장소는 `미분류 · 검토`로 자동 추가된다.
-- `hub.csv`나 `hub_meta.json`을 올리면 Actions가 바로 다시 만든다.
+- `hub.html` — 콘텐츠 현황판(관리용). **관리자 키**를 넣어야 열린다. 키는 브라우저 안에서만 쓰인다.
+- `catalog.html` — 공개 카탈로그. 분야(대분류) → 중분류 → 소분류별 콘텐츠. `?embed=1`을 붙이면 머리글 없이 보여 주어 ahnboat.xyz에 끼워 넣기 좋다.
+- `data/hub.csv.enc`, `data/hub.json.enc` — 관리 데이터(표·합본). 관리자 키로 잠긴 파일만 저장소에 있다(AES-256-GCM, 키는 PBKDF2-SHA256으로 유도). 평문 `hub.csv`·`hub.json`은 커밋하지 않는다(.gitignore).
+- `data/catalog.json`, `data/servers.csv` — 공개 항목만 담은 파일. 카탈로그와 랩타운 서버실이 읽는다.
+- `data/hub_meta.json` — 대분류(=서버실 랙 10개)·중분류 소개·색인어·그림, 첫 화면 배너.
+- `scripts/hub_secure.py` — 잠긴 표를 풀어 `build_hub.py`로 다시 만들고 다시 잠근다. `scripts/hubcrypt.py` — 잠그기·풀기.
+- 관리자 키는 저장소 Settings → Secrets and variables → Actions의 `HUB_KEY`에 있다. 매일 06시 수집과, `hub.csv.enc`·`hub_meta.json`을 올릴 때 다시 만든다.
+
+### 표 고치는 순서
+1. 현황판에서 키를 넣고 **엑셀용 표 내려받기**.
+2. 엑셀에서 고친 뒤 CSV UTF-8로 저장.
+3. 현황판의 **고친 표를 잠긴 파일로 만들기**에 넣어 `hub.csv.enc`를 받는다.
+4. 저장소 `data/` 폴더에 `hub.csv.enc`를 올린다(덮어쓰기). 평문 `hub.csv`는 올리지 않는다.

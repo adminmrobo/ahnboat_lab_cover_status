@@ -86,6 +86,22 @@ td.c{white-space:nowrap}
 .guide code{font-family:var(--mono);font-size:12.5px;background:var(--bg);border-radius:4px;padding:0 4px}
 .err{color:var(--red)}
 footer{color:var(--muted);font-size:13px;padding-block:0 40px}
+.lock{padding-block:28px 60px}
+.lockcard{max-width:440px;background:var(--panel);border:1px solid var(--rule);border-radius:14px;padding:20px 22px}
+.lockcard h2{font-size:19px;margin:0 0 6px}
+.lockcard p{margin:0 0 14px;color:var(--muted);font-size:14px}
+.lockcard form{display:flex;gap:8px}
+.lockcard input[type=password]{flex:1;min-width:0;font:inherit;font-size:15px;background:var(--bg);color:var(--ink);border:1px solid var(--rule);border-radius:8px;padding:8px 10px}
+.lockcard button,.tools button,.filebtn{font:inherit;font-size:14px;font-weight:700;background:var(--ink);color:var(--bg);border:1px solid var(--ink);border-radius:8px;padding:7px 14px;cursor:pointer}
+.lockcard button:disabled{opacity:.6;cursor:wait}
+.remember{display:flex;gap:6px;align-items:center;font-size:13px;color:var(--muted);margin-top:10px}
+.lockcard .err{margin:8px 0 0;min-height:1.2em;font-size:13.5px}
+.tools{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.tools .ghost{background:transparent;color:var(--ink);border-color:var(--rule);font-weight:500}
+.filebtn{position:relative;display:inline-block;background:var(--panel);color:var(--ink);border-color:var(--rule)}
+.filebtn input{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%}
+.toolmsg{font-size:13px;color:var(--muted)}
+
 </style>
 </head>
 <body>
@@ -102,17 +118,37 @@ footer{color:var(--muted);font-size:13px;padding-block:0 40px}
   </nav>
 </header>
 
+<section class="lock wrap" id="lock" aria-labelledby="lockTitle">
+  <div class="lockcard">
+    <h2 id="lockTitle">관리자 키를 넣어 주세요</h2>
+    <p>현황판 데이터는 관리자 키로 잠겨 있습니다. 키는 이 브라우저 안에서만 쓰이고 어디로도 보내지지 않습니다.</p>
+    <form id="lockForm" autocomplete="off">
+      <input type="password" id="keyIn" placeholder="관리자 키" aria-label="관리자 키" autocomplete="current-password" required>
+      <button type="submit" id="unlockBtn">열기</button>
+    </form>
+    <label class="remember"><input type="checkbox" id="remember"> 이 탭을 닫을 때까지 기억</label>
+    <p class="err" id="lockErr" role="alert"></p>
+  </div>
+</section>
+<div id="app" hidden>
 <div class="vhead wrap">
-  <p class="lede">GitHub(adminmrobo)에 올린 콘텐츠와 GitHub 밖 실적을 한 표로 모은 DB입니다. 분류와 대상 여부는 <code>data/hub.csv</code>에서 사람이 정하고, 콘텐츠 존재 여부와 외국어팩·온톨로지 현황은 매일 오전 6시 수집 때 자동으로 채웁니다. 대분류 순서가 랩타운 지하 1층 서버실의 랙 순서이고, 공개 대상이면서 콘텐츠가 있는 항목만 서버실과 공개 카탈로그에 나옵니다.</p>
+  <p class="lede">GitHub(adminmrobo)에 올린 콘텐츠와 GitHub 밖 실적을 한 표로 모은 DB입니다. 분류와 대상 여부는 사람이 엑셀로 정하고, 콘텐츠 존재 여부와 외국어팩·온톨로지 현황은 매일 오전 6시 수집 때 자동으로 채웁니다. 대분류 순서가 랩타운 지하 1층 서버실의 랙 순서이고, 공개 대상이면서 콘텐츠가 있는 항목만 서버실과 공개 카탈로그에 나옵니다.</p>
   <ul class="stats" id="stats"></ul>
   <div class="cats" id="cats" role="group" aria-label="대분류"></div>
+  <div class="tools">
+    <button type="button" id="dlCsv">엑셀용 표 내려받기</button>
+    <label class="filebtn">고친 표를 잠긴 파일로 만들기<input type="file" id="upCsv" accept=".csv,text/csv"></label>
+    <button type="button" id="lockBtn" class="ghost">잠그기</button>
+    <span class="toolmsg" id="toolMsg" role="status"></span>
+  </div>
   <details class="guide">
     <summary>표 고치는 법 (엑셀)</summary>
     <ol>
-      <li>저장소의 <a href="https://github.com/adminmrobo/ahnboat_lab_cover_status/blob/main/data/hub.csv" target="_blank" rel="noopener"><code>data/hub.csv</code></a>를 내려받아 엑셀로 엽니다.</li>
+      <li>위의 <b>엑셀용 표 내려받기</b>를 눌러 <code>hub.csv</code>를 받아 엑셀로 엽니다.</li>
       <li>사람이 정하는 칸만 고칩니다: 제목, 주요내용, 대분류, 중분류, 소분류, 공개대상여부(Y/N), 연구실 시리즈·외국어팩·온톨로지 대상 여부(Y/N), 순서, 외부링크, 비고.</li>
       <li>대분류 이름과 순서(=서버실 랙, 최대 10개)는 <code>data/hub_meta.json</code>에 있습니다. 새 대분류를 쓰려면 여기에도 추가해야 서버실·카탈로그에 나옵니다.</li>
-      <li>CSV로 저장해 같은 이름으로 GitHub에 올리면, 다음 수집 때(또는 Actions에서 바로 실행하면) 현황판·서버실·카탈로그가 함께 바뀝니다.</li>
+      <li>CSV(UTF-8)로 저장한 뒤 <b>고친 표를 잠긴 파일로 만들기</b>에 넣으면 <code>hub.csv.enc</code>가 내려받아집니다. 평문 <code>hub.csv</code>는 GitHub에 올리지 마세요.</li>
+      <li><code>hub.csv.enc</code>를 저장소의 <a href="https://github.com/adminmrobo/ahnboat_lab_cover_status/upload/main/data" target="_blank" rel="noopener"><code>data/</code> 폴더</a>에 올리면(같은 이름 덮어쓰기) 몇 분 안에 현황판·서버실·카탈로그가 함께 바뀝니다.</li>
       <li>새 저장소를 만들면 다음 수집 때 표 맨 아래에 <b>미분류 · 검토</b>로 자동 추가됩니다. 분류하고 공개대상여부를 Y로 바꾸면 공개됩니다.</li>
       <li>GitHub 밖 실적(논문·특허·저서·사업)은 저장소 칸에 <code>외부:이름</code>으로 적고 외부링크 칸에 주소나 번호를 넣습니다.</li>
     </ol>
@@ -142,6 +178,7 @@ footer{color:var(--muted);font-size:13px;padding-block:0 40px}
   </div>
 </main>
 <footer class="wrap" id="foot"></footer>
+</div>
 
 <script>
 (function(){
@@ -239,11 +276,66 @@ footer{color:var(--muted);font-size:13px;padding-block:0 40px}
     document.getElementById(p[0]).addEventListener('change',function(e){F[p[1]]=e.target.value;render();});});
   document.getElementById('fText').addEventListener('input',function(e){F.text=e.target.value.trim();render();});
 
-  fetch('data/hub.json',{cache:'no-cache'}).then(function(r){if(!r.ok)throw new Error(r.status);return r.json();}).then(function(d){
-    D=d;D.categories.forEach(function(c){COLOR[c.name]=c.color;});
+  /* ---------- 잠금: AES-256-GCM, 키는 관리자 키에서 PBKDF2-SHA256 (scripts/hubcrypt.py와 같은 형식) ---------- */
+  var enc=new TextEncoder(),dec=new TextDecoder();
+  function b64d(s){var b=atob(s),u=new Uint8Array(b.length);for(var k=0;k<b.length;k++)u[k]=b.charCodeAt(k);return u;}
+  function b64e(u){var s='';for(var k=0;k<u.length;k+=0x8000)s+=String.fromCharCode.apply(null,u.subarray(k,k+0x8000));return btoa(s);}
+  function deriveKey(pass,salt,iter){
+    return crypto.subtle.importKey('raw',enc.encode(pass),'PBKDF2',false,['deriveKey']).then(function(base){
+      return crypto.subtle.deriveKey({name:'PBKDF2',hash:'SHA-256',salt:salt,iterations:iter},base,{name:'AES-GCM',length:256},false,['encrypt','decrypt']);});
+  }
+  function unlockBlob(o,pass){return deriveKey(pass,b64d(o.salt),o.iter).then(function(k){return crypto.subtle.decrypt({name:'AES-GCM',iv:b64d(o.iv)},k,b64d(o.ct));}).then(function(b){return new Uint8Array(b);});}
+  function lockBytes(bytes,pass){
+    var salt=crypto.getRandomValues(new Uint8Array(16)),iv=crypto.getRandomValues(new Uint8Array(12)),it=310000;
+    return deriveKey(pass,salt,it).then(function(k){return crypto.subtle.encrypt({name:'AES-GCM',iv:iv},k,bytes);}).then(function(ct){
+      return JSON.stringify({v:1,alg:'AES-256-GCM',kdf:'PBKDF2-SHA256',iter:it,salt:b64e(salt),iv:b64e(iv),ct:b64e(new Uint8Array(ct))});});
+  }
+  function getJSON(p){return fetch(p,{cache:'no-cache'}).then(function(r){if(!r.ok)throw new Error(p+' '+r.status);return r.json();});}
+  function save(name,data,type){var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([data],{type:type}));a.download=name;document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},500);}
+  var PASS='',SS='hub-admin-key';
+  function msg(t){document.getElementById('toolMsg').textContent=t;}
+
+  function show(d){
+    D=d;COLOR={};D.categories.forEach(function(c){COLOR[c.name]=c.color;});
+    document.getElementById('lock').hidden=true;document.getElementById('app').hidden=false;
     stats();cats();subs();render();
     document.getElementById('foot').textContent='마지막 갱신 '+d.updated+' · 외국어팩 현황: DONE = 한국어 포함 7개 언어 모두, PROGRESS = 2개 언어 이상이거나 일부 페이지만, WIP = 대상이지만 한국어만. 온톨로지 현황: DONE = 모든 원본 페이지에 지식 색인(#kg), PROGRESS = 일부 페이지만, WIP = 아직 없음.';
-  }).catch(function(e){document.getElementById('rows').innerHTML='';var td=el('td','err','데이터를 읽지 못했습니다 ('+e.message+').');td.colSpan=12;var tr=el('tr');tr.appendChild(td);document.getElementById('rows').appendChild(tr);});
+  }
+  function tryUnlock(pass,quiet){
+    var err=document.getElementById('lockErr'),btn=document.getElementById('unlockBtn');
+    err.textContent='';btn.disabled=true;btn.textContent='여는 중…';
+    return getJSON('data/hub.json.enc').then(function(o){return unlockBlob(o,pass);}).then(function(b){
+      PASS=pass;
+      try{if(document.getElementById('remember').checked||quiet)sessionStorage.setItem(SS,pass);}catch(e){}
+      show(JSON.parse(dec.decode(b)));
+    }).catch(function(e){
+      try{sessionStorage.removeItem(SS);}catch(x){}
+      if(!quiet)err.textContent=(e&&e.name==='OperationError')?'키가 맞지 않습니다.':'데이터를 열지 못했습니다 ('+(e.message||e)+').';
+    }).then(function(){btn.disabled=false;btn.textContent='열기';});
+  }
+  document.getElementById('lockForm').addEventListener('submit',function(e){e.preventDefault();tryUnlock(document.getElementById('keyIn').value,false);});
+  document.getElementById('lockBtn').addEventListener('click',function(){
+    PASS='';D={items:[],categories:[]};try{sessionStorage.removeItem(SS);}catch(e){}
+    document.getElementById('rows').textContent='';document.getElementById('app').hidden=true;document.getElementById('lock').hidden=false;
+    document.getElementById('keyIn').value='';document.getElementById('keyIn').focus();
+  });
+  document.getElementById('dlCsv').addEventListener('click',function(){
+    msg('푸는 중…');
+    getJSON('data/hub.csv.enc').then(function(o){return unlockBlob(o,PASS);}).then(function(b){save('hub.csv',b,'text/csv;charset=utf-8');msg('hub.csv를 내려받았습니다. GitHub에는 평문으로 올리지 마세요.');})
+      .catch(function(e){msg('표를 풀지 못했습니다 ('+(e.message||e)+').');});
+  });
+  document.getElementById('upCsv').addEventListener('change',function(e){
+    var f=e.target.files[0];e.target.value='';if(!f)return;
+    f.arrayBuffer().then(function(buf){
+      var u=new Uint8Array(buf),head;
+      try{head=new TextDecoder('utf-8',{fatal:true}).decode(u.subarray(0,4000));}catch(x){throw new Error('UTF-8 CSV가 아닙니다. 엑셀에서 "CSV UTF-8"로 저장해 주세요');}
+      if(head.replace(/^\ufeff/,'').split(/\r?\n/)[0].indexOf('저장소')!==0)throw new Error('첫 칸이 "저장소"인 현황판 표가 아닙니다');
+      msg('잠그는 중…');return lockBytes(u,PASS);
+    }).then(function(txt){save('hub.csv.enc',txt,'application/json');msg('hub.csv.enc를 만들었습니다. 저장소 data/ 폴더에 올려 주세요.');})
+      .catch(function(err){msg('만들지 못했습니다: '+(err.message||err));});
+  });
+  var saved='';try{saved=sessionStorage.getItem(SS)||'';}catch(e){}
+  if(saved)tryUnlock(saved,true);else document.getElementById('keyIn').focus();
 })();
 </script>
 </body>

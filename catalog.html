@@ -237,9 +237,9 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
   function post(nav){if(window.parent!==window){try{var h=Math.ceil(document.body.getBoundingClientRect().height);window.parent.postMessage({type:'ahnboat-catalog-height',height:h,nav:!!nav},'*');}catch(e){}}}
   window.addEventListener('hashchange',render);
   window.addEventListener('resize',post);
-  fetch('data/hub.json',{cache:'no-cache'}).then(function(r){if(!r.ok)throw new Error(r.status);return r.json();}).then(function(d){
+  fetch('data/catalog.json',{cache:'no-cache'}).then(function(r){if(!r.ok)throw new Error(r.status);return r.json();}).then(function(d){
     D=d;CATS=d.categories||[];MIDS=d.mids||[];
-    ITEMS=(d.items||[]).filter(function(i){return i.public==='Y'&&i.exists==='Y'&&CATS.some(function(c){return c.name===i.cat;});});
+    ITEMS=(d.items||[]).filter(function(i){return CATS.some(function(c){return c.name===i.cat;});});
     document.getElementById('foot').textContent='콘텐츠 '+ITEMS.length+'개 · 갱신 '+d.updated+' · 랩타운 지하 1층 서버실의 랙과 같은 분류입니다.';
     render();
     document.querySelectorAll('img').forEach(function(im){im.addEventListener('load',post);});

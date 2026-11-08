@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
   push:                    # 엑셀로 고친 현황판 표를 올리면 바로 다시 만든다
     branches: [main]
-    paths: ["data/hub.csv", "data/hub_meta.json"]
+    paths: ["data/hub.csv.enc", "data/hub_meta.json"]
 
 permissions:
   contents: write
@@ -35,20 +35,28 @@ jobs:
           pip install --quiet pillow
           python scripts/make_thumbs.py --fetch
 
-      - name: 콘텐츠 현황판 DB와 서버실 목록 만들기
-        run: python scripts/build_hub.py
+      - name: 콘텐츠 현황판 DB와 서버실 목록 만들기 (관리 데이터는 관리자 키로 잠금)
+        env:
+          HUB_KEY: ${{ secrets.HUB_KEY }}
+        run: |
+          pip install --quiet cryptography
+          python scripts/hub_secure.py
+          # 평문 관리 데이터가 남아 있으면 멈춘다
+          if [ -e data/hub.csv ] || [ -e data/hub.json ]; then
+            if [ -n "$HUB_KEY" ]; then echo "평문 관리 데이터가 남아 있습니다"; exit 1; fi
+          fi
 
       - name: 바뀐 것이 있으면 커밋
         run: |
-          # 날짜(checked_at)만 바뀐 경우는 커밋하지 않는다. 썸네일이 바뀌면 커밋한다.
-          if [ -z "$(git diff -U0 -- data/ | grep '^[+-]' | grep -v '^[+-][+-][+-]' | grep -v '"checked_at"' | grep -v '"updated"')" ] \
-             && [ -z "$(git status --porcelain -- thumbs/)" ]; then
+          # 날짜(checked_at, updated)만 바뀐 경우는 커밋하지 않는다. 파일이 새로 생기거나 지워지면 커밋한다.
+          if [ -z "$(git diff -U0 HEAD -- data/ | grep '^[+-]' | grep -v '^[+-][+-][+-]' | grep -v '"checked_at"' | grep -v '"updated"')" ] \
+             && [ -z "$(git status --porcelain -- data/ thumbs/ | grep -v '^ M')" ]; then
             echo "변경 없음"
             git checkout -- data/
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/ thumbs/
+          git add -A data/ thumbs/
           git commit -m "표지 현황 자동 수집 $(TZ=Asia/Seoul date +%F)"
           git push

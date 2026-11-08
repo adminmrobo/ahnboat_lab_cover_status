@@ -1,0 +1,1915 @@
+{
+ "updated": "2026-11-08",
+ "categories": [
+  {
+   "name": "머신러닝",
+   "rack": 1,
+   "color": "#2f7d5b",
+   "desc": "데이터에서 규칙을 배우는 머신러닝을 물고기 시장 데이터, 알고리즘 가계도, 모델 채용 위원회로 처음부터 익힙니다.",
+   "tr": {
+    "en": "Machine Learning",
+    "zh": "机器学习",
+    "ja": "機械学習",
+    "uz": "Mashinaviy o'rganish",
+    "ru": "Машинное обучение"
+   },
+   "id": "C01",
+   "keywords": [
+    "분류",
+    "회귀",
+    "결정나무",
+    "앙상블",
+    "모델 평가"
+   ],
+   "image": "thumbs/cats/C01.webp"
+  },
+  {
+   "name": "딥러닝·뇌과학",
+   "rack": 2,
+   "color": "#6a4fb3",
+   "desc": "신경망이 어떻게 배우는지, 그리고 초파리 뇌 연구가 딥러닝에 주는 힌트를 함께 따라갑니다.",
+   "tr": {
+    "en": "Deep Learning & Neuroscience",
+    "zh": "深度学习·脑科学",
+    "ja": "ディープラーニング・脳科学",
+    "uz": "Chuqur o'rganish va neyrofan",
+    "ru": "Глубокое обучение и нейронаука"
+   },
+   "id": "C02",
+   "keywords": [
+    "신경망",
+    "퍼셉트론",
+    "CNN",
+    "트랜스포머",
+    "커넥톰"
+   ],
+   "image": "thumbs/cats/C02.webp"
+  },
+  {
+   "name": "AI 감각·생성",
+   "rack": 3,
+   "color": "#c0613a",
+   "desc": "AI가 이미지를 구분하고, 동작을 알아보고, 장면을 그려 내고, 글을 읽는 방식을 긴급 미션으로 풀어 봅니다.",
+   "tr": {
+    "en": "AI Senses & Generation",
+    "zh": "AI 感知与生成",
+    "ja": "AIの感覚と生成",
+    "uz": "AI sezgilari va generatsiya",
+    "ru": "Чувства ИИ и генерация"
+   },
+   "id": "C03",
+   "keywords": [
+    "이미지 분류",
+    "동작 인식",
+    "렌더링",
+    "글 읽기",
+    "인코더·디코더"
+   ],
+   "image": "thumbs/cats/C03.webp"
+  },
+  {
+   "name": "LLM·추론 엔지니어링",
+   "rack": 4,
+   "color": "#2f5f9e",
+   "desc": "대형 언어모델이 답을 만들어 내는 과정과, 그것을 빠르고 싸게 서빙하는 추론 엔지니어링을 스터디로 읽습니다.",
+   "tr": {
+    "en": "LLM & Inference Engineering",
+    "zh": "LLM·推理工程",
+    "ja": "LLM・推論エンジニアリング",
+    "uz": "LLM va inferens muhandisligi",
+    "ru": "LLM и инженерия инференса"
+   },
+   "id": "C04",
+   "keywords": [
+    "LLM",
+    "추론 서빙",
+    "벤치마크",
+    "지연시간",
+    "에이전트"
+   ],
+   "image": "thumbs/cats/C04.webp"
+  },
+  {
+   "name": "논문 해설",
+   "rack": 5,
+   "color": "#8b5a2b",
+   "desc": "안상선의 학술 논문을 직접 돌려 보는 인터랙티브 해설로 다시 읽습니다.",
+   "tr": {
+    "en": "Paper Explainers",
+    "zh": "论文解读",
+    "ja": "論文解説",
+    "uz": "Maqolalar sharhi",
+    "ru": "Разбор статей"
+   },
+   "id": "C05",
+   "keywords": [
+    "변동성",
+    "가상자산",
+    "이상탐지",
+    "노동수요",
+    "여론조사"
+   ],
+   "image": "thumbs/cats/C05.webp"
+  },
+  {
+   "name": "금융·핀테크·블록체인",
+   "rack": 6,
+   "color": "#a07d12",
+   "desc": "블록체인 장부, 인슈어테크 사례, 회계와 기업가치까지 금융 속의 데이터와 AI를 살펴봅니다.",
+   "tr": {
+    "en": "Finance, Fintech & Blockchain",
+    "zh": "金融·金融科技·区块链",
+    "ja": "金融・フィンテック・ブロックチェーン",
+    "uz": "Moliya, fintex va blokcheyn",
+    "ru": "Финансы, финтех и блокчейн"
+   },
+   "id": "C06",
+   "keywords": [
+    "블록체인",
+    "인슈어테크",
+    "현금흐름표",
+    "기업가치",
+    "핀테크"
+   ],
+   "image": "thumbs/cats/C06.webp"
+  },
+  {
+   "name": "통계·데이터 기초",
+   "rack": 7,
+   "color": "#1f8a8a",
+   "desc": "확률분포, 추정, 시계열과 파이썬·판다스로 데이터 분석의 기초 체력을 기릅니다.",
+   "tr": {
+    "en": "Statistics & Data Basics",
+    "zh": "统计与数据基础",
+    "ja": "統計・データの基礎",
+    "uz": "Statistika va ma'lumot asoslari",
+    "ru": "Статистика и основы данных"
+   },
+   "id": "C07",
+   "keywords": [
+    "확률분포",
+    "신뢰구간",
+    "시계열",
+    "파이썬",
+    "판다스"
+   ],
+   "image": "thumbs/cats/C07.webp"
+  },
+  {
+   "name": "강의·저서",
+   "rack": 8,
+   "color": "#a33d6b",
+   "desc": "대학과 기관에서 강의한 교안과 이러닝, 저서를 모았습니다.",
+   "tr": {
+    "en": "Courses & Books",
+    "zh": "课程与著作",
+    "ja": "講義・著書",
+    "uz": "Kurslar va kitoblar",
+    "ru": "Курсы и книги"
+   },
+   "id": "C08",
+   "keywords": [
+    "데이터시각화",
+    "생성형 AI",
+    "시멘트 공정 AI",
+    "데이터베이스",
+    "이러닝"
+   ],
+   "image": "thumbs/cats/C08.webp"
+  },
+  {
+   "name": "공공·사회 프로젝트",
+   "rack": 9,
+   "color": "#4d7a2a",
+   "desc": "공공 입찰, 전력, 모빌리티, 사회적 비용처럼 사회 문제를 데이터로 다룬 프로젝트입니다.",
+   "tr": {
+    "en": "Public & Social Projects",
+    "zh": "公共·社会项目",
+    "ja": "公共・社会プロジェクト",
+    "uz": "Jamoat va ijtimoiy loyihalar",
+    "ru": "Общественные проекты"
+   },
+   "id": "C09",
+   "keywords": [
+    "공공 입찰",
+    "전력 수요",
+    "모빌리티",
+    "사회적 비용",
+    "공공 사업"
+   ],
+   "image": "thumbs/cats/C09.webp"
+  },
+  {
+   "name": "연구실 운영",
+   "rack": 10,
+   "color": "#5f6663",
+   "desc": "연구실 식구들과 랩타운, 캐릭터와 제작 도구를 소개합니다.",
+   "tr": {
+    "en": "Lab Operations",
+    "zh": "研究室运营",
+    "ja": "研究室の運営",
+    "uz": "Laboratoriya faoliyati",
+    "ru": "Работа лаборатории"
+   },
+   "id": "C10",
+   "keywords": [
+    "랩타운",
+    "캐릭터",
+    "연구실 소개",
+    "제작 도구"
+   ],
+   "image": "thumbs/cats/C10.webp"
+  }
+ ],
+ "mids": [
+  {
+   "cat": "머신러닝",
+   "name": "개념 지도",
+   "id": "C01-M1",
+   "desc": "알고리즘을 가문의 가계도로, 모델을 채용 지원자로 비유해 머신러닝의 큰 그림을 잡습니다.",
+   "keywords": [
+    "알고리즘 패밀리",
+    "모델 채용",
+    "딥러닝 치트시트",
+    "가계도"
+   ],
+   "image": "thumbs/cats/C01-M1.webp"
+  },
+  {
+   "cat": "머신러닝",
+   "name": "실습으로 배우기",
+   "id": "C01-M2",
+   "desc": "Kaggle 물고기 시장 데이터로 분류 모델을 만들고 성능을 높이는 과정을 버튼만 눌러 따라 합니다.",
+   "keywords": [
+    "Fish Market",
+    "분류 모델",
+    "학습률",
+    "에폭"
+   ],
+   "image": "thumbs/cats/C01-M2.webp"
+  },
+  {
+   "cat": "딥러닝·뇌과학",
+   "name": "뇌과학",
+   "id": "C02-M1",
+   "desc": "초파리 뇌 연구와 뉴럴링크 이야기로 생물의 뇌와 인공 신경망을 나란히 봅니다.",
+   "keywords": [
+    "초파리 뇌",
+    "커넥톰",
+    "뉴럴링크",
+    "동물의 뇌"
+   ],
+   "image": "thumbs/cats/C02-M1.webp"
+  },
+  {
+   "cat": "딥러닝·뇌과학",
+   "name": "딥러닝 모델",
+   "id": "C02-M2",
+   "desc": "퍼셉트론부터 트랜스포머, 신경망 구조 도감과 텐서까지 딥러닝 모델을 지도처럼 훑습니다.",
+   "keywords": [
+    "퍼셉트론",
+    "CNN",
+    "RNN",
+    "트랜스포머",
+    "텐서"
+   ],
+   "image": "thumbs/cats/C02-M2.webp"
+  },
+  {
+   "cat": "AI 감각·생성",
+   "name": "만들어 내기",
+   "id": "C03-M1",
+   "desc": "비지도학습에서 렌더링, DLSS까지 AI가 장면을 그려 내는 방식을 3부작으로 봅니다.",
+   "keywords": [
+    "렌더링",
+    "DLSS",
+    "비지도학습",
+    "업스케일"
+   ],
+   "image": "thumbs/cats/C03-M1.webp"
+  },
+  {
+   "cat": "AI 감각·생성",
+   "name": "보고 알아보기",
+   "id": "C03-M2",
+   "desc": "AI가 사진 속 대상을 구분하고, CCTV 속 동작을 알아보는 방법을 미션으로 배웁니다.",
+   "keywords": [
+    "이미지 분류",
+    "동작 인식",
+    "특징 추출",
+    "CCTV"
+   ],
+   "image": "thumbs/cats/C03-M2.webp"
+  },
+  {
+   "cat": "AI 감각·생성",
+   "name": "읽고 이해하기",
+   "id": "C03-M3",
+   "desc": "AI에게 글이 왜 읽기 어려운지, 글 읽기 난이도를 데이터로 살펴봅니다.",
+   "keywords": [
+    "가독성",
+    "텍스트",
+    "난이도",
+    "언어 모델"
+   ],
+   "image": "thumbs/cats/C03-M3.webp"
+  },
+  {
+   "cat": "LLM·추론 엔지니어링",
+   "name": "LLM 이해",
+   "id": "C04-M1",
+   "desc": "AI 점수가 무엇을 재는지, rule base에서 일하는 에이전트까지 LLM을 이해하는 길잡이입니다.",
+   "keywords": [
+    "LLM 평가",
+    "rule base",
+    "에이전트",
+    "플로우 차트"
+   ],
+   "image": "thumbs/cats/C04-M1.webp"
+  },
+  {
+   "cat": "LLM·추론 엔지니어링",
+   "name": "추론 엔지니어링 스터디",
+   "id": "C04-M2",
+   "desc": "『Inference Engineering』을 주차별로 읽으며 LLM 서빙의 지연시간·처리량·비용을 다루는 스터디입니다.",
+   "keywords": [
+    "추론 서빙",
+    "지연시간",
+    "처리량",
+    "병목",
+    "LiveBench"
+   ],
+   "image": "thumbs/cats/C04-M2.webp"
+  },
+  {
+   "cat": "논문 해설",
+   "name": "AI 응용 논문",
+   "id": "C05-M1",
+   "desc": "SNS 은어 탐지와 금융 이상탐지 모델 보안처럼 AI를 실제 문제에 적용한 논문들입니다.",
+   "keywords": [
+    "이상탐지",
+    "은어 탐지",
+    "적대적 공격",
+    "모델 보안"
+   ],
+   "image": "thumbs/cats/C05-M1.webp"
+  },
+  {
+   "cat": "논문 해설",
+   "name": "경제·사회 논문",
+   "id": "C05-M2",
+   "desc": "노후 가계 지출, 생성형 AI와 노동수요, 여론조사 보정 등 경제·사회 데이터를 다룬 논문들입니다.",
+   "keywords": [
+    "가계 지출",
+    "노동수요",
+    "여론조사",
+    "패널 데이터"
+   ],
+   "image": "thumbs/cats/C05-M2.webp"
+  },
+  {
+   "cat": "논문 해설",
+   "name": "금융·자산 논문",
+   "id": "C05-M3",
+   "desc": "주식시장 변동성, 가상자산 가격과 정보 효율성, 미디어 토큰 경제를 다룬 논문들입니다.",
+   "keywords": [
+    "변동성 분해",
+    "가상자산",
+    "정보 효율성",
+    "토큰 경제"
+   ],
+   "image": "thumbs/cats/C05-M3.webp"
+  },
+  {
+   "cat": "논문 해설",
+   "name": "외부_콘텐츠",
+   "id": "EXT",
+   "desc": "GitHub 밖에 있는 논문 원문, 특허, 저서, 이러닝, 공공 사업 실적입니다.",
+   "keywords": [
+    "논문",
+    "학술대회",
+    "발표"
+   ],
+   "image": "thumbs/cats/EXT.webp"
+  },
+  {
+   "cat": "금융·핀테크·블록체인",
+   "name": "보험·핀테크",
+   "id": "C06-M1",
+   "desc": "여행자보험과 건강보험 데이터로 분류·회귀 모델을 만드는 인슈어테크 사례 연구입니다.",
+   "keywords": [
+    "인슈어테크",
+    "보험금 청구",
+    "분류 모델",
+    "회귀 모델"
+   ],
+   "image": "thumbs/cats/C06-M1.webp"
+  },
+  {
+   "cat": "금융·핀테크·블록체인",
+   "name": "블록체인",
+   "id": "C06-M2",
+   "desc": "장부의 진화에서 블록체인 기술, 비트코인까지 세 장으로 읽는 블록체인 금융입니다.",
+   "keywords": [
+    "분산원장",
+    "해시",
+    "채굴",
+    "비트코인"
+   ],
+   "image": "thumbs/cats/C06-M2.webp"
+  },
+  {
+   "cat": "금융·핀테크·블록체인",
+   "name": "외부_콘텐츠",
+   "id": "EXT",
+   "desc": "GitHub 밖에 있는 논문 원문, 특허, 저서, 이러닝, 공공 사업 실적입니다.",
+   "keywords": [
+    "특허",
+    "로봇저널리즘",
+    "Money-Robo"
+   ],
+   "image": "thumbs/cats/EXT.webp"
+  },
+  {
+   "cat": "금융·핀테크·블록체인",
+   "name": "회계·거시금융",
+   "id": "C06-M3",
+   "desc": "현금흐름표와 매출 없는 기업의 가치 평가를 연구실 해설로 풀어 봅니다.",
+   "keywords": [
+    "현금흐름표",
+    "기업가치",
+    "직접법·간접법",
+    "밸류에이션"
+   ],
+   "image": "thumbs/cats/C06-M3.webp"
+  },
+  {
+   "cat": "통계·데이터 기초",
+   "name": "프로그래밍",
+   "id": "C07-M1",
+   "desc": "파이썬과 판다스를 따라 하며, 표가 움직이는 그림으로 배웁니다.",
+   "keywords": [
+    "파이썬",
+    "판다스",
+    "데이터프레임",
+    "Colab"
+   ],
+   "image": "thumbs/cats/C07-M1.webp"
+  },
+  {
+   "cat": "통계·데이터 기초",
+   "name": "확률·통계",
+   "id": "C07-M2",
+   "desc": "이산확률분포, 점추정과 신뢰구간, 시계열 모형까지 통계의 기본기를 직접 돌려 봅니다.",
+   "keywords": [
+    "확률분포",
+    "점추정",
+    "신뢰구간",
+    "ARIMA",
+    "LSTM"
+   ],
+   "image": "thumbs/cats/C07-M2.webp"
+  },
+  {
+   "cat": "강의·저서",
+   "name": "대학 강의",
+   "id": "C08-M1",
+   "desc": "데이터시각화, 생성형 AI 활용전략, 데이터베이스, 구글 시트, 시멘트 공정 AI 등 대학 강의 교안입니다.",
+   "keywords": [
+    "데이터시각화",
+    "생성형 AI 활용전략",
+    "데이터베이스",
+    "구글 시트",
+    "시멘트 공정 AI"
+   ],
+   "image": "thumbs/cats/C08-M1.webp"
+  },
+  {
+   "cat": "강의·저서",
+   "name": "외부_콘텐츠",
+   "id": "EXT",
+   "desc": "GitHub 밖에 있는 논문 원문, 특허, 저서, 이러닝, 공공 사업 실적입니다.",
+   "keywords": [
+    "저서",
+    "이러닝"
+   ],
+   "image": "thumbs/cats/EXT.webp"
+  },
+  {
+   "cat": "공공·사회 프로젝트",
+   "name": "산업·인프라",
+   "id": "C09-M3",
+   "desc": "AI가 쓰는 전력과 모바일 경로 안내처럼 산업·인프라 데이터를 다룹니다.",
+   "keywords": [
+    "전력 수요",
+    "데이터센터",
+    "경로 안내",
+    "모빌리티"
+   ],
+   "image": "thumbs/cats/C09-M3.webp"
+  },
+  {
+   "cat": "공공·사회 프로젝트",
+   "name": "외부_콘텐츠",
+   "id": "EXT",
+   "desc": "GitHub 밖에 있는 논문 원문, 특허, 저서, 이러닝, 공공 사업 실적입니다.",
+   "keywords": [
+    "공공 사업",
+    "총괄 PM",
+    "특허"
+   ],
+   "image": "thumbs/cats/EXT.webp"
+  },
+  {
+   "cat": "연구실 운영",
+   "name": "연구실 소개",
+   "id": "C10-M1",
+   "desc": "연구실 타운과 저자 소개 페이지로 안보트 연구실을 둘러봅니다.",
+   "keywords": [
+    "랩타운",
+    "저자 소개",
+    "연구실 식구"
+   ],
+   "image": "thumbs/cats/C10-M1.webp"
+  },
+  {
+   "cat": "연구실 운영",
+   "name": "제작 도구",
+   "id": "C10-M2",
+   "desc": "박사·조수·초파리 연구원·주판봇의 표정 그림과 캐릭터 자료입니다.",
+   "keywords": [
+    "캐릭터",
+    "표정 라이브러리",
+    "스프라이트"
+   ],
+   "image": "thumbs/cats/C10-M2.webp"
+  }
+ ],
+ "hero": {
+  "image": "thumbs/cats/HERO.webp",
+  "kicker": "AHNBOAT LAB · SERVER ROOM",
+  "title": "안보트 연구실 콘텐츠",
+  "desc": "박사·조수·초파리 연구원·주판봇이 진행하는 해설 시리즈와 연구 실적을 열 개의 랙에 나눠 두었습니다. 분야를 고르면 중분류와 콘텐츠가 이어집니다."
+ },
+ "items": [
+  {
+   "title": "모델 채용 위원회 2차 공채 · 딥러닝",
+   "summary": "1차 공채로 뽑은 직원들이 일하는 공장에 새 스캐너가 들어왔다. 숫자가 한 칸씩 밀리자 선배들의 점수가 무너진다. 신경망 지원자 열다섯 명을 위한 2차 공고와 딥러닝 치트시트 11칸(인공 뉴런·활성화 함수·순전파·손실·역전파·최적화·대표 구조·규제·학습 곡선·평가 지표·하이퍼파라미터), 두 줄 합격선과 재시험 규칙. 모델 채용 위원회 2차 공채 6-0.",
+   "cat": "머신러닝",
+   "mid": "개념 지도",
+   "sub": "모델 채용 위원회",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/DL_model_hiring_committee",
+   "site_url": "https://adminmrobo.github.io/DL_model_hiring_committee/",
+   "link": "",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "thumb": "thumbs/repos/DL_model_hiring_committee.jpg"
+  },
+  {
+   "title": "모델 채용 위원회 1차 공채 · 머신러닝",
+   "summary": "작업 표준서의 if 규칙으로 콘크리트 배합을 판정하던 기존 직원 매뉴얼 씨가 새 재료와 짧은 재령 앞에서 멈춘다. 판단의 근거가 되는 지식이 없을 때, 그 지식을 데이터로 만드는 것이 머신러닝이다. IF·순서도·NOR, 회귀와 분류, 지도와 비지도, 그리고 열다섯 지원자의 면접 규정. 모델 채용 위원회 5-0.",
+   "cat": "머신러닝",
+   "mid": "개념 지도",
+   "sub": "모델 채용 위원회",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/ML_model_hiring_committee",
+   "site_url": "https://adminmrobo.github.io/ML_model_hiring_committee/",
+   "link": "",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "thumb": "thumbs/repos/ML_model_hiring_committee.jpg"
+  },
+  {
+   "title": "알고리즘 패밀리 1부 · 가계도",
+   "summary": "인공지능 알고리즘을 한 가문의 가계도로 정리한 특별편 1부",
+   "cat": "머신러닝",
+   "mid": "개념 지도",
+   "sub": "알고리즘 패밀리",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/ML_00_Algorithm-family-build_01",
+   "site_url": "https://adminmrobo.github.io/ML_00_Algorithm-family-build_01/",
+   "link": "",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "thumb": "thumbs/repos/ML_00_Algorithm-family-build_01.jpg"
+  },
+  {
+   "title": "알고리즘 패밀리 2부 · 조직원 명부",
+   "summary": "가문 구성원(알고리즘)별 특징을 정리한 특별편 2부",
+   "cat": "머신러닝",
+   "mid": "개념 지도",
+   "sub": "알고리즘 패밀리",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/ML_00_Algorithm-family-build_02",
+   "site_url": "https://adminmrobo.github.io/ML_00_Algorithm-family-build_02/",
+   "link": "",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "thumb": "thumbs/repos/ML_00_Algorithm-family-build_02.jpg"
+  },
+  {
+   "title": "알고리즘 패밀리 3부 · 가문 회합",
+   "summary": "알고리즘들이 한자리에 모여 서로를 비교하는 특별편 3부",
+   "cat": "머신러닝",
+   "mid": "개념 지도",
+   "sub": "알고리즘 패밀리",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/ML_00_Algorithm-family-build_03",
+   "site_url": "https://adminmrobo.github.io/ML_00_Algorithm-family-build_03/",
+   "link": "",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "thumb": "thumbs/repos/ML_00_Algorithm-family-build_03.jpg"
+  },
+  {
+   "title": "Fish Market Data로 쉽게 따라하는 머신러닝",
+   "summary": "생선 시장 데이터로 회귀·분류 모델을 처음부터 따라 해 보는 입문 강의",
+   "cat": "머신러닝",
+   "mid": "실습으로 배우기",
+   "sub": "Fish Market 머신러닝",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/Fish_Market_Data_Machine_Learning",
+   "site_url": "https://adminmrobo.github.io/Fish_Market_Data_Machine_Learning/",
+   "link": "",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "thumb": "thumbs/repos/Fish_Market_Data_Machine_Learning.jpg"
+  },
+  {
+   "title": "Fish Market 연구실 · 머신러닝 핵심 개념 2",
+   "summary": "",
+   "cat": "머신러닝",
+   "mid": "실습으로 배우기",
+   "sub": "Fish Market 머신러닝",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/fish_market_learning_epoch_etc",
+   "site_url": "https://adminmrobo.github.io/fish_market_learning_epoch_etc/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/fish_market_learning_epoch_etc.jpg"
+  },
+  {
+   "title": "딥러닝 A to Z · 초파리 특별편",
+   "summary": "초파리 뇌 연구가 인공지능에 주는 힌트를 정리한 리뷰",
+   "cat": "딥러닝·뇌과학",
+   "mid": "뇌과학",
+   "sub": "초파리 특별편",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/AI_Model_Review_Fruit_fly_special",
+   "site_url": "https://adminmrobo.github.io/AI_Model_Review_Fruit_fly_special/",
+   "link": "",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "thumb": "thumbs/repos/AI_Model_Review_Fruit_fly_special.jpg"
+  },
+  {
+   "title": "뉴럴링크와 동물의 뇌",
+   "summary": "",
+   "cat": "딥러닝·뇌과학",
+   "mid": "뇌과학",
+   "sub": "초파리 특별편",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/neuralink_animal_brain_ai",
+   "site_url": "https://adminmrobo.github.io/neuralink_animal_brain_ai/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/neuralink_animal_brain_ai.jpg"
+  },
+  {
+   "title": "초파리 연구실의 딥러닝 A to Z",
+   "summary": "초파리 연구원과 함께 딥러닝 모델을 지도처럼 훑어보는 시리즈",
+   "cat": "딥러닝·뇌과학",
+   "mid": "딥러닝 모델",
+   "sub": "딥러닝 A to Z",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/AI_Model_Review",
+   "site_url": "https://adminmrobo.github.io/AI_Model_Review/",
+   "link": "",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "thumb": "thumbs/repos/AI_Model_Review.jpg"
+  },
+  {
+   "title": "신경망은 틀리면서 배운다",
+   "summary": "퍼셉트론과 함수 모형을 나란히 놓고 신경망이 배우는 방식을 비교",
+   "cat": "딥러닝·뇌과학",
+   "mid": "딥러닝 모델",
+   "sub": "딥러닝 A to Z",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/deep_learning_00_neural_net_learns",
+   "site_url": "https://adminmrobo.github.io/deep_learning_00_neural_net_learns/",
+   "link": "",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "thumb": "thumbs/repos/deep_learning_00_neural_net_learns.jpg"
+  },
+  {
+   "title": "신경망 구조 도감 · 초파리 로봇 대전",
+   "summary": "신경망 42가지를 구조 도감으로 정리하고, 초파리만 한 로봇의 뇌에 넣었을 때의 사양과 성능을 RPG 대전으로 비교하는 4쪽짜리 해설.",
+   "cat": "딥러닝·뇌과학",
+   "mid": "딥러닝 모델",
+   "sub": "딥러닝 A to Z",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/neural_network_atlas",
+   "site_url": "https://adminmrobo.github.io/neural_network_atlas/",
+   "link": "",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "thumb": ""
+  },
+  {
+   "title": "텐서 연구실",
+   "summary": "",
+   "cat": "딥러닝·뇌과학",
+   "mid": "딥러닝 모델",
+   "sub": "텐서 연구실",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/what_is_tensor",
+   "site_url": "https://adminmrobo.github.io/what_is_tensor/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/what_is_tensor.jpg"
+  },
+  {
+   "title": "AI 렌더링 연구실 3부작",
+   "summary": "",
+   "cat": "AI 감각·생성",
+   "mid": "만들어 내기",
+   "sub": "AI 렌더링",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/ai_rendering",
+   "site_url": "https://adminmrobo.github.io/ai_rendering/",
+   "link": "",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "thumb": "thumbs/repos/ai_rendering.jpg"
+  },
+  {
+   "title": "AI는 동작을 어떻게 알아보고 만들까?",
+   "summary": "동작을 알아보는 AI와 동작을 만드는 AI의 원리",
+   "cat": "AI 감각·생성",
+   "mid": "보고 알아보기",
+   "sub": "모션 AI",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/motion_ai_series_01",
+   "site_url": "https://adminmrobo.github.io/motion_ai_series_01/",
+   "link": "",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "thumb": "thumbs/repos/motion_ai_series_01.jpg"
+  },
+  {
+   "title": "AI는 이미지를 어떻게 구분할까?",
+   "summary": "이미지 분류가 어떻게 작동하는지 직접 따라 하며 이해하는 강의",
+   "cat": "AI 감각·생성",
+   "mid": "보고 알아보기",
+   "sub": "이미지 인식",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/AI_image_classification",
+   "site_url": "https://adminmrobo.github.io/AI_image_classification/",
+   "link": "",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "thumb": "thumbs/repos/AI_image_classification.jpg"
+  },
+  {
+   "title": "AI 글 읽기 어려움",
+   "summary": "",
+   "cat": "AI 감각·생성",
+   "mid": "읽고 이해하기",
+   "sub": "AI 글 읽기",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/ai_text_read_ability",
+   "site_url": "https://adminmrobo.github.io/ai_text_read_ability/",
+   "link": "",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "thumb": "thumbs/repos/ai_text_read_ability.jpg"
+  },
+  {
+   "title": "AI 점수는 무엇을 잰 것일까",
+   "summary": "",
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "LLM 이해",
+   "sub": "LLM 평가",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/LLM_evaluation",
+   "site_url": "https://adminmrobo.github.io/LLM_evaluation/",
+   "link": "",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "thumb": "thumbs/repos/LLM_evaluation.jpg"
+  },
+  {
+   "title": "rule base에서 일하는 AI까지",
+   "summary": "",
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "LLM 이해",
+   "sub": "rule base에서 에이전트까지",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/rulebase_to_agent",
+   "site_url": "https://adminmrobo.github.io/rulebase_to_agent/",
+   "link": "",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "thumb": "thumbs/repos/rulebase_to_agent.jpg"
+  },
+  {
+   "title": "1주차 논문 · LiveBench 벤치마크",
+   "summary": "",
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "추론 엔지니어링 스터디",
+   "sub": "추론 엔지니어링 스터디",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study_week_01_article_01",
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study_week_01_article_01/",
+   "link": "",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "thumb": "thumbs/repos/inference_engineering_study_week_01_article_01.jpg"
+  },
+  {
+   "title": "1주차 교재 1장 · 추론 서빙의 균형",
+   "summary": "LLM 추론 서빙의 지연시간·처리량·단위 경제학 균형을 다루는 인터랙티브 교육 시리즈",
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "추론 엔지니어링 스터디",
+   "sub": "추론 엔지니어링 스터디",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study_week_01_textbook_ch01",
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study_week_01_textbook_ch01/",
+   "link": "",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "thumb": "thumbs/repos/inference_engineering_study_week_01_textbook_ch01.jpg"
+  },
+  {
+   "title": "2주차 논문 해설",
+   "summary": "박사·하루·초파리 연구원·주판봇이 논문과 교과서를 직접 돌려 보며 설명하는 인터랙티브 해설 시리즈. 7개 언어.",
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "추론 엔지니어링 스터디",
+   "sub": "추론 엔지니어링 스터디",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study_week_02_article_01",
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study_week_02_article_01/",
+   "link": "",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "thumb": "thumbs/repos/inference_engineering_study_week_02_article_01.jpg"
+  },
+  {
+   "title": "2주차 교재 2장 앞부분",
+   "summary": "『Inference Engineering』(Philip Kiely, 2026)을 주차별로 읽는 인터랙티브 해설 시리즈 — 한국어·English·中文·日本語·Русский·Oʻzbekcha·Tiếng Việt",
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "추론 엔지니어링 스터디",
+   "sub": "추론 엔지니어링 스터디",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study_week_02_textbook_ch02_p1_p2",
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study_week_02_textbook_ch02_p1_p2/",
+   "link": "",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "thumb": "thumbs/repos/inference_engineering_study_week_02_textbook_ch02_p1_p2.jpg"
+  },
+  {
+   "title": "2주차 교재 2장 뒷부분 · 병목을 찾아라",
+   "summary": "",
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "추론 엔지니어링 스터디",
+   "sub": "추론 엔지니어링 스터디",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study_week_02_textbook_ch02_p3_to_end",
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study_week_02_textbook_ch02_p3_to_end/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/inference_engineering_study_week_02_textbook_ch02_p3_to_end.jpg"
+  },
+  {
+   "title": "병목을 찾아라 · 발표 자료",
+   "summary": "",
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "추론 엔지니어링 스터디",
+   "sub": "추론 엔지니어링 스터디",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide",
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide.jpg"
+  },
+  {
+   "title": "3주차 논문 해설",
+   "summary": "",
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "추론 엔지니어링 스터디",
+   "sub": "추론 엔지니어링 스터디",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study_week_03_article_01",
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study_week_03_article_01/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/inference_engineering_study_week_03_article_01.jpg"
+  },
+  {
+   "title": "Inference Korea 스터디 보드",
+   "summary": "Inference Korea: 『Inference Engineering』을 10주 동안 함께 읽는 추론 엔지니어링 스터디. 매주 토요일 저녁 8시 Zoom.",
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "추론 엔지니어링 스터디",
+   "sub": "추론 엔지니어링 스터디",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/inference_korea_study_page",
+   "site_url": "https://adminmrobo.github.io/inference_korea_study_page/",
+   "link": "",
+   "langs": [
+    "ko",
+    "en",
+    "zh"
+   ],
+   "thumb": ""
+  },
+  {
+   "title": "SNS 은어와 이상탐지",
+   "summary": "",
+   "cat": "논문 해설",
+   "mid": "AI 응용 논문",
+   "sub": "AI·보안",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/my_article_03_drug-slang-detection",
+   "site_url": "https://adminmrobo.github.io/my_article_03_drug-slang-detection/",
+   "link": "미래사회 제16권 1호 · https://ifso.iscu.ac.kr/02_res/sub2_1_view.asp?idx=490",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "thumb": "thumbs/repos/my_article_03_drug-slang-detection.jpg"
+  },
+  {
+   "title": "금융 이상탐지 모델 보안과 적대적 공격",
+   "summary": "금융 이상탐지 모델 보안과 적대적 데이터 대응 방안 — 인터랙티브 해설 페이지. 한국어 · English · 中文 · 日本語 · Oʻzbekcha · Русский · Tiếng Việt.",
+   "cat": "논문 해설",
+   "mid": "AI 응용 논문",
+   "sub": "AI·보안",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/my_article_04_adversarial_finance_attack",
+   "site_url": "https://adminmrobo.github.io/my_article_04_adversarial_finance_attack/",
+   "link": "미래사회 제15권 3호 · https://ifso.iscu.ac.kr/02_res/sub2_1_view.asp?idx=464",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "thumb": "thumbs/repos/my_article_04_adversarial_finance_attack.jpg"
+  },
+  {
+   "title": "노후 가계부와 AI 예측 모형",
+   "summary": "",
+   "cat": "논문 해설",
+   "mid": "경제·사회 논문",
+   "sub": "경제·사회",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/my_article_05_consumer_expenditure_predict",
+   "site_url": "https://adminmrobo.github.io/my_article_05_consumer_expenditure_predict/",
+   "link": "미래사회 제16권 2호 · https://ifso.iscu.ac.kr/02_res/sub2_1_view.asp?idx=508",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "thumb": "thumbs/repos/my_article_05_consumer_expenditure_predict.jpg"
+  },
+  {
+   "title": "조건부 노동수요와 생성형 AI",
+   "summary": "워크넷 195개월 구인 행정데이터와 비용최소화 조건부 노동수요함수로 생성형 AI 확산 전후 산업별 구인수요 충격을 검증한 인터랙티브 리포트. 한국어·English·中文·日本語·Oʻzbekcha·Русский·Tiếng Việt 7개 언어판.",
+   "cat": "논문 해설",
+   "mid": "경제·사회 논문",
+   "sub": "경제·사회",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/my_article_06_AI_effect_to_labor_demand",
+   "site_url": "https://adminmrobo.github.io/my_article_06_AI_effect_to_labor_demand/",
+   "link": "",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "thumb": "thumbs/repos/my_article_06_AI_effect_to_labor_demand.jpg"
+  },
+  {
+   "title": "여론조사 보정 연구실",
+   "summary": "",
+   "cat": "논문 해설",
+   "mid": "경제·사회 논문",
+   "sub": "경제·사회",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/my_article_08_poll_reweighting_lab",
+   "site_url": "https://adminmrobo.github.io/my_article_08_poll_reweighting_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/my_article_08_poll_reweighting_lab.jpg"
+  },
+  {
+   "title": "암호화폐 자산의 정보 효율성",
+   "summary": "",
+   "cat": "논문 해설",
+   "mid": "금융·자산 논문",
+   "sub": "가상자산",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/my_article_01_bitcoin_price_analytics",
+   "site_url": "https://adminmrobo.github.io/my_article_01_bitcoin_price_analytics/",
+   "link": "미래사회 제12권 2호 · https://ifso.iscu.ac.kr/02_res/sub2_1_view.asp?idx=204",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "thumb": ""
+  },
+  {
+   "title": "가상자산 시계열 데이터의 분석과 예측",
+   "summary": "안상선(2024) 논문 해설 대시보드 - 7개 언어 입구 페이지",
+   "cat": "논문 해설",
+   "mid": "금융·자산 논문",
+   "sub": "가상자산",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/my_article_02_crypto_predict_model_analytics",
+   "site_url": "https://adminmrobo.github.io/my_article_02_crypto_predict_model_analytics/",
+   "link": "미래사회 제15권 1호 · https://ifso.iscu.ac.kr/02_res/sub2_1_view.asp?idx=379",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "thumb": "thumbs/repos/my_article_02_crypto_predict_model_analytics.jpg"
+  },
+  {
+   "title": "미디어 토큰 경제 연구실",
+   "summary": "안상선 논문 「미디어 콘텐츠 기반의 블록체인 토큰의 경제적 성과 분석 — 가격 변동성 및 탈중앙화 성과를 중심으로」을 네 편의 인터랙티브 해설(긴급 미션 01~04)로 나눈 시리즈의 첫 화면.",
+   "cat": "논문 해설",
+   "mid": "금융·자산 논문",
+   "sub": "가상자산",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/my_article_07_media_blockchain",
+   "site_url": "https://adminmrobo.github.io/my_article_07_media_blockchain/",
+   "link": "",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "thumb": "thumbs/repos/my_article_07_media_blockchain.jpg"
+  },
+  {
+   "title": "우리나라 주식시장의 변동성 분해 분석 (박사논문)",
+   "summary": "우리나라 주식시장의 변동성 분해 분석 : 산업별·기간별 변동성 분해 분석과 수익률 효과 분석 — 안상선(2012) 박사학위논문을 스무 쪽의 인터랙티브 해설로 풀어 쓴 시리즈의 표지.",
+   "cat": "논문 해설",
+   "mid": "금융·자산 논문",
+   "sub": "주식·금융시장",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/my_article_00_Korean_stockmarket_volatility_study",
+   "site_url": "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/my_article_00_Korean_stockmarket_volatility_study.jpg"
+  },
+  {
+   "title": "ERC-20 경제적 성과 분석",
+   "summary": "ERC-20 토큰의 경제적 성과를 분석한 발표",
+   "cat": "논문 해설",
+   "mid": "외부_콘텐츠",
+   "sub": "가상자산",
+   "kind": "ext",
+   "repo_url": "",
+   "site_url": "https://decenter.kr/NewsView/1VJB0BLUD4",
+   "link": "이드콘 2018 발표 · https://decenter.kr/NewsView/1VJB0BLUD4",
+   "langs": [],
+   "thumb": ""
+  },
+  {
+   "title": "산업재해 패널 데이터를 활용한 머신러닝 모델",
+   "summary": "산재보험 패널 데이터를 머신러닝으로 분석한 포스터 발표",
+   "cat": "논문 해설",
+   "mid": "외부_콘텐츠",
+   "sub": "경제·사회",
+   "kind": "ext",
+   "repo_url": "",
+   "site_url": "",
+   "link": "제10회 산재보험패널 학술대회",
+   "langs": [],
+   "thumb": ""
+  },
+  {
+   "title": "인슈어테크 #1 · 분류 모델",
+   "summary": "AI(인공지능) x 비즈니스 #1 인슈어테크_01_분류모델 — 여행자보험 63,326건으로 보험금 청구 고객을 가려내는 분류 모델을 여섯 편에 걸쳐 버튼만 눌러 배우는 인터랙티브 교재.",
+   "cat": "금융·핀테크·블록체인",
+   "mid": "보험·핀테크",
+   "sub": "인슈어테크 사례",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/insurtech__case_classification_model_01",
+   "site_url": "https://adminmrobo.github.io/insurtech__case_classification_model_01/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/insurtech__case_classification_model_01.jpg"
+  },
+  {
+   "title": "인슈어테크 #2 · 분류 모델 실전",
+   "summary": "AI(인공지능) x 비즈니스 #1 인슈어테크_02_분류모델_실전 — 여행자보험 청구 예측 과제 다섯 문항(5-Fold 검증 · 조건부 정확도 · 문제점과 개선 · HTML 배포 · 유사 사례)을 다섯 편에 걸쳐 따라 푸는 인터랙티브 튜토리얼.",
+   "cat": "금융·핀테크·블록체인",
+   "mid": "보험·핀테크",
+   "sub": "인슈어테크 사례",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/insurtech__case_classification_model_02",
+   "site_url": "https://adminmrobo.github.io/insurtech__case_classification_model_02/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/insurtech__case_classification_model_02.jpg"
+  },
+  {
+   "title": "인슈어테크 #3 · 회귀 모델",
+   "summary": "건강보험 의료비 1,337명으로 회귀 모델을 처음부터 끝까지 만드는 6편 인터랙티브 교재.",
+   "cat": "금융·핀테크·블록체인",
+   "mid": "보험·핀테크",
+   "sub": "인슈어테크 사례",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/insurtech__case_regreesion_model_01",
+   "site_url": "https://adminmrobo.github.io/insurtech__case_regreesion_model_01/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/insurtech__case_regreesion_model_01.jpg"
+  },
+  {
+   "title": "인슈어테크 #4 · 회귀 모델 실전",
+   "summary": "건강보험 의료비 회귀 과제 5문항을 한 편씩 풀어 보는 실전 튜토리얼.",
+   "cat": "금융·핀테크·블록체인",
+   "mid": "보험·핀테크",
+   "sub": "인슈어테크 사례",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/insurtech__case_regreesion_model_02",
+   "site_url": "https://adminmrobo.github.io/insurtech__case_regreesion_model_02/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/insurtech__case_regreesion_model_02.jpg"
+  },
+  {
+   "title": "블록체인 1장 · 장부의 진화",
+   "summary": "블록체인 편 1장 「장부의 진화」 목차: 기억에서 분산원장까지, 장부를 지키는 방법의 일곱 단계",
+   "cat": "금융·핀테크·블록체인",
+   "mid": "블록체인",
+   "sub": "블록체인 금융",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/blockchain_finance_ch01",
+   "site_url": "https://adminmrobo.github.io/blockchain_finance_ch01/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": ""
+  },
+  {
+   "title": "블록체인 2장 · 블록체인 기술",
+   "summary": "블록체인 편 2장 「블록체인 기술」 목차: 블록, 해시, 해시 사슬, 이력, 사례, 채굴, 난이도와 확정의 일곱 편",
+   "cat": "금융·핀테크·블록체인",
+   "mid": "블록체인",
+   "sub": "블록체인 금융",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/blockchain_finance_ch02",
+   "site_url": "https://adminmrobo.github.io/blockchain_finance_ch02/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": ""
+  },
+  {
+   "title": "블록체인 3장 · 비트코인",
+   "summary": "블록체인 편 3장 「비트코인」 목차: 합의 방식, 채굴장, 반감기, 거래, 익명성, 화폐성, 범죄 악용과 추적의 일곱 편",
+   "cat": "금융·핀테크·블록체인",
+   "mid": "블록체인",
+   "sub": "블록체인 금융",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/blockchain_finance_ch03",
+   "site_url": "https://adminmrobo.github.io/blockchain_finance_ch03/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": ""
+  },
+  {
+   "title": "Money-Robo 로봇저널리즘 신문",
+   "summary": "공시·시세 데이터로 기사를 자동 작성하는 AI 뉴스 신문",
+   "cat": "금융·핀테크·블록체인",
+   "mid": "외부_콘텐츠",
+   "sub": "로봇저널리즘",
+   "kind": "ext",
+   "repo_url": "",
+   "site_url": "http://www.money-robo.com",
+   "link": "http://www.money-robo.com",
+   "langs": [],
+   "thumb": ""
+  },
+  {
+   "title": "주식 기사 생성 장치 및 방법 (특허)",
+   "summary": "주식 데이터를 기사로 바꾸는 장치와 방법",
+   "cat": "금융·핀테크·블록체인",
+   "mid": "외부_콘텐츠",
+   "sub": "로봇저널리즘",
+   "kind": "ext",
+   "repo_url": "",
+   "site_url": "",
+   "link": "제 10-2135712 호",
+   "langs": [],
+   "thumb": ""
+  },
+  {
+   "title": "로봇 저널리즘을 이용한 암호 화폐 분석 뉴스 서비스 (특허)",
+   "summary": "암호화폐 데이터를 분석 기사로 만들어 제공하는 시스템",
+   "cat": "금융·핀테크·블록체인",
+   "mid": "외부_콘텐츠",
+   "sub": "로봇저널리즘",
+   "kind": "ext",
+   "repo_url": "",
+   "site_url": "",
+   "link": "제 10-2618473 호",
+   "langs": [],
+   "thumb": ""
+  },
+  {
+   "title": "블록체인 데이터 모니터링을 통한 이상징후 탐지시스템 (특허)",
+   "summary": "블록체인 데이터를 감시해 이상 징후를 찾아내는 시스템",
+   "cat": "금융·핀테크·블록체인",
+   "mid": "외부_콘텐츠",
+   "sub": "특허",
+   "kind": "ext",
+   "repo_url": "",
+   "site_url": "",
+   "link": "제 10-2555652 호",
+   "langs": [],
+   "thumb": ""
+  },
+  {
+   "title": "현금흐름표 연구실",
+   "summary": "",
+   "cat": "금융·핀테크·블록체인",
+   "mid": "회계·거시금융",
+   "sub": "회계·기업가치",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/cashflow-lab",
+   "site_url": "https://adminmrobo.github.io/cashflow-lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": ""
+  },
+  {
+   "title": "매출이 없어도 기업가치는 만들 수 있다",
+   "summary": "",
+   "cat": "금융·핀테크·블록체인",
+   "mid": "회계·거시금융",
+   "sub": "회계·기업가치",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/valuation_without_revenue",
+   "site_url": "https://adminmrobo.github.io/valuation_without_revenue/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": ""
+  },
+  {
+   "title": "보면서 배우는 pandas",
+   "summary": "보면서 배우는 pandas — 카페·편의점·쇼핑몰 장부로 보는 명령어 72장. 표가 단계별로 움직이는 그림과 Colab 코드로 익힌다.",
+   "cat": "통계·데이터 기초",
+   "mid": "프로그래밍",
+   "sub": "파이썬·판다스",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/learn-pandas-visually_korean",
+   "site_url": "https://adminmrobo.github.io/learn-pandas-visually_korean/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/learn-pandas-visually_korean.jpg"
+  },
+  {
+   "title": "해보며 배우는 파이썬",
+   "summary": "",
+   "cat": "통계·데이터 기초",
+   "mid": "프로그래밍",
+   "sub": "파이썬·판다스",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/learn-python-by-doing_Korean",
+   "site_url": "https://adminmrobo.github.io/learn-python-by-doing_Korean/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/learn-python-by-doing_Korean.jpg"
+  },
+  {
+   "title": "시계열 3부작 · ARIMA와 LSTM",
+   "summary": "",
+   "cat": "통계·데이터 기초",
+   "mid": "확률·통계",
+   "sub": "시계열",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/timeseries-trilogy",
+   "site_url": "https://adminmrobo.github.io/timeseries-trilogy/",
+   "link": "",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "thumb": "https://adminmrobo.github.io/timeseries-trilogy/assets/img/cover_index.webp"
+  },
+  {
+   "title": "이산확률분포 일곱 가지",
+   "summary": "우연의 과학통계학 1.2: 베르누이·이항·기하·음이항·포아송·초기하·다항분포를 연구실 캐릭터와 직접 돌려 보는 해설 대시보드",
+   "cat": "통계·데이터 기초",
+   "mid": "확률·통계",
+   "sub": "통계 노트",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/fintech_business_01_payment",
+   "site_url": "https://adminmrobo.github.io/fintech_business_01_payment/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": ""
+  },
+  {
+   "title": "우연의 과학통계학 · 확률분포",
+   "summary": "박사·하루·초파리 연구원·주판봇이 진행하는 확률·통계 인터랙티브 해설 시리즈. 직접 돌려 보는 시뮬레이션과 대결로 개념을 익힙니다.",
+   "cat": "통계·데이터 기초",
+   "mid": "확률·통계",
+   "sub": "통계 노트",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/statistics_note_ch03_discrete-probability-distribution",
+   "site_url": "https://adminmrobo.github.io/statistics_note_ch03_discrete-probability-distribution/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/statistics_note_ch03_discrete-probability-distribution.jpg"
+  },
+  {
+   "title": "점추정과 신뢰구간",
+   "summary": "통계적 추정 2.1.a — 표본 100개로 모평균을 말하는 법. 점추정, 표본평균의 분포, 신뢰구간을 연구실 저울 위에서 직접 뽑아 보며 배운다.",
+   "cat": "통계·데이터 기초",
+   "mid": "확률·통계",
+   "sub": "통계 노트",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/statistics_note_ch04_Statistical-Estimation_01_a",
+   "site_url": "https://adminmrobo.github.io/statistics_note_ch04_Statistical-Estimation_01_a/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": ""
+  },
+  {
+   "title": "하루의 구글시트 연구실",
+   "summary": "구글시트의 원본·처리·결과를 데이터 테이블로 배우는 캐릭터 실습 교재",
+   "cat": "강의·저서",
+   "mid": "대학 강의",
+   "sub": "구글 시트",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/google-sheets-lab",
+   "site_url": "https://adminmrobo.github.io/google-sheets-lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/google-sheets-lab.jpg"
+  },
+  {
+   "title": "데이터베이스 설계 야간 연구실",
+   "summary": "데이터베이스 설계 야간 연구실 교육 자료 전체 안내. 다른 HTML 파일로 연결하지 않습니다.",
+   "cat": "강의·저서",
+   "mid": "대학 강의",
+   "sub": "데이터베이스",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/database_01of04",
+   "site_url": "https://adminmrobo.github.io/database_01of04/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/database_01of04.jpg"
+  },
+  {
+   "title": "데이터시각화 1주차 · 과정 안내",
+   "summary": "",
+   "cat": "강의·저서",
+   "mid": "대학 강의",
+   "sub": "데이터시각화",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/Data_visuialization_lecture_01",
+   "site_url": "https://adminmrobo.github.io/Data_visuialization_lecture_01/",
+   "link": "",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "thumb": "thumbs/repos/Data_visuialization_lecture_01.jpg"
+  },
+  {
+   "title": "데이터시각화 2주차 · 그래프 이론과 첫 실습",
+   "summary": "",
+   "cat": "강의·저서",
+   "mid": "대학 강의",
+   "sub": "데이터시각화",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/Data_visuialization_lecture_02",
+   "site_url": "https://adminmrobo.github.io/Data_visuialization_lecture_02/",
+   "link": "",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "thumb": "thumbs/repos/Data_visuialization_lecture_02.jpg"
+  },
+  {
+   "title": "데이터시각화 3주차 · 생성형 AI 데이터 전처리",
+   "summary": "",
+   "cat": "강의·저서",
+   "mid": "대학 강의",
+   "sub": "데이터시각화",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/Data_visuialization_lecture_03",
+   "site_url": "https://adminmrobo.github.io/Data_visuialization_lecture_03/",
+   "link": "",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "thumb": "thumbs/repos/Data_visuialization_lecture_03.jpg"
+  },
+  {
+   "title": "데이터시각화 4주차 · 산업별 데이터 시각화",
+   "summary": "",
+   "cat": "강의·저서",
+   "mid": "대학 강의",
+   "sub": "데이터시각화",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/Data_visuialization_lecture_04",
+   "site_url": "https://adminmrobo.github.io/Data_visuialization_lecture_04/",
+   "link": "",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "thumb": "thumbs/repos/Data_visuialization_lecture_04.jpg"
+  },
+  {
+   "title": "생성형 AI 활용전략 · 중간고사 시뮬레이션",
+   "summary": "",
+   "cat": "강의·저서",
+   "mid": "대학 강의",
+   "sub": "생성형AI활용전략",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/Gen_AI_Hannam_univ",
+   "site_url": "https://adminmrobo.github.io/Gen_AI_Hannam_univ/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/Gen_AI_Hannam_univ.jpg"
+  },
+  {
+   "title": "생성형 AI 활용전략 5장",
+   "summary": "",
+   "cat": "강의·저서",
+   "mid": "대학 강의",
+   "sub": "생성형AI활용전략",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/Gen_AI_strategy_ch05",
+   "site_url": "https://adminmrobo.github.io/Gen_AI_strategy_ch05/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/Gen_AI_strategy_ch05.jpg"
+  },
+  {
+   "title": "생성형 AI 활용전략 6장",
+   "summary": "",
+   "cat": "강의·저서",
+   "mid": "대학 강의",
+   "sub": "생성형AI활용전략",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/Gen_AI_strategy_ch06",
+   "site_url": "https://adminmrobo.github.io/Gen_AI_strategy_ch06/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/Gen_AI_strategy_ch06.jpg"
+  },
+  {
+   "title": "시멘트 품질, AI로 미리 본다",
+   "summary": "회귀·분류 모델로 시멘트 28일 강도와 불량을 예측하는 4단계 실습 — 연구실 해설 대시보드 목차",
+   "cat": "강의·저서",
+   "mid": "대학 강의",
+   "sub": "시멘트 공정 AI",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/ai_for_cement_produce_07",
+   "site_url": "https://adminmrobo.github.io/ai_for_cement_produce_07/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": ""
+  },
+  {
+   "title": "시멘트 공정 AI · 설명가능 AI와 원가 최적화",
+   "summary": "설명가능 AI(SHAP)와 원가 최적화로 시멘트 강도와 배합을 다루는 인터랙티브 해설 페이지 목록.",
+   "cat": "강의·저서",
+   "mid": "대학 강의",
+   "sub": "시멘트 공정 AI",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/ai_for_cement_produce_08",
+   "site_url": "https://adminmrobo.github.io/ai_for_cement_produce_08/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": ""
+  },
+  {
+   "title": "핀테크 데이터분석 기초 (이러닝)",
+   "summary": "금융 데이터를 다루는 기초를 배우는 13시간 이러닝 과정",
+   "cat": "강의·저서",
+   "mid": "외부_콘텐츠",
+   "sub": "이러닝",
+   "kind": "ext",
+   "repo_url": "",
+   "site_url": "https://link.step.or.kr/brqEyc",
+   "link": "STEP 이러닝 · https://link.step.or.kr/brqEyc",
+   "langs": [],
+   "thumb": ""
+  },
+  {
+   "title": "[K-디지털] 인공지능 자연어 처리 (이러닝)",
+   "summary": "자연어 데이터 분석의 흐름과 모델을 차시별로 배우는 8시간 과정",
+   "cat": "강의·저서",
+   "mid": "외부_콘텐츠",
+   "sub": "이러닝",
+   "kind": "ext",
+   "repo_url": "",
+   "site_url": "",
+   "link": "STEP 이러닝",
+   "langs": [],
+   "thumb": ""
+  },
+  {
+   "title": "AI 범죄와 자기 방어",
+   "summary": "AI가 범죄의 비용 구조와 수익 모델을 어떻게 바꾸었는지 범죄경제학으로 풀어낸 책",
+   "cat": "강의·저서",
+   "mid": "외부_콘텐츠",
+   "sub": "저서",
+   "kind": "ext",
+   "repo_url": "",
+   "site_url": "",
+   "link": "커뮤니케이션북스 · 인공지능총서",
+   "langs": [],
+   "thumb": ""
+  },
+  {
+   "title": "그린루트 · 모바일 경로 안내",
+   "summary": "",
+   "cat": "공공·사회 프로젝트",
+   "mid": "산업·인프라",
+   "sub": "모빌리티",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/green_route",
+   "site_url": "https://adminmrobo.github.io/green_route/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": ""
+  },
+  {
+   "title": "AI가 쓰는 전기, 어디서 모자랄까",
+   "summary": "",
+   "cat": "공공·사회 프로젝트",
+   "mid": "산업·인프라",
+   "sub": "에너지·전력",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/ai-power-chain-simulator",
+   "site_url": "https://adminmrobo.github.io/ai-power-chain-simulator/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": ""
+  },
+  {
+   "title": "현장형 AX 전문강사 양성과정 — 제조현장 AX",
+   "summary": "제조업·경영지원 분야 AX 과정 교안 설계와 강의",
+   "cat": "공공·사회 프로젝트",
+   "mid": "외부_콘텐츠",
+   "sub": "공공 사업",
+   "kind": "ext",
+   "repo_url": "",
+   "site_url": "",
+   "link": "한국IT여성기업인협회 · 정보통신산업진흥원",
+   "langs": [],
+   "thumb": ""
+  },
+  {
+   "title": "핀테크 API 개발지원사업 (총괄 PM)",
+   "summary": "한국인터넷진흥원 핀테크 API 개발지원사업 총괄",
+   "cat": "공공·사회 프로젝트",
+   "mid": "외부_콘텐츠",
+   "sub": "공공 사업",
+   "kind": "ext",
+   "repo_url": "",
+   "site_url": "",
+   "link": "2017·2019·2021년 수행",
+   "langs": [],
+   "thumb": ""
+  },
+  {
+   "title": "뉴스 빅데이터 스타트업 지원사업 (총괄 PM)",
+   "summary": "한국언론진흥재단 뉴스 빅데이터 사업 총괄",
+   "cat": "공공·사회 프로젝트",
+   "mid": "외부_콘텐츠",
+   "sub": "공공 사업",
+   "kind": "ext",
+   "repo_url": "",
+   "site_url": "",
+   "link": "한국언론진흥재단",
+   "langs": [],
+   "thumb": ""
+  },
+  {
+   "title": "태양광 데이터를 이용한 폭염피해 예측 시스템 (특허)",
+   "summary": "태양광 데이터로 폭염 피해를 예측하는 시스템",
+   "cat": "공공·사회 프로젝트",
+   "mid": "외부_콘텐츠",
+   "sub": "특허",
+   "kind": "ext",
+   "repo_url": "",
+   "site_url": "",
+   "link": "제 10-2486672 호",
+   "langs": [],
+   "thumb": ""
+  },
+  {
+   "title": "안보트 연구실 타운 (Ahn Lab Town)",
+   "summary": "",
+   "cat": "연구실 운영",
+   "mid": "연구실 소개",
+   "sub": "랩타운",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/ahn_boat_lab_town",
+   "site_url": "https://adminmrobo.github.io/ahn_boat_lab_town/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/ahn_boat_lab_town.jpg"
+  },
+  {
+   "title": "초파리 연구원과 주판봇이 소개하는 안상선",
+   "summary": "",
+   "cat": "연구실 운영",
+   "mid": "연구실 소개",
+   "sub": "소개",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/who_am_i",
+   "site_url": "https://adminmrobo.github.io/who_am_i/",
+   "link": "",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "thumb": "thumbs/repos/who_am_i.jpg"
+  },
+  {
+   "title": "캐릭터 표정 라이브러리",
+   "summary": "",
+   "cat": "연구실 운영",
+   "mid": "제작 도구",
+   "sub": "제작 도구",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/fruitfly-lab-expressions",
+   "site_url": "https://adminmrobo.github.io/fruitfly-lab-expressions/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/fruitfly-lab-expressions.jpg"
+  }
+ ]
+}
