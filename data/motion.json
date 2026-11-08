@@ -330,6 +330,94 @@
     "thumbs/chars/motion/jupanbot/R2_f07.webp",
     "thumbs/chars/motion/jupanbot/R2_f08.webp"
    ]
+  },
+  "D8": {
+   "who": "doctor",
+   "facing": "front",
+   "frame_size": [
+    203,
+    372
+   ],
+   "ground_y": 350,
+   "seg": {
+    "idle_lab": [
+     1,
+     1
+    ],
+    "idle_battle": [
+     2,
+     2
+    ],
+    "idle_cyber": [
+     3,
+     3
+    ],
+    "jump_lab": [
+     4,
+     4
+    ],
+    "jump_battle": [
+     5,
+     5
+    ],
+    "jump_cyber": [
+     6,
+     6
+    ]
+   },
+   "scale": 0.002747,
+   "frames": [
+    "thumbs/chars/motion/doctor/D8_f01.webp",
+    "thumbs/chars/motion/doctor/D8_f02.webp",
+    "thumbs/chars/motion/doctor/D8_f03.webp",
+    "thumbs/chars/motion/doctor/D8_f04.webp",
+    "thumbs/chars/motion/doctor/D8_f05.webp",
+    "thumbs/chars/motion/doctor/D8_f06.webp"
+   ]
+  },
+  "A7": {
+   "who": "haru",
+   "facing": "front",
+   "frame_size": [
+    232,
+    362
+   ],
+   "ground_y": 334,
+   "seg": {
+    "idle_lab": [
+     1,
+     1
+    ],
+    "idle_battle": [
+     2,
+     2
+    ],
+    "idle_cyber": [
+     3,
+     3
+    ],
+    "jump_lab": [
+     4,
+     4
+    ],
+    "jump_battle": [
+     5,
+     5
+    ],
+    "jump_cyber": [
+     6,
+     6
+    ]
+   },
+   "scale": 0.002624,
+   "frames": [
+    "thumbs/chars/motion/haru/A7_f01.webp",
+    "thumbs/chars/motion/haru/A7_f02.webp",
+    "thumbs/chars/motion/haru/A7_f03.webp",
+    "thumbs/chars/motion/haru/A7_f04.webp",
+    "thumbs/chars/motion/haru/A7_f05.webp",
+    "thumbs/chars/motion/haru/A7_f06.webp"
+   ]
   }
  }
 }

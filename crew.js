@@ -6,8 +6,8 @@
   'use strict';
   var M=null,reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
   var PLAN={
-    doctor:{idle:['D1','idle'],acts:[['D4','win'],['D2','jump'],['D1','walk']]},
-    haru:{idle:['A1','idle'],acts:[['A4','win'],['A2','jump'],['A1','walk']]},
+    doctor:{idle:['D8','idle_lab'],acts:[['D8','jump_lab']]},   /* 연구복 기본 서기 (싸움 자세 아님) */
+    haru:{idle:['A7','idle_lab'],acts:[['A7','jump_lab']]},
     jupanbot:{idle:['R1','idle'],acts:[['R1','count'],['R2','cheer']]},
     fruitfly:{idle:['F1','idle'],acts:[['F1','start'],['F3','suspect'],['F2','point_left']]}
   };
@@ -29,7 +29,7 @@
     function tick(){var f;if(queue.length)f=queue.shift();else{f=idle[k%idle.length];k++;}show(f);}
     show(idle[0]);
     var timer=reduce?null:setInterval(tick,150);
-    function act(i){var a=p.acts[(i==null?Math.floor(Math.random()*p.acts.length):i)%p.acts.length];var fr=frames(a[0],a[1]);queue=fr.concat(fr.length<=4?fr:[]);if(reduce)show(fr[fr.length-1]);}
+    function act(i){var a=p.acts[(i==null?Math.floor(Math.random()*p.acts.length):i)%p.acts.length];var fr=frames(a[0],a[1]);if(fr.length===1)fr=[fr[0],fr[0]];queue=fr.concat(fr.length<=4?fr:[]);if(reduce)show(fr[fr.length-1]);}
     return {el:box,act:act,who:who};
   }
   function preload(){Object.keys(M.sheets).forEach(function(k){M.sheets[k].frames.forEach(function(s){var i=new Image();i.src=s;});});}
