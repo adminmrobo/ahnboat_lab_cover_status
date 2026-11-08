@@ -547,9 +547,9 @@
  ],
  "hero": {
   "image": "thumbs/cats/HERO.webp",
-  "kicker": "AHNBOAT LAB · SERVER ROOM",
-  "title": "안보트 연구실 콘텐츠",
-  "desc": "박사·조수·초파리 연구원·주판봇이 진행하는 해설 시리즈와 연구 실적을 열 개의 랙에 나눠 두었습니다. 분야를 고르면 중분류와 콘텐츠가 이어집니다."
+  "kicker": "AHNBOAT LAB · 10 RACKS",
+  "title": "Reon Ahn's Lab Server",
+  "desc": "안상선(Reon Ahn)의 연구실 서버입니다. 박사·조수·초파리 연구원·주판봇이 지키는 열 개의 랙에서 분야를 고르면 중분류와 콘텐츠가 이어집니다."
  },
  "items": [
   {
