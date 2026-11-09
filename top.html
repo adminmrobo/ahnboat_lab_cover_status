@@ -32,7 +32,15 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
 .crew{position:relative;display:flex;justify-content:center;align-items:flex-end;gap:clamp(0px,1vw,14px);padding:20px 16px 10px;height:100%}
 .crew::after{content:"";position:absolute;left:6%;right:6%;bottom:0;height:16px;border-radius:50%;background:rgba(31,34,36,.08)}
 .mate{position:relative;display:flex;flex-direction:column;align-items:center;cursor:pointer;background:none;border:0;padding:0;font:inherit}
-.mate .crewsprite img{filter:drop-shadow(2px 2px 0 rgba(31,34,36,.12))}
+.part{position:relative;display:block;background:none;border:0;padding:0;cursor:pointer;flex:none}
+.part img{display:block;width:auto;filter:drop-shadow(2px 3px 0 rgba(31,34,36,.10))}
+.part.jupanbot img{animation:bob 2.4s ease-in-out infinite}
+.part.fruitfly img{animation:float 3s ease-in-out infinite}
+.part.hop{animation:hop .5s ease}
+@keyframes bob{50%{transform:translateY(-4px)}}
+@keyframes float{50%{transform:translateY(-10px) rotate(-2deg)}}
+@keyframes hop{30%{transform:translateY(-10px)}60%{transform:none}}
+@media (prefers-reduced-motion:reduce){.part img,.part.hop{animation:none}}
 .mate .nm{position:absolute;bottom:-2px;transform:translateY(100%);font-size:.7rem;color:var(--muted);white-space:nowrap;opacity:0;transition:opacity .2s}
 .mate:hover .nm,.mate:focus-visible .nm{opacity:1}
 .say{position:absolute;top:14px;right:16px;max-width:min(320px,70%);background:#fff;border:2px solid var(--line);border-radius:14px 14px 4px 14px;padding:8px 12px;font-size:.85rem;box-shadow:3px 3px 0 var(--line);opacity:0;transform:translateY(-4px);transition:opacity .25s,transform .25s;pointer-events:none}
@@ -75,7 +83,6 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
     <ul id="nlist"><li><a href="#"><span class="t">공지를 불러오는 중…</span></a></li></ul>
   </section>
 </div>
-<script src="crew.js"></script>
 <script>
 (function(){
   'use strict';
@@ -91,23 +98,30 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
   function speak(w){document.getElementById('sayWho').textContent=NAME[w];
     document.getElementById('sayTxt').textContent=LINES[w][Math.floor(Math.random()*LINES[w].length)];
     say.classList.add('on');clearTimeout(sayT);sayT=setTimeout(function(){say.classList.remove('on');},3200);}
-  function H(){var w=crew.clientWidth||window.innerWidth;return Math.max(90,Math.min(240,window.innerWidth*0.15,(w-50)/2.6));}
-  var mates=[];
+  /* 연구 장면 그림(배경 없는 3장: 박사·하루 / 주판봇 / 초파리). 키 비율은 박사 1.0 기준으로 맞춰 둠 */
+  var LAYER={labpair:{h:1.0011,lift:0},jupanbot:{h:0.7025,lift:0.012},fruitfly:{h:0.5294,lift:0.076}};
+  var parts={};
+  function H(){var w=crew.clientWidth||window.innerWidth;return Math.max(110,Math.min(250,(w-40)/2.25));}
   function build(){
-    crew.querySelectorAll('.mate').forEach(function(n){n.remove();});mates=[];
+    crew.querySelectorAll('.part').forEach(function(n){n.remove();});
     var h=H();
-    ['doctor','haru','jupanbot','fruitfly'].forEach(function(w){
-      var b=el('button','mate '+w);b.type='button';b.setAttribute('aria-label',NAME[w]);
-      var sp=AhnCrew.make(w,h);b.appendChild(sp.el);b.appendChild(el('span','nm',NAME[w]));
-      b.addEventListener('click',function(){sp.act();speak(w);});
-      crew.insertBefore(b,say);mates.push(sp);
+    ['labpair','jupanbot','fruitfly'].forEach(function(k){
+      var b=el('button','part '+k);b.type='button';
+      b.setAttribute('aria-label',k==='labpair'?'박사와 조수 하루':NAME[k]);
+      var im=el('img');im.alt='';im.src='thumbs/chars/hero/'+k+'.webp';im.style.height=Math.round(LAYER[k].h*h)+'px';
+      b.style.marginBottom=Math.round(LAYER[k].lift*h)+'px';b.appendChild(im);
+      b.addEventListener('click',function(e){
+        var w=k;if(k==='labpair'){var r=b.getBoundingClientRect();w=(e.clientX-r.left)<r.width*0.5?'doctor':'haru';}
+        hop(b);speak(w);});
+      crew.insertBefore(b,say);parts[k]=b;
     });
     post();
   }
-  AhnCrew.load().then(function(){build();
-    if(!reduce){var t=0;setInterval(function(){var m=mates[t%mates.length];m.act();if(t%3===1)speak(m.who);t++;},3200);}
-    var rw;window.addEventListener('resize',function(){clearTimeout(rw);rw=setTimeout(build,250);});
-  });
+  function hop(b){if(reduce)return;b.classList.remove('hop');void b.offsetWidth;b.classList.add('hop');}
+  build();
+  if(!reduce){var order=['haru','doctor','jupanbot','fruitfly'],t=0;
+    setInterval(function(){var w=order[t%order.length];speak(w);hop(parts[w==='doctor'||w==='haru'?'labpair':w]);t++;},4200);}
+  var rw;window.addEventListener('resize',function(){clearTimeout(rw);rw=setTimeout(build,250);});
 
   // 공지: data/notices.csv (날짜, 제목, 링크, 표시)
   function parseCSV(t){
