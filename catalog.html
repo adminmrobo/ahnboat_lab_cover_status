@@ -263,9 +263,14 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
     b.appendChild(el('h3','','준비 중'));b.appendChild(el('p','',VC.soon_desc||'새 갈래가 곧 열립니다.'));
     t.appendChild(b);return t;
   }
+  /* 콘텐츠 클릭 집계 (GoatCounter 이벤트, 방문 수와 별도) */
+  function gcName(i){var m=(i.repo_url||'').match(/github\.com\/[^\/]+\/([^\/?#]+)/);var k=m?m[1]:(i.title||'').replace(/[\s\/]+/g,'_').slice(0,60);return 'click/'+VIEW+'/'+k;}
+  function gcTag(a,i){a.setAttribute('data-gc',gcName(i));a.setAttribute('data-gc-title',(i.title||'').slice(0,150));}
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[data-gc]');if(!a)return;
+    try{if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:a.getAttribute('data-gc'),title:a.getAttribute('data-gc-title'),event:true});}catch(x){}});
   function card(i,c){
     var k=el('article','card'+(i.kind==='ext'&&!i.thumb?' ext':''));k.style.setProperty('--c',c.color);
-    var th=el(i.site_url?'a':'div','thumb');if(i.site_url){th.href=i.site_url;th.target='_blank';th.rel='noopener';th.setAttribute('aria-label',i.title+' 열기');}
+    var th=el(i.site_url?'a':'div','thumb');if(i.site_url){th.href=i.site_url;th.target='_blank';th.rel='noopener';th.setAttribute('aria-label',i.title+' 열기');gcTag(th,i);}
     if(i.thumb){var im=el('img');im.src=i.thumb;im.alt='';im.loading='lazy';im.addEventListener('load',post);im.addEventListener('error',function(){im.remove();th.appendChild(el('span','ph',S(i)));});th.appendChild(im);}
     else th.appendChild(el('span','ph',S(i)));
     k.appendChild(th);
@@ -278,7 +283,7 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
     if(i.note)meta.appendChild(el('span','',i.note));
     if(meta.childNodes.length)b.appendChild(meta);
     var acts=el('div','acts');
-    if(i.site_url){var o=el('a','btn',i.button||(i.kind==='ext'?'자세히 보기':'콘텐츠 열기'));o.href=i.site_url;o.target='_blank';o.rel='noopener';acts.appendChild(o);}
+    if(i.site_url){var o=el('a','btn',i.button||(i.kind==='ext'?'자세히 보기':'콘텐츠 열기'));o.href=i.site_url;o.target='_blank';o.rel='noopener';gcTag(o,i);acts.appendChild(o);}
     else if(i.kind==='portfolio')acts.appendChild(el('span','soon','링크 준비 중'));
     if(i.repo_url){var g=el('a','btn ghost','GitHub');g.href=i.repo_url;g.target='_blank';g.rel='noopener';acts.appendChild(g);}
     if(i.kind==='repo'&&i.link){var u=(i.link.match(/https?:\/\/\S+/)||[])[0];if(u){var p=el('a','btn ghost','논문 원문');p.href=u;p.target='_blank';p.rel='noopener';acts.appendChild(p);}}
@@ -334,5 +339,6 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
   }).catch(function(e){document.getElementById('main').appendChild(el('p','err','목록을 읽지 못했습니다 ('+e.message+').'));});
 })();
 </script>
+<script data-goatcounter="https://ahnboat.goatcounter.com/count" data-goatcounter-settings='{"no_onload":true}' async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
