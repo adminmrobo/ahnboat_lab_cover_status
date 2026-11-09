@@ -121,7 +121,8 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
 @media (max-width:1180px){.grid.big.six{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (max-width:640px){.grid.big.six{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:400px){.grid.big.six{grid-template-columns:1fr}}
-.tile.big.soon{cursor:default;opacity:.72}
+.tile.big.soon{cursor:default}
+.tile.big.soon .tbody{opacity:.75}
 .tile.big.soon:hover,.lightview .tile.big.soon:hover{transform:none;box-shadow:4px 4px 0 #1f2224}
 .tile.big.soon .pic .ph{background-color:#cdd6df;color:#6b7785;letter-spacing:.12em;font-family:var(--mono,monospace)}
 .tile.big .tbody{display:flex;flex-direction:column;gap:7px;padding:12px 15px 14px;flex:1}
@@ -232,7 +233,7 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
     m.appendChild(el('p','step','1단계 · 분야 고르기'));
     var g=el('div','grid big');
     CATS.forEach(function(c){var its=inCat(c.name);if(!its.length)return;var om=onlyMid(c.name);g.appendChild(bigTile(c,c,H(om?[c.name,om]:[c.name]),its.length,label(c)));});
-    if(!SINGLE&&VC.fill_to){for(var q=g.children.length;q<VC.fill_to;q++)g.appendChild(soonTile({color:'#8a94a0'}));if(VC.fill_to===6)g.classList.add('six');}
+    if(!SINGLE&&VC.fill_to){for(var q=g.children.length,z=0;q<VC.fill_to;q++,z++)g.appendChild(soonTile({color:'#8a94a0'},z));if(VC.fill_to===6)g.classList.add('six');}
     m.appendChild(g);
     if(VC.random)randomPicks(m,VC.random);
   }
@@ -253,12 +254,14 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
     if(c.desc)m.appendChild(el('p','secdesc',c.desc));}
     var g=el('div','grid big');
     midsOf(c.name).forEach(function(md){g.appendChild(bigTile(c,midInfo(c.name,md),H([c.name,md]),inMid(c.name,md).length,SINGLE?(VC.mid_label||''):(label(c)?label(c)+' · ':'')+c.name));});
-    if(SINGLE&&VC.fill_to){for(var q=g.children.length;q<VC.fill_to;q++)g.appendChild(soonTile(c));if(VC.fill_to===6)g.classList.add('six');}
+    if(SINGLE&&VC.fill_to){for(var q=g.children.length,z=0;q<VC.fill_to;q++,z++)g.appendChild(soonTile(c,z));if(VC.fill_to===6)g.classList.add('six');}
     m.appendChild(g);
   }
-  function soonTile(c){
+  function soonTile(c,z){
     var t=el('div','tile big soon');t.setAttribute('aria-label','준비 중인 갈래');t.style.setProperty('--c',c.color);
-    var f=el('span','pic');f.appendChild(el('span','ph','COMING SOON'));t.appendChild(f);
+    var f=el('span','pic');var ph=el('span','ph','COMING SOON');var S2=VC.soon_images||[];var si=S2.length?S2[(z||0)%S2.length]:null;
+    if(si){var im=el('img');im.alt='';im.loading='lazy';im.src=si.src||si;if(si.pos)im.style.objectPosition=si.pos;im.addEventListener('load',function(){ph.remove();post();});im.addEventListener('error',function(){im.remove();});f.appendChild(im);}
+    f.appendChild(ph);t.appendChild(f);
     var b=el('span','tbody');b.appendChild(el('span','rack',VC.soon_label||VC.mid_label||''));
     b.appendChild(el('h3','','준비 중'));b.appendChild(el('p','',VC.soon_desc||'새 갈래가 곧 열립니다.'));
     t.appendChild(b);return t;

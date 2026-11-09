@@ -44,7 +44,17 @@
    }
   },
   "fill_to": 6,
-  "soon_desc": "새 논문과 발표가 곧 이 자리에 올라옵니다."
+  "soon_desc": "새 논문과 발표가 곧 이 자리에 올라옵니다.",
+  "soon_images": [
+   {
+    "src": "thumbs/soon/soon_fly.webp",
+    "pos": "center 45%"
+   },
+   {
+    "src": "thumbs/soon/soon_haru.webp",
+    "pos": "center 48%"
+   }
+  ]
  },
  "portfolio": {
   "source": "data/portfolio.json",
@@ -73,6 +83,16 @@
   "foot": "포트폴리오 목록은 data/portfolio.csv에서 고칩니다.",
   "fill_to": 6,
   "soon_label": "COMING SOON",
-  "soon_desc": "새 포트폴리오가 곧 이 자리에 올라옵니다."
+  "soon_desc": "새 포트폴리오가 곧 이 자리에 올라옵니다.",
+  "soon_images": [
+   {
+    "src": "thumbs/soon/soon_doctor.webp",
+    "pos": "center 64%"
+   },
+   {
+    "src": "thumbs/soon/soon_haru.webp",
+    "pos": "center 48%"
+   }
+  ]
  }
 }
