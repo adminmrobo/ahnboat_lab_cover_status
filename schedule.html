@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ahn's Schedule · Reon Ahn's Lab</title>
+<meta name="description" content="안상선(Reon Ahn) 연구실의 예정·진행 중·완료 프로젝트 일정">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@500;700&display=swap">
+<style>
+:root{
+  --bg:#ffffff; --paper:#fbfaf7; --ink:#1f2224; --muted:#5f6663; --line:#1f2224; --rule:#e4e0d8;
+  --violet:#6b4fd6; --pink:#d9668f; --sun:#e0a92a;
+  --font:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace; color-scheme:light;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:15px;line-height:1.55;overflow-x:hidden;word-break:keep-all}
+.wrap{max-width:1160px;margin:0 auto;padding:16px max(16px,env(safe-area-inset-left,0px)) 24px}
+.embed .wrap{max-width:1760px}
+.embed body{font-size:16px}
+.head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:0 0 14px}
+.kicker{display:inline-block;font-family:var(--mono);font-size:12px;letter-spacing:.1em;border:1.5px solid var(--line);border-radius:99px;padding:3px 10px;background:#fff}
+h1{margin:0;font-size:clamp(26px,3vw,34px);line-height:1.15}
+.sub{margin:0 0 16px;color:var(--muted);font-size:14px}
+.sub b{color:var(--ink)}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.sc{position:relative;border:2px solid var(--line);border-radius:20px;box-shadow:5px 5px 0 var(--line);overflow:hidden;background:#fff;aspect-ratio:1537/1023;min-width:0}
+.sc .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:right center;image-rendering:pixelated;pointer-events:none}
+.sc .txt{position:absolute;left:0;top:0;bottom:0;width:47%;padding:18px 0 16px 20px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.sc .lab{font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--violet);font-weight:700}
+.sc h2{margin:0;font-size:22px;line-height:1.2}
+.sc .when{font-size:13px;color:var(--muted);margin-top:-4px}
+.sc ul{list-style:none;margin:2px 0 0;padding:0;display:flex;flex-direction:column;gap:7px;overflow:hidden}
+.sc li{background:rgba(255,255,255,.88);border:1.5px solid var(--line);border-radius:10px;padding:5px 9px;box-shadow:2px 2px 0 var(--line);min-width:0}
+.sc li .t{display:block;font-family:var(--mono);font-size:11px;color:var(--muted);line-height:1.35}
+.sc li .n{display:block;font-weight:700;font-size:14px;line-height:1.3;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sc li .tag{display:inline-block;margin-left:5px;font-family:var(--font);font-size:10.5px;font-weight:700;color:#fff;background:var(--violet);border-radius:99px;padding:0 6px;vertical-align:1px}
+.sc .empty{font-size:14px;color:var(--muted);background:rgba(255,255,255,.88);border:1.5px dashed #b9b3a8;border-radius:10px;padding:8px 10px;margin:0}
+/* 그림 위, 일정 목록 아래 (모든 화면 폭) */
+.sc{aspect-ratio:auto;display:flex;flex-direction:column}
+.sc .bg{position:relative;inset:auto;height:auto;aspect-ratio:16/8.4;object-position:85% center;border-bottom:2px solid var(--line)}
+.sc .txt{position:relative;width:auto;padding:14px 16px 16px;flex:1}
+.sc h2{font-size:21px}
+@media (max-width:899px){.cards{grid-template-columns:1fr}.sc .bg{aspect-ratio:16/8}}
+@media (max-width:640px){.sc .bg{aspect-ratio:16/10}}
+.sc h2 .cnt{display:inline-block;margin-left:8px;font-family:var(--mono);font-size:13px;font-weight:700;color:#fff;background:var(--violet);border-radius:99px;padding:1px 9px;vertical-align:3px}
+.sc a.n{color:var(--ink);text-decoration:none}
+.sc a.n:hover{text-decoration:underline}
+.sc .bar{position:relative;display:block;height:14px;margin-top:4px;background:#ece8f7;border:1.5px solid var(--line);border-radius:99px;overflow:hidden}
+.sc .bar i{position:absolute;left:0;top:0;bottom:0;background:linear-gradient(90deg,#8f74ef,#d9668f)}
+.sc .bar b{position:relative;display:block;text-align:right;padding-right:6px;font-family:var(--mono);font-size:10px;line-height:11px;color:var(--ink)}
+.sc .more{font-size:12.5px;color:var(--violet);margin-top:auto;font-weight:700;text-decoration:none}
+.foot a{color:var(--violet);font-weight:700;text-decoration:none}
+.foot{margin:16px 0 0;font-size:12.5px;color:var(--muted)}
+@media (prefers-reduced-motion:no-preference){.sc li{animation:pop .35s ease both}@keyframes pop{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="head"><span class="kicker">AHNBOAT LAB · SCHEDULE</span><h1>Ahn's Schedule</h1></div>
+  <p class="sub" id="sub">일정을 불러오는 중…</p>
+  <div class="cards" id="cards"></div>
+  <p class="foot" id="foot"></p>
+</div>
+<script>
+(function(){
+  'use strict';
+  var Q=new URLSearchParams(location.search);
+  if(Q.get('embed')==='1')document.documentElement.classList.add('embed');
+  var SRC=Q.get('src')||'https://adminmrobo.github.io/ahn_boat_lab_town/projects.csv';
+  var ALL='https://adminmrobo.github.io/ahn_boat_lab_town/projects.html';
+  var CARDS=[
+    {key:'todo',img:'thumbs/schedule/01.webp',lab:'TO DO',name:'곧 시작할 일',empty:'예정된 프로젝트가 없습니다.'},
+    {key:'doing',img:'thumbs/schedule/02.webp',lab:'IN PROGRESS',name:'진행 중',empty:'지금 진행 중인 프로젝트가 없습니다.'},
+    {key:'done',img:'thumbs/schedule/03.webp',lab:'DONE',name:'완료',empty:'아직 완료한 프로젝트가 없습니다.'}
+  ];
+  var MAX=5;
+  function post(){if(window.parent!==window){try{window.parent.postMessage({type:'ahnboat-catalog-height',height:Math.ceil(document.body.getBoundingClientRect().height),nav:false},'*');}catch(e){}}}
+  function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e;}
+  function decode(buf){var u=new Uint8Array(buf);try{return new TextDecoder('utf-8',{fatal:true}).decode(u).replace(/^﻿/,'');}catch(e){try{return new TextDecoder('euc-kr').decode(u);}catch(e2){return new TextDecoder().decode(u);}}}
+  function parseCSV(t){var rows=[],r=[],f='',q=false;
+    for(var i=0;i<t.length;i++){var c=t[i];
+      if(q){if(c==='"'){if(t[i+1]==='"'){f+='"';i++;}else q=false;}else f+=c;}
+      else if(c==='"')q=true;else if(c===','){r.push(f);f='';}else if(c==='\n'||c==='\r'){if(c==='\r'&&t[i+1]==='\n')i++;r.push(f);rows.push(r);r=[];f='';}else f+=c;}
+    if(f!==''||r.length){r.push(f);rows.push(r);}
+    return rows.filter(function(x){return x.join('').trim();});}
+  var HEAD={status:['상태','status'],cat:['카테고리','분류','category'],name:['프로젝트명','이름','name','project'],link:['프로젝트링크','링크','link','url'],start:['시작일','시작','start'],end:['완료일','마감일','종료일','end','due'],owner:['담당','담당자','owner'],prog:['진행률','progress']};
+  function pdate(s){var m=String(s||'').trim().match(/^(\d{4})[-./년\s]*(\d{1,2})[-./월\s]*(\d{1,2})/);return m?new Date(+m[1],+m[2]-1,+m[3]):null;}
+  function md(d){return (d.getMonth()+1)+'.'+d.getDate();}
+  function stat(s){s=String(s||'').replace(/\s/g,'').toLowerCase();if(/완료|done|complete|finished/.test(s))return 'done';if(/진행|doing|progress|wip/.test(s))return 'doing';if(/예정|todo|plan|schedul|준비/.test(s))return 'todo';return '';}
+  function build(text){
+    var rows=parseCSV(text);if(rows.length<2)return [];
+    var h=rows[0].map(function(x){return x.trim().toLowerCase();}),col={};
+    Object.keys(HEAD).forEach(function(k){col[k]=h.findIndex(function(x){return HEAD[k].some(function(a){return a.toLowerCase()===x;});});});
+    var today=new Date();today.setHours(0,0,0,0);
+    return rows.slice(1).map(function(r){
+      function g(k){return col[k]>=0?String(r[col[k]]||'').trim():'';}
+      var name=g('name');if(!name)return null;
+      var st=pdate(g('start')),en=pdate(g('end')),s=stat(g('status'));
+      if(!s)s=en&&en<today?'done':st&&st>today?'todo':(st||en)?'doing':'todo';
+      var p=g('prog')!==''?Math.max(0,Math.min(100,parseFloat(g('prog'))||0)):null;
+      if(p==null&&s==='doing'&&st&&en&&en>st)p=Math.round(Math.max(0,Math.min(1,(today-st)/(en-st)))*100);
+      return {s:s,cat:g('cat'),name:name,link:g('link'),st:st,en:en,owner:g('owner'),p:p};
+    }).filter(Boolean);
+  }
+  function item(e){
+    var li=el('li');
+    var meta=[];if(e.cat)meta.push(e.cat);
+    if(e.st&&e.en)meta.push(md(e.st)+' ~ '+md(e.en));else if(e.en)meta.push('~ '+md(e.en));else if(e.st)meta.push(md(e.st)+' 시작');
+    if(e.owner)meta.push(e.owner);
+    li.appendChild(el('span','t',meta.join(' · ')));
+    var n;if(e.link&&/^https?:\/\//.test(e.link)){n=el('a','n',e.name);n.href=e.link;n.target='_blank';n.rel='noopener';}else n=el('span','n',e.name);
+    li.appendChild(n);li.title=e.name;
+    if(e.s==='doing'&&e.p!=null){var bar=el('span','bar');var f=el('i');f.style.width=e.p+'%';bar.appendChild(f);bar.appendChild(el('b','',e.p+'%'));li.appendChild(bar);}
+    return li;
+  }
+  function card(c,list){
+    var a=el('article','sc '+c.key);var im=el('img','bg');im.alt='';im.src=c.img;im.addEventListener('load',post);a.appendChild(im);
+    var tx=el('div','txt');tx.appendChild(el('span','lab',c.lab));
+    var h=el('h2','',c.name);h.appendChild(el('span','cnt',String(list.length)));tx.appendChild(h);
+    if(!list.length)tx.appendChild(el('p','empty',c.empty));
+    else{var ul=el('ul');list.slice(0,MAX).forEach(function(e){ul.appendChild(item(e));});tx.appendChild(ul);
+      if(list.length>MAX){var m=el('a','more','외 '+(list.length-MAX)+'건 더 보기 →');m.href=ALL;m.target='_blank';m.rel='noopener';tx.appendChild(m);}}
+    a.appendChild(tx);return a;
+  }
+  function t(d){return d?d.getTime():0;}
+  function render(list){
+    var g={todo:[],doing:[],done:[]};list.forEach(function(e){(g[e.s]||g.todo).push(e);});
+    g.todo.sort(function(a,b){return t(a.st)-t(b.st);});
+    g.doing.sort(function(a,b){return (t(a.en)||9e15)-(t(b.en)||9e15);});
+    g.done.sort(function(a,b){return t(b.en)-t(a.en);});
+    var box=document.getElementById('cards');box.textContent='';
+    CARDS.forEach(function(c){box.appendChild(card(c,g[c.key]));});
+    var sub=document.getElementById('sub');sub.textContent='';
+    [['진행 중 ',g.doing.length],[' · 예정 ',g.todo.length],[' · 완료 ',g.done.length]].forEach(function(x){sub.appendChild(document.createTextNode(x[0]));sub.appendChild(el('b','',String(x[1])));sub.appendChild(document.createTextNode('건'));});
+    var f=document.getElementById('foot');f.textContent='Ahn Lab Town의 프로젝트 목록과 같은 내용입니다 · ';var a=el('a','','전체 일정 보기 →');a.href=ALL;a.target='_blank';a.rel='noopener';f.appendChild(a);
+    post();
+  }
+  fetch(SRC,{cache:'no-cache'}).then(function(r){if(!r.ok)throw new Error(r.status);return r.arrayBuffer();})
+    .then(function(b){render(build(decode(b)));})
+    .catch(function(){render([]);document.getElementById('sub').textContent='일정을 읽지 못했습니다. 잠시 뒤 다시 열어 주세요.';});
+  addEventListener('resize',post);
+})();
+</script>
+</body>
+</html>
