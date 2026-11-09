@@ -1,14 +1,14 @@
 ﻿대분류,중분류,제목,소개,링크,이미지,버튼글씨,비고,순서,공개
 프로젝트·서비스,로봇저널리즘,Money-Robo : 로봇저널리즘 프로젝트,공시·시세 데이터로 기사를 자동 작성하는 AI 뉴스 신문,https://money-robo.com/,thumbs/cats/C06-M3.webp,사이트 열기,,1,Y
-특허,등록 특허,주식 기사 생성 장치 및 방법,주식 데이터를 기사로 바꾸는 장치와 방법,,,,제 10-2135712 호,1,Y
-특허,등록 특허,로봇 저널리즘을 이용한 암호 화폐 분석 뉴스 서비스,암호화폐 데이터를 분석 기사로 만들어 제공하는 시스템,,,,제 10-2618473 호,2,Y
-특허,등록 특허,블록체인 데이터 모니터링을 통한 이상징후 탐지시스템,블록체인 데이터를 감시해 이상 징후를 찾아내는 시스템,,,,제 10-2555652 호,3,Y
-특허,등록 특허,태양광 데이터를 이용한 폭염피해 예측 시스템,태양광 데이터로 폭염 피해를 예측하는 시스템,,,,제 10-2486672 호,4,Y
-저서·이러닝,저서,AI 범죄와 자기 방어,AI가 범죄의 비용 구조와 수익 모델을 어떻게 바꾸었는지 범죄경제학으로 풀어낸 책,,,,커뮤니케이션북스 · 인공지능총서,1,Y
-저서·이러닝,이러닝,핀테크 데이터분석 기초,금융 데이터를 다루는 기초를 배우는 13시간 이러닝 과정,https://link.step.or.kr/brqEyc,,강좌 보기,STEP 이러닝,1,Y
-저서·이러닝,이러닝,[K-디지털] 인공지능 자연어 처리,자연어 데이터 분석의 흐름과 모델을 차시별로 배우는 8시간 과정,,,,STEP 이러닝,2,Y
-공공 사업,수행 사업,핀테크 API 개발지원사업 (총괄 PM),한국인터넷진흥원 핀테크 API 개발지원사업 총괄,,,,2017·2019·2021년 수행,1,Y
-공공 사업,수행 사업,뉴스 빅데이터 스타트업 지원사업 (총괄 PM),한국언론진흥재단 뉴스 빅데이터 사업 총괄,,,,한국언론진흥재단,2,Y
-공공 사업,수행 사업,현장형 AX 전문강사 양성과정 — 제조현장 AX,제조업·경영지원 분야 AX 과정 교안 설계와 강의,,,,한국IT여성기업인협회 · 정보통신산업진흥원,3,Y
+특허,등록 특허,주식 기사 생성 장치 및 방법,주식 데이터를 기사로 바꾸는 장치와 방법,https://adminmrobo.github.io/who_am_i/who_am_i.html,thumbs/cats/C10-M2.webp,소개 보기,제 10-2135712 호,1,Y
+특허,등록 특허,로봇 저널리즘을 이용한 암호 화폐 분석 뉴스 서비스,암호화폐 데이터를 분석 기사로 만들어 제공하는 시스템,https://adminmrobo.github.io/who_am_i/who_am_i.html,thumbs/cats/C10-M2.webp,소개 보기,제 10-2618473 호,2,Y
+특허,등록 특허,블록체인 데이터 모니터링을 통한 이상징후 탐지시스템,블록체인 데이터를 감시해 이상 징후를 찾아내는 시스템,https://adminmrobo.github.io/who_am_i/who_am_i.html,thumbs/cats/C10-M2.webp,소개 보기,제 10-2555652 호,3,Y
+특허,등록 특허,태양광 데이터를 이용한 폭염피해 예측 시스템,태양광 데이터로 폭염 피해를 예측하는 시스템,https://adminmrobo.github.io/who_am_i/who_am_i.html,thumbs/cats/C10-M2.webp,소개 보기,제 10-2486672 호,4,Y
+저서·이러닝,저서,AI 범죄와 자기 방어,AI가 범죄의 비용 구조와 수익 모델을 어떻게 바꾸었는지 범죄경제학으로 풀어낸 책,https://adminmrobo.github.io/who_am_i/who_am_i.html,thumbs/cats/C08-M1.webp,소개 보기,커뮤니케이션북스 · 인공지능총서,1,Y
+저서·이러닝,이러닝,핀테크 데이터분석 기초,금융 데이터를 다루는 기초를 배우는 13시간 이러닝 과정,https://link.step.or.kr/brqEyc,thumbs/cats/C08-M1.webp,강좌 보기,STEP 이러닝,1,Y
+저서·이러닝,이러닝,[K-디지털] 인공지능 자연어 처리,자연어 데이터 분석의 흐름과 모델을 차시별로 배우는 8시간 과정,https://adminmrobo.github.io/who_am_i/who_am_i.html,thumbs/cats/C08-M1.webp,소개 보기,STEP 이러닝,2,Y
+공공 사업,수행 사업,핀테크 API 개발지원사업 (총괄 PM),한국인터넷진흥원 핀테크 API 개발지원사업 총괄,https://adminmrobo.github.io/who_am_i/who_am_i.html,thumbs/cats/C09.webp,소개 보기,2017·2019·2021년 수행,1,Y
+공공 사업,수행 사업,뉴스 빅데이터 스타트업 지원사업 (총괄 PM),한국언론진흥재단 뉴스 빅데이터 사업 총괄,https://adminmrobo.github.io/who_am_i/who_am_i.html,thumbs/cats/C09.webp,소개 보기,한국언론진흥재단,2,Y
+공공 사업,수행 사업,현장형 AX 전문강사 양성과정 — 제조현장 AX,제조업·경영지원 분야 AX 과정 교안 설계와 강의,https://adminmrobo.github.io/who_am_i/who_am_i.html,thumbs/cats/C09.webp,소개 보기,한국IT여성기업인협회 · 정보통신산업진흥원,3,Y
 블로그,블로그,Global Business : 해외 비즈니스 블로그,해외 출장에서 만난 나라별 문화와 현지 비즈니스 경험을 기록한 글,https://ahnboat.xyz/global_business/,thumbs/cats/C06-M1.webp,블로그 열기,,1,Y
 블로그,블로그,Article & Study : 연구 및 분석,인공지능·경제학·블록체인·암호화폐를 연구하고 분석한 글,https://ahnboat.xyz/articlestudy/,thumbs/cats/C04-M2.webp,블로그 열기,,2,Y
