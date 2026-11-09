@@ -18,7 +18,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
 OWNER = "adminmrobo"
 EXCLUDE_PREFIX = "newsreporter_"
-EXCLUDE_NAMES = {"adminmrobo"}
+EXCLUDE_NAMES = {"adminmrobo", "ahnboat_homepage_manual"}  # 관리자용 매뉴얼은 현황판·카탈로그에 넣지 않음
 LANGS_FULL = 7  # 한국어 + en·zh·ja·uz·ru·vi
 
 COLS = ["저장소", "제목", "주요내용", "콘텐츠_카테고리_대분류", "콘텐츠_카테고리_중분류", "콘텐츠_카테고리_소분류",

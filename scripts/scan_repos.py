@@ -24,7 +24,7 @@ import urllib.request
 OWNER = "adminmrobo"
 SELF_REPO = "ahnboat_lab_cover_status"
 EXCLUDE_PREFIX = "newsreporter_"
-EXCLUDE_NAMES = {"adminmrobo"}  # 프로필 저장소
+EXCLUDE_NAMES = {"adminmrobo", "ahnboat_homepage_manual"}  # 프로필 저장소, 관리자용 매뉴얼(비밀번호 잠금 — 홈페이지·검색·지도에 내보내지 않음)
 API = "https://api.github.com"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
