@@ -66,10 +66,6 @@ def collect(day):
     w0 = day - dt.timedelta(days=6)
     iso = lambda x: x.isoformat() + "T00:00:00Z"
     end = (day + dt.timedelta(days=1)).isoformat() + "T00:00:00Z"
-    try:
-        print("API 확인:", json.dumps(api("/me"), ensure_ascii=False)[:120])
-    except Exception:
-        pass
     tot = api("/stats/total", start=iso(d0), end=end)
     series = daily_map(tot.get("stats"))
     hits, after = [], None
