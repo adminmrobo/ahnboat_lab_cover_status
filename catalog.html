@@ -132,6 +132,7 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
 .jump a{font-size:13px;text-decoration:none;color:var(--ink);background:var(--panel);border:1px solid var(--rule);border-radius:99px;padding:4px 12px}
 .subsec{margin:0 0 26px;scroll-margin-top:12px}
 .subh{display:flex;align-items:baseline;gap:8px;margin:0 0 10px;font-size:17px;padding-left:10px;border-left:4px solid var(--c)}
+.meta .kol{opacity:.75}
 .subh small{font-size:12.5px;color:var(--muted);font-weight:500}
 @media (prefers-reduced-motion:reduce){.tile{transition:none}.tile:hover{transform:none}}
 </style>
@@ -146,9 +147,11 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
 <main class="wrap" id="main" aria-live="polite"></main>
 <footer class="wrap" id="foot"></footer>
 
+<script src="i18n.js"></script>
 <script>
 (function(){
   'use strict';
+  var T=AhnI18n.t,NB=AhnI18n.nb;
   var Q=new URLSearchParams(location.search);
   var EMBED=Q.get('embed')==='1';
   if(EMBED)document.documentElement.classList.add('embed');
@@ -163,7 +166,8 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
   function enc(s){return encodeURIComponent(s);}
   function H(a){var p=[];for(var k=0;k<a.length&&a[k];k++)p.push(enc(a[k]));if(SINGLE)p=p.slice(1);return '#/'+p.join('/');}
   function onlyMid(cat){var ms=midsOf(cat);return ms.length===1?ms[0]:'';}
-  function midName(n){return ALIAS[n]||n;}
+  function midName(n){return T(ALIAS[n]||n);}
+  function unitKey(){return VC.unit===' 편'?'{0}편':VC.unit===' 건'?'{0}건':'{0}개 콘텐츠';}
   function parse(){var p=location.hash.replace(/^#\/?/,'').split('/').filter(Boolean).map(decodeURIComponent);if(SINGLE)p.unshift(SINGLE);return {cat:p[0]||'',mid:p[1]||''};}
   function inCat(n){return ITEMS.filter(function(i){return i.cat===n;});}
   function M(i){return i.mid||'기타';}
@@ -184,8 +188,8 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
     if(SINGLE)path=path.slice(1);
     else if(path.length===2&&onlyMid(st.cat))path=path.slice(0,1);  /* 중분류가 하나뿐이면 분야 단계로 묶음 */
     var full=SINGLE?[SINGLE].concat(path):[st.cat,st.mid].filter(Boolean);
-    var rootLabel=(VC.root_label)||'전체 분야';
-    if(path.length){var b=el('button','back','← 뒤로');b.type='button';b.addEventListener('click',function(){
+    var rootLabel=T((VC.root_label)||'전체 분야');
+    if(path.length){var b=el('button','back',T('← 뒤로'));b.type='button';b.addEventListener('click',function(){
       var up=full.slice(0,-1);if(!SINGLE&&up.length===1&&onlyMid(up[0]))up=[];location.hash=H(up);});nav.appendChild(b);}
     function link(txt,a){var x=el('a','',txt);x.href=H(a);return x;}
     nav.appendChild(path.length?link(rootLabel,SINGLE?[SINGLE]:[]):el('b','',rootLabel));
@@ -200,16 +204,16 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
     var b=el('span','tbody');
     b.appendChild(el('span','rack',label));
     b.appendChild(el('h3','',midName(o.name)));
-    if(o.desc)b.appendChild(el('p','',o.desc));
-    if(o.keywords&&o.keywords.length){var s=el('span','kw');s.setAttribute('aria-label','주요 색인어');o.keywords.forEach(function(x){s.appendChild(el('span','','#'+x.replace(/\s+/g,'')));});b.appendChild(s);}
-    var n=el('span','n');n.appendChild(el('b','',String(count)));n.appendChild(document.createTextNode(VC.unit||' 개 콘텐츠'));b.appendChild(n);
+    if(o.desc)b.appendChild(el('p','',T(o.desc)));
+    if(o.keywords&&o.keywords.length){var s=el('span','kw');s.setAttribute('aria-label',T('주요 색인어'));o.keywords.forEach(function(x){s.appendChild(el('span','','#'+(AhnI18n.lang==='ko'?T(x).replace(/\s+/g,''):T(x))));});b.appendChild(s);}
+    var n=el('span','n');NB(n,unitKey(),count);b.appendChild(n);
     t.appendChild(b);return t;
   }
   function hero(m){
     var h=D.hero||{};var box=el('section','hero'+(h.style==='light'?' light':''));
     if(h.style==='light'){
-      var tx=el('div','htext');tx.appendChild(el('p','hk',h.kicker||''));tx.appendChild(el('h2','',h.title||''));if(h.desc)tx.appendChild(el('p','hd',h.desc));
-      var st2=el('p','hs');st2.appendChild(el('b','',String(ITEMS.length)));st2.appendChild(document.createTextNode(VC.unit||' 개'));tx.appendChild(st2);
+      var tx=el('div','htext');tx.appendChild(el('p','hk',h.kicker||''));tx.appendChild(el('h2','',h.title||''));if(h.desc)tx.appendChild(el('p','hd',T(h.desc)));
+      var st2=el('p','hs');NB(st2,unitKey(),ITEMS.length);tx.appendChild(st2);
       box.appendChild(tx);var sp=el('div','hsprites');sp.setAttribute('aria-hidden','true');
       (h.sprites||[]).forEach(function(o){var im=el('img');if(typeof o==='string')o={src:o};im.src=o.src;im.alt='';if(o.h)im.style.height=o.h+'px';if(o.mb)im.style.marginBottom=o.mb+'px';im.addEventListener('load',post);sp.appendChild(im);});
       box.appendChild(sp);m.appendChild(box);return;
@@ -221,16 +225,17 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
     var t=el('div','htext');
     t.appendChild(el('p','hk',h.kicker||'AHNBOAT LAB'));
     t.appendChild(el('h2','',h.title||"Reon Ahn's Lab Server"));
-    if(h.desc)t.appendChild(el('p','hd',h.desc));
-    var st=el('p','hs');st.appendChild(el('b','',String(ITEMS.length)));st.appendChild(document.createTextNode(VC.unit||' 개 콘텐츠'));
-    if(!SINGLE){st.appendChild(document.createTextNode(' · '));st.appendChild(el('b','',String(CATS.filter(function(c){return inCat(c.name).length;}).length)));st.appendChild(document.createTextNode(' 개 분야'));}
-    else{st.appendChild(document.createTextNode(' · '));st.appendChild(el('b','',String(midsOf(SINGLE).length)));st.appendChild(document.createTextNode(' 개 갈래'));}
+    if(h.desc)t.appendChild(el('p','hd',T(h.desc)));
+    var st=el('p','hs');NB(st,unitKey(),ITEMS.length);
+    st.appendChild(document.createTextNode(' · '));
+    if(!SINGLE)NB(st,'{0}개 분야',CATS.filter(function(c){return inCat(c.name).length;}).length);
+    else NB(st,'{0}개 갈래',midsOf(SINGLE).length);
     t.appendChild(st);
     box.appendChild(t);m.appendChild(box);
   }
   function step1(m){
     hero(m);
-    m.appendChild(el('p','step','1단계 · 분야 고르기'));
+    m.appendChild(el('p','step',T('1단계 · 분야 고르기')));
     var g=el('div','grid big');
     CATS.forEach(function(c){var its=inCat(c.name);if(!its.length)return;var om=onlyMid(c.name);g.appendChild(bigTile(c,c,H(om?[c.name,om]:[c.name]),its.length,label(c)));});
     if(!SINGLE&&VC.fill_to){for(var q=g.children.length,z=0;q<VC.fill_to;q++,z++)g.appendChild(soonTile({color:'#8a94a0'},z));if(VC.fill_to===6)g.classList.add('six');}
@@ -240,30 +245,30 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
   function randomPicks(m,n){
     var pool=ITEMS.filter(function(i){return i.kind==='repo'&&i.thumb&&i.site_url;});if(pool.length<n)return;
     var sec=el('section','picks');var hd=el('div','pickhead');
-    hd.appendChild(el('p','step',VC.random_label||'오늘의 랜덤 콘텐츠 · 완료된 콘텐츠 중 3개'));
-    var re=el('button','reroll','🎲 다시 뽑기');re.type='button';hd.appendChild(re);sec.appendChild(hd);
+    hd.appendChild(el('p','step',T(VC.random_label||'오늘의 랜덤 콘텐츠 · 완료된 콘텐츠 중 3개')));
+    var re=el('button','reroll',T('🎲 다시 뽑기'));re.type='button';hd.appendChild(re);sec.appendChild(hd);
     var g=el('div','cards three');sec.appendChild(g);
     function draw(){var a=pool.slice();for(var k=a.length-1;k>0;k--){var j=Math.floor(Math.random()*(k+1));var t=a[k];a[k]=a[j];a[j]=t;}
-      g.textContent='';a.slice(0,n).forEach(function(i){var c=CATS.filter(function(x){return x.name===i.cat;})[0]||{color:'#888',name:i.cat};var k2=card(i,c);var pi=k2.querySelector('img');if(pi)pi.loading='eager';var b=k2.querySelector('.cbody');if(b)b.insertBefore(el('span','pcat',(label(c)?label(c)+' · ':'')+c.name),b.firstChild);g.appendChild(k2);});post();}
+      g.textContent='';a.slice(0,n).forEach(function(i){var c=CATS.filter(function(x){return x.name===i.cat;})[0]||{color:'#888',name:i.cat};var k2=card(i,c);var pi=k2.querySelector('img');if(pi)pi.loading='eager';var b=k2.querySelector('.cbody');if(b)b.insertBefore(el('span','pcat',(label(c)?label(c)+' · ':'')+T(c.name)),b.firstChild);g.appendChild(k2);});post();}
     re.addEventListener('click',draw);draw();m.appendChild(sec);
   }
   function step2(m,c){
-    if(SINGLE){hero(m);m.appendChild(el('p','step','1단계 · 갈래 고르기'));}
-    else{m.appendChild(el('p','step','2단계 · 중분류 고르기'));
-    m.appendChild(el('h2','sec',c.name));
-    if(c.desc)m.appendChild(el('p','secdesc',c.desc));}
+    if(SINGLE){hero(m);m.appendChild(el('p','step',T('1단계 · 갈래 고르기')));}
+    else{m.appendChild(el('p','step',T('2단계 · 중분류 고르기')));
+    m.appendChild(el('h2','sec',T(c.name)));
+    if(c.desc)m.appendChild(el('p','secdesc',T(c.desc)));}
     var g=el('div','grid big');
-    midsOf(c.name).forEach(function(md){g.appendChild(bigTile(c,midInfo(c.name,md),H([c.name,md]),inMid(c.name,md).length,SINGLE?(VC.mid_label||''):(label(c)?label(c)+' · ':'')+c.name));});
+    midsOf(c.name).forEach(function(md){g.appendChild(bigTile(c,midInfo(c.name,md),H([c.name,md]),inMid(c.name,md).length,SINGLE?(VC.mid_label||''):(label(c)?label(c)+' · ':'')+T(c.name)));});
     if(SINGLE&&VC.fill_to){for(var q=g.children.length,z=0;q<VC.fill_to;q++,z++)g.appendChild(soonTile(c,z));if(VC.fill_to===6)g.classList.add('six');}
     m.appendChild(g);
   }
   function soonTile(c,z){
-    var t=el('div','tile big soon');t.setAttribute('aria-label','준비 중인 갈래');t.style.setProperty('--c',c.color);
+    var t=el('div','tile big soon');t.setAttribute('aria-label',T('준비 중인 갈래'));t.style.setProperty('--c',c.color);
     var f=el('span','pic');var ph=el('span','ph','COMING SOON');var S2=VC.soon_images||[];var si=S2.length?S2[(z||0)%S2.length]:null;
     if(si){var im=el('img');im.alt='';im.loading='lazy';im.src=si.src||si;if(si.pos)im.style.objectPosition=si.pos;im.addEventListener('load',function(){ph.remove();post();});im.addEventListener('error',function(){im.remove();});f.appendChild(im);}
     f.appendChild(ph);t.appendChild(f);
     var b=el('span','tbody');b.appendChild(el('span','rack',VC.soon_label||VC.mid_label||''));
-    b.appendChild(el('h3','','준비 중'));b.appendChild(el('p','',VC.soon_desc||'새 갈래가 곧 열립니다.'));
+    b.appendChild(el('h3','',T('준비 중')));b.appendChild(el('p','',T(VC.soon_desc||'새 갈래가 곧 열립니다.')));
     t.appendChild(b);return t;
   }
   /* 콘텐츠 클릭 집계 (GoatCounter 이벤트, 방문 수와 별도) */
@@ -273,39 +278,41 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
     try{if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:a.getAttribute('data-gc'),title:a.getAttribute('data-gc-title'),event:true});}catch(x){}});
   function card(i,c){
     var k=el('article','card'+(i.kind==='ext'&&!i.thumb?' ext':''));k.style.setProperty('--c',c.color);
-    var th=el(i.site_url?'a':'div','thumb');if(i.site_url){th.href=i.site_url;th.target='_blank';th.rel='noopener';th.setAttribute('aria-label',i.title+' 열기');gcTag(th,i);}
-    if(i.thumb){var im=el('img');im.src=i.thumb;im.alt='';im.loading='lazy';im.addEventListener('load',post);im.addEventListener('error',function(){im.remove();th.appendChild(el('span','ph',S(i)));});th.appendChild(im);}
-    else th.appendChild(el('span','ph',S(i)));
+    var LK=AhnI18n.link(i.repo_url,i.site_url),URL1=LK[0];
+    var th=el(i.site_url?'a':'div','thumb');if(i.site_url){th.href=URL1;th.target='_blank';th.rel='noopener';th.setAttribute('aria-label',T('{0} 열기',T(i.title)));gcTag(th,i);}
+    if(i.thumb){var im=el('img');im.src=i.thumb;im.alt='';im.loading='lazy';im.addEventListener('load',post);im.addEventListener('error',function(){im.remove();th.appendChild(el('span','ph',T(S(i))));});th.appendChild(im);}
+    else th.appendChild(el('span','ph',T(S(i))));
     k.appendChild(th);
     var b=el('div','cbody');
-    b.appendChild(el('h3','',i.title));
-    if(i.summary)b.appendChild(el('p','',i.summary));
+    b.appendChild(el('h3','',T(i.title)));
+    if(i.summary)b.appendChild(el('p','',T(i.summary)));
     var meta=el('div','meta');
-    if(i.langs&&i.langs.length>1)meta.appendChild(el('span','',i.langs.length+'개 언어'));
-    if(i.kind==='ext'&&i.link){var nt=i.link.replace(/\s*·?\s*https?:\/\/\S+/,'').trim();if(nt)meta.appendChild(el('span','',nt));}
-    if(i.note)meta.appendChild(el('span','',i.note));
+    if(i.langs&&i.langs.length>1)meta.appendChild(el('span','',T('{0}개 언어',i.langs.length)));
+    if(i.site_url&&i.kind!=='portfolio'&&!LK[1])meta.appendChild(el('span','kol',T('한국어 페이지')));
+    if(i.kind==='ext'&&i.link){var nt=i.link.replace(/\s*·?\s*https?:\/\/\S+/,'').trim();if(nt)meta.appendChild(el('span','',T(nt)));}
+    if(i.note)meta.appendChild(el('span','',T(i.note)));
     if(meta.childNodes.length)b.appendChild(meta);
     var acts=el('div','acts');
-    if(i.site_url){var o=el('a','btn',i.button||(i.kind==='ext'?'자세히 보기':'콘텐츠 열기'));o.href=i.site_url;o.target='_blank';o.rel='noopener';gcTag(o,i);acts.appendChild(o);}
-    else if(i.kind==='portfolio')acts.appendChild(el('span','soon','링크 준비 중'));
+    if(i.site_url){var o=el('a','btn',T(i.button||(i.kind==='ext'?'자세히 보기':'콘텐츠 열기')));o.href=URL1;o.target='_blank';o.rel='noopener';gcTag(o,i);acts.appendChild(o);}
+    else if(i.kind==='portfolio')acts.appendChild(el('span','soon',T('링크 준비 중')));
     if(i.repo_url){var g=el('a','btn ghost','GitHub');g.href=i.repo_url;g.target='_blank';g.rel='noopener';acts.appendChild(g);}
-    if(i.kind==='repo'&&i.link){var u=(i.link.match(/https?:\/\/\S+/)||[])[0];if(u){var p=el('a','btn ghost','논문 원문');p.href=u;p.target='_blank';p.rel='noopener';acts.appendChild(p);}}
+    if(i.kind==='repo'&&i.link){var u=(i.link.match(/https?:\/\/\S+/)||[])[0];if(u){var p=el('a','btn ghost',T('논문 원문'));p.href=u;p.target='_blank';p.rel='noopener';acts.appendChild(p);}}
     if(acts.childNodes.length)b.appendChild(acts);
     k.appendChild(b);return k;
   }
   /* 3단계: 중분류 안의 소분류를 묶음 제목으로, 항목을 바로 보여 준다 */
   function step3(m,c,md){
     var info=midInfo(c.name,md);
-    m.appendChild(el('p','step',(SINGLE?'2단계':'마지막 단계')+' · 콘텐츠 열기'));
+    m.appendChild(el('p','step',T(SINGLE?'2단계 · 콘텐츠 열기':'마지막 단계 · 콘텐츠 열기')));
     m.appendChild(el('h2','sec',midName(md)));
-    m.appendChild(el('p','secdesc',(SINGLE?'':c.name+(info.desc?' · ':''))+(info.desc||'')));
+    m.appendChild(el('p','secdesc',(SINGLE?'':T(c.name)+(info.desc?' · ':''))+(info.desc?T(info.desc):'')));
     var subs=subsOf(c.name,md);
     if(subs.length===1&&subs[0]==='기타'){var g0=el('div','cards');inMid(c.name,md).forEach(function(i){g0.appendChild(card(i,c));});m.appendChild(g0);return;}
-    if(subs.length>1){var jump=el('nav','jump');jump.setAttribute('aria-label','소분류');subs.forEach(function(s,k){var a=el('a','',s+' '+inMid(c.name,md).filter(function(i){return S(i)===s;}).length);a.href='#';a.addEventListener('click',function(e){e.preventDefault();var t=document.getElementById('sub'+k);if(t)t.scrollIntoView({behavior:'smooth',block:'start'});});jump.appendChild(a);});m.appendChild(jump);}
+    if(subs.length>1){var jump=el('nav','jump');jump.setAttribute('aria-label',T('소분류'));subs.forEach(function(s,k){var a=el('a','',T(s)+' '+inMid(c.name,md).filter(function(i){return S(i)===s;}).length);a.href='#';a.addEventListener('click',function(e){e.preventDefault();var t=document.getElementById('sub'+k);if(t)t.scrollIntoView({behavior:'smooth',block:'start'});});jump.appendChild(a);});m.appendChild(jump);}
     subs.forEach(function(s,k){
       var sec=el('section','subsec');sec.id='sub'+k;sec.style.setProperty('--c',c.color);
       var its=inMid(c.name,md).filter(function(i){return S(i)===s;});
-      var h=el('h3','subh',s);h.appendChild(el('small','',its.length+'개'));sec.appendChild(h);
+      var h=el('h3','subh',T(s));h.appendChild(el('small','',T('{0}개',its.length)));sec.appendChild(h);
       var g=el('div','cards');its.forEach(function(i){g.appendChild(card(i,c));});sec.appendChild(g);
       m.appendChild(sec);
     });
@@ -336,10 +343,12 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
     if(VC.hero&&VC.hero.style==='light')document.documentElement.classList.add('lightview');
     if(VC.page_title)document.title=VC.page_title;
     ITEMS=(d.items||[]).filter(function(i){return CATS.some(function(c){return c.name===i.cat;});});
-    document.getElementById('foot').textContent=(VC.foot||('콘텐츠 '+ITEMS.length+'개 · 랩타운 지하 1층 서버실의 랙과 같은 분류입니다.'))+' · 갱신 '+d.updated;
-    render();
-    document.querySelectorAll('img').forEach(function(im){im.addEventListener('load',post);});
-  }).catch(function(e){document.getElementById('main').appendChild(el('p','err','목록을 읽지 못했습니다 ('+e.message+').'));});
+    footer();
+    AhnI18n.onChange(function(){footer();lede();render();});
+    return AhnI18n.ready.then(function(){footer();lede();render();});
+  }).catch(function(e){document.getElementById('main').appendChild(el('p','err',T('목록을 읽지 못했습니다 ({0}).',e.message)));});
+  function footer(){document.getElementById('foot').textContent=(VC.foot?T(VC.foot):T('콘텐츠 {0}개 · 랩타운 지하 1층 서버실의 랙과 같은 분류입니다.',ITEMS.length))+' · '+T('갱신 {0}',D.updated);}
+  function lede(){var l=document.querySelector('.lede');if(l)l.textContent=T('박사·조수·초파리 연구원·주판봇이 진행하는 해설 시리즈와 연구 실적을 분야별로 모았습니다. 분야와 중분류를 고르면 주제별 콘텐츠가 바로 나옵니다.');document.getElementById('crumb').setAttribute('aria-label',T('현재 위치'));}
 })();
 </script>
 <script data-goatcounter="https://ahnboat.goatcounter.com/count" data-goatcounter-settings='{"no_onload":true}' async src="//gc.zgo.at/count.js"></script>

@@ -1,0 +1,154 @@
+{
+ "박사": {
+  "en": "Doctor",
+  "zh": "博士",
+  "ja": "博士",
+  "ru": "Доктор",
+  "uz": "Doktor",
+  "vi": "Tiến sĩ"
+ },
+ "주판봇": {
+  "en": "AbaBot",
+  "zh": "算盘宝",
+  "ja": "アバボット",
+  "ru": "АбаБот",
+  "uz": "AbaBot",
+  "vi": "AbaBot"
+ },
+ "초파리 연구원": {
+  "en": "Fruit Fly Researcher",
+  "zh": "果蝇研究员",
+  "ja": "ショウジョウバエ研究員",
+  "ru": "Исследователь-дрозофила",
+  "uz": "Meva pashshasi tadqiqotchisi",
+  "vi": "Nhà nghiên cứu Ruồi giấm"
+ },
+ "안상선": {
+  "en": "Ahn Sangsun",
+  "zh": "Ahn Sangsun",
+  "ja": "Ahn Sangsun",
+  "ru": "Ahn Sangsun",
+  "uz": "Ahn Sangsun",
+  "vi": "Ahn Sangsun"
+ },
+ "(주)M-Robo 대표": {
+  "en": "CEO, M-Robo Inc.",
+  "zh": "M-Robo 公司 CEO",
+  "ja": "株式会社M-Robo 代表",
+  "ru": "генеральный директор M-Robo",
+  "uz": "M-Robo kompaniyasi rahbari",
+  "vi": "Giám đốc điều hành M-Robo"
+ },
+ "조수 하루": {
+  "en": "Assistant Haru",
+  "zh": "助手 Haru",
+  "ja": "助手ハル",
+  "uz": "Yordamchi Haru",
+  "ru": "Ассистентка Хару",
+  "vi": "Trợ lý Haru"
+ },
+ "조수": {
+  "en": "Assistant",
+  "zh": "助手",
+  "ja": "助手",
+  "uz": "Yordamchi",
+  "ru": "Ассистентка",
+  "vi": "Trợ lý"
+ },
+ "하루": {
+  "en": "Haru",
+  "zh": "Haru",
+  "ja": "ハル",
+  "uz": "Haru",
+  "ru": "Хару",
+  "vi": "Haru"
+ },
+ "안상선(Reon Ahn)": {
+  "en": "Ahn Sangsun (Reon Ahn)",
+  "zh": "Ahn Sangsun (Reon Ahn)",
+  "ja": "Ahn Sangsun (Reon Ahn)",
+  "uz": "Ahn Sangsun (Reon Ahn)",
+  "ru": "Ahn Sangsun (Reon Ahn)",
+  "vi": "Ahn Sangsun (Reon Ahn)"
+ },
+ "랩타운": {
+  "en": "Lab Town",
+  "zh": "Lab Town",
+  "ja": "Lab Town",
+  "uz": "Lab Town",
+  "ru": "Lab Town",
+  "vi": "Lab Town"
+ },
+ "Ahn Lab Town": {
+  "en": "Ahn Lab Town",
+  "zh": "Ahn Lab Town",
+  "ja": "Ahn Lab Town",
+  "uz": "Ahn Lab Town",
+  "ru": "Ahn Lab Town",
+  "vi": "Ahn Lab Town"
+ },
+ "랙": {
+  "en": "rack",
+  "zh": "机架",
+  "ja": "ラック",
+  "uz": "javon",
+  "ru": "стойка",
+  "vi": "giá máy chủ"
+ },
+ "서버실": {
+  "en": "server room",
+  "zh": "服务器机房",
+  "ja": "サーバールーム",
+  "uz": "server xonasi",
+  "ru": "серверная",
+  "vi": "phòng máy chủ"
+ },
+ "갈래": {
+  "en": "track",
+  "zh": "分支",
+  "ja": "分野",
+  "uz": "yoʻnalish",
+  "ru": "направление",
+  "vi": "nhánh"
+ },
+ "중분류": {
+  "en": "subcategory",
+  "zh": "中类",
+  "ja": "中分類",
+  "uz": "kichik boʻlim",
+  "ru": "подраздел",
+  "vi": "nhóm con"
+ },
+ "분야": {
+  "en": "field",
+  "zh": "领域",
+  "ja": "分野",
+  "uz": "soha",
+  "ru": "область",
+  "vi": "lĩnh vực"
+ },
+ "Money-Robo": {
+  "en": "Money-Robo",
+  "zh": "Money-Robo",
+  "ja": "Money-Robo",
+  "uz": "Money-Robo",
+  "ru": "Money-Robo",
+  "vi": "Money-Robo"
+ },
+ "로봇저널리즘": {
+  "en": "robot journalism",
+  "zh": "机器人新闻",
+  "ja": "ロボットジャーナリズム",
+  "uz": "robot jurnalistika",
+  "ru": "робожурналистика",
+  "vi": "báo chí robot"
+ },
+ "주인장은 누구?": {
+  "en": "Who runs this lab?",
+  "zh": "主人是谁？",
+  "ja": "主人はだれ？",
+  "uz": "Laboratoriya egasi kim?",
+  "ru": "Кто хозяин лаборатории?",
+  "vi": "Chủ nhà là ai?"
+ }
+}

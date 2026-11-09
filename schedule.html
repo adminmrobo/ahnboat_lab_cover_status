@@ -65,9 +65,11 @@ h1{margin:0;font-size:clamp(28px,3.2vw,38px);line-height:1.15}
   <div class="cards" id="cards"></div>
   <p class="foot" id="foot"></p>
 </div>
+<script src="i18n.js"></script>
 <script>
 (function(){
   'use strict';
+  var T=AhnI18n.t;
   var Q=new URLSearchParams(location.search);
   if(Q.get('embed')==='1')document.documentElement.classList.add('embed');
   var SRC=Q.get('src')||'https://adminmrobo.github.io/ahn_boat_lab_town/projects.csv';
@@ -108,11 +110,11 @@ h1{margin:0;font-size:clamp(28px,3.2vw,38px);line-height:1.15}
   }
   function item(e){
     var li=el('li');
-    var meta=[];if(e.cat)meta.push(e.cat);
-    if(e.st&&e.en)meta.push(md(e.st)+' ~ '+md(e.en));else if(e.en)meta.push('~ '+md(e.en));else if(e.st)meta.push(md(e.st)+' 시작');
-    if(e.owner)meta.push(e.owner);
+    var meta=[];if(e.cat)meta.push(T(e.cat));
+    if(e.st&&e.en)meta.push(md(e.st)+' ~ '+md(e.en));else if(e.en)meta.push('~ '+md(e.en));else if(e.st)meta.push(T('{0} 시작',md(e.st)));
+    if(e.owner)meta.push(T(e.owner));
     li.appendChild(el('span','t',meta.join(' · ')));
-    var n;if(e.link&&/^https?:\/\//.test(e.link)){n=el('a','n',e.name);n.href=e.link;n.target='_blank';n.rel='noopener';}else n=el('span','n',e.name);
+    var n;if(e.link&&/^https?:\/\//.test(e.link)){n=el('a','n',T(e.name));n.href=e.link;n.target='_blank';n.rel='noopener';}else n=el('span','n',T(e.name));
     li.appendChild(n);li.title=e.name;
     if(e.s==='doing'&&e.p!=null){var bar=el('span','bar');var f=el('i');f.style.width=e.p+'%';bar.appendChild(f);bar.appendChild(el('b','',e.p+'%'));li.appendChild(bar);}
     return li;
@@ -120,10 +122,10 @@ h1{margin:0;font-size:clamp(28px,3.2vw,38px);line-height:1.15}
   function card(c,list){
     var a=el('article','sc '+c.key);var im=el('img','bg');im.alt='';im.src=c.img;im.addEventListener('load',post);a.appendChild(im);
     var tx=el('div','txt');tx.appendChild(el('span','lab',c.lab));
-    var h=el('h2','',c.name);h.appendChild(el('span','cnt',String(list.length)));tx.appendChild(h);
-    if(!list.length)tx.appendChild(el('p','empty',c.empty));
+    var h=el('h2','',T(c.name));h.appendChild(el('span','cnt',String(list.length)));tx.appendChild(h);
+    if(!list.length)tx.appendChild(el('p','empty',T(c.empty)));
     else{var ul=el('ul');list.slice(0,MAX).forEach(function(e){ul.appendChild(item(e));});tx.appendChild(ul);
-      if(list.length>MAX){var m=el('a','more','외 '+(list.length-MAX)+'건 더 보기 →');m.href=ALL;m.target='_blank';m.rel='noopener';tx.appendChild(m);}}
+      if(list.length>MAX){var m=el('a','more',T('외 {0}건 더 보기 →',list.length-MAX));m.href=ALL;m.target='_blank';m.rel='noopener';tx.appendChild(m);}}
     a.appendChild(tx);return a;
   }
   function t(d){return d?d.getTime():0;}
@@ -135,13 +137,15 @@ h1{margin:0;font-size:clamp(28px,3.2vw,38px);line-height:1.15}
     var box=document.getElementById('cards');box.textContent='';
     CARDS.forEach(function(c){box.appendChild(card(c,g[c.key]));});
     var sub=document.getElementById('sub');sub.textContent='';
-    [['진행 중 ',g.doing.length],[' · 예정 ',g.todo.length],[' · 완료 ',g.done.length]].forEach(function(x){sub.appendChild(document.createTextNode(x[0]));sub.appendChild(el('b','',String(x[1])));sub.appendChild(document.createTextNode('건'));});
-    var f=document.getElementById('foot');f.textContent='Ahn Lab Town의 프로젝트 목록과 같은 내용입니다 · ';var a=el('a','','전체 일정 보기 →');a.href=ALL;a.target='_blank';a.rel='noopener';f.appendChild(a);
+    sub.textContent=T('진행 중 {0}건 · 예정 {1}건 · 완료 {2}건',g.doing.length,g.todo.length,g.done.length);
+    var f=document.getElementById('foot');f.textContent=T('Ahn Lab Town의 프로젝트 목록과 같은 내용입니다')+' · ';var a=el('a','',T('전체 일정 보기 →'));a.href=ALL;a.target='_blank';a.rel='noopener';f.appendChild(a);
     post();
   }
   fetch(SRC,{cache:'no-cache'}).then(function(r){if(!r.ok)throw new Error(r.status);return r.arrayBuffer();})
-    .then(function(b){render(build(decode(b)));})
-    .catch(function(){render([]);document.getElementById('sub').textContent='일정을 읽지 못했습니다. 잠시 뒤 다시 열어 주세요.';});
+    .then(function(b){LIST=build(decode(b));return AhnI18n.ready;}).then(function(){render(LIST);})
+    .catch(function(){render([]);document.getElementById('sub').textContent=T('일정을 읽지 못했습니다. 잠시 뒤 다시 열어 주세요.');});
+  var LIST=[];AhnI18n.onChange(function(){render(LIST);});
+  document.getElementById('sub').textContent=T('일정을 불러오는 중…');
   addEventListener('resize',post);
 })();
 </script>

@@ -29,6 +29,10 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
 .tag{margin:8px 0 0;font-size:1.15rem;color:var(--muted)}
 .boat{margin:14px 0 0;font-size:.9rem;color:var(--muted)}
 .boat b{color:var(--ink)}
+.langs{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+.langs .lg{font:inherit;font-size:.78rem;font-weight:700;cursor:pointer;border:1.5px solid var(--line);border-radius:99px;padding:3px 11px;background:#fff;color:var(--ink);box-shadow:2px 2px 0 var(--line)}
+.langs .lg[aria-pressed=true]{background:var(--ink);color:#fff}
+.langs .lg:hover{transform:translate(-1px,-1px)}
 .crew{position:relative;display:flex;justify-content:center;align-items:flex-end;gap:clamp(0px,1vw,14px);padding:20px 16px 10px;height:100%}
 .crew::after{content:"";position:absolute;left:6%;right:6%;bottom:0;height:16px;border-radius:50%;background:rgba(31,34,36,.08)}
 .mate{position:relative;display:flex;flex-direction:column;align-items:center;cursor:pointer;background:none;border:0;padding:0;font:inherit}
@@ -72,7 +76,8 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
       <p class="kicker">AHNBOAT LAB</p>
       <h1 id="ttl">Reon Ahn's page</h1>
       <p class="tag">Small but interesting things.</p>
-      <p class="boat"><b>Ahn boat</b> = 안(Ahn) + 상선(商船, boat). 연구실 식구들을 태운 작은 배입니다.</p>
+      <p class="boat"><b>Ahn boat</b> = 안(Ahn) + 상선(商船, boat). <span id="boatTxt">연구실 식구들을 태운 작은 배입니다.</span></p>
+      <div class="langs" id="langs" role="group" aria-label="언어"></div>
     </div>
     <div class="crew" id="crew" aria-label="연구실 식구들 (눌러 보세요)">
       <p class="say" id="say" aria-live="polite"><b id="sayWho"></b><span id="sayTxt"></span></p>
@@ -83,9 +88,11 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
     <ul id="nlist"><li><a href="#"><span class="t">공지를 불러오는 중…</span></a></li></ul>
   </section>
 </div>
+<script src="i18n.js"></script>
 <script>
 (function(){
   'use strict';
+  var T=AhnI18n.t;
   var LINES={doctor:['어서 오게! 오늘은 어떤 실험을 해 볼까?','개념은 실험으로 풀면 쉬워진다네.','논문 해설은 아래 Articles에 있다네.'],
     haru:['안녕하세요! 새 소식은 아래 공지에 있어요.','콘텐츠 진행 상황은 Progress Board에서 볼 수 있어요.','Lab Server의 랙을 눌러 보세요!'],
     jupanbot:['딸깍딸깍, 콘텐츠 수를 세는 중입니다.','열 개의 랙, 이상 없음!'],
@@ -95,8 +102,8 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
   var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
   function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e;}
   var sayT;
-  function speak(w){document.getElementById('sayWho').textContent=NAME[w];
-    document.getElementById('sayTxt').textContent=LINES[w][Math.floor(Math.random()*LINES[w].length)];
+  function speak(w){document.getElementById('sayWho').textContent=T(NAME[w]);
+    document.getElementById('sayTxt').textContent=T(LINES[w][Math.floor(Math.random()*LINES[w].length)]);
     say.classList.add('on');clearTimeout(sayT);sayT=setTimeout(function(){say.classList.remove('on');},3200);}
   /* 연구 장면 그림(배경 없는 3장: 박사·하루 / 주판봇 / 초파리). 키 비율은 박사 1.0 기준으로 맞춰 둠 */
   var LAYER={labpair:{h:1.0011,lift:0},jupanbot:{h:0.7025,lift:0.012},fruitfly:{h:0.5294,lift:0.076}};
@@ -107,7 +114,7 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
     var h=H();
     ['labpair','jupanbot','fruitfly'].forEach(function(k){
       var b=el('button','part '+k);b.type='button';
-      b.setAttribute('aria-label',k==='labpair'?'박사와 조수 하루':NAME[k]);
+      b.setAttribute('aria-label',T(k==='labpair'?'박사와 조수 하루':NAME[k]));
       var im=el('img');im.alt='';im.src='thumbs/chars/hero/'+k+'.webp';im.style.height=Math.round(LAYER[k].h*h)+'px';
       b.style.marginBottom=Math.round(LAYER[k].lift*h)+'px';b.appendChild(im);
       b.addEventListener('click',function(e){
@@ -132,19 +139,34 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
     if(f||row.length){row.push(f);rows.push(row);}
     var h=rows.shift()||[];return rows.filter(function(r){return r.join('').trim();}).map(function(r){var o={};h.forEach(function(k,i){o[k.trim()]=(r[i]||'').trim();});return o;});
   }
-  fetch('data/notices.csv',{cache:'no-cache'}).then(function(r){if(!r.ok)throw new Error(r.status);return r.text();}).then(function(t){
-    var list=parseCSV(t).filter(function(n){return (n['표시']||'Y').toUpperCase()!=='N'&&n['제목'];})
+  var NOTI=null;
+  fetch('data/notices.csv',{cache:'no-cache'}).then(function(r){if(!r.ok)throw new Error(r.status);return r.text();}).then(function(t){NOTI=parseCSV(t);return AhnI18n.ready;}).then(notices)
+  .catch(function(){var ul=document.getElementById('nlist');ul.textContent='';ul.appendChild(el('li')).appendChild(el('span','t',T('공지를 불러오지 못했습니다.')));});
+  function notices(){if(!NOTI)return;
+    var list=NOTI.filter(function(n){return (n['표시']||'Y').toUpperCase()!=='N'&&n['제목'];})
       .sort(function(a,b){return (b['날짜']||'').localeCompare(a['날짜']||'');}).slice(0,3);
     var ul=document.getElementById('nlist');ul.textContent='';
-    if(!list.length){ul.appendChild(el('li','',null)).appendChild(el('span','t','새 공지가 없습니다.'));}
+    if(!list.length){ul.appendChild(el('li','',null)).appendChild(el('span','t',T('새 공지가 없습니다.')));}
     list.forEach(function(n){
       var li=el('li');var a=el('a');a.href=n['링크']||'#';a.target='_top';
       var tm=el('time','',(n['날짜']||'').slice(5).replace('-','.'));tm.dateTime=n['날짜']||'';a.appendChild(tm);
       var d=n['날짜']?(Date.now()-Date.parse(n['날짜']))/864e5:99;if(d<7)a.appendChild(el('span','new','NEW'));
-      a.appendChild(el('span','t',n['제목']));li.appendChild(a);ul.appendChild(li);
+      a.appendChild(el('span','t',T(n['제목'])));li.appendChild(a);ul.appendChild(li);
     });
     post();
-  }).catch(function(){var ul=document.getElementById('nlist');ul.textContent='';ul.appendChild(el('li')).appendChild(el('span','t','공지를 불러오지 못했습니다.'));});
+  }
+  /* 언어 고르기 — 고르면 아래 블록이 모두 함께 바뀐다 */
+  function statics(){
+    document.getElementById('boatTxt').textContent=T('연구실 식구들을 태운 작은 배입니다.');
+    document.getElementById('crew').setAttribute('aria-label',T('연구실 식구들 (눌러 보세요)'));
+    document.getElementById('nlb').textContent=T('📢 공지');
+    var g=document.getElementById('langs');g.setAttribute('aria-label',T('언어'));g.textContent='';
+    AhnI18n.langs.forEach(function(l){var b=el('button','lg',AhnI18n.names[l]);b.type='button';b.lang=l;b.setAttribute('aria-pressed',String(l===AhnI18n.lang));
+      b.addEventListener('click',function(){AhnI18n.set(l);});g.appendChild(b);});
+    build();
+  }
+  AhnI18n.onChange(function(){statics();notices();});
+  AhnI18n.ready.then(function(){statics();AhnI18n.announce();});
   function post(){if(window.parent!==window){try{window.parent.postMessage({type:'ahnboat-catalog-height',height:Math.ceil(document.body.getBoundingClientRect().height),nav:false},'*');}catch(e){}}}
   window.addEventListener('resize',post);
   document.querySelectorAll('img').forEach(function(im){im.addEventListener('load',post);});

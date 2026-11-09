@@ -5,3 +5,4 @@ __pycache__/
 # 관리용 평문은 커밋하지 않는다 (잠긴 .enc 만 올린다)
 data/hub.csv
 data/hub.json
+data/i18n/work/
