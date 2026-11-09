@@ -42,6 +42,7 @@ jobs:
           pip install --quiet cryptography
           python scripts/hub_secure.py
           python scripts/build_portfolio.py
+          python scripts/build_ontology.py   # 공개 콘텐츠 지식 색인 → 분야별 온톨로지 지도 데이터
           # 평문 관리 데이터가 남아 있으면 멈춘다
           if [ -e data/hub.csv ] || [ -e data/hub.json ]; then
             if [ -n "$HUB_KEY" ]; then echo "평문 관리 데이터가 남아 있습니다"; exit 1; fi

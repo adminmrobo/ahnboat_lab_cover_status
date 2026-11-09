@@ -58,6 +58,12 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
 .notice time{font-family:var(--mono);font-size:.78rem;color:var(--muted);flex:none}
 .notice .t{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .notice .new{font-family:var(--mono);font-size:.66rem;font-weight:700;color:#fff;background:var(--pink);border-radius:5px;padding:0 5px;flex:none}
+.find{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;max-width:560px}
+.find form{flex:1 1 240px;display:flex;min-width:0;border:2px solid var(--line);border-radius:12px;background:#fff;box-shadow:3px 3px 0 var(--line);overflow:hidden}
+.find input{flex:1;min-width:0;font:inherit;font-size:.9rem;border:0;padding:7px 12px;background:transparent;outline-offset:-3px}
+.find form button{flex:none;cursor:pointer;font:inherit;border:0;border-left:2px solid var(--line);background:var(--sun);padding:0 12px}
+.find .map{flex:none;display:inline-flex;align-items:center;gap:6px;text-decoration:none;font-size:.85rem;font-weight:700;border:2px solid var(--line);border-radius:12px;padding:6px 12px;background:#14191b;color:#fff;box-shadow:3px 3px 0 var(--line)}
+.find .map:hover,.find form:focus-within{transform:translate(-1px,-1px)}
 @media (max-width:820px){
   .hero{grid-template-columns:1fr}
   .htext{padding:22px 20px 4px}
@@ -78,6 +84,10 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
       <p class="tag">Small but interesting things.</p>
       <p class="boat"><b>Ahn boat</b> = 안(Ahn) + 상선(商船, boat). <span id="boatTxt">연구실 식구들을 태운 작은 배입니다.</span></p>
       <div class="langs" id="langs" role="group" aria-label="언어"></div>
+      <div class="find">
+        <form id="sf" action="search.html" target="_blank" role="search"><input id="sq" name="q" type="search" autocomplete="off"><button type="submit" id="sgo">🔍</button></form>
+        <a class="map" id="omap" href="ontology.html" target="_blank" rel="noopener">🧭 <span id="omapT">온톨로지 3D 지도</span></a>
+      </div>
     </div>
     <div class="crew" id="crew" aria-label="연구실 식구들 (눌러 보세요)">
       <p class="say" id="say" aria-live="polite"><b id="sayWho"></b><span id="sayTxt"></span></p>
@@ -160,6 +170,10 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
     document.getElementById('boatTxt').textContent=T('연구실 식구들을 태운 작은 배입니다.');
     document.getElementById('crew').setAttribute('aria-label',T('연구실 식구들 (눌러 보세요)'));
     document.getElementById('nlb').textContent=T('📢 공지');
+    document.getElementById('sq').placeholder=T('콘텐츠 찾아보기 (제목·개념)');document.getElementById('sq').setAttribute('aria-label',T('콘텐츠 찾아보기'));
+    document.getElementById('sgo').setAttribute('aria-label',T('찾기'));
+    document.getElementById('omapT').textContent=T('온톨로지 3D 지도');
+    document.getElementById('omap').title=T('분야별 온톨로지 3D 지도');
     var g=document.getElementById('langs');g.setAttribute('aria-label',T('언어'));g.textContent='';
     AhnI18n.langs.forEach(function(l){var b=el('button','lg',AhnI18n.names[l]);b.type='button';b.lang=l;b.setAttribute('aria-pressed',String(l===AhnI18n.lang));
       b.addEventListener('click',function(){AhnI18n.set(l);});g.appendChild(b);});

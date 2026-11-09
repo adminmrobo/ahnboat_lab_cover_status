@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>콘텐츠 찾아보기 · Reon Ahn's page</title>
+<meta name="description" content="Reon Ahn(안상선) 연구실의 해설 콘텐츠를 제목·분야·개념으로 찾아보기">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@500;700&display=swap">
+<style>
+:root{
+  --bg:#ffffff; --paper:#fbfaf7; --ink:#1f2224; --muted:#5f6663; --rule:#e4e0d8; --line:#1f2224;
+  --mint:#1f9e66; --sun:#e0a92a; --hl:#fff1b8;
+  --font:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace; color-scheme:light;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;font-size:16px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);line-height:1.55;overflow-x:hidden;word-break:keep-all}
+a{color:inherit}
+button{font:inherit;color:inherit}
+.wrap{max-width:1500px;margin:0 auto;padding:16px max(16px,env(safe-area-inset-left,0px)) 28px}
+.top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px}
+.back{font-size:.85rem;text-decoration:none;border:1.5px solid var(--line);border-radius:99px;padding:3px 12px;background:#fff;box-shadow:2px 2px 0 var(--line)}
+.langs{display:flex;flex-wrap:wrap;gap:6px}
+.lg{font-size:.74rem;font-weight:700;cursor:pointer;border:1.5px solid var(--line);border-radius:99px;padding:2px 10px;background:#fff;box-shadow:2px 2px 0 var(--line)}
+.lg[aria-pressed=true]{background:var(--ink);color:#fff}
+.head{margin:18px 0 0;display:flex;flex-direction:column;align-items:flex-start}
+.kicker{display:inline-block;font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;border:1.5px solid var(--line);border-radius:99px;padding:3px 10px;background:#fff;margin:0 0 10px}
+h1{margin:0;font-size:clamp(1.8rem,3.6vw,2.8rem);line-height:1.1}
+form{margin:16px 0 0;display:flex;gap:8px;max-width:820px}
+form input{flex:1;min-width:0;font:inherit;font-size:1.05rem;border:2px solid var(--line);border-radius:12px;padding:10px 14px;background:#fff;box-shadow:3px 3px 0 var(--line)}
+form button{flex:none;cursor:pointer;font-weight:700;border:2px solid var(--line);border-radius:12px;padding:0 18px;background:var(--sun);box-shadow:3px 3px 0 var(--line)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 0}
+.chip{cursor:pointer;font-size:.82rem;border:1.5px solid var(--line);border-radius:99px;padding:3px 11px;background:#fff;display:inline-flex;align-items:center;gap:6px}
+.chip[aria-pressed=true]{background:var(--ink);color:#fff}
+.chip .dot{width:9px;height:9px;border-radius:50%;border:1px solid var(--line)}
+.sugg{margin:12px 0 0;font-size:.85rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.sugg button{cursor:pointer;font-size:.82rem;border:1.5px dashed var(--line);border-radius:99px;padding:2px 10px;background:var(--paper)}
+.stat{margin:18px 0 8px;font-size:.9rem;color:var(--muted)}
+.stat b{color:var(--ink)}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:20px;align-items:start}
+.res{display:flex;flex-direction:column;gap:12px}
+.card{display:grid;grid-template-columns:150px minmax(0,1fr);gap:14px;border:2px solid var(--line);border-radius:14px;background:#fff;padding:12px;box-shadow:3px 3px 0 var(--line);min-width:0}
+.card .th{display:block;width:150px;aspect-ratio:3/2;object-fit:cover;border-radius:8px;border:1.5px solid var(--line);background:var(--paper)}
+.card h2{margin:0;font-size:1.05rem;line-height:1.35}
+.card h2 a{text-decoration:none}
+.card h2 a:hover{text-decoration:underline}
+.card .path{margin:2px 0 4px;font-size:.76rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.card .path .dot{width:9px;height:9px;border-radius:50%;display:inline-block}
+.card p{margin:0;font-size:.9rem}
+.card .why{margin:6px 0 0;font-size:.78rem;color:var(--muted)}
+.card .acts{margin:8px 0 0;display:flex;flex-wrap:wrap;gap:6px}
+.btn{font-size:.82rem;text-decoration:none;border:1.5px solid var(--line);border-radius:8px;padding:4px 11px;background:#fff;box-shadow:2px 2px 0 var(--line)}
+.btn.main{background:var(--ink);color:#fff}
+mark{background:var(--hl);color:inherit;border-radius:3px;padding:0 1px}
+.side{border:2px solid var(--line);border-radius:14px;background:var(--paper);padding:12px 14px;box-shadow:3px 3px 0 var(--line);position:sticky;top:12px}
+.side h3{margin:0 0 4px;font-size:.95rem}
+.side p{margin:0 0 8px;font-size:.78rem;color:var(--muted)}
+.side ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.side li a{display:block;text-decoration:none;border:1.5px solid var(--rule);background:#fff;border-radius:8px;padding:5px 9px;font-size:.86rem}
+.side li a:hover{border-color:var(--line)}
+.side li small{display:block;color:var(--muted);font-size:.72rem}
+.side .map{display:block;margin:10px 0 0;text-align:center;text-decoration:none;font-weight:700;font-size:.86rem;border:2px solid var(--line);border-radius:10px;padding:7px;background:#14191b;color:#fff}
+.empty{border:2px dashed var(--rule);border-radius:14px;padding:24px;text-align:center;color:var(--muted)}
+.note{margin:22px 0 0;font-size:.8rem;color:var(--muted)}
+@media (max-width:900px){.layout{grid-template-columns:minmax(0,1fr)}.side{position:static}}
+@media (max-width:560px){.card{grid-template-columns:minmax(0,1fr)}.card .th{width:100%}form button{padding:0 12px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a class="back" href="https://ahnboat.xyz/" target="_top">← Reon Ahn's page</a>
+    <div class="langs" id="langs" role="group"></div>
+  </div>
+  <header class="head">
+    <p class="kicker">SEARCH · LAB SERVER</p>
+    <h1 id="ttl">콘텐츠 찾아보기</h1>
+  </header>
+  <form id="f" role="search">
+    <input id="q" name="q" type="search" autocomplete="off">
+    <button id="go" type="submit">🔍</button>
+  </form>
+  <div class="chips" id="cats"></div>
+  <div class="sugg" id="sugg"></div>
+  <p class="stat" id="stat" aria-live="polite"></p>
+  <div class="layout">
+    <div class="res" id="res"></div>
+    <aside class="side" id="side"></aside>
+  </div>
+  <p class="note" id="note"></p>
+</div>
+<script src="i18n.js"></script>
+<script>
+(function(){
+  'use strict';
+  var T=AhnI18n.t,CAT=null,PORT=null,ONTO=null,ITEMS=[],COLOR={},MIDIMG={},CATIMG={},field=null,lastQ=null,gcT;
+  function $(id){return document.getElementById(id);}
+  function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e;}
+  function norm(s){return String(s||'').toLowerCase().normalize('NFC').replace(/\s+/g,' ').trim();}
+  function repoOf(u){var m=(u||'').match(/github\.com\/[^\/]+\/([^\/?#]+)/);return m?m[1]:'';}
+  var params=new URLSearchParams(location.search);
+  $('q').value=params.get('q')||'';
+  function J(u){return fetch(u,{cache:'no-cache'}).then(function(r){return r.ok?r.json():null;}).catch(function(){return null;});}
+  Promise.all([J('data/catalog.json'),J('data/portfolio.json'),J('data/ontology.json'),AhnI18n.ready]).then(function(a){
+    CAT=a[0]||{items:[],categories:[],mids:[]};PORT=a[1]||{items:[],mids:[]};ONTO=a[2];
+    CAT.categories.forEach(function(c){COLOR[c.name]=c.color;CATIMG[c.name]=c.image;});
+    (CAT.mids||[]).concat(PORT.mids||[]).forEach(function(m){MIDIMG[m.cat+'|'+m.name]=m.image;});
+    var midKw={};(CAT.mids||[]).forEach(function(m){midKw[m.cat+'|'+m.name]=m.keywords||[];});
+    var byRepo={};
+    if(ONTO){var P={};ONTO.pages.forEach(function(p){P[p.id]=p;});
+      ONTO.nodes.forEach(function(n){n.p.forEach(function(x){var p=P[x[0]];if(!p)return;(byRepo[p.repo]=byRepo[p.repo]||{})[n.id]=n;});});}
+    ITEMS=CAT.items.map(function(i){return {i:i,src:'catalog',kw:midKw[i.cat+'|'+i.mid]||[],concepts:byRepo[repoOf(i.repo_url)]?Object.values(byRepo[repoOf(i.repo_url)]):[]};})
+      .concat((PORT.items||[]).map(function(i){return {i:i,src:'portfolio',kw:[],concepts:[]};}));
+    statics();run();
+  });
+
+  function statics(){
+    document.title=T('콘텐츠 찾아보기')+' · Reon Ahn\'s page';
+    $('ttl').textContent=T('콘텐츠 찾아보기');
+    $('q').placeholder=T('제목·분야·개념으로 찾기 (예: 트랜스포머, 현금흐름표, 초파리)');$('q').setAttribute('aria-label',T('검색어'));
+    $('go').setAttribute('aria-label',T('찾기'));
+    var g=$('langs');g.textContent='';g.setAttribute('aria-label',T('언어'));
+    AhnI18n.langs.forEach(function(l){var b=el('button','lg',AhnI18n.names[l]);b.type='button';b.setAttribute('aria-pressed',String(l===AhnI18n.lang));b.addEventListener('click',function(){AhnI18n.set(l);});g.appendChild(b);});
+    if(!CAT)return;
+    var c=$('cats');c.textContent='';
+    var all=el('button','chip',T('전체 분야'));all.type='button';all.setAttribute('aria-pressed',String(!field));all.addEventListener('click',function(){field=null;statics();run();});c.appendChild(all);
+    var used={};ITEMS.forEach(function(x){used[x.i.cat]=1;});
+    CAT.categories.concat(PORT.categories||[]).forEach(function(k){if(!used[k.name]||c.querySelector('[data-c="'+k.name+'"]'))return;
+      var b=el('button','chip');b.type='button';b.setAttribute('data-c',k.name);b.setAttribute('aria-pressed',String(field===k.name));
+      var d=el('span','dot');d.style.background=k.color||'#ccc';b.appendChild(d);b.appendChild(document.createTextNode(T(k.name)));
+      b.addEventListener('click',function(){field=field===k.name?null:k.name;statics();run();});c.appendChild(b);});
+    var s=$('sugg');s.textContent='';s.appendChild(el('span','',T('이런 말로 찾아보세요:')));
+    ['트랜스포머','과적합','현금흐름표','초파리','블록체인','LSTM','시멘트','프롬프트'].forEach(function(w){var b=el('button','',T(w));b.type='button';b.addEventListener('click',function(){$('q').value=T(w);run(true);});s.appendChild(b);});
+    $('note').textContent=T('찾는 범위: Lab Server·Articles·Portfolio의 공개 콘텐츠와 각 해설 페이지의 지식 색인(개념). 새 콘텐츠는 매일 오전 6시에 자동으로 더해집니다.');
+  }
+
+  /* 점수: 제목 > 분야·중분류 > 개념 > 설명 */
+  function score(x,q){
+    var i=x.i,s=0,why=[];
+    function f(v,w,label){if(!v)return false;var a=norm(v),b=norm(T(v));if(a.indexOf(q)>=0||b.indexOf(q)>=0){s+=w;if(label)why.push(label);return true;}return false;}
+    f(i.title,12);f(i.sub,6);f(i.mid,5);f(i.cat,4);f(i.summary,3);
+    x.kw.forEach(function(k){f(k,3);});
+    var hits=x.concepts.filter(function(n){return norm(n.ko).indexOf(q)>=0||norm(n.en).indexOf(q)>=0;});
+    if(hits.length){s+=4+Math.min(4,hits.length);why=hits.slice(0,5);}
+    return {s:s,why:why};
+  }
+  function hl(parent,text,q){
+    var t=String(text||''),a=t.toLowerCase(),i=q?a.indexOf(q):-1;
+    if(i<0){parent.appendChild(document.createTextNode(t));return;}
+    parent.appendChild(document.createTextNode(t.slice(0,i)));parent.appendChild(el('mark','',t.slice(i,i+q.length)));parent.appendChild(document.createTextNode(t.slice(i+q.length)));
+  }
+  function gc(path,title){try{if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:path,title:title||path,event:true});}catch(e){}}
+  function run(push){
+    if(!CAT)return;
+    var raw=$('q').value.trim(),q=norm(raw);
+    if(push!==false){var u=new URL(location.href);if(raw)u.searchParams.set('q',raw);else u.searchParams.delete('q');history.replaceState(null,'',u);}
+    clearTimeout(gcT);if(q&&q!==lastQ)gcT=setTimeout(function(){lastQ=q;gc('search/'+q.slice(0,40),'search: '+raw);},1500);
+    var list=ITEMS.filter(function(x){return !field||x.i.cat===field;}).map(function(x){var r=q?score(x,q):{s:1,why:[]};return {x:x,s:r.s,why:r.why};})
+      .filter(function(r){return r.s>0;}).sort(function(a,b){return b.s-a.s;});
+    var st=$('stat');st.textContent='';
+    if(q){st.appendChild(document.createTextNode(T('“{0}” 검색 결과',raw)+' · '));AhnI18n.nb(st,'{0}개 콘텐츠',list.length);}
+    else AhnI18n.nb(st,'{0}개 콘텐츠',list.length);
+    var res=$('res');res.textContent='';
+    if(!list.length){res.appendChild(el('div','empty',T('찾는 콘텐츠가 없습니다. 다른 말로 찾거나 분야 선택을 풀어 보세요.')));}
+    list.slice(0,q?60:200).forEach(function(r){res.appendChild(card(r,q));});
+    side(q,raw);
+  }
+  function card(r,q){
+    var i=r.x.i,c=el('article','card');
+    var LK=i.repo_url?AhnI18n.link(i.repo_url,i.site_url):[i.site_url,true],url=LK[0];
+    var img=i.thumb||MIDIMG[i.cat+'|'+i.mid]||CATIMG[i.cat]||'thumbs/soon/soon_haru.webp';
+    var ta=el(url?'a':'div');if(url){ta.href=url;ta.target='_blank';ta.rel='noopener';ta.tabIndex=-1;}
+    var im=el('img','th');im.src=img;im.alt='';im.loading='lazy';ta.appendChild(im);c.appendChild(ta);
+    var b=el('div');
+    var h=el('h2');var a=el(url?'a':'span');if(url){a.href=url;a.target='_blank';a.rel='noopener';a.addEventListener('click',function(){gc('click/search/'+(repoOf(i.repo_url)||i.title.slice(0,40)),i.title);});}
+    hl(a,T(i.title),q);h.appendChild(a);b.appendChild(h);
+    var pth=el('div','path');var d=el('span','dot');d.style.background=COLOR[i.cat]||'#bbb';pth.appendChild(d);
+    pth.appendChild(el('span','',[T(i.cat),T(i.mid),i.sub?T(i.sub):''].filter(function(v){return v&&v!=='외부_콘텐츠';}).join(' › ')));b.appendChild(pth);
+    var p=el('p');hl(p,T(i.summary||''),q);b.appendChild(p);
+    if(r.why.length){var w=el('p','why',T('지식 색인에서 찾은 개념')+': ');
+      r.why.forEach(function(n,k){if(k)w.appendChild(document.createTextNode(', '));var s=el('span');hl(s,AhnI18n.lang==='ko'?n.ko:(n.en||n.ko),q);w.appendChild(s);});b.appendChild(w);}
+    var acts=el('div','acts');
+    if(url){var o=el('a','btn main',T(i.button||(i.kind==='ext'?'자세히 보기':'콘텐츠 열기')));o.href=url;o.target='_blank';o.rel='noopener';
+      o.addEventListener('click',function(){gc('click/search/'+(repoOf(i.repo_url)||i.title.slice(0,40)),i.title);});acts.appendChild(o);}
+    if(i.repo_url&&!LK[1]&&AhnI18n.lang!=='ko')acts.appendChild(el('span','btn',T('한국어 페이지')));
+    if(r.why.length){var m=el('a','btn','🧭 '+T('지도에서 보기'));m.href='ontology.html?concept='+encodeURIComponent(r.why[0].ko);m.target='_blank';m.rel='noopener';acts.appendChild(m);}
+    b.appendChild(acts);c.appendChild(b);return c;
+  }
+  function side(q,raw){
+    var s=$('side');s.textContent='';
+    s.appendChild(el('h3','','🧭 '+T('개념으로 찾기')));
+    if(!ONTO){s.appendChild(el('p','',T('개념 지도를 불러오지 못했습니다.')));return;}
+    if(!q){s.appendChild(el('p','',T('검색어를 넣으면 해설 페이지의 지식 색인에서 같은 개념을 찾아 보여 줍니다.')));}
+    else{
+      var P={};ONTO.pages.forEach(function(p){P[p.id]=p;});
+      var hits=ONTO.nodes.filter(function(n){return (norm(n.ko).indexOf(q)>=0||norm(n.en).indexOf(q)>=0)&&(!field||n.c.indexOf(field)>=0);})
+        .sort(function(a,b){var ea=norm(a.ko)===q,eb=norm(b.ko)===q;return (eb-ea)||b.p.length-a.p.length;}).slice(0,10);
+      s.appendChild(el('p','',hits.length?T('지식 색인에서 {0}개 개념을 찾았습니다.',hits.length):T('일치하는 개념이 없습니다.')));
+      var ul=el('ul');hits.forEach(function(n){var li=el('li'),a=el('a');a.href='ontology.html?concept='+encodeURIComponent(n.ko);a.target='_blank';a.rel='noopener';
+        hl(a,AhnI18n.lang==='ko'?n.ko:(n.en||n.ko),q);
+        a.appendChild(el('small','',n.c.map(function(k){return T(k);}).join(' · ')+' · '+T('{0}개 페이지',n.p.length)));li.appendChild(a);ul.appendChild(li);});
+      s.appendChild(ul);
+    }
+    var m=el('a','map','🧭 '+T('분야별 온톨로지 3D 지도'));m.href='ontology.html';m.target='_blank';m.rel='noopener';s.appendChild(m);
+  }
+  var tmr;
+  $('q').addEventListener('input',function(){clearTimeout(tmr);tmr=setTimeout(function(){run();},250);});
+  $('f').addEventListener('submit',function(e){e.preventDefault();clearTimeout(tmr);run();});
+  AhnI18n.onChange(function(){statics();run(false);});
+  AhnI18n.ready.then(statics);
+})();
+</script>
+<script data-goatcounter="https://ahnboat.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
