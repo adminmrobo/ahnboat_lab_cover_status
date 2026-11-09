@@ -22,6 +22,7 @@ import smtplib
 import sys
 import urllib.parse
 import urllib.request
+import urllib.error
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.utils import formataddr
@@ -41,8 +42,13 @@ def api(path, **q):
     req = urllib.request.Request(url, headers={"Authorization": "Bearer " + tok,
                                                "Content-Type": "application/json",
                                                "User-Agent": "ahnboat-daily-report"})
-    with urllib.request.urlopen(req, timeout=60) as r:
-        return json.loads(r.read().decode("utf-8"))
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            return json.loads(r.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        body = e.read().decode("utf-8", "replace")[:400]
+        print(f"GoatCounter {path} → {e.code}: {body}")
+        raise
 
 
 def daily_map(stats):
@@ -58,12 +64,17 @@ def daily_map(stats):
 def collect(day):
     d0 = day - dt.timedelta(days=29)
     w0 = day - dt.timedelta(days=6)
-    iso = lambda x: x.isoformat()
-    tot = api("/stats/total", start=iso(d0), end=iso(day))
+    iso = lambda x: x.isoformat() + "T00:00:00Z"
+    end = (day + dt.timedelta(days=1)).isoformat() + "T00:00:00Z"
+    try:
+        print("API 확인:", json.dumps(api("/me"), ensure_ascii=False)[:120])
+    except Exception:
+        pass
+    tot = api("/stats/total", start=iso(d0), end=end)
     series = daily_map(tot.get("stats"))
     hits, after = [], None
     for _ in range(5):  # 최대 500개 경로
-        q = dict(start=iso(w0), end=iso(day), limit=100)
+        q = dict(start=iso(w0), end=end, limit=100)
         if after:
             q["exclude_paths"] = after
         r = api("/stats/hits", **q)
@@ -72,7 +83,7 @@ def collect(day):
             break
         after = ",".join(str(h["path_id"]) for h in hits)
     try:
-        refs = api("/stats/toprefs", start=iso(day), end=iso(day), limit=10).get("stats") or []
+        refs = api("/stats/toprefs", start=iso(day), end=end, limit=10).get("stats") or []
     except Exception:
         refs = []
     return {"series": series, "hits": hits, "refs": refs}
