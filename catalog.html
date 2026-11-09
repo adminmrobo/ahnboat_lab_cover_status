@@ -224,6 +224,7 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
     m.appendChild(el('p','step','1단계 · 분야 고르기'));
     var g=el('div','grid big');
     CATS.forEach(function(c){var its=inCat(c.name);if(!its.length)return;var om=onlyMid(c.name);g.appendChild(bigTile(c,c,H(om?[c.name,om]:[c.name]),its.length,label(c)));});
+    if(!SINGLE&&VC.fill_to){for(var q=g.children.length;q<VC.fill_to;q++)g.appendChild(soonTile({color:'#8a94a0'}));if(VC.fill_to===6)g.classList.add('six');}
     m.appendChild(g);
   }
   function step2(m,c){
@@ -239,7 +240,7 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
   function soonTile(c){
     var t=el('div','tile big soon');t.setAttribute('aria-label','준비 중인 갈래');t.style.setProperty('--c',c.color);
     var f=el('span','pic');f.appendChild(el('span','ph','COMING SOON'));t.appendChild(f);
-    var b=el('span','tbody');b.appendChild(el('span','rack',VC.mid_label||''));
+    var b=el('span','tbody');b.appendChild(el('span','rack',VC.soon_label||VC.mid_label||''));
     b.appendChild(el('h3','','준비 중'));b.appendChild(el('p','',VC.soon_desc||'새 갈래가 곧 열립니다.'));
     t.appendChild(b);return t;
   }
