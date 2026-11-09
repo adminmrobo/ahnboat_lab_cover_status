@@ -1,6 +1,8 @@
 {
  "_guide": "공개 카탈로그(catalog.html)의 화면 설정. ?view=이름 으로 고른다. server=Lab Server(기본), articles=논문·발표, portfolio=포트폴리오.",
- "server": {},
+ "server": {
+  "random": 3
+ },
  "articles": {
   "only": "논문 해설",
   "root_label": "Articles & Presentations",

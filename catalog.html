@@ -104,6 +104,14 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
 .lightview .tile.big .pic{border-bottom:2px solid #1f2224}
 .lightview .back,.lightview .jump a{border:1.5px solid #1f2224}
 .grid.big{grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
+.picks{margin-top:26px}
+.pickhead{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+.pickhead .step{margin:0}
+.reroll{font:inherit;font-size:13px;font-weight:700;cursor:pointer;border:1.5px solid currentColor;border-radius:99px;padding:4px 12px;background:transparent;color:inherit}
+.lightview .reroll{border:2px solid #1f2224;box-shadow:2px 2px 0 #1f2224;background:#fff;color:#1f2224}
+.cards.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:760px){.cards.three{grid-template-columns:1fr}}
+.cbody .pcat{display:block;font-family:var(--mono,monospace);font-size:11px;letter-spacing:.06em;color:var(--c);font-weight:700;margin-bottom:2px}
 .tile.big{padding:0;overflow:hidden;gap:0}
 .tile.big::before{display:none}
 .tile.big .pic{position:relative;display:block;aspect-ratio:16/9;background:var(--c);overflow:hidden;border-bottom:3px solid var(--c)}
@@ -226,6 +234,17 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
     CATS.forEach(function(c){var its=inCat(c.name);if(!its.length)return;var om=onlyMid(c.name);g.appendChild(bigTile(c,c,H(om?[c.name,om]:[c.name]),its.length,label(c)));});
     if(!SINGLE&&VC.fill_to){for(var q=g.children.length;q<VC.fill_to;q++)g.appendChild(soonTile({color:'#8a94a0'}));if(VC.fill_to===6)g.classList.add('six');}
     m.appendChild(g);
+    if(VC.random)randomPicks(m,VC.random);
+  }
+  function randomPicks(m,n){
+    var pool=ITEMS.filter(function(i){return i.kind==='repo'&&i.thumb&&i.site_url;});if(pool.length<n)return;
+    var sec=el('section','picks');var hd=el('div','pickhead');
+    hd.appendChild(el('p','step',VC.random_label||'오늘의 랜덤 콘텐츠 · 완료된 콘텐츠 중 3개'));
+    var re=el('button','reroll','🎲 다시 뽑기');re.type='button';hd.appendChild(re);sec.appendChild(hd);
+    var g=el('div','cards three');sec.appendChild(g);
+    function draw(){var a=pool.slice();for(var k=a.length-1;k>0;k--){var j=Math.floor(Math.random()*(k+1));var t=a[k];a[k]=a[j];a[j]=t;}
+      g.textContent='';a.slice(0,n).forEach(function(i){var c=CATS.filter(function(x){return x.name===i.cat;})[0]||{color:'#888',name:i.cat};var k2=card(i,c);var pi=k2.querySelector('img');if(pi)pi.loading='eager';var b=k2.querySelector('.cbody');if(b)b.insertBefore(el('span','pcat',(label(c)?label(c)+' · ':'')+c.name),b.firstChild);g.appendChild(k2);});post();}
+    re.addEventListener('click',draw);draw();m.appendChild(sec);
   }
   function step2(m,c){
     if(SINGLE){hero(m);m.appendChild(el('p','step','1단계 · 갈래 고르기'));}
