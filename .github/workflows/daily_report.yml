@@ -4,7 +4,7 @@ on:
   schedule:
     - cron: "47 22 * * *"   # 매일 한국 시간 오전 7시 47분
   workflow_dispatch:
-  push:                     # 레포트 프로그램을 고치면 한 번 바로 돌려 본다
+  push:                     # 레포트 프로그램을 고치면 한 번 바로 돌려 본다(첫 메일 확인)
     branches: [main]
     paths: ["scripts/daily_report.py", ".github/workflows/daily_report.yml"]
 
