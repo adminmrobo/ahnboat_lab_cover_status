@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>오늘의 레포트 · AHNBOAT LAB</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@500;700&display=swap">
+<style>
+:root{
+  --bg:#f3f1ec; --paper:#fbfaf7; --panel:#ffffff; --ink:#1f2224; --muted:#5f6663; --line:#1f2224; --rule:#e4e0d8;
+  --violet:#8f74ef; --violet-ink:#6b4fd6; --pink:#d9668f; --sun:#e0a92a; --up:#1f9e66; --down:#c0392b;
+  --font:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace; color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:15px;line-height:1.55;overflow-x:hidden;word-break:keep-all}
+.wrap{max-width:1080px;margin:0 auto;padding:18px max(16px,env(safe-area-inset-left,0px)) 28px}
+.kicker{display:inline-block;font-family:var(--mono);font-size:12px;letter-spacing:.1em;border:1.5px solid var(--line);border-radius:99px;padding:3px 10px;background:#fff}
+h1{margin:6px 0 2px;font-size:clamp(26px,3.4vw,34px);line-height:1.15}
+.sub{margin:0 0 16px;color:var(--muted);font-size:14px}
+.card{background:var(--panel);border:2px solid var(--line);border-radius:18px;box-shadow:4px 4px 0 var(--line);padding:16px 18px;min-width:0}
+.dot{background:radial-gradient(circle at 1px 1px,#e9e5dc 1px,transparent 1.5px) 0 0/18px 18px,var(--paper)}
+button{font:inherit;color:inherit}
+.btn{cursor:pointer;border:2px solid var(--line);border-radius:12px;padding:8px 14px;font-weight:700;background:#fff;box-shadow:3px 3px 0 var(--line);transition:transform .12s,box-shadow .12s}
+.btn:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--line)}
+.btn:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--line)}
+.btn.sun{background:var(--sun)}
+.btn:disabled{opacity:.45;cursor:default;transform:none;box-shadow:3px 3px 0 var(--line)}
+/* 잠금 */
+.lock{display:flex;justify-content:center;padding-top:40px}
+.lockcard{max-width:440px;width:100%}
+.lockcard h2{margin:0 0 6px;font-size:20px}
+.lockcard p{margin:0 0 12px;color:var(--muted);font-size:14px}
+.lockcard form{display:flex;gap:8px}
+.lockcard input[type=password]{flex:1;min-width:0;font:inherit;border:2px solid var(--line);border-radius:12px;padding:8px 12px}
+.remember{display:block;margin-top:10px;font-size:13px;color:var(--muted)}
+.err{color:var(--down);font-size:13px;min-height:1.4em;margin:8px 0 0}
+/* 하루 무대 */
+.stage{display:grid;grid-template-columns:150px minmax(0,1fr);gap:18px;align-items:center}
+.face{width:150px;height:150px;border:2px solid var(--line);border-radius:16px;background:#dfeaf6;overflow:hidden;position:relative}
+.face img{width:100%;height:100%;object-fit:cover;image-rendering:pixelated;display:block}
+.face.pop{animation:pop .35s ease}
+@keyframes pop{0%{transform:scale(.94)}60%{transform:scale(1.04)}100%{transform:scale(1)}}
+.who{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--violet-ink)}
+.bubble{position:relative;background:#fff;border:2px solid var(--line);border-radius:16px;padding:12px 16px;font-size:18px;font-weight:700;line-height:1.5;min-height:4.4em;margin-top:4px}
+.bubble::before{content:"";position:absolute;left:-11px;top:24px;border:9px solid transparent;border-right-color:var(--line);border-left:0}
+.bubble::after{content:"";position:absolute;left:-7px;top:26px;border:7px solid transparent;border-right-color:#fff;border-left:0}
+.ctrl{display:flex;align-items:center;gap:10px;margin-top:10px;flex-wrap:wrap}
+.pips{display:flex;gap:5px}
+.pips i{width:9px;height:9px;border-radius:50%;border:1.5px solid var(--line);background:#fff}
+.pips i.on{background:var(--violet)}
+@media (max-width:600px){.stage{grid-template-columns:1fr}.face{width:120px;height:120px}.bubble{font-size:16px}.bubble::before,.bubble::after{display:none}}
+/* 숫자 */
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:16px 0}
+@media (max-width:760px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.kpi .l{font-size:12.5px;color:var(--muted)}
+.kpi .v{font-size:28px;font-weight:700;line-height:1.2;font-variant-numeric:tabular-nums}
+.kpi .d{font-size:12.5px;font-weight:700}
+.up{color:var(--up)}.down{color:var(--down)}
+.grid2{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:16px}
+@media (max-width:860px){.grid2{grid-template-columns:1fr}}
+h2.sec{margin:0 0 10px;font-size:17px;display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.seg{display:inline-flex;border:2px solid var(--line);border-radius:10px;overflow:hidden}
+.seg button{border:0;background:#fff;padding:3px 10px;font-size:12.5px;font-weight:700;cursor:pointer}
+.seg button[aria-pressed=true]{background:var(--violet);color:#fff}
+.chart{position:relative}
+.chart svg{display:block;width:100%;height:auto;overflow:visible}
+.tip{position:absolute;pointer-events:none;background:#fff;border:2px solid var(--line);border-radius:10px;padding:3px 8px;font-size:12.5px;font-weight:700;white-space:nowrap;transform:translate(-50%,-115%);display:none}
+.hl{outline:3px dashed var(--pink);outline-offset:4px;transition:outline-color .3s}
+/* 순위 */
+.rank{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.rank li{border:1.5px solid var(--line);border-radius:10px;padding:6px 10px;background:#fff;cursor:pointer}
+.rank li[aria-expanded=true]{background:#f4f0ff}
+.rank .row{display:grid;grid-template-columns:22px minmax(0,1fr) auto;gap:8px;align-items:center}
+.rank .no{font-family:var(--mono);font-weight:700;color:var(--violet-ink)}
+.rank .t{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:700;font-size:14px}
+.rank .m{font-family:var(--mono);font-size:11px;color:var(--muted)}
+.rank .n{font-weight:700;font-variant-numeric:tabular-nums}
+.rank .bar{height:8px;border-radius:4px;background:var(--pink);margin-top:5px}
+.mini{display:none;gap:4px;align-items:flex-end;height:46px;margin-top:8px}
+.rank li[aria-expanded=true] .mini{display:flex}
+.mini span{flex:1;background:var(--violet);border-radius:3px 3px 0 0;min-height:2px;position:relative}
+.mini span b{position:absolute;top:-15px;left:0;right:0;text-align:center;font-size:10px;font-family:var(--mono)}
+.empty{color:var(--muted);font-size:14px;margin:0}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.tabs button{cursor:pointer;border:1.5px solid var(--line);border-radius:99px;padding:2px 10px;background:#fff;font-size:12.5px;font-weight:700}
+.tabs button[aria-pressed=true]{background:var(--ink);color:#fff}
+.refs{list-style:none;margin:0;padding:0}
+.refs li{display:flex;justify-content:space-between;gap:10px;padding:5px 0;border-bottom:1px dashed var(--rule);font-size:14px}
+.refs li span:first-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.foot{margin-top:16px;font-size:12.5px;color:var(--muted);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.mt{margin-top:16px}
+@media (prefers-reduced-motion:reduce){.face.pop{animation:none}.btn{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <span class="kicker">AHNBOAT LAB · DAILY REPORT</span>
+  <h1>오늘의 레포트</h1>
+  <p class="sub" id="sub">조수 하루가 어제 연구실 손님들을 정리해 드려요.</p>
+
+  <section class="lock" id="lock" aria-labelledby="lockTitle">
+    <div class="card lockcard dot">
+      <h2 id="lockTitle">관리자 키를 넣어 주세요</h2>
+      <p>레포트 숫자는 관리자 키로 잠겨 있습니다. 키는 이 브라우저 안에서만 쓰이고 어디로도 보내지지 않습니다.</p>
+      <form id="lockForm" autocomplete="off">
+        <input type="password" id="keyIn" placeholder="관리자 키" aria-label="관리자 키" autocomplete="current-password" required>
+        <button type="submit" class="btn sun" id="unlockBtn">열기</button>
+      </form>
+      <label class="remember"><input type="checkbox" id="remember"> 이 탭을 닫을 때까지 기억</label>
+      <p class="err" id="lockErr" role="alert"></p>
+    </div>
+  </section>
+
+  <div id="app" hidden>
+    <section class="card dot stage" aria-label="조수 하루의 해설">
+      <div class="face" id="face"><img id="faceImg" alt="조수 하루"></div>
+      <div>
+        <span class="who">조수 하루</span>
+        <div class="bubble" id="bubble" aria-live="polite"></div>
+        <div class="ctrl">
+          <button class="btn" id="prev" type="button">◀ 이전</button>
+          <button class="btn sun" id="next" type="button">다음 ▶</button>
+          <div class="pips" id="pips" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="kpis" id="kpis"></div>
+
+    <div class="grid2">
+      <section class="card" id="secTrend">
+        <h2 class="sec">📈 방문 추이 <span class="seg" role="group" aria-label="기간"><button type="button" data-r="7" aria-pressed="true">7일</button><button type="button" data-r="30" aria-pressed="false">30일</button></span></h2>
+        <div class="chart" id="chart"><div class="tip" id="tip"></div></div>
+      </section>
+      <section class="card" id="secRefs">
+        <h2 class="sec">🧭 어디서 왔을까? <small style="font-size:12px;color:var(--muted);font-weight:500">어제</small></h2>
+        <ul class="refs" id="refs"></ul>
+      </section>
+    </div>
+
+    <section class="card mt" id="secClicks">
+      <h2 class="sec">🏆 많이 열린 콘텐츠 <span class="seg" role="group" aria-label="기준"><button type="button" data-k="day" aria-pressed="true">어제</button><button type="button" data-k="week_sum" aria-pressed="false">최근 7일</button></span></h2>
+      <div class="tabs" id="tabs"></div>
+      <ul class="rank" id="clicks"></ul>
+    </section>
+
+    <section class="card mt" id="secPages">
+      <h2 class="sec">📄 많이 본 페이지 <small style="font-size:12px;color:var(--muted);font-weight:500">어제 · 눌러서 7일 보기</small></h2>
+      <ul class="rank" id="pages"></ul>
+    </section>
+
+    <div class="foot"><span id="gen"></span><button class="btn" id="lockBtn" type="button">잠그기</button></div>
+  </div>
+</div>
+<script>
+(function(){
+  'use strict';
+  var MENU={server:'Lab Server',articles:'Articles',portfolio:'Portfolio'};
+  var R=null,step=0,range=7,ckey='day',menu='';
+  function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e;}
+  function fmt(n){return Number(n||0).toLocaleString('ko-KR');}
+  function pct(a,b){return b?Math.round((a-b)*100/b):null;}
+
+  /* ---------- 잠금 해제 (scripts/hubcrypt.py와 같은 형식) ---------- */
+  var enc=new TextEncoder(),dec=new TextDecoder(),SS='hub-admin-key';
+  function b64d(s){var b=atob(s),u=new Uint8Array(b.length);for(var k=0;k<b.length;k++)u[k]=b.charCodeAt(k);return u;}
+  function unlock(o,pass){
+    return crypto.subtle.importKey('raw',enc.encode(pass),'PBKDF2',false,['deriveKey']).then(function(base){
+      return crypto.subtle.deriveKey({name:'PBKDF2',hash:'SHA-256',salt:b64d(o.salt),iterations:o.iter},base,{name:'AES-GCM',length:256},false,['decrypt']);})
+      .then(function(k){return crypto.subtle.decrypt({name:'AES-GCM',iv:b64d(o.iv)},k,b64d(o.ct));});
+  }
+  function tryUnlock(pass,quiet){
+    var err=document.getElementById('lockErr'),btn=document.getElementById('unlockBtn');
+    err.textContent='';btn.disabled=true;btn.textContent='여는 중…';
+    return fetch('data/report/latest.json.enc',{cache:'no-cache'}).then(function(r){if(!r.ok)throw new Error(r.status===404?'아직 만들어진 레포트가 없습니다':'레포트를 불러오지 못했습니다');return r.json();})
+      .then(function(o){return unlock(o,pass);}).then(function(b){
+        try{if(document.getElementById('remember').checked||quiet)sessionStorage.setItem(SS,pass);}catch(e){}
+        show(JSON.parse(dec.decode(b)));
+      }).catch(function(e){
+        try{sessionStorage.removeItem(SS);}catch(x){}
+        if(!quiet)err.textContent=(e&&e.name==='OperationError')?'키가 맞지 않습니다.':(e.message||String(e));
+      }).then(function(){btn.disabled=false;btn.textContent='열기';});
+  }
+  document.getElementById('lockForm').addEventListener('submit',function(e){e.preventDefault();tryUnlock(document.getElementById('keyIn').value,false);});
+  document.getElementById('lockBtn').addEventListener('click',function(){try{sessionStorage.removeItem(SS);}catch(e){}location.reload();});
+
+  /* ---------- 하루의 해설: 한 줄씩 넘기며 해당 칸을 짚어 준다 ---------- */
+  var TARGET=[null,'secTrend','secClicks','secClicks','secRefs',null];
+  var FACES=['E13','E07','E12','E01','E07','E01'];
+  function setFace(e){var im=document.getElementById('faceImg'),f=document.getElementById('face');im.src='thumbs/report/haru_'+e+'.png';f.classList.remove('pop');void f.offsetWidth;f.classList.add('pop');}
+  var typing=null;
+  function type(text){
+    var b=document.getElementById('bubble');clearInterval(typing);
+    if(matchMedia('(prefers-reduced-motion: reduce)').matches){b.textContent=text;return;}
+    var i=0;b.textContent='';typing=setInterval(function(){i+=2;b.textContent=text.slice(0,i);if(i>=text.length)clearInterval(typing);},18);
+  }
+  function go(n){
+    var L=R.lines;step=Math.max(0,Math.min(L.length-1,n));
+    type(L[step]);setFace(step===0?R.mood:(FACES[step]||'E07'));
+    document.querySelectorAll('.hl').forEach(function(x){x.classList.remove('hl');});
+    var t=TARGET[step]&&document.getElementById(TARGET[step]);if(t&&step>0){t.classList.add('hl');t.scrollIntoView({behavior:'smooth',block:'nearest'});}
+    document.getElementById('prev').disabled=step===0;
+    document.getElementById('next').textContent=step===L.length-1?'처음부터 ↺':'다음 ▶';
+    var p=document.getElementById('pips');p.textContent='';L.forEach(function(_,k){p.appendChild(el('i',k===step?'on':''));});
+  }
+  document.getElementById('prev').addEventListener('click',function(){go(step-1);});
+  document.getElementById('next').addEventListener('click',function(){go(step===R.lines.length-1?0:step+1);});
+
+  /* ---------- 숫자 칸 ---------- */
+  function kpis(){
+    var box=document.getElementById('kpis');box.textContent='';
+    var ch=pct(R.pageviews,R.pageviews_prev),wch=pct(R.week_total,R.last_week_total);
+    [['어제 방문',R.pageviews,ch,'그저께보다'],['콘텐츠 클릭',R.clicks,null,'어제'],['최근 7일 방문',R.week_total,wch,'지난주보다'],['최근 30일 방문',R.month.reduce(function(s,x){return s+x.count;},0),null,'합계']].forEach(function(k){
+      var c=el('div','card kpi');c.appendChild(el('div','l',k[0]));c.appendChild(el('div','v',fmt(k[1])));
+      var d=el('div','d '+(k[2]==null?'':k[2]>=0?'up':'down'),k[2]==null?k[3]:k[3]+' '+(k[2]>=0?'+':'')+k[2]+'%');if(k[2]==null)d.style.color='var(--muted)';
+      c.appendChild(d);box.appendChild(c);});
+  }
+  /* ---------- 추이 그래프 (SVG) ---------- */
+  function chart(){
+    var data=range===7?R.week:R.month,box=document.getElementById('chart'),tip=document.getElementById('tip');
+    var old=box.querySelector('svg');if(old)old.remove();
+    var W=600,H=220,P={l:34,r:10,t:14,b:26},max=Math.max.apply(null,data.map(function(d){return d.count;}).concat([1]));
+    var ns='http://www.w3.org/2000/svg',svg=document.createElementNS(ns,'svg');svg.setAttribute('viewBox','0 0 '+W+' '+H);svg.setAttribute('role','img');svg.setAttribute('aria-label',range+'일 방문 추이');
+    function N(t,a){var e=document.createElementNS(ns,t);for(var k in a)e.setAttribute(k,a[k]);svg.appendChild(e);return e;}
+    var cw=(W-P.l-P.r)/data.length;
+    [0,.5,1].forEach(function(f){var y=P.t+(H-P.t-P.b)*(1-f);N('line',{x1:P.l,x2:W-P.r,y1:y,y2:y,stroke:'#e4e0d8','stroke-dasharray':'3 4'});var tx=N('text',{x:P.l-6,y:y+4,'text-anchor':'end','font-size':11,fill:'#5f6663'});tx.textContent=fmt(Math.round(max*f));});
+    data.forEach(function(d,i){
+      var h=(H-P.t-P.b)*d.count/max,x=P.l+i*cw+cw*.18,y=H-P.b-h,last=i===data.length-1;
+      var r=N('rect',{x:x,y:y,width:cw*.64,height:Math.max(h,1.5),rx:Math.min(4,cw*.2),fill:last?'#d9668f':'#8f74ef',stroke:'#1f2224','stroke-width':range===7?1.5:0});
+      if(range===7||i%5===4||last){var t=N('text',{x:x+cw*.32,y:H-8,'text-anchor':'middle','font-size':11,fill:'#5f6663'});t.textContent=d.day.slice(5).replace('-','.');}
+      var hit=N('rect',{x:P.l+i*cw,y:P.t,width:cw,height:H-P.t-P.b,fill:'transparent'});
+      function on(){var bb=svg.getBoundingClientRect(),sx=bb.width/W;tip.style.display='block';tip.style.left=((x+cw*.32)*sx)+'px';tip.style.top=(y*sx)+'px';tip.textContent=d.day.slice(5).replace('-','.')+' · '+fmt(d.count)+'번';}
+      hit.addEventListener('mouseenter',on);hit.addEventListener('click',on);hit.addEventListener('mouseleave',function(){tip.style.display='none';});
+    });
+    box.insertBefore(svg,tip);
+  }
+  document.querySelectorAll('#secTrend .seg button').forEach(function(b){b.addEventListener('click',function(){range=+b.dataset.r;document.querySelectorAll('#secTrend .seg button').forEach(function(x){x.setAttribute('aria-pressed',String(x===b));});chart();});});
+  /* ---------- 순위 ---------- */
+  function rank(list,box,key,label,meta){
+    box.textContent='';var top=Math.max.apply(null,list.map(function(x){return x[key];}).concat([1]));
+    if(!list.length){box.appendChild(el('p','empty','아직 기록이 없어요. 내일 레포트부터 쌓여요!'));return;}
+    list.slice(0,10).forEach(function(x,k){
+      var li=el('li');li.setAttribute('aria-expanded','false');li.tabIndex=0;
+      var row=el('div','row');row.appendChild(el('span','no',String(k+1)));
+      var mid=el('div');mid.appendChild(el('div','t',label(x)));if(meta)mid.appendChild(el('div','m',meta(x)));row.appendChild(mid);
+      row.appendChild(el('span','n',fmt(x[key])));li.appendChild(row);
+      var bar=el('div','bar');bar.style.width=Math.max(2,x[key]*100/top)+'%';li.appendChild(bar);
+      var mini=el('div','mini');var mx=Math.max.apply(null,x.week.concat([1]));x.week.forEach(function(v){var s=el('span');s.style.height=(v*100/mx)+'%';s.appendChild(el('b','',String(v)));mini.appendChild(s);});li.appendChild(mini);
+      function tog(){li.setAttribute('aria-expanded',li.getAttribute('aria-expanded')==='true'?'false':'true');}
+      li.addEventListener('click',tog);li.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();tog();}});
+      box.appendChild(li);});
+  }
+  function clicks(){
+    var list=R.top_clicks.filter(function(c){return !menu||c.menu===menu;}).slice().sort(function(a,b){return b[ckey]-a[ckey];}).filter(function(c){return c[ckey]>0;});
+    rank(list,document.getElementById('clicks'),ckey,function(c){return c.title||c.name;},function(c){return (MENU[c.menu]||c.menu)+' · 눌러서 7일 보기';});
+  }
+  function tabs(){
+    var box=document.getElementById('tabs');box.textContent='';
+    [['','전체']].concat(Object.keys(R.menus).map(function(k){return [k,MENU[k]||k];})).forEach(function(t){
+      var b=el('button','',t[1]);b.type='button';b.setAttribute('aria-pressed',String(t[0]===menu));
+      b.addEventListener('click',function(){menu=t[0];tabs();clicks();});box.appendChild(b);});
+  }
+  document.querySelectorAll('#secClicks .seg button').forEach(function(b){b.addEventListener('click',function(){ckey=b.dataset.k;document.querySelectorAll('#secClicks .seg button').forEach(function(x){x.setAttribute('aria-pressed',String(x===b));});clicks();});});
+  function refs(){var u=document.getElementById('refs');u.textContent='';if(!R.refs.length){u.appendChild(el('li','','기록이 없어요'));return;}
+    R.refs.forEach(function(r){var li=el('li');li.appendChild(el('span','',r.name));li.appendChild(el('b','',fmt(r.count)));u.appendChild(li);});}
+
+  function show(d){
+    R=d;document.getElementById('lock').hidden=true;document.getElementById('app').hidden=false;
+    document.getElementById('sub').textContent=R.date+' ('+R.dow+') 하루치 기록 · 조수 하루가 정리했어요.';
+    document.getElementById('gen').textContent='만든 시각 '+R.generated+' · GoatCounter 기록 기준';
+    kpis();chart();tabs();clicks();refs();
+    rank(R.top_pages.filter(function(p){return p.day>0||p.week_sum>0;}),document.getElementById('pages'),'day',function(p){return p.title||p.path;},function(p){return p.path;});
+    go(0);
+  }
+  var saved='';try{saved=sessionStorage.getItem(SS)||'';}catch(e){}
+  if(saved)tryUnlock(saved,true);else document.getElementById('keyIn').focus();
+})();
+</script>
+</body>
+</html>

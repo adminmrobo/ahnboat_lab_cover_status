@@ -1,0 +1,45 @@
+name: 오늘의 레포트
+
+on:
+  schedule:
+    - cron: "47 22 * * *"   # 매일 한국 시간 오전 7시 47분
+  workflow_dispatch:
+  push:                     # 레포트 프로그램을 고치면 한 번 바로 돌려 본다
+    branches: [main]
+    paths: ["scripts/daily_report.py", ".github/workflows/daily_report.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-report
+  cancel-in-progress: false
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: GoatCounter 숫자로 하루의 레포트 만들고 메일 보내기
+        env:
+          GOATCOUNTER_TOKEN: ${{ secrets.GOATCOUNTER_TOKEN }}
+          HUB_KEY: ${{ secrets.HUB_KEY }}
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: |
+          pip install --quiet cryptography
+          python scripts/daily_report.py
+
+      - name: 잠근 레포트 데이터 커밋
+        run: |
+          if [ -z "$(git status --porcelain -- data/report/)" ]; then echo "변경 없음"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/report/
+          git commit -m "오늘의 레포트 데이터 갱신"
+          for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done
