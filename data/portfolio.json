@@ -11,7 +11,7 @@
     "AI 뉴스",
     "서비스"
    ],
-   "image": ""
+   "image": "thumbs/cats/C06-M3.webp"
   },
   {
    "name": "특허",
@@ -61,7 +61,7 @@
     "해외 비즈니스",
     "연구 노트"
    ],
-   "image": ""
+   "image": "thumbs/cats/C04-M2.webp"
   }
  ],
  "mids": [
@@ -97,10 +97,10 @@
    "sub": "",
    "kind": "portfolio",
    "repo_url": "",
-   "site_url": "http://www.money-robo.com",
-   "link": "http://www.money-robo.com",
+   "site_url": "https://money-robo.com/",
+   "link": "https://money-robo.com/",
    "langs": [],
-   "thumb": "https://ahnboat.xyz/wp-content/uploads/2026/10/reon-ahn039s-blog-6ac1551829219.png",
+   "thumb": "thumbs/cats/C06-M3.webp",
    "button": "사이트 열기",
    "note": ""
   },
@@ -256,7 +256,7 @@
   },
   {
    "title": "Global Business : 해외 비즈니스 블로그",
-   "summary": "",
+   "summary": "해외 출장에서 만난 나라별 문화와 현지 비즈니스 경험을 기록한 글",
    "cat": "블로그",
    "mid": "블로그",
    "sub": "",
@@ -265,13 +265,13 @@
    "site_url": "https://ahnboat.xyz/global_business/",
    "link": "https://ahnboat.xyz/global_business/",
    "langs": [],
-   "thumb": "https://ahnboat.xyz/wp-content/uploads/2026/10/t08_global_business_c1.png",
+   "thumb": "thumbs/cats/C06-M1.webp",
    "button": "블로그 열기",
    "note": ""
   },
   {
    "title": "Article & Study : 연구 및 분석",
-   "summary": "",
+   "summary": "인공지능·경제학·블록체인·암호화폐를 연구하고 분석한 글",
    "cat": "블로그",
    "mid": "블로그",
    "sub": "",
@@ -280,7 +280,7 @@
    "site_url": "https://ahnboat.xyz/articlestudy/",
    "link": "https://ahnboat.xyz/articlestudy/",
    "langs": [],
-   "thumb": "https://ahnboat.xyz/wp-content/uploads/2026/10/t09_article_study_c1.png",
+   "thumb": "thumbs/cats/C04-M2.webp",
    "button": "블로그 열기",
    "note": ""
   }
