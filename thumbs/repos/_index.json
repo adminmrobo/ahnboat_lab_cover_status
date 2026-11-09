@@ -77,6 +77,10 @@
   "src": null,
   "pushed_at": "2026-11-06T04:32:07Z"
  },
+ "data_science_for_business": {
+  "src": null,
+  "pushed_at": "2026-11-08T18:04:22Z"
+ },
  "data_set_2024_fintech": {
   "src": null,
   "pushed_at": "2024-07-19T11:29:10Z"
@@ -374,9 +378,19 @@
   "src": null,
   "pushed_at": "2026-11-04T00:03:44Z"
  },
+ "statistics_note_ch04_statistical-estimation": {
+  "src": "name:assets/og_2_10.png",
+  "pushed_at": "2026-11-08T15:38:56Z",
+  "made": "2026-11-09"
+ },
  "statistics_note_ch04_Statistical-Estimation_01_a": {
   "src": null,
   "pushed_at": "2026-11-05T11:19:12Z"
+ },
+ "statistics_note_ch05_hypothesis-testing": {
+  "src": "name:assets/og_3_1.png",
+  "pushed_at": "2026-11-08T15:38:59Z",
+  "made": "2026-11-09"
  },
  "test": {
   "src": null,
