@@ -109,6 +109,13 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
 .tile.big .pic{position:relative;display:block;aspect-ratio:16/9;background:var(--c);overflow:hidden;border-bottom:3px solid var(--c)}
 .tile.big .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;image-rendering:pixelated}
 .tile.big .pic .ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:19px;padding:12px;text-align:center;line-height:1.25;background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.09) 0 8px,transparent 8px 16px)}
+.grid.big.six{grid-template-columns:repeat(6,minmax(0,1fr))}
+@media (max-width:1180px){.grid.big.six{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:640px){.grid.big.six{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:400px){.grid.big.six{grid-template-columns:1fr}}
+.tile.big.soon{cursor:default;opacity:.72}
+.tile.big.soon:hover,.lightview .tile.big.soon:hover{transform:none;box-shadow:4px 4px 0 #1f2224}
+.tile.big.soon .pic .ph{background-color:#cdd6df;color:#6b7785;letter-spacing:.12em;font-family:var(--mono,monospace)}
 .tile.big .tbody{display:flex;flex-direction:column;gap:7px;padding:12px 15px 14px;flex:1}
 .kw{display:flex;flex-wrap:wrap;gap:4px 8px;font-size:12.5px;color:var(--c)}
 .kw span{font-weight:500}
@@ -226,7 +233,15 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
     if(c.desc)m.appendChild(el('p','secdesc',c.desc));}
     var g=el('div','grid big');
     midsOf(c.name).forEach(function(md){g.appendChild(bigTile(c,midInfo(c.name,md),H([c.name,md]),inMid(c.name,md).length,SINGLE?(VC.mid_label||''):(label(c)?label(c)+' · ':'')+c.name));});
+    if(SINGLE&&VC.fill_to){for(var q=g.children.length;q<VC.fill_to;q++)g.appendChild(soonTile(c));if(VC.fill_to===6)g.classList.add('six');}
     m.appendChild(g);
+  }
+  function soonTile(c){
+    var t=el('div','tile big soon');t.setAttribute('aria-label','준비 중인 갈래');t.style.setProperty('--c',c.color);
+    var f=el('span','pic');f.appendChild(el('span','ph','COMING SOON'));t.appendChild(f);
+    var b=el('span','tbody');b.appendChild(el('span','rack',VC.mid_label||''));
+    b.appendChild(el('h3','','준비 중'));b.appendChild(el('p','',VC.soon_desc||'새 갈래가 곧 열립니다.'));
+    t.appendChild(b);return t;
   }
   function card(i,c){
     var k=el('article','card'+(i.kind==='ext'&&!i.thumb?' ext':''));k.style.setProperty('--c',c.color);

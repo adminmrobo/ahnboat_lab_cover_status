@@ -40,7 +40,9 @@
      "포스터"
     ]
    }
-  }
+  },
+  "fill_to": 6,
+  "soon_desc": "새 논문과 발표가 곧 이 자리에 올라옵니다."
  },
  "portfolio": {
   "source": "data/portfolio.json",
