@@ -52,6 +52,18 @@ h2{margin:0;font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.15}
 .idc .no{position:absolute;left:5px;top:5px;font-family:var(--mono);font-size:.62rem;background:rgba(255,255,255,.85);border-radius:4px;padding:0 4px;color:var(--muted)}
 .idc .nm{display:block;margin-top:6px;font-weight:700;font-size:.84rem;line-height:1.25;word-break:keep-all}
 .idc .rl{display:block;font-family:var(--mono);font-size:.62rem;letter-spacing:.06em;color:var(--muted)}
+.idc.pending .ph{background:repeating-linear-gradient(45deg,#f4f1ea 0 8px,#ece8df 8px 16px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}
+.idc.pending .q{font-size:1.7rem;font-weight:700;color:#8d8a80}
+.idc .soon{font-family:var(--mono);font-size:.56rem;color:var(--muted)}
+.idc.secret .ph{background:radial-gradient(circle at 50% 40%,#2e2b4a,#1b1a2e 72%);border-color:#1b1a2e;display:flex;align-items:center;justify-content:center}
+.idc.secret .eyes{position:relative;width:40%;height:14%}
+.idc.secret .eyes::before,.idc.secret .eyes::after{content:"";position:absolute;top:0;width:22%;aspect-ratio:1;border-radius:50%;background:#fff}
+.idc.secret .eyes::before{left:12%}.idc.secret .eyes::after{right:12%}
+.idc.secret.x1 .ph{box-shadow:inset 0 -6px 0 #e9709a}.idc.secret.x2 .ph{box-shadow:inset 0 -6px 0 #3fc8c0}.idc.secret.x3 .ph{box-shadow:inset 0 -6px 0 #f2c744}
+.idc.secret .nm{color:var(--muted)}
+.idc[hidden]{display:none}
+.reveal{align-self:center;font:inherit;font-size:.8rem;font-weight:700;background:#fff;border:2px dashed var(--line);border-radius:99px;padding:6px 14px;cursor:pointer}
+.reveal:hover{background:#1b1a2e;color:#fff;border-style:solid}
 .idc.npc .ph{background:repeating-linear-gradient(45deg,#eef2f6 0 8px,#e3e9f0 8px 16px);display:flex;align-items:center;justify-content:center}
 .idc.npc .q{font-size:2rem;font-weight:700;color:#9fb1c6}
 .idc.npc .nm{color:var(--muted)}
@@ -87,6 +99,7 @@ h2{margin:0;font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.15}
       <div class="hd"><b>연구실 식구 명부</b><span>AHNBOAT LAB · ID</span></div>
       <p class="say" id="say" aria-live="polite"><b id="sayWho">조수 하루</b><span id="sayTxt">사진을 눌러 보세요!</span></p>
       <div class="grid" id="crew"></div>
+      <button type="button" class="reveal" id="reveal" aria-expanded="false" aria-controls="crew">🔒 미공개 식구 보기</button>
     </section>
   </div>
   <a class="card town" href="https://adminmrobo.github.io/ahn_boat_lab_town/" target="_blank" rel="noopener" aria-label="Ahn Lab Town 입장하기">
@@ -103,26 +116,41 @@ h2{margin:0;font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.15}
     {k:'haru',name:'조수 하루',role:'ASSISTANT',lines:['안녕하세요!','정리 끝! 확인해 주세요.','이렇게 하면 돼요!','음… 다시 볼게요.','해냈다!']},
     {k:'fruitfly',name:'초파리 연구원',role:'RESEARCHER',lines:['윙윙~','데이터 발견!','돋보기로 살펴보는 중.','음… 수상한데요?','만세!']},
     {k:'jupanbot',name:'주판봇',role:'ABABOT',lines:['딸깍딸깍.','계산 완료!','설명해 드릴게요.','숫자가 이상한데요?','열 개의 랙, 이상 없음!']},
-    {k:'npc1',npc:true,name:'새 식구',role:'COMING SOON'},
-    {k:'npc2',npc:true,name:'새 식구',role:'COMING SOON'}
+    {k:'sia',name:'인턴 시아',role:'INTERN',lines:['인턴 시아입니다.','확인했습니다.','순서대로 말씀드릴게요.','…잠깐, 다시 볼게요.','끝까지 지켜볼게요.']},
+    {k:'moa',name:'인턴 모아',role:'INTERN',lines:['인턴 모아예요!','차 한 잔 하실래요?','제가 모아 둔 기록을 보면요!','음… 어디에 모아 뒀더라?','힘내세요! 제가 응원할게요!']},
+    {k:'x1',secret:true,name:'미공개',role:'SECRET · X1',lines:['(…분홍 리본이 살짝 흔들린다)']},
+    {k:'x2',secret:true,name:'미공개',role:'SECRET · X2',lines:['(…안경이 반짝인다)']},
+    {k:'x3',secret:true,name:'미공개',role:'SECRET · X3',lines:['(…노란 방울이 달랑거린다)']}
   ];
   var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
   function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e;}
-  var box=document.getElementById('crew'),live=CREW.filter(function(c){return !c.npc;});
+  /* 사진은 thumbs/chars/idphoto/{키}_E13.webp 등이 올라오면 자동으로 붙는다. 없으면 '사진 준비 중' 칸.
+     미공개(secret) 식구는 아래 버튼을 눌러야 보인다. */
+  var box=document.getElementById('crew'),open=false,live=[];
   CREW.forEach(function(c,i){
-    var b=el('button','idc '+c.k+(c.npc?' npc':''));b.type='button';
-    var ph=el('span','ph');
-    if(c.npc){ph.appendChild(el('span','q','?'));}
-    else{c.img=el('img');c.img.alt='';c.img.src=P+c.k+'_'+EX[0]+'.webp';ph.appendChild(c.img);EX.forEach(function(e){var x=new Image();x.src=P+c.k+'_'+e+'.webp';});}
+    var b=el('button','idc '+c.k+(c.secret?' secret':''));b.type='button';c.btn=b;
+    var ph=el('span','ph');c.ph=ph;
+    if(c.secret){ph.appendChild(el('span','eyes'));b.hidden=true;}
+    else{c.img=el('img');c.img.alt='';
+      c.img.onload=function(){if(c.ok)return;c.ok=true;live.push(c);EX.forEach(function(e){var x=new Image();x.src=P+c.k+'_'+e+'.webp';});post();};
+      c.img.onerror=function(){if(c.ok)return;c.img.remove();b.classList.add('pending');ph.insertBefore(el('span','q',c.name.slice(-2,-1)),ph.firstChild);ph.appendChild(el('span','soon','사진 준비 중'));};
+      c.img.src=P+c.k+'_'+EX[0]+'.webp';ph.appendChild(c.img);}
     ph.appendChild(el('span','no','No.'+String(i+1).padStart(3,'0')));
     b.appendChild(ph);b.appendChild(el('span','nm',c.name));b.appendChild(el('span','rl',c.role));
-    b.setAttribute('aria-label',c.name+(c.npc?'':' — 눌러서 표정 보기'));
-    c.n=0;b.addEventListener('click',function(){if(c.npc){say('주판봇','새 식구 사진은 곧 붙을 예정입니다!');return;}go(c);});
+    b.setAttribute('aria-label',c.secret?'미공개 식구 No.'+String(i+1).padStart(3,'0'):c.name+' — 눌러서 표정 보기');
+    c.n=0;b.addEventListener('click',function(){
+      if(c.secret){say('주판봇','아직 비밀이에요! 곧 공개됩니다. '+c.lines[0]);return;}
+      if(!c.ok){c.n=(c.n+1)%c.lines.length;say(c.name,c.lines[c.n]);return;}
+      go(c);});
     box.appendChild(b);
   });
+  var rv=document.getElementById('reveal');
+  rv.addEventListener('click',function(){open=!open;CREW.forEach(function(c){if(c.secret)c.btn.hidden=!open;});
+    rv.setAttribute('aria-expanded',String(open));rv.textContent=open?'미공개 식구 숨기기':'🔒 미공개 식구 보기';
+    say('주판봇',open?'미공개 식구 3명! 정체는 아직 비밀입니다.':'다시 숨겼어요.');post();});
   function say(w,t){document.getElementById('sayWho').textContent=w;document.getElementById('sayTxt').textContent=t;}
   function go(c){c.n=(c.n+1)%EX.length;c.img.src=P+c.k+'_'+EX[c.n]+'.webp';say(c.name,c.lines[c.n%c.lines.length]);}
-  if(!reduce){var t=0;setInterval(function(){go(live[t%live.length]);t++;},2600);}
+  if(!reduce){var t=0;setInterval(function(){if(live.length){go(live[t%live.length]);t++;}},2600);}
   function post(){if(window.parent!==window){try{window.parent.postMessage({type:'ahnboat-catalog-height',height:Math.ceil(document.body.getBoundingClientRect().height),nav:false},'*');}catch(e){}}}
   window.addEventListener('resize',post);document.querySelectorAll('img').forEach(function(im){im.addEventListener('load',post);});post();
 })();
