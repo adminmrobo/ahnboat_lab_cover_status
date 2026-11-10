@@ -82,6 +82,38 @@ h1{margin:0;font-size:clamp(1.8rem,3.6vw,2.8rem);line-height:1.1}
 .shared .tags button{font-size:.85rem;padding:3px 11px;box-shadow:2px 2px 0 var(--line)}
 .shared .tags b{font-family:var(--mono);font-size:.72rem;margin-left:4px;color:var(--muted)}
 .note{margin:22px 0 0;font-size:.8rem;color:var(--muted)}
+/* 세 그래프로 읽기 */
+.layers{margin:34px 0 0;padding:22px 0 0;border-top:2px solid var(--line)}
+.layers h2{font-size:clamp(1.25rem,2.2vw,1.6rem);margin:0}
+.layers .lede{margin-top:6px}
+.qs{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;margin:14px 0 0;font-weight:700}
+.qs span{border:1.5px solid var(--line);border-radius:99px;padding:3px 12px;background:#fff}
+.qs i{font-style:normal;color:var(--muted)}
+.spine{list-style:none;padding:0;margin:18px 0 0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;counter-reset:ly}
+.ly{position:relative;border:2px solid var(--line);border-radius:14px;background:#fff;box-shadow:3px 3px 0 var(--line);padding:12px 14px 14px;min-width:0;display:flex;flex-direction:column;gap:6px}
+.ly:not(:last-child)::after{content:"→";position:absolute;right:-13px;top:22px;font-weight:700;font-size:1rem;background:var(--bg);line-height:1;padding:2px 0}
+.ly .no{font-family:var(--mono);font-size:.7rem;color:var(--muted);letter-spacing:.08em}
+.ly h3{margin:0;font-size:1.02rem;line-height:1.3}
+.ly .q{margin:0;font-size:.82rem;color:var(--muted)}
+.ly .st{align-self:flex-start;font-size:.72rem;font-weight:700;border:1.5px solid var(--line);border-radius:99px;padding:1px 9px}
+.st.have{background:#dff3e8}.st.moment{background:#fbefcf}.st.seed{background:#f8dfe8}.st.out{background:var(--paper);color:var(--muted)}
+.ly dl{margin:2px 0 0;display:flex;flex-direction:column;gap:6px}
+.ly dt{font-size:.7rem;font-weight:700;color:var(--muted)}
+.ly dd{margin:0;font-size:.86rem}
+.ly dd b{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.ly .mini{display:flex;flex-wrap:wrap;gap:4px;margin-top:4px}
+.ly .mini span{font-size:.72rem;border:1.5px solid var(--rule);border-radius:99px;padding:0 7px;white-space:nowrap}
+.ly .mini span b{font-family:var(--mono);margin-left:3px;color:var(--muted)}
+.ly.on{background:var(--paper)}
+.try{margin:18px 0 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.try>div{border:2px dashed var(--line);border-radius:14px;padding:12px 14px;background:var(--paper)}
+.try h3{margin:0 0 4px;font-size:.95rem}
+.try p{margin:0 0 8px;font-size:.86rem}
+.src{margin:16px 0 0;font-size:.78rem;color:var(--muted);max-width:90ch}
+.info .seq{display:grid;grid-template-columns:auto 1fr;gap:4px 8px;align-items:start}
+.info .seq>span{font-size:.72rem;font-weight:700;color:var(--muted);padding-top:3px;white-space:nowrap}
+@media (max-width:1100px){.spine{grid-template-columns:repeat(2,minmax(0,1fr))}.ly:not(:last-child)::after{display:none}}
+@media (max-width:640px){.spine,.try{grid-template-columns:minmax(0,1fr)}}
 @media (max-width:1100px){.kpis{grid-template-columns:repeat(3,minmax(0,1fr))}.fields{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:640px){
   .kpis{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -118,6 +150,14 @@ h1{margin:0;font-size:clamp(1.8rem,3.6vw,2.8rem);line-height:1.1}
   <section class="shared">
     <h2 id="shT">여러 분야를 잇는 개념</h2>
     <div class="tags" id="shared"></div>
+  </section>
+  <section class="layers" id="layers" aria-labelledby="lyT">
+    <h2 id="lyT">이 지도는 어느 층의 그래프일까</h2>
+    <p class="lede" id="lyLede"></p>
+    <div class="qs" id="lyQs"></div>
+    <ol class="spine" id="spine"></ol>
+    <div class="try" id="try"></div>
+    <p class="src" id="lySrc"></p>
   </section>
   <p class="note" id="note"></p>
 </div>
@@ -176,7 +216,68 @@ h1{margin:0;font-size:clamp(1.8rem,3.6vw,2.8rem);line-height:1.1}
         if(cur.field&&n.c.indexOf(cur.field)<0){cur.field=null;statics();build();}
         select('c:'+n.id);$('mapbox').scrollIntoView({behavior:'smooth',block:'center'});});sh.appendChild(b);});
     $('note').textContent=T('매일 오전 6시에 각 해설 페이지의 지식 색인(#kg)을 다시 모아 갱신합니다. 마지막 갱신: {0}',D.updated);
+    layers();
     if(sel)info(sel);
+  }
+
+  /* 세 그래프로 읽기 — 지식·맥락·절차 틀에 이 지도를 겹쳐 본다. 숫자는 모두 지금 데이터에서 센다. */
+  var REL={partOf:'부분',prerequisiteOf:'먼저 알아야 함',broader:'상위 개념',evaluatedBy:'평가 지표',contrastsWith:'대비',evaluatedOn:'평가 데이터',relatedTo:'관련',bioAnalogueOf:'생물 비유',solves:'해결',hasLimitation:'한계',addressedBy:'보완됨',analogyOf:'비유',derivedFrom:'유도됨',assumes:'가정',explainedIn:'설명됨'};
+  function prereq(id){var before=[],after=[];
+    D.edges.forEach(function(e){if(e[2]!=='prerequisiteOf')return;if(e[1]===id&&NODE[e[0]])before.push(e[0]);if(e[0]===id&&NODE[e[1]])after.push(e[1]);});
+    function u(a){return a.filter(function(v,i){return a.indexOf(v)===i;});}
+    return {before:u(before),after:u(after)};}
+  function goConcept(id){select('c:'+id);$('mapbox').scrollIntoView({behavior:'smooth',block:'center'});}
+  function layers(){
+    var s=D.summary,rc={},tc={};
+    D.edges.forEach(function(e){rc[e[2]]=(rc[e[2]]||0)+1;});
+    D.nodes.forEach(function(n){tc[n.t]=(tc[n.t]||0)+1;});
+    var rels=Object.keys(rc).sort(function(a,b){return rc[b]-rc[a];}),types=Object.keys(tc).sort(function(a,b){return tc[b]-tc[a];});
+    var pre=rc.prerequisiteOf||0;
+    $('lyT').textContent=T('이 지도는 어느 층의 그래프일까');
+    $('lyLede').textContent=T('AI 에이전트를 설명할 때 업계에서는 그래프를 세 층으로 나누어 말하곤 합니다. 무엇이 참인지 담는 지식 그래프, 이번 일에 필요한 것만 골라낸 맥락 그래프, 다음에 할 일을 안내하는 절차 그래프입니다. 맨 앞에는 낱말의 뜻을 정하는 온톨로지가, 맨 뒤에는 실제로 움직이고 결과를 적어 두는 에이전트가 있습니다. 이 틀에 이 지도를 겹쳐 보면, 지금 무엇이 있고 무엇을 더할 수 있는지가 보입니다.');
+    var qs=$('lyQs');qs.textContent='';
+    ['무엇이 참인가','지금 무엇이 중요한가','다음에 무엇을 하나'].forEach(function(x,i){if(i)qs.appendChild(el('i','','→'));qs.appendChild(el('span','',T(x)));});
+    function mini(keys,cnt,name){var m=el('div','mini');keys.slice(0,5).forEach(function(k){var sp=el('span','',T(name(k)));sp.appendChild(el('b','',fmt(cnt[k])));m.appendChild(sp);});return m;}
+    var L=[
+      {k:'온톨로지',q:'무엇이 어떤 종류인가',st:['have','이 지도에 있음'],
+       what:'낱말의 뜻과 종류를 정해 두는 약속입니다. 같은 말을 모두가 같은 뜻으로 쓰게 합니다.',
+       air:'승객·항공편·운임·공항이 각각 어떤 종류의 것인지, 서로 어떤 관계를 맺을 수 있는지 정합니다.',
+       here:T('개념의 종류 {0}가지와 관계의 종류 {1}가지가 이 지도의 온톨로지입니다.','<b>'+types.length+'</b>','<b>'+rels.length+'</b>'),
+       extra:mini(rels,rc,function(k){return REL[k]||k;})},
+      {k:'지식 그래프',q:'무엇이 참인가',st:['have','이 지도에 있음'],on:1,
+       what:'온톨로지의 약속에 맞춰 실제 사실을 점과 선으로 이어 둔 망입니다. 잘 바뀌지 않는, 두고두고 쓰는 기억입니다.',
+       air:'"이 승객이 이 항공편을 예약했다", "이 노선은 이 공항에서 출발한다" 같은 사실이 쌓입니다.',
+       here:T('해설 페이지 {0}개에서 모은 개념 {1}개와 개념 사이 관계 {2}개. 3D 지도 전체가 곧 지식 그래프입니다.','<b>'+fmt(s.pages)+'</b>','<b>'+fmt(s.concepts)+'</b>','<b>'+fmt(s.relations)+'</b>'),
+       extra:mini(types,tc,function(k){return TYPE[k]||k;})},
+      {k:'맥락 그래프',q:'지금 무엇이 중요한가',st:['moment','점을 누를 때 잠깐'],
+       what:'전체에서 이번 결정에 필요한 작은 부분만 잘라 내고, 거기에 지금의 상태를 얹은 그래프입니다. 모든 것을 꺼내지 않는 것이 핵심입니다.',
+       air:'"이 항공편, 185석 중 34석 남음, 탑승구 C8, 마감 9분 전"처럼 지금 이 순간의 상황만 모읍니다.',
+       here:T('점 하나를 누르면 그 점과 바로 이어진 것만 밝아지고 나머지는 어두워집니다. 이것이 맥락 그래프의 축소판입니다. 다만 실시간 상태 값은 없습니다.')},
+      {k:'절차 그래프',q:'다음에 무엇을 하나',st:['seed','씨앗만 있음'],
+       what:'조건에 따라 다음 단계를 이어 둔 그래프입니다. 길을 정해 주기보다 안내하며, 상황이 다르면 벗어날 수 있습니다.',
+       air:'좌석 확인 → 대안 비교 → 대안이 있으면 운임 규정 적용, 없으면 사람에게 넘김.',
+       here:T('"먼저 알아야 함" 관계 {0}개가 읽기 순서의 씨앗입니다. 이 관계를 이어 가면 "이 개념을 읽기 전에 볼 것 → 다음에 볼 것" 같은 학습 경로가 됩니다.','<b>'+fmt(pre)+'</b>')},
+      {k:'에이전트와 기록',q:'움직이고, 적어 두고, 고친다',st:['out','이 지도 밖'],
+       what:'좁혀진 그래프를 보고 판단해 실제로 움직이고, 성공과 실패의 기록으로 위의 층들을 다시 고칩니다.',
+       air:'예약을 마치거나 사람에게 넘기고, 그 결과를 남겨 다음 판단에 씁니다.',
+       here:T('이 지도는 매일 오전 6시에 지식 색인을 다시 모읍니다. 지식 층을 새로 고치는 일이지, 사용 기록에서 배우는 고리는 아직 아닙니다.')}
+    ];
+    var sp=$('spine');sp.textContent='';
+    L.forEach(function(x,i){var li=el('li','ly'+(x.on||i===0?' on':''));
+      li.appendChild(el('span','no','0'+(i+1)));li.appendChild(el('h3','',T(x.k)));li.appendChild(el('p','q',T(x.q)));
+      li.appendChild(el('span','st '+x.st[0],T(x.st[1])));
+      var dl=el('dl');[['뜻',T(x.what),0],['공항 예시',T(x.air),0],['이 지도에서는',x.here,1]].forEach(function(r){
+        dl.appendChild(el('dt','',T(r[0])));var dd=el('dd');if(r[2])dd.innerHTML=r[1];else dd.textContent=r[1];dl.appendChild(dd);});
+      li.appendChild(dl);if(x.extra)li.appendChild(x.extra);sp.appendChild(li);});
+    var tr=$('try');tr.textContent='';
+    var hub=D.nodes.slice().sort(function(a,b){return b.deg-a.deg;})[0];
+    var pc={};D.edges.forEach(function(e){if(e[2]==='prerequisiteOf'&&NODE[e[0]]&&NODE[e[1]]){pc[e[0]]=(pc[e[0]]||0)+1;pc[e[1]]=(pc[e[1]]||0)+1;}});
+    var mid=D.nodes.filter(function(n){var p=prereq(n.id);return p.before.length&&p.after.length;}).sort(function(a,b){return (pc[b.id]||0)-(pc[a.id]||0);})[0];
+    [[hub,'맥락 그래프 맛보기','가장 많이 이어진 개념은 "{0}"입니다. 지도에서 열면 전체가 어두워지고 이 개념의 이웃만 남습니다.'],
+     [mid,'절차 그래프 맛보기','"{0}" 개념을 열면 오른쪽 상자에 "먼저 볼 개념 → 이 개념 → 다음에 볼 개념"이 나옵니다. 지식 그래프 안에 숨어 있던 읽기 순서입니다.']].forEach(function(x){
+      if(!x[0])return;var d=el('div');d.appendChild(el('h3','',T(x[1])));d.appendChild(el('p','',T(x[2],nm(x[0]))));
+      var b=el('button','chip',T('지도에서 열기')+' →');b.type='button';b.addEventListener('click',function(){goConcept(x[0].id);});d.appendChild(b);tr.appendChild(d);});
+    $('lySrc').textContent=T('세 그래프로 나누는 틀은 Rakesh Gohel의 링크드인 게시물 "Knowledge Graph. Context Graph. Procedural Graph."에서 빌려 왔습니다. "맥락 그래프"와 "절차 그래프"는 정립된 학술 용어라기보다 업계에서 쓰는 설명용 이름이며, 위의 대응은 이 지도를 그 틀에 맞춰 읽어 본 것입니다.');
   }
 
   /* 지도 데이터: 분야(허브) → 페이지 → 개념, 개념끼리 관계 */
@@ -296,8 +397,13 @@ h1{margin:0;font-size:clamp(1.8rem,3.6vw,2.8rem);line-height:1.1}
       c.c.forEach(function(k){var b=el('button','',T(k));b.type='button';b.style.borderColor=COLOR[k]||'';b.addEventListener('click',function(){cur.field=k;statics();build();setTimeout(function(){select('c:'+c.id);},2400);});tg.appendChild(b);});box.appendChild(tg);
       box.appendChild(el('h3','',T('이 개념이 나오는 페이지 ({0})',c.p.length)));var ul3=el('ul');
       c.p.forEach(function(x){var p=PAGE[x[0]];if(p)ul3.appendChild(el('li')).appendChild(pageLink(p,x[1]));});box.appendChild(ul3);
+      var pq=prereq(c.id);
+      if(pq.before.length||pq.after.length){box.appendChild(el('h3','',T('읽는 순서')));var sq=el('div','seq');
+        [['먼저 볼 개념',pq.before],['다음에 볼 개념',pq.after]].forEach(function(r){if(!r[1].length)return;sq.appendChild(el('span','',T(r[0])));var tg2=el('div','tags');
+          r[1].slice(0,10).forEach(function(v){var b=el('button','',nm(NODE[v]));b.type='button';b.addEventListener('click',function(){select('c:'+v);});tg2.appendChild(b);});sq.appendChild(tg2);});
+        box.appendChild(sq);}
       var nb=[];D.edges.forEach(function(e){if(e[0]===c.id)nb.push(e[1]);else if(e[1]===c.id)nb.push(e[0]);});
-      nb=nb.filter(function(v,i,a){return a.indexOf(v)===i&&NODE[v];}).slice(0,16);
+      nb=nb.filter(function(v,i,a){return a.indexOf(v)===i&&NODE[v]&&pq.before.indexOf(v)<0&&pq.after.indexOf(v)<0;}).slice(0,16);
       if(nb.length){box.appendChild(el('h3','',T('이어진 개념')));var t2=el('div','tags');
         nb.forEach(function(v){var b=el('button','',nm(NODE[v]));b.type='button';b.addEventListener('click',function(){select('c:'+v);});t2.appendChild(b);});box.appendChild(t2);}
     }
