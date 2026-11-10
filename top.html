@@ -67,7 +67,7 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
 @media (max-width:820px){
   .hero{grid-template-columns:minmax(0,1fr)}
   .htext{padding:22px 20px 4px}
-  .crew{padding-top:6px}
+  .crew{padding-top:66px}
   .notice{flex-direction:column}
   .notice .lb{padding:8px 14px;border-right:0;border-bottom:2px solid var(--line)}
   .notice .t{white-space:normal}
@@ -106,8 +106,10 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
   var LINES={doctor:['어서 오게! 오늘은 어떤 실험을 해 볼까?','개념은 실험으로 풀면 쉬워진다네.','논문 해설은 아래 Articles에 있다네.'],
     haru:['안녕하세요! 새 소식은 아래 공지에 있어요.','콘텐츠 진행 상황은 Progress Board에서 볼 수 있어요.','Lab Server의 랙을 눌러 보세요!'],
     jupanbot:['딸깍딸깍, 콘텐츠 수를 세는 중입니다.','열 개의 랙, 이상 없음!'],
-    fruitfly:['윙윙~ 작은 몸으로 큰 데이터를 살펴봐요.','딥러닝 랙에는 제 특별편도 있어요!']};
-  var NAME={doctor:'박사',haru:'조수 하루',jupanbot:'주판봇',fruitfly:'초파리 연구원'};
+    fruitfly:['윙윙~ 작은 몸으로 큰 데이터를 살펴봐요.','딥러닝 랙에는 제 특별편도 있어요!'],
+    sia:['인턴 시아입니다. 오늘 판정은 제가 맡아요.','자료는 순서대로 정리해 뒀어요.','…졸지 않았어요. 정말이에요.'],
+    moa:['인턴 모아예요! 차 한 잔 하실래요?','새 식구 소개는 식구 명부에 있어요!','힘내세요! 제가 응원할게요!']};
+  var NAME={doctor:'박사',haru:'조수 하루',jupanbot:'주판봇',fruitfly:'초파리 연구원',sia:'인턴 시아',moa:'인턴 모아'};
   var crew=document.getElementById('crew'),say=document.getElementById('say');
   var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
   function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e;}
@@ -115,20 +117,21 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
   function speak(w){document.getElementById('sayWho').textContent=T(NAME[w]);
     document.getElementById('sayTxt').textContent=T(LINES[w][Math.floor(Math.random()*LINES[w].length)]);
     say.classList.add('on');clearTimeout(sayT);sayT=setTimeout(function(){say.classList.remove('on');},3200);}
-  /* 연구 장면 그림(배경 없는 3장: 박사·하루 / 주판봇 / 초파리). 키 비율은 박사 1.0 기준으로 맞춰 둠 */
-  var LAYER={labpair:{h:1.0011,lift:0},jupanbot:{h:0.7025,lift:0.012},fruitfly:{h:0.5294,lift:0.076}};
+  /* 연구 장면 그림(배경 없는 4장: 박사·하루 / 시아·모아 / 주판봇 / 초파리). 키 비율은 박사 1.0 기준으로 맞춰 둠 */
+  var LAYER={labpair:{h:1.0011,lift:0},interns:{h:0.88,lift:0},jupanbot:{h:0.7025,lift:0.012},fruitfly:{h:0.5294,lift:0.076}};
+  var PAIR={labpair:['doctor','haru'],interns:['sia','moa']};
   var parts={};
-  function H(){var w=crew.clientWidth||window.innerWidth;return Math.max(110,Math.min(250,(w-40)/2.25));}
+  function H(){var w=crew.clientWidth||window.innerWidth;return Math.max(96,Math.min(250,(w-40)/3.05));}
   function build(){
     crew.querySelectorAll('.part').forEach(function(n){n.remove();});
     var h=H();
-    ['labpair','jupanbot','fruitfly'].forEach(function(k){
+    ['labpair','interns','jupanbot','fruitfly'].forEach(function(k){
       var b=el('button','part '+k);b.type='button';
-      b.setAttribute('aria-label',T(k==='labpair'?'박사와 조수 하루':NAME[k]));
+      b.setAttribute('aria-label',PAIR[k]?T(NAME[PAIR[k][0]])+' · '+T(NAME[PAIR[k][1]]):T(NAME[k]));
       var im=el('img');im.alt='';im.src='thumbs/chars/hero/'+k+'.webp';im.style.height=Math.round(LAYER[k].h*h)+'px';
       b.style.marginBottom=Math.round(LAYER[k].lift*h)+'px';b.appendChild(im);
       b.addEventListener('click',function(e){
-        var w=k;if(k==='labpair'){var r=b.getBoundingClientRect();w=(e.clientX-r.left)<r.width*0.5?'doctor':'haru';}
+        var w=k;if(PAIR[k]){var r=b.getBoundingClientRect();w=PAIR[k][(e.clientX-r.left)<r.width*0.5?0:1];}
         hop(b);speak(w);});
       crew.insertBefore(b,say);parts[k]=b;
     });
@@ -136,8 +139,8 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
   }
   function hop(b){if(reduce)return;b.classList.remove('hop');void b.offsetWidth;b.classList.add('hop');}
   build();
-  if(!reduce){var order=['haru','doctor','jupanbot','fruitfly'],t=0;
-    setInterval(function(){var w=order[t%order.length];speak(w);hop(parts[w==='doctor'||w==='haru'?'labpair':w]);t++;},4200);}
+  if(!reduce){var order=['haru','doctor','moa','jupanbot','sia','fruitfly'],t=0,OF={doctor:'labpair',haru:'labpair',sia:'interns',moa:'interns'};
+    setInterval(function(){var w=order[t%order.length];speak(w);hop(parts[OF[w]||w]);t++;},4200);}
   var rw;window.addEventListener('resize',function(){clearTimeout(rw);rw=setTimeout(build,250);});
 
   // 공지: data/notices.csv (날짜, 제목, 링크, 표시)
