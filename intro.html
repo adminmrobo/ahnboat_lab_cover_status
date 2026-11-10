@@ -85,32 +85,34 @@ h2{margin:0;font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.15}
 </head>
 <body>
 <div class="wrap">
-  <div class="head"><span class="kicker">MEET ME</span><h2>주인장은 누구?</h2></div>
+  <div class="head"><span class="kicker">MEET ME</span><h2 data-t>주인장은 누구?</h2></div>
   <div class="top">
-    <section class="card me" aria-label="주인장 소개">
-      <p class="nm">안상선 <small>Reon Ahn · Ahn boat</small></p>
-      <ul><li>경제학 박사</li><li>인공지능 연구</li><li>대학·기관 강의</li></ul>
-      <p>어려운 개념을 박사·조수·초파리 연구원·주판봇이 진행하는 작은 실험으로 바꿔 보여 주는 연구실을 운영합니다. 학술적 주장은 논문으로, 콘텐츠는 함께 해 보는 해설로 만듭니다.</p>
+    <section class="card me" data-ta="aria-label" aria-label="주인장 소개">
+      <p class="nm"><span data-t>안상선</span> <small>Reon Ahn · Ahn boat</small></p>
+      <ul><li data-t>경제학 박사(미시, 수리경제학)</li><li data-t>인공지능 연구</li><li data-t>대학 및 기관 강의</li></ul>
+      <p data-t>어려운 개념을 박사·조수·초파리 연구원·주판봇이 진행하는 작은 실험으로 바꿔 보여 주는 연구실을 운영합니다. 학술적 주장은 논문으로, 콘텐츠는 함께 해 보는 해설로 만듭니다.</p>
       <div class="btns">
-        <a class="btn" href="https://adminmrobo.github.io/ahn_boat_lab_town/" target="_blank" rel="noopener">🚪 Ahn Lab Town 입장하기</a>
-        <a class="btn ghost" href="https://adminmrobo.github.io/who_am_i/who_am_i.html" target="_blank" rel="noopener">저자 소개 보기</a>
+        <a class="btn" href="https://adminmrobo.github.io/ahn_boat_lab_town/" target="_blank" rel="noopener" data-t>🚪 Ahn Lab Town 입장하기</a>
+        <a class="btn ghost" href="https://adminmrobo.github.io/who_am_i/who_am_i.html" target="_blank" rel="noopener" data-t>저자 소개 보기</a>
       </div>
     </section>
-    <section class="card ids" aria-label="연구실 식구 명부">
-      <div class="hd"><b>연구실 식구 명부</b><span>AHNBOAT LAB · ID</span></div>
+    <section class="card ids" data-ta="aria-label" aria-label="연구실 식구 명부">
+      <div class="hd"><b data-t>연구실 식구 명부</b><span>AHNBOAT LAB · ID</span></div>
       <p class="say" id="say" aria-live="polite"><b id="sayWho">조수 하루</b><span id="sayTxt">사진을 눌러 보세요!</span></p>
       <div class="grid" id="crew"></div>
-      <button type="button" class="reveal" id="reveal" aria-expanded="false" aria-controls="crew">🔒 미공개 식구 보기</button>
+      <button type="button" class="reveal" id="reveal" aria-expanded="false" aria-controls="crew" data-t>🔒 미공개 식구 보기</button>
     </section>
   </div>
   <a class="card town" href="https://adminmrobo.github.io/ahn_boat_lab_town/" target="_blank" rel="noopener" aria-label="Ahn Lab Town 입장하기">
     <img src="thumbs/chars/labtown_map.webp" alt="">
-    <span class="cap"><span class="nm">Ahn Lab Town<small>연구실 식구들이 일하는 마을 · 지하 1층 서버실</small></span><span class="go">🚪 입장하기</span></span>
+    <span class="cap"><span class="nm">Ahn Lab Town<small data-t>식구들이 일하는 마을 · 지하 서버실</small></span><span class="go" data-t>🚪 입장하기</span></span>
   </a>
 </div>
+<script src="i18n.js"></script>
 <script>
 (function(){
   'use strict';
+  var T=window.AhnI18n?AhnI18n.t:function(s){return s;};
   var P='thumbs/chars/idphoto/',EX=['E13','E01','E07','E09','E12'];
   var CREW=[
     {k:'doctor',name:'박사',role:'DOCTOR',lines:['어서 오게!','이건 실험해 보면 금방 알 수 있다네.','어디 보자… 데이터부터!','흠, 이건 좀 더 생각해 봐야겠군.','좋아, 해 보세!']},
@@ -134,24 +136,32 @@ h2{margin:0;font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.15}
     if(c.secret){var ey=el('span','eyes');ph.appendChild(ey);b.hidden=true;var si=new Image();si.alt='';si.onload=function(){ey.replaceWith(si);};si.src=P+c.k+'_'+EX[0]+'.webp';}
     else{c.img=el('img');c.img.alt='';
       c.av=[EX[0]];c.img.onload=function(){if(c.ok)return;c.ok=true;live.push(c);EX.slice(1).forEach(function(e){var x=new Image();x.onload=function(){c.av.push(e);};x.src=P+c.k+'_'+e+'.webp';});post();};
-      c.img.onerror=function(){if(c.ok)return;c.img.remove();b.classList.add('pending');ph.insertBefore(el('span','q',c.name.slice(-2,-1)),ph.firstChild);ph.appendChild(el('span','soon','사진 준비 중'));};
+      c.img.onerror=function(){if(c.ok)return;c.img.remove();b.classList.add('pending');ph.insertBefore(el('span','q',c.name.slice(-2,-1)),ph.firstChild);ph.appendChild(el('span','soon',T('사진 준비 중')));};
       c.img.src=P+c.k+'_'+EX[0]+'.webp';ph.appendChild(c.img);}
     ph.appendChild(el('span','no','No.'+String(i+1).padStart(3,'0')));
-    b.appendChild(ph);b.appendChild(el('span','nm',c.name));b.appendChild(el('span','rl',c.role));
+    c.nmEl=el('span','nm',T(c.name));b.appendChild(ph);b.appendChild(c.nmEl);b.appendChild(el('span','rl',c.role));
     b.setAttribute('aria-label',c.secret?'미공개 식구 No.'+String(i+1).padStart(3,'0'):c.name+' — 눌러서 표정 보기');
     c.n=0;b.addEventListener('click',function(){
-      if(c.secret){say('주판봇','아직 비밀이에요! 곧 공개됩니다. '+c.lines[0]);return;}
+      if(c.secret){say('주판봇',T('아직 비밀이에요! 곧 공개됩니다.')+' '+T(c.lines[0]));return;}
       if(!c.ok){c.n=(c.n+1)%c.lines.length;say(c.name,c.lines[c.n]);return;}
       go(c);});
     box.appendChild(b);
   });
   var rv=document.getElementById('reveal');
   rv.addEventListener('click',function(){open=!open;CREW.forEach(function(c){if(c.secret)c.btn.hidden=!open;});
-    rv.setAttribute('aria-expanded',String(open));rv.textContent=open?'미공개 식구 숨기기':'🔒 미공개 식구 보기';
+    rv.setAttribute('aria-expanded',String(open));rv.textContent=T(open?'미공개 식구 숨기기':'🔒 미공개 식구 보기');
     say('주판봇',open?'미공개 식구 3명! 정체는 아직 비밀입니다.':'다시 숨겼어요.');post();});
-  function say(w,t){document.getElementById('sayWho').textContent=w;document.getElementById('sayTxt').textContent=t;}
+  function say(w,t){document.getElementById('sayWho').textContent=T(w);document.getElementById('sayTxt').textContent=T(t);}
   function go(c){c.n=(c.n+1)%c.av.length;c.img.src=P+c.k+'_'+c.av[c.n]+'.webp';say(c.name,c.lines[c.n%c.lines.length]);}
   if(!reduce){var t=0;setInterval(function(){if(live.length){go(live[t%live.length]);t++;}},2600);}
+  function statics(){
+    document.querySelectorAll('[data-t]').forEach(function(n){if(n.dataset.ko==null)n.dataset.ko=n.textContent.trim();n.textContent=T(n.dataset.ko);});
+    document.querySelectorAll('[data-ta]').forEach(function(n){var a=n.getAttribute('data-ta');if(n.dataset.koa==null)n.dataset.koa=n.getAttribute(a);n.setAttribute(a,T(n.dataset.koa));});
+    CREW.forEach(function(c){if(c.nmEl)c.nmEl.textContent=T(c.name);});
+    rv.textContent=T(open?'미공개 식구 숨기기':'🔒 미공개 식구 보기');
+    say('조수 하루','사진을 눌러 보세요!');post();
+  }
+  if(window.AhnI18n){AhnI18n.ready.then(statics);AhnI18n.onChange(statics);}
   function post(){if(window.parent!==window){try{window.parent.postMessage({type:'ahnboat-catalog-height',height:Math.ceil(document.body.getBoundingClientRect().height),nav:false},'*');}catch(e){}}}
   window.addEventListener('resize',post);document.querySelectorAll('img').forEach(function(im){im.addEventListener('load',post);});post();
 })();
