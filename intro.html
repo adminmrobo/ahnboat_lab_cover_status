@@ -56,6 +56,7 @@ h2{margin:0;font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.15}
 .idc.pending .q{font-size:1.7rem;font-weight:700;color:#8d8a80}
 .idc .soon{font-family:var(--mono);font-size:.56rem;color:var(--muted)}
 .idc.secret .ph{background:radial-gradient(circle at 50% 40%,#2e2b4a,#1b1a2e 72%);border-color:#1b1a2e;display:flex;align-items:center;justify-content:center}
+.idc.secret .ph img{width:100%;height:100%;object-fit:cover;image-rendering:pixelated}
 .idc.secret .eyes{position:relative;width:40%;height:14%}
 .idc.secret .eyes::before,.idc.secret .eyes::after{content:"";position:absolute;top:0;width:22%;aspect-ratio:1;border-radius:50%;background:#fff}
 .idc.secret .eyes::before{left:12%}.idc.secret .eyes::after{right:12%}
@@ -130,7 +131,7 @@ h2{margin:0;font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.15}
   CREW.forEach(function(c,i){
     var b=el('button','idc '+c.k+(c.secret?' secret':''));b.type='button';c.btn=b;
     var ph=el('span','ph');c.ph=ph;
-    if(c.secret){ph.appendChild(el('span','eyes'));b.hidden=true;}
+    if(c.secret){var ey=el('span','eyes');ph.appendChild(ey);b.hidden=true;var si=new Image();si.alt='';si.onload=function(){ey.replaceWith(si);};si.src=P+c.k+'_'+EX[0]+'.webp';}
     else{c.img=el('img');c.img.alt='';
       c.av=[EX[0]];c.img.onload=function(){if(c.ok)return;c.ok=true;live.push(c);EX.slice(1).forEach(function(e){var x=new Image();x.onload=function(){c.av.push(e);};x.src=P+c.k+'_'+e+'.webp';});post();};
       c.img.onerror=function(){if(c.ok)return;c.img.remove();b.classList.add('pending');ph.insertBefore(el('span','q',c.name.slice(-2,-1)),ph.firstChild);ph.appendChild(el('span','soon','사진 준비 중'));};
