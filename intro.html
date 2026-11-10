@@ -124,7 +124,7 @@ h2{margin:0;font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.15}
   ];
   var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
   function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e;}
-  /* 사진은 thumbs/chars/idphoto/{키}_E13.webp 등이 올라오면 자동으로 붙는다. 없으면 '사진 준비 중' 칸.
+  /* 사진은 thumbs/chars/idphoto/{키}_E13.webp 등이 올라오면 자동으로 붙고, 올라온 표정만 돌아가며 보인다. 없으면 '사진 준비 중' 칸.
      미공개(secret) 식구는 아래 버튼을 눌러야 보인다. */
   var box=document.getElementById('crew'),open=false,live=[];
   CREW.forEach(function(c,i){
@@ -132,7 +132,7 @@ h2{margin:0;font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.15}
     var ph=el('span','ph');c.ph=ph;
     if(c.secret){ph.appendChild(el('span','eyes'));b.hidden=true;}
     else{c.img=el('img');c.img.alt='';
-      c.img.onload=function(){if(c.ok)return;c.ok=true;live.push(c);EX.forEach(function(e){var x=new Image();x.src=P+c.k+'_'+e+'.webp';});post();};
+      c.av=[EX[0]];c.img.onload=function(){if(c.ok)return;c.ok=true;live.push(c);EX.slice(1).forEach(function(e){var x=new Image();x.onload=function(){c.av.push(e);};x.src=P+c.k+'_'+e+'.webp';});post();};
       c.img.onerror=function(){if(c.ok)return;c.img.remove();b.classList.add('pending');ph.insertBefore(el('span','q',c.name.slice(-2,-1)),ph.firstChild);ph.appendChild(el('span','soon','사진 준비 중'));};
       c.img.src=P+c.k+'_'+EX[0]+'.webp';ph.appendChild(c.img);}
     ph.appendChild(el('span','no','No.'+String(i+1).padStart(3,'0')));
@@ -149,7 +149,7 @@ h2{margin:0;font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.15}
     rv.setAttribute('aria-expanded',String(open));rv.textContent=open?'미공개 식구 숨기기':'🔒 미공개 식구 보기';
     say('주판봇',open?'미공개 식구 3명! 정체는 아직 비밀입니다.':'다시 숨겼어요.');post();});
   function say(w,t){document.getElementById('sayWho').textContent=w;document.getElementById('sayTxt').textContent=t;}
-  function go(c){c.n=(c.n+1)%EX.length;c.img.src=P+c.k+'_'+EX[c.n]+'.webp';say(c.name,c.lines[c.n%c.lines.length]);}
+  function go(c){c.n=(c.n+1)%c.av.length;c.img.src=P+c.k+'_'+c.av[c.n]+'.webp';say(c.name,c.lines[c.n%c.lines.length]);}
   if(!reduce){var t=0;setInterval(function(){if(live.length){go(live[t%live.length]);t++;}},2600);}
   function post(){if(window.parent!==window){try{window.parent.postMessage({type:'ahnboat-catalog-height',height:Math.ceil(document.body.getBoundingClientRect().height),nav:false},'*');}catch(e){}}}
   window.addEventListener('resize',post);document.querySelectorAll('img').forEach(function(im){im.addEventListener('load',post);});post();
