@@ -25,12 +25,14 @@
   "pushed_at": "2026-11-06T03:12:38Z"
  },
  "ai_for_cement_produce_07": {
-  "src": null,
-  "pushed_at": "2026-11-05T11:16:36Z"
+  "src": "file:img/F01_cement_mortar_concrete.webp",
+  "pushed_at": "2026-11-09T23:31:46Z",
+  "made": "2026-11-10"
  },
  "ai_for_cement_produce_08": {
-  "src": null,
-  "pushed_at": "2026-11-05T11:16:41Z"
+  "src": "name:img/Y03_28day_press_thumb.webp",
+  "pushed_at": "2026-11-09T23:31:49Z",
+  "made": "2026-11-10"
  },
  "AI_image_classification": {
   "src": "embedded:index.html#hero",
@@ -57,9 +59,19 @@
   "pushed_at": "2026-11-06T22:16:09Z",
   "made": "2026-11-07"
  },
+ "Anomaly_detection_tatics": {
+  "src": "name:img/og.jpg",
+  "pushed_at": "2026-11-09T23:45:10Z",
+  "made": "2026-11-10"
+ },
  "article_02_crypto_asset_price_predict": {
   "src": null,
   "pushed_at": "2026-10-22T14:40:31Z"
+ },
+ "bayesian-statistics-for-data-scientists": {
+  "src": "name:assets/og_series.jpg",
+  "pushed_at": "2026-11-09T23:38:07Z",
+  "made": "2026-11-10"
  },
  "blockchain_finance_ch01": {
   "src": null,
@@ -78,8 +90,9 @@
   "pushed_at": "2026-11-06T04:32:07Z"
  },
  "data_science_for_business": {
-  "src": null,
-  "pushed_at": "2026-11-08T18:04:22Z"
+  "src": "name:tools/art/cover_index.webp",
+  "pushed_at": "2026-11-09T23:40:33Z",
+  "made": "2026-11-10"
  },
  "data_set_2024_fintech": {
   "src": null,
@@ -122,7 +135,7 @@
  },
  "drug-crime-social-cost": {
   "src": null,
-  "pushed_at": "2026-11-08T08:25:22Z"
+  "pushed_at": "2026-11-09T07:26:05Z"
  },
  "fintech_business_01_payment": {
   "src": null,
@@ -150,7 +163,7 @@
  },
  "g2b-bid-strategy": {
   "src": null,
-  "pushed_at": "2026-11-08T10:43:56Z"
+  "pushed_at": "2026-11-09T02:52:05Z"
  },
  "Gen_AI_Hannam_univ": {
   "src": "embedded:index.html#hero",
@@ -166,6 +179,11 @@
   "src": "og:og_06.webp",
   "pushed_at": "2026-11-05T11:15:33Z",
   "made": "2026-11-07"
+ },
+ "generative-ai-prompt-strategy": {
+  "src": "og:assets/og_index.webp",
+  "pushed_at": "2026-11-10T03:03:37Z",
+  "made": "2026-11-10"
  },
  "google-sheets-lab": {
   "src": "redraw:R025:assets/covers/cover-index.webp",
@@ -206,13 +224,13 @@
  },
  "inference_engineering_study_week_02_textbook_ch02_p3_to_end": {
   "src": "name:images/cover_03.webp",
-  "pushed_at": "2026-11-07T23:55:03Z",
-  "made": "2026-11-08"
+  "pushed_at": "2026-11-09T09:08:56Z",
+  "made": "2026-11-10"
  },
  "inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide": {
   "src": "name:images/s03_cover.webp",
-  "pushed_at": "2026-11-08T01:24:40Z",
-  "made": "2026-11-08"
+  "pushed_at": "2026-11-09T09:08:59Z",
+  "made": "2026-11-10"
  },
  "inference_engineering_study_week_03_article_01": {
   "src": "name:assets/img/cover_03.webp",

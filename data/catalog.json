@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09",
+ "updated": "2026-11-10",
  "categories": [
   {
    "name": "머신러닝",
@@ -1723,7 +1723,7 @@
    "langs": [
     "ko"
    ],
-   "thumb": ""
+   "thumb": "thumbs/repos/ai_for_cement_produce_07.jpg"
   },
   {
    "title": "시멘트 공정 AI · 설명가능 AI와 원가 최적화",
@@ -1738,7 +1738,7 @@
    "langs": [
     "ko"
    ],
-   "thumb": ""
+   "thumb": "thumbs/repos/ai_for_cement_produce_08.jpg"
   },
   {
    "title": "핀테크 데이터분석 기초 (이러닝)",
