@@ -1,0 +1,40 @@
+name: 사이트 콘텐츠 목록
+
+on:
+  schedule:
+    - cron: "13 0 * * *"   # 매일 한국 시간 오전 9시 13분
+    - cron: "13 6 * * *"   # 매일 한국 시간 오후 3시 13분
+  workflow_dispatch:       # Actions → '사이트 콘텐츠 목록' → Run workflow 로 수동 실행
+
+permissions:
+  contents: write
+
+concurrency:
+  group: site-contents
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 홈페이지·해설·포트폴리오·일정 목록 만들기
+        run: python scripts/site_contents.py
+
+      - name: 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add SITE_CONTENTS.md data/site_contents.json
+          if git diff --cached --quiet; then echo "변경 없음"; exit 0; fi
+          git commit -m "사이트 콘텐츠 목록 $(TZ=Asia/Seoul date '+%F %H:%M')"
+          for i in 1 2 3; do
+            git pull --rebase -q origin main && git push && exit 0
+            sleep 10
+          done
+          exit 1
