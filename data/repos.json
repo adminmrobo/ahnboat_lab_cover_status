@@ -9624,5 +9624,77 @@
    }
   },
   "has_pages": false
+ },
+ {
+  "repo": "iclr2027_top3_lab_review",
+  "series_ko": "논문 해설 · ICLR 2027 만점 3편",
+  "title_ko": "4만 3천 편 중 만점 3편 — 연구실 모의 심사회",
+  "repo_url": "https://github.com/adminmrobo/iclr2027_top3_lab_review",
+  "pages_url": "https://adminmrobo.github.io/iclr2027_top3_lab_review/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-11T17:20:00Z",
+  "has_manifest": true,
+  "covers": [
+   {
+    "path": "images/cover_iclr27.jpg",
+    "role": "cover",
+    "estimated": false
+   },
+   {
+    "path": "images/bg_iclr27_hero.jpg",
+    "role": "hero",
+    "estimated": false
+   }
+  ],
+  "redraw_count": 2,
+  "redraw_ids": [
+   "cover",
+   "hero_bg"
+  ],
+  "thumb": "thumbs/repos/iclr2027_top3_lab_review.jpg",
+  "status": "redraw",
+  "checked_at": "2026-11-12",
+  "site_title": "4만 3천 편 중 만점 3편 — 연구실 모의 심사회 (ICLR 2027)",
+  "ontology": {
+   "status": "full",
+   "pages_with_kg": 1,
+   "pages_total": 1,
+   "pages_checked": 1,
+   "kg_links": [
+    "https://adminmrobo.github.io/iclr2027_top3_lab_review/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/iclr2027_top3_lab_review/index.html#export"
+   ],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 1
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [
+    "ko"
+   ],
+   "links": {
+    "ko": "https://adminmrobo.github.io/iclr2027_top3_lab_review/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 1
+   }
+  },
+  "has_pages": false
  }
 ]
