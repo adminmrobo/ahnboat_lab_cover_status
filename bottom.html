@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Reon Ahn's page — See you again</title>
+<meta name="description" content="Reon Ahn(안상선)의 연구실 홈페이지 맨 아래 배웅 배너 — 인턴 시아·모아와 미공개 식구 셋">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@500;700&display=swap">
+<style>
+:root{
+  --bg:#ffffff; --paper:#fbfaf7; --ink:#1f2224; --muted:#5f6663; --rule:#e4e0d8; --line:#1f2224;
+  --mint:#1f9e66; --pink:#d9668f; --sky:#2f6fbf; --sun:#e0a92a;
+  --font:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace; color-scheme:light;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;font-size:17px}
+body{overflow-wrap:anywhere;margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);line-height:1.55;overflow-x:hidden;word-break:keep-all}
+.wrap{max-width:1760px;margin:0 auto;padding:8px max(16px,env(safe-area-inset-left,0px)) 16px}
+/* 헤드(top.html)와 짝: 같은 점무늬 종이·테두리·그림자, 좌우만 뒤집음(그림 왼쪽 · 글 오른쪽) */
+.bye{position:relative;border:2px solid var(--line);border-radius:22px;background:
+  radial-gradient(circle at 1px 1px,#e9e5dc 1px,transparent 1.5px) 0 0/18px 18px,var(--paper);
+  box-shadow:6px 6px 0 var(--line);overflow:hidden;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);align-items:end;min-height:260px}
+.crew{position:relative;display:flex;justify-content:center;align-items:flex-end;gap:clamp(2px,1.2vw,18px);padding:58px 16px 0;height:100%}
+.crew::after{content:"";position:absolute;left:6%;right:6%;bottom:0;height:14px;border-radius:50%;background:rgba(31,34,36,.08)}
+.part{position:relative;display:block;background:none;border:0;padding:0;cursor:pointer;flex:none;margin:0}
+.part img{display:block;width:auto;filter:drop-shadow(2px 3px 0 rgba(31,34,36,.10))}
+.part.x img{animation:peek 2.8s ease-in-out infinite}
+.part.x2 img{animation-delay:.45s}.part.x3 img{animation-delay:.9s}
+.part.hop{animation:hop .5s ease}
+@keyframes peek{50%{transform:translateY(-6px)}}
+@keyframes hop{30%{transform:translateY(-10px)}60%{transform:none}}
+.part .q{position:absolute;left:50%;top:-4px;transform:translate(-50%,-100%);font-family:var(--mono);font-size:.68rem;font-weight:700;border:1.5px solid var(--line);border-radius:99px;background:#fff;padding:0 7px;white-space:nowrap}
+.say{position:absolute;top:12px;left:16px;max-width:min(320px,80%);background:#fff;border:2px solid var(--line);border-radius:14px 14px 14px 4px;padding:7px 12px;font-size:.85rem;box-shadow:3px 3px 0 var(--line);opacity:0;transform:translateY(-4px);transition:opacity .25s,transform .25s;pointer-events:none;margin:0;z-index:2}
+.say.on{opacity:1;transform:none}
+.say b{display:block;font-size:.7rem;color:var(--muted)}
+.btext{padding:28px 32px;align-self:center;text-align:right}
+.kicker{display:inline-block;font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;border:1.5px solid var(--line);border-radius:99px;padding:3px 10px;background:#fff;margin:0 0 12px}
+h2{overflow-wrap:anywhere;margin:0;font-size:clamp(1.7rem,3.6vw,2.7rem);line-height:1.1;letter-spacing:-.01em}
+.tag{margin:8px 0 0;font-size:1.05rem;color:var(--muted)}
+.who{overflow-wrap:anywhere;margin:12px 0 0;font-size:.88rem;color:var(--muted)}
+.who b{color:var(--ink)}
+.top{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font:inherit;font-size:.85rem;font-weight:700;cursor:pointer;border:2px solid var(--line);border-radius:12px;padding:6px 14px;background:var(--sun);color:var(--ink);box-shadow:3px 3px 0 var(--line)}
+.top:hover{transform:translate(-1px,-1px)}
+@media (max-width:820px){
+  .bye{grid-template-columns:minmax(0,1fr)}
+  .btext{order:-1;padding:22px 20px 4px;text-align:left}
+  .crew{padding-top:86px}
+  .say{left:auto;right:12px;border-radius:14px 14px 4px 14px}
+}
+@media (prefers-reduced-motion:reduce){.part img,.part.hop{animation:none}.say{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <section class="bye" aria-labelledby="bttl">
+    <div class="crew" id="crew" aria-label="배웅하는 식구들 (눌러 보세요)">
+      <p class="say" id="say" aria-live="polite"><b id="sayWho"></b><span id="sayTxt"></span></p>
+    </div>
+    <div class="btext">
+      <p class="kicker">SEE YOU AGAIN</p>
+      <h2 id="bttl">또 놀러 오세요!</h2>
+      <p class="tag" id="bTag">오늘도 연구실에 들러 주셔서 고마워요.</p>
+      <p class="who" id="bWho">인턴 시아·모아, 그리고 아직 이름을 밝히지 않은 세 친구가 배웅합니다.</p>
+      <button class="top" type="button" id="toTop">⬆ <span id="toTopT">맨 위로</span></button>
+    </div>
+  </section>
+</div>
+<script src="i18n.js"></script>
+<script>
+(function(){
+  'use strict';
+  var T=AhnI18n.t;
+  var LINES={sia:['와 주셔서 고맙습니다. 조심히 들어가세요.','오늘 본 자료는 순서대로 정리해 둘게요.','다음에 또 판정하러 올게요.'],
+    moa:['또 놀러 오세요! 차는 늘 준비해 둘게요!','새 콘텐츠가 나오면 공지에 올릴게요!','안녕히 가세요~ 손 흔드는 중이에요!'],
+    x1:['(방긋) …곧 만나요!','쉿, 아직 비밀이에요.'],
+    x2:['(안경을 고쳐 쓰며 방긋)','조금만 기다려 주세요. 곧 인사드릴게요.'],
+    x3:['(꾸벅)','…헤헤.']};
+  var NAME={sia:'인턴 시아',moa:'인턴 모아',x1:'???',x2:'???',x3:'???'};
+  /* 그림: 인턴 둘은 헤드와 같은 전신 그림, X1~X3는 웃는 얼굴 실루엣(아래에서 빼꼼) */
+  var LAYER={interns:{src:'thumbs/chars/hero/interns.webp',h:1.0},
+    x1:{src:'thumbs/chars/bye/x1_smile.webp',h:0.56},
+    x2:{src:'thumbs/chars/bye/x2_smile.webp',h:0.54},
+    x3:{src:'thumbs/chars/bye/x3_smile.webp',h:0.47}};
+  var ORDER=['interns','x1','x2','x3'];
+  var crew=document.getElementById('crew'),say=document.getElementById('say');
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e;}
+  var sayT,parts={};
+  function speak(w){document.getElementById('sayWho').textContent=T(NAME[w]);
+    document.getElementById('sayTxt').textContent=T(LINES[w][Math.floor(Math.random()*LINES[w].length)]);
+    say.classList.add('on');clearTimeout(sayT);sayT=setTimeout(function(){say.classList.remove('on');},3200);}
+  function H(){var w=crew.clientWidth||window.innerWidth;return Math.max(90,Math.min(230,(w-48)/2.55));}
+  function hop(b){if(reduce||!b)return;b.classList.remove('hop');void b.offsetWidth;b.classList.add('hop');}
+  function build(){
+    crew.querySelectorAll('.part').forEach(function(n){n.remove();});
+    var h=H();
+    ORDER.forEach(function(k){
+      var b=el('button','part '+k+(k==='interns'?'':' x'));b.type='button';
+      b.setAttribute('aria-label',k==='interns'?T(NAME.sia)+' · '+T(NAME.moa):T('미공개 식구'));
+      var im=el('img');im.alt='';im.src=LAYER[k].src;im.style.height=Math.round(LAYER[k].h*h)+'px';im.addEventListener('load',post);
+      b.appendChild(im);
+      if(k!=='interns')b.appendChild(el('span','q',k.toUpperCase()));
+      b.addEventListener('click',function(e){
+        var w=k;if(k==='interns'){var r=b.getBoundingClientRect();w=(e.clientX-r.left)<r.width*0.5?'sia':'moa';}
+        hop(b);speak(w);});
+      crew.insertBefore(b,say);parts[k]=b;
+    });
+    post();
+  }
+  build();
+  if(!reduce){var seq=['moa','x1','sia','x2','x3'],t=0,OF={sia:'interns',moa:'interns'};
+    setTimeout(function(){speak('moa');},900);
+    setInterval(function(){t++;var w=seq[t%seq.length];speak(w);hop(parts[OF[w]||w]);},4200);}
+  var rw;window.addEventListener('resize',function(){clearTimeout(rw);rw=setTimeout(build,250);});
+  document.getElementById('toTop').addEventListener('click',function(){
+    try{window.top.scrollTo({top:0,behavior:reduce?'auto':'smooth'});}catch(e){
+      try{window.parent.postMessage({type:'ahnboat-scroll-top'},'*');}catch(_){}}});
+  function statics(){
+    document.getElementById('bttl').textContent=T('또 놀러 오세요!');
+    document.getElementById('bTag').textContent=T('오늘도 연구실에 들러 주셔서 고마워요.');
+    document.getElementById('bWho').textContent=T('인턴 시아·모아, 그리고 아직 이름을 밝히지 않은 세 친구가 배웅합니다.');
+    document.getElementById('toTopT').textContent=T('맨 위로');
+    crew.setAttribute('aria-label',T('배웅하는 식구들 (눌러 보세요)'));
+    build();
+  }
+  AhnI18n.onChange(statics);
+  AhnI18n.ready.then(statics);
+  function post(){if(window.parent!==window){try{window.parent.postMessage({type:'ahnboat-catalog-height',height:Math.ceil(document.body.getBoundingClientRect().height),nav:false},'*');}catch(e){}}}
+  window.addEventListener('resize',post);
+  post();
+})();
+</script>
+</body>
+</html>
