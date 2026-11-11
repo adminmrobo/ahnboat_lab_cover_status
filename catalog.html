@@ -121,6 +121,12 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
 @media (max-width:1180px){.grid.big.six{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (max-width:640px){.grid.big.six{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:400px){.grid.big.six{grid-template-columns:1fr}}
+/* Lab Server 특별 카드(도감) — 랙과 같은 틀, 그림 자리는 색 바탕 + 이름 + 식구 */
+.tile.big.extra .xpic{display:flex;align-items:flex-start;justify-content:flex-start;background-color:var(--c);background-image:radial-gradient(rgba(255,255,255,.16) 1.2px,transparent 1.6px),repeating-linear-gradient(0deg,rgba(0,0,0,.10) 0 3px,transparent 3px 14px);background-size:14px 14px,auto}
+.tile.big.extra .xname{position:relative;z-index:1;margin:14px 0 0 16px;font-family:var(--mono);font-weight:700;font-size:clamp(18px,1.7vw,24px);line-height:1.2;color:#fff;background:rgba(0,0,0,.28);border:2px solid #fff;border-radius:8px;padding:4px 10px;letter-spacing:.02em}
+.tile.big.extra .xsp{position:absolute;right:14px;bottom:0;max-height:62%;display:flex;align-items:flex-end;gap:2px}
+.tile.big.extra .xsp img{position:static;width:auto;height:90px;image-rendering:pixelated;display:block}
+.tile.big.extra .n{font-weight:700;color:var(--c)}
 .tile.big.soon{cursor:default}
 .tile.big.soon .tbody{opacity:.75}
 .tile.big.soon:hover,.lightview .tile.big.soon:hover{transform:none;box-shadow:4px 4px 0 #1f2224}
@@ -239,9 +245,43 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
     var g=el('div','grid big');
     CATS.forEach(function(c){var its=inCat(c.name);if(!its.length)return;var om=onlyMid(c.name);g.appendChild(bigTile(c,c,H(om?[c.name,om]:[c.name]),its.length,label(c)));});
     if(!SINGLE&&VC.fill_to){for(var q=g.children.length,z=0;q<VC.fill_to;q++,z++)g.appendChild(soonTile({color:'#8a94a0'},z));if(VC.fill_to===6)g.classList.add('six');}
+    var EX=(!SINGLE&&VC.extras)||[];
+    if(EX.length){var nr=g.children.length;EX.forEach(function(o){g.appendChild(extraTile(o));});EXG={g:g,n:nr,k:EX.length};}else EXG=null;
     m.appendChild(g);
+    if(EXG)placeExtras();
     if(VC.random)randomPicks(m,VC.random);
   }
+  /* 특별 카드(도감): 랙 다음 줄(2행)의 마지막 열들에 놓고, 랙과는 한 칸 이상 띄운다. 자리가 모자라면 다음 줄 끝으로, 좁은 화면(2열 이하)은 그냥 이어서 */
+  var EXG=null;
+  function placeExtras(){
+    if(!EXG||!EXG.g.isConnected)return;
+    var g=EXG.g,kids=[].slice.call(g.querySelectorAll('.tile.extra'));
+    kids.forEach(function(e){e.style.gridColumn='';e.style.gridRow='';});
+    var cols=getComputedStyle(g).gridTemplateColumns.split(' ').filter(Boolean).length;
+    if(cols<EXG.k+1)return;
+    var rows=Math.ceil(EXG.n/cols),left=EXG.n-(rows-1)*cols;
+    var row=(left+1+EXG.k<=cols)?rows:rows+1;
+    if(row<2&&cols>=EXG.k)row=2;
+    kids.forEach(function(e,i){e.style.gridRow=String(row);e.style.gridColumn=String(cols-EXG.k+1+i);});
+  }
+  function extraTile(o){
+    var t=el('a','tile big extra');t.style.setProperty('--c',o.color||'#1f2224');
+    var u=o.url;if(AhnI18n.lang!=='ko'&&o.lang_url)u=o.lang_url.replace('{lang}',AhnI18n.lang);
+    t.href=u;t.target='_blank';t.rel='noopener';
+    t.setAttribute('data-gc','click/'+VIEW+'/'+(o.repo||o.name));t.setAttribute('data-gc-title',o.name);
+    var f=el('span','pic xpic');f.appendChild(el('span','xname',T(o.name)));
+    var sp=el('span','xsp');sp.setAttribute('aria-hidden','true');
+    (o.sprites||[]).forEach(function(s){var im=el('img');im.alt='';im.src=s.src;if(s.h)im.style.height=s.h+'px';im.addEventListener('load',post);sp.appendChild(im);});
+    f.appendChild(sp);t.appendChild(f);
+    var b=el('span','tbody');
+    b.appendChild(el('span','rack',o.label||'SPECIAL'));
+    b.appendChild(el('h3','',T(o.name)));
+    if(o.desc)b.appendChild(el('p','',T(o.desc)));
+    if(o.keywords&&o.keywords.length){var s2=el('span','kw');o.keywords.forEach(function(x){s2.appendChild(el('span','','#'+(AhnI18n.lang==='ko'?T(x).replace(/\s+/g,''):T(x))));});b.appendChild(s2);}
+    b.appendChild(el('span','n',T('새 창에서 열기 ↗')));
+    t.appendChild(b);return t;
+  }
+  window.addEventListener('resize',function(){placeExtras();});
   function randomPicks(m,n){
     var pool=ITEMS.filter(function(i){return i.kind==='repo'&&i.thumb&&i.site_url;});if(pool.length<n)return;
     var sec=el('section','picks');var hd=el('div','pickhead');

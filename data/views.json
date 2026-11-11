@@ -1,7 +1,56 @@
 {
- "_guide": "공개 카탈로그(catalog.html)의 화면 설정. ?view=이름 으로 고른다. server=Lab Server(기본), articles=논문·발표, portfolio=포트폴리오.",
+ "_guide": "공개 카탈로그(catalog.html)의 화면 설정. ?view=이름 으로 고른다. server=Lab Server(기본), articles=논문·발표, portfolio=포트폴리오. server.extras = Lab Server 랙 옆에 붙는 특별 카드(2행 마지막 열들, 랙과 한 칸 이상 띄움).",
  "server": {
-  "random": 3
+  "random": 3,
+  "extras": [
+   {
+    "name": "통계분포 도감",
+    "label": "SPECIAL · 도감",
+    "color": "#1f8a8a",
+    "desc": "확률분포들이 서로 어떻게 이어지는지 3D 관계 지도로 보고, 분포마다 쓰임새와 파이썬 호출법을 찾아봅니다.",
+    "keywords": [
+     "확률분포",
+     "3D 관계 지도",
+     "이산·연속"
+    ],
+    "url": "https://adminmrobo.github.io/probability_distribution_dictionary/",
+    "repo": "probability_distribution_dictionary",
+    "sprites": [
+     {
+      "src": "thumbs/chars/motion/haru/A4_f01.webp",
+      "h": 74
+     },
+     {
+      "src": "thumbs/chars/motion/jupanbot/R1_f05.webp",
+      "h": 58
+     }
+    ]
+   },
+   {
+    "name": "신경망 도감",
+    "label": "SPECIAL · 도감",
+    "color": "#6a4fb3",
+    "desc": "신경망 42가지를 구조 도감으로 정리하고, 초파리만 한 로봇의 뇌에 넣어 RPG 대전으로 비교합니다.",
+    "keywords": [
+     "신경망",
+     "구조 도감",
+     "초파리 로봇 대전"
+    ],
+    "url": "https://adminmrobo.github.io/neural_network_atlas/0_neural_network_essence.html",
+    "lang_url": "https://adminmrobo.github.io/neural_network_atlas/0_neural_network_essence.{lang}.html",
+    "repo": "neural_network_atlas",
+    "sprites": [
+     {
+      "src": "thumbs/chars/motion/doctor/D1_f01.webp",
+      "h": 76
+     },
+     {
+      "src": "thumbs/chars/motion/fruitfly/F1_f01.webp",
+      "h": 50
+     }
+    ]
+   }
+  ]
  },
  "articles": {
   "only": "논문 해설",
