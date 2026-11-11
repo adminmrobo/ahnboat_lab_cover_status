@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@500;700&display=swap">
+<script>try{if(/[?&]frame=0\b/.test(location.search))document.documentElement.classList.add("noframe");}catch(e){}</script>
 <style>
 :root{
   --bg:#ffffff; --paper:#fbfaf7; --ink:#1f2224; --muted:#5f6663; --rule:#e4e0d8; --line:#1f2224;
@@ -50,6 +51,13 @@ h2{overflow-wrap:anywhere;margin:0;font-size:clamp(1.7rem,3.6vw,2.7rem);line-hei
   .crew{padding-top:86px}
   .say{left:auto;right:12px;border-radius:14px 14px 4px 14px}
 }
+/* 맨 아래 카드 위에 바로 얹는 모드(?frame=0): 배너 네모를 없애고 식구들이 아래 카드 윗선 위에 선다 */
+html.noframe body{background:transparent}
+html.noframe .wrap{padding-bottom:0}
+html.noframe .bye{border:0;box-shadow:none;background:transparent;border-radius:0;overflow:visible;min-height:0}
+html.noframe .crew{padding-bottom:0}
+html.noframe .crew::after{display:none}
+html.noframe .btext{padding-bottom:18px}
 @media (prefers-reduced-motion:reduce){.part img,.part.hop{animation:none}.say{transition:none}}
 </style>
 </head>
