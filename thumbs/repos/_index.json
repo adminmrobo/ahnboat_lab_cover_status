@@ -10,7 +10,7 @@
  },
  "ahnboat_lab_explainer": {
   "src": null,
-  "pushed_at": "2026-11-08T02:26:14Z"
+  "pushed_at": "2026-11-10T22:24:06Z"
  },
  "ahnboat_lab_langpack": {
   "src": null,
@@ -24,15 +24,20 @@
   "src": null,
   "pushed_at": "2026-11-06T03:12:38Z"
  },
+ "AI_for_cement_produce": {
+  "src": "name:ch08_timeseries_lag_preprocessing/img/COVER.webp",
+  "pushed_at": "2026-11-10T11:16:48Z",
+  "made": "2026-11-11"
+ },
  "ai_for_cement_produce_07": {
   "src": "file:img/F01_cement_mortar_concrete.webp",
-  "pushed_at": "2026-11-09T23:31:46Z",
-  "made": "2026-11-10"
+  "pushed_at": "2026-11-10T09:50:06Z",
+  "made": "2026-11-11"
  },
  "ai_for_cement_produce_08": {
   "src": "name:img/Y03_28day_press_thumb.webp",
-  "pushed_at": "2026-11-09T23:31:49Z",
-  "made": "2026-11-10"
+  "pushed_at": "2026-11-10T09:50:09Z",
+  "made": "2026-11-11"
  },
  "AI_image_classification": {
   "src": "embedded:index.html#hero",
@@ -69,9 +74,9 @@
   "pushed_at": "2026-10-22T14:40:31Z"
  },
  "bayesian-statistics-for-data-scientists": {
-  "src": "name:assets/og_series.jpg",
-  "pushed_at": "2026-11-09T23:38:07Z",
-  "made": "2026-11-10"
+  "src": "name:assets/og/cover_00.jpg",
+  "pushed_at": "2026-11-10T13:50:29Z",
+  "made": "2026-11-11"
  },
  "blockchain_finance_ch01": {
   "src": null,
@@ -158,12 +163,12 @@
  },
  "fruitfly-lab-expressions": {
   "src": "file:.thumbnail.jpg",
-  "pushed_at": "2026-11-08T02:25:12Z",
-  "made": "2026-11-08"
+  "pushed_at": "2026-11-10T22:17:05Z",
+  "made": "2026-11-11"
  },
  "g2b-bid-strategy": {
   "src": null,
-  "pushed_at": "2026-11-09T02:52:05Z"
+  "pushed_at": "2026-11-10T05:52:44Z"
  },
  "Gen_AI_Hannam_univ": {
   "src": "embedded:index.html#hero",
@@ -182,8 +187,8 @@
  },
  "generative-ai-prompt-strategy": {
   "src": "og:assets/og_index.webp",
-  "pushed_at": "2026-11-10T03:03:37Z",
-  "made": "2026-11-10"
+  "pushed_at": "2026-11-10T04:48:36Z",
+  "made": "2026-11-11"
  },
  "google-sheets-lab": {
   "src": "redraw:R025:assets/covers/cover-index.webp",

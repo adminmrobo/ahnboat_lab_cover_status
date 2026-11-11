@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10",
+ "updated": "2026-11-11",
  "categories": [
   {
    "name": "머신러닝",
@@ -1720,9 +1720,7 @@
    "repo_url": "https://github.com/adminmrobo/ai_for_cement_produce_07",
    "site_url": "https://adminmrobo.github.io/ai_for_cement_produce_07/",
    "link": "",
-   "langs": [
-    "ko"
-   ],
+   "langs": [],
    "thumb": "thumbs/repos/ai_for_cement_produce_07.jpg"
   },
   {
@@ -1735,9 +1733,7 @@
    "repo_url": "https://github.com/adminmrobo/ai_for_cement_produce_08",
    "site_url": "https://adminmrobo.github.io/ai_for_cement_produce_08/",
    "link": "",
-   "langs": [
-    "ko"
-   ],
+   "langs": [],
    "thumb": "thumbs/repos/ai_for_cement_produce_08.jpg"
   },
   {
