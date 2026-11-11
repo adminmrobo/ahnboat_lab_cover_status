@@ -150,6 +150,20 @@ def main():
             "note": h.get("비고", ""),
             "order": int(h["순서"]) if (h.get("순서") or "").isdigit() else 1000 + i,
         })
+    # 옮긴 저장소·새로 넣을 저장소 (data/moved.json, hub.csv를 고치지 않아도 유지)
+    mv = load_json(os.path.join(DATA, "moved.json"), {})
+    for it in items:
+        m = (mv.get("moved") or {}).get(it["repo"])
+        if m:
+            it.update({k: v for k, v in m.items() if k in ("site_url", "repo_url", "title", "langs", "summary")})
+            it["exists"] = "Y"
+        a = (mv.get("add") or {}).get(it["repo"])
+        if a and it["cat"] == "미분류":
+            it.update({k: v for k, v in a.items() if k in ("title", "summary", "cat", "mid", "sub", "order")})
+            it["public"] = "Y"
+            it["exists"] = "Y" if it["site_url"] or by.get(it["repo"]) else it["exists"]
+            if not it["site_url"]:
+                it["site_url"] = "https://%s.github.io/%s/" % (OWNER, it["repo"])
     items.sort(key=lambda x: (cat_order.get(x["cat"], 99), x["mid"], x["sub"], x["order"]))
     kst = dt.timezone(dt.timedelta(hours=9))
     out = {"updated": dt.datetime.now(kst).date().isoformat(), "categories": cats, "mids": meta.get("mids", []), "hero": _img(meta["hero"]) if meta.get("hero") else {}, "items": items,

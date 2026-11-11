@@ -1,0 +1,78 @@
+{
+ "_설명": "옛 저장소 → 새 주소. build_hub.py가 카탈로그·서버실을 만들 때 site_url·repo_url을 이 값으로 바꾼다(hub.csv를 고치지 않아도 유지됨). add는 hub.csv에서 '미분류'인 새 저장소를 공개 항목으로 넣는 값.",
+ "moved": {
+  "inference_engineering_study_week_01_article_01": {
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study/week_01_article_01/",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study/tree/main/week_01_article_01",
+   "title": "1주차 논문 · 라이브벤치",
+   "langs": [
+    "ko"
+   ]
+  },
+  "inference_engineering_study_week_01_textbook_ch01": {
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study/week_01_textbook_ch01/",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study/tree/main/week_01_textbook_ch01",
+   "title": "1주차 교재 1장 · 시작 전에 정할 것",
+   "langs": [
+    "ko"
+   ]
+  },
+  "inference_engineering_study_week_02_article_01": {
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study/week_02_article_01/",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study/tree/main/week_02_article_01"
+  },
+  "inference_engineering_study_week_02_textbook_ch02_p1_p2": {
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study/week_02_textbook_ch02_p1_p2/",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study/tree/main/week_02_textbook_ch02_p1_p2"
+  },
+  "inference_engineering_study_week_02_textbook_ch02_p3_to_end": {
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study/week_03_textbook_ch02_p3_to_end/",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study/tree/main/week_03_textbook_ch02_p3_to_end",
+   "title": "3주차 교재 2장 뒷부분 · 병목을 찾아라",
+   "langs": [
+    "ko"
+   ]
+  },
+  "inference_engineering_study_week_03_textbook_ch02_p3_to_end": {
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study/week_03_textbook_ch02_p3_to_end/",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study/tree/main/week_03_textbook_ch02_p3_to_end",
+   "title": "3주차 교재 2장 뒷부분 · 병목을 찾아라",
+   "langs": [
+    "ko"
+   ]
+  },
+  "inference_engineering_study_week_03_article_01": {
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study/week_03_article_01/",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study/tree/main/week_03_article_01",
+   "langs": [
+    "ko"
+   ]
+  },
+  "inference_engineering_study_week_01_textbook_preface": {
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study/week_01_textbook_preface/",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study/tree/main/week_01_textbook_preface",
+   "title": "1주차 교재 서문 · 추론은 이제 모두의 일",
+   "langs": [
+    "ko"
+   ]
+  },
+  "inference_engineering_study_week_01_textbook_ch00": {
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study/week_01_textbook_ch00/",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study/tree/main/week_01_textbook_ch00",
+   "title": "1주차 교재 0장 · 추론이란 무엇인가",
+   "langs": [
+    "ko"
+   ]
+  }
+ },
+ "add": {
+  "inference_engineering_study": {
+   "title": "인퍼런스 스터디 북 · 목차",
+   "summary": "『Inference Engineering』 10주 스터디를 연구실 식구 전원이 진행하는 해설 페이지로 묶은 스터디 북 (교재·논문·부록)",
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "추론 엔지니어링 스터디",
+   "sub": "추론 엔지니어링 스터디",
+   "order": 0
+  }
+ }
+}

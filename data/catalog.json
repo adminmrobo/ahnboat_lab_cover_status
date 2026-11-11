@@ -924,44 +924,47 @@
    "thumb": "thumbs/repos/rulebase_to_agent.jpg"
   },
   {
-   "title": "1주차 논문 · LiveBench 벤치마크",
+   "title": "인퍼런스 스터디 북 · 목차",
+   "summary": "『Inference Engineering』 10주 스터디를 연구실 식구 전원이 진행하는 해설 페이지로 묶은 스터디 북 (교재·논문·부록)",
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "추론 엔지니어링 스터디",
+   "sub": "추론 엔지니어링 스터디",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study",
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": ""
+  },
+  {
+   "title": "1주차 논문 · 라이브벤치",
    "summary": "",
    "cat": "LLM·추론 엔지니어링",
    "mid": "추론 엔지니어링 스터디",
    "sub": "추론 엔지니어링 스터디",
    "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/inference_engineering_study_week_01_article_01",
-   "site_url": "https://adminmrobo.github.io/inference_engineering_study_week_01_article_01/",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study/tree/main/week_01_article_01",
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study/week_01_article_01/",
    "link": "",
    "langs": [
-    "ko",
-    "en",
-    "zh",
-    "ja",
-    "uz",
-    "ru",
-    "vi"
+    "ko"
    ],
    "thumb": "thumbs/repos/inference_engineering_study_week_01_article_01.jpg"
   },
   {
-   "title": "1주차 교재 1장 · 추론 서빙의 균형",
+   "title": "1주차 교재 1장 · 시작 전에 정할 것",
    "summary": "LLM 추론 서빙의 지연시간·처리량·단위 경제학 균형을 다루는 인터랙티브 교육 시리즈",
    "cat": "LLM·추론 엔지니어링",
    "mid": "추론 엔지니어링 스터디",
    "sub": "추론 엔지니어링 스터디",
    "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/inference_engineering_study_week_01_textbook_ch01",
-   "site_url": "https://adminmrobo.github.io/inference_engineering_study_week_01_textbook_ch01/",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study/tree/main/week_01_textbook_ch01",
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study/week_01_textbook_ch01/",
    "link": "",
    "langs": [
-    "ko",
-    "en",
-    "zh",
-    "ja",
-    "uz",
-    "ru",
-    "vi"
+    "ko"
    ],
    "thumb": "thumbs/repos/inference_engineering_study_week_01_textbook_ch01.jpg"
   },
@@ -972,8 +975,8 @@
    "mid": "추론 엔지니어링 스터디",
    "sub": "추론 엔지니어링 스터디",
    "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/inference_engineering_study_week_02_article_01",
-   "site_url": "https://adminmrobo.github.io/inference_engineering_study_week_02_article_01/",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study/tree/main/week_02_article_01",
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study/week_02_article_01/",
    "link": "",
    "langs": [
     "ko",
@@ -993,8 +996,8 @@
    "mid": "추론 엔지니어링 스터디",
    "sub": "추론 엔지니어링 스터디",
    "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/inference_engineering_study_week_02_textbook_ch02_p1_p2",
-   "site_url": "https://adminmrobo.github.io/inference_engineering_study_week_02_textbook_ch02_p1_p2/",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study/tree/main/week_02_textbook_ch02_p1_p2",
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study/week_02_textbook_ch02_p1_p2/",
    "link": "",
    "langs": [
     "ko",
@@ -1008,14 +1011,14 @@
    "thumb": "thumbs/repos/inference_engineering_study_week_02_textbook_ch02_p1_p2.jpg"
   },
   {
-   "title": "2주차 교재 2장 뒷부분 · 병목을 찾아라",
+   "title": "3주차 교재 2장 뒷부분 · 병목을 찾아라",
    "summary": "",
    "cat": "LLM·추론 엔지니어링",
    "mid": "추론 엔지니어링 스터디",
    "sub": "추론 엔지니어링 스터디",
    "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/inference_engineering_study_week_02_textbook_ch02_p3_to_end",
-   "site_url": "https://adminmrobo.github.io/inference_engineering_study_week_02_textbook_ch02_p3_to_end/",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study/tree/main/week_03_textbook_ch02_p3_to_end",
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study/week_03_textbook_ch02_p3_to_end/",
    "link": "",
    "langs": [
     "ko"
@@ -1044,8 +1047,8 @@
    "mid": "추론 엔지니어링 스터디",
    "sub": "추론 엔지니어링 스터디",
    "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/inference_engineering_study_week_03_article_01",
-   "site_url": "https://adminmrobo.github.io/inference_engineering_study_week_03_article_01/",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study/tree/main/week_03_article_01",
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study/week_03_article_01/",
    "link": "",
    "langs": [
     "ko"
@@ -1858,7 +1861,7 @@
    "thumb": ""
   },
   {
-   "title": "안보트 연구실 타운 (Ahn-boat Lab Town)",
+   "title": "안보트 연구실 타운 (Ahn Lab Town)",
    "summary": "",
    "cat": "연구실 운영",
    "mid": "연구실 소개",
