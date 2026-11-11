@@ -28,12 +28,12 @@ body{overflow-wrap:anywhere;margin:0;background:var(--bg);color:var(--ink);font-
 .crew::after{content:"";position:absolute;left:6%;right:6%;bottom:0;height:14px;border-radius:50%;background:rgba(31,34,36,.08)}
 .part{position:relative;display:block;background:none;border:0;padding:0;cursor:pointer;flex:none;margin:0}
 .part img{display:block;width:auto;filter:drop-shadow(2px 3px 0 rgba(31,34,36,.10))}
-.part.x img{animation:peek 2.8s ease-in-out infinite}
-.part.x2 img{animation-delay:.45s}.part.x3 img{animation-delay:.9s}
+.part img{animation:peek 2.8s ease-in-out infinite}
+.part.p1 img{animation-delay:.3s}.part.p2 img{animation-delay:.6s}.part.p3 img{animation-delay:.9s}.part.p4 img{animation-delay:1.2s}
 .part.hop{animation:hop .5s ease}
 @keyframes peek{50%{transform:translateY(-6px)}}
 @keyframes hop{30%{transform:translateY(-10px)}60%{transform:none}}
-.part .q{position:absolute;left:50%;top:-4px;transform:translate(-50%,-100%);font-family:var(--mono);font-size:.68rem;font-weight:700;border:1.5px solid var(--line);border-radius:99px;background:#fff;padding:0 7px;white-space:nowrap}
+.part .q{position:absolute;left:50%;top:2px;transform:translate(-50%,-100%);font-family:var(--mono);font-size:.68rem;font-weight:700;border:1.5px solid var(--line);border-radius:99px;background:#fff;padding:0 7px;white-space:nowrap}
 .say{position:absolute;top:12px;left:16px;max-width:min(320px,80%);background:#fff;border:2px solid var(--line);border-radius:14px 14px 14px 4px;padding:7px 12px;font-size:.85rem;box-shadow:3px 3px 0 var(--line);opacity:0;transform:translateY(-4px);transition:opacity .25s,transform .25s;pointer-events:none;margin:0;z-index:2}
 .say.on{opacity:1;transform:none}
 .say b{display:block;font-size:.7rem;color:var(--muted)}
@@ -87,12 +87,11 @@ html.noframe .btext{padding-bottom:18px}
     x2:['(안경을 고쳐 쓰며 방긋)','조금만 기다려 주세요. 곧 인사드릴게요.'],
     x3:['(꾸벅)','…헤헤.']};
   var NAME={sia:'인턴 시아',moa:'인턴 모아',x1:'???',x2:'???',x3:'???'};
-  /* 그림: 인턴 둘은 헤드와 같은 전신 그림, X1~X3는 웃는 얼굴 실루엣(아래에서 빼꼼) */
-  var LAYER={interns:{src:'thumbs/chars/hero/interns.webp',h:1.0},
-    x1:{src:'thumbs/chars/bye/x1_smile.webp',h:0.56},
-    x2:{src:'thumbs/chars/bye/x2_smile.webp',h:0.54},
-    x3:{src:'thumbs/chars/bye/x3_smile.webp',h:0.47}};
-  var ORDER=['interns','x1','x2','x3'];
+  /* 그림: 다섯 식구 모두 같은 증명사진 틀(360×360)·같은 크기·웃는 얼굴(E01). X1~X3는 실루엣에 웃는 눈·입을 그린 것 */
+  var LAYER={sia:'thumbs/chars/idphoto/sia_E01.webp',moa:'thumbs/chars/idphoto/moa_E01.webp',
+    x1:'thumbs/chars/bye/x1_smile.webp',x2:'thumbs/chars/bye/x2_smile.webp',x3:'thumbs/chars/bye/x3_smile.webp'};
+  var ORDER=['sia','moa','x1','x2','x3'];
+  var TAG={sia:'SIA',moa:'MOA',x1:'X1',x2:'X2',x3:'X3'};
   var crew=document.getElementById('crew'),say=document.getElementById('say');
   var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
   function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e;}
@@ -100,28 +99,25 @@ html.noframe .btext{padding-bottom:18px}
   function speak(w){document.getElementById('sayWho').textContent=T(NAME[w]);
     document.getElementById('sayTxt').textContent=T(LINES[w][Math.floor(Math.random()*LINES[w].length)]);
     say.classList.add('on');clearTimeout(sayT);sayT=setTimeout(function(){say.classList.remove('on');},3200);}
-  function H(){var w=crew.clientWidth||window.innerWidth;return Math.max(90,Math.min(230,(w-48)/2.55));}
+  function H(){var w=crew.clientWidth||window.innerWidth;return Math.round(Math.max(56,Math.min(150,(w-40)/5.5)));}
   function hop(b){if(reduce||!b)return;b.classList.remove('hop');void b.offsetWidth;b.classList.add('hop');}
   function build(){
     crew.querySelectorAll('.part').forEach(function(n){n.remove();});
     var h=H();
-    ORDER.forEach(function(k){
-      var b=el('button','part '+k+(k==='interns'?'':' x'));b.type='button';
-      b.setAttribute('aria-label',k==='interns'?T(NAME.sia)+' · '+T(NAME.moa):T('미공개 식구'));
-      var im=el('img');im.alt='';im.src=LAYER[k].src;im.style.height=Math.round(LAYER[k].h*h)+'px';im.addEventListener('load',post);
-      b.appendChild(im);
-      if(k!=='interns')b.appendChild(el('span','q',k.toUpperCase()));
-      b.addEventListener('click',function(e){
-        var w=k;if(k==='interns'){var r=b.getBoundingClientRect();w=(e.clientX-r.left)<r.width*0.5?'sia':'moa';}
-        hop(b);speak(w);});
+    ORDER.forEach(function(k,i){
+      var b=el('button','part p'+i);b.type='button';
+      b.setAttribute('aria-label',k.charAt(0)==='x'?T('미공개 식구'):T(NAME[k]));
+      var im=el('img');im.alt='';im.src=LAYER[k];im.style.height=h+'px';im.style.width=h+'px';im.addEventListener('load',post);
+      b.appendChild(im);b.appendChild(el('span','q',TAG[k]));
+      b.addEventListener('click',function(){hop(b);speak(k);});
       crew.insertBefore(b,say);parts[k]=b;
     });
     post();
   }
   build();
-  if(!reduce){var seq=['moa','x1','sia','x2','x3'],t=0,OF={sia:'interns',moa:'interns'};
+  if(!reduce){var seq=['moa','x1','sia','x2','x3'],t=0;
     setTimeout(function(){speak('moa');},900);
-    setInterval(function(){t++;var w=seq[t%seq.length];speak(w);hop(parts[OF[w]||w]);},4200);}
+    setInterval(function(){t++;var w=seq[t%seq.length];speak(w);hop(parts[w]);},4200);}
   var rw;window.addEventListener('resize',function(){clearTimeout(rw);rw=setTimeout(build,250);});
   document.getElementById('toTop').addEventListener('click',function(){
     try{window.top.scrollTo({top:0,behavior:reduce?'auto':'smooth'});}catch(e){
