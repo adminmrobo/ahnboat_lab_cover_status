@@ -138,7 +138,7 @@ h1{margin:0;font-size:clamp(28px,3.2vw,38px);line-height:1.15}
     CARDS.forEach(function(c){box.appendChild(card(c,g[c.key]));});
     var sub=document.getElementById('sub');sub.textContent='';
     sub.textContent=T('진행 중 {0}건 · 예정 {1}건 · 완료 {2}건',g.doing.length,g.todo.length,g.done.length);
-    var f=document.getElementById('foot');f.textContent=T('Ahn Lab Town의 프로젝트 목록과 같은 내용입니다')+' · ';var a=el('a','',T('전체 일정 보기 →'));a.href=ALL;a.target='_blank';a.rel='noopener';f.appendChild(a);
+    var f=document.getElementById('foot');f.textContent=T('Ahn-boat Lab Town의 프로젝트 목록과 같은 내용입니다')+' · ';var a=el('a','',T('전체 일정 보기 →'));a.href=ALL;a.target='_blank';a.rel='noopener';f.appendChild(a);
     post();
   }
   fetch(SRC,{cache:'no-cache'}).then(function(r){if(!r.ok)throw new Error(r.status);return r.arrayBuffer();})

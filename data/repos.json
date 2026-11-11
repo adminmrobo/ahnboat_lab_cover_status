@@ -2,7 +2,7 @@
  {
   "repo": "ahn_boat_lab_town",
   "series_ko": "안보트 연구실 타운",
-  "title_ko": "Ahn Lab Town",
+  "title_ko": "Ahn-boat Lab Town",
   "repo_url": "https://github.com/adminmrobo/ahn_boat_lab_town",
   "pages_url": "https://adminmrobo.github.io/ahn_boat_lab_town/",
   "default_branch": "main",
@@ -18,7 +18,7 @@
   "thumb": "thumbs/repos/ahn_boat_lab_town.jpg",
   "status": "redraw",
   "checked_at": "2026-11-11",
-  "site_title": "Ahn Lab Town",
+  "site_title": "Ahn-boat Lab Town",
   "ontology": {
    "status": "none",
    "pages_with_kg": 0,
