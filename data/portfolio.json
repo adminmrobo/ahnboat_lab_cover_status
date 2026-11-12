@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11",
+ "updated": "2026-11-13",
  "categories": [
   {
    "name": "프로젝트·서비스",
@@ -148,6 +148,21 @@
    "thumb": "thumbs/cats/C08-M1.webp",
    "button": "소개 보기",
    "note": "STEP 이러닝"
+  },
+  {
+   "title": "데이터 사이언티스트를 위한 베이지안 통계학",
+   "summary": "13회차 베이지안 통계 강의를 가상 다국적 기업 본사 타워(3D)로 꾸민 해설 과정. 한 층에 한 부서가 그 회차의 베이지안 도구로 일하고, 7M 라운지와 옥상에서 중간·기말 퀴즈를 봅니다.",
+   "cat": "저서·이러닝",
+   "mid": "이러닝",
+   "sub": "",
+   "kind": "portfolio",
+   "repo_url": "",
+   "site_url": "https://adminmrobo.github.io/bayesian-statistics-for-data-scientists/",
+   "link": "https://adminmrobo.github.io/bayesian-statistics-for-data-scientists/",
+   "langs": [],
+   "thumb": "thumbs/cats/E-bayes-tower.webp",
+   "button": "강좌 보기",
+   "note": "13회차 + 중간·기말 퀴즈 · 3D 본사 타워"
   },
   {
    "title": "핀테크 API 개발지원사업 (총괄 PM)",
