@@ -2,7 +2,7 @@ name: 오늘의 레포트
 
 on:
   schedule:
-    - cron: "47 22 * * *"   # 매일 한국 시간 오전 7시 47분
+    - cron: "17 19 * * *"   # 매일 한국 시간 오전 4시 17분 (GitHub 예약이 몇 시간씩 밀려서 일찍 건다 — 아침에 받도록)
   workflow_dispatch:
   push:                     # 레포트 프로그램을 고치면 한 번 바로 돌려 본다(첫 메일 확인)
     branches: [main]

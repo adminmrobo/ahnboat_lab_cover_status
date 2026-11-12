@@ -19,6 +19,7 @@ import subprocess
 import sys
 import urllib.error
 import urllib.parse
+import time
 import urllib.request
 
 OWNER = "adminmrobo"
@@ -365,14 +366,21 @@ class Api:
         r.add_header("X-GitHub-Api-Version", "2022-11-28")
         r.add_header("User-Agent", SELF_REPO + "-scan")
         self.calls += 1
-        try:
-            with urllib.request.urlopen(r, timeout=60) as resp:
-                body = resp.read(limit) if limit else resp.read()
-                link = resp.headers.get("Link", "")
-        except urllib.error.HTTPError as e:
-            if e.code in (404, 409):  # 없음 / 빈 저장소
-                return None, ""
-            raise
+        for attempt in range(4):  # 연결이 잠깐 끊기면 조금 쉬었다 다시 (최대 4번)
+            try:
+                with urllib.request.urlopen(r, timeout=60) as resp:
+                    body = resp.read(limit) if limit else resp.read()
+                    link = resp.headers.get("Link", "")
+                break
+            except urllib.error.HTTPError as e:
+                if e.code in (404, 409):  # 없음 / 빈 저장소
+                    return None, ""
+                if e.code < 500 or attempt == 3:
+                    raise
+            except (urllib.error.URLError, OSError):
+                if attempt == 3:
+                    raise
+            time.sleep(5 * (attempt + 1))
         if raw:
             return body.decode("utf-8", "replace"), link
         return json.loads(body.decode("utf-8")), link

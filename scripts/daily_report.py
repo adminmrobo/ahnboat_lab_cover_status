@@ -3,7 +3,8 @@
 
 하는 일
   1) GoatCounter API에서 어제(한국 시간) 방문·콘텐츠 클릭·유입 경로와 최근 30일 추이를 읽는다.
-  2) 하루의 말풍선 해설을 만들고, 메일(HTML)을 보낸다.
+     + 저장소에 모아 둔 목록에서 콘텐츠 수·번역·온톨로지 적용 현황을 센다.
+  2) 하루의 말풍선 해설을 만들고, 메일(HTML)을 보낸다. 같은 내용을 글자만 있는 파일(.md)로도 붙인다.
   3) 같은 숫자를 관리자 키로 잠가 data/report/latest.json.enc 로 남긴다(report.html이 풀어서 보여 준다).
 
 환경 변수(GitHub Secrets)
@@ -23,6 +24,7 @@ import sys
 import urllib.parse
 import urllib.request
 import urllib.error
+from email.mime.application import MIMEApplication
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.utils import formataddr
@@ -33,6 +35,8 @@ KST = dt.timezone(dt.timedelta(hours=9))
 MENU = {"server": "Lab Server", "articles": "Articles", "portfolio": "Portfolio"}
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
+LANGS = ["en", "zh", "ja", "uz", "ru", "vi"]
+LANG_KO = {"en": "영어", "zh": "중국어", "ja": "일본어", "uz": "우즈베크어", "ru": "러시아어", "vi": "베트남어"}
 
 
 # ---------------------------------------------------------------- GoatCounter
@@ -85,6 +89,71 @@ def collect(day):
     return {"series": series, "hits": hits, "refs": refs}
 
 
+# ---------------------------------------------------------------- 콘텐츠 현황
+def _load(rel):
+    try:
+        return json.load(open(os.path.join(ROOT, rel), encoding="utf-8"))
+    except (OSError, ValueError):
+        return None
+
+
+def inventory():
+    """저장소에 모아 둔 목록으로 콘텐츠 수·번역·온톨로지 현황을 센다 (없는 자료는 건너뜀)."""
+    inv = {}
+    sc = _load("data/site_contents.json")
+    if sc:
+        wp = sc.get("wordpress") or {}
+        inv["posts"] = len(wp.get("posts") or [])
+        inv["portfolio"] = len(sc.get("portfolio") or [])
+        inv["list_at"] = sc.get("fetched_at", "")
+    cat = _load("data/catalog.json")
+    if cat:
+        items = cat.get("items") or []
+        repos = [x for x in items if x.get("kind") == "repo"]
+        onto = _load("data/ontology.json") or {}
+        tagged = {p.get("repo") for p in onto.get("pages") or []}
+        inv["contents"] = len(items)
+        inv["external"] = len(items) - len(repos)
+        inv["korean"] = len(repos)
+        full = part = 0
+        by = {k: 0 for k in LANGS}
+        todo_tr, todo_onto = [], []
+        for x in repos:
+            name = (x.get("repo_url") or "").rstrip("/").split("/")[-1]
+            have = [k for k in LANGS if k in (x.get("langs") or [])]
+            for k in have:
+                by[k] += 1
+            if len(have) == len(LANGS):
+                full += 1
+            elif have:
+                part += 1
+                todo_tr.append({"name": name, "title": x.get("title", ""), "missing": [k for k in LANGS if k not in have]})
+            if name in tagged:
+                inv["onto"] = inv.get("onto", 0) + 1
+            else:
+                todo_onto.append(name)
+        inv.setdefault("onto", 0)
+        inv.update({"tr_full": full, "tr_part": part, "tr_none": len(repos) - full - part,
+                    "by_lang": by, "tr_partial_list": todo_tr[:20], "onto_todo": len(todo_onto)})
+        s = onto.get("summary") or {}
+        inv["concepts"] = s.get("concepts", 0)
+    return inv
+
+
+def previous():
+    """어제 잠가 둔 레포트를 풀어 콘텐츠 수를 비교한다 (키가 없거나 처음이면 빈 값)."""
+    key = os.environ.get("HUB_KEY", "")
+    path = os.path.join(ROOT, "data", "report", "latest.json.enc")
+    if not key or not os.path.exists(path):
+        return {}
+    try:
+        sys.path.insert(0, HERE)
+        from hubcrypt import decrypt
+        return json.loads(decrypt(open(path, "rb").read(), key).decode("utf-8")).get("inventory") or {}
+    except Exception:
+        return {}
+
+
 # ---------------------------------------------------------------- 숫자 정리
 def build(raw, day):
     ds = day.isoformat()
@@ -128,6 +197,12 @@ def build(raw, day):
         "top_pages": pages[:10], "top_clicks": clicks[:15], "menus": menus,
         "refs": [{"name": (r.get("name") or "(직접 방문)"), "count": int(r.get("count") or 0)} for r in raw["refs"]][:8],
     }
+    inv = inventory()
+    if inv:
+        old = previous()
+        inv["delta"] = {k: inv[k] - old[k] for k in ("contents", "posts", "tr_full", "onto")
+                        if isinstance(inv.get(k), int) and isinstance(old.get(k), int) and inv[k] != old[k]}
+    rep["inventory"] = inv
     rep.update(narrate(rep))
     return rep
 
@@ -169,6 +244,12 @@ def narrate(r):
         lines.append(f"메뉴 중에서는 {MENU.get(best[0], best[0])}이(가) 제일 인기였어요.")
     if r["refs"]:
         lines.append(f"손님들은 주로 「{r['refs'][0]['name']}」에서 들어왔어요.")
+    inv = r.get("inventory") or {}
+    if inv.get("korean"):
+        d = inv.get("delta") or {}
+        new = f" 어제보다 {d['contents']:+d}개!" if d.get("contents") else ""
+        lines.append(f"연구실 콘텐츠는 모두 {inv['contents']}개예요.{new} 해설 {inv['korean']}개 가운데 "
+                     f"6개 언어 번역이 끝난 건 {inv['tr_full']}개, 온톨로지를 붙인 건 {inv['onto']}개예요.")
     lines.append("자세한 그래프는 ‘하루와 자세히 보기’에서 같이 봐요!")
     return {"mood": mood, "lines": lines}
 
@@ -208,6 +289,7 @@ def email_html(r):
     ch = pct(r["pageviews"], r["pageviews_prev"])
     chs = "" if ch is None else (f'<span style="color:{"#1f9e66" if ch >= 0 else "#c0392b"};font-weight:700">{ch:+d}%</span>')
     card = 'border:2px solid #1f2224;border-radius:16px;background:#ffffff;padding:16px 18px;margin:0 0 14px'
+    inv_card = inventory_html(r.get("inventory") or {}, card)
     return f"""<!doctype html><html><body style="margin:0;padding:0;background:#f3f1ec">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f3f1ec"><tr><td align="center" style="padding:20px 10px">
 <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;font-family:'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif;color:#1f2224">
@@ -227,11 +309,71 @@ def email_html(r):
 <tr><td style="{card}"><div style="font-weight:700;margin-bottom:6px">📈 최근 7일 방문</div><table role="presentation" width="100%">{wk}</table></td></tr>
 <tr><td style="{card}"><div style="font-weight:700;margin-bottom:6px">🏆 많이 열린 콘텐츠 {'(어제)' if ckey == 'day' else '(최근 7일)'}</div><table role="presentation" width="100%">{ck}</table></td></tr>
 <tr><td><table role="presentation" width="100%"><tr>{menu_cells}</tr></table></td></tr>
-<tr><td style="{card};background:#fbfaf7">{talk}</td></tr>
+{inv_card}<tr><td style="{card};background:#fbfaf7">{talk}</td></tr>
 <tr><td align="center" style="padding:6px 0 18px"><a href="{PAGES}report.html" style="display:inline-block;background:#e0a92a;color:#1f2224;text-decoration:none;font-weight:700;border:2px solid #1f2224;border-radius:12px;padding:11px 20px">🔎 하루와 자세히 보기</a>
 <div style="font-size:12px;color:#5f6663;margin-top:8px">자세히 보기 페이지는 관리자 키로 열립니다.</div></td></tr>
 <tr><td style="font-size:11px;color:#8a8f8c;text-align:center;padding-bottom:10px">AHNBOAT LAB · {esc(r['generated'])} 자동 발송</td></tr>
 </table></td></tr></table></body></html>"""
+
+
+def inventory_html(inv, card):
+    if not inv.get("korean"):
+        return ""
+    d = inv.get("delta") or {}
+    dl = lambda k: (f' <span style="color:#1f9e66;font-weight:700">{d[k]:+d}</span>' if d.get(k) else "")
+    n = inv["korean"]
+
+    def row(label, done, extra=""):
+        w = round(done * 260 / n) if n else 0
+        return (f'<tr><td style="padding:3px 8px 3px 0;font-size:13px;white-space:nowrap">{label}</td>'
+                f'<td style="padding:3px 0;width:100%"><div style="width:260px;height:14px;background:#ece9e1;border-radius:7px;display:inline-block;vertical-align:middle">'
+                f'<div style="width:{w}px;height:14px;background:#2f9e8f;border-radius:7px"></div></div>'
+                f'<span style="font-size:12px;color:#5f6663;margin-left:6px">{done}/{n}{extra}</span></td></tr>')
+    langs = " · ".join(f"{LANG_KO[k]} {v}" for k, v in (inv.get("by_lang") or {}).items())
+    return (f'<tr><td style="{card}"><div style="font-weight:700;margin-bottom:6px">🗂 콘텐츠 현황</div>'
+            f'<div style="font-size:13px;color:#5f6663;margin-bottom:8px">전체 {inv["contents"]}개{dl("contents")}'
+            f' (해설 {n} · 외부 {inv.get("external", 0)}) · 홈페이지 글 {inv.get("posts", 0)}개{dl("posts")}</div>'
+            f'<table role="presentation" width="100%">'
+            + row("한국어", n)
+            + row("번역 6개 언어", inv["tr_full"], f' · 일부 {inv["tr_part"]} · 없음 {inv["tr_none"]}')
+            + row("온톨로지", inv["onto"])
+            + f'</table><div style="font-size:12px;color:#5f6663;margin-top:6px">{esc(langs)}</div></td></tr>\n')
+
+
+def text_report(r):
+    """메일에 붙이는 글자만 있는 레포트 (.md)."""
+    L = [f"# 오늘의 레포트 — {r['date']} ({r['dow']}) 기준", "", f"만든 때: {r['generated']} KST", "",
+         "## 하루의 한마디", ""] + [f"- {t}" for t in r["lines"][:-1]]
+    ch = pct(r["pageviews"], r["pageviews_prev"])
+    wch = pct(r["week_total"], r["last_week_total"])
+    L += ["", "## 방문·클릭", "",
+          f"- 어제 방문: {r['pageviews']:,}" + (f" (그저께 대비 {ch:+d}%)" if ch is not None else ""),
+          f"- 어제 콘텐츠 클릭: {r['clicks']:,}",
+          f"- 최근 7일 방문: {r['week_total']:,}" + (f" (지난주 대비 {wch:+d}%)" if wch is not None else ""),
+          "", "| 날짜 | 방문 |", "|---|---|"] + [f"| {w['day']} | {w['count']:,} |" for w in r["week"]]
+    L += ["", "## 많이 열린 콘텐츠", "", "| 콘텐츠 | 메뉴 | 어제 | 7일 |", "|---|---|---|---|"]
+    L += [f"| {(c['title'] or c['name']).replace('|', '/')} | {MENU.get(c['menu'], c['menu'])} | {c['day']} | {c['week_sum']} |"
+          for c in r["top_clicks"]] or ["| (아직 클릭 기록 없음) | | | |"]
+    L += ["", "## 많이 본 페이지", "", "| 페이지 | 어제 | 7일 |", "|---|---|---|"]
+    L += [f"| {(p['title'] or p['path']).replace('|', '/')} | {p['day']} | {p['week_sum']} |" for p in r["top_pages"]]
+    if r["refs"]:
+        L += ["", "## 들어온 곳", ""] + [f"- {x['name']}: {x['count']}" for x in r["refs"]]
+    inv = r.get("inventory") or {}
+    if inv.get("korean"):
+        n, d = inv["korean"], inv.get("delta") or {}
+        L += ["", "## 콘텐츠 현황", "",
+              f"- 전체 콘텐츠: {inv['contents']}개 (해설 {n} · 외부 {inv.get('external', 0)})" + (f" — 어제보다 {d['contents']:+d}" if d.get("contents") else ""),
+              f"- 홈페이지 글: {inv.get('posts', 0)}개 · 포트폴리오 {inv.get('portfolio', 0)}건",
+              f"- 지식 색인 개념: {inv.get('concepts', 0):,}개", "",
+              "| 체크 | 완료 | 일부 | 없음 |", "|---|---|---|---|",
+              f"| 한국어 콘텐츠 | {n} | – | – |",
+              f"| 번역(6개 언어) | {inv['tr_full']} | {inv['tr_part']} | {inv['tr_none']} |",
+              f"| 온톨로지 적용 | {inv['onto']} | – | {inv['onto_todo']} |", "",
+              "언어별: " + " · ".join(f"{LANG_KO[k]} {v}" for k, v in inv["by_lang"].items())]
+        if inv.get("tr_partial_list"):
+            L += ["", "### 번역이 일부만 된 콘텐츠", ""]
+            L += [f"- {x['name']} — 빠진 언어: {', '.join(LANG_KO[k] for k in x['missing'])}" for x in inv["tr_partial_list"]]
+    return "\n".join(L) + "\n"
 
 
 def send(r, html):
@@ -240,12 +382,17 @@ def send(r, html):
     if not user or not pw:
         print("메일 설정(GMAIL_ADDRESS·GMAIL_APP_PASSWORD)이 없어 메일은 보내지 않았습니다.")
         return False
-    msg = MIMEMultipart("alternative")
+    msg = MIMEMultipart("mixed")
+    body = MIMEMultipart("alternative")
     msg["Subject"] = f"[오늘의 레포트] {r['date']} · 방문 {r['pageviews']:,} · 클릭 {r['clicks']:,}"
     msg["From"] = formataddr(("조수 하루 (AHNBOAT LAB)", user))
     msg["To"] = user
-    msg.attach(MIMEText("\n".join(r["lines"]) + f"\n\n자세히 보기: {PAGES}report.html", "plain", "utf-8"))
-    msg.attach(MIMEText(html, "html", "utf-8"))
+    body.attach(MIMEText("\n".join(r["lines"]) + f"\n\n자세히 보기: {PAGES}report.html", "plain", "utf-8"))
+    body.attach(MIMEText(html, "html", "utf-8"))
+    msg.attach(body)
+    att = MIMEApplication(text_report(r).encode("utf-8"), _subtype="octet-stream")
+    att.add_header("Content-Disposition", "attachment", filename=f"daily_report_{r['date']}.md")
+    msg.attach(att)
     with smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=60) as s:
         s.login(user, pw)
         s.sendmail(user, [user], msg.as_string())
@@ -282,6 +429,7 @@ def main():
     if os.environ.get("REPORT_OUT"):
         open(os.environ["REPORT_OUT"], "w", encoding="utf-8").write(html)
         open(os.environ["REPORT_OUT"] + ".json", "w", encoding="utf-8").write(json.dumps(r, ensure_ascii=False, indent=1))
+        open(os.environ["REPORT_OUT"] + ".md", "w", encoding="utf-8").write(text_report(r))
     print(f"{r['date']}: 방문 {r['pageviews']} · 클릭 {r['clicks']} · 표정 {r['mood']}")
     lock(r)
     send(r, html)
