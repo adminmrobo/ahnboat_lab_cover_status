@@ -23,6 +23,25 @@
     ]
    },
    {
+    "name": "머신러닝 도감",
+    "label": "SPECIAL · 도감",
+    "color": "#c2571a",
+    "desc": "머신러닝 모델 27가지를 같은 모눈 위에 하나씩 그리고, 무엇을 긋는 모델인지와 강점·약점을 쉬운 말로 풉니다.",
+    "keywords": [
+     "머신러닝",
+     "모델 도감",
+     "회귀·분류·군집"
+    ],
+    "url": "https://adminmrobo.github.io/machine_learning_model_atlas/",
+    "repo": "machine_learning_model_atlas",
+    "sprites": [
+     {
+      "src": "thumbs/chars/atlas/moa_intro.webp",
+      "h": 92
+     }
+    ]
+   },
+   {
     "name": "신경망 도감",
     "label": "SPECIAL · 도감",
     "color": "#6a4fb3",
