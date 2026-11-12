@@ -49,6 +49,8 @@ jobs:
           fi
 
       - name: 바뀐 것이 있으면 커밋
+        env:
+          HUB_KEY: ${{ secrets.HUB_KEY }}
         run: |
           # 날짜(checked_at, updated)만 바뀐 경우는 커밋하지 않는다. 파일이 새로 생기거나 지워지면 커밋한다.
           if [ -z "$(git diff -U0 HEAD -- data/ | grep '^[+-]' | grep -v '^[+-][+-][+-]' | grep -v '"checked_at"' | grep -v '"updated"')" ] \
@@ -61,4 +63,25 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A data/ thumbs/
           git commit -m "표지 현황 자동 수집 $(TZ=Asia/Seoul date +%F)"
-          git push
+          # 수집하는 동안(몇 분) 다른 커밋이 먼저 올라오면 push가 거절된다.
+          # 그때는 이번 수집 결과(repos.json · 대표 그림)만 지키고, 사람이 고친 파일은 최신 것을 받아
+          # 카탈로그·서버실 목록·온톨로지를 다시 만든 뒤 다시 올린다 (최대 5번).
+          for i in 1 2 3 4 5; do
+            if git push; then exit 0; fi
+            echo "다른 커밋이 먼저 올라옴 — 최신을 받아 다시 만든다 ($i)"
+            rm -rf /tmp/scan && mkdir -p /tmp/scan
+            cp data/repos.json /tmp/scan/repos.json && cp -r thumbs/repos /tmp/scan/thumbs_repos
+            git fetch -q origin main && git reset -q --hard origin/main
+            cp /tmp/scan/repos.json data/repos.json && rm -rf thumbs/repos && cp -r /tmp/scan/thumbs_repos thumbs/repos
+            python scripts/hub_secure.py
+            python scripts/build_portfolio.py
+            python scripts/build_ontology.py
+            if [ -e data/hub.csv ] || [ -e data/hub.json ]; then
+              if [ -n "$HUB_KEY" ]; then echo "평문 관리 데이터가 남아 있습니다"; exit 1; fi
+            fi
+            git add -A data/ thumbs/
+            git diff --cached --quiet && { echo "받은 최신에 이미 다 들어 있음"; exit 0; }
+            git commit -q -m "표지 현황 자동 수집 $(TZ=Asia/Seoul date +%F)"
+            sleep $((i * 5))
+          done
+          exit 1
