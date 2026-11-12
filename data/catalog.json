@@ -1770,6 +1770,21 @@
    "thumb": "thumbs/repos/ai_for_cement_produce_08.jpg"
   },
   {
+   "title": "스마트 팩토리 World · 시멘트 제조업",
+   "summary": "업종별 3D 공장과 동적 대시보드. 시멘트 공장 World(가마 37분 지연·병목 신호판·결정 기록)와 28일 타임머신(생산일 강도 예측 → 28일 압축 시험). AI가 제안하고 사람이 승인하는 흐름을 3D로 본다.",
+   "cat": "강의·저서",
+   "mid": "대학 강의",
+   "sub": "시멘트 공정 AI",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/smart_factory_world",
+   "site_url": "https://adminmrobo.github.io/smart_factory_world/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/smart_factory_world.jpg"
+  },
+  {
    "title": "핀테크 데이터분석 기초 (이러닝)",
    "summary": "금융 데이터를 다루는 기초를 배우는 13시간 이러닝 과정",
    "cat": "강의·저서",
