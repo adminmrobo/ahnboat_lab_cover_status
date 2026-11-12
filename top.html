@@ -29,6 +29,11 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
 .tag{margin:8px 0 0;font-size:1.15rem;color:var(--muted)}
 .boat{margin:14px 0 0;font-size:.9rem;color:var(--muted)}
 .boat b{color:var(--ink)}
+.stats{list-style:none;display:flex;flex-wrap:wrap;gap:6px 18px;margin:14px 0 0;padding:10px 0 0;border-top:1.5px dashed var(--rule);max-width:560px}
+.stats[hidden]{display:none}
+.stats li{display:flex;align-items:baseline;gap:6px}
+.stats b{font-family:var(--mono);font-size:1.35rem;line-height:1}
+.stats span{font-size:.8rem;color:var(--muted)}
 .langs{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
 .langs .lg{font:inherit;font-size:.78rem;font-weight:700;cursor:pointer;border:1.5px solid var(--line);border-radius:99px;padding:3px 11px;background:#fff;color:var(--ink);box-shadow:2px 2px 0 var(--line)}
 .langs .lg[aria-pressed=true]{background:var(--ink);color:#fff}
@@ -83,6 +88,7 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
       <h1 id="ttl">Reon Ahn's page</h1>
       <p class="tag">Small but interesting things.</p>
       <p class="boat"><b>Ahn boat</b> = 안(Ahn) + 상선(商船, boat). <span id="boatTxt">연구실 식구들을 태운 작은 배입니다.</span></p>
+      <ul class="stats" id="stats" hidden></ul>
       <div class="langs" id="langs" role="group" aria-label="언어"></div>
       <div class="find">
         <form id="sf" action="search.html" target="_blank" role="search"><input id="sq" name="q" type="search" autocomplete="off"><button type="submit" id="sgo">🔍</button></form>
@@ -168,6 +174,17 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
     });
     post();
   }
+  /* 연구실 규모 한 줄: 분야·콘텐츠(공개 카탈로그) · 개념(온톨로지 지도) · 언어 — 매일 수집 때 함께 바뀐다 */
+  var STAT=null;
+  function getJ(u){return fetch(u,{cache:'no-cache'}).then(function(r){if(!r.ok)throw new Error(r.status);return r.json();});}
+  Promise.all([getJ('data/catalog.json'),getJ('data/ontology.json').catch(function(){return null;})]).then(function(a){
+    var c=a[0]||{},o=(a[1]&&a[1].summary)||{};
+    STAT=[['규모:분야',(c.categories||[]).length],['규모:콘텐츠',(c.items||[]).length],['규모:개념',o.concepts||0],['규모:언어',AhnI18n.langs.length]];
+    return AhnI18n.ready;}).then(stats).catch(function(){});
+  function stats(){if(!STAT)return;var ul=document.getElementById('stats');ul.textContent='';
+    var loc=AhnI18n.lang==='zh'?'zh-CN':AhnI18n.lang;
+    STAT.forEach(function(x){if(!x[1])return;var li=el('li');li.appendChild(el('b','',Number(x[1]).toLocaleString(loc)));li.appendChild(el('span','',T(x[0]).replace(/^규모:/,'')));ul.appendChild(li);});
+    ul.hidden=!ul.children.length;ul.setAttribute('aria-label',T('연구실 규모'));post();}
   /* 언어 고르기 — 고르면 아래 블록이 모두 함께 바뀐다 */
   function statics(){
     document.getElementById('boatTxt').textContent=T('연구실 식구들을 태운 작은 배입니다.');
@@ -182,7 +199,7 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
       b.addEventListener('click',function(){AhnI18n.set(l);});g.appendChild(b);});
     build();
   }
-  AhnI18n.onChange(function(){statics();notices();});
+  AhnI18n.onChange(function(){statics();notices();stats();});
   AhnI18n.ready.then(function(){statics();AhnI18n.announce();});
   function post(){if(window.parent!==window){try{window.parent.postMessage({type:'ahnboat-catalog-height',height:Math.ceil(document.body.getBoundingClientRect().height),nav:false},'*');}catch(e){}}}
   window.addEventListener('resize',post);
