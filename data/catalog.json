@@ -1796,6 +1796,21 @@
    "thumb": ""
   },
   {
+   "title": "데이터 사이언티스트를 위한 베이지안 통계학",
+   "summary": "13회차 베이지안 통계 강의를 가상 다국적 기업 본사 타워(3D)로 꾸민 해설 과정. 한 층에 한 부서가 그 회차의 베이지안 도구로 일하고, 7M 라운지와 옥상에서 중간·기말 퀴즈를 봅니다.",
+   "cat": "강의·저서",
+   "mid": "외부_콘텐츠",
+   "sub": "이러닝",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/bayesian-statistics-for-data-scientists",
+   "site_url": "https://adminmrobo.github.io/bayesian-statistics-for-data-scientists/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/bayesian-statistics-for-data-scientists.jpg"
+  },
+  {
    "title": "AI 범죄와 자기 방어",
    "summary": "AI가 범죄의 비용 구조와 수익 모델을 어떻게 바꾸었는지 범죄경제학으로 풀어낸 책",
    "cat": "강의·저서",
