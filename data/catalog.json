@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11",
+ "updated": "2026-11-13",
  "categories": [
   {
    "name": "머신러닝",
@@ -785,6 +785,21 @@
    "thumb": ""
   },
   {
+   "title": "역전파 연구실 · 손잡이 33개를 한 번에 돌리는 법",
+   "summary": "2012년 워싱턴 DC 자전거 대여 366일을 기온 하나로 맞히는 작은 신경망(손잡이 33개)으로, 손잡이 하나씩·무작위·역전파 세 학습 방법을 같은 조건에서 비교한 실험 노트. 역전파는 같은 답을 훨씬 싸게 내고, 손잡이가 늘수록 역전파만 남는다. 텐서 연구실 → 활성화 함수에 이어지는 편.",
+   "cat": "딥러닝·뇌과학",
+   "mid": "딥러닝 모델",
+   "sub": "역전파 연구실",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/backprop_lab",
+   "site_url": "https://adminmrobo.github.io/backprop_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": ""
+  },
+  {
    "title": "텐서 연구실",
    "summary": "",
    "cat": "딥러닝·뇌과학",
@@ -798,21 +813,6 @@
     "ko"
    ],
    "thumb": "thumbs/repos/what_is_tensor.jpg"
-  },
-  {
-   "title": "역전파 연구실 · 손잡이 33개를 한 번에 돌리는 법",
-   "summary": "2012년 워싱턴 DC 자전거 대여 366일을 기온 하나로 맞히는 작은 신경망(손잡이 33개)으로, 손잡이 하나씩·무작위·역전파 세 학습 방법을 같은 조건에서 비교한 실험 노트. 역전파는 같은 답을 훨씬 싸게 내고, 손잡이가 늘수록 역전파만 남는다. 텐서 연구실 → 활성화 함수에 이어지는 편.",
-   "cat": "딥러닝·뇌과학",
-   "mid": "딥러닝 모델",
-   "sub": "역전파 연구실",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/backprop_lab",
-   "site_url": "https://adminmrobo.github.io/backprop_lab/",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "thumbs/repos/backprop_lab.jpg"
   },
   {
    "title": "AI 렌더링 연구실 3부작",
@@ -949,9 +949,15 @@
    "site_url": "https://adminmrobo.github.io/inference_engineering_study/",
    "link": "",
    "langs": [
-    "ko"
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
    ],
-   "thumb": ""
+   "thumb": "thumbs/repos/inference_engineering_study.jpg"
   },
   {
    "title": "1주차 논문 · 라이브벤치",
@@ -1038,7 +1044,7 @@
    "langs": [
     "ko"
    ],
-   "thumb": "thumbs/repos/inference_engineering_study_week_02_textbook_ch02_p3_to_end.jpg"
+   "thumb": ""
   },
   {
    "title": "병목을 찾아라 · 발표 자료",
@@ -1518,15 +1524,9 @@
    "site_url": "https://adminmrobo.github.io/timeseries-trilogy/",
    "link": "",
    "langs": [
-    "ko",
-    "en",
-    "zh",
-    "ja",
-    "uz",
-    "ru",
-    "vi"
+    "ko"
    ],
-   "thumb": "https://adminmrobo.github.io/timeseries-trilogy/assets/img/cover_index.webp"
+   "thumb": "thumbs/repos/timeseries-trilogy.jpg"
   },
   {
    "title": "이산확률분포 일곱 가지",
@@ -1770,19 +1770,19 @@
    "thumb": "thumbs/repos/ai_for_cement_produce_08.jpg"
   },
   {
-   "title": "스마트 팩토리 World · 시멘트 제조업",
-   "summary": "업종별 3D 공장과 동적 대시보드. 시멘트 공장 World(가마 37분 지연·병목 신호판·결정 기록)와 28일 타임머신(생산일 강도 예측 → 28일 압축 시험). AI가 제안하고 사람이 승인하는 흐름을 3D로 본다.",
+   "title": "데이터 사이언티스트를 위한 베이지안 통계학",
+   "summary": "13회차 베이지안 통계 강의를 가상 다국적 기업 본사 타워(3D)로 꾸민 해설 과정. 한 층에 한 부서가 그 회차의 베이지안 도구로 일하고, 7M 라운지와 옥상에서 중간·기말 퀴즈를 봅니다.",
    "cat": "강의·저서",
-   "mid": "대학 강의",
-   "sub": "시멘트 공정 AI",
+   "mid": "외부_콘텐츠",
+   "sub": "이러닝",
    "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/smart_factory_world",
-   "site_url": "https://adminmrobo.github.io/smart_factory_world/",
+   "repo_url": "https://github.com/adminmrobo/bayesian-statistics-for-data-scientists",
+   "site_url": "https://adminmrobo.github.io/bayesian-statistics-for-data-scientists/",
    "link": "",
    "langs": [
     "ko"
    ],
-   "thumb": "thumbs/repos/smart_factory_world.jpg"
+   "thumb": "thumbs/repos/bayesian-statistics-for-data-scientists.jpg"
   },
   {
    "title": "핀테크 데이터분석 기초 (이러닝)",
@@ -1809,21 +1809,6 @@
    "link": "STEP 이러닝",
    "langs": [],
    "thumb": ""
-  },
-  {
-   "title": "데이터 사이언티스트를 위한 베이지안 통계학",
-   "summary": "13회차 베이지안 통계 강의를 가상 다국적 기업 본사 타워(3D)로 꾸민 해설 과정. 한 층에 한 부서가 그 회차의 베이지안 도구로 일하고, 7M 라운지와 옥상에서 중간·기말 퀴즈를 봅니다.",
-   "cat": "강의·저서",
-   "mid": "외부_콘텐츠",
-   "sub": "이러닝",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/bayesian-statistics-for-data-scientists",
-   "site_url": "https://adminmrobo.github.io/bayesian-statistics-for-data-scientists/",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "thumbs/repos/bayesian-statistics-for-data-scientists.jpg"
   },
   {
    "title": "AI 범죄와 자기 방어",
@@ -1921,7 +1906,7 @@
    "thumb": ""
   },
   {
-   "title": "안보트 연구실 타운 (Ahn-boat Lab Town)",
+   "title": "안보트 연구실 타운 (Ahn Lab Town)",
    "summary": "",
    "cat": "연구실 운영",
    "mid": "연구실 소개",

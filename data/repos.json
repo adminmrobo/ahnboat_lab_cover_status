@@ -1,12 +1,110 @@
 [
  {
+  "repo": "agent_secret_leak_lab",
+  "series_ko": "연구실 해설 · 확률로 읽는 보안 사건",
+  "title_ko": "확률로 읽는 보안 사건",
+  "repo_url": "https://github.com/adminmrobo/agent_secret_leak_lab",
+  "pages_url": "https://adminmrobo.github.io/agent_secret_leak_lab/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-12T02:18:38Z",
+  "has_manifest": true,
+  "covers": [
+   {
+    "path": "01_settings_leak_probability.html##cover",
+    "role": "cover",
+    "id": "cover_01",
+    "size": [
+     1920,
+     1080
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
+   },
+   {
+    "path": "02_debate_settings_leak.html##cover",
+    "role": "cover",
+    "id": "cover_02",
+    "size": [
+     1920,
+     1080
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
+   }
+  ],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "ok",
+  "checked_at": "2026-11-13",
+  "site_title": "확률로 읽는 보안 사건",
+  "ontology": {
+   "status": "full",
+   "pages_with_kg": 2,
+   "pages_total": 2,
+   "pages_checked": 2,
+   "kg_links": [
+    "https://adminmrobo.github.io/agent_secret_leak_lab/01_settings_leak_probability.html#kg",
+    "https://adminmrobo.github.io/agent_secret_leak_lab/02_debate_settings_leak.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/agent_secret_leak_lab/01_settings_leak_probability.html#export",
+    "https://adminmrobo.github.io/agent_secret_leak_lab/02_debate_settings_leak.html#export"
+   ],
+   "files": [
+    {
+     "path": "docs/KG_registry_additions.json",
+     "url": "https://github.com/adminmrobo/agent_secret_leak_lab/blob/main/docs/KG_registry_additions.json"
+    }
+   ]
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 2
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/agent_secret_leak_lab/01_settings_leak_probability.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 2
+   }
+  },
+  "has_pages": true
+ },
+ {
   "repo": "ahn_boat_lab_town",
   "series_ko": "안보트 연구실 타운",
   "title_ko": "Ahn-boat Lab Town",
   "repo_url": "https://github.com/adminmrobo/ahn_boat_lab_town",
   "pages_url": "https://adminmrobo.github.io/ahn_boat_lab_town/",
   "default_branch": "main",
-  "pushed_at": "2026-11-08T03:08:15Z",
+  "pushed_at": "2026-11-11T13:43:01Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 3,
@@ -17,7 +115,7 @@
   ],
   "thumb": "thumbs/repos/ahn_boat_lab_town.jpg",
   "status": "redraw",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "Ahn-boat Lab Town",
   "ontology": {
    "status": "none",
@@ -69,7 +167,7 @@
   "redraw_ids": [],
   "thumb": null,
   "status": "unknown",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": null,
   "ontology": {
    "status": "none",
@@ -104,14 +202,14 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_lab_explainer",
   "pages_url": "https://adminmrobo.github.io/ahnboat_lab_explainer/",
   "default_branch": "main",
-  "pushed_at": "2026-11-10T22:24:06Z",
+  "pushed_at": "2026-11-11T12:32:22Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
   "redraw_ids": [],
   "thumb": null,
   "status": "unknown",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": null,
   "ontology": {
    "status": "none",
@@ -155,14 +253,14 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_lab_langpack",
   "pages_url": "https://adminmrobo.github.io/ahnboat_lab_langpack/",
   "default_branch": "main",
-  "pushed_at": "2026-11-04T14:31:47Z",
+  "pushed_at": "2026-11-11T09:01:16Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
   "redraw_ids": [],
   "thumb": null,
   "status": "unknown",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": null,
   "ontology": {
    "status": "none",
@@ -204,7 +302,7 @@
   "redraw_ids": [],
   "thumb": null,
   "status": "unknown",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": null,
   "ontology": {
    "status": "none",
@@ -246,7 +344,7 @@
   "redraw_ids": [],
   "thumb": null,
   "status": "unknown",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "AI가 쓰는 전기, 어디서 모자랄까",
   "ontology": {
    "status": "none",
@@ -291,7 +389,7 @@
   "repo_url": "https://github.com/adminmrobo/AI_for_cement_produce",
   "pages_url": "https://adminmrobo.github.io/AI_for_cement_produce/",
   "default_branch": "main",
-  "pushed_at": "2026-11-10T11:16:48Z",
+  "pushed_at": "2026-11-11T17:10:10Z",
   "has_manifest": false,
   "covers": [
    {
@@ -324,7 +422,7 @@
   "redraw_ids": [],
   "thumb": "thumbs/repos/AI_for_cement_produce.jpg",
   "status": "ok",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "AI를 활용한 시멘트 공정 최적화",
   "ontology": {
    "status": "partial",
@@ -386,7 +484,7 @@
   "redraw_ids": [],
   "thumb": "thumbs/repos/ai_for_cement_produce_07.jpg",
   "status": "unknown",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "새 주소로 옮겼습니다 · 시멘트 품질, AI로 미리 본다",
   "ontology": {
    "status": "none",
@@ -434,7 +532,7 @@
   "redraw_ids": [],
   "thumb": "thumbs/repos/ai_for_cement_produce_08.jpg",
   "status": "ok",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "새 주소로 옮겼습니다 · 무엇이 강도를 정하고, 얼마에 만들 것인가",
   "ontology": {
    "status": "none",
@@ -482,7 +580,7 @@
   ],
   "thumb": "thumbs/repos/AI_image_classification.jpg",
   "status": "redraw",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "AI는 이미지를 어떻게 구분할까? — 긴급 미션 네 개",
   "ontology": {
    "status": "none",
@@ -553,6 +651,58 @@
   "has_pages": true
  },
  {
+  "repo": "ai_in_3d",
+  "series_ko": "신경망 연구소 — 3D로 설명하는 AI",
+  "title_ko": "신경망 연구소 — 3D로 설명하는 AI",
+  "repo_url": "https://github.com/adminmrobo/ai_in_3d",
+  "pages_url": "https://adminmrobo.github.io/ai_in_3d/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-12T15:33:01Z",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-13",
+  "site_title": "신경망 연구소 — 3D로 설명하는 AI",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 3,
+   "pages_checked": 3,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 3
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/ai_in_3d/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 3
+   }
+  },
+  "has_pages": true
+ },
+ {
   "repo": "AI_Model_Review",
   "series_ko": "AI Model Review — 초파리 연구실의 딥러닝 A to Z",
   "title_ko": "AI Model Review — 초파리 연구실의 딥러닝 A to Z",
@@ -566,7 +716,7 @@
   "redraw_ids": [],
   "thumb": "thumbs/repos/AI_Model_Review.jpg",
   "status": "unknown",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "AI Model Review — 초파리 연구실의 딥러닝 A to Z",
   "ontology": {
    "status": "partial",
@@ -638,7 +788,7 @@
   "repo_url": "https://github.com/adminmrobo/AI_Model_Review_Fruit_fly_special",
   "pages_url": "https://adminmrobo.github.io/AI_Model_Review_Fruit_fly_special/",
   "default_branch": "main",
-  "pushed_at": "2026-11-06T22:22:50Z",
+  "pushed_at": "2026-11-12T14:34:18Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 2,
@@ -648,7 +798,7 @@
   ],
   "thumb": "thumbs/repos/AI_Model_Review_Fruit_fly_special.jpg",
   "status": "redraw",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "딥러닝 A to Z · 초파리 특별편 — 초파리 연구실",
   "ontology": {
    "status": "partial",
@@ -942,7 +1092,7 @@
   "redraw_ids": [],
   "thumb": "thumbs/repos/ai_rendering.jpg",
   "status": "ok",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "AI 렌더링 연구실 — 3부작",
   "ontology": {
    "status": "partial",
@@ -1091,7 +1241,7 @@
   "redraw_ids": [],
   "thumb": "thumbs/repos/ai_text_read_ability.jpg",
   "status": "ok",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "AI 글 읽기 어려움 · 목차",
   "ontology": {
    "status": "partial",
@@ -1178,25 +1328,90 @@
  },
  {
   "repo": "Anomaly_detection_tatics",
-  "series_ko": "평소와 다른 한 건 찾기 — 이상 탐지의 다섯 도구",
+  "series_ko": "이상 탐지 연구실",
   "title_ko": "평소와 다른 한 건 찾기 — 이상 탐지의 다섯 도구",
   "repo_url": "https://github.com/adminmrobo/Anomaly_detection_tatics",
   "pages_url": "https://adminmrobo.github.io/Anomaly_detection_tatics/",
   "default_branch": "main",
-  "pushed_at": "2026-11-09T23:45:10Z",
-  "has_manifest": false,
+  "pushed_at": "2026-11-11T11:23:11Z",
+  "has_manifest": true,
   "covers": [
    {
     "path": "img/og.jpg",
     "role": "og",
-    "estimated": true
+    "id": "og",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "",
+    "role": "cover",
+    "id": "cover_anomaly",
+    "size": [
+     1920,
+     1080
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "",
+    "role": "scene",
+    "id": "sc_anomaly_hero",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "",
+    "role": "scene",
+    "id": "sc_anomaly_outro",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
    }
   ],
   "redraw_count": 0,
   "redraw_ids": [],
   "thumb": "thumbs/repos/Anomaly_detection_tatics.jpg",
   "status": "ok",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "평소와 다른 한 건 찾기 — 이상 탐지의 다섯 도구",
   "ontology": {
    "status": "full",
@@ -1282,7 +1497,7 @@
   "redraw_ids": [],
   "thumb": null,
   "status": "unknown",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": null,
   "ontology": {
    "status": "none",
@@ -1311,13 +1526,65 @@
   "has_pages": false
  },
  {
+  "repo": "backprop_lab",
+  "series_ko": "역전파 연구실",
+  "title_ko": "역전파 연구실 · 실험 노트 — 손잡이 33개를 한 번에 돌리는 법",
+  "repo_url": "https://github.com/adminmrobo/backprop_lab",
+  "pages_url": "https://adminmrobo.github.io/backprop_lab/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-12T15:32:17Z",
+  "has_manifest": true,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "ok",
+  "checked_at": "2026-11-13",
+  "site_title": "역전파 연구실 · 실험 노트 — 손잡이 33개를 한 번에 돌리는 법",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 1,
+   "pages_checked": 1,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 1
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/backprop_lab/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 1
+   }
+  },
+  "has_pages": false
+ },
+ {
   "repo": "bayesian-statistics-for-data-scientists",
   "series_ko": "베이지안 통계 연구실",
   "title_ko": "베이지안 통계 연구실",
   "repo_url": "https://github.com/adminmrobo/bayesian-statistics-for-data-scientists",
   "pages_url": "https://adminmrobo.github.io/bayesian-statistics-for-data-scientists/",
   "default_branch": "main",
-  "pushed_at": "2026-11-10T13:50:29Z",
+  "pushed_at": "2026-11-11T18:43:01Z",
   "has_manifest": false,
   "covers": [
    {
@@ -1484,13 +1751,88 @@
     "path": "assets/og_series.jpg",
     "role": "og",
     "estimated": true
+   },
+   {
+    "path": "src/build/thumbs/thumb_01.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs/thumb_02.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs/thumb_03.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs/thumb_04.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs/thumb_05.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs/thumb_06.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs/thumb_07.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs/thumb_07m.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs/thumb_08.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs/thumb_09.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs/thumb_10.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs/thumb_11.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs/thumb_12.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs/thumb_13.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs/thumb_13f.webp",
+    "role": "thumb",
+    "estimated": true
    }
   ],
   "redraw_count": 0,
   "redraw_ids": [],
   "thumb": "thumbs/repos/bayesian-statistics-for-data-scientists.jpg",
   "status": "ok",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "베이지안 통계 연구실",
   "ontology": {
    "status": "partial",
@@ -1579,7 +1921,7 @@
   "redraw_ids": [],
   "thumb": null,
   "status": "unknown",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "블록체인 1장 장부의 진화",
   "ontology": {
    "status": "partial",
@@ -1652,7 +1994,7 @@
   "redraw_ids": [],
   "thumb": null,
   "status": "unknown",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "블록체인 2장 블록체인 기술",
   "ontology": {
    "status": "partial",
@@ -1725,7 +2067,7 @@
   "redraw_ids": [],
   "thumb": null,
   "status": "unknown",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "블록체인 3장 비트코인",
   "ontology": {
    "status": "partial",
@@ -1798,7 +2140,7 @@
   "redraw_ids": [],
   "thumb": null,
   "status": "unknown",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "현금흐름표 연구실 — 직접법·간접법에서 생성AI 검산까지",
   "ontology": {
    "status": "full",
@@ -1841,386 +2183,1535 @@
   "has_pages": true
  },
  {
+  "repo": "cnn_face_game_lab",
+  "series_ko": "AI 연구실 해설 · CNN 특집",
+  "title_ko": "얼굴 알아맞히기 게임 — 20칸으로 배우는 CNN",
+  "repo_url": "https://github.com/adminmrobo/cnn_face_game_lab",
+  "pages_url": "https://adminmrobo.github.io/cnn_face_game_lab/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-12T13:27:19Z",
+  "has_manifest": true,
+  "covers": [
+   {
+    "path": "index.html#div.cover[data-img=cover_cnn_face]",
+    "role": "cover",
+    "id": "cover",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "part2.html#div.cover[data-img=cover_cnn_find]",
+    "role": "cover",
+    "id": "cover_part2",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "index.html#figure.gscene[data-img=sc_stage1]",
+    "role": "scene",
+    "id": "sc_stage1",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "index.html#figure.gscene[data-img=sc_stage3]",
+    "role": "scene",
+    "id": "sc_stage3",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "index.html#figure.gscene[data-img=sc_stage9]",
+    "role": "scene",
+    "id": "sc_stage9",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "index.html#figure.gscene[data-img=sc_stage13]",
+    "role": "scene",
+    "id": "sc_stage13",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "index.html#figure.gscene[data-img=sc_stage15]",
+    "role": "scene",
+    "id": "sc_stage15",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "index.html#figure.gscene[data-img=sc_stage18]",
+    "role": "scene",
+    "id": "sc_stage18",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "part2.html#figure.gscene[data-img=sc_stage21]",
+    "role": "scene",
+    "id": "sc_stage21",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "part2.html#figure.gscene[data-img=sc_stage25]",
+    "role": "scene",
+    "id": "sc_stage25",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "part2.html#figure.gscene[data-img=sc_stage26]",
+    "role": "scene",
+    "id": "sc_stage26",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   }
+  ],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "ok",
+  "checked_at": "2026-11-13",
+  "site_title": "얼굴 알아맞히기 게임 — 20칸으로 배우는 CNN",
+  "ontology": {
+   "status": "full",
+   "pages_with_kg": 2,
+   "pages_total": 2,
+   "pages_checked": 2,
+   "kg_links": [
+    "https://adminmrobo.github.io/cnn_face_game_lab/index.html#kg",
+    "https://adminmrobo.github.io/cnn_face_game_lab/part2.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/cnn_face_game_lab/index.html#export",
+    "https://adminmrobo.github.io/cnn_face_game_lab/part2.html#export"
+   ],
+   "files": [
+    {
+     "path": "KG_new_ids.json",
+     "url": "https://github.com/adminmrobo/cnn_face_game_lab/blob/main/KG_new_ids.json"
+    }
+   ]
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 2
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/cnn_face_game_lab/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 2
+   }
+  },
+  "has_pages": false
+ },
+ {
   "repo": "data_science_for_business",
-  "series_ko": "비즈니스를 위한 데이터 과학 연구실",
+  "series_ko": "비즈니스를 위한 데이터 과학",
   "title_ko": "비즈니스를 위한 데이터 과학 연구실",
   "repo_url": "https://github.com/adminmrobo/data_science_for_business",
   "pages_url": "https://adminmrobo.github.io/data_science_for_business/",
   "default_branch": "main",
-  "pushed_at": "2026-11-09T23:40:33Z",
-  "has_manifest": false,
+  "pushed_at": "2026-11-12T08:54:12Z",
+  "has_manifest": true,
   "covers": [
    {
-    "path": "tools/art/cover_index.webp",
+    "path": "index.html#.cover[data-img=\"cover_index\"]",
     "role": "cover",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/cover_w01.webp",
-    "role": "cover",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/cover_w02.webp",
-    "role": "cover",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/cover_w03.webp",
-    "role": "cover",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/cover_w04.webp",
-    "role": "cover",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/cover_w05.webp",
-    "role": "cover",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/cover_w06.webp",
-    "role": "cover",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/cover_w07.webp",
-    "role": "cover",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/cover_w08.webp",
-    "role": "cover",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/cover_w09.webp",
-    "role": "cover",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/cover_w10.webp",
-    "role": "cover",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/cover_w11.webp",
-    "role": "cover",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/cover_w12.webp",
-    "role": "cover",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/cover_w13.webp",
-    "role": "cover",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/cover_w14.webp",
-    "role": "cover",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/cover_w15.webp",
-    "role": "cover",
-    "estimated": true
+    "id": "cover_index",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    },
    {
     "path": "img/og_index.jpg",
     "role": "og",
-    "estimated": true
+    "id": "og_index",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    },
    {
-    "path": "img/og_w01.jpg",
-    "role": "og",
-    "estimated": true
+    "path": "week01_business_data_science.html#.cover[data-img=\"cover_w01\"]",
+    "role": "cover",
+    "id": "cover_w01",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    },
    {
-    "path": "img/og_w02.jpg",
-    "role": "og",
-    "estimated": true
+    "path": "week01_business_data_science.html#figure.scene[data-scene=\"sc_w01_hero\"]",
+    "role": "hero",
+    "id": "sc_w01_hero",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    },
    {
-    "path": "img/og_w03.jpg",
-    "role": "og",
-    "estimated": true
-   },
-   {
-    "path": "img/og_w04.jpg",
-    "role": "og",
-    "estimated": true
-   },
-   {
-    "path": "img/og_w05.jpg",
-    "role": "og",
-    "estimated": true
-   },
-   {
-    "path": "img/og_w06.jpg",
-    "role": "og",
-    "estimated": true
-   },
-   {
-    "path": "img/og_w07.jpg",
-    "role": "og",
-    "estimated": true
-   },
-   {
-    "path": "img/og_w08.jpg",
-    "role": "og",
-    "estimated": true
-   },
-   {
-    "path": "img/og_w09.jpg",
-    "role": "og",
-    "estimated": true
-   },
-   {
-    "path": "img/og_w10.jpg",
-    "role": "og",
-    "estimated": true
-   },
-   {
-    "path": "img/og_w11.jpg",
-    "role": "og",
-    "estimated": true
-   },
-   {
-    "path": "img/og_w12.jpg",
-    "role": "og",
-    "estimated": true
-   },
-   {
-    "path": "img/og_w13.jpg",
-    "role": "og",
-    "estimated": true
-   },
-   {
-    "path": "img/og_w14.jpg",
-    "role": "og",
-    "estimated": true
-   },
-   {
-    "path": "img/og_w15.jpg",
-    "role": "og",
-    "estimated": true
+    "path": "week01_business_data_science.html#figure.scene[data-scene=\"sc_w01_outro\"]",
+    "role": "outro",
+    "id": "sc_w01_outro",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    },
    {
     "path": "img/thumb_w01.webp",
     "role": "thumb",
-    "estimated": true
+    "id": "thumb_w01",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "img/og_w01.jpg",
+    "role": "og",
+    "id": "og_w01",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "week02_data_collection.html#.cover[data-img=\"cover_w02\"]",
+    "role": "cover",
+    "id": "cover_w02",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "week02_data_collection.html#figure.scene[data-scene=\"sc_w02_hero\"]",
+    "role": "hero",
+    "id": "sc_w02_hero",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "week02_data_collection.html#figure.scene[data-scene=\"sc_w02_outro\"]",
+    "role": "outro",
+    "id": "sc_w02_outro",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    },
    {
     "path": "img/thumb_w02.webp",
     "role": "thumb",
-    "estimated": true
+    "id": "thumb_w02",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "img/og_w02.jpg",
+    "role": "og",
+    "id": "og_w02",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "week03_analysis_prep.html#.cover[data-img=\"cover_w03\"]",
+    "role": "cover",
+    "id": "cover_w03",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "week03_analysis_prep.html#figure.scene[data-scene=\"sc_w03_hero\"]",
+    "role": "hero",
+    "id": "sc_w03_hero",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "week03_analysis_prep.html#figure.scene[data-scene=\"sc_w03_outro\"]",
+    "role": "outro",
+    "id": "sc_w03_outro",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    },
    {
     "path": "img/thumb_w03.webp",
     "role": "thumb",
-    "estimated": true
+    "id": "thumb_w03",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "img/og_w03.jpg",
+    "role": "og",
+    "id": "og_w03",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "week04_analysis_concepts.html#.cover[data-img=\"cover_w04\"]",
+    "role": "cover",
+    "id": "cover_w04",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "week04_analysis_concepts.html#figure.scene[data-scene=\"sc_w04_hero\"]",
+    "role": "hero",
+    "id": "sc_w04_hero",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "week04_analysis_concepts.html#figure.scene[data-scene=\"sc_w04_outro\"]",
+    "role": "outro",
+    "id": "sc_w04_outro",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    },
    {
     "path": "img/thumb_w04.webp",
     "role": "thumb",
-    "estimated": true
+    "id": "thumb_w04",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "img/og_w04.jpg",
+    "role": "og",
+    "id": "og_w04",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "week05_classification_1.html#.cover[data-img=\"cover_w05\"]",
+    "role": "cover",
+    "id": "cover_w05",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "week05_classification_1.html#figure.scene[data-scene=\"sc_w05_hero\"]",
+    "role": "hero",
+    "id": "sc_w05_hero",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "week05_classification_1.html#figure.scene[data-scene=\"sc_w05_outro\"]",
+    "role": "outro",
+    "id": "sc_w05_outro",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    },
    {
     "path": "img/thumb_w05.webp",
     "role": "thumb",
-    "estimated": true
+    "id": "thumb_w05",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "img/og_w05.jpg",
+    "role": "og",
+    "id": "og_w05",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "week06_classification_2.html#.cover[data-img=\"cover_w06\"]",
+    "role": "cover",
+    "id": "cover_w06",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "week06_classification_2.html#figure.scene[data-scene=\"sc_w06_hero\"]",
+    "role": "hero",
+    "id": "sc_w06_hero",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "week06_classification_2.html#figure.scene[data-scene=\"sc_w06_outro\"]",
+    "role": "outro",
+    "id": "sc_w06_outro",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    },
    {
     "path": "img/thumb_w06.webp",
     "role": "thumb",
-    "estimated": true
+    "id": "thumb_w06",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "img/og_w06.jpg",
+    "role": "og",
+    "id": "og_w06",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "week07_model_evaluation.html#.cover[data-img=\"cover_w07\"]",
+    "role": "cover",
+    "id": "cover_w07",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "week07_model_evaluation.html#figure.scene[data-scene=\"sc_w07_hero\"]",
+    "role": "hero",
+    "id": "sc_w07_hero",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "week07_model_evaluation.html#figure.scene[data-scene=\"sc_w07_outro\"]",
+    "role": "outro",
+    "id": "sc_w07_outro",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    },
    {
     "path": "img/thumb_w07.webp",
     "role": "thumb",
-    "estimated": true
+    "id": "thumb_w07",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "img/og_w07.jpg",
+    "role": "og",
+    "id": "og_w07",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "week08_practice_1.html#.cover[data-img=\"cover_w08\"]",
+    "role": "cover",
+    "id": "cover_w08",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    },
    {
     "path": "img/thumb_w08.webp",
     "role": "thumb",
-    "estimated": true
+    "id": "thumb_w08",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "img/og_w08.jpg",
+    "role": "og",
+    "id": "og_w08",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "week09_regression_1.html#.cover[data-img=\"cover_w09\"]",
+    "role": "cover",
+    "id": "cover_w09",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "week09_regression_1.html#figure.scene[data-scene=\"sc_w09_hero\"]",
+    "role": "hero",
+    "id": "sc_w09_hero",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "week09_regression_1.html#figure.scene[data-scene=\"sc_w09_outro\"]",
+    "role": "outro",
+    "id": "sc_w09_outro",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    },
    {
     "path": "img/thumb_w09.webp",
     "role": "thumb",
-    "estimated": true
+    "id": "thumb_w09",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "img/og_w09.jpg",
+    "role": "og",
+    "id": "og_w09",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "week10_regression_2.html#.cover[data-img=\"cover_w10\"]",
+    "role": "cover",
+    "id": "cover_w10",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "week10_regression_2.html#figure.scene[data-scene=\"sc_w10_hero\"]",
+    "role": "hero",
+    "id": "sc_w10_hero",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "week10_regression_2.html#figure.scene[data-scene=\"sc_w10_outro\"]",
+    "role": "outro",
+    "id": "sc_w10_outro",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    },
    {
     "path": "img/thumb_w10.webp",
     "role": "thumb",
-    "estimated": true
+    "id": "thumb_w10",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "img/og_w10.jpg",
+    "role": "og",
+    "id": "og_w10",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "week11_time_series.html#.cover[data-img=\"cover_w11\"]",
+    "role": "cover",
+    "id": "cover_w11",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "week11_time_series.html#figure.scene[data-scene=\"sc_w11_hero\"]",
+    "role": "hero",
+    "id": "sc_w11_hero",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "week11_time_series.html#figure.scene[data-scene=\"sc_w11_outro\"]",
+    "role": "outro",
+    "id": "sc_w11_outro",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    },
    {
     "path": "img/thumb_w11.webp",
     "role": "thumb",
-    "estimated": true
+    "id": "thumb_w11",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "img/og_w11.jpg",
+    "role": "og",
+    "id": "og_w11",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "week12_visualization.html#.cover[data-img=\"cover_w12\"]",
+    "role": "cover",
+    "id": "cover_w12",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "week12_visualization.html#figure.scene[data-scene=\"sc_w12_hero\"]",
+    "role": "hero",
+    "id": "sc_w12_hero",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "week12_visualization.html#figure.scene[data-scene=\"sc_w12_outro\"]",
+    "role": "outro",
+    "id": "sc_w12_outro",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    },
    {
     "path": "img/thumb_w12.webp",
     "role": "thumb",
-    "estimated": true
+    "id": "thumb_w12",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "img/og_w12.jpg",
+    "role": "og",
+    "id": "og_w12",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "week13_bi_kpi.html#.cover[data-img=\"cover_w13\"]",
+    "role": "cover",
+    "id": "cover_w13",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "week13_bi_kpi.html#figure.scene[data-scene=\"sc_w13_hero\"]",
+    "role": "hero",
+    "id": "sc_w13_hero",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "week13_bi_kpi.html#figure.scene[data-scene=\"sc_w13_outro\"]",
+    "role": "outro",
+    "id": "sc_w13_outro",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    },
    {
     "path": "img/thumb_w13.webp",
     "role": "thumb",
-    "estimated": true
+    "id": "thumb_w13",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "img/og_w13.jpg",
+    "role": "og",
+    "id": "og_w13",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "week14_advanced_analytics.html#.cover[data-img=\"cover_w14\"]",
+    "role": "cover",
+    "id": "cover_w14",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "week14_advanced_analytics.html#figure.scene[data-scene=\"sc_w14_hero\"]",
+    "role": "hero",
+    "id": "sc_w14_hero",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "week14_advanced_analytics.html#figure.scene[data-scene=\"sc_w14_outro\"]",
+    "role": "outro",
+    "id": "sc_w14_outro",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    },
    {
     "path": "img/thumb_w14.webp",
     "role": "thumb",
-    "estimated": true
+    "id": "thumb_w14",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "img/og_w14.jpg",
+    "role": "og",
+    "id": "og_w14",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "week15_practice_2.html#.cover[data-img=\"cover_w15\"]",
+    "role": "cover",
+    "id": "cover_w15",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    },
    {
     "path": "img/thumb_w15.webp",
     "role": "thumb",
-    "estimated": true
+    "id": "thumb_w15",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    },
    {
-    "path": "tools/art/sc_w01_hero.webp",
-    "role": "scene",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/sc_w01_outro.webp",
-    "role": "scene",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/sc_w02_hero.webp",
-    "role": "scene",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/sc_w02_outro.webp",
-    "role": "scene",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/sc_w03_hero.webp",
-    "role": "scene",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/sc_w03_outro.webp",
-    "role": "scene",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/sc_w04_hero.webp",
-    "role": "scene",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/sc_w04_outro.webp",
-    "role": "scene",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/sc_w05_hero.webp",
-    "role": "scene",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/sc_w05_outro.webp",
-    "role": "scene",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/sc_w06_hero.webp",
-    "role": "scene",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/sc_w06_outro.webp",
-    "role": "scene",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/sc_w07_hero.webp",
-    "role": "scene",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/sc_w07_outro.webp",
-    "role": "scene",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/sc_w09_hero.webp",
-    "role": "scene",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/sc_w09_outro.webp",
-    "role": "scene",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/sc_w10_hero.webp",
-    "role": "scene",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/sc_w10_outro.webp",
-    "role": "scene",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/sc_w11_hero.webp",
-    "role": "scene",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/sc_w11_outro.webp",
-    "role": "scene",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/sc_w12_hero.webp",
-    "role": "scene",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/sc_w12_outro.webp",
-    "role": "scene",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/sc_w13_hero.webp",
-    "role": "scene",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/sc_w13_outro.webp",
-    "role": "scene",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/sc_w14_hero.webp",
-    "role": "scene",
-    "estimated": true
-   },
-   {
-    "path": "tools/art/sc_w14_outro.webp",
-    "role": "scene",
-    "estimated": true
+    "path": "img/og_w15.jpg",
+    "role": "og",
+    "id": "og_w15",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    }
   ],
   "redraw_count": 0,
   "redraw_ids": [],
   "thumb": "thumbs/repos/data_science_for_business.jpg",
   "status": "ok",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "비즈니스를 위한 데이터 과학 연구실",
   "ontology": {
    "status": "partial",
@@ -2305,7 +3796,7 @@
   "redraw_ids": [],
   "thumb": null,
   "status": "unknown",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": null,
   "ontology": {
    "status": "none",
@@ -2349,7 +3840,7 @@
   ],
   "thumb": "thumbs/repos/Data_visuialization_lecture_01.jpg",
   "status": "redraw",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "1주차 · 과정 안내(OT) — 표지 — Language",
   "ontology": {
    "status": "none",
@@ -2434,7 +3925,7 @@
   ],
   "thumb": "thumbs/repos/Data_visuialization_lecture_02.jpg",
   "status": "redraw",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "2주차 · 그래프 이론과 첫 실습 — 표지 — Language",
   "ontology": {
    "status": "none",
@@ -2517,7 +4008,7 @@
   "redraw_ids": [],
   "thumb": "thumbs/repos/Data_visuialization_lecture_03.jpg",
   "status": "unknown",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "3주차 · 생성형 AI 데이터 전처리 — 표지 — Language",
   "ontology": {
    "status": "none",
@@ -2602,7 +4093,7 @@
   ],
   "thumb": "thumbs/repos/Data_visuialization_lecture_04.jpg",
   "status": "redraw",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "4주차 · 산업별 데이터 시각화 — 표지 — Language",
   "ontology": {
    "status": "none",
@@ -2692,7 +4183,7 @@
   ],
   "thumb": "thumbs/repos/database_01of04.jpg",
   "status": "redraw",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "OVERVIEW — 데이터베이스 설계 전체 안내",
   "ontology": {
    "status": "none",
@@ -2754,7 +4245,7 @@
   ],
   "thumb": "thumbs/repos/deep_learning_00_neural_net_learns.jpg",
   "status": "redraw",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "신경망은 틀리면서 배운다 · 처음 화면",
   "ontology": {
    "status": "partial",
@@ -2843,7 +4334,7 @@
   ],
   "thumb": "thumbs/repos/DL_model_hiring_committee.jpg",
   "status": "redraw",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "6-0 2차 채용 공고 · 딥러닝 치트시트 | 모델 채용 위원회 2차 공채",
   "ontology": {
    "status": "full",
@@ -2961,7 +4452,7 @@
   "redraw_ids": [],
   "thumb": null,
   "status": "unknown",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "마약류 사회적 비용 연구",
   "ontology": {
    "status": "none",
@@ -3013,7 +4504,7 @@
   "redraw_ids": [],
   "thumb": null,
   "status": "unknown",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "이산확률분포 일곱 가지",
   "ontology": {
    "status": "full",
@@ -3071,7 +4562,7 @@
   ],
   "thumb": "thumbs/repos/Fish_Market_Data_Machine_Learning.jpg",
   "status": "redraw",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "Fish Market Data로 쉽게 따라하는 머신러닝 — 초파리 연구실",
   "ontology": {
    "status": "none",
@@ -3154,7 +4645,7 @@
   "repo_url": "https://github.com/adminmrobo/fish_market_learning_epoch_etc",
   "pages_url": "https://adminmrobo.github.io/fish_market_learning_epoch_etc/",
   "default_branch": "main",
-  "pushed_at": "2026-11-08T01:33:40Z",
+  "pushed_at": "2026-11-12T14:34:22Z",
   "has_manifest": false,
   "covers": [
    {
@@ -3307,7 +4798,7 @@
   "redraw_ids": [],
   "thumb": "thumbs/repos/fish_market_learning_epoch_etc.jpg",
   "status": "ok",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "Fish Market 연구실 — 머신러닝 핵심 개념 2",
   "ontology": {
    "status": "partial",
@@ -3437,7 +4928,7 @@
   "redraw_ids": [],
   "thumb": "thumbs/repos/fof-money-meridian-.jpg",
   "status": "ok",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "돈의 경맥 · 목차",
   "ontology": {
    "status": "partial",
@@ -3490,20 +4981,20 @@
   "repo_url": "https://github.com/adminmrobo/fruitfly-lab-expressions",
   "pages_url": "https://adminmrobo.github.io/fruitfly-lab-expressions/",
   "default_branch": "main",
-  "pushed_at": "2026-11-10T22:17:05Z",
+  "pushed_at": "2026-11-12T15:35:42Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
   "redraw_ids": [],
   "thumb": "thumbs/repos/fruitfly-lab-expressions.jpg",
   "status": "unknown",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "초파리 연구실 · 캐릭터 표정 라이브러리",
   "ontology": {
    "status": "none",
    "pages_with_kg": 0,
-   "pages_total": 3,
-   "pages_checked": 3,
+   "pages_total": 5,
+   "pages_checked": 5,
    "kg_links": [],
    "export_links": [],
    "files": []
@@ -3514,7 +5005,7 @@
    ],
    "count": 1,
    "pages": {
-    "ko": 3
+    "ko": 5
    },
    "partial": [],
    "complete": true,
@@ -3530,7 +5021,7 @@
    "count": 1,
    "complete": true,
    "pages_by_lang": {
-    "ko": 3
+    "ko": 5
    }
   },
   "has_pages": true
@@ -3542,14 +5033,14 @@
   "repo_url": "https://github.com/adminmrobo/g2b-bid-strategy",
   "pages_url": "https://adminmrobo.github.io/g2b-bid-strategy/",
   "default_branch": "main",
-  "pushed_at": "2026-11-10T05:52:44Z",
+  "pushed_at": "2026-11-12T05:22:53Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
   "redraw_ids": [],
   "thumb": null,
   "status": "unknown",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "입찰 전략실",
   "ontology": {
    "status": "none",
@@ -3603,7 +5094,7 @@
   ],
   "thumb": "thumbs/repos/Gen_AI_Hannam_univ.jpg",
   "status": "redraw",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "중간고사 시뮬레이션 — 생성형 AI의 활용전략",
   "ontology": {
    "status": "none",
@@ -3675,7 +5166,7 @@
   ],
   "thumb": "thumbs/repos/Gen_AI_strategy_ch05.jpg",
   "status": "redraw",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "생성형 AI 활용 전략 — AI 연구실 해설",
   "ontology": {
    "status": "partial",
@@ -3752,7 +5243,7 @@
   "redraw_ids": [],
   "thumb": "thumbs/repos/Gen_AI_strategy_ch06.jpg",
   "status": "ok",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "생성형 AI 활용 전략 — AI 연구실 해설",
   "ontology": {
    "status": "partial",
@@ -3864,7 +5355,7 @@
   "redraw_ids": [],
   "thumb": "thumbs/repos/generative-ai-prompt-strategy.jpg",
   "status": "ok",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "생성형 AI 활용 전략",
   "ontology": {
    "status": "partial",
@@ -4003,7 +5494,7 @@
   ],
   "thumb": "thumbs/repos/google-sheets-lab.jpg",
   "status": "redraw",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "전체 목차 | 하루의 구글시트 연구실",
   "ontology": {
    "status": "full",
@@ -4086,7 +5577,7 @@
   "redraw_ids": [],
   "thumb": null,
   "status": "unknown",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "그린루트 - 모바일 앱 경로 안내",
   "ontology": {
    "status": "none",
@@ -4120,6 +5611,514 @@
    "complete": true,
    "pages_by_lang": {
     "ko": 4
+   }
+  },
+  "has_pages": true
+ },
+ {
+  "repo": "how_to_start_db",
+  "series_ko": "DB 실습 시작하기",
+  "title_ko": "초보자도 쉽게 따라하는 DB 환경 설치 — 연구실 데이터 창고 놓기",
+  "repo_url": "https://github.com/adminmrobo/how_to_start_db",
+  "pages_url": "https://adminmrobo.github.io/how_to_start_db/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-12T15:09:15Z",
+  "has_manifest": true,
+  "covers": [
+   {
+    "path": "index.html#.cover[data-img=cover_00]",
+    "role": "cover",
+    "id": "cover",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
+   }
+  ],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "ok",
+  "checked_at": "2026-11-13",
+  "site_title": "초보자도 쉽게 따라하는 DB 환경 설치 — 연구실 데이터 창고 놓기",
+  "ontology": {
+   "status": "full",
+   "pages_with_kg": 1,
+   "pages_total": 1,
+   "pages_checked": 1,
+   "kg_links": [
+    "https://adminmrobo.github.io/how_to_start_db/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/how_to_start_db/index.html#export"
+   ],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 1
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/how_to_start_db/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 1
+   }
+  },
+  "has_pages": false
+ },
+ {
+  "repo": "iclr2027_top3_lab_review",
+  "series_ko": "논문 해설 · ICLR 2027 만점 3편",
+  "title_ko": "4만 3천 편 중 만점 3편 — 연구실 모의 심사회 (ICLR 2027)",
+  "repo_url": "https://github.com/adminmrobo/iclr2027_top3_lab_review",
+  "pages_url": "https://adminmrobo.github.io/iclr2027_top3_lab_review/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-12T00:46:25Z",
+  "has_manifest": true,
+  "covers": [
+   {
+    "path": "images/cover_iclr27.jpg",
+    "role": "cover",
+    "id": "cover",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "images/og_iclr27.jpg",
+    "role": "og",
+    "id": "og",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "images/thumb_iclr27.jpg",
+    "role": "thumb",
+    "id": "thumb",
+    "size": [
+     480,
+     270
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "index.html#.cover img.cimg",
+    "role": "cover",
+    "id": "cover_web",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "images/bg_iclr27_hero.jpg",
+    "role": "hero",
+    "id": "hero_bg",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [],
+    "robot": "none",
+    "status": "redraw"
+   }
+  ],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": "thumbs/repos/iclr2027_top3_lab_review.jpg",
+  "status": "ok",
+  "checked_at": "2026-11-13",
+  "site_title": "4만 3천 편 중 만점 3편 — 연구실 모의 심사회 (ICLR 2027)",
+  "ontology": {
+   "status": "full",
+   "pages_with_kg": 1,
+   "pages_total": 1,
+   "pages_checked": 1,
+   "kg_links": [
+    "https://adminmrobo.github.io/iclr2027_top3_lab_review/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/iclr2027_top3_lab_review/index.html#export"
+   ],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 1
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/iclr2027_top3_lab_review/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 1
+   }
+  },
+  "has_pages": true
+ },
+ {
+  "repo": "inference_engineering_study",
+  "series_ko": "인퍼런스 스터디 북",
+  "title_ko": "인퍼런스 스터디 북 — 연구실 식구들과 읽는 『Inference Engineering』",
+  "repo_url": "https://github.com/adminmrobo/inference_engineering_study",
+  "pages_url": "https://adminmrobo.github.io/inference_engineering_study/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-12T15:36:15Z",
+  "has_manifest": true,
+  "covers": [
+   {
+    "path": "cover_factory.jpg",
+    "role": "cover",
+    "id": "cover_factory",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [],
+    "robot": "none",
+    "status": "ok"
+   },
+   {
+    "path": "index.html#cover",
+    "role": "hero",
+    "id": "cover_index",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "week_01_textbook_preface/index.html#cover",
+    "role": "cover",
+    "id": "week_01_textbook_preface/cover_pre",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "week_01_textbook_ch00/index.html#cover",
+    "role": "cover",
+    "id": "week_01_textbook_ch00/cover_00",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "week_01_textbook_ch01/index.html#cover",
+    "role": "cover",
+    "id": "week_01_textbook_ch01/cover_01",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "week_01_article_01/index.html#cover",
+    "role": "cover",
+    "id": "week_01_article_01/cover_lb",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "week_02_textbook_ch02_p1_p2/index.html#cover",
+    "role": "cover",
+    "id": "week_02_textbook_ch02_p1_p2/cover_ch2",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "week_02_article_01/index.html#cover",
+    "role": "cover",
+    "id": "week_02_article_01/cover_01",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "week_03_article_01/index.html#cover",
+    "role": "cover",
+    "id": "week_03_article_01/cover_03",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   }
+  ],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": "thumbs/repos/inference_engineering_study.jpg",
+  "status": "ok",
+  "checked_at": "2026-11-13",
+  "site_title": "인퍼런스 스터디 북",
+  "ontology": {
+   "status": "full",
+   "pages_with_kg": 12,
+   "pages_total": 12,
+   "pages_checked": 12,
+   "kg_links": [
+    "https://adminmrobo.github.io/inference_engineering_study/index.html#kg",
+    "https://adminmrobo.github.io/inference_engineering_study/week_01_article_01/index.html#kg",
+    "https://adminmrobo.github.io/inference_engineering_study/week_01_textbook_ch00/index.html#kg",
+    "https://adminmrobo.github.io/inference_engineering_study/week_01_textbook_ch01/index.html#kg",
+    "https://adminmrobo.github.io/inference_engineering_study/week_01_textbook_preface/index.html#kg",
+    "https://adminmrobo.github.io/inference_engineering_study/week_02_article_01/01_transformer.html#kg",
+    "https://adminmrobo.github.io/inference_engineering_study/week_02_article_01/index.html#kg",
+    "https://adminmrobo.github.io/inference_engineering_study/week_02_textbook_ch02_p1_p2/02_models.html#kg",
+    "https://adminmrobo.github.io/inference_engineering_study/week_02_textbook_ch02_p1_p2/index.html#kg",
+    "https://adminmrobo.github.io/inference_engineering_study/week_03_article_01/03_flash_attention.html#kg",
+    "https://adminmrobo.github.io/inference_engineering_study/week_03_article_01/index.html#kg",
+    "https://adminmrobo.github.io/inference_engineering_study/week_03_textbook_ch02_p3_to_end/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/inference_engineering_study/index.html#export",
+    "https://adminmrobo.github.io/inference_engineering_study/week_01_article_01/index.html#export",
+    "https://adminmrobo.github.io/inference_engineering_study/week_01_textbook_ch00/index.html#export",
+    "https://adminmrobo.github.io/inference_engineering_study/week_01_textbook_ch01/index.html#export",
+    "https://adminmrobo.github.io/inference_engineering_study/week_01_textbook_preface/index.html#export",
+    "https://adminmrobo.github.io/inference_engineering_study/week_02_article_01/01_transformer.html#export",
+    "https://adminmrobo.github.io/inference_engineering_study/week_02_article_01/index.html#export",
+    "https://adminmrobo.github.io/inference_engineering_study/week_02_textbook_ch02_p1_p2/02_models.html#export",
+    "https://adminmrobo.github.io/inference_engineering_study/week_02_textbook_ch02_p1_p2/index.html#export",
+    "https://adminmrobo.github.io/inference_engineering_study/week_03_article_01/03_flash_attention.html#export",
+    "https://adminmrobo.github.io/inference_engineering_study/week_03_article_01/index.html#export",
+    "https://adminmrobo.github.io/inference_engineering_study/week_03_textbook_ch02_p3_to_end/index.html#export"
+   ],
+   "files": [
+    {
+     "path": "week_02_textbook_ch02_p1_p2/KG_00_registry.json",
+     "url": "https://github.com/adminmrobo/inference_engineering_study/blob/main/week_02_textbook_ch02_p1_p2/KG_00_registry.json"
+    },
+    {
+     "path": "week_03_article_01/docs/KG_00_registry_add_03.json",
+     "url": "https://github.com/adminmrobo/inference_engineering_study/blob/main/week_03_article_01/docs/KG_00_registry_add_03.json"
+    },
+    {
+     "path": "week_03_article_01/docs/kg_03.json",
+     "url": "https://github.com/adminmrobo/inference_engineering_study/blob/main/week_03_article_01/docs/kg_03.json"
+    },
+    {
+     "path": "week_03_textbook_ch02_p3_to_end/KG_03_registry_additions.json",
+     "url": "https://github.com/adminmrobo/inference_engineering_study/blob/main/week_03_textbook_ch02_p3_to_end/KG_03_registry_additions.json"
+    }
+   ]
+  },
+  "i18n": {
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "count": 7,
+   "pages": {
+    "ko": 12,
+    "en": 2,
+    "zh": 2,
+    "ja": 2,
+    "uz": 2,
+    "ru": 2,
+    "vi": 2
+   },
+   "partial": [
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "complete": false,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/inference_engineering_study/index.html",
+    "en": "https://adminmrobo.github.io/inference_engineering_study/week_02_article_01/01_transformer.en.html",
+    "zh": "https://adminmrobo.github.io/inference_engineering_study/week_02_article_01/01_transformer.zh.html",
+    "ja": "https://adminmrobo.github.io/inference_engineering_study/week_02_article_01/01_transformer.ja.html",
+    "uz": "https://adminmrobo.github.io/inference_engineering_study/week_02_article_01/01_transformer.uz.html",
+    "ru": "https://adminmrobo.github.io/inference_engineering_study/week_02_article_01/01_transformer.ru.html",
+    "vi": "https://adminmrobo.github.io/inference_engineering_study/week_02_article_01/01_transformer.vi.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "count": 7,
+   "complete": false,
+   "pages_by_lang": {
+    "ko": 12,
+    "en": 2,
+    "zh": 2,
+    "ja": 2,
+    "uz": 2,
+    "ru": 2,
+    "vi": 2
    }
   },
   "has_pages": true
@@ -4164,7 +6163,7 @@
   ],
   "thumb": "thumbs/repos/inference_engineering_study_week_01_article_01.jpg",
   "status": "redraw",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "LiveBench: 오염 없는 객관적 LLM 벤치마크 대시보드",
   "ontology": {
    "status": "full",
@@ -4258,7 +6257,7 @@
   "redraw_ids": [],
   "thumb": null,
   "status": "unknown",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": null,
   "ontology": {
    "status": "none",
@@ -4308,7 +6307,7 @@
   ],
   "thumb": "thumbs/repos/inference_engineering_study_week_01_textbook_ch01.jpg",
   "status": "redraw",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "AI Lab Explainer — 추론 엔지니어링 시리즈",
   "ontology": {
    "status": "partial",
@@ -4402,7 +6401,7 @@
   "redraw_ids": [],
   "thumb": null,
   "status": "unknown",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": null,
   "ontology": {
    "status": "none",
@@ -4473,7 +6472,7 @@
   ],
   "thumb": "thumbs/repos/inference_engineering_study_week_02_article_01.jpg",
   "status": "redraw",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "AI 연구실 해설 — 목차",
   "ontology": {
    "status": "partial",
@@ -4604,7 +6603,7 @@
   ],
   "thumb": "thumbs/repos/inference_engineering_study_week_02_textbook_ch02_p1_p2.jpg",
   "status": "redraw",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "인퍼런스 엔지니어링 해설",
   "ontology": {
    "status": "partial",
@@ -4689,88 +6688,6 @@
   "has_pages": true
  },
  {
-  "repo": "inference_engineering_study_week_02_textbook_ch02_p3_to_end",
-  "series_ko": "병목을 찾아라 · 인퍼런스 3주차",
-  "title_ko": "병목을 찾아라 · 인퍼런스 3주차",
-  "repo_url": "https://github.com/adminmrobo/inference_engineering_study_week_02_textbook_ch02_p3_to_end",
-  "pages_url": "https://adminmrobo.github.io/inference_engineering_study_week_02_textbook_ch02_p3_to_end/",
-  "default_branch": "main",
-  "pushed_at": "2026-11-09T09:08:56Z",
-  "has_manifest": false,
-  "covers": [
-   {
-    "path": "images/cover_03.webp",
-    "role": "cover",
-    "estimated": true
-   },
-   {
-    "path": "images/og_03.webp",
-    "role": "og",
-    "estimated": true
-   },
-   {
-    "path": "images/thumb_03.webp",
-    "role": "thumb",
-    "estimated": true
-   },
-   {
-    "path": "images/sc_03_outro.webp",
-    "role": "scene",
-    "estimated": true
-   }
-  ],
-  "redraw_count": 0,
-  "redraw_ids": [],
-  "thumb": "thumbs/repos/inference_engineering_study_week_02_textbook_ch02_p3_to_end.jpg",
-  "status": "ok",
-  "checked_at": "2026-11-11",
-  "site_title": "병목을 찾아라 · 인퍼런스 3주차",
-  "ontology": {
-   "status": "full",
-   "pages_with_kg": 1,
-   "pages_total": 1,
-   "pages_checked": 1,
-   "kg_links": [
-    "https://adminmrobo.github.io/inference_engineering_study_week_02_textbook_ch02_p3_to_end/index.html#kg"
-   ],
-   "export_links": [
-    "https://adminmrobo.github.io/inference_engineering_study_week_02_textbook_ch02_p3_to_end/index.html#export"
-   ],
-   "files": [
-    {
-     "path": "KG_03_registry_additions.json",
-     "url": "https://github.com/adminmrobo/inference_engineering_study_week_02_textbook_ch02_p3_to_end/blob/main/KG_03_registry_additions.json"
-    }
-   ]
-  },
-  "i18n": {
-   "langs": [
-    "ko"
-   ],
-   "count": 1,
-   "pages": {
-    "ko": 1
-   },
-   "partial": [],
-   "complete": true,
-   "readme_langs": [],
-   "links": {
-    "ko": "https://adminmrobo.github.io/inference_engineering_study_week_02_textbook_ch02_p3_to_end/index.html"
-   }
-  },
-  "languages": {
-   "codes": [
-    "ko"
-   ],
-   "count": 1,
-   "complete": true,
-   "pages_by_lang": {
-    "ko": 1
-   }
-  },
-  "has_pages": true
- },
- {
   "repo": "inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide",
   "series_ko": "병목을 찾아라 발표",
   "title_ko": "병목을 찾아라 발표",
@@ -4800,7 +6717,7 @@
   "redraw_ids": [],
   "thumb": "thumbs/repos/inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide.jpg",
   "status": "ok",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "병목을 찾아라 발표",
   "ontology": {
    "status": "none",
@@ -4898,7 +6815,7 @@
   "redraw_ids": [],
   "thumb": "thumbs/repos/inference_engineering_study_week_03_article_01.jpg",
   "status": "ok",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "추론 엔지니어링 스터디 3주차 — 연구실 해설",
   "ontology": {
    "status": "partial",
@@ -4950,6 +6867,88 @@
   "has_pages": true
  },
  {
+  "repo": "inference_engineering_study_week_03_textbook_ch02_p3_to_end",
+  "series_ko": "병목을 찾아라 · 인퍼런스 3주차",
+  "title_ko": "병목을 찾아라 · 인퍼런스 3주차",
+  "repo_url": "https://github.com/adminmrobo/inference_engineering_study_week_03_textbook_ch02_p3_to_end",
+  "pages_url": "https://adminmrobo.github.io/inference_engineering_study_week_03_textbook_ch02_p3_to_end/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-09T09:08:56Z",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "images/cover_03.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "images/og_03.webp",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "images/thumb_03.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "images/sc_03_outro.webp",
+    "role": "scene",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": "thumbs/repos/inference_engineering_study_week_03_textbook_ch02_p3_to_end.jpg",
+  "status": "ok",
+  "checked_at": "2026-11-13",
+  "site_title": "병목을 찾아라 · 인퍼런스 3주차",
+  "ontology": {
+   "status": "full",
+   "pages_with_kg": 1,
+   "pages_total": 1,
+   "pages_checked": 1,
+   "kg_links": [
+    "https://adminmrobo.github.io/inference_engineering_study_week_03_textbook_ch02_p3_to_end/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/inference_engineering_study_week_03_textbook_ch02_p3_to_end/index.html#export"
+   ],
+   "files": [
+    {
+     "path": "KG_03_registry_additions.json",
+     "url": "https://github.com/adminmrobo/inference_engineering_study_week_03_textbook_ch02_p3_to_end/blob/main/KG_03_registry_additions.json"
+    }
+   ]
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 1
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/inference_engineering_study_week_03_textbook_ch02_p3_to_end/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 1
+   }
+  },
+  "has_pages": true
+ },
+ {
   "repo": "inference_korea_study_page",
   "series_ko": "Inference Korea 스터디 보드",
   "title_ko": "Inference Korea 스터디 보드",
@@ -4963,7 +6962,7 @@
   "redraw_ids": [],
   "thumb": null,
   "status": "unknown",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "Inference Korea 스터디 보드",
   "ontology": {
    "status": "none",
@@ -5043,7 +7042,7 @@
   ],
   "thumb": "thumbs/repos/insurtech__case_classification_model_01.jpg",
   "status": "redraw",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "AI(인공지능) x 비즈니스 #1 인슈어테크_01_분류모델",
   "ontology": {
    "status": "none",
@@ -5108,7 +7107,7 @@
   ],
   "thumb": "thumbs/repos/insurtech__case_classification_model_02.jpg",
   "status": "redraw",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "AI(인공지능) x 비즈니스 #1 인슈어테크_02_분류모델_실전",
   "ontology": {
    "status": "none",
@@ -5176,7 +7175,7 @@
   ],
   "thumb": "thumbs/repos/insurtech__case_regreesion_model_01.jpg",
   "status": "redraw",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "인슈어테크 #3 | 처음 화면",
   "ontology": {
    "status": "none",
@@ -5241,7 +7240,7 @@
   ],
   "thumb": "thumbs/repos/insurtech__case_regreesion_model_02.jpg",
   "status": "redraw",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "인슈어테크 #4 실전 | 처음 화면",
   "ontology": {
    "status": "none",
@@ -5295,7 +7294,7 @@
   "redraw_ids": [],
   "thumb": null,
   "status": "unknown",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": null,
   "ontology": {
    "status": "none",
@@ -5337,7 +7336,7 @@
   "redraw_ids": [],
   "thumb": null,
   "status": "unknown",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": null,
   "ontology": {
    "status": "none",
@@ -5387,7 +7386,7 @@
   ],
   "thumb": "thumbs/repos/learn-pandas-visually_korean.jpg",
   "status": "redraw",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "보면서 배우는 pandas",
   "ontology": {
    "status": "none",
@@ -5447,7 +7446,7 @@
   ],
   "thumb": "thumbs/repos/learn-python-by-doing.jpg",
   "status": "redraw",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": null,
   "ontology": {
    "status": "none",
@@ -5502,7 +7501,7 @@
   ],
   "thumb": "thumbs/repos/learn-python-by-doing_Korean.jpg",
   "status": "redraw",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "쉽게 따라 해 보면서 배우는 파이썬 - 쉽게 따라 해 보면서 배우는 파이썬",
   "ontology": {
    "status": "none",
@@ -5570,7 +7569,7 @@
   "redraw_ids": [],
   "thumb": "thumbs/repos/LLM_evaluation.jpg",
   "status": "ok",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "AI 점수는 무엇을 잰 것일까 — 연구실 해설",
   "ontology": {
    "status": "partial",
@@ -5656,6 +7655,222 @@
   "has_pages": true
  },
  {
+  "repo": "llm_memory_trilogy",
+  "series_ko": "기억 3부작 — LLM은 어디까지 기억할 수 있을까",
+  "title_ko": "기억 3부작 · 목차",
+  "repo_url": "https://github.com/adminmrobo/llm_memory_trilogy",
+  "pages_url": "https://adminmrobo.github.io/llm_memory_trilogy/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-12T12:58:29Z",
+  "has_manifest": true,
+  "covers": [
+   {
+    "path": "assets/img/cover_index.webp",
+    "role": "cover",
+    "id": "cover_index",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "pending"
+   },
+   {
+    "path": "assets/img/cover_ch1.webp",
+    "role": "cover",
+    "id": "cover_ch1",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "pending"
+   },
+   {
+    "path": "assets/img/cover_ch2.webp",
+    "role": "cover",
+    "id": "cover_ch2",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "pending"
+   },
+   {
+    "path": "assets/img/cover_ch3.webp",
+    "role": "cover",
+    "id": "cover_ch3",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "pending"
+   }
+  ],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": "https://adminmrobo.github.io/llm_memory_trilogy/assets/img/cover_index.webp",
+  "status": "ok",
+  "checked_at": "2026-11-13",
+  "site_title": "기억 3부작 · 목차",
+  "ontology": {
+   "status": "partial",
+   "pages_with_kg": 18,
+   "pages_total": 19,
+   "pages_checked": 19,
+   "kg_links": [
+    "https://adminmrobo.github.io/llm_memory_trilogy/1_1_window_is_memory.html#kg",
+    "https://adminmrobo.github.io/llm_memory_trilogy/1_2_fading_echo.html#kg",
+    "https://adminmrobo.github.io/llm_memory_trilogy/1_3_long_memory.html#kg",
+    "https://adminmrobo.github.io/llm_memory_trilogy/1_4_reading_state.html#kg",
+    "https://adminmrobo.github.io/llm_memory_trilogy/1_5_eraser_notepad.html#kg",
+    "https://adminmrobo.github.io/llm_memory_trilogy/1_6_duel_summary.html#kg",
+    "https://adminmrobo.github.io/llm_memory_trilogy/2_1_context_window.html#kg",
+    "https://adminmrobo.github.io/llm_memory_trilogy/2_2_bigger_window.html#kg",
+    "https://adminmrobo.github.io/llm_memory_trilogy/2_3_three_drawers.html#kg",
+    "https://adminmrobo.github.io/llm_memory_trilogy/2_4_compaction.html#kg",
+    "https://adminmrobo.github.io/llm_memory_trilogy/2_5_retrieval.html#kg",
+    "https://adminmrobo.github.io/llm_memory_trilogy/2_6_duel_summary.html#kg",
+    "https://adminmrobo.github.io/llm_memory_trilogy/3_1_what_to_remember.html#kg",
+    "https://adminmrobo.github.io/llm_memory_trilogy/3_2_when_to_write.html#kg",
+    "https://adminmrobo.github.io/llm_memory_trilogy/3_3_maintain.html#kg",
+    "https://adminmrobo.github.io/llm_memory_trilogy/3_4_memorilla.html#kg",
+    "https://adminmrobo.github.io/llm_memory_trilogy/3_5_agent_experience.html#kg",
+    "https://adminmrobo.github.io/llm_memory_trilogy/3_6_duel_wrapup.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/llm_memory_trilogy/1_1_window_is_memory.html#export",
+    "https://adminmrobo.github.io/llm_memory_trilogy/1_2_fading_echo.html#export",
+    "https://adminmrobo.github.io/llm_memory_trilogy/1_3_long_memory.html#export",
+    "https://adminmrobo.github.io/llm_memory_trilogy/1_4_reading_state.html#export",
+    "https://adminmrobo.github.io/llm_memory_trilogy/1_5_eraser_notepad.html#export",
+    "https://adminmrobo.github.io/llm_memory_trilogy/1_6_duel_summary.html#export",
+    "https://adminmrobo.github.io/llm_memory_trilogy/2_1_context_window.html#export",
+    "https://adminmrobo.github.io/llm_memory_trilogy/2_2_bigger_window.html#export",
+    "https://adminmrobo.github.io/llm_memory_trilogy/2_3_three_drawers.html#export",
+    "https://adminmrobo.github.io/llm_memory_trilogy/2_4_compaction.html#export",
+    "https://adminmrobo.github.io/llm_memory_trilogy/2_5_retrieval.html#export",
+    "https://adminmrobo.github.io/llm_memory_trilogy/2_6_duel_summary.html#export",
+    "https://adminmrobo.github.io/llm_memory_trilogy/3_1_what_to_remember.html#export",
+    "https://adminmrobo.github.io/llm_memory_trilogy/3_2_when_to_write.html#export",
+    "https://adminmrobo.github.io/llm_memory_trilogy/3_3_maintain.html#export",
+    "https://adminmrobo.github.io/llm_memory_trilogy/3_4_memorilla.html#export",
+    "https://adminmrobo.github.io/llm_memory_trilogy/3_5_agent_experience.html#export",
+    "https://adminmrobo.github.io/llm_memory_trilogy/3_6_duel_wrapup.html#export"
+   ],
+   "files": [
+    {
+     "path": "KG_00_registry.json",
+     "url": "https://github.com/adminmrobo/llm_memory_trilogy/blob/main/KG_00_registry.json"
+    }
+   ]
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 19
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/llm_memory_trilogy/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 19
+   }
+  },
+  "has_pages": false
+ },
+ {
+  "repo": "machine_learning_model_atlas",
+  "series_ko": "머신러닝 모델 도감 · 엣센스",
+  "title_ko": "머신러닝 모델 도감 · 엣센스",
+  "repo_url": "https://github.com/adminmrobo/machine_learning_model_atlas",
+  "pages_url": "https://adminmrobo.github.io/machine_learning_model_atlas/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-12T01:53:30Z",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-13",
+  "site_title": "머신러닝 모델 도감 · 엣센스",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 1,
+   "pages_checked": 1,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 1
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/machine_learning_model_atlas/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 1
+   }
+  },
+  "has_pages": true
+ },
+ {
   "repo": "markov_player",
   "series_ko": "플레이어의 다음 수 · 연구실",
   "title_ko": "플레이어의 다음 수 · 연구실",
@@ -5690,7 +7905,7 @@
   "redraw_ids": [],
   "thumb": "thumbs/repos/markov_player.jpg",
   "status": "ok",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "플레이어의 다음 수 · 연구실",
   "ontology": {
    "status": "partial",
@@ -5970,7 +8185,7 @@
   ],
   "thumb": "thumbs/repos/ML_00_Algorithm-family-build_00.jpg",
   "status": "redraw",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": null,
   "ontology": {
    "status": "none",
@@ -6104,7 +8319,7 @@
   ],
   "thumb": "thumbs/repos/ML_00_Algorithm-family-build_01.jpg",
   "status": "redraw",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "인공지능 알고리즘 패밀리 조직도 — 목차",
   "ontology": {
    "status": "none",
@@ -6235,7 +8450,7 @@
   ],
   "thumb": "thumbs/repos/ML_00_Algorithm-family-build_02.jpg",
   "status": "redraw",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "인공지능 알고리즘 패밀리 조직도 — 목차",
   "ontology": {
    "status": "none",
@@ -6372,7 +8587,7 @@
   ],
   "thumb": "thumbs/repos/ML_00_Algorithm-family-build_03.jpg",
   "status": "redraw",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "인공지능 알고리즘 패밀리 조직도 — 목차",
   "ontology": {
    "status": "none",
@@ -6510,7 +8725,7 @@
   ],
   "thumb": "thumbs/repos/ML_model_hiring_committee.jpg",
   "status": "redraw",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "5-0 채용 공고 — 판단을 데이터로 | 모델 채용 위원회",
   "ontology": {
    "status": "none",
@@ -6596,7 +8811,7 @@
   ],
   "thumb": "thumbs/repos/motion_ai_series_01.jpg",
   "status": "redraw",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "AI는 동작을 어떻게 알아보고 만들까? — 긴급 미션 다섯 개",
   "ontology": {
    "status": "none",
@@ -6705,7 +8920,7 @@
   ],
   "thumb": "thumbs/repos/my_article_00_Korean_stockmarket_volatility_study.jpg",
   "status": "redraw",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "우리나라 주식시장의 변동성 분해 분석 — 연구실 해설",
   "ontology": {
    "status": "partial",
@@ -6812,7 +9027,7 @@
   "redraw_ids": [],
   "thumb": null,
   "status": "unknown",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "암호화폐 정보 효율성 해설",
   "ontology": {
    "status": "full",
@@ -6933,7 +9148,7 @@
   ],
   "thumb": "thumbs/repos/my_article_02_crypto_predict_model_analytics.jpg",
   "status": "redraw",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "가상자산 시계열 데이터의 분석과 예측 - 연구실 대시보드",
   "ontology": {
    "status": "partial",
@@ -7044,7 +9259,7 @@
   ],
   "thumb": "thumbs/repos/my_article_03_drug-slang-detection.jpg",
   "status": "redraw",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "SNS 은어와 이상탐지 — AI Lab Explainer #01",
   "ontology": {
    "status": "full",
@@ -7164,7 +9379,7 @@
   ],
   "thumb": "thumbs/repos/my_article_04_adversarial_finance_attack.jpg",
   "status": "redraw",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "AI FinSec Lab — 금융 이상탐지 모델 보안 · 인터랙티브 해설",
   "ontology": {
    "status": "partial",
@@ -7275,7 +9490,7 @@
   ],
   "thumb": "thumbs/repos/my_article_05_consumer_expenditure_predict.jpg",
   "status": "redraw",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "노후 가계부와 AI 예측 모형 — KReIS",
   "ontology": {
    "status": "full",
@@ -7377,7 +9592,7 @@
   ],
   "thumb": "thumbs/repos/my_article_06_AI_effect_to_labor_demand.jpg",
   "status": "redraw",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "조건부 노동수요와 생성형 AI — 산업별 구인수요의 반사실 실험실 · 7개 언어판",
   "ontology": {
    "status": "partial",
@@ -7502,7 +9717,7 @@
   ],
   "thumb": "thumbs/repos/my_article_07_media_blockchain.jpg",
   "status": "redraw",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "미디어 토큰 경제 연구실 · 미디어 콘텐츠 기반의 블록체인 토큰의 경제적 성과 분석 — 가격 변동성 및 탈중앙화 성과를 중심으로",
   "ontology": {
    "status": "partial",
@@ -7707,7 +9922,7 @@
   ],
   "thumb": "thumbs/repos/my_article_08_poll_reweighting_lab.jpg",
   "status": "redraw",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "여론조사 보정 연구실",
   "ontology": {
    "status": "partial",
@@ -7761,14 +9976,14 @@
   "repo_url": "https://github.com/adminmrobo/neural_network_atlas",
   "pages_url": "https://adminmrobo.github.io/neural_network_atlas/",
   "default_branch": "main",
-  "pushed_at": "2026-11-06T22:14:12Z",
+  "pushed_at": "2026-11-12T01:53:33Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
   "redraw_ids": [],
   "thumb": null,
   "status": "unknown",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "신경망 구조 도감 · 초파리 로봇 대전",
   "ontology": {
    "status": "partial",
@@ -7866,7 +10081,7 @@
   "repo_url": "https://github.com/adminmrobo/neuralink_animal_brain_ai",
   "pages_url": "https://adminmrobo.github.io/neuralink_animal_brain_ai/",
   "default_branch": "main",
-  "pushed_at": "2026-11-07T05:04:08Z",
+  "pushed_at": "2026-11-12T15:37:36Z",
   "has_manifest": true,
   "covers": [
    {
@@ -7984,7 +10199,7 @@
   "redraw_ids": [],
   "thumb": "thumbs/repos/neuralink_animal_brain_ai.jpg",
   "status": "ok",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "뉴럴링크와 동물의 뇌 — AI 연구실 해설",
   "ontology": {
    "status": "partial",
@@ -8025,6 +10240,321 @@
    }
   },
   "has_pages": true
+ },
+ {
+  "repo": "neuron_reaction",
+  "series_ko": "뉴런 반응 연구실",
+  "title_ko": "뉴런 반응 연구실 — 신경망 칸은 어떻게 반응하고 배울까",
+  "repo_url": "https://github.com/adminmrobo/neuron_reaction",
+  "pages_url": "https://adminmrobo.github.io/neuron_reaction/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-12T12:24:27Z",
+  "has_manifest": true,
+  "covers": [
+   {
+    "path": "assets/img/cover_01.webp",
+    "role": "cover",
+    "id": "cover_01",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/cover_01_960.webp",
+    "role": "cover",
+    "id": "cover_01_960",
+    "size": [
+     960,
+     540
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/og_01.jpg",
+    "role": "og",
+    "id": "og_01",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/og_index.jpg",
+    "role": "og",
+    "id": "og_index",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/thumb_01.webp",
+    "role": "thumb",
+    "id": "thumb_01",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/cover_SP1.webp",
+    "role": "cover",
+    "id": "cover_SP1",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/cover_SP1_960.webp",
+    "role": "cover",
+    "id": "cover_SP1_960",
+    "size": [
+     960,
+     540
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/og_SP1.jpg",
+    "role": "og",
+    "id": "og_SP1",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/thumb_SP1.webp",
+    "role": "thumb",
+    "id": "thumb_SP1",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   }
+  ],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": "thumbs/repos/neuron_reaction.jpg",
+  "status": "ok",
+  "checked_at": "2026-11-13",
+  "site_title": "뉴런 반응 연구실",
+  "ontology": {
+   "status": "partial",
+   "pages_with_kg": 2,
+   "pages_total": 3,
+   "pages_checked": 3,
+   "kg_links": [
+    "https://adminmrobo.github.io/neuron_reaction/01_activation.html#kg",
+    "https://adminmrobo.github.io/neuron_reaction/sp1_reaction_race.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/neuron_reaction/01_activation.html#export",
+    "https://adminmrobo.github.io/neuron_reaction/sp1_reaction_race.html#export"
+   ],
+   "files": [
+    {
+     "path": "data/kg_01.json",
+     "url": "https://github.com/adminmrobo/neuron_reaction/blob/main/data/kg_01.json"
+    },
+    {
+     "path": "data/kg_SP1.json",
+     "url": "https://github.com/adminmrobo/neuron_reaction/blob/main/data/kg_SP1.json"
+    }
+   ]
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 3
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/neuron_reaction/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 3
+   }
+  },
+  "has_pages": true
+ },
+ {
+  "repo": "probability_distribution_dictionary",
+  "series_ko": "확률분포 딕셔너리와 분포표 연구실",
+  "title_ko": "확률분포 딕셔너리와 분포표 연구실",
+  "repo_url": "https://github.com/adminmrobo/probability_distribution_dictionary",
+  "pages_url": "https://adminmrobo.github.io/probability_distribution_dictionary/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-12T00:47:18Z",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": "thumbs/repos/probability_distribution_dictionary.jpg",
+  "status": "unknown",
+  "checked_at": "2026-11-13",
+  "site_title": "확률분포 딕셔너리와 분포표 연구실",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 3,
+   "pages_checked": 3,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 3
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/probability_distribution_dictionary/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 3
+   }
+  },
+  "has_pages": true
+ },
+ {
+  "repo": "python-accounting-analytics",
+  "series_ko": "python-accounting-analytics",
+  "title_ko": null,
+  "repo_url": "https://github.com/adminmrobo/python-accounting-analytics",
+  "pages_url": "https://adminmrobo.github.io/python-accounting-analytics/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-12T15:02:42Z",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-13",
+  "site_title": null,
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 0,
+   "pages_checked": 0,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [],
+   "count": 0,
+   "pages": {},
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {}
+  },
+  "languages": {
+   "codes": [],
+   "count": 0,
+   "complete": true,
+   "pages_by_lang": {}
+  },
+  "has_pages": false
  },
  {
   "repo": "Regression_ridge_lasso",
@@ -8160,7 +10690,7 @@
   "redraw_ids": [],
   "thumb": "thumbs/repos/Regression_ridge_lasso.jpg",
   "status": "ok",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "릿지와 라쏘 · 목차",
   "ontology": {
    "status": "partial",
@@ -8259,7 +10789,7 @@
   "redraw_ids": [],
   "thumb": "thumbs/repos/rulebase_to_agent.jpg",
   "status": "unknown",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "rule base에서 일하는 AI까지",
   "ontology": {
    "status": "partial",
@@ -8433,6 +10963,95 @@
   "has_pages": true
  },
  {
+  "repo": "smart_factory_world",
+  "series_ko": "스마트 팩토리 World",
+  "title_ko": "스마트 팩토리 World",
+  "repo_url": "https://github.com/adminmrobo/smart_factory_world",
+  "pages_url": "https://adminmrobo.github.io/smart_factory_world/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-12T15:37:47Z",
+  "has_manifest": true,
+  "covers": [
+   {
+    "path": "cement/img/cement_cover.webp",
+    "role": "cover",
+    "id": "cover",
+    "size": [
+     960,
+     540
+    ],
+    "characters": [],
+    "robot": "none",
+    "status": "ok"
+   },
+   {
+    "path": "cement/img/factory.webp",
+    "role": "scene",
+    "id": "sc_factory",
+    "size": [
+     960,
+     540
+    ],
+    "characters": [],
+    "robot": "none",
+    "status": "ok"
+   },
+   {
+    "path": "cement/img/strength.webp",
+    "role": "scene",
+    "id": "sc_strength",
+    "size": [
+     960,
+     540
+    ],
+    "characters": [],
+    "robot": "none",
+    "status": "ok"
+   }
+  ],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": "thumbs/repos/smart_factory_world.jpg",
+  "status": "ok",
+  "checked_at": "2026-11-13",
+  "site_title": "스마트 팩토리 World",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 4,
+   "pages_checked": 4,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 4
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/smart_factory_world/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 4
+   }
+  },
+  "has_pages": true
+ },
+ {
   "repo": "statistics_note_ch03_discrete-probability-distribution",
   "series_ko": "우연의 과학통계학",
   "title_ko": "우연의 과학통계학",
@@ -8477,7 +11096,7 @@
   "redraw_ids": [],
   "thumb": "thumbs/repos/statistics_note_ch03_discrete-probability-distribution.jpg",
   "status": "ok",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "우연의 과학통계학",
   "ontology": {
    "status": "partial",
@@ -8540,7 +11159,7 @@
   "redraw_ids": [],
   "thumb": null,
   "status": "unknown",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": null,
   "ontology": {
    "status": "none",
@@ -8693,7 +11312,7 @@
   "redraw_ids": [],
   "thumb": "thumbs/repos/statistics_note_ch04_statistical-estimation.jpg",
   "status": "ok",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "통계적 추정",
   "ontology": {
    "status": "partial",
@@ -8772,7 +11391,7 @@
   "redraw_ids": [],
   "thumb": null,
   "status": "unknown",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "점추정과 신뢰구간",
   "ontology": {
    "status": "full",
@@ -8896,7 +11515,7 @@
   "redraw_ids": [],
   "thumb": "thumbs/repos/statistics_note_ch05_hypothesis-testing.jpg",
   "status": "ok",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "통계적 가설검정",
   "ontology": {
    "status": "partial",
@@ -8965,7 +11584,7 @@
   "redraw_ids": [],
   "thumb": null,
   "status": "unknown",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": null,
   "ontology": {
    "status": "none",
@@ -9007,7 +11626,7 @@
   "redraw_ids": [],
   "thumb": null,
   "status": "unknown",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": null,
   "ontology": {
    "status": "none",
@@ -9042,7 +11661,7 @@
   "repo_url": "https://github.com/adminmrobo/timeseries-trilogy",
   "pages_url": "https://adminmrobo.github.io/timeseries-trilogy/",
   "default_branch": "main",
-  "pushed_at": "2026-11-06T18:47:57Z",
+  "pushed_at": "2026-11-11T14:42:57Z",
   "has_manifest": true,
   "covers": [
    {
@@ -9060,7 +11679,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "redraw"
+    "status": "ok"
    },
    {
     "path": "assets/img/cover_ch1.webp",
@@ -9077,7 +11696,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "redraw"
+    "status": "ok"
    },
    {
     "path": "assets/img/cover_ch2.webp",
@@ -9094,7 +11713,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "redraw"
+    "status": "ok"
    },
    {
     "path": "assets/img/cover_ch3.webp",
@@ -9111,14 +11730,359 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "redraw"
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/thumb_1_1.webp",
+    "role": "thumb",
+    "id": "thumb_1_1",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "fly"
+    ],
+    "robot": "none",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/thumb_1_2.webp",
+    "role": "thumb",
+    "id": "thumb_1_2",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "asst"
+    ],
+    "robot": "none",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/thumb_1_3.webp",
+    "role": "thumb",
+    "id": "thumb_1_3",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/thumb_1_4.webp",
+    "role": "thumb",
+    "id": "thumb_1_4",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "doc"
+    ],
+    "robot": "none",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/thumb_1_5.webp",
+    "role": "thumb",
+    "id": "thumb_1_5",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/thumb_1_6.webp",
+    "role": "thumb",
+    "id": "thumb_1_6",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "asst"
+    ],
+    "robot": "none",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/thumb_1_7.webp",
+    "role": "thumb",
+    "id": "thumb_1_7",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/thumb_2_1.webp",
+    "role": "thumb",
+    "id": "thumb_2_1",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/thumb_2_2.webp",
+    "role": "thumb",
+    "id": "thumb_2_2",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/thumb_2_3.webp",
+    "role": "thumb",
+    "id": "thumb_2_3",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "asst"
+    ],
+    "robot": "none",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/thumb_2_4.webp",
+    "role": "thumb",
+    "id": "thumb_2_4",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "doc"
+    ],
+    "robot": "none",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/thumb_2_5.webp",
+    "role": "thumb",
+    "id": "thumb_2_5",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "fly"
+    ],
+    "robot": "none",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/thumb_2_6.webp",
+    "role": "thumb",
+    "id": "thumb_2_6",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/thumb_2_7.webp",
+    "role": "thumb",
+    "id": "thumb_2_7",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/thumb_3_1.webp",
+    "role": "thumb",
+    "id": "thumb_3_1",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "fly"
+    ],
+    "robot": "none",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/thumb_3_2.webp",
+    "role": "thumb",
+    "id": "thumb_3_2",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "doc"
+    ],
+    "robot": "none",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/thumb_3_3.webp",
+    "role": "thumb",
+    "id": "thumb_3_3",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/thumb_3_4.webp",
+    "role": "thumb",
+    "id": "thumb_3_4",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/thumb_3_5.webp",
+    "role": "thumb",
+    "id": "thumb_3_5",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "asst"
+    ],
+    "robot": "none",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/thumb_3_6.webp",
+    "role": "thumb",
+    "id": "thumb_3_6",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly"
+    ],
+    "robot": "none",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/thumb_3_7.webp",
+    "role": "thumb",
+    "id": "thumb_3_7",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/bg_index.webp",
+    "role": "hero",
+    "id": "bg_index",
+    "size": [
+     1280,
+     480
+    ],
+    "characters": [],
+    "robot": "none",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/og_index.jpg",
+    "role": "og",
+    "id": "og_index",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    }
   ],
   "redraw_count": 0,
   "redraw_ids": [],
-  "thumb": "https://adminmrobo.github.io/timeseries-trilogy/assets/img/cover_index.webp",
+  "thumb": "thumbs/repos/timeseries-trilogy.jpg",
   "status": "ok",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "시계열 3부작 · 목차",
   "ontology": {
    "status": "partial",
@@ -9173,6 +12137,10 @@
    ],
    "files": [
     {
+     "path": "KG_00_registry.json",
+     "url": "https://github.com/adminmrobo/timeseries-trilogy/blob/main/KG_00_registry.json"
+    },
+    {
      "path": "docs/KG_00_registry.json",
      "url": "https://github.com/adminmrobo/timeseries-trilogy/blob/main/docs/KG_00_registry.json"
     }
@@ -9180,23 +12148,11 @@
   },
   "i18n": {
    "langs": [
-    "ko",
-    "en",
-    "zh",
-    "ja",
-    "uz",
-    "ru",
-    "vi"
+    "ko"
    ],
-   "count": 7,
+   "count": 1,
    "pages": {
-    "ko": 23,
-    "en": 23,
-    "zh": 23,
-    "ja": 23,
-    "uz": 23,
-    "ru": 23,
-    "vi": 23
+    "ko": 23
    },
    "partial": [],
    "complete": true,
@@ -9210,35 +12166,17 @@
     "vi"
    ],
    "links": {
-    "ko": "https://adminmrobo.github.io/timeseries-trilogy/00_answers.html",
-    "en": "https://adminmrobo.github.io/timeseries-trilogy/00_answers.en.html",
-    "zh": "https://adminmrobo.github.io/timeseries-trilogy/00_answers.zh.html",
-    "ja": "https://adminmrobo.github.io/timeseries-trilogy/00_answers.ja.html",
-    "uz": "https://adminmrobo.github.io/timeseries-trilogy/00_answers.uz.html",
-    "ru": "https://adminmrobo.github.io/timeseries-trilogy/00_answers.ru.html",
-    "vi": "https://adminmrobo.github.io/timeseries-trilogy/00_answers.vi.html"
+    "ko": "https://adminmrobo.github.io/timeseries-trilogy/00_answers.html"
    }
   },
   "languages": {
    "codes": [
-    "ko",
-    "en",
-    "zh",
-    "ja",
-    "uz",
-    "ru",
-    "vi"
+    "ko"
    ],
-   "count": 7,
+   "count": 1,
    "complete": true,
    "pages_by_lang": {
-    "ko": 23,
-    "en": 23,
-    "zh": 23,
-    "ja": 23,
-    "uz": 23,
-    "ru": 23,
-    "vi": 23
+    "ko": 23
    }
   },
   "has_pages": true
@@ -9257,7 +12195,7 @@
   "redraw_ids": [],
   "thumb": null,
   "status": "unknown",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": null,
   "ontology": {
    "status": "none",
@@ -9299,7 +12237,7 @@
   "redraw_ids": [],
   "thumb": null,
   "status": "unknown",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "매출이 없어도 기업가치는 만들 수 있다 · 연구실 해설",
   "ontology": {
    "status": "partial",
@@ -9357,7 +12295,7 @@
   "repo_url": "https://github.com/adminmrobo/what_is_tensor",
   "pages_url": "https://adminmrobo.github.io/what_is_tensor/",
   "default_branch": "main",
-  "pushed_at": "2026-11-08T02:29:42Z",
+  "pushed_at": "2026-11-12T12:24:41Z",
   "has_manifest": false,
   "covers": [
    {
@@ -9405,7 +12343,7 @@
   "redraw_ids": [],
   "thumb": "thumbs/repos/what_is_tensor.jpg",
   "status": "ok",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "텐서 연구실 · 목차",
   "ontology": {
    "status": "partial",
@@ -9504,7 +12442,7 @@
   "redraw_ids": [],
   "thumb": "thumbs/repos/who_am_i.jpg",
   "status": "unknown",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "초파리 연구원과 주판봇이 소개하는 안상선 (Reon Ahn)",
   "ontology": {
    "status": "none",
@@ -9587,7 +12525,7 @@
   "redraw_ids": [],
   "thumb": "thumbs/repos/who_am_i_package.jpg",
   "status": "ok",
-  "checked_at": "2026-11-11",
+  "checked_at": "2026-11-13",
   "site_title": "초파리 연구원과 주판봇이 소개하는 안상선 (Reon Ahn)",
   "ontology": {
    "status": "none",
@@ -9621,87 +12559,6 @@
    "complete": true,
    "pages_by_lang": {
     "ko": 2
-   }
-  },
-  "has_pages": false
- },
- {
-  "repo": "iclr2027_top3_lab_review",
-  "series_ko": "논문 해설 · ICLR 2027 만점 3편",
-  "title_ko": "4만 3천 편 중 만점 3편 — 연구실 모의 심사회",
-  "repo_url": "https://github.com/adminmrobo/iclr2027_top3_lab_review",
-  "pages_url": "https://adminmrobo.github.io/iclr2027_top3_lab_review/",
-  "default_branch": "main",
-  "pushed_at": "2026-11-11T17:20:00Z",
-  "has_manifest": true,
-  "covers": [
-   {
-    "path": "images/cover_iclr27.jpg",
-    "role": "cover",
-    "estimated": false
-   },
-   {
-    "path": "images/og_iclr27.jpg",
-    "role": "og",
-    "estimated": false
-   },
-   {
-    "path": "images/thumb_iclr27.jpg",
-    "role": "thumb",
-    "estimated": false
-   },
-   {
-    "path": "images/bg_iclr27_hero.jpg",
-    "role": "hero",
-    "estimated": false
-   }
-  ],
-  "redraw_count": 1,
-  "redraw_ids": [
-   "hero_bg"
-  ],
-  "thumb": "thumbs/repos/iclr2027_top3_lab_review.jpg",
-  "status": "redraw",
-  "checked_at": "2026-11-12",
-  "site_title": "4만 3천 편 중 만점 3편 — 연구실 모의 심사회 (ICLR 2027)",
-  "ontology": {
-   "status": "full",
-   "pages_with_kg": 1,
-   "pages_total": 1,
-   "pages_checked": 1,
-   "kg_links": [
-    "https://adminmrobo.github.io/iclr2027_top3_lab_review/index.html#kg"
-   ],
-   "export_links": [
-    "https://adminmrobo.github.io/iclr2027_top3_lab_review/index.html#export"
-   ],
-   "files": []
-  },
-  "i18n": {
-   "langs": [
-    "ko"
-   ],
-   "count": 1,
-   "pages": {
-    "ko": 1
-   },
-   "partial": [],
-   "complete": true,
-   "readme_langs": [
-    "ko"
-   ],
-   "links": {
-    "ko": "https://adminmrobo.github.io/iclr2027_top3_lab_review/index.html"
-   }
-  },
-  "languages": {
-   "codes": [
-    "ko"
-   ],
-   "count": 1,
-   "complete": true,
-   "pages_by_lang": {
-    "ko": 1
    }
   },
   "has_pages": false

@@ -1,8 +1,12 @@
 {
+ "agent_secret_leak_lab": {
+  "src": null,
+  "pushed_at": "2026-11-12T02:18:38Z"
+ },
  "ahn_boat_lab_town": {
   "src": "redraw:R019:assets/cut1_panic.webp",
-  "pushed_at": "2026-11-08T03:08:15Z",
-  "made": "2026-11-08"
+  "pushed_at": "2026-11-11T13:43:01Z",
+  "made": "2026-11-13"
  },
  "ahnboat_lab_character_add_packs": {
   "src": null,
@@ -10,11 +14,11 @@
  },
  "ahnboat_lab_explainer": {
   "src": null,
-  "pushed_at": "2026-11-10T22:24:06Z"
+  "pushed_at": "2026-11-11T12:32:22Z"
  },
  "ahnboat_lab_langpack": {
   "src": null,
-  "pushed_at": "2026-11-04T14:31:47Z"
+  "pushed_at": "2026-11-11T09:01:16Z"
  },
  "ahnboat_lab_town_floor_b01": {
   "src": null,
@@ -26,8 +30,8 @@
  },
  "AI_for_cement_produce": {
   "src": "name:ch08_timeseries_lag_preprocessing/img/COVER.webp",
-  "pushed_at": "2026-11-10T11:16:48Z",
-  "made": "2026-11-11"
+  "pushed_at": "2026-11-11T17:10:10Z",
+  "made": "2026-11-13"
  },
  "ai_for_cement_produce_07": {
   "src": "file:img/F01_cement_mortar_concrete.webp",
@@ -44,6 +48,10 @@
   "pushed_at": "2026-10-08T12:08:40Z",
   "made": "2026-11-07"
  },
+ "ai_in_3d": {
+  "src": null,
+  "pushed_at": "2026-11-12T15:33:01Z"
+ },
  "AI_Model_Review": {
   "src": "embedded:index.html#hero",
   "pushed_at": "2026-10-08T12:11:10Z",
@@ -51,8 +59,8 @@
  },
  "AI_Model_Review_Fruit_fly_special": {
   "src": "redraw:R107:en/index.html#bg",
-  "pushed_at": "2026-11-06T22:22:50Z",
-  "made": "2026-11-07"
+  "pushed_at": "2026-11-12T14:34:18Z",
+  "made": "2026-11-13"
  },
  "ai_rendering": {
   "src": "name:specs/assets/covers/cover_1-1.webp",
@@ -65,18 +73,22 @@
   "made": "2026-11-07"
  },
  "Anomaly_detection_tatics": {
-  "src": "name:img/og.jpg",
-  "pushed_at": "2026-11-09T23:45:10Z",
-  "made": "2026-11-10"
+  "src": "manifest:img/og.jpg",
+  "pushed_at": "2026-11-11T11:23:11Z",
+  "made": "2026-11-13"
  },
  "article_02_crypto_asset_price_predict": {
   "src": null,
   "pushed_at": "2026-10-22T14:40:31Z"
  },
+ "backprop_lab": {
+  "src": null,
+  "pushed_at": "2026-11-12T15:32:17Z"
+ },
  "bayesian-statistics-for-data-scientists": {
   "src": "name:assets/og/cover_00.jpg",
-  "pushed_at": "2026-11-10T13:50:29Z",
-  "made": "2026-11-11"
+  "pushed_at": "2026-11-11T18:43:01Z",
+  "made": "2026-11-13"
  },
  "blockchain_finance_ch01": {
   "src": null,
@@ -94,10 +106,14 @@
   "src": null,
   "pushed_at": "2026-11-06T04:32:07Z"
  },
+ "cnn_face_game_lab": {
+  "src": null,
+  "pushed_at": "2026-11-12T13:27:19Z"
+ },
  "data_science_for_business": {
-  "src": "name:tools/art/cover_index.webp",
-  "pushed_at": "2026-11-09T23:40:33Z",
-  "made": "2026-11-10"
+  "src": "manifest:index.html#cover_index",
+  "pushed_at": "2026-11-12T08:54:12Z",
+  "made": "2026-11-13"
  },
  "data_set_2024_fintech": {
   "src": null,
@@ -153,8 +169,8 @@
  },
  "fish_market_learning_epoch_etc": {
   "src": "og:assets/img/og_index.webp",
-  "pushed_at": "2026-11-08T01:33:40Z",
-  "made": "2026-11-08"
+  "pushed_at": "2026-11-12T14:34:22Z",
+  "made": "2026-11-13"
  },
  "fof-money-meridian-": {
   "src": "name:cover_fof01.webp",
@@ -163,12 +179,12 @@
  },
  "fruitfly-lab-expressions": {
   "src": "file:.thumbnail.jpg",
-  "pushed_at": "2026-11-10T22:17:05Z",
-  "made": "2026-11-11"
+  "pushed_at": "2026-11-12T15:35:42Z",
+  "made": "2026-11-13"
  },
  "g2b-bid-strategy": {
   "src": null,
-  "pushed_at": "2026-11-10T05:52:44Z"
+  "pushed_at": "2026-11-12T05:22:53Z"
  },
  "Gen_AI_Hannam_univ": {
   "src": "embedded:index.html#hero",
@@ -199,6 +215,20 @@
   "src": null,
   "pushed_at": "2025-12-07T14:22:07Z"
  },
+ "how_to_start_db": {
+  "src": null,
+  "pushed_at": "2026-11-12T15:09:15Z"
+ },
+ "iclr2027_top3_lab_review": {
+  "src": "manifest:images/cover_iclr27.jpg",
+  "pushed_at": "2026-11-12T00:46:25Z",
+  "made": "2026-11-13"
+ },
+ "inference_engineering_study": {
+  "src": "manifest:cover_factory.jpg",
+  "pushed_at": "2026-11-12T15:36:15Z",
+  "made": "2026-11-13"
+ },
  "inference_engineering_study_week_01_article_01": {
   "src": "redraw:R037:images/sc_lb_hero.png",
   "pushed_at": "2026-11-06T12:38:24Z",
@@ -227,11 +257,6 @@
   "pushed_at": "2026-11-06T12:36:03Z",
   "made": "2026-11-07"
  },
- "inference_engineering_study_week_02_textbook_ch02_p3_to_end": {
-  "src": "name:images/cover_03.webp",
-  "pushed_at": "2026-11-09T09:08:56Z",
-  "made": "2026-11-10"
- },
  "inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide": {
   "src": "name:images/s03_cover.webp",
   "pushed_at": "2026-11-09T09:08:59Z",
@@ -241,6 +266,11 @@
   "src": "name:assets/img/cover_03.webp",
   "pushed_at": "2026-11-07T05:49:35Z",
   "made": "2026-11-08"
+ },
+ "inference_engineering_study_week_03_textbook_ch02_p3_to_end": {
+  "src": "name:images/cover_03.webp",
+  "pushed_at": "2026-11-09T09:08:56Z",
+  "made": "2026-11-13"
  },
  "inference_korea_study_page": {
   "src": null,
@@ -293,6 +323,14 @@
   "src": "name:assets/cover_llmeval.webp",
   "pushed_at": "2026-11-06T18:33:31Z",
   "made": "2026-11-07"
+ },
+ "llm_memory_trilogy": {
+  "src": null,
+  "pushed_at": "2026-11-12T12:58:29Z"
+ },
+ "machine_learning_model_atlas": {
+  "src": null,
+  "pushed_at": "2026-11-12T01:53:30Z"
  },
  "markov_player": {
   "src": "name:assets/og_mk.jpg",
@@ -375,12 +413,26 @@
  },
  "neural_network_atlas": {
   "src": null,
-  "pushed_at": "2026-11-06T22:14:12Z"
+  "pushed_at": "2026-11-12T01:53:33Z"
  },
  "neuralink_animal_brain_ai": {
   "src": "manifest:assets/img/cover_index.webp",
-  "pushed_at": "2026-11-07T05:04:08Z",
-  "made": "2026-11-08"
+  "pushed_at": "2026-11-12T15:37:36Z",
+  "made": "2026-11-13"
+ },
+ "neuron_reaction": {
+  "src": "manifest:assets/img/cover_01.webp",
+  "pushed_at": "2026-11-12T12:24:27Z",
+  "made": "2026-11-13"
+ },
+ "probability_distribution_dictionary": {
+  "src": "file:thumbs/part1.webp",
+  "pushed_at": "2026-11-12T00:47:18Z",
+  "made": "2026-11-13"
+ },
+ "python-accounting-analytics": {
+  "src": null,
+  "pushed_at": "2026-11-12T15:02:42Z"
  },
  "Regression_ridge_lasso": {
   "src": "manifest:og_rg.jpg",
@@ -391,6 +443,11 @@
   "src": "embedded:1-1_rulebase.en.html#hero",
   "pushed_at": "2026-11-06T18:36:29Z",
   "made": "2026-11-07"
+ },
+ "smart_factory_world": {
+  "src": "manifest:cement/img/cement_cover.webp",
+  "pushed_at": "2026-11-12T15:37:47Z",
+  "made": "2026-11-13"
  },
  "statistics_note_ch03_discrete-probability-distribution": {
   "src": "name:assets/og_1_1.png",
@@ -424,8 +481,9 @@
   "pushed_at": "2026-03-02T12:35:34Z"
  },
  "timeseries-trilogy": {
-  "src": null,
-  "pushed_at": "2026-11-06T18:47:57Z"
+  "src": "manifest:assets/img/cover_index.webp",
+  "pushed_at": "2026-11-11T14:42:57Z",
+  "made": "2026-11-13"
  },
  "usa_stock_reporter_project_python_version": {
   "src": null,
@@ -437,8 +495,8 @@
  },
  "what_is_tensor": {
   "src": "name:assets/img/og_w01.jpg",
-  "pushed_at": "2026-11-08T02:29:42Z",
-  "made": "2026-11-08"
+  "pushed_at": "2026-11-12T12:24:41Z",
+  "made": "2026-11-13"
  },
  "who_am_i": {
   "src": "embedded:who_am_i.en.html#hero",
@@ -449,10 +507,5 @@
   "src": "name:img/sc_night.webp",
   "pushed_at": "2026-11-05T11:19:20Z",
   "made": "2026-11-07"
- },
- "iclr2027_top3_lab_review": {
-  "src": "manifest:cover:images/cover_iclr27.jpg",
-  "pushed_at": "2026-11-12T00:50:00Z",
-  "made": "2026-11-12"
  }
 }
