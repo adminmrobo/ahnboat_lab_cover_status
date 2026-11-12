@@ -1,9 +1,12 @@
 {
- "fetched_at": "2026-11-12 16:12 KST",
+ "fetched_at": "2026-11-13 00:10 KST",
  "site": "https://ahnboat.xyz",
- "errors": [],
+ "errors": [
+  "워드프레스 REST API 읽기 실패: HTTP Error 429: Too Many Requests",
+  "워드프레스 사이트맵 읽기 실패: HTTP Error 404: Not Found"
+ ],
  "wordpress": {
-  "source": "rest",
+  "source": "sitemap",
   "posts": [
    {
     "id": 3290,
@@ -400,48 +403,7 @@
     "parent": 0
    }
   ],
-  "pages": [
-   {
-    "id": 3442,
-    "title": "곧 나옵니다.. 아마도요..! (Coming Soon-ish! 🐌)",
-    "link": "https://ahnboat.xyz/pleae_wait/",
-    "date": "2026-10-04",
-    "modified": "2026-10-19",
-    "excerpt": "",
-    "categories": [],
-    "parent": 0
-   },
-   {
-    "id": 3398,
-    "title": "Hello! Everyone!",
-    "link": "https://ahnboat.xyz/my_profile/",
-    "date": "2026-10-03",
-    "modified": "2026-10-19",
-    "excerpt": "00. Basic Info. 한국전기안전공사, 매일경제신문을 거쳐 현재 매일경제 사외벤처 (주)M-Robo를 창업해 대표로 재직하고 있다. (주)M-Robo는 언론사 사내 벤처로 시작한 미디어 벤처로, 국민일보에 로봇기자(스톡봇)을 서비스 했으며, 한국인터넷진흥원, 한국언론진흥재단, 한국방송통신전파진흥원 등에서 다수의 프로젝트를 진행했다. 이후 자체 A.I",
-    "categories": [],
-    "parent": 0
-   },
-   {
-    "id": 895,
-    "title": "Article & Study",
-    "link": "https://ahnboat.xyz/articlestudy/",
-    "date": "2022-01-16",
-    "modified": "2026-10-04",
-    "excerpt": "인공지능기술, 경제학, 블록체인, 암호화폐 NFT 등 주요 관심사에 대해서 쓴 글입니다. 글 목록",
-    "categories": [],
-    "parent": 0
-   },
-   {
-    "id": 884,
-    "title": "Global Business Story",
-    "link": "https://ahnboat.xyz/global_business/",
-    "date": "2022-01-16",
-    "modified": "2026-10-04",
-    "excerpt": "해외 출장을 다니면서 각 나라의 문화나 현지인들의 라이프 스타일 등을 기록으로 남긴 것입니다. 해외 현지 비즈니스를 준비하시는 분께 미력하나마다 도움이 되길 바라면서 정리했습니다. 2023년 1월 현재는 대만, 태국, 우즈베키스탄, 카자흐스탄이 업데이트됐습니다. 글 목록",
-    "categories": [],
-    "parent": 0
-   }
-  ],
+  "pages": [],
   "sitemap": []
  },
  "catalog": [
