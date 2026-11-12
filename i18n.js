@@ -49,6 +49,13 @@
   window.addEventListener('message',function(e){var d=e.data;if(d&&d.type==='ahnboat-lang-set'&&ok(d.lang)){store(d.lang);change(d.lang,true);}});
   apply();
   var ready=(lang==='ko'?Promise.resolve():load()).then(function(){});
+  /* 홈페이지에 끼워 넣었을 때: 글꼴이 늦게 오거나 줄이 바뀌어 길이가 달라지면 그때마다 새 높이를 알린다(블록 안 스크롤 막대 방지) */
+  if(window.parent!==window){(function(){var last=0;
+    function tell(){if(!document.body)return;var h=Math.ceil(document.body.getBoundingClientRect().height);if(!h||h===last)return;last=h;
+      try{window.parent.postMessage({type:'ahnboat-catalog-height',height:h,nav:false},'*');}catch(e){}}
+    function start(){if('ResizeObserver' in window){try{new ResizeObserver(tell).observe(document.body);}catch(e){}}
+      if(document.fonts&&document.fonts.ready)document.fonts.ready.then(tell);window.addEventListener('load',tell);tell();}
+    if(document.body)start();else document.addEventListener('DOMContentLoaded',start);})();}
   window.AhnI18n={
     get lang(){return lang;},langs:LANGS,names:NAMES,ready:ready,t:t,nb:nb,link:link,
     set:function(l){return change(l,false);},
