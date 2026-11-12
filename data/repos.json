@@ -9641,14 +9641,23 @@
     "estimated": false
    },
    {
+    "path": "images/og_iclr27.jpg",
+    "role": "og",
+    "estimated": false
+   },
+   {
+    "path": "images/thumb_iclr27.jpg",
+    "role": "thumb",
+    "estimated": false
+   },
+   {
     "path": "images/bg_iclr27_hero.jpg",
     "role": "hero",
     "estimated": false
    }
   ],
-  "redraw_count": 2,
+  "redraw_count": 1,
   "redraw_ids": [
-   "cover",
    "hero_bg"
   ],
   "thumb": "thumbs/repos/iclr2027_top3_lab_review.jpg",
