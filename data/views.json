@@ -17,16 +17,8 @@
     "repo": "probability_distribution_dictionary",
     "sprites": [
      {
-      "src": "thumbs/chars/motion/x1/X1A_f05.webp",
-      "h": 62
-     },
-     {
-      "src": "thumbs/chars/motion/x2/X2A_f01.webp",
-      "h": 60
-     },
-     {
-      "src": "thumbs/chars/motion/x3/X3A_f05.webp",
-      "h": 56
+      "src": "thumbs/chars/atlas/x123_intro.webp",
+      "h": 88
      }
     ]
    },
@@ -45,8 +37,8 @@
     "repo": "neural_network_atlas",
     "sprites": [
      {
-      "src": "thumbs/chars/motion/sia/S12_f01.webp",
-      "h": 84
+      "src": "thumbs/chars/atlas/sia_intro.webp",
+      "h": 92
      }
     ]
    }
