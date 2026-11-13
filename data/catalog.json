@@ -942,6 +942,21 @@
    "thumb": "thumbs/repos/AI_image_classification.jpg"
   },
   {
+   "title": "얼굴 알아맞히기 게임 · 20챕터로 배우는 CNN",
+   "summary": "가림막 뒤 얼굴이 누구인지 박사·초파리 연구원·주판봇이 이어달리기로 맞히는 20챕터 게임. 합성곱, 풀링, 소프트맥스까지 CNN 공식 열 개를 비전공자용으로 풀었습니다. 2편 포함.",
+   "cat": "AI 감각·생성",
+   "mid": "보고 알아보기",
+   "sub": "이미지 인식",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/cnn_face_game_lab",
+   "site_url": "https://adminmrobo.github.io/cnn_face_game_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/cnn_face_game_lab.jpg"
+  },
+  {
    "title": "AI 글 읽기 어려움",
    "summary": "",
    "cat": "AI 감각·생성",
@@ -1013,6 +1028,21 @@
    "kind": "repo",
    "repo_url": "https://github.com/adminmrobo/agent_secret_leak_lab",
    "site_url": "https://adminmrobo.github.io/agent_secret_leak_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": ""
+  },
+  {
+   "title": "기억 3부작 · LLM은 어디까지 기억할 수 있을까",
+   "summary": "시계열의 창에서 출발해 LLM의 문맥 창, 대화 압축, 바깥 저장소, 기억 돌보기, 기억 토큰까지 넓혀 가는 3부 18편의 연구실 해설 시리즈. 시계열 3부작의 후속.",
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "LLM 이해",
+   "sub": "LLM 기억",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/llm_memory_trilogy",
+   "site_url": "https://adminmrobo.github.io/llm_memory_trilogy/",
    "link": "",
    "langs": [
     "ko"
@@ -1608,6 +1638,21 @@
     "ko"
    ],
    "thumb": "thumbs/repos/learn-python-by-doing_Korean.jpg"
+  },
+  {
+   "title": "초보자도 쉽게 따라하는 DB 환경 설치",
+   "summary": "MariaDB, PostgreSQL, Orange를 Windows에 차례로 설치하고 접속까지 확인하는 초보자용 해설. 미션 3개, 실험 2개, 접속 연습 2개, 퀴즈 9문항과 강의 슬라이드.",
+   "cat": "통계·데이터 기초",
+   "mid": "프로그래밍",
+   "sub": "데이터베이스",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/how_to_start_db",
+   "site_url": "https://adminmrobo.github.io/how_to_start_db/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": ""
   },
   {
    "title": "시계열 3부작 · ARIMA와 LSTM",
