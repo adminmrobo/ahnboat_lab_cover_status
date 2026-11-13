@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-13 00:10 KST",
+ "fetched_at": "2026-11-13 15:48 KST",
  "site": "https://ahnboat.xyz",
  "errors": [
   "워드프레스 REST API 읽기 실패: HTTP Error 429: Too Many Requests",
@@ -408,6 +408,19 @@
  },
  "catalog": [
   {
+   "title": "머신러닝 모델 도감 · 엣센스",
+   "cat": "머신러닝",
+   "mid": "개념 지도",
+   "sub": "머신러닝 모델 도감",
+   "site_url": "https://adminmrobo.github.io/machine_learning_model_atlas/",
+   "repo_url": "https://github.com/adminmrobo/machine_learning_model_atlas",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "고전 머신러닝 모델 27가지를 같은 모눈 위에 하나씩 그리고, 무엇을 긋는 모델인지와 강점·약점을 쉬운 말로 푼 한 장짜리 도감. 과제별 보기(회귀·분류·군집·차원 축소·이상 탐지). 신경망 구조 도감의 자매편."
+  },
+  {
    "title": "모델 채용 위원회 2차 공채 · 딥러닝",
    "cat": "머신러닝",
    "mid": "개념 지도",
@@ -530,6 +543,25 @@
    "summary": ""
   },
   {
+   "title": "평소와 다른 한 건 찾기 · 이상 탐지의 다섯 도구",
+   "cat": "머신러닝",
+   "mid": "실습으로 배우기",
+   "sub": "이상 탐지",
+   "site_url": "https://adminmrobo.github.io/Anomaly_detection_tatics/",
+   "repo_url": "https://github.com/adminmrobo/Anomaly_detection_tatics",
+   "link": "",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "summary": "수만 건의 결제·전표·센서 기록에서 사람이 먼저 봐야 할 몇 건을 고르는 법. Z 점수, 마할라노비스 거리, 고립 숲, 오토인코더의 복원 오차, 문턱값 정하기를 법인카드·출장비·결제·매장 방문객 예시로 직접 돌려 본다. 7개 언어."
+  },
+  {
    "title": "딥러닝 A to Z · 초파리 특별편",
    "cat": "딥러닝·뇌과학",
    "mid": "뇌과학",
@@ -559,6 +591,19 @@
     "ko"
    ],
    "summary": ""
+  },
+  {
+   "title": "뉴런 반응 연구실 · 신경망 칸은 어떻게 반응하고 배울까",
+   "cat": "딥러닝·뇌과학",
+   "mid": "딥러닝 모델",
+   "sub": "뉴런 반응 연구실",
+   "site_url": "https://adminmrobo.github.io/neuron_reaction/",
+   "repo_url": "https://github.com/adminmrobo/neuron_reaction",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "신경망의 칸이 곱하고 더한 값을 함수에 통과시켜 넘기는 '반응'을 직접 돌려 보며 배우는 시리즈. 활성화 함수(시그모이드·tanh·ReLU·GELU)와 연구실 반응속도 대회. 텐서 연구실에서 이어지는 편."
   },
   {
    "title": "초파리 연구실의 딥러닝 A to Z",
@@ -614,6 +659,32 @@
     "vi"
    ],
    "summary": "신경망 42가지를 구조 도감으로 정리하고, 초파리만 한 로봇의 뇌에 넣었을 때의 사양과 성능을 RPG 대전으로 비교하는 4쪽짜리 해설."
+  },
+  {
+   "title": "신경망 연구소 · 3D로 설명하는 AI",
+   "cat": "딥러닝·뇌과학",
+   "mid": "딥러닝 모델",
+   "sub": "신경망 연구소",
+   "site_url": "https://adminmrobo.github.io/ai_in_3d/",
+   "repo_url": "https://github.com/adminmrobo/ai_in_3d",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "신경망 27종을 한 층씩 3D로 살펴보는 27층 건물. 쉬운 것부터 어려운 것 순으로 층을 놓았고, 돌려 보고 값을 바꿔 보며 읽습니다. 로비에는 AI 뒤에 있는 수학."
+  },
+  {
+   "title": "역전파 연구실 · 손잡이 33개를 한 번에 돌리는 법",
+   "cat": "딥러닝·뇌과학",
+   "mid": "딥러닝 모델",
+   "sub": "역전파 연구실",
+   "site_url": "https://adminmrobo.github.io/backprop_lab/",
+   "repo_url": "https://github.com/adminmrobo/backprop_lab",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "2012년 워싱턴 DC 자전거 대여 366일을 기온 하나로 맞히는 작은 신경망(손잡이 33개)으로, 손잡이 하나씩·무작위·역전파 세 학습 방법을 같은 조건에서 비교한 실험 노트. 역전파는 같은 답을 훨씬 싸게 내고, 손잡이가 늘수록 역전파만 남는다. 텐서 연구실 → 활성화 함수에 이어지는 편."
   },
   {
    "title": "텐서 연구실",
@@ -684,6 +755,19 @@
    "summary": "이미지 분류가 어떻게 작동하는지 직접 따라 하며 이해하는 강의"
   },
   {
+   "title": "얼굴 알아맞히기 게임 · 20챕터로 배우는 CNN",
+   "cat": "AI 감각·생성",
+   "mid": "보고 알아보기",
+   "sub": "이미지 인식",
+   "site_url": "https://adminmrobo.github.io/cnn_face_game_lab/",
+   "repo_url": "https://github.com/adminmrobo/cnn_face_game_lab",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "가림막 뒤 얼굴이 누구인지 박사·초파리 연구원·주판봇이 이어달리기로 맞히는 20챕터 게임. 합성곱, 풀링, 소프트맥스까지 CNN 공식 열 개를 비전공자용으로 풀었습니다. 2편 포함."
+  },
+  {
    "title": "AI 글 읽기 어려움",
    "cat": "AI 감각·생성",
    "mid": "읽고 이해하기",
@@ -741,6 +825,32 @@
    "summary": ""
   },
   {
+   "title": "확률로 읽는 보안 사건 · 승인 기록 유출",
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "LLM 이해",
+   "sub": "에이전트 보안",
+   "site_url": "https://adminmrobo.github.io/agent_secret_leak_lab/",
+   "repo_url": "https://github.com/adminmrobo/agent_secret_leak_lab",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "AI 코딩 비서의 승인 기록 파일에서 비밀값이 나온 사건을 조건부확률, 베이지안 갱신, 마르코프 연쇄, 역진적 귀납법 네 칸으로 읽고, 도구 책임 대 사용자 책임 토론과 전후 투표로 우도비를 읽는 2편 시리즈."
+  },
+  {
+   "title": "기억 3부작 · LLM은 어디까지 기억할 수 있을까",
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "LLM 이해",
+   "sub": "LLM 기억",
+   "site_url": "https://adminmrobo.github.io/llm_memory_trilogy/",
+   "repo_url": "https://github.com/adminmrobo/llm_memory_trilogy",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "시계열의 창에서 출발해 LLM의 문맥 창, 대화 압축, 바깥 저장소, 기억 돌보기, 기억 토큰까지 넓혀 가는 3부 18편의 연구실 해설 시리즈. 시계열 3부작의 후속."
+  },
+  {
    "title": "인퍼런스 스터디 북 · 목차",
    "cat": "LLM·추론 엔지니어링",
    "mid": "추론 엔지니어링 스터디",
@@ -749,7 +859,13 @@
    "repo_url": "https://github.com/adminmrobo/inference_engineering_study",
    "link": "",
    "langs": [
-    "ko"
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
    ],
    "summary": "『Inference Engineering』 10주 스터디를 연구실 식구 전원이 진행하는 해설 페이지로 묶은 스터디 북 (교재·논문·부록)"
   },
@@ -870,6 +986,19 @@
     "zh"
    ],
    "summary": "Inference Korea: 『Inference Engineering』을 10주 동안 함께 읽는 추론 엔지니어링 스터디. 매주 토요일 저녁 8시 Zoom."
+  },
+  {
+   "title": "4만 3천 편 중 만점 3편 · 연구실 모의 심사회 (ICLR 2027)",
+   "cat": "논문 해설",
+   "mid": "AI 응용 논문",
+   "sub": "AI 학회 논문",
+   "site_url": "https://adminmrobo.github.io/iclr2027_top3_lab_review/",
+   "repo_url": "https://github.com/adminmrobo/iclr2027_top3_lab_review",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "ICLR 2027에서 심사위원 전원이 만점을 줬다고 알려진 논문 세 편(Context Language Models, Zero-Shot Control, Latent Taxonomies)을 연구실 식구들이 장난감 실험으로 다시 심사하는 비전공자용 해설."
   },
   {
    "title": "SNS 은어와 이상탐지",
@@ -1240,6 +1369,19 @@
    "summary": ""
   },
   {
+   "title": "초보자도 쉽게 따라하는 DB 환경 설치",
+   "cat": "통계·데이터 기초",
+   "mid": "프로그래밍",
+   "sub": "데이터베이스",
+   "site_url": "https://adminmrobo.github.io/how_to_start_db/",
+   "repo_url": "https://github.com/adminmrobo/how_to_start_db",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "MariaDB, PostgreSQL, Orange를 Windows에 차례로 설치하고 접속까지 확인하는 초보자용 해설. 미션 3개, 실험 2개, 접속 연습 2개, 퀴즈 9문항과 강의 슬라이드."
+  },
+  {
    "title": "시계열 3부작 · ARIMA와 LSTM",
    "cat": "통계·데이터 기초",
    "mid": "확률·통계",
@@ -1248,13 +1390,7 @@
    "repo_url": "https://github.com/adminmrobo/timeseries-trilogy",
    "link": "",
    "langs": [
-    "ko",
-    "en",
-    "zh",
-    "ja",
-    "uz",
-    "ru",
-    "vi"
+    "ko"
    ],
    "summary": ""
   },
@@ -1296,6 +1432,45 @@
     "ko"
    ],
    "summary": "통계적 추정 2.1.a — 표본 100개로 모평균을 말하는 법. 점추정, 표본평균의 분포, 신뢰구간을 연구실 저울 위에서 직접 뽑아 보며 배운다."
+  },
+  {
+   "title": "우연의 과학통계학 2장 · 통계적 추정",
+   "cat": "통계·데이터 기초",
+   "mid": "확률·통계",
+   "sub": "통계 노트",
+   "site_url": "https://adminmrobo.github.io/statistics_note_ch04_statistical-estimation/",
+   "repo_url": "https://github.com/adminmrobo/statistics_note_ch04_statistical-estimation",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "표본 한 줌으로 모집단을 말하는 법. 점추정과 신뢰구간에서 시작해 정규·t·χ²·F 분포, 표본분포와 자유도, 실습과 종합을 거쳐 100문항 모의고사로 마무리하는 인터랙티브 통계 해설 11편."
+  },
+  {
+   "title": "우연의 과학통계학 3장 · 통계적 가설검정",
+   "cat": "통계·데이터 기초",
+   "mid": "확률·통계",
+   "sub": "통계 노트",
+   "site_url": "https://adminmrobo.github.io/statistics_note_ch05_hypothesis-testing/",
+   "repo_url": "https://github.com/adminmrobo/statistics_note_ch05_hypothesis-testing",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "치료제 10명 중 7명이 나았다면 효과가 있다고 해도 될까? 귀무가설과 p값, t·z·χ² 검정, 두 집단 비교, 분산분석을 직접 돌려 보며 익히고 100문항 모의고사로 정리하는 인터랙티브 통계 해설 6편."
+  },
+  {
+   "title": "확률분포 딕셔너리와 분포표 연구실",
+   "cat": "통계·데이터 기초",
+   "mid": "확률·통계",
+   "sub": "확률분포 딕셔너리",
+   "site_url": "https://adminmrobo.github.io/probability_distribution_dictionary/",
+   "repo_url": "https://github.com/adminmrobo/probability_distribution_dictionary",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "확률분포 21종의 관계를 3D 지도로 보는 딕셔너리(분포별 식·용도·파이썬 호출)와, Z·t·χ²·F·이항·포아송 분포표 읽는 법, 단측·양측검정, 신뢰구간, 1종·2종 오류와 검정력을 다루는 연구실 해설."
   },
   {
    "title": "하루의 구글시트 연구실",
@@ -1396,6 +1571,32 @@
    "summary": ""
   },
   {
+   "title": "비즈니스를 위한 데이터 과학 연구실",
+   "cat": "강의·저서",
+   "mid": "대학 강의",
+   "sub": "비즈니스를 위한 데이터 과학",
+   "site_url": "https://adminmrobo.github.io/data_science_for_business/",
+   "repo_url": "https://github.com/adminmrobo/data_science_for_business",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "AI를 전혀 모르는 경영·사무직을 위한 15주 강의 해설. 가상 다국적 기업 「오션마켓 글로벌」 본사 15층을 한 층씩 오르며 데이터 수집·전처리, 분류·회귀·시계열, 시각화·BI·KPI, 군집·자연어 처리·딥러닝을 버튼으로 실험합니다. 8·15층은 연습(문제풀이)."
+  },
+  {
+   "title": "생성형 AI 활용 전략 · 목차",
+   "cat": "강의·저서",
+   "mid": "대학 강의",
+   "sub": "생성형AI활용전략",
+   "site_url": "https://adminmrobo.github.io/generative-ai-prompt-strategy/",
+   "repo_url": "https://github.com/adminmrobo/generative-ai-prompt-strategy",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "강의 「생성형 AI 활용 전략」 교안을 장마다 하나의 인터랙티브 해설 페이지로 옮긴 시리즈. 프롬프트로 창업 장부 미리 써 보기(5장), 8요소 프레임워크로 창업하기(6장), 캐릭터 프롬프트(7장)를 비전공자용으로 풀었습니다."
+  },
+  {
    "title": "생성형 AI 활용전략 · 중간고사 시뮬레이션",
    "cat": "강의·저서",
    "mid": "대학 강의",
@@ -1435,6 +1636,19 @@
    "summary": ""
   },
   {
+   "title": "AI를 활용한 시멘트 공정 최적화 · 강의 목차",
+   "cat": "강의·저서",
+   "mid": "대학 강의",
+   "sub": "시멘트 공정 AI",
+   "site_url": "https://adminmrobo.github.io/AI_for_cement_produce/",
+   "repo_url": "https://github.com/adminmrobo/AI_for_cement_produce",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "시멘트 공장의 데이터로 품질을 미리 맞히고, 그 답을 믿어도 되는지 따지고, 단가를 붙여 가장 알맞은 운전을 찾는 강의의 주차별 해설 목록. 예측, 검증, 설명가능 AI, 원가 최적화, 시계열 소프트센서, 위험 기반 의사결정."
+  },
+  {
    "title": "시멘트 품질, AI로 미리 본다",
    "cat": "강의·저서",
    "mid": "대학 강의",
@@ -1455,6 +1669,32 @@
    "link": "",
    "langs": [],
    "summary": "설명가능 AI(SHAP)와 원가 최적화로 시멘트 강도와 배합을 다루는 인터랙티브 해설 페이지 목록."
+  },
+  {
+   "title": "스마트 팩토리 World · 시멘트 제조업",
+   "cat": "강의·저서",
+   "mid": "대학 강의",
+   "sub": "시멘트 공정 AI",
+   "site_url": "https://adminmrobo.github.io/smart_factory_world/",
+   "repo_url": "https://github.com/adminmrobo/smart_factory_world",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "업종별 3D 공장과 동적 대시보드. 시멘트 공장 World(가마 37분 지연·병목 신호판·결정 기록)와 28일 타임머신(생산일 강도 예측 → 28일 압축 시험). AI가 제안하고 사람이 승인하는 흐름을 3D로 본다."
+  },
+  {
+   "title": "데이터 사이언티스트를 위한 베이지안 통계학",
+   "cat": "강의·저서",
+   "mid": "외부_콘텐츠",
+   "sub": "이러닝",
+   "site_url": "https://adminmrobo.github.io/bayesian-statistics-for-data-scientists/",
+   "repo_url": "https://github.com/adminmrobo/bayesian-statistics-for-data-scientists",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "13회차 베이지안 통계 강의를 가상 다국적 기업 본사 타워(3D)로 꾸민 해설 과정. 한 층에 한 부서가 그 회차의 베이지안 도구로 일하고, 7M 라운지와 옥상에서 중간·기말 퀴즈를 봅니다."
   },
   {
    "title": "핀테크 데이터분석 기초 (이러닝)",
@@ -1560,7 +1800,7 @@
    "summary": "태양광 데이터로 폭염 피해를 예측하는 시스템"
   },
   {
-   "title": "안보트 연구실 타운 (Ahn-boat Lab Town)",
+   "title": "안보트 연구실 타운 (Ahn Lab Town)",
    "cat": "연구실 운영",
    "mid": "연구실 소개",
    "sub": "랩타운",
@@ -1648,6 +1888,17 @@
    "link": "https://adminmrobo.github.io/who_am_i/who_am_i.html",
    "langs": [],
    "summary": "자연어 데이터 분석의 흐름과 모델을 차시별로 배우는 8시간 과정"
+  },
+  {
+   "title": "데이터 사이언티스트를 위한 베이지안 통계학",
+   "cat": "저서·이러닝",
+   "mid": "이러닝",
+   "sub": "",
+   "site_url": "https://adminmrobo.github.io/bayesian-statistics-for-data-scientists/",
+   "repo_url": "",
+   "link": "https://adminmrobo.github.io/bayesian-statistics-for-data-scientists/",
+   "langs": [],
+   "summary": "13회차 베이지안 통계 강의를 가상 다국적 기업 본사 타워(3D)로 꾸민 해설 과정. 한 층에 한 부서가 그 회차의 베이지안 도구로 일하고, 7M 라운지와 옥상에서 중간·기말 퀴즈를 봅니다."
   },
   {
    "title": "핀테크 API 개발지원사업 (총괄 PM)",
