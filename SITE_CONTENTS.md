@@ -2,15 +2,10 @@
 
 ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전·오후 자동으로 다시 만들고, Actions에서 수동으로도 돌릴 수 있습니다.
 
-- 갱신: **2026-11-13 15:48 KST**
-- 홈페이지 글 32 · 페이지 0
+- 갱신: **2026-11-13 23:31 KST**
+- 홈페이지 글 32 · 페이지 4
 - GitHub 해설 콘텐츠 99 · 포트폴리오 10 · 일정 18
 - 기계용 원본: `data/site_contents.json`
-
-> ⚠ 이번에 읽지 못한 곳
-
-> - 워드프레스 REST API 읽기 실패: HTTP Error 429: Too Many Requests
-> - 워드프레스 사이트맵 읽기 실패: HTTP Error 404: Not Found
 
 ## 1. 홈페이지 글 (ahnboat.xyz)
 
@@ -51,7 +46,12 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 
 ## 2. 홈페이지 페이지
 
-(없음 또는 읽지 못함)
+| 제목 | 주소 | 고친 날 |
+|---|---|---|
+| Article & Study | https://ahnboat.xyz/articlestudy/ | 2026-10-04 |
+| Global Business Story | https://ahnboat.xyz/global_business/ | 2026-10-04 |
+| Hello! Everyone! | https://ahnboat.xyz/my_profile/ | 2026-10-19 |
+| 곧 나옵니다.. 아마도요..! (Coming Soon-ish! 🐌) | https://ahnboat.xyz/pleae_wait/ | 2026-10-19 |
 
 ## 3. GitHub 해설 콘텐츠 (공개 카탈로그)
 
