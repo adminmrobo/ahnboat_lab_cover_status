@@ -50,7 +50,7 @@
  },
  "ai_in_3d": {
   "src": null,
-  "pushed_at": "2026-11-12T15:33:01Z"
+  "pushed_at": "2026-11-12T17:51:03Z"
  },
  "AI_Model_Review": {
   "src": "embedded:index.html#hero",
@@ -107,8 +107,9 @@
   "pushed_at": "2026-11-06T04:32:07Z"
  },
  "cnn_face_game_lab": {
-  "src": null,
-  "pushed_at": "2026-11-12T13:27:19Z"
+  "src": "embedded:index.html",
+  "pushed_at": "2026-11-12T23:44:02Z",
+  "made": "2026-11-13"
  },
  "data_science_for_business": {
   "src": "manifest:index.html#cover_index",
@@ -217,7 +218,7 @@
  },
  "how_to_start_db": {
   "src": null,
-  "pushed_at": "2026-11-12T15:09:15Z"
+  "pushed_at": "2026-11-13T00:07:14Z"
  },
  "iclr2027_top3_lab_review": {
   "src": "manifest:images/cover_iclr27.jpg",
@@ -226,7 +227,7 @@
  },
  "inference_engineering_study": {
   "src": "manifest:cover_factory.jpg",
-  "pushed_at": "2026-11-12T15:36:15Z",
+  "pushed_at": "2026-11-12T18:09:49Z",
   "made": "2026-11-13"
  },
  "inference_engineering_study_week_01_article_01": {
@@ -328,6 +329,10 @@
   "src": null,
   "pushed_at": "2026-11-12T12:58:29Z"
  },
+ "machine_learning_in_3d": {
+  "src": null,
+  "pushed_at": "2026-11-13T00:09:12Z"
+ },
  "machine_learning_model_atlas": {
   "src": null,
   "pushed_at": "2026-11-12T01:53:30Z"
@@ -425,14 +430,25 @@
   "pushed_at": "2026-11-12T12:24:27Z",
   "made": "2026-11-13"
  },
+ "one_day_deep_learning": {
+  "src": "manifest:assets/og_one_day_dl_pm.jpg",
+  "pushed_at": "2026-11-12T21:48:48Z",
+  "made": "2026-11-13"
+ },
+ "one_day_machine_learning": {
+  "src": "manifest:cover_one_day_ml_am.webp",
+  "pushed_at": "2026-11-12T21:54:03Z",
+  "made": "2026-11-13"
+ },
  "probability_distribution_dictionary": {
   "src": "file:thumbs/part1.webp",
   "pushed_at": "2026-11-12T00:47:18Z",
   "made": "2026-11-13"
  },
  "python-accounting-analytics": {
-  "src": null,
-  "pushed_at": "2026-11-12T15:02:42Z"
+  "src": "name:pandas-cashflow-lab/assets/hero/hero.jpg",
+  "pushed_at": "2026-11-13T01:18:24Z",
+  "made": "2026-11-13"
  },
  "Regression_ridge_lasso": {
   "src": "manifest:og_rg.jpg",

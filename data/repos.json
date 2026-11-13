@@ -657,7 +657,7 @@
   "repo_url": "https://github.com/adminmrobo/ai_in_3d",
   "pages_url": "https://adminmrobo.github.io/ai_in_3d/",
   "default_branch": "main",
-  "pushed_at": "2026-11-12T15:33:01Z",
+  "pushed_at": "2026-11-12T17:51:03Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -1575,7 +1575,7 @@
     "ko": 1
    }
   },
-  "has_pages": false
+  "has_pages": true
  },
  {
   "repo": "bayesian-statistics-for-data-scientists",
@@ -2185,11 +2185,11 @@
  {
   "repo": "cnn_face_game_lab",
   "series_ko": "AI 연구실 해설 · CNN 특집",
-  "title_ko": "얼굴 알아맞히기 게임 — 20칸으로 배우는 CNN",
+  "title_ko": "얼굴 알아맞히기 게임 — 20챕터로 배우는 CNN",
   "repo_url": "https://github.com/adminmrobo/cnn_face_game_lab",
   "pages_url": "https://adminmrobo.github.io/cnn_face_game_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-12T13:27:19Z",
+  "pushed_at": "2026-11-12T23:44:02Z",
   "has_manifest": true,
   "covers": [
    {
@@ -2400,14 +2400,74 @@
     ],
     "robot": "jupanbot-v2",
     "status": "todo"
+   },
+   {
+    "path": "img/cat.webp",
+    "role": "illustration",
+    "id": "photo_cat",
+    "size": [
+     300,
+     300
+    ],
+    "characters": [],
+    "robot": "none",
+    "status": "ok"
+   },
+   {
+    "path": "img/dog.webp",
+    "role": "illustration",
+    "id": "photo_dog",
+    "size": [
+     300,
+     300
+    ],
+    "characters": [],
+    "robot": "none",
+    "status": "ok"
+   },
+   {
+    "path": "img/street.webp",
+    "role": "illustration",
+    "id": "photo_street",
+    "size": [
+     540,
+     360
+    ],
+    "characters": [],
+    "robot": "none",
+    "status": "ok"
+   },
+   {
+    "path": "img/sem.webp",
+    "role": "illustration",
+    "id": "photo_sem",
+    "size": [
+     540,
+     360
+    ],
+    "characters": [],
+    "robot": "none",
+    "status": "ok"
+   },
+   {
+    "path": "img/inst.webp",
+    "role": "illustration",
+    "id": "photo_inst",
+    "size": [
+     540,
+     360
+    ],
+    "characters": [],
+    "robot": "none",
+    "status": "ok"
    }
   ],
   "redraw_count": 0,
   "redraw_ids": [],
-  "thumb": null,
+  "thumb": "thumbs/repos/cnn_face_game_lab.jpg",
   "status": "ok",
   "checked_at": "2026-11-13",
-  "site_title": "얼굴 알아맞히기 게임 — 20칸으로 배우는 CNN",
+  "site_title": "얼굴 알아맞히기 게임 — 20챕터로 배우는 CNN",
   "ontology": {
    "status": "full",
    "pages_with_kg": 2,
@@ -2453,7 +2513,7 @@
     "ko": 2
    }
   },
-  "has_pages": false
+  "has_pages": true
  },
  {
   "repo": "data_science_for_business",
@@ -5622,7 +5682,7 @@
   "repo_url": "https://github.com/adminmrobo/how_to_start_db",
   "pages_url": "https://adminmrobo.github.io/how_to_start_db/",
   "default_branch": "main",
-  "pushed_at": "2026-11-12T15:09:15Z",
+  "pushed_at": "2026-11-13T00:07:14Z",
   "has_manifest": true,
   "covers": [
    {
@@ -5687,7 +5747,7 @@
     "ko": 1
    }
   },
-  "has_pages": false
+  "has_pages": true
  },
  {
   "repo": "iclr2027_top3_lab_review",
@@ -5833,7 +5893,7 @@
   "repo_url": "https://github.com/adminmrobo/inference_engineering_study",
   "pages_url": "https://adminmrobo.github.io/inference_engineering_study/",
   "default_branch": "main",
-  "pushed_at": "2026-11-12T15:36:15Z",
+  "pushed_at": "2026-11-12T18:09:49Z",
   "has_manifest": true,
   "covers": [
    {
@@ -7814,6 +7874,58 @@
    "complete": true,
    "pages_by_lang": {
     "ko": 19
+   }
+  },
+  "has_pages": false
+ },
+ {
+  "repo": "machine_learning_in_3d",
+  "series_ko": "머신러닝 연구소 — 3D로 설명하는 머신러닝",
+  "title_ko": "머신러닝 연구소 — 3D로 설명하는 머신러닝",
+  "repo_url": "https://github.com/adminmrobo/machine_learning_in_3d",
+  "pages_url": "https://adminmrobo.github.io/machine_learning_in_3d/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-13T00:09:12Z",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-13",
+  "site_title": "머신러닝 연구소 — 3D로 설명하는 머신러닝",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 2,
+   "pages_checked": 2,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 2
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/machine_learning_in_3d/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 2
    }
   },
   "has_pages": false
@@ -10463,6 +10575,403 @@
   "has_pages": true
  },
  {
+  "repo": "one_day_deep_learning",
+  "series_ko": "AI 연구실 해설 · 하루에 다 끝내는 시리즈",
+  "title_ko": "하루에 다 끝내는 딥러닝 서머리 노트 — 오후반",
+  "repo_url": "https://github.com/adminmrobo/one_day_deep_learning",
+  "pages_url": "https://adminmrobo.github.io/one_day_deep_learning/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-12T21:48:48Z",
+  "has_manifest": true,
+  "covers": [
+   {
+    "path": "index.html#figure.gscene[data-img=cover_one_day_dl]",
+    "role": "cover",
+    "id": "cover",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "code"
+   },
+   {
+    "path": "assets/og_one_day_dl_pm.jpg",
+    "role": "og",
+    "id": "og",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "moa"
+    ],
+    "status": "partial"
+   },
+   {
+    "path": "assets/thumb_one_day_dl_pm.webp",
+    "role": "thumb",
+    "id": "thumb",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "moa"
+    ],
+    "status": "partial"
+   },
+   {
+    "path": "index.html#figure.gscene[data-img=sc_period1]",
+    "role": "scene",
+    "id": "sc_period1",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "sia",
+     "asst",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "index.html#figure.gscene[data-img=sc_period2]",
+    "role": "scene",
+    "id": "sc_period2",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "moa",
+     "fly",
+     "sia"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "index.html#figure.gscene[data-img=sc_period3]",
+    "role": "scene",
+    "id": "sc_period3",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "sia",
+     "asst",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "index.html#figure.gscene[data-img=sc_period4]",
+    "role": "scene",
+    "id": "sc_period4",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "moa",
+     "jupanbot",
+     "sia"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "index.html#figure.gscene[data-img=sc_period5]",
+    "role": "scene",
+    "id": "sc_period5",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "sia",
+     "fly",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "index.html#figure.gscene[data-img=sc_period6]",
+    "role": "scene",
+    "id": "sc_period6",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "moa",
+     "jupanbot",
+     "sia"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "index.html#figure.gscene[data-img=sc_final]",
+    "role": "scene",
+    "id": "sc_final",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "sia",
+     "moa",
+     "doc",
+     "asst"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   }
+  ],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": "thumbs/repos/one_day_deep_learning.jpg",
+  "status": "ok",
+  "checked_at": "2026-11-13",
+  "site_title": "하루에 다 끝내는 딥러닝 서머리 노트",
+  "ontology": {
+   "status": "full",
+   "pages_with_kg": 1,
+   "pages_total": 1,
+   "pages_checked": 1,
+   "kg_links": [
+    "https://adminmrobo.github.io/one_day_deep_learning/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/one_day_deep_learning/index.html#export"
+   ],
+   "files": [
+    {
+     "path": "KG_new_ids.json",
+     "url": "https://github.com/adminmrobo/one_day_deep_learning/blob/main/KG_new_ids.json"
+    }
+   ]
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 1
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/one_day_deep_learning/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 1
+   }
+  },
+  "has_pages": true
+ },
+ {
+  "repo": "one_day_machine_learning",
+  "series_ko": "AI 연구실 해설 · 하루에 다 끝내는 시리즈",
+  "title_ko": "하루에 다 끝내는 머신러닝 서머리 노트 — 오전반",
+  "repo_url": "https://github.com/adminmrobo/one_day_machine_learning",
+  "pages_url": "https://adminmrobo.github.io/one_day_machine_learning/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-12T21:54:03Z",
+  "has_manifest": true,
+  "covers": [
+   {
+    "path": "cover_one_day_ml_am.webp",
+    "role": "cover",
+    "id": "cover",
+    "size": [
+     1600,
+     893
+    ],
+    "characters": [
+     "sia"
+    ],
+    "status": "partial"
+   },
+   {
+    "path": "og_one_day_ml_am.jpg",
+    "role": "og",
+    "id": "og",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "sia"
+    ],
+    "status": "done"
+   },
+   {
+    "path": "thumb_one_day_ml_am.webp",
+    "role": "thumb",
+    "id": "thumb",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "sia"
+    ],
+    "status": "done"
+   },
+   {
+    "path": "index.html#figure.stage2[data-img=sc_period1]",
+    "role": "scene",
+    "id": "sc_period1",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "done"
+   },
+   {
+    "path": "index.html#figure.stage2[data-img=sc_period2]",
+    "role": "scene",
+    "id": "sc_period2",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "done"
+   },
+   {
+    "path": "index.html#figure.stage2[data-img=sc_period3]",
+    "role": "scene",
+    "id": "sc_period3",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "done"
+   },
+   {
+    "path": "index.html#figure.stage2[data-img=sc_period4]",
+    "role": "scene",
+    "id": "sc_period4",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "done"
+   }
+  ],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": "thumbs/repos/one_day_machine_learning.jpg",
+  "status": "ok",
+  "checked_at": "2026-11-13",
+  "site_title": "하루에 다 끝내는 머신러닝 서머리 노트",
+  "ontology": {
+   "status": "full",
+   "pages_with_kg": 1,
+   "pages_total": 1,
+   "pages_checked": 1,
+   "kg_links": [
+    "https://adminmrobo.github.io/one_day_machine_learning/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/one_day_machine_learning/index.html#export"
+   ],
+   "files": [
+    {
+     "path": "KG_new_ids.json",
+     "url": "https://github.com/adminmrobo/one_day_machine_learning/blob/main/KG_new_ids.json"
+    }
+   ]
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 1
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/one_day_machine_learning/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 1
+   }
+  },
+  "has_pages": true
+ },
+ {
   "repo": "probability_distribution_dictionary",
   "series_ko": "확률분포 딕셔너리와 분포표 연구실",
   "title_ko": "확률분포 딕셔너리와 분포표 연구실",
@@ -10516,45 +11025,86 @@
  },
  {
   "repo": "python-accounting-analytics",
-  "series_ko": "python-accounting-analytics",
-  "title_ko": null,
+  "series_ko": "AI 회계 컨설팅 연구실 — 파이썬과 회계데이터 분석",
+  "title_ko": "AI 회계 컨설팅 연구실 — 파이썬과 회계데이터 분석",
   "repo_url": "https://github.com/adminmrobo/python-accounting-analytics",
   "pages_url": "https://adminmrobo.github.io/python-accounting-analytics/",
   "default_branch": "main",
-  "pushed_at": "2026-11-12T15:02:42Z",
+  "pushed_at": "2026-11-13T01:18:24Z",
   "has_manifest": false,
-  "covers": [],
+  "covers": [
+   {
+    "path": "pandas-cashflow-lab/assets/hero/hero.jpg",
+    "role": "hero",
+    "estimated": true
+   }
+  ],
   "redraw_count": 0,
   "redraw_ids": [],
-  "thumb": null,
-  "status": "unknown",
+  "thumb": "thumbs/repos/python-accounting-analytics.jpg",
+  "status": "ok",
   "checked_at": "2026-11-13",
-  "site_title": null,
+  "site_title": "AI 회계 컨설팅 연구실 — 파이썬과 회계데이터 분석",
   "ontology": {
-   "status": "none",
-   "pages_with_kg": 0,
-   "pages_total": 0,
-   "pages_checked": 0,
-   "kg_links": [],
-   "export_links": [],
-   "files": []
+   "status": "partial",
+   "pages_with_kg": 9,
+   "pages_total": 12,
+   "pages_checked": 12,
+   "kg_links": [
+    "https://adminmrobo.github.io/python-accounting-analytics/01_accounting_basics.html#kg",
+    "https://adminmrobo.github.io/python-accounting-analytics/02_revenue_inventory.html#kg",
+    "https://adminmrobo.github.io/python-accounting-analytics/03_payables_prepaid.html#kg",
+    "https://adminmrobo.github.io/python-accounting-analytics/04_fixed_assets_tax.html#kg",
+    "https://adminmrobo.github.io/python-accounting-analytics/05_python_basics.html#kg",
+    "https://adminmrobo.github.io/python-accounting-analytics/06m_midterm_review.html#kg",
+    "https://adminmrobo.github.io/python-accounting-analytics/08_balance_sheet_review.html#kg",
+    "https://adminmrobo.github.io/python-accounting-analytics/09_turnover_review.html#kg",
+    "https://adminmrobo.github.io/python-accounting-analytics/10_cashflow_ratios.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/python-accounting-analytics/01_accounting_basics.html#export",
+    "https://adminmrobo.github.io/python-accounting-analytics/02_revenue_inventory.html#export",
+    "https://adminmrobo.github.io/python-accounting-analytics/03_payables_prepaid.html#export",
+    "https://adminmrobo.github.io/python-accounting-analytics/04_fixed_assets_tax.html#export",
+    "https://adminmrobo.github.io/python-accounting-analytics/05_python_basics.html#export",
+    "https://adminmrobo.github.io/python-accounting-analytics/06m_midterm_review.html#export",
+    "https://adminmrobo.github.io/python-accounting-analytics/08_balance_sheet_review.html#export",
+    "https://adminmrobo.github.io/python-accounting-analytics/09_turnover_review.html#export",
+    "https://adminmrobo.github.io/python-accounting-analytics/10_cashflow_ratios.html#export"
+   ],
+   "files": [
+    {
+     "path": "KG_00_registry.json",
+     "url": "https://github.com/adminmrobo/python-accounting-analytics/blob/main/KG_00_registry.json"
+    }
+   ]
   },
   "i18n": {
-   "langs": [],
-   "count": 0,
-   "pages": {},
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 12
+   },
    "partial": [],
    "complete": true,
    "readme_langs": [],
-   "links": {}
+   "links": {
+    "ko": "https://adminmrobo.github.io/python-accounting-analytics/index.html"
+   }
   },
   "languages": {
-   "codes": [],
-   "count": 0,
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
    "complete": true,
-   "pages_by_lang": {}
+   "pages_by_lang": {
+    "ko": 12
+   }
   },
-  "has_pages": false
+  "has_pages": true
  },
  {
   "repo": "Regression_ridge_lasso",

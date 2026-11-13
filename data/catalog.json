@@ -553,6 +553,21 @@
  },
  "items": [
   {
+   "title": "머신러닝 모델 도감 · 엣센스",
+   "summary": "고전 머신러닝 모델 27가지를 같은 모눈 위에 하나씩 그리고, 무엇을 긋는 모델인지와 강점·약점을 쉬운 말로 푼 한 장짜리 도감. 과제별 보기(회귀·분류·군집·차원 축소·이상 탐지). 신경망 구조 도감의 자매편.",
+   "cat": "머신러닝",
+   "mid": "개념 지도",
+   "sub": "머신러닝 모델 도감",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/machine_learning_model_atlas",
+   "site_url": "https://adminmrobo.github.io/machine_learning_model_atlas/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": ""
+  },
+  {
    "title": "모델 채용 위원회 2차 공채 · 딥러닝",
    "summary": "1차 공채로 뽑은 직원들이 일하는 공장에 새 스캐너가 들어왔다. 숫자가 한 칸씩 밀리자 선배들의 점수가 무너진다. 신경망 지원자 열다섯 명을 위한 2차 공고와 딥러닝 치트시트 11칸(인공 뉴런·활성화 함수·순전파·손실·역전파·최적화·대표 구조·규제·학습 곡선·평가 지표·하이퍼파라미터), 두 줄 합격선과 재시험 규칙. 모델 채용 위원회 2차 공채 6-0.",
    "cat": "머신러닝",
@@ -654,21 +669,6 @@
    "thumb": "thumbs/repos/ML_00_Algorithm-family-build_03.jpg"
   },
   {
-   "title": "머신러닝 모델 도감 · 엣센스",
-   "summary": "고전 머신러닝 모델 27가지를 같은 모눈 위에 하나씩 그리고, 무엇을 긋는 모델인지와 강점·약점을 쉬운 말로 푼 한 장짜리 도감. 과제별 보기(회귀·분류·군집·차원 축소·이상 탐지). 신경망 구조 도감의 자매편.",
-   "cat": "머신러닝",
-   "mid": "개념 지도",
-   "sub": "머신러닝 모델 도감",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/machine_learning_model_atlas",
-   "site_url": "https://adminmrobo.github.io/machine_learning_model_atlas/",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": ""
-  },
-  {
    "title": "Fish Market Data로 쉽게 따라하는 머신러닝",
    "summary": "생선 시장 데이터로 회귀·분류 모델을 처음부터 따라 해 보는 입문 강의",
    "cat": "머신러닝",
@@ -760,6 +760,21 @@
    "thumb": "thumbs/repos/neuralink_animal_brain_ai.jpg"
   },
   {
+   "title": "뉴런 반응 연구실 · 신경망 칸은 어떻게 반응하고 배울까",
+   "summary": "신경망의 칸이 곱하고 더한 값을 함수에 통과시켜 넘기는 '반응'을 직접 돌려 보며 배우는 시리즈. 활성화 함수(시그모이드·tanh·ReLU·GELU)와 연구실 반응속도 대회. 텐서 연구실에서 이어지는 편.",
+   "cat": "딥러닝·뇌과학",
+   "mid": "딥러닝 모델",
+   "sub": "뉴런 반응 연구실",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/neuron_reaction",
+   "site_url": "https://adminmrobo.github.io/neuron_reaction/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/neuron_reaction.jpg"
+  },
+  {
    "title": "초파리 연구실의 딥러닝 A to Z",
    "summary": "초파리 연구원과 함께 딥러닝 모델을 지도처럼 훑어보는 시리즈",
    "cat": "딥러닝·뇌과학",
@@ -821,6 +836,21 @@
    "thumb": ""
   },
   {
+   "title": "신경망 연구소 · 3D로 설명하는 AI",
+   "summary": "신경망 27종을 한 층씩 3D로 살펴보는 27층 건물. 쉬운 것부터 어려운 것 순으로 층을 놓았고, 돌려 보고 값을 바꿔 보며 읽습니다. 로비에는 AI 뒤에 있는 수학.",
+   "cat": "딥러닝·뇌과학",
+   "mid": "딥러닝 모델",
+   "sub": "신경망 연구소",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/ai_in_3d",
+   "site_url": "https://adminmrobo.github.io/ai_in_3d/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": ""
+  },
+  {
    "title": "역전파 연구실 · 손잡이 33개를 한 번에 돌리는 법",
    "summary": "2012년 워싱턴 DC 자전거 대여 366일을 기온 하나로 맞히는 작은 신경망(손잡이 33개)으로, 손잡이 하나씩·무작위·역전파 세 학습 방법을 같은 조건에서 비교한 실험 노트. 역전파는 같은 답을 훨씬 싸게 내고, 손잡이가 늘수록 역전파만 남는다. 텐서 연구실 → 활성화 함수에 이어지는 편.",
    "cat": "딥러닝·뇌과학",
@@ -849,36 +879,6 @@
     "ko"
    ],
    "thumb": "thumbs/repos/what_is_tensor.jpg"
-  },
-  {
-   "title": "뉴런 반응 연구실 · 신경망 칸은 어떻게 반응하고 배울까",
-   "summary": "신경망의 칸이 곱하고 더한 값을 함수에 통과시켜 넘기는 '반응'을 직접 돌려 보며 배우는 시리즈. 활성화 함수(시그모이드·tanh·ReLU·GELU)와 연구실 반응속도 대회. 텐서 연구실에서 이어지는 편.",
-   "cat": "딥러닝·뇌과학",
-   "mid": "딥러닝 모델",
-   "sub": "뉴런 반응 연구실",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/neuron_reaction",
-   "site_url": "https://adminmrobo.github.io/neuron_reaction/",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "thumbs/repos/neuron_reaction.jpg"
-  },
-  {
-   "title": "신경망 연구소 · 3D로 설명하는 AI",
-   "summary": "신경망 27종을 한 층씩 3D로 살펴보는 27층 건물. 쉬운 것부터 어려운 것 순으로 층을 놓았고, 돌려 보고 값을 바꿔 보며 읽습니다. 로비에는 AI 뒤에 있는 수학.",
-   "cat": "딥러닝·뇌과학",
-   "mid": "딥러닝 모델",
-   "sub": "신경망 연구소",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/ai_in_3d",
-   "site_url": "https://adminmrobo.github.io/ai_in_3d/",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": ""
   },
   {
    "title": "AI 렌더링 연구실 3부작",
@@ -1175,6 +1175,21 @@
    "thumb": ""
   },
   {
+   "title": "4만 3천 편 중 만점 3편 · 연구실 모의 심사회 (ICLR 2027)",
+   "summary": "ICLR 2027에서 심사위원 전원이 만점을 줬다고 알려진 논문 세 편(Context Language Models, Zero-Shot Control, Latent Taxonomies)을 연구실 식구들이 장난감 실험으로 다시 심사하는 비전공자용 해설.",
+   "cat": "논문 해설",
+   "mid": "AI 응용 논문",
+   "sub": "AI 학회 논문",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/iclr2027_top3_lab_review",
+   "site_url": "https://adminmrobo.github.io/iclr2027_top3_lab_review/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/iclr2027_top3_lab_review.jpg"
+  },
+  {
    "title": "SNS 은어와 이상탐지",
    "summary": "",
    "cat": "논문 해설",
@@ -1215,21 +1230,6 @@
     "vi"
    ],
    "thumb": "thumbs/repos/my_article_04_adversarial_finance_attack.jpg"
-  },
-  {
-   "title": "4만 3천 편 중 만점 3편 · 연구실 모의 심사회 (ICLR 2027)",
-   "summary": "ICLR 2027에서 심사위원 전원이 만점을 줬다고 알려진 논문 세 편(Context Language Models, Zero-Shot Control, Latent Taxonomies)을 연구실 식구들이 장난감 실험으로 다시 심사하는 비전공자용 해설.",
-   "cat": "논문 해설",
-   "mid": "AI 응용 논문",
-   "sub": "AI 학회 논문",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/iclr2027_top3_lab_review",
-   "site_url": "https://adminmrobo.github.io/iclr2027_top3_lab_review/",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "thumbs/repos/iclr2027_top3_lab_review.jpg"
   },
   {
    "title": "노후 가계부와 AI 예측 모형",
