@@ -5,7 +5,11 @@
   1) GoatCounter API에서 어제(한국 시간) 방문·콘텐츠 클릭·유입 경로와 최근 30일 추이를 읽는다.
      + 저장소에 모아 둔 목록에서 콘텐츠 수·번역·온톨로지 적용 현황을 센다.
   2) 하루의 말풍선 해설을 만들고, 메일(HTML)을 보낸다. 같은 내용을 글자만 있는 파일(.md)로도 붙인다.
-  3) 같은 숫자를 관리자 키로 잠가 data/report/latest.json.enc 로 남긴다(report.html이 풀어서 보여 준다).
+  3) 같은 숫자를 관리자 키로 잠가 data/report/ 에 남긴다(report.html이 풀어서 보여 준다).
+     - 날짜.json.enc  그날 하루치 (일자별 조회용, 계속 쌓인다)
+     - latest.json.enc 가장 최근 하루치
+     - index.json      쌓인 날짜 목록 (날짜만 들어 있어 잠그지 않는다)
+  4) 날짜별 파일이 비어 있는 지난 날(최대 30일)은 GoatCounter에서 다시 읽어 채운다(메일은 보내지 않는다).
 
 환경 변수(GitHub Secrets)
   GOATCOUNTER_TOKEN   GoatCounter API 키 (통계 읽기)
@@ -15,12 +19,15 @@
   REPORT_DAY          (선택) YYYY-MM-DD 로 날짜를 정해 다시 만들 때
   REPORT_SAMPLE       (선택) 예시 숫자 JSON 파일 경로 — API 없이 견본을 만들 때
   REPORT_OUT          (선택) 메일 HTML을 파일로도 저장할 경로
+  REPORT_BACKFILL     (선택) 지난 날을 몇 일치까지 채울지 (기본 30, 0이면 채우지 않음)
 """
 import datetime as dt
 import json
 import os
+import re
 import smtplib
 import sys
+import time
 import urllib.parse
 import urllib.request
 import urllib.error
@@ -35,6 +42,8 @@ KST = dt.timezone(dt.timedelta(hours=9))
 MENU = {"server": "Lab Server", "articles": "Articles", "portfolio": "Portfolio"}
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
+REPORT_DIR = os.path.join(ROOT, "data", "report")
+DAY_FILE = re.compile(r"^(\d{4}-\d{2}-\d{2})\.json\.enc$")
 LANGS = ["en", "zh", "ja", "uz", "ru", "vi"]
 LANG_KO = {"en": "영어", "zh": "중국어", "ja": "일본어", "uz": "우즈베크어", "ru": "러시아어", "vi": "베트남어"}
 
@@ -140,22 +149,28 @@ def inventory():
     return inv
 
 
-def previous():
-    """어제 잠가 둔 레포트를 풀어 콘텐츠 수를 비교한다 (키가 없거나 처음이면 빈 값)."""
+def previous(day):
+    """하루 전 레포트를 풀어 콘텐츠 수를 비교한다 (키가 없거나 처음이면 빈 값).
+    하루 전 날짜 파일이 있으면 그것을, 없으면 latest를 쓴다(같은 날 다시 돌려도 증감이 지워지지 않게)."""
     key = os.environ.get("HUB_KEY", "")
-    path = os.path.join(ROOT, "data", "report", "latest.json.enc")
+    path = day_path(day - dt.timedelta(days=1))
+    if not os.path.exists(path):
+        path = os.path.join(REPORT_DIR, "latest.json.enc")
     if not key or not os.path.exists(path):
         return {}
     try:
         sys.path.insert(0, HERE)
         from hubcrypt import decrypt
-        return json.loads(decrypt(open(path, "rb").read(), key).decode("utf-8")).get("inventory") or {}
+        old = json.loads(decrypt(open(path, "rb").read(), key).decode("utf-8"))
+        if old.get("date", "") >= day.isoformat():
+            return {}
+        return old.get("inventory") or {}
     except Exception:
         return {}
 
 
 # ---------------------------------------------------------------- 숫자 정리
-def build(raw, day):
+def build(raw, day, with_inventory=True):
     ds = day.isoformat()
     prev = (day - dt.timedelta(days=1)).isoformat()
     days7 = [(day - dt.timedelta(days=k)).isoformat() for k in range(6, -1, -1)]
@@ -197,9 +212,9 @@ def build(raw, day):
         "top_pages": pages[:10], "top_clicks": clicks[:15], "menus": menus,
         "refs": [{"name": (r.get("name") or "(직접 방문)"), "count": int(r.get("count") or 0)} for r in raw["refs"]][:8],
     }
-    inv = inventory()
+    inv = inventory() if with_inventory else {}
     if inv:
-        old = previous()
+        old = previous(day)
         inv["delta"] = {k: inv[k] - old[k] for k in ("contents", "posts", "tr_full", "onto")
                         if isinstance(inv.get(k), int) and isinstance(old.get(k), int) and inv[k] != old[k]}
     rep["inventory"] = inv
@@ -400,17 +415,70 @@ def send(r, html):
     return True
 
 
+def day_path(day):
+    return os.path.join(REPORT_DIR, (day if isinstance(day, str) else day.isoformat()) + ".json.enc")
+
+
+def saved_days():
+    if not os.path.isdir(REPORT_DIR):
+        return []
+    return sorted(m.group(1) for m in (DAY_FILE.match(f) for f in os.listdir(REPORT_DIR)) if m)
+
+
+def write_index():
+    """쌓인 날짜 목록 — report.html의 날짜 고르기가 읽는다 (날짜만 들어 있다)."""
+    days = saved_days()
+    json.dump({"days": days, "updated": dt.datetime.now(KST).strftime("%Y-%m-%d %H:%M")},
+              open(os.path.join(REPORT_DIR, "index.json"), "w", encoding="utf-8"), ensure_ascii=False)
+    return days
+
+
 def lock(r):
+    """하루치를 날짜 파일로 잠가 남긴다. 가장 최근 날짜이면 latest도 함께 바꾼다."""
     key = os.environ.get("HUB_KEY", "")
     if not key:
         print("HUB_KEY가 없어 레포트 데이터는 남기지 않았습니다.")
-        return
+        return False
     sys.path.insert(0, HERE)
     from hubcrypt import encrypt
-    os.makedirs(os.path.join(ROOT, "data", "report"), exist_ok=True)
-    data = json.dumps(r, ensure_ascii=False).encode("utf-8")
-    open(os.path.join(ROOT, "data", "report", "latest.json.enc"), "wb").write(encrypt(data, key))
-    print("레포트 데이터를 잠가 저장했습니다.")
+    os.makedirs(REPORT_DIR, exist_ok=True)
+    blob = encrypt(json.dumps(r, ensure_ascii=False).encode("utf-8"), key)
+    open(day_path(r["date"]), "wb").write(blob)
+    days = write_index()
+    if r["date"] >= days[-1]:
+        open(os.path.join(REPORT_DIR, "latest.json.enc"), "wb").write(blob)
+    print(f"{r['date']} 레포트 데이터를 잠가 저장했습니다.")
+    return True
+
+
+def backfill(r, day):
+    """날짜 파일이 없는 지난 날을 GoatCounter에서 다시 읽어 채운다.
+    방문 기록이 처음 생긴 날부터만 채우고, 콘텐츠 현황은 그날 값을 알 수 없어 넣지 않는다. 메일은 보내지 않는다."""
+    limit = int(os.environ.get("REPORT_BACKFILL", "30") or 0)
+    if limit <= 0 or not os.environ.get("HUB_KEY") or not os.environ.get("GOATCOUNTER_TOKEN"):
+        return 0
+    first = next((m["day"] for m in r["month"] if m["count"]), None)
+    if not first:
+        return 0
+    n = 0
+    for k in range(1, limit):
+        d = day - dt.timedelta(days=k)
+        if d.isoformat() < first:
+            break
+        if os.path.exists(day_path(d)):
+            continue
+        try:
+            time.sleep(1)  # GoatCounter 요청 한도를 넘지 않게 천천히
+            old = build(collect(d), d, with_inventory=False)
+        except Exception as e:
+            print(f"{d} 지난 기록을 읽지 못해 여기서 멈춥니다: {e}")
+            break
+        old["backfilled"] = True
+        lock(old)
+        n += 1
+    if n:
+        print(f"지난 {n}일치 레포트를 채웠습니다.")
+    return n
 
 
 def main():
@@ -431,7 +499,8 @@ def main():
         open(os.environ["REPORT_OUT"] + ".json", "w", encoding="utf-8").write(json.dumps(r, ensure_ascii=False, indent=1))
         open(os.environ["REPORT_OUT"] + ".md", "w", encoding="utf-8").write(text_report(r))
     print(f"{r['date']}: 방문 {r['pageviews']} · 클릭 {r['clicks']} · 표정 {r['mood']}")
-    lock(r)
+    if lock(r) and not os.environ.get("REPORT_SAMPLE"):
+        backfill(r, day)
     send(r, html)
 
 

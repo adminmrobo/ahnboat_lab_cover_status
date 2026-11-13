@@ -95,6 +95,16 @@ h2.sec{margin:0 0 10px;font-size:17px;display:flex;align-items:center;justify-co
 .refs li span:first-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .foot{margin-top:16px;font-size:12.5px;color:var(--muted);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
 .mt{margin-top:16px}
+/* 날짜 고르기 */
+.datebar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:16px;padding:12px 14px}
+.datebar .dsel{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:var(--muted)}
+.datebar select{font:inherit;font-weight:700;color:var(--ink);border:2px solid var(--line);border-radius:12px;padding:7px 10px;background:#fff;max-width:100%;cursor:pointer}
+.datebar select:focus-visible,.btn:focus-visible{outline:3px solid var(--violet);outline-offset:2px}
+.datebar .dnote{font-size:12.5px;color:var(--muted);margin-left:auto}
+.datebar .dnote.bad{color:var(--down);font-weight:700}
+.datebar.busy{opacity:.6;pointer-events:none}
+.tag{display:inline-block;font-size:11.5px;font-weight:700;border:1.5px solid var(--line);border-radius:99px;padding:1px 8px;background:var(--sun);margin-left:6px;vertical-align:middle}
+@media (max-width:600px){.datebar .dnote{margin-left:0;flex-basis:100%}}
 @media (prefers-reduced-motion:reduce){.face.pop{animation:none}.btn{transition:none}}
 </style>
 </head>
@@ -118,6 +128,14 @@ h2.sec{margin:0 0 10px;font-size:17px;display:flex;align-items:center;justify-co
   </section>
 
   <div id="app" hidden>
+    <nav class="card datebar" id="datebar" hidden aria-label="날짜 고르기">
+      <button class="btn" id="dPrev" type="button">◀ 전날</button>
+      <label class="dsel">날짜 <select id="dSel" aria-label="볼 날짜"></select></label>
+      <button class="btn" id="dNext" type="button">다음 날 ▶</button>
+      <button class="btn sun" id="dLast" type="button">최신으로</button>
+      <span class="dnote" id="dNote" role="status"></span>
+    </nav>
+
     <section class="card dot stage" aria-label="조수 하루의 해설">
       <div class="face" id="face"><img id="faceImg" alt="조수 하루"></div>
       <div>
@@ -139,19 +157,19 @@ h2.sec{margin:0 0 10px;font-size:17px;display:flex;align-items:center;justify-co
         <div class="chart" id="chart"><div class="tip" id="tip"></div></div>
       </section>
       <section class="card" id="secRefs">
-        <h2 class="sec">🧭 어디서 왔을까? <small style="font-size:12px;color:var(--muted);font-weight:500">어제</small></h2>
+        <h2 class="sec">🧭 어디서 왔을까? <small id="refsWhen" style="font-size:12px;color:var(--muted);font-weight:500">어제</small></h2>
         <ul class="refs" id="refs"></ul>
       </section>
     </div>
 
     <section class="card mt" id="secClicks">
-      <h2 class="sec">🏆 많이 열린 콘텐츠 <span class="seg" role="group" aria-label="기준"><button type="button" data-k="day" aria-pressed="true">어제</button><button type="button" data-k="week_sum" aria-pressed="false">최근 7일</button></span></h2>
+      <h2 class="sec">🏆 많이 열린 콘텐츠 <span class="seg" role="group" aria-label="기준"><button type="button" data-k="day" aria-pressed="true" id="ckDay">어제</button><button type="button" data-k="week_sum" aria-pressed="false" id="ckWeek">최근 7일</button></span></h2>
       <div class="tabs" id="tabs"></div>
       <ul class="rank" id="clicks"></ul>
     </section>
 
     <section class="card mt" id="secPages">
-      <h2 class="sec">📄 많이 본 페이지 <small style="font-size:12px;color:var(--muted);font-weight:500">어제 · 눌러서 7일 보기</small></h2>
+      <h2 class="sec">📄 많이 본 페이지 <small id="pagesWhen" style="font-size:12px;color:var(--muted);font-weight:500">어제 · 눌러서 7일 보기</small></h2>
       <ul class="rank" id="pages"></ul>
     </section>
 
@@ -163,6 +181,10 @@ h2.sec{margin:0 0 10px;font-size:17px;display:flex;align-items:center;justify-co
   'use strict';
   var MENU={server:'Lab Server',articles:'Articles',portfolio:'Portfolio'};
   var R=null,step=0,range=7,ckey='day',menu='';
+  var PASS='',DAYS=[],CACHE={},LINES=[],W={y:'어제',p:'그저께',w:'최근 7일',m:'최근 30일'};
+  var DOW='일월화수목금토';
+  function dow(s){var a=s.split('-');return DOW[new Date(+a[0],+a[1]-1,+a[2]).getDay()];}
+  function latest(){return DAYS.length?DAYS[DAYS.length-1]:'';}
   function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e;}
   function fmt(n){return Number(n||0).toLocaleString('ko-KR');}
   function pct(a,b){return b?Math.round((a-b)*100/b):null;}
@@ -175,18 +197,63 @@ h2.sec{margin:0 0 10px;font-size:17px;display:flex;align-items:center;justify-co
       return crypto.subtle.deriveKey({name:'PBKDF2',hash:'SHA-256',salt:b64d(o.salt),iterations:o.iter},base,{name:'AES-GCM',length:256},false,['decrypt']);})
       .then(function(k){return crypto.subtle.decrypt({name:'AES-GCM',iv:b64d(o.iv)},k,b64d(o.ct));});
   }
+  function getEnc(name){
+    return fetch('data/report/'+name+'.json.enc',{cache:'no-cache'}).then(function(r){
+      if(!r.ok)throw new Error(r.status===404?(name==='latest'?'아직 만들어진 레포트가 없습니다':name+' 레포트는 남아 있지 않습니다'):'레포트를 불러오지 못했습니다');return r.json();});
+  }
+  /* 하루치를 불러와 푼다. day가 비면 가장 최근 것. 한 번 연 날짜는 다시 받지 않는다. */
+  function load(day,pass){
+    if(day&&CACHE[day])return Promise.resolve(CACHE[day]);
+    return getEnc(day||'latest').then(function(o){return unlock(o,pass);}).then(function(b){var d=JSON.parse(dec.decode(b));CACHE[d.date]=d;return d;});
+  }
+  /* 쌓인 날짜 목록 (날짜만 있는 공개 파일). 없으면 최신 하루치만 보여 준다. */
+  function loadDays(){
+    return fetch('data/report/index.json',{cache:'no-cache'}).then(function(r){return r.ok?r.json():{days:[]};})
+      .then(function(o){DAYS=(o.days||[]).filter(function(x){return /^\d{4}-\d{2}-\d{2}$/.test(x);}).sort();}).catch(function(){DAYS=[];});
+  }
+  function wanted(){var m=/[?&]d=(\d{4}-\d{2}-\d{2})/.exec(location.search);return m?m[1]:'';}
   function tryUnlock(pass,quiet){
     var err=document.getElementById('lockErr'),btn=document.getElementById('unlockBtn');
     err.textContent='';btn.disabled=true;btn.textContent='여는 중…';
-    return fetch('data/report/latest.json.enc',{cache:'no-cache'}).then(function(r){if(!r.ok)throw new Error(r.status===404?'아직 만들어진 레포트가 없습니다':'레포트를 불러오지 못했습니다');return r.json();})
-      .then(function(o){return unlock(o,pass);}).then(function(b){
+    return loadDays().then(function(){var w=wanted();return load(DAYS.indexOf(w)>=0&&w!==latest()?w:'',pass);}).then(function(d){
+        PASS=pass;
         try{if(document.getElementById('remember').checked||quiet)sessionStorage.setItem(SS,pass);}catch(e){}
-        show(JSON.parse(dec.decode(b)));
+        if(DAYS.indexOf(d.date)<0){DAYS.push(d.date);DAYS.sort();}
+        show(d);
       }).catch(function(e){
         try{sessionStorage.removeItem(SS);}catch(x){}
         if(!quiet)err.textContent=(e&&e.name==='OperationError')?'키가 맞지 않습니다.':(e.message||String(e));
       }).then(function(){btn.disabled=false;btn.textContent='열기';});
   }
+
+  /* ---------- 날짜 고르기 ---------- */
+  function dateBar(){
+    var bar=document.getElementById('datebar'),sel=document.getElementById('dSel'),i=DAYS.indexOf(R.date);
+    bar.hidden=DAYS.length<2;
+    sel.textContent='';
+    DAYS.slice().reverse().forEach(function(x){var o=el('option','',x+' ('+dow(x)+')'+(x===latest()?' · 최신':''));o.value=x;if(x===R.date)o.selected=true;sel.appendChild(o);});
+    document.getElementById('dPrev').disabled=i<=0;
+    document.getElementById('dNext').disabled=i<0||i>=DAYS.length-1;
+    document.getElementById('dLast').disabled=R.date===latest();
+    var note=document.getElementById('dNote');note.className='dnote';
+    note.textContent='기록 '+DAYS.length+'일치 · '+DAYS[0]+' ~ '+latest();
+  }
+  function pick(day){
+    if(!day||!R||day===R.date)return;
+    var bar=document.getElementById('datebar'),note=document.getElementById('dNote');
+    bar.classList.add('busy');note.className='dnote';note.textContent=day+' 여는 중…';
+    load(day,PASS).then(function(d){
+      show(d);
+      try{history.replaceState(null,'',d.date===latest()?location.pathname:'?d='+d.date);}catch(e){}
+    }).catch(function(e){
+      dateBar();note.className='dnote bad';note.textContent=(e&&e.name==='OperationError')?day+' 레포트는 지금 키로 열리지 않습니다.':(e.message||String(e));
+    }).then(function(){bar.classList.remove('busy');});
+  }
+  function shift(n){var i=DAYS.indexOf(R.date)+n;if(i>=0&&i<DAYS.length)pick(DAYS[i]);}
+  document.getElementById('dSel').addEventListener('change',function(){pick(this.value);});
+  document.getElementById('dPrev').addEventListener('click',function(){shift(-1);});
+  document.getElementById('dNext').addEventListener('click',function(){shift(1);});
+  document.getElementById('dLast').addEventListener('click',function(){pick(latest());});
   document.getElementById('lockForm').addEventListener('submit',function(e){e.preventDefault();tryUnlock(document.getElementById('keyIn').value,false);});
   document.getElementById('lockBtn').addEventListener('click',function(){try{sessionStorage.removeItem(SS);}catch(e){}location.reload();});
 
@@ -201,7 +268,7 @@ h2.sec{margin:0 0 10px;font-size:17px;display:flex;align-items:center;justify-co
     var i=0;b.textContent='';typing=setInterval(function(){i+=2;b.textContent=text.slice(0,i);if(i>=text.length)clearInterval(typing);},18);
   }
   function go(n){
-    var L=R.lines;step=Math.max(0,Math.min(L.length-1,n));
+    var L=LINES;step=Math.max(0,Math.min(L.length-1,n));
     type(L[step]);setFace(step===0?R.mood:(FACES[step]||'E07'));
     document.querySelectorAll('.hl').forEach(function(x){x.classList.remove('hl');});
     var t=TARGET[step]&&document.getElementById(TARGET[step]);if(t&&step>0){t.classList.add('hl');t.scrollIntoView({behavior:'smooth',block:'nearest'});}
@@ -210,13 +277,13 @@ h2.sec{margin:0 0 10px;font-size:17px;display:flex;align-items:center;justify-co
     var p=document.getElementById('pips');p.textContent='';L.forEach(function(_,k){p.appendChild(el('i',k===step?'on':''));});
   }
   document.getElementById('prev').addEventListener('click',function(){go(step-1);});
-  document.getElementById('next').addEventListener('click',function(){go(step===R.lines.length-1?0:step+1);});
+  document.getElementById('next').addEventListener('click',function(){go(step===LINES.length-1?0:step+1);});
 
   /* ---------- 숫자 칸 ---------- */
   function kpis(){
     var box=document.getElementById('kpis');box.textContent='';
     var ch=pct(R.pageviews,R.pageviews_prev),wch=pct(R.week_total,R.last_week_total);
-    [['어제 방문',R.pageviews,ch,'그저께보다'],['콘텐츠 클릭',R.clicks,null,'어제'],['최근 7일 방문',R.week_total,wch,'지난주보다'],['최근 30일 방문',R.month.reduce(function(s,x){return s+x.count;},0),null,'합계']].forEach(function(k){
+    [[W.y+' 방문',R.pageviews,ch,W.p+'보다'],['콘텐츠 클릭',R.clicks,null,W.y],[W.w+' 방문',R.week_total,wch,'지난주보다'],[W.m+' 방문',R.month.reduce(function(s,x){return s+x.count;},0),null,'합계']].forEach(function(k){
       var c=el('div','card kpi');c.appendChild(el('div','l',k[0]));c.appendChild(el('div','v',fmt(k[1])));
       var d=el('div','d '+(k[2]==null?'':k[2]>=0?'up':'down'),k[2]==null?k[3]:k[3]+' '+(k[2]>=0?'+':'')+k[2]+'%');if(k[2]==null)d.style.color='var(--muted)';
       c.appendChild(d);box.appendChild(c);});
@@ -244,7 +311,7 @@ h2.sec{margin:0 0 10px;font-size:17px;display:flex;align-items:center;justify-co
   /* ---------- 순위 ---------- */
   function rank(list,box,key,label,meta){
     box.textContent='';var top=Math.max.apply(null,list.map(function(x){return x[key];}).concat([1]));
-    if(!list.length){box.appendChild(el('p','empty','아직 기록이 없어요. 내일 레포트부터 쌓여요!'));return;}
+    if(!list.length){box.appendChild(el('p','empty',R.date===latest()?'아직 기록이 없어요. 내일 레포트부터 쌓여요!':'이날은 기록이 없어요.'));return;}
     list.slice(0,10).forEach(function(x,k){
       var li=el('li');li.setAttribute('aria-expanded','false');li.tabIndex=0;
       var row=el('div','row');row.appendChild(el('span','no',String(k+1)));
@@ -270,10 +337,24 @@ h2.sec{margin:0 0 10px;font-size:17px;display:flex;align-items:center;justify-co
   function refs(){var u=document.getElementById('refs');u.textContent='';if(!R.refs.length){u.appendChild(el('li','','기록이 없어요'));return;}
     R.refs.forEach(function(r){var li=el('li');li.appendChild(el('span','',r.name));li.appendChild(el('b','',fmt(r.count)));u.appendChild(li);});}
 
+  /* 지난 날짜를 볼 때는 ‘어제’ 대신 ‘이날’로 읽히게 낱말을 바꾼다 */
+  function words(){
+    var now=R.date===latest();
+    W=now?{y:'어제',p:'그저께',w:'최근 7일',m:'최근 30일'}:{y:'이날',p:'전날',w:'이날까지 7일',m:'이날까지 30일'};
+    LINES=(R.lines||[]).map(function(t){return now?t:t.replace(/그저께/g,'전날').replace(/어제는/g,'이날은').replace(/어제/g,'이날').replace(/최근 7일/g,'이날까지 7일');});
+    document.getElementById('refsWhen').textContent=W.y;
+    document.getElementById('pagesWhen').textContent=W.y+' · 눌러서 7일 보기';
+    document.getElementById('ckDay').textContent=W.y;
+    document.getElementById('ckWeek').textContent=W.w;
+  }
   function show(d){
     R=d;document.getElementById('lock').hidden=true;document.getElementById('app').hidden=false;
-    document.getElementById('sub').textContent=R.date+' ('+R.dow+') 하루치 기록 · 조수 하루가 정리했어요.';
-    document.getElementById('gen').textContent='만든 시각 '+R.generated+' · GoatCounter 기록 기준';
+    if(menu&&!(R.menus||{})[menu])menu='';
+    words();dateBar();
+    var sub=document.getElementById('sub');
+    sub.textContent=R.date+' ('+R.dow+') 하루치 기록 · 조수 하루가 정리했어요.';
+    if(R.date!==latest())sub.appendChild(el('span','tag','지난 레포트'));
+    document.getElementById('gen').textContent='만든 시각 '+R.generated+(R.backfilled?' (나중에 채운 기록)':'')+' · GoatCounter 기록 기준';
     kpis();chart();tabs();clicks();refs();
     rank(R.top_pages.filter(function(p){return p.day>0||p.week_sum>0;}),document.getElementById('pages'),'day',function(p){return p.title||p.path;},function(p){return p.path;});
     go(0);
