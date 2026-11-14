@@ -669,6 +669,36 @@
    "thumb": "thumbs/repos/ML_00_Algorithm-family-build_03.jpg"
   },
   {
+   "title": "하루에 다 끝내는 머신러닝 서머리 노트 · 오전반",
+   "summary": "내일이 박사의 쪽지시험. 인턴 시아와 모아가 머신러닝 입문 범위를 교시로 나눠 공책에 정리합니다. 머신러닝의 뜻, 데이터 손질, 회귀, 분류까지 교시마다 쪽지시험 네 문제. 코드와 수식 없이 버튼만 눌러 따라갑니다.",
+   "cat": "머신러닝",
+   "mid": "개념 지도",
+   "sub": "서머리 노트",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/one_day_machine_learning",
+   "site_url": "https://adminmrobo.github.io/one_day_machine_learning/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/one_day_machine_learning.jpg"
+  },
+  {
+   "title": "머신러닝 연구소 · 3D로 설명하는 머신러닝",
+   "summary": "고전 머신러닝 모델 27종을 한 층씩 3D로 살펴보는 27층 건물. 머신러닝 모델 도감의 내용을 신경망 연구소와 같은 건물 틀로 옮겼고, 강사용 8차시 수업 안내가 함께 있습니다.",
+   "cat": "머신러닝",
+   "mid": "개념 지도",
+   "sub": "머신러닝 연구소",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/machine_learning_in_3d",
+   "site_url": "https://adminmrobo.github.io/machine_learning_in_3d/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": ""
+  },
+  {
    "title": "Fish Market Data로 쉽게 따라하는 머신러닝",
    "summary": "생선 시장 데이터로 회귀·분류 모델을 처음부터 따라 해 보는 입문 강의",
    "cat": "머신러닝",
@@ -881,6 +911,36 @@
    "thumb": "thumbs/repos/what_is_tensor.jpg"
   },
   {
+   "title": "하루에 다 끝내는 딥러닝 서머리 노트 · 오후반",
+   "summary": "딥러닝 필기 노트 열한 장을 6교시와 종례 모의고사 열 문제로 줄였습니다. 뉴런, 활성화 함수, 역전파, 과적합, CNN, RNN, 트랜스포머까지 비전공자용. 머신러닝 서머리 노트의 자매편.",
+   "cat": "딥러닝·뇌과학",
+   "mid": "딥러닝 모델",
+   "sub": "서머리 노트",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/one_day_deep_learning",
+   "site_url": "https://adminmrobo.github.io/one_day_deep_learning/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/one_day_deep_learning.jpg"
+  },
+  {
+   "title": "좌표축 위의 그릇 · 3D 지도로 본 모델 최적화",
+   "summary": "가중치를 좌표축으로, 오차를 높이로 놓은 3D 지도 위에서 기울기·굽음·안장점·야코비안(수학 편)과 배치·학습률·에포크(실험실 편)를 연구실 식구와 함께 보는 두 편짜리 해설.",
+   "cat": "딥러닝·뇌과학",
+   "mid": "딥러닝 모델",
+   "sub": "모델 최적화",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/optimization_3d_map",
+   "site_url": "https://adminmrobo.github.io/optimization_3d_map/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/optimization_3d_map.jpg"
+  },
+  {
    "title": "AI 렌더링 연구실 3부작",
    "summary": "",
    "cat": "AI 감각·생성",
@@ -1043,6 +1103,21 @@
    "kind": "repo",
    "repo_url": "https://github.com/adminmrobo/agent_secret_leak_lab",
    "site_url": "https://adminmrobo.github.io/agent_secret_leak_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": ""
+  },
+  {
+   "title": "왜 지금 온톨로지인가 · 연구실 리포트(동향)",
+   "summary": "AI 에이전트가 늘면서 30년 넘은 개념인 온톨로지가 다시 주목받는 현상을 발표 타임라인·표준·숫자로 정리한 리포트. 2026년 11월 13일 기준, 의견이나 전망 없이 사실 중심.",
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "LLM 이해",
+   "sub": "연구실 리포트",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/ontology_trend_report",
+   "site_url": "https://adminmrobo.github.io/ontology_trend_report/",
    "link": "",
    "langs": [
     "ko"
@@ -1999,6 +2074,36 @@
     "ko"
    ],
    "thumb": "thumbs/repos/smart_factory_world.jpg"
+  },
+  {
+   "title": "스마트 제조 연구실 · 3D로 보는 15주",
+   "summary": "「스마트 제조」(AI212, 2026-2학기) 강의를 차시마다 다른 3D 공장과 연구실 식구들이 안내하는 해설 사이트. 코딩 없이 생성형 AI로 공장 데이터를 분석하고 현장 문서를 자동화합니다.",
+   "cat": "강의·저서",
+   "mid": "대학 강의",
+   "sub": "스마트 제조",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/smart_product",
+   "site_url": "https://adminmrobo.github.io/smart_product/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/smart_product.jpg"
+  },
+  {
+   "title": "AI 회계 컨설팅 연구실 · 파이썬과 회계데이터 분석",
+   "summary": "회계등식에서 출발해 매출·재고, 매입·비용, 자산·세금, 파이썬 기초, 재무상태표, 회전율, 현금흐름표와 재무비율, 관리회계까지. 대학 강의 「파이썬과 회계데이터 분석」을 3D 회계 컨설팅회사 콘셉트로 묶은 해설 시리즈.",
+   "cat": "강의·저서",
+   "mid": "대학 강의",
+   "sub": "파이썬과 회계데이터 분석",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/python-accounting-analytics",
+   "site_url": "https://adminmrobo.github.io/python-accounting-analytics/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/python-accounting-analytics.jpg"
   },
   {
    "title": "데이터 사이언티스트를 위한 베이지안 통계학",
