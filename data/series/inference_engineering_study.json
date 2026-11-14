@@ -1,0 +1,208 @@
+{
+ "series": "인퍼런스 스터디 북",
+ "rule": "목록은 책의 장(chap) 순서, 같은 장 안에서는 order 순서. 제목·소개·썸네일은 이 파일이 기준.",
+ "items": [
+  {
+   "folder": "",
+   "kind": "index",
+   "chap": "목차",
+   "order": 0,
+   "title": "목차 · 인퍼런스 스터디 북",
+   "summary": "『Inference Engineering』 10주 스터디를 장별로 묶은 연구실 해설 스터디 북 — 첫 화면의 추론 공정 제어판에서 \"그래서 GPU로 LLM을 어떻게 돌리나\"를 한 장으로 봅니다.",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "ru",
+    "uz",
+    "vi"
+   ],
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study/",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study",
+   "thumb": "https://adminmrobo.github.io/inference_engineering_study/thumb.jpg"
+  },
+  {
+   "folder": "week_01_textbook_preface",
+   "kind": "textbook",
+   "chap": "서문",
+   "order": 1,
+   "title": "서문 · 추론은 이제 모두의 일",
+   "summary": "이 편을 읽으면 추론이 왜 모두의 일이 됐는지 지연시간 · 가용성 · 비용 세 저울로 설명할 수 있습니다.",
+   "langs": [
+    "ko"
+   ],
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study/week_01_textbook_preface/",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study/tree/main/week_01_textbook_preface",
+   "thumb": "https://adminmrobo.github.io/inference_engineering_study/week_01_textbook_preface/thumb.jpg"
+  },
+  {
+   "folder": "week_01_textbook_ch00",
+   "kind": "textbook",
+   "chap": "0장",
+   "order": 2,
+   "title": "0장 · 추론이란 무엇인가",
+   "summary": "이 편을 읽으면 학습과 추론을 나누고, 추론 일이 놓인 세 층(런타임 · 인프라 · 도구)을 짚을 수 있습니다.",
+   "langs": [
+    "ko"
+   ],
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study/week_01_textbook_ch00/",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study/tree/main/week_01_textbook_ch00",
+   "thumb": "https://adminmrobo.github.io/inference_engineering_study/week_01_textbook_ch00/thumb.jpg"
+  },
+  {
+   "folder": "week_01_textbook_ch01",
+   "kind": "textbook",
+   "chap": "1장",
+   "order": 3,
+   "title": "1장 · 시작 전에 정할 것",
+   "summary": "이 편을 읽으면 우리 앱에 맞는 모델과 목표 눈금(TTFT · TPS · P99)을 정할 수 있습니다.",
+   "langs": [
+    "ko"
+   ],
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study/week_01_textbook_ch01/",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study/tree/main/week_01_textbook_ch01",
+   "thumb": "https://adminmrobo.github.io/inference_engineering_study/week_01_textbook_ch01/thumb.jpg"
+  },
+  {
+   "folder": "week_01_article_01",
+   "kind": "article",
+   "chap": "1장",
+   "order": 4,
+   "title": "1장 논문 · 라이브벤치 (LiveBench)",
+   "summary": "이 편을 읽으면 문제가 새어 나간 시험지와 매달 바뀌는 새 시험지의 차이로, 모델 성적을 믿을 만하게 재는 법을 설명할 수 있습니다.",
+   "langs": [
+    "ko"
+   ],
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study/week_01_article_01/",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study/tree/main/week_01_article_01",
+   "thumb": "https://adminmrobo.github.io/inference_engineering_study/week_01_article_01/thumb.jpg"
+  },
+  {
+   "folder": "week_02_textbook_ch02_p1_p2",
+   "kind": "textbook",
+   "chap": "2장",
+   "order": 5,
+   "title": "2장 전반 · 모델 속 들여다보기",
+   "summary": "이 편을 읽으면 질문 한 줄이 토큰으로 쪼개져 모델을 지나 다음 토큰 하나로 나오기까지를 따라갈 수 있습니다.",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "ru",
+    "uz",
+    "vi"
+   ],
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study/week_02_textbook_ch02_p1_p2/",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study/tree/main/week_02_textbook_ch02_p1_p2",
+   "thumb": "https://adminmrobo.github.io/inference_engineering_study/week_02_textbook_ch02_p1_p2/thumb.jpg"
+  },
+  {
+   "folder": "week_02_article_01",
+   "kind": "article",
+   "chap": "2장",
+   "order": 6,
+   "title": "2장 논문 · 트랜스포머 (Transformer)",
+   "summary": "이 편을 읽으면 어텐션이 문장의 어디를 볼지 고르는 원리와, 문장이 길수록 일이 커지는 이유를 설명할 수 있습니다.",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "ru",
+    "uz",
+    "vi"
+   ],
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study/week_02_article_01/",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study/tree/main/week_02_article_01",
+   "thumb": "https://adminmrobo.github.io/inference_engineering_study/week_02_article_01/thumb.jpg"
+  },
+  {
+   "folder": "week_03_textbook_ch02_p3_to_end",
+   "kind": "textbook",
+   "chap": "2장",
+   "order": 7,
+   "title": "2장 후반 · 병목을 찾아라",
+   "summary": "이 편을 읽으면 느린 원인이 계산(요리사)인지 메모리 통로(재료 통로)인지 판정할 수 있습니다.",
+   "langs": [
+    "ko"
+   ],
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study/week_03_textbook_ch02_p3_to_end/",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study/tree/main/week_03_textbook_ch02_p3_to_end",
+   "thumb": "https://adminmrobo.github.io/inference_engineering_study/week_03_textbook_ch02_p3_to_end/thumb.jpg"
+  },
+  {
+   "folder": "week_03_article_01",
+   "kind": "article",
+   "chap": "2장",
+   "order": 8,
+   "title": "2장 논문 · 번개 어텐션 (FlashAttention)",
+   "summary": "이 편을 읽으면 답은 그대로 두고 작은 창고와 큰 창고 사이 왕복만 줄여 어텐션을 빠르게 하는 원리를 설명할 수 있습니다.",
+   "langs": [
+    "ko"
+   ],
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study/week_03_article_01/",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study/tree/main/week_03_article_01",
+   "thumb": "https://adminmrobo.github.io/inference_engineering_study/week_03_article_01/thumb.jpg"
+  },
+  {
+   "folder": "week_04_textbook_ch03",
+   "kind": "textbook",
+   "chap": "3장",
+   "order": 9,
+   "title": "3장 · GPU 기계실",
+   "summary": "이 편을 읽으면 모델이 어떤 GPU에 들어가고 얼마나 빠를지 VRAM과 메모리 대역폭으로 어림할 수 있습니다.",
+   "langs": [
+    "ko"
+   ],
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study/week_04_textbook_ch03/",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study/tree/main/week_04_textbook_ch03",
+   "thumb": "https://adminmrobo.github.io/inference_engineering_study/week_04_textbook_ch03/thumb.jpg"
+  },
+  {
+   "folder": "week_04_article_01",
+   "kind": "article",
+   "chap": "3장",
+   "order": 10,
+   "title": "3장 논문 · 루프라인 (Roofline)",
+   "summary": "이 편을 읽으면 지붕선 두 개로 성능의 상한을 그리고, 어떤 최적화부터 할지 고를 수 있습니다.",
+   "langs": [
+    "ko"
+   ],
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study/week_04_article_01/",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study/tree/main/week_04_article_01",
+   "thumb": "https://adminmrobo.github.io/inference_engineering_study/week_04_article_01/thumb.jpg"
+  }
+ ],
+ "related": [
+  {
+   "repo": "inference_korea_study_page",
+   "kind": "board",
+   "chap": "목차",
+   "title": "스터디 보드 · Inference Korea",
+   "summary": "이 보드를 보면 『Inference Engineering』 10주 스터디의 일정(매주 토요일 저녁 8시 Zoom)과 주차별 범위를 한눈에 확인할 수 있습니다.",
+   "langs": [
+    "ko",
+    "en",
+    "zh"
+   ],
+   "site_url": "https://adminmrobo.github.io/inference_korea_study_page/",
+   "repo_url": "https://github.com/adminmrobo/inference_korea_study_page",
+   "thumb": "https://adminmrobo.github.io/inference_engineering_study/cards/inference_korea_study_page.jpg"
+  },
+  {
+   "repo": "inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide",
+   "kind": "slide",
+   "chap": "2장",
+   "title": "2장 후반 발표 · 병목을 찾아라",
+   "summary": "이 자료로 2장 후반(2.3–2.5)의 병목 진단을 약 30분 발표 흐름으로 따라갈 수 있습니다.",
+   "langs": [
+    "ko"
+   ],
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide/",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide",
+   "thumb": "https://adminmrobo.github.io/inference_engineering_study/cards/inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide.jpg"
+  }
+ ]
+}

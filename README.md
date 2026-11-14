@@ -31,6 +31,7 @@
 | 파일 | 누가 고치나 | 내용 |
 |---|---|---|
 | `data/repos.json` | 자동 수집 | 저장소별 현황 |
+| `data/series_cards.json`, `data/series/` | 관리자 · 자동 수집 | **장(챕터)별 시리즈 카드** — 한 저장소 안 여러 편(예: 인퍼런스 스터디 북)을 카탈로그에서 장별 소분류로 묶는다. 제목·소개·썸네일은 시리즈 저장소의 `catalog_cards.json`이 기준이며 매일 수집 때 새로 받는다. 키 없이 바로 반영: `python3 scripts/series_cards.py` |
 | `data/external.json` | 관리자 | **GitHub 밖 시리즈** — 웹 결과물 페이지, zip으로만 전달한 시리즈(DLSS 3부작 등). 새 시리즈가 생기면 여기에 한 줄 더합니다 |
 | `data/redraw.json` | 관리자 | 다시 그릴 그림 (R·A 번호, 프롬프트, 비율, 반영 위치 `targets`). 2026-11-07에 R107~R121(15장) 추가 |
 | `data/redraw_status.json` | 관리자 (커밋) | 그림별 진행 상태 `todo` / `received` / `applied`, 날짜, 메모 |

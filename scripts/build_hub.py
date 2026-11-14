@@ -179,6 +179,11 @@ def main():
     catalog = {"updated": out["updated"], "categories": cats,
                "mids": [m for m in out["mids"] if (m.get("cat"), m.get("name")) in used],
                "hero": out["hero"], "items": [{k: it[k] for k in keep} for it in pub]}
+    # 시리즈 카드(data/series_cards.json): 한 저장소 안 여러 편을 장(챕터)별 소분류로 묶고 제목·소개·썸네일을 한 틀로
+    import sys as _sys
+    _sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import series_cards
+    series_cards.apply(catalog["items"])
     with open(os.path.join(DATA, "catalog.json"), "w", encoding="utf-8") as f:
         json.dump(catalog, f, ensure_ascii=False, indent=1)
 

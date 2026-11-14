@@ -40,6 +40,7 @@ jobs:
           HUB_KEY: ${{ secrets.HUB_KEY }}
         run: |
           pip install --quiet cryptography
+          python -c "import sys; sys.path.insert(0, 'scripts'); import series_cards; series_cards.fetch()"   # 시리즈 카드(장별 묶음) 최신본
           python scripts/hub_secure.py
           python scripts/build_portfolio.py
           python scripts/build_ontology.py   # 공개 콘텐츠 지식 색인 → 분야별 온톨로지 지도 데이터
