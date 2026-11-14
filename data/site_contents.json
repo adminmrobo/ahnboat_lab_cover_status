@@ -1,9 +1,12 @@
 {
- "fetched_at": "2026-11-13 23:31 KST",
+ "fetched_at": "2026-11-14 15:25 KST",
  "site": "https://ahnboat.xyz",
- "errors": [],
+ "errors": [
+  "워드프레스 REST API 읽기 실패: HTTP Error 429: Too Many Requests",
+  "워드프레스 사이트맵 읽기 실패: HTTP Error 404: Not Found"
+ ],
  "wordpress": {
-  "source": "rest",
+  "source": "sitemap",
   "posts": [
    {
     "id": 3290,
@@ -400,48 +403,7 @@
     "parent": 0
    }
   ],
-  "pages": [
-   {
-    "id": 3442,
-    "title": "곧 나옵니다.. 아마도요..! (Coming Soon-ish! 🐌)",
-    "link": "https://ahnboat.xyz/pleae_wait/",
-    "date": "2026-10-04",
-    "modified": "2026-10-19",
-    "excerpt": "",
-    "categories": [],
-    "parent": 0
-   },
-   {
-    "id": 3398,
-    "title": "Hello! Everyone!",
-    "link": "https://ahnboat.xyz/my_profile/",
-    "date": "2026-10-03",
-    "modified": "2026-10-19",
-    "excerpt": "00. Basic Info. 한국전기안전공사, 매일경제신문을 거쳐 현재 매일경제 사외벤처 (주)M-Robo를 창업해 대표로 재직하고 있다. (주)M-Robo는 언론사 사내 벤처로 시작한 미디어 벤처로, 국민일보에 로봇기자(스톡봇)을 서비스 했으며, 한국인터넷진흥원, 한국언론진흥재단, 한국방송통신전파진흥원 등에서 다수의 프로젝트를 진행했다. 이후 자체 A.I",
-    "categories": [],
-    "parent": 0
-   },
-   {
-    "id": 895,
-    "title": "Article & Study",
-    "link": "https://ahnboat.xyz/articlestudy/",
-    "date": "2022-01-16",
-    "modified": "2026-10-04",
-    "excerpt": "인공지능기술, 경제학, 블록체인, 암호화폐 NFT 등 주요 관심사에 대해서 쓴 글입니다. 글 목록",
-    "categories": [],
-    "parent": 0
-   },
-   {
-    "id": 884,
-    "title": "Global Business Story",
-    "link": "https://ahnboat.xyz/global_business/",
-    "date": "2022-01-16",
-    "modified": "2026-10-04",
-    "excerpt": "해외 출장을 다니면서 각 나라의 문화나 현지인들의 라이프 스타일 등을 기록으로 남긴 것입니다. 해외 현지 비즈니스를 준비하시는 분께 미력하나마다 도움이 되길 바라면서 정리했습니다. 2023년 1월 현재는 대만, 태국, 우즈베키스탄, 카자흐스탄이 업데이트됐습니다. 글 목록",
-    "categories": [],
-    "parent": 0
-   }
-  ],
+  "pages": [],
   "sitemap": []
  },
  "catalog": [
@@ -825,6 +787,19 @@
    "summary": ""
   },
   {
+   "title": "기억 3부작 · LLM은 어디까지 기억할 수 있을까",
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "LLM 이해",
+   "sub": "LLM 기억",
+   "site_url": "https://adminmrobo.github.io/llm_memory_trilogy/",
+   "repo_url": "https://github.com/adminmrobo/llm_memory_trilogy",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "시계열의 창에서 출발해 LLM의 문맥 창, 대화 압축, 바깥 저장소, 기억 돌보기, 기억 토큰까지 넓혀 가는 3부 18편의 연구실 해설 시리즈. 시계열 3부작의 후속."
+  },
+  {
    "title": "AI 점수는 무엇을 잰 것일까",
    "cat": "LLM·추론 엔지니어링",
    "mid": "LLM 이해",
@@ -874,19 +849,6 @@
     "ko"
    ],
    "summary": "AI 코딩 비서의 승인 기록 파일에서 비밀값이 나온 사건을 조건부확률, 베이지안 갱신, 마르코프 연쇄, 역진적 귀납법 네 칸으로 읽고, 도구 책임 대 사용자 책임 토론과 전후 투표로 우도비를 읽는 2편 시리즈."
-  },
-  {
-   "title": "기억 3부작 · LLM은 어디까지 기억할 수 있을까",
-   "cat": "LLM·추론 엔지니어링",
-   "mid": "LLM 이해",
-   "sub": "LLM 기억",
-   "site_url": "https://adminmrobo.github.io/llm_memory_trilogy/",
-   "repo_url": "https://github.com/adminmrobo/llm_memory_trilogy",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "summary": "시계열의 창에서 출발해 LLM의 문맥 창, 대화 압축, 바깥 저장소, 기억 돌보기, 기억 토큰까지 넓혀 가는 3부 18편의 연구실 해설 시리즈. 시계열 3부작의 후속."
   },
   {
    "title": "인퍼런스 스터디 북 · 목차",
@@ -1381,6 +1343,19 @@
    "summary": ""
   },
   {
+   "title": "초보자도 쉽게 따라하는 DB 환경 설치",
+   "cat": "통계·데이터 기초",
+   "mid": "프로그래밍",
+   "sub": "데이터베이스",
+   "site_url": "https://adminmrobo.github.io/how_to_start_db/",
+   "repo_url": "https://github.com/adminmrobo/how_to_start_db",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "MariaDB, PostgreSQL, Orange를 Windows에 차례로 설치하고 접속까지 확인하는 초보자용 해설. 미션 3개, 실험 2개, 접속 연습 2개, 퀴즈 9문항과 강의 슬라이드."
+  },
+  {
    "title": "보면서 배우는 pandas",
    "cat": "통계·데이터 기초",
    "mid": "프로그래밍",
@@ -1405,19 +1380,6 @@
     "ko"
    ],
    "summary": ""
-  },
-  {
-   "title": "초보자도 쉽게 따라하는 DB 환경 설치",
-   "cat": "통계·데이터 기초",
-   "mid": "프로그래밍",
-   "sub": "데이터베이스",
-   "site_url": "https://adminmrobo.github.io/how_to_start_db/",
-   "repo_url": "https://github.com/adminmrobo/how_to_start_db",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "summary": "MariaDB, PostgreSQL, Orange를 Windows에 차례로 설치하고 접속까지 확인하는 초보자용 해설. 미션 3개, 실험 2개, 접속 연습 2개, 퀴즈 9문항과 강의 슬라이드."
   },
   {
    "title": "시계열 3부작 · ARIMA와 LSTM",

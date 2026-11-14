@@ -2,10 +2,15 @@
 
 ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전·오후 자동으로 다시 만들고, Actions에서 수동으로도 돌릴 수 있습니다.
 
-- 갱신: **2026-11-13 23:31 KST**
-- 홈페이지 글 32 · 페이지 4
+- 갱신: **2026-11-14 15:25 KST**
+- 홈페이지 글 32 · 페이지 0
 - GitHub 해설 콘텐츠 99 · 포트폴리오 10 · 일정 18
 - 기계용 원본: `data/site_contents.json`
+
+> ⚠ 이번에 읽지 못한 곳
+
+> - 워드프레스 REST API 읽기 실패: HTTP Error 429: Too Many Requests
+> - 워드프레스 사이트맵 읽기 실패: HTTP Error 404: Not Found
 
 ## 1. 홈페이지 글 (ahnboat.xyz)
 
@@ -46,12 +51,7 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 
 ## 2. 홈페이지 페이지
 
-| 제목 | 주소 | 고친 날 |
-|---|---|---|
-| Article & Study | https://ahnboat.xyz/articlestudy/ | 2026-10-04 |
-| Global Business Story | https://ahnboat.xyz/global_business/ | 2026-10-04 |
-| Hello! Everyone! | https://ahnboat.xyz/my_profile/ | 2026-10-19 |
-| 곧 나옵니다.. 아마도요..! (Coming Soon-ish! 🐌) | https://ahnboat.xyz/pleae_wait/ | 2026-10-19 |
+(없음 또는 읽지 못함)
 
 ## 3. GitHub 해설 콘텐츠 (공개 카탈로그)
 
@@ -97,10 +97,10 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 
 | 제목 | 중분류 | 주소 | 언어 |
 |---|---|---|---|
+| 기억 3부작 · LLM은 어디까지 기억할 수 있을까 | LLM 이해 / LLM 기억 | https://adminmrobo.github.io/llm_memory_trilogy/ | ko |
 | AI 점수는 무엇을 잰 것일까 | LLM 이해 / LLM 평가 | https://adminmrobo.github.io/LLM_evaluation/ | ko en zh ja uz ru vi |
 | rule base에서 일하는 AI까지 | LLM 이해 / rule base에서 에이전트까지 | https://adminmrobo.github.io/rulebase_to_agent/ | ko en zh ja uz ru vi |
 | 확률로 읽는 보안 사건 · 승인 기록 유출 | LLM 이해 / 에이전트 보안 | https://adminmrobo.github.io/agent_secret_leak_lab/ | ko |
-| 기억 3부작 · LLM은 어디까지 기억할 수 있을까 | LLM 이해 / LLM 기억 | https://adminmrobo.github.io/llm_memory_trilogy/ | ko |
 | 인퍼런스 스터디 북 · 목차 | 추론 엔지니어링 스터디 / 추론 엔지니어링 스터디 | https://adminmrobo.github.io/inference_engineering_study/ | ko en zh ja uz ru vi |
 | 1주차 논문 · 라이브벤치 | 추론 엔지니어링 스터디 / 추론 엔지니어링 스터디 | https://adminmrobo.github.io/inference_engineering_study/week_01_article_01/ | ko |
 | 1주차 교재 1장 · 시작 전에 정할 것 | 추론 엔지니어링 스터디 / 추론 엔지니어링 스터디 | https://adminmrobo.github.io/inference_engineering_study/week_01_textbook_ch01/ | ko |
@@ -150,9 +150,9 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 
 | 제목 | 중분류 | 주소 | 언어 |
 |---|---|---|---|
+| 초보자도 쉽게 따라하는 DB 환경 설치 | 프로그래밍 / 데이터베이스 | https://adminmrobo.github.io/how_to_start_db/ | ko |
 | 보면서 배우는 pandas | 프로그래밍 / 파이썬·판다스 | https://adminmrobo.github.io/learn-pandas-visually_korean/ | ko |
 | 해보며 배우는 파이썬 | 프로그래밍 / 파이썬·판다스 | https://adminmrobo.github.io/learn-python-by-doing_Korean/ | ko |
-| 초보자도 쉽게 따라하는 DB 환경 설치 | 프로그래밍 / 데이터베이스 | https://adminmrobo.github.io/how_to_start_db/ | ko |
 | 시계열 3부작 · ARIMA와 LSTM | 확률·통계 / 시계열 | https://adminmrobo.github.io/timeseries-trilogy/ | ko |
 | 이산확률분포 일곱 가지 | 확률·통계 / 통계 노트 | https://adminmrobo.github.io/fintech_business_01_payment/ | ko |
 | 우연의 과학통계학 · 확률분포 | 확률·통계 / 통계 노트 | https://adminmrobo.github.io/statistics_note_ch03_discrete-probability-distribution/ | ko |
