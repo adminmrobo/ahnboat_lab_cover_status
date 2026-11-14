@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-14 15:25 KST",
+ "fetched_at": "2026-11-14 22:28 KST",
  "site": "https://ahnboat.xyz",
  "errors": [
   "워드프레스 REST API 읽기 실패: HTTP Error 429: Too Many Requests",
@@ -512,6 +512,32 @@
    "summary": "알고리즘들이 한자리에 모여 서로를 비교하는 특별편 3부"
   },
   {
+   "title": "하루에 다 끝내는 머신러닝 서머리 노트 · 오전반",
+   "cat": "머신러닝",
+   "mid": "개념 지도",
+   "sub": "서머리 노트",
+   "site_url": "https://adminmrobo.github.io/one_day_machine_learning/",
+   "repo_url": "https://github.com/adminmrobo/one_day_machine_learning",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "내일이 박사의 쪽지시험. 인턴 시아와 모아가 머신러닝 입문 범위를 교시로 나눠 공책에 정리합니다. 머신러닝의 뜻, 데이터 손질, 회귀, 분류까지 교시마다 쪽지시험 네 문제. 코드와 수식 없이 버튼만 눌러 따라갑니다."
+  },
+  {
+   "title": "머신러닝 연구소 · 3D로 설명하는 머신러닝",
+   "cat": "머신러닝",
+   "mid": "개념 지도",
+   "sub": "머신러닝 연구소",
+   "site_url": "https://adminmrobo.github.io/machine_learning_in_3d/",
+   "repo_url": "https://github.com/adminmrobo/machine_learning_in_3d",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "고전 머신러닝 모델 27종을 한 층씩 3D로 살펴보는 27층 건물. 머신러닝 모델 도감의 내용을 신경망 연구소와 같은 건물 틀로 옮겼고, 강사용 8차시 수업 안내가 함께 있습니다."
+  },
+  {
    "title": "Fish Market Data로 쉽게 따라하는 머신러닝",
    "cat": "머신러닝",
    "mid": "실습으로 배우기",
@@ -700,6 +726,32 @@
    "summary": ""
   },
   {
+   "title": "하루에 다 끝내는 딥러닝 서머리 노트 · 오후반",
+   "cat": "딥러닝·뇌과학",
+   "mid": "딥러닝 모델",
+   "sub": "서머리 노트",
+   "site_url": "https://adminmrobo.github.io/one_day_deep_learning/",
+   "repo_url": "https://github.com/adminmrobo/one_day_deep_learning",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "딥러닝 필기 노트 열한 장을 6교시와 종례 모의고사 열 문제로 줄였습니다. 뉴런, 활성화 함수, 역전파, 과적합, CNN, RNN, 트랜스포머까지 비전공자용. 머신러닝 서머리 노트의 자매편."
+  },
+  {
+   "title": "좌표축 위의 그릇 · 3D 지도로 본 모델 최적화",
+   "cat": "딥러닝·뇌과학",
+   "mid": "딥러닝 모델",
+   "sub": "모델 최적화",
+   "site_url": "https://adminmrobo.github.io/optimization_3d_map/",
+   "repo_url": "https://github.com/adminmrobo/optimization_3d_map",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "가중치를 좌표축으로, 오차를 높이로 놓은 3D 지도 위에서 기울기·굽음·안장점·야코비안(수학 편)과 배치·학습률·에포크(실험실 편)를 연구실 식구와 함께 보는 두 편짜리 해설."
+  },
+  {
    "title": "AI 렌더링 연구실 3부작",
    "cat": "AI 감각·생성",
    "mid": "만들어 내기",
@@ -849,6 +901,19 @@
     "ko"
    ],
    "summary": "AI 코딩 비서의 승인 기록 파일에서 비밀값이 나온 사건을 조건부확률, 베이지안 갱신, 마르코프 연쇄, 역진적 귀납법 네 칸으로 읽고, 도구 책임 대 사용자 책임 토론과 전후 투표로 우도비를 읽는 2편 시리즈."
+  },
+  {
+   "title": "왜 지금 온톨로지인가 · 연구실 리포트(동향)",
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "LLM 이해",
+   "sub": "연구실 리포트",
+   "site_url": "https://adminmrobo.github.io/ontology_trend_report/",
+   "repo_url": "https://github.com/adminmrobo/ontology_trend_report",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "AI 에이전트가 늘면서 30년 넘은 개념인 온톨로지가 다시 주목받는 현상을 발표 타임라인·표준·숫자로 정리한 리포트. 2026년 11월 13일 기준, 의견이나 전망 없이 사실 중심."
   },
   {
    "title": "인퍼런스 스터디 북 · 목차",
@@ -1682,6 +1747,32 @@
     "ko"
    ],
    "summary": "업종별 3D 공장과 동적 대시보드. 시멘트 공장 World(가마 37분 지연·병목 신호판·결정 기록)와 28일 타임머신(생산일 강도 예측 → 28일 압축 시험). AI가 제안하고 사람이 승인하는 흐름을 3D로 본다."
+  },
+  {
+   "title": "스마트 제조 연구실 · 3D로 보는 15주",
+   "cat": "강의·저서",
+   "mid": "대학 강의",
+   "sub": "스마트 제조",
+   "site_url": "https://adminmrobo.github.io/smart_product/",
+   "repo_url": "https://github.com/adminmrobo/smart_product",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "「스마트 제조」(AI212, 2026-2학기) 강의를 차시마다 다른 3D 공장과 연구실 식구들이 안내하는 해설 사이트. 코딩 없이 생성형 AI로 공장 데이터를 분석하고 현장 문서를 자동화합니다."
+  },
+  {
+   "title": "AI 회계 컨설팅 연구실 · 파이썬과 회계데이터 분석",
+   "cat": "강의·저서",
+   "mid": "대학 강의",
+   "sub": "파이썬과 회계데이터 분석",
+   "site_url": "https://adminmrobo.github.io/python-accounting-analytics/",
+   "repo_url": "https://github.com/adminmrobo/python-accounting-analytics",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "회계등식에서 출발해 매출·재고, 매입·비용, 자산·세금, 파이썬 기초, 재무상태표, 회전율, 현금흐름표와 재무비율, 관리회계까지. 대학 강의 「파이썬과 회계데이터 분석」을 3D 회계 컨설팅회사 콘셉트로 묶은 해설 시리즈."
   },
   {
    "title": "데이터 사이언티스트를 위한 베이지안 통계학",
