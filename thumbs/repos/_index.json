@@ -5,8 +5,8 @@
  },
  "ahn_boat_lab_town": {
   "src": "redraw:R019:assets/cut1_panic.webp",
-  "pushed_at": "2026-11-11T13:43:01Z",
-  "made": "2026-11-13"
+  "pushed_at": "2026-11-13T23:08:01Z",
+  "made": "2026-11-14"
  },
  "ahnboat_lab_character_add_packs": {
   "src": null,
@@ -14,7 +14,7 @@
  },
  "ahnboat_lab_explainer": {
   "src": null,
-  "pushed_at": "2026-11-11T12:32:22Z"
+  "pushed_at": "2026-11-13T22:19:53Z"
  },
  "ahnboat_lab_langpack": {
   "src": null,
@@ -23,6 +23,10 @@
  "ahnboat_lab_town_floor_b01": {
   "src": null,
   "pushed_at": "2026-10-28T10:45:21Z"
+ },
+ "ahnboat_server_room_guards": {
+  "src": null,
+  "pushed_at": "2026-11-13T22:42:35Z"
  },
  "ai-power-chain-simulator": {
   "src": null,
@@ -50,7 +54,7 @@
  },
  "ai_in_3d": {
   "src": null,
-  "pushed_at": "2026-11-12T17:51:03Z"
+  "pushed_at": "2026-11-13T18:31:24Z"
  },
  "AI_Model_Review": {
   "src": "embedded:index.html#hero",
@@ -108,8 +112,8 @@
  },
  "cnn_face_game_lab": {
   "src": "embedded:index.html",
-  "pushed_at": "2026-11-12T23:44:02Z",
-  "made": "2026-11-13"
+  "pushed_at": "2026-11-13T18:19:07Z",
+  "made": "2026-11-14"
  },
  "data_science_for_business": {
   "src": "manifest:index.html#cover_index",
@@ -185,7 +189,7 @@
  },
  "g2b-bid-strategy": {
   "src": null,
-  "pushed_at": "2026-11-12T05:22:53Z"
+  "pushed_at": "2026-11-14T00:58:49Z"
  },
  "Gen_AI_Hannam_univ": {
   "src": "embedded:index.html#hero",
@@ -331,11 +335,11 @@
  },
  "machine_learning_in_3d": {
   "src": null,
-  "pushed_at": "2026-11-13T00:09:12Z"
+  "pushed_at": "2026-11-13T09:27:53Z"
  },
  "machine_learning_model_atlas": {
   "src": null,
-  "pushed_at": "2026-11-12T01:53:30Z"
+  "pushed_at": "2026-11-13T15:55:25Z"
  },
  "markov_player": {
   "src": "name:assets/og_mk.jpg",
@@ -418,7 +422,7 @@
  },
  "neural_network_atlas": {
   "src": null,
-  "pushed_at": "2026-11-12T01:53:33Z"
+  "pushed_at": "2026-11-13T16:28:03Z"
  },
  "neuralink_animal_brain_ai": {
   "src": "manifest:assets/img/cover_index.webp",
@@ -440,15 +444,24 @@
   "pushed_at": "2026-11-12T21:54:03Z",
   "made": "2026-11-13"
  },
+ "ontology_trend_report": {
+  "src": null,
+  "pushed_at": "2026-11-13T12:15:26Z"
+ },
+ "optimization_3d_map": {
+  "src": "manifest:img/cover_index.webp",
+  "pushed_at": "2026-11-13T22:29:43Z",
+  "made": "2026-11-14"
+ },
  "probability_distribution_dictionary": {
   "src": "file:thumbs/part1.webp",
   "pushed_at": "2026-11-12T00:47:18Z",
   "made": "2026-11-13"
  },
  "python-accounting-analytics": {
-  "src": "name:pandas-cashflow-lab/assets/hero/hero.jpg",
-  "pushed_at": "2026-11-13T01:18:24Z",
-  "made": "2026-11-13"
+  "src": "name:assets/og/cover_00.jpg",
+  "pushed_at": "2026-11-13T16:15:41Z",
+  "made": "2026-11-14"
  },
  "Regression_ridge_lasso": {
   "src": "manifest:og_rg.jpg",
@@ -464,6 +477,11 @@
   "src": "manifest:cement/img/cement_cover.webp",
   "pushed_at": "2026-11-12T15:37:47Z",
   "made": "2026-11-13"
+ },
+ "smart_product": {
+  "src": "manifest:img/cover.webp",
+  "pushed_at": "2026-11-13T15:36:34Z",
+  "made": "2026-11-14"
  },
  "statistics_note_ch03_discrete-probability-distribution": {
   "src": "name:assets/og_1_1.png",

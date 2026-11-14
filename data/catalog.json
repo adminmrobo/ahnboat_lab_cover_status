@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13",
+ "updated": "2026-11-14",
  "categories": [
   {
    "name": "머신러닝",
@@ -978,6 +978,21 @@
    "thumb": "thumbs/repos/ai_text_read_ability.jpg"
   },
   {
+   "title": "기억 3부작 · LLM은 어디까지 기억할 수 있을까",
+   "summary": "시계열의 창에서 출발해 LLM의 문맥 창, 대화 압축, 바깥 저장소, 기억 돌보기, 기억 토큰까지 넓혀 가는 3부 18편의 연구실 해설 시리즈. 시계열 3부작의 후속.",
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "LLM 이해",
+   "sub": "LLM 기억",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/llm_memory_trilogy",
+   "site_url": "https://adminmrobo.github.io/llm_memory_trilogy/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "https://adminmrobo.github.io/llm_memory_trilogy/assets/img/cover_index.webp"
+  },
+  {
    "title": "AI 점수는 무엇을 잰 것일까",
    "summary": "",
    "cat": "LLM·추론 엔지니어링",
@@ -1028,21 +1043,6 @@
    "kind": "repo",
    "repo_url": "https://github.com/adminmrobo/agent_secret_leak_lab",
    "site_url": "https://adminmrobo.github.io/agent_secret_leak_lab/",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": ""
-  },
-  {
-   "title": "기억 3부작 · LLM은 어디까지 기억할 수 있을까",
-   "summary": "시계열의 창에서 출발해 LLM의 문맥 창, 대화 압축, 바깥 저장소, 기억 돌보기, 기억 토큰까지 넓혀 가는 3부 18편의 연구실 해설 시리즈. 시계열 3부작의 후속.",
-   "cat": "LLM·추론 엔지니어링",
-   "mid": "LLM 이해",
-   "sub": "LLM 기억",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/llm_memory_trilogy",
-   "site_url": "https://adminmrobo.github.io/llm_memory_trilogy/",
    "link": "",
    "langs": [
     "ko"
@@ -1610,6 +1610,21 @@
    "thumb": ""
   },
   {
+   "title": "초보자도 쉽게 따라하는 DB 환경 설치",
+   "summary": "MariaDB, PostgreSQL, Orange를 Windows에 차례로 설치하고 접속까지 확인하는 초보자용 해설. 미션 3개, 실험 2개, 접속 연습 2개, 퀴즈 9문항과 강의 슬라이드.",
+   "cat": "통계·데이터 기초",
+   "mid": "프로그래밍",
+   "sub": "데이터베이스",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/how_to_start_db",
+   "site_url": "https://adminmrobo.github.io/how_to_start_db/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": ""
+  },
+  {
    "title": "보면서 배우는 pandas",
    "summary": "보면서 배우는 pandas — 카페·편의점·쇼핑몰 장부로 보는 명령어 72장. 표가 단계별로 움직이는 그림과 Colab 코드로 익힌다.",
    "cat": "통계·데이터 기초",
@@ -1638,21 +1653,6 @@
     "ko"
    ],
    "thumb": "thumbs/repos/learn-python-by-doing_Korean.jpg"
-  },
-  {
-   "title": "초보자도 쉽게 따라하는 DB 환경 설치",
-   "summary": "MariaDB, PostgreSQL, Orange를 Windows에 차례로 설치하고 접속까지 확인하는 초보자용 해설. 미션 3개, 실험 2개, 접속 연습 2개, 퀴즈 9문항과 강의 슬라이드.",
-   "cat": "통계·데이터 기초",
-   "mid": "프로그래밍",
-   "sub": "데이터베이스",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/how_to_start_db",
-   "site_url": "https://adminmrobo.github.io/how_to_start_db/",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": ""
   },
   {
    "title": "시계열 3부작 · ARIMA와 LSTM",
