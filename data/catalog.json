@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14",
+ "updated": "2026-11-15",
  "categories": [
   {
    "name": "머신러닝",
@@ -568,6 +568,21 @@
    "thumb": ""
   },
   {
+   "title": "머신러닝 연구소 · 3D로 설명하는 머신러닝",
+   "summary": "고전 머신러닝 모델 27종을 한 층씩 3D로 살펴보는 27층 건물. 머신러닝 모델 도감의 내용을 신경망 연구소와 같은 건물 틀로 옮겼고, 강사용 8차시 수업 안내가 함께 있습니다.",
+   "cat": "머신러닝",
+   "mid": "개념 지도",
+   "sub": "머신러닝 연구소",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/machine_learning_in_3d",
+   "site_url": "https://adminmrobo.github.io/machine_learning_in_3d/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": ""
+  },
+  {
    "title": "모델 채용 위원회 2차 공채 · 딥러닝",
    "summary": "1차 공채로 뽑은 직원들이 일하는 공장에 새 스캐너가 들어왔다. 숫자가 한 칸씩 밀리자 선배들의 점수가 무너진다. 신경망 지원자 열다섯 명을 위한 2차 공고와 딥러닝 치트시트 11칸(인공 뉴런·활성화 함수·순전파·손실·역전파·최적화·대표 구조·규제·학습 곡선·평가 지표·하이퍼파라미터), 두 줄 합격선과 재시험 규칙. 모델 채용 위원회 2차 공채 6-0.",
    "cat": "머신러닝",
@@ -607,6 +622,21 @@
     "ru"
    ],
    "thumb": "thumbs/repos/ML_model_hiring_committee.jpg"
+  },
+  {
+   "title": "하루에 다 끝내는 머신러닝 서머리 노트 · 오전반",
+   "summary": "내일이 박사의 쪽지시험. 인턴 시아와 모아가 머신러닝 입문 범위를 교시로 나눠 공책에 정리합니다. 머신러닝의 뜻, 데이터 손질, 회귀, 분류까지 교시마다 쪽지시험 네 문제. 코드와 수식 없이 버튼만 눌러 따라갑니다.",
+   "cat": "머신러닝",
+   "mid": "개념 지도",
+   "sub": "서머리 노트",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/one_day_machine_learning",
+   "site_url": "https://adminmrobo.github.io/one_day_machine_learning/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/one_day_machine_learning.jpg"
   },
   {
    "title": "알고리즘 패밀리 1부 · 가계도",
@@ -667,36 +697,6 @@
     "ru"
    ],
    "thumb": "thumbs/repos/ML_00_Algorithm-family-build_03.jpg"
-  },
-  {
-   "title": "하루에 다 끝내는 머신러닝 서머리 노트 · 오전반",
-   "summary": "내일이 박사의 쪽지시험. 인턴 시아와 모아가 머신러닝 입문 범위를 교시로 나눠 공책에 정리합니다. 머신러닝의 뜻, 데이터 손질, 회귀, 분류까지 교시마다 쪽지시험 네 문제. 코드와 수식 없이 버튼만 눌러 따라갑니다.",
-   "cat": "머신러닝",
-   "mid": "개념 지도",
-   "sub": "서머리 노트",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/one_day_machine_learning",
-   "site_url": "https://adminmrobo.github.io/one_day_machine_learning/",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "thumbs/repos/one_day_machine_learning.jpg"
-  },
-  {
-   "title": "머신러닝 연구소 · 3D로 설명하는 머신러닝",
-   "summary": "고전 머신러닝 모델 27종을 한 층씩 3D로 살펴보는 27층 건물. 머신러닝 모델 도감의 내용을 신경망 연구소와 같은 건물 틀로 옮겼고, 강사용 8차시 수업 안내가 함께 있습니다.",
-   "cat": "머신러닝",
-   "mid": "개념 지도",
-   "sub": "머신러닝 연구소",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/machine_learning_in_3d",
-   "site_url": "https://adminmrobo.github.io/machine_learning_in_3d/",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": ""
   },
   {
    "title": "Fish Market Data로 쉽게 따라하는 머신러닝",
@@ -866,6 +866,36 @@
    "thumb": ""
   },
   {
+   "title": "좌표축 위의 그릇 · 3D 지도로 본 모델 최적화",
+   "summary": "가중치를 좌표축으로, 오차를 높이로 놓은 3D 지도 위에서 기울기·굽음·안장점·야코비안(수학 편)과 배치·학습률·에포크(실험실 편)를 연구실 식구와 함께 보는 두 편짜리 해설.",
+   "cat": "딥러닝·뇌과학",
+   "mid": "딥러닝 모델",
+   "sub": "모델 최적화",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/optimization_3d_map",
+   "site_url": "https://adminmrobo.github.io/optimization_3d_map/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/optimization_3d_map.jpg"
+  },
+  {
+   "title": "하루에 다 끝내는 딥러닝 서머리 노트 · 오후반",
+   "summary": "딥러닝 필기 노트 열한 장을 6교시와 종례 모의고사 열 문제로 줄였습니다. 뉴런, 활성화 함수, 역전파, 과적합, CNN, RNN, 트랜스포머까지 비전공자용. 머신러닝 서머리 노트의 자매편.",
+   "cat": "딥러닝·뇌과학",
+   "mid": "딥러닝 모델",
+   "sub": "서머리 노트",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/one_day_deep_learning",
+   "site_url": "https://adminmrobo.github.io/one_day_deep_learning/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/one_day_deep_learning.jpg"
+  },
+  {
    "title": "신경망 연구소 · 3D로 설명하는 AI",
    "summary": "신경망 27종을 한 층씩 3D로 살펴보는 27층 건물. 쉬운 것부터 어려운 것 순으로 층을 놓았고, 돌려 보고 값을 바꿔 보며 읽습니다. 로비에는 AI 뒤에 있는 수학.",
    "cat": "딥러닝·뇌과학",
@@ -909,36 +939,6 @@
     "ko"
    ],
    "thumb": "thumbs/repos/what_is_tensor.jpg"
-  },
-  {
-   "title": "하루에 다 끝내는 딥러닝 서머리 노트 · 오후반",
-   "summary": "딥러닝 필기 노트 열한 장을 6교시와 종례 모의고사 열 문제로 줄였습니다. 뉴런, 활성화 함수, 역전파, 과적합, CNN, RNN, 트랜스포머까지 비전공자용. 머신러닝 서머리 노트의 자매편.",
-   "cat": "딥러닝·뇌과학",
-   "mid": "딥러닝 모델",
-   "sub": "서머리 노트",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/one_day_deep_learning",
-   "site_url": "https://adminmrobo.github.io/one_day_deep_learning/",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "thumbs/repos/one_day_deep_learning.jpg"
-  },
-  {
-   "title": "좌표축 위의 그릇 · 3D 지도로 본 모델 최적화",
-   "summary": "가중치를 좌표축으로, 오차를 높이로 놓은 3D 지도 위에서 기울기·굽음·안장점·야코비안(수학 편)과 배치·학습률·에포크(실험실 편)를 연구실 식구와 함께 보는 두 편짜리 해설.",
-   "cat": "딥러닝·뇌과학",
-   "mid": "딥러닝 모델",
-   "sub": "모델 최적화",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/optimization_3d_map",
-   "site_url": "https://adminmrobo.github.io/optimization_3d_map/",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "thumbs/repos/optimization_3d_map.jpg"
   },
   {
    "title": "AI 렌더링 연구실 3부작",
@@ -2080,6 +2080,21 @@
    "thumb": "thumbs/repos/Gen_AI_strategy_ch06.jpg"
   },
   {
+   "title": "스마트 제조 연구실 · 3D로 보는 15주",
+   "summary": "「스마트 제조」(AI212, 2026-2학기) 강의를 차시마다 다른 3D 공장과 연구실 식구들이 안내하는 해설 사이트. 코딩 없이 생성형 AI로 공장 데이터를 분석하고 현장 문서를 자동화합니다.",
+   "cat": "강의·저서",
+   "mid": "대학 강의",
+   "sub": "스마트 제조",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/smart_product",
+   "site_url": "https://adminmrobo.github.io/smart_product/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/smart_product.jpg"
+  },
+  {
    "title": "AI를 활용한 시멘트 공정 최적화 · 강의 목차",
    "summary": "시멘트 공장의 데이터로 품질을 미리 맞히고, 그 답을 믿어도 되는지 따지고, 단가를 붙여 가장 알맞은 운전을 찾는 강의의 주차별 해설 목록. 예측, 검증, 설명가능 AI, 원가 최적화, 시계열 소프트센서, 위험 기반 의사결정.",
    "cat": "강의·저서",
@@ -2134,21 +2149,6 @@
     "ko"
    ],
    "thumb": "thumbs/repos/smart_factory_world.jpg"
-  },
-  {
-   "title": "스마트 제조 연구실 · 3D로 보는 15주",
-   "summary": "「스마트 제조」(AI212, 2026-2학기) 강의를 차시마다 다른 3D 공장과 연구실 식구들이 안내하는 해설 사이트. 코딩 없이 생성형 AI로 공장 데이터를 분석하고 현장 문서를 자동화합니다.",
-   "cat": "강의·저서",
-   "mid": "대학 강의",
-   "sub": "스마트 제조",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/smart_product",
-   "site_url": "https://adminmrobo.github.io/smart_product/",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "thumbs/repos/smart_product.jpg"
   },
   {
    "title": "AI 회계 컨설팅 연구실 · 파이썬과 회계데이터 분석",

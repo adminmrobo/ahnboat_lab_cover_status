@@ -5,8 +5,8 @@
  },
  "ahn_boat_lab_town": {
   "src": "redraw:R019:assets/cut1_panic.webp",
-  "pushed_at": "2026-11-13T23:08:01Z",
-  "made": "2026-11-14"
+  "pushed_at": "2026-11-14T05:09:06Z",
+  "made": "2026-11-15"
  },
  "ahnboat_lab_character_add_packs": {
   "src": null,
@@ -26,7 +26,7 @@
  },
  "ahnboat_server_room_guards": {
   "src": null,
-  "pushed_at": "2026-11-13T22:42:35Z"
+  "pushed_at": "2026-11-14T05:09:03Z"
  },
  "ai-power-chain-simulator": {
   "src": null,
@@ -54,7 +54,7 @@
  },
  "ai_in_3d": {
   "src": null,
-  "pushed_at": "2026-11-13T18:31:24Z"
+  "pushed_at": "2026-11-14T05:20:00Z"
  },
  "AI_Model_Review": {
   "src": "embedded:index.html#hero",
@@ -161,7 +161,7 @@
  },
  "drug-crime-social-cost": {
   "src": null,
-  "pushed_at": "2026-11-09T07:26:05Z"
+  "pushed_at": "2026-11-14T09:31:49Z"
  },
  "fintech_business_01_payment": {
   "src": null,
@@ -184,12 +184,12 @@
  },
  "fruitfly-lab-expressions": {
   "src": "file:.thumbnail.jpg",
-  "pushed_at": "2026-11-12T15:35:42Z",
-  "made": "2026-11-13"
+  "pushed_at": "2026-11-14T12:00:21Z",
+  "made": "2026-11-15"
  },
  "g2b-bid-strategy": {
   "src": null,
-  "pushed_at": "2026-11-14T00:58:49Z"
+  "pushed_at": "2026-11-15T00:00:06Z"
  },
  "Gen_AI_Hannam_univ": {
   "src": "embedded:index.html#hero",
@@ -220,6 +220,11 @@
   "src": null,
   "pushed_at": "2025-12-07T14:22:07Z"
  },
+ "how_to_make_ai_model_factory_version": {
+  "src": "manifest:img/cover_01.webp",
+  "pushed_at": "2026-11-14T12:07:01Z",
+  "made": "2026-11-15"
+ },
  "how_to_start_db": {
   "src": null,
   "pushed_at": "2026-11-13T00:07:14Z"
@@ -231,8 +236,8 @@
  },
  "inference_engineering_study": {
   "src": "manifest:cover_factory.jpg",
-  "pushed_at": "2026-11-12T18:09:49Z",
-  "made": "2026-11-13"
+  "pushed_at": "2026-11-14T17:07:41Z",
+  "made": "2026-11-15"
  },
  "inference_engineering_study_week_01_article_01": {
   "src": "redraw:R037:images/sc_lb_hero.png",
@@ -279,7 +284,7 @@
  },
  "inference_korea_study_page": {
   "src": null,
-  "pushed_at": "2026-10-31T09:39:49Z"
+  "pushed_at": "2026-11-14T12:10:38Z"
  },
  "insurtech__case_classification_model_01": {
   "src": "redraw:R045:assets/hero.webp",
