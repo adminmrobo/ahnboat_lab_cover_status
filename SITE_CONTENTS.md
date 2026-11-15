@@ -2,9 +2,9 @@
 
 ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전·오후 자동으로 다시 만들고, Actions에서 수동으로도 돌릴 수 있습니다.
 
-- 갱신: **2026-11-14 22:28 KST**
+- 갱신: **2026-11-15 15:34 KST**
 - 홈페이지 글 32 · 페이지 0
-- GitHub 해설 콘텐츠 106 · 포트폴리오 10 · 일정 18
+- GitHub 해설 콘텐츠 110 · 포트폴리오 10 · 일정 18
 - 기계용 원본: `data/site_contents.json`
 
 > ⚠ 이번에 읽지 못한 곳
@@ -60,13 +60,13 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | 제목 | 중분류 | 주소 | 언어 |
 |---|---|---|---|
 | 머신러닝 모델 도감 · 엣센스 | 개념 지도 / 머신러닝 모델 도감 | https://adminmrobo.github.io/machine_learning_model_atlas/ | ko |
+| 머신러닝 연구소 · 3D로 설명하는 머신러닝 | 개념 지도 / 머신러닝 연구소 | https://adminmrobo.github.io/machine_learning_in_3d/ | ko |
 | 모델 채용 위원회 2차 공채 · 딥러닝 | 개념 지도 / 모델 채용 위원회 | https://adminmrobo.github.io/DL_model_hiring_committee/ | ko en zh ja uz ru vi |
 | 모델 채용 위원회 1차 공채 · 머신러닝 | 개념 지도 / 모델 채용 위원회 | https://adminmrobo.github.io/ML_model_hiring_committee/ | ko en zh ja uz ru |
+| 하루에 다 끝내는 머신러닝 서머리 노트 · 오전반 | 개념 지도 / 서머리 노트 | https://adminmrobo.github.io/one_day_machine_learning/ | ko |
 | 알고리즘 패밀리 1부 · 가계도 | 개념 지도 / 알고리즘 패밀리 | https://adminmrobo.github.io/ML_00_Algorithm-family-build_01/ | ko en zh ja uz ru |
 | 알고리즘 패밀리 2부 · 조직원 명부 | 개념 지도 / 알고리즘 패밀리 | https://adminmrobo.github.io/ML_00_Algorithm-family-build_02/ | ko en zh ja uz ru |
 | 알고리즘 패밀리 3부 · 가문 회합 | 개념 지도 / 알고리즘 패밀리 | https://adminmrobo.github.io/ML_00_Algorithm-family-build_03/ | ko en zh ja uz ru |
-| 하루에 다 끝내는 머신러닝 서머리 노트 · 오전반 | 개념 지도 / 서머리 노트 | https://adminmrobo.github.io/one_day_machine_learning/ | ko |
-| 머신러닝 연구소 · 3D로 설명하는 머신러닝 | 개념 지도 / 머신러닝 연구소 | https://adminmrobo.github.io/machine_learning_in_3d/ | ko |
 | Fish Market Data로 쉽게 따라하는 머신러닝 | 실습으로 배우기 / Fish Market 머신러닝 | https://adminmrobo.github.io/Fish_Market_Data_Machine_Learning/ | ko en zh ja uz ru |
 | Fish Market 연구실 · 머신러닝 핵심 개념 2 | 실습으로 배우기 / Fish Market 머신러닝 | https://adminmrobo.github.io/fish_market_learning_epoch_etc/ | ko |
 | 평소와 다른 한 건 찾기 · 이상 탐지의 다섯 도구 | 실습으로 배우기 / 이상 탐지 | https://adminmrobo.github.io/Anomaly_detection_tatics/ | ko en zh ja uz ru vi |
@@ -81,11 +81,11 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | 초파리 연구실의 딥러닝 A to Z | 딥러닝 모델 / 딥러닝 A to Z | https://adminmrobo.github.io/AI_Model_Review/ | ko en zh ja uz ru |
 | 신경망은 틀리면서 배운다 | 딥러닝 모델 / 딥러닝 A to Z | https://adminmrobo.github.io/deep_learning_00_neural_net_learns/ | ko en zh ja uz ru |
 | 신경망 구조 도감 · 초파리 로봇 대전 | 딥러닝 모델 / 딥러닝 A to Z | https://adminmrobo.github.io/neural_network_atlas/ | ko en zh ja uz ru vi |
+| 좌표축 위의 그릇 · 3D 지도로 본 모델 최적화 | 딥러닝 모델 / 모델 최적화 | https://adminmrobo.github.io/optimization_3d_map/ | ko |
+| 하루에 다 끝내는 딥러닝 서머리 노트 · 오후반 | 딥러닝 모델 / 서머리 노트 | https://adminmrobo.github.io/one_day_deep_learning/ | ko |
 | 신경망 연구소 · 3D로 설명하는 AI | 딥러닝 모델 / 신경망 연구소 | https://adminmrobo.github.io/ai_in_3d/ | ko |
 | 역전파 연구실 · 손잡이 33개를 한 번에 돌리는 법 | 딥러닝 모델 / 역전파 연구실 | https://adminmrobo.github.io/backprop_lab/ | ko |
 | 텐서 연구실 | 딥러닝 모델 / 텐서 연구실 | https://adminmrobo.github.io/what_is_tensor/ | ko |
-| 하루에 다 끝내는 딥러닝 서머리 노트 · 오후반 | 딥러닝 모델 / 서머리 노트 | https://adminmrobo.github.io/one_day_deep_learning/ | ko |
-| 좌표축 위의 그릇 · 3D 지도로 본 모델 최적화 | 딥러닝 모델 / 모델 최적화 | https://adminmrobo.github.io/optimization_3d_map/ | ko |
 
 ### AI 감각·생성 (5)
 
@@ -97,7 +97,7 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | 얼굴 알아맞히기 게임 · 20챕터로 배우는 CNN | 보고 알아보기 / 이미지 인식 | https://adminmrobo.github.io/cnn_face_game_lab/ | ko |
 | AI 글 읽기 어려움 | 읽고 이해하기 / AI 글 읽기 | https://adminmrobo.github.io/ai_text_read_ability/ | ko en zh ja uz ru vi |
 
-### LLM·추론 엔지니어링 (14)
+### LLM·추론 엔지니어링 (18)
 
 | 제목 | 중분류 | 주소 | 언어 |
 |---|---|---|---|
@@ -106,15 +106,19 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | rule base에서 일하는 AI까지 | LLM 이해 / rule base에서 에이전트까지 | https://adminmrobo.github.io/rulebase_to_agent/ | ko en zh ja uz ru vi |
 | 확률로 읽는 보안 사건 · 승인 기록 유출 | LLM 이해 / 에이전트 보안 | https://adminmrobo.github.io/agent_secret_leak_lab/ | ko |
 | 왜 지금 온톨로지인가 · 연구실 리포트(동향) | LLM 이해 / 연구실 리포트 | https://adminmrobo.github.io/ontology_trend_report/ | ko |
-| 인퍼런스 스터디 북 · 목차 | 추론 엔지니어링 스터디 / 추론 엔지니어링 스터디 | https://adminmrobo.github.io/inference_engineering_study/ | ko en zh ja uz ru vi |
-| 1주차 논문 · 라이브벤치 | 추론 엔지니어링 스터디 / 추론 엔지니어링 스터디 | https://adminmrobo.github.io/inference_engineering_study/week_01_article_01/ | ko |
-| 1주차 교재 1장 · 시작 전에 정할 것 | 추론 엔지니어링 스터디 / 추론 엔지니어링 스터디 | https://adminmrobo.github.io/inference_engineering_study/week_01_textbook_ch01/ | ko |
-| 2주차 논문 해설 | 추론 엔지니어링 스터디 / 추론 엔지니어링 스터디 | https://adminmrobo.github.io/inference_engineering_study/week_02_article_01/ | ko en zh ja uz ru vi |
-| 2주차 교재 2장 앞부분 | 추론 엔지니어링 스터디 / 추론 엔지니어링 스터디 | https://adminmrobo.github.io/inference_engineering_study/week_02_textbook_ch02_p1_p2/ | ko en zh ja uz ru vi |
-| 3주차 교재 2장 뒷부분 · 병목을 찾아라 | 추론 엔지니어링 스터디 / 추론 엔지니어링 스터디 | https://adminmrobo.github.io/inference_engineering_study/week_03_textbook_ch02_p3_to_end/ | ko |
-| 병목을 찾아라 · 발표 자료 | 추론 엔지니어링 스터디 / 추론 엔지니어링 스터디 | https://adminmrobo.github.io/inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide/ | ko |
-| 3주차 논문 해설 | 추론 엔지니어링 스터디 / 추론 엔지니어링 스터디 | https://adminmrobo.github.io/inference_engineering_study/week_03_article_01/ | ko |
-| Inference Korea 스터디 보드 | 추론 엔지니어링 스터디 / 추론 엔지니어링 스터디 | https://adminmrobo.github.io/inference_korea_study_page/ | ko en zh |
+| 목차 · 인퍼런스 스터디 북 | 추론 엔지니어링 스터디 / 스터디 북 · 보드 | https://adminmrobo.github.io/inference_engineering_study/ | ko en zh ja ru uz vi |
+| 스터디 보드 · Inference Korea | 추론 엔지니어링 스터디 / 스터디 북 · 보드 | https://adminmrobo.github.io/inference_korea_study_page/ | ko en zh |
+| 서문 · 추론은 이제 모두의 일 | 추론 엔지니어링 스터디 / 1장 · 시작 전에 정할 것 (서문·0장 포함) | https://adminmrobo.github.io/inference_engineering_study/week_01_textbook_preface/ | ko |
+| 0장 · 추론이란 무엇인가 | 추론 엔지니어링 스터디 / 1장 · 시작 전에 정할 것 (서문·0장 포함) | https://adminmrobo.github.io/inference_engineering_study/week_01_textbook_ch00/ | ko |
+| 1장 · 시작 전에 정할 것 | 추론 엔지니어링 스터디 / 1장 · 시작 전에 정할 것 (서문·0장 포함) | https://adminmrobo.github.io/inference_engineering_study/week_01_textbook_ch01/ | ko |
+| 1장 논문 · 라이브벤치 (LiveBench) | 추론 엔지니어링 스터디 / 1장 · 시작 전에 정할 것 (서문·0장 포함) | https://adminmrobo.github.io/inference_engineering_study/week_01_article_01/ | ko |
+| 2장 전반 · 모델 속 들여다보기 | 추론 엔지니어링 스터디 / 2장 · 모델 | https://adminmrobo.github.io/inference_engineering_study/week_02_textbook_ch02_p1_p2/ | ko en zh ja ru uz vi |
+| 2장 논문 · 트랜스포머 (Transformer) | 추론 엔지니어링 스터디 / 2장 · 모델 | https://adminmrobo.github.io/inference_engineering_study/week_02_article_01/ | ko en zh ja ru uz vi |
+| 2장 후반 · 병목을 찾아라 | 추론 엔지니어링 스터디 / 2장 · 모델 | https://adminmrobo.github.io/inference_engineering_study/week_03_textbook_ch02_p3_to_end/ | ko |
+| 2장 논문 · 번개 어텐션 (FlashAttention) | 추론 엔지니어링 스터디 / 2장 · 모델 | https://adminmrobo.github.io/inference_engineering_study/week_03_article_01/ | ko |
+| 3장 · GPU 기계실 | 추론 엔지니어링 스터디 / 3장 · 하드웨어 | https://adminmrobo.github.io/inference_engineering_study/week_04_textbook_ch03/ | ko |
+| 3장 논문 · 루프라인 (Roofline) | 추론 엔지니어링 스터디 / 3장 · 하드웨어 | https://adminmrobo.github.io/inference_engineering_study/week_04_article_01/ | ko |
+| 2장 후반 발표 · 병목을 찾아라 | 추론 엔지니어링 스터디 / 부록 · 발표 자료 | https://adminmrobo.github.io/inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide/ | ko |
 
 ### 논문 해설 (12)
 
@@ -181,11 +185,11 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | 생성형 AI 활용전략 · 중간고사 시뮬레이션 | 대학 강의 / 생성형AI활용전략 | https://adminmrobo.github.io/Gen_AI_Hannam_univ/ | ko |
 | 생성형 AI 활용전략 5장 | 대학 강의 / 생성형AI활용전략 | https://adminmrobo.github.io/Gen_AI_strategy_ch05/ | ko |
 | 생성형 AI 활용전략 6장 | 대학 강의 / 생성형AI활용전략 | https://adminmrobo.github.io/Gen_AI_strategy_ch06/ | ko |
+| 스마트 제조 연구실 · 3D로 보는 15주 | 대학 강의 / 스마트 제조 | https://adminmrobo.github.io/smart_product/ | ko |
 | AI를 활용한 시멘트 공정 최적화 · 강의 목차 | 대학 강의 / 시멘트 공정 AI | https://adminmrobo.github.io/AI_for_cement_produce/ | ko |
 | 시멘트 품질, AI로 미리 본다 | 대학 강의 / 시멘트 공정 AI | https://adminmrobo.github.io/ai_for_cement_produce_07/ |  |
 | 시멘트 공정 AI · 설명가능 AI와 원가 최적화 | 대학 강의 / 시멘트 공정 AI | https://adminmrobo.github.io/ai_for_cement_produce_08/ |  |
 | 스마트 팩토리 World · 시멘트 제조업 | 대학 강의 / 시멘트 공정 AI | https://adminmrobo.github.io/smart_factory_world/ | ko |
-| 스마트 제조 연구실 · 3D로 보는 15주 | 대학 강의 / 스마트 제조 | https://adminmrobo.github.io/smart_product/ | ko |
 | AI 회계 컨설팅 연구실 · 파이썬과 회계데이터 분석 | 대학 강의 / 파이썬과 회계데이터 분석 | https://adminmrobo.github.io/python-accounting-analytics/ | ko |
 | 데이터 사이언티스트를 위한 베이지안 통계학 | 외부_콘텐츠 / 이러닝 | https://adminmrobo.github.io/bayesian-statistics-for-data-scientists/ | ko |
 | 핀테크 데이터분석 기초 (이러닝) | 외부_콘텐츠 / 이러닝 | https://link.step.or.kr/brqEyc |  |
