@@ -68,6 +68,13 @@ h2.sec{margin:0 0 4px;font-size:clamp(20px,3vw,26px)}
 .btn{font:inherit;font-size:13.5px;font-weight:700;text-decoration:none;border-radius:8px;padding:6px 12px;border:1px solid var(--c);background:var(--c);color:#fff}
 .btn.ghost{background:transparent;color:var(--ink);border-color:var(--rule);font-weight:500}
 .note{font-size:12.5px;color:var(--muted)}
+.chaps{border-top:1px dashed var(--rule);padding-top:6px;margin-top:2px;font-size:13px}
+.chaps summary{cursor:pointer;font-weight:700;color:var(--ink);list-style:revert}
+.chaps ol{margin:6px 0 0;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:5px;max-height:260px;overflow:auto}
+.chaps li a{font-weight:700;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--c)}
+.chaps li .no{font-family:var(--mono);font-size:11.5px;color:var(--c);margin-right:5px}
+.chaps li p{margin:1px 0 0;color:var(--muted);font-size:12.5px;-webkit-line-clamp:2}
+.chaps .next{margin:6px 0 0;color:var(--muted);font-size:12px}
 .soon{font-size:12.5px;color:var(--muted);border:1px dashed var(--rule);border-radius:8px;padding:5px 10px}
 .err{color:#b3402a}
 footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
@@ -326,6 +333,14 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
     var b=el('div','cbody');
     b.appendChild(el('h3','',T(i.title)));
     if(i.summary)b.appendChild(el('p','',T(i.summary)));
+    if(i.series&&i.series.chapters&&i.series.chapters.length){  /* 시리즈물: 공개된 챕터만 소개 */
+      var sr=i.series,dt=el('details','chaps'),sm=el('summary','',T('시리즈 · {0}장 공개',sr.open)+(sr.total>sr.open?' / '+T('전체 {0}장',sr.total):''));
+      dt.appendChild(sm);var ol=el('ol');
+      sr.chapters.forEach(function(ch){var li=el('li');if(ch.no)li.appendChild(el('span','no',/^\d+$/.test(ch.no)?String(ch.no).padStart(2,'0'):ch.no));
+        var ca=el('a','',T(ch.title));ca.href=ch.url;ca.target='_blank';ca.rel='noopener';gcTag(ca,{repo_url:i.repo_url,title:ch.title});li.appendChild(ca);
+        if(ch.summary)li.appendChild(el('p','',T(ch.summary)));ol.appendChild(li);});
+      dt.appendChild(ol);if(sr.next)dt.appendChild(el('p','next',T('다음 장 공개 예정 {0}',sr.next)));
+      dt.addEventListener('toggle',function(){post();});b.appendChild(dt);}
     var meta=el('div','meta');
     if(i.langs&&i.langs.length>1)meta.appendChild(el('span','',T('{0}개 언어',i.langs.length)));
     if(i.site_url&&i.kind!=='portfolio'&&!LK[1])meta.appendChild(el('span','kol',T('한국어 페이지')));

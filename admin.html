@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>콘텐츠 관리실 · ahnboat lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+:root{
+  --bg:#ffffff; --panel:#ffffff; --soft:#f6f5f1; --ink:#1f2224; --muted:#5f6663; --rule:#dcd8cf;
+  --mint:#1f9e66; --mint-soft:#d9f2e6; --blue:#2f5f9e; --blue-soft:#dde7f5;
+  --amber:#8a6a10; --amber-soft:#f4ebcd; --red:#b3402a; --red-soft:#f6e1db; --gray-soft:#ebe8e2; --violet:#6a4fb3; --violet-soft:#ebe5f7;
+  --font:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace; color-scheme:light;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--font);font-size:14.5px;line-height:1.5;margin:0;word-break:keep-all}
+a{color:var(--blue)}
+.wrap{max-width:1400px;margin:0 auto;padding:0 16px 60px}
+header.site{padding:22px 0 10px;display:flex;align-items:flex-end;justify-content:space-between;gap:12px;flex-wrap:wrap;border-bottom:1px solid var(--rule)}
+h1{margin:0;font-size:26px}
+h2{margin:0 0 8px;font-size:17px}
+.lede{margin:4px 0 0;color:var(--muted)}
+.links{display:flex;gap:12px;font-size:13px;flex-wrap:wrap}
+button,select,input,textarea{font:inherit;color:var(--ink)}
+button{cursor:pointer;background:var(--panel);border:1px solid var(--rule);border-radius:8px;padding:6px 12px}
+button:hover{border-color:var(--ink)}
+button.pri{background:var(--mint);border-color:var(--mint);color:#fff;font-weight:700}
+button.pri:disabled{opacity:.5;cursor:default}
+button.warn{color:var(--red)}
+button.sm{padding:2px 8px;font-size:12.5px}
+input[type=text],input[type=password],input[type=date],input[type=number],select,textarea{background:#fff;border:1px solid var(--rule);border-radius:7px;padding:5px 8px;min-width:0}
+textarea{width:100%;resize:vertical}
+.card{background:var(--panel);border:1px solid var(--rule);border-radius:14px;padding:20px;margin-top:20px}
+#gate{max-width:520px;margin:60px auto 0}
+#gate form{display:flex;gap:8px;margin-top:12px}
+#gate input{flex:1}
+.msg{min-height:1.5em;margin-top:8px;font-size:13.5px}
+.msg.err{color:var(--red)} .msg.ok{color:var(--mint)}
+.setup label{display:block;margin-top:12px;font-weight:700;font-size:13.5px}
+.setup input{width:100%;margin-top:4px}
+.setup small,.hint{color:var(--muted);font-size:12.5px;display:block;margin-top:3px}
+.hidden{display:none!important}
+/* 작업 화면 */
+.bar{position:sticky;top:0;z-index:5;background:var(--bg);padding:12px 0;border-bottom:1px solid var(--rule);display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.bar .grp{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.bar .grow{flex:1}
+.basebox{background:var(--amber-soft);border-radius:10px;padding:6px 10px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.basebox b{font-size:13px}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0}
+.chip{border:1px solid var(--rule);border-radius:99px;padding:2px 10px;font-size:12.5px;background:var(--soft);cursor:pointer}
+.chip.on{border-color:var(--ink);background:var(--ink);color:#fff}
+.chip b{font-family:var(--mono)}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th,td{border-bottom:1px solid var(--rule);padding:6px 6px;text-align:left;vertical-align:top}
+th{background:var(--soft);font-size:12.5px;color:var(--muted);white-space:nowrap}
+tr.dirty td:first-child{box-shadow:inset 3px 0 0 var(--amber)}
+tr.main:hover{background:#fbfaf7}
+td.ttl{min-width:220px}
+td.ttl .t{font-weight:700}
+td.ttl .r{font-family:var(--mono);font-size:11.5px;color:var(--muted);word-break:break-all}
+td.cat{font-size:12.5px;color:var(--muted);min-width:140px}
+td input[type=date]{width:140px}
+td input.ord{width:56px}
+.st{display:inline-block;border-radius:6px;padding:1px 7px;font-size:12px;font-weight:700;white-space:nowrap}
+.st.on{background:var(--mint-soft);color:var(--mint)} .st.res{background:var(--blue-soft);color:var(--blue)}
+.st.off{background:var(--gray-soft);color:var(--muted)} .st.rev{background:var(--amber-soft);color:var(--amber)}
+.st.warn{background:var(--red-soft);color:var(--red)} .st.ser{background:var(--violet-soft);color:var(--violet)}
+.chapbox td{background:#fbfaf7}
+.chapbox .inner{border-left:3px solid var(--violet);padding:4px 0 8px 12px}
+.chapbox table th{position:static;background:transparent}
+.chapbox input[type=text]{width:100%}
+.chapbox .tools{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:6px 0}
+/* 편집 서랍 */
+#drawer{position:fixed;top:0;right:0;bottom:0;width:min(560px,100%);background:#fff;border-left:1px solid var(--rule);box-shadow:-8px 0 24px rgba(0,0,0,.08);z-index:20;overflow:auto;padding:20px;transform:translateX(105%);transition:transform .18s}
+#drawer.open{transform:none}
+#drawer label{display:block;font-size:12.5px;font-weight:700;color:var(--muted);margin-top:10px}
+#drawer label input,#drawer label select{width:100%;margin-top:3px}
+#drawer .row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+#drawer .row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+#drawer .act{display:flex;gap:8px;margin-top:16px;justify-content:space-between}
+#toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:var(--ink);color:#fff;border-radius:10px;padding:10px 16px;font-size:13.5px;z-index:30;max-width:90vw;opacity:0;pointer-events:none;transition:opacity .2s}
+#toast.show{opacity:1;pointer-events:auto}
+#toast a{color:#9fe3c2}
+.foot{margin-top:24px;color:var(--muted);font-size:12.5px}
+@media (max-width:820px){.hide-s{display:none}.bar{position:static}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="site">
+  <div>
+    <h1>콘텐츠 관리실</h1>
+    <p class="lede">콘텐츠 내역(hub.csv)을 화면에서 바로 보고 고친 뒤 <b>저장</b>합니다. 기준일과 공개일로 카탈로그에 나오는 콘텐츠를 정합니다.</p>
+  </div>
+  <nav class="links"><a href="hub.html">콘텐츠 현황판</a><a href="catalog.html" target="_blank" rel="noopener">공개 카탈로그</a><a href="index.html">표지 현황</a></nav>
+</header>
+
+<!-- 1. 비밀번호 -->
+<section id="gate" class="card">
+  <h2>관리자 비밀번호</h2>
+  <p class="hint" style="margin:0">비밀번호는 이 브라우저 안에서만 쓰이고 어디로도 보내지 않습니다. 저장소에는 비밀번호로 잠근 파일만 있습니다.</p>
+  <form id="loginForm" autocomplete="off">
+    <input id="pw" type="password" placeholder="비밀번호" autocomplete="current-password" required>
+    <button class="pri" type="submit">들어가기</button>
+  </form>
+  <label style="font-size:13px;display:flex;gap:6px;align-items:center;margin-top:8px"><input type="checkbox" id="remember"> 이 탭을 닫을 때까지 기억</label>
+  <div id="gateMsg" class="msg"></div>
+</section>
+
+<!-- 2. 처음 한 번: 열쇠 보관함 만들기 -->
+<section id="setup" class="card setup hidden" style="max-width:640px;margin-left:auto;margin-right:auto">
+  <h2>처음 한 번만 — 열쇠 보관함 만들기</h2>
+  <p class="hint" style="margin:0">아래 두 값을 방금 넣은 비밀번호로 잠가 저장소에 <code>data/admin_vault.enc</code>로 둡니다. 다음부터는 어느 기기에서든 비밀번호만 넣으면 됩니다.</p>
+  <label>기존 관리자 키 (HUB_KEY)
+    <input id="suKey" type="password" autocomplete="off" placeholder="콘텐츠 현황판(hub.html)을 열 때 쓰던 키">
+    <small>저장소 Settings → Secrets → Actions 의 <code>HUB_KEY</code>와 같은 값입니다. 내용 표(hub.csv.enc)가 이 키로 잠겨 있습니다.</small>
+  </label>
+  <label>GitHub 토큰 (저장용)
+    <input id="suTok" type="password" autocomplete="off" placeholder="github_pat_...">
+    <small><a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">Fine-grained 토큰 만들기</a> → Repository access: <b>Only select repositories</b> → <code>ahnboat_lab_cover_status</code>
+      (챕터 불러오기를 쓰려면 <b>All repositories</b>) → Permissions: <b>Contents · Read and write</b>. 만료일은 넉넉히(예: 1년).</small>
+  </label>
+  <div style="display:flex;gap:8px;margin-top:14px"><button id="suGo" class="pri" type="button">확인하고 보관함 만들기</button><button id="suBack" type="button">돌아가기</button></div>
+  <div id="suMsg" class="msg"></div>
+</section>
+
+<!-- 3. 작업 화면 -->
+<section id="app" class="hidden">
+  <div class="bar">
+    <div class="basebox">
+      <b>저장 기준일</b>
+      <input type="date" id="baseDate">
+      <label style="font-size:12.5px;display:flex;gap:4px;align-items:center"><input type="checkbox" id="baseAuto"> 매일 그날 날짜로 (예약 공개 자동)</label>
+    </div>
+    <div class="grp grow">
+      <input type="text" id="q" placeholder="찾기: 제목·저장소·소개" style="min-width:200px;flex:1">
+      <select id="fCat"><option value="">대분류 전체</option></select>
+    </div>
+    <div class="grp">
+      <button id="addBtn" type="button">+ 콘텐츠</button>
+      <button id="dlBtn" type="button" title="엑셀용 CSV(UTF-8)">CSV 내려받기</button>
+      <label class="hint" style="margin:0"><button type="button" id="ulBtn">CSV 불러오기</button><input type="file" id="ulFile" accept=".csv,text/csv" class="hidden"></label>
+      <button id="saveBtn" class="pri" type="button" disabled>저장</button>
+      <button id="lockBtn" type="button">잠그기</button>
+    </div>
+  </div>
+  <div class="chips" id="chips"></div>
+  <div style="overflow-x:auto">
+  <table>
+    <thead><tr><th>노출</th><th>순서</th><th>제목 · 저장소</th><th class="hide-s">분류</th><th>공개</th><th>공개일</th><th>시리즈물</th><th></th></tr></thead>
+    <tbody id="rows"></tbody>
+  </table>
+  </div>
+  <p class="foot" id="foot"></p>
+</section>
+</div>
+
+<!-- 편집 서랍 -->
+<aside id="drawer" aria-label="콘텐츠 편집">
+  <h2 id="dTitle">콘텐츠 편집</h2>
+  <form id="dForm" autocomplete="off">
+    <label>저장소 <input name="저장소" required><small class="hint">GitHub 밖 실적은 <code>외부:이름</code></small></label>
+    <label>제목 <input name="제목"></label>
+    <label>주요내용(소개) <textarea name="주요내용" rows="4"></textarea></label>
+    <div class="row3">
+      <label>대분류 <select name="콘텐츠_카테고리_대분류"></select></label>
+      <label>중분류 <input name="콘텐츠_카테고리_중분류" list="midList"></label>
+      <label>소분류 <input name="콘텐츠_카테고리_소분류"></label>
+    </div>
+    <div class="row3">
+      <label>공개 <select name="공개대상여부"><option>Y</option><option>N</option><option>검토</option></select></label>
+      <label>공개일 <input type="date" name="공개일"></label>
+      <label>순서 <input type="number" name="순서" min="0"></label>
+    </div>
+    <div class="row3">
+      <label>연구실 시리즈 <select name="연구실_시리즈_적용대상_여부"><option></option><option>Y</option><option>N</option></select></label>
+      <label>외국어팩 대상 <select name="외국어팩대상_여부"><option></option><option>Y</option><option>N</option></select></label>
+      <label>온톨로지 대상 <select name="온톨로지_적용대상_여부"><option></option><option>Y</option><option>N</option></select></label>
+    </div>
+    <label>시리즈물 <select name="시리즈물"><option value="">아님</option><option value="Y">Y · 여러 챕터를 묶은 콘텐츠</option></select></label>
+    <label>외부링크 <input name="외부링크"></label>
+    <label>비고 <input name="비고"></label>
+    <div id="dExtra"></div>
+    <div class="act"><button type="button" class="warn" id="dDel">이 줄 지우기</button><span style="display:flex;gap:8px"><button type="button" id="dCancel">닫기</button><button type="submit" class="pri">적용</button></span></div>
+    <p class="hint">적용은 화면에만 반영됩니다. 위의 <b>저장</b>을 눌러야 저장소에 올라갑니다.</p>
+  </form>
+  <datalist id="midList"></datalist>
+</aside>
+<div id="toast" role="status"></div>
+
+<script>
+(function(){
+'use strict';
+var OWNER='adminmrobo',REPO='ahnboat_lab_cover_status',BRANCH='main',API='https://api.github.com';
+var VAULT_PATH='data/admin_vault.enc',CSV_PATH='data/hub.csv.enc',SET_PATH='data/publish_settings.json';
+var STD=['저장소','제목','주요내용','콘텐츠_카테고리_대분류','콘텐츠_카테고리_중분류','콘텐츠_카테고리_소분류','공개대상여부','연구실_시리즈_적용대상_여부','외국어팩대상_여부','온톨로지_적용대상_여부','순서','외부링크','비고','공개일','시리즈물','상위시리즈','챕터'];
+var SS='ahnboat-admin-pw';
+var $=function(id){return document.getElementById(id);};
+var PASS='',V=null,HDR=[],ROWS=[],ORIG='',CSV_SHA='',CATS=[],REPOS={},MOVED={},OPEN={},FILTER='all',SETTINGS={mode:'auto',base_date:''};
+var enc=new TextEncoder(),dec=new TextDecoder();
+
+/* ---------- 암호: AES-256-GCM + PBKDF2-SHA256 (scripts/hubcrypt.py와 같은 형식) ---------- */
+function b64d(s){var b=atob(s),u=new Uint8Array(b.length);for(var k=0;k<b.length;k++)u[k]=b.charCodeAt(k);return u;}
+function b64e(u){var s='';for(var k=0;k<u.length;k+=0x8000)s+=String.fromCharCode.apply(null,u.subarray(k,k+0x8000));return btoa(s);}
+function deriveKey(pass,salt,iter){
+  return crypto.subtle.importKey('raw',enc.encode(pass),'PBKDF2',false,['deriveKey']).then(function(base){
+    return crypto.subtle.deriveKey({name:'PBKDF2',hash:'SHA-256',salt:salt,iterations:iter},base,{name:'AES-GCM',length:256},false,['encrypt','decrypt']);});}
+function unlock(o,pass){return deriveKey(pass,b64d(o.salt),o.iter).then(function(k){return crypto.subtle.decrypt({name:'AES-GCM',iv:b64d(o.iv)},k,b64d(o.ct));}).then(function(b){return new Uint8Array(b);});}
+function lock(bytes,pass,iter){
+  iter=iter||310000;var salt=crypto.getRandomValues(new Uint8Array(16)),iv=crypto.getRandomValues(new Uint8Array(12));
+  return deriveKey(pass,salt,iter).then(function(k){return crypto.subtle.encrypt({name:'AES-GCM',iv:iv},k,bytes);}).then(function(ct){
+    return JSON.stringify({v:1,alg:'AES-256-GCM',kdf:'PBKDF2-SHA256',iter:iter,salt:b64e(salt),iv:b64e(iv),ct:b64e(new Uint8Array(ct))});});}
+function utf8b64(s){return b64e(enc.encode(s));}
+
+/* ---------- GitHub API ---------- */
+function gh(path,opt,tok){
+  opt=opt||{};var h={'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'};
+  var t=tok||(V&&V.token);if(t)h.Authorization='Bearer '+t;if(opt.body)h['Content-Type']='application/json';
+  return fetch(API+path,{method:opt.method||'GET',headers:h,body:opt.body?JSON.stringify(opt.body):undefined,cache:'no-store'}).then(function(r){
+    if(r.status===204)return null;
+    return r.json().catch(function(){return {};}).then(function(j){if(!r.ok){var e=new Error((j&&j.message)||('HTTP '+r.status));e.status=r.status;throw e;}return j;});});}
+function getFile(path,tok){return gh('/repos/'+OWNER+'/'+REPO+'/contents/'+path+'?ref='+BRANCH,null,tok).then(function(j){
+  if(j.content)return {sha:j.sha,text:dec.decode(b64d(j.content.replace(/\s/g,'')))};
+  return gh('/repos/'+OWNER+'/'+REPO+'/git/blobs/'+j.sha,null,tok).then(function(b){return {sha:j.sha,text:dec.decode(b64d(b.content.replace(/\s/g,'')))};});});}
+/* 여러 파일을 커밋 하나로 */
+function commitFiles(files,message){
+  var R='/repos/'+OWNER+'/'+REPO;var head;
+  return gh(R+'/git/ref/heads/'+BRANCH).then(function(ref){head=ref.object.sha;return gh(R+'/git/commits/'+head);}).then(function(c){
+    return gh(R+'/git/trees',{method:'POST',body:{base_tree:c.tree.sha,tree:files.map(function(f){return {path:f.path,mode:'100644',type:'blob',content:f.content};})}});
+  }).then(function(t){return gh(R+'/git/commits',{method:'POST',body:{message:message,tree:t.sha,parents:[head]}});
+  }).then(function(nc){return gh(R+'/git/refs/heads/'+BRANCH,{method:'PATCH',body:{sha:nc.sha,force:false}}).then(function(){return nc;});});}
+function getJSON(p){return fetch(p,{cache:'no-cache'}).then(function(r){if(!r.ok)throw new Error(p+' '+r.status);return r.json();});}
+
+/* ---------- CSV ---------- */
+function parseCSV(t){
+  if(t.charCodeAt(0)===0xFEFF)t=t.slice(1);
+  var rows=[],row=[],f='',q=false,i=0,c;
+  for(;i<t.length;i++){c=t[i];
+    if(q){if(c==='"'){if(t[i+1]==='"'){f+='"';i++;}else q=false;}else f+=c;}
+    else if(c==='"')q=true;else if(c===','){row.push(f);f='';}
+    else if(c==='\n'||c==='\r'){if(c==='\r'&&t[i+1]==='\n')i++;row.push(f);rows.push(row);row=[];f='';}
+    else f+=c;}
+  if(f!==''||row.length){row.push(f);rows.push(row);}
+  rows=rows.filter(function(r){return r.some(function(x){return x.trim()!=='';});});
+  var hdr=(rows.shift()||[]).map(function(h){return h.trim();});
+  return {hdr:hdr,rows:rows.map(function(r){var o={};hdr.forEach(function(h,j){if(h)o[h]=(r[j]||'').trim();});return o;})};}
+function cell(v){v=v==null?'':String(v);return /[",\r\n]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v;}
+function toCSV(){var cols=columns();return '﻿'+[cols.map(cell).join(',')].concat(ROWS.map(function(r){return cols.map(function(c){return cell(r[c]);}).join(',');})).join('\r\n')+'\r\n';}
+function columns(){var c=HDR.slice();STD.forEach(function(s){if(c.indexOf(s)<0)c.push(s);});ROWS.forEach(function(r){Object.keys(r).forEach(function(k){if(k.charAt(0)!=='_'&&c.indexOf(k)<0)c.push(k);});});return c.filter(Boolean);}
+
+/* ---------- 날짜·상태 ---------- */
+function kstToday(){var d=new Date(Date.now()+9*3600e3);return d.toISOString().slice(0,10);}
+function normDate(v){var d=String(v||'').replace(/\D/g,'');return d.length===8?d.slice(0,4)+'-'+d.slice(4,6)+'-'+d.slice(6,8):'';}
+function BASE(){return $('baseAuto').checked?kstToday():(normDate($('baseDate').value)||kstToday());}
+function yes(v){return ['Y','YES','O','예','네','TRUE','1'].indexOf(String(v||'').trim().toUpperCase())>=0;}
+function isChap(r){return !!(r['상위시리즈']||'').trim();}
+function exists(r){
+  var n=r['저장소']||'';if(n.indexOf('외부:')===0)return true;if(MOVED[n])return true;
+  var g=REPOS[n];return !!(g&&g.has_pages!==false&&g.pages_url&&((g.i18n&&g.i18n.count)||g.site_title));}
+function days(a,b){return Math.round((new Date(a)-new Date(b))/864e5);}
+function status(r,parentOk){
+  var p=(r['공개대상여부']||'').trim(),d=normDate(r['공개일']),b=BASE();
+  if(p==='검토')return {k:'rev',t:'검토'};
+  if(!yes(p))return {k:'off',t:'비공개'};
+  if(d&&d>b)return {k:'res',t:'예약 · D-'+days(d,b)};
+  if(parentOk===false)return {k:'warn',t:'상위 비노출'};
+  if(!isChap(r)){
+    if(!exists(r))return {k:'warn',t:'사이트 없음'};
+    var c=r['콘텐츠_카테고리_대분류']||'미분류';if(CATS.indexOf(c)<0)return {k:'warn',t:'대분류 없음'};}
+  return {k:'on',t:'노출'};}
+function chapsOf(repo){return ROWS.filter(function(r){return (r['상위시리즈']||'').trim()===repo;}).sort(function(a,b){
+  var oa=parseInt(a['순서'],10),ob=parseInt(b['순서'],10);oa=isNaN(oa)?1e4:oa;ob=isNaN(ob)?1e4:ob;if(oa!==ob)return oa-ob;
+  return (parseInt(a['챕터'],10)||0)-(parseInt(b['챕터'],10)||0);});}
+
+/* ---------- 화면 ---------- */
+function el(t,c,txt){var e=document.createElement(t);if(c)e.className=c;if(txt!=null)e.textContent=txt;return e;}
+function toast(html,ms){var t=$('toast');t.innerHTML=html;t.classList.add('show');clearTimeout(toast.h);toast.h=setTimeout(function(){t.classList.remove('show');},ms||4000);}
+function dirty(){var d=toCSV()!==ORIG||settingsChanged();$('saveBtn').disabled=!d;$('saveBtn').textContent=d?'저장 •':'저장';return d;}
+function settingsChanged(){var m=$('baseAuto').checked?'auto':'fixed';return m!==SETTINGS.mode||(m==='fixed'&&normDate($('baseDate').value)!==normDate(SETTINGS.base_date));}
+function sel(opts,val,on){var s=el('select');opts.forEach(function(o){var op=el('option','',o[1]);op.value=o[0];if(o[0]===val)op.selected=true;s.appendChild(op);});
+  if(val&&!opts.some(function(o){return o[0]===val;})){var x=el('option','',val);x.value=val;x.selected=true;s.appendChild(x);}s.addEventListener('change',function(){on(s.value);});return s;}
+function dateInput(val,on){var i=el('input');i.type='date';i.value=normDate(val);i.addEventListener('change',function(){on(i.value);});return i;}
+function textIn(val,on,ph){var i=el('input');i.type='text';i.value=val||'';if(ph)i.placeholder=ph;i.addEventListener('change',function(){on(i.value.trim());});return i;}
+function set(r,k,v){r[k]=v;r._d=true;render();}
+
+function counts(){
+  var m=ROWS.filter(function(r){return !isChap(r);}),c={all:m.length,on:0,res:0,off:0,rev:0,warn:0,ser:0,dirty:0};
+  m.forEach(function(r){c[status(r).k]++;if(yes(r['시리즈물']))c.ser++;if(r._d||chapsOf(r['저장소']).some(function(x){return x._d;}))c.dirty++;});return c;}
+function chips(){
+  var c=counts(),box=$('chips');box.innerHTML='';
+  [['all','전체'],['on','노출'],['res','예약'],['off','비공개'],['rev','검토'],['warn','확인 필요'],['ser','시리즈물'],['dirty','고친 줄']].forEach(function(x){
+    var b=el('span','chip'+(FILTER===x[0]?' on':''));b.innerHTML=x[1]+' <b>'+c[x[0]]+'</b>';b.addEventListener('click',function(){FILTER=x[0];render();});box.appendChild(b);});}
+function match(r){
+  var q=$('q').value.trim().toLowerCase(),fc=$('fCat').value;
+  if(fc&&(r['콘텐츠_카테고리_대분류']||'미분류')!==fc)return false;
+  if(FILTER==='ser'&&!yes(r['시리즈물']))return false;
+  if(FILTER==='dirty'&&!(r._d||chapsOf(r['저장소']).some(function(c){return c._d;})))return false;
+  if(['on','res','off','rev','warn'].indexOf(FILTER)>=0&&status(r).k!==FILTER)return false;
+  if(q){var s=[r['저장소'],r['제목'],r['주요내용'],r['콘텐츠_카테고리_중분류'],r['콘텐츠_카테고리_소분류'],r['비고']].join(' ').toLowerCase();
+    var sub=chapsOf(r['저장소']).map(function(c){return c['제목']+' '+c['저장소'];}).join(' ').toLowerCase();if(s.indexOf(q)<0&&sub.indexOf(q)<0)return false;}
+  return true;}
+function render(){
+  chips();var tb=$('rows');tb.innerHTML='';
+  var catIdx={};CATS.forEach(function(c,i){catIdx[c]=i;});
+  var list=ROWS.filter(function(r){return !isChap(r)&&match(r);}).sort(function(a,b){
+    var ca=catIdx[a['콘텐츠_카테고리_대분류']],cb=catIdx[b['콘텐츠_카테고리_대분류']];ca=ca==null?99:ca;cb=cb==null?99:cb;if(ca!==cb)return ca-cb;
+    var x=(a['콘텐츠_카테고리_중분류']||'').localeCompare(b['콘텐츠_카테고리_중분류']||'');if(x)return x;
+    var oa=parseInt(a['순서'],10),ob=parseInt(b['순서'],10);return (isNaN(oa)?1e4:oa)-(isNaN(ob)?1e4:ob);});
+  list.forEach(function(r){tb.appendChild(rowEl(r));if(yes(r['시리즈물'])&&OPEN[r['저장소']])tb.appendChild(chapBox(r));});
+  if(!list.length){var tr=el('tr'),td=el('td','','조건에 맞는 콘텐츠가 없습니다.');td.colSpan=8;tr.appendChild(td);tb.appendChild(tr);}
+  $('foot').textContent='표 '+ROWS.length+'줄 (챕터 '+ROWS.filter(isChap).length+'줄 포함) · 노출 판단 기준일 '+BASE()+($('baseAuto').checked?' (매일 자동)':' (고정)')+' · 저장하면 몇 분 뒤 카탈로그·서버실에 반영됩니다.';
+  dirty();}
+function rowEl(r){
+  var tr=el('tr','main'+(r._d?' dirty':'')),st=status(r);
+  var t0=el('td');t0.appendChild(el('span','st '+st.k,st.t));tr.appendChild(t0);
+  var t1=el('td');var o=el('input','ord');o.type='number';o.min='0';o.value=r['순서']||'';o.addEventListener('change',function(){set(r,'순서',o.value);});t1.appendChild(o);tr.appendChild(t1);
+  var t2=el('td','ttl');t2.appendChild(el('div','t',r['제목']||'(제목 없음)'));var rr=el('div','r');
+  var g=REPOS[r['저장소']];if(g&&g.pages_url){var a=el('a','',r['저장소']);a.href=g.pages_url;a.target='_blank';a.rel='noopener';rr.appendChild(a);}else rr.textContent=r['저장소'];
+  t2.appendChild(rr);tr.appendChild(t2);
+  tr.appendChild(el('td','cat hide-s',[r['콘텐츠_카테고리_대분류']||'미분류',r['콘텐츠_카테고리_중분류'],r['콘텐츠_카테고리_소분류']].filter(Boolean).join(' › ')));
+  var t4=el('td');t4.appendChild(sel([['Y','Y 공개'],['N','N 비공개'],['검토','검토']],(r['공개대상여부']||'').trim()||'N',function(v){set(r,'공개대상여부',v);}));tr.appendChild(t4);
+  var t5=el('td');t5.appendChild(dateInput(r['공개일'],function(v){set(r,'공개일',v);}));tr.appendChild(t5);
+  var t6=el('td');var cb=el('input');cb.type='checkbox';cb.checked=yes(r['시리즈물']);cb.title='시리즈물';
+  cb.addEventListener('change',function(){if(cb.checked)OPEN[r['저장소']]=true;set(r,'시리즈물',cb.checked?'Y':'');});t6.appendChild(cb);
+  if(yes(r['시리즈물'])){var ch=chapsOf(r['저장소']),on=ch.filter(function(c){return status(c,true).k==='on';}).length;
+    var bt=el('button','sm',(OPEN[r['저장소']]?'▾ ':'▸ ')+'챕터 '+on+'/'+ch.length);bt.type='button';bt.style.marginLeft='6px';
+    bt.addEventListener('click',function(){OPEN[r['저장소']]=!OPEN[r['저장소']];render();});t6.appendChild(bt);}
+  tr.appendChild(t6);
+  var t7=el('td');var e=el('button','sm','편집');e.type='button';e.addEventListener('click',function(){openDrawer(r);});t7.appendChild(e);tr.appendChild(t7);
+  return tr;}
+function chapBox(p){
+  var repo=p['저장소'],pst=status(p),pOk=pst.k==='on';
+  var tr=el('tr','chapbox'),td=el('td');td.colSpan=8;var inner=el('div','inner');
+  inner.appendChild(el('div','',null)).innerHTML='<b>'+esc(p['제목']||repo)+'</b> 의 챕터 — 공개 <b>Y</b>이면서 공개일이 기준일('+BASE()+')을 지난 챕터만 카탈로그 카드에 소개됩니다.';
+  var tools=el('div','tools');
+  var add=el('button','sm','+ 챕터');add.type='button';add.addEventListener('click',function(){var n=chapsOf(repo).length+1;
+    ROWS.push({'저장소':repo+'/','제목':'','주요내용':'','공개대상여부':'Y','상위시리즈':repo,'챕터':String(n),'순서':String(n),'공개일':'',_d:true});render();});
+  var imp=el('button','sm','저장소 HTML에서 챕터 불러오기');imp.type='button';imp.addEventListener('click',function(){importChapters(p,imp);});
+  var sw=el('span','hint');sw.style.margin='0';sw.textContent='공개일 일괄: ';
+  var d0=el('input');d0.type='date';d0.value=kstToday();var gap=el('input');gap.type='number';gap.min='0';gap.value='7';gap.style.width='60px';
+  var ap=el('button','sm','첫 장부터 간격(일)대로 채우기');ap.type='button';ap.addEventListener('click',function(){
+    var g=parseInt(gap.value,10)||0,base=new Date(d0.value||kstToday());chapsOf(repo).forEach(function(c,i){var d=new Date(base.getTime()+i*g*864e5);c['공개일']=d.toISOString().slice(0,10);c._d=true;});render();});
+  tools.appendChild(add);tools.appendChild(imp);tools.appendChild(sw);tools.appendChild(d0);tools.appendChild(el('span','hint','간격'));tools.appendChild(gap);tools.appendChild(ap);
+  inner.appendChild(tools);
+  var tb=el('table');tb.innerHTML='<thead><tr><th>노출</th><th>순서</th><th>챕터</th><th>파일 (사이트 안 경로)</th><th>제목</th><th>소개 한 줄</th><th>공개</th><th>공개일</th><th></th></tr></thead>';
+  var body=el('tbody');
+  chapsOf(repo).forEach(function(c){
+    var r=el('tr',c._d?'dirty':''),st=status(c,pOk);
+    var a=el('td');a.appendChild(el('span','st '+st.k,st.t));r.appendChild(a);
+    var o=el('td');var oi=el('input','ord');oi.type='number';oi.value=c['순서']||'';oi.addEventListener('change',function(){set(c,'순서',oi.value);});o.appendChild(oi);r.appendChild(o);
+    var n=el('td');var ni=textIn(c['챕터'],function(v){set(c,'챕터',v);});ni.style.width='56px';n.appendChild(ni);r.appendChild(n);
+    var f=el('td');var file=(c['저장소']||'').split('/').slice(1).join('/');var fi=textIn(file,function(v){set(c,'저장소',repo+'/'+v.replace(/^\/+/,''));},'01_intro.html');fi.style.minWidth='170px';f.appendChild(fi);r.appendChild(f);
+    var t=el('td');t.appendChild(textIn(c['제목'],function(v){set(c,'제목',v);}));r.appendChild(t);
+    var s=el('td');var si=textIn(c['주요내용'],function(v){set(c,'주요내용',v);});si.style.minWidth='220px';s.appendChild(si);r.appendChild(s);
+    var pb=el('td');pb.appendChild(sel([['Y','Y'],['N','N'],['검토','검토']],(c['공개대상여부']||'').trim()||'N',function(v){set(c,'공개대상여부',v);}));r.appendChild(pb);
+    var d=el('td');d.appendChild(dateInput(c['공개일'],function(v){set(c,'공개일',v);}));r.appendChild(d);
+    var x=el('td');var del=el('button','sm warn','지우기');del.type='button';del.addEventListener('click',function(){ROWS.splice(ROWS.indexOf(c),1);render();});x.appendChild(del);r.appendChild(x);
+    body.appendChild(r);});
+  if(!chapsOf(repo).length){var er=el('tr'),ed=el('td','hint','챕터가 아직 없습니다. "저장소 HTML에서 챕터 불러오기"를 누르면 사이트의 HTML 파일과 제목을 가져옵니다.');ed.colSpan=9;er.appendChild(ed);body.appendChild(er);}
+  tb.appendChild(body);inner.appendChild(tb);td.appendChild(inner);tr.appendChild(td);return tr;}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+
+/* 시리즈 저장소의 HTML 파일 목록과 제목 가져오기 */
+function importChapters(p,btn){
+  var repo=p['저장소'];btn.disabled=true;btn.textContent='불러오는 중…';
+  var g=REPOS[repo],site=(g&&g.pages_url)||('https://'+OWNER+'.github.io/'+repo+'/');if(site.slice(-1)!=='/')site+='/';
+  var have={};chapsOf(repo).forEach(function(c){have[(c['저장소']||'').split('/').slice(1).join('/')]=true;});
+  gh('/repos/'+OWNER+'/'+repo+'/contents/').then(function(list){
+    var files=(list||[]).filter(function(f){return f.type==='file'&&/\.html?$/i.test(f.name)&&!/^(index|404)\.html?$/i.test(f.name)&&!have[f.name];}).map(function(f){return f.name;}).sort();
+    if(!files.length){toast('새로 더할 HTML 파일이 없습니다.');return;}
+    var path=site.replace(/^https?:\/\/[^\/]+/,'');var same=location.hostname===site.replace(/^https?:\/\/([^\/]+).*/,'$1');
+    return Promise.all(files.map(function(f){
+      var src=same?path+f:null;
+      var pr=src?fetch(src,{cache:'no-cache'}).then(function(r){return r.ok?r.text():'';}):gh('/repos/'+OWNER+'/'+repo+'/contents/'+encodeURIComponent(f)).then(function(j){return j.content?dec.decode(b64d(j.content.replace(/\s/g,''))):'';});
+      return pr.catch(function(){return '';}).then(function(h){
+        var doc=new DOMParser().parseFromString(h||'','text/html');
+        var t=(doc.querySelector('title')||{}).textContent||f.replace(/\.html?$/,'');
+        var d=doc.querySelector('meta[name="description"]')||doc.querySelector('meta[property="og:description"]');
+        return {f:f,t:t.replace(/\s+/g,' ').trim(),d:d?(d.getAttribute('content')||'').trim():''};});
+    })).then(function(found){
+      var n=chapsOf(repo).length;
+      found.forEach(function(x){n++;var m=x.f.match(/^(\d+[a-z]?)/i);
+        ROWS.push({'저장소':repo+'/'+x.f,'제목':x.t,'주요내용':x.d.slice(0,140),'공개대상여부':'Y','상위시리즈':repo,'챕터':m?m[1].replace(/^0+(?=\d)/,''):String(n),'순서':String(n),'공개일':'',_d:true});});
+      OPEN[repo]=true;render();toast(found.length+'개 챕터를 더했습니다. 공개일을 정한 뒤 저장하세요.');});
+  }).catch(function(e){toast('불러오지 못했습니다: '+esc(e.message)+(e.status===404||e.status===403?' — 토큰이 이 저장소를 읽을 수 있는지 확인하세요(All repositories).':''),7000);})
+  .then(function(){btn.disabled=false;btn.textContent='저장소 HTML에서 챕터 불러오기';});}
+
+/* ---------- 편집 서랍 ---------- */
+var EDIT=null;
+function openDrawer(r){
+  EDIT=r;var f=$('dForm');$('dTitle').textContent=r?'콘텐츠 편집':'새 콘텐츠';
+  var cs=f.elements['콘텐츠_카테고리_대분류'];cs.innerHTML='';CATS.concat(['미분류']).forEach(function(c){var o=el('option','',c);o.value=c;cs.appendChild(o);});
+  var src=r||{'공개대상여부':'검토','콘텐츠_카테고리_대분류':'미분류'};
+  if(src['콘텐츠_카테고리_대분류']&&CATS.indexOf(src['콘텐츠_카테고리_대분류'])<0&&src['콘텐츠_카테고리_대분류']!=='미분류'){var o=el('option','',src['콘텐츠_카테고리_대분류']);o.value=o.textContent;cs.appendChild(o);}
+  Array.prototype.forEach.call(f.elements,function(x){if(!x.name)return;var v=src[x.name]||'';if(x.type==='date')v=normDate(v);x.value=v;
+    if(x.tagName==='SELECT'&&x.value!==v&&v){var o=el('option','',v);o.value=v;x.appendChild(o);x.value=v;}});
+  var mids={};ROWS.forEach(function(x){if(x['콘텐츠_카테고리_중분류'])mids[x['콘텐츠_카테고리_중분류']]=1;});$('midList').innerHTML=Object.keys(mids).sort().map(function(m){return '<option value="'+esc(m)+'">';}).join('');
+  var extra=columns().filter(function(c){return STD.indexOf(c)<0;});var ex=$('dExtra');ex.innerHTML='';
+  extra.forEach(function(c){var l=el('label','',c+' ');var i=el('input');i.name='x:'+c;i.value=src[c]||'';l.appendChild(i);ex.appendChild(l);});
+  $('dDel').classList.toggle('hidden',!r);$('drawer').classList.add('open');f.elements['제목'].focus();}
+function closeDrawer(){$('drawer').classList.remove('open');EDIT=null;}
+$('dForm').addEventListener('submit',function(ev){ev.preventDefault();var f=ev.target,r=EDIT,old=r?r['저장소']:null;
+  var name=f.elements['저장소'].value.trim();if(!name)return;
+  if(ROWS.some(function(x){return x!==r&&x['저장소']===name;})){toast('같은 저장소 이름이 이미 있습니다.');return;}
+  if(!r){r={};ROWS.push(r);}
+  Array.prototype.forEach.call(f.elements,function(x){if(!x.name)return;var k=x.name.indexOf('x:')===0?x.name.slice(2):x.name;r[k]=(x.value||'').trim();});
+  if(old&&old!==name)ROWS.forEach(function(c){if((c['상위시리즈']||'')===old){c['상위시리즈']=name;c['저장소']=name+'/'+(c['저장소']||'').split('/').slice(1).join('/');c._d=true;}});
+  r._d=true;closeDrawer();render();});
+$('dCancel').addEventListener('click',closeDrawer);
+$('dDel').addEventListener('click',function(){if(!EDIT)return;var n=chapsOf(EDIT['저장소']).length;
+  if(!confirm('"'+(EDIT['제목']||EDIT['저장소'])+'" 줄을 지울까요?'+(n?' 챕터 '+n+'줄도 함께 지웁니다.':'')+'\n(저장을 눌러야 저장소에 반영됩니다)'))return;
+  var repo=EDIT['저장소'];ROWS=ROWS.filter(function(x){return x!==EDIT&&(x['상위시리즈']||'')!==repo;});closeDrawer();render();});
+$('addBtn').addEventListener('click',function(){openDrawer(null);});
+
+/* ---------- 들어가기 ---------- */
+function msg(id,t,k){var m=$(id);m.textContent=t;m.className='msg'+(k?' '+k:'');}
+function fetchVault(){
+  return fetch(VAULT_PATH+'?t='+Date.now(),{cache:'no-store'}).then(function(r){if(r.ok)return r.json();if(r.status===404)return gh('/repos/'+OWNER+'/'+REPO+'/contents/'+VAULT_PATH+'?ref='+BRANCH).then(function(j){return JSON.parse(dec.decode(b64d(j.content.replace(/\s/g,''))));}).catch(function(e){if(e.status===404)return null;throw e;});throw new Error('보관함 '+r.status);});}
+$('loginForm').addEventListener('submit',function(ev){ev.preventDefault();login($('pw').value);});
+function login(pw,quiet){
+  if(!pw)return;msg('gateMsg','확인하는 중…');
+  return fetchVault().then(function(o){
+    if(!o){PASS=pw;if(!quiet){$('gate').classList.add('hidden');$('setup').classList.remove('hidden');}return;}
+    return unlock(o,pw).then(function(b){V=JSON.parse(dec.decode(b));PASS=pw;
+      try{if($('remember').checked||quiet)sessionStorage.setItem(SS,pw);}catch(e){}
+      return start();
+    },function(){try{sessionStorage.removeItem(SS);}catch(e){}msg('gateMsg','비밀번호가 맞지 않습니다.','err');});
+  }).catch(function(e){msg('gateMsg','보관함을 읽지 못했습니다: '+e.message,'err');});}
+$('suBack').addEventListener('click',function(){$('setup').classList.add('hidden');$('gate').classList.remove('hidden');msg('gateMsg','');});
+$('suGo').addEventListener('click',function(){
+  var key=$('suKey').value,tok=$('suTok').value.trim(),btn=$('suGo');
+  if(!key||!tok){msg('suMsg','두 칸을 모두 넣어 주세요.','err');return;}
+  if(PASS.length<6){msg('suMsg','비밀번호는 6자 이상이어야 합니다. 돌아가서 다시 넣어 주세요.','err');return;}
+  btn.disabled=true;msg('suMsg','토큰과 관리자 키를 확인하는 중…');
+  getFile(CSV_PATH,tok).then(function(f){return unlock(JSON.parse(f.text),key).catch(function(){throw new Error('관리자 키로 hub.csv.enc를 풀 수 없습니다. 키를 다시 확인하세요.');});
+  }).then(function(){var plain=enc.encode(JSON.stringify({hub_key:key,token:tok,created:new Date().toISOString()}));return lock(plain,PASS,600000);
+  }).then(function(blob){V={token:tok};return commitFiles([{path:VAULT_PATH,content:blob}],'콘텐츠 관리실 열쇠 보관함 만들기');
+  }).then(function(){V=null;msg('suMsg','보관함을 만들었습니다. 들어가는 중…','ok');$('setup').classList.add('hidden');$('gate').classList.remove('hidden');
+    setTimeout(function(){login(PASS);},800);
+  }).catch(function(e){V=null;msg('suMsg',(e.status===401?'토큰이 올바르지 않습니다. ':e.status===403||e.status===404?'토큰에 이 저장소 Contents 쓰기 권한이 없습니다. ':'')+e.message,'err');})
+  .then(function(){btn.disabled=false;});});
+
+function start(){
+  msg('gateMsg','내용 표를 여는 중…');
+  return Promise.all([
+    getFile(CSV_PATH).then(function(f){CSV_SHA=f.sha;return unlock(JSON.parse(f.text),V.hub_key);}),
+    getJSON('data/hub_meta.json').catch(function(){return {};}),
+    getJSON('data/repos.json').catch(function(){return [];}),
+    getJSON('data/moved.json').catch(function(){return {};}),
+    getFile(SET_PATH).then(function(f){return JSON.parse(f.text);}).catch(function(){return {mode:'auto',base_date:''};})
+  ]).then(function(a){
+    var p=parseCSV(dec.decode(a[0]));HDR=p.hdr;ROWS=p.rows;
+    CATS=(a[1].categories||[]).map(function(c){return c.name;});
+    var rp=Array.isArray(a[2])?a[2]:(a[2].repos||[]);REPOS={};rp.forEach(function(r){REPOS[r.repo]=r;});
+    MOVED={};var mv=a[3]||{};Object.keys(mv.moved||{}).forEach(function(k){MOVED[k]=1;});Object.keys(mv.add||{}).forEach(function(k){MOVED[k]=1;});
+    SETTINGS=a[4]||{mode:'auto'};$('baseAuto').checked=SETTINGS.mode!=='fixed';$('baseDate').value=normDate(SETTINGS.base_date)||kstToday();$('baseDate').disabled=$('baseAuto').checked;
+    var fc=$('fCat');fc.innerHTML='<option value="">대분류 전체</option>';CATS.concat(['미분류']).forEach(function(c){var o=el('option','',c);o.value=c;fc.appendChild(o);});
+    ORIG=toCSV();$('gate').classList.add('hidden');$('app').classList.remove('hidden');render();
+  }).catch(function(e){msg('gateMsg','내용 표를 열지 못했습니다: '+e.message+(e.status===401?' — 토큰이 만료되었을 수 있습니다. 보관함을 다시 만들어 주세요.':''),'err');
+    if(e.status===401){var b=el('button','sm','보관함 다시 만들기');b.type='button';b.style.marginTop='8px';b.addEventListener('click',function(){$('gate').classList.add('hidden');$('setup').classList.remove('hidden');});$('gateMsg').appendChild(el('br'));$('gateMsg').appendChild(b);}});}
+
+/* ---------- 저장 ---------- */
+$('baseAuto').addEventListener('change',function(){$('baseDate').disabled=this.checked;if(!this.checked&&!$('baseDate').value)$('baseDate').value=kstToday();render();});
+$('baseDate').addEventListener('change',render);
+$('q').addEventListener('input',render);$('fCat').addEventListener('change',render);
+$('saveBtn').addEventListener('click',function(){
+  var btn=this;if(!dirty())return;
+  var bad=ROWS.filter(function(r){return isChap(r)&&!/\/.+/.test(r['저장소']||'');});
+  if(bad.length){toast('파일 칸이 빈 챕터가 '+bad.length+'개 있습니다. 채우거나 지운 뒤 저장하세요.',6000);return;}
+  btn.disabled=true;btn.textContent='저장하는 중…';
+  var mode=$('baseAuto').checked?'auto':'fixed',base=mode==='fixed'?normDate($('baseDate').value)||kstToday():'';
+  var st={_설명:'콘텐츠 관리실에서 저장. mode auto=매일 빌드하는 날(한국 시간)이 기준일, fixed=base_date가 기준일. 공개일이 기준일보다 늦은 콘텐츠·챕터는 카탈로그·서버실에 아직 나오지 않는다.',mode:mode,base_date:base,saved_at:new Date(Date.now()+9*3600e3).toISOString().slice(0,16).replace('T',' ')+' KST'};
+  var csv=toCSV();
+  getFile(CSV_PATH).then(function(f){
+    if(f.sha!==CSV_SHA&&!confirm('다른 곳에서 내용 표가 바뀌었습니다(자동 수집이 새 저장소를 더했을 수 있음).\n지금 화면 내용으로 덮어쓸까요? 취소하면 저장하지 않습니다.'))throw new Error('저장을 취소했습니다.');
+    return lock(enc.encode(csv),V.hub_key);
+  }).then(function(blob){
+    return commitFiles([{path:CSV_PATH,content:blob},{path:SET_PATH,content:JSON.stringify(st,null,1)+'\n'}],'콘텐츠 관리실 저장 · 기준일 '+(base||'매일 자동'));
+  }).then(function(){return getFile(CSV_PATH);}).then(function(f){
+    CSV_SHA=f.sha;ORIG=csv;SETTINGS=st;ROWS.forEach(function(r){delete r._d;});render();
+    toast('저장했습니다. 몇 분 뒤 카탈로그·서버실에 반영됩니다. <a href="https://github.com/'+OWNER+'/'+REPO+'/actions" target="_blank" rel="noopener">진행 보기</a>',8000);
+  }).catch(function(e){toast('저장하지 못했습니다: '+esc(e.message)+(e.status===409||e.status===422?' — 잠시 뒤 다시 눌러 주세요.':''),8000);dirty();})
+  .then(function(){btn.textContent=dirty()?'저장 •':'저장';});});
+window.addEventListener('beforeunload',function(e){if($('app').classList.contains('hidden'))return;if(dirty()){e.preventDefault();e.returnValue='';}});
+
+/* ---------- 엑셀 ---------- */
+function download(name,data,type){var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([data],{type:type}));a.download=name;document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},500);}
+$('dlBtn').addEventListener('click',function(){download('hub.csv',toCSV(),'text/csv;charset=utf-8');toast('hub.csv를 내려받았습니다. 평문이므로 GitHub에는 올리지 마세요.');});
+$('ulBtn').addEventListener('click',function(){$('ulFile').click();});
+$('ulFile').addEventListener('change',function(){var f=this.files[0];if(!f)return;var rd=new FileReader();
+  rd.onload=function(){var buf=new Uint8Array(rd.result),t;try{t=new TextDecoder('utf-8',{fatal:true}).decode(buf);}catch(e){try{t=new TextDecoder('euc-kr').decode(buf);}catch(x){t=dec.decode(buf);}}
+    var p=parseCSV(t);if(p.hdr.indexOf('저장소')<0){toast('"저장소" 칸이 없는 표입니다.');return;}
+    if(!confirm('불러온 표('+p.rows.length+'줄)로 화면을 바꿀까요? 저장을 눌러야 저장소에 반영됩니다.'))return;
+    HDR=p.hdr;ROWS=p.rows;ROWS.forEach(function(r){r._d=true;});render();};
+  rd.readAsArrayBuffer(f);this.value='';});
+$('lockBtn').addEventListener('click',function(){if(dirty()&&!confirm('저장하지 않은 변경이 있습니다. 그래도 잠글까요?'))return;
+  PASS='';V=null;ROWS=[];ORIG='';try{sessionStorage.removeItem(SS);}catch(e){}$('app').classList.add('hidden');$('gate').classList.remove('hidden');$('pw').value='';msg('gateMsg','잠갔습니다.');});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeDrawer();if((e.ctrlKey||e.metaKey)&&e.key==='s'&&!$('app').classList.contains('hidden')){e.preventDefault();$('saveBtn').click();}});
+
+var saved='';try{saved=sessionStorage.getItem(SS)||'';}catch(e){}
+if(saved){$('pw').value=saved;login(saved,true);}
+})();
+</script>
+</body>
+</html>

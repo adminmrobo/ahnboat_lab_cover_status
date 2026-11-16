@@ -11,6 +11,10 @@ hub.csv·hub.json 평문은 커밋하지 않는다. 잠그고 푸는 일은 hub_
 - repos.json에 있는데 hub.csv에 없는 새 저장소는 hub.csv 맨 아래에 '미분류'로 덧붙인다.
   공개대상여부는 '검토'로 두어, 사람이 분류하기 전에는 서버실·카탈로그에 나오지 않는다.
 - 외국어팩·온톨로지 현황(WIP / PROGRESS / DONE)과 콘텐츠 존재 여부는 자동으로 정한다.
+- 공개일: '공개일'(YYYY-MM-DD)이 기준일보다 늦으면 공개 대상이어도 카탈로그·서버실에 아직 나오지 않는다(예약 공개).
+  기준일은 data/publish_settings.json — mode "fixed"면 관리실에서 저장한 기준일, "auto"면 빌드하는 날(한국 시간).
+- 시리즈물: '시리즈물'=Y인 콘텐츠는 여러 챕터를 하나로 묶은 것. 챕터는 '상위시리즈'에 그 저장소 이름을 적은 줄로 두고
+  (저장소 칸은 '<상위 저장소>/<파일>'), 공개 대상이면서 공개일이 지난 챕터만 상위 카드의 chapters 목록에 들어간다.
 """
 import csv, datetime as dt, io, json, os, re
 
@@ -22,7 +26,8 @@ EXCLUDE_NAMES = {"adminmrobo", "ahnboat_homepage_manual"}  # 관리자용 매뉴
 LANGS_FULL = 7  # 한국어 + en·zh·ja·uz·ru·vi
 
 COLS = ["저장소", "제목", "주요내용", "콘텐츠_카테고리_대분류", "콘텐츠_카테고리_중분류", "콘텐츠_카테고리_소분류",
-        "공개대상여부", "연구실_시리즈_적용대상_여부", "외국어팩대상_여부", "온톨로지_적용대상_여부", "순서", "외부링크", "비고"]
+        "공개대상여부", "연구실_시리즈_적용대상_여부", "외국어팩대상_여부", "온톨로지_적용대상_여부", "순서", "외부링크", "비고",
+        "공개일", "시리즈물", "상위시리즈", "챕터"]
 EXT = "외부:"  # GitHub 밖 실적(논문·특허·저서·사업)은 저장소 칸을 '외부:이름'으로 적는다
 SERVER_LANGS = ["en", "zh", "ja", "uz", "ru"]
 
@@ -59,6 +64,24 @@ def _url(s):
     return m.group(0) if m else ""
 
 
+def norm_date(v):
+    """2026-11-17 · 2026.11.17 · 2026/11/17 · 20261117 → 2026-11-17. 비었거나 못 읽으면 ''."""
+    d = re.sub(r"\D", "", str(v or ""))
+    return "%s-%s-%s" % (d[:4], d[4:6], d[6:8]) if len(d) == 8 else ""
+
+
+def base_date(settings, today):
+    if (settings or {}).get("mode") == "fixed":
+        return norm_date(settings.get("base_date")) or today
+    return today
+
+
+def chap_key(h, i):
+    o = h.get("순서") or ""
+    c = re.sub(r"\D", "", h.get("챕터") or "")
+    return (int(o) if o.isdigit() else 1000 + i, int(c) if c else 0, h.get("저장소", ""))
+
+
 def yes(v):
     return str(v).strip().upper() in ("Y", "YES", "O", "예", "네", "TRUE", "1")
 
@@ -89,6 +112,10 @@ def main():
     scan = load_json(os.path.join(DATA, "repos.json"), {})
     repos = scan.get("repos", scan) if isinstance(scan, dict) else scan
     by = {r["repo"]: r for r in repos}
+    kst = dt.timezone(dt.timedelta(hours=9))
+    today = dt.datetime.now(kst).date().isoformat()
+    settings = load_json(os.path.join(DATA, "publish_settings.json"), {})
+    BASE = base_date(settings, today)
     known = {r["저장소"] for r in rows}
     added = []
     for name in sorted(by):
@@ -100,8 +127,8 @@ def main():
                      "공개대상여부": "검토", "연구실_시리즈_적용대상_여부": "", "외국어팩대상_여부": "",
                      "온톨로지_적용대상_여부": "", "비고": "새 저장소 · 분류 필요"})
         added.append(name)
-    if added:
-        write_csv(hub_p, COLS, rows)
+    if added:  # 관리실에서 더한 칸(표준 칸 밖)도 지우지 않는다
+        write_csv(hub_p, COLS + [k for r in rows for k in r if k not in COLS and k], rows)
 
     def _img(o):  # 그림 파일이 아직 없으면 비워 둔다 (카드에는 색 상자가 보인다)
         o = dict(o)
@@ -112,7 +139,13 @@ def main():
     meta["mids"] = [_img(m) for m in meta.get("mids", [])]
     cat_order = {c["name"]: i for i, c in enumerate(cats)}
     items = []
+    chaps = {}  # 상위 저장소 → [(정렬키, 챕터 행)]
     for i, h in enumerate(rows):
+        if (h.get("상위시리즈") or "").strip():
+            chaps.setdefault(h["상위시리즈"].strip(), []).append((chap_key(h, i), h))
+    for i, h in enumerate(rows):
+        if (h.get("상위시리즈") or "").strip():
+            continue
         name = h["저장소"]
         ext = name.startswith(EXT)
         r = None if ext else by.get(name)
@@ -148,6 +181,9 @@ def main():
             "thumb": (r or {}).get("thumb") or "",
             "pushed_at": (r or {}).get("pushed_at") or "",
             "note": h.get("비고", ""),
+            "release": norm_date(h.get("공개일")),
+            "released": "Y" if (not norm_date(h.get("공개일")) or norm_date(h.get("공개일")) <= BASE) else "N",
+            "series": "Y" if yes(h.get("시리즈물")) else "N",
             "order": int(h["순서"]) if (h.get("순서") or "").isdigit() else 1000 + i,
         })
     # 옮긴 저장소·새로 넣을 저장소 (data/moved.json, hub.csv를 고치지 않아도 유지)
@@ -164,21 +200,48 @@ def main():
             it["exists"] = "Y" if it["site_url"] or by.get(it["repo"]) else it["exists"]
             if not it["site_url"]:
                 it["site_url"] = "https://%s.github.io/%s/" % (OWNER, it["repo"])
+    # 시리즈 챕터: 상위 카드의 사이트 주소 + 파일 (외부링크에 주소가 있으면 그 주소)
+    for it in items:
+        if it["series"] != "Y":
+            continue
+        base_url = it["site_url"] or "https://%s.github.io/%s/" % (OWNER, it["repo"])
+        if not base_url.endswith("/"):
+            base_url += "/"
+        lst = []
+        for _, h in sorted(chaps.get(it["repo"], []), key=lambda x: x[0]):
+            path = h["저장소"].split("/", 1)[1] if "/" in h["저장소"] else ""
+            rd = norm_date(h.get("공개일"))
+            pub = (h.get("공개대상여부") or "").strip()
+            lst.append({"no": h.get("챕터", ""), "title": h.get("제목") or path, "summary": h.get("주요내용", ""),
+                        "url": _url(h.get("외부링크", "")) or base_url + path, "file": path, "release": rd,
+                        "public": "Y" if yes(pub) else ("검토" if pub == "검토" else "N"),
+                        "released": "Y" if (not rd or rd <= BASE) else "N"})
+        it["chapters"] = lst
     items.sort(key=lambda x: (cat_order.get(x["cat"], 99), x["mid"], x["sub"], x["order"]))
-    kst = dt.timezone(dt.timedelta(hours=9))
-    out = {"updated": dt.datetime.now(kst).date().isoformat(), "categories": cats, "mids": meta.get("mids", []), "hero": _img(meta["hero"]) if meta.get("hero") else {}, "items": items,
+    out = {"updated": today, "base_date": BASE, "base_mode": (settings or {}).get("mode") or "auto", "categories": cats, "mids": meta.get("mids", []), "hero": _img(meta["hero"]) if meta.get("hero") else {}, "items": items,
            "added_today": added}
     with open(os.path.join(DATA, "hub.json"), "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=1)
 
     # 공개 카탈로그용: 공개 대상이면서 콘텐츠가 있는 항목만, 화면에 필요한 칸만 (관리 메모·대상 여부는 넣지 않음)
     names = {c["name"] for c in cats}
-    pub = [it for it in items if it["public"] == "Y" and it["exists"] == "Y" and it["cat"] in names]
+    pub = [it for it in items if it["public"] == "Y" and it["exists"] == "Y" and it["released"] == "Y" and it["cat"] in names]
     keep = ["title", "summary", "cat", "mid", "sub", "kind", "repo_url", "site_url", "link", "langs", "thumb"]
     used = {(it["cat"], it["mid"]) for it in pub}
+
+    def public_item(it):
+        o = {k: it[k] for k in keep}
+        if it["series"] == "Y" and it.get("chapters"):
+            allp = [c for c in it["chapters"] if c["public"] == "Y"]
+            shown = [c for c in allp if c["released"] == "Y"]
+            later = sorted(c["release"] for c in allp if c["released"] != "Y" and c["release"])
+            o["series"] = {"total": len(allp), "open": len(shown),
+                           "next": later[0] if later else "",
+                           "chapters": [{k: c[k] for k in ("no", "title", "summary", "url", "release")} for c in shown]}
+        return o
     catalog = {"updated": out["updated"], "categories": cats,
                "mids": [m for m in out["mids"] if (m.get("cat"), m.get("name")) in used],
-               "hero": out["hero"], "items": [{k: it[k] for k in keep} for it in pub]}
+               "hero": out["hero"], "items": [public_item(it) for it in pub]}
     # 시리즈 카드(data/series_cards.json): 한 저장소 안 여러 편을 장(챕터)별 소분류로 묶고 제목·소개·썸네일을 한 틀로
     import sys as _sys
     _sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -194,7 +257,7 @@ def main():
         cols += ["%s_%s" % (base, l) for l in SERVER_LANGS]
     srows, first = [], set()
     for it in items:
-        if it["public"] != "Y" or it["exists"] != "Y":
+        if it["public"] != "Y" or it["exists"] != "Y" or it["released"] != "Y":
             continue
         c = next((x for x in cats if x["name"] == it["cat"]), None)
         if c is None:
