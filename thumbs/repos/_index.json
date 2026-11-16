@@ -112,8 +112,8 @@
  },
  "cnn_face_game_lab": {
   "src": "embedded:index.html",
-  "pushed_at": "2026-11-13T18:19:07Z",
-  "made": "2026-11-14"
+  "pushed_at": "2026-11-15T04:49:46Z",
+  "made": "2026-11-16"
  },
  "data_science_for_business": {
   "src": "manifest:index.html#cover_index",
@@ -163,6 +163,10 @@
   "src": null,
   "pushed_at": "2026-11-15T00:27:23Z"
  },
+ "fabric_ai_project": {
+  "src": null,
+  "pushed_at": "2026-11-15T17:49:54Z"
+ },
  "fintech_business_01_payment": {
   "src": null,
   "pushed_at": "2026-11-05T11:17:04Z"
@@ -184,12 +188,12 @@
  },
  "fruitfly-lab-expressions": {
   "src": "file:.thumbnail.jpg",
-  "pushed_at": "2026-11-14T12:00:21Z",
-  "made": "2026-11-15"
+  "pushed_at": "2026-11-15T08:41:02Z",
+  "made": "2026-11-16"
  },
  "g2b-bid-strategy": {
   "src": null,
-  "pushed_at": "2026-11-15T00:00:06Z"
+  "pushed_at": "2026-11-15T23:59:30Z"
  },
  "Gen_AI_Hannam_univ": {
   "src": "embedded:index.html#hero",
@@ -344,7 +348,7 @@
  },
  "machine_learning_model_atlas": {
   "src": null,
-  "pushed_at": "2026-11-13T15:55:25Z"
+  "pushed_at": "2026-11-15T09:38:10Z"
  },
  "markov_player": {
   "src": "name:assets/og_mk.jpg",
@@ -455,18 +459,18 @@
  },
  "optimization_3d_map": {
   "src": "manifest:img/cover_index.webp",
-  "pushed_at": "2026-11-13T22:29:43Z",
-  "made": "2026-11-14"
+  "pushed_at": "2026-11-15T17:57:29Z",
+  "made": "2026-11-16"
  },
  "probability_distribution_dictionary": {
   "src": "file:thumbs/part1.webp",
-  "pushed_at": "2026-11-12T00:47:18Z",
-  "made": "2026-11-13"
+  "pushed_at": "2026-11-15T15:06:40Z",
+  "made": "2026-11-16"
  },
  "python-accounting-analytics": {
   "src": "name:assets/og/cover_00.jpg",
-  "pushed_at": "2026-11-13T16:15:41Z",
-  "made": "2026-11-14"
+  "pushed_at": "2026-11-15T23:49:06Z",
+  "made": "2026-11-16"
  },
  "Regression_ridge_lasso": {
   "src": "manifest:og_rg.jpg",
