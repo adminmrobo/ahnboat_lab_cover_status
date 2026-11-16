@@ -251,7 +251,7 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
     if(EXG)placeExtras();
     if(VC.random)randomPicks(m,VC.random);
   }
-  /* 특별 카드(도감): 랙 다음 줄(2행)의 마지막 열들에 놓고, 랙과는 한 칸 이상 띄운다. 자리가 모자라면 다음 줄 끝으로, 좁은 화면(2열 이하)은 그냥 이어서 */
+  /* 특별 카드(도감·입문): 랙 다음 줄(2행)의 마지막 열들에 놓고, 랙과는 extras_gap 칸(기본 1) 띄운다. 자리가 모자라면 다음 줄 끝으로, 좁은 화면(2열 이하)은 그냥 이어서 */
   var EXG=null;
   function placeExtras(){
     if(!EXG||!EXG.g.isConnected)return;
@@ -260,7 +260,7 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
     var cols=getComputedStyle(g).gridTemplateColumns.split(' ').filter(Boolean).length;
     if(cols<EXG.k+1)return;
     var rows=Math.ceil(EXG.n/cols),left=EXG.n-(rows-1)*cols;
-    var row=(left+1+EXG.k<=cols)?rows:rows+1;
+    var gap=(VC.extras_gap==null?1:VC.extras_gap);var row=(left+gap+EXG.k<=cols)?rows:rows+1;
     if(row<2&&cols>=EXG.k)row=2;
     kids.forEach(function(e,i){e.style.gridRow=String(row);e.style.gridColumn=String(cols-EXG.k+1+i);});
   }

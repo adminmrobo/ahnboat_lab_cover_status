@@ -1,10 +1,30 @@
 {
- "_guide": "공개 카탈로그(catalog.html)의 화면 설정. ?view=이름 으로 고른다. server=Lab Server(기본), articles=논문·발표, portfolio=포트폴리오. server.extras = Lab Server 랙 옆에 붙는 특별 카드(2행 마지막 열들, 랙과 한 칸 이상 띄움).",
+ "_guide": "공개 카탈로그(catalog.html)의 화면 설정. ?view=이름 으로 고른다. server=Lab Server(기본), articles=논문·발표, portfolio=포트폴리오. server.extras = Lab Server 랙 옆에 붙는 특별 카드(2행 마지막 열들, 랙과 extras_gap 칸 띄움 — 기본 1, server는 0).",
  "server": {
   "random": 3,
   "extras": [
    {
-    "name": "통계분포 도감",
+    "name": "최적화 첫걸음",
+    "label": "SPECIAL · 입문",
+    "color": "#b0476b",
+    "desc": "\"혹시… 미분 좋아하세요?\" 미분을 몰라도 MR = MC에서 라그랑지안, 딥러닝의 경사하강까지 공장 이야기로 따라가는 최적화 입문입니다.",
+    "keywords": [
+     "미분",
+     "최적화",
+     "MR = MC",
+     "경사하강"
+    ],
+    "url": "https://adminmrobo.github.io/optimization_3d_map/first_step_1.html",
+    "repo": "optimization_3d_map",
+    "sprites": [
+     {
+      "src": "thumbs/chars/atlas/haru_intro.webp",
+      "h": 92
+     }
+    ]
+   },
+   {
+    "name": "확률 분포 도감",
     "label": "SPECIAL · 도감",
     "color": "#1f8a8a",
     "desc": "확률분포들이 서로 어떻게 이어지는지 3D 관계 지도로 보고, 분포마다 쓰임새와 파이썬 호출법을 찾아봅니다.",
@@ -61,7 +81,8 @@
      }
     ]
    }
-  ]
+  ],
+  "extras_gap": 0
  },
  "articles": {
   "only": "논문 해설",
