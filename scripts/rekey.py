@@ -26,6 +26,10 @@ def opens(blob, key):
 
 def main():
     new, old = os.environ.get("HUB_KEY", ""), os.environ.get("HUB_KEY_OLD", "")
+    if os.environ.get("ADMIN_SET") == "false":
+        print("ADMIN_PASSWORD 비밀값이 이 실행에 없습니다 — Settings → Secrets and variables → Actions → "
+              "Secrets 탭 → Repository secrets 에 이름 ADMIN_PASSWORD 로 넣어 주세요. 키를 바꾸지 않습니다.")
+        return
     if not new or not old or new == old:
         print("키를 바꾸지 않습니다 (새 키가 없거나 예전 키와 같음).")
         return
