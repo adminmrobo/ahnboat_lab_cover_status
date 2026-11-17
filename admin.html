@@ -120,7 +120,8 @@ td input.ord{width:56px}
     <small><a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">Fine-grained 토큰 만들기</a> → Repository access: <b>Only select repositories</b> → <code>ahnboat_lab_cover_status</code>
       (챕터 불러오기를 쓰려면 <b>All repositories</b>) → Permissions: <b>Contents · Read and write</b>. 만료일은 넉넉히(예: 1년).</small>
   </label>
-  <div style="display:flex;gap:8px;margin-top:14px"><button id="suGo" class="pri" type="button">토큰 등록하고 들어가기</button><button id="suBack" type="button">돌아가기</button></div>
+  <div style="display:flex;gap:8px;margin-top:14px;flex-wrap:wrap"><button id="suGo" class="pri" type="button">토큰 등록하고 들어가기</button><button id="suSkip" type="button"><b>토큰 없이 들어가기</b></button><button id="suBack" type="button">돌아가기</button></div>
+  <p class="hint">토큰 없이 들어가도 보고 고치는 것은 똑같습니다. <b>저장</b>을 누르면 잠긴 파일이 내려받아지고 GitHub 올리기 화면이 열리니, 그 파일을 끌어다 놓고 <b>Commit changes</b>만 누르면 됩니다.</p>
   <div id="suMsg" class="msg"></div>
 </section>
 
@@ -328,7 +329,7 @@ function render(){
     var oa=parseInt(a['순서'],10),ob=parseInt(b['순서'],10);return (isNaN(oa)?1e4:oa)-(isNaN(ob)?1e4:ob);});
   list.forEach(function(r){tb.appendChild(rowEl(r));if(yes(r['시리즈물'])&&OPEN[r['저장소']])tb.appendChild(chapBox(r));});
   if(!list.length){var tr=el('tr'),td=el('td','','조건에 맞는 콘텐츠가 없습니다.');td.colSpan=8;tr.appendChild(td);tb.appendChild(tr);}
-  $('foot').textContent='표 '+ROWS.length+'줄 (챕터 '+ROWS.filter(isChap).length+'줄 포함) · 노출 판단 기준일 '+BASE()+($('baseAuto').checked?' (매일 자동)':' (고정)')+' · 저장하면 몇 분 뒤 카탈로그·서버실에 반영됩니다.';
+  $('foot').textContent='표 '+ROWS.length+'줄 (챕터 '+ROWS.filter(isChap).length+'줄 포함) · 노출 판단 기준일 '+BASE()+($('baseAuto').checked?' (매일 자동)':' (고정)')+(V&&V.token?' · 저장하면 몇 분 뒤 카탈로그·서버실에 반영됩니다.':' · 토큰 없이 들어옴: 저장하면 파일을 내려받아 GitHub에 올립니다.');
   dirty();}
 function rowEl(r){
   var tr=el('tr','main'+(r._d?' dirty':'')),st=status(r);
@@ -485,7 +486,10 @@ $('mgGo').addEventListener('click',function(){
     $('migrate').classList.add('hidden');$('gate').classList.remove('hidden');return start();
   }).catch(function(e){V=null;msg('mgMsg',(e.status===401?'토큰이 올바르지 않습니다. ':e.status===403||e.status===404?'토큰에 이 저장소 Contents 쓰기 권한이 없습니다. ':'')+e.message,'err');})
   .then(function(){btn.disabled=false;});});
-function needToken(){msg('gateMsg','');$('gate').classList.add('hidden');$('setup').classList.remove('hidden');$('suTok').focus();}
+function needToken(){
+  try{if(localStorage.getItem('ahnboat-admin-notoken')==='1'){V={token:''};return start();}}catch(e){}msg('gateMsg','');$('gate').classList.add('hidden');$('setup').classList.remove('hidden');$('suTok').focus();}
+$('suSkip').addEventListener('click',function(){if(!PASS){$('suBack').click();return;}try{localStorage.setItem('ahnboat-admin-notoken','1');}catch(e){}
+  V={token:''};$('setup').classList.add('hidden');$('gate').classList.remove('hidden');msg('suMsg','');start();});
 $('suBack').addEventListener('click',function(){$('setup').classList.add('hidden');$('gate').classList.remove('hidden');msg('gateMsg','');});
 $('suGo').addEventListener('click',function(){
   var tok=$('suTok').value.trim(),btn=$('suGo');
@@ -529,6 +533,17 @@ $('saveBtn').addEventListener('click',function(){
   var mode=$('baseAuto').checked?'auto':'fixed',base=mode==='fixed'?normDate($('baseDate').value)||kstToday():'';
   var st={_설명:'콘텐츠 관리실에서 저장. mode auto=매일 빌드하는 날(한국 시간)이 기준일, fixed=base_date가 기준일. 공개일이 기준일보다 늦은 콘텐츠·챕터는 카탈로그·서버실에 아직 나오지 않는다.',mode:mode,base_date:base,saved_at:new Date(Date.now()+9*3600e3).toISOString().slice(0,16).replace('T',' ')+' KST'};
   var csv=toCSV();
+  if(!V||!V.token){  /* 토큰 없이: 잠긴 파일을 내려받고 GitHub 올리기 화면 열기 */
+    var up='https://github.com/'+OWNER+'/'+REPO+'/upload/'+BRANCH+'/data';
+    var sc=settingsChanged();
+    lock(enc.encode(csv),PASS).then(function(blob){
+      download('hub.csv.enc',blob,'application/json');
+      if(sc)setTimeout(function(){download('publish_settings.json',JSON.stringify(st,null,1)+'\n','application/json');},400);
+      window.open(up,'_blank','noopener');
+      ORIG=csv;SETTINGS=st;ROWS.forEach(function(r){delete r._d;});render();
+      toast('잠긴 파일을 내려받았습니다. 열린 GitHub 화면에 <b>hub.csv.enc</b>'+(sc?'와 <b>publish_settings.json</b>':'')+'를 끌어다 놓고 <b>Commit changes</b>를 누르면 저장이 끝납니다. <a href="'+up+'" target="_blank" rel="noopener">올리기 화면 열기</a>',20000);
+    }).catch(function(e){toast('저장 파일을 만들지 못했습니다: '+esc(e.message),8000);}).then(function(){btn.textContent=dirty()?'저장 •':'저장';});
+    return;}
   getFile(CSV_PATH).then(function(f){
     if(f.sha!==CSV_SHA&&!confirm('다른 곳에서 내용 표가 바뀌었습니다(자동 수집이 새 저장소를 더했을 수 있음).\n지금 화면 내용으로 덮어쓸까요? 취소하면 저장하지 않습니다.'))throw new Error('저장을 취소했습니다.');
     return lock(enc.encode(csv),PASS);
