@@ -161,11 +161,11 @@
  },
  "drug-crime-social-cost": {
   "src": null,
-  "pushed_at": "2026-11-15T00:27:23Z"
+  "pushed_at": "2026-11-16T09:21:35Z"
  },
  "fabric_ai_project": {
   "src": null,
-  "pushed_at": "2026-11-15T17:49:54Z"
+  "pushed_at": "2026-11-16T23:40:01Z"
  },
  "fintech_business_01_payment": {
   "src": null,
@@ -187,9 +187,9 @@
   "made": "2026-11-07"
  },
  "fruitfly-lab-expressions": {
-  "src": "file:.thumbnail.jpg",
-  "pushed_at": "2026-11-15T08:41:02Z",
-  "made": "2026-11-16"
+  "src": "name:images/scenes/optimization_first_step/fs_cover_01.webp",
+  "pushed_at": "2026-11-16T15:54:11Z",
+  "made": "2026-11-17"
  },
  "g2b-bid-strategy": {
   "src": null,
@@ -226,8 +226,8 @@
  },
  "how_to_make_ai_model_factory_version": {
   "src": "manifest:img/cover_01.webp",
-  "pushed_at": "2026-11-14T12:07:01Z",
-  "made": "2026-11-15"
+  "pushed_at": "2026-11-16T23:55:29Z",
+  "made": "2026-11-17"
  },
  "how_to_start_db": {
   "src": null,
@@ -459,8 +459,8 @@
  },
  "optimization_3d_map": {
   "src": "manifest:img/cover_index.webp",
-  "pushed_at": "2026-11-15T17:57:29Z",
-  "made": "2026-11-16"
+  "pushed_at": "2026-11-16T11:55:59Z",
+  "made": "2026-11-17"
  },
  "probability_distribution_dictionary": {
   "src": "file:thumbs/part1.webp",
@@ -469,8 +469,8 @@
  },
  "python-accounting-analytics": {
   "src": "name:assets/og/cover_00.jpg",
-  "pushed_at": "2026-11-15T23:49:06Z",
-  "made": "2026-11-16"
+  "pushed_at": "2026-11-16T10:09:46Z",
+  "made": "2026-11-17"
  },
  "Regression_ridge_lasso": {
   "src": "manifest:og_rg.jpg",
