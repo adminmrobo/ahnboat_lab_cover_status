@@ -102,7 +102,7 @@ td input.ord{width:56px}
 <!-- 1. 비밀번호 -->
 <section id="gate" class="card">
   <h2>관리자 비밀번호</h2>
-  <p class="hint" style="margin:0">비밀번호는 이 브라우저 안에서만 쓰이고 어디로도 보내지 않습니다. 저장소에는 비밀번호로 잠근 파일만 있습니다.</p>
+  <p class="hint" style="margin:0">비밀번호는 이 브라우저 안에서만 쓰이고 어디로도 보내지 않습니다. 콘텐츠 현황판(hub.html)·방문 레포트와 같은 관리자 비밀번호입니다.</p>
   <form id="loginForm" autocomplete="off">
     <input id="pw" type="password" placeholder="비밀번호" autocomplete="current-password" required>
     <button class="pri" type="submit">들어가기</button>
@@ -113,18 +113,14 @@ td input.ord{width:56px}
 
 <!-- 2. 처음 한 번: 열쇠 보관함 만들기 -->
 <section id="setup" class="card setup hidden" style="max-width:640px;margin-left:auto;margin-right:auto">
-  <h2>처음 한 번만 — 열쇠 보관함 만들기</h2>
-  <p class="hint" style="margin:0">아래 두 값을 방금 넣은 비밀번호로 잠가 저장소에 <code>data/admin_vault.enc</code>로 둡니다. 다음부터는 어느 기기에서든 비밀번호만 넣으면 됩니다.</p>
-  <label>기존 관리자 키 (HUB_KEY)
-    <input id="suKey" type="password" autocomplete="off" placeholder="콘텐츠 현황판(hub.html)을 열 때 쓰던 키">
-    <small>저장소 Settings → Secrets → Actions 의 <code>HUB_KEY</code>와 같은 값입니다. 내용 표(hub.csv.enc)가 이 키로 잠겨 있습니다.</small>
-  </label>
-  <label>GitHub 토큰 (저장용)
+  <h2>처음 한 번만 — 저장용 GitHub 토큰 등록</h2>
+  <p class="hint" style="margin:0">비밀번호가 맞았습니다. <b>저장</b> 버튼이 GitHub에 바로 올리려면 토큰이 한 번 필요합니다. 토큰은 비밀번호로 잠가 저장소에 <code>data/admin_vault.enc</code>로 두므로, 다음부터는 어느 기기에서든 비밀번호만 넣으면 됩니다.</p>
+  <label>GitHub 토큰
     <input id="suTok" type="password" autocomplete="off" placeholder="github_pat_...">
     <small><a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">Fine-grained 토큰 만들기</a> → Repository access: <b>Only select repositories</b> → <code>ahnboat_lab_cover_status</code>
       (챕터 불러오기를 쓰려면 <b>All repositories</b>) → Permissions: <b>Contents · Read and write</b>. 만료일은 넉넉히(예: 1년).</small>
   </label>
-  <div style="display:flex;gap:8px;margin-top:14px"><button id="suGo" class="pri" type="button">확인하고 보관함 만들기</button><button id="suBack" type="button">돌아가기</button></div>
+  <div style="display:flex;gap:8px;margin-top:14px"><button id="suGo" class="pri" type="button">토큰 등록하고 들어가기</button><button id="suBack" type="button">돌아가기</button></div>
   <div id="suMsg" class="msg"></div>
 </section>
 
@@ -421,33 +417,37 @@ function msg(id,t,k){var m=$(id);m.textContent=t;m.className='msg'+(k?' '+k:'');
 function fetchVault(){
   return fetch(VAULT_PATH+'?t='+Date.now(),{cache:'no-store'}).then(function(r){if(r.ok)return r.json();if(r.status===404)return gh('/repos/'+OWNER+'/'+REPO+'/contents/'+VAULT_PATH+'?ref='+BRANCH).then(function(j){return JSON.parse(dec.decode(b64d(j.content.replace(/\s/g,''))));}).catch(function(e){if(e.status===404)return null;throw e;});throw new Error('보관함 '+r.status);});}
 $('loginForm').addEventListener('submit',function(ev){ev.preventDefault();login($('pw').value);});
+/* 비밀번호 = 관리자 키. 내용 표가 풀리면 맞는 비밀번호다. */
+function fetchTable(){
+  return fetch(CSV_PATH+'?t='+Date.now(),{cache:'no-store'}).then(function(r){if(r.ok)return r.json();throw new Error('표 '+r.status);})
+    .catch(function(){return gh('/repos/'+OWNER+'/'+REPO+'/contents/'+CSV_PATH+'?ref='+BRANCH).then(function(j){return JSON.parse(dec.decode(b64d(j.content.replace(/\s/g,''))));});});}
 function login(pw,quiet){
   if(!pw)return;msg('gateMsg','확인하는 중…');
-  return fetchVault().then(function(o){
-    if(!o){PASS=pw;if(!quiet){$('gate').classList.add('hidden');$('setup').classList.remove('hidden');}return;}
-    return unlock(o,pw).then(function(b){V=JSON.parse(dec.decode(b));PASS=pw;
-      try{if($('remember').checked||quiet)sessionStorage.setItem(SS,pw);}catch(e){}
-      return start();
-    },function(){try{sessionStorage.removeItem(SS);}catch(e){}msg('gateMsg','비밀번호가 맞지 않습니다.','err');});
-  }).catch(function(e){msg('gateMsg','보관함을 읽지 못했습니다: '+e.message,'err');});}
+  return fetchTable().then(function(t){return unlock(t,pw).then(function(){return true;},function(){return false;});}).then(function(ok){
+    if(!ok){try{sessionStorage.removeItem(SS);}catch(e){}
+      msg('gateMsg','비밀번호가 맞지 않습니다. (관리자 키를 이 비밀번호로 막 바꿨다면, Actions의 "표지 현황 수집"이 한 번 돌아 표를 새 비밀번호로 다시 잠근 뒤에 열립니다.)','err');return;}
+    PASS=pw;try{if($('remember').checked||quiet)sessionStorage.setItem(SS,pw);}catch(e){}
+    return fetchVault().then(function(o){
+      if(!o)return needToken();
+      return unlock(o,pw).then(function(b){V=JSON.parse(dec.decode(b));return start();},needToken);});
+  }).catch(function(e){msg('gateMsg','표를 읽지 못했습니다: '+e.message,'err');});}
+function needToken(){msg('gateMsg','');$('gate').classList.add('hidden');$('setup').classList.remove('hidden');$('suTok').focus();}
 $('suBack').addEventListener('click',function(){$('setup').classList.add('hidden');$('gate').classList.remove('hidden');msg('gateMsg','');});
 $('suGo').addEventListener('click',function(){
-  var key=$('suKey').value,tok=$('suTok').value.trim(),btn=$('suGo');
-  if(!key||!tok){msg('suMsg','두 칸을 모두 넣어 주세요.','err');return;}
-  if(PASS.length<6){msg('suMsg','비밀번호는 6자 이상이어야 합니다. 돌아가서 다시 넣어 주세요.','err');return;}
-  btn.disabled=true;msg('suMsg','토큰과 관리자 키를 확인하는 중…');
-  getFile(CSV_PATH,tok).then(function(f){return unlock(JSON.parse(f.text),key).catch(function(){throw new Error('관리자 키로 hub.csv.enc를 풀 수 없습니다. 키를 다시 확인하세요.');});
-  }).then(function(){var plain=enc.encode(JSON.stringify({hub_key:key,token:tok,created:new Date().toISOString()}));return lock(plain,PASS,600000);
-  }).then(function(blob){V={token:tok};return commitFiles([{path:VAULT_PATH,content:blob}],'콘텐츠 관리실 열쇠 보관함 만들기');
-  }).then(function(){V=null;msg('suMsg','보관함을 만들었습니다. 들어가는 중…','ok');$('setup').classList.add('hidden');$('gate').classList.remove('hidden');
-    setTimeout(function(){login(PASS);},800);
+  var tok=$('suTok').value.trim(),btn=$('suGo');
+  if(!tok){msg('suMsg','토큰을 넣어 주세요.','err');return;}
+  if(!PASS){needToken();msg('suMsg','먼저 비밀번호로 들어가 주세요.','err');$('suBack').click();return;}
+  btn.disabled=true;msg('suMsg','토큰을 확인하는 중…');
+  lock(enc.encode(JSON.stringify({token:tok,created:new Date().toISOString()})),PASS,600000).then(function(blob){
+    V={token:tok};return commitFiles([{path:VAULT_PATH,content:blob}],'콘텐츠 관리실 토큰 등록');
+  }).then(function(){msg('suMsg','등록했습니다.','ok');$('setup').classList.add('hidden');$('gate').classList.remove('hidden');return start();
   }).catch(function(e){V=null;msg('suMsg',(e.status===401?'토큰이 올바르지 않습니다. ':e.status===403||e.status===404?'토큰에 이 저장소 Contents 쓰기 권한이 없습니다. ':'')+e.message,'err');})
   .then(function(){btn.disabled=false;});});
 
 function start(){
   msg('gateMsg','내용 표를 여는 중…');
   return Promise.all([
-    getFile(CSV_PATH).then(function(f){CSV_SHA=f.sha;return unlock(JSON.parse(f.text),V.hub_key);}),
+    getFile(CSV_PATH).then(function(f){CSV_SHA=f.sha;return unlock(JSON.parse(f.text),PASS);}),
     getJSON('data/hub_meta.json').catch(function(){return {};}),
     getJSON('data/repos.json').catch(function(){return [];}),
     getJSON('data/moved.json').catch(function(){return {};}),
@@ -460,8 +460,8 @@ function start(){
     SETTINGS=a[4]||{mode:'auto'};$('baseAuto').checked=SETTINGS.mode!=='fixed';$('baseDate').value=normDate(SETTINGS.base_date)||kstToday();$('baseDate').disabled=$('baseAuto').checked;
     var fc=$('fCat');fc.innerHTML='<option value="">대분류 전체</option>';CATS.concat(['미분류']).forEach(function(c){var o=el('option','',c);o.value=c;fc.appendChild(o);});
     ORIG=toCSV();$('gate').classList.add('hidden');$('app').classList.remove('hidden');render();
-  }).catch(function(e){msg('gateMsg','내용 표를 열지 못했습니다: '+e.message+(e.status===401?' — 토큰이 만료되었을 수 있습니다. 보관함을 다시 만들어 주세요.':''),'err');
-    if(e.status===401){var b=el('button','sm','보관함 다시 만들기');b.type='button';b.style.marginTop='8px';b.addEventListener('click',function(){$('gate').classList.add('hidden');$('setup').classList.remove('hidden');});$('gateMsg').appendChild(el('br'));$('gateMsg').appendChild(b);}});}
+  }).catch(function(e){msg('gateMsg','내용 표를 열지 못했습니다: '+e.message+(e.status===401?' — 토큰이 만료되었을 수 있습니다. 토큰을 다시 등록해 주세요.':''),'err');
+    if(e.status===401){var b=el('button','sm','토큰 다시 등록');b.type='button';b.style.marginTop='8px';b.addEventListener('click',function(){$('gate').classList.add('hidden');$('setup').classList.remove('hidden');});$('gateMsg').appendChild(el('br'));$('gateMsg').appendChild(b);}});}
 
 /* ---------- 저장 ---------- */
 $('baseAuto').addEventListener('change',function(){$('baseDate').disabled=this.checked;if(!this.checked&&!$('baseDate').value)$('baseDate').value=kstToday();render();});
@@ -477,7 +477,7 @@ $('saveBtn').addEventListener('click',function(){
   var csv=toCSV();
   getFile(CSV_PATH).then(function(f){
     if(f.sha!==CSV_SHA&&!confirm('다른 곳에서 내용 표가 바뀌었습니다(자동 수집이 새 저장소를 더했을 수 있음).\n지금 화면 내용으로 덮어쓸까요? 취소하면 저장하지 않습니다.'))throw new Error('저장을 취소했습니다.');
-    return lock(enc.encode(csv),V.hub_key);
+    return lock(enc.encode(csv),PASS);
   }).then(function(blob){
     return commitFiles([{path:CSV_PATH,content:blob},{path:SET_PATH,content:JSON.stringify(st,null,1)+'\n'}],'콘텐츠 관리실 저장 · 기준일 '+(base||'매일 자동'));
   }).then(function(){return getFile(CSV_PATH);}).then(function(f){

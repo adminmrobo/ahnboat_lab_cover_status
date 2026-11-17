@@ -161,7 +161,11 @@ def previous(day):
     try:
         sys.path.insert(0, HERE)
         from hubcrypt import decrypt
-        old = json.loads(decrypt(open(path, "rb").read(), key).decode("utf-8"))
+        blob = open(path, "rb").read()
+        try:
+            old = json.loads(decrypt(blob, key).decode("utf-8"))
+        except Exception:  # 관리자 키를 바꾼 직후: 예전 키로 잠긴 파일
+            old = json.loads(decrypt(blob, os.environ.get("HUB_KEY_OLD") or key).decode("utf-8"))
         if old.get("date", "") >= day.isoformat():
             return {}
         return old.get("inventory") or {}

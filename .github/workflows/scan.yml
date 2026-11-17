@@ -37,9 +37,11 @@ jobs:
 
       - name: 콘텐츠 현황판 DB와 서버실 목록 만들기 (관리 데이터는 관리자 키로 잠금)
         env:
-          HUB_KEY: ${{ secrets.HUB_KEY }}
+          HUB_KEY: ${{ secrets.ADMIN_PASSWORD || secrets.HUB_KEY }}   # 관리자 비밀번호(ADMIN_PASSWORD)가 있으면 그것이 관리자 키
+          HUB_KEY_OLD: ${{ secrets.HUB_KEY }}
         run: |
           pip install --quiet cryptography
+          python scripts/rekey.py   # 예전 키로 잠긴 파일을 새 관리자 키로 (처음 한 번)
           python -c "import sys; sys.path.insert(0, 'scripts'); import series_cards; series_cards.fetch()"   # 시리즈 카드(장별 묶음) 최신본
           python scripts/hub_secure.py
           python scripts/build_portfolio.py
@@ -51,7 +53,8 @@ jobs:
 
       - name: 바뀐 것이 있으면 커밋
         env:
-          HUB_KEY: ${{ secrets.HUB_KEY }}
+          HUB_KEY: ${{ secrets.ADMIN_PASSWORD || secrets.HUB_KEY }}   # 관리자 비밀번호(ADMIN_PASSWORD)가 있으면 그것이 관리자 키
+          HUB_KEY_OLD: ${{ secrets.HUB_KEY }}
         run: |
           # 날짜(checked_at, updated)만 바뀐 경우는 커밋하지 않는다. 파일이 새로 생기거나 지워지면 커밋한다.
           if [ -z "$(git diff -U0 HEAD -- data/ | grep '^[+-]' | grep -v '^[+-][+-][+-]' | grep -v '"checked_at"' | grep -v '"updated"')" ] \
@@ -74,6 +77,7 @@ jobs:
             cp data/repos.json /tmp/scan/repos.json && cp -r thumbs/repos /tmp/scan/thumbs_repos
             git fetch -q origin main && git reset -q --hard origin/main
             cp /tmp/scan/repos.json data/repos.json && rm -rf thumbs/repos && cp -r /tmp/scan/thumbs_repos thumbs/repos
+            python scripts/rekey.py
             python scripts/hub_secure.py
             python scripts/build_portfolio.py
             python scripts/build_ontology.py

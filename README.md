@@ -73,8 +73,9 @@ python3 scripts/make_thumbs.py --fetch                     # 바뀐 저장소만
 
 https://adminmrobo.github.io/ahnboat_lab_cover_status/admin.html
 
-- **관리자 비밀번호**로 들어간다. 비밀번호는 저장소 어디에도 평문으로 없다. `data/admin_vault.enc`(비밀번호로 잠근 열쇠 보관함: 관리자 키 HUB_KEY + 저장용 GitHub 토큰, PBKDF2 60만 회)가 비밀번호로만 풀린다.
-- 처음 한 번: 비밀번호를 넣으면 보관함 만들기 화면이 나온다. 관리자 키(HUB_KEY)와 Fine-grained 토큰(Contents: Read and write)을 넣으면 보관함이 저장소에 올라가고, 다음부터는 어느 기기에서든 비밀번호만 넣으면 된다. 토큰이 만료되면 같은 화면에서 다시 만든다.
+- **관리자 비밀번호 하나**로 들어간다. 이 비밀번호가 곧 관리자 키다 — 내용 표(`hub.csv.enc`)·현황판(`hub.html`)·방문 레포트가 모두 이 비밀번호로 잠긴다. 비밀번호는 저장소 어디에도 평문으로 없고, GitHub에는 Settings → Secrets and variables → Actions의 **`ADMIN_PASSWORD`**로만 둔다.
+  - 관리자 키 바꾸기: `ADMIN_PASSWORD`를 새 값으로 넣고(또는 고치고) Actions → **표지 현황 수집** → Run workflow. `scripts/rekey.py`가 예전 키(`HUB_KEY`)로 잠긴 파일을 새 비밀번호로 다시 잠근다. `ADMIN_PASSWORD`가 있으면 Actions는 그 값을 관리자 키로 쓴다.
+- 처음 한 번: 비밀번호로 들어가면 **저장용 GitHub 토큰**(Fine-grained, Contents: Read and write)을 묻는다. 토큰은 비밀번호로 잠가(PBKDF2 60만 회) `data/admin_vault.enc`에 두므로, 다음부터는 어느 기기에서든 비밀번호만 넣으면 된다. 토큰이 만료되면 같은 화면에서 다시 등록한다.
 - 표의 모든 칸을 화면에서 고친다(공개·공개일·순서·시리즈물은 표에서 바로, 나머지는 **편집**). **저장**(Ctrl/⌘+S)을 누르면 표를 관리자 키로 잠가 `data/hub.csv.enc`와 `data/publish_settings.json`을 커밋 하나로 올리고, 몇 분 뒤 Actions가 카탈로그·서버실을 다시 만든다.
 - **저장 기준일**: 공개 Y이면서 **공개일**이 기준일 이전(같은 날 포함)인 콘텐츠만 카탈로그·서버실에 나온다. 공개일이 비면 바로 나온다. "매일 그날 날짜로"를 켜면 매일 06시 수집 때 그날이 기준일이 되어 예약해 둔 콘텐츠가 날짜에 맞춰 자동으로 나온다. 끄면 저장할 때 고른 날짜로 고정된다.
 - **시리즈물**: 여러 챕터를 하나로 묶은 콘텐츠(예: 베이지안 통계학 13회차)는 시리즈물에 표시하고 **챕터**를 연다. "저장소 HTML에서 챕터 불러오기"로 파일·제목·소개를 가져오고, "첫 장부터 간격(일)대로 채우기"로 매주 한 장씩 같은 공개 일정을 한 번에 넣을 수 있다. 공개된 챕터만 카탈로그 카드의 "시리즈 · n장 공개" 목록에 소개되고, 다음 공개 예정일이 함께 보인다.

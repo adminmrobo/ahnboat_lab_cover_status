@@ -28,7 +28,8 @@ jobs:
       - name: GoatCounter 숫자로 하루의 레포트 만들고 메일 보내기
         env:
           GOATCOUNTER_TOKEN: ${{ secrets.GOATCOUNTER_TOKEN }}
-          HUB_KEY: ${{ secrets.HUB_KEY }}
+          HUB_KEY: ${{ secrets.ADMIN_PASSWORD || secrets.HUB_KEY }}
+          HUB_KEY_OLD: ${{ secrets.HUB_KEY }}
           GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
         run: |
