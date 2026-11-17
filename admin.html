@@ -124,6 +124,26 @@ td input.ord{width:56px}
   <div id="suMsg" class="msg"></div>
 </section>
 
+<!-- 2-1. 예전 관리자 키에서 옮기기 -->
+<section id="migrate" class="card setup hidden" style="max-width:640px;margin-left:auto;margin-right:auto">
+  <h2>한 번만 — 예전 관리자 키에서 새 비밀번호로 옮기기</h2>
+  <p class="hint" style="margin:0">내용 표가 아직 <b>예전 관리자 키</b>로 잠겨 있어 새 비밀번호로 열리지 않습니다. 예전 키를 한 번 넣으면 표·현황판·레포트 파일을 이 자리에서 새 비밀번호로 다시 잠가 저장소에 올립니다. 그 뒤로는 새 비밀번호만 씁니다.</p>
+  <label>새 비밀번호 (다시 한 번)
+    <input id="mgNew" type="password" autocomplete="off" placeholder="방금 넣은 비밀번호">
+    <small>GitHub Secrets의 <code>ADMIN_PASSWORD</code>와 같은 값이어야 매일 자동 수집이 계속 돌아갑니다.</small>
+  </label>
+  <label>예전 관리자 키
+    <input id="mgOld" type="password" autocomplete="off" placeholder="콘텐츠 현황판(hub.html)을 열 때 쓰던 키">
+    <small>넣는 즉시 맞는지 확인합니다. 저장소에는 남기지 않습니다.</small>
+  </label>
+  <label id="mgTokBox">GitHub 토큰 (저장용 · 처음 한 번)
+    <input id="mgTok" type="password" autocomplete="off" placeholder="github_pat_...">
+    <small><a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">Fine-grained 토큰 만들기</a> → Repository access: <code>ahnboat_lab_cover_status</code>(챕터 불러오기까지 쓰려면 All repositories) → Permissions: <b>Contents · Read and write</b>.</small>
+  </label>
+  <div style="display:flex;gap:8px;margin-top:14px"><button id="mgGo" class="pri" type="button">확인하고 옮기기</button><button id="mgBack" type="button">돌아가기</button></div>
+  <div id="mgMsg" class="msg"></div>
+</section>
+
 <!-- 3. 작업 화면 -->
 <section id="app" class="hidden">
   <div class="bar">
@@ -415,22 +435,56 @@ $('addBtn').addEventListener('click',function(){openDrawer(null);});
 /* ---------- 들어가기 ---------- */
 function msg(id,t,k){var m=$(id);m.textContent=t;m.className='msg'+(k?' '+k:'');}
 function fetchVault(){
-  return fetch(VAULT_PATH+'?t='+Date.now(),{cache:'no-store'}).then(function(r){if(r.ok)return r.json();if(r.status===404)return gh('/repos/'+OWNER+'/'+REPO+'/contents/'+VAULT_PATH+'?ref='+BRANCH).then(function(j){return JSON.parse(dec.decode(b64d(j.content.replace(/\s/g,''))));}).catch(function(e){if(e.status===404)return null;throw e;});throw new Error('보관함 '+r.status);});}
+  return gh('/repos/'+OWNER+'/'+REPO+'/contents/'+VAULT_PATH+'?ref='+BRANCH).then(function(j){return JSON.parse(dec.decode(b64d(j.content.replace(/\s/g,''))));},function(e){
+    if(e.status===404)return null;
+    return fetch(VAULT_PATH+'?t='+Date.now(),{cache:'no-store'}).then(function(r){if(r.ok)return r.json();if(r.status===404)return null;throw new Error('보관함 '+r.status);});});}
 $('loginForm').addEventListener('submit',function(ev){ev.preventDefault();login($('pw').value);});
 /* 비밀번호 = 관리자 키. 내용 표가 풀리면 맞는 비밀번호다. */
-function fetchTable(){
-  return fetch(CSV_PATH+'?t='+Date.now(),{cache:'no-store'}).then(function(r){if(r.ok)return r.json();throw new Error('표 '+r.status);})
-    .catch(function(){return gh('/repos/'+OWNER+'/'+REPO+'/contents/'+CSV_PATH+'?ref='+BRANCH).then(function(j){return JSON.parse(dec.decode(b64d(j.content.replace(/\s/g,''))));});});}
+function fetchTable(){  /* GitHub에서 바로(사이트 반영 지연 없음), 안 되면 사이트 사본 */
+  return gh('/repos/'+OWNER+'/'+REPO+'/contents/'+CSV_PATH+'?ref='+BRANCH).then(function(j){return JSON.parse(dec.decode(b64d(j.content.replace(/\s/g,''))));})
+    .catch(function(){return fetch(CSV_PATH+'?t='+Date.now(),{cache:'no-store'}).then(function(r){if(r.ok)return r.json();throw new Error('표 '+r.status);});});}
 function login(pw,quiet){
   if(!pw)return;msg('gateMsg','확인하는 중…');
   return fetchTable().then(function(t){return unlock(t,pw).then(function(){return true;},function(){return false;});}).then(function(ok){
     if(!ok){try{sessionStorage.removeItem(SS);}catch(e){}
-      msg('gateMsg','비밀번호가 맞지 않습니다. (관리자 키를 이 비밀번호로 막 바꿨다면, Actions의 "표지 현황 수집"이 한 번 돌아 표를 새 비밀번호로 다시 잠근 뒤에 열립니다.)','err');return;}
+      PEND=pw;msg('gateMsg','이 비밀번호로는 내용 표가 열리지 않습니다. 표가 아직 예전 관리자 키로 잠겨 있다면 아래 버튼으로 한 번 옮겨 주세요.','err');
+      var b=el('button','sm','예전 관리자 키에서 옮기기');b.type='button';b.style.marginTop='8px';b.addEventListener('click',showMigrate);$('gateMsg').appendChild(el('br'));$('gateMsg').appendChild(b);return;}
     PASS=pw;try{if($('remember').checked||quiet)sessionStorage.setItem(SS,pw);}catch(e){}
     return fetchVault().then(function(o){
       if(!o)return needToken();
       return unlock(o,pw).then(function(b){V=JSON.parse(dec.decode(b));return start();},needToken);});
   }).catch(function(e){msg('gateMsg','표를 읽지 못했습니다: '+e.message,'err');});}
+var PEND='';
+function showMigrate(){$('gate').classList.add('hidden');$('migrate').classList.remove('hidden');msg('mgMsg','');$('mgNew').value='';$('mgOld').value='';$('mgNew').focus();
+  fetchVault().then(function(o){$('mgTokBox').classList.toggle('hidden',!!o);$('mgTokBox').dataset.vault=o?JSON.stringify(o):'';}).catch(function(){});}
+$('mgBack').addEventListener('click',function(){$('migrate').classList.add('hidden');$('gate').classList.remove('hidden');msg('gateMsg','');});
+$('mgGo').addEventListener('click',function(){
+  var nw=$('mgNew').value,old=$('mgOld').value,btn=$('mgGo'),vb=$('mgTokBox').dataset.vault,tok=$('mgTok').value.trim();
+  if(nw!==PEND){msg('mgMsg','새 비밀번호가 처음 넣은 것과 다릅니다.','err');return;}
+  if(nw.length<6){msg('mgMsg','새 비밀번호는 6자 이상이어야 합니다.','err');return;}
+  if(!old){msg('mgMsg','예전 관리자 키를 넣어 주세요.','err');return;}
+  btn.disabled=true;msg('mgMsg','예전 키를 확인하는 중…');
+  var vaultP=vb?unlock(JSON.parse(vb),nw).then(function(b){return JSON.parse(dec.decode(b)).token;},function(){return null;}):Promise.resolve(null);
+  fetchTable().then(function(t){return unlock(t,old).catch(function(){throw new Error('예전 관리자 키가 맞지 않습니다. 다시 확인해 주세요.');});
+  }).then(function(){return vaultP;}).then(function(vt){
+    tok=vt||tok;if(!tok){$('mgTokBox').classList.remove('hidden');throw new Error('저장용 GitHub 토큰을 넣어 주세요.');}
+    V={token:tok};msg('mgMsg','예전 키가 맞습니다. 파일을 새 비밀번호로 다시 잠그는 중… (1분쯤)');
+    return gh('/repos/'+OWNER+'/'+REPO+'/contents/data/report?ref='+BRANCH).catch(function(){return [];});
+  }).then(function(list){
+    var paths=['data/hub.csv.enc','data/hub.json.enc'].concat((list||[]).filter(function(f){return /\.enc$/.test(f.name);}).map(function(f){return 'data/report/'+f.name;}));
+    var out=[],skipped=0;
+    return paths.reduce(function(p,path){return p.then(function(){return getFile(path).then(function(f){var o=JSON.parse(f.text);
+      return unlock(o,nw).then(function(){skipped++;},function(){return unlock(o,old).then(function(b){return lock(b,nw).then(function(blob){out.push({path:path,content:blob});});},function(){skipped++;});});
+    }).catch(function(e){if(e.status!==404)throw e;});});},Promise.resolve()).then(function(){return out;});
+  }).then(function(out){
+    if(!out.length)throw new Error('옮길 파일이 없습니다(이미 새 비밀번호로 잠겨 있음). 돌아가서 들어가 보세요.');
+    return (vb?Promise.resolve(null):lock(enc.encode(JSON.stringify({token:V.token,created:new Date().toISOString()})),nw,600000)).then(function(vault){
+      if(vault)out.push({path:VAULT_PATH,content:vault});
+      return commitFiles(out,'관리자 키를 새 비밀번호로 옮김 ('+out.length+'개 파일)');}).then(function(){return out.length;});
+  }).then(function(n){msg('mgMsg','파일 '+n+'개를 옮겼습니다. 들어가는 중…','ok');PASS=nw;try{sessionStorage.setItem(SS,nw);}catch(e){}
+    $('migrate').classList.add('hidden');$('gate').classList.remove('hidden');return start();
+  }).catch(function(e){V=null;msg('mgMsg',(e.status===401?'토큰이 올바르지 않습니다. ':e.status===403||e.status===404?'토큰에 이 저장소 Contents 쓰기 권한이 없습니다. ':'')+e.message,'err');})
+  .then(function(){btn.disabled=false;});});
 function needToken(){msg('gateMsg','');$('gate').classList.add('hidden');$('setup').classList.remove('hidden');$('suTok').focus();}
 $('suBack').addEventListener('click',function(){$('setup').classList.add('hidden');$('gate').classList.remove('hidden');msg('gateMsg','');});
 $('suGo').addEventListener('click',function(){
