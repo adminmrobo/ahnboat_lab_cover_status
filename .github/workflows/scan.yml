@@ -42,7 +42,7 @@ jobs:
           ADMIN_SET: ${{ secrets.ADMIN_PASSWORD != '' }}
         run: |
           pip install --quiet cryptography
-          python scripts/rekey.py   # 예전 키로 잠긴 파일을 새 관리자 키로 (처음 한 번)
+          python scripts/rekey.py   # 예전 키(HUB_KEY)로 잠긴 파일을 새 관리자 키(ADMIN_PASSWORD)로 다시 잠근다
           python -c "import sys; sys.path.insert(0, 'scripts'); import series_cards; series_cards.fetch()"   # 시리즈 카드(장별 묶음) 최신본
           python scripts/hub_secure.py
           python scripts/build_portfolio.py
