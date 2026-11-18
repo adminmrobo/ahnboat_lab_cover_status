@@ -86,6 +86,21 @@ td input.ord{width:56px}
 #toast.show{opacity:1;pointer-events:auto}
 #toast a{color:#9fe3c2}
 .foot{margin-top:24px;color:var(--muted);font-size:12.5px}
+/* 탭 · 공지 */
+.tabs{display:flex;gap:6px;margin-top:16px;flex-wrap:wrap}
+.tabs button{border-radius:99px;padding:6px 16px;font-weight:700}
+.tabs button[aria-selected=true]{background:var(--ink);border-color:var(--ink);color:#fff}
+.nt td input[type=text]{width:100%}
+.nt td.dt{width:150px}.nt td.yn{width:90px}.nt td.ac{width:120px;white-space:nowrap}
+.nt tr.off td{opacity:.55}
+.prev{border:2px solid #1f2224;border-radius:14px;overflow:hidden;display:flex;margin-top:14px;box-shadow:3px 3px 0 #1f2224;background:#fff}
+.prev .lb{background:#ffd75e;font-weight:700;padding:0 14px;display:flex;align-items:center;border-right:2px solid #1f2224;font-size:13px;flex:none}
+.prev ul{list-style:none;margin:0;padding:6px;flex:1;min-width:0}
+.prev li{display:flex;gap:10px;align-items:baseline;padding:4px 8px}
+.prev time{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.prev .new{font-family:var(--mono);font-size:10.5px;font-weight:700;color:#fff;background:#d6457a;border-radius:5px;padding:0 5px}
+.prev .t{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.scanbox{background:var(--blue-soft);border-radius:10px;padding:10px 14px;margin-top:14px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-size:13.5px}
 @media (max-width:820px){.hide-s{display:none}.bar{position:static}}
 </style>
 </head>
@@ -94,7 +109,7 @@ td input.ord{width:56px}
 <header class="site">
   <div>
     <h1>콘텐츠 관리실</h1>
-    <p class="lede">콘텐츠 내역(hub.csv)을 화면에서 바로 보고 고친 뒤 <b>저장</b>합니다. 기준일과 공개일로 카탈로그에 나오는 콘텐츠를 정합니다.</p>
+    <p class="lede">콘텐츠 내역(hub.csv)을 화면에서 바로 보고 고친 뒤 <b>저장</b>합니다. 기준일과 공개일로 카탈로그에 나오는 콘텐츠를 정합니다. <b>공지사항</b> 탭에서는 홈페이지 맨 위 공지를 직접 씁니다.</p>
   </div>
   <nav class="links"><a href="hub.html">콘텐츠 현황판</a><a href="catalog.html" target="_blank" rel="noopener">공개 카탈로그</a><a href="index.html">표지 현황</a></nav>
 </header>
@@ -118,7 +133,7 @@ td input.ord{width:56px}
   <label>GitHub 토큰
     <input id="suTok" type="password" autocomplete="off" placeholder="github_pat_...">
     <small><a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">Fine-grained 토큰 만들기</a> → Repository access: <b>Only select repositories</b> → <code>ahnboat_lab_cover_status</code>
-      (챕터 불러오기를 쓰려면 <b>All repositories</b>) → Permissions: <b>Contents · Read and write</b>. 만료일은 넉넉히(예: 1년).</small>
+      (챕터 불러오기를 쓰려면 <b>All repositories</b>) → Permissions: <b>Contents · Read and write</b> (‘지금 새 저장소 가져오기’ 버튼까지 쓰려면 <b>Actions · Read and write</b>도). 만료일은 넉넉히(예: 1년).</small>
   </label>
   <div style="display:flex;gap:8px;margin-top:14px;flex-wrap:wrap"><button id="suGo" class="pri" type="button">토큰 등록하고 들어가기</button><button id="suSkip" type="button"><b>토큰 없이 들어가기</b></button><button id="suBack" type="button">돌아가기</button></div>
   <p class="hint">토큰 없이 들어가도 보고 고치는 것은 똑같습니다. <b>저장</b>을 누르면 잠긴 파일이 내려받아지고 GitHub 올리기 화면이 열리니, 그 파일을 끌어다 놓고 <b>Commit changes</b>만 누르면 됩니다.</p>
@@ -147,6 +162,12 @@ td input.ord{width:56px}
 
 <!-- 3. 작업 화면 -->
 <section id="app" class="hidden">
+  <div class="tabs" role="tablist">
+    <button type="button" role="tab" id="tabC" aria-selected="true">콘텐츠</button>
+    <button type="button" role="tab" id="tabN" aria-selected="false">공지사항</button>
+  </div>
+  <div id="paneC">
+  <div class="scanbox"><span>새 저장소를 만들었나요? 매일 오전 6시에 저절로 가져오지만, 지금 바로 가져올 수도 있습니다.</span><button type="button" id="scanBtn">지금 새 저장소 가져오기</button></div>
   <div class="bar">
     <div class="basebox">
       <b>저장 기준일</b>
@@ -173,6 +194,27 @@ td input.ord{width:56px}
   </table>
   </div>
   <p class="foot" id="foot"></p>
+  </div>
+
+  <!-- 공지사항 -->
+  <div id="paneN" class="hidden">
+    <div class="bar">
+      <div class="grp grow"><b>공지사항</b><span class="hint" style="margin:0">홈페이지 맨 위 공지 칸에 <b>표시 Y</b>인 공지 중 최근 3개가 나옵니다. 7일 안의 공지에는 NEW가 붙습니다.</span></div>
+      <div class="grp">
+        <button id="nAdd" type="button">+ 공지</button>
+        <button id="nSave" class="pri" type="button" disabled>공지 저장</button>
+      </div>
+    </div>
+    <div style="overflow-x:auto">
+    <table class="nt">
+      <thead><tr><th>날짜</th><th>제목</th><th>링크 (누르면 갈 주소)</th><th>표시</th><th></th></tr></thead>
+      <tbody id="nRows"></tbody>
+    </table>
+    </div>
+    <h2 style="margin-top:24px">홈페이지에 보일 모습</h2>
+    <div class="prev"><div class="lb">📢 공지</div><ul id="nPrev"></ul></div>
+    <p class="foot">공지는 비밀번호로 잠그지 않는 공개 파일(data/notices.csv)입니다. 저장하면 1~2분 뒤 홈페이지에 반영됩니다. 다른 언어 화면에서는 번역하기 전까지 한국어로 보입니다.</p>
+  </div>
 </section>
 </div>
 
@@ -554,7 +596,73 @@ $('saveBtn').addEventListener('click',function(){
     toast('저장했습니다. 몇 분 뒤 카탈로그·서버실에 반영됩니다. <a href="https://github.com/'+OWNER+'/'+REPO+'/actions" target="_blank" rel="noopener">진행 보기</a>',8000);
   }).catch(function(e){toast('저장하지 못했습니다: '+esc(e.message)+(e.status===409||e.status===422?' — 잠시 뒤 다시 눌러 주세요.':''),8000);dirty();})
   .then(function(){btn.textContent=dirty()?'저장 •':'저장';});});
-window.addEventListener('beforeunload',function(e){if($('app').classList.contains('hidden'))return;if(dirty()){e.preventDefault();e.returnValue='';}});
+window.addEventListener('beforeunload',function(e){if($('app').classList.contains('hidden'))return;if(dirty()||(NLOADED&&nDirty())){e.preventDefault();e.returnValue='';}});
+
+
+/* ---------- 탭 ---------- */
+function tab(n){$('tabC').setAttribute('aria-selected',n==='C');$('tabN').setAttribute('aria-selected',n==='N');
+  $('paneC').classList.toggle('hidden',n!=='C');$('paneN').classList.toggle('hidden',n!=='N');if(n==='N'&&!NLOADED)loadNotices();}
+$('tabC').addEventListener('click',function(){tab('C');});$('tabN').addEventListener('click',function(){tab('N');});
+
+/* ---------- 지금 새 저장소 가져오기 (표지 현황 수집 실행) ---------- */
+$('scanBtn').addEventListener('click',function(){
+  var page='https://github.com/'+OWNER+'/'+REPO+'/actions/workflows/scan.yml',btn=this;
+  if(!V||!V.token){window.open(page,'_blank','noopener');toast('열린 화면에서 오른쪽 <b>Run workflow</b> → 초록 <b>Run workflow</b>를 누르세요. 3~5분 뒤 새 저장소가 표에 <b>검토</b>로 들어옵니다.',12000);return;}
+  btn.disabled=true;
+  gh('/repos/'+OWNER+'/'+REPO+'/actions/workflows/scan.yml/dispatches',{method:'POST',body:{ref:BRANCH}}).then(function(){
+    toast('수집을 시작했습니다. 3~5분 뒤 이 화면을 새로 고치면 새 저장소가 <b>검토</b>로 보입니다. <a href="'+page+'" target="_blank" rel="noopener">진행 보기</a>',12000);
+  },function(e){window.open(page,'_blank','noopener');
+    toast((e.status===403||e.status===404?'토큰에 Actions 실행 권한이 없어 ':'')+'GitHub 화면을 열었습니다. <b>Run workflow</b>를 눌러 주세요.',12000);
+  }).then(function(){btn.disabled=false;});});
+
+/* ---------- 공지사항 ---------- */
+var N_PATH='data/notices.csv',NHDR=['날짜','제목','링크','표시'],NROWS=[],NORIG='',NSHA='',NLOADED=false;
+function nCSV(){return '﻿'+[NHDR.join(',')].concat(NROWS.map(function(r){return NHDR.map(function(h){return cell(r[h]);}).join(',');})).join('\n')+'\n';}
+function nSorted(){return NROWS.slice().sort(function(a,b){return (b['날짜']||'').localeCompare(a['날짜']||'');});}
+function nDirty(){var d=nCSV()!==NORIG;$('nSave').disabled=!d;$('nSave').textContent=d?'공지 저장 •':'공지 저장';return d;}
+function loadNotices(){
+  var tb=$('nRows');tb.innerHTML='<tr><td colspan="5">불러오는 중…</td></tr>';
+  getFile(N_PATH).then(function(f){NSHA=f.sha;return f.text;},function(){return fetch(N_PATH+'?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.ok?r.text():'날짜,제목,링크,표시\n';});})
+  .then(function(t){var p=parseCSV(t);NROWS=p.rows.map(function(r){return {'날짜':normDate(r['날짜'])||r['날짜']||'','제목':r['제목']||'','링크':r['링크']||'','표시':(r['표시']||'Y').toUpperCase()==='N'?'N':'Y'};});
+    NROWS=nSorted();NORIG=nCSV();NLOADED=true;nRender();})
+  .catch(function(e){tb.innerHTML='';toast('공지를 불러오지 못했습니다: '+esc(e.message),8000);});}
+function nRender(){
+  var tb=$('nRows');tb.innerHTML='';
+  if(!NROWS.length){var tr=el('tr'),td=el('td','','공지가 없습니다. + 공지를 눌러 보세요.');td.colSpan=5;tr.appendChild(td);tb.appendChild(tr);}
+  NROWS.forEach(function(r,i){
+    var tr=el('tr',r['표시']==='N'?'off':'');
+    var t0=el('td','dt');var d=el('input');d.type='date';d.value=normDate(r['날짜']);d.addEventListener('change',function(){r['날짜']=d.value;nRender();});t0.appendChild(d);tr.appendChild(t0);
+    var t1=el('td');var ti=el('input');ti.type='text';ti.value=r['제목'];ti.placeholder='예: 새 시리즈 공개 — …';ti.addEventListener('input',function(){r['제목']=ti.value;nPreview();nDirty();});t1.appendChild(ti);tr.appendChild(t1);
+    var t2=el('td');var li=el('input');li.type='text';li.value=r['링크'];li.placeholder='https://adminmrobo.github.io/저장소이름/';li.addEventListener('input',function(){r['링크']=li.value.trim();nDirty();});t2.appendChild(li);tr.appendChild(t2);
+    var t3=el('td','yn');t3.appendChild(sel([['Y','Y 보임'],['N','N 숨김']],r['표시'],function(v){r['표시']=v;nRender();}));tr.appendChild(t3);
+    var t4=el('td','ac');
+    var go=el('button','sm','열기');go.type='button';go.title='링크 확인';go.addEventListener('click',function(){if(r['링크'])window.open(r['링크'],'_blank','noopener');});t4.appendChild(go);
+    var del=el('button','sm warn','지우기');del.type='button';del.style.marginLeft='4px';del.addEventListener('click',function(){if(confirm('"'+(r['제목']||'빈 공지')+'"를 지울까요? (공지 저장을 눌러야 반영됩니다)')){NROWS.splice(i,1);nRender();}});t4.appendChild(del);
+    tr.appendChild(t4);tb.appendChild(tr);});
+  nPreview();nDirty();}
+function nPreview(){
+  var ul=$('nPrev');ul.innerHTML='';
+  var list=nSorted().filter(function(n){return n['표시']!=='N'&&n['제목'].trim();}).slice(0,3);
+  if(!list.length){ul.appendChild(el('li','','새 공지가 없습니다.'));return;}
+  list.forEach(function(n){var li=el('li');li.appendChild(el('time','',(n['날짜']||'').slice(5).replace('-','.')));
+    var dd=n['날짜']?(Date.now()-Date.parse(n['날짜']))/864e5:99;if(dd<7)li.appendChild(el('span','new','NEW'));
+    li.appendChild(el('span','t',n['제목']));ul.appendChild(li);});}
+$('nAdd').addEventListener('click',function(){NROWS.unshift({'날짜':kstToday(),'제목':'','링크':'https://ahnboat.xyz/','표시':'Y'});nRender();
+  var f=$('nRows').querySelector('input[type=text]');if(f)f.focus();});
+$('nSave').addEventListener('click',function(){
+  var btn=this;if(!nDirty())return;
+  var bad=NROWS.filter(function(r){return r['제목'].trim()&&!normDate(r['날짜']);});
+  if(bad.length){toast('날짜가 빈 공지가 있습니다. 날짜를 넣어 주세요.',6000);return;}
+  NROWS=NROWS.filter(function(r){return r['제목'].trim();});NROWS=nSorted();
+  var csv=nCSV();
+  if(!V||!V.token){var up='https://github.com/'+OWNER+'/'+REPO+'/upload/'+BRANCH+'/data';
+    download('notices.csv',csv,'text/csv;charset=utf-8');window.open(up,'_blank','noopener');
+    NORIG=csv;nRender();
+    toast('notices.csv를 내려받았습니다. 열린 GitHub 화면에 끌어다 놓고 <b>Commit changes</b>를 누르면 끝입니다. <a href="'+up+'" target="_blank" rel="noopener">올리기 화면 열기</a>',20000);return;}
+  btn.disabled=true;btn.textContent='저장하는 중…';
+  commitFiles([{path:N_PATH,content:csv}],'공지사항 저장').then(function(){return getFile(N_PATH);}).then(function(f){
+    NSHA=f.sha;NORIG=csv;nRender();toast('공지를 저장했습니다. 1~2분 뒤 홈페이지 맨 위에 보입니다.',8000);
+  }).catch(function(e){toast('저장하지 못했습니다: '+esc(e.message),8000);nDirty();});});
 
 /* ---------- 엑셀 ---------- */
 function download(name,data,type){var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([data],{type:type}));a.download=name;document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},500);}
