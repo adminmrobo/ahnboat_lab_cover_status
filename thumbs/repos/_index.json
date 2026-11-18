@@ -33,9 +33,9 @@
   "pushed_at": "2026-11-06T03:12:38Z"
  },
  "AI_for_cement_produce": {
-  "src": "name:ch08_timeseries_lag_preprocessing/img/COVER.webp",
-  "pushed_at": "2026-11-11T17:10:10Z",
-  "made": "2026-11-13"
+  "src": "manifest:ch08_timeseries_lag_preprocessing/img/COVER.webp",
+  "pushed_at": "2026-11-17T12:10:51Z",
+  "made": "2026-11-18"
  },
  "ai_for_cement_produce_07": {
   "src": "file:img/F01_cement_mortar_concrete.webp",
@@ -161,7 +161,7 @@
  },
  "drug-crime-social-cost": {
   "src": null,
-  "pushed_at": "2026-11-16T09:21:35Z"
+  "pushed_at": "2026-11-17T07:03:18Z"
  },
  "fabric_ai_project": {
   "src": null,
@@ -193,7 +193,7 @@
  },
  "g2b-bid-strategy": {
   "src": null,
-  "pushed_at": "2026-11-17T03:01:31Z"
+  "pushed_at": "2026-11-18T02:35:15Z"
  },
  "Gen_AI_Hannam_univ": {
   "src": "embedded:index.html#hero",
@@ -459,8 +459,8 @@
  },
  "optimization_3d_map": {
   "src": "manifest:img/cover_index.webp",
-  "pushed_at": "2026-11-16T11:55:59Z",
-  "made": "2026-11-17"
+  "pushed_at": "2026-11-17T22:13:20Z",
+  "made": "2026-11-18"
  },
  "probability_distribution_dictionary": {
   "src": "file:thumbs/part1.webp",
