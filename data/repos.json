@@ -5639,7 +5639,7 @@
   "repo_url": "https://github.com/adminmrobo/fintech_data_analysis",
   "pages_url": "https://adminmrobo.github.io/fintech_data_analysis/",
   "default_branch": "main",
-  "pushed_at": "2026-11-19T18:29:37Z",
+  "pushed_at": "2026-11-19T18:30:57Z",
   "has_manifest": false,
   "covers": [
    {
@@ -10376,7 +10376,7 @@
     "ko": 155
    }
   },
-  "has_pages": false
+  "has_pages": true
  },
  {
   "repo": "minkowski_space_lab",
