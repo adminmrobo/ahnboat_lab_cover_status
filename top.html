@@ -62,6 +62,8 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
 .notice li a:hover{background:var(--paper)}
 .notice time{font-family:var(--mono);font-size:.78rem;color:var(--muted);flex:none}
 .notice .t{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.notice .nedit{flex:none;display:flex;align-items:center;justify-content:center;padding:0 12px;text-decoration:none;font-size:.95rem;opacity:.45;border-left:2px dashed var(--line)}
+.notice .nedit:hover,.notice .nedit:focus-visible{opacity:1;background:var(--paper)}
 .notice .new{font-family:var(--mono);font-size:.66rem;font-weight:700;color:#fff;background:var(--pink);border-radius:5px;padding:0 5px;flex:none}
 .find{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;max-width:560px}
 .find form{flex:1 1 240px;display:flex;min-width:0;border:2px solid var(--line);border-radius:12px;background:#fff;box-shadow:3px 3px 0 var(--line);overflow:hidden}
@@ -76,6 +78,7 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
   .notice{flex-direction:column}
   .notice .lb{padding:8px 14px;border-right:0;border-bottom:2px solid var(--line)}
   .notice .t{white-space:normal}
+  .notice .nedit{border-left:0;border-top:2px dashed var(--line);padding:6px 12px;justify-content:flex-end}
 }
 @media (prefers-reduced-motion:reduce){.say{transition:none}}
 </style>
@@ -102,6 +105,7 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
   <section class="notice" aria-labelledby="nlb">
     <span class="lb" id="nlb">📢 공지</span>
     <ul id="nlist"><li><a href="#"><span class="t">공지를 불러오는 중…</span></a></li></ul>
+    <a class="nedit" href="admin.html#notice" target="_blank" rel="noopener" title="공지 쓰기 (관리자)" aria-label="공지 쓰기 (관리자)">✏️</a>
   </section>
 </div>
 <script src="i18n.js"></script>

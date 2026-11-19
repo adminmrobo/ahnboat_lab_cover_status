@@ -560,6 +560,7 @@ function start(){
     SETTINGS=a[4]||{mode:'auto'};$('baseAuto').checked=SETTINGS.mode!=='fixed';$('baseDate').value=normDate(SETTINGS.base_date)||kstToday();$('baseDate').disabled=$('baseAuto').checked;
     var fc=$('fCat');fc.innerHTML='<option value="">대분류 전체</option>';CATS.concat(['미분류']).forEach(function(c){var o=el('option','',c);o.value=c;fc.appendChild(o);});
     ORIG=toCSV();$('gate').classList.add('hidden');$('app').classList.remove('hidden');render();
+    if(/notice/.test(location.hash))tab('N');
   }).catch(function(e){msg('gateMsg','내용 표를 열지 못했습니다: '+e.message+(e.status===401?' — 토큰이 만료되었을 수 있습니다. 토큰을 다시 등록해 주세요.':''),'err');
     if(e.status===401){var b=el('button','sm','토큰 다시 등록');b.type='button';b.style.marginTop='8px';b.addEventListener('click',function(){$('gate').classList.add('hidden');$('setup').classList.remove('hidden');});$('gateMsg').appendChild(el('br'));$('gateMsg').appendChild(b);}});}
 
