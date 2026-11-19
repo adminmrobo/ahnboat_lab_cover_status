@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19",
+ "updated": "2026-11-20",
  "categories": [
   {
    "name": "프로젝트·서비스",
@@ -121,33 +121,33 @@
   },
   {
    "title": "핀테크 데이터분석 기초",
-   "summary": "금융 데이터를 다루는 기초를 배우는 13시간 이러닝 과정",
+   "summary": "STEP 13시간 강좌(13회차)를 가상 핀테크 기업 '핀데이터 그룹' 본사 타워(3D)로 꾸민 해설 과정. 한 층에 한 부서가 실제 공개 금융 데이터로 실험·대결하고, 8층 라운지와 15층 전망대에서 중간·기말 퀴즈를 봅니다. 회차별 Colab 실습 노트북 포함.",
    "cat": "저서·이러닝",
    "mid": "이러닝",
    "sub": "",
    "kind": "portfolio",
    "repo_url": "",
-   "site_url": "https://link.step.or.kr/brqEyc",
-   "link": "https://link.step.or.kr/brqEyc",
+   "site_url": "https://adminmrobo.github.io/fintech_data_analysis/",
+   "link": "https://adminmrobo.github.io/fintech_data_analysis/",
    "langs": [],
-   "thumb": "thumbs/cats/C08-M1.webp",
+   "thumb": "thumbs/cats/E-fintech-tower.webp",
    "button": "강좌 보기",
-   "note": "STEP 이러닝"
+   "note": "13회차 + 중간·기말 퀴즈 · 3D 본사 타워"
   },
   {
    "title": "[K-디지털] 인공지능 자연어 처리",
-   "summary": "자연어 데이터 분석의 흐름과 모델을 차시별로 배우는 8시간 과정",
+   "summary": "STEP 8시간 강좌(8회차)를 3D 연구소 건물 '말귀 타워'로 꾸민 해설 과정. 교안의 학습내용 24개가 한 층씩 24쪽이 되고, 13층 라운지와 26층 옥상 전망대에서 중간·기말 퀴즈를 봅니다.",
    "cat": "저서·이러닝",
    "mid": "이러닝",
    "sub": "",
    "kind": "portfolio",
    "repo_url": "",
-   "site_url": "https://adminmrobo.github.io/who_am_i/who_am_i.html",
-   "link": "https://adminmrobo.github.io/who_am_i/who_am_i.html",
+   "site_url": "https://adminmrobo.github.io/ai-nlp-data-analysis/",
+   "link": "https://adminmrobo.github.io/ai-nlp-data-analysis/",
    "langs": [],
-   "thumb": "thumbs/cats/C08-M1.webp",
-   "button": "소개 보기",
-   "note": "STEP 이러닝"
+   "thumb": "thumbs/cats/E-nlp-tower.webp",
+   "button": "강좌 보기",
+   "note": "8회차 24쪽 + 중간·기말 퀴즈 · 3D 말귀 타워"
   },
   {
    "title": "데이터 사이언티스트를 위한 베이지안 통계학",
