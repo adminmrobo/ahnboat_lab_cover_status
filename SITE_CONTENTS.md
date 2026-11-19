@@ -96,7 +96,7 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | 얼굴 알아맞히기 게임 · 20챕터로 배우는 CNN | 보고 알아보기 / 이미지 인식 | https://adminmrobo.github.io/cnn_face_game_lab/ | ko |
 | AI 글 읽기 어려움 | 읽고 이해하기 / AI 글 읽기 | https://adminmrobo.github.io/ai_text_read_ability/ | ko en zh ja uz ru vi |
 
-### LLM·추론 엔지니어링 (18)
+### LLM·추론 엔지니어링 (19)
 
 | 제목 | 중분류 | 주소 | 언어 |
 |---|---|---|---|
@@ -105,6 +105,7 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | rule base에서 일하는 AI까지 | LLM 이해 / rule base에서 에이전트까지 | https://adminmrobo.github.io/rulebase_to_agent/ | ko en zh ja uz ru vi |
 | 확률로 읽는 보안 사건 · 승인 기록 유출 | LLM 이해 / 에이전트 보안 | https://adminmrobo.github.io/agent_secret_leak_lab/ | ko |
 | 왜 지금 온톨로지인가 · 연구실 리포트(동향) | LLM 이해 / 연구실 리포트 | https://adminmrobo.github.io/ontology_trend_report/ | ko |
+| 4만 3천 편 중 만점 3편 · 연구실 모의 심사회 (ICLR 2027) | LLM 이해 / AI 학회 논문 리뷰 | https://adminmrobo.github.io/iclr2027_top3_lab_review/ | ko |
 | 목차 · 인퍼런스 스터디 북 | 추론 엔지니어링 스터디 / 스터디 북 · 보드 | https://adminmrobo.github.io/inference_engineering_study/ | ko en zh ja ru uz vi |
 | 스터디 보드 · Inference Korea | 추론 엔지니어링 스터디 / 스터디 북 · 보드 | https://adminmrobo.github.io/inference_korea_study_page/ | ko en zh |
 | 서문 · 추론은 이제 모두의 일 | 추론 엔지니어링 스터디 / 1장 · 시작 전에 정할 것 (서문·0장 포함) | https://adminmrobo.github.io/inference_engineering_study/week_01_textbook_preface/ | ko |
@@ -119,11 +120,10 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | 3장 논문 · 루프라인 (Roofline) | 추론 엔지니어링 스터디 / 3장 · 하드웨어 | https://adminmrobo.github.io/inference_engineering_study/week_04_article_01/ | ko |
 | 2장 후반 발표 · 병목을 찾아라 | 추론 엔지니어링 스터디 / 부록 · 발표 자료 | https://adminmrobo.github.io/inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide/ | ko |
 
-### 논문 해설 (12)
+### 논문 해설 (11)
 
 | 제목 | 중분류 | 주소 | 언어 |
 |---|---|---|---|
-| 4만 3천 편 중 만점 3편 · 연구실 모의 심사회 (ICLR 2027) | AI 응용 논문 / AI 학회 논문 | https://adminmrobo.github.io/iclr2027_top3_lab_review/ | ko |
 | SNS 은어와 이상탐지 | AI 응용 논문 / AI·보안 | https://adminmrobo.github.io/my_article_03_drug-slang-detection/ | ko en zh ja uz ru vi |
 | 금융 이상탐지 모델 보안과 적대적 공격 | AI 응용 논문 / AI·보안 | https://adminmrobo.github.io/my_article_04_adversarial_finance_attack/ | ko en zh ja uz ru vi |
 | 노후 가계부와 AI 예측 모형 | 경제·사회 논문 / 경제·사회 | https://adminmrobo.github.io/my_article_05_consumer_expenditure_predict/ | ko en zh ja uz ru vi |
