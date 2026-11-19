@@ -339,7 +339,7 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_lab_explainer",
   "pages_url": "https://adminmrobo.github.io/ahnboat_lab_explainer/",
   "default_branch": "main",
-  "pushed_at": "2026-11-13T22:19:53Z",
+  "pushed_at": "2026-11-19T18:18:15Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -526,7 +526,7 @@
   "repo_url": "https://github.com/adminmrobo/ai-nlp-data-analysis",
   "pages_url": "https://adminmrobo.github.io/ai-nlp-data-analysis/",
   "default_branch": "main",
-  "pushed_at": "2026-11-19T16:31:48Z",
+  "pushed_at": "2026-11-19T18:25:06Z",
   "has_manifest": false,
   "covers": [
    {
@@ -3176,7 +3176,7 @@
   "repo_url": "https://github.com/adminmrobo/data_base_design",
   "pages_url": "https://adminmrobo.github.io/data_base_design/",
   "default_branch": "main",
-  "pushed_at": "2026-11-19T16:26:41Z",
+  "pushed_at": "2026-11-19T18:26:10Z",
   "has_manifest": true,
   "covers": [
    {
@@ -3337,7 +3337,7 @@
     "ko": 16
    }
   },
-  "has_pages": false
+  "has_pages": true
  },
  {
   "repo": "data_science_for_business",
@@ -5639,7 +5639,7 @@
   "repo_url": "https://github.com/adminmrobo/fintech_data_analysis",
   "pages_url": "https://adminmrobo.github.io/fintech_data_analysis/",
   "default_branch": "main",
-  "pushed_at": "2026-11-19T16:17:57Z",
+  "pushed_at": "2026-11-19T18:29:37Z",
   "has_manifest": false,
   "covers": [
    {
@@ -5723,8 +5723,168 @@
     "estimated": true
    },
    {
+    "path": "src/build/covers/cover_00.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_01.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_02.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_03.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_04.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_05.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_06.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_07.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_08.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_09.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_10.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_11.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_12.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_13.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_14.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_15.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
     "path": "assets/og_series.jpg",
     "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "assets/thumb_portfolio.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs/thumb_01.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs/thumb_02.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs/thumb_03.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs/thumb_04.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs/thumb_05.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs/thumb_06.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs/thumb_07.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs/thumb_08.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs/thumb_09.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs/thumb_10.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs/thumb_11.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs/thumb_12.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs/thumb_13.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs/thumb_14.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs/thumb_15.webp",
+    "role": "thumb",
     "estimated": true
    }
   ],
@@ -10167,13 +10327,65 @@
   "has_pages": false
  },
  {
+  "repo": "micro_economics",
+  "series_ko": "미시경제학 연구실 — 미시경제학 연구실 블로그",
+  "title_ko": "미시경제학 연구실 — 미시경제학 연구실 블로그",
+  "repo_url": "https://github.com/adminmrobo/micro_economics",
+  "pages_url": "https://adminmrobo.github.io/micro_economics/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-19T18:22:42Z",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-20",
+  "site_title": "미시경제학 연구실 — 미시경제학 연구실 블로그",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 155,
+   "pages_checked": 40,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 155
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/micro_economics/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 155
+   }
+  },
+  "has_pages": false
+ },
+ {
   "repo": "minkowski_space_lab",
   "series_ko": "마이너스 칸이 있는 방 — 시아·모아의 민코프스키 시공간",
   "title_ko": "마이너스 칸이 있는 방 — 시아·모아의 민코프스키 시공간",
   "repo_url": "https://github.com/adminmrobo/minkowski_space_lab",
   "pages_url": "https://adminmrobo.github.io/minkowski_space_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-19T16:30:09Z",
+  "pushed_at": "2026-11-19T18:24:12Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
