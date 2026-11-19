@@ -3,6 +3,11 @@
   "src": null,
   "pushed_at": "2026-11-12T02:18:38Z"
  },
+ "agentic_ai_crash_guide": {
+  "src": "name:assets/img/cover.webp",
+  "pushed_at": "2026-11-19T16:24:52Z",
+  "made": "2026-11-20"
+ },
  "ahn_boat_lab_town": {
   "src": "redraw:R019:assets/cut1_panic.webp",
   "pushed_at": "2026-11-14T05:09:06Z",
@@ -27,6 +32,11 @@
  "ahnboat_server_room_guards": {
   "src": null,
   "pushed_at": "2026-11-14T05:09:03Z"
+ },
+ "ai-nlp-data-analysis": {
+  "src": "name:assets/og/cover_00.jpg",
+  "pushed_at": "2026-11-19T16:31:48Z",
+  "made": "2026-11-20"
  },
  "ai-power-chain-simulator": {
   "src": null,
@@ -115,6 +125,10 @@
   "pushed_at": "2026-11-15T04:49:46Z",
   "made": "2026-11-16"
  },
+ "data_base_design": {
+  "src": null,
+  "pushed_at": "2026-11-19T16:26:41Z"
+ },
  "data_science_for_business": {
   "src": "manifest:index.html#cover_index",
   "pushed_at": "2026-11-12T08:54:12Z",
@@ -145,9 +159,8 @@
   "made": "2026-11-07"
  },
  "database_01of04": {
-  "src": "embedded:index.html#hero",
-  "pushed_at": "2026-10-19T10:06:42Z",
-  "made": "2026-11-07"
+  "src": null,
+  "pushed_at": "2026-11-19T16:27:02Z"
  },
  "deep_learning_00_neural_net_learns": {
   "src": "redraw:R022:en/index.html#hero-img",
@@ -165,8 +178,8 @@
  },
  "euclidean_space_lab": {
   "src": "manifest:assets/og/og_index.jpg",
-  "pushed_at": "2026-11-18T19:25:58Z",
-  "made": "2026-11-19"
+  "pushed_at": "2026-11-19T16:22:07Z",
+  "made": "2026-11-20"
  },
  "fabric_ai_project": {
   "src": "file:slides/img/gs/GS01.webp",
@@ -176,6 +189,11 @@
  "fintech_business_01_payment": {
   "src": null,
   "pushed_at": "2026-11-05T11:17:04Z"
+ },
+ "fintech_data_analysis": {
+  "src": "name:assets/og/cover_00.jpg",
+  "pushed_at": "2026-11-19T16:17:57Z",
+  "made": "2026-11-20"
  },
  "Fish_Market_Data_Machine_Learning": {
   "src": "embedded:index.html#hero",
@@ -194,12 +212,12 @@
  },
  "fruitfly-lab-expressions": {
   "src": "name:images/scenes/optimization_first_step/fs_cover_01.webp",
-  "pushed_at": "2026-11-16T15:54:11Z",
-  "made": "2026-11-17"
+  "pushed_at": "2026-11-19T14:16:02Z",
+  "made": "2026-11-20"
  },
  "g2b-bid-strategy": {
   "src": null,
-  "pushed_at": "2026-11-19T02:00:35Z"
+  "pushed_at": "2026-11-19T11:56:51Z"
  },
  "Gen_AI_Hannam_univ": {
   "src": "embedded:index.html#hero",
@@ -232,7 +250,7 @@
  },
  "hilbert_space_lab": {
   "src": null,
-  "pushed_at": "2026-11-18T19:37:25Z"
+  "pushed_at": "2026-11-19T16:24:10Z"
  },
  "how_to_make_ai_model_factory_version": {
   "src": "manifest:img/cover_01.webp",
@@ -247,6 +265,10 @@
   "src": "manifest:images/cover_iclr27.jpg",
   "pushed_at": "2026-11-12T00:46:25Z",
   "made": "2026-11-13"
+ },
+ "industrial-accident-prediction": {
+  "src": null,
+  "pushed_at": "2026-11-19T16:19:22Z"
  },
  "inference_engineering_study": {
   "src": "manifest:cover_factory.jpg",
@@ -328,6 +350,11 @@
   "src": null,
   "pushed_at": "2023-08-27T09:24:23Z"
  },
+ "lagrangian_hamiltonian_lab": {
+  "src": "name:assets/img/cover_00.webp",
+  "pushed_at": "2026-11-19T16:23:01Z",
+  "made": "2026-11-20"
+ },
  "learn-pandas-visually_korean": {
   "src": "redraw:R071:assets/hero/hero.jpg",
   "pushed_at": "2026-11-06T12:33:38Z",
@@ -365,6 +392,10 @@
   "pushed_at": "2026-11-07T05:41:16Z",
   "made": "2026-11-08"
  },
+ "minkowski_space_lab": {
+  "src": null,
+  "pushed_at": "2026-11-19T16:30:09Z"
+ },
  "ML_00_Algorithm-family-build_00": {
   "src": "name:4-6_regression_seven.html/idx_hero_1280.png",
   "pushed_at": "2026-11-06T12:37:53Z",
@@ -392,7 +423,7 @@
  },
  "money-robo_news_rebuild": {
   "src": null,
-  "pushed_at": "2026-11-19T01:28:44Z"
+  "pushed_at": "2026-11-19T09:04:43Z"
  },
  "motion_ai_series_01": {
   "src": "redraw:R074:5-2_recognize_to_generate.en.html#pixelart",
@@ -472,14 +503,18 @@
   "pushed_at": "2026-11-12T21:54:03Z",
   "made": "2026-11-13"
  },
+ "ontology_kg_vfx": {
+  "src": null,
+  "pushed_at": "2026-11-19T11:02:33Z"
+ },
  "ontology_trend_report": {
   "src": null,
   "pushed_at": "2026-11-13T12:15:26Z"
  },
  "optimization_3d_map": {
   "src": "manifest:img/cover_index.webp",
-  "pushed_at": "2026-11-18T19:26:35Z",
-  "made": "2026-11-19"
+  "pushed_at": "2026-11-19T09:51:24Z",
+  "made": "2026-11-20"
  },
  "probability_distribution_dictionary": {
   "src": "file:thumbs/part1.webp",
@@ -561,9 +596,9 @@
   "pushed_at": "2026-11-06T04:27:09Z"
  },
  "vector_calculus_lab": {
-  "src": "file:assets/og/00.jpg",
-  "pushed_at": "2026-11-18T19:50:20Z",
-  "made": "2026-11-19"
+  "src": "manifest:assets/og/index.jpg",
+  "pushed_at": "2026-11-19T16:23:09Z",
+  "made": "2026-11-20"
  },
  "what_is_tensor": {
   "src": "name:assets/img/og_w01.jpg",

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19",
+ "updated": "2026-11-20",
  "categories": [
   {
    "name": "머신러닝",
@@ -1125,21 +1125,6 @@
    "thumb": ""
   },
   {
-   "title": "4만 3천 편 중 만점 3편 · 연구실 모의 심사회 (ICLR 2027)",
-   "summary": "ICLR 2027에서 심사위원 전원이 만점을 줬다고 알려진 논문 세 편(Context Language Models, Zero-Shot Control, Latent Taxonomies)을 연구실 식구들이 장난감 실험으로 다시 심사하는 비전공자용 해설.",
-   "cat": "LLM·추론 엔지니어링",
-   "mid": "LLM 이해",
-   "sub": "AI 학회 논문 리뷰",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/iclr2027_top3_lab_review",
-   "site_url": "https://adminmrobo.github.io/iclr2027_top3_lab_review/",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "thumbs/repos/iclr2027_top3_lab_review.jpg"
-  },
-  {
    "title": "목차 · 인퍼런스 스터디 북",
    "summary": "『Inference Engineering』 10주 스터디를 장별로 묶은 연구실 해설 스터디 북 — 첫 화면의 추론 공정 제어판에서 \"그래서 GPU로 LLM을 어떻게 돌리나\"를 한 장으로 봅니다.",
    "cat": "LLM·추론 엔지니어링",
@@ -1353,6 +1338,21 @@
     "ko"
    ],
    "thumb": "https://adminmrobo.github.io/inference_engineering_study/cards/inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide.jpg"
+  },
+  {
+   "title": "4만 3천 편 중 만점 3편 · 연구실 모의 심사회 (ICLR 2027)",
+   "summary": "ICLR 2027에서 심사위원 전원이 만점을 줬다고 알려진 논문 세 편(Context Language Models, Zero-Shot Control, Latent Taxonomies)을 연구실 식구들이 장난감 실험으로 다시 심사하는 비전공자용 해설.",
+   "cat": "논문 해설",
+   "mid": "AI 응용 논문",
+   "sub": "AI 학회 논문",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/iclr2027_top3_lab_review",
+   "site_url": "https://adminmrobo.github.io/iclr2027_top3_lab_review/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/iclr2027_top3_lab_review.jpg"
   },
   {
    "title": "SNS 은어와 이상탐지",
@@ -1919,10 +1919,8 @@
    "repo_url": "https://github.com/adminmrobo/database_01of04",
    "site_url": "https://adminmrobo.github.io/database_01of04/",
    "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "thumbs/repos/database_01of04.jpg"
+   "langs": [],
+   "thumb": "thumbs/R110.jpg"
   },
   {
    "title": "데이터시각화 1주차 · 과정 안내",
