@@ -215,7 +215,7 @@ h1{margin:0;font-size:clamp(1.8rem,3.6vw,2.8rem);line-height:1.1}
       var b=el('button','',nm(n));b.type='button';b.appendChild(el('b','',T('{0}개 분야',n.c.length)));b.addEventListener('click',function(){
         if(cur.field&&n.c.indexOf(cur.field)<0){cur.field=null;statics();build();}
         select('c:'+n.id);$('mapbox').scrollIntoView({behavior:'smooth',block:'center'});});sh.appendChild(b);});
-    $('note').textContent=T('매일 오전 6시에 각 해설 페이지의 지식 색인(#kg)을 다시 모아 갱신합니다. 마지막 갱신: {0}',D.updated);
+    $('note').textContent=T('하루 두 번(아침·저녁쯤) 각 해설 페이지의 지식 색인(#kg)을 다시 모아 갱신합니다. 마지막 갱신: {0}',D.updated);
     layers();
     if(sel)info(sel);
   }
@@ -260,7 +260,7 @@ h1{margin:0;font-size:clamp(1.8rem,3.6vw,2.8rem);line-height:1.1}
       {k:'에이전트와 기록',q:'움직이고, 적어 두고, 고친다',st:['out','이 지도 밖'],
        what:'좁혀진 그래프를 보고 판단해 실제로 움직이고, 성공과 실패의 기록으로 위의 층들을 다시 고칩니다.',
        air:'예약을 마치거나 사람에게 넘기고, 그 결과를 남겨 다음 판단에 씁니다.',
-       here:T('이 지도는 매일 오전 6시에 지식 색인을 다시 모읍니다. 지식 층을 새로 고치는 일이지, 사용 기록에서 배우는 고리는 아직 아닙니다.')}
+       here:T('이 지도는 하루 두 번(아침·저녁쯤) 지식 색인을 다시 모읍니다. 지식 층을 새로 고치는 일이지, 사용 기록에서 배우는 고리는 아직 아닙니다.')}
     ];
     var sp=$('spine');sp.textContent='';
     L.forEach(function(x,i){var li=el('li','ly'+(x.on||i===0?' on':''));
