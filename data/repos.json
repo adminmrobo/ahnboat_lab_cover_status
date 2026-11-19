@@ -526,11 +526,56 @@
   "repo_url": "https://github.com/adminmrobo/ai-nlp-data-analysis",
   "pages_url": "https://adminmrobo.github.io/ai-nlp-data-analysis/",
   "default_branch": "main",
-  "pushed_at": "2026-11-19T18:25:06Z",
+  "pushed_at": "2026-11-19T19:04:54Z",
   "has_manifest": false,
   "covers": [
    {
     "path": "assets/og/cover_00.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_01.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_02.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_03.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_04.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_05.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_06.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_07.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_08.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_09.jpg",
     "role": "cover",
     "estimated": true
    },
@@ -3176,7 +3221,7 @@
   "repo_url": "https://github.com/adminmrobo/data_base_design",
   "pages_url": "https://adminmrobo.github.io/data_base_design/",
   "default_branch": "main",
-  "pushed_at": "2026-11-19T18:26:10Z",
+  "pushed_at": "2026-11-19T18:42:48Z",
   "has_manifest": true,
   "covers": [
    {
@@ -5639,7 +5684,7 @@
   "repo_url": "https://github.com/adminmrobo/fintech_data_analysis",
   "pages_url": "https://adminmrobo.github.io/fintech_data_analysis/",
   "default_branch": "main",
-  "pushed_at": "2026-11-19T18:30:57Z",
+  "pushed_at": "2026-11-19T18:49:53Z",
   "has_manifest": false,
   "covers": [
    {
