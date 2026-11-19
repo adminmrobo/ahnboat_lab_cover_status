@@ -15,7 +15,7 @@
 
 ## 매일 자동 수집
 
-`.github/workflows/scan.yml`이 매일 한국 시간 오전 6시(와 Actions 탭의 수동 실행)에 `scripts/scan_repos.py`를 돌립니다.
+`.github/workflows/scan.yml`이 하루 두 번(예약 03:27·15:27 KST — GitHub 사정으로 몇 시간 밀려 보통 아침·저녁에 실행)과 Actions 탭의 수동 실행 때 `scripts/scan_repos.py`를 돌립니다.
 
 1. adminmrobo의 공개 저장소를 모두 읽습니다 (`newsreporter_*`, 이 저장소, fork는 뺍니다).
 2. 저장소마다 `cover_manifest.json`을 읽습니다. 없으면 그림 파일 이름(`cover`·`og`·`hero`·`thumb`·`sc_`)으로 표지를 추정합니다.
@@ -67,7 +67,7 @@ python3 scripts/make_thumbs.py --fetch                     # 바뀐 저장소만
 - `data/admin_vault.enc` — 관리실 열쇠 보관함(비밀번호로 잠김).
 - `data/hub_meta.json` — 대분류(=서버실 랙 10개)·중분류 소개·색인어·그림, 첫 화면 배너.
 - `scripts/hub_secure.py` — 잠긴 표를 풀어 `build_hub.py`로 다시 만들고 다시 잠근다. `scripts/hubcrypt.py` — 잠그기·풀기.
-- 관리자 키는 저장소 Settings → Secrets and variables → Actions의 `HUB_KEY`에 있다. 매일 06시 수집과, `hub.csv.enc`·`hub_meta.json`을 올릴 때 다시 만든다.
+- 관리자 키는 저장소 Settings → Secrets and variables → Actions의 `HUB_KEY`에 있다. 하루 두 번 예약 수집과, `hub.csv.enc`·`hub_meta.json`을 올릴 때 다시 만든다.
 
 ### 콘텐츠 관리실 (`admin.html`) — 화면에서 바로 고치고 저장
 
