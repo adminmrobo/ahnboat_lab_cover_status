@@ -2,14 +2,10 @@
 
 ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전·오후 자동으로 다시 만들고, Actions에서 수동으로도 돌릴 수 있습니다.
 
-- 갱신: **2026-11-20 00:41 KST**
-- 홈페이지 글 32 · 페이지 0 · 사이트맵 주소 73
-- GitHub 해설 콘텐츠 110 · 포트폴리오 10 · 일정 18
+- 갱신: **2026-11-20 16:18 KST**
+- 홈페이지 글 32 · 페이지 4
+- GitHub 해설 콘텐츠 112 · 포트폴리오 10 · 일정 18
 - 기계용 원본: `data/site_contents.json`
-
-> ⚠ 이번에 읽지 못한 곳
-
-> - 워드프레스 REST API 읽기 실패: HTTP Error 429: Too Many Requests
 
 ## 1. 홈페이지 글 (ahnboat.xyz)
 
@@ -50,11 +46,16 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 
 ## 2. 홈페이지 페이지
 
-(없음 또는 읽지 못함)
+| 제목 | 주소 | 고친 날 |
+|---|---|---|
+| Article & Study | https://ahnboat.xyz/articlestudy/ | 2026-10-04 |
+| Global Business Story | https://ahnboat.xyz/global_business/ | 2026-10-04 |
+| Hello! Everyone! | https://ahnboat.xyz/my_profile/ | 2026-10-19 |
+| 곧 나옵니다.. 아마도요..! (Coming Soon-ish! 🐌) | https://ahnboat.xyz/pleae_wait/ | 2026-10-19 |
 
 ## 3. GitHub 해설 콘텐츠 (공개 카탈로그)
 
-### 머신러닝 (11)
+### 머신러닝 (12)
 
 | 제목 | 중분류 | 주소 | 언어 |
 |---|---|---|---|
@@ -68,6 +69,7 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | 알고리즘 패밀리 3부 · 가문 회합 | 개념 지도 / 알고리즘 패밀리 | https://adminmrobo.github.io/ML_00_Algorithm-family-build_03/ | ko en zh ja uz ru |
 | Fish Market Data로 쉽게 따라하는 머신러닝 | 실습으로 배우기 / Fish Market 머신러닝 | https://adminmrobo.github.io/Fish_Market_Data_Machine_Learning/ | ko en zh ja uz ru |
 | Fish Market 연구실 · 머신러닝 핵심 개념 2 | 실습으로 배우기 / Fish Market 머신러닝 | https://adminmrobo.github.io/fish_market_learning_epoch_etc/ | ko |
+| 릿지와 라쏘 · 농어 무게로 배우는 과적합 막기 | 실습으로 배우기 / 규제 회귀 | https://adminmrobo.github.io/Regression_ridge_lasso/ | ko en zh ja uz ru vi |
 | 평소와 다른 한 건 찾기 · 이상 탐지의 다섯 도구 | 실습으로 배우기 / 이상 탐지 | https://adminmrobo.github.io/Anomaly_detection_tatics/ | ko en zh ja uz ru vi |
 
 ### 딥러닝·뇌과학 (11)
@@ -96,7 +98,7 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | 얼굴 알아맞히기 게임 · 20챕터로 배우는 CNN | 보고 알아보기 / 이미지 인식 | https://adminmrobo.github.io/cnn_face_game_lab/ | ko |
 | AI 글 읽기 어려움 | 읽고 이해하기 / AI 글 읽기 | https://adminmrobo.github.io/ai_text_read_ability/ | ko en zh ja uz ru vi |
 
-### LLM·추론 엔지니어링 (19)
+### LLM·추론 엔지니어링 (18)
 
 | 제목 | 중분류 | 주소 | 언어 |
 |---|---|---|---|
@@ -105,7 +107,6 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | rule base에서 일하는 AI까지 | LLM 이해 / rule base에서 에이전트까지 | https://adminmrobo.github.io/rulebase_to_agent/ | ko en zh ja uz ru vi |
 | 확률로 읽는 보안 사건 · 승인 기록 유출 | LLM 이해 / 에이전트 보안 | https://adminmrobo.github.io/agent_secret_leak_lab/ | ko |
 | 왜 지금 온톨로지인가 · 연구실 리포트(동향) | LLM 이해 / 연구실 리포트 | https://adminmrobo.github.io/ontology_trend_report/ | ko |
-| 4만 3천 편 중 만점 3편 · 연구실 모의 심사회 (ICLR 2027) | LLM 이해 / AI 학회 논문 리뷰 | https://adminmrobo.github.io/iclr2027_top3_lab_review/ | ko |
 | 목차 · 인퍼런스 스터디 북 | 추론 엔지니어링 스터디 / 스터디 북 · 보드 | https://adminmrobo.github.io/inference_engineering_study/ | ko en zh ja ru uz vi |
 | 스터디 보드 · Inference Korea | 추론 엔지니어링 스터디 / 스터디 북 · 보드 | https://adminmrobo.github.io/inference_korea_study_page/ | ko en zh |
 | 서문 · 추론은 이제 모두의 일 | 추론 엔지니어링 스터디 / 1장 · 시작 전에 정할 것 (서문·0장 포함) | https://adminmrobo.github.io/inference_engineering_study/week_01_textbook_preface/ | ko |
@@ -120,10 +121,11 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | 3장 논문 · 루프라인 (Roofline) | 추론 엔지니어링 스터디 / 3장 · 하드웨어 | https://adminmrobo.github.io/inference_engineering_study/week_04_article_01/ | ko |
 | 2장 후반 발표 · 병목을 찾아라 | 추론 엔지니어링 스터디 / 부록 · 발표 자료 | https://adminmrobo.github.io/inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide/ | ko |
 
-### 논문 해설 (11)
+### 논문 해설 (12)
 
 | 제목 | 중분류 | 주소 | 언어 |
 |---|---|---|---|
+| 4만 3천 편 중 만점 3편 · 연구실 모의 심사회 (ICLR 2027) | AI 응용 논문 / AI 학회 논문 | https://adminmrobo.github.io/iclr2027_top3_lab_review/ | ko |
 | SNS 은어와 이상탐지 | AI 응용 논문 / AI·보안 | https://adminmrobo.github.io/my_article_03_drug-slang-detection/ | ko en zh ja uz ru vi |
 | 금융 이상탐지 모델 보안과 적대적 공격 | AI 응용 논문 / AI·보안 | https://adminmrobo.github.io/my_article_04_adversarial_finance_attack/ | ko en zh ja uz ru vi |
 | 노후 가계부와 AI 예측 모형 | 경제·사회 논문 / 경제·사회 | https://adminmrobo.github.io/my_article_05_consumer_expenditure_predict/ | ko en zh ja uz ru vi |
@@ -136,10 +138,11 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | ERC-20 경제적 성과 분석 | 외부_콘텐츠 / 가상자산 | https://decenter.kr/NewsView/1VJB0BLUD4 |  |
 | 산업재해 패널 데이터를 활용한 머신러닝 모델 | 외부_콘텐츠 / 경제·사회 | 제10회 산재보험패널 학술대회 |  |
 
-### 금융·핀테크·블록체인 (13)
+### 금융·핀테크·블록체인 (14)
 
 | 제목 | 중분류 | 주소 | 언어 |
 |---|---|---|---|
+| 미시경제학 연구실 — 미시경제학 연구실 블로그 | 대학 강의 | https://adminmrobo.github.io/micro_economics/ | ko |
 | 인슈어테크 #1 · 분류 모델 | 보험·핀테크 / 인슈어테크 사례 | https://adminmrobo.github.io/insurtech__case_classification_model_01/ | ko |
 | 인슈어테크 #2 · 분류 모델 실전 | 보험·핀테크 / 인슈어테크 사례 | https://adminmrobo.github.io/insurtech__case_classification_model_02/ | ko |
 | 인슈어테크 #3 · 회귀 모델 | 보험·핀테크 / 인슈어테크 사례 | https://adminmrobo.github.io/insurtech__case_regreesion_model_01/ | ko |
@@ -174,7 +177,7 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | 제목 | 중분류 | 주소 | 언어 |
 |---|---|---|---|
 | 하루의 구글시트 연구실 | 대학 강의 / 구글 시트 | https://adminmrobo.github.io/google-sheets-lab/ | ko |
-| 데이터베이스 설계 야간 연구실 | 대학 강의 / 데이터베이스 | https://adminmrobo.github.io/database_01of04/ | ko |
+| 데이터베이스 설계 야간 연구실 | 대학 강의 / 데이터베이스 | https://adminmrobo.github.io/database_01of04/ |  |
 | 데이터시각화 1주차 · 과정 안내 | 대학 강의 / 데이터시각화 | https://adminmrobo.github.io/Data_visuialization_lecture_01/ | ko en zh ja uz ru |
 | 데이터시각화 2주차 · 그래프 이론과 첫 실습 | 대학 강의 / 데이터시각화 | https://adminmrobo.github.io/Data_visuialization_lecture_02/ | ko en zh ja uz ru |
 | 데이터시각화 3주차 · 생성형 AI 데이터 전처리 | 대학 강의 / 데이터시각화 | https://adminmrobo.github.io/Data_visuialization_lecture_03/ | ko en zh ja uz ru |
@@ -220,8 +223,8 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 |---|---|---|
 | Money-Robo : 로봇저널리즘 프로젝트 | 프로젝트·서비스 | https://money-robo.com/ |
 | AI 범죄와 자기 방어 | 저서·이러닝 | https://adminmrobo.github.io/who_am_i/who_am_i.html |
-| 핀테크 데이터분석 기초 | 저서·이러닝 | https://link.step.or.kr/brqEyc |
-| [K-디지털] 인공지능 자연어 처리 | 저서·이러닝 | https://adminmrobo.github.io/who_am_i/who_am_i.html |
+| 핀테크 데이터분석 기초 | 저서·이러닝 | https://adminmrobo.github.io/fintech_data_analysis/ |
+| [K-디지털] 인공지능 자연어 처리 | 저서·이러닝 | https://adminmrobo.github.io/ai-nlp-data-analysis/ |
 | 데이터 사이언티스트를 위한 베이지안 통계학 | 저서·이러닝 | https://adminmrobo.github.io/bayesian-statistics-for-data-scientists/ |
 | 핀테크 API 개발지원사업 (총괄 PM) | 공공 사업 | https://adminmrobo.github.io/who_am_i/who_am_i.html |
 | 뉴스 빅데이터 스타트업 지원사업 (총괄 PM) | 공공 사업 | https://adminmrobo.github.io/who_am_i/who_am_i.html |
