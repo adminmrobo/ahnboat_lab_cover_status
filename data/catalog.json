@@ -734,6 +734,27 @@
    "thumb": "thumbs/repos/fish_market_learning_epoch_etc.jpg"
   },
   {
+   "title": "릿지와 라쏘 · 농어 무게로 배우는 과적합 막기",
+   "summary": "농어 56마리의 길이·높이·폭으로 무게를 맞히며, 특성을 55개까지 늘릴 때 생기는 과적합(테스트 R² −4.39)과 이를 0.97까지 되살리는 릿지·라쏘, 교차 검증으로 alpha 고르기를 직접 만져 보는 실습. 7개 언어, Colab 코드 2개.",
+   "cat": "머신러닝",
+   "mid": "실습으로 배우기",
+   "sub": "규제 회귀",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/Regression_ridge_lasso",
+   "site_url": "https://adminmrobo.github.io/Regression_ridge_lasso/",
+   "link": "",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "thumb": "thumbs/repos/Regression_ridge_lasso.jpg"
+  },
+  {
    "title": "평소와 다른 한 건 찾기 · 이상 탐지의 다섯 도구",
    "summary": "수만 건의 결제·전표·센서 기록에서 사람이 먼저 봐야 할 몇 건을 고르는 법. Z 점수, 마할라노비스 거리, 고립 숲, 오토인코더의 복원 오차, 문턱값 정하기를 법인카드·출장비·결제·매장 방문객 예시로 직접 돌려 본다. 7개 언어.",
    "cat": "머신러닝",
@@ -1555,6 +1576,21 @@
    "site_url": "",
    "link": "제10회 산재보험패널 학술대회",
    "langs": [],
+   "thumb": ""
+  },
+  {
+   "title": "미시경제학 연구실 — 미시경제학 연구실 블로그",
+   "summary": "",
+   "cat": "금융·핀테크·블록체인",
+   "mid": "대학 강의",
+   "sub": "",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/micro_economics",
+   "site_url": "https://adminmrobo.github.io/micro_economics/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
    "thumb": ""
   },
   {
