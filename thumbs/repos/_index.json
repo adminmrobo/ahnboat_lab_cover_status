@@ -101,8 +101,8 @@
  },
  "bayesian-statistics-for-data-scientists": {
   "src": "name:assets/og/cover_00.jpg",
-  "pushed_at": "2026-11-11T18:43:01Z",
-  "made": "2026-11-13"
+  "pushed_at": "2026-11-20T13:01:19Z",
+  "made": "2026-11-21"
  },
  "blockchain_finance_ch01": {
   "src": null,
@@ -217,7 +217,7 @@
  },
  "g2b-bid-strategy": {
   "src": null,
-  "pushed_at": "2026-11-20T02:43:52Z"
+  "pushed_at": "2026-11-20T09:37:29Z"
  },
  "Gen_AI_Hannam_univ": {
   "src": "embedded:index.html#hero",
@@ -247,6 +247,10 @@
  "green_route": {
   "src": null,
   "pushed_at": "2025-12-07T14:22:07Z"
+ },
+ "health_stats_lab": {
+  "src": null,
+  "pushed_at": "2026-11-20T12:56:25Z"
  },
  "hilbert_space_lab": {
   "src": null,
@@ -483,6 +487,10 @@
   "pushed_at": "2026-11-06T12:37:29Z",
   "made": "2026-11-07"
  },
+ "nabla_field_lab": {
+  "src": null,
+  "pushed_at": "2026-11-20T09:17:37Z"
+ },
  "neural_network_atlas": {
   "src": null,
   "pushed_at": "2026-11-13T16:28:03Z"
@@ -530,6 +538,11 @@
   "pushed_at": "2026-11-16T10:09:46Z",
   "made": "2026-11-17"
  },
+ "Recursive-Self-Improvement": {
+  "src": "manifest:img/cover_rsi.webp",
+  "pushed_at": "2026-11-20T13:28:48Z",
+  "made": "2026-11-21"
+ },
  "Regression_ridge_lasso": {
   "src": "manifest:og_rg.jpg",
   "pushed_at": "2026-11-06T22:35:39Z",
@@ -554,6 +567,11 @@
   "src": "manifest:img/cover.webp",
   "pushed_at": "2026-11-13T15:36:34Z",
   "made": "2026-11-14"
+ },
+ "statistics_note": {
+  "src": "name:ch01/assets/og_ch01_1.png",
+  "pushed_at": "2026-11-20T13:41:10Z",
+  "made": "2026-11-21"
  },
  "statistics_note_ch03_discrete-probability-distribution": {
   "src": "name:assets/og_1_1.png",
@@ -585,6 +603,10 @@
  "The-Ultimate-Bitcoin-Price-Prediction-Model": {
   "src": null,
   "pushed_at": "2026-03-02T12:35:34Z"
+ },
+ "timer_ver001": {
+  "src": null,
+  "pushed_at": "2026-11-20T13:01:49Z"
  },
  "timeseries-trilogy": {
   "src": "manifest:assets/img/cover_index.webp",
