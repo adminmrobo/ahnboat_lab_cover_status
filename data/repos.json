@@ -1196,9 +1196,19 @@
   "repo_url": "https://github.com/adminmrobo/ai_game_lab",
   "pages_url": "https://adminmrobo.github.io/ai_game_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-21T03:47:01Z",
+  "pushed_at": "2026-11-21T04:24:40Z",
   "has_manifest": false,
   "covers": [
+   {
+    "path": "coin/img/coin_cover.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "coin/img/coin_cover_960.webp",
+    "role": "cover",
+    "estimated": true
+   },
    {
     "path": "sudoku/img/sdk_cover.webp",
     "role": "cover",
@@ -7071,7 +7081,7 @@
   "repo_url": "https://github.com/adminmrobo/health_stats_lab",
   "pages_url": "https://adminmrobo.github.io/health_stats_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-21T03:26:18Z",
+  "pushed_at": "2026-11-21T04:29:55Z",
   "has_manifest": true,
   "covers": [
    {
@@ -10787,7 +10797,7 @@
   "repo_url": "https://github.com/adminmrobo/micro_economics",
   "pages_url": "https://adminmrobo.github.io/micro_economics/",
   "default_branch": "main",
-  "pushed_at": "2026-11-21T04:15:08Z",
+  "pushed_at": "2026-11-21T04:28:18Z",
   "has_manifest": false,
   "covers": [
    {
@@ -10851,6 +10861,176 @@
     "estimated": true
    },
    {
+    "path": "v2/assets/og/cover_01.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "v2/assets/og/cover_02.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "v2/assets/og/cover_03.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "v2/assets/og/cover_04.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "v2/assets/og/cover_05.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "v2/assets/og/cover_06.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "v2/assets/og/cover_07.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "v2/assets/og/cover_08.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "v2/assets/og/cover_09.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "v2/assets/og/cover_10.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "v2/assets/og/cover_11.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "v2/assets/og/cover_12.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "v2/assets/og/cover_13.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "v2/assets/og/cover_14.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "v2/assets/og/cover_15.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "v2/assets/og/cover_16.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "v2/assets/og/cover_17.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "v2/assets/og/cover_18.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "v2/assets/og/cover_19.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "v2/assets/og/cover_20.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "v2/assets/og/cover_21.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "v2/assets/og/cover_22.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "v2/assets/og/cover_23.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "v2/assets/og/cover_24.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "v2/assets/og/cover_25.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "v2/assets/og/cover_26.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "v2/assets/og/cover_27.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "v2/assets/og/cover_idx.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "v2/assets/og/cover_prac.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "v2/assets/og/cover_r1.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "v2/assets/og/cover_r2.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "v2/assets/og/cover_r3.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "v2/assets/og/cover_r4.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "v2/assets/og/cover_r5.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
     "path": "src/build/thumbs_ph/thumb_00.webp",
     "role": "thumb",
     "estimated": true
@@ -10907,6 +11087,116 @@
    },
    {
     "path": "src/build/thumbs_ph/thumb_prac.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph_v2/thumb_01.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph_v2/thumb_02.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph_v2/thumb_03.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph_v2/thumb_04.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph_v2/thumb_05.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph_v2/thumb_06.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph_v2/thumb_07.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph_v2/thumb_08.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph_v2/thumb_09.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph_v2/thumb_10.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph_v2/thumb_11.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph_v2/thumb_12.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph_v2/thumb_13.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph_v2/thumb_14.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph_v2/thumb_15.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph_v2/thumb_16.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph_v2/thumb_17.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph_v2/thumb_18.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph_v2/thumb_19.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph_v2/thumb_20.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph_v2/thumb_21.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph_v2/thumb_22.webp",
     "role": "thumb",
     "estimated": true
    }

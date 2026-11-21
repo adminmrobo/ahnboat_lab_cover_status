@@ -59,7 +59,7 @@
  },
  "ai_game_lab": {
   "src": "name:coin/img/coin_cover.webp",
-  "pushed_at": "2026-11-21T03:47:01Z",
+  "pushed_at": "2026-11-21T04:24:40Z",
   "made": "2026-11-21"
  },
  "AI_image_classification": {
@@ -251,7 +251,7 @@
  },
  "health_stats_lab": {
   "src": "manifest:assets/img/cover_01.webp",
-  "pushed_at": "2026-11-21T03:26:18Z",
+  "pushed_at": "2026-11-21T04:29:55Z",
   "made": "2026-11-21"
  },
  "hilbert_space_lab": {
@@ -406,7 +406,7 @@
  },
  "micro_economics": {
   "src": "name:assets/og/cover_00.jpg",
-  "pushed_at": "2026-11-21T04:15:08Z",
+  "pushed_at": "2026-11-21T04:28:18Z",
   "made": "2026-11-21"
  },
  "minkowski_space_lab": {
