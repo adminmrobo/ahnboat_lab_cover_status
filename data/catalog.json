@@ -1594,6 +1594,36 @@
    "thumb": "thumbs/repos/micro_economics.jpg"
   },
   {
+   "title": "∇ 특별편 — 화살표 하나로 보는 미분·적분과 다섯 현장 · ∇ 특별편",
+   "summary": "",
+   "cat": "경제·수학·최적화",
+   "mid": "선형대수",
+   "sub": "벡터 미적분",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/vector_calculus_lab",
+   "site_url": "https://adminmrobo.github.io/vector_calculus_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/vector_calculus_lab.jpg"
+  },
+  {
+   "title": "같은 ∇, 다른 현장",
+   "summary": "",
+   "cat": "경제·수학·최적화",
+   "mid": "선형대수",
+   "sub": "벡터 미적분",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/nabla_field_lab",
+   "site_url": "https://adminmrobo.github.io/nabla_field_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/nabla_field_lab.jpg"
+  },
+  {
    "title": "자와 각도기의 방 — 시아·모아의 유클리드 공간",
    "summary": "",
    "cat": "경제·수학·최적화",
@@ -1658,36 +1688,6 @@
     "ko"
    ],
    "thumb": "thumbs/repos/lagrangian_hamiltonian_lab.jpg"
-  },
-  {
-   "title": "∇ 특별편 — 화살표 하나로 보는 미분·적분과 다섯 현장 · ∇ 특별편",
-   "summary": "",
-   "cat": "경제·수학·최적화",
-   "mid": "선형대수",
-   "sub": "벡터 미적분",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/vector_calculus_lab",
-   "site_url": "https://adminmrobo.github.io/vector_calculus_lab/",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "thumbs/repos/vector_calculus_lab.jpg"
-  },
-  {
-   "title": "같은 ∇, 다른 현장",
-   "summary": "",
-   "cat": "경제·수학·최적화",
-   "mid": "선형대수",
-   "sub": "벡터 미적분",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/nabla_field_lab",
-   "site_url": "https://adminmrobo.github.io/nabla_field_lab/",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "thumbs/repos/nabla_field_lab.jpg"
   },
   {
    "title": "좌표축 위의 그릇 · 3D 지도로 본 모델 최적화",
