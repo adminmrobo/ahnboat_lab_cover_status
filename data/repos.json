@@ -4772,6 +4772,184 @@
   "has_pages": false
  },
  {
+  "repo": "data_to_numbers_lab",
+  "series_ko": "연구실 해설 · 모든 데이터는 숫자가 된다",
+  "title_ko": "모든 데이터는 숫자가 된다 — 시리즈 목차 · 연구실 해설",
+  "repo_url": "https://github.com/adminmrobo/data_to_numbers_lab",
+  "pages_url": "https://adminmrobo.github.io/data_to_numbers_lab/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-21T04:51:35Z",
+  "has_manifest": true,
+  "covers": [
+   {
+    "path": "img/cover_index.webp",
+    "role": "cover",
+    "id": "cover_index",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "img/cover_ch1.webp",
+    "role": "cover",
+    "id": "cover_ch1",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "img/og_ch1.jpg",
+    "role": "og",
+    "id": "og_ch1",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "img/og_index.jpg",
+    "role": "og",
+    "id": "og_index",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "01_why_numbers.html#.frame[data-img=\"cm1_1\"]",
+    "role": "scene",
+    "id": "sc_cm1_1",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "01_why_numbers.html#.frame[data-img=\"cm1_2\"]",
+    "role": "scene",
+    "id": "sc_cm1_2",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "01_why_numbers.html#.frame[data-img=\"cm1_3\"]",
+    "role": "scene",
+    "id": "sc_cm1_3",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "01_why_numbers.html#.frame[data-img=\"cm1_4\"]",
+    "role": "scene",
+    "id": "sc_cm1_4",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   }
+  ],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": "https://adminmrobo.github.io/data_to_numbers_lab/img/og_index.jpg",
+  "status": "ok",
+  "checked_at": "2026-11-21",
+  "site_title": "모든 데이터는 숫자가 된다 — 시리즈 목차 · 연구실 해설",
+  "ontology": {
+   "status": "partial",
+   "pages_with_kg": 1,
+   "pages_total": 2,
+   "pages_checked": 2,
+   "kg_links": [
+    "https://adminmrobo.github.io/data_to_numbers_lab/01_why_numbers.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/data_to_numbers_lab/01_why_numbers.html#export"
+   ],
+   "files": [
+    {
+     "path": "kg/kg.json",
+     "url": "https://github.com/adminmrobo/data_to_numbers_lab/blob/main/kg/kg.json"
+    }
+   ]
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 2
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/data_to_numbers_lab/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 2
+   }
+  },
+  "has_pages": false
+ },
+ {
   "repo": "Data_visuialization_lecture_01",
   "series_ko": "데이터시각화 강의",
   "title_ko": "1주차 · 과정 안내(OT) — 표지 — Language",
@@ -7081,7 +7259,7 @@
   "repo_url": "https://github.com/adminmrobo/health_stats_lab",
   "pages_url": "https://adminmrobo.github.io/health_stats_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-21T04:29:55Z",
+  "pushed_at": "2026-11-21T04:55:12Z",
   "has_manifest": true,
   "covers": [
    {
@@ -7162,6 +7340,23 @@
     ],
     "robot": "jupanbot-v2",
     "status": "ok"
+   },
+   {
+    "path": "assets/img/comic_lv1.webp",
+    "role": "comic_4cut",
+    "id": "comic_lv1",
+    "size": [
+     1024,
+     1024
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "대기 — 요청문 발행"
    },
    {
     "path": "assets/img/comic_lv2a.webp",

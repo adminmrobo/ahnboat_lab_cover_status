@@ -143,6 +143,10 @@
   "src": null,
   "pushed_at": "2024-07-19T11:29:10Z"
  },
+ "data_to_numbers_lab": {
+  "src": null,
+  "pushed_at": "2026-11-21T04:51:35Z"
+ },
  "Data_visuialization_lecture_01": {
   "src": "redraw:R001:en/week1_index.html#hero-img",
   "pushed_at": "2026-11-06T12:32:38Z",
@@ -251,7 +255,7 @@
  },
  "health_stats_lab": {
   "src": "manifest:assets/img/cover_01.webp",
-  "pushed_at": "2026-11-21T04:29:55Z",
+  "pushed_at": "2026-11-21T04:55:12Z",
   "made": "2026-11-21"
  },
  "hilbert_space_lab": {
