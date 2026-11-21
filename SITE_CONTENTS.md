@@ -2,7 +2,7 @@
 
 ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전·오후 자동으로 다시 만들고, Actions에서 수동으로도 돌릴 수 있습니다.
 
-- 갱신: **2026-11-21 00:24 KST**
+- 갱신: **2026-11-21 16:10 KST**
 - 홈페이지 글 32 · 페이지 4
 - GitHub 해설 콘텐츠 112 · 포트폴리오 10 · 일정 18
 - 기계용 원본: `data/site_contents.json`
@@ -72,7 +72,7 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | 릿지와 라쏘 · 농어 무게로 배우는 과적합 막기 | 실습으로 배우기 / 규제 회귀 | https://adminmrobo.github.io/Regression_ridge_lasso/ | ko en zh ja uz ru vi |
 | 평소와 다른 한 건 찾기 · 이상 탐지의 다섯 도구 | 실습으로 배우기 / 이상 탐지 | https://adminmrobo.github.io/Anomaly_detection_tatics/ | ko en zh ja uz ru vi |
 
-### 딥러닝·뇌과학 (11)
+### 딥러닝·뇌과학 (10)
 
 | 제목 | 중분류 | 주소 | 언어 |
 |---|---|---|---|
@@ -82,7 +82,6 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | 초파리 연구실의 딥러닝 A to Z | 딥러닝 모델 / 딥러닝 A to Z | https://adminmrobo.github.io/AI_Model_Review/ | ko en zh ja uz ru |
 | 신경망은 틀리면서 배운다 | 딥러닝 모델 / 딥러닝 A to Z | https://adminmrobo.github.io/deep_learning_00_neural_net_learns/ | ko en zh ja uz ru |
 | 신경망 구조 도감 · 초파리 로봇 대전 | 딥러닝 모델 / 딥러닝 A to Z | https://adminmrobo.github.io/neural_network_atlas/ | ko en zh ja uz ru vi |
-| 좌표축 위의 그릇 · 3D 지도로 본 모델 최적화 | 딥러닝 모델 / 모델 최적화 | https://adminmrobo.github.io/optimization_3d_map/ | ko |
 | 하루에 다 끝내는 딥러닝 서머리 노트 · 오후반 | 딥러닝 모델 / 서머리 노트 | https://adminmrobo.github.io/one_day_deep_learning/ | ko |
 | 신경망 연구소 · 3D로 설명하는 AI | 딥러닝 모델 / 신경망 연구소 | https://adminmrobo.github.io/ai_in_3d/ | ko |
 | 역전파 연구실 · 손잡이 33개를 한 번에 돌리는 법 | 딥러닝 모델 / 역전파 연구실 | https://adminmrobo.github.io/backprop_lab/ | ko |
@@ -98,10 +97,11 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | 얼굴 알아맞히기 게임 · 20챕터로 배우는 CNN | 보고 알아보기 / 이미지 인식 | https://adminmrobo.github.io/cnn_face_game_lab/ | ko |
 | AI 글 읽기 어려움 | 읽고 이해하기 / AI 글 읽기 | https://adminmrobo.github.io/ai_text_read_ability/ | ko en zh ja uz ru vi |
 
-### LLM·추론 엔지니어링 (18)
+### LLM·추론 엔지니어링 (19)
 
 | 제목 | 중분류 | 주소 | 언어 |
 |---|---|---|---|
+| 4만 3천 편 중 만점 3편 · 연구실 모의 심사회 (ICLR 2027) | AI 연구 동향 / AI 학회 논문 | https://adminmrobo.github.io/iclr2027_top3_lab_review/ | ko |
 | 기억 3부작 · LLM은 어디까지 기억할 수 있을까 | LLM 이해 / LLM 기억 | https://adminmrobo.github.io/llm_memory_trilogy/ | ko |
 | AI 점수는 무엇을 잰 것일까 | LLM 이해 / LLM 평가 | https://adminmrobo.github.io/LLM_evaluation/ | ko en zh ja uz ru vi |
 | rule base에서 일하는 AI까지 | LLM 이해 / rule base에서 에이전트까지 | https://adminmrobo.github.io/rulebase_to_agent/ | ko en zh ja uz ru vi |
@@ -121,28 +121,32 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | 3장 논문 · 루프라인 (Roofline) | 추론 엔지니어링 스터디 / 3장 · 하드웨어 | https://adminmrobo.github.io/inference_engineering_study/week_04_article_01/ | ko |
 | 2장 후반 발표 · 병목을 찾아라 | 추론 엔지니어링 스터디 / 부록 · 발표 자료 | https://adminmrobo.github.io/inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide/ | ko |
 
-### 논문 해설 (12)
+### 경제·수학·최적화 (12)
 
 | 제목 | 중분류 | 주소 | 언어 |
 |---|---|---|---|
-| 4만 3천 편 중 만점 3편 · 연구실 모의 심사회 (ICLR 2027) | AI 응용 논문 / AI 학회 논문 | https://adminmrobo.github.io/iclr2027_top3_lab_review/ | ko |
-| SNS 은어와 이상탐지 | AI 응용 논문 / AI·보안 | https://adminmrobo.github.io/my_article_03_drug-slang-detection/ | ko en zh ja uz ru vi |
-| 금융 이상탐지 모델 보안과 적대적 공격 | AI 응용 논문 / AI·보안 | https://adminmrobo.github.io/my_article_04_adversarial_finance_attack/ | ko en zh ja uz ru vi |
-| 노후 가계부와 AI 예측 모형 | 경제·사회 논문 / 경제·사회 | https://adminmrobo.github.io/my_article_05_consumer_expenditure_predict/ | ko en zh ja uz ru vi |
-| 조건부 노동수요와 생성형 AI | 경제·사회 논문 / 경제·사회 | https://adminmrobo.github.io/my_article_06_AI_effect_to_labor_demand/ | ko en zh ja uz ru vi |
-| 여론조사 보정 연구실 | 경제·사회 논문 / 경제·사회 | https://adminmrobo.github.io/my_article_08_poll_reweighting_lab/ | ko |
-| 암호화폐 자산의 정보 효율성 | 금융·자산 논문 / 가상자산 | https://adminmrobo.github.io/my_article_01_bitcoin_price_analytics/ | ko en zh ja uz ru vi |
-| 가상자산 시계열 데이터의 분석과 예측 | 금융·자산 논문 / 가상자산 | https://adminmrobo.github.io/my_article_02_crypto_predict_model_analytics/ | ko en zh ja uz ru vi |
-| 미디어 토큰 경제 연구실 | 금융·자산 논문 / 가상자산 | https://adminmrobo.github.io/my_article_07_media_blockchain/ | ko en zh ja uz ru vi |
-| 우리나라 주식시장의 변동성 분해 분석 (박사논문) | 금융·자산 논문 / 주식·금융시장 | https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ | ko |
-| ERC-20 경제적 성과 분석 | 외부_콘텐츠 / 가상자산 | https://decenter.kr/NewsView/1VJB0BLUD4 |  |
-| 산업재해 패널 데이터를 활용한 머신러닝 모델 | 외부_콘텐츠 / 경제·사회 | 제10회 산재보험패널 학술대회 |  |
+| 노후 가계부와 AI 예측 모형 | 경제 연구 / 경제·사회 | https://adminmrobo.github.io/my_article_05_consumer_expenditure_predict/ | ko en zh ja uz ru vi |
+| 산업재해 패널 데이터를 활용한 머신러닝 모델 | 경제 연구 / 경제·사회 | 제10회 산재보험패널 학술대회 |  |
+| 조건부 노동수요와 생성형 AI | 경제 연구 / 경제·사회 | https://adminmrobo.github.io/my_article_06_AI_effect_to_labor_demand/ | ko en zh ja uz ru vi |
+| 여론조사 보정 연구실 | 경제 연구 / 경제·사회 | https://adminmrobo.github.io/my_article_08_poll_reweighting_lab/ | ko |
+| 미시경제학 연구실 — 미시경제학 연구실 블로그 | 경제학 / 미시경제학 | https://adminmrobo.github.io/micro_economics/ | ko |
+| ∇ 특별편 — 화살표 하나로 보는 미분·적분과 다섯 현장 · ∇ 특별편 | 선형대수 / 벡터 미적분 | https://adminmrobo.github.io/vector_calculus_lab/ | ko |
+| 같은 ∇, 다른 현장 | 선형대수 / 벡터 미적분 | https://adminmrobo.github.io/nabla_field_lab/ | ko |
+| 자와 각도기의 방 — 시아·모아의 유클리드 공간 | 좌표 공간(space) / 공간 | https://adminmrobo.github.io/euclidean_space_lab/ | ko en zh ja uz ru vi |
+| 유클리드 공간 · 힐베르트 공간 — 연구실 복도의 방 탈출 | 좌표 공간(space) / 공간 | https://adminmrobo.github.io/hilbert_space_lab/ | ko |
+| 마이너스 칸이 있는 방 — 시아·모아의 민코프스키 시공간 | 좌표 공간(space) / 공간 | https://adminmrobo.github.io/minkowski_space_lab/ | ko |
+| 두 장의 지도 — 라그랑지안 vs 해밀토니안 | 최적화 모델 / 라그랑지안·해밀토니안 | https://adminmrobo.github.io/lagrangian_hamiltonian_lab/ | ko |
+| 좌표축 위의 그릇 · 3D 지도로 본 모델 최적화 | 최적화 모델 / 모델 최적화 | https://adminmrobo.github.io/optimization_3d_map/ | ko |
 
-### 금융·핀테크·블록체인 (14)
+### 금융·핀테크·블록체인 (18)
 
 | 제목 | 중분류 | 주소 | 언어 |
 |---|---|---|---|
-| 미시경제학 연구실 — 미시경제학 연구실 블로그 | 대학 강의 | https://adminmrobo.github.io/micro_economics/ | ko |
+| 암호화폐 자산의 정보 효율성 | 금융 연구 / 가상자산 | https://adminmrobo.github.io/my_article_01_bitcoin_price_analytics/ | ko en zh ja uz ru vi |
+| ERC-20 경제적 성과 분석 | 금융 연구 / 가상자산 | https://decenter.kr/NewsView/1VJB0BLUD4 |  |
+| 가상자산 시계열 데이터의 분석과 예측 | 금융 연구 / 가상자산 | https://adminmrobo.github.io/my_article_02_crypto_predict_model_analytics/ | ko en zh ja uz ru vi |
+| 미디어 토큰 경제 연구실 | 금융 연구 / 가상자산 | https://adminmrobo.github.io/my_article_07_media_blockchain/ | ko en zh ja uz ru vi |
+| 우리나라 주식시장의 변동성 분해 분석 (박사논문) | 금융 연구 / 주식·금융시장 | https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ | ko |
 | 인슈어테크 #1 · 분류 모델 | 보험·핀테크 / 인슈어테크 사례 | https://adminmrobo.github.io/insurtech__case_classification_model_01/ | ko |
 | 인슈어테크 #2 · 분류 모델 실전 | 보험·핀테크 / 인슈어테크 사례 | https://adminmrobo.github.io/insurtech__case_classification_model_02/ | ko |
 | 인슈어테크 #3 · 회귀 모델 | 보험·핀테크 / 인슈어테크 사례 | https://adminmrobo.github.io/insurtech__case_regreesion_model_01/ | ko |
@@ -157,46 +161,42 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | 현금흐름표 연구실 | 회계·거시금융 / 회계·기업가치 | https://adminmrobo.github.io/cashflow-lab/ | ko |
 | 매출이 없어도 기업가치는 만들 수 있다 | 회계·거시금융 / 회계·기업가치 | https://adminmrobo.github.io/valuation_without_revenue/ | ko |
 
-### 통계·데이터 기초 (10)
+### 통계·데이터 기초 (13)
 
 | 제목 | 중분류 | 주소 | 언어 |
 |---|---|---|---|
+| 데이터시각화 1주차 · 과정 안내 | 데이터 시각화 / 데이터시각화 | https://adminmrobo.github.io/Data_visuialization_lecture_01/ | ko en zh ja uz ru |
+| 데이터시각화 2주차 · 그래프 이론과 첫 실습 | 데이터 시각화 / 데이터시각화 | https://adminmrobo.github.io/Data_visuialization_lecture_02/ | ko en zh ja uz ru |
+| 데이터시각화 3주차 · 생성형 AI 데이터 전처리 | 데이터 시각화 / 데이터시각화 | https://adminmrobo.github.io/Data_visuialization_lecture_03/ | ko en zh ja uz ru |
+| 데이터시각화 4주차 · 산업별 데이터 시각화 | 데이터 시각화 / 데이터시각화 | https://adminmrobo.github.io/Data_visuialization_lecture_04/ | ko en zh ja uz ru |
+| 하루의 구글시트 연구실 | 프로그래밍 / 구글 시트 | https://adminmrobo.github.io/google-sheets-lab/ | ko |
 | 초보자도 쉽게 따라하는 DB 환경 설치 | 프로그래밍 / 데이터베이스 | https://adminmrobo.github.io/how_to_start_db/ | ko |
+| 데이터베이스 설계 야간 연구실 | 프로그래밍 / 데이터베이스 | https://adminmrobo.github.io/database_01of04/ |  |
 | 보면서 배우는 pandas | 프로그래밍 / 파이썬·판다스 | https://adminmrobo.github.io/learn-pandas-visually_korean/ | ko |
 | 해보며 배우는 파이썬 | 프로그래밍 / 파이썬·판다스 | https://adminmrobo.github.io/learn-python-by-doing_Korean/ | ko |
+| 데이터 사이언티스트를 위한 베이지안 통계학 | 확률·통계 / 베이지안 통계 | https://adminmrobo.github.io/bayesian-statistics-for-data-scientists/ | ko |
 | 시계열 3부작 · ARIMA와 LSTM | 확률·통계 / 시계열 | https://adminmrobo.github.io/timeseries-trilogy/ | ko |
-| 이산확률분포 일곱 가지 | 확률·통계 / 통계 노트 | https://adminmrobo.github.io/fintech_business_01_payment/ | ko |
-| 우연의 과학통계학 · 확률분포 | 확률·통계 / 통계 노트 | https://adminmrobo.github.io/statistics_note_ch03_discrete-probability-distribution/ | ko |
 | 점추정과 신뢰구간 | 확률·통계 / 통계 노트 | https://adminmrobo.github.io/statistics_note_ch04_Statistical-Estimation_01_a/ | ko |
-| 우연의 과학통계학 2장 · 통계적 추정 | 확률·통계 / 통계 노트 | https://adminmrobo.github.io/statistics_note_ch04_statistical-estimation/ | ko |
-| 우연의 과학통계학 3장 · 통계적 가설검정 | 확률·통계 / 통계 노트 | https://adminmrobo.github.io/statistics_note_ch05_hypothesis-testing/ | ko |
 | 확률분포 딕셔너리와 분포표 연구실 | 확률·통계 / 확률분포 딕셔너리 | https://adminmrobo.github.io/probability_distribution_dictionary/ | ko |
 
-### 강의·저서 (21)
+### 인공지능 응용 (14)
 
 | 제목 | 중분류 | 주소 | 언어 |
 |---|---|---|---|
-| 하루의 구글시트 연구실 | 대학 강의 / 구글 시트 | https://adminmrobo.github.io/google-sheets-lab/ | ko |
-| 데이터베이스 설계 야간 연구실 | 대학 강의 / 데이터베이스 | https://adminmrobo.github.io/database_01of04/ |  |
-| 데이터시각화 1주차 · 과정 안내 | 대학 강의 / 데이터시각화 | https://adminmrobo.github.io/Data_visuialization_lecture_01/ | ko en zh ja uz ru |
-| 데이터시각화 2주차 · 그래프 이론과 첫 실습 | 대학 강의 / 데이터시각화 | https://adminmrobo.github.io/Data_visuialization_lecture_02/ | ko en zh ja uz ru |
-| 데이터시각화 3주차 · 생성형 AI 데이터 전처리 | 대학 강의 / 데이터시각화 | https://adminmrobo.github.io/Data_visuialization_lecture_03/ | ko en zh ja uz ru |
-| 데이터시각화 4주차 · 산업별 데이터 시각화 | 대학 강의 / 데이터시각화 | https://adminmrobo.github.io/Data_visuialization_lecture_04/ | ko en zh ja uz ru |
-| 비즈니스를 위한 데이터 과학 연구실 | 대학 강의 / 비즈니스를 위한 데이터 과학 | https://adminmrobo.github.io/data_science_for_business/ | ko |
-| 생성형 AI 활용 전략 · 목차 | 대학 강의 / 생성형AI활용전략 | https://adminmrobo.github.io/generative-ai-prompt-strategy/ | ko |
-| 생성형 AI 활용전략 · 중간고사 시뮬레이션 | 대학 강의 / 생성형AI활용전략 | https://adminmrobo.github.io/Gen_AI_Hannam_univ/ | ko |
-| 생성형 AI 활용전략 5장 | 대학 강의 / 생성형AI활용전략 | https://adminmrobo.github.io/Gen_AI_strategy_ch05/ | ko |
-| 생성형 AI 활용전략 6장 | 대학 강의 / 생성형AI활용전략 | https://adminmrobo.github.io/Gen_AI_strategy_ch06/ | ko |
-| 스마트 제조 연구실 · 3D로 보는 15주 | 대학 강의 / 스마트 제조 | https://adminmrobo.github.io/smart_product/ | ko |
-| AI를 활용한 시멘트 공정 최적화 · 강의 목차 | 대학 강의 / 시멘트 공정 AI | https://adminmrobo.github.io/AI_for_cement_produce/ | ko |
-| 시멘트 품질, AI로 미리 본다 | 대학 강의 / 시멘트 공정 AI | https://adminmrobo.github.io/ai_for_cement_produce_07/ |  |
-| 시멘트 공정 AI · 설명가능 AI와 원가 최적화 | 대학 강의 / 시멘트 공정 AI | https://adminmrobo.github.io/ai_for_cement_produce_08/ |  |
-| 스마트 팩토리 World · 시멘트 제조업 | 대학 강의 / 시멘트 공정 AI | https://adminmrobo.github.io/smart_factory_world/ | ko |
-| AI 회계 컨설팅 연구실 · 파이썬과 회계데이터 분석 | 대학 강의 / 파이썬과 회계데이터 분석 | https://adminmrobo.github.io/python-accounting-analytics/ | ko |
-| 데이터 사이언티스트를 위한 베이지안 통계학 | 외부_콘텐츠 / 이러닝 | https://adminmrobo.github.io/bayesian-statistics-for-data-scientists/ | ko |
-| 핀테크 데이터분석 기초 (이러닝) | 외부_콘텐츠 / 이러닝 | https://link.step.or.kr/brqEyc |  |
-| [K-디지털] 인공지능 자연어 처리 (이러닝) | 외부_콘텐츠 / 이러닝 | STEP 이러닝 |  |
-| AI 범죄와 자기 방어 | 외부_콘텐츠 / 저서 | 커뮤니케이션북스 · 인공지능총서 |  |
+| 비즈니스를 위한 데이터 과학 연구실 | 경영·회계 / 비즈니스를 위한 데이터 과학 | https://adminmrobo.github.io/data_science_for_business/ | ko |
+| AI 회계 컨설팅 연구실 · 파이썬과 회계데이터 분석 | 경영·회계 / 파이썬과 회계데이터 분석 | https://adminmrobo.github.io/python-accounting-analytics/ | ko |
+| 잘 못들었습니다... 불완전한 텍스트 명령을 극복하는 로봇의 강화학습 및 베이지안 추론 | 로봇·강화학습 / AI·로봇 | https://adminmrobo.github.io/Reinforcement-Learning-lab_project_01/ | ko |
+| 생성형 AI 활용 전략 · 목차 | 생성형 AI 활용 / 생성형AI활용전략 | https://adminmrobo.github.io/generative-ai-prompt-strategy/ | ko |
+| 생성형 AI 활용전략 · 중간고사 시뮬레이션 | 생성형 AI 활용 / 생성형AI활용전략 | https://adminmrobo.github.io/Gen_AI_Hannam_univ/ | ko |
+| 생성형 AI 활용전략 5장 | 생성형 AI 활용 / 생성형AI활용전략 | https://adminmrobo.github.io/Gen_AI_strategy_ch05/ | ko |
+| 생성형 AI 활용전략 6장 | 생성형 AI 활용 / 생성형AI활용전략 | https://adminmrobo.github.io/Gen_AI_strategy_ch06/ | ko |
+| SNS 은어와 이상탐지 | 이상탐지·보안 / AI·보안 | https://adminmrobo.github.io/my_article_03_drug-slang-detection/ | ko en zh ja uz ru vi |
+| 금융 이상탐지 모델 보안과 적대적 공격 | 이상탐지·보안 / AI·보안 | https://adminmrobo.github.io/my_article_04_adversarial_finance_attack/ | ko en zh ja uz ru vi |
+| 스마트 제조 연구실 · 3D로 보는 15주 | 제조 / 스마트 제조 | https://adminmrobo.github.io/smart_product/ | ko |
+| AI를 활용한 시멘트 공정 최적화 · 강의 목차 | 제조 / 시멘트 공정 AI | https://adminmrobo.github.io/AI_for_cement_produce/ | ko |
+| 시멘트 품질, AI로 미리 본다 | 제조 / 시멘트 공정 AI | https://adminmrobo.github.io/ai_for_cement_produce_07/ |  |
+| 시멘트 공정 AI · 설명가능 AI와 원가 최적화 | 제조 / 시멘트 공정 AI | https://adminmrobo.github.io/ai_for_cement_produce_08/ |  |
+| 스마트 팩토리 World · 시멘트 제조업 | 제조 / 시멘트 공정 AI | https://adminmrobo.github.io/smart_factory_world/ | ko |
 
 ### 공공·사회 프로젝트 (6)
 
