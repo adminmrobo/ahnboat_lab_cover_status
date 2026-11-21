@@ -65,7 +65,8 @@ python3 scripts/make_thumbs.py --fetch                     # 바뀐 저장소만
 - `data/catalog.json`, `data/servers.csv` — 공개 항목만 담은 파일. 카탈로그와 랩타운 서버실이 읽는다.
 - `data/publish_settings.json` — 저장 기준일(`mode` auto=매일 그날 / fixed=`base_date`). 관리실이 저장한다.
 - `data/admin_vault.enc` — 관리실 열쇠 보관함(비밀번호로 잠김).
-- `data/hub_meta.json` — 대분류(=서버실 랙 10개)·중분류 소개·색인어·그림, 첫 화면 배너.
+- `data/hub_meta.json` — 대분류(=서버실 랙 10개)·중분류 소개·색인어·그림, 첫 화면 배너. 랙은 콘텐츠의 주제 분류다(2026-11-21 개편: RACK 05 경제·수학·최적화, RACK 08 인공지능 응용).
+- `data/rack_migration.json` — 랙 개편 옮기기 표. 빌드할 때 대분류가 `from`과 같은 행만 새 분류로 옮기고 `Articles_갈래`를 단다(관리표 hub.csv 자체가 고쳐져 다시 잠긴다). 한 번 옮긴 뒤에는 관리실에서 고친 분류를 덮어쓰지 않는다.
 - `scripts/hub_secure.py` — 잠긴 표를 풀어 `build_hub.py`로 다시 만들고 다시 잠근다. `scripts/hubcrypt.py` — 잠그기·풀기.
 - 관리자 키는 저장소 Settings → Secrets and variables → Actions의 `HUB_KEY`에 있다. 하루 두 번 예약 수집과, `hub.csv.enc`·`hub_meta.json`을 올릴 때 다시 만든다.
 
@@ -92,7 +93,7 @@ https://adminmrobo.github.io/ahnboat_lab_cover_status/admin.html
 ## 홈페이지(ahnboat.xyz)에 붙이는 화면
 
 - `catalog.html` — Reon Ahn's Lab Server (콘텐츠 10개 랙)
-- `catalog.html?view=articles` — Ahn's Articles & Presentations (논문 해설·학술대회 발표, RACK 05와 같은 목록)
+- `catalog.html?view=articles` — Ahn's Articles & Presentations. 주인장이 직접 쓴 논문·학술대회 발표만 모은다. 랙 이름이 아니라 hub.csv의 `Articles_갈래` 칸(갈래: AI 응용 논문·경제·사회 논문·금융·자산 논문·외부_콘텐츠)으로 모이므로, 같은 글이 Lab Server에서는 주제에 맞는 랙에 들어 있다.
 - `catalog.html?view=portfolio` — Ahn's Portfolio. 목록은 `data/portfolio.csv`(엑셀로 고쳐 그대로 올림: 대분류, 중분류, 제목, 소개, 링크, 이미지, 버튼글씨, 비고, 순서, 공개), 분야 설정은 `data/portfolio_meta.json`. 링크가 비면 '링크 준비 중'.
 - `progress.html` — Progress Board. 공개 콘텐츠만, 랙별 온톨로지·외국어팩 진행, 언어별 콘텐츠, 최근 업데이트, 다음에 손볼 곳.
 - 화면 설정(제목·배너·갈래 이름 바꾸기)은 `data/views.json`.

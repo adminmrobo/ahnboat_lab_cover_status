@@ -1,5 +1,5 @@
 {
- "_guide": "공개 카탈로그(catalog.html)의 화면 설정. ?view=이름 으로 고른다. server=Lab Server(기본), articles=논문·발표, portfolio=포트폴리오. server.extras = Lab Server 랙 옆에 붙는 특별 카드(2행 마지막 열들, 랙과 extras_gap 칸 띄움 — 기본 1, server는 0).",
+ "_guide": "공개 카탈로그(catalog.html)의 화면 설정. ?view=이름 으로 고른다. server=Lab Server(기본), articles=논문·발표, portfolio=포트폴리오. server.extras = Lab Server 랙 옆에 붙는 특별 카드(2행 마지막 열들, 랙과 extras_gap 칸 띄움 — 기본 1, server는 0). articles는 랙 이름이 아니라 항목의 article 표시(hub.csv 'Articles_갈래' 칸)로 모은다: article=true이면 article 표시가 있는 항목을 랙과 상관없이 모아 only 이름의 갈래 묶음(cat 설정) 아래, 중분류 = Articles 갈래로 보여 준다.",
  "server": {
   "random": 3,
   "extras": [
@@ -86,6 +86,20 @@
  },
  "articles": {
   "only": "논문 해설",
+  "article": true,
+  "cat": {
+   "name": "논문 해설",
+   "color": "#8b5a2b",
+   "desc": "안상선의 학술 논문과 발표를 직접 돌려 보는 인터랙티브 해설로 다시 읽습니다.",
+   "keywords": [
+    "변동성",
+    "가상자산",
+    "이상탐지",
+    "노동수요",
+    "여론조사"
+   ],
+   "image": "thumbs/cats/ART.webp"
+  },
   "root_label": "Articles & Presentations",
   "mid_label": "ARTICLES",
   "unit": " 편",
@@ -94,7 +108,7 @@
    "외부_콘텐츠": "학술대회 발표"
   },
   "hero": {
-   "image": "thumbs/cats/C05.webp",
+   "image": "thumbs/cats/ART.webp",
    "kicker": "AHNBOAT LAB · PAPERS",
    "title": "Ahn's Articles & Presentations",
    "desc": "안상선(Reon Ahn)의 학술 논문과 발표를 인터랙티브 해설로 다시 읽습니다. 갈래를 고르면 논문 해설과 원문이 이어집니다.",
@@ -113,7 +127,7 @@
     }
    ]
   },
-  "foot": "논문과 발표는 Lab Server의 RACK 05와 같은 목록입니다.",
+  "foot": "주인장이 직접 쓴 논문과 발표만 모았습니다. 같은 글이 Lab Server에서는 주제에 맞는 랙에 들어 있습니다.",
   "mid_info": {
    "외부_콘텐츠": {
     "desc": "학술대회와 컨퍼런스에서 발표한 연구입니다. 발표 기사·자료로 이어지고, 해설 페이지가 있는 발표는 연구실 해설로도 이어집니다.",

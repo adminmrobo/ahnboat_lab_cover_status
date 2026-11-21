@@ -393,11 +393,16 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
     return getJSON(VC.source||'data/catalog.json');
   }).then(function(d){
     D=d;CATS=d.categories||[];MIDS=d.mids||[];ALIAS=VC.mid_alias||{};
-    if(VC.only){SINGLE=VC.only;CATS=CATS.filter(function(c){return c.name===SINGLE;});}
+    var SRC=d.items||[];
+    if(VC.article){
+      /* Articles: 랙과 상관없이 article 표시(주인장이 직접 쓴 논문·발표)가 있는 항목을 모아, 중분류 = Articles 갈래로 보여 준다 */
+      SINGLE=VC.only;CATS=[Object.assign({name:SINGLE},VC.cat||{},{name:SINGLE})];
+      SRC=SRC.filter(function(i){return i.article;}).map(function(i){return Object.assign({},i,{cat:SINGLE,mid:i.article});});
+    }else if(VC.only){SINGLE=VC.only;CATS=CATS.filter(function(c){return c.name===SINGLE;});}
     if(VC.hero)D.hero=VC.hero;
     if(VC.hero&&VC.hero.style==='light')document.documentElement.classList.add('lightview');
     if(VC.page_title)document.title=VC.page_title;
-    ITEMS=(d.items||[]).filter(function(i){return CATS.some(function(c){return c.name===i.cat;});});
+    ITEMS=SRC.filter(function(i){return CATS.some(function(c){return c.name===i.cat;});});
     footer();
     AhnI18n.onChange(function(){footer();lede();render();});
     return AhnI18n.ready.then(function(){footer();lede();render();});

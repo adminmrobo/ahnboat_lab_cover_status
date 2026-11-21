@@ -105,6 +105,29 @@ def onto_status(target, r):
     return {"full": "DONE", "partial": "PROGRESS"}.get(s, "WIP")
 
 
+def load_migration():
+    """data/rack_migration.json: 랙 개편 옮기기 표. key(저장소 또는 제목) → 바꿀 분류·Articles 갈래."""
+    mg = load_json(os.path.join(DATA, "rack_migration.json"), {})
+    return mg.get("article_col") or "Articles_갈래", mg.get("moves") or []
+
+
+def migrate(obj, keys, moves, fields):
+    """대분류가 from과 같은 항목만 새 분류로 옮긴다(한 번 옮기면 다시 건드리지 않음). 바뀌면 True."""
+    cat_k, mid_k, sub_k, art_k = fields
+    for mv in moves:
+        if mv.get("key") not in keys or (obj.get(cat_k) or "미분류") != mv.get("from"):
+            continue
+        obj[cat_k] = mv.get("cat", obj.get(cat_k))
+        if "mid" in mv:
+            obj[mid_k] = mv["mid"]
+        if "sub" in mv:
+            obj[sub_k] = mv["sub"]
+        if mv.get("article"):
+            obj[art_k] = mv["article"]
+        return True
+    return False
+
+
 def main():
     hub_p = os.path.join(DATA, "hub.csv")
     rows = read_csv(hub_p) if os.path.exists(hub_p) else []
@@ -127,8 +150,19 @@ def main():
                      "공개대상여부": "검토", "연구실_시리즈_적용대상_여부": "", "외국어팩대상_여부": "",
                      "온톨로지_적용대상_여부": "", "비고": "새 저장소 · 분류 필요"})
         added.append(name)
-    if added:  # 관리실에서 더한 칸(표준 칸 밖)도 지우지 않는다
-        write_csv(hub_p, COLS + [k for r in rows for k in r if k not in COLS and k], rows)
+    # 랙 개편: 옮기기 표대로 관리표(hub.csv) 자체의 분류를 고친다 → 관리실에서도 새 분류가 보인다
+    ART_COL, MOVES = load_migration()
+    row_fields = ("콘텐츠_카테고리_대분류", "콘텐츠_카테고리_중분류", "콘텐츠_카테고리_소분류", ART_COL)
+    migrated = [r["저장소"] for r in rows if migrate(r, {r.get("저장소"), r.get("제목")}, MOVES, row_fields)]
+    if migrated:
+        print("랙 개편으로 옮긴 행 %d개" % len(migrated))
+    if added or migrated:  # 관리실에서 더한 칸(표준 칸 밖)도 지우지 않는다
+        extra = []
+        for r in rows:
+            for k in r:
+                if k and k not in COLS and k not in extra:
+                    extra.append(k)
+        write_csv(hub_p, COLS + extra, rows)
 
     def _img(o):  # 그림 파일이 아직 없으면 비워 둔다 (카드에는 색 상자가 보인다)
         o = dict(o)
@@ -185,6 +219,7 @@ def main():
             "released": "Y" if (not norm_date(h.get("공개일")) or norm_date(h.get("공개일")) <= BASE) else "N",
             "series": "Y" if yes(h.get("시리즈물")) else "N",
             "order": int(h["순서"]) if (h.get("순서") or "").isdigit() else 1000 + i,
+            "article": (h.get(ART_COL) or "").strip(),
         })
     # 옮긴 저장소·새로 넣을 저장소 (data/moved.json, hub.csv를 고치지 않아도 유지)
     mv = load_json(os.path.join(DATA, "moved.json"), {})
@@ -200,6 +235,9 @@ def main():
             it["exists"] = "Y" if it["site_url"] or by.get(it["repo"]) else it["exists"]
             if not it["site_url"]:
                 it["site_url"] = "https://%s.github.io/%s/" % (OWNER, it["repo"])
+    item_fields = ("cat", "mid", "sub", "article")
+    for it in items:
+        migrate(it, {it["repo"], it["title"]}, MOVES, item_fields)
     # 시리즈 챕터: 상위 카드의 사이트 주소 + 파일 (외부링크에 주소가 있으면 그 주소)
     for it in items:
         if it["series"] != "Y":
@@ -228,9 +266,14 @@ def main():
     pub = [it for it in items if it["public"] == "Y" and it["exists"] == "Y" and it["released"] == "Y" and it["cat"] in names]
     keep = ["title", "summary", "cat", "mid", "sub", "kind", "repo_url", "site_url", "link", "langs", "thumb"]
     used = {(it["cat"], it["mid"]) for it in pub}
+    # Ahn's Articles & Presentations: 랙과 상관없이 'Articles_갈래'가 있는 항목을 모은다 (data/views.json → articles.only = 갈래 묶음 이름)
+    art_name = (load_json(os.path.join(DATA, "views.json"), {}).get("articles") or {}).get("only") or "논문 해설"
+    used |= {(art_name, it["article"]) for it in pub if it.get("article")}
 
     def public_item(it):
         o = {k: it[k] for k in keep}
+        if it.get("article"):
+            o["article"] = it["article"]
         if it["series"] == "Y" and it.get("chapters"):
             allp = [c for c in it["chapters"] if c["public"] == "Y"]
             shown = [c for c in allp if c["released"] == "Y"]
