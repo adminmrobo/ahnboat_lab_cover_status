@@ -59,7 +59,7 @@
  },
  "ai_game_lab": {
   "src": "name:coin/img/coin_cover.webp",
-  "pushed_at": "2026-11-21T04:24:40Z",
+  "pushed_at": "2026-11-21T05:28:27Z",
   "made": "2026-11-21"
  },
  "AI_image_classification": {
@@ -191,8 +191,8 @@
  },
  "euclidean_space_lab": {
   "src": "manifest:assets/og/og_index.jpg",
-  "pushed_at": "2026-11-19T16:22:07Z",
-  "made": "2026-11-20"
+  "pushed_at": "2026-11-21T05:41:10Z",
+  "made": "2026-11-21"
  },
  "fabric_ai_project": {
   "src": "file:slides/img/gs/GS01.webp",

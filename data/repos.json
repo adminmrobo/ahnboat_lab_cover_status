@@ -1196,7 +1196,7 @@
   "repo_url": "https://github.com/adminmrobo/ai_game_lab",
   "pages_url": "https://adminmrobo.github.io/ai_game_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-21T04:24:40Z",
+  "pushed_at": "2026-11-21T05:28:27Z",
   "has_manifest": false,
   "covers": [
    {
@@ -2901,43 +2901,481 @@
  },
  {
   "repo": "catch_phishing",
-  "series_ko": "catch_phishing",
-  "title_ko": null,
+  "series_ko": "AI 응용 · 피싱 사이트 탐지",
+  "title_ko": "가짜 사이트를 잡아라 — 피싱 사이트 탐지 연구실 (목차) — 피싱 사이트 탐지 연구실",
   "repo_url": "https://github.com/adminmrobo/catch_phishing",
   "pages_url": "https://adminmrobo.github.io/catch_phishing/",
   "default_branch": "main",
   "pushed_at": "2026-11-21T05:11:10Z",
-  "has_manifest": false,
-  "covers": [],
+  "has_manifest": true,
+  "covers": [
+   {
+    "path": "img/cover_00.webp",
+    "role": "cover",
+    "id": "cover_00",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "pending"
+   },
+   {
+    "path": "img/thumb_00.webp",
+    "role": "thumb",
+    "id": "thumb_00",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "pending"
+   },
+   {
+    "path": "img/og_00.webp",
+    "role": "og",
+    "id": "og_00",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "pending"
+   },
+   {
+    "path": "img/cover_01.webp",
+    "role": "cover",
+    "id": "cover_01",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "pending"
+   },
+   {
+    "path": "img/thumb_01.webp",
+    "role": "thumb",
+    "id": "thumb_01",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "pending"
+   },
+   {
+    "path": "img/og_01.webp",
+    "role": "og",
+    "id": "og_01",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "pending"
+   },
+   {
+    "path": "img/cover_02.webp",
+    "role": "cover",
+    "id": "cover_02",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "pending"
+   },
+   {
+    "path": "img/thumb_02.webp",
+    "role": "thumb",
+    "id": "thumb_02",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "pending"
+   },
+   {
+    "path": "img/og_02.webp",
+    "role": "og",
+    "id": "og_02",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "pending"
+   },
+   {
+    "path": "img/cover_03.webp",
+    "role": "cover",
+    "id": "cover_03",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "pending"
+   },
+   {
+    "path": "img/thumb_03.webp",
+    "role": "thumb",
+    "id": "thumb_03",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "pending"
+   },
+   {
+    "path": "img/og_03.webp",
+    "role": "og",
+    "id": "og_03",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "pending"
+   },
+   {
+    "path": "img/cover_04.webp",
+    "role": "cover",
+    "id": "cover_04",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "pending"
+   },
+   {
+    "path": "img/thumb_04.webp",
+    "role": "thumb",
+    "id": "thumb_04",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "pending"
+   },
+   {
+    "path": "img/og_04.webp",
+    "role": "og",
+    "id": "og_04",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "pending"
+   },
+   {
+    "path": "img/cover_05.webp",
+    "role": "cover",
+    "id": "cover_05",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa",
+     "x1",
+     "x2",
+     "x3"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "pending"
+   },
+   {
+    "path": "img/thumb_05.webp",
+    "role": "thumb",
+    "id": "thumb_05",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa",
+     "x1",
+     "x2",
+     "x3"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "pending"
+   },
+   {
+    "path": "img/og_05.webp",
+    "role": "og",
+    "id": "og_05",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa",
+     "x1",
+     "x2",
+     "x3"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "pending"
+   },
+   {
+    "path": "img/cover_06.webp",
+    "role": "cover",
+    "id": "cover_06",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "pending"
+   },
+   {
+    "path": "img/thumb_06.webp",
+    "role": "thumb",
+    "id": "thumb_06",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "pending"
+   },
+   {
+    "path": "img/og_06.webp",
+    "role": "og",
+    "id": "og_06",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "pending"
+   }
+  ],
   "redraw_count": 0,
   "redraw_ids": [],
-  "thumb": null,
-  "status": "unknown",
+  "thumb": "https://adminmrobo.github.io/catch_phishing/img/cover_00.webp",
+  "status": "ok",
   "checked_at": "2026-11-21",
-  "site_title": null,
+  "site_title": "가짜 사이트를 잡아라 — 피싱 사이트 탐지 연구실 (목차)",
   "ontology": {
-   "status": "none",
-   "pages_with_kg": 0,
-   "pages_total": 0,
-   "pages_checked": 0,
-   "kg_links": [],
-   "export_links": [],
-   "files": []
+   "status": "full",
+   "pages_with_kg": 7,
+   "pages_total": 7,
+   "pages_checked": 7,
+   "kg_links": [
+    "https://adminmrobo.github.io/catch_phishing/ch1_phishing.html#kg",
+    "https://adminmrobo.github.io/catch_phishing/ch2_clues.html#kg",
+    "https://adminmrobo.github.io/catch_phishing/ch3_checkup.html#kg",
+    "https://adminmrobo.github.io/catch_phishing/ch4_models.html#kg",
+    "https://adminmrobo.github.io/catch_phishing/ch5_final.html#kg",
+    "https://adminmrobo.github.io/catch_phishing/ch6_practice.html#kg",
+    "https://adminmrobo.github.io/catch_phishing/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/catch_phishing/ch1_phishing.html#export",
+    "https://adminmrobo.github.io/catch_phishing/ch2_clues.html#export",
+    "https://adminmrobo.github.io/catch_phishing/ch3_checkup.html#export",
+    "https://adminmrobo.github.io/catch_phishing/ch4_models.html#export",
+    "https://adminmrobo.github.io/catch_phishing/ch5_final.html#export",
+    "https://adminmrobo.github.io/catch_phishing/ch6_practice.html#export",
+    "https://adminmrobo.github.io/catch_phishing/index.html#export"
+   ],
+   "files": [
+    {
+     "path": "KG_new_ids.json",
+     "url": "https://github.com/adminmrobo/catch_phishing/blob/main/KG_new_ids.json"
+    },
+    {
+     "path": "kg/ch1_phishing/kg.json",
+     "url": "https://github.com/adminmrobo/catch_phishing/blob/main/kg/ch1_phishing/kg.json"
+    },
+    {
+     "path": "kg/ch2_clues/kg.json",
+     "url": "https://github.com/adminmrobo/catch_phishing/blob/main/kg/ch2_clues/kg.json"
+    },
+    {
+     "path": "kg/ch3_checkup/kg.json",
+     "url": "https://github.com/adminmrobo/catch_phishing/blob/main/kg/ch3_checkup/kg.json"
+    },
+    {
+     "path": "kg/ch4_models/kg.json",
+     "url": "https://github.com/adminmrobo/catch_phishing/blob/main/kg/ch4_models/kg.json"
+    },
+    {
+     "path": "kg/ch5_final/kg.json",
+     "url": "https://github.com/adminmrobo/catch_phishing/blob/main/kg/ch5_final/kg.json"
+    },
+    {
+     "path": "kg/ch6_practice/kg.json",
+     "url": "https://github.com/adminmrobo/catch_phishing/blob/main/kg/ch6_practice/kg.json"
+    },
+    {
+     "path": "kg/index/kg.json",
+     "url": "https://github.com/adminmrobo/catch_phishing/blob/main/kg/index/kg.json"
+    }
+   ]
   },
   "i18n": {
-   "langs": [],
-   "count": 0,
-   "pages": {},
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 7
+   },
    "partial": [],
    "complete": true,
    "readme_langs": [],
-   "links": {}
+   "links": {
+    "ko": "https://adminmrobo.github.io/catch_phishing/index.html"
+   }
   },
   "languages": {
-   "codes": [],
-   "count": 0,
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
    "complete": true,
-   "pages_by_lang": {}
+   "pages_by_lang": {
+    "ko": 7
+   }
   },
   "has_pages": false
  },
@@ -5830,7 +6268,7 @@
   "repo_url": "https://github.com/adminmrobo/euclidean_space_lab",
   "pages_url": "https://adminmrobo.github.io/euclidean_space_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-19T16:22:07Z",
+  "pushed_at": "2026-11-21T05:41:10Z",
   "has_manifest": true,
   "covers": [
    {
