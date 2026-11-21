@@ -9,7 +9,7 @@
   data/growth_dates.json   페이지별 첫 공개 시각 기록 (없는 페이지만 새로 찾는다)
   data/growth_layout.json  지난번 노드 좌표 (있던 노드는 제자리, 새 노드만 자리를 잡는다)
 만드는 것
-  data/growth.json         화면용 데이터 (노드·관계·페이지·이번 주 해석 숫자)
+  data/growth.json         화면용 데이터 (노드·관계·페이지·기간 해석 숫자: 이번 주 → 없으면 이번 달 → 없으면 이번 분기)
   data/growth_dates.json, data/growth_layout.json  (위 두 기록을 갱신)
 
 페이지의 첫 공개 시각 = 그 HTML 파일이 해설 저장소에 처음 커밋된 시각.
@@ -166,44 +166,77 @@ def grow_layout(nodes, edges, prev):
     return xy
 
 
-# ---------------------------------------------------------------- 3. 이번 주 숫자 (해석 문장 재료)
-def week_stats(nodes, edges, order, pages, now):
-    kst = now.astimezone(KST)
-    mon = datetime(kst.year, kst.month, kst.day, tzinfo=KST) - timedelta(days=kst.weekday())
-    ws, pws = mon.timestamp(), (mon - timedelta(days=7)).timestamp()
-    we = ws + 7 * 86400
+# ---------------------------------------------------------------- 3. 기간 숫자 (해석 문장 재료)
+# 이번 주에 새 노드가 없으면 이번 달, 이번 달에도 없으면 이번 분기로 본다.
+def _month_start(y, m):
+    while m < 1:
+        y, m = y - 1, m + 12
+    while m > 12:
+        y, m = y + 1, m - 12
+    return datetime(y, m, 1, tzinfo=KST)
 
-    def in_week(t, a):
-        return a <= t < a + 7 * 86400
 
-    cur = [j for j, n in enumerate(nodes) if in_week(n["t"], ws)]
-    prv = [j for j, n in enumerate(nodes) if in_week(n["t"], pws)]
+def period_bounds(kind, now):
+    """(이번 기간 시작, 끝(제외), 지난 기간 시작, 묶음 시작 목록)"""
+    k = now.astimezone(KST)
+    if kind == "week":
+        a = datetime(k.year, k.month, k.day, tzinfo=KST) - timedelta(days=k.weekday())
+        b, pa = a + timedelta(days=7), a - timedelta(days=7)
+        cuts = [a + timedelta(days=d) for d in range(7)]
+    elif kind == "month":
+        a, b, pa = _month_start(k.year, k.month), _month_start(k.year, k.month + 1), _month_start(k.year, k.month - 1)
+        cuts, c = [], a
+        while c < b:                      # 1일부터 7일씩 끊은 '몇째 주'
+            cuts.append(c)
+            c += timedelta(days=7)
+    else:
+        q0 = (k.month - 1) // 3 * 3 + 1
+        a, b, pa = _month_start(k.year, q0), _month_start(k.year, q0 + 3), _month_start(k.year, q0 - 3)
+        cuts = [_month_start(k.year, q0 + i) for i in range(3)]
+    return a, b, pa, cuts
+
+
+def period_stats(kind, nodes, edges, order, pages, now):
+    a, b, pa, cuts = period_bounds(kind, now)
+    ws, we, pws = a.timestamp(), b.timestamp(), pa.timestamp()
+    cur = [j for j, n in enumerate(nodes) if ws <= n["t"] < we]
+    prv = [j for j, n in enumerate(nodes) if pws <= n["t"] < ws]
     by = Counter(order.index(nodes[j]["cat"]) for j in cur)
     pby = Counter(order.index(nodes[j]["cat"]) for j in prv)
     curset = set(cur)
-    cross = Counter()
-    deg = Counter()
-    for a, b in edges:
-        deg[a] += 1
-        deg[b] += 1
-        if (a in curset or b in curset) and nodes[a]["cat"] != nodes[b]["cat"]:
-            fa, fb = sorted((order.index(nodes[a]["cat"]), order.index(nodes[b]["cat"])))
+    cross, deg = Counter(), Counter()
+    for x, y in edges:
+        deg[x] += 1
+        deg[y] += 1
+        if (x in curset or y in curset) and nodes[x]["cat"] != nodes[y]["cat"]:
+            fa, fb = sorted((order.index(nodes[x]["cat"]), order.index(nodes[y]["cat"])))
             cross[(fa, fb)] += 1
     top_link = list(cross.most_common(1)[0][0]) + [cross.most_common(1)[0][1]] if cross else None
     top_nodes = sorted(cur, key=lambda j: (-deg[j], nodes[j]["ko"]))[:2]
-    new_edges = sum(1 for a, b in edges if max(nodes[a]["t"], nodes[b]["t"]) >= ws)
+    edges_in = sum(1 for x, y in edges if ws <= max(nodes[x]["t"], nodes[y]["t"]) < we)
+    bounds = [c.timestamp() for c in cuts] + [we]
+    buckets = [[cuts[i].date().isoformat(), sum(1 for j in cur if bounds[i] <= nodes[j]["t"] < bounds[i + 1])]
+               for i in range(len(cuts))]
     return {
-        "start": mon.date().isoformat(),
-        "end": (mon + timedelta(days=6)).date().isoformat(),
+        "kind": kind,
+        "start": a.date().isoformat(),
+        "end": b.date().isoformat(),          # 끝 날짜는 포함하지 않음
         "nodes": len(cur), "prev_nodes": len(prv),
         "by_field": [by.get(i, 0) for i in range(len(order))],
         "prev_by_field": [pby.get(i, 0) for i in range(len(order))],
         "top_link": top_link,
         "top_nodes": [[nodes[j]["ko"], nodes[j]["en"], deg[j]] for j in top_nodes],
-        "pages": sum(1 for p in pages if in_week(p["t"], ws)),
-        "edges": new_edges,
-        "by_day": [sum(1 for j in cur if ws + d * 86400 <= nodes[j]["t"] < ws + (d + 1) * 86400) for d in range(7)],
+        "pages": sum(1 for p in pages if ws <= p["t"] < we),
+        "edges": edges_in,
+        "buckets": buckets,
     }
+
+
+def choose_period(nodes, edges, order, pages, now):
+    for kind in ("week", "month", "quarter"):
+        st = period_stats(kind, nodes, edges, order, pages, now)
+        if st["nodes"] or kind == "quarter":
+            return st
 
 
 def main():
@@ -292,16 +325,16 @@ def main():
         "edges": [list(e) for e in edges],
         "pages": [[pages[q]["title"], pages[q]["repo"], pages[q]["url"], round((pages[q]["t"] - t0) / 86400, 4),
                    order.index(pages[q]["cat"]) if pages[q]["cat"] in order else 0] for q in plist],
-        "week": week_stats(nodes, edges, order, [pages[q] for q in plist], now),
+        "period": choose_period(nodes, edges, order, [pages[q] for q in plist], now),
     }
     old = load(P_OUT, {})
     if {k: v for k, v in old.items() if k != "built"} == json.loads(json.dumps({k: v for k, v in out.items() if k != "built"})):
         print("지식 노드 자료 변화 없음 — growth.json 그대로 둠")
     else:
         save(P_OUT, out, compact=True)
-    w = out["week"]
-    print("지식 노드 %d · 관계 %d · 페이지 %d (새로 찾은 날짜 %d) · 이번 주 +%d"
-          % (len(nodes), len(edges), len(plist), got, w["nodes"]))
+    w = out["period"]
+    print("지식 노드 %d · 관계 %d · 페이지 %d (새로 찾은 날짜 %d) · %s +%d"
+          % (len(nodes), len(edges), len(plist), got, w["kind"], w["nodes"]))
 
 
 if __name__ == "__main__":

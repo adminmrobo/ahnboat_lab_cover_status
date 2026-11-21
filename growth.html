@@ -150,6 +150,21 @@ ru:{more:'Подробнее об узлах знаний',title:'Reon Ahn Page 
 vi:{more:'Xem chi tiết nút tri thức',title:'Reon Ahn Page · Hiện trạng nút tri thức',sub:'Các nút tri thức (khái niệm, phương pháp, chỉ số…) trong các trang giải thích đã công bố sáng lên theo thứ tự ngày xuất hiện đầu tiên. Cập nhật {0}',win1:'Toàn bộ nút tri thức',win2:'Tuần này',unit:'nút tri thức',unitW:'nút mới tuần này',rel:'{0} liên kết · {1} trang',cum:'Nút tích lũy',first:'Trang đầu tiên · {0}',latest:'Vừa công bố',play:'Phát',pause:'Tạm dừng',again:'Phát lại',replay:'Từ đầu',hint:'Di chuột lên chấm để xem tên, nhấp để mở trang',newp:'{0} trang mới · {1} liên kết mới',days:'T2 T3 T4 T5 T6 T7 CN',empty:'Tuần này chưa có nút mới',seen:'Xuất hiện lần đầu',links:'{0} liên kết',haruName:'Trợ lý Haru',haruTitle:'Haru đọc số liệu tuần này',h_total:'Đến nay có <b>{0}</b> nút tri thức được nối bằng {1} liên kết.',h_week:'Tuần này có thêm <b>{0}</b> nút mới; tuần trước là {1}.',h_week0:'Tuần này chưa có nút mới. Tuần trước có thêm {0}.',h_field:'Lĩnh vực tăng nhiều nhất là {0} ({1}).',h_fprev:' Tuần trước nhiều nhất là {0} ({1}).',h_link:'Nút mới nối liên lĩnh vực nhiều nhất giữa {0} ↔ {1} ({2} liên kết).',h_top2:'Trong các nút mới, nhiều liên kết nhất là “{0}” ({1}) và “{2}” ({3}).',h_top1:'Trong các nút mới, nhiều liên kết nhất là “{0}” ({1}).',foot:'Nút = khái niệm, phương pháp hay chỉ số trong chỉ mục tri thức; đường = liên kết giữa các nút; màu = lĩnh vực (giá máy chủ). Xuất hiện lần đầu = lúc tệp trang được tải lên lần đầu. Tự cập nhật hai lần mỗi ngày.'}
 };
 var lang='ko';
+
+/* 기간 문구: 이번 주에 새 노드가 없으면 이번 달, 이번 달에도 없으면 이번 분기 */
+var PW={
+ko:{haruT:'조수 하루의 {cur} 읽기',week:['이번 주','지난주'],month:['이번 달','지난달'],quarter:['이번 분기','지난 분기'],unit:'{cur} 새 지식 노드',empty:'{cur}에는 아직 새 노드가 없어요',wk:'{0}주',fb_month:'이번 주에는 새 노드가 없어서 이번 달 기준으로 읽어 드려요.',fb_quarter:'이번 주와 이번 달에는 새 노드가 없어서 이번 분기 기준으로 읽어 드려요.',p_new:'{cur}에는 <b>{0}개</b>가 새로 생겼어요. {prev}에는 {1}개였어요.',p_none:'{cur}에는 아직 새 노드가 없어요. {prev}에는 {0}개가 생겼어요.',p_fprev:' {prev}에는 {0}({1}개)가 가장 많았어요.',p_top2:"{cur} 새 노드 중 연결이 가장 많은 것은 '{0}'({1}개)와 '{2}'({3}개)예요.",p_top1:"{cur} 새 노드 중 연결이 가장 많은 것은 '{0}'({1}개)예요."},
+en:{haruT:"Haru's reading of {cur}",week:['this week','last week'],month:['this month','last month'],quarter:['this quarter','last quarter'],unit:'new nodes {cur}',empty:'No new nodes yet {cur}',wk:'W{0}',fb_month:'No new nodes this week, so this reading covers this month.',fb_quarter:'No new nodes this week or this month, so this reading covers this quarter.',p_new:'<b>{0}</b> new nodes appeared {cur}, compared with {1} {prev}.',p_none:'No new nodes yet {cur}; {prev} brought {0}.',p_fprev:' For {prev}, it was {0} ({1}).',p_top2:'Among new nodes {cur}, the most connected are “{0}” ({1}) and “{2}” ({3}).',p_top1:'Among new nodes {cur}, the most connected is “{0}” ({1}).'},
+zh:{haruT:'助手 Haru 的{cur}解读',week:['本周','上周'],month:['本月','上月'],quarter:['本季度','上季度'],unit:'{cur}新增知识节点',empty:'{cur}还没有新增节点',wk:'第{0}周',fb_month:'本周没有新增节点，以下按本月解读。',fb_quarter:'本周和本月都没有新增节点，以下按本季度解读。',p_new:'{cur}新增 <b>{0}</b> 个，{prev}为 {1} 个。',p_none:'{cur}还没有新增节点。{prev}新增了 {0} 个。',p_fprev:'{prev}最多的是{0}（{1} 个）。',p_top2:'{cur}新节点中连接最多的是“{0}”（{1} 个）和“{2}”（{3} 个）。',p_top1:'{cur}新节点中连接最多的是“{0}”（{1} 个）。'},
+ja:{haruT:'助手ハルの{cur}の読み解き',week:['今週','先週'],month:['今月','先月'],quarter:['今四半期','前四半期'],unit:'{cur}の新しい知識ノード',empty:'{cur}はまだ新しいノードがありません',wk:'第{0}週',fb_month:'今週は新しいノードがないので、今月の数字で読みます。',fb_quarter:'今週も今月も新しいノードがないので、今四半期の数字で読みます。',p_new:'{cur}は <b>{0}個</b> が新しく増えました。{prev}は {1} 個でした。',p_none:'{cur}はまだ新しいノードがありません。{prev}は {0} 個増えました。',p_fprev:'{prev}は{0}（{1}個）が最多でした。',p_top2:'{cur}の新しいノードで最もつながりが多いのは「{0}」（{1}）と「{2}」（{3}）です。',p_top1:'{cur}の新しいノードで最もつながりが多いのは「{0}」（{1}）です。'},
+uz:{haruT:'Yordamchi Haruning sharhi ({cur})',week:['shu hafta','oʻtgan hafta'],month:['shu oy','oʻtgan oy'],quarter:['shu chorak','oʻtgan chorak'],unit:'yangi tugunlar ({cur})',empty:'Yangi tugun hali yoʻq ({cur})',wk:'{0}-hafta',fb_month:'Shu hafta yangi tugun yoʻq, shuning uchun shu oy boʻyicha oʻqiymiz.',fb_quarter:'Shu hafta va shu oyda yangi tugun yoʻq, shuning uchun shu chorak boʻyicha oʻqiymiz.',p_new:'<b>{0}</b> ta yangi tugun paydo boʻldi ({cur}); {prev} — {1} ta.',p_none:'Yangi tugun hali yoʻq ({cur}); {prev} — {0} ta.',p_fprev:' {prev} eng koʻpi {0} ({1} ta) edi.',p_top2:'Yangi tugunlar ichida ({cur}) eng koʻp bogʻlangani — “{0}” ({1}) va “{2}” ({3}).',p_top1:'Yangi tugunlar ichida ({cur}) eng koʻp bogʻlangani — “{0}” ({1}).'},
+ru:{haruT:'Разбор от Хару ({cur})',week:['на этой неделе','на прошлой неделе'],month:['в этом месяце','в прошлом месяце'],quarter:['в этом квартале','в прошлом квартале'],unit:'новых узлов {cur}',empty:'Новых узлов {cur} пока нет',wk:'{0} нед.',fb_month:'На этой неделе новых узлов нет, поэтому — итоги месяца.',fb_quarter:'Ни на этой неделе, ни в этом месяце новых узлов нет, поэтому — итоги квартала.',p_new:'Новых узлов {cur}: <b>{0}</b>, {prev}: {1}.',p_none:'Новых узлов {cur} пока нет; {prev}: {0}.',p_fprev:' Ранее ({prev}) лидировала «{0}» ({1}).',p_top2:'Среди новых узлов ({cur}) больше всего связей у «{0}» ({1}) и «{2}» ({3}).',p_top1:'Среди новых узлов ({cur}) больше всего связей у «{0}» ({1}).'},
+vi:{haruT:'Haru đọc số liệu {cur}',week:['tuần này','tuần trước'],month:['tháng này','tháng trước'],quarter:['quý này','quý trước'],unit:'nút mới {cur}',empty:'Chưa có nút mới {cur}',wk:'Tuần {0}',fb_month:'Tuần này không có nút mới nên đọc theo tháng này.',fb_quarter:'Tuần này và tháng này không có nút mới nên đọc theo quý này.',p_new:'Có thêm <b>{0}</b> nút mới {cur}; {prev} là {1}.',p_none:'Chưa có nút mới {cur}; {prev} có thêm {0}.',p_fprev:' Còn {prev}, nhiều nhất là {0} ({1}).',p_top2:'Trong các nút mới {cur}, nhiều liên kết nhất là “{0}” ({1}) và “{2}” ({3}).',p_top1:'Trong các nút mới {cur}, nhiều liên kết nhất là “{0}” ({1}).'}
+};
+var KIND='week';
+function PL(k){var t=PW[lang]||PW.ko,w=t[KIND]||t.week,a=[].slice.call(arguments,1),s=t[k]!=null?t[k]:PW.ko[k];
+  return s.replace(/\{cur\}/g,w[0]).replace(/\{prev\}/g,w[1]).replace(/\{(\d+)\}/g,function(m,n){return a[+n]!=null?a[+n]:m;});}
+function cap(s){return s.charAt(0).toUpperCase()+s.slice(1);}
 function L(k){var a=[].slice.call(arguments,1),s=(S[lang]&&S[lang][k])||S.ko[k]||'';return s.replace(/\{(\d+)\}/g,function(m,n){return a[+n]!=null?a[+n]:m;});}
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
 function fmt(n){return Number(n).toLocaleString(LOC[lang]||'ko-KR');}
@@ -165,7 +180,7 @@ Promise.all([fetch('data/growth.json',{cache:'no-cache'}).then(function(r){if(!r
 
 function init(D){
   lang=AhnI18n.lang;
-  var N=D.nodes.length,t0=new Date(D.t0),built=new Date(D.built),W=D.week;
+  var N=D.nodes.length,t0=new Date(D.t0),built=new Date(D.built),W=D.period||(function(w){if(!w)return {kind:'week',start:D.t0.slice(0,10),end:D.t0.slice(0,10),nodes:0,prev_nodes:0,by_field:[],prev_by_field:[],top_link:null,top_nodes:[],pages:0,edges:0,buckets:[]};var s0=new Date(w.start+'T00:00:00+09:00').getTime();return Object.assign({},w,{kind:'week',end:new Date(s0+7*864e5+9*36e5).toISOString().slice(0,10),buckets:(w.by_day||[]).map(function(n,d){return [new Date(s0+d*864e5+9*36e5).toISOString().slice(0,10),n];})});})(D.week);KIND=W.kind||'week';
   var X=new Float32Array(N),Y=new Float32Array(N),F=new Uint8Array(N),T=new Float32Array(N),R=new Float32Array(N),i,k;
   for(i=0;i<N;i++){var n=D.nodes[i];X[i]=n[0];Y[i]=-n[1];F[i]=n[2];T[i]=n[3];R[i]=1+.8*Math.sqrt(n[4]);}
   /* 한 번에 올라온 노드들은 짧은 간격을 두고 하나씩 켠다(표시용 시각 TD) */
@@ -190,7 +205,10 @@ function init(D){
     var r=(pr[Math.floor(pr.length*.97)]||0)+.07;return [CX+dx*r,CY+dy*r];});
   function bbox(ok){var a=1e9,b=1e9,c=-1e9,d=-1e9;for(var q=0;q<N;q++)if(ok(q)){if(X[q]<a)a=X[q];if(X[q]>c)c=X[q];if(Y[q]<b)b=Y[q];if(Y[q]>d)d=Y[q];}return [a,b,c,d];}
   var FULL=bbox(function(){return true;});
-  var WS=(new Date(W.start+'T00:00:00+09:00').getTime()-t0.getTime())/864e5,WE=WS+7;
+  var dayOf=function(iso){return (new Date(iso+'T00:00:00+09:00').getTime()-t0.getTime())/864e5;};
+  var WS=dayOf(W.start),WE=dayOf(W.end),BK=W.buckets.map(function(b){return dayOf(b[0]);});
+  var MAXT=0;for(i=0;i<N;i++)if(T[i]>MAXT)MAXT=T[i];var WSTOP=Math.min(WE,Math.max(WS+1,MAXT+.6));
+  var bucketAt=function(d){var r=0;for(var q=0;q<BK.length;q++)if(d>=BK[q])r=q;return r;};
   var isNewW=function(q){return T[q]>=WS;};
 
   function View(box,canvas){
@@ -255,9 +273,12 @@ function init(D){
     document.title=L('title')+" · Reon Ahn's Lab";
     $('sub').textContent=L('sub',built.toLocaleString(LOC[lang]||'ko-KR',{timeZone:'Asia/Seoul',month:'long',day:'numeric',hour:'2-digit',minute:'2-digit'}));
     $('play').setAttribute('aria-label',L('play'));$('scrub').setAttribute('aria-label',L('win1'));
-    var dn=L('days').split(' '),mx=Math.max.apply(null,W.by_day.concat([1]));
-    $('bars').innerHTML=W.by_day.map(function(n,d){return '<div data-d="'+d+'"><s>'+(n?fmt(n):'')+'</s><i style="height:'+Math.max(2,68*n/mx)+'%"></i>'+dn[d]+'</div>';}).join('');
-    var ws=new Date(W.start+'T00:00:00+09:00'),we=new Date(W.end+'T00:00:00+09:00'),o={month:'short',day:'numeric',weekday:'short'};
+    var dn=L('days').split(' '),cnt=W.buckets.map(function(b){return b[1];}),mx=Math.max.apply(null,cnt.concat([1]));
+    var lab=function(b,d){if(KIND==='week')return dn[d];if(KIND==='month')return PL('wk',d+1);return kdate(new Date(b[0]+'T00:00:00+09:00'),{month:'short'});};
+    $('bars').style.gridTemplateColumns='repeat('+cnt.length+',minmax(0,1fr))';
+    $('bars').innerHTML=W.buckets.map(function(b,d){var n=b[1];return '<div data-d="'+d+'"><s>'+(n?fmt(n):'')+'</s><i style="height:'+Math.max(2,68*n/mx)+'%"></i>'+esc(lab(b,d))+'</div>';}).join('');
+    var ws=new Date(W.start+'T00:00:00+09:00'),we=new Date(new Date(W.end+'T00:00:00+09:00').getTime()-864e5),o=KIND==='week'?{month:'short',day:'numeric',weekday:'short'}:{month:'short',day:'numeric'};
+    $('m2').querySelector('.tag').textContent=cap(((PW[lang]||PW.ko)[KIND]||PW.ko.week)[0]);$('m2').querySelector('[data-k=unitW]').textContent=PL('unit');$('empty').textContent=PL('empty');var ht=PL('haruT');document.querySelector('[data-k=haruTitle]').textContent=/^[a-zа-я]/.test(ht)?cap(ht):ht;
     $('d2').textContent=kdate(ws,o)+' – '+kdate(we,o)+' · '+L('newp',fmt(W.pages),fmt(W.edges));
     $('empty').style.display=W.nodes?'none':'block';
     haru();lastN1=-1;lastP1=undefined;lastBar=-1;lastN2=-1;playLabel();views.forEach(function(v){v.dirty=true;});
@@ -267,13 +288,14 @@ function init(D){
     var li=[],nm=function(t){return esc(lang==='ko'?t[0]:t[1]);};
     li.push(L('h_total',fmt(ALL[0]),fmt(E.length)));
     if(W.nodes){
-      li.push(L('h_week',fmt(W.nodes),fmt(W.prev_nodes)));
+      if(KIND!=='week')li.push(PL('fb_'+KIND));
+      li.push(PL('p_new',fmt(W.nodes),fmt(W.prev_nodes)));
       var top=W.by_field.indexOf(Math.max.apply(null,W.by_field)),pt=W.prev_by_field.indexOf(Math.max.apply(null,W.prev_by_field));
-      var s=L('h_field',fname(top),fmt(W.by_field[top]));if(W.prev_nodes&&pt!==top)s+=L('h_fprev',fname(pt),fmt(W.prev_by_field[pt]));li.push(s);
+      var s=L('h_field',fname(top),fmt(W.by_field[top]));if(W.prev_nodes&&pt!==top)s+=PL('p_fprev',fname(pt),fmt(W.prev_by_field[pt]));li.push(s);
       if(W.top_link)li.push(L('h_link',fname(W.top_link[0]),fname(W.top_link[1]),fmt(W.top_link[2])));
-      if(W.top_nodes.length>1)li.push(L('h_top2',nm(W.top_nodes[0]),W.top_nodes[0][2],nm(W.top_nodes[1]),W.top_nodes[1][2]));
-      else if(W.top_nodes.length)li.push(L('h_top1',nm(W.top_nodes[0]),W.top_nodes[0][2]));
-    }else li.push(L('h_week0',fmt(W.prev_nodes)));
+      if(W.top_nodes.length>1)li.push(PL('p_top2',nm(W.top_nodes[0]),W.top_nodes[0][2],nm(W.top_nodes[1]),W.top_nodes[1][2]));
+      else if(W.top_nodes.length)li.push(PL('p_top1',nm(W.top_nodes[0]),W.top_nodes[0][2]));
+    }else{if(KIND!=='week')li.push(PL('fb_'+KIND));li.push(PL('p_none',fmt(W.prev_nodes)));}
     $('lines').innerHTML=li.map(function(s){return '<li>'+s+'</li>';}).join('');
   }
 
@@ -301,7 +323,7 @@ function init(D){
   $('c1').addEventListener('click',function(){if(focus==null)return;var pg=pages[D.nodes[focus][7]];if(pg)window.open(pg.url,'_blank','noopener');});
 
   /* ---------- 창 2: 이번 주 (월~일) 반복 */
-  var T2=REDUCE?WE:WS,hold2=0,lastDay=Math.min(6,Math.floor(Math.max.apply(null,Array.prototype.slice.call(T))-WS));
+  var T2=REDUCE?WSTOP:WS,hold2=0,lastDay=bucketAt(Math.min(MAXT,WE-.001));
 
   var ro=new ResizeObserver(function(){layout1();views.forEach(function(v){v.resize();});v2.top=0;lastN1=-1;});
   ro.observe($('m1'));ro.observe($('m2'));layout1();views.forEach(function(v){v.resize();});
@@ -320,10 +342,10 @@ function init(D){
         $('d1').innerHTML=esc(kdate(dateAt(Math.min(T1,TEND-.05))))+'<br>'+L('rel',fmt(edgesAt(T1)),fmt(pagesAt(T1)));}
       var lp=lastPage(T1);if(lp!==lastP1){lastP1=lp;$('now1').innerHTML=lp?L('latest')+'<b>'+esc(lp.title)+'</b>':'';}
       $('scrub').value=Math.round(1000*T1/TEND);$('o1').textContent=kdate(dateAt(Math.min(T1,TEND-.05)));}
-    if(!REDUCE&&W.nodes){if(T2<WE)T2=Math.min(WE,T2+dt*7/8);else if((hold2+=dt)>2.5){T2=WS;hold2=0;}}else T2=WE;
+    if(!REDUCE&&W.nodes){if(T2<WSTOP)T2=Math.min(WSTOP,T2+dt*(WSTOP-WS)/8);else if((hold2+=dt)>2.5){T2=WS;hold2=0;}}else T2=WSTOP;
     if(on(v2)&&v2.W){v2.fit(FULL,true);draw(v2,{T:Math.min(T2,TEND),week:true,count:ALL[1],still:!W.nodes});
       var n2=0;for(var q=0;q<N;q++)if(T[q]>=WS&&TD[q]<=T2)n2++;if(n2!==lastN2){lastN2=n2;$('n2').textContent='+'+fmt(n2);}
-      var d=Math.min(lastDay,Math.floor(T2-WS));if(d!==lastBar){lastBar=d;document.querySelectorAll('#bars div').forEach(function(el){el.classList.toggle('on',+el.dataset.d<=d);});}}
+      var d=Math.min(lastDay,bucketAt(T2));if(d!==lastBar){lastBar=d;document.querySelectorAll('#bars div').forEach(function(el){el.classList.toggle('on',+el.dataset.d<=d);});}}
     requestAnimationFrame(frame);}
   requestAnimationFrame(frame);
 }
