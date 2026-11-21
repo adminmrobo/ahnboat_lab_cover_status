@@ -1055,20 +1055,351 @@
  },
  {
   "repo": "ai_crime_lab",
-  "series_ko": "목차 · AI 범죄 연구실",
+  "series_ko": "AI 범죄 연구실 · 『AI 범죄와 자기 방어』 보충본",
   "title_ko": "목차 · AI 범죄 연구실",
   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
   "pages_url": "https://adminmrobo.github.io/ai_crime_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-21T16:14:11Z",
-  "has_manifest": false,
-  "covers": [],
+  "pushed_at": "2026-11-21T16:40:27Z",
+  "has_manifest": true,
+  "covers": [
+   {
+    "path": "assets/covers/index.webp",
+    "role": "cover",
+    "id": "index",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "sia",
+     "moa",
+     "fly",
+     "jupanbot",
+     "x1",
+     "x2",
+     "x3"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/covers/index_alt.webp",
+    "role": "alt_cover",
+    "id": "index_alt",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "sia",
+     "moa",
+     "fly",
+     "jupanbot",
+     "x1",
+     "x2",
+     "x3"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/covers/ch00.webp",
+    "role": "scene",
+    "id": "ch00",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "sia",
+     "moa",
+     "fly",
+     "jupanbot",
+     "x1",
+     "x2",
+     "x3"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/covers/ch01.webp",
+    "role": "scene",
+    "id": "ch01",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "sia",
+     "moa",
+     "fly",
+     "jupanbot",
+     "x1",
+     "x2",
+     "x3"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/covers/ch02.webp",
+    "role": "scene",
+    "id": "ch02",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "sia",
+     "moa",
+     "fly",
+     "jupanbot",
+     "x1",
+     "x2",
+     "x3"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/covers/ch03.webp",
+    "role": "scene",
+    "id": "ch03",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "sia",
+     "moa",
+     "fly",
+     "jupanbot",
+     "x1",
+     "x2",
+     "x3"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/covers/ch04.webp",
+    "role": "scene",
+    "id": "ch04",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "sia",
+     "moa",
+     "fly",
+     "jupanbot",
+     "x1",
+     "x2",
+     "x3"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/covers/ch05.webp",
+    "role": "scene",
+    "id": "ch05",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "sia",
+     "moa",
+     "fly",
+     "jupanbot",
+     "x1",
+     "x2",
+     "x3"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/covers/ch06.webp",
+    "role": "scene",
+    "id": "ch06",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "sia",
+     "moa",
+     "fly",
+     "jupanbot",
+     "x1",
+     "x2",
+     "x3"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/covers/ch07.webp",
+    "role": "scene",
+    "id": "ch07",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "sia",
+     "moa",
+     "fly",
+     "jupanbot",
+     "x1",
+     "x2",
+     "x3"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/covers/ch08.webp",
+    "role": "scene",
+    "id": "ch08",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "sia",
+     "moa",
+     "fly",
+     "jupanbot",
+     "x1",
+     "x2",
+     "x3"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/covers/ch09.webp",
+    "role": "scene",
+    "id": "ch09",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "sia",
+     "moa",
+     "fly",
+     "jupanbot",
+     "x1",
+     "x2",
+     "x3"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/covers/ch10.webp",
+    "role": "scene",
+    "id": "ch10",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "sia",
+     "moa",
+     "fly",
+     "jupanbot",
+     "x1",
+     "x2",
+     "x3"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/covers/rl.webp",
+    "role": "scene",
+    "id": "rl",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "sia",
+     "moa",
+     "fly",
+     "jupanbot",
+     "x1",
+     "x2",
+     "x3"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "practice/cover.webp",
+    "role": "scene",
+    "id": "practice",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "sia",
+     "moa",
+     "fly",
+     "jupanbot",
+     "x1",
+     "x2",
+     "x3"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   }
+  ],
   "redraw_count": 0,
   "redraw_ids": [],
   "thumb": "thumbs/repos/ai_crime_lab.jpg",
-  "status": "unknown",
+  "status": "ok",
   "checked_at": "2026-11-22",
-  "site_title": "목차 · AI 범죄 연구실",
+  "site_title": "AI 범죄 연구실 — 범죄자의 계산서를 뒤집어라",
   "ontology": {
    "status": "partial",
    "pages_with_kg": 11,
