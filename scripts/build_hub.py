@@ -132,6 +132,25 @@ def migrate(obj, keys, moves, fields, owner_k=None):
     return False
 
 
+def apply_rules(obj, keys, rules, fields, pub_k=None):
+    """상시 규칙(data/rack_migration.json → rules): 이름·제목이 pattern에 맞으면 대분류를 맞춘다. 바뀌면 True."""
+    cat_k, mid_k, sub_k = fields
+    for ru in rules:
+        if not any(k and re.search(ru["pattern"], k, re.I) for k in keys):
+            continue
+        changed = False
+        if (obj.get(cat_k) or "미분류") != ru["cat"]:
+            obj[cat_k] = ru["cat"]
+            obj[mid_k] = ru.get("mid", "")
+            obj[sub_k] = ru.get("sub", "")
+            changed = True
+        if pub_k and ru.get("open") and (obj.get(pub_k) or "").strip() in ("", "검토"):
+            obj[pub_k] = "Y"
+            changed = True
+        return changed
+    return False
+
+
 def main():
     hub_p = os.path.join(DATA, "hub.csv")
     rows = read_csv(hub_p) if os.path.exists(hub_p) else []
@@ -158,6 +177,10 @@ def main():
     ART_COL, MOVES = load_migration()
     row_fields = ("콘텐츠_카테고리_대분류", "콘텐츠_카테고리_중분류", "콘텐츠_카테고리_소분류", ART_COL)
     migrated = [r["저장소"] for r in rows if migrate(r, {r.get("저장소"), r.get("제목")}, MOVES, row_fields, OWNER_COL)]
+    RULES = load_json(os.path.join(DATA, "rack_migration.json"), {}).get("rules") or []
+    for r in rows:
+        if apply_rules(r, [r.get("저장소"), r.get("제목")], RULES, row_fields[:3], "공개대상여부") and r["저장소"] not in migrated:
+            migrated.append(r["저장소"])
     # 주인장 저자 칸이 생기기 전에 옮겨진 행: 옮기기 표에 갈래가 있고 저자 칸이 아직 비어 있으면 Y로 채운다
     # (관리실에서 체크를 끄면 'N'이 들어가므로 다시 채우지 않는다)
     arts = {mv["key"] for mv in MOVES if mv.get("article")}
@@ -259,6 +282,7 @@ def main():
     item_fields = ("cat", "mid", "sub", "article")
     for it in items:
         migrate(it, {it["repo"], it["title"]}, MOVES, item_fields)
+        apply_rules(it, [it["repo"], it["title"]], RULES, item_fields[:3])
     # 시리즈 챕터: 상위 카드의 사이트 주소 + 파일 (외부링크에 주소가 있으면 그 주소)
     for it in items:
         if it["series"] != "Y":

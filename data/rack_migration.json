@@ -2,44 +2,297 @@
  "_설명": "서버랙(대분류) 개편용 옮기기 표 (2026-11-21: RACK 05 논문 해설 → 경제·수학·최적화, RACK 08 강의·저서 → 인공지능 응용). build_hub.py가 빌드할 때마다 읽는다. key는 hub.csv의 '저장소' 또는 '제목'. 대분류가 from과 같을 때만 cat·mid·sub로 바꾸므로 한 번 옮긴 뒤에는 관리실에서 고친 분류를 덮어쓰지 않는다. article이 있는 항목은 관리표의 '주인장_저자_여부'를 Y로, 'Articles_갈래'를 그 값으로 채운다. Articles에 나오는지는 관리실의 '주인장 저자' 체크(Y)가 정한다. lecture가 true인 항목은 관리표의 '저자_강의_여부'가 비어 있으면 Y로 채운다 → Articles의 LECTURE 갈래(관리실 '저자강의' 체크). cat이 '포트폴리오'인 항목은 서버실·카탈로그에서 빠지고 Portfolio(data/portfolio.csv)에만 남는다.",
  "article_col": "Articles_갈래",
  "moves": [
-  {"key": "my_article_00_Korean_stockmarket_volatility_study", "from": "논문 해설", "cat": "금융·핀테크·블록체인", "mid": "금융 연구", "sub": "주식·금융시장", "article": "금융·자산 논문"},
-  {"key": "my_article_01_bitcoin_price_analytics", "from": "논문 해설", "cat": "금융·핀테크·블록체인", "mid": "금융 연구", "sub": "가상자산", "article": "금융·자산 논문"},
-  {"key": "my_article_02_crypto_predict_model_analytics", "from": "논문 해설", "cat": "금융·핀테크·블록체인", "mid": "금융 연구", "sub": "가상자산", "article": "금융·자산 논문"},
-  {"key": "my_article_07_media_blockchain", "from": "논문 해설", "cat": "금융·핀테크·블록체인", "mid": "금융 연구", "sub": "가상자산", "article": "금융·자산 논문"},
-  {"key": "ERC-20 경제적 성과 분석", "from": "논문 해설", "cat": "금융·핀테크·블록체인", "mid": "금융 연구", "sub": "가상자산", "article": "외부_콘텐츠"},
-  {"key": "my_article_05_consumer_expenditure_predict", "from": "논문 해설", "cat": "경제·수학·최적화", "mid": "경제 연구", "sub": "경제·사회", "article": "경제·사회 논문"},
-  {"key": "my_article_06_AI_effect_to_labor_demand", "from": "논문 해설", "cat": "경제·수학·최적화", "mid": "경제 연구", "sub": "경제·사회", "article": "경제·사회 논문"},
-  {"key": "my_article_08_poll_reweighting_lab", "from": "논문 해설", "cat": "경제·수학·최적화", "mid": "경제 연구", "sub": "경제·사회", "article": "경제·사회 논문"},
-  {"key": "산업재해 패널 데이터를 활용한 머신러닝 모델", "from": "논문 해설", "cat": "경제·수학·최적화", "mid": "경제 연구", "sub": "경제·사회", "article": "외부_콘텐츠"},
-  {"key": "my_article_03_drug-slang-detection", "from": "논문 해설", "cat": "인공지능 응용", "mid": "이상탐지·보안", "sub": "AI·보안", "article": "AI 응용 논문"},
-  {"key": "my_article_04_adversarial_finance_attack", "from": "논문 해설", "cat": "인공지능 응용", "mid": "이상탐지·보안", "sub": "AI·보안", "article": "AI 응용 논문"},
-  {"key": "iclr2027_top3_lab_review", "from": "논문 해설", "cat": "LLM·추론 엔지니어링", "mid": "AI 연구 동향", "sub": "AI 학회 논문"},
-
-  {"key": "optimization_3d_map", "from": "딥러닝·뇌과학", "cat": "경제·수학·최적화", "mid": "최적화", "sub": "모델 최적화"},
-  {"key": "micro_economics", "from": "금융·핀테크·블록체인", "cat": "경제·수학·최적화", "mid": "경제학", "sub": "미시경제학"},
-
-  {"key": "smart_product", "lecture": true, "from": "강의·저서", "cat": "인공지능 응용", "mid": "제조", "sub": "스마트 제조"},
-  {"key": "AI_for_cement_produce", "lecture": true, "from": "강의·저서", "cat": "인공지능 응용", "mid": "제조", "sub": "시멘트 공정 AI"},
-  {"key": "ai_for_cement_produce_07", "lecture": true, "from": "강의·저서", "cat": "인공지능 응용", "mid": "제조", "sub": "시멘트 공정 AI"},
-  {"key": "ai_for_cement_produce_08", "lecture": true, "from": "강의·저서", "cat": "인공지능 응용", "mid": "제조", "sub": "시멘트 공정 AI"},
-  {"key": "smart_factory_world", "lecture": true, "from": "강의·저서", "cat": "인공지능 응용", "mid": "제조", "sub": "시멘트 공정 AI"},
-  {"key": "data_science_for_business", "lecture": true, "from": "강의·저서", "cat": "인공지능 응용", "mid": "경영·회계", "sub": "비즈니스를 위한 데이터 과학"},
-  {"key": "python-accounting-analytics", "lecture": true, "from": "강의·저서", "cat": "인공지능 응용", "mid": "경영·회계", "sub": "파이썬과 회계데이터 분석"},
-  {"key": "generative-ai-prompt-strategy", "lecture": true, "from": "강의·저서", "cat": "인공지능 응용", "mid": "생성형 AI 활용", "sub": "생성형AI활용전략"},
-  {"key": "Gen_AI_Hannam_univ", "lecture": true, "from": "강의·저서", "cat": "인공지능 응용", "mid": "생성형 AI 활용", "sub": "생성형AI활용전략"},
-  {"key": "Gen_AI_strategy_ch05", "lecture": true, "from": "강의·저서", "cat": "인공지능 응용", "mid": "생성형 AI 활용", "sub": "생성형AI활용전략"},
-  {"key": "Gen_AI_strategy_ch06", "lecture": true, "from": "강의·저서", "cat": "인공지능 응용", "mid": "생성형 AI 활용", "sub": "생성형AI활용전략"},
-
-  {"key": "google-sheets-lab", "lecture": true, "from": "강의·저서", "cat": "통계·데이터 기초", "mid": "프로그래밍", "sub": "구글 시트"},
-  {"key": "database_01of04", "lecture": true, "from": "강의·저서", "cat": "통계·데이터 기초", "mid": "프로그래밍", "sub": "데이터베이스"},
-  {"key": "Data_visuialization_lecture_01", "lecture": true, "from": "강의·저서", "cat": "통계·데이터 기초", "mid": "데이터 시각화", "sub": "데이터시각화"},
-  {"key": "Data_visuialization_lecture_02", "lecture": true, "from": "강의·저서", "cat": "통계·데이터 기초", "mid": "데이터 시각화", "sub": "데이터시각화"},
-  {"key": "Data_visuialization_lecture_03", "lecture": true, "from": "강의·저서", "cat": "통계·데이터 기초", "mid": "데이터 시각화", "sub": "데이터시각화"},
-  {"key": "Data_visuialization_lecture_04", "lecture": true, "from": "강의·저서", "cat": "통계·데이터 기초", "mid": "데이터 시각화", "sub": "데이터시각화"},
-  {"key": "bayesian-statistics-for-data-scientists", "lecture": true, "from": "강의·저서", "cat": "통계·데이터 기초", "mid": "확률·통계", "sub": "베이지안 통계"},
-
-  {"key": "핀테크 데이터분석 기초 (이러닝)", "from": "강의·저서", "cat": "포트폴리오"},
-  {"key": "[K-디지털] 인공지능 자연어 처리 (이러닝)", "from": "강의·저서", "cat": "포트폴리오"},
-  {"key": "AI 범죄와 자기 방어", "from": "강의·저서", "cat": "포트폴리오"}
+  {
+   "key": "my_article_00_Korean_stockmarket_volatility_study",
+   "from": "논문 해설",
+   "cat": "금융·핀테크·블록체인",
+   "mid": "금융 연구",
+   "sub": "주식·금융시장",
+   "article": "금융·자산 논문"
+  },
+  {
+   "key": "my_article_01_bitcoin_price_analytics",
+   "from": "논문 해설",
+   "cat": "금융·핀테크·블록체인",
+   "mid": "금융 연구",
+   "sub": "가상자산",
+   "article": "금융·자산 논문"
+  },
+  {
+   "key": "my_article_02_crypto_predict_model_analytics",
+   "from": "논문 해설",
+   "cat": "금융·핀테크·블록체인",
+   "mid": "금융 연구",
+   "sub": "가상자산",
+   "article": "금융·자산 논문"
+  },
+  {
+   "key": "my_article_07_media_blockchain",
+   "from": "논문 해설",
+   "cat": "금융·핀테크·블록체인",
+   "mid": "금융 연구",
+   "sub": "가상자산",
+   "article": "금융·자산 논문"
+  },
+  {
+   "key": "ERC-20 경제적 성과 분석",
+   "from": "논문 해설",
+   "cat": "금융·핀테크·블록체인",
+   "mid": "금융 연구",
+   "sub": "가상자산",
+   "article": "외부_콘텐츠"
+  },
+  {
+   "key": "my_article_05_consumer_expenditure_predict",
+   "from": "논문 해설",
+   "cat": "경제·수학·최적화",
+   "mid": "경제 연구",
+   "sub": "경제·사회",
+   "article": "경제·사회 논문"
+  },
+  {
+   "key": "my_article_06_AI_effect_to_labor_demand",
+   "from": "논문 해설",
+   "cat": "경제·수학·최적화",
+   "mid": "경제 연구",
+   "sub": "경제·사회",
+   "article": "경제·사회 논문"
+  },
+  {
+   "key": "my_article_08_poll_reweighting_lab",
+   "from": "논문 해설",
+   "cat": "경제·수학·최적화",
+   "mid": "경제 연구",
+   "sub": "경제·사회",
+   "article": "경제·사회 논문"
+  },
+  {
+   "key": "산업재해 패널 데이터를 활용한 머신러닝 모델",
+   "from": "논문 해설",
+   "cat": "경제·수학·최적화",
+   "mid": "경제 연구",
+   "sub": "경제·사회",
+   "article": "외부_콘텐츠"
+  },
+  {
+   "key": "my_article_03_drug-slang-detection",
+   "from": "논문 해설",
+   "cat": "인공지능 응용",
+   "mid": "이상탐지·보안",
+   "sub": "AI·보안",
+   "article": "AI 응용 논문"
+  },
+  {
+   "key": "my_article_04_adversarial_finance_attack",
+   "from": "논문 해설",
+   "cat": "인공지능 응용",
+   "mid": "이상탐지·보안",
+   "sub": "AI·보안",
+   "article": "AI 응용 논문"
+  },
+  {
+   "key": "iclr2027_top3_lab_review",
+   "from": "논문 해설",
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "AI 연구 동향",
+   "sub": "AI 학회 논문"
+  },
+  {
+   "key": "optimization_3d_map",
+   "from": "딥러닝·뇌과학",
+   "cat": "경제·수학·최적화",
+   "mid": "최적화",
+   "sub": "모델 최적화"
+  },
+  {
+   "key": "micro_economics",
+   "from": "금융·핀테크·블록체인",
+   "cat": "경제·수학·최적화",
+   "mid": "경제학",
+   "sub": "미시경제학"
+  },
+  {
+   "key": "smart_product",
+   "lecture": true,
+   "from": "강의·저서",
+   "cat": "인공지능 응용",
+   "mid": "제조",
+   "sub": "스마트 제조"
+  },
+  {
+   "key": "AI_for_cement_produce",
+   "lecture": true,
+   "from": "강의·저서",
+   "cat": "인공지능 응용",
+   "mid": "제조",
+   "sub": "시멘트 공정 AI"
+  },
+  {
+   "key": "ai_for_cement_produce_07",
+   "lecture": true,
+   "from": "강의·저서",
+   "cat": "인공지능 응용",
+   "mid": "제조",
+   "sub": "시멘트 공정 AI"
+  },
+  {
+   "key": "ai_for_cement_produce_08",
+   "lecture": true,
+   "from": "강의·저서",
+   "cat": "인공지능 응용",
+   "mid": "제조",
+   "sub": "시멘트 공정 AI"
+  },
+  {
+   "key": "smart_factory_world",
+   "lecture": true,
+   "from": "강의·저서",
+   "cat": "인공지능 응용",
+   "mid": "제조",
+   "sub": "시멘트 공정 AI"
+  },
+  {
+   "key": "data_science_for_business",
+   "lecture": true,
+   "from": "강의·저서",
+   "cat": "인공지능 응용",
+   "mid": "경영·회계",
+   "sub": "비즈니스를 위한 데이터 과학"
+  },
+  {
+   "key": "python-accounting-analytics",
+   "lecture": true,
+   "from": "강의·저서",
+   "cat": "인공지능 응용",
+   "mid": "경영·회계",
+   "sub": "파이썬과 회계데이터 분석"
+  },
+  {
+   "key": "generative-ai-prompt-strategy",
+   "lecture": true,
+   "from": "강의·저서",
+   "cat": "인공지능 응용",
+   "mid": "생성형 AI 활용",
+   "sub": "생성형AI활용전략"
+  },
+  {
+   "key": "Gen_AI_Hannam_univ",
+   "lecture": true,
+   "from": "강의·저서",
+   "cat": "인공지능 응용",
+   "mid": "생성형 AI 활용",
+   "sub": "생성형AI활용전략"
+  },
+  {
+   "key": "Gen_AI_strategy_ch05",
+   "lecture": true,
+   "from": "강의·저서",
+   "cat": "인공지능 응용",
+   "mid": "생성형 AI 활용",
+   "sub": "생성형AI활용전략"
+  },
+  {
+   "key": "Gen_AI_strategy_ch06",
+   "lecture": true,
+   "from": "강의·저서",
+   "cat": "인공지능 응용",
+   "mid": "생성형 AI 활용",
+   "sub": "생성형AI활용전략"
+  },
+  {
+   "key": "google-sheets-lab",
+   "lecture": true,
+   "from": "강의·저서",
+   "cat": "통계·데이터 기초",
+   "mid": "프로그래밍",
+   "sub": "구글 시트"
+  },
+  {
+   "key": "database_01of04",
+   "lecture": true,
+   "from": "강의·저서",
+   "cat": "통계·데이터 기초",
+   "mid": "프로그래밍",
+   "sub": "데이터베이스"
+  },
+  {
+   "key": "Data_visuialization_lecture_01",
+   "lecture": true,
+   "from": "강의·저서",
+   "cat": "통계·데이터 기초",
+   "mid": "데이터 시각화",
+   "sub": "데이터시각화"
+  },
+  {
+   "key": "Data_visuialization_lecture_02",
+   "lecture": true,
+   "from": "강의·저서",
+   "cat": "통계·데이터 기초",
+   "mid": "데이터 시각화",
+   "sub": "데이터시각화"
+  },
+  {
+   "key": "Data_visuialization_lecture_03",
+   "lecture": true,
+   "from": "강의·저서",
+   "cat": "통계·데이터 기초",
+   "mid": "데이터 시각화",
+   "sub": "데이터시각화"
+  },
+  {
+   "key": "Data_visuialization_lecture_04",
+   "lecture": true,
+   "from": "강의·저서",
+   "cat": "통계·데이터 기초",
+   "mid": "데이터 시각화",
+   "sub": "데이터시각화"
+  },
+  {
+   "key": "bayesian-statistics-for-data-scientists",
+   "lecture": true,
+   "from": "강의·저서",
+   "cat": "통계·데이터 기초",
+   "mid": "확률·통계",
+   "sub": "베이지안 통계"
+  },
+  {
+   "key": "핀테크 데이터분석 기초 (이러닝)",
+   "from": "강의·저서",
+   "cat": "포트폴리오"
+  },
+  {
+   "key": "[K-디지털] 인공지능 자연어 처리 (이러닝)",
+   "from": "강의·저서",
+   "cat": "포트폴리오"
+  },
+  {
+   "key": "AI 범죄와 자기 방어",
+   "from": "강의·저서",
+   "cat": "포트폴리오"
+  }
+ ],
+ "_규칙": "rules는 상시 규칙(2026-11-21 주인장 지시: 좌표(space)·벡터·라그랑지안·해밀토니안은 모두 RACK 05 경제·수학·최적화). 저장소 이름이나 제목이 pattern(정규식, 대소문자 무시)에 맞으면 빌드할 때마다 대분류를 cat으로 맞춘다(이미 그 대분류면 중분류·소분류는 건드리지 않음). 공개대상여부가 '검토'이거나 비어 있으면 Y로 연다(N은 그대로 둠). 위에서부터 처음 맞는 규칙 하나만 쓴다.",
+ "rules": [
+  {
+   "pattern": "lagrang|hamilton|라그랑|해밀",
+   "cat": "경제·수학·최적화",
+   "mid": "좌표·벡터 공간",
+   "sub": "라그랑지안·해밀토니안",
+   "open": true
+  },
+  {
+   "pattern": "vector|nabla|벡터|∇",
+   "cat": "경제·수학·최적화",
+   "mid": "좌표·벡터 공간",
+   "sub": "벡터 미적분",
+   "open": true
+  },
+  {
+   "pattern": "(^|_)space(_|$)|euclid|hilbert|minkowski|coordinate|좌표|유클리드|힐베르트|민코프스키",
+   "cat": "경제·수학·최적화",
+   "mid": "좌표·벡터 공간",
+   "sub": "공간",
+   "open": true
+  }
  ]
 }

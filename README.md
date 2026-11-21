@@ -66,7 +66,7 @@ python3 scripts/make_thumbs.py --fetch                     # 바뀐 저장소만
 - `data/publish_settings.json` — 저장 기준일(`mode` auto=매일 그날 / fixed=`base_date`). 관리실이 저장한다.
 - `data/admin_vault.enc` — 관리실 열쇠 보관함(비밀번호로 잠김).
 - `data/hub_meta.json` — 대분류(=서버실 랙 10개)·중분류 소개·색인어·그림, 첫 화면 배너. 랙은 콘텐츠의 주제 분류다(2026-11-21 개편: RACK 05 경제·수학·최적화, RACK 08 인공지능 응용).
-- `data/rack_migration.json` — 랙 개편 옮기기 표. 빌드할 때 대분류가 `from`과 같은 행만 새 분류로 옮기고 논문 해설이던 행에는 주인장 저자(Y)·`Articles_갈래`를 단다(관리표 hub.csv 자체가 고쳐져 다시 잠긴다). 한 번 옮긴 뒤에는 관리실에서 고친 분류를 덮어쓰지 않는다.
+- `data/rack_migration.json` — 랙 개편 옮기기 표와 상시 규칙(rules: 좌표 공간·벡터·라그랑지안·해밀토니안 저장소는 늘 RACK 05 경제·수학·최적화 › 좌표·벡터 공간, 검토 중이면 공개로 연다). 빌드할 때 대분류가 `from`과 같은 행만 새 분류로 옮기고 논문 해설이던 행에는 주인장 저자(Y)·`Articles_갈래`를 단다(관리표 hub.csv 자체가 고쳐져 다시 잠긴다). 한 번 옮긴 뒤에는 관리실에서 고친 분류를 덮어쓰지 않는다.
 - `scripts/hub_secure.py` — 잠긴 표를 풀어 `build_hub.py`로 다시 만들고 다시 잠근다. `scripts/hubcrypt.py` — 잠그기·풀기.
 - 관리자 키는 저장소 Settings → Secrets and variables → Actions의 `HUB_KEY`에 있다. 하루 두 번 예약 수집과, `hub.csv.enc`·`hub_meta.json`을 올릴 때 다시 만든다.
 
