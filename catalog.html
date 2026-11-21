@@ -349,6 +349,7 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
     var acts=el('div','acts');
     if(i.site_url){var o=el('a','btn',T(i.button||(i.kind==='ext'?'자세히 보기':'콘텐츠 열기')));o.href=URL1;o.target='_blank';o.rel='noopener';gcTag(o,i);acts.appendChild(o);}
     else if(i.kind==='portfolio')acts.appendChild(el('span','soon',T('링크 준비 중')));
+    (i.links||[]).forEach(function(x){var a=el('a','btn ghost',T(x.label));a.href=x.url;a.target='_blank';a.rel='noopener';gcTag(a,{repo_url:'',title:x.label});acts.appendChild(a);});
     if(i.repo_url){var g=el('a','btn ghost','GitHub');g.href=i.repo_url;g.target='_blank';g.rel='noopener';acts.appendChild(g);}
     if(i.kind==='repo'&&i.link){var u=(i.link.match(/https?:\/\/\S+/)||[])[0];if(u){var p=el('a','btn ghost',T('논문 원문'));p.href=u;p.target='_blank';p.rel='noopener';acts.appendChild(p);}}
     if(acts.childNodes.length)b.appendChild(acts);

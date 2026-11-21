@@ -102,7 +102,8 @@
    "langs": [],
    "thumb": "thumbs/cats/C06-M3.webp",
    "button": "사이트 열기",
-   "note": ""
+   "note": "",
+   "links": []
   },
   {
    "title": "AI 범죄와 자기 방어",
@@ -117,7 +118,17 @@
    "langs": [],
    "thumb": "thumbs/cats/C08-M1.webp",
    "button": "소개 보기",
-   "note": "커뮤니케이션북스 · 인공지능총서"
+   "note": "커뮤니케이션북스 · 인공지능총서",
+   "links": [
+    {
+     "label": "보충본 연구실 열기",
+     "url": "https://adminmrobo.github.io/ai_crime_lab/"
+    },
+    {
+     "label": "Lab Server · RACK 08",
+     "url": "https://adminmrobo.github.io/ahnboat_lab_cover_status/catalog.html#/%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5%20%EC%9D%91%EC%9A%A9/%EC%9D%B4%EC%83%81%ED%83%90%EC%A7%80%C2%B7%EB%B3%B4%EC%95%88"
+    }
+   ]
   },
   {
    "title": "핀테크 데이터분석 기초",
@@ -132,7 +143,8 @@
    "langs": [],
    "thumb": "thumbs/cats/E-fintech-lab.webp",
    "button": "강좌 보기",
-   "note": "13회차 + 중간·기말 퀴즈 · 3D 본사 타워"
+   "note": "13회차 + 중간·기말 퀴즈 · 3D 본사 타워",
+   "links": []
   },
   {
    "title": "[K-디지털] 인공지능 자연어 처리",
@@ -147,7 +159,8 @@
    "langs": [],
    "thumb": "thumbs/cats/E-nlp-tower.webp",
    "button": "강좌 보기",
-   "note": "8회차 24쪽 + 중간·기말 퀴즈 · 픽셀 말귀 마을"
+   "note": "8회차 24쪽 + 중간·기말 퀴즈 · 픽셀 말귀 마을",
+   "links": []
   },
   {
    "title": "데이터 사이언티스트를 위한 베이지안 통계학",
@@ -162,7 +175,8 @@
    "langs": [],
    "thumb": "thumbs/cats/E-bayes-tower.webp",
    "button": "강좌 보기",
-   "note": "13회차 + 중간·기말 퀴즈 · 3D 본사 타워"
+   "note": "13회차 + 중간·기말 퀴즈 · 3D 본사 타워",
+   "links": []
   },
   {
    "title": "핀테크 API 개발지원사업 (총괄 PM)",
@@ -177,7 +191,8 @@
    "langs": [],
    "thumb": "thumbs/cats/C09.webp",
    "button": "소개 보기",
-   "note": "2017·2019·2021년 수행"
+   "note": "2017·2019·2021년 수행",
+   "links": []
   },
   {
    "title": "뉴스 빅데이터 스타트업 지원사업 (총괄 PM)",
@@ -192,7 +207,8 @@
    "langs": [],
    "thumb": "thumbs/cats/C09.webp",
    "button": "소개 보기",
-   "note": "한국언론진흥재단"
+   "note": "한국언론진흥재단",
+   "links": []
   },
   {
    "title": "현장형 AX 전문강사 양성과정 — 제조현장 AX",
@@ -207,7 +223,8 @@
    "langs": [],
    "thumb": "thumbs/cats/C09.webp",
    "button": "소개 보기",
-   "note": "한국IT여성기업인협회 · 정보통신산업진흥원"
+   "note": "한국IT여성기업인협회 · 정보통신산업진흥원",
+   "links": []
   },
   {
    "title": "Global Business : 해외 비즈니스 블로그",
@@ -222,7 +239,8 @@
    "langs": [],
    "thumb": "thumbs/cats/C06-M1.webp",
    "button": "블로그 열기",
-   "note": ""
+   "note": "",
+   "links": []
   },
   {
    "title": "Article & Study : 연구 및 분석",
@@ -237,7 +255,8 @@
    "langs": [],
    "thumb": "thumbs/cats/C04-M2.webp",
    "button": "블로그 열기",
-   "note": ""
+   "note": "",
+   "links": []
   }
  ]
 }
