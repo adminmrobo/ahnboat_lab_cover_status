@@ -130,7 +130,6 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
 @media (max-width:400px){.grid.big.six{grid-template-columns:1fr}}
 /* Lab Server 특별 카드(도감) — 랙과 같은 틀, 그림 자리는 색 바탕 + 이름 + 식구 */
 .tile.big.extra .xpic{display:flex;align-items:flex-start;justify-content:flex-start;background-color:var(--c);background-image:radial-gradient(rgba(255,255,255,.16) 1.2px,transparent 1.6px),repeating-linear-gradient(0deg,rgba(0,0,0,.10) 0 3px,transparent 3px 14px);background-size:14px 14px,auto}
-.tile.big.extra .xname{position:relative;z-index:1;margin:14px 0 0 16px;font-family:var(--mono);font-weight:700;font-size:clamp(18px,1.7vw,24px);line-height:1.2;color:#fff;background:rgba(0,0,0,.28);border:2px solid #fff;border-radius:8px;padding:4px 10px;letter-spacing:.02em}
 .tile.big.extra .xsp{position:absolute;right:14px;bottom:0;max-height:62%;display:flex;align-items:flex-end;gap:2px}
 .tile.big.extra .xsp img{position:static;width:auto;height:90px;image-rendering:pixelated;display:block}
 .tile.big.extra .n{font-weight:700;color:var(--c)}
@@ -276,7 +275,7 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
     var u=o.url;if(AhnI18n.lang!=='ko'&&o.lang_url)u=o.lang_url.replace('{lang}',AhnI18n.lang);
     t.href=u;t.target='_blank';t.rel='noopener';
     t.setAttribute('data-gc','click/'+VIEW+'/'+(o.repo||o.name));t.setAttribute('data-gc-title',o.name);
-    var f=el('span','pic xpic');f.appendChild(el('span','xname',T(o.name)));
+    var f=el('span','pic xpic');
     var sp=el('span','xsp');sp.setAttribute('aria-hidden','true');
     (o.sprites||[]).forEach(function(s){var im=el('img');im.alt='';im.src=s.src;if(s.h)im.style.height=s.h+'px';im.addEventListener('load',post);sp.appendChild(im);});
     f.appendChild(sp);t.appendChild(f);
