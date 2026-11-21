@@ -27,7 +27,8 @@ LANGS_FULL = 7  # 한국어 + en·zh·ja·uz·ru·vi
 
 COLS = ["저장소", "제목", "주요내용", "콘텐츠_카테고리_대분류", "콘텐츠_카테고리_중분류", "콘텐츠_카테고리_소분류",
         "공개대상여부", "연구실_시리즈_적용대상_여부", "외국어팩대상_여부", "온톨로지_적용대상_여부", "순서", "외부링크", "비고",
-        "공개일", "시리즈물", "상위시리즈", "챕터"]
+        "공개일", "시리즈물", "상위시리즈", "챕터", "주인장_저자_여부", "Articles_갈래"]
+OWNER_COL = "주인장_저자_여부"  # Y면 Ahn's Articles & Presentations(논문·발표·강연)에 나온다. 비우면 제외
 EXT = "외부:"  # GitHub 밖 실적(논문·특허·저서·사업)은 저장소 칸을 '외부:이름'으로 적는다
 SERVER_LANGS = ["en", "zh", "ja", "uz", "ru"]
 
@@ -111,7 +112,7 @@ def load_migration():
     return mg.get("article_col") or "Articles_갈래", mg.get("moves") or []
 
 
-def migrate(obj, keys, moves, fields):
+def migrate(obj, keys, moves, fields, owner_k=None):
     """대분류가 from과 같은 항목만 새 분류로 옮긴다(한 번 옮기면 다시 건드리지 않음). 바뀌면 True."""
     cat_k, mid_k, sub_k, art_k = fields
     for mv in moves:
@@ -124,6 +125,8 @@ def migrate(obj, keys, moves, fields):
             obj[sub_k] = mv["sub"]
         if mv.get("article"):
             obj[art_k] = mv["article"]
+            if owner_k:
+                obj[owner_k] = "Y"
         return True
     return False
 
@@ -153,7 +156,15 @@ def main():
     # 랙 개편: 옮기기 표대로 관리표(hub.csv) 자체의 분류를 고친다 → 관리실에서도 새 분류가 보인다
     ART_COL, MOVES = load_migration()
     row_fields = ("콘텐츠_카테고리_대분류", "콘텐츠_카테고리_중분류", "콘텐츠_카테고리_소분류", ART_COL)
-    migrated = [r["저장소"] for r in rows if migrate(r, {r.get("저장소"), r.get("제목")}, MOVES, row_fields)]
+    migrated = [r["저장소"] for r in rows if migrate(r, {r.get("저장소"), r.get("제목")}, MOVES, row_fields, OWNER_COL)]
+    # 주인장 저자 칸이 생기기 전에 옮겨진 행: 옮기기 표에 갈래가 있고 저자 칸이 아직 비어 있으면 Y로 채운다
+    # (관리실에서 체크를 끄면 'N'이 들어가므로 다시 채우지 않는다)
+    arts = {mv["key"] for mv in MOVES if mv.get("article")}
+    for r in rows:
+        if not (r.get(OWNER_COL) or "").strip() and (r.get("저장소") in arts or r.get("제목") in arts):
+            r[OWNER_COL] = "Y"
+            if r["저장소"] not in migrated:
+                migrated.append(r["저장소"])
     if migrated:
         print("랙 개편으로 옮긴 행 %d개" % len(migrated))
     if added or migrated:  # 관리실에서 더한 칸(표준 칸 밖)도 지우지 않는다
@@ -219,7 +230,8 @@ def main():
             "released": "Y" if (not norm_date(h.get("공개일")) or norm_date(h.get("공개일")) <= BASE) else "N",
             "series": "Y" if yes(h.get("시리즈물")) else "N",
             "order": int(h["순서"]) if (h.get("순서") or "").isdigit() else 1000 + i,
-            "article": (h.get(ART_COL) or "").strip(),
+            # 주인장 저자(Y)만 Articles에 나온다. 갈래가 비면 '기타 논문·발표'
+            "article": ((h.get(ART_COL) or "").strip() or "기타 논문·발표") if yes(h.get(OWNER_COL)) else "",
         })
     # 옮긴 저장소·새로 넣을 저장소 (data/moved.json, hub.csv를 고치지 않아도 유지)
     mv = load_json(os.path.join(DATA, "moved.json"), {})

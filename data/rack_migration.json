@@ -1,5 +1,5 @@
 {
- "_설명": "서버랙(대분류) 개편용 옮기기 표 (2026-11-21: RACK 05 논문 해설 → 경제·수학·최적화, RACK 08 강의·저서 → 인공지능 응용). build_hub.py가 빌드할 때마다 읽는다. key는 hub.csv의 '저장소' 또는 '제목'. 대분류가 from과 같을 때만 cat·mid·sub로 바꾸므로 한 번 옮긴 뒤에는 관리실에서 고친 분류를 덮어쓰지 않는다. article은 Ahn's Articles & Presentations의 갈래(hub.csv의 'Articles_갈래' 칸)로, 주인장이 직접 쓴 논문·발표만 단다. cat이 '포트폴리오'인 항목은 서버실·카탈로그에서 빠지고 Portfolio(data/portfolio.csv)에만 남는다.",
+ "_설명": "서버랙(대분류) 개편용 옮기기 표 (2026-11-21: RACK 05 논문 해설 → 경제·수학·최적화, RACK 08 강의·저서 → 인공지능 응용). build_hub.py가 빌드할 때마다 읽는다. key는 hub.csv의 '저장소' 또는 '제목'. 대분류가 from과 같을 때만 cat·mid·sub로 바꾸므로 한 번 옮긴 뒤에는 관리실에서 고친 분류를 덮어쓰지 않는다. article이 있는 항목은 관리표의 '주인장_저자_여부'를 Y로, 'Articles_갈래'를 그 값으로 채운다. Articles에 나오는지는 관리실의 '주인장 저자' 체크(Y)가 정한다. cat이 '포트폴리오'인 항목은 서버실·카탈로그에서 빠지고 Portfolio(data/portfolio.csv)에만 남는다.",
  "article_col": "Articles_갈래",
  "moves": [
   {"key": "my_article_00_Korean_stockmarket_volatility_study", "from": "논문 해설", "cat": "금융·핀테크·블록체인", "mid": "금융 연구", "sub": "주식·금융시장", "article": "금융·자산 논문"},

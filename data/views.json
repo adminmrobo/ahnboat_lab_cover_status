@@ -1,5 +1,5 @@
 {
- "_guide": "공개 카탈로그(catalog.html)의 화면 설정. ?view=이름 으로 고른다. server=Lab Server(기본), articles=논문·발표, portfolio=포트폴리오. server.extras = Lab Server 랙 옆에 붙는 특별 카드(2행 마지막 열들, 랙과 extras_gap 칸 띄움 — 기본 1, server는 0). articles는 랙 이름이 아니라 항목의 article 표시(hub.csv 'Articles_갈래' 칸)로 모은다: article=true이면 article 표시가 있는 항목을 랙과 상관없이 모아 only 이름의 갈래 묶음(cat 설정) 아래, 중분류 = Articles 갈래로 보여 준다.",
+ "_guide": "공개 카탈로그(catalog.html)의 화면 설정. ?view=이름 으로 고른다. server=Lab Server(기본), articles=논문·발표, portfolio=포트폴리오. server.extras = Lab Server 랙 옆에 붙는 특별 카드(2행 마지막 열들, 랙과 extras_gap 칸 띄움 — 기본 1, server는 0). articles는 랙 이름이 아니라 항목의 article 표시로 모은다(관리실 '주인장 저자' 체크 = hub.csv 주인장_저자_여부 Y인 항목만, 갈래는 Articles_갈래 칸): article=true이면 article 표시가 있는 항목을 랙과 상관없이 모아 only 이름의 갈래 묶음(cat 설정) 아래, 중분류 = Articles 갈래로 보여 준다.",
  "server": {
   "random": 3,
   "extras": [
