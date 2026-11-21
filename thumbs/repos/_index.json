@@ -19,7 +19,7 @@
  },
  "ahnboat_lab_explainer": {
   "src": null,
-  "pushed_at": "2026-11-19T18:18:15Z"
+  "pushed_at": "2026-11-21T13:34:51Z"
  },
  "ahnboat_lab_langpack": {
   "src": null,
@@ -41,6 +41,11 @@
  "ai-power-chain-simulator": {
   "src": null,
   "pushed_at": "2026-11-06T03:12:38Z"
+ },
+ "ai_crime_lab": {
+  "src": "file:assets/lineup.webp",
+  "pushed_at": "2026-11-21T12:46:38Z",
+  "made": "2026-11-22"
  },
  "AI_for_cement_produce": {
   "src": "manifest:ch08_timeseries_lag_preprocessing/img/COVER.webp",
@@ -126,8 +131,9 @@
   "pushed_at": "2026-11-06T04:32:07Z"
  },
  "catch_phishing": {
-  "src": null,
-  "pushed_at": "2026-11-21T05:11:10Z"
+  "src": "manifest:img/cover_00.webp",
+  "pushed_at": "2026-11-21T07:02:34Z",
+  "made": "2026-11-22"
  },
  "cnn_face_game_lab": {
   "src": "embedded:index.html",
@@ -149,7 +155,7 @@
  },
  "data_to_numbers_lab": {
   "src": null,
-  "pushed_at": "2026-11-21T05:21:41Z"
+  "pushed_at": "2026-11-21T06:17:19Z"
  },
  "Data_visuialization_lecture_01": {
   "src": "redraw:R001:en/week1_index.html#hero-img",
@@ -191,8 +197,8 @@
  },
  "euclidean_space_lab": {
   "src": "manifest:assets/og/og_index.jpg",
-  "pushed_at": "2026-11-21T05:41:10Z",
-  "made": "2026-11-21"
+  "pushed_at": "2026-11-21T12:38:17Z",
+  "made": "2026-11-22"
  },
  "fabric_ai_project": {
   "src": "file:slides/img/gs/GS01.webp",
@@ -287,8 +293,8 @@
  },
  "inference_engineering_study": {
   "src": "manifest:cover_factory.jpg",
-  "pushed_at": "2026-11-14T17:07:41Z",
-  "made": "2026-11-15"
+  "pushed_at": "2026-11-21T09:44:16Z",
+  "made": "2026-11-22"
  },
  "inference_engineering_study_week_01_article_01": {
   "src": "redraw:R037:images/sc_lb_hero.png",
@@ -510,8 +516,8 @@
  },
  "nabla_field_lab": {
   "src": "og:assets/og/index.webp",
-  "pushed_at": "2026-11-20T17:00:14Z",
-  "made": "2026-11-21"
+  "pushed_at": "2026-11-21T12:28:08Z",
+  "made": "2026-11-22"
  },
  "neural_network_atlas": {
   "src": null,
@@ -570,9 +576,9 @@
   "made": "2026-11-21"
  },
  "Regression_ridge_lasso": {
-  "src": "manifest:og_rg.jpg",
-  "pushed_at": "2026-11-06T22:35:39Z",
-  "made": "2026-11-07"
+  "src": "manifest:cover_index.webp",
+  "pushed_at": "2026-11-21T12:11:51Z",
+  "made": "2026-11-22"
  },
  "Reinforcement-Learning-lab_project_01": {
   "src": "manifest:img/cover_00.webp",
@@ -623,6 +629,10 @@
   "src": "manifest:assets/img/cover_index.webp",
   "pushed_at": "2026-11-11T14:42:57Z",
   "made": "2026-11-13"
+ },
+ "unsupervised_fish_lab": {
+  "src": null,
+  "pushed_at": "2026-11-21T12:12:18Z"
  },
  "usa_stock_reporter_project_python_version": {
   "src": null,

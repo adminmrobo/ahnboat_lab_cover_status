@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21",
+ "updated": "2026-11-22",
  "categories": [
   {
    "name": "머신러닝",
@@ -1501,6 +1501,36 @@
     "ko"
    ],
    "thumb": "https://adminmrobo.github.io/inference_engineering_study/week_04_article_01/thumb.jpg"
+  },
+  {
+   "title": "4장 · 엔진 제어실",
+   "summary": "이 편을 읽으면 CUDA부터 추론 엔진 · Dynamo까지 추론 소프트웨어 네 층을 구분하고, 우리 일에 맞는 엔진과 측정 방법을 고를 수 있습니다.",
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "추론 엔지니어링 스터디",
+   "sub": "4장 · 소프트웨어",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study/tree/main/week_05_textbook_ch04",
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study/week_05_textbook_ch04/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "https://adminmrobo.github.io/inference_engineering_study/week_05_textbook_ch04/thumb.jpg"
+  },
+  {
+   "title": "4장 논문 · 페이지드 어텐션 (PagedAttention)",
+   "summary": "이 편을 읽으면 KV 캐시를 작은 블록으로 나눠 담아 메모리 낭비를 줄이고, 같은 GPU로 동시에 더 많은 요청을 받는 원리를 설명할 수 있습니다.",
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "추론 엔지니어링 스터디",
+   "sub": "4장 · 소프트웨어",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study/tree/main/week_05_article_01",
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study/week_05_article_01/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "https://adminmrobo.github.io/inference_engineering_study/week_05_article_01/thumb.jpg"
   },
   {
    "title": "2장 후반 발표 · 병목을 찾아라",
