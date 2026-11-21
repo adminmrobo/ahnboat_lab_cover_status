@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Reon Ahn Page 지식 노드 현황 · Reon Ahn's Lab</title>
+<meta name="description" content="ahnboat.xyz에 공개된 해설 페이지의 지식 노드가 쌓여 온 과정과 이번 주 변화">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;700&family=IBM+Plex+Mono:wght@500;700&display=swap">
+<style>
+/* 홈페이지 블록 'Reon Ahn Page 지식 노드 현황' — 서버실과 '주인장은 누구?' 사이.
+   흰 툰 홈페이지 안에 검은 연구실 모니터 두 대(전체 · 이번 주)와 조수 하루의 읽기 카드.
+   데이터: data/growth.json (scripts/build_growth.py가 하루 두 번 만든다) · 언어: i18n.js */
+:root{
+  --bg:#ffffff; --paper:#fbfaf7; --ink:#1f2224; --muted:#5f6663; --line:#1f2224;
+  --violet:#6b4fd6; --acc:#f4c06a; --scr:#000; --scr-ink:#f2f2f2; --scr-mute:#8d8d93; --scr-line:#26262b;
+  --font:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace; color-scheme:light;
+}
+:root[data-theme="dark"]{--bg:#121614;--paper:#1b211e;--ink:#e8ece9;--muted:#9aa5a0;--line:#e8ece9;color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:15px;line-height:1.55;overflow-x:hidden;word-break:keep-all}
+.wrap{max-width:1160px;margin:0 auto;padding:16px max(16px,env(safe-area-inset-left,0px)) 24px}
+.embed .wrap{max-width:1760px}
+.head{display:flex;flex-direction:column;align-items:flex-start;gap:8px;margin:0 0 10px}
+.kicker{display:inline-block;font-family:var(--mono);font-size:12px;letter-spacing:.1em;border:1.5px solid var(--line);border-radius:99px;padding:3px 10px;background:var(--bg)}
+h1{margin:0;font-size:clamp(28px,3.2vw,38px);line-height:1.15}
+.sub{margin:0 0 16px;color:var(--muted);font-size:14px}
+.mons{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(0,1fr);gap:18px;align-items:stretch}
+.mon{position:relative;display:flex;flex-direction:column;background:var(--scr);color:var(--scr-ink);border:2px solid var(--line);border-radius:20px;box-shadow:5px 5px 0 var(--line);overflow:hidden}
+.mon .tag{position:absolute;right:14px;top:12px;z-index:3;font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--scr-mute);border:1px solid #3a3a40;border-radius:99px;padding:2px 9px;background:rgba(0,0,0,.6)}
+.fig{position:relative;flex:1;min-height:300px}
+.fig canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+#m1 .fig{min-height:clamp(380px,31vw,540px)}
+.hud{position:absolute;left:22px;top:20px;width:220px;z-index:2;pointer-events:none}
+.big{font:300 clamp(46px,4.6vw,76px)/1 var(--font);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.unit{font-size:16px;margin-top:6px}
+.sm{color:var(--scr-mute);font-size:13.5px;line-height:1.45;margin-top:3px;font-variant-numeric:tabular-nums}
+.hud h3{font-weight:400;font-size:14px;margin:20px 0 6px}
+canvas.mini{width:100%;height:120px;display:block}
+.now{margin-top:12px;font-size:12.5px;color:var(--scr-mute);line-height:1.4;min-height:3em}
+.now b{display:block;color:var(--scr-ink);font-weight:400}
+.hint{position:absolute;left:0;right:0;bottom:10px;text-align:center;font-size:12.5px;color:var(--scr-mute);z-index:2;pointer-events:none;opacity:0;transition:opacity .4s}
+.hint.on{opacity:1}
+#m1.stack .hud{position:relative;left:0;top:0;width:auto;padding:18px 18px 0}
+#m1.stack .hud h3,#m1.stack canvas.mini{display:none}
+.top2{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px 22px;align-items:end;padding:18px 18px 4px;position:relative;z-index:2}
+.bars{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:5px;align-items:end;height:84px;max-width:330px}
+.bars div{display:flex;flex-direction:column;align-items:center;justify-content:end;height:100%;font-size:12px;color:var(--scr-mute)}
+.bars i{display:block;width:100%;background:#3a3a40;border-radius:2px 2px 0 0;min-height:2px;transition:background .2s}
+.bars .on i{background:var(--acc)}.bars .on{color:var(--scr-ink)}
+.bars s{text-decoration:none;font-size:11.5px;color:var(--scr-ink);margin-bottom:2px;font-variant-numeric:tabular-nums}
+.top2 .sm{grid-column:1/-1}
+#m2 .tag{top:auto;bottom:12px}
+#m2.narrow .top2{grid-template-columns:minmax(0,1fr)}#m2.narrow .bars{max-width:none}
+.empty{position:absolute;inset:auto 0 45% 0;text-align:center;color:var(--scr-ink);font-size:15px;z-index:2;display:none}
+.ctrl{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:10px 14px;border-top:1px solid var(--scr-line)}
+.ctrl button{background:#111114;color:var(--scr-ink);border:1px solid #34343a;border-radius:10px;min-height:44px;padding:0 16px;font:inherit;font-size:14.5px;cursor:pointer}
+.ctrl button:focus-visible,.ctrl input:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.ctrl input[type=range]{flex:1;min-width:140px;accent-color:var(--acc);height:44px}
+.ctrl output{font-size:13px;color:var(--scr-mute);font-variant-numeric:tabular-nums;white-space:nowrap}
+.tip{position:absolute;z-index:4;pointer-events:none;background:rgba(14,14,18,.95);border:1px solid #3a3a42;border-radius:8px;padding:8px 10px;font-size:12.5px;line-height:1.45;max-width:270px;display:none;color:var(--scr-ink)}
+.tip b{font-size:14.5px}.tip span{color:var(--scr-mute)}
+.haru{display:grid;grid-template-columns:112px minmax(0,1fr);gap:18px;align-items:start;margin-top:22px;padding:16px 20px;background:var(--paper);border:2px solid var(--line);border-radius:20px;box-shadow:5px 5px 0 var(--line)}
+.haru img{width:112px;height:112px;border-radius:50%;border:2px solid var(--line);background:#fff;object-fit:cover;image-rendering:pixelated}
+.haru .who{font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--violet);font-weight:700}
+.haru h2{margin:2px 0 8px;font-size:20px;line-height:1.25}
+.haru ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px}
+.haru li{position:relative;padding-left:16px;font-size:15px}
+.haru li::before{content:"";position:absolute;left:2px;top:.65em;width:6px;height:6px;border-radius:50%;background:var(--violet)}
+.haru li b{font-weight:700}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin:0 4px 0 1px;vertical-align:0}
+.foot{margin:16px 0 0;font-size:12.5px;color:var(--muted)}
+@media (max-width:899px){.mons{grid-template-columns:minmax(0,1fr)}#m2 .fig{min-height:320px}}
+@media (max-width:560px){.haru{grid-template-columns:72px minmax(0,1fr);gap:12px;padding:14px}.haru img{width:72px;height:72px}.top2{grid-template-columns:minmax(0,1fr)}.big{font-size:44px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="head"><span class="kicker">AHNBOAT LAB · KNOWLEDGE NODES</span><h1 data-k="title">Reon Ahn Page 지식 노드 현황</h1></div>
+  <p class="sub" id="sub">불러오는 중…</p>
+
+  <div class="mons">
+    <section class="mon" id="m1">
+      <span class="tag" data-k="win1">지식 노드 전체</span>
+      <div class="hud">
+        <div class="big" id="n1">0</div>
+        <div class="unit" data-k="unit">지식 노드</div>
+        <div class="sm" id="d1">–</div>
+        <h3 data-k="cum">누적 지식 노드</h3>
+        <canvas class="mini" id="mini"></canvas>
+        <div class="now" id="now1"></div>
+      </div>
+      <div class="fig"><canvas id="c1"></canvas><div class="tip" id="tip"></div><div class="hint" id="hint" data-k="hint"></div></div>
+      <div class="ctrl">
+        <button id="play" type="button"></button>
+        <button id="replay" type="button" data-k="replay">처음부터</button>
+        <input id="scrub" type="range" min="0" max="1000" value="0">
+        <output id="o1"></output>
+      </div>
+    </section>
+    <section class="mon" id="m2">
+      <span class="tag" data-k="win2">이번 주</span>
+      <div class="top2">
+        <div><div class="big" id="n2">+0</div><div class="unit" data-k="unitW">이번 주 새 지식 노드</div></div>
+        <div class="bars" id="bars"></div>
+        <div class="sm" id="d2"></div>
+      </div>
+      <div class="fig"><canvas id="c2"></canvas><div class="empty" id="empty" data-k="empty"></div></div>
+    </section>
+  </div>
+
+  <section class="haru" aria-live="polite">
+    <img src="thumbs/chars/idphoto/haru_E01.webp" alt="" id="haruImg" width="112" height="112">
+    <div>
+      <div class="who" data-k="haruName">조수 하루</div>
+      <h2 data-k="haruTitle">조수 하루의 이번 주 읽기</h2>
+      <ul id="lines"></ul>
+    </div>
+  </section>
+  <p class="foot" data-k="foot"></p>
+</div>
+<script src="i18n.js"></script>
+<script>
+(function(){
+'use strict';
+var Q=new URLSearchParams(location.search);
+if(Q.get('embed')==='1')document.documentElement.classList.add('embed');
+if(Q.get('theme')==='dark'||Q.get('theme')==='light')document.documentElement.setAttribute('data-theme',Q.get('theme'));
+var $=function(id){return document.getElementById(id);};
+var DPR=Math.min(2,window.devicePixelRatio||1);
+var REDUCE=matchMedia('(prefers-reduced-motion: reduce)').matches;
+var LOC={ko:'ko-KR',en:'en-US',zh:'zh-CN',ja:'ja-JP',uz:'uz-Latn-UZ',ru:'ru-RU',vi:'vi-VN'};
+
+/* 이 블록의 문구 (원어민 검수 전: uz·ru·vi) */
+var S={
+ko:{title:'Reon Ahn Page 지식 노드 현황',sub:'공개된 해설 페이지에 담긴 지식 노드(개념·방법·지표 등)가 처음 공개된 날 순서로 켜집니다. 집계 {0}',win1:'지식 노드 전체',win2:'이번 주',unit:'지식 노드',unitW:'이번 주 새 지식 노드',rel:'관계 {0} · 페이지 {1}편',cum:'누적 지식 노드',first:'첫 페이지 · {0}',latest:'방금 공개된 페이지',play:'재생',pause:'일시정지',again:'다시 재생',replay:'처음부터',hint:'점에 마우스를 올리면 이름이, 누르면 그 페이지가 열려요',newp:'새 페이지 {0}편 · 새 관계 {1}개',days:'월 화 수 목 금 토 일',empty:'이번 주에는 아직 새 노드가 없어요',seen:'처음 등장',links:'연결 {0}개',haruName:'조수 하루',haruTitle:'조수 하루의 이번 주 읽기',h_total:'지금까지 지식 노드 <b>{0}개</b>가 관계 {1}개로 이어져 있어요.',h_week:'이번 주에는 <b>{0}개</b>가 새로 생겼어요. 지난주에는 {1}개였어요.',h_week0:'이번 주에는 아직 새 노드가 없어요. 지난주에는 {0}개가 생겼어요.',h_field:'가장 많이 늘어난 분야는 {0}({1}개)예요.',h_fprev:' 지난주에는 {0}({1}개)가 가장 많았어요.',h_link:'새 노드가 다른 분야와 가장 많이 이어진 곳은 {0} ↔ {1}({2}개 관계)예요.',h_top2:"이번 주 새 노드 중 연결이 가장 많은 것은 '{0}'({1}개)와 '{2}'({3}개)예요.",h_top1:"이번 주 새 노드 중 연결이 가장 많은 것은 '{0}'({1}개)예요.",foot:'노드 = 지식 색인의 개념·방법·지표 등, 선 = 노드 사이 관계, 색 = 분야(서버 랙). 첫 공개 시각 = 해설 페이지 파일이 처음 올라간 시각. 하루 두 번 자동 갱신.'},
+en:{title:'Reon Ahn Page · Knowledge Node Status',sub:'Knowledge nodes (concepts, methods, metrics…) in the published explainer pages light up in the order they first appeared. Updated {0}',win1:'All knowledge nodes',win2:'This week',unit:'knowledge nodes',unitW:'new nodes this week',rel:'{0} links · {1} pages',cum:'Cumulative nodes',first:'First page · {0}',latest:'Just published',play:'Play',pause:'Pause',again:'Play again',replay:'From the start',hint:'Hover a dot for its name; click to open its page',newp:'{0} new pages · {1} new links',days:'Mon Tue Wed Thu Fri Sat Sun',empty:'No new nodes yet this week',seen:'First appeared',links:'{0} links',haruName:'Assistant Haru',haruTitle:"Haru's reading of the week",h_total:'So far, <b>{0}</b> knowledge nodes are joined by {1} links.',h_week:'<b>{0}</b> new nodes appeared this week, compared with {1} last week.',h_week0:'No new nodes yet this week. Last week brought {0}.',h_field:'The field that grew most is {0} ({1}).',h_fprev:' Last week it was {0} ({1}).',h_link:'New nodes crossed fields most often between {0} ↔ {1} ({2} links).',h_top2:'Among new nodes, the most connected are “{0}” ({1}) and “{2}” ({3}).',h_top1:'Among new nodes, the most connected is “{0}” ({1}).',foot:'Node = a concept, method or metric from the knowledge index; line = a link between nodes; colour = field (server rack). First appearance = when the page file was first uploaded. Updated twice a day.'},
+zh:{title:'Reon Ahn Page 知识节点现状',sub:'已公开讲解页面中的知识节点（概念、方法、指标等）按首次公开的顺序依次点亮。统计时间 {0}',win1:'全部知识节点',win2:'本周',unit:'个知识节点',unitW:'本周新增知识节点',rel:'关系 {0} · 页面 {1} 篇',cum:'累计知识节点',first:'第一篇 · {0}',latest:'刚刚公开的页面',play:'播放',pause:'暂停',again:'再次播放',replay:'从头播放',hint:'鼠标移到点上可看名称，点击打开该页面',newp:'新页面 {0} 篇 · 新关系 {1} 个',days:'一 二 三 四 五 六 日',empty:'本周还没有新增节点',seen:'首次出现',links:'{0} 个连接',haruName:'助手 Haru',haruTitle:'助手 Haru 的本周解读',h_total:'到目前为止，<b>{0}</b> 个知识节点通过 {1} 个关系相连。',h_week:'本周新增 <b>{0}</b> 个，上周为 {1} 个。',h_week0:'本周还没有新增节点。上周新增了 {0} 个。',h_field:'增长最多的领域是{0}（{1} 个）。',h_fprev:'上周最多的是{0}（{1} 个）。',h_link:'新节点跨领域连接最多的是 {0} ↔ {1}（{2} 个关系）。',h_top2:'本周新节点中连接最多的是“{0}”（{1} 个）和“{2}”（{3} 个）。',h_top1:'本周新节点中连接最多的是“{0}”（{1} 个）。',foot:'节点 = 知识索引中的概念、方法、指标等；线 = 节点之间的关系；颜色 = 领域（服务器机架）。首次出现 = 页面文件首次上传的时间。每天自动更新两次。'},
+ja:{title:'Reon Ahn Page 知識ノードの現況',sub:'公開された解説ページの知識ノード（概念・手法・指標など）が、初めて公開された日の順に灯ります。集計 {0}',win1:'すべての知識ノード',win2:'今週',unit:'知識ノード',unitW:'今週の新しい知識ノード',rel:'関係 {0} · ページ {1}本',cum:'累計知識ノード',first:'最初のページ · {0}',latest:'いま公開されたページ',play:'再生',pause:'一時停止',again:'もう一度再生',replay:'最初から',hint:'点にマウスを重ねると名前、クリックでそのページが開きます',newp:'新しいページ {0}本 · 新しい関係 {1}件',days:'月 火 水 木 金 土 日',empty:'今週はまだ新しいノードがありません',seen:'初登場',links:'接続 {0}',haruName:'助手ハル',haruTitle:'助手ハルの今週の読み解き',h_total:'これまでに <b>{0}個</b> の知識ノードが {1} 件の関係でつながっています。',h_week:'今週は <b>{0}個</b> が新しく増えました。先週は {1} 個でした。',h_week0:'今週はまだ新しいノードがありません。先週は {0} 個増えました。',h_field:'いちばん増えた分野は{0}（{1}個）です。',h_fprev:'先週は{0}（{1}個）が最多でした。',h_link:'新しいノードが分野をまたいで最も多くつながったのは {0} ↔ {1}（{2}件）です。',h_top2:'今週の新しいノードで最もつながりが多いのは「{0}」（{1}）と「{2}」（{3}）です。',h_top1:'今週の新しいノードで最もつながりが多いのは「{0}」（{1}）です。',foot:'ノード = 知識索引の概念・手法・指標など、線 = ノード間の関係、色 = 分野（サーバーラック）。初登場 = ページのファイルが初めてアップロードされた時刻。1日2回自動更新。'},
+uz:{title:'Reon Ahn Page · Bilim tugunlari holati',sub:'Eʼlon qilingan tushuntirish sahifalaridagi bilim tugunlari (tushunchalar, usullar, koʻrsatkichlar…) ilk bor chiqqan kun tartibida yonadi. Yangilangan: {0}',win1:'Barcha bilim tugunlari',win2:'Shu hafta',unit:'bilim tuguni',unitW:'shu haftadagi yangi tugunlar',rel:'{0} ta bogʻlanish · {1} ta sahifa',cum:'Jami tugunlar',first:'Birinchi sahifa · {0}',latest:'Hozirgina chiqqan sahifa',play:'Ijro',pause:'Pauza',again:'Qayta ijro',replay:'Boshidan',hint:'Nomini koʻrish uchun nuqta ustiga olib boring, sahifasini ochish uchun bosing',newp:'{0} ta yangi sahifa · {1} ta yangi bogʻlanish',days:'Du Se Ch Pa Ju Sh Ya',empty:'Shu hafta hali yangi tugun yoʻq',seen:'Ilk bor',links:'{0} ta bogʻlanish',haruName:'Yordamchi Haru',haruTitle:'Yordamchi Haruning haftalik sharhi',h_total:'Hozirgacha <b>{0}</b> ta bilim tuguni {1} ta bogʻlanish bilan ulangan.',h_week:'Shu hafta <b>{0}</b> ta yangi tugun paydo boʻldi, oʻtgan hafta {1} ta edi.',h_week0:'Shu hafta hali yangi tugun yoʻq. Oʻtgan hafta {0} ta qoʻshilgan edi.',h_field:'Eng koʻp oʻsgan soha — {0} ({1} ta).',h_fprev:' Oʻtgan hafta eng koʻpi {0} ({1} ta) edi.',h_link:'Yangi tugunlar sohalararo eng koʻp {0} ↔ {1} oraligʻida bogʻlandi ({2} ta).',h_top2:'Yangi tugunlar ichida eng koʻp bogʻlangani — “{0}” ({1}) va “{2}” ({3}).',h_top1:'Yangi tugunlar ichida eng koʻp bogʻlangani — “{0}” ({1}).',foot:'Tugun = bilim indeksidagi tushuncha, usul yoki koʻrsatkich; chiziq = tugunlar orasidagi bogʻlanish; rang = soha (server javoni). Ilk chiqish = sahifa fayli birinchi yuklangan vaqt. Kuniga ikki marta yangilanadi.'},
+ru:{title:'Reon Ahn Page · Состояние узлов знаний',sub:'Узлы знаний (понятия, методы, метрики…) из опубликованных страниц загораются в порядке их первого появления. Обновлено {0}',win1:'Все узлы знаний',win2:'Эта неделя',unit:'узлов знаний',unitW:'новых узлов за неделю',rel:'связей {0} · страниц {1}',cum:'Всего узлов',first:'Первая страница · {0}',latest:'Только что опубликовано',play:'Пуск',pause:'Пауза',again:'Ещё раз',replay:'С начала',hint:'Наведите на точку — увидите название, нажмите — откроется страница',newp:'новых страниц {0} · новых связей {1}',days:'Пн Вт Ср Чт Пт Сб Вс',empty:'На этой неделе новых узлов пока нет',seen:'Впервые',links:'связей: {0}',haruName:'Ассистентка Хару',haruTitle:'Разбор недели от Хару',h_total:'На сегодня <b>{0}</b> узлов знаний соединены {1} связями.',h_week:'За эту неделю появилось <b>{0}</b> новых узлов, на прошлой — {1}.',h_week0:'На этой неделе новых узлов пока нет. На прошлой добавилось {0}.',h_field:'Больше всего выросла область «{0}» ({1}).',h_fprev:' На прошлой неделе лидировала «{0}» ({1}).',h_link:'Чаще всего новые узлы связали области {0} ↔ {1} ({2} связей).',h_top2:'Среди новых узлов больше всего связей у «{0}» ({1}) и «{2}» ({3}).',h_top1:'Среди новых узлов больше всего связей у «{0}» ({1}).',foot:'Узел — понятие, метод или метрика из индекса знаний; линия — связь между узлами; цвет — область (серверная стойка). Первое появление — момент первой загрузки файла страницы. Обновляется дважды в день.'},
+vi:{title:'Reon Ahn Page · Hiện trạng nút tri thức',sub:'Các nút tri thức (khái niệm, phương pháp, chỉ số…) trong các trang giải thích đã công bố sáng lên theo thứ tự ngày xuất hiện đầu tiên. Cập nhật {0}',win1:'Toàn bộ nút tri thức',win2:'Tuần này',unit:'nút tri thức',unitW:'nút mới tuần này',rel:'{0} liên kết · {1} trang',cum:'Nút tích lũy',first:'Trang đầu tiên · {0}',latest:'Vừa công bố',play:'Phát',pause:'Tạm dừng',again:'Phát lại',replay:'Từ đầu',hint:'Di chuột lên chấm để xem tên, nhấp để mở trang',newp:'{0} trang mới · {1} liên kết mới',days:'T2 T3 T4 T5 T6 T7 CN',empty:'Tuần này chưa có nút mới',seen:'Xuất hiện lần đầu',links:'{0} liên kết',haruName:'Trợ lý Haru',haruTitle:'Haru đọc số liệu tuần này',h_total:'Đến nay có <b>{0}</b> nút tri thức được nối bằng {1} liên kết.',h_week:'Tuần này có thêm <b>{0}</b> nút mới; tuần trước là {1}.',h_week0:'Tuần này chưa có nút mới. Tuần trước có thêm {0}.',h_field:'Lĩnh vực tăng nhiều nhất là {0} ({1}).',h_fprev:' Tuần trước nhiều nhất là {0} ({1}).',h_link:'Nút mới nối liên lĩnh vực nhiều nhất giữa {0} ↔ {1} ({2} liên kết).',h_top2:'Trong các nút mới, nhiều liên kết nhất là “{0}” ({1}) và “{2}” ({3}).',h_top1:'Trong các nút mới, nhiều liên kết nhất là “{0}” ({1}).',foot:'Nút = khái niệm, phương pháp hay chỉ số trong chỉ mục tri thức; đường = liên kết giữa các nút; màu = lĩnh vực (giá máy chủ). Xuất hiện lần đầu = lúc tệp trang được tải lên lần đầu. Tự cập nhật hai lần mỗi ngày.'}
+};
+var lang='ko';
+function L(k){var a=[].slice.call(arguments,1),s=(S[lang]&&S[lang][k])||S.ko[k]||'';return s.replace(/\{(\d+)\}/g,function(m,n){return a[+n]!=null?a[+n]:m;});}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function fmt(n){return Number(n).toLocaleString(LOC[lang]||'ko-KR');}
+function FN(name){return AhnI18n.t(name);}
+
+function lighten(hex,k){var n=parseInt(hex.slice(1),16),r=n>>16,g=n>>8&255,b=n&255;return [r+(255-r)*k,g+(255-g)*k,b+(255-b)*k].map(Math.round);}
+function sprite(c){var s=64,cv=document.createElement('canvas');cv.width=cv.height=s;var x=cv.getContext('2d'),g=x.createRadialGradient(s/2,s/2,0,s/2,s/2,s/2);
+  g.addColorStop(0,'rgba(255,255,255,1)');g.addColorStop(.16,'rgba('+c+',.95)');g.addColorStop(.38,'rgba('+c+',.28)');g.addColorStop(1,'rgba('+c+',0)');
+  x.fillStyle=g;x.fillRect(0,0,s,s);return cv;}
+
+Promise.all([fetch('data/growth.json',{cache:'no-cache'}).then(function(r){if(!r.ok)throw new Error(r.status);return r.json();}),AhnI18n.ready])
+  .then(function(a){init(a[0]);}).catch(function(e){$('sub').textContent='지식 노드 자료를 불러오지 못했습니다 ('+e.message+')';});
+
+function init(D){
+  lang=AhnI18n.lang;
+  var N=D.nodes.length,t0=new Date(D.t0),built=new Date(D.built),W=D.week;
+  var X=new Float32Array(N),Y=new Float32Array(N),F=new Uint8Array(N),T=new Float32Array(N),R=new Float32Array(N),i,k;
+  for(i=0;i<N;i++){var n=D.nodes[i];X[i]=n[0];Y[i]=-n[1];F[i]=n[2];T[i]=n[3];R[i]=1+.8*Math.sqrt(n[4]);}
+  /* 한 번에 올라온 노드들은 짧은 간격을 두고 하나씩 켠다(표시용 시각 TD) */
+  var ord=[];for(i=0;i<N;i++)ord.push(i);ord.sort(function(a,b){return T[a]-T[b]||a-b;});
+  var TD=new Float32Array(N);
+  for(i=0;i<N;){var j=i;while(j<N&&T[ord[j]]===T[ord[i]])j++;var nx=j<N?T[ord[j]]:T[ord[i]]+.02,sp=Math.min(.45,(nx-T[ord[i]])*.85);
+    for(k=i;k<j;k++)TD[ord[k]]=T[ord[k]]+sp*(k-i)/(j-i);i=j;}
+  var byT=ord.slice().sort(function(a,b){return TD[a]-TD[b];});
+  var E=D.edges,EA=new Float32Array(E.length);for(i=0;i<E.length;i++)EA[i]=Math.max(TD[E[i][0]],TD[E[i][1]]);
+  var cols=D.fields.map(function(f){return lighten(f.color,.42).join(',');}),spr=cols.map(sprite);
+  var TEND=0;for(i=0;i<N;i++)if(TD[i]>TEND)TEND=TD[i];TEND+=.05;
+  var pages=D.pages.map(function(p){return {title:p[0],url:p[2],t:p[3]};});
+  var dateAt=function(d){return new Date(t0.getTime()+d*864e5);};
+  var kdate=function(dt,o){return dt.toLocaleDateString(LOC[lang]||'ko-KR',Object.assign({timeZone:'Asia/Seoul'},o||{year:'numeric',month:'long',day:'numeric'}));};
+  var nbr=[];for(i=0;i<N;i++)nbr.push([]);E.forEach(function(e){nbr[e[0]].push(e[1]);nbr[e[1]].push(e[0]);});
+  /* 분야 이름 자리: 분야 덩어리의 바깥쪽 가장자리 (가운데 분야는 덩어리 한가운데) */
+  var CX=0,CY=0;for(i=0;i<N;i++){CX+=X[i];CY+=Y[i];}CX/=N;CY/=N;
+  var anchor=D.fields.map(function(_,f){var xs=[],ys=[];for(var q=0;q<N;q++)if(F[q]===f){xs.push(X[q]);ys.push(Y[q]);}
+    if(!xs.length)return [0,0];xs.sort(function(a,b){return a-b;});ys.sort(function(a,b){return a-b;});
+    var mx=xs[xs.length>>1],my=ys[ys.length>>1],dx=mx-CX,dy=my-CY,l=Math.hypot(dx,dy)||1;if(l<.3)return [mx,my];dx/=l;dy/=l;
+    var pr=[];for(q=0;q<N;q++)if(F[q]===f)pr.push((X[q]-CX)*dx+(Y[q]-CY)*dy);pr.sort(function(a,b){return a-b;});
+    var r=(pr[Math.floor(pr.length*.97)]||0)+.07;return [CX+dx*r,CY+dy*r];});
+  function bbox(ok){var a=1e9,b=1e9,c=-1e9,d=-1e9;for(var q=0;q<N;q++)if(ok(q)){if(X[q]<a)a=X[q];if(X[q]>c)c=X[q];if(Y[q]<b)b=Y[q];if(Y[q]>d)d=Y[q];}return [a,b,c,d];}
+  var FULL=bbox(function(){return true;});
+  var WS=(new Date(W.start+'T00:00:00+09:00').getTime()-t0.getTime())/864e5,WE=WS+7;
+  var isNewW=function(q){return T[q]>=WS;};
+
+  function View(box,canvas){
+    var v={box:box,canvas:canvas,ctx:canvas.getContext('2d'),W:0,H:0,cam:null,left:0,top:0,dirty:true};
+    v.resize=function(){var r=canvas.getBoundingClientRect();v.W=Math.round(r.width*DPR);v.H=Math.round(r.height*DPR);canvas.width=v.W;canvas.height=v.H;v.dirty=true;};
+    v.fit=function(bb,snap){var a=bb[0],b=bb[1],c=bb[2],d=bb[3],pad=snap?.13:.08;
+      var sx=Math.max(c-a,.55)*(1+pad*2),sy=Math.max(d-b,.33)*(1+pad*2),vw=v.W-v.left-20*DPR,vh=v.H-v.top-30*DPR,s=Math.min(vw/sx,vh/sy);
+      var tg={cx:(a+c)/2,cy:(b+d)/2,s:s,ox:v.left+10*DPR+vw/2,oy:v.top+10*DPR+vh/2};
+      if(!v.cam||snap)v.cam=tg;else for(var key in tg)v.cam[key]+=(tg[key]-v.cam[key])*.07;
+      v.fullS=Math.min(vw/((FULL[2]-FULL[0])*1.16),vh/((FULL[3]-FULL[1])*1.16));};
+    v.px=function(q){return (X[q]-v.cam.cx)*v.cam.s+v.cam.ox;};v.py=function(q){return (Y[q]-v.cam.cy)*v.cam.s+v.cam.oy;};
+    return v;}
+
+  function draw(v,o){
+    var c=v.ctx,cam=v.cam;c.globalCompositeOperation='source-over';c.fillStyle='#000';c.fillRect(0,0,v.W,v.H);
+    var zf=Math.min(2.4,Math.max(1,Math.sqrt(cam.s/v.fullS)))*DPR*(v.small?.85:1),foc=o.focus!=null;
+    c.globalCompositeOperation='lighter';c.lineWidth=.55*DPR;
+    var paths=cols.map(function(){return new Path2D();}),dim=new Path2D(),e,a,b,q;
+    for(e=0;e<E.length;e++){if(EA[e]>o.T)continue;a=E[e][0];b=E[e][1];
+      var p=(o.week&&!(isNewW(a)||isNewW(b)))||(foc&&a!==o.focus&&b!==o.focus)?dim:paths[F[a]];
+      p.moveTo(v.px(a),v.py(a));p.lineTo(v.px(b),v.py(b));}
+    c.strokeStyle='rgba(150,150,160,.05)';c.stroke(dim);
+    cols.forEach(function(col,f){c.strokeStyle='rgba('+col+','+(foc?.75:.13)+')';c.stroke(paths[f]);});
+    for(k=0;k<N;k++){q=byT[k];if(TD[q]>o.T)break;var x=v.px(q),y=v.py(q);if(x<-20||y<-20||x>v.W+20||y>v.H+20)continue;
+      if(o.week&&!isNewW(q)){c.globalCompositeOperation='source-over';c.fillStyle='rgba(120,120,130,.33)';var r0=Math.max(1,.75*R[q])*DPR*.8;c.fillRect(x-r0/2,y-r0/2,r0,r0);c.globalCompositeOperation='lighter';continue;}
+      var fl=o.still?0:Math.exp(-(o.T-TD[q])/.5),dimmed=foc&&!o.near[q];
+      var r=R[q]*zf*(1+1.6*fl)*(dimmed?.6:1)*5.2;c.globalAlpha=dimmed?.25:Math.min(1,.75+fl);c.drawImage(spr[F[q]],x-r/2,y-r/2,r,r);}
+    c.globalAlpha=1;c.globalCompositeOperation='source-over';
+    c.font=(v.small?11.5:12.5)*DPR+'px "IBM Plex Sans KR",sans-serif';c.textAlign='center';
+    D.fields.forEach(function(f,fi){var cnt=o.count[fi];if(cnt<10)return;var al=Math.min(1,(cnt-10)/40)*.9,nm=FN(f.name);
+      var lx=(anchor[fi][0]-cam.cx)*cam.s+cam.ox,ly=(anchor[fi][1]-cam.cy)*cam.s+cam.oy,w=c.measureText(nm).width+10*DPR;
+      lx=Math.max(w/2+4*DPR,Math.min(v.W-w/2-4*DPR,lx));ly=Math.max(16*DPR,Math.min(v.H-8*DPR,ly));c.fillStyle='rgba(0,0,0,'+al*.55+')';c.fillRect(lx-w/2,ly-12*DPR,w,17*DPR);c.fillStyle='rgba(235,235,240,'+al+')';c.fillText(nm,lx,ly);});
+    if(o.first&&o.T<3.2){q=byT[0];var pg=pages[D.nodes[q][7]],al2=Math.min(1,(3.2-o.T));c.textAlign='left';
+      var fx=Math.min(v.px(q)+14*DPR,v.W-340*DPR),fy=v.py(q)-14*DPR;
+      c.fillStyle='rgba(200,200,206,'+al2+')';c.fillText(L('first',kdate(dateAt(0))),fx,fy);
+      c.fillStyle='rgba(255,255,255,'+al2+')';c.font=14*DPR+'px "IBM Plex Sans KR",sans-serif';
+      c.fillText(pg.title.length>34?pg.title.slice(0,33)+'…':pg.title,fx,fy+18*DPR);}
+  }
+
+  /* 누적 곡선 (6시간 단위) */
+  var cum=new Int32Array(Math.ceil(TEND*4)+1);for(i=0;i<N;i++)cum[Math.min(cum.length-1,Math.ceil(TD[i]*4))]++;for(i=1;i<cum.length;i++)cum[i]+=cum[i-1];
+  function mini(Tn){var cv=$('mini'),r=cv.getBoundingClientRect();if(!r.width)return;cv.width=r.width*DPR;cv.height=r.height*DPR;
+    var x=cv.getContext('2d'),w=cv.width,h=cv.height,l=42*DPR,b=h-18*DPR,tp=6*DPR,maxY=Math.max(1000,Math.ceil(N/1000)*1000);
+    var sx=function(d){return l+(w-l-6*DPR)*d/TEND;},sy=function(n){return b-(b-tp)*n/maxY;};
+    x.font=10.5*DPR+'px "IBM Plex Mono",monospace';x.fillStyle='#6d6d74';x.strokeStyle='#1d1d22';x.lineWidth=DPR;x.textAlign='right';
+    for(var g=0;g<=4;g++){var yy=sy(maxY*g/4);x.beginPath();x.moveTo(l,yy);x.lineTo(w,yy);x.stroke();x.fillText(fmt(maxY*g/4),l-5*DPR,yy+4*DPR);}
+    x.textAlign='center';x.font=10.5*DPR+'px "IBM Plex Sans KR",sans-serif';
+    for(var d=0;d<=TEND;d++){var kd=new Date(dateAt(d).getTime()+9*36e5);if(kd.getUTCDate()===1||d===0)x.fillText(kdate(dateAt(d),{month:'short'}),sx(d),h-3*DPR);}
+    x.strokeStyle='#f4c06a';x.lineWidth=1.6*DPR;x.beginPath();var end=Math.min(cum.length-1,Math.floor(Tn*4));
+    for(var z=0;z<=end;z++){z?x.lineTo(sx(z/4),sy(cum[z])):x.moveTo(sx(z/4),sy(cum[z]));}x.stroke();
+    x.fillStyle='#ffe2a8';x.beginPath();x.arc(sx(end/4),sy(cum[end]),3*DPR,0,7);x.fill();}
+  function counter(Tn){var n=0,c=D.fields.map(function(){return 0;});for(var q=0;q<N;q++)if(TD[q]<=Tn){n++;c[F[q]]++;}return [n,c];}
+  function edgesAt(Tn){var n=0;for(var e=0;e<E.length;e++)if(EA[e]<=Tn)n++;return n;}
+  function pagesAt(Tn){var n=0;for(var p=0;p<pages.length;p++)if(pages[p].t<=Tn)n++;return n;}
+  function lastPage(Tn){var qq=null;for(var p=0;p<pages.length;p++)if(pages[p].t<=Tn)qq=pages[p];return qq;}
+  var ALL=counter(TEND);
+
+  /* ---------- 문구 (언어가 바뀌면 다시) */
+  function texts(){
+    lang=AhnI18n.lang;
+    document.querySelectorAll('[data-k]').forEach(function(el){el.textContent=L(el.dataset.k);});
+    document.title=L('title')+" · Reon Ahn's Lab";
+    $('sub').textContent=L('sub',built.toLocaleString(LOC[lang]||'ko-KR',{timeZone:'Asia/Seoul',month:'long',day:'numeric',hour:'2-digit',minute:'2-digit'}));
+    $('play').setAttribute('aria-label',L('play'));$('scrub').setAttribute('aria-label',L('win1'));
+    var dn=L('days').split(' '),mx=Math.max.apply(null,W.by_day.concat([1]));
+    $('bars').innerHTML=W.by_day.map(function(n,d){return '<div data-d="'+d+'"><s>'+(n?fmt(n):'')+'</s><i style="height:'+Math.max(2,68*n/mx)+'%"></i>'+dn[d]+'</div>';}).join('');
+    var ws=new Date(W.start+'T00:00:00+09:00'),we=new Date(W.end+'T00:00:00+09:00'),o={month:'short',day:'numeric',weekday:'short'};
+    $('d2').textContent=kdate(ws,o)+' – '+kdate(we,o)+' · '+L('newp',fmt(W.pages),fmt(W.edges));
+    $('empty').style.display=W.nodes?'none':'block';
+    haru();lastN1=-1;lastP1=undefined;lastBar=-1;lastN2=-1;playLabel();views.forEach(function(v){v.dirty=true;});
+  }
+  function fname(fi){return '<span class="dot" style="background:rgb('+cols[fi]+')"></span>'+esc(FN(D.fields[fi].name));}
+  function haru(){
+    var li=[],nm=function(t){return esc(lang==='ko'?t[0]:t[1]);};
+    li.push(L('h_total',fmt(ALL[0]),fmt(E.length)));
+    if(W.nodes){
+      li.push(L('h_week',fmt(W.nodes),fmt(W.prev_nodes)));
+      var top=W.by_field.indexOf(Math.max.apply(null,W.by_field)),pt=W.prev_by_field.indexOf(Math.max.apply(null,W.prev_by_field));
+      var s=L('h_field',fname(top),fmt(W.by_field[top]));if(W.prev_nodes&&pt!==top)s+=L('h_fprev',fname(pt),fmt(W.prev_by_field[pt]));li.push(s);
+      if(W.top_link)li.push(L('h_link',fname(W.top_link[0]),fname(W.top_link[1]),fmt(W.top_link[2])));
+      if(W.top_nodes.length>1)li.push(L('h_top2',nm(W.top_nodes[0]),W.top_nodes[0][2],nm(W.top_nodes[1]),W.top_nodes[1][2]));
+      else if(W.top_nodes.length)li.push(L('h_top1',nm(W.top_nodes[0]),W.top_nodes[0][2]));
+    }else li.push(L('h_week0',fmt(W.prev_nodes)));
+    $('lines').innerHTML=li.map(function(s){return '<li>'+s+'</li>';}).join('');
+  }
+
+  /* ---------- 창 1: 처음 → 현재, 끝나면 현재 모습에 머문다 */
+  var v1=View($('m1'),$('c1')),v2=View($('m2'),$('c2'));v2.small=true;var views=[v1,v2];
+  var T1=REDUCE?TEND:0,playing=false,started=REDUCE,speed=TEND/22,last=performance.now(),focus=null,near={};
+  var lastN1=-1,lastP1,lastBar=-1,lastN2=-1;
+  function done(){return T1>=TEND&&!playing;}
+  function playLabel(){$('play').textContent=playing?L('pause'):(T1>=TEND?L('again'):L('play'));$('hint').classList.toggle('on',done());}
+  $('play').onclick=function(){if(playing)playing=false;else{if(T1>=TEND){T1=0;v1.cam=null;}playing=true;started=true;}focus=null;playLabel();};
+  $('replay').onclick=function(){T1=0;v1.cam=null;playing=true;started=true;focus=null;playLabel();};
+  $('scrub').oninput=function(e){T1=TEND*e.target.value/1000;playing=false;started=true;playLabel();};
+  function layout1(){$('m2').classList.toggle('narrow',$('m2').clientWidth<480);var st=$('m1').clientWidth<720;$('m1').classList.toggle('stack',st);v1.left=st?0:($('m1').querySelector('.hud').offsetWidth+30)*DPR;v1.top=0;}
+  var tip=$('tip');
+  $('c1').addEventListener('pointermove',function(e){
+    if(!done()){tip.style.display='none';return;}
+    var r=$('c1').getBoundingClientRect(),mx=(e.clientX-r.left)*DPR,my=(e.clientY-r.top)*DPR,best=null,bd=Math.pow(12*DPR,2);
+    for(var q=0;q<N;q++){var dx=v1.px(q)-mx,dy=v1.py(q)-my,d=dx*dx+dy*dy;if(d<bd){bd=d;best=q;}}
+    if(best!==focus){focus=best;near={};if(best!=null){near[best]=1;nbr[best].forEach(function(m){near[m]=1;});}v1.dirty=true;}
+    if(best==null){tip.style.display='none';$('c1').style.cursor='default';return;}
+    var nd=D.nodes[best],pg=pages[nd[7]];$('c1').style.cursor='pointer';
+    tip.innerHTML='<b>'+esc(lang==='ko'?nd[5]:nd[6])+'</b><br><span>'+esc(FN(D.fields[F[best]].name))+' · '+L('links',nd[4])+'</span><br>'+L('seen')+': '+esc(pg.title)+'<br><span>'+kdate(dateAt(T[best]))+'</span>';
+    tip.style.display='block';tip.style.left=Math.min(e.clientX-r.left+14,r.width-280)+'px';tip.style.top=Math.min(e.clientY-r.top+14,r.height-120)+'px';});
+  $('c1').addEventListener('pointerleave',function(){if(focus!=null){focus=null;near={};v1.dirty=true;}tip.style.display='none';});
+  $('c1').addEventListener('click',function(){if(focus==null)return;var pg=pages[D.nodes[focus][7]];if(pg)window.open(pg.url,'_blank','noopener');});
+
+  /* ---------- 창 2: 이번 주 (월~일) 반복 */
+  var T2=REDUCE?WE:WS,hold2=0,lastDay=Math.min(6,Math.floor(Math.max.apply(null,Array.prototype.slice.call(T))-WS));
+
+  var ro=new ResizeObserver(function(){layout1();views.forEach(function(v){v.resize();});v2.top=0;lastN1=-1;});
+  ro.observe($('m1'));ro.observe($('m2'));layout1();views.forEach(function(v){v.resize();});
+  var vis=new Map(),io=new IntersectionObserver(function(es){es.forEach(function(e){vis.set(e.target,e.isIntersecting);
+    if(e.target===$('m1')&&e.isIntersecting&&!started){started=true;playing=true;playLabel();}});},{threshold:.35});
+  io.observe($('m1'));io.observe($('m2'));
+  var on=function(v){return vis.get(v.box)===true;};
+  texts();AhnI18n.onChange(texts);
+
+  function frame(now){var dt=Math.min(.1,(now-last)/1000);last=now;
+    if(playing){T1=Math.min(TEND,T1+dt*speed);if(T1>=TEND){playing=false;playLabel();v1.dirty=true;}}
+    if(on(v1)&&v1.W&&(playing||v1.dirty||!v1.cam||v1.moving)){
+      var bb=done()?FULL:bbox(function(q){return TD[q]<=T1;});var pc=v1.cam&&v1.cam.s;v1.fit(bb,false);v1.moving=pc&&Math.abs(v1.cam.s-pc)>pc*1e-4;
+      var cc=counter(T1);draw(v1,{T:T1,count:cc[1],first:true,still:done(),focus:focus,near:near});v1.dirty=false;
+      if(cc[0]!==lastN1){lastN1=cc[0];$('n1').textContent=fmt(cc[0]);mini(T1);
+        $('d1').innerHTML=esc(kdate(dateAt(Math.min(T1,TEND-.05))))+'<br>'+L('rel',fmt(edgesAt(T1)),fmt(pagesAt(T1)));}
+      var lp=lastPage(T1);if(lp!==lastP1){lastP1=lp;$('now1').innerHTML=lp?L('latest')+'<b>'+esc(lp.title)+'</b>':'';}
+      $('scrub').value=Math.round(1000*T1/TEND);$('o1').textContent=kdate(dateAt(Math.min(T1,TEND-.05)));}
+    if(!REDUCE&&W.nodes){if(T2<WE)T2=Math.min(WE,T2+dt*7/8);else if((hold2+=dt)>2.5){T2=WS;hold2=0;}}else T2=WE;
+    if(on(v2)&&v2.W){v2.fit(FULL,true);draw(v2,{T:Math.min(T2,TEND),week:true,count:ALL[1],still:!W.nodes});
+      var n2=0;for(var q=0;q<N;q++)if(T[q]>=WS&&TD[q]<=T2)n2++;if(n2!==lastN2){lastN2=n2;$('n2').textContent='+'+fmt(n2);}
+      var d=Math.min(lastDay,Math.floor(T2-WS));if(d!==lastBar){lastBar=d;document.querySelectorAll('#bars div').forEach(function(el){el.classList.toggle('on',+el.dataset.d<=d);});}}
+    requestAnimationFrame(frame);}
+  requestAnimationFrame(frame);
+}
+})();
+</script>
+</body>
+</html>

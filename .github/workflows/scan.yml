@@ -44,12 +44,13 @@ jobs:
           HUB_KEY_OLD: ${{ secrets.HUB_KEY }}
           ADMIN_SET: ${{ secrets.ADMIN_PASSWORD != '' }}
         run: |
-          pip install --quiet cryptography
+          pip install --quiet cryptography networkx numpy
           python scripts/rekey.py   # 예전 키(HUB_KEY)로 잠긴 파일을 새 관리자 키(ADMIN_PASSWORD)로 다시 잠근다
           python -c "import sys; sys.path.insert(0, 'scripts'); import series_cards; series_cards.fetch()"   # 시리즈 카드(장별 묶음) 최신본
           python scripts/hub_secure.py
           python scripts/build_portfolio.py
           python scripts/build_ontology.py   # 공개 콘텐츠 지식 색인 → 분야별 온톨로지 지도 데이터
+          python scripts/build_growth.py     # 온톨로지 → 'Reon Ahn Page 지식 노드 현황'(growth.html) 데이터 · 하루의 이번 주 읽기
           # 평문 관리 데이터가 남아 있으면 멈춘다
           if [ -e data/hub.csv ] || [ -e data/hub.json ]; then
             if [ -n "$HUB_KEY" ]; then echo "평문 관리 데이터가 남아 있습니다"; exit 1; fi
@@ -86,6 +87,7 @@ jobs:
             python scripts/hub_secure.py
             python scripts/build_portfolio.py
             python scripts/build_ontology.py
+            python scripts/build_growth.py
             if [ -e data/hub.csv ] || [ -e data/hub.json ]; then
               if [ -n "$HUB_KEY" ]; then echo "평문 관리 데이터가 남아 있습니다"; exit 1; fi
             fi
