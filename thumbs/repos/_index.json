@@ -4,9 +4,9 @@
   "pushed_at": "2026-11-12T02:18:38Z"
  },
  "agentic_ai_crash_guide": {
-  "src": "name:assets/img/cover.webp",
-  "pushed_at": "2026-11-19T16:24:52Z",
-  "made": "2026-11-20"
+  "src": "name:assets/img/og_cover.webp",
+  "pushed_at": "2026-11-21T03:48:24Z",
+  "made": "2026-11-21"
  },
  "ahn_boat_lab_town": {
   "src": "redraw:R019:assets/cut1_panic.webp",
@@ -56,6 +56,11 @@
   "src": "name:img/Y03_28day_press_thumb.webp",
   "pushed_at": "2026-11-10T09:50:09Z",
   "made": "2026-11-11"
+ },
+ "ai_game_lab": {
+  "src": "name:coin/img/coin_cover.webp",
+  "pushed_at": "2026-11-21T03:47:01Z",
+  "made": "2026-11-21"
  },
  "AI_image_classification": {
   "src": "embedded:index.html#hero",
@@ -213,7 +218,7 @@
  },
  "g2b-bid-strategy": {
   "src": null,
-  "pushed_at": "2026-11-20T09:37:29Z"
+  "pushed_at": "2026-11-21T01:51:58Z"
  },
  "Gen_AI_Hannam_univ": {
   "src": "embedded:index.html#hero",
@@ -246,7 +251,7 @@
  },
  "health_stats_lab": {
   "src": "manifest:assets/img/cover_01.webp",
-  "pushed_at": "2026-11-20T17:56:58Z",
+  "pushed_at": "2026-11-21T03:26:18Z",
   "made": "2026-11-21"
  },
  "hilbert_space_lab": {
@@ -373,8 +378,9 @@
   "made": "2026-11-07"
  },
  "llm_applied_lab": {
-  "src": null,
-  "pushed_at": "2026-11-20T17:33:55Z"
+  "src": "manifest:assets/img/cover_A1.webp",
+  "pushed_at": "2026-11-21T02:21:16Z",
+  "made": "2026-11-21"
  },
  "LLM_evaluation": {
   "src": "name:assets/cover_llmeval.webp",
@@ -400,7 +406,7 @@
  },
  "micro_economics": {
   "src": "name:assets/og/cover_00.jpg",
-  "pushed_at": "2026-11-20T18:29:19Z",
+  "pushed_at": "2026-11-21T04:15:08Z",
   "made": "2026-11-21"
  },
  "minkowski_space_lab": {
@@ -490,6 +496,10 @@
   "pushed_at": "2026-11-06T12:37:29Z",
   "made": "2026-11-07"
  },
+ "my_document_01": {
+  "src": null,
+  "pushed_at": "2026-11-21T03:13:10Z"
+ },
  "nabla_field_lab": {
   "src": "og:assets/og/index.webp",
   "pushed_at": "2026-11-20T17:00:14Z",
@@ -578,7 +588,7 @@
  },
  "statistics_note": {
   "src": "name:ch01/assets/og_ch01_1.png",
-  "pushed_at": "2026-11-20T17:24:23Z",
+  "pushed_at": "2026-11-21T03:06:55Z",
   "made": "2026-11-21"
  },
  "statistics_note_ch04_02": {

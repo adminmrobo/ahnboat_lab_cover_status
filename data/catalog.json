@@ -1148,6 +1148,21 @@
    "thumb": "thumbs/repos/ai_text_read_ability.jpg"
   },
   {
+   "title": "4만 3천 편 중 만점 3편 · 연구실 모의 심사회 (ICLR 2027)",
+   "summary": "ICLR 2027에서 심사위원 전원이 만점을 줬다고 알려진 논문 세 편(Context Language Models, Zero-Shot Control, Latent Taxonomies)을 연구실 식구들이 장난감 실험으로 다시 심사하는 비전공자용 해설.",
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "AI 연구 동향",
+   "sub": "AI 학회 논문",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/iclr2027_top3_lab_review",
+   "site_url": "https://adminmrobo.github.io/iclr2027_top3_lab_review/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/iclr2027_top3_lab_review.jpg"
+  },
+  {
    "title": "기억 3부작 · LLM은 어디까지 기억할 수 있을까",
    "summary": "시계열의 창에서 출발해 LLM의 문맥 창, 대화 압축, 바깥 저장소, 기억 돌보기, 기억 토큰까지 넓혀 가는 3부 18편의 연구실 해설 시리즈. 시계열 3부작의 후속.",
    "cat": "LLM·추론 엔지니어링",
@@ -1450,36 +1465,6 @@
    "thumb": "https://adminmrobo.github.io/inference_engineering_study/cards/inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide.jpg"
   },
   {
-   "title": "4만 3천 편 중 만점 3편 · 연구실 모의 심사회 (ICLR 2027)",
-   "summary": "ICLR 2027에서 심사위원 전원이 만점을 줬다고 알려진 논문 세 편(Context Language Models, Zero-Shot Control, Latent Taxonomies)을 연구실 식구들이 장난감 실험으로 다시 심사하는 비전공자용 해설.",
-   "cat": "LLM·추론 엔지니어링",
-   "mid": "AI 연구 동향",
-   "sub": "AI 학회 논문",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/iclr2027_top3_lab_review",
-   "site_url": "https://adminmrobo.github.io/iclr2027_top3_lab_review/",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "thumbs/repos/iclr2027_top3_lab_review.jpg"
-  },
-  {
-   "title": "좌표축 위의 그릇 · 3D 지도로 본 모델 최적화",
-   "summary": "가중치를 좌표축으로, 오차를 높이로 놓은 3D 지도 위에서 기울기·굽음·안장점·야코비안(수학 편)과 배치·학습률·에포크(실험실 편)를 연구실 식구와 함께 보는 두 편짜리 해설.",
-   "cat": "경제·수학·최적화",
-   "mid": "최적화",
-   "sub": "모델 최적화",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/optimization_3d_map",
-   "site_url": "https://adminmrobo.github.io/optimization_3d_map/",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "thumbs/repos/optimization_3d_map.jpg"
-  },
-  {
    "title": "노후 가계부와 AI 예측 모형",
    "summary": "",
    "cat": "경제·수학·최적화",
@@ -1500,6 +1485,20 @@
    ],
    "thumb": "thumbs/repos/my_article_05_consumer_expenditure_predict.jpg",
    "article": "경제·사회 논문"
+  },
+  {
+   "title": "산업재해 패널 데이터를 활용한 머신러닝 모델",
+   "summary": "산재보험 패널 데이터를 머신러닝으로 분석한 포스터 발표",
+   "cat": "경제·수학·최적화",
+   "mid": "경제 연구",
+   "sub": "경제·사회",
+   "kind": "ext",
+   "repo_url": "",
+   "site_url": "",
+   "link": "제10회 산재보험패널 학술대회",
+   "langs": [],
+   "thumb": "",
+   "article": "외부_콘텐츠"
   },
   {
    "title": "조건부 노동수요와 생성형 AI",
@@ -1540,20 +1539,6 @@
    "article": "경제·사회 논문"
   },
   {
-   "title": "산업재해 패널 데이터를 활용한 머신러닝 모델",
-   "summary": "산재보험 패널 데이터를 머신러닝으로 분석한 포스터 발표",
-   "cat": "경제·수학·최적화",
-   "mid": "경제 연구",
-   "sub": "경제·사회",
-   "kind": "ext",
-   "repo_url": "",
-   "site_url": "",
-   "link": "제10회 산재보험패널 학술대회",
-   "langs": [],
-   "thumb": "",
-   "article": "외부_콘텐츠"
-  },
-  {
    "title": "미시경제학 연구실 — 미시경제학 연구실 블로그",
    "summary": "",
    "cat": "경제·수학·최적화",
@@ -1567,6 +1552,21 @@
     "ko"
    ],
    "thumb": "thumbs/repos/micro_economics.jpg"
+  },
+  {
+   "title": "좌표축 위의 그릇 · 3D 지도로 본 모델 최적화",
+   "summary": "가중치를 좌표축으로, 오차를 높이로 놓은 3D 지도 위에서 기울기·굽음·안장점·야코비안(수학 편)과 배치·학습률·에포크(실험실 편)를 연구실 식구와 함께 보는 두 편짜리 해설.",
+   "cat": "경제·수학·최적화",
+   "mid": "최적화",
+   "sub": "모델 최적화",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/optimization_3d_map",
+   "site_url": "https://adminmrobo.github.io/optimization_3d_map/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/optimization_3d_map.jpg"
   },
   {
    "title": "암호화폐 자산의 정보 효율성",
@@ -1589,6 +1589,20 @@
    ],
    "thumb": "",
    "article": "금융·자산 논문"
+  },
+  {
+   "title": "ERC-20 경제적 성과 분석",
+   "summary": "ERC-20 토큰의 경제적 성과를 분석한 발표",
+   "cat": "금융·핀테크·블록체인",
+   "mid": "금융 연구",
+   "sub": "가상자산",
+   "kind": "ext",
+   "repo_url": "",
+   "site_url": "https://decenter.kr/NewsView/1VJB0BLUD4",
+   "link": "이드콘 2018 발표 · https://decenter.kr/NewsView/1VJB0BLUD4",
+   "langs": [],
+   "thumb": "",
+   "article": "외부_콘텐츠"
   },
   {
    "title": "가상자산 시계열 데이터의 분석과 예측",
@@ -1649,20 +1663,6 @@
    ],
    "thumb": "thumbs/repos/my_article_00_Korean_stockmarket_volatility_study.jpg",
    "article": "금융·자산 논문"
-  },
-  {
-   "title": "ERC-20 경제적 성과 분석",
-   "summary": "ERC-20 토큰의 경제적 성과를 분석한 발표",
-   "cat": "금융·핀테크·블록체인",
-   "mid": "금융 연구",
-   "sub": "가상자산",
-   "kind": "ext",
-   "repo_url": "",
-   "site_url": "https://decenter.kr/NewsView/1VJB0BLUD4",
-   "link": "이드콘 2018 발표 · https://decenter.kr/NewsView/1VJB0BLUD4",
-   "langs": [],
-   "thumb": "",
-   "article": "외부_콘텐츠"
   },
   {
    "title": "인슈어테크 #1 · 분류 모델",
@@ -1852,124 +1852,6 @@
    "thumb": ""
   },
   {
-   "title": "초보자도 쉽게 따라하는 DB 환경 설치",
-   "summary": "MariaDB, PostgreSQL, Orange를 Windows에 차례로 설치하고 접속까지 확인하는 초보자용 해설. 미션 3개, 실험 2개, 접속 연습 2개, 퀴즈 9문항과 강의 슬라이드.",
-   "cat": "통계·데이터 기초",
-   "mid": "프로그래밍",
-   "sub": "데이터베이스",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/how_to_start_db",
-   "site_url": "https://adminmrobo.github.io/how_to_start_db/",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": ""
-  },
-  {
-   "title": "보면서 배우는 pandas",
-   "summary": "보면서 배우는 pandas — 카페·편의점·쇼핑몰 장부로 보는 명령어 72장. 표가 단계별로 움직이는 그림과 Colab 코드로 익힌다.",
-   "cat": "통계·데이터 기초",
-   "mid": "프로그래밍",
-   "sub": "파이썬·판다스",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/learn-pandas-visually_korean",
-   "site_url": "https://adminmrobo.github.io/learn-pandas-visually_korean/",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "thumbs/repos/learn-pandas-visually_korean.jpg"
-  },
-  {
-   "title": "해보며 배우는 파이썬",
-   "summary": "",
-   "cat": "통계·데이터 기초",
-   "mid": "프로그래밍",
-   "sub": "파이썬·판다스",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/learn-python-by-doing_Korean",
-   "site_url": "https://adminmrobo.github.io/learn-python-by-doing_Korean/",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "thumbs/repos/learn-python-by-doing_Korean.jpg"
-  },
-  {
-   "title": "시계열 3부작 · ARIMA와 LSTM",
-   "summary": "",
-   "cat": "통계·데이터 기초",
-   "mid": "확률·통계",
-   "sub": "시계열",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/timeseries-trilogy",
-   "site_url": "https://adminmrobo.github.io/timeseries-trilogy/",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "thumbs/repos/timeseries-trilogy.jpg"
-  },
-  {
-   "title": "점추정과 신뢰구간",
-   "summary": "통계적 추정 2.1.a — 표본 100개로 모평균을 말하는 법. 점추정, 표본평균의 분포, 신뢰구간을 연구실 저울 위에서 직접 뽑아 보며 배운다.",
-   "cat": "통계·데이터 기초",
-   "mid": "확률·통계",
-   "sub": "통계 노트",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/statistics_note_ch04_Statistical-Estimation_01_a",
-   "site_url": "https://adminmrobo.github.io/statistics_note_ch04_Statistical-Estimation_01_a/",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": ""
-  },
-  {
-   "title": "확률분포 딕셔너리와 분포표 연구실",
-   "summary": "확률분포 21종의 관계를 3D 지도로 보는 딕셔너리(분포별 식·용도·파이썬 호출)와, Z·t·χ²·F·이항·포아송 분포표 읽는 법, 단측·양측검정, 신뢰구간, 1종·2종 오류와 검정력을 다루는 연구실 해설.",
-   "cat": "통계·데이터 기초",
-   "mid": "확률·통계",
-   "sub": "확률분포 딕셔너리",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/probability_distribution_dictionary",
-   "site_url": "https://adminmrobo.github.io/probability_distribution_dictionary/",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "thumbs/repos/probability_distribution_dictionary.jpg"
-  },
-  {
-   "title": "하루의 구글시트 연구실",
-   "summary": "구글시트의 원본·처리·결과를 데이터 테이블로 배우는 캐릭터 실습 교재",
-   "cat": "통계·데이터 기초",
-   "mid": "프로그래밍",
-   "sub": "구글 시트",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/google-sheets-lab",
-   "site_url": "https://adminmrobo.github.io/google-sheets-lab/",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "thumbs/repos/google-sheets-lab.jpg"
-  },
-  {
-   "title": "데이터베이스 설계 야간 연구실",
-   "summary": "데이터베이스 설계 야간 연구실 교육 자료 전체 안내. 다른 HTML 파일로 연결하지 않습니다.",
-   "cat": "통계·데이터 기초",
-   "mid": "프로그래밍",
-   "sub": "데이터베이스",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/database_01of04",
-   "site_url": "https://adminmrobo.github.io/database_01of04/",
-   "link": "",
-   "langs": [],
-   "thumb": "thumbs/R110.jpg"
-  },
-  {
    "title": "데이터시각화 1주차 · 과정 안내",
    "summary": "",
    "cat": "통계·데이터 기초",
@@ -2050,6 +1932,79 @@
    "thumb": "thumbs/repos/Data_visuialization_lecture_04.jpg"
   },
   {
+   "title": "하루의 구글시트 연구실",
+   "summary": "구글시트의 원본·처리·결과를 데이터 테이블로 배우는 캐릭터 실습 교재",
+   "cat": "통계·데이터 기초",
+   "mid": "프로그래밍",
+   "sub": "구글 시트",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/google-sheets-lab",
+   "site_url": "https://adminmrobo.github.io/google-sheets-lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/google-sheets-lab.jpg"
+  },
+  {
+   "title": "초보자도 쉽게 따라하는 DB 환경 설치",
+   "summary": "MariaDB, PostgreSQL, Orange를 Windows에 차례로 설치하고 접속까지 확인하는 초보자용 해설. 미션 3개, 실험 2개, 접속 연습 2개, 퀴즈 9문항과 강의 슬라이드.",
+   "cat": "통계·데이터 기초",
+   "mid": "프로그래밍",
+   "sub": "데이터베이스",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/how_to_start_db",
+   "site_url": "https://adminmrobo.github.io/how_to_start_db/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": ""
+  },
+  {
+   "title": "데이터베이스 설계 야간 연구실",
+   "summary": "데이터베이스 설계 야간 연구실 교육 자료 전체 안내. 다른 HTML 파일로 연결하지 않습니다.",
+   "cat": "통계·데이터 기초",
+   "mid": "프로그래밍",
+   "sub": "데이터베이스",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/database_01of04",
+   "site_url": "https://adminmrobo.github.io/database_01of04/",
+   "link": "",
+   "langs": [],
+   "thumb": "thumbs/R110.jpg"
+  },
+  {
+   "title": "보면서 배우는 pandas",
+   "summary": "보면서 배우는 pandas — 카페·편의점·쇼핑몰 장부로 보는 명령어 72장. 표가 단계별로 움직이는 그림과 Colab 코드로 익힌다.",
+   "cat": "통계·데이터 기초",
+   "mid": "프로그래밍",
+   "sub": "파이썬·판다스",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/learn-pandas-visually_korean",
+   "site_url": "https://adminmrobo.github.io/learn-pandas-visually_korean/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/learn-pandas-visually_korean.jpg"
+  },
+  {
+   "title": "해보며 배우는 파이썬",
+   "summary": "",
+   "cat": "통계·데이터 기초",
+   "mid": "프로그래밍",
+   "sub": "파이썬·판다스",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/learn-python-by-doing_Korean",
+   "site_url": "https://adminmrobo.github.io/learn-python-by-doing_Korean/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/learn-python-by-doing_Korean.jpg"
+  },
+  {
    "title": "데이터 사이언티스트를 위한 베이지안 통계학",
    "summary": "13회차 베이지안 통계 강의를 가상 다국적 기업 본사 타워(3D)로 꾸민 해설 과정. 한 층에 한 부서가 그 회차의 베이지안 도구로 일하고, 7M 라운지와 옥상에서 중간·기말 퀴즈를 봅니다.",
    "cat": "통계·데이터 기초",
@@ -2065,48 +2020,49 @@
    "thumb": "thumbs/repos/bayesian-statistics-for-data-scientists.jpg"
   },
   {
-   "title": "SNS 은어와 이상탐지",
+   "title": "시계열 3부작 · ARIMA와 LSTM",
    "summary": "",
-   "cat": "인공지능 응용",
-   "mid": "이상탐지·보안",
-   "sub": "AI·보안",
+   "cat": "통계·데이터 기초",
+   "mid": "확률·통계",
+   "sub": "시계열",
    "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/my_article_03_drug-slang-detection",
-   "site_url": "https://adminmrobo.github.io/my_article_03_drug-slang-detection/",
-   "link": "미래사회 제16권 1호 · https://ifso.iscu.ac.kr/02_res/sub2_1_view.asp?idx=490",
+   "repo_url": "https://github.com/adminmrobo/timeseries-trilogy",
+   "site_url": "https://adminmrobo.github.io/timeseries-trilogy/",
+   "link": "",
    "langs": [
-    "ko",
-    "en",
-    "zh",
-    "ja",
-    "uz",
-    "ru",
-    "vi"
+    "ko"
    ],
-   "thumb": "thumbs/repos/my_article_03_drug-slang-detection.jpg",
-   "article": "AI 응용 논문"
+   "thumb": "thumbs/repos/timeseries-trilogy.jpg"
   },
   {
-   "title": "금융 이상탐지 모델 보안과 적대적 공격",
-   "summary": "금융 이상탐지 모델 보안과 적대적 데이터 대응 방안 — 인터랙티브 해설 페이지. 한국어 · English · 中文 · 日本語 · Oʻzbekcha · Русский · Tiếng Việt.",
-   "cat": "인공지능 응용",
-   "mid": "이상탐지·보안",
-   "sub": "AI·보안",
+   "title": "점추정과 신뢰구간",
+   "summary": "통계적 추정 2.1.a — 표본 100개로 모평균을 말하는 법. 점추정, 표본평균의 분포, 신뢰구간을 연구실 저울 위에서 직접 뽑아 보며 배운다.",
+   "cat": "통계·데이터 기초",
+   "mid": "확률·통계",
+   "sub": "통계 노트",
    "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/my_article_04_adversarial_finance_attack",
-   "site_url": "https://adminmrobo.github.io/my_article_04_adversarial_finance_attack/",
-   "link": "미래사회 제15권 3호 · https://ifso.iscu.ac.kr/02_res/sub2_1_view.asp?idx=464",
+   "repo_url": "https://github.com/adminmrobo/statistics_note_ch04_Statistical-Estimation_01_a",
+   "site_url": "https://adminmrobo.github.io/statistics_note_ch04_Statistical-Estimation_01_a/",
+   "link": "",
    "langs": [
-    "ko",
-    "en",
-    "zh",
-    "ja",
-    "uz",
-    "ru",
-    "vi"
+    "ko"
    ],
-   "thumb": "thumbs/repos/my_article_04_adversarial_finance_attack.jpg",
-   "article": "AI 응용 논문"
+   "thumb": ""
+  },
+  {
+   "title": "확률분포 딕셔너리와 분포표 연구실",
+   "summary": "확률분포 21종의 관계를 3D 지도로 보는 딕셔너리(분포별 식·용도·파이썬 호출)와, Z·t·χ²·F·이항·포아송 분포표 읽는 법, 단측·양측검정, 신뢰구간, 1종·2종 오류와 검정력을 다루는 연구실 해설.",
+   "cat": "통계·데이터 기초",
+   "mid": "확률·통계",
+   "sub": "확률분포 딕셔너리",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/probability_distribution_dictionary",
+   "site_url": "https://adminmrobo.github.io/probability_distribution_dictionary/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/probability_distribution_dictionary.jpg"
   },
   {
    "title": "비즈니스를 위한 데이터 과학 연구실",
@@ -2122,6 +2078,21 @@
     "ko"
    ],
    "thumb": "thumbs/repos/data_science_for_business.jpg"
+  },
+  {
+   "title": "AI 회계 컨설팅 연구실 · 파이썬과 회계데이터 분석",
+   "summary": "회계등식에서 출발해 매출·재고, 매입·비용, 자산·세금, 파이썬 기초, 재무상태표, 회전율, 현금흐름표와 재무비율, 관리회계까지. 대학 강의 「파이썬과 회계데이터 분석」을 3D 회계 컨설팅회사 콘셉트로 묶은 해설 시리즈.",
+   "cat": "인공지능 응용",
+   "mid": "경영·회계",
+   "sub": "파이썬과 회계데이터 분석",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/python-accounting-analytics",
+   "site_url": "https://adminmrobo.github.io/python-accounting-analytics/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/python-accounting-analytics.jpg"
   },
   {
    "title": "생성형 AI 활용 전략 · 목차",
@@ -2182,6 +2153,50 @@
     "ko"
    ],
    "thumb": "thumbs/repos/Gen_AI_strategy_ch06.jpg"
+  },
+  {
+   "title": "SNS 은어와 이상탐지",
+   "summary": "",
+   "cat": "인공지능 응용",
+   "mid": "이상탐지·보안",
+   "sub": "AI·보안",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/my_article_03_drug-slang-detection",
+   "site_url": "https://adminmrobo.github.io/my_article_03_drug-slang-detection/",
+   "link": "미래사회 제16권 1호 · https://ifso.iscu.ac.kr/02_res/sub2_1_view.asp?idx=490",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "thumb": "thumbs/repos/my_article_03_drug-slang-detection.jpg",
+   "article": "AI 응용 논문"
+  },
+  {
+   "title": "금융 이상탐지 모델 보안과 적대적 공격",
+   "summary": "금융 이상탐지 모델 보안과 적대적 데이터 대응 방안 — 인터랙티브 해설 페이지. 한국어 · English · 中文 · 日本語 · Oʻzbekcha · Русский · Tiếng Việt.",
+   "cat": "인공지능 응용",
+   "mid": "이상탐지·보안",
+   "sub": "AI·보안",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/my_article_04_adversarial_finance_attack",
+   "site_url": "https://adminmrobo.github.io/my_article_04_adversarial_finance_attack/",
+   "link": "미래사회 제15권 3호 · https://ifso.iscu.ac.kr/02_res/sub2_1_view.asp?idx=464",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "thumb": "thumbs/repos/my_article_04_adversarial_finance_attack.jpg",
+   "article": "AI 응용 논문"
   },
   {
    "title": "스마트 제조 연구실 · 3D로 보는 15주",
@@ -2253,21 +2268,6 @@
     "ko"
    ],
    "thumb": "thumbs/repos/smart_factory_world.jpg"
-  },
-  {
-   "title": "AI 회계 컨설팅 연구실 · 파이썬과 회계데이터 분석",
-   "summary": "회계등식에서 출발해 매출·재고, 매입·비용, 자산·세금, 파이썬 기초, 재무상태표, 회전율, 현금흐름표와 재무비율, 관리회계까지. 대학 강의 「파이썬과 회계데이터 분석」을 3D 회계 컨설팅회사 콘셉트로 묶은 해설 시리즈.",
-   "cat": "인공지능 응용",
-   "mid": "경영·회계",
-   "sub": "파이썬과 회계데이터 분석",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/python-accounting-analytics",
-   "site_url": "https://adminmrobo.github.io/python-accounting-analytics/",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "thumbs/repos/python-accounting-analytics.jpg"
   },
   {
    "title": "그린루트 · 모바일 경로 안내",

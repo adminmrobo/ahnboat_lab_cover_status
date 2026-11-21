@@ -104,82 +104,12 @@
   "repo_url": "https://github.com/adminmrobo/agentic_ai_crash_guide",
   "pages_url": "https://adminmrobo.github.io/agentic_ai_crash_guide/",
   "default_branch": "main",
-  "pushed_at": "2026-11-19T16:24:52Z",
+  "pushed_at": "2026-11-21T03:48:24Z",
   "has_manifest": false,
   "covers": [
    {
-    "path": "assets/img/cover.webp",
-    "role": "cover",
-    "estimated": true
-   },
-   {
     "path": "assets/img/og_cover.webp",
     "role": "og",
-    "estimated": true
-   },
-   {
-    "path": "assets/img/thumb_ch01.webp",
-    "role": "thumb",
-    "estimated": true
-   },
-   {
-    "path": "assets/img/thumb_ch02.webp",
-    "role": "thumb",
-    "estimated": true
-   },
-   {
-    "path": "assets/img/thumb_ch03.webp",
-    "role": "thumb",
-    "estimated": true
-   },
-   {
-    "path": "assets/img/thumb_ch04.webp",
-    "role": "thumb",
-    "estimated": true
-   },
-   {
-    "path": "assets/img/thumb_ch05.webp",
-    "role": "thumb",
-    "estimated": true
-   },
-   {
-    "path": "assets/img/thumb_ch06.webp",
-    "role": "thumb",
-    "estimated": true
-   },
-   {
-    "path": "assets/img/thumb_ch07.webp",
-    "role": "thumb",
-    "estimated": true
-   },
-   {
-    "path": "assets/img/thumb_ch08.webp",
-    "role": "thumb",
-    "estimated": true
-   },
-   {
-    "path": "assets/img/thumb_ch09.webp",
-    "role": "thumb",
-    "estimated": true
-   },
-   {
-    "path": "assets/img/thumb_ch10.webp",
-    "role": "thumb",
-    "estimated": true
-   },
-   {
-    "path": "assets/img/thumb_ch11.webp",
-    "role": "thumb",
-    "estimated": true
-   },
-   {
-    "path": "assets/img/thumb_ch12.webp",
-    "role": "thumb",
-    "estimated": true
-   },
-   {
-    "path": "assets/img/thumb_ch13.webp",
-    "role": "thumb",
     "estimated": true
    }
   ],
@@ -1256,6 +1186,84 @@
    "count": 0,
    "complete": true,
    "pages_by_lang": {}
+  },
+  "has_pages": true
+ },
+ {
+  "repo": "ai_game_lab",
+  "series_ko": "AI로 풀어보는 게임 시리즈 — 연구실 식구들과 게임으로 배우는 AI",
+  "title_ko": "AI로 풀어보는 게임 시리즈 — 연구실 식구들과 게임으로 배우는 AI",
+  "repo_url": "https://github.com/adminmrobo/ai_game_lab",
+  "pages_url": "https://adminmrobo.github.io/ai_game_lab/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-21T03:47:01Z",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "sudoku/img/sdk_cover.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "sudoku/img/sdk_cover_960.webp",
+    "role": "cover",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": "thumbs/repos/ai_game_lab.jpg",
+  "status": "ok",
+  "checked_at": "2026-11-21",
+  "site_title": "AI로 풀어보는 게임 시리즈 — 연구실 식구들과 게임으로 배우는 AI",
+  "ontology": {
+   "status": "partial",
+   "pages_with_kg": 2,
+   "pages_total": 3,
+   "pages_checked": 3,
+   "kg_links": [
+    "https://adminmrobo.github.io/ai_game_lab/coin/index.html#kg",
+    "https://adminmrobo.github.io/ai_game_lab/sudoku/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/ai_game_lab/coin/index.html#export",
+    "https://adminmrobo.github.io/ai_game_lab/sudoku/index.html#export"
+   ],
+   "files": [
+    {
+     "path": "build/coin/kg.json",
+     "url": "https://github.com/adminmrobo/ai_game_lab/blob/main/build/coin/kg.json"
+    },
+    {
+     "path": "build/sudoku/kg.json",
+     "url": "https://github.com/adminmrobo/ai_game_lab/blob/main/build/sudoku/kg.json"
+    }
+   ]
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 3
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/ai_game_lab/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 3
+   }
   },
   "has_pages": true
  },
@@ -6474,7 +6482,7 @@
   "repo_url": "https://github.com/adminmrobo/g2b-bid-strategy",
   "pages_url": "https://adminmrobo.github.io/g2b-bid-strategy/",
   "default_branch": "main",
-  "pushed_at": "2026-11-20T09:37:29Z",
+  "pushed_at": "2026-11-21T01:51:58Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -7063,7 +7071,7 @@
   "repo_url": "https://github.com/adminmrobo/health_stats_lab",
   "pages_url": "https://adminmrobo.github.io/health_stats_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-20T17:56:58Z",
+  "pushed_at": "2026-11-21T03:26:18Z",
   "has_manifest": true,
   "covers": [
    {
@@ -10151,7 +10159,7 @@
   "repo_url": "https://github.com/adminmrobo/llm_applied_lab",
   "pages_url": "https://adminmrobo.github.io/llm_applied_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-20T17:33:55Z",
+  "pushed_at": "2026-11-21T02:21:16Z",
   "has_manifest": true,
   "covers": [
    {
@@ -10169,7 +10177,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "redraw"
+    "status": "ok"
    },
    {
     "path": "assets/img/thumb_A1.webp",
@@ -10186,10 +10194,10 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "redraw"
+    "status": "ok"
    },
    {
-    "path": "assets/img/og_A1.png",
+    "path": "assets/img/og_A1.jpg",
     "role": "og",
     "id": "og_A1",
     "size": [
@@ -10203,7 +10211,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "redraw"
+    "status": "ok"
    },
    {
     "path": "assets/img/sc_A1_outro.webp",
@@ -10220,12 +10228,46 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "redraw"
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/cut_A1_lv3.webp",
+    "role": "scene",
+    "id": "cut_A1_lv3",
+    "size": [
+     960,
+     540
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/cut_A1_versus.webp",
+    "role": "scene",
+    "id": "cut_A1_versus",
+    "size": [
+     960,
+     540
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    }
   ],
   "redraw_count": 0,
   "redraw_ids": [],
-  "thumb": "https://adminmrobo.github.io/llm_applied_lab/assets/img/cover_A1.webp",
+  "thumb": "thumbs/repos/llm_applied_lab.jpg",
   "status": "ok",
   "checked_at": "2026-11-21",
   "site_title": "RAG 연구실 — 사서가 찾아온 문장으로 LLM이 답한다",
@@ -10745,7 +10787,7 @@
   "repo_url": "https://github.com/adminmrobo/micro_economics",
   "pages_url": "https://adminmrobo.github.io/micro_economics/",
   "default_branch": "main",
-  "pushed_at": "2026-11-20T18:29:19Z",
+  "pushed_at": "2026-11-21T04:15:08Z",
   "has_manifest": false,
   "covers": [
    {
@@ -10877,9 +10919,9 @@
   "site_title": "미시경제학 연구실",
   "ontology": {
    "status": "partial",
-   "pages_with_kg": 10,
-   "pages_total": 13,
-   "pages_checked": 13,
+   "pages_with_kg": 35,
+   "pages_total": 48,
+   "pages_checked": 40,
    "kg_links": [
     "https://adminmrobo.github.io/micro_economics/00_economic_models.html#kg",
     "https://adminmrobo.github.io/micro_economics/01_consumer_choice.html#kg",
@@ -10890,7 +10932,32 @@
     "https://adminmrobo.github.io/micro_economics/05_general_equilibrium.html#kg",
     "https://adminmrobo.github.io/micro_economics/06_welfare_policy.html#kg",
     "https://adminmrobo.github.io/micro_economics/07_information.html#kg",
-    "https://adminmrobo.github.io/micro_economics/07f_final_review.html#kg"
+    "https://adminmrobo.github.io/micro_economics/07f_final_review.html#kg",
+    "https://adminmrobo.github.io/micro_economics/v2/01_technology.html#kg",
+    "https://adminmrobo.github.io/micro_economics/v2/02_profit_maximization.html#kg",
+    "https://adminmrobo.github.io/micro_economics/v2/03_profit_function.html#kg",
+    "https://adminmrobo.github.io/micro_economics/v2/04_cost_minimization.html#kg",
+    "https://adminmrobo.github.io/micro_economics/v2/05_cost_function.html#kg",
+    "https://adminmrobo.github.io/micro_economics/v2/06_duality.html#kg",
+    "https://adminmrobo.github.io/micro_economics/v2/07_utility_maximization.html#kg",
+    "https://adminmrobo.github.io/micro_economics/v2/08_choice.html#kg",
+    "https://adminmrobo.github.io/micro_economics/v2/09_demand.html#kg",
+    "https://adminmrobo.github.io/micro_economics/v2/10_consumer_surplus.html#kg",
+    "https://adminmrobo.github.io/micro_economics/v2/11_uncertainty.html#kg",
+    "https://adminmrobo.github.io/micro_economics/v2/12_econometrics.html#kg",
+    "https://adminmrobo.github.io/micro_economics/v2/13_competitive_markets.html#kg",
+    "https://adminmrobo.github.io/micro_economics/v2/14_monopoly.html#kg",
+    "https://adminmrobo.github.io/micro_economics/v2/15_game_theory.html#kg",
+    "https://adminmrobo.github.io/micro_economics/v2/16_oligopoly.html#kg",
+    "https://adminmrobo.github.io/micro_economics/v2/17_exchange.html#kg",
+    "https://adminmrobo.github.io/micro_economics/v2/18_production.html#kg",
+    "https://adminmrobo.github.io/micro_economics/v2/19_time.html#kg",
+    "https://adminmrobo.github.io/micro_economics/v2/20_asset_markets.html#kg",
+    "https://adminmrobo.github.io/micro_economics/v2/21_equilibrium_analysis.html#kg",
+    "https://adminmrobo.github.io/micro_economics/v2/22_welfare.html#kg",
+    "https://adminmrobo.github.io/micro_economics/v2/23_public_goods.html#kg",
+    "https://adminmrobo.github.io/micro_economics/v2/24_externalities.html#kg",
+    "https://adminmrobo.github.io/micro_economics/v2/25_information.html#kg"
    ],
    "export_links": [
     "https://adminmrobo.github.io/micro_economics/00_economic_models.html#export",
@@ -10902,12 +10969,41 @@
     "https://adminmrobo.github.io/micro_economics/05_general_equilibrium.html#export",
     "https://adminmrobo.github.io/micro_economics/06_welfare_policy.html#export",
     "https://adminmrobo.github.io/micro_economics/07_information.html#export",
-    "https://adminmrobo.github.io/micro_economics/07f_final_review.html#export"
+    "https://adminmrobo.github.io/micro_economics/07f_final_review.html#export",
+    "https://adminmrobo.github.io/micro_economics/v2/01_technology.html#export",
+    "https://adminmrobo.github.io/micro_economics/v2/02_profit_maximization.html#export",
+    "https://adminmrobo.github.io/micro_economics/v2/03_profit_function.html#export",
+    "https://adminmrobo.github.io/micro_economics/v2/04_cost_minimization.html#export",
+    "https://adminmrobo.github.io/micro_economics/v2/05_cost_function.html#export",
+    "https://adminmrobo.github.io/micro_economics/v2/06_duality.html#export",
+    "https://adminmrobo.github.io/micro_economics/v2/07_utility_maximization.html#export",
+    "https://adminmrobo.github.io/micro_economics/v2/08_choice.html#export",
+    "https://adminmrobo.github.io/micro_economics/v2/09_demand.html#export",
+    "https://adminmrobo.github.io/micro_economics/v2/10_consumer_surplus.html#export",
+    "https://adminmrobo.github.io/micro_economics/v2/11_uncertainty.html#export",
+    "https://adminmrobo.github.io/micro_economics/v2/12_econometrics.html#export",
+    "https://adminmrobo.github.io/micro_economics/v2/13_competitive_markets.html#export",
+    "https://adminmrobo.github.io/micro_economics/v2/14_monopoly.html#export",
+    "https://adminmrobo.github.io/micro_economics/v2/15_game_theory.html#export",
+    "https://adminmrobo.github.io/micro_economics/v2/16_oligopoly.html#export",
+    "https://adminmrobo.github.io/micro_economics/v2/17_exchange.html#export",
+    "https://adminmrobo.github.io/micro_economics/v2/18_production.html#export",
+    "https://adminmrobo.github.io/micro_economics/v2/19_time.html#export",
+    "https://adminmrobo.github.io/micro_economics/v2/20_asset_markets.html#export",
+    "https://adminmrobo.github.io/micro_economics/v2/21_equilibrium_analysis.html#export",
+    "https://adminmrobo.github.io/micro_economics/v2/22_welfare.html#export",
+    "https://adminmrobo.github.io/micro_economics/v2/23_public_goods.html#export",
+    "https://adminmrobo.github.io/micro_economics/v2/24_externalities.html#export",
+    "https://adminmrobo.github.io/micro_economics/v2/25_information.html#export"
    ],
    "files": [
     {
      "path": "KG_00_registry.json",
      "url": "https://github.com/adminmrobo/micro_economics/blob/main/KG_00_registry.json"
+    },
+    {
+     "path": "v2/KG_00_registry.json",
+     "url": "https://github.com/adminmrobo/micro_economics/blob/main/v2/KG_00_registry.json"
     }
    ]
   },
@@ -10917,7 +11013,7 @@
    ],
    "count": 1,
    "pages": {
-    "ko": 13
+    "ko": 48
    },
    "partial": [],
    "complete": true,
@@ -10933,7 +11029,7 @@
    "count": 1,
    "complete": true,
    "pages_by_lang": {
-    "ko": 13
+    "ko": 48
    }
   },
   "has_pages": true
@@ -13153,6 +13249,58 @@
    "readme_langs": [],
    "links": {
     "ko": "https://adminmrobo.github.io/my_article_08_poll_reweighting_lab/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 3
+   }
+  },
+  "has_pages": true
+ },
+ {
+  "repo": "my_document_01",
+  "series_ko": "보증금 반환 합의서",
+  "title_ko": "보증금 반환 합의서",
+  "repo_url": "https://github.com/adminmrobo/my_document_01",
+  "pages_url": "https://adminmrobo.github.io/my_document_01/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-21T03:13:10Z",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-21",
+  "site_title": "보증금 반환 합의서",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 3,
+   "pages_checked": 3,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 3
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/my_document_01/index.html"
    }
   },
   "languages": {
@@ -16661,7 +16809,7 @@
   "repo_url": "https://github.com/adminmrobo/statistics_note",
   "pages_url": "https://adminmrobo.github.io/statistics_note/",
   "default_branch": "main",
-  "pushed_at": "2026-11-20T17:24:23Z",
+  "pushed_at": "2026-11-21T03:06:55Z",
   "has_manifest": false,
   "covers": [
    {
