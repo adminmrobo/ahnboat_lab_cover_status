@@ -2900,6 +2900,48 @@
   "has_pages": true
  },
  {
+  "repo": "catch_phishing",
+  "series_ko": "catch_phishing",
+  "title_ko": null,
+  "repo_url": "https://github.com/adminmrobo/catch_phishing",
+  "pages_url": "https://adminmrobo.github.io/catch_phishing/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-21T05:11:10Z",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-21",
+  "site_title": null,
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 0,
+   "pages_checked": 0,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [],
+   "count": 0,
+   "pages": {},
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {}
+  },
+  "languages": {
+   "codes": [],
+   "count": 0,
+   "complete": true,
+   "pages_by_lang": {}
+  },
+  "has_pages": false
+ },
+ {
   "repo": "cnn_face_game_lab",
   "series_ko": "AI 연구실 해설 · CNN 특집",
   "title_ko": "얼굴 알아맞히기 게임 — 20챕터로 배우는 CNN",
@@ -4778,7 +4820,7 @@
   "repo_url": "https://github.com/adminmrobo/data_to_numbers_lab",
   "pages_url": "https://adminmrobo.github.io/data_to_numbers_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-21T05:06:15Z",
+  "pushed_at": "2026-11-21T05:21:41Z",
   "has_manifest": true,
   "covers": [
    {
@@ -4978,6 +5020,88 @@
     "characters": [],
     "robot": "jupanbot-v2",
     "status": "todo"
+   },
+   {
+    "path": "img/cover_ch3.webp",
+    "role": "cover",
+    "id": "cover_ch3",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "img/og_ch3.jpg",
+    "role": "og",
+    "id": "og_ch3",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "03_same_despite_looks.html#.frame[data-img=\"cm3_1\"]",
+    "role": "scene",
+    "id": "sc_cm3_1",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "03_same_despite_looks.html#.frame[data-img=\"cm3_2\"]",
+    "role": "scene",
+    "id": "sc_cm3_2",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "03_same_despite_looks.html#.frame[data-img=\"cm3_3\"]",
+    "role": "scene",
+    "id": "sc_cm3_3",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "03_same_despite_looks.html#.frame[data-img=\"cm3_4\"]",
+    "role": "scene",
+    "id": "sc_cm3_4",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [],
+    "robot": "jupanbot-v2",
+    "status": "todo"
    }
   ],
   "redraw_count": 0,
@@ -4988,21 +5112,27 @@
   "site_title": "모든 데이터는 숫자가 된다 — 시리즈 목차 · 연구실 해설",
   "ontology": {
    "status": "partial",
-   "pages_with_kg": 2,
-   "pages_total": 3,
-   "pages_checked": 3,
+   "pages_with_kg": 3,
+   "pages_total": 4,
+   "pages_checked": 4,
    "kg_links": [
     "https://adminmrobo.github.io/data_to_numbers_lab/01_why_numbers.html#kg",
-    "https://adminmrobo.github.io/data_to_numbers_lab/02_rules_to_numbers.html#kg"
+    "https://adminmrobo.github.io/data_to_numbers_lab/02_rules_to_numbers.html#kg",
+    "https://adminmrobo.github.io/data_to_numbers_lab/03_same_despite_looks.html#kg"
    ],
    "export_links": [
     "https://adminmrobo.github.io/data_to_numbers_lab/01_why_numbers.html#export",
-    "https://adminmrobo.github.io/data_to_numbers_lab/02_rules_to_numbers.html#export"
+    "https://adminmrobo.github.io/data_to_numbers_lab/02_rules_to_numbers.html#export",
+    "https://adminmrobo.github.io/data_to_numbers_lab/03_same_despite_looks.html#export"
    ],
    "files": [
     {
      "path": "kg/ch2/kg.json",
      "url": "https://github.com/adminmrobo/data_to_numbers_lab/blob/main/kg/ch2/kg.json"
+    },
+    {
+     "path": "kg/ch3/kg.json",
+     "url": "https://github.com/adminmrobo/data_to_numbers_lab/blob/main/kg/ch3/kg.json"
     },
     {
      "path": "kg/kg.json",
@@ -5016,7 +5146,7 @@
    ],
    "count": 1,
    "pages": {
-    "ko": 3
+    "ko": 4
    },
    "partial": [],
    "complete": true,
@@ -5032,7 +5162,7 @@
    "count": 1,
    "complete": true,
    "pages_by_lang": {
-    "ko": 3
+    "ko": 4
    }
   },
   "has_pages": false

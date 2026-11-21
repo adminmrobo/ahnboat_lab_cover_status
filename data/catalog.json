@@ -640,6 +640,19 @@
    "image": "thumbs/cats/C05-M1.webp"
   },
   {
+   "cat": "인공지능 응용",
+   "name": "로봇·강화학습",
+   "id": "C08-A5",
+   "desc": "불완전한 명령을 받은 로봇이 확신이 낮으면 되묻도록, 강화학습과 베이지안 추론으로 판단하는 법을 실습합니다.",
+   "keywords": [
+    "강화학습",
+    "베이지안 추론",
+    "로봇",
+    "Sim-to-Real"
+   ],
+   "image": "thumbs/cats/C08-A5.webp"
+  },
+  {
    "cat": "공공·사회 프로젝트",
    "name": "산업·인프라",
    "id": "C09-M3",
@@ -2238,6 +2251,22 @@
    ],
    "thumb": "thumbs/repos/python-accounting-analytics.jpg",
    "lecture": "Y"
+  },
+  {
+   "title": "잘 못들었습니다... 불완전한 텍스트 명령을 극복하는 로봇의 강화학습 및 베이지안 추론",
+   "summary": "Langcon 2026 발표(2026-02-28) 해설. 불완전한 텍스트 명령을 받은 로봇이 확신이 낮으면 되묻도록 만든 강화학습·베이지안 추론 연구를 겸손한 로봇 연구실 9장으로 풀고, 3D 가상 주자 실습 가이드까지 담았습니다.",
+   "cat": "인공지능 응용",
+   "mid": "로봇·강화학습",
+   "sub": "AI·로봇",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/Reinforcement-Learning-lab_project_01",
+   "site_url": "https://adminmrobo.github.io/Reinforcement-Learning-lab_project_01/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/Reinforcement-Learning-lab_project_01.jpg",
+   "article": "외부_콘텐츠"
   },
   {
    "title": "생성형 AI 활용 전략 · 목차",
