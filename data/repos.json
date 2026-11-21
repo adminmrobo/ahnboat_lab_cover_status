@@ -11073,14 +11073,14 @@
   "repo_url": "https://github.com/adminmrobo/lagrangian_hamiltonian_lab",
   "pages_url": "https://adminmrobo.github.io/lagrangian_hamiltonian_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-19T16:23:01Z",
+  "pushed_at": "2026-11-22T00:31:58+09:00",
   "has_manifest": true,
   "covers": [],
   "redraw_count": 0,
   "redraw_ids": [],
   "thumb": "thumbs/repos/lagrangian_hamiltonian_lab.jpg",
   "status": "ok",
-  "checked_at": "2026-11-21",
+  "checked_at": "2026-11-22",
   "site_title": "두 장의 지도 — 라그랑지안 vs 해밀토니안",
   "ontology": {
    "status": "full",
@@ -15898,7 +15898,7 @@
   "repo_url": "https://github.com/adminmrobo/optimization_3d_map",
   "pages_url": "https://adminmrobo.github.io/optimization_3d_map/",
   "default_branch": "main",
-  "pushed_at": "2026-11-19T09:51:24Z",
+  "pushed_at": "2026-11-22T00:25:20+09:00",
   "has_manifest": true,
   "covers": [
    {
@@ -15968,6 +15968,23 @@
     ],
     "robot": "jupanbot-v2",
     "status": "pending"
+   },
+   {
+    "path": "img/fs_cover_00.webp",
+    "role": "cover",
+    "id": "fs_cover_00",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    },
    {
     "path": "img/fs_cover_01.webp",
