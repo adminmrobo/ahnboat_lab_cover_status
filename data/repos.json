@@ -1458,7 +1458,7 @@
     "ko": 16
    }
   },
-  "has_pages": false
+  "has_pages": true
  },
  {
   "repo": "AI_for_cement_produce",
@@ -19285,7 +19285,7 @@
   "repo_url": "https://github.com/adminmrobo/timer_ver001",
   "pages_url": "https://adminmrobo.github.io/timer_ver001/",
   "default_branch": "main",
-  "pushed_at": "2026-11-20T13:01:49Z",
+  "pushed_at": "2026-11-21T16:46:15Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,

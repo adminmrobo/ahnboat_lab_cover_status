@@ -639,7 +639,8 @@
     "AI 범죄",
     "범죄경제학",
     "딥페이크",
-    "피싱"
+    "피싱",
+    "게임이론"
    ],
    "image": "thumbs/cats/C05-M1.webp"
   },
@@ -2365,6 +2366,21 @@
    ],
    "thumb": "thumbs/repos/Gen_AI_strategy_ch06.jpg",
    "lecture": "Y"
+  },
+  {
+   "title": "목차 · AI 범죄 연구실",
+   "summary": "",
+   "cat": "인공지능 응용",
+   "mid": "이상탐지·보안",
+   "sub": "AI 범죄·범죄경제학",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
+   "site_url": "https://adminmrobo.github.io/ai_crime_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/ai_crime_lab.jpg"
   },
   {
    "title": "SNS 은어와 이상탐지",
