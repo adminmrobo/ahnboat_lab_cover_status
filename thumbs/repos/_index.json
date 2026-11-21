@@ -186,10 +186,6 @@
   "pushed_at": "2026-11-18T10:05:15Z",
   "made": "2026-11-19"
  },
- "fintech_business_01_payment": {
-  "src": null,
-  "pushed_at": "2026-11-05T11:17:04Z"
- },
  "fintech_data_analysis": {
   "src": "name:assets/og/cover_00.jpg",
   "pushed_at": "2026-11-19T18:49:53Z",
@@ -249,8 +245,9 @@
   "pushed_at": "2025-12-07T14:22:07Z"
  },
  "health_stats_lab": {
-  "src": null,
-  "pushed_at": "2026-11-20T12:56:25Z"
+  "src": "manifest:assets/img/cover_01.webp",
+  "pushed_at": "2026-11-20T17:56:58Z",
+  "made": "2026-11-21"
  },
  "hilbert_space_lab": {
   "src": null,
@@ -271,8 +268,9 @@
   "made": "2026-11-13"
  },
  "industrial-accident-prediction": {
-  "src": null,
-  "pushed_at": "2026-11-19T16:19:22Z"
+  "src": "manifest:img/cover_00.webp",
+  "pushed_at": "2026-11-20T17:47:39Z",
+  "made": "2026-11-21"
  },
  "inference_engineering_study": {
   "src": "manifest:cover_factory.jpg",
@@ -374,6 +372,10 @@
   "pushed_at": "2026-11-06T12:34:04Z",
   "made": "2026-11-07"
  },
+ "llm_applied_lab": {
+  "src": null,
+  "pushed_at": "2026-11-20T17:33:55Z"
+ },
  "LLM_evaluation": {
   "src": "name:assets/cover_llmeval.webp",
   "pushed_at": "2026-11-06T18:33:31Z",
@@ -397,8 +399,9 @@
   "made": "2026-11-08"
  },
  "micro_economics": {
-  "src": null,
-  "pushed_at": "2026-11-20T02:36:36Z"
+  "src": "name:assets/og/cover_00.jpg",
+  "pushed_at": "2026-11-20T18:29:19Z",
+  "made": "2026-11-21"
  },
  "minkowski_space_lab": {
   "src": null,
@@ -488,8 +491,9 @@
   "made": "2026-11-07"
  },
  "nabla_field_lab": {
-  "src": null,
-  "pushed_at": "2026-11-20T09:17:37Z"
+  "src": "og:assets/og/index.webp",
+  "pushed_at": "2026-11-20T17:00:14Z",
+  "made": "2026-11-21"
  },
  "neural_network_atlas": {
   "src": null,
@@ -504,6 +508,10 @@
   "src": "manifest:assets/img/cover_01.webp",
   "pushed_at": "2026-11-12T12:24:27Z",
   "made": "2026-11-13"
+ },
+ "nlp20_five_floor_map": {
+  "src": null,
+  "pushed_at": "2026-11-20T17:27:57Z"
  },
  "one_day_deep_learning": {
   "src": "manifest:assets/og_one_day_dl_pm.jpg",
@@ -570,31 +578,16 @@
  },
  "statistics_note": {
   "src": "name:ch01/assets/og_ch01_1.png",
-  "pushed_at": "2026-11-20T13:41:10Z",
+  "pushed_at": "2026-11-20T17:24:23Z",
   "made": "2026-11-21"
- },
- "statistics_note_ch03_discrete-probability-distribution": {
-  "src": "name:assets/og_1_1.png",
-  "pushed_at": "2026-11-05T11:19:09Z",
-  "made": "2026-11-07"
  },
  "statistics_note_ch04_02": {
   "src": null,
   "pushed_at": "2026-11-04T00:03:44Z"
  },
- "statistics_note_ch04_statistical-estimation": {
-  "src": "name:assets/og_2_10.png",
-  "pushed_at": "2026-11-08T15:38:56Z",
-  "made": "2026-11-09"
- },
  "statistics_note_ch04_Statistical-Estimation_01_a": {
   "src": null,
   "pushed_at": "2026-11-05T11:19:12Z"
- },
- "statistics_note_ch05_hypothesis-testing": {
-  "src": "name:assets/og_3_1.png",
-  "pushed_at": "2026-11-08T15:38:59Z",
-  "made": "2026-11-09"
  },
  "test": {
   "src": null,

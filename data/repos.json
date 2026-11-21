@@ -5622,62 +5622,6 @@
   "has_pages": true
  },
  {
-  "repo": "fintech_business_01_payment",
-  "series_ko": "이산확률분포 일곱 가지",
-  "title_ko": "이산확률분포 일곱 가지",
-  "repo_url": "https://github.com/adminmrobo/fintech_business_01_payment",
-  "pages_url": "https://adminmrobo.github.io/fintech_business_01_payment/",
-  "default_branch": "main",
-  "pushed_at": "2026-11-05T11:17:04Z",
-  "has_manifest": false,
-  "covers": [],
-  "redraw_count": 0,
-  "redraw_ids": [],
-  "thumb": null,
-  "status": "unknown",
-  "checked_at": "2026-11-21",
-  "site_title": "이산확률분포 일곱 가지",
-  "ontology": {
-   "status": "full",
-   "pages_with_kg": 1,
-   "pages_total": 1,
-   "pages_checked": 1,
-   "kg_links": [
-    "https://adminmrobo.github.io/fintech_business_01_payment/index.html#kg"
-   ],
-   "export_links": [
-    "https://adminmrobo.github.io/fintech_business_01_payment/index.html#export"
-   ],
-   "files": []
-  },
-  "i18n": {
-   "langs": [
-    "ko"
-   ],
-   "count": 1,
-   "pages": {
-    "ko": 1
-   },
-   "partial": [],
-   "complete": true,
-   "readme_langs": [],
-   "links": {
-    "ko": "https://adminmrobo.github.io/fintech_business_01_payment/index.html"
-   }
-  },
-  "languages": {
-   "codes": [
-    "ko"
-   ],
-   "count": 1,
-   "complete": true,
-   "pages_by_lang": {
-    "ko": 1
-   }
-  },
-  "has_pages": true
- },
- {
   "repo": "fintech_data_analysis",
   "series_ko": "핀테크 데이터 연구실",
   "title_ko": "핀테크 데이터 연구실",
@@ -7119,7 +7063,7 @@
   "repo_url": "https://github.com/adminmrobo/health_stats_lab",
   "pages_url": "https://adminmrobo.github.io/health_stats_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-20T12:56:25Z",
+  "pushed_at": "2026-11-20T17:56:58Z",
   "has_manifest": true,
   "covers": [
    {
@@ -7127,8 +7071,8 @@
     "role": "cover",
     "id": "cover_01",
     "size": [
-     1600,
-     900
+     1920,
+     1080
     ],
     "characters": [
      "doc",
@@ -7137,7 +7081,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "to-draw"
+    "status": "ok"
    },
    {
     "path": "assets/img/bg_01.webp",
@@ -7148,7 +7092,7 @@
      720
     ],
     "characters": [],
-    "status": "to-draw"
+    "status": "ok"
    },
    {
     "path": "assets/img/sc_01_outro.webp",
@@ -7165,10 +7109,10 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "to-draw"
+    "status": "ok"
    },
    {
-    "path": "assets/img/thumb_01.webp",
+    "path": "assets/img/cover_01_thumb.webp",
     "role": "thumb",
     "id": "thumb_01",
     "size": [
@@ -7182,10 +7126,10 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "to-draw"
+    "status": "ok"
    },
    {
-    "path": "assets/img/og_01.webp",
+    "path": "assets/img/cover_01_og.webp",
     "role": "og",
     "id": "og_01",
     "size": [
@@ -7199,12 +7143,165 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "to-draw"
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/comic_lv2a.webp",
+    "role": "comic_4cut",
+    "id": "comic_lv2a",
+    "size": [
+     1024,
+     1024
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/comic_lv2b.webp",
+    "role": "comic_4cut",
+    "id": "comic_lv2b",
+    "size": [
+     1024,
+     1024
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/comic_lv3a.webp",
+    "role": "comic_4cut",
+    "id": "comic_lv3a",
+    "size": [
+     1024,
+     1024
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/comic_lv3b.webp",
+    "role": "comic_4cut",
+    "id": "comic_lv3b",
+    "size": [
+     1024,
+     1024
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/comic_lv4a.webp",
+    "role": "comic_4cut",
+    "id": "comic_lv4a",
+    "size": [
+     1024,
+     1024
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/comic_lv4b.webp",
+    "role": "comic_4cut",
+    "id": "comic_lv4b",
+    "size": [
+     1024,
+     1024
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/comic_lv4c.webp",
+    "role": "comic_4cut",
+    "id": "comic_lv4c",
+    "size": [
+     1024,
+     1024
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/comic_lv5a.webp",
+    "role": "comic_4cut",
+    "id": "comic_lv5a",
+    "size": [
+     1024,
+     1024
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/comic_lv5b.webp",
+    "role": "comic_4cut",
+    "id": "comic_lv5b",
+    "size": [
+     1024,
+     1024
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    }
   ],
   "redraw_count": 0,
   "redraw_ids": [],
-  "thumb": "https://adminmrobo.github.io/health_stats_lab/assets/img/cover_01.webp",
+  "thumb": "thumbs/repos/health_stats_lab.jpg",
   "status": "ok",
   "checked_at": "2026-11-21",
   "site_title": "신약은 어떤 숫자로 허가받는가 — 임상시험의 통계와 AI",
@@ -7768,7 +7865,7 @@
   "repo_url": "https://github.com/adminmrobo/industrial-accident-prediction",
   "pages_url": "https://adminmrobo.github.io/industrial-accident-prediction/",
   "default_branch": "main",
-  "pushed_at": "2026-11-19T16:19:22Z",
+  "pushed_at": "2026-11-20T17:47:39Z",
   "has_manifest": true,
   "covers": [
    {
@@ -7786,15 +7883,15 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "img/thumb_00.webp",
     "role": "thumb",
     "id": "thumb_00",
     "size": [
-     600,
-     400
+     1200,
+     800
     ],
     "characters": [
      "doc",
@@ -7803,7 +7900,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "img/og_00.webp",
@@ -7820,7 +7917,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "img/cover_01.webp",
@@ -7837,15 +7934,15 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "img/thumb_01.webp",
     "role": "thumb",
     "id": "thumb_01",
     "size": [
-     600,
-     400
+     1200,
+     800
     ],
     "characters": [
      "doc",
@@ -7854,7 +7951,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "img/og_01.webp",
@@ -7871,7 +7968,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "img/cover_02.webp",
@@ -7888,15 +7985,15 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "img/thumb_02.webp",
     "role": "thumb",
     "id": "thumb_02",
     "size": [
-     600,
-     400
+     1200,
+     800
     ],
     "characters": [
      "doc",
@@ -7905,7 +8002,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "img/og_02.webp",
@@ -7922,7 +8019,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "img/cover_03.webp",
@@ -7939,15 +8036,15 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "img/thumb_03.webp",
     "role": "thumb",
     "id": "thumb_03",
     "size": [
-     600,
-     400
+     1200,
+     800
     ],
     "characters": [
      "doc",
@@ -7956,7 +8053,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "img/og_03.webp",
@@ -7973,7 +8070,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "img/cover_04.webp",
@@ -7990,15 +8087,15 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "img/thumb_04.webp",
     "role": "thumb",
     "id": "thumb_04",
     "size": [
-     600,
-     400
+     1200,
+     800
     ],
     "characters": [
      "doc",
@@ -8007,7 +8104,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "img/og_04.webp",
@@ -8024,7 +8121,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "img/cover_05.webp",
@@ -8041,15 +8138,15 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "img/thumb_05.webp",
     "role": "thumb",
     "id": "thumb_05",
     "size": [
-     600,
-     400
+     1200,
+     800
     ],
     "characters": [
      "doc",
@@ -8058,7 +8155,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "img/og_05.webp",
@@ -8075,7 +8172,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "img/cover_06.webp",
@@ -8092,15 +8189,15 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "img/thumb_06.webp",
     "role": "thumb",
     "id": "thumb_06",
     "size": [
-     600,
-     400
+     1200,
+     800
     ],
     "characters": [
      "doc",
@@ -8109,7 +8206,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "img/og_06.webp",
@@ -8126,12 +8223,12 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    }
   ],
   "redraw_count": 0,
   "redraw_ids": [],
-  "thumb": "https://adminmrobo.github.io/industrial-accident-prediction/img/cover_00.webp",
+  "thumb": "thumbs/repos/industrial-accident-prediction.jpg",
   "status": "ok",
   "checked_at": "2026-11-21",
   "site_title": "산업재해 패널 데이터를 활용한 머신러닝 모델 (목차) — 재활 서비스 예측 연구실",
@@ -10048,6 +10145,140 @@
   "has_pages": true
  },
  {
+  "repo": "llm_applied_lab",
+  "series_ko": "LLM 공식에서 GPT-6까지 · 응용편",
+  "title_ko": "LLM 공식에서 GPT-6까지 · 응용편",
+  "repo_url": "https://github.com/adminmrobo/llm_applied_lab",
+  "pages_url": "https://adminmrobo.github.io/llm_applied_lab/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-20T17:33:55Z",
+  "has_manifest": true,
+  "covers": [
+   {
+    "path": "assets/img/cover_A1.webp",
+    "role": "cover",
+    "id": "cover_A1",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
+   },
+   {
+    "path": "assets/img/thumb_A1.webp",
+    "role": "thumb",
+    "id": "thumb_A1",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
+   },
+   {
+    "path": "assets/img/og_A1.png",
+    "role": "og",
+    "id": "og_A1",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
+   },
+   {
+    "path": "assets/img/sc_A1_outro.webp",
+    "role": "outro",
+    "id": "sc_A1_outro",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
+   }
+  ],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": "https://adminmrobo.github.io/llm_applied_lab/assets/img/cover_A1.webp",
+  "status": "ok",
+  "checked_at": "2026-11-21",
+  "site_title": "RAG 연구실 — 사서가 찾아온 문장으로 LLM이 답한다",
+  "ontology": {
+   "status": "full",
+   "pages_with_kg": 1,
+   "pages_total": 1,
+   "pages_checked": 1,
+   "kg_links": [
+    "https://adminmrobo.github.io/llm_applied_lab/A1_rag_lab.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/llm_applied_lab/A1_rag_lab.html#export"
+   ],
+   "files": [
+    {
+     "path": "kg/KG_00_registry_A1_additions.json",
+     "url": "https://github.com/adminmrobo/llm_applied_lab/blob/main/kg/KG_00_registry_A1_additions.json"
+    },
+    {
+     "path": "kg/kg_A1.json",
+     "url": "https://github.com/adminmrobo/llm_applied_lab/blob/main/kg/kg_A1.json"
+    }
+   ]
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 1
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/llm_applied_lab/A1_rag_lab.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 1
+   }
+  },
+  "has_pages": false
+ },
+ {
   "repo": "LLM_evaluation",
   "series_ko": "AI 점수는 무엇을 잰 것일까 — 연구실 해설",
   "title_ko": "AI 점수는 무엇을 잰 것일까 — 연구실 해설",
@@ -10509,28 +10740,176 @@
  },
  {
   "repo": "micro_economics",
-  "series_ko": "미시경제학 연구실 — 미시경제학 연구실 블로그",
-  "title_ko": "미시경제학 연구실 — 미시경제학 연구실 블로그",
+  "series_ko": "미시경제학 연구실",
+  "title_ko": "미시경제학 연구실",
   "repo_url": "https://github.com/adminmrobo/micro_economics",
   "pages_url": "https://adminmrobo.github.io/micro_economics/",
   "default_branch": "main",
-  "pushed_at": "2026-11-20T02:36:36Z",
+  "pushed_at": "2026-11-20T18:29:19Z",
   "has_manifest": false,
-  "covers": [],
+  "covers": [
+   {
+    "path": "assets/og/cover_00.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_01.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_02.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_03.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_03m.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_04.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_05.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_06.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_07.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_07f.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_idx.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_prac.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_00.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_01.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_02.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_03.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_03m.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_04.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_05.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_06.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_07.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_07f.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_idx.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_prac.webp",
+    "role": "thumb",
+    "estimated": true
+   }
+  ],
   "redraw_count": 0,
   "redraw_ids": [],
-  "thumb": null,
-  "status": "unknown",
+  "thumb": "thumbs/repos/micro_economics.jpg",
+  "status": "ok",
   "checked_at": "2026-11-21",
-  "site_title": "미시경제학 연구실 — 미시경제학 연구실 블로그",
+  "site_title": "미시경제학 연구실",
   "ontology": {
-   "status": "none",
-   "pages_with_kg": 0,
-   "pages_total": 155,
-   "pages_checked": 40,
-   "kg_links": [],
-   "export_links": [],
-   "files": []
+   "status": "partial",
+   "pages_with_kg": 10,
+   "pages_total": 13,
+   "pages_checked": 13,
+   "kg_links": [
+    "https://adminmrobo.github.io/micro_economics/00_economic_models.html#kg",
+    "https://adminmrobo.github.io/micro_economics/01_consumer_choice.html#kg",
+    "https://adminmrobo.github.io/micro_economics/02_producer_choice.html#kg",
+    "https://adminmrobo.github.io/micro_economics/03_market_power.html#kg",
+    "https://adminmrobo.github.io/micro_economics/03m_midterm_review.html#kg",
+    "https://adminmrobo.github.io/micro_economics/04_game_theory.html#kg",
+    "https://adminmrobo.github.io/micro_economics/05_general_equilibrium.html#kg",
+    "https://adminmrobo.github.io/micro_economics/06_welfare_policy.html#kg",
+    "https://adminmrobo.github.io/micro_economics/07_information.html#kg",
+    "https://adminmrobo.github.io/micro_economics/07f_final_review.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/micro_economics/00_economic_models.html#export",
+    "https://adminmrobo.github.io/micro_economics/01_consumer_choice.html#export",
+    "https://adminmrobo.github.io/micro_economics/02_producer_choice.html#export",
+    "https://adminmrobo.github.io/micro_economics/03_market_power.html#export",
+    "https://adminmrobo.github.io/micro_economics/03m_midterm_review.html#export",
+    "https://adminmrobo.github.io/micro_economics/04_game_theory.html#export",
+    "https://adminmrobo.github.io/micro_economics/05_general_equilibrium.html#export",
+    "https://adminmrobo.github.io/micro_economics/06_welfare_policy.html#export",
+    "https://adminmrobo.github.io/micro_economics/07_information.html#export",
+    "https://adminmrobo.github.io/micro_economics/07f_final_review.html#export"
+   ],
+   "files": [
+    {
+     "path": "KG_00_registry.json",
+     "url": "https://github.com/adminmrobo/micro_economics/blob/main/KG_00_registry.json"
+    }
+   ]
   },
   "i18n": {
    "langs": [
@@ -10538,7 +10917,7 @@
    ],
    "count": 1,
    "pages": {
-    "ko": 155
+    "ko": 13
    },
    "partial": [],
    "complete": true,
@@ -10554,7 +10933,7 @@
    "count": 1,
    "complete": true,
    "pages_by_lang": {
-    "ko": 155
+    "ko": 13
    }
   },
   "has_pages": true
@@ -12795,13 +13174,19 @@
   "repo_url": "https://github.com/adminmrobo/nabla_field_lab",
   "pages_url": "https://adminmrobo.github.io/nabla_field_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-20T09:17:37Z",
+  "pushed_at": "2026-11-20T17:00:14Z",
   "has_manifest": false,
-  "covers": [],
+  "covers": [
+   {
+    "path": "assets/cover_index.webp",
+    "role": "cover",
+    "estimated": true
+   }
+  ],
   "redraw_count": 0,
   "redraw_ids": [],
-  "thumb": null,
-  "status": "unknown",
+  "thumb": "thumbs/repos/nabla_field_lab.jpg",
+  "status": "ok",
   "checked_at": "2026-11-21",
   "site_title": "같은 ∇, 다른 현장",
   "ontology": {
@@ -13336,6 +13721,67 @@
    }
   },
   "has_pages": true
+ },
+ {
+  "repo": "nlp20_five_floor_map",
+  "series_ko": "말을 숫자로 바꾸는 20가지 방법 — NLP 치트시트를 5층 지도로 다시 읽기",
+  "title_ko": "말을 숫자로 바꾸는 20가지 방법 — NLP 치트시트를 5층 지도로 다시 읽기",
+  "repo_url": "https://github.com/adminmrobo/nlp20_five_floor_map",
+  "pages_url": "https://adminmrobo.github.io/nlp20_five_floor_map/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-20T17:27:57Z",
+  "has_manifest": true,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "ok",
+  "checked_at": "2026-11-21",
+  "site_title": "말을 숫자로 바꾸는 20가지 방법 — NLP 치트시트를 5층 지도로 다시 읽기",
+  "ontology": {
+   "status": "full",
+   "pages_with_kg": 1,
+   "pages_total": 1,
+   "pages_checked": 1,
+   "kg_links": [
+    "https://adminmrobo.github.io/nlp20_five_floor_map/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/nlp20_five_floor_map/index.html#export"
+   ],
+   "files": [
+    {
+     "path": "kg/kg.json",
+     "url": "https://github.com/adminmrobo/nlp20_five_floor_map/blob/main/kg/kg.json"
+    }
+   ]
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 1
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/nlp20_five_floor_map/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 1
+   }
+  },
+  "has_pages": false
  },
  {
   "repo": "one_day_deep_learning",
@@ -16215,7 +16661,7 @@
   "repo_url": "https://github.com/adminmrobo/statistics_note",
   "pages_url": "https://adminmrobo.github.io/statistics_note/",
   "default_branch": "main",
-  "pushed_at": "2026-11-20T13:41:10Z",
+  "pushed_at": "2026-11-20T17:24:23Z",
   "has_manifest": false,
   "covers": [
    {
@@ -16548,100 +16994,6 @@
     "ko": 29
    }
   },
-  "has_pages": false
- },
- {
-  "repo": "statistics_note_ch03_discrete-probability-distribution",
-  "series_ko": "우연의 과학통계학",
-  "title_ko": "우연의 과학통계학",
-  "repo_url": "https://github.com/adminmrobo/statistics_note_ch03_discrete-probability-distribution",
-  "pages_url": "https://adminmrobo.github.io/statistics_note_ch03_discrete-probability-distribution/",
-  "default_branch": "main",
-  "pushed_at": "2026-11-05T11:19:09Z",
-  "has_manifest": false,
-  "covers": [
-   {
-    "path": "assets/og_1_1.png",
-    "role": "og",
-    "estimated": true
-   },
-   {
-    "path": "assets/og_1_1_2.png",
-    "role": "og",
-    "estimated": true
-   },
-   {
-    "path": "assets/og_1_2.png",
-    "role": "og",
-    "estimated": true
-   },
-   {
-    "path": "assets/thumb_1_1.png",
-    "role": "thumb",
-    "estimated": true
-   },
-   {
-    "path": "assets/thumb_1_1_2.png",
-    "role": "thumb",
-    "estimated": true
-   },
-   {
-    "path": "assets/thumb_1_2.png",
-    "role": "thumb",
-    "estimated": true
-   }
-  ],
-  "redraw_count": 0,
-  "redraw_ids": [],
-  "thumb": "thumbs/repos/statistics_note_ch03_discrete-probability-distribution.jpg",
-  "status": "ok",
-  "checked_at": "2026-11-21",
-  "site_title": "우연의 과학통계학",
-  "ontology": {
-   "status": "partial",
-   "pages_with_kg": 2,
-   "pages_total": 3,
-   "pages_checked": 3,
-   "kg_links": [
-    "https://adminmrobo.github.io/statistics_note_ch03_discrete-probability-distribution/1-1_discrete_distributions.html#kg",
-    "https://adminmrobo.github.io/statistics_note_ch03_discrete-probability-distribution/1-2_pmf_pdf.html#kg"
-   ],
-   "export_links": [
-    "https://adminmrobo.github.io/statistics_note_ch03_discrete-probability-distribution/1-1_discrete_distributions.html#export",
-    "https://adminmrobo.github.io/statistics_note_ch03_discrete-probability-distribution/1-2_pmf_pdf.html#export"
-   ],
-   "files": [
-    {
-     "path": "production/KG_00_registry.json",
-     "url": "https://github.com/adminmrobo/statistics_note_ch03_discrete-probability-distribution/blob/main/production/KG_00_registry.json"
-    }
-   ]
-  },
-  "i18n": {
-   "langs": [
-    "ko"
-   ],
-   "count": 1,
-   "pages": {
-    "ko": 3
-   },
-   "partial": [],
-   "complete": true,
-   "readme_langs": [],
-   "links": {
-    "ko": "https://adminmrobo.github.io/statistics_note_ch03_discrete-probability-distribution/index.html"
-   }
-  },
-  "languages": {
-   "codes": [
-    "ko"
-   ],
-   "count": 1,
-   "complete": true,
-   "pages_by_lang": {
-    "ko": 3
-   }
-  },
   "has_pages": true
  },
  {
@@ -16685,196 +17037,6 @@
    "pages_by_lang": {}
   },
   "has_pages": false
- },
- {
-  "repo": "statistics_note_ch04_statistical-estimation",
-  "series_ko": "통계적 추정",
-  "title_ko": "통계적 추정",
-  "repo_url": "https://github.com/adminmrobo/statistics_note_ch04_statistical-estimation",
-  "pages_url": "https://adminmrobo.github.io/statistics_note_ch04_statistical-estimation/",
-  "default_branch": "main",
-  "pushed_at": "2026-11-08T15:38:56Z",
-  "has_manifest": false,
-  "covers": [
-   {
-    "path": "assets/og_2_10.png",
-    "role": "og",
-    "estimated": true
-   },
-   {
-    "path": "assets/og_2_1_a.png",
-    "role": "og",
-    "estimated": true
-   },
-   {
-    "path": "assets/og_2_1_b.png",
-    "role": "og",
-    "estimated": true
-   },
-   {
-    "path": "assets/og_2_2.png",
-    "role": "og",
-    "estimated": true
-   },
-   {
-    "path": "assets/og_2_3.png",
-    "role": "og",
-    "estimated": true
-   },
-   {
-    "path": "assets/og_2_4.png",
-    "role": "og",
-    "estimated": true
-   },
-   {
-    "path": "assets/og_2_5.png",
-    "role": "og",
-    "estimated": true
-   },
-   {
-    "path": "assets/og_2_6.png",
-    "role": "og",
-    "estimated": true
-   },
-   {
-    "path": "assets/og_2_7.png",
-    "role": "og",
-    "estimated": true
-   },
-   {
-    "path": "assets/og_2_8.png",
-    "role": "og",
-    "estimated": true
-   },
-   {
-    "path": "assets/og_2_9.png",
-    "role": "og",
-    "estimated": true
-   },
-   {
-    "path": "assets/thumb_2_10.png",
-    "role": "thumb",
-    "estimated": true
-   },
-   {
-    "path": "assets/thumb_2_1_a.png",
-    "role": "thumb",
-    "estimated": true
-   },
-   {
-    "path": "assets/thumb_2_1_b.png",
-    "role": "thumb",
-    "estimated": true
-   },
-   {
-    "path": "assets/thumb_2_2.png",
-    "role": "thumb",
-    "estimated": true
-   },
-   {
-    "path": "assets/thumb_2_3.png",
-    "role": "thumb",
-    "estimated": true
-   },
-   {
-    "path": "assets/thumb_2_4.png",
-    "role": "thumb",
-    "estimated": true
-   },
-   {
-    "path": "assets/thumb_2_5.png",
-    "role": "thumb",
-    "estimated": true
-   },
-   {
-    "path": "assets/thumb_2_6.png",
-    "role": "thumb",
-    "estimated": true
-   },
-   {
-    "path": "assets/thumb_2_7.png",
-    "role": "thumb",
-    "estimated": true
-   },
-   {
-    "path": "assets/thumb_2_8.png",
-    "role": "thumb",
-    "estimated": true
-   },
-   {
-    "path": "assets/thumb_2_9.png",
-    "role": "thumb",
-    "estimated": true
-   }
-  ],
-  "redraw_count": 0,
-  "redraw_ids": [],
-  "thumb": "thumbs/repos/statistics_note_ch04_statistical-estimation.jpg",
-  "status": "ok",
-  "checked_at": "2026-11-21",
-  "site_title": "통계적 추정",
-  "ontology": {
-   "status": "partial",
-   "pages_with_kg": 10,
-   "pages_total": 12,
-   "pages_checked": 12,
-   "kg_links": [
-    "https://adminmrobo.github.io/statistics_note_ch04_statistical-estimation/2-1a_point_interval.html#kg",
-    "https://adminmrobo.github.io/statistics_note_ch04_statistical-estimation/2-1b_ci_practice.html#kg",
-    "https://adminmrobo.github.io/statistics_note_ch04_statistical-estimation/2-2_normal_distribution.html#kg",
-    "https://adminmrobo.github.io/statistics_note_ch04_statistical-estimation/2-3_t_chi_f.html#kg",
-    "https://adminmrobo.github.io/statistics_note_ch04_statistical-estimation/2-4_sampling_distribution.html#kg",
-    "https://adminmrobo.github.io/statistics_note_ch04_statistical-estimation/2-5_degrees_of_freedom.html#kg",
-    "https://adminmrobo.github.io/statistics_note_ch04_statistical-estimation/2-6_ci_code_review.html#kg",
-    "https://adminmrobo.github.io/statistics_note_ch04_statistical-estimation/2-7_beer_yeast_t.html#kg",
-    "https://adminmrobo.github.io/statistics_note_ch04_statistical-estimation/2-8_medical_data.html#kg",
-    "https://adminmrobo.github.io/statistics_note_ch04_statistical-estimation/2-9_ci_synthesis.html#kg"
-   ],
-   "export_links": [
-    "https://adminmrobo.github.io/statistics_note_ch04_statistical-estimation/2-1a_point_interval.html#export",
-    "https://adminmrobo.github.io/statistics_note_ch04_statistical-estimation/2-1b_ci_practice.html#export",
-    "https://adminmrobo.github.io/statistics_note_ch04_statistical-estimation/2-2_normal_distribution.html#export",
-    "https://adminmrobo.github.io/statistics_note_ch04_statistical-estimation/2-3_t_chi_f.html#export",
-    "https://adminmrobo.github.io/statistics_note_ch04_statistical-estimation/2-4_sampling_distribution.html#export",
-    "https://adminmrobo.github.io/statistics_note_ch04_statistical-estimation/2-5_degrees_of_freedom.html#export",
-    "https://adminmrobo.github.io/statistics_note_ch04_statistical-estimation/2-6_ci_code_review.html#export",
-    "https://adminmrobo.github.io/statistics_note_ch04_statistical-estimation/2-7_beer_yeast_t.html#export",
-    "https://adminmrobo.github.io/statistics_note_ch04_statistical-estimation/2-8_medical_data.html#export",
-    "https://adminmrobo.github.io/statistics_note_ch04_statistical-estimation/2-9_ci_synthesis.html#export"
-   ],
-   "files": [
-    {
-     "path": "production/KG_00_registry.json",
-     "url": "https://github.com/adminmrobo/statistics_note_ch04_statistical-estimation/blob/main/production/KG_00_registry.json"
-    }
-   ]
-  },
-  "i18n": {
-   "langs": [
-    "ko"
-   ],
-   "count": 1,
-   "pages": {
-    "ko": 12
-   },
-   "partial": [],
-   "complete": true,
-   "readme_langs": [],
-   "links": {
-    "ko": "https://adminmrobo.github.io/statistics_note_ch04_statistical-estimation/index.html"
-   }
-  },
-  "languages": {
-   "codes": [
-    "ko"
-   ],
-   "count": 1,
-   "complete": true,
-   "pages_by_lang": {
-    "ko": 12
-   }
-  },
-  "has_pages": true
  },
  {
   "repo": "statistics_note_ch04_Statistical-Estimation_01_a",
@@ -16935,136 +17097,6 @@
    "complete": true,
    "pages_by_lang": {
     "ko": 2
-   }
-  },
-  "has_pages": true
- },
- {
-  "repo": "statistics_note_ch05_hypothesis-testing",
-  "series_ko": "통계적 가설검정",
-  "title_ko": "통계적 가설검정",
-  "repo_url": "https://github.com/adminmrobo/statistics_note_ch05_hypothesis-testing",
-  "pages_url": "https://adminmrobo.github.io/statistics_note_ch05_hypothesis-testing/",
-  "default_branch": "main",
-  "pushed_at": "2026-11-08T15:38:59Z",
-  "has_manifest": false,
-  "covers": [
-   {
-    "path": "assets/og_3_1.png",
-    "role": "og",
-    "estimated": true
-   },
-   {
-    "path": "assets/og_3_2.png",
-    "role": "og",
-    "estimated": true
-   },
-   {
-    "path": "assets/og_3_3.png",
-    "role": "og",
-    "estimated": true
-   },
-   {
-    "path": "assets/og_3_4.png",
-    "role": "og",
-    "estimated": true
-   },
-   {
-    "path": "assets/og_3_5.png",
-    "role": "og",
-    "estimated": true
-   },
-   {
-    "path": "assets/og_3_6.png",
-    "role": "og",
-    "estimated": true
-   },
-   {
-    "path": "assets/thumb_3_1.png",
-    "role": "thumb",
-    "estimated": true
-   },
-   {
-    "path": "assets/thumb_3_2.png",
-    "role": "thumb",
-    "estimated": true
-   },
-   {
-    "path": "assets/thumb_3_3.png",
-    "role": "thumb",
-    "estimated": true
-   },
-   {
-    "path": "assets/thumb_3_4.png",
-    "role": "thumb",
-    "estimated": true
-   },
-   {
-    "path": "assets/thumb_3_5.png",
-    "role": "thumb",
-    "estimated": true
-   },
-   {
-    "path": "assets/thumb_3_6.png",
-    "role": "thumb",
-    "estimated": true
-   }
-  ],
-  "redraw_count": 0,
-  "redraw_ids": [],
-  "thumb": "thumbs/repos/statistics_note_ch05_hypothesis-testing.jpg",
-  "status": "ok",
-  "checked_at": "2026-11-21",
-  "site_title": "통계적 가설검정",
-  "ontology": {
-   "status": "partial",
-   "pages_with_kg": 5,
-   "pages_total": 7,
-   "pages_checked": 7,
-   "kg_links": [
-    "https://adminmrobo.github.io/statistics_note_ch05_hypothesis-testing/3-1_hypothesis_testing.html#kg",
-    "https://adminmrobo.github.io/statistics_note_ch05_hypothesis-testing/3-2_cockroach_mean.html#kg",
-    "https://adminmrobo.github.io/statistics_note_ch05_hypothesis-testing/3-3_test_exercises.html#kg",
-    "https://adminmrobo.github.io/statistics_note_ch05_hypothesis-testing/3-4_two_sample_tests.html#kg",
-    "https://adminmrobo.github.io/statistics_note_ch05_hypothesis-testing/3-5_anova.html#kg"
-   ],
-   "export_links": [
-    "https://adminmrobo.github.io/statistics_note_ch05_hypothesis-testing/3-1_hypothesis_testing.html#export",
-    "https://adminmrobo.github.io/statistics_note_ch05_hypothesis-testing/3-2_cockroach_mean.html#export",
-    "https://adminmrobo.github.io/statistics_note_ch05_hypothesis-testing/3-3_test_exercises.html#export",
-    "https://adminmrobo.github.io/statistics_note_ch05_hypothesis-testing/3-4_two_sample_tests.html#export",
-    "https://adminmrobo.github.io/statistics_note_ch05_hypothesis-testing/3-5_anova.html#export"
-   ],
-   "files": [
-    {
-     "path": "production/KG_00_registry.json",
-     "url": "https://github.com/adminmrobo/statistics_note_ch05_hypothesis-testing/blob/main/production/KG_00_registry.json"
-    }
-   ]
-  },
-  "i18n": {
-   "langs": [
-    "ko"
-   ],
-   "count": 1,
-   "pages": {
-    "ko": 7
-   },
-   "partial": [],
-   "complete": true,
-   "readme_langs": [],
-   "links": {
-    "ko": "https://adminmrobo.github.io/statistics_note_ch05_hypothesis-testing/index.html"
-   }
-  },
-  "languages": {
-   "codes": [
-    "ko"
-   ],
-   "count": 1,
-   "complete": true,
-   "pages_by_lang": {
-    "ko": 7
    }
   },
   "has_pages": true
