@@ -151,6 +151,16 @@ def apply_rules(obj, keys, rules, fields, pub_k=None):
     return False
 
 
+def rename_mid(obj, renames, fields):
+    """중분류 이름 바꾸기(data/rack_migration.json → mid_renames). 바뀌면 True."""
+    cat_k, mid_k, sub_k = fields
+    for rn in renames:
+        if obj.get(cat_k) == rn["cat"] and obj.get(mid_k) == rn["from"] and (not rn.get("from_sub") or obj.get(sub_k) == rn["from_sub"]):
+            obj[mid_k] = rn["to"]
+            return True
+    return False
+
+
 def main():
     hub_p = os.path.join(DATA, "hub.csv")
     rows = read_csv(hub_p) if os.path.exists(hub_p) else []
@@ -177,9 +187,12 @@ def main():
     ART_COL, MOVES = load_migration()
     row_fields = ("콘텐츠_카테고리_대분류", "콘텐츠_카테고리_중분류", "콘텐츠_카테고리_소분류", ART_COL)
     migrated = [r["저장소"] for r in rows if migrate(r, {r.get("저장소"), r.get("제목")}, MOVES, row_fields, OWNER_COL)]
-    RULES = load_json(os.path.join(DATA, "rack_migration.json"), {}).get("rules") or []
+    _mg = load_json(os.path.join(DATA, "rack_migration.json"), {})
+    RULES, RENAMES = _mg.get("rules") or [], _mg.get("mid_renames") or []
     for r in rows:
-        if apply_rules(r, [r.get("저장소"), r.get("제목")], RULES, row_fields[:3], "공개대상여부") and r["저장소"] not in migrated:
+        ch = apply_rules(r, [r.get("저장소"), r.get("제목")], RULES, row_fields[:3], "공개대상여부")
+        ch = rename_mid(r, RENAMES, row_fields[:3]) or ch
+        if ch and r["저장소"] not in migrated:
             migrated.append(r["저장소"])
     # 주인장 저자 칸이 생기기 전에 옮겨진 행: 옮기기 표에 갈래가 있고 저자 칸이 아직 비어 있으면 Y로 채운다
     # (관리실에서 체크를 끄면 'N'이 들어가므로 다시 채우지 않는다)
@@ -283,6 +296,7 @@ def main():
     for it in items:
         migrate(it, {it["repo"], it["title"]}, MOVES, item_fields)
         apply_rules(it, [it["repo"], it["title"]], RULES, item_fields[:3])
+        rename_mid(it, RENAMES, item_fields[:3])
     # 시리즈 챕터: 상위 카드의 사이트 주소 + 파일 (외부링크에 주소가 있으면 그 주소)
     for it in items:
         if it["series"] != "Y":
