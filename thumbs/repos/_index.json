@@ -19,7 +19,7 @@
  },
  "ahnboat_lab_explainer": {
   "src": null,
-  "pushed_at": "2026-11-21T15:36:51Z"
+  "pushed_at": "2026-11-21T15:45:54Z"
  },
  "ahnboat_lab_langpack": {
   "src": null,
@@ -43,8 +43,8 @@
   "pushed_at": "2026-11-06T03:12:38Z"
  },
  "ai_crime_lab": {
-  "src": "file:assets/lineup.webp",
-  "pushed_at": "2026-11-21T15:15:14Z",
+  "src": "name:practice/cover.webp",
+  "pushed_at": "2026-11-21T16:14:11Z",
   "made": "2026-11-22"
  },
  "AI_for_cement_produce": {
@@ -155,7 +155,7 @@
  },
  "data_to_numbers_lab": {
   "src": "manifest:img/cover_index.webp",
-  "pushed_at": "2026-11-21T15:42:42Z",
+  "pushed_at": "2026-11-21T16:10:37Z",
   "made": "2026-11-22"
  },
  "Data_visuialization_lecture_01": {
@@ -198,7 +198,7 @@
  },
  "euclidean_space_lab": {
   "src": "manifest:assets/og/og_index.jpg",
-  "pushed_at": "2026-11-21T15:20:02Z",
+  "pushed_at": "2026-11-21T15:43:18Z",
   "made": "2026-11-22"
  },
  "fabric_ai_project": {
@@ -294,7 +294,7 @@
  },
  "inference_engineering_study": {
   "src": "manifest:cover_factory.jpg",
-  "pushed_at": "2026-11-21T09:44:16Z",
+  "pushed_at": "2026-11-21T16:07:54Z",
   "made": "2026-11-22"
  },
  "inference_engineering_study_week_01_article_01": {
@@ -374,7 +374,7 @@
  },
  "lagrangian_hamiltonian_lab": {
   "src": "name:assets/img/cover_00.webp",
-  "pushed_at": "2026-11-21T15:32:01Z",
+  "pushed_at": "2026-11-21T15:45:41Z",
   "made": "2026-11-22"
  },
  "learn-pandas-visually_korean": {
@@ -559,7 +559,7 @@
  },
  "optimization_3d_map": {
   "src": "manifest:img/cover_index.webp",
-  "pushed_at": "2026-11-21T15:39:16Z",
+  "pushed_at": "2026-11-21T16:09:52Z",
   "made": "2026-11-22"
  },
  "probability_distribution_dictionary": {
@@ -633,8 +633,9 @@
   "made": "2026-11-13"
  },
  "unsupervised_fish_lab": {
-  "src": null,
-  "pushed_at": "2026-11-21T12:12:18Z"
+  "src": "manifest:img/cover_00.webp",
+  "pushed_at": "2026-11-21T16:08:03Z",
+  "made": "2026-11-22"
  },
  "usa_stock_reporter_project_python_version": {
   "src": null,

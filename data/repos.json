@@ -339,7 +339,7 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_lab_explainer",
   "pages_url": "https://adminmrobo.github.io/ahnboat_lab_explainer/",
   "default_branch": "main",
-  "pushed_at": "2026-11-21T15:36:51Z",
+  "pushed_at": "2026-11-21T15:45:54Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -1060,7 +1060,7 @@
   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
   "pages_url": "https://adminmrobo.github.io/ai_crime_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-21T15:15:14Z",
+  "pushed_at": "2026-11-21T16:14:11Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -5404,7 +5404,7 @@
   "repo_url": "https://github.com/adminmrobo/data_to_numbers_lab",
   "pages_url": "https://adminmrobo.github.io/data_to_numbers_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-21T15:42:42Z",
+  "pushed_at": "2026-11-21T16:10:37Z",
   "has_manifest": true,
   "covers": [
    {
@@ -6678,7 +6678,7 @@
   "repo_url": "https://github.com/adminmrobo/euclidean_space_lab",
   "pages_url": "https://adminmrobo.github.io/euclidean_space_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-21T15:20:02Z",
+  "pushed_at": "2026-11-21T15:43:18Z",
   "has_manifest": true,
   "covers": [
    {
@@ -9585,7 +9585,7 @@
   "repo_url": "https://github.com/adminmrobo/inference_engineering_study",
   "pages_url": "https://adminmrobo.github.io/inference_engineering_study/",
   "default_branch": "main",
-  "pushed_at": "2026-11-21T09:44:16Z",
+  "pushed_at": "2026-11-21T16:07:54Z",
   "has_manifest": true,
   "covers": [
    {
@@ -9842,10 +9842,10 @@
   "checked_at": "2026-11-22",
   "site_title": "인퍼런스 스터디 북",
   "ontology": {
-   "status": "full",
+   "status": "partial",
    "pages_with_kg": 16,
-   "pages_total": 16,
-   "pages_checked": 16,
+   "pages_total": 17,
+   "pages_checked": 17,
    "kg_links": [
     "https://adminmrobo.github.io/inference_engineering_study/index.html#kg",
     "https://adminmrobo.github.io/inference_engineering_study/week_01_article_01/index.html#kg",
@@ -9913,7 +9913,7 @@
    ],
    "count": 7,
    "pages": {
-    "ko": 16,
+    "ko": 17,
     "en": 2,
     "zh": 2,
     "ja": 2,
@@ -9954,7 +9954,7 @@
    "count": 7,
    "complete": false,
    "pages_by_lang": {
-    "ko": 16,
+    "ko": 17,
     "en": 2,
     "zh": 2,
     "ja": 2,
@@ -11213,7 +11213,7 @@
   "repo_url": "https://github.com/adminmrobo/lagrangian_hamiltonian_lab",
   "pages_url": "https://adminmrobo.github.io/lagrangian_hamiltonian_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-21T15:32:01Z",
+  "pushed_at": "2026-11-21T15:45:41Z",
   "has_manifest": true,
   "covers": [],
   "redraw_count": 0,
@@ -16054,7 +16054,7 @@
   "repo_url": "https://github.com/adminmrobo/optimization_3d_map",
   "pages_url": "https://adminmrobo.github.io/optimization_3d_map/",
   "default_branch": "main",
-  "pushed_at": "2026-11-21T15:39:16Z",
+  "pushed_at": "2026-11-21T16:09:52Z",
   "has_manifest": true,
   "covers": [
    {
@@ -19571,7 +19571,7 @@
   "repo_url": "https://github.com/adminmrobo/unsupervised_fish_lab",
   "pages_url": "https://adminmrobo.github.io/unsupervised_fish_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-21T12:12:18Z",
+  "pushed_at": "2026-11-21T16:08:03Z",
   "has_manifest": true,
   "covers": [
    {
@@ -19589,7 +19589,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "img/thumb_00.webp",
@@ -19606,7 +19606,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "img/og_00.webp",
@@ -19623,7 +19623,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "img/cover_01.webp",
@@ -19640,7 +19640,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "img/thumb_01.webp",
@@ -19657,7 +19657,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "img/og_01.webp",
@@ -19674,7 +19674,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "img/cover_02.webp",
@@ -19691,7 +19691,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "img/thumb_02.webp",
@@ -19708,7 +19708,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "img/og_02.webp",
@@ -19725,7 +19725,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "img/cover_03.webp",
@@ -19742,7 +19742,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "img/thumb_03.webp",
@@ -19759,7 +19759,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "img/og_03.webp",
@@ -19776,7 +19776,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "img/cover_04.webp",
@@ -19793,7 +19793,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "img/thumb_04.webp",
@@ -19810,7 +19810,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "img/og_04.webp",
@@ -19827,7 +19827,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "img/cover_05.webp",
@@ -19844,7 +19844,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "img/thumb_05.webp",
@@ -19861,7 +19861,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "img/og_05.webp",
@@ -19878,12 +19878,12 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    }
   ],
   "redraw_count": 0,
   "redraw_ids": [],
-  "thumb": "https://adminmrobo.github.io/unsupervised_fish_lab/img/cover_00.webp",
+  "thumb": "thumbs/repos/unsupervised_fish_lab.jpg",
   "status": "ok",
   "checked_at": "2026-11-22",
   "site_title": "비지도학습 물고기 연구실 — 라벨링 없이 맞추는 AI (목차)",
