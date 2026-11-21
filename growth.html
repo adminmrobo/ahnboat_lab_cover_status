@@ -91,7 +91,7 @@ html:lang(ja) body,html:lang(zh-CN) body{word-break:normal;overflow-wrap:anywher
 <body>
 <div class="wrap">
   <div class="headrow"><div class="head"><span class="kicker">AHNBOAT LAB · KNOWLEDGE NODES</span><h1 data-k="title">Reon Ahn Page 지식 노드 현황</h1></div>
-    <a class="more" id="more" href="ontology.html" target="_blank" rel="noopener"><span data-k="more">지식 노드 자세히 보기</span> <span aria-hidden="true">→</span></a></div>
+    <a class="more" id="more" href="growth.html?view=full" target="_blank" rel="noopener"><span data-k="more">지식 노드 자세히 보기</span> <span aria-hidden="true">→</span></a></div>
   <p class="sub" id="sub">불러오는 중…</p>
 
   <section class="haru" aria-live="polite">
@@ -150,6 +150,7 @@ html:lang(ja) body,html:lang(zh-CN) body{word-break:normal;overflow-wrap:anywher
 'use strict';
 var Q=new URLSearchParams(location.search);
 var FULLV=Q.get('view')==='full';if(FULLV)document.documentElement.classList.add('full');
+(function(){var mo=document.getElementById('more');if(!mo)return;if(FULLV){mo.href='ontology.html';mo.firstElementChild.dataset.k='more3d';mo.firstElementChild.textContent='온톨로지 3D 지도로 보기';}else{mo.href='growth.html?view=full'+(Q.get('lang')?'&lang='+encodeURIComponent(Q.get('lang')):'');}})();
 if(Q.get('embed')==='1')document.documentElement.classList.add('embed');
 if(Q.get('theme')==='dark'||Q.get('theme')==='light')document.documentElement.setAttribute('data-theme',Q.get('theme'));
 var $=function(id){return document.getElementById(id);};
