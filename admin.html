@@ -189,7 +189,7 @@ td input.ord{width:56px}
   <div class="chips" id="chips"></div>
   <div style="overflow-x:auto">
   <table>
-    <thead><tr><th>노출</th><th>순서</th><th>제목 · 저장소</th><th class="hide-s">분류</th><th>공개</th><th>공개일</th><th>시리즈물</th><th title="체크하면 Ahn's Articles &amp; Presentations(논문·발표·강연)에 나옵니다">주인장 저자</th><th></th></tr></thead>
+    <thead><tr><th>노출</th><th>순서</th><th>제목 · 저장소</th><th class="hide-s">분류</th><th>공개</th><th>공개일</th><th>시리즈물</th><th title="체크하면 Ahn's Articles &amp; Presentations(논문·발표·강연)에 나옵니다">주인장 저자</th><th title="체크하면 Ahn's Articles &amp; Presentations의 LECTURE에 나옵니다">저자강의</th><th></th></tr></thead>
     <tbody id="rows"></tbody>
   </table>
   </div>
@@ -243,6 +243,7 @@ td input.ord{width:56px}
     <div class="row3">
       <label>주인장 저자 <select name="주인장_저자_여부"><option value="N">아님 · Articles 제외</option><option value="Y">Y · 주인장이 직접 쓴 논문·발표·강연</option></select></label>
       <label>Articles 갈래 <input name="Articles_갈래" list="artList" placeholder="AI 응용 논문 · 경제·사회 논문 · 금융·자산 논문 · 외부_콘텐츠"></label>
+      <label>저자강의 <select name="저자_강의_여부"><option value="N">아님 · LECTURE 제외</option><option value="Y">Y · 주인장이 직접 한 강의</option></select></label>
       <datalist id="artList"><option value="AI 응용 논문"><option value="경제·사회 논문"><option value="금융·자산 논문"><option value="외부_콘텐츠"></datalist>
     </div>
     <label>시리즈물 <select name="시리즈물"><option value="">아님</option><option value="Y">Y · 여러 챕터를 묶은 콘텐츠</option></select></label>
@@ -261,7 +262,7 @@ td input.ord{width:56px}
 'use strict';
 var OWNER='adminmrobo',REPO='ahnboat_lab_cover_status',BRANCH='main',API='https://api.github.com';
 var VAULT_PATH='data/admin_vault.enc',CSV_PATH='data/hub.csv.enc',SET_PATH='data/publish_settings.json';
-var STD=['저장소','제목','주요내용','콘텐츠_카테고리_대분류','콘텐츠_카테고리_중분류','콘텐츠_카테고리_소분류','공개대상여부','연구실_시리즈_적용대상_여부','외국어팩대상_여부','온톨로지_적용대상_여부','순서','외부링크','비고','공개일','시리즈물','상위시리즈','챕터','주인장_저자_여부','Articles_갈래'];
+var STD=['저장소','제목','주요내용','콘텐츠_카테고리_대분류','콘텐츠_카테고리_중분류','콘텐츠_카테고리_소분류','공개대상여부','연구실_시리즈_적용대상_여부','외국어팩대상_여부','온톨로지_적용대상_여부','순서','외부링크','비고','공개일','시리즈물','상위시리즈','챕터','주인장_저자_여부','Articles_갈래','저자_강의_여부'];
 var SS='ahnboat-admin-pw';
 var $=function(id){return document.getElementById(id);};
 var PASS='',V=null,HDR=[],ROWS=[],ORIG='',CSV_SHA='',CATS=[],REPOS={},MOVED={},OPEN={},FILTER='all',SETTINGS={mode:'auto',base_date:''};
@@ -352,17 +353,18 @@ function textIn(val,on,ph){var i=el('input');i.type='text';i.value=val||'';if(ph
 function set(r,k,v){r[k]=v;r._d=true;render();}
 
 function counts(){
-  var m=ROWS.filter(function(r){return !isChap(r);}),c={all:m.length,on:0,res:0,off:0,rev:0,warn:0,ser:0,own:0,dirty:0};
-  m.forEach(function(r){c[status(r).k]++;if(yes(r['시리즈물']))c.ser++;if(yes(r['주인장_저자_여부']))c.own++;if(r._d||chapsOf(r['저장소']).some(function(x){return x._d;}))c.dirty++;});return c;}
+  var m=ROWS.filter(function(r){return !isChap(r);}),c={all:m.length,on:0,res:0,off:0,rev:0,warn:0,ser:0,own:0,lec:0,dirty:0};
+  m.forEach(function(r){c[status(r).k]++;if(yes(r['시리즈물']))c.ser++;if(yes(r['주인장_저자_여부']))c.own++;if(yes(r['저자_강의_여부']))c.lec++;if(r._d||chapsOf(r['저장소']).some(function(x){return x._d;}))c.dirty++;});return c;}
 function chips(){
   var c=counts(),box=$('chips');box.innerHTML='';
-  [['all','전체'],['on','노출'],['res','예약'],['off','비공개'],['rev','검토'],['warn','확인 필요'],['ser','시리즈물'],['own','주인장 저자'],['dirty','고친 줄']].forEach(function(x){
+  [['all','전체'],['on','노출'],['res','예약'],['off','비공개'],['rev','검토'],['warn','확인 필요'],['ser','시리즈물'],['own','주인장 저자'],['lec','저자강의'],['dirty','고친 줄']].forEach(function(x){
     var b=el('span','chip'+(FILTER===x[0]?' on':''));b.innerHTML=x[1]+' <b>'+c[x[0]]+'</b>';b.addEventListener('click',function(){FILTER=x[0];render();});box.appendChild(b);});}
 function match(r){
   var q=$('q').value.trim().toLowerCase(),fc=$('fCat').value;
   if(fc&&(r['콘텐츠_카테고리_대분류']||'미분류')!==fc)return false;
   if(FILTER==='ser'&&!yes(r['시리즈물']))return false;
   if(FILTER==='own'&&!yes(r['주인장_저자_여부']))return false;
+  if(FILTER==='lec'&&!yes(r['저자_강의_여부']))return false;
   if(FILTER==='dirty'&&!(r._d||chapsOf(r['저장소']).some(function(c){return c._d;})))return false;
   if(['on','res','off','rev','warn'].indexOf(FILTER)>=0&&status(r).k!==FILTER)return false;
   if(q){var s=[r['저장소'],r['제목'],r['주요내용'],r['콘텐츠_카테고리_중분류'],r['콘텐츠_카테고리_소분류'],r['비고']].join(' ').toLowerCase();
@@ -376,7 +378,7 @@ function render(){
     var x=(a['콘텐츠_카테고리_중분류']||'').localeCompare(b['콘텐츠_카테고리_중분류']||'');if(x)return x;
     var oa=parseInt(a['순서'],10),ob=parseInt(b['순서'],10);return (isNaN(oa)?1e4:oa)-(isNaN(ob)?1e4:ob);});
   list.forEach(function(r){tb.appendChild(rowEl(r));if(yes(r['시리즈물'])&&OPEN[r['저장소']])tb.appendChild(chapBox(r));});
-  if(!list.length){var tr=el('tr'),td=el('td','','조건에 맞는 콘텐츠가 없습니다.');td.colSpan=9;tr.appendChild(td);tb.appendChild(tr);}
+  if(!list.length){var tr=el('tr'),td=el('td','','조건에 맞는 콘텐츠가 없습니다.');td.colSpan=10;tr.appendChild(td);tb.appendChild(tr);}
   $('foot').textContent='표 '+ROWS.length+'줄 (챕터 '+ROWS.filter(isChap).length+'줄 포함) · 노출 판단 기준일 '+BASE()+($('baseAuto').checked?' (매일 자동)':' (고정)')+(V&&V.token?' · 저장하면 몇 분 뒤 카탈로그·서버실에 반영됩니다.':' · 토큰 없이 들어옴: 저장하면 파일을 내려받아 GitHub에 올립니다.');
   dirty();}
 function rowEl(r){
@@ -399,11 +401,13 @@ function rowEl(r){
   ow.addEventListener('change',function(){set(r,'주인장_저자_여부',ow.checked?'Y':'N');});t8.appendChild(ow);
   if(yes(r['주인장_저자_여부']))t8.appendChild(el('div','r',r['Articles_갈래']||'갈래 없음'));
   tr.appendChild(t8);
+  var t9=el('td');var lc=el('input');lc.type='checkbox';lc.checked=yes(r['저자_강의_여부']);lc.title='저자강의: 체크하면 LECTURE에 나옵니다';
+  lc.addEventListener('change',function(){set(r,'저자_강의_여부',lc.checked?'Y':'N');});t9.appendChild(lc);tr.appendChild(t9);
   var t7=el('td');var e=el('button','sm','편집');e.type='button';e.addEventListener('click',function(){openDrawer(r);});t7.appendChild(e);tr.appendChild(t7);
   return tr;}
 function chapBox(p){
   var repo=p['저장소'],pst=status(p),pOk=pst.k==='on';
-  var tr=el('tr','chapbox'),td=el('td');td.colSpan=9;var inner=el('div','inner');
+  var tr=el('tr','chapbox'),td=el('td');td.colSpan=10;var inner=el('div','inner');
   inner.appendChild(el('div','',null)).innerHTML='<b>'+esc(p['제목']||repo)+'</b> 의 챕터 — 공개 <b>Y</b>이면서 공개일이 기준일('+BASE()+')을 지난 챕터만 카탈로그 카드에 소개됩니다.';
   var tools=el('div','tools');
   var add=el('button','sm','+ 챕터');add.type='button';add.addEventListener('click',function(){var n=chapsOf(repo).length+1;

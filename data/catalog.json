@@ -647,6 +647,20 @@
     "스프라이트"
    ],
    "image": "thumbs/cats/C10-M2.webp"
+  },
+  {
+   "cat": "논문 해설",
+   "name": "강의",
+   "id": "LEC",
+   "desc": "주인장이 대학과 기관에서 직접 한 강의를 연구실 해설로 옮겼습니다. 강의 교안과 실습이 이어집니다.",
+   "keywords": [
+    "대학 강의",
+    "교안",
+    "시멘트 공정 AI",
+    "생성형 AI",
+    "데이터시각화"
+   ],
+   "image": "thumbs/cats/LEC.webp"
   }
  ],
  "hero": {
@@ -1869,7 +1883,8 @@
     "uz",
     "ru"
    ],
-   "thumb": "thumbs/repos/Data_visuialization_lecture_01.jpg"
+   "thumb": "thumbs/repos/Data_visuialization_lecture_01.jpg",
+   "lecture": "Y"
   },
   {
    "title": "데이터시각화 2주차 · 그래프 이론과 첫 실습",
@@ -1889,7 +1904,8 @@
     "uz",
     "ru"
    ],
-   "thumb": "thumbs/repos/Data_visuialization_lecture_02.jpg"
+   "thumb": "thumbs/repos/Data_visuialization_lecture_02.jpg",
+   "lecture": "Y"
   },
   {
    "title": "데이터시각화 3주차 · 생성형 AI 데이터 전처리",
@@ -1909,7 +1925,8 @@
     "uz",
     "ru"
    ],
-   "thumb": "thumbs/repos/Data_visuialization_lecture_03.jpg"
+   "thumb": "thumbs/repos/Data_visuialization_lecture_03.jpg",
+   "lecture": "Y"
   },
   {
    "title": "데이터시각화 4주차 · 산업별 데이터 시각화",
@@ -1929,7 +1946,8 @@
     "uz",
     "ru"
    ],
-   "thumb": "thumbs/repos/Data_visuialization_lecture_04.jpg"
+   "thumb": "thumbs/repos/Data_visuialization_lecture_04.jpg",
+   "lecture": "Y"
   },
   {
    "title": "하루의 구글시트 연구실",
@@ -1944,7 +1962,8 @@
    "langs": [
     "ko"
    ],
-   "thumb": "thumbs/repos/google-sheets-lab.jpg"
+   "thumb": "thumbs/repos/google-sheets-lab.jpg",
+   "lecture": "Y"
   },
   {
    "title": "초보자도 쉽게 따라하는 DB 환경 설치",
@@ -1972,7 +1991,8 @@
    "site_url": "https://adminmrobo.github.io/database_01of04/",
    "link": "",
    "langs": [],
-   "thumb": "thumbs/R110.jpg"
+   "thumb": "thumbs/R110.jpg",
+   "lecture": "Y"
   },
   {
    "title": "보면서 배우는 pandas",
@@ -2017,7 +2037,8 @@
    "langs": [
     "ko"
    ],
-   "thumb": "thumbs/repos/bayesian-statistics-for-data-scientists.jpg"
+   "thumb": "thumbs/repos/bayesian-statistics-for-data-scientists.jpg",
+   "lecture": "Y"
   },
   {
    "title": "시계열 3부작 · ARIMA와 LSTM",
@@ -2077,7 +2098,8 @@
    "langs": [
     "ko"
    ],
-   "thumb": "thumbs/repos/data_science_for_business.jpg"
+   "thumb": "thumbs/repos/data_science_for_business.jpg",
+   "lecture": "Y"
   },
   {
    "title": "AI 회계 컨설팅 연구실 · 파이썬과 회계데이터 분석",
@@ -2092,7 +2114,8 @@
    "langs": [
     "ko"
    ],
-   "thumb": "thumbs/repos/python-accounting-analytics.jpg"
+   "thumb": "thumbs/repos/python-accounting-analytics.jpg",
+   "lecture": "Y"
   },
   {
    "title": "생성형 AI 활용 전략 · 목차",
@@ -2107,7 +2130,8 @@
    "langs": [
     "ko"
    ],
-   "thumb": "thumbs/repos/generative-ai-prompt-strategy.jpg"
+   "thumb": "thumbs/repos/generative-ai-prompt-strategy.jpg",
+   "lecture": "Y"
   },
   {
    "title": "생성형 AI 활용전략 · 중간고사 시뮬레이션",
@@ -2122,7 +2146,8 @@
    "langs": [
     "ko"
    ],
-   "thumb": "thumbs/repos/Gen_AI_Hannam_univ.jpg"
+   "thumb": "thumbs/repos/Gen_AI_Hannam_univ.jpg",
+   "lecture": "Y"
   },
   {
    "title": "생성형 AI 활용전략 5장",
@@ -2137,7 +2162,8 @@
    "langs": [
     "ko"
    ],
-   "thumb": "thumbs/repos/Gen_AI_strategy_ch05.jpg"
+   "thumb": "thumbs/repos/Gen_AI_strategy_ch05.jpg",
+   "lecture": "Y"
   },
   {
    "title": "생성형 AI 활용전략 6장",
@@ -2152,7 +2178,8 @@
    "langs": [
     "ko"
    ],
-   "thumb": "thumbs/repos/Gen_AI_strategy_ch06.jpg"
+   "thumb": "thumbs/repos/Gen_AI_strategy_ch06.jpg",
+   "lecture": "Y"
   },
   {
    "title": "SNS 은어와 이상탐지",
@@ -2211,7 +2238,8 @@
    "langs": [
     "ko"
    ],
-   "thumb": "thumbs/repos/smart_product.jpg"
+   "thumb": "thumbs/repos/smart_product.jpg",
+   "lecture": "Y"
   },
   {
    "title": "AI를 활용한 시멘트 공정 최적화 · 강의 목차",
@@ -2226,7 +2254,8 @@
    "langs": [
     "ko"
    ],
-   "thumb": "thumbs/repos/AI_for_cement_produce.jpg"
+   "thumb": "thumbs/repos/AI_for_cement_produce.jpg",
+   "lecture": "Y"
   },
   {
    "title": "시멘트 품질, AI로 미리 본다",
@@ -2239,7 +2268,8 @@
    "site_url": "https://adminmrobo.github.io/ai_for_cement_produce_07/",
    "link": "",
    "langs": [],
-   "thumb": "thumbs/repos/ai_for_cement_produce_07.jpg"
+   "thumb": "thumbs/repos/ai_for_cement_produce_07.jpg",
+   "lecture": "Y"
   },
   {
    "title": "시멘트 공정 AI · 설명가능 AI와 원가 최적화",
@@ -2252,7 +2282,8 @@
    "site_url": "https://adminmrobo.github.io/ai_for_cement_produce_08/",
    "link": "",
    "langs": [],
-   "thumb": "thumbs/repos/ai_for_cement_produce_08.jpg"
+   "thumb": "thumbs/repos/ai_for_cement_produce_08.jpg",
+   "lecture": "Y"
   },
   {
    "title": "스마트 팩토리 World · 시멘트 제조업",
@@ -2267,7 +2298,8 @@
    "langs": [
     "ko"
    ],
-   "thumb": "thumbs/repos/smart_factory_world.jpg"
+   "thumb": "thumbs/repos/smart_factory_world.jpg",
+   "lecture": "Y"
   },
   {
    "title": "그린루트 · 모바일 경로 안내",

@@ -305,7 +305,7 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
     m.appendChild(el('h2','sec',T(c.name)));
     if(c.desc)m.appendChild(el('p','secdesc',T(c.desc)));}
     var g=el('div','grid big');
-    midsOf(c.name).forEach(function(md){g.appendChild(bigTile(c,midInfo(c.name,md),H([c.name,md]),inMid(c.name,md).length,SINGLE?(VC.mid_label||''):(label(c)?label(c)+' · ':'')+T(c.name)));});
+    midsOf(c.name).forEach(function(md){g.appendChild(bigTile(c,midInfo(c.name,md),H([c.name,md]),inMid(c.name,md).length,SINGLE?(((VC.mid_info||{})[md]||{}).label||VC.mid_label||''):(label(c)?label(c)+' · ':'')+T(c.name)));});
     if(SINGLE&&VC.fill_to){for(var q=g.children.length,z=0;q<VC.fill_to;q++,z++)g.appendChild(soonTile(c,z));if(VC.fill_to===6)g.classList.add('six');}
     m.appendChild(g);
   }
@@ -397,7 +397,9 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
     if(VC.article){
       /* Articles: 랙과 상관없이 article 표시(주인장이 직접 쓴 논문·발표)가 있는 항목을 모아, 중분류 = Articles 갈래로 보여 준다 */
       SINGLE=VC.only;CATS=[Object.assign({name:SINGLE},VC.cat||{},{name:SINGLE})];
-      SRC=SRC.filter(function(i){return i.article;}).map(function(i){return Object.assign({},i,{cat:SINGLE,mid:i.article});});
+      var LM=VC.lecture_mid||'',out=[];
+      SRC.forEach(function(i){if(i.article)out.push(Object.assign({},i,{cat:SINGLE,mid:i.article}));if(LM&&i.lecture==='Y')out.push(Object.assign({},i,{cat:SINGLE,mid:LM}));});
+      SRC=out;
     }else if(VC.only){SINGLE=VC.only;CATS=CATS.filter(function(c){return c.name===SINGLE;});}
     if(VC.hero)D.hero=VC.hero;
     if(VC.hero&&VC.hero.style==='light')document.documentElement.classList.add('lightview');
