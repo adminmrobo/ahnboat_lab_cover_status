@@ -1055,12 +1055,12 @@
  },
  {
   "repo": "ai_crime_lab",
-  "series_ko": "AI 범죄 연구실 · 『AI 범죄와 자기 방어』 보충본",
-  "title_ko": "목차 · AI 범죄 연구실",
+  "series_ko": "AI 범죄 연구실 — 『AI 범죄와 자기 방어』 보충본",
+  "title_ko": "AI 범죄 연구실 — 『AI 범죄와 자기 방어』 보충본",
   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
   "pages_url": "https://adminmrobo.github.io/ai_crime_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-21T16:40:27Z",
+  "pushed_at": "2026-11-21T17:20:15Z",
   "has_manifest": true,
   "covers": [
    {
@@ -8119,7 +8119,7 @@
   "repo_url": "https://github.com/adminmrobo/Gen_AI_Hannam_univ",
   "pages_url": "https://adminmrobo.github.io/Gen_AI_Hannam_univ/",
   "default_branch": "main",
-  "pushed_at": "2026-10-09T07:15:52Z",
+  "pushed_at": "2026-11-21T17:25:05Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 1,
@@ -11538,6 +11538,67 @@
   "has_pages": false
  },
  {
+  "repo": "lagrange_multiplier_lab",
+  "series_ko": "좌표로 본 라그랑주 승수 — 울타리 안의 최적점",
+  "title_ko": "좌표로 본 라그랑주 승수 — 울타리 안의 최적점",
+  "repo_url": "https://github.com/adminmrobo/lagrange_multiplier_lab",
+  "pages_url": "https://adminmrobo.github.io/lagrange_multiplier_lab/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-21T23:27:40Z",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-22",
+  "site_title": "좌표로 본 라그랑주 승수 — 울타리 안의 최적점",
+  "ontology": {
+   "status": "full",
+   "pages_with_kg": 1,
+   "pages_total": 1,
+   "pages_checked": 1,
+   "kg_links": [
+    "https://adminmrobo.github.io/lagrange_multiplier_lab/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/lagrange_multiplier_lab/index.html#export"
+   ],
+   "files": [
+    {
+     "path": "build/kg.json",
+     "url": "https://github.com/adminmrobo/lagrange_multiplier_lab/blob/main/build/kg.json"
+    }
+   ]
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 1
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/lagrange_multiplier_lab/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 1
+   }
+  },
+  "has_pages": false
+ },
+ {
   "repo": "lagrangian_hamiltonian_lab",
   "series_ko": "좌표축 위의 그릇 · 특집",
   "title_ko": "두 장의 지도 — 라그랑지안 vs 해밀토니안",
@@ -12409,6 +12470,48 @@
    "pages_by_lang": {
     "ko": 2
    }
+  },
+  "has_pages": false
+ },
+ {
+  "repo": "math_for_ai_lab",
+  "series_ko": "math_for_ai_lab",
+  "title_ko": null,
+  "repo_url": "https://github.com/adminmrobo/math_for_ai_lab",
+  "pages_url": "https://adminmrobo.github.io/math_for_ai_lab/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-21T23:11:35Z",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-22",
+  "site_title": null,
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 0,
+   "pages_checked": 0,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [],
+   "count": 0,
+   "pages": {},
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {}
+  },
+  "languages": {
+   "codes": [],
+   "count": 0,
+   "complete": true,
+   "pages_by_lang": {}
   },
   "has_pages": false
  },
@@ -16385,7 +16488,7 @@
   "repo_url": "https://github.com/adminmrobo/optimization_3d_map",
   "pages_url": "https://adminmrobo.github.io/optimization_3d_map/",
   "default_branch": "main",
-  "pushed_at": "2026-11-21T16:09:52Z",
+  "pushed_at": "2026-11-21T23:27:42Z",
   "has_manifest": true,
   "covers": [
    {
@@ -18070,6 +18173,60 @@
    }
   },
   "has_pages": true
+ },
+ {
+  "repo": "riemann_hypothesis_lab",
+  "series_ko": "하루의 첫 브리핑 — 리만 가설은 &#x27;약속&#x27;이다",
+  "title_ko": "하루의 첫 브리핑 — 리만 가설은 &#x27;약속&#x27;이다",
+  "repo_url": "https://github.com/adminmrobo/riemann_hypothesis_lab",
+  "pages_url": "https://adminmrobo.github.io/riemann_hypothesis_lab/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-21T23:25:46Z",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-22",
+  "site_title": "하루의 첫 브리핑 — 리만 가설은 &#x27;약속&#x27;이다",
+  "ontology": {
+   "status": "partial",
+   "pages_with_kg": 1,
+   "pages_total": 2,
+   "pages_checked": 2,
+   "kg_links": [
+    "https://adminmrobo.github.io/riemann_hypothesis_lab/briefing.html#kg"
+   ],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 2
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/riemann_hypothesis_lab/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 2
+   }
+  },
+  "has_pages": false
  },
  {
   "repo": "rulebase_to_agent",
@@ -20403,6 +20560,83 @@
    }
   },
   "has_pages": true
+ },
+ {
+  "repo": "vector_analysis_lab",
+  "series_ko": "벡터 분석 랩 — 네 개의 자로 읽는 화살표",
+  "title_ko": "벡터 분석 랩 — 네 개의 자로 읽는 화살표",
+  "repo_url": "https://github.com/adminmrobo/vector_analysis_lab",
+  "pages_url": "https://adminmrobo.github.io/vector_analysis_lab/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-21T23:23:30Z",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "assets/cover_00.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/cover_01.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/cover_index.webp",
+    "role": "cover",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": "thumbs/repos/vector_analysis_lab.jpg",
+  "status": "ok",
+  "checked_at": "2026-11-22",
+  "site_title": "벡터 분석 랩 — 네 개의 자로 읽는 화살표",
+  "ontology": {
+   "status": "partial",
+   "pages_with_kg": 2,
+   "pages_total": 5,
+   "pages_checked": 5,
+   "kg_links": [
+    "https://adminmrobo.github.io/vector_analysis_lab/00_orientation.html#kg",
+    "https://adminmrobo.github.io/vector_analysis_lab/01_everyday.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/vector_analysis_lab/00_orientation.html#export",
+    "https://adminmrobo.github.io/vector_analysis_lab/01_everyday.html#export",
+    "https://adminmrobo.github.io/vector_analysis_lab/dash_00.html#export",
+    "https://adminmrobo.github.io/vector_analysis_lab/dash_01.html#export",
+    "https://adminmrobo.github.io/vector_analysis_lab/index.html#export"
+   ],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 5
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/vector_analysis_lab/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 5
+   }
+  },
+  "has_pages": false
  },
  {
   "repo": "vector_calculus_lab",

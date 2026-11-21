@@ -44,7 +44,7 @@
  },
  "ai_crime_lab": {
   "src": "manifest:assets/covers/index.webp",
-  "pushed_at": "2026-11-21T16:40:27Z",
+  "pushed_at": "2026-11-21T17:20:15Z",
   "made": "2026-11-22"
  },
  "AI_for_cement_produce": {
@@ -236,9 +236,9 @@
   "pushed_at": "2026-11-21T01:51:58Z"
  },
  "Gen_AI_Hannam_univ": {
-  "src": "embedded:index.html#hero",
-  "pushed_at": "2026-10-09T07:15:52Z",
-  "made": "2026-11-07"
+  "src": "redraw:R109:index.html#px",
+  "pushed_at": "2026-11-21T17:25:05Z",
+  "made": "2026-11-22"
  },
  "Gen_AI_strategy_ch05": {
   "src": "redraw:R004:05_startup_prompt.html#cover_05",
@@ -372,6 +372,10 @@
   "src": null,
   "pushed_at": "2023-08-27T09:24:23Z"
  },
+ "lagrange_multiplier_lab": {
+  "src": null,
+  "pushed_at": "2026-11-21T23:27:40Z"
+ },
  "lagrangian_hamiltonian_lab": {
   "src": "name:assets/img/cover_00.webp",
   "pushed_at": "2026-11-21T15:45:41Z",
@@ -418,6 +422,10 @@
   "src": "name:assets/og_mk.jpg",
   "pushed_at": "2026-11-07T05:41:16Z",
   "made": "2026-11-08"
+ },
+ "math_for_ai_lab": {
+  "src": null,
+  "pushed_at": "2026-11-21T23:11:35Z"
  },
  "micro_economics": {
   "src": "name:assets/og/cover_00.jpg",
@@ -559,7 +567,7 @@
  },
  "optimization_3d_map": {
   "src": "manifest:img/cover_index.webp",
-  "pushed_at": "2026-11-21T16:09:52Z",
+  "pushed_at": "2026-11-21T23:27:42Z",
   "made": "2026-11-22"
  },
  "probability_distribution_dictionary": {
@@ -586,6 +594,10 @@
   "src": "manifest:img/cover_00.webp",
   "pushed_at": "2026-11-19T01:31:57Z",
   "made": "2026-11-19"
+ },
+ "riemann_hypothesis_lab": {
+  "src": null,
+  "pushed_at": "2026-11-21T23:25:46Z"
  },
  "rulebase_to_agent": {
   "src": "embedded:1-1_rulebase.en.html#hero",
@@ -644,6 +656,11 @@
  "valuation_without_revenue": {
   "src": null,
   "pushed_at": "2026-11-06T04:27:09Z"
+ },
+ "vector_analysis_lab": {
+  "src": "og:assets/og/index.webp",
+  "pushed_at": "2026-11-21T23:23:30Z",
+  "made": "2026-11-22"
  },
  "vector_calculus_lab": {
   "src": "manifest:assets/og/index.jpg",
