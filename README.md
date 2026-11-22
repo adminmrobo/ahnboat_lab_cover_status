@@ -58,6 +58,7 @@ python3 scripts/make_thumbs.py --fetch                     # 바뀐 저장소만
 
 ## 콘텐츠 현황판 · 공개 카탈로그
 
+- `growth_crime.html` — **AI 범죄학 지식 노드 현황**. growth.html의 AI 범죄 전용판. 데이터는 ai_crime_lab의 `data/crime_kg.json`(AI 범죄학 뼈대 13개 영역)을 `scripts/build_growth_crime.py`가 받아 `data/growth_crime.json`으로 만든다(하루 두 번, scan.yml).
 - `admin.html` — **콘텐츠 관리실**. 비밀번호로 들어가 표를 바로 고치고 저장한다(아래 설명).
 - `hub.html` — 콘텐츠 현황판(관리용). **관리자 키**를 넣어야 열린다. 키는 브라우저 안에서만 쓰인다.
 - `catalog.html` — 공개 카탈로그. 분야(대분류) → 중분류 → 소분류별 콘텐츠. `?embed=1`을 붙이면 머리글 없이 보여 주어 ahnboat.xyz에 끼워 넣기 좋다.

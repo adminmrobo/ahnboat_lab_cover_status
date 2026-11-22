@@ -51,6 +51,7 @@ jobs:
           python scripts/build_portfolio.py
           python scripts/build_ontology.py   # 공개 콘텐츠 지식 색인 → 분야별 온톨로지 지도 데이터
           python scripts/build_growth.py     # 온톨로지 → 'Reon Ahn Page 지식 노드 현황'(growth.html) 데이터 · 하루의 이번 주 읽기
+          python scripts/build_growth_crime.py   # ai_crime_lab data/crime_kg.json → 'AI 범죄학 지식 노드 현황'(growth_crime.html) 데이터
           # 평문 관리 데이터가 남아 있으면 멈춘다
           if [ -e data/hub.csv ] || [ -e data/hub.json ]; then
             if [ -n "$HUB_KEY" ]; then echo "평문 관리 데이터가 남아 있습니다"; exit 1; fi
@@ -88,6 +89,7 @@ jobs:
             python scripts/build_portfolio.py
             python scripts/build_ontology.py
             python scripts/build_growth.py
+            python scripts/build_growth_crime.py
             if [ -e data/hub.csv ] || [ -e data/hub.json ]; then
               if [ -n "$HUB_KEY" ]; then echo "평문 관리 데이터가 남아 있습니다"; exit 1; fi
             fi
