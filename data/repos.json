@@ -1813,7 +1813,7 @@
   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
   "pages_url": "https://adminmrobo.github.io/ai_crime_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-22T16:41:45Z",
+  "pushed_at": "2026-11-22T17:02:09Z",
   "has_manifest": true,
   "covers": [
    {
@@ -5015,7 +5015,7 @@
   "repo_url": "https://github.com/adminmrobo/covariant_chase_lab",
   "pages_url": "https://adminmrobo.github.io/covariant_chase_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-22T16:43:22Z",
+  "pushed_at": "2026-11-22T16:58:52Z",
   "has_manifest": true,
   "covers": [
    {
@@ -5320,7 +5320,7 @@
     "ko": 3
    }
   },
-  "has_pages": false
+  "has_pages": true
  },
  {
   "repo": "data_base_design",
@@ -10702,6 +10702,48 @@
    }
   },
   "has_pages": true
+ },
+ {
+  "repo": "hello_space_lab",
+  "series_ko": "hello_space_lab",
+  "title_ko": null,
+  "repo_url": "https://github.com/adminmrobo/hello_space_lab",
+  "pages_url": "https://adminmrobo.github.io/hello_space_lab/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-22T17:07:16Z",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-23",
+  "site_title": null,
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 0,
+   "pages_checked": 0,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [],
+   "count": 0,
+   "pages": {},
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {}
+  },
+  "languages": {
+   "codes": [],
+   "count": 0,
+   "complete": true,
+   "pages_by_lang": {}
+  },
+  "has_pages": false
  },
  {
   "repo": "hilbert_space_lab",

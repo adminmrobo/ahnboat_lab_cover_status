@@ -49,7 +49,7 @@
  },
  "ai_crime_lab": {
   "src": "manifest:assets/covers/index.webp",
-  "pushed_at": "2026-11-22T16:41:45Z",
+  "pushed_at": "2026-11-22T17:02:09Z",
   "made": "2026-11-23"
  },
  "AI_for_cement_produce": {
@@ -151,7 +151,7 @@
  },
  "covariant_chase_lab": {
   "src": "manifest:assets/img/cover_01.webp",
-  "pushed_at": "2026-11-22T16:43:22Z",
+  "pushed_at": "2026-11-22T16:58:52Z",
   "made": "2026-11-23"
  },
  "data_base_design": {
@@ -287,6 +287,10 @@
   "src": "manifest:assets/img/cover_01.webp",
   "pushed_at": "2026-11-21T04:55:12Z",
   "made": "2026-11-21"
+ },
+ "hello_space_lab": {
+  "src": null,
+  "pushed_at": "2026-11-22T17:07:16Z"
  },
  "hilbert_space_lab": {
   "src": null,
