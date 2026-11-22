@@ -49,19 +49,32 @@ LANG_KO = {"en": "영어", "zh": "중국어", "ja": "일본어", "uz": "우즈�
 
 
 # ---------------------------------------------------------------- GoatCounter
-def api(path, **q):
+def api(path, retries=4, **q):
+    """GoatCounter API 호출. 404·429·5xx·연결 오류는 잠깐 쉬었다가 다시 묻는다
+    (GoatCounter가 가끔 멀쩡한 요청에도 404를 돌려주고, 같은 요청이 나중엔 통과한다)."""
     tok = os.environ.get("GOATCOUNTER_TOKEN", "")
     url = SITE + "/api/v0" + path + ("?" + urllib.parse.urlencode(q) if q else "")
     req = urllib.request.Request(url, headers={"Authorization": "Bearer " + tok,
                                                "Content-Type": "application/json",
                                                "User-Agent": "ahnboat-daily-report"})
-    try:
-        with urllib.request.urlopen(req, timeout=60) as r:
-            return json.loads(r.read().decode("utf-8"))
-    except urllib.error.HTTPError as e:
-        body = e.read().decode("utf-8", "replace")[:400]
-        print(f"GoatCounter {path} → {e.code}: {body}")
-        raise
+    waits = [15, 45, 90, 180]
+    for i in range(retries + 1):
+        try:
+            with urllib.request.urlopen(req, timeout=60) as r:
+                return json.loads(r.read().decode("utf-8"))
+        except urllib.error.HTTPError as e:
+            body = e.read().decode("utf-8", "replace")[:400]
+            print(f"GoatCounter {path} → {e.code}: {body}")
+            if e.code not in (404, 429) and e.code < 500 or i == retries:
+                raise
+            wait = int(e.headers.get("Retry-After") or 0) or waits[min(i, len(waits) - 1)]
+        except urllib.error.URLError as e:
+            print(f"GoatCounter {path} 연결 오류: {e}")
+            if i == retries:
+                raise
+            wait = waits[min(i, len(waits) - 1)]
+        print(f"  {wait}초 뒤 다시 시도 ({i + 1}/{retries})")
+        time.sleep(wait)
 
 
 def daily_map(stats):
@@ -74,13 +87,33 @@ def daily_map(stats):
     return out
 
 
+def series_from_hits(start, end):
+    """/stats/total이 안 될 때: 경로별 일자 숫자를 모두 더해 같은 30일 흐름을 만든다."""
+    out, seen = {}, []
+    for _ in range(10):  # 최대 1000개 경로
+        q = dict(start=start, end=end, limit=100)
+        if seen:
+            q["exclude_paths"] = ",".join(seen)
+        r = api("/stats/hits", **q)
+        for h in r.get("hits") or []:
+            seen.append(str(h["path_id"]))
+            for d, c in daily_map(h.get("stats")).items():
+                out[d] = out.get(d, 0) + c
+        if not r.get("more"):
+            break
+    return out
+
+
 def collect(day):
     d0 = day - dt.timedelta(days=29)
     w0 = day - dt.timedelta(days=6)
     iso = lambda x: x.isoformat() + "T00:00:00Z"
     end = (day + dt.timedelta(days=1)).isoformat() + "T00:00:00Z"
-    tot = api("/stats/total", start=iso(d0), end=end)
-    series = daily_map(tot.get("stats"))
+    try:
+        series = daily_map(api("/stats/total", start=iso(d0), end=end).get("stats"))
+    except urllib.error.HTTPError:
+        print("/stats/total 대신 경로별 숫자(/stats/hits)를 더해 30일 흐름을 만듭니다.")
+        series = series_from_hits(iso(d0), end)
     hits, after = [], None
     for _ in range(5):  # 최대 500개 경로
         q = dict(start=iso(w0), end=end, limit=100)
