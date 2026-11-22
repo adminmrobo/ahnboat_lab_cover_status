@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22",
+ "updated": "2026-11-23",
  "categories": [
   {
    "name": "머신러닝",
@@ -1672,6 +1672,36 @@
    "thumb": "thumbs/repos/nabla_field_lab.jpg"
   },
   {
+   "title": "벡터 분석 랩 — 네 개의 자로 읽는 화살표",
+   "summary": "",
+   "cat": "경제·수학·최적화",
+   "mid": "선형대수",
+   "sub": "벡터 미적분",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/vector_analysis_lab",
+   "site_url": "https://adminmrobo.github.io/vector_analysis_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/vector_analysis_lab.jpg"
+  },
+  {
+   "title": "벡터 DB 연구실 — 표에 담기지 않는 말을 저장하는 법 | 목차",
+   "summary": "",
+   "cat": "경제·수학·최적화",
+   "mid": "선형대수",
+   "sub": "벡터 미적분",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/vector_db_lab",
+   "site_url": "https://adminmrobo.github.io/vector_db_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/vector_db_lab.jpg"
+  },
+  {
    "title": "자와 각도기의 방 — 시아·모아의 유클리드 공간",
    "summary": "",
    "cat": "경제·수학·최적화",
@@ -1736,6 +1766,21 @@
     "ko"
    ],
    "thumb": "thumbs/repos/lagrangian_hamiltonian_lab.jpg"
+  },
+  {
+   "title": "좌표로 본 라그랑주 승수 — 울타리 안의 최적점",
+   "summary": "",
+   "cat": "경제·수학·최적화",
+   "mid": "최적화 모델",
+   "sub": "라그랑지안·해밀토니안",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/lagrange_multiplier_lab",
+   "site_url": "https://adminmrobo.github.io/lagrange_multiplier_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/lagrange_multiplier_lab.jpg"
   },
   {
    "title": "좌표축 위의 그릇 · 3D 지도로 본 모델 최적화",
