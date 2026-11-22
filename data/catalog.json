@@ -1765,6 +1765,21 @@
    "thumb": "thumbs/repos/minkowski_space_lab.jpg"
   },
   {
+   "title": "hello_space_lab",
+   "summary": "",
+   "cat": "경제·수학·최적화",
+   "mid": "좌표 공간(space)",
+   "sub": "공간",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/hello_space_lab",
+   "site_url": "https://adminmrobo.github.io/hello_space_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/hello_space_lab.jpg"
+  },
+  {
    "title": "두 장의 지도 — 라그랑지안 vs 해밀토니안",
    "summary": "",
    "cat": "경제·수학·최적화",

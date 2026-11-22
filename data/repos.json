@@ -3550,43 +3550,237 @@
  },
  {
   "repo": "basic_economic_lab",
-  "series_ko": "basic_economic_lab",
-  "title_ko": null,
+  "series_ko": "경제학 원론 연구실",
+  "title_ko": "경제학 원론 연구실",
   "repo_url": "https://github.com/adminmrobo/basic_economic_lab",
   "pages_url": "https://adminmrobo.github.io/basic_economic_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-22T16:45:16Z",
+  "pushed_at": "2026-11-22T17:36:04Z",
   "has_manifest": false,
-  "covers": [],
+  "covers": [
+   {
+    "path": "assets/og/cover_01.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_02.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_03.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_04.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_05.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_05m.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_06.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_07.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_08.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_09.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_10.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_11.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_11f.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_idx.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_prac.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_01.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_02.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_03.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_04.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_05.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_05m.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_06.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_07.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_08.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_09.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_10.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_11.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_11f.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_idx.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_prac.webp",
+    "role": "thumb",
+    "estimated": true
+   }
+  ],
   "redraw_count": 0,
   "redraw_ids": [],
-  "thumb": null,
-  "status": "unknown",
+  "thumb": "thumbs/repos/basic_economic_lab.jpg",
+  "status": "ok",
   "checked_at": "2026-11-23",
-  "site_title": null,
+  "site_title": "경제학 원론 연구실",
   "ontology": {
-   "status": "none",
-   "pages_with_kg": 0,
-   "pages_total": 0,
-   "pages_checked": 0,
-   "kg_links": [],
-   "export_links": [],
-   "files": []
+   "status": "partial",
+   "pages_with_kg": 13,
+   "pages_total": 16,
+   "pages_checked": 16,
+   "kg_links": [
+    "https://adminmrobo.github.io/basic_economic_lab/01_ten_principles.html#kg",
+    "https://adminmrobo.github.io/basic_economic_lab/02_think_like_economist.html#kg",
+    "https://adminmrobo.github.io/basic_economic_lab/03_supply_demand.html#kg",
+    "https://adminmrobo.github.io/basic_economic_lab/04_elasticity.html#kg",
+    "https://adminmrobo.github.io/basic_economic_lab/05_government_policy.html#kg",
+    "https://adminmrobo.github.io/basic_economic_lab/05m_midterm_review.html#kg",
+    "https://adminmrobo.github.io/basic_economic_lab/06_market_efficiency.html#kg",
+    "https://adminmrobo.github.io/basic_economic_lab/07_cost_of_taxation.html#kg",
+    "https://adminmrobo.github.io/basic_economic_lab/08_market_structure.html#kg",
+    "https://adminmrobo.github.io/basic_economic_lab/09_market_failure.html#kg",
+    "https://adminmrobo.github.io/basic_economic_lab/10_macro_economy.html#kg",
+    "https://adminmrobo.github.io/basic_economic_lab/11_economic_policy.html#kg",
+    "https://adminmrobo.github.io/basic_economic_lab/11f_final_review.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/basic_economic_lab/01_ten_principles.html#export",
+    "https://adminmrobo.github.io/basic_economic_lab/02_think_like_economist.html#export",
+    "https://adminmrobo.github.io/basic_economic_lab/03_supply_demand.html#export",
+    "https://adminmrobo.github.io/basic_economic_lab/04_elasticity.html#export",
+    "https://adminmrobo.github.io/basic_economic_lab/05_government_policy.html#export",
+    "https://adminmrobo.github.io/basic_economic_lab/05m_midterm_review.html#export",
+    "https://adminmrobo.github.io/basic_economic_lab/06_market_efficiency.html#export",
+    "https://adminmrobo.github.io/basic_economic_lab/07_cost_of_taxation.html#export",
+    "https://adminmrobo.github.io/basic_economic_lab/08_market_structure.html#export",
+    "https://adminmrobo.github.io/basic_economic_lab/09_market_failure.html#export",
+    "https://adminmrobo.github.io/basic_economic_lab/10_macro_economy.html#export",
+    "https://adminmrobo.github.io/basic_economic_lab/11_economic_policy.html#export",
+    "https://adminmrobo.github.io/basic_economic_lab/11f_final_review.html#export"
+   ],
+   "files": [
+    {
+     "path": "KG_00_registry.json",
+     "url": "https://github.com/adminmrobo/basic_economic_lab/blob/main/KG_00_registry.json"
+    }
+   ]
   },
   "i18n": {
-   "langs": [],
-   "count": 0,
-   "pages": {},
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 16
+   },
    "partial": [],
    "complete": true,
    "readme_langs": [],
-   "links": {}
+   "links": {
+    "ko": "https://adminmrobo.github.io/basic_economic_lab/index.html"
+   }
   },
   "languages": {
-   "codes": [],
-   "count": 0,
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
    "complete": true,
-   "pages_by_lang": {}
+   "pages_by_lang": {
+    "ko": 16
+   }
   },
   "has_pages": false
  },
@@ -5015,7 +5209,7 @@
   "repo_url": "https://github.com/adminmrobo/covariant_chase_lab",
   "pages_url": "https://adminmrobo.github.io/covariant_chase_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-22T16:58:52Z",
+  "pushed_at": "2026-11-22T17:40:22Z",
   "has_manifest": true,
   "covers": [
    {
@@ -5161,7 +5355,7 @@
      "moa"
     ],
     "robot": "jupanbot-v2",
-    "status": "redraw"
+    "status": "ok"
    },
    {
     "path": "assets/img/sc_07.webp",
@@ -5198,7 +5392,7 @@
     "status": "ok"
    },
    {
-    "path": "practice/typhoon.html#figure[data-img=ty_01]",
+    "path": "assets/img/ty_01.webp",
     "role": "scene",
     "id": "ty_01",
     "size": [
@@ -5211,10 +5405,10 @@
      "asst"
     ],
     "robot": "jupanbot-v2",
-    "status": "todo"
+    "status": "ok"
    },
    {
-    "path": "practice/typhoon.html#figure[data-img=ty_02]",
+    "path": "assets/img/ty_02.webp",
     "role": "scene",
     "id": "ty_02",
     "size": [
@@ -5227,10 +5421,10 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "todo"
+    "status": "ok"
    },
    {
-    "path": "practice/typhoon.html#figure[data-img=ty_03]",
+    "path": "assets/img/ty_03.webp",
     "role": "scene",
     "id": "ty_03",
     "size": [
@@ -5245,10 +5439,10 @@
      "moa"
     ],
     "robot": "jupanbot-v2",
-    "status": "todo"
+    "status": "ok"
    },
    {
-    "path": "practice/index.html#figure[data-img=pr_01]",
+    "path": "assets/img/pr_01.webp",
     "role": "scene",
     "id": "pr_01",
     "size": [
@@ -5262,7 +5456,143 @@
      "fly"
     ],
     "robot": "jupanbot-v2",
-    "status": "todo"
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/cover_02.webp",
+    "role": "cover",
+    "id": "cover_02",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "jupanbot",
+     "fly",
+     "doc",
+     "asst",
+     "sia",
+     "moa",
+     "x1",
+     "x2",
+     "x3"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "pending"
+   },
+   {
+    "path": "assets/img/og_02.webp",
+    "role": "og",
+    "id": "og_02",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [],
+    "robot": "jupanbot-v2",
+    "status": "pending"
+   },
+   {
+    "path": "part2/index.html#figure[data-img=s2_01]",
+    "role": "scene",
+    "id": "s2_01",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "jupanbot",
+     "sia",
+     "fly"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "pending"
+   },
+   {
+    "path": "part2/index.html#figure[data-img=s2_02]",
+    "role": "scene",
+    "id": "s2_02",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "jupanbot",
+     "asst",
+     "doc"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "pending"
+   },
+   {
+    "path": "part2/index.html#figure[data-img=s2_03]",
+    "role": "scene",
+    "id": "s2_03",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "jupanbot",
+     "moa",
+     "fly"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "pending"
+   },
+   {
+    "path": "part2/index.html#figure[data-img=s2_04]",
+    "role": "scene",
+    "id": "s2_04",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "sia",
+     "asst",
+     "doc"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "pending"
+   },
+   {
+    "path": "part2/index.html#figure[data-img=s2_05]",
+    "role": "scene",
+    "id": "s2_05",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "jupanbot",
+     "fly",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "pending"
+   },
+   {
+    "path": "part2/index.html#figure[data-img=s2_06]",
+    "role": "scene",
+    "id": "s2_06",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "jupanbot",
+     "asst",
+     "sia",
+     "moa",
+     "fly",
+     "doc",
+     "x1",
+     "x2",
+     "x3"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "pending"
    }
   ],
   "redraw_count": 0,
@@ -5273,21 +5603,27 @@
   "site_title": "주판봇의 초파리 추적 대작전",
   "ontology": {
    "status": "partial",
-   "pages_with_kg": 2,
-   "pages_total": 3,
-   "pages_checked": 3,
+   "pages_with_kg": 3,
+   "pages_total": 4,
+   "pages_checked": 4,
    "kg_links": [
     "https://adminmrobo.github.io/covariant_chase_lab/index.html#kg",
+    "https://adminmrobo.github.io/covariant_chase_lab/part2/index.html#kg",
     "https://adminmrobo.github.io/covariant_chase_lab/practice/typhoon.html#kg"
    ],
    "export_links": [
     "https://adminmrobo.github.io/covariant_chase_lab/index.html#export",
+    "https://adminmrobo.github.io/covariant_chase_lab/part2/index.html#export",
     "https://adminmrobo.github.io/covariant_chase_lab/practice/typhoon.html#export"
    ],
    "files": [
     {
      "path": "data/kg.json",
      "url": "https://github.com/adminmrobo/covariant_chase_lab/blob/main/data/kg.json"
+    },
+    {
+     "path": "data/part2/kg.json",
+     "url": "https://github.com/adminmrobo/covariant_chase_lab/blob/main/data/part2/kg.json"
     },
     {
      "path": "data/typhoon/kg.json",
@@ -5301,7 +5637,7 @@
    ],
    "count": 1,
    "pages": {
-    "ko": 3
+    "ko": 4
    },
    "partial": [],
    "complete": true,
@@ -5317,7 +5653,7 @@
    "count": 1,
    "complete": true,
    "pages_by_lang": {
-    "ko": 3
+    "ko": 4
    }
   },
   "has_pages": true
@@ -10705,45 +11041,106 @@
  },
  {
   "repo": "hello_space_lab",
-  "series_ko": "hello_space_lab",
-  "title_ko": null,
+  "series_ko": "나는 어디에 있는가? — 좌표계로 본 매핑 | 좌표 첫걸음 (최적화 첫걸음의 자매편)",
+  "title_ko": "나는 어디에 있는가? — 좌표계로 본 매핑 | 좌표 첫걸음 (최적화 첫걸음의 자매편)",
   "repo_url": "https://github.com/adminmrobo/hello_space_lab",
   "pages_url": "https://adminmrobo.github.io/hello_space_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-22T17:07:16Z",
-  "has_manifest": false,
+  "pushed_at": "2026-11-22T17:42:47Z",
+  "has_manifest": true,
   "covers": [],
   "redraw_count": 0,
   "redraw_ids": [],
-  "thumb": null,
-  "status": "unknown",
+  "thumb": "thumbs/repos/hello_space_lab.jpg",
+  "status": "ok",
   "checked_at": "2026-11-23",
-  "site_title": null,
+  "site_title": "나는 어디에 있는가? — 좌표계로 본 매핑 | 좌표 첫걸음 (최적화 첫걸음의 자매편)",
   "ontology": {
-   "status": "none",
-   "pages_with_kg": 0,
-   "pages_total": 0,
-   "pages_checked": 0,
-   "kg_links": [],
-   "export_links": [],
-   "files": []
+   "status": "full",
+   "pages_with_kg": 8,
+   "pages_total": 8,
+   "pages_checked": 8,
+   "kg_links": [
+    "https://adminmrobo.github.io/hello_space_lab/01_number_line.html#kg",
+    "https://adminmrobo.github.io/hello_space_lab/02_plane.html#kg",
+    "https://adminmrobo.github.io/hello_space_lab/03_polar.html#kg",
+    "https://adminmrobo.github.io/hello_space_lab/04_space.html#kg",
+    "https://adminmrobo.github.io/hello_space_lab/05_earth_map.html#kg",
+    "https://adminmrobo.github.io/hello_space_lab/06_data_space.html#kg",
+    "https://adminmrobo.github.io/hello_space_lab/index.html#kg",
+    "https://adminmrobo.github.io/hello_space_lab/practice/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/hello_space_lab/01_number_line.html#export",
+    "https://adminmrobo.github.io/hello_space_lab/02_plane.html#export",
+    "https://adminmrobo.github.io/hello_space_lab/03_polar.html#export",
+    "https://adminmrobo.github.io/hello_space_lab/04_space.html#export",
+    "https://adminmrobo.github.io/hello_space_lab/05_earth_map.html#export",
+    "https://adminmrobo.github.io/hello_space_lab/06_data_space.html#export",
+    "https://adminmrobo.github.io/hello_space_lab/index.html#export",
+    "https://adminmrobo.github.io/hello_space_lab/practice/index.html#export"
+   ],
+   "files": [
+    {
+     "path": "build/kg/kg_ch1.json",
+     "url": "https://github.com/adminmrobo/hello_space_lab/blob/main/build/kg/kg_ch1.json"
+    },
+    {
+     "path": "build/kg/kg_ch2.json",
+     "url": "https://github.com/adminmrobo/hello_space_lab/blob/main/build/kg/kg_ch2.json"
+    },
+    {
+     "path": "build/kg/kg_ch3.json",
+     "url": "https://github.com/adminmrobo/hello_space_lab/blob/main/build/kg/kg_ch3.json"
+    },
+    {
+     "path": "build/kg/kg_ch4.json",
+     "url": "https://github.com/adminmrobo/hello_space_lab/blob/main/build/kg/kg_ch4.json"
+    },
+    {
+     "path": "build/kg/kg_ch5.json",
+     "url": "https://github.com/adminmrobo/hello_space_lab/blob/main/build/kg/kg_ch5.json"
+    },
+    {
+     "path": "build/kg/kg_ch6.json",
+     "url": "https://github.com/adminmrobo/hello_space_lab/blob/main/build/kg/kg_ch6.json"
+    },
+    {
+     "path": "build/kg/kg_index.json",
+     "url": "https://github.com/adminmrobo/hello_space_lab/blob/main/build/kg/kg_index.json"
+    },
+    {
+     "path": "build/kg/kg_practice.json",
+     "url": "https://github.com/adminmrobo/hello_space_lab/blob/main/build/kg/kg_practice.json"
+    }
+   ]
   },
   "i18n": {
-   "langs": [],
-   "count": 0,
-   "pages": {},
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 8
+   },
    "partial": [],
    "complete": true,
    "readme_langs": [],
-   "links": {}
+   "links": {
+    "ko": "https://adminmrobo.github.io/hello_space_lab/index.html"
+   }
   },
   "languages": {
-   "codes": [],
-   "count": 0,
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
    "complete": true,
-   "pages_by_lang": {}
+   "pages_by_lang": {
+    "ko": 8
+   }
   },
-  "has_pages": false
+  "has_pages": true
  },
  {
   "repo": "hilbert_space_lab",
@@ -21394,6 +21791,604 @@
    }
   },
   "has_pages": true
+ },
+ {
+  "repo": "structure_first_drawing_lab_01",
+  "series_ko": "연구실 특별편 · 그리기와 렌더링",
+  "title_ko": "구조 먼저 그리기 연구실 01 · 옷장 편 — 같은 원리, 다른 옷",
+  "repo_url": "https://github.com/adminmrobo/structure_first_drawing_lab_01",
+  "pages_url": "https://adminmrobo.github.io/structure_first_drawing_lab_01/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-22T19:19:22Z",
+  "has_manifest": true,
+  "covers": [
+   {
+    "path": "assets/img/cover_index.webp",
+    "role": "cover",
+    "id": "cover_index",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [],
+    "status": "requested"
+   },
+   {
+    "path": "assets/img/cover_01.webp",
+    "role": "cover",
+    "id": "cover_01",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [],
+    "status": "requested"
+   },
+   {
+    "path": "assets/img/cover_02.webp",
+    "role": "cover",
+    "id": "cover_02",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [],
+    "status": "requested"
+   },
+   {
+    "path": "assets/img/cover_03.webp",
+    "role": "cover",
+    "id": "cover_03",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [],
+    "status": "requested"
+   },
+   {
+    "path": "assets/img/cover_04.webp",
+    "role": "cover",
+    "id": "cover_04",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [],
+    "status": "requested"
+   },
+   {
+    "path": "assets/img/cover_05.webp",
+    "role": "cover",
+    "id": "cover_05",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [],
+    "status": "requested"
+   },
+   {
+    "path": "assets/img/cover_06.webp",
+    "role": "cover",
+    "id": "cover_06",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [],
+    "status": "requested"
+   },
+   {
+    "path": "assets/img/cover_07.webp",
+    "role": "cover",
+    "id": "cover_07",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [],
+    "status": "requested"
+   },
+   {
+    "path": "assets/img/p1_moa_photo_vs_drawing.webp",
+    "role": "body",
+    "id": "p1_moa_photo_vs_drawing",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "moa"
+    ],
+    "status": "requested"
+   },
+   {
+    "path": "assets/img/p1_moa_shadow_steps.webp",
+    "role": "body",
+    "id": "p1_moa_shadow_steps",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "moa"
+    ],
+    "status": "requested"
+   },
+   {
+    "path": "assets/img/p2_haru_tee_fit_compare.webp",
+    "role": "body",
+    "id": "p2_haru_tee_fit_compare",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "haru"
+    ],
+    "status": "requested"
+   },
+   {
+    "path": "assets/img/p2_haru_tee_poses.webp",
+    "role": "body",
+    "id": "p2_haru_tee_poses",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "haru"
+    ],
+    "status": "requested"
+   },
+   {
+    "path": "assets/img/p2_haru_loose_tee_shading.webp",
+    "role": "body",
+    "id": "p2_haru_loose_tee_shading",
+    "size": [
+     600,
+     900
+    ],
+    "characters": [
+     "haru"
+    ],
+    "status": "requested"
+   },
+   {
+    "path": "assets/img/p3_moa_knit_vs_coat.webp",
+    "role": "body",
+    "id": "p3_moa_knit_vs_coat",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "moa",
+     "doctor"
+    ],
+    "status": "requested"
+   },
+   {
+    "path": "assets/img/p3_doctor_shirt_diamond.webp",
+    "role": "body",
+    "id": "p3_doctor_shirt_diamond",
+    "size": [
+     600,
+     900
+    ],
+    "characters": [
+     "moa",
+     "doctor"
+    ],
+    "status": "requested"
+   },
+   {
+    "path": "assets/img/p3_moa_coat_memory.webp",
+    "role": "body",
+    "id": "p3_moa_coat_memory",
+    "size": [
+     600,
+     900
+    ],
+    "characters": [
+     "moa",
+     "doctor"
+    ],
+    "status": "requested"
+   },
+   {
+    "path": "assets/img/p4_sia_walk_skirt.webp",
+    "role": "body",
+    "id": "p4_sia_walk_skirt",
+    "size": [
+     600,
+     900
+    ],
+    "characters": [
+     "sia",
+     "doctor"
+    ],
+    "status": "requested"
+   },
+   {
+    "path": "assets/img/p4_sia_sit_bend.webp",
+    "role": "body",
+    "id": "p4_sia_sit_bend",
+    "size": [
+     600,
+     900
+    ],
+    "characters": [
+     "sia",
+     "doctor"
+    ],
+    "status": "requested"
+   },
+   {
+    "path": "assets/img/p4_sia_bag_props.webp",
+    "role": "body",
+    "id": "p4_sia_bag_props",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "sia",
+     "doctor"
+    ],
+    "status": "requested"
+   },
+   {
+    "path": "assets/img/p5_outfit_swap_lineup.webp",
+    "role": "body",
+    "id": "p5_outfit_swap_lineup",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "haru",
+     "sia",
+     "moa"
+    ],
+    "status": "requested"
+   },
+   {
+    "path": "assets/img/p5_haru_inpaint_steps.webp",
+    "role": "body",
+    "id": "p5_haru_inpaint_steps",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "haru",
+     "sia",
+     "moa"
+    ],
+    "status": "requested"
+   },
+   {
+    "path": "assets/img/p5_vfx_fabric_presets.webp",
+    "role": "body",
+    "id": "p5_vfx_fabric_presets",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "haru",
+     "sia",
+     "moa"
+    ],
+    "status": "requested"
+   },
+   {
+    "path": "assets/img/p5_sia_style_pixel.webp",
+    "role": "body",
+    "id": "p5_sia_style_pixel",
+    "size": [
+     600,
+     900
+    ],
+    "characters": [
+     "haru",
+     "sia",
+     "moa"
+    ],
+    "status": "requested"
+   },
+   {
+    "path": "assets/img/p5_sia_style_anime.webp",
+    "role": "body",
+    "id": "p5_sia_style_anime",
+    "size": [
+     600,
+     900
+    ],
+    "characters": [
+     "haru",
+     "sia",
+     "moa"
+    ],
+    "status": "requested"
+   },
+   {
+    "path": "assets/img/p5_sia_style_semireal.webp",
+    "role": "body",
+    "id": "p5_sia_style_semireal",
+    "size": [
+     600,
+     900
+    ],
+    "characters": [
+     "haru",
+     "sia",
+     "moa"
+    ],
+    "status": "requested"
+   },
+   {
+    "path": "assets/img/p5_sia_style_photo.webp",
+    "role": "body",
+    "id": "p5_sia_style_photo",
+    "size": [
+     600,
+     900
+    ],
+    "characters": [
+     "haru",
+     "sia",
+     "moa"
+    ],
+    "status": "requested"
+   },
+   {
+    "path": "assets/img/f1_traced_too_many.webp",
+    "role": "fail",
+    "id": "f1_traced_too_many",
+    "size": [
+     600,
+     900
+    ],
+    "characters": [],
+    "status": "requested"
+   },
+   {
+    "path": "assets/img/f2_coat_like_silk.webp",
+    "role": "fail",
+    "id": "f2_coat_like_silk",
+    "size": [
+     600,
+     900
+    ],
+    "characters": [],
+    "status": "requested"
+   },
+   {
+    "path": "assets/img/f3_loose_tee_clinging.webp",
+    "role": "fail",
+    "id": "f3_loose_tee_clinging",
+    "size": [
+     600,
+     900
+    ],
+    "characters": [],
+    "status": "requested"
+   },
+   {
+    "path": "assets/img/f4_floating_strap.webp",
+    "role": "fail",
+    "id": "f4_floating_strap",
+    "size": [
+     600,
+     900
+    ],
+    "characters": [],
+    "status": "requested"
+   },
+   {
+    "path": "assets/img/f5_fold_shadow_wrong_side.webp",
+    "role": "fail",
+    "id": "f5_fold_shadow_wrong_side",
+    "size": [
+     600,
+     900
+    ],
+    "characters": [],
+    "status": "requested"
+   },
+   {
+    "path": "assets/img/f6_frill_against_flare.webp",
+    "role": "fail",
+    "id": "f6_frill_against_flare",
+    "size": [
+     600,
+     900
+    ],
+    "characters": [],
+    "status": "requested"
+   },
+   {
+    "path": "assets/img/f7_pleats_both_sides.webp",
+    "role": "fail",
+    "id": "f7_pleats_both_sides",
+    "size": [
+     600,
+     900
+    ],
+    "characters": [],
+    "status": "requested"
+   },
+   {
+    "path": "assets/img/f8_mask_changed_face.webp",
+    "role": "fail",
+    "id": "f8_mask_changed_face",
+    "size": [
+     600,
+     900
+    ],
+    "characters": [],
+    "status": "requested"
+   }
+  ],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": "thumbs/repos/structure_first_drawing_lab_01.jpg",
+  "status": "ok",
+  "checked_at": "2026-11-23",
+  "site_title": "구조 먼저 그리기 연구실 01 · 옷장 편 — 같은 원리, 다른 옷",
+  "ontology": {
+   "status": "full",
+   "pages_with_kg": 8,
+   "pages_total": 8,
+   "pages_checked": 8,
+   "kg_links": [
+    "https://adminmrobo.github.io/structure_first_drawing_lab_01/01_photo_to_drawing.html#kg",
+    "https://adminmrobo.github.io/structure_first_drawing_lab_01/02_fit.html#kg",
+    "https://adminmrobo.github.io/structure_first_drawing_lab_01/03_material.html#kg",
+    "https://adminmrobo.github.io/structure_first_drawing_lab_01/04_motion.html#kg",
+    "https://adminmrobo.github.io/structure_first_drawing_lab_01/05_ai_vfx.html#kg",
+    "https://adminmrobo.github.io/structure_first_drawing_lab_01/06_failure_lab.html#kg",
+    "https://adminmrobo.github.io/structure_first_drawing_lab_01/index.html#kg",
+    "https://adminmrobo.github.io/structure_first_drawing_lab_01/practice/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/structure_first_drawing_lab_01/01_photo_to_drawing.html#export",
+    "https://adminmrobo.github.io/structure_first_drawing_lab_01/02_fit.html#export",
+    "https://adminmrobo.github.io/structure_first_drawing_lab_01/03_material.html#export",
+    "https://adminmrobo.github.io/structure_first_drawing_lab_01/04_motion.html#export",
+    "https://adminmrobo.github.io/structure_first_drawing_lab_01/05_ai_vfx.html#export",
+    "https://adminmrobo.github.io/structure_first_drawing_lab_01/06_failure_lab.html#export",
+    "https://adminmrobo.github.io/structure_first_drawing_lab_01/index.html#export",
+    "https://adminmrobo.github.io/structure_first_drawing_lab_01/practice/index.html#export"
+   ],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 8
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/structure_first_drawing_lab_01/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 8
+   }
+  },
+  "has_pages": false
+ },
+ {
+  "repo": "structure_first_drawing_lab_02",
+  "series_ko": "구조 먼저 그리기 연구실 02 · 실천편 — 주름과 그림자를 직접 넣어 보기",
+  "title_ko": "구조 먼저 그리기 연구실 02 · 실천편 — 주름과 그림자를 직접 넣어 보기",
+  "repo_url": "https://github.com/adminmrobo/structure_first_drawing_lab_02",
+  "pages_url": "https://adminmrobo.github.io/structure_first_drawing_lab_02/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-22T19:25:34Z",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "assets/og/og_01.jpg",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/og_02.jpg",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/og_03.jpg",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/og_04.jpg",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/og_05.jpg",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/og_index.jpg",
+    "role": "og",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": "thumbs/repos/structure_first_drawing_lab_02.jpg",
+  "status": "ok",
+  "checked_at": "2026-11-23",
+  "site_title": "구조 먼저 그리기 연구실 02 · 실천편 — 주름과 그림자를 직접 넣어 보기",
+  "ontology": {
+   "status": "full",
+   "pages_with_kg": 6,
+   "pages_total": 6,
+   "pages_checked": 6,
+   "kg_links": [
+    "https://adminmrobo.github.io/structure_first_drawing_lab_02/01_standing.html#kg",
+    "https://adminmrobo.github.io/structure_first_drawing_lab_02/02_frills.html#kg",
+    "https://adminmrobo.github.io/structure_first_drawing_lab_02/03_sitting.html#kg",
+    "https://adminmrobo.github.io/structure_first_drawing_lab_02/04_light_dir.html#kg",
+    "https://adminmrobo.github.io/structure_first_drawing_lab_02/index.html#kg",
+    "https://adminmrobo.github.io/structure_first_drawing_lab_02/practice/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/structure_first_drawing_lab_02/01_standing.html#export",
+    "https://adminmrobo.github.io/structure_first_drawing_lab_02/02_frills.html#export",
+    "https://adminmrobo.github.io/structure_first_drawing_lab_02/03_sitting.html#export",
+    "https://adminmrobo.github.io/structure_first_drawing_lab_02/04_light_dir.html#export",
+    "https://adminmrobo.github.io/structure_first_drawing_lab_02/index.html#export",
+    "https://adminmrobo.github.io/structure_first_drawing_lab_02/practice/index.html#export"
+   ],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 6
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/structure_first_drawing_lab_02/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 6
+   }
+  },
+  "has_pages": false
  },
  {
   "repo": "test",

@@ -115,8 +115,9 @@
   "pushed_at": "2026-11-12T15:32:17Z"
  },
  "basic_economic_lab": {
-  "src": null,
-  "pushed_at": "2026-11-22T16:45:16Z"
+  "src": "name:assets/og/cover_01.jpg",
+  "pushed_at": "2026-11-22T17:36:04Z",
+  "made": "2026-11-23"
  },
  "bayesian-statistics-for-data-scientists": {
   "src": "name:assets/og/cover_00.jpg",
@@ -151,7 +152,7 @@
  },
  "covariant_chase_lab": {
   "src": "manifest:assets/img/cover_01.webp",
-  "pushed_at": "2026-11-22T16:58:52Z",
+  "pushed_at": "2026-11-22T17:40:22Z",
   "made": "2026-11-23"
  },
  "data_base_design": {
@@ -289,8 +290,9 @@
   "made": "2026-11-21"
  },
  "hello_space_lab": {
-  "src": null,
-  "pushed_at": "2026-11-22T17:07:16Z"
+  "src": "file:img/og/ch1.png",
+  "pushed_at": "2026-11-22T17:42:47Z",
+  "made": "2026-11-23"
  },
  "hilbert_space_lab": {
   "src": null,
@@ -652,6 +654,16 @@
  "statistics_note_ch04_Statistical-Estimation_01_a": {
   "src": null,
   "pushed_at": "2026-11-05T11:19:12Z"
+ },
+ "structure_first_drawing_lab_01": {
+  "src": "name:assets/og/og_01.jpg",
+  "pushed_at": "2026-11-22T19:19:22Z",
+  "made": "2026-11-23"
+ },
+ "structure_first_drawing_lab_02": {
+  "src": "name:assets/og/og_01.jpg",
+  "pushed_at": "2026-11-22T19:25:34Z",
+  "made": "2026-11-23"
  },
  "test": {
   "src": null,
