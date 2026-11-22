@@ -150,8 +150,9 @@
   "made": "2026-11-16"
  },
  "covariant_chase_lab": {
-  "src": null,
-  "pushed_at": "2026-11-22T16:43:22Z"
+  "src": "manifest:assets/img/cover_01.webp",
+  "pushed_at": "2026-11-22T16:43:22Z",
+  "made": "2026-11-23"
  },
  "data_base_design": {
   "src": "manifest:assets/img/cover_index.webp",

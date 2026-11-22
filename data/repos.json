@@ -5038,7 +5038,7 @@
      "x3"
     ],
     "robot": "jupanbot-v2",
-    "status": "todo"
+    "status": "ok"
    },
    {
     "path": "assets/img/og_01.webp",
@@ -5057,10 +5057,10 @@
      "moa"
     ],
     "robot": "jupanbot-v2",
-    "status": "todo"
+    "status": "ok"
    },
    {
-    "path": "index.html#figure[data-img=sc_01]",
+    "path": "assets/img/sc_01.webp",
     "role": "scene",
     "id": "sc_01",
     "size": [
@@ -5074,10 +5074,10 @@
      "fly"
     ],
     "robot": "jupanbot-v2",
-    "status": "todo"
+    "status": "ok"
    },
    {
-    "path": "index.html#figure[data-img=sc_02]",
+    "path": "assets/img/sc_02.webp",
     "role": "scene",
     "id": "sc_02",
     "size": [
@@ -5090,10 +5090,10 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "todo"
+    "status": "ok"
    },
    {
-    "path": "index.html#figure[data-img=sc_03]",
+    "path": "assets/img/sc_03.webp",
     "role": "scene",
     "id": "sc_03",
     "size": [
@@ -5106,10 +5106,10 @@
      "moa"
     ],
     "robot": "jupanbot-v2",
-    "status": "todo"
+    "status": "ok"
    },
    {
-    "path": "index.html#figure[data-img=sc_04]",
+    "path": "assets/img/sc_04.webp",
     "role": "scene",
     "id": "sc_04",
     "size": [
@@ -5122,10 +5122,10 @@
      "fly"
     ],
     "robot": "jupanbot-v2",
-    "status": "todo"
+    "status": "ok"
    },
    {
-    "path": "index.html#figure[data-img=sc_05]",
+    "path": "assets/img/sc_05.webp",
     "role": "scene",
     "id": "sc_05",
     "size": [
@@ -5139,10 +5139,10 @@
      "moa"
     ],
     "robot": "jupanbot-v2",
-    "status": "todo"
+    "status": "ok"
    },
    {
-    "path": "index.html#figure[data-img=sc_06]",
+    "path": "assets/img/sc_06.webp",
     "role": "scene",
     "id": "sc_06",
     "size": [
@@ -5161,10 +5161,10 @@
      "moa"
     ],
     "robot": "jupanbot-v2",
-    "status": "todo"
+    "status": "redraw"
    },
    {
-    "path": "index.html#figure[data-img=sc_07]",
+    "path": "assets/img/sc_07.webp",
     "role": "scene",
     "id": "sc_07",
     "size": [
@@ -5176,30 +5176,122 @@
      "fly"
     ],
     "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/thumb_01.webp",
+    "role": "thumb",
+    "id": "thumb_01",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "jupanbot",
+     "fly",
+     "doc",
+     "asst",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "practice/typhoon.html#figure[data-img=ty_01]",
+    "role": "scene",
+    "id": "ty_01",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "fly",
+     "jupanbot",
+     "asst"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "practice/typhoon.html#figure[data-img=ty_02]",
+    "role": "scene",
+    "id": "ty_02",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "asst",
+     "sia",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "practice/typhoon.html#figure[data-img=ty_03]",
+    "role": "scene",
+    "id": "ty_03",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "x1",
+     "x2",
+     "x3",
+     "jupanbot",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "practice/index.html#figure[data-img=pr_01]",
+    "role": "scene",
+    "id": "pr_01",
+    "size": [
+     1600,
+     700
+    ],
+    "characters": [
+     "jupanbot",
+     "asst",
+     "doc",
+     "fly"
+    ],
+    "robot": "jupanbot-v2",
     "status": "todo"
    }
   ],
   "redraw_count": 0,
   "redraw_ids": [],
-  "thumb": "https://adminmrobo.github.io/covariant_chase_lab/assets/img/og_01.webp",
+  "thumb": "thumbs/repos/covariant_chase_lab.jpg",
   "status": "ok",
   "checked_at": "2026-11-23",
   "site_title": "주판봇의 초파리 추적 대작전",
   "ontology": {
    "status": "partial",
-   "pages_with_kg": 1,
+   "pages_with_kg": 2,
    "pages_total": 3,
    "pages_checked": 3,
    "kg_links": [
-    "https://adminmrobo.github.io/covariant_chase_lab/index.html#kg"
+    "https://adminmrobo.github.io/covariant_chase_lab/index.html#kg",
+    "https://adminmrobo.github.io/covariant_chase_lab/practice/typhoon.html#kg"
    ],
    "export_links": [
-    "https://adminmrobo.github.io/covariant_chase_lab/index.html#export"
+    "https://adminmrobo.github.io/covariant_chase_lab/index.html#export",
+    "https://adminmrobo.github.io/covariant_chase_lab/practice/typhoon.html#export"
    ],
    "files": [
     {
      "path": "data/kg.json",
      "url": "https://github.com/adminmrobo/covariant_chase_lab/blob/main/data/kg.json"
+    },
+    {
+     "path": "data/typhoon/kg.json",
+     "url": "https://github.com/adminmrobo/covariant_chase_lab/blob/main/data/typhoon/kg.json"
     }
    ]
   },
