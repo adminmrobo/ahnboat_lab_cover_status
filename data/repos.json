@@ -1088,7 +1088,7 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_lab_explainer",
   "pages_url": "https://adminmrobo.github.io/ahnboat_lab_explainer/",
   "default_branch": "main",
-  "pushed_at": "2026-11-21T15:45:54Z",
+  "pushed_at": "2026-11-22T16:35:37Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -1112,6 +1112,10 @@
     {
      "path": "data/backbone_ai.json",
      "url": "https://github.com/adminmrobo/ahnboat_lab_explainer/blob/main/data/backbone_ai.json"
+    },
+    {
+     "path": "data/backbone_crime.json",
+     "url": "https://github.com/adminmrobo/ahnboat_lab_explainer/blob/main/data/backbone_crime.json"
     }
    ]
   },
@@ -1809,7 +1813,7 @@
   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
   "pages_url": "https://adminmrobo.github.io/ai_crime_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-22T15:18:39Z",
+  "pushed_at": "2026-11-22T16:41:45Z",
   "has_manifest": true,
   "covers": [
    {
@@ -2141,6 +2145,19 @@
     ],
     "robot": "jupanbot-v2",
     "status": "ok"
+   },
+   {
+    "path": "reports/2026-11-23_lnrs-synthetic-identity-deepfake/thumb.webp",
+    "role": "cover",
+    "id": "R001",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "doc"
+    ],
+    "status": "redraw"
    }
   ],
   "redraw_count": 0,
@@ -2151,9 +2168,9 @@
   "site_title": "AI 범죄 연구실 — 범죄자의 계산서를 뒤집어라",
   "ontology": {
    "status": "partial",
-   "pages_with_kg": 11,
-   "pages_total": 16,
-   "pages_checked": 16,
+   "pages_with_kg": 12,
+   "pages_total": 21,
+   "pages_checked": 21,
    "kg_links": [
     "https://adminmrobo.github.io/ai_crime_lab/ch00.html#kg",
     "https://adminmrobo.github.io/ai_crime_lab/ch01.html#kg",
@@ -2165,7 +2182,8 @@
     "https://adminmrobo.github.io/ai_crime_lab/ch07.html#kg",
     "https://adminmrobo.github.io/ai_crime_lab/ch08.html#kg",
     "https://adminmrobo.github.io/ai_crime_lab/ch09.html#kg",
-    "https://adminmrobo.github.io/ai_crime_lab/ch10.html#kg"
+    "https://adminmrobo.github.io/ai_crime_lab/ch10.html#kg",
+    "https://adminmrobo.github.io/ai_crime_lab/reports/2026-11-23_lnrs-synthetic-identity-deepfake/index.html#kg"
    ],
    "export_links": [
     "https://adminmrobo.github.io/ai_crime_lab/ch00.html#export",
@@ -2178,9 +2196,19 @@
     "https://adminmrobo.github.io/ai_crime_lab/ch07.html#export",
     "https://adminmrobo.github.io/ai_crime_lab/ch08.html#export",
     "https://adminmrobo.github.io/ai_crime_lab/ch09.html#export",
-    "https://adminmrobo.github.io/ai_crime_lab/ch10.html#export"
+    "https://adminmrobo.github.io/ai_crime_lab/ch10.html#export",
+    "https://adminmrobo.github.io/ai_crime_lab/reports/2026-11-23_lnrs-synthetic-identity-deepfake/index.html#export"
    ],
-   "files": []
+   "files": [
+    {
+     "path": "data/backbone_crime.json",
+     "url": "https://github.com/adminmrobo/ai_crime_lab/blob/main/data/backbone_crime.json"
+    },
+    {
+     "path": "reports/2026-11-23_lnrs-synthetic-identity-deepfake/kg/kg.json",
+     "url": "https://github.com/adminmrobo/ai_crime_lab/blob/main/reports/2026-11-23_lnrs-synthetic-identity-deepfake/kg/kg.json"
+    }
+   ]
   },
   "i18n": {
    "langs": [
@@ -2188,7 +2216,7 @@
    ],
    "count": 1,
    "pages": {
-    "ko": 16
+    "ko": 21
    },
    "partial": [],
    "complete": true,
@@ -2204,7 +2232,7 @@
    "count": 1,
    "complete": true,
    "pages_by_lang": {
-    "ko": 16
+    "ko": 21
    }
   },
   "has_pages": true
@@ -3519,6 +3547,48 @@
    }
   },
   "has_pages": true
+ },
+ {
+  "repo": "basic_economic_lab",
+  "series_ko": "basic_economic_lab",
+  "title_ko": null,
+  "repo_url": "https://github.com/adminmrobo/basic_economic_lab",
+  "pages_url": "https://adminmrobo.github.io/basic_economic_lab/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-22T16:45:16Z",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-23",
+  "site_title": null,
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 0,
+   "pages_checked": 0,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [],
+   "count": 0,
+   "pages": {},
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {}
+  },
+  "languages": {
+   "codes": [],
+   "count": 0,
+   "complete": true,
+   "pages_by_lang": {}
+  },
+  "has_pages": false
  },
  {
   "repo": "bayesian-statistics-for-data-scientists",
@@ -4937,6 +5007,228 @@
    }
   },
   "has_pages": true
+ },
+ {
+  "repo": "covariant_chase_lab",
+  "series_ko": "주판봇의 초파리 추적 대작전",
+  "title_ko": "주판봇의 초파리 추적 대작전 ① 공변미분 — 진짜로 꺾인 만큼만 재기",
+  "repo_url": "https://github.com/adminmrobo/covariant_chase_lab",
+  "pages_url": "https://adminmrobo.github.io/covariant_chase_lab/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-22T16:43:22Z",
+  "has_manifest": true,
+  "covers": [
+   {
+    "path": "assets/img/cover_01.webp",
+    "role": "cover",
+    "id": "cover_01",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "jupanbot",
+     "fly",
+     "doc",
+     "asst",
+     "sia",
+     "moa",
+     "x1",
+     "x2",
+     "x3"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "assets/img/og_01.webp",
+    "role": "og",
+    "id": "og_01",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "index.html#figure[data-img=sc_01]",
+    "role": "scene",
+    "id": "sc_01",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "jupanbot",
+     "sia",
+     "moa",
+     "fly"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "index.html#figure[data-img=sc_02]",
+    "role": "scene",
+    "id": "sc_02",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "asst",
+     "doc",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "index.html#figure[data-img=sc_03]",
+    "role": "scene",
+    "id": "sc_03",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "jupanbot",
+     "fly",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "index.html#figure[data-img=sc_04]",
+    "role": "scene",
+    "id": "sc_04",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "index.html#figure[data-img=sc_05]",
+    "role": "scene",
+    "id": "sc_05",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "fly",
+     "jupanbot",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "index.html#figure[data-img=sc_06]",
+    "role": "scene",
+    "id": "sc_06",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "fly",
+     "doc",
+     "x1",
+     "x2",
+     "x3",
+     "jupanbot",
+     "asst",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   },
+   {
+    "path": "index.html#figure[data-img=sc_07]",
+    "role": "scene",
+    "id": "sc_07",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "jupanbot",
+     "fly"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "todo"
+   }
+  ],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": "https://adminmrobo.github.io/covariant_chase_lab/assets/img/og_01.webp",
+  "status": "ok",
+  "checked_at": "2026-11-23",
+  "site_title": "주판봇의 초파리 추적 대작전",
+  "ontology": {
+   "status": "partial",
+   "pages_with_kg": 1,
+   "pages_total": 3,
+   "pages_checked": 3,
+   "kg_links": [
+    "https://adminmrobo.github.io/covariant_chase_lab/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/covariant_chase_lab/index.html#export"
+   ],
+   "files": [
+    {
+     "path": "data/kg.json",
+     "url": "https://github.com/adminmrobo/covariant_chase_lab/blob/main/data/kg.json"
+    }
+   ]
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 3
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/covariant_chase_lab/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 3
+   }
+  },
+  "has_pages": false
  },
  {
   "repo": "data_base_design",
@@ -8170,7 +8462,7 @@
   "repo_url": "https://github.com/adminmrobo/drug-crime-social-cost",
   "pages_url": "https://adminmrobo.github.io/drug-crime-social-cost/",
   "default_branch": "main",
-  "pushed_at": "2026-11-18T15:40:12Z",
+  "pushed_at": "2026-11-22T16:39:40Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -8182,8 +8474,8 @@
   "ontology": {
    "status": "none",
    "pages_with_kg": 0,
-   "pages_total": 3,
-   "pages_checked": 3,
+   "pages_total": 5,
+   "pages_checked": 5,
    "kg_links": [],
    "export_links": [],
    "files": []
@@ -8194,7 +8486,7 @@
    ],
    "count": 1,
    "pages": {
-    "ko": 3
+    "ko": 5
    },
    "partial": [],
    "complete": true,
@@ -8210,10 +8502,52 @@
    "count": 1,
    "complete": true,
    "pages_by_lang": {
-    "ko": 3
+    "ko": 5
    }
   },
   "has_pages": true
+ },
+ {
+  "repo": "economics_lab",
+  "series_ko": "economics_lab",
+  "title_ko": null,
+  "repo_url": "https://github.com/adminmrobo/economics_lab",
+  "pages_url": "https://adminmrobo.github.io/economics_lab/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-22T16:32:12Z",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-23",
+  "site_title": null,
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 0,
+   "pages_checked": 0,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [],
+   "count": 0,
+   "pages": {},
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {}
+  },
+  "languages": {
+   "codes": [],
+   "count": 0,
+   "complete": true,
+   "pages_by_lang": {}
+  },
+  "has_pages": false
  },
  {
   "repo": "euclidean_space_lab",
@@ -9076,7 +9410,7 @@
   "repo_url": "https://github.com/adminmrobo/fof-money-meridian-",
   "pages_url": "https://adminmrobo.github.io/fof-money-meridian-/",
   "default_branch": "main",
-  "pushed_at": "2026-11-22T15:30:46Z",
+  "pushed_at": "2026-11-22T16:04:52Z",
   "has_manifest": false,
   "covers": [
    {
@@ -9091,6 +9425,46 @@
    },
    {
     "path": "cover_fof03.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "cover_v2_fof01.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "cover_v2_fof02.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "cover_v2_fof03.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "cover_v2_index.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/v2_src/cover_v2_fof01.png",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/v2_src/cover_v2_fof02.png",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/v2_src/cover_v2_fof03.png",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/v2_src/cover_v2_index.png",
     "role": "cover",
     "estimated": true
    },
@@ -9110,6 +9484,26 @@
     "estimated": true
    },
    {
+    "path": "og_v2_fof01.jpg",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "og_v2_fof02.jpg",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "og_v2_fof03.jpg",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "og_v2_index.jpg",
+    "role": "og",
+    "estimated": true
+   },
+   {
     "path": "thumb_fof01.webp",
     "role": "thumb",
     "estimated": true
@@ -9125,6 +9519,21 @@
     "estimated": true
    },
    {
+    "path": "thumb_v2_fof01.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "thumb_v2_fof02.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "thumb_v2_fof03.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
     "path": "sc_fof01_outro.webp",
     "role": "scene",
     "estimated": true
@@ -9136,6 +9545,36 @@
    },
    {
     "path": "sc_fof03_outro.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "sc_v2_fof01_outro.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "sc_v2_fof02_outro.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "sc_v2_fof03_outro.webp",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/v2_src/sc_v2_fof01_outro.png",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/v2_src/sc_v2_fof02_outro.png",
+    "role": "scene",
+    "estimated": true
+   },
+   {
+    "path": "assets/v2_src/sc_v2_fof03_outro.png",
     "role": "scene",
     "estimated": true
    }
@@ -22511,7 +22950,7 @@
   "repo_url": "https://github.com/adminmrobo/vector_db_lab",
   "pages_url": "https://adminmrobo.github.io/vector_db_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-22T15:20:12Z",
+  "pushed_at": "2026-11-22T15:46:02Z",
   "has_manifest": true,
   "covers": [
    {
@@ -22550,7 +22989,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "missing"
+    "status": "ok"
    },
    {
     "path": "img/og_00.webp",
@@ -22569,7 +23008,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "missing"
+    "status": "ok"
    },
    {
     "path": "img/cover_01.webp",
@@ -22603,7 +23042,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "missing"
+    "status": "ok"
    },
    {
     "path": "img/og_01.webp",
@@ -22620,7 +23059,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "missing"
+    "status": "ok"
    },
    {
     "path": "img/cover_02.webp",
@@ -22654,7 +23093,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "missing"
+    "status": "ok"
    },
    {
     "path": "img/og_02.webp",
@@ -22671,7 +23110,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "missing"
+    "status": "ok"
    },
    {
     "path": "img/cover_03.webp",
@@ -22705,7 +23144,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "missing"
+    "status": "ok"
    },
    {
     "path": "img/og_03.webp",
@@ -22722,7 +23161,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "missing"
+    "status": "ok"
    },
    {
     "path": "img/cover_04.webp",
@@ -22756,7 +23195,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "missing"
+    "status": "ok"
    },
    {
     "path": "img/og_04.webp",
@@ -22773,7 +23212,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "missing"
+    "status": "ok"
    },
    {
     "path": "img/cover_05.webp",
@@ -22807,7 +23246,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "missing"
+    "status": "ok"
    },
    {
     "path": "img/og_05.webp",
@@ -22824,7 +23263,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "missing"
+    "status": "ok"
    },
    {
     "path": "img/cover_07.webp",
@@ -22858,7 +23297,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "missing"
+    "status": "ok"
    },
    {
     "path": "img/og_07.webp",
@@ -22875,7 +23314,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "missing"
+    "status": "ok"
    },
    {
     "path": "img/cover_08.webp",
@@ -22909,7 +23348,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "missing"
+    "status": "ok"
    },
    {
     "path": "img/og_08.webp",
@@ -22926,7 +23365,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "missing"
+    "status": "ok"
    },
    {
     "path": "img/cover_06.webp",
@@ -22960,7 +23399,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "missing"
+    "status": "ok"
    },
    {
     "path": "img/og_06.webp",
@@ -22977,7 +23416,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "missing"
+    "status": "ok"
    }
   ],
   "redraw_count": 0,

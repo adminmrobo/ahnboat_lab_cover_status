@@ -24,7 +24,7 @@
  },
  "ahnboat_lab_explainer": {
   "src": null,
-  "pushed_at": "2026-11-21T15:45:54Z"
+  "pushed_at": "2026-11-22T16:35:37Z"
  },
  "ahnboat_lab_langpack": {
   "src": null,
@@ -49,7 +49,7 @@
  },
  "ai_crime_lab": {
   "src": "manifest:assets/covers/index.webp",
-  "pushed_at": "2026-11-22T15:18:39Z",
+  "pushed_at": "2026-11-22T16:41:45Z",
   "made": "2026-11-23"
  },
  "AI_for_cement_produce": {
@@ -114,6 +114,10 @@
   "src": null,
   "pushed_at": "2026-11-12T15:32:17Z"
  },
+ "basic_economic_lab": {
+  "src": null,
+  "pushed_at": "2026-11-22T16:45:16Z"
+ },
  "bayesian-statistics-for-data-scientists": {
   "src": "name:assets/og/cover_00.jpg",
   "pushed_at": "2026-11-20T13:01:19Z",
@@ -144,6 +148,10 @@
   "src": "embedded:index.html",
   "pushed_at": "2026-11-15T04:49:46Z",
   "made": "2026-11-16"
+ },
+ "covariant_chase_lab": {
+  "src": null,
+  "pushed_at": "2026-11-22T16:43:22Z"
  },
  "data_base_design": {
   "src": "manifest:assets/img/cover_index.webp",
@@ -200,7 +208,11 @@
  },
  "drug-crime-social-cost": {
   "src": null,
-  "pushed_at": "2026-11-18T15:40:12Z"
+  "pushed_at": "2026-11-22T16:39:40Z"
+ },
+ "economics_lab": {
+  "src": null,
+  "pushed_at": "2026-11-22T16:32:12Z"
  },
  "euclidean_space_lab": {
   "src": "manifest:assets/og/og_index.jpg",
@@ -229,7 +241,7 @@
  },
  "fof-money-meridian-": {
   "src": "name:cover_fof01.webp",
-  "pushed_at": "2026-11-22T15:30:46Z",
+  "pushed_at": "2026-11-22T16:04:52Z",
   "made": "2026-11-23"
  },
  "fruitfly-lab-expressions": {
@@ -678,7 +690,7 @@
  },
  "vector_db_lab": {
   "src": "manifest:img/cover_00.webp",
-  "pushed_at": "2026-11-22T15:20:12Z",
+  "pushed_at": "2026-11-22T15:46:02Z",
   "made": "2026-11-23"
  },
  "what_is_tensor": {
