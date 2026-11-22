@@ -458,14 +458,14 @@
    "image": "thumbs/cats/C05-M3.webp"
   },
   {
-   "cat": "논문 해설",
+   "cat": "공공·사회 프로젝트",
    "name": "외부_콘텐츠",
    "id": "EXT",
    "desc": "GitHub 밖에 있는 논문 원문, 특허, 저서, 이러닝, 공공 사업 실적입니다.",
    "keywords": [
-    "논문",
-    "학술대회",
-    "발표"
+    "공공 사업",
+    "총괄 PM",
+    "특허"
    ],
    "image": "thumbs/cats/EXT.webp"
   },
@@ -510,14 +510,14 @@
    "image": "thumbs/cats/C06-M2.webp"
   },
   {
-   "cat": "금융·핀테크·블록체인",
+   "cat": "공공·사회 프로젝트",
    "name": "외부_콘텐츠",
    "id": "EXT",
    "desc": "GitHub 밖에 있는 논문 원문, 특허, 저서, 이러닝, 공공 사업 실적입니다.",
    "keywords": [
-    "특허",
-    "로봇저널리즘",
-    "Money-Robo"
+    "공공 사업",
+    "총괄 PM",
+    "특허"
    ],
    "image": "thumbs/cats/EXT.webp"
   },
@@ -630,19 +630,31 @@
    "cat": "인공지능 응용",
    "name": "이상탐지·보안",
    "id": "C08-A4",
-   "desc": "SNS 은어 탐지, 금융 이상탐지 모델 보안, 그리고 AI 범죄를 범죄경제학·게임이론으로 계산하는 『AI 범죄와 자기 방어』 보충본까지, AI로 위험 신호를 찾고 막는 해설입니다.",
+   "desc": "SNS 은어 탐지와 금융 이상탐지 모델 보안처럼, AI로 위험 신호를 찾고 막는 해설입니다.",
    "keywords": [
     "이상탐지",
     "은어 탐지",
     "적대적 공격",
-    "모델 보안",
-    "AI 범죄",
-    "범죄경제학",
-    "딥페이크",
-    "피싱",
-    "게임이론"
+    "모델 보안"
    ],
    "image": "thumbs/cats/C05-M1.webp"
+  },
+  {
+   "cat": "인공지능 응용",
+   "name": "AI 범죄학",
+   "id": "C08-A6",
+   "desc": "『AI 범죄와 자기 방어』의 분석 틀(범죄경제학·게임이론·AI 분석)로 AI 범죄의 계산서를 풀고, 새 보고서·뉴스를 책과 대조해 현장 검증을 쌓아 가는 분야입니다. 13개 영역의 온톨로지 지도로 어디가 채워졌는지 봅니다.",
+   "keywords": [
+    "AI 범죄",
+    "범죄경제학",
+    "게임이론",
+    "딥페이크",
+    "합성 신원",
+    "피싱",
+    "온톨로지 지도",
+    "리포트 검증"
+   ],
+   "image": "thumbs/cats/C08-A6.webp"
   },
   {
    "cat": "인공지능 응용",
@@ -2413,246 +2425,6 @@
    "lecture": "Y"
   },
   {
-   "title": "목차 · AI 범죄 연구실",
-   "summary": "『AI 범죄와 자기 방어』 사례 보충본 — 범죄자의 계산서를 범죄경제학·게임이론·AI 분석으로 계산하고, 제도와 습관으로 다시 뒤집어 봅니다.",
-   "cat": "인공지능 응용",
-   "mid": "이상탐지·보안",
-   "sub": "AI 범죄학 · 목차와 분야 지도",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
-   "site_url": "https://adminmrobo.github.io/ai_crime_lab/",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "https://adminmrobo.github.io/ai_crime_lab/assets/og/index.webp"
-  },
-  {
-   "title": "AI 범죄학 온톨로지 지도",
-   "summary": "책의 분석 틀로 짠 13개 영역·49개 주제 위에, 책이 다룬 개념과 리포트로 확인된 개념을 겹쳐 보는 3D 지도입니다.",
-   "cat": "인공지능 응용",
-   "mid": "이상탐지·보안",
-   "sub": "AI 범죄학 · 목차와 분야 지도",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
-   "site_url": "https://adminmrobo.github.io/ai_crime_lab/ontology.html",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "https://adminmrobo.github.io/ai_crime_lab/assets/thumbs/ontology.webp"
-  },
-  {
-   "title": "서장 · 진화하는 사이버 범죄",
-   "summary": "의심했는데도 속는 이유, 그리고 범죄자의 계산법",
-   "cat": "인공지능 응용",
-   "mid": "이상탐지·보안",
-   "sub": "AI 범죄학 · 책 보충본 (서장~10장·실전 연습장)",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
-   "site_url": "https://adminmrobo.github.io/ai_crime_lab/ch00.html",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "https://adminmrobo.github.io/ai_crime_lab/assets/thumbs/ch00.webp"
-  },
-  {
-   "title": "1장 · AI 범죄, 새로운 디지털 위험의 시대",
-   "summary": "사기꾼 한 명이 하루 몇 명을 속이던 시대에서, AI 한 대가 수천 명과 동시에 대화하는 시대로",
-   "cat": "인공지능 응용",
-   "mid": "이상탐지·보안",
-   "sub": "AI 범죄학 · 책 보충본 (서장~10장·실전 연습장)",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
-   "site_url": "https://adminmrobo.github.io/ai_crime_lab/ch01.html",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "https://adminmrobo.github.io/ai_crime_lab/assets/thumbs/ch01.webp"
-  },
-  {
-   "title": "2장 · 범죄자의 경제학 — AI가 범죄를 매력적으로 만드는 이유",
-   "summary": "베커의 부등식으로 계산한 AI 범죄의 손익분기점",
-   "cat": "인공지능 응용",
-   "mid": "이상탐지·보안",
-   "sub": "AI 범죄학 · 책 보충본 (서장~10장·실전 연습장)",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
-   "site_url": "https://adminmrobo.github.io/ai_crime_lab/ch02.html",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "https://adminmrobo.github.io/ai_crime_lab/assets/thumbs/ch02.webp"
-  },
-  {
-   "title": "3장 · 진짜인 듯 가짜인 세상 — 딥페이크의 위협",
-   "summary": "보는 것이 믿는 것이던 시대가 끝났을 때, 성공 확률 π는 얼마나 오르는가",
-   "cat": "인공지능 응용",
-   "mid": "이상탐지·보안",
-   "sub": "AI 범죄학 · 책 보충본 (서장~10장·실전 연습장)",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
-   "site_url": "https://adminmrobo.github.io/ai_crime_lab/ch03.html",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "https://adminmrobo.github.io/ai_crime_lab/assets/thumbs/ch03.webp"
-  },
-  {
-   "title": "4장 · 완벽한 사기꾼 — AI가 바꾸는 피싱과 사회공학",
-   "summary": "정교함과 대량을 동시에 — 개인화 비용이 0에 가까워질 때",
-   "cat": "인공지능 응용",
-   "mid": "이상탐지·보안",
-   "sub": "AI 범죄학 · 책 보충본 (서장~10장·실전 연습장)",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
-   "site_url": "https://adminmrobo.github.io/ai_crime_lab/ch04.html",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "https://adminmrobo.github.io/ai_crime_lab/assets/thumbs/ch04.webp"
-  },
-  {
-   "title": "5장 · 끊임없는 진화 — AI 기반 자동화 공격의 세계",
-   "summary": "막히면 배우고, 배우면 다시 온다 — 공격은 싸지고 입증은 비싸졌다",
-   "cat": "인공지능 응용",
-   "mid": "이상탐지·보안",
-   "sub": "AI 범죄학 · 책 보충본 (서장~10장·실전 연습장)",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
-   "site_url": "https://adminmrobo.github.io/ai_crime_lab/ch05.html",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "https://adminmrobo.github.io/ai_crime_lab/assets/thumbs/ch05.webp"
-  },
-  {
-   "title": "6장 · 보이지 않는 눈 — AI 감시와 프라이버시의 위기",
-   "summary": "개인정보는 범죄의 원재료다 — 조각 몇 개면 '세상에 나 하나'가 된다",
-   "cat": "인공지능 응용",
-   "mid": "이상탐지·보안",
-   "sub": "AI 범죄학 · 책 보충본 (서장~10장·실전 연습장)",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
-   "site_url": "https://adminmrobo.github.io/ai_crime_lab/ch06.html",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "https://adminmrobo.github.io/ai_crime_lab/assets/thumbs/ch06.webp"
-  },
-  {
-   "title": "7장 · 보이지 않는 손의 조작 — AI와 금융 범죄",
-   "summary": "AI는 앞단을, 암호화폐는 뒷단을 맡는다 — 훔친 돈이 '확정'되는 구조",
-   "cat": "인공지능 응용",
-   "mid": "이상탐지·보안",
-   "sub": "AI 범죄학 · 책 보충본 (서장~10장·실전 연습장)",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
-   "site_url": "https://adminmrobo.github.io/ai_crime_lab/ch07.html",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "https://adminmrobo.github.io/ai_crime_lab/assets/thumbs/ch07.webp"
-  },
-  {
-   "title": "8장 · 나만의 디지털 방패 만들기",
-   "summary": "개인 보안도 투자다 — 생활유형별로 계산한 비용과 효과",
-   "cat": "인공지능 응용",
-   "mid": "이상탐지·보안",
-   "sub": "AI 범죄학 · 책 보충본 (서장~10장·실전 연습장)",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
-   "site_url": "https://adminmrobo.github.io/ai_crime_lab/ch08.html",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "https://adminmrobo.github.io/ai_crime_lab/assets/thumbs/ch08.webp"
-  },
-  {
-   "title": "9장 · 함께 만드는 안전한 AI 사회",
-   "summary": "나만 지키면 위험은 이웃으로 간다 — 외부성과 사이버 집단 면역",
-   "cat": "인공지능 응용",
-   "mid": "이상탐지·보안",
-   "sub": "AI 범죄학 · 책 보충본 (서장~10장·실전 연습장)",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
-   "site_url": "https://adminmrobo.github.io/ai_crime_lab/ch09.html",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "https://adminmrobo.github.io/ai_crime_lab/assets/thumbs/ch09.webp"
-  },
-  {
-   "title": "10장 · 미래를 준비하는 디지털 생존 전략",
-   "summary": "막는 힘에서 버티는 힘으로 — 그리고 범죄자의 계산서를 마지막으로 뒤집기",
-   "cat": "인공지능 응용",
-   "mid": "이상탐지·보안",
-   "sub": "AI 범죄학 · 책 보충본 (서장~10장·실전 연습장)",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
-   "site_url": "https://adminmrobo.github.io/ai_crime_lab/ch10.html",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "https://adminmrobo.github.io/ai_crime_lab/assets/thumbs/ch10.webp"
-  },
-  {
-   "title": "마지막 장 · 실전 연습장",
-   "summary": "콜센터·검사 게임·랜섬 협상·기업 연결망 네 사업장을 직접 운영해 범죄자의 계산서를 뒤집어 봅니다.",
-   "cat": "인공지능 응용",
-   "mid": "이상탐지·보안",
-   "sub": "AI 범죄학 · 책 보충본 (서장~10장·실전 연습장)",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
-   "site_url": "https://adminmrobo.github.io/ai_crime_lab/practice/",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "https://adminmrobo.github.io/ai_crime_lab/practice/cover.webp"
-  },
-  {
-   "title": "리포트·뉴스 검증 INDEX",
-   "summary": "새로 나온 보고서와 뉴스를 책의 장과 나란히 놓고, 책의 분석이 현장에서 어떻게 확인되는지 쌓아 갑니다.",
-   "cat": "인공지능 응용",
-   "mid": "이상탐지·보안",
-   "sub": "AI 범죄학 · 리포트·뉴스 검증",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
-   "site_url": "https://adminmrobo.github.io/ai_crime_lab/reports/",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "https://adminmrobo.github.io/ai_crime_lab/reports/2026-11-23_lnrs-synthetic-identity-deepfake/thumb.webp"
-  },
-  {
-   "title": "리포트 No.001 · 만들어진 신원과 딥페이크 사기",
-   "summary": "합성 신원이 전체 보고 사기의 11%로 늘었다는 업계 집계와, 가입 순간 한 번 확인하는 방식 대신 가입 뒤에도 신호를 모으자는 제안을 책 11개 항목과 대조했다.",
-   "cat": "인공지능 응용",
-   "mid": "이상탐지·보안",
-   "sub": "AI 범죄학 · 리포트·뉴스 검증",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
-   "site_url": "https://adminmrobo.github.io/ai_crime_lab/reports/2026-11-23_lnrs-synthetic-identity-deepfake/",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "https://adminmrobo.github.io/ai_crime_lab/reports/2026-11-23_lnrs-synthetic-identity-deepfake/thumb.webp"
-  },
-  {
    "title": "SNS 은어와 이상탐지",
    "summary": "",
    "cat": "인공지능 응용",
@@ -2903,6 +2675,246 @@
     "ko"
    ],
    "thumb": "thumbs/repos/fruitfly-lab-expressions.jpg"
+  },
+  {
+   "title": "목차 · AI 범죄 연구실",
+   "summary": "『AI 범죄와 자기 방어』 사례 보충본 — 범죄자의 계산서를 범죄경제학·게임이론·AI 분석으로 계산하고, 제도와 습관으로 다시 뒤집어 봅니다.",
+   "cat": "인공지능 응용",
+   "mid": "AI 범죄학",
+   "sub": "목차와 분야 지도",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
+   "site_url": "https://adminmrobo.github.io/ai_crime_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "https://adminmrobo.github.io/ai_crime_lab/assets/og/index.webp"
+  },
+  {
+   "title": "AI 범죄학 온톨로지 지도",
+   "summary": "책의 분석 틀로 짠 13개 영역·49개 주제 위에, 책이 다룬 개념과 리포트로 확인된 개념을 겹쳐 보는 3D 지도입니다.",
+   "cat": "인공지능 응용",
+   "mid": "AI 범죄학",
+   "sub": "목차와 분야 지도",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
+   "site_url": "https://adminmrobo.github.io/ai_crime_lab/ontology.html",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "https://adminmrobo.github.io/ai_crime_lab/assets/thumbs/ontology.webp"
+  },
+  {
+   "title": "서장 · 진화하는 사이버 범죄",
+   "summary": "의심했는데도 속는 이유, 그리고 범죄자의 계산법",
+   "cat": "인공지능 응용",
+   "mid": "AI 범죄학",
+   "sub": "책 보충본 (서장~10장·실전 연습장)",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
+   "site_url": "https://adminmrobo.github.io/ai_crime_lab/ch00.html",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "https://adminmrobo.github.io/ai_crime_lab/assets/thumbs/ch00.webp"
+  },
+  {
+   "title": "1장 · AI 범죄, 새로운 디지털 위험의 시대",
+   "summary": "사기꾼 한 명이 하루 몇 명을 속이던 시대에서, AI 한 대가 수천 명과 동시에 대화하는 시대로",
+   "cat": "인공지능 응용",
+   "mid": "AI 범죄학",
+   "sub": "책 보충본 (서장~10장·실전 연습장)",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
+   "site_url": "https://adminmrobo.github.io/ai_crime_lab/ch01.html",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "https://adminmrobo.github.io/ai_crime_lab/assets/thumbs/ch01.webp"
+  },
+  {
+   "title": "2장 · 범죄자의 경제학 — AI가 범죄를 매력적으로 만드는 이유",
+   "summary": "베커의 부등식으로 계산한 AI 범죄의 손익분기점",
+   "cat": "인공지능 응용",
+   "mid": "AI 범죄학",
+   "sub": "책 보충본 (서장~10장·실전 연습장)",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
+   "site_url": "https://adminmrobo.github.io/ai_crime_lab/ch02.html",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "https://adminmrobo.github.io/ai_crime_lab/assets/thumbs/ch02.webp"
+  },
+  {
+   "title": "3장 · 진짜인 듯 가짜인 세상 — 딥페이크의 위협",
+   "summary": "보는 것이 믿는 것이던 시대가 끝났을 때, 성공 확률 π는 얼마나 오르는가",
+   "cat": "인공지능 응용",
+   "mid": "AI 범죄학",
+   "sub": "책 보충본 (서장~10장·실전 연습장)",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
+   "site_url": "https://adminmrobo.github.io/ai_crime_lab/ch03.html",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "https://adminmrobo.github.io/ai_crime_lab/assets/thumbs/ch03.webp"
+  },
+  {
+   "title": "4장 · 완벽한 사기꾼 — AI가 바꾸는 피싱과 사회공학",
+   "summary": "정교함과 대량을 동시에 — 개인화 비용이 0에 가까워질 때",
+   "cat": "인공지능 응용",
+   "mid": "AI 범죄학",
+   "sub": "책 보충본 (서장~10장·실전 연습장)",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
+   "site_url": "https://adminmrobo.github.io/ai_crime_lab/ch04.html",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "https://adminmrobo.github.io/ai_crime_lab/assets/thumbs/ch04.webp"
+  },
+  {
+   "title": "5장 · 끊임없는 진화 — AI 기반 자동화 공격의 세계",
+   "summary": "막히면 배우고, 배우면 다시 온다 — 공격은 싸지고 입증은 비싸졌다",
+   "cat": "인공지능 응용",
+   "mid": "AI 범죄학",
+   "sub": "책 보충본 (서장~10장·실전 연습장)",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
+   "site_url": "https://adminmrobo.github.io/ai_crime_lab/ch05.html",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "https://adminmrobo.github.io/ai_crime_lab/assets/thumbs/ch05.webp"
+  },
+  {
+   "title": "6장 · 보이지 않는 눈 — AI 감시와 프라이버시의 위기",
+   "summary": "개인정보는 범죄의 원재료다 — 조각 몇 개면 '세상에 나 하나'가 된다",
+   "cat": "인공지능 응용",
+   "mid": "AI 범죄학",
+   "sub": "책 보충본 (서장~10장·실전 연습장)",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
+   "site_url": "https://adminmrobo.github.io/ai_crime_lab/ch06.html",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "https://adminmrobo.github.io/ai_crime_lab/assets/thumbs/ch06.webp"
+  },
+  {
+   "title": "7장 · 보이지 않는 손의 조작 — AI와 금융 범죄",
+   "summary": "AI는 앞단을, 암호화폐는 뒷단을 맡는다 — 훔친 돈이 '확정'되는 구조",
+   "cat": "인공지능 응용",
+   "mid": "AI 범죄학",
+   "sub": "책 보충본 (서장~10장·실전 연습장)",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
+   "site_url": "https://adminmrobo.github.io/ai_crime_lab/ch07.html",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "https://adminmrobo.github.io/ai_crime_lab/assets/thumbs/ch07.webp"
+  },
+  {
+   "title": "8장 · 나만의 디지털 방패 만들기",
+   "summary": "개인 보안도 투자다 — 생활유형별로 계산한 비용과 효과",
+   "cat": "인공지능 응용",
+   "mid": "AI 범죄학",
+   "sub": "책 보충본 (서장~10장·실전 연습장)",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
+   "site_url": "https://adminmrobo.github.io/ai_crime_lab/ch08.html",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "https://adminmrobo.github.io/ai_crime_lab/assets/thumbs/ch08.webp"
+  },
+  {
+   "title": "9장 · 함께 만드는 안전한 AI 사회",
+   "summary": "나만 지키면 위험은 이웃으로 간다 — 외부성과 사이버 집단 면역",
+   "cat": "인공지능 응용",
+   "mid": "AI 범죄학",
+   "sub": "책 보충본 (서장~10장·실전 연습장)",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
+   "site_url": "https://adminmrobo.github.io/ai_crime_lab/ch09.html",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "https://adminmrobo.github.io/ai_crime_lab/assets/thumbs/ch09.webp"
+  },
+  {
+   "title": "10장 · 미래를 준비하는 디지털 생존 전략",
+   "summary": "막는 힘에서 버티는 힘으로 — 그리고 범죄자의 계산서를 마지막으로 뒤집기",
+   "cat": "인공지능 응용",
+   "mid": "AI 범죄학",
+   "sub": "책 보충본 (서장~10장·실전 연습장)",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
+   "site_url": "https://adminmrobo.github.io/ai_crime_lab/ch10.html",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "https://adminmrobo.github.io/ai_crime_lab/assets/thumbs/ch10.webp"
+  },
+  {
+   "title": "마지막 장 · 실전 연습장",
+   "summary": "콜센터·검사 게임·랜섬 협상·기업 연결망 네 사업장을 직접 운영해 범죄자의 계산서를 뒤집어 봅니다.",
+   "cat": "인공지능 응용",
+   "mid": "AI 범죄학",
+   "sub": "책 보충본 (서장~10장·실전 연습장)",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
+   "site_url": "https://adminmrobo.github.io/ai_crime_lab/practice/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "https://adminmrobo.github.io/ai_crime_lab/practice/cover.webp"
+  },
+  {
+   "title": "리포트·뉴스 검증 INDEX",
+   "summary": "새로 나온 보고서와 뉴스를 책의 장과 나란히 놓고, 책의 분석이 현장에서 어떻게 확인되는지 쌓아 갑니다.",
+   "cat": "인공지능 응용",
+   "mid": "AI 범죄학",
+   "sub": "리포트·뉴스 검증",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
+   "site_url": "https://adminmrobo.github.io/ai_crime_lab/reports/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "https://adminmrobo.github.io/ai_crime_lab/reports/2026-11-23_lnrs-synthetic-identity-deepfake/thumb.webp"
+  },
+  {
+   "title": "리포트 No.001 · 만들어진 신원과 딥페이크 사기",
+   "summary": "합성 신원이 전체 보고 사기의 11%로 늘었다는 업계 집계와, 가입 순간 한 번 확인하는 방식 대신 가입 뒤에도 신호를 모으자는 제안을 책 11개 항목과 대조했다.",
+   "cat": "인공지능 응용",
+   "mid": "AI 범죄학",
+   "sub": "리포트·뉴스 검증",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
+   "site_url": "https://adminmrobo.github.io/ai_crime_lab/reports/2026-11-23_lnrs-synthetic-identity-deepfake/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "https://adminmrobo.github.io/ai_crime_lab/reports/2026-11-23_lnrs-synthetic-identity-deepfake/thumb.webp"
   }
  ]
 }
