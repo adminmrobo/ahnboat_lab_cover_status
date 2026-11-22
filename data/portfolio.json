@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22",
+ "updated": "2026-11-23",
  "categories": [
   {
    "name": "프로젝트·서비스",
@@ -107,7 +107,7 @@
   },
   {
    "title": "AI 범죄와 자기 방어",
-   "summary": "AI가 범죄의 비용 구조와 수익 모델을 어떻게 바꾸었는지 범죄경제학으로 풀어낸 책",
+   "summary": "AI 범죄 시대, 자기 방어의 지혜 — 메신저·보이스피싱 등 일상 속 AI 범죄를 범죄경제학으로 분석하고, 개인 보안 수칙과 윤리·제도 대응을 제안한 책",
    "cat": "저서·이러닝",
    "mid": "저서",
    "sub": "",
@@ -118,8 +118,12 @@
    "langs": [],
    "thumb": "thumbs/cats/C08-M1.webp",
    "button": "소개 보기",
-   "note": "커뮤니케이션북스 · 인공지능총서",
+   "note": "커뮤니케이션북스 · 인공지능총서 · 2025.10.10 · ISBN 9791143009050",
    "links": [
+    {
+     "label": "Google 도서",
+     "url": "https://books.google.co.kr/books/about/AI_%EB%B2%94%EC%A3%84%EC%99%80_%EC%9E%90%EA%B8%B0_%EB%B0%A9%EC%96%B4.html?id=FimKEQAAQBAJ"
+    },
     {
      "label": "보충본 연구실 열기",
      "url": "https://adminmrobo.github.io/ai_crime_lab/"
