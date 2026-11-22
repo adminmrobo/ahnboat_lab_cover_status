@@ -2,10 +2,14 @@
 
 ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전·오후 자동으로 다시 만들고, Actions에서 수동으로도 돌릴 수 있습니다.
 
-- 갱신: **2026-11-21 23:36 KST**
-- 홈페이지 글 32 · 페이지 4
-- GitHub 해설 콘텐츠 112 · 포트폴리오 10 · 일정 18
+- 갱신: **2026-11-22 15:49 KST**
+- 홈페이지 글 32 · 페이지 0 · 사이트맵 주소 73
+- GitHub 해설 콘텐츠 115 · 포트폴리오 10 · 일정 18
 - 기계용 원본: `data/site_contents.json`
+
+> ⚠ 이번에 읽지 못한 곳
+
+> - 워드프레스 REST API 읽기 실패: HTTP Error 429: Too Many Requests
 
 ## 1. 홈페이지 글 (ahnboat.xyz)
 
@@ -46,12 +50,7 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 
 ## 2. 홈페이지 페이지
 
-| 제목 | 주소 | 고친 날 |
-|---|---|---|
-| Article & Study | https://ahnboat.xyz/articlestudy/ | 2026-10-04 |
-| Global Business Story | https://ahnboat.xyz/global_business/ | 2026-10-04 |
-| Hello! Everyone! | https://ahnboat.xyz/my_profile/ | 2026-10-19 |
-| 곧 나옵니다.. 아마도요..! (Coming Soon-ish! 🐌) | https://ahnboat.xyz/pleae_wait/ | 2026-10-19 |
+(없음 또는 읽지 못함)
 
 ## 3. GitHub 해설 콘텐츠 (공개 카탈로그)
 
@@ -97,7 +96,7 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | 얼굴 알아맞히기 게임 · 20챕터로 배우는 CNN | 보고 알아보기 / 이미지 인식 | https://adminmrobo.github.io/cnn_face_game_lab/ | ko |
 | AI 글 읽기 어려움 | 읽고 이해하기 / AI 글 읽기 | https://adminmrobo.github.io/ai_text_read_ability/ | ko en zh ja uz ru vi |
 
-### LLM·추론 엔지니어링 (19)
+### LLM·추론 엔지니어링 (21)
 
 | 제목 | 중분류 | 주소 | 언어 |
 |---|---|---|---|
@@ -119,6 +118,8 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | 2장 논문 · 번개 어텐션 (FlashAttention) | 추론 엔지니어링 스터디 / 2장 · 모델 | https://adminmrobo.github.io/inference_engineering_study/week_03_article_01/ | ko |
 | 3장 · GPU 기계실 | 추론 엔지니어링 스터디 / 3장 · 하드웨어 | https://adminmrobo.github.io/inference_engineering_study/week_04_textbook_ch03/ | ko |
 | 3장 논문 · 루프라인 (Roofline) | 추론 엔지니어링 스터디 / 3장 · 하드웨어 | https://adminmrobo.github.io/inference_engineering_study/week_04_article_01/ | ko |
+| 4장 · 엔진 제어실 | 추론 엔지니어링 스터디 / 4장 · 소프트웨어 | https://adminmrobo.github.io/inference_engineering_study/week_05_textbook_ch04/ | ko |
+| 4장 논문 · 페이지드 어텐션 (PagedAttention) | 추론 엔지니어링 스터디 / 4장 · 소프트웨어 | https://adminmrobo.github.io/inference_engineering_study/week_05_article_01/ | ko |
 | 2장 후반 발표 · 병목을 찾아라 | 추론 엔지니어링 스터디 / 부록 · 발표 자료 | https://adminmrobo.github.io/inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide/ | ko |
 
 ### 경제·수학·최적화 (12)
@@ -179,7 +180,7 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | 점추정과 신뢰구간 | 확률·통계 / 통계 노트 | https://adminmrobo.github.io/statistics_note_ch04_Statistical-Estimation_01_a/ | ko |
 | 확률분포 딕셔너리와 분포표 연구실 | 확률·통계 / 확률분포 딕셔너리 | https://adminmrobo.github.io/probability_distribution_dictionary/ | ko |
 
-### 인공지능 응용 (14)
+### 인공지능 응용 (15)
 
 | 제목 | 중분류 | 주소 | 언어 |
 |---|---|---|---|
@@ -190,6 +191,7 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | 생성형 AI 활용전략 · 중간고사 시뮬레이션 | 생성형 AI 활용 / 생성형AI활용전략 | https://adminmrobo.github.io/Gen_AI_Hannam_univ/ | ko |
 | 생성형 AI 활용전략 5장 | 생성형 AI 활용 / 생성형AI활용전략 | https://adminmrobo.github.io/Gen_AI_strategy_ch05/ | ko |
 | 생성형 AI 활용전략 6장 | 생성형 AI 활용 / 생성형AI활용전략 | https://adminmrobo.github.io/Gen_AI_strategy_ch06/ | ko |
+| 목차 · AI 범죄 연구실 | 이상탐지·보안 / AI 범죄·범죄경제학 | https://adminmrobo.github.io/ai_crime_lab/ | ko |
 | SNS 은어와 이상탐지 | 이상탐지·보안 / AI·보안 | https://adminmrobo.github.io/my_article_03_drug-slang-detection/ | ko en zh ja uz ru vi |
 | 금융 이상탐지 모델 보안과 적대적 공격 | 이상탐지·보안 / AI·보안 | https://adminmrobo.github.io/my_article_04_adversarial_finance_attack/ | ko en zh ja uz ru vi |
 | 스마트 제조 연구실 · 3D로 보는 15주 | 제조 / 스마트 제조 | https://adminmrobo.github.io/smart_product/ | ko |
