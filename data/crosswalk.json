@@ -1,57 +1,7 @@
 {
 "note": "뼈대 주제와 이름이 맞는 노드(자동 후보). 사람이 보고 맞는 것만 해설 페이지 kg-raw에 broader로 옮긴다(ai-lab-retrofit 15-2).",
-"count": 206,
+"count": 86,
 "items": [
-{
-"node": "lab:concept/accounting-equation",
-"ko": "회계등식",
-"topics": [
-"lab:topic/accounting-equation"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"python-accounting-analytics/01_accounting_basics.html",
-"python-accounting-analytics/06m_midterm_review.html"
-]
-},
-{
-"node": "lab:concept/acquisition-cost",
-"ko": "취득원가",
-"topics": [
-"lab:topic/inventory-cost"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"python-accounting-analytics/08_balance_sheet_review.html"
-]
-},
-{
-"node": "lab:concept/activation",
-"ko": "활성화 함수(시그모이드·ReLU)",
-"topics": [
-"lab:topic/activation-function"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"math_for_ai_lab/index.html"
-]
-},
-{
-"node": "lab:concept/aggregate-demand",
-"ko": "총수요와 총공급",
-"topics": [
-"lab:topic/ad-as"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"basic_economic_lab/11_economic_policy.html",
-"basic_economic_lab/11f_final_review.html"
-]
-},
 {
 "node": "lab:concept/anomaly-detection",
 "ko": "이상 탐지",
@@ -66,32 +16,6 @@
 ]
 },
 {
-"node": "lab:concept/asymmetric-information",
-"ko": "정보 비대칭",
-"topics": [
-"lab:topic/information-asymmetry"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"micro_economics/07_information.html"
-]
-},
-{
-"node": "lab:concept/autocorrelation",
-"ko": "자기상관(ACF·PACF)",
-"topics": [
-"lab:topic/autocorrelation"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"data_science_for_business/week11_time_series.html",
-"llm_memory_trilogy/1_2_fading_echo.html",
-"my_article_00_Korean_stockmarket_volatility_study/1-2_efficient-market.html"
-]
-},
-{
 "node": "lab:concept/autoregressive",
 "ko": "자기회귀 생성",
 "topics": [
@@ -102,18 +26,6 @@
 "pages": [
 "inference_engineering_study/01_transformer.html",
 "inference_engineering_study/index.html"
-]
-},
-{
-"node": "lab:concept/balance-sheet",
-"ko": "재무상태표",
-"topics": [
-"lab:topic/balance-sheet"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"python-accounting-analytics/01_accounting_basics.html"
 ]
 },
 {
@@ -143,20 +55,6 @@
 ]
 },
 {
-"node": "lab:concept/bitcoin",
-"ko": "비트코인",
-"topics": [
-"lab:topic/bitcoin"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"blockchain_finance_ch01/1-01_money-is-record.html",
-"blockchain_finance_ch03/3-01_pow-vs-pos.html",
-"blockchain_finance_ch03/3-03_halving-and-cap.html"
-]
-},
-{
 "node": "lab:concept/block",
 "ko": "블록",
 "topics": [
@@ -183,30 +81,6 @@
 ]
 },
 {
-"node": "lab:concept/business-cycle",
-"ko": "경기변동",
-"topics": [
-"lab:topic/business-cycle"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"basic_economic_lab/10_macro_economy.html"
-]
-},
-{
-"node": "lab:concept/central-limit-theorem",
-"ko": "중심극한정리",
-"topics": [
-"lab:topic/central-limit-theorem"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"my_article_08_poll_reweighting_lab/X1_poll_reweighting.html"
-]
-},
-{
 "node": "lab:concept/classification",
 "ko": "분류",
 "topics": [
@@ -216,84 +90,6 @@
 "confidence": "low",
 "pages": [
 "AI_for_cement_produce/cement_quality.html"
-]
-},
-{
-"node": "lab:concept/clinical-phases",
-"ko": "임상시험 단계",
-"topics": [
-"lab:topic/clinical-trial-phases"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"health_stats_lab/01_clinical_stats_ai.html"
-]
-},
-{
-"node": "lab:concept/conditional-probability",
-"ko": "조건부확률",
-"topics": [
-"lab:topic/conditional-probability"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"agent_secret_leak_lab/01_settings_leak_probability.html",
-"agent_secret_leak_lab/02_debate_settings_leak.html",
-"bayesian-statistics-for-data-scientists/02_probability.html"
-]
-},
-{
-"node": "lab:concept/confidence-interval",
-"ko": "신뢰구간",
-"topics": [
-"lab:topic/confidence-interval"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"bayesian-statistics-for-data-scientists/11_bayesian_vision.html",
-"LLM_evaluation/llm_evaluation.html",
-"my_article_01_bitcoin_price_analytics/crypto_info_efficiency.html"
-]
-},
-{
-"node": "lab:concept/conjugate-prior",
-"ko": "켤레 사전분포",
-"topics": [
-"lab:topic/conjugate-prior"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"bayesian-statistics-for-data-scientists/13_capstone.html"
-]
-},
-{
-"node": "lab:concept/coordinate-system",
-"ko": "좌표계",
-"topics": [
-"lab:topic/coordinates"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"hello_space_lab/index.html"
-]
-},
-{
-"node": "lab:concept/credible-interval",
-"ko": "신용구간",
-"topics": [
-"lab:topic/credible-interval"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"agent_secret_leak_lab/01_settings_leak_probability.html",
-"bayesian-statistics-for-data-scientists/04_ab_test.html",
-"bayesian-statistics-for-data-scientists/10_nlp_bayes.html"
 ]
 },
 {
@@ -310,18 +106,6 @@
 ]
 },
 {
-"node": "lab:concept/curvature",
-"ko": "곡률",
-"topics": [
-"lab:topic/curvature"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"covariant_chase_lab/index.html"
-]
-},
-{
 "node": "lab:concept/data-augmentation",
 "ko": "데이터 증강",
 "topics": [
@@ -331,20 +115,6 @@
 "confidence": "mid",
 "pages": [
 "how_to_make_ai_model_factory_version/testlab.html"
-]
-},
-{
-"node": "lab:concept/deadweight-loss",
-"ko": "사중손실",
-"topics": [
-"lab:topic/deadweight-loss"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"basic_economic_lab/07_cost_of_taxation.html",
-"basic_economic_lab/11f_final_review.html",
-"micro_economics/03_market_power.html"
 ]
 },
 {
@@ -373,45 +143,6 @@
 ]
 },
 {
-"node": "lab:concept/depreciation",
-"ko": "감가상각",
-"topics": [
-"lab:topic/depreciation"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"python-accounting-analytics/04_fixed_assets_tax.html"
-]
-},
-{
-"node": "lab:concept/derivative",
-"ko": "미분(도함수)",
-"topics": [
-"lab:topic/differentiation"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"optimization_3d_map/first_step_1.html",
-"optimization_3d_map/index.html",
-"vector_calculus_lab/00_orientation.html"
-]
-},
-{
-"node": "lab:concept/diffusion",
-"ko": "확산 모델",
-"topics": [
-"lab:topic/diffusion"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"adminmrobo-structure_first_drawing_lab/04_ai_learns.html",
-"adminmrobo-structure_first_drawing_lab/index.html"
-]
-},
-{
 "node": "lab:concept/diversification",
 "ko": "분산투자",
 "topics": [
@@ -422,58 +153,6 @@
 "pages": [
 "micro_economics/20_asset_markets.html",
 "my_article_00_Korean_stockmarket_volatility_study/2-6_independence-correlation.html"
-]
-},
-{
-"node": "lab:concept/economies-of-scale",
-"ko": "규모의 경제",
-"topics": [
-"lab:topic/economies-of-scale"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"blockchain_finance_ch03/3-02_mining-farms.html"
-]
-},
-{
-"node": "lab:concept/efficient-market-hypothesis",
-"ko": "효율적 시장가설",
-"topics": [
-"lab:topic/efficient-market-hypothesis"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"my_article_00_Korean_stockmarket_volatility_study/1-2_efficient-market.html",
-"my_article_00_Korean_stockmarket_volatility_study/2-6_independence-correlation.html",
-"my_article_00_Korean_stockmarket_volatility_study/3-5_vkospi-return-effect.html"
-]
-},
-{
-"node": "lab:concept/euclidean-space",
-"ko": "유클리드 공간(자와 각도기가 있는 방)",
-"topics": [
-"lab:topic/euclidean-space"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"euclidean_space_lab/01_ruler_rooms.html",
-"euclidean_space_lab/index.html",
-"minkowski_space_lab/m0_orientation.html"
-]
-},
-{
-"node": "lab:concept/expectation",
-"ko": "기댓값과 분산",
-"topics": [
-"lab:topic/expectation-variance"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"statistics_note/2-3_random_variable_covariance.html"
 ]
 },
 {
@@ -489,32 +168,6 @@
 ]
 },
 {
-"node": "lab:concept/externality",
-"ko": "외부성",
-"topics": [
-"lab:topic/externality"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"ai_crime_lab/ch09.html",
-"basic_economic_lab/09_market_failure.html",
-"basic_economic_lab/11f_final_review.html"
-]
-},
-{
-"node": "lab:concept/factor-demand",
-"ko": "요소수요",
-"topics": [
-"lab:topic/factor-demand"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"micro_economics/03_profit_function.html"
-]
-},
-{
 "node": "lab:concept/first-party-fraud",
 "ko": "제1자 사기",
 "topics": [
@@ -524,124 +177,6 @@
 "confidence": "mid",
 "pages": [
 "ai_crime_lab/index.html"
-]
-},
-{
-"node": "lab:concept/generalization",
-"ko": "일반화와 과대적합",
-"topics": [
-"lab:topic/generalization"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"fintech_data_analysis/04_analysis_concepts.html",
-"fintech_data_analysis/08_midterm_review.html",
-"Regression_ridge_lasso/RG_ridge_lasso.html"
-]
-},
-{
-"node": "lab:concept/geodesic",
-"ko": "측지선",
-"topics": [
-"lab:topic/geodesics"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"covariant_chase_lab/index.html",
-"covariant_chase_lab/index.html",
-"covariant_chase_lab/typhoon.html"
-]
-},
-{
-"node": "lab:concept/gradient",
-"ko": "기울기",
-"topics": [
-"lab:topic/gradient"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"ai_rendering/01_inverse_rendering.html",
-"ai_rendering/2-3_stairs_and_slides.html",
-"fish_market_learning_epoch_etc/02_loss_and_gradient.html"
-]
-},
-{
-"node": "lab:concept/hallucination",
-"ko": "환각",
-"topics": [
-"lab:topic/hallucination"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"ontology_trend_report/index.html"
-]
-},
-{
-"node": "lab:concept/hamiltonian",
-"ko": "해밀토니안(T + V)",
-"topics": [
-"lab:topic/hamiltonian"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"lagrangian_hamiltonian_lab/00_orientation.html",
-"lagrangian_hamiltonian_lab/01_lagrangian.html",
-"lagrangian_hamiltonian_lab/02_hamiltonian.html"
-]
-},
-{
-"node": "lab:concept/hilbert-space",
-"ko": "힐베르트 공간",
-"topics": [
-"lab:topic/hilbert-space"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"hilbert_space_lab/h1_arrow_rooms.html",
-"hilbert_space_lab/h2_wave_rooms.html",
-"minkowski_space_lab/m0_orientation.html"
-]
-},
-{
-"node": "lab:concept/incentive",
-"ko": "유인",
-"topics": [
-"lab:topic/incentives"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"basic_economic_lab/01_ten_principles.html"
-]
-},
-{
-"node": "lab:concept/indifference-curve",
-"ko": "무차별곡선",
-"topics": [
-"lab:topic/indifference-curves"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"micro_economics/01_consumer_choice.html"
-]
-},
-{
-"node": "lab:concept/inflation",
-"ko": "인플레이션",
-"topics": [
-"lab:topic/inflation"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"basic_economic_lab/10_macro_economy.html"
 ]
 },
 {
@@ -657,19 +192,6 @@
 ]
 },
 {
-"node": "lab:concept/interpretability",
-"ko": "해석력",
-"topics": [
-"lab:topic/interpretability"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"AI_for_cement_produce/cement_strength_cost.html",
-"data_science_for_business/week04_analysis_concepts.html"
-]
-},
-{
 "node": "lab:concept/join",
 "ko": "조인",
 "topics": [
@@ -679,31 +201,6 @@
 "confidence": "mid",
 "pages": [
 "data_base_design/w07_relational_operations.html"
-]
-},
-{
-"node": "lab:concept/kkt-conditions",
-"ko": "KKT 조건",
-"topics": [
-"lab:topic/kkt-conditions"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"lagrange_multiplier_lab/index.html"
-]
-},
-{
-"node": "lab:concept/knn",
-"ko": "가장 가까운 이웃(KNN)",
-"topics": [
-"lab:topic/knn"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"hello_space_lab/06_data_space.html",
-"industrial-accident-prediction/ch3_models.html"
 ]
 },
 {
@@ -717,32 +214,6 @@
 "pages": [
 "inference_engineering_study/index.html",
 "inference_engineering_study/index.html"
-]
-},
-{
-"node": "lab:concept/lagrangian",
-"ko": "라그랑지안",
-"topics": [
-"lab:topic/lagrangian-mechanics"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"lagrange_multiplier_lab/index.html",
-"lagrangian_hamiltonian_lab/00_orientation.html",
-"lagrangian_hamiltonian_lab/01_lagrangian.html"
-]
-},
-{
-"node": "lab:concept/law-large-numbers",
-"ko": "대수의 법칙",
-"topics": [
-"lab:topic/law-of-large-numbers"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"statistics_note/2-1_probability_basics.html"
 ]
 },
 {
@@ -760,110 +231,6 @@
 ]
 },
 {
-"node": "lab:concept/market-equilibrium",
-"ko": "시장균형",
-"topics": [
-"lab:topic/market-equilibrium"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"basic_economic_lab/03_supply_demand.html",
-"basic_economic_lab/05m_midterm_review.html",
-"micro_economics/13_competitive_markets.html"
-]
-},
-{
-"node": "lab:concept/minkowski-space",
-"ko": "민코프스키 시공간",
-"topics": [
-"lab:topic/minkowski-spacetime"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"minkowski_space_lab/m0_orientation.html",
-"minkowski_space_lab/m1_clock_corridor.html"
-]
-},
-{
-"node": "lab:concept/monopolistic-competition",
-"ko": "독점적 경쟁",
-"topics": [
-"lab:topic/monopolistic-competition"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"basic_economic_lab/08_market_structure.html"
-]
-},
-{
-"node": "lab:concept/monopoly",
-"ko": "독점",
-"topics": [
-"lab:topic/monopoly"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"basic_economic_lab/08_market_structure.html",
-"basic_economic_lab/11f_final_review.html",
-"micro_economics/03_market_power.html"
-]
-},
-{
-"node": "lab:concept/multicollinearity",
-"ko": "다중공선성",
-"topics": [
-"lab:topic/multicollinearity"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"my_article_00_Korean_stockmarket_volatility_study/2-3_research-model.html",
-"my_article_00_Korean_stockmarket_volatility_study/3-4_sector-contribution.html"
-]
-},
-{
-"node": "lab:concept/multiple-comparisons",
-"ko": "다중 비교",
-"topics": [
-"lab:topic/multiple-comparisons"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"health_stats_lab/01_clinical_stats_ai.html"
-]
-},
-{
-"node": "lab:concept/nash-equilibrium",
-"ko": "내시 균형",
-"topics": [
-"lab:topic/nash-equilibrium"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"agentic_ai_crash_guide/index.html",
-"ai_crime_lab/ch09.html",
-"micro_economics/04_game_theory.html"
-]
-},
-{
-"node": "lab:concept/nominal-vs-real",
-"ko": "명목과 실질",
-"topics": [
-"lab:topic/nominal-real"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"fof-money-meridian-/01_fof_money_meridian.html"
-]
-},
-{
 "node": "lab:concept/npv",
 "ko": "순현재가치",
 "topics": [
@@ -876,33 +243,6 @@
 ]
 },
 {
-"node": "lab:concept/opportunity-cost",
-"ko": "기회비용",
-"topics": [
-"lab:topic/opportunity-cost"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"ai_crime_lab/ch02.html",
-"basic_economic_lab/01_ten_principles.html",
-"basic_economic_lab/05m_midterm_review.html"
-]
-},
-{
-"node": "lab:concept/p-value",
-"ko": "p값",
-"topics": [
-"lab:topic/p-value"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"bayesian-statistics-for-data-scientists/13_capstone.html",
-"statistics_note/3-1_hypothesis_testing.html"
-]
-},
-{
 "node": "lab:concept/panel-data",
 "ko": "패널 데이터",
 "topics": [
@@ -912,47 +252,6 @@
 "confidence": "low",
 "pages": [
 "industrial-accident-prediction/ch2_data.html"
-]
-},
-{
-"node": "lab:concept/parallel-transport",
-"ko": "평행이동",
-"topics": [
-"lab:topic/parallel-transport"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"covariant_chase_lab/index.html",
-"covariant_chase_lab/typhoon.html"
-]
-},
-{
-"node": "lab:concept/partial-derivative",
-"ko": "편미분",
-"topics": [
-"lab:topic/partial-derivatives"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"covariant_chase_lab/index.html",
-"optimization_3d_map/3_arrow_field.html",
-"optimization_3d_map/first_step_1.html"
-]
-},
-{
-"node": "lab:concept/perfect-competition",
-"ko": "완전경쟁시장",
-"topics": [
-"lab:topic/perfect-competition"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"basic_economic_lab/08_market_structure.html",
-"basic_economic_lab/11f_final_review.html",
-"optimization_3d_map/first_step_1.html"
 ]
 },
 {
@@ -969,31 +268,6 @@
 ]
 },
 {
-"node": "lab:concept/platform",
-"ko": "플랫폼",
-"topics": [
-"lab:topic/platforms"
-],
-"auto": true,
-"confidence": "low",
-"pages": [
-"fintech_data_analysis/01_fintech_industry.html"
-]
-},
-{
-"node": "lab:concept/power",
-"ko": "검정력",
-"topics": [
-"lab:topic/statistical-power"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"bayesian-statistics-for-data-scientists/13_capstone.html",
-"statistics_note/3-1_hypothesis_testing.html"
-]
-},
-{
 "node": "lab:concept/precision-recall",
 "ko": "정밀도와 재현율",
 "topics": [
@@ -1003,20 +277,6 @@
 "confidence": "mid",
 "pages": [
 "llm_memory_trilogy/3_1_what_to_remember.html"
-]
-},
-{
-"node": "lab:concept/price-discrimination",
-"ko": "가격차별",
-"topics": [
-"lab:topic/price-discrimination"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"micro_economics/03_market_power.html",
-"micro_economics/03m_midterm_review.html",
-"micro_economics/14_monopoly.html"
 ]
 },
 {
@@ -1030,34 +290,6 @@
 "pages": [
 "ai_rendering/1-3_faces_on_a_map.html",
 "what_is_tensor/02_tensor_map.html"
-]
-},
-{
-"node": "lab:concept/production-function",
-"ko": "생산함수",
-"topics": [
-"lab:topic/production-function"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"micro_economics/02_producer_choice.html",
-"micro_economics/03m_midterm_review.html",
-"micro_economics/01_technology.html"
-]
-},
-{
-"node": "lab:concept/public-good",
-"ko": "공공재",
-"topics": [
-"lab:topic/public-goods"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"basic_economic_lab/09_market_failure.html",
-"basic_economic_lab/11f_final_review.html",
-"micro_economics/06_welfare_policy.html"
 ]
 },
 {
@@ -1085,57 +317,6 @@
 ]
 },
 {
-"node": "lab:concept/reproducibility",
-"ko": "재현성",
-"topics": [
-"lab:topic/reproducibility"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"data_science_for_business/week04_analysis_concepts.html",
-"industrial-accident-prediction/ch6_practice.html"
-]
-},
-{
-"node": "lab:concept/retained-earnings",
-"ko": "이익잉여금",
-"topics": [
-"lab:topic/retained-earnings"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"python-accounting-analytics/09_turnover_review.html"
-]
-},
-{
-"node": "lab:concept/robo-advisor",
-"ko": "로보어드바이저",
-"topics": [
-"lab:topic/robo-advisor"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"fintech_data_analysis/01_fintech_industry.html"
-]
-},
-{
-"node": "lab:concept/sampling-distribution",
-"ko": "표본평균의 분포",
-"topics": [
-"lab:topic/sampling-distribution-mean"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"statistics_note/2-1a_point_interval.html",
-"statistics_note/2-4_sampling_distribution.html",
-"statistics_note_ch04_Statistical-Estimation_01_a/index.html"
-]
-},
-{
 "node": "lab:concept/scaling-law",
 "ko": "스케일링 법칙",
 "topics": [
@@ -1145,19 +326,6 @@
 "confidence": "mid",
 "pages": [
 "rulebase_to_agent/1-7_scaling.html"
-]
-},
-{
-"node": "lab:concept/scarcity",
-"ko": "희소성",
-"topics": [
-"lab:topic/scarcity"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"basic_economic_lab/01_ten_principles.html",
-"basic_economic_lab/05m_midterm_review.html"
 ]
 },
 {
@@ -1194,56 +362,6 @@
 "confidence": "mid",
 "pages": [
 "lagrange_multiplier_lab/index.html"
-]
-},
-{
-"node": "lab:concept/sql",
-"ko": "SQL",
-"topics": [
-"lab:topic/sql"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"how_to_start_db/index.html"
-]
-},
-{
-"node": "lab:concept/stationarity",
-"ko": "정상성",
-"topics": [
-"lab:topic/stationarity"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"data_science_for_business/week11_time_series.html",
-"fintech_data_analysis/11_deep_learning_timeseries.html",
-"fintech_data_analysis/15_final_review.html"
-]
-},
-{
-"node": "lab:concept/supervised",
-"ko": "지도 학습",
-"topics": [
-"lab:topic/supervised-learning"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"data_science_for_business/week04_analysis_concepts.html"
-]
-},
-{
-"node": "lab:concept/survey-weight",
-"ko": "가중치",
-"topics": [
-"lab:topic/survey-weights"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"my_article_08_poll_reweighting_lab/X1_poll_reweighting.html"
 ]
 },
 {
@@ -1285,68 +403,6 @@
 ]
 },
 {
-"node": "lab:concept/trial-balance",
-"ko": "시산표",
-"topics": [
-"lab:topic/trial-balance"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"python-accounting-analytics/01_accounting_basics.html"
-]
-},
-{
-"node": "lab:concept/unbiasedness",
-"ko": "치우침 없음 (불편성)",
-"topics": [
-"lab:topic/unbiasedness"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"statistics_note_ch04_Statistical-Estimation_01_a/index.html",
-"statistics_note_ch04_Statistical-Estimation_01_a/2-1a_point_interval_estimation.html"
-]
-},
-{
-"node": "lab:concept/universal-approximation",
-"ko": "보편 근사 (원리상 가능)",
-"topics": [
-"lab:topic/universal-approximation"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"timeseries-trilogy/2_3_weighted_sum_vs_combination.html"
-]
-},
-{
-"node": "lab:concept/unsupervised",
-"ko": "비지도 학습",
-"topics": [
-"lab:topic/unsupervised-learning"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"data_science_for_business/week04_analysis_concepts.html",
-"data_science_for_business/week14_advanced_analytics.html"
-]
-},
-{
-"node": "lab:concept/utility",
-"ko": "효용",
-"topics": [
-"lab:topic/utility"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"micro_economics/01_consumer_choice.html"
-]
-},
-{
 "node": "lab:concept/utility-maximization",
 "ko": "효용극대화",
 "topics": [
@@ -1372,31 +428,6 @@
 "ai_rendering/1-3_faces_on_a_map.html",
 "bayesian-statistics-for-data-scientists/01_what_is_statistics.html",
 "fish_market_learning_epoch_etc/05_many_shooters.html"
-]
-},
-{
-"node": "lab:concept/vector-database",
-"ko": "벡터 데이터베이스",
-"topics": [
-"lab:topic/vector-database"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"vector_db_lab/03_vector_store.html",
-"vector_db_lab/index.html"
-]
-},
-{
-"node": "lab:concept/vector-space",
-"ko": "벡터 공간",
-"topics": [
-"lab:topic/vector-spaces"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"hilbert_space_lab/h1_arrow_rooms.html"
 ]
 },
 {
@@ -1439,32 +470,6 @@
 ]
 },
 {
-"node": "lab:indicator/current-account",
-"ko": "경상수지",
-"topics": [
-"lab:topic/current-account"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"fof-money-meridian-/01_fof_money_meridian.html"
-]
-},
-{
-"node": "lab:method/ab-test",
-"ko": "A/B 테스트",
-"topics": [
-"lab:topic/ab-testing"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"bayesian-statistics-for-data-scientists/04_ab_test.html",
-"bayesian-statistics-for-data-scientists/07m_midterm_review.html",
-"data_science_for_business/week01_business_data_science.html"
-]
-},
-{
 "node": "lab:method/activation-function",
 "ko": "활성화 함수",
 "topics": [
@@ -1474,18 +479,6 @@
 "confidence": "mid",
 "pages": [
 "one_day_deep_learning/index.html"
-]
-},
-{
-"node": "lab:method/anova",
-"ko": "분산분석",
-"topics": [
-"lab:topic/anova"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"statistics_note/3-5_anova.html"
 ]
 },
 {
@@ -1501,19 +494,6 @@
 ]
 },
 {
-"node": "lab:method/confidence-interval",
-"ko": "신뢰구간",
-"topics": [
-"lab:topic/confidence-interval"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"statistics_note_ch04_Statistical-Estimation_01_a/index.html",
-"statistics_note_ch04_Statistical-Estimation_01_a/2-1a_point_interval_estimation.html"
-]
-},
-{
 "node": "lab:method/control-chart",
 "ko": "관리도 (SPC)",
 "topics": [
@@ -1523,18 +503,6 @@
 "confidence": "mid",
 "pages": [
 "how_to_make_ai_model_factory_version/solar.html"
-]
-},
-{
-"node": "lab:method/data-split",
-"ko": "훈련·검증·시험 분할",
-"topics": [
-"lab:topic/data-splitting"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"data_science_for_business/week04_analysis_concepts.html"
 ]
 },
 {
@@ -1563,20 +531,6 @@
 ]
 },
 {
-"node": "lab:method/feature-engineering",
-"ko": "특성공학",
-"topics": [
-"lab:topic/feature-engineering"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"fintech_data_analysis/10_logistic_tree.html",
-"fintech_data_analysis/15_final_review.html",
-"timeseries-trilogy/2_6_feature_engineering.html"
-]
-},
-{
 "node": "lab:method/fuzzy-logic",
 "ko": "퍼지 이론",
 "topics": [
@@ -1586,20 +540,6 @@
 "confidence": "mid",
 "pages": [
 "rulebase_to_agent/1-1_rulebase.html"
-]
-},
-{
-"node": "lab:method/garch",
-"ko": "GARCH 모형",
-"topics": [
-"lab:topic/volatility-models"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"my_article_00_Korean_stockmarket_volatility_study/1-5_arch-garch.html",
-"my_article_00_Korean_stockmarket_volatility_study/1-6_asymmetry-decomposition.html",
-"my_article_07_media_blockchain/02_volatility_garch.html"
 ]
 },
 {
@@ -1613,19 +553,6 @@
 "pages": [
 "neural_network_atlas/2_neural_network_atlas_after.html",
 "neural_network_atlas/4_fruitfly_robot_match.html"
-]
-},
-{
-"node": "lab:method/graphrag",
-"ko": "GraphRAG",
-"topics": [
-"lab:topic/graph-rag"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"ontology_trend_report/index.html",
-"vector_db_lab/07_graph_ontology.html"
 ]
 },
 {
@@ -1666,18 +593,6 @@
 ]
 },
 {
-"node": "lab:method/lagrange-multipliers",
-"ko": "라그랑주 승수",
-"topics": [
-"lab:topic/lagrange-multipliers"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"vector_calculus_lab/03_machine_learning.html"
-]
-},
-{
 "node": "lab:method/llm-as-a-judge",
 "ko": "LLM 심판",
 "topics": [
@@ -1702,20 +617,6 @@
 ]
 },
 {
-"node": "lab:method/logistic-regression",
-"ko": "로지스틱 회귀 (다항)",
-"topics": [
-"lab:topic/glm-logistic"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"catch_phishing/ch4_models.html",
-"data_science_for_business/week10_regression_2.html",
-"DL_model_hiring_committee/6-1_perceptron.html"
-]
-},
-{
 "node": "lab:method/matrix-factorization",
 "ko": "행렬분해",
 "topics": [
@@ -1725,34 +626,6 @@
 "confidence": "low",
 "pages": [
 "bayesian-statistics-for-data-scientists/05_recommender.html"
-]
-},
-{
-"node": "lab:method/maximum-likelihood",
-"ko": "최우추정 (ML)",
-"topics": [
-"lab:topic/maximum-likelihood"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"my_article_00_Korean_stockmarket_volatility_study/1-4_clustering-tests.html",
-"my_article_00_Korean_stockmarket_volatility_study/1-5_arch-garch.html",
-"my_article_00_Korean_stockmarket_volatility_study/2-3_research-model.html"
-]
-},
-{
-"node": "lab:method/mcmc",
-"ko": "MCMC",
-"topics": [
-"lab:topic/mcmc"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"bayesian-statistics-for-data-scientists/04_ab_test.html",
-"bayesian-statistics-for-data-scientists/08_monte_carlo.html",
-"bayesian-statistics-for-data-scientists/13f_final_review.html"
 ]
 },
 {
@@ -1794,18 +667,6 @@
 ]
 },
 {
-"node": "lab:method/momentum-adam",
-"ko": "모멘텀·Adam",
-"topics": [
-"lab:topic/momentum-adam"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"math_for_ai_lab/part3.html"
-]
-},
-{
 "node": "lab:method/multi-head",
 "ko": "멀티헤드 어텐션",
 "topics": [
@@ -1840,20 +701,6 @@
 "confidence": "mid",
 "pages": [
 "ai-nlp-data-analysis/02-1_analysis_process.html"
-]
-},
-{
-"node": "lab:method/quantization",
-"ko": "양자화",
-"topics": [
-"lab:topic/quantization"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"data_to_numbers_lab/05_lighter_models.html",
-"inference_engineering_study/index.html",
-"vector_db_lab/03_vector_store.html"
 ]
 },
 {
@@ -1936,33 +783,6 @@
 ]
 },
 {
-"node": "lab:method/supervised-learning",
-"ko": "지도학습",
-"topics": [
-"lab:topic/supervised-learning"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"fintech_data_analysis/04_analysis_concepts.html",
-"one_day_machine_learning/index.html"
-]
-},
-{
-"node": "lab:method/svm",
-"ko": "SVM",
-"topics": [
-"lab:topic/svm"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"data_science_for_business/week06_classification_2.html",
-"fintech_data_analysis/06_knn_svm.html",
-"fintech_data_analysis/08_midterm_review.html"
-]
-},
-{
 "node": "lab:method/tokenization",
 "ko": "토큰화",
 "topics": [
@@ -1986,19 +806,6 @@
 "confidence": "mid",
 "pages": [
 "how_to_make_ai_model_factory_version/testlab.html"
-]
-},
-{
-"node": "lab:method/unsupervised-learning",
-"ko": "비지도학습",
-"topics": [
-"lab:topic/unsupervised-learning"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"fintech_data_analysis/04_analysis_concepts.html",
-"one_day_machine_learning/index.html"
 ]
 },
 {
@@ -2039,44 +846,6 @@
 ]
 },
 {
-"node": "lab:metric/p-value",
-"ko": "p값",
-"topics": [
-"lab:topic/p-value"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"health_stats_lab/01_clinical_stats_ai.html"
-]
-},
-{
-"node": "lab:metric/power",
-"ko": "검정력",
-"topics": [
-"lab:topic/statistical-power"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"health_stats_lab/01_clinical_stats_ai.html"
-]
-},
-{
-"node": "lab:metric/roc-auc",
-"ko": "ROC 곡선과 AUC",
-"topics": [
-"lab:topic/roc-auc"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"data_science_for_business/week07_model_evaluation.html",
-"fintech_data_analysis/07_model_evaluation.html",
-"fintech_data_analysis/08_midterm_review.html"
-]
-},
-{
 "node": "lab:process/stacking",
 "ko": "적층",
 "topics": [
@@ -2086,19 +855,6 @@
 "confidence": "mid",
 "pages": [
 "how_to_make_ai_model_factory_version/factory.html"
-]
-},
-{
-"node": "lab:room/r04",
-"ko": "울타리가 있을 때 — 라그랑주 승수",
-"topics": [
-"lab:topic/lagrange-multipliers"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"lagrangian_hamiltonian_lab/01_lagrangian.html",
-"lagrangian_hamiltonian_lab/index.html"
 ]
 },
 {
@@ -2114,58 +870,6 @@
 ]
 },
 {
-"node": "lab:term/activation-function",
-"ko": "활성함수",
-"topics": [
-"lab:topic/activation-function"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"neural_network_atlas/1_neural_network_atlas_chart.html",
-"neural_network_atlas/2_neural_network_atlas_after.html",
-"timeseries-trilogy/3_6_neural_irony.html"
-]
-},
-{
-"node": "lab:term/autocorrelation",
-"ko": "자기상관",
-"topics": [
-"lab:topic/autocorrelation"
-],
-"auto": true,
-"confidence": "low",
-"pages": [
-"my_article_07_media_blockchain/02_volatility_garch.html"
-]
-},
-{
-"node": "lab:term/backpropagation",
-"ko": "역전파",
-"topics": [
-"lab:topic/backpropagation"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"neural_network_atlas/1_neural_network_atlas_chart.html",
-"neural_network_atlas/4_fruitfly_robot_match.html",
-"timeseries-trilogy/2_2_lstm_gates.html"
-]
-},
-{
-"node": "lab:term/backpropagation-term",
-"ko": "역전파",
-"topics": [
-"lab:topic/backpropagation"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"vector_calculus_lab/04_deep_learning.html"
-]
-},
-{
 "node": "lab:term/classification",
 "ko": "분류",
 "topics": [
@@ -2175,18 +879,6 @@
 "confidence": "low",
 "pages": [
 "ai-nlp-data-analysis/07-1_nlp_ai_models.html"
-]
-},
-{
-"node": "lab:term/confusion-matrix",
-"ko": "혼동행렬",
-"topics": [
-"lab:topic/confusion-matrix"
-],
-"auto": true,
-"confidence": "low",
-"pages": [
-"bayesian-statistics-for-data-scientists/03_bayesian_thinking.html"
 ]
 },
 {
@@ -2201,80 +893,6 @@
 "neural_network_atlas/1_neural_network_atlas_chart.html",
 "neural_network_atlas/2_neural_network_atlas_after.html",
 "neural_network_atlas/3_fruitfly_robot_rules.html"
-]
-},
-{
-"node": "lab:term/derivative-term",
-"ko": "미분",
-"topics": [
-"lab:topic/differentiation"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"vector_calculus_lab/00_orientation.html"
-]
-},
-{
-"node": "lab:term/diffusion-model",
-"ko": "확산 모델",
-"topics": [
-"lab:topic/diffusion"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"vector_calculus_lab/05_rendering.html"
-]
-},
-{
-"node": "lab:term/generative-adversarial-network",
-"ko": "GAN",
-"topics": [
-"lab:topic/gan"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"vector_calculus_lab/04_deep_learning.html"
-]
-},
-{
-"node": "lab:term/gradient",
-"ko": "그래디언트",
-"topics": [
-"lab:topic/gradient"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"vector_calculus_lab/index.html"
-]
-},
-{
-"node": "lab:term/gradient-descent",
-"ko": "경사하강",
-"topics": [
-"lab:topic/gradient-descent"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"timeseries-trilogy/2_3_weighted_sum_vs_combination.html",
-"timeseries-trilogy/2_5_new_coordinates.html",
-"vector_calculus_lab/01_differential.html"
-]
-},
-{
-"node": "lab:term/gradient-term",
-"ko": "그래디언트",
-"topics": [
-"lab:topic/gradient"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"vector_calculus_lab/01_differential.html"
 ]
 },
 {
@@ -2302,37 +920,10 @@
 ]
 },
 {
-"node": "lab:term/integral",
-"ko": "적분",
-"topics": [
-"lab:topic/riemann-integral"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"vector_calculus_lab/02_integral.html"
-]
-},
-{
-"node": "lab:term/lagrange-multiplier",
-"ko": "라그랑주 승수",
-"topics": [
-"lab:topic/lagrange-multipliers"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"micro_economics/04_cost_minimization.html",
-"vector_calculus_lab/03_machine_learning.html",
-"vector_calculus_lab/06_factory.html"
-]
-},
-{
 "node": "lab:term/logistic-regression",
 "ko": "로지스틱 회귀",
 "topics": [
-"lab:topic/glm-logistic",
-"lab:topic/logistic-regression"
+"lab:topic/glm-logistic"
 ],
 "auto": true,
 "confidence": "mid",
@@ -2356,54 +947,6 @@
 ]
 },
 {
-"node": "lab:term/maximum-likelihood",
-"ko": "최대우도",
-"topics": [
-"lab:topic/maximum-likelihood"
-],
-"auto": true,
-"confidence": "low",
-"pages": [
-"my_article_07_media_blockchain/02_volatility_garch.html"
-]
-},
-{
-"node": "lab:term/nabla",
-"ko": "∇",
-"topics": [
-"lab:topic/gradient"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"vector_calculus_lab/index.html"
-]
-},
-{
-"node": "lab:term/partial-derivative",
-"ko": "편미분",
-"topics": [
-"lab:topic/partial-derivatives"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"vector_calculus_lab/01_differential.html"
-]
-},
-{
-"node": "lab:term/payoff-matrix",
-"ko": "보수표",
-"topics": [
-"lab:topic/payoff-matrix"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"micro_economics/04_game_theory.html"
-]
-},
-{
 "node": "lab:term/pca",
 "ko": "PCA",
 "topics": [
@@ -2413,30 +956,6 @@
 "confidence": "mid",
 "pages": [
 "ai-nlp-data-analysis/06-2_vector_visualization.html"
-]
-},
-{
-"node": "lab:term/policy-rate",
-"ko": "기준금리",
-"topics": [
-"lab:topic/policy-rate"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"basic_economic_lab/11_economic_policy.html"
-]
-},
-{
-"node": "lab:term/price-discrimination",
-"ko": "가격차별",
-"topics": [
-"lab:topic/price-discrimination"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"basic_economic_lab/06_market_efficiency.html"
 ]
 },
 {
@@ -2486,19 +1005,6 @@
 "confidence": "low",
 "pages": [
 "ai-nlp-data-analysis/02-3_models_methods.html"
-]
-},
-{
-"node": "lab:term/sql",
-"ko": "SQL",
-"topics": [
-"lab:topic/sql"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"ai-nlp-data-analysis/01-2_nl_data_features.html",
-"data_base_design/w01_course_guide.html"
 ]
 },
 {
@@ -2573,59 +1079,6 @@
 "neural_network_atlas/1_neural_network_atlas_chart.html",
 "neural_network_atlas/2_neural_network_atlas_after.html",
 "timeseries-trilogy/3_6_neural_irony.html"
-]
-},
-{
-"node": "lab:theory/bayes-theorem",
-"ko": "베이즈 정리",
-"topics": [
-"lab:topic/bayes-theorem"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"bayesian-statistics-for-data-scientists/03_bayesian_thinking.html",
-"bayesian-statistics-for-data-scientists/07m_midterm_review.html"
-]
-},
-{
-"node": "lab:theory/central-limit-theorem",
-"ko": "중심극한정리",
-"topics": [
-"lab:topic/central-limit-theorem"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"bayesian-statistics-for-data-scientists/01_what_is_statistics.html",
-"statistics_note/2-2_normal_distribution.html",
-"statistics_note/2-4_sampling_distribution.html"
-]
-},
-{
-"node": "lab:theory/is-lm",
-"ko": "IS-LM 모형",
-"topics": [
-"lab:topic/is-lm"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"fof-money-meridian-/01_fof_money_meridian.html"
-]
-},
-{
-"node": "lab:theory/law-of-large-numbers",
-"ko": "대수의 법칙",
-"topics": [
-"lab:topic/law-of-large-numbers"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"bayesian-statistics-for-data-scientists/01_what_is_statistics.html",
-"bayesian-statistics-for-data-scientists/02_probability.html",
-"bayesian-statistics-for-data-scientists/07m_midterm_review.html"
 ]
 }
 ]
