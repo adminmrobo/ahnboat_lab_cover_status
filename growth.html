@@ -85,6 +85,7 @@ html:lang(ja) body,html:lang(zh-CN) body{word-break:normal;overflow-wrap:anywher
 .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin:0 4px 0 1px;vertical-align:0}
 .foot{margin:16px 0 0;font-size:12.5px;color:var(--muted)}
 .only-full{display:none}.full .only-full{display:block}
+.basis{margin:-6px 0 16px;font-size:14px;color:var(--muted)}.basis a{display:inline-flex;align-items:center;min-height:36px;margin-left:6px;padding:0 14px;border:2px solid var(--line);border-radius:99px;background:var(--bg);color:var(--ink);text-decoration:none;font-weight:700;font-size:14px}.basis a[aria-current=true]{background:var(--ink);color:var(--bg)}.basis small{display:block;margin-top:6px;font-size:12.5px}
 @media (max-width:899px){.mons{grid-template-columns:minmax(0,1fr)}#m2 .fig{min-height:320px}}
 @media (max-width:560px){.haru{grid-template-columns:72px minmax(0,1fr);gap:12px;padding:14px}.haru img{width:72px;height:72px}.top2{grid-template-columns:minmax(0,1fr)}.big{font-size:44px}}
 </style>
@@ -94,6 +95,7 @@ html:lang(ja) body,html:lang(zh-CN) body{word-break:normal;overflow-wrap:anywher
   <div class="headrow"><div class="head"><span class="kicker">AHNBOAT LAB · KNOWLEDGE NODES</span><h1 data-k="title">Reon Ahn Page 지식 노드 현황</h1></div>
     <a class="more" id="more" href="growth.html?view=full" target="_blank" rel="noopener"><span data-k="more">지식 노드 자세히 보기</span> <span aria-hidden="true">→</span></a></div>
   <p class="sub" id="sub">불러오는 중…</p>
+  <div class="basis only-full" id="basis"></div>
 
   <section class="haru" aria-live="polite">
     <img src="thumbs/chars/idphoto/haru_E01.webp" alt="" id="haruImg" width="112" height="112">
@@ -199,8 +201,15 @@ function sprite(c){var s=64,cv=document.createElement('canvas');cv.width=cv.heig
 Promise.all([fetch('data/growth.json',{cache:'no-cache'}).then(function(r){if(!r.ok)throw new Error(r.status);return r.json();}),AhnI18n.ready])
   .then(function(a){init(a[0]);}).catch(function(e){$('sub').textContent='지식 노드 자료를 불러오지 못했습니다 ('+e.message+')';});
 
+/* 보는 기준(세 창 전체 보기만): 콘텐츠 분류(서버 랙) ↔ 학문 분야. 학문 분야면 색·범례·기간 통계를 학문 분야 한 벌로 바꿔 끼운다. */
+var BYDOM=FULLV&&Q.get('by')==='domain';
+function basisBar(D){var b=document.getElementById('basis');if(!b||!FULLV||!D.domains)return;var t=AhnI18n.t,u=function(by){var q=new URLSearchParams(location.search);if(by)q.set('by',by);else q.delete('by');return 'growth.html?'+q.toString();};
+  b.innerHTML='<span>'+t('보는 기준')+'</span><a href="'+u('')+'"'+(BYDOM?'':' aria-current="true"')+'>'+t('콘텐츠 분류')+'</a><a href="'+u('domain')+'"'+(BYDOM?' aria-current="true"':'')+'>'+t('학문 분야')+'</a>'+(BYDOM?'<small>'+t('색은 학문 분야입니다. 개념마다 처음 매긴 분야 하나로 칠했어요.')+'</small>':'');}
 function init(D){
   lang=AhnI18n.lang;
+  if(BYDOM&&D.domains&&D.nd&&D.nd.length===D.nodes.length){D.fields=D.domains;for(var q0=0;q0<D.nodes.length;q0++)D.nodes[q0][2]=D.nd[q0];
+    if(D.pd)for(q0=0;q0<D.pages.length;q0++)D.pages[q0][4]=D.pd[q0];if(D.period_dom)D.period=D.period_dom;}
+  basisBar(D);AhnI18n.onChange(function(){basisBar(D);});
   var N=D.nodes.length,t0=new Date(D.t0),built=new Date(D.built),W=D.period||(function(w){if(!w)return {kind:'week',start:D.t0.slice(0,10),end:D.t0.slice(0,10),nodes:0,prev_nodes:0,by_field:[],prev_by_field:[],top_link:null,top_nodes:[],pages:0,edges:0,buckets:[]};var s0=new Date(w.start+'T00:00:00+09:00').getTime();return Object.assign({},w,{kind:'week',end:new Date(s0+7*864e5+9*36e5).toISOString().slice(0,10),buckets:(w.by_day||[]).map(function(n,d){return [new Date(s0+d*864e5+9*36e5).toISOString().slice(0,10),n];})});})(D.week);KIND=W.kind||'week';
   var X=new Float32Array(N),Y=new Float32Array(N),F=new Uint8Array(N),T=new Float32Array(N),R=new Float32Array(N),i,k;
   for(i=0;i<N;i++){var n=D.nodes[i];X[i]=n[0];Y[i]=-n[1];F[i]=n[2];T[i]=n[3];R[i]=1+.8*Math.sqrt(n[4]);}

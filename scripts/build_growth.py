@@ -275,7 +275,8 @@ def main():
         idx[n["id"]] = len(nodes)
         nodes.append({"id": n["id"], "ko": n.get("ko") or n.get("en") or n["id"].split("/")[-1],
                       "en": n.get("en") or n.get("ko") or n["id"].split("/")[-1],
-                      "t": pages[first]["t"], "cat": cat, "page": first})
+                      "t": pages[first]["t"], "cat": cat, "page": first,
+                      "dom": (n.get("d") or (pages[first].get("d") or ["ai"]))[0]})
     seen, edges = set(), []
     for a, b, _rel in onto["edges"]:
         if a in idx and b in idx and a != b:
@@ -327,6 +328,16 @@ def main():
                    order.index(pages[q]["cat"]) if pages[q]["cat"] in order else 0] for q in plist],
         "period": choose_period(nodes, edges, order, [pages[q] for q in plist], now),
     }
+    # 학문 분야로 보기 (세 창 전체 보기의 '보는 기준'): 노드의 첫 학문 분야로 색·기간 통계를 한 벌 더
+    doms = [d for d in (onto.get("domains") or []) if d.get("concepts")]
+    if doms:
+        dcode = [d["code"] for d in doms]
+        nodes_d = [dict(n, cat=(n["dom"] if n["dom"] in dcode else dcode[0])) for n in nodes]
+        pages_d = [dict(pages[q], cat=((pages[q].get("d") or [dcode[0]])[0])) for q in plist]
+        out["domains"] = [{"name": d["ko"], "en": d["en"], "code": d["code"], "color": d["color"]} for d in doms]
+        out["nd"] = [dcode.index(n["cat"]) for n in nodes_d]
+        out["pd"] = [dcode.index(p["cat"]) if p["cat"] in dcode else 0 for p in pages_d]
+        out["period_dom"] = period_stats(out["period"]["kind"], nodes_d, edges, dcode, pages_d, now)
     old = load(P_OUT, {})
     if {k: v for k, v in old.items() if k != "built"} == json.loads(json.dumps({k: v for k, v in out.items() if k != "built"})):
         print("지식 노드 자료 변화 없음 — growth.json 그대로 둠")
