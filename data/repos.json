@@ -15070,9 +15070,26 @@
   "repo_url": "https://github.com/adminmrobo/math_for_ai_lab",
   "pages_url": "https://adminmrobo.github.io/math_for_ai_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-23T06:33:17Z",
+  "pushed_at": "2026-11-23T06:59:21Z",
   "has_manifest": true,
   "covers": [
+   {
+    "path": "assets/cover/cover_part1.webp",
+    "role": "cover",
+    "id": "cover_part1",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
    {
     "path": "assets/og/og_part1.jpg",
     "role": "og",
@@ -15083,7 +15100,24 @@
     ],
     "characters": [],
     "robot": "none",
-    "status": "redraw"
+    "status": "ok"
+   },
+   {
+    "path": "assets/cover/cover_part2.webp",
+    "role": "cover",
+    "id": "cover_part2",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    },
    {
     "path": "assets/og/og_part2.jpg",
@@ -15095,7 +15129,24 @@
     ],
     "characters": [],
     "robot": "none",
-    "status": "redraw"
+    "status": "ok"
+   },
+   {
+    "path": "assets/cover/cover_part3.webp",
+    "role": "cover",
+    "id": "cover_part3",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    },
    {
     "path": "assets/og/og_part3.jpg",
@@ -15107,7 +15158,271 @@
     ],
     "characters": [],
     "robot": "none",
-    "status": "redraw"
+    "status": "ok"
+   },
+   {
+    "path": "assets/scenes/scene_00.webp",
+    "role": "scene",
+    "id": "scene_00",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/scenes/scene_01.webp",
+    "role": "scene",
+    "id": "scene_01",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/scenes/scene_02.webp",
+    "role": "scene",
+    "id": "scene_02",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/scenes/scene_03.webp",
+    "role": "scene",
+    "id": "scene_03",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/scenes/scene_04.webp",
+    "role": "scene",
+    "id": "scene_04",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/scenes/scene_05.webp",
+    "role": "scene",
+    "id": "scene_05",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/scenes/scene_06.webp",
+    "role": "scene",
+    "id": "scene_06",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/scenes/scene_07.webp",
+    "role": "scene",
+    "id": "scene_07",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/scenes/scene_08.webp",
+    "role": "scene",
+    "id": "scene_08",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/scenes/scene_09.webp",
+    "role": "scene",
+    "id": "scene_09",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/scenes/scene_10.webp",
+    "role": "scene",
+    "id": "scene_10",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/scenes/scene_11.webp",
+    "role": "scene",
+    "id": "scene_11",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/scenes/scene_12.webp",
+    "role": "scene",
+    "id": "scene_12",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/scenes/scene_13.webp",
+    "role": "scene",
+    "id": "scene_13",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/scenes/scene_14.webp",
+    "role": "scene",
+    "id": "scene_14",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/scenes/scene_15.webp",
+    "role": "scene",
+    "id": "scene_15",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/scenes/duel_1.webp",
+    "role": "scene",
+    "id": "duel_1",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/scenes/duel_2.webp",
+    "role": "scene",
+    "id": "duel_2",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/scenes/duel_3.webp",
+    "role": "scene",
+    "id": "duel_3",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/scenes/practice_factory.webp",
+    "role": "scene",
+    "id": "practice_factory",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/scenes/practice_callcenter.webp",
+    "role": "scene",
+    "id": "practice_callcenter",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/scenes/practice_ads.webp",
+    "role": "scene",
+    "id": "practice_ads",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    }
   ],
   "redraw_count": 0,

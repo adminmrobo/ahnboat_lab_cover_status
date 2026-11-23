@@ -3143,6 +3143,21 @@
    "thumb": "thumbs/repos/who_am_i.jpg"
   },
   {
+   "title": "Ahn-boat Lab 식구 갤러리",
+   "summary": "",
+   "cat": "연구실 운영",
+   "mid": "제작 도구",
+   "sub": "",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/ahnboat_lab_gallery",
+   "site_url": "https://adminmrobo.github.io/ahnboat_lab_gallery/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": ""
+  },
+  {
    "title": "캐릭터 표정 라이브러리",
    "summary": "",
    "cat": "연구실 운영",
