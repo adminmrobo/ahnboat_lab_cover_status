@@ -1,0 +1,391 @@
+{
+ "version": "1.0",
+ "updated": "2026-11-24",
+ "note": "콘텐츠(저장소) → 학문 분야 코드. 첫 값이 주 분야. 분야 코드는 ahnboat_lab_explainer/data/domains.json. 노드에 domain이 없거나 등록되지 않은 값뿐일 때, 그리고 뼈대 주제와 이름이 맞지 않을 때 이 값을 쓴다. 관리실에서 고칠 수 있게 저장소별 한 줄.",
+ "map": {
+  "adminmrobo-structure_first_drawing_lab": [
+   "art",
+   "genai"
+  ],
+  "structure_first_drawing_lab_01": [
+   "art"
+  ],
+  "structure_first_drawing_lab_02": [
+   "art"
+  ],
+  "drawing_lab_01": [
+   "art"
+  ],
+  "drawing_lab_02": [
+   "art"
+  ],
+  "ai_rendering": [
+   "genai",
+   "dl"
+  ],
+  "ai_text_read_ability": [
+   "llm",
+   "dl"
+  ],
+  "cnn_face_game_lab": [
+   "dl"
+  ],
+  "motion_ai_series_01": [
+   "dl",
+   "genai"
+  ],
+  "AI_image_classification": [
+   "dl"
+  ],
+  "agent_secret_leak_lab": [
+   "crime",
+   "llm",
+   "stats"
+  ],
+  "agentic_ai_crash_guide": [
+   "llm"
+  ],
+  "ai-nlp-data-analysis": [
+   "llm",
+   "ml",
+   "data"
+  ],
+  "iclr2027_top3_lab_review": [
+   "ai",
+   "llm"
+  ],
+  "inference_engineering_study": [
+   "llm"
+  ],
+  "LLM_evaluation": [
+   "llm",
+   "stats"
+  ],
+  "llm_memory_trilogy": [
+   "llm",
+   "dl"
+  ],
+  "LLM_summary_note": [
+   "llm"
+  ],
+  "ontology_trend_report": [
+   "logic",
+   "llm"
+  ],
+  "Recursive-Self-Improvement": [
+   "llm",
+   "ai"
+  ],
+  "rulebase_to_agent": [
+   "llm",
+   "logic"
+  ],
+  "Automate_prompt_lab": [
+   "llm"
+  ],
+  "basic_economic_lab": [
+   "econ"
+  ],
+  "covariant_chase_lab": [
+   "geom",
+   "math"
+  ],
+  "euclidean_space_lab": [
+   "geom",
+   "math"
+  ],
+  "fof-money-meridian-": [
+   "econ",
+   "fin"
+  ],
+  "hello_space_lab": [
+   "geom",
+   "math"
+  ],
+  "hilbert_space_lab": [
+   "math",
+   "geom"
+  ],
+  "lagrange_multiplier_lab": [
+   "math",
+   "econ"
+  ],
+  "lagrangian_hamiltonian_lab": [
+   "math",
+   "econ"
+  ],
+  "math_for_ai_lab": [
+   "math",
+   "ml"
+  ],
+  "micro_economics": [
+   "econ",
+   "math"
+  ],
+  "minkowski_space_lab": [
+   "geom"
+  ],
+  "my_article_05_consumer_expenditure_predict": [
+   "econ",
+   "ml"
+  ],
+  "my_article_06_AI_effect_to_labor_demand": [
+   "econ",
+   "stats"
+  ],
+  "my_article_08_poll_reweighting_lab": [
+   "stats"
+  ],
+  "optimization_3d_map": [
+   "math",
+   "dl"
+  ],
+  "optimization_test_lab": [
+   "math",
+   "dl"
+  ],
+  "vector_calculus_lab": [
+   "math",
+   "geom"
+  ],
+  "nabla_field_lab": [
+   "math"
+  ],
+  "vector_analysis_lab": [
+   "math",
+   "geom"
+  ],
+  "vector_db_lab": [
+   "data",
+   "llm",
+   "math"
+  ],
+  "riemann_hypothesis_lab": [
+   "math",
+   "logic"
+  ],
+  "blockchain_finance_ch01": [
+   "fin"
+  ],
+  "blockchain_finance_ch02": [
+   "fin"
+  ],
+  "blockchain_finance_ch03": [
+   "fin"
+  ],
+  "cashflow-lab": [
+   "acct",
+   "fin"
+  ],
+  "fintech_data_analysis": [
+   "fin",
+   "ml"
+  ],
+  "my_article_00_Korean_stockmarket_volatility_study": [
+   "fin",
+   "stats"
+  ],
+  "my_article_01_bitcoin_price_analytics": [
+   "fin",
+   "stats"
+  ],
+  "my_article_02_crypto_predict_model_analytics": [
+   "fin",
+   "ml",
+   "stats"
+  ],
+  "my_article_07_media_blockchain": [
+   "fin",
+   "econ"
+  ],
+  "valuation_without_revenue": [
+   "fin",
+   "acct",
+   "biz"
+  ],
+  "AI_Model_Review_Fruit_fly_special": [
+   "neuro",
+   "dl"
+  ],
+  "neural_network_atlas": [
+   "dl"
+  ],
+  "neuralink_animal_brain_ai": [
+   "neuro"
+  ],
+  "neuron_reaction": [
+   "dl",
+   "neuro"
+  ],
+  "one_day_deep_learning": [
+   "dl"
+  ],
+  "what_is_tensor": [
+   "dl",
+   "math"
+  ],
+  "AI_Model_Review": [
+   "dl",
+   "neuro"
+  ],
+  "backprop_lab": [
+   "dl"
+  ],
+  "ai_in_3d": [
+   "dl",
+   "neuro"
+  ],
+  "deep_learning_00_neural_net_learns": [
+   "dl"
+  ],
+  "Anomaly_detection_tatics": [
+   "ml"
+  ],
+  "DL_model_hiring_committee": [
+   "dl",
+   "ml"
+  ],
+  "ML_model_hiring_committee": [
+   "ml"
+  ],
+  "fish_market_learning_epoch_etc": [
+   "ml"
+  ],
+  "one_day_machine_learning": [
+   "ml"
+  ],
+  "Regression_ridge_lasso": [
+   "ml",
+   "stats"
+  ],
+  "unsupervised_fish_lab": [
+   "ml"
+  ],
+  "machine_learning_model_atlas": [
+   "ml"
+  ],
+  "Fish_Market_Data_Machine_Learning": [
+   "ml"
+  ],
+  "ai_crime_lab": [
+   "crime",
+   "econ"
+  ],
+  "AI_for_cement_produce": [
+   "ml",
+   "biz"
+  ],
+  "ai_game_lab": [
+   "rl",
+   "ai"
+  ],
+  "catch_phishing": [
+   "crime",
+   "ml"
+  ],
+  "data_science_for_business": [
+   "biz",
+   "ml",
+   "stats"
+  ],
+  "defense_for_ai_lab": [
+   "crime",
+   "llm"
+  ],
+  "Gen_AI_strategy_ch05": [
+   "genai",
+   "llm"
+  ],
+  "Gen_AI_strategy_ch06": [
+   "genai",
+   "llm"
+  ],
+  "generative-ai-prompt-strategy": [
+   "genai",
+   "llm"
+  ],
+  "Gen_AI_Hannam_univ": [
+   "genai",
+   "llm"
+  ],
+  "health_stats_lab": [
+   "stats",
+   "ml"
+  ],
+  "how_to_make_ai_model_factory_version": [
+   "ml",
+   "dl",
+   "biz"
+  ],
+  "industrial-accident-prediction": [
+   "ml",
+   "stats"
+  ],
+  "my_article_03_drug-slang-detection": [
+   "crime",
+   "llm",
+   "ml"
+  ],
+  "my_article_04_adversarial_finance_attack": [
+   "crime",
+   "fin",
+   "ml"
+  ],
+  "python-accounting-analytics": [
+   "acct",
+   "data",
+   "ml"
+  ],
+  "Reinforcement-Learning-lab_project_01": [
+   "rl",
+   "stats",
+   "llm"
+  ],
+  "smart_product": [
+   "biz",
+   "ml"
+  ],
+  "bayesian-statistics-for-data-scientists": [
+   "stats"
+  ],
+  "data_base_design": [
+   "data"
+  ],
+  "data_to_numbers_lab": [
+   "data",
+   "dl"
+  ],
+  "data_visualization_lab": [
+   "data",
+   "stats"
+  ],
+  "google-sheets-lab": [
+   "data"
+  ],
+  "how_to_start_db": [
+   "data"
+  ],
+  "statistics_note": [
+   "stats"
+  ],
+  "statistics_note_ch04_Statistical-Estimation_01_a": [
+   "stats"
+  ],
+  "timeseries-trilogy": [
+   "stats",
+   "dl"
+  ],
+  "probability_distribution_dictionary": [
+   "stats"
+  ],
+  "database_01of04": [
+   "data"
+  ],
+  "learn-pandas-visually_korean": [
+   "data"
+  ],
+  "learn-python-by-doing_Korean": [
+   "data"
+  ]
+ }
+}

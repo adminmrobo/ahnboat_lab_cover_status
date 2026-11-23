@@ -42,6 +42,12 @@ h1{margin:0;font-size:clamp(1.8rem,3.6vw,2.8rem);line-height:1.1}
 .fc .dot{width:12px;height:12px;border-radius:50%;flex:none;border:1.5px solid var(--line)}
 .fc .ct{font-size:.78rem;color:var(--muted);font-variant-numeric:tabular-nums}
 .fc .ct b{color:var(--ink)}
+.fields.dom{grid-template-columns:repeat(6,minmax(0,1fr))}
+.fc .cv{display:block;height:6px;border:1.5px solid var(--line);border-radius:99px;background:#fff;overflow:hidden}
+.fc .cv i{display:block;height:100%}
+.modes .by{display:inline-flex;align-items:center;gap:6px;margin-right:10px;font-size:.85rem;color:var(--muted)}
+.tags .tp{display:inline-block;font-size:.8rem;border:1.5px solid var(--line);border-radius:99px;padding:2px 9px;margin:0 4px 4px 0;background:#fff}
+.tags .tp.gap{border-style:dashed;color:var(--muted)}
 .modes{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0}
 .chip{cursor:pointer;font-size:.85rem;border:1.5px solid var(--line);border-radius:99px;padding:4px 12px;background:#fff;box-shadow:2px 2px 0 var(--line)}
 .chip[aria-pressed=true]{background:var(--ink);color:#fff}
@@ -114,10 +120,10 @@ h1{margin:0;font-size:clamp(1.8rem,3.6vw,2.8rem);line-height:1.1}
 .info .seq>span{font-size:.72rem;font-weight:700;color:var(--muted);padding-top:3px;white-space:nowrap}
 @media (max-width:1100px){.spine{grid-template-columns:repeat(2,minmax(0,1fr))}.ly:not(:last-child)::after{display:none}}
 @media (max-width:640px){.spine,.try{grid-template-columns:minmax(0,1fr)}}
-@media (max-width:1100px){.kpis{grid-template-columns:repeat(3,minmax(0,1fr))}.fields{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:1100px){.kpis{grid-template-columns:repeat(3,minmax(0,1fr))}.fields,.fields.dom{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:640px){
   .kpis{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .fields{grid-template-columns:minmax(0,1fr)}
+  .fields,.fields.dom{grid-template-columns:minmax(0,1fr)}
   #g{height:62vh}
   .info{position:static;width:auto;max-height:none;margin:0;border-radius:0;border-width:2px 0 0;box-shadow:none}
 }
@@ -167,8 +173,8 @@ h1{margin:0;font-size:clamp(1.8rem,3.6vw,2.8rem);line-height:1.1}
 (function(){
   'use strict';
   var T=AhnI18n.t;
-  var D=null,PAGE={},NODE={},COLOR={},G=null,cur={field:null,mode:'all'},sel=null,hl=new Set(),labels=[],spin=false;
-  var TYPE={Concept:'개념',Method:'방법',Term:'용어',Metric:'지표',Dataset:'데이터셋',Account:'계정과목',Standard:'기준',Identity:'항등식',Theory:'이론',BioAnalogue:'생물 비유',Assumption:'가정'};
+  var RAW=null,D=null,PAGE={},NODE={},COLOR={},DOMS={},G=null,cur={field:null,mode:'all',by:'cat',nb:false},sel=null,hl=new Set(),labels=[],spin=false;
+  var TYPE={Concept:'개념',Method:'방법',Term:'용어',Metric:'지표',Dataset:'데이터셋',Account:'계정과목',Standard:'기준',Identity:'항등식',Theory:'이론',BioAnalogue:'생물 비유',Assumption:'가정',Distribution:'확률분포',Indicator:'공식 지표',Framework:'분석 틀',Definition:'정의',Theorem:'정리',Axiom:'공리',Structure:'수학적 대상',Estimator:'추정량'};
   function $(id){return document.getElementById(id);}
   function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e;}
   function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
@@ -176,14 +182,36 @@ h1{margin:0;font-size:clamp(1.8rem,3.6vw,2.8rem);line-height:1.1}
   function fmt(n){return Number(n).toLocaleString();}
 
   Promise.all([fetch('data/ontology.json',{cache:'no-cache'}).then(function(r){if(!r.ok)throw 0;return r.json();}),AhnI18n.ready])
-  .then(function(a){D=a[0];
+  .then(function(a){RAW=a[0];
+    (RAW.domains||[]).forEach(function(d){DOMS[d.code]=d;});
+    var u=new URLSearchParams(location.search);
+    if(u.get('by')==='domain'&&RAW.domains)cur.by='domain';
+    setView(cur.by);
+    var f0=u.get('field');if(f0&&D.fields.some(function(f){return f.cat===f0;}))cur.field=f0;
+    statics();build();
+    var q=u.get('concept');if(q){var hit=findNodes(q)[0];if(hit)setTimeout(function(){select('c:'+hit.id);},1500);}
+  }).catch(function(){$('g').appendChild(el('p','err',T('지도 데이터를 불러오지 못했습니다.')));});
+
+  /* 보는 기준: 콘텐츠 분류(서버랙 8개) ↔ 학문 분야(등록부 18개). 학문 분야 보기는 같은 화면 코드에 c·cat만 바꿔 넣는다. */
+  function setView(by){
+    cur.by=by==='domain'&&RAW.domains?'domain':'cat';PAGE={};NODE={};COLOR={};
+    if(cur.by==='cat'){D=RAW;}
+    else{var ds=RAW.domains.filter(function(d){return d.concepts>0;});
+      D={updated:RAW.updated,edges:RAW.edges,
+        summary:Object.assign({},RAW.summary,{fields:ds.length,shared:RAW.nodes.filter(function(n){return (n.d||[]).length>1;}).length}),
+        fields:ds.map(function(d){return {cat:d.code,color:d.color,contents:d.contents,pages:d.pages,concepts:d.concepts,relations:d.relations,dom:d};}),
+        pages:RAW.pages.map(function(p){return Object.assign({},p,{cat:(p.d&&p.d[0])||'ai'});}),
+        nodes:RAW.nodes.map(function(n){return Object.assign({},n,{c:(n.d&&n.d.length)?n.d:['ai']});})};}
     D.pages.forEach(function(p){PAGE[p.id]=p;});
     D.fields.forEach(function(f){COLOR[f.cat]=f.color;});
     D.nodes.forEach(function(n){NODE[n.id]=n;n.deg=0;});
-    D.edges.forEach(function(e){NODE[e[0]].deg++;NODE[e[1]].deg++;});
-    statics();build();
-    var q=new URLSearchParams(location.search).get('concept');if(q){var hit=findNodes(q)[0];if(hit)setTimeout(function(){select('c:'+hit.id);},1500);}
-  }).catch(function(){$('g').appendChild(el('p','err',T('지도 데이터를 불러오지 못했습니다.')));});
+    D.edges.forEach(function(e){if(NODE[e[0]]&&NODE[e[1]]){NODE[e[0]].deg++;NODE[e[1]].deg++;}});
+  }
+  function switchView(by){if(by===cur.by)return;cur.field=null;cur.nb=false;unselect();setView(by);statics();build();
+    try{var u=new URL(location.href);if(cur.by==='domain')u.searchParams.set('by','domain');else u.searchParams.delete('by');u.searchParams.delete('field');history.replaceState(null,'',u);}catch(e){}}
+  /* 분야 이름: 콘텐츠 분류는 사전, 학문 분야는 사전 → 없으면 영어 */
+  function CN(k){var d=DOMS[k];if(cur.by!=='domain'||!d)return T(k);var t=T(d.ko);return (AhnI18n.lang!=='ko'&&t===d.ko)?d.en:t;}
+  function topicName(t){return AhnI18n.lang==='ko'?t[1]:(t[2]||t[1]);}
 
   /* 화면 글자 */
   function statics(){
@@ -199,17 +227,27 @@ h1{margin:0;font-size:clamp(1.8rem,3.6vw,2.8rem);line-height:1.1}
     AhnI18n.langs.forEach(function(l){var b=el('button','lg',AhnI18n.names[l]);b.type='button';b.setAttribute('aria-pressed',String(l===AhnI18n.lang));b.addEventListener('click',function(){AhnI18n.set(l);});g.appendChild(b);});
     if(!D)return;
     var s=D.summary,k=$('kpis');k.textContent='';
-    [[s.fields,'분야'],[s.contents,'콘텐츠'],[s.pages,'해설 페이지'],[s.concepts,'개념'],[s.relations,'개념 사이 관계'],[s.shared,'여러 분야를 잇는 개념']].forEach(function(x){
+    [[s.fields,cur.by==='domain'?'학문 분야':'분야'],[s.contents,'콘텐츠'],[s.pages,'해설 페이지'],[s.concepts,'개념'],[s.relations,'개념 사이 관계'],[s.shared,'여러 분야를 잇는 개념']].forEach(function(x){
       var li=el('li');li.appendChild(el('b','',fmt(x[0])));li.appendChild(el('span','',T(x[1])));k.appendChild(li);});
     var f=$('fields');f.textContent='';
+    f.classList.toggle('dom',cur.by==='domain');
     D.fields.forEach(function(x){var b=el('button','fc');b.type='button';b.setAttribute('aria-pressed',String(cur.field===x.cat));
-      var n=el('span','nm');var d=el('span','dot');d.style.background=x.color;n.appendChild(d);n.appendChild(el('span','',T(x.cat)));b.appendChild(n);
+      var n=el('span','nm');var d=el('span','dot');d.style.background=x.color;n.appendChild(d);n.appendChild(el('span','',CN(x.cat)));b.appendChild(n);
       var c=el('span','ct');c.innerHTML=T('콘텐츠 {0} · 페이지 {1} · 개념 {2} · 관계 {3}','<b>'+x.contents+'</b>','<b>'+x.pages+'</b>','<b>'+fmt(x.concepts)+'</b>','<b>'+fmt(x.relations)+'</b>');b.appendChild(c);
+      if(x.dom&&x.dom.topics){var cv=el('span','cv');var bar=el('i');bar.style.width=Math.round(100*x.dom.covered/x.dom.topics)+'%';bar.style.background=x.color;cv.appendChild(bar);b.appendChild(cv);
+        var c2=el('span','ct');c2.innerHTML=T('뼈대 주제 {0} / {1}','<b>'+x.dom.covered+'</b>','<b>'+x.dom.topics+'</b>');b.appendChild(c2);}
       b.addEventListener('click',function(){cur.field=cur.field===x.cat?null:x.cat;statics();build();});f.appendChild(b);});
     var m=$('modes');m.textContent='';
+    if(RAW.domains){var by=el('span','by');by.appendChild(el('span','',T('보는 기준')));
+      [['cat','콘텐츠 분류'],['domain','학문 분야']].forEach(function(x){var b=el('button','chip',T(x[1]));b.type='button';b.setAttribute('aria-pressed',String(cur.by===x[0]));
+        b.addEventListener('click',function(){switchView(x[0]);});by.appendChild(b);});m.appendChild(by);}
+    if(cur.by==='domain'&&cur.field){var b0=el('button','chip',T('이웃 분야 개념도 함께'));b0.type='button';b0.setAttribute('aria-pressed',String(cur.nb));
+      b0.addEventListener('click',function(){cur.nb=!cur.nb;statics();build();});m.appendChild(b0);}
     [['all','전체 지도'],['shared','분야를 잇는 개념만']].forEach(function(x){var b=el('button','chip',T(x[1]));b.type='button';b.setAttribute('aria-pressed',String(cur.mode===x[0]));
       b.addEventListener('click',function(){cur.mode=x[0];statics();build();});m.appendChild(b);});
     if(cur.field){var b=el('button','chip','✕ '+T('분야 선택 풀기'));b.type='button';b.addEventListener('click',function(){cur.field=null;statics();build();});m.appendChild(b);}
+    var lede=cur.by==='domain'?'학문 분야로 보기: 개념마다 경제학·통계학·수학처럼 지식이 속한 학문을 매겨, 한 분야를 고르면 그 학문의 개념만 모아 봅니다. 카드의 막대는 그 분야 뼈대 주제 가운데 해설 페이지가 다룬 비율입니다.':'연구실 해설 페이지마다 달린 지식 색인을 한데 모아, 분야 → 콘텐츠 → 개념으로 이어지는 3D 지도로 그렸습니다. 끌어서 돌리고, 굴려서 확대하고, 점을 누르면 그 개념이 나오는 페이지로 갈 수 있습니다.';
+    $('lede').textContent=T(lede);
     var sh=$('shared');sh.textContent='';
     D.nodes.filter(function(n){return n.c.length>1;}).sort(function(a,b){return b.c.length-a.c.length||b.p.length-a.p.length;}).slice(0,24).forEach(function(n){
       var b=el('button','',nm(n));b.type='button';b.appendChild(el('b','',T('{0}개 분야',n.c.length)));b.addEventListener('click',function(){
@@ -287,21 +325,28 @@ h1{margin:0;font-size:clamp(1.8rem,3.6vw,2.8rem);line-height:1.1}
     var fs=D.fields.filter(function(f){return !cur.field||f.cat===cur.field;}),R=fs.length>1?380:0;
     fs.forEach(function(f,i){var a=i/fs.length*Math.PI*2;add({id:'f:'+f.cat,k:'hub',cat:f.cat,color:f.color,fx:R*Math.cos(a),fy:R*Math.sin(a),fz:(i%2?1:-1)*R*0.25});});
     var pin={};
+    var lens=cur.by==='domain'&&cur.field;
     D.nodes.forEach(function(n){
       if(cur.mode==='shared'&&n.c.length<2)return;
-      var ps=n.p.filter(function(x){var p=PAGE[x[0]];return p&&(!cur.field||p.cat===cur.field);});
+      var ps;
+      if(lens){if(n.c.indexOf(cur.field)<0)return;ps=n.p.filter(function(x){return PAGE[x[0]];});}   /* 학문 분야 렌즈: 개념 기준, 어느 콘텐츠에서 나왔든 */
+      else ps=n.p.filter(function(x){var p=PAGE[x[0]];return p&&(!cur.field||p.cat===cur.field);});
       if(!ps.length)return;
       var c=(cur.field||n.c[0]);
       add({id:'c:'+n.id,k:'c',ref:n,cat:c,multi:n.c.length>1});
       ps.forEach(function(x){pin[x[0]]=1;links.push({source:'p:'+x[0],target:'c:'+n.id,k:'pc'});});
     });
-    D.pages.forEach(function(p){if(!pin[p.id])return;add({id:'p:'+p.id,k:'page',ref:p,cat:p.cat});links.push({source:'f:'+p.cat,target:'p:'+p.id,k:'fp',cat:p.cat});});
+    if(lens&&cur.nb){   /* 이웃 분야: 렌즈 개념과 한 번에 이어진 다른 분야 개념을 그 분야 색으로 */
+      D.edges.forEach(function(e){[[e[0],e[1]],[e[1],e[0]]].forEach(function(x){var a=have['c:'+x[0]],o=NODE[x[1]];
+        if(a&&a.k==='c'&&o&&!have['c:'+o.id]&&o.c.indexOf(cur.field)<0)add({id:'c:'+o.id,k:'c',ref:o,cat:o.c[0],multi:o.c.length>1,nb:true});});});}
+    D.pages.forEach(function(p){if(!pin[p.id])return;var h=have['f:'+p.cat]?p.cat:(cur.field||p.cat);
+      add({id:'p:'+p.id,k:'page',ref:p,cat:p.cat});links.push({source:'f:'+h,target:'p:'+p.id,k:'fp',cat:h});});
     D.edges.forEach(function(e){if(have['c:'+e[0]]&&have['c:'+e[1]])links.push({source:'c:'+e[0],target:'c:'+e[1],k:'cc',rel:e[2]});});
     return {nodes:nodes,links:links};
   }
   function ncolor(n){
     var dim=hl.size&&!hl.has(n.id);
-    var c=n.k==='c'&&n.multi?'#f2c94c':(COLOR[n.cat]||'#999');
+    var c=n.k==='c'&&n.multi&&!n.nb?'#f2c94c':(COLOR[n.cat]||'#999');if(n.nb)c=lighten(c,.25);
     if(n.k==='page')c=lighten(c,.35);
     return dim?'#262d2f':c;
   }
@@ -316,7 +361,7 @@ h1{margin:0;font-size:clamp(1.8rem,3.6vw,2.8rem);line-height:1.1}
     return on?'rgba(255,255,255,0.7)':'rgba(255,255,255,0.10)';
   }
   function tip(n){
-    if(n.k==='hub')return '<b>'+esc(T(n.cat))+'</b>';
+    if(n.k==='hub')return '<b>'+esc(CN(n.cat))+'</b>';
     if(n.k==='page')return '<b>'+esc(T(n.ref.content))+'</b>'+(AhnI18n.lang==='ko'?'<br>'+esc(n.ref.title):'');
     return '<b>'+esc(nm(n.ref))+'</b><br><small>'+esc(T(TYPE[n.ref.t]||n.ref.t))+'</small>';
   }
@@ -352,7 +397,7 @@ h1{margin:0;font-size:clamp(1.8rem,3.6vw,2.8rem);line-height:1.1}
       while(labels.length<show.length){var d=el('div','lbl');overlay.appendChild(d);labels.push(d);}
       labels.forEach(function(d,i){var n=show[i];if(!n||n.x==null){d.style.display='none';return;}
         var p=G.graph2ScreenCoords(n.x,n.y,n.z);d.style.display='';d.style.transform='translate('+Math.round(p.x)+'px,'+Math.round(p.y)+'px) translate(-50%,-50%)';
-        var t=n.k==='hub'?T(n.cat):n.k==='page'?T(n.ref.content):nm(n.ref);if(d.textContent!==t)d.textContent=t;
+        var t=n.k==='hub'?CN(n.cat):n.k==='page'?T(n.ref.content):nm(n.ref);if(d.textContent!==t)d.textContent=t;
         d.className='lbl'+(n.k==='hub'?' hub':' sel');if(n.k==='hub')d.style.borderColor=n.color;
         if(p.x<-50||p.y<-50||p.x>overlay.clientWidth+50||p.y>overlay.clientHeight+50)d.style.display='none';});
     }
@@ -379,13 +424,21 @@ h1{margin:0;font-size:clamp(1.8rem,3.6vw,2.8rem);line-height:1.1}
     var box=$('info'),n=G&&G.graphData().nodes.find(function(x){return x.id===id;});if(!n)return;
     box.textContent='';var x=el('button','x','✕');x.type='button';x.setAttribute('aria-label',T('닫기'));x.addEventListener('click',unselect);box.appendChild(x);
     if(n.k==='hub'){var f=D.fields.find(function(f){return f.cat===n.cat;});
-      box.appendChild(el('h2','',T(n.cat)));
+      box.appendChild(el('h2','',CN(n.cat)));
       box.appendChild(el('p','df',T('콘텐츠 {0} · 페이지 {1} · 개념 {2} · 관계 {3}',f.contents,f.pages,fmt(f.concepts),fmt(f.relations))));
+      if(f.dom){var dm=f.dom;
+        box.appendChild(el('p','df',T('뼈대 주제 {0}개 가운데 {1}개를 다룸 · 다른 분야로 이어진 관계 {2}',dm.topics,dm.covered,fmt(dm.bridges))));
+        if(dm.top.length){box.appendChild(el('h3','',T('많이 다룬 뼈대 주제')));var tt=el('div','tags');
+          dm.top.forEach(function(t){var sp=el('span','tp',topicName(t));sp.appendChild(el('b','',' '+t[3]));tt.appendChild(sp);});box.appendChild(tt);}
+        if(dm.gaps.length){box.appendChild(el('h3','',T('아직 다루지 않은 뼈대 주제')));var tg0=el('div','tags');
+          dm.gaps.slice(0,24).forEach(function(t){tg0.appendChild(el('span','tp gap',topicName(t)));});box.appendChild(tg0);
+          box.appendChild(el('p','en',T('뼈대는 작성자 초안이며 공식 분류 체계가 아닙니다.')));}}
       box.appendChild(el('h3','',T('이 분야의 해설 페이지')));var ul=el('ul');
-      D.pages.filter(function(p){return p.cat===n.cat;}).forEach(function(p){ul.appendChild(el('li')).appendChild(pageLink(p,''));});box.appendChild(ul);
+      var hp=f.dom?D.pages.filter(function(p){return (p.d||[]).indexOf(n.cat)>=0;}):D.pages.filter(function(p){return p.cat===n.cat;});
+      hp.forEach(function(p){ul.appendChild(el('li')).appendChild(pageLink(p,''));});box.appendChild(ul);
     }else if(n.k==='page'){var p=n.ref;
       box.appendChild(el('h2','',T(p.content)));if(AhnI18n.lang==='ko'&&p.title!==p.content)box.appendChild(el('p','en',p.title));
-      box.appendChild(el('span','ty',T(p.cat)));
+      box.appendChild(el('span','ty',CN(p.cat)));
       box.appendChild(el('p','df',T('이 페이지의 개념 {0}개',p.n)));
       var a=pageLink(p,'#kg');a.firstChild.textContent=T('이 페이지의 지식 색인 열기')+' →';var ul2=el('ul');ul2.appendChild(el('li')).appendChild(a);box.appendChild(ul2);
     }else{var c=n.ref;
@@ -394,7 +447,7 @@ h1{margin:0;font-size:clamp(1.8rem,3.6vw,2.8rem);line-height:1.1}
       box.appendChild(el('span','ty',T(TYPE[c.t]||c.t)));
       if(AhnI18n.lang==='ko'&&c.def)box.appendChild(el('p','df',c.def));
       box.appendChild(el('h3','',T('분야')));var tg=el('div','tags');
-      c.c.forEach(function(k){var b=el('button','',T(k));b.type='button';b.style.borderColor=COLOR[k]||'';b.addEventListener('click',function(){cur.field=k;statics();build();setTimeout(function(){select('c:'+c.id);},2400);});tg.appendChild(b);});box.appendChild(tg);
+      c.c.forEach(function(k){var b=el('button','',CN(k));b.type='button';b.style.borderColor=COLOR[k]||'';b.addEventListener('click',function(){cur.field=k;statics();build();setTimeout(function(){select('c:'+c.id);},2400);});tg.appendChild(b);});box.appendChild(tg);
       box.appendChild(el('h3','',T('이 개념이 나오는 페이지 ({0})',c.p.length)));var ul3=el('ul');
       c.p.forEach(function(x){var p=PAGE[x[0]];if(p)ul3.appendChild(el('li')).appendChild(pageLink(p,x[1]));});box.appendChild(ul3);
       var pq=prereq(c.id);
@@ -419,7 +472,7 @@ h1{margin:0;font-size:clamp(1.8rem,3.6vw,2.8rem);line-height:1.1}
   var qi=$('q'),sug=$('sug');
   qi.addEventListener('input',function(){sug.textContent='';if(!D)return;var r=findNodes(qi.value);
     r.forEach(function(n){var b=el('button');b.type='button';var d=el('span','dot');d.style.background=n.c.length>1?'#f2c94c':COLOR[n.c[0]];b.appendChild(d);
-      b.appendChild(el('span','',nm(n)));b.appendChild(el('small','',T(n.c[0])+(n.c.length>1?' +'+(n.c.length-1):'')));
+      b.appendChild(el('span','',nm(n)));b.appendChild(el('small','',CN(n.c[0])+(n.c.length>1?' +'+(n.c.length-1):'')));
       b.addEventListener('click',function(){sug.classList.remove('on');qi.value=nm(n);
         if(cur.field&&n.c.indexOf(cur.field)<0||cur.mode==='shared'&&n.c.length<2){cur.field=null;cur.mode='all';statics();build();setTimeout(function(){select('c:'+n.id);},2400);}else select('c:'+n.id);});
       sug.appendChild(el('li')).appendChild(b);});
