@@ -1,0 +1,50 @@
+<!-- ahnboat.xyz 공유 주소 라우터 v1 (2026-11-23)
+     워드프레스 홈 화면 맨 끝에 '사용자 정의 HTML' 블록을 하나 더 만들고 이 코드를 그대로 붙인다. 화면에는 아무것도 보이지 않는다.
+     하는 일
+       1) Lab Server·Articles·Portfolio 화면(catalog.html iframe)에서 랙·갈래를 누르면 주소창이
+          ahnboat.xyz/#/lab-server/rack01/concept-map 처럼 바뀐다(뒤로 가기 기록은 늘리지 않음).
+       2) 그 주소로 들어오면 해당 iframe을 그 위치로 열고 그 블록까지 스크롤한다.
+       3) #/schedule · #/top 은 그 블록으로 스크롤만 한다.
+     MODE='path' 는 서버에 주소 규칙(docs/wp_path_rewrite.php)을 넣은 뒤에만 켠다 → ahnboat.xyz/lab-server/rack01 -->
+<script>
+(function(){
+  'use strict';
+  var MODE='hash';                       /* 'hash' = ahnboat.xyz/#/lab-server/rack01 · 'path' = ahnboat.xyz/lab-server/rack01 */
+  var SECTIONS={schedule:'schedule.html',top:'top.html'};   /* 스크롤만 하는 블록: 이름 → iframe 주소에 든 파일 이름 */
+  var BASE_TITLE=document.title,LANDING=read(),DONE={};
+
+  function read(){
+    var p=MODE==='path'?location.pathname:(location.hash.indexOf('#/')===0?location.hash.slice(2):'');
+    try{p=decodeURIComponent(p);}catch(e){}
+    return p.replace(/^\/+|\/+$/g,'');
+  }
+  function write(path){
+    var url=MODE==='path'?'/'+path+location.search:location.pathname+location.search+'#/'+path;
+    if(url!==location.pathname+location.search+location.hash){try{history.replaceState(history.state,'',url);}catch(e){}}
+  }
+  function frames(){return Array.prototype.slice.call(document.querySelectorAll('iframe'));}
+  function frameOf(win){return frames().filter(function(f){return f.contentWindow===win;})[0];}
+  function show(f){if(!f)return;[200,900,2000].forEach(function(t){setTimeout(function(){f.scrollIntoView({behavior:'smooth',block:'start'});},t);});}
+
+  window.addEventListener('message',function(e){
+    var d=e.data;if(!d||typeof d!=='object')return;
+    if(d.type==='ahnboat-route-ready'&&LANDING){
+      var first=LANDING.split('/')[0].toLowerCase();
+      if(first===String(d.prefix).toLowerCase()&&!DONE[d.prefix]){DONE[d.prefix]=1;
+        try{e.source.postMessage({type:'ahnboat-route-set',path:LANDING},'*');}catch(_){}
+        show(frameOf(e.source));}
+    }
+    if(d.type==='ahnboat-route'&&d.nav&&typeof d.path==='string'){
+      write(d.path);
+      document.title=d.title?d.title+' · '+BASE_TITLE:BASE_TITLE;
+    }
+  });
+
+  /* #/schedule 처럼 스크롤만 하는 블록 */
+  var first=LANDING.split('/')[0];
+  if(SECTIONS[first]){
+    var go=function(){show(frames().filter(function(f){return (f.getAttribute('src')||'').indexOf(SECTIONS[first])>=0;})[0]);};
+    if(document.readyState==='complete')go();else window.addEventListener('load',go);
+  }
+})();
+</script>

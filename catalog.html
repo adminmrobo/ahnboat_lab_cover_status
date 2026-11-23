@@ -172,6 +172,8 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
   var D=null,CATS=[],ITEMS=[],MIDS=[],FIRST=true;
   /* 화면 종류: server(기본, Lab Server) · articles(논문·발표) · portfolio(포트폴리오). 설정은 data/views.json */
   var VIEW=Q.get('view')||'server',VC={},SINGLE='',ALIAS={};
+  /* 공유 주소: 부모 창(ahnboat.xyz)에 지금 위치를 알려 주소창을 ahnboat.xyz/#/lab-server/rack01/... 처럼 바꾼다. 이름표는 data/routes.json */
+  var ROUTES={},NAVQ=false,PENDING=null,LANDED='';
   function el(t,c,txt){var e=document.createElement(t);if(c)e.className=c;if(txt!=null)e.textContent=txt;return e;}
   function rackNo(c){return 'RACK '+String(c.rack).padStart(2,'0');}
   function label(c){return c.label||(c.rack?rackNo(c):'');}
@@ -383,12 +385,55 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
     if(!c)step1(m);else if(!st.mid)step2(m,c);else step3(m,c,st.mid);
     if(!EMBED)window.scrollTo(0,0);
     post(FIRST?false:true);FIRST=false;
+    postRoute(st,NAVQ);NAVQ=false;
   }
   function post(nav){if(window.parent!==window){try{var h=Math.ceil(document.body.getBoundingClientRect().height);window.parent.postMessage({type:'ahnboat-catalog-height',height:h,nav:!!nav},'*');}catch(e){}}}
-  window.addEventListener('hashchange',render);
+  window.addEventListener('hashchange',function(){NAVQ=true;render();});
+  /* ── 공유 주소(라우트) ── */
+  function slugify(s){return String(s).trim().replace(/\s+/g,'-');}
+  function low(s){return String(s).toLowerCase();}
+  function prefix(){return (ROUTES.views||{})[VIEW]||VIEW;}
+  function catSlug(c){return c.rack?'rack'+String(c.rack).padStart(2,'0'):((ROUTES.cat||{})[c.name]||slugify(c.name));}
+  function midSlug(n){return (ROUTES.mid||{})[n]||slugify(n);}
+  function catOf(n){return CATS.filter(function(x){return x.name===n;})[0];}
+  function findCat(seg){seg=low(seg);return CATS.filter(function(c){return low(catSlug(c))===seg||low(c.name)===seg||low(slugify(c.name))===seg;})[0];}
+  function findMid(cat,seg){seg=low(seg);return midsOf(cat).filter(function(n){return low(midSlug(n))===seg||low(n)===seg||low(slugify(n))===seg;})[0]||'';}
+  function pubPath(st){
+    var seg=[prefix()];
+    if(SINGLE){if(st.mid)seg.push(midSlug(st.mid));}
+    else if(st.cat){var c=catOf(st.cat);if(c){seg.push(catSlug(c));if(st.mid&&!onlyMid(st.cat))seg.push(midSlug(st.mid));}}
+    return seg.join('/');
+  }
+  function pubTitle(st){
+    var t=[];
+    if(SINGLE){t.push(T(VC.root_label||SINGLE));if(st.mid)t.push(midName(st.mid));}
+    else{t.push(T(VC.root_label||'Lab Server'));var c=st.cat&&catOf(st.cat);if(c){t.push((c.rack?rackNo(c)+' ':'')+T(c.name));if(st.mid&&!onlyMid(st.cat))t.push(midName(st.mid));}}
+    return t.join(' › ');
+  }
+  /* 공유 주소의 뒷부분(rack01/concept-map)을 이 화면의 내부 주소(#/머신러닝/개념 지도)로 바꾼다 */
+  function toHash(segs){
+    if(SINGLE){var m=segs[0]?findMid(SINGLE,segs[0]):'';return H(m?[SINGLE,m]:[SINGLE]);}
+    var c=segs[0]&&findCat(segs[0]);if(!c)return H([]);
+    var m=segs[1]?findMid(c.name,segs[1]):'';if(!m)m=onlyMid(c.name);
+    return H(m?[c.name,m]:[c.name]);
+  }
+  function applyRoute(path){
+    var segs=String(path||'').split('/').filter(Boolean);
+    if(!segs.length||low(segs[0])!==low(prefix()))return;
+    var h=toHash(segs.slice(1));LANDED=segs.join('/');
+    if(location.hash===h){NAVQ=true;render();}else{location.replace(location.href.split('#')[0]+h);}
+  }
+  function count(p){try{if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:p,title:p,event:true});}catch(e){}}
+  function postRoute(st,nav){
+    var path=pubPath(st);
+    if(nav){if(LANDED){count('land/'+path);LANDED='';}else count('view/'+path);}
+    if(window.parent!==window){try{window.parent.postMessage({type:'ahnboat-route',view:VIEW,path:path,title:pubTitle(st),nav:!!nav},'*');}catch(e){}}
+  }
+  window.addEventListener('message',function(e){var d=e.data;if(!d||d.type!=='ahnboat-route-set')return;if(D)applyRoute(d.path);else PENDING=d.path;});
   window.addEventListener('resize',post);
   function getJSON(p){return fetch(p,{cache:'no-cache'}).then(function(r){if(!r.ok)throw new Error(p+' '+r.status);return r.json();});}
-  getJSON('data/views.json').catch(function(){return {};}).then(function(views){
+  Promise.all([getJSON('data/views.json').catch(function(){return {};}),getJSON('data/routes.json').catch(function(){return {};})]).then(function(r){
+    var views=r[0];ROUTES=r[1]||{};
     VC=views[VIEW]||{};
     return getJSON(VC.source||'data/catalog.json');
   }).then(function(d){
@@ -407,7 +452,10 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
     ITEMS=SRC.filter(function(i){return CATS.some(function(c){return c.name===i.cat;});});
     footer();
     AhnI18n.onChange(function(){footer();lede();render();});
-    return AhnI18n.ready.then(function(){footer();lede();render();});
+    return AhnI18n.ready.then(function(){footer();lede();render();
+      if(PENDING){applyRoute(PENDING);PENDING=null;}
+      if(window.parent!==window){try{window.parent.postMessage({type:'ahnboat-route-ready',view:VIEW,prefix:prefix()},'*');}catch(e){}}
+    });
   }).catch(function(e){document.getElementById('main').appendChild(el('p','err',T('목록을 읽지 못했습니다 ({0}).',e.message)));});
   function footer(){document.getElementById('foot').textContent=(VC.foot?T(VC.foot):T('콘텐츠 {0}개 · 랩타운 지하 1층 서버실의 랙과 같은 분류입니다.',ITEMS.length))+' · '+T('갱신 {0}',D.updated);}
   function lede(){var l=document.querySelector('.lede');if(l)l.textContent=T('박사·조수·초파리 연구원·주판봇이 진행하는 해설 시리즈와 연구 실적을 분야별로 모았습니다. 분야와 중분류를 고르면 주제별 콘텐츠가 바로 나옵니다.');document.getElementById('crumb').setAttribute('aria-label',T('현재 위치'));}

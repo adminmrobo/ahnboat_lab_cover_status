@@ -1,0 +1,18 @@
+{
+  "_guide": "ahnboat.xyz 공유 주소(예: ahnboat.xyz/#/lab-server/rack01/concept-map)에 쓰는 영어 이름표. views = 화면 이름(catalog.html?view=), cat = 랙 번호가 없는 분야(포트폴리오)의 이름표 — 랙이 있는 분야는 자동으로 rack01~rack10, mid = 중분류 이름표. 여기 없는 이름은 한국어 이름(빈칸은 -)을 그대로 쓰므로 새 중분류도 바로 동작한다. 이미 공유한 주소가 깨지지 않게, 한 번 정한 이름표는 바꾸지 말 것. 한국어 이름으로 된 주소도 계속 열린다.",
+  "views": {"server": "lab-server", "articles": "articles", "portfolio": "portfolio"},
+  "cat": {"프로젝트·서비스": "projects", "저서·이러닝": "books-elearning", "공공 사업": "public-projects", "블로그": "blog"},
+  "mid": {
+    "개념 지도": "concept-map", "실습으로 배우기": "hands-on", "프로그래밍": "programming",
+    "뇌과학": "neuroscience", "딥러닝 모델": "deep-learning-models",
+    "만들어 내기": "generation", "보고 알아보기": "vision", "읽고 이해하기": "reading", "생성형 AI활용": "genai-use",
+    "LLM 이해": "llm-basics", "추론 엔지니어링 스터디": "inference-engineering", "AI 연구 동향": "ai-trends",
+    "경제학": "economics", "경제 연구": "economic-research", "최적화 모델": "optimization", "좌표 공간(space)": "coordinate-space", "선형대수": "linear-algebra", "금융 연구": "finance-research",
+    "보험·핀테크": "insurtech-fintech", "블록체인": "blockchain", "회계·거시금융": "accounting-macro-finance", "외부_콘텐츠": "external",
+    "확률·통계": "probability-statistics", "데이터베이스": "database",
+    "제조": "manufacturing", "경영·회계": "business-accounting", "생성형 AI 활용": "genai-use", "이상탐지·보안": "anomaly-security", "AI 범죄학": "ai-criminology", "로봇·강화학습": "robotics-rl", "의료 및 보건통계학": "health-statistics", "산업·인프라": "industry-infra",
+    "연구실 소개": "about-lab", "제작 도구": "tools",
+    "AI 응용 논문": "ai-papers", "경제·사회 논문": "econ-social-papers", "금융·자산 논문": "finance-papers", "강의": "lectures",
+    "로봇저널리즘": "robot-journalism", "저서": "books", "이러닝": "elearning", "수행 사업": "projects-done"
+  }
+}
