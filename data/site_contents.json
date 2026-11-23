@@ -1,9 +1,11 @@
 {
- "fetched_at": "2026-11-22 23:31 KST",
+ "fetched_at": "2026-11-23 16:40 KST",
  "site": "https://ahnboat.xyz",
- "errors": [],
+ "errors": [
+  "워드프레스 REST API 읽기 실패: HTTP Error 429: Too Many Requests"
+ ],
  "wordpress": {
-  "source": "rest",
+  "source": "sitemap",
   "posts": [
    {
     "id": 3290,
@@ -400,49 +402,301 @@
     "parent": 0
    }
   ],
-  "pages": [
+  "pages": [],
+  "sitemap": [
    {
-    "id": 3442,
-    "title": "곧 나옵니다.. 아마도요..! (Coming Soon-ish! 🐌)",
-    "link": "https://ahnboat.xyz/pleae_wait/",
-    "date": "2026-10-04",
-    "modified": "2026-10-19",
-    "excerpt": "",
-    "categories": [],
-    "parent": 0
+    "link": "https://ahnboat.xyz/",
+    "modified": ""
    },
    {
-    "id": 3398,
-    "title": "Hello! Everyone!",
-    "link": "https://ahnboat.xyz/my_profile/",
-    "date": "2026-10-03",
-    "modified": "2026-10-19",
-    "excerpt": "00. Basic Info. Name : Ahn Sang Sun (안상선) Birth Day : 1982.07.24 E-mail : sangsun.ahn@gmail.com https://www.facebook.com/sangsun.ahn.5 https://www.linkedin.com/in/saladent/ 한국전기안전공사, 매일경제신문을 거쳐 현재 매일경",
-    "categories": [],
-    "parent": 0
+    "link": "https://ahnboat.xyz/2019/02/15/token-economy-%ea%b3%a0%eb%9e%98-%ec%a0%95%eb%a7%90-%eb%82%98%ec%81%9c%ea%b0%80/",
+    "modified": "2022-01-17"
    },
    {
-    "id": 895,
-    "title": "Article & Study",
-    "link": "https://ahnboat.xyz/articlestudy/",
-    "date": "2022-01-16",
-    "modified": "2026-10-04",
-    "excerpt": "인공지능기술, 경제학, 블록체인, 암호화폐 NFT 등 주요 관심사에 대해서 쓴 글입니다. 글 목록",
-    "categories": [],
-    "parent": 0
+    "link": "https://ahnboat.xyz/2023/06/17/cov19_crypro_report_01/",
+    "modified": "2023-06-18"
    },
    {
-    "id": 884,
-    "title": "Global Business Story",
+    "link": "https://ahnboat.xyz/2019/05/30/start-up-%ed%95%b4%ec%99%b8-%ec%b0%b8%ea%b4%80%ea%b8%b0-taipei-innovex2019/",
+    "modified": "2022-01-17"
+   },
+   {
+    "link": "https://ahnboat.xyz/2019/06/02/start-up-%ed%95%b4%ec%99%b8-%ec%b0%b8%ea%b4%80%ea%b8%b0-taipei-innovex2019-2%ec%9d%bc%ec%b0%a8/",
+    "modified": "2022-01-17"
+   },
+   {
+    "link": "https://ahnboat.xyz/2019/06/03/start-up-%ed%95%b4%ec%99%b8-%ec%b0%b8%ea%b4%80%ea%b8%b0-taipei-innovex2019-3%ec%9d%bc%ec%b0%a8%eb%a7%88%ec%a7%80%eb%a7%89%eb%82%a0/",
+    "modified": "2022-01-17"
+   },
+   {
+    "link": "https://ahnboat.xyz/portfolio/2019%eb%85%84-%ed%95%b4%ec%99%b8-%ec%a0%84%ec%8b%9c-%ec%82%ac%ec%97%85-2-taipei-computex2019/",
+    "modified": "2019-06-05"
+   },
+   {
+    "link": "https://ahnboat.xyz/2019/06/16/%eb%8c%80%eb%a7%8c_computex2019_%eb%b2%88%ec%99%b8%ed%8e%b8-%eb%8c%80%eb%a7%8c%ec%9d%98-%eb%85%b8%eb%9f%89%ec%a7%84-1/",
+    "modified": "2022-01-17"
+   },
+   {
+    "link": "https://ahnboat.xyz/2020/01/13/%ec%9a%b0%ec%a6%88%eb%b2%a0%ed%82%a4%ec%8a%a4%ed%83%84_starttech-it-%ec%bb%a8%ed%8d%bc%eb%9f%b0%ec%8a%a4-%ec%b0%b8%ea%b4%80%ed%9b%84%ea%b8%b01/",
+    "modified": "2022-01-17"
+   },
+   {
+    "link": "https://ahnboat.xyz/2020/01/13/%ec%9a%b0%ec%a6%88%eb%b2%a0%ed%82%a4%ec%8a%a4%ed%83%84-%eb%b9%84%ec%a6%88%eb%8b%88%ec%8a%a4-%ed%88%ac%ec%96%b41-%ec%b0%bd%ec%97%85-%eb%a9%98%ed%86%a0%eb%a7%81-%ec%b0%b8%ea%b4%80%ed%9b%84/",
+    "modified": "2022-01-17"
+   },
+   {
+    "link": "https://ahnboat.xyz/2020/01/20/%ec%9a%b0%ec%a6%88%eb%b2%a0%ed%82%a4%ec%8a%a4%ed%83%84-%eb%b9%84%ec%a6%88%eb%8b%88%ec%8a%a4-%ed%88%ac%ec%96%b43-%ec%9a%b0%ec%a6%88%eb%b2%a0%ed%82%a4%ec%8a%a4%ed%83%84%ec%97%90%ec%84%9c/",
+    "modified": "2022-01-17"
+   },
+   {
+    "link": "https://ahnboat.xyz/2020/01/27/%ec%b9%b4%ec%9e%90%ed%9d%90%ec%8a%a4%ed%83%84%ec%97%90%ec%84%9c-%ed%95%80%ed%85%8c%ed%81%ac%eb%a5%bc-%ed%95%9c%eb%8b%a4%eb%a9%b4-1-%ea%b0%84%ed%8e%b8%ea%b2%b0%ec%a0%9c%eb%8a%94-%ec%9d%b4%eb%af%b8/",
+    "modified": "2022-01-17"
+   },
+   {
     "link": "https://ahnboat.xyz/global_business/",
-    "date": "2022-01-16",
-    "modified": "2026-10-04",
-    "excerpt": "해외 출장을 다니면서 각 나라의 문화나 현지인들의 라이프 스타일 등을 기록으로 남긴 것입니다. 해외 현지 비즈니스를 준비하시는 분께 미력하나마다 도움이 되길 바라면서 정리했습니다. 2023년 1월 현재는 대만, 태국, 우즈베키스탄, 카자흐스탄이 업데이트됐습니다. 글 목록",
-    "categories": [],
-    "parent": 0
+    "modified": "2026-10-03"
+   },
+   {
+    "link": "https://ahnboat.xyz/articlestudy/",
+    "modified": "2026-10-03"
+   },
+   {
+    "link": "https://ahnboat.xyz/2022/01/18/%ec%bd%94%eb%a1%9c%eb%82%9819-%ec%9d%b4%ed%9b%84%ec%9d%98-%ed%83%9c%ea%b5%ad-1-%eb%b0%b0%eb%8b%ac%ec%95%b1-%eb%88%84%ea%b0%80-%ec%9b%83%ea%b3%a0-%ec%9e%88%ec%9d%84%ea%b9%8c/",
+    "modified": "2023-02-04"
+   },
+   {
+    "link": "https://ahnboat.xyz/2022/01/19/%ec%bd%94%eb%a1%9c%eb%82%9819-%ec%9d%b4%ed%9b%84%ec%9d%98-%ed%83%9c%ea%b5%ad-%ec%9d%8c%ec%8b%9d-%eb%b0%b0%eb%8b%ac-%ed%94%8c%eb%9e%ab%ed%8f%bc-2-%ed%91%b8%eb%93%9c%ed%8c%90%eb%8b%a4%ec%9d%98/",
+    "modified": "2022-01-19"
+   },
+   {
+    "link": "https://ahnboat.xyz/2022/01/23/%ec%bd%94%eb%a1%9c%eb%82%9819-%ec%9d%b4%ed%9b%84%ec%9d%98-%ed%83%9c%ea%b5%ad-%ec%9d%8c%ec%8b%9d-%eb%b0%b0%eb%8b%ac-%ed%94%8c%eb%9e%ab%ed%8f%bc-3-%ed%83%9c%ea%b5%ad-%ec%9d%b4%ec%9a%a9%ec%9e%90/",
+    "modified": "2022-01-30"
+   },
+   {
+    "link": "https://ahnboat.xyz/2022/01/30/%ec%bd%94%eb%a1%9c%eb%82%9819-%ec%9d%b4%ed%9b%84%ec%9d%98-%ed%83%9c%ea%b5%ad-%ec%9d%8c%ec%8b%9d-%eb%b0%b0%eb%8b%ac-%ed%94%8c%eb%9e%ab%ed%8f%bc-3-%ed%83%9c%ea%b5%ad-%ec%9d%b4%ec%9a%a9%ec%9e%90-2/",
+    "modified": "2022-01-30"
+   },
+   {
+    "link": "https://ahnboat.xyz/2022/02/02/%ec%bd%94%eb%a1%9c%eb%82%9819-%ec%9d%b4%ed%9b%84%ec%9d%98-%ed%83%9c%ea%b5%ad-%ec%9d%8c%ec%8b%9d-%eb%b0%b0%eb%8b%ac-%ed%94%8c%eb%9e%ab%ed%8f%bc-3-%ed%83%9c%ea%b5%ad-%ec%9d%b4%ec%9a%a9%ec%9e%90-3/",
+    "modified": "2022-02-01"
+   },
+   {
+    "link": "https://ahnboat.xyz/2022/02/02/%ec%bd%94%eb%a1%9c%eb%82%9819-%ec%9d%b4%ed%9b%84%ec%9d%98-%ed%83%9c%ea%b5%ad-%ec%9d%8c%ec%8b%9d-%eb%b0%b0%eb%8b%ac-%ed%94%8c%eb%9e%ab%ed%8f%bc-3-%ed%83%9c%ea%b5%ad-%ec%9d%b4%ec%9a%a9%ec%9e%90-4/",
+    "modified": "2022-02-02"
+   },
+   {
+    "link": "https://ahnboat.xyz/2022/02/05/%ec%bd%94%eb%a1%9c%eb%82%9819-%ec%9d%b4%ed%9b%84%ec%9d%98-%ed%83%9c%ea%b5%ad-%ed%95%9c%eb%a5%98-%ec%a0%9c%ed%92%88-%ec%a7%84%ec%a7%9c-%ec%9e%98-%ed%8c%94%eb%a6%ac%ea%b3%a0-%ec%9e%88%ec%9d%84/",
+    "modified": "2022-02-05"
+   },
+   {
+    "link": "https://ahnboat.xyz/2022/02/10/%ec%bd%94%eb%a1%9c%eb%82%9819-%ec%9d%b4%ed%9b%84%ec%9d%98-%ed%83%9c%ea%b5%ad-%ed%95%9c%eb%a5%98-%ec%a0%9c%ed%92%88-%ec%a7%84%ec%a7%9c-%ec%9e%98-%ed%8c%94%eb%a6%ac%ea%b3%a0-%ec%9e%88%ec%9d%84-2/",
+    "modified": "2022-02-10"
+   },
+   {
+    "link": "https://ahnboat.xyz/2022/02/12/%ec%bd%94%eb%a1%9c%eb%82%9819-%ec%9d%b4%ed%9b%84%ec%9d%98-%ed%83%9c%ea%b5%ad-%ed%83%9c%ea%b5%ad%ec%9d%98-%ec%95%94%ed%98%b8%ed%99%94%ed%8f%90-%ed%94%8c%eb%9e%ab%ed%8f%bcbitkub/",
+    "modified": "2022-02-12"
+   },
+   {
+    "link": "https://ahnboat.xyz/2022/02/15/%ec%bd%94%eb%a1%9c%eb%82%9819-%ec%9d%b4%ed%9b%84%ec%9d%98-%ed%83%9c%ea%b5%ad-%ea%b0%84%ed%8e%b8-%ea%b2%b0%ec%a0%9c/",
+    "modified": "2022-02-15"
+   },
+   {
+    "link": "https://ahnboat.xyz/2022/02/19/%ec%bd%94%eb%a1%9c%eb%82%9819-%ec%9d%b4%ed%9b%84%ec%9d%98-%ed%83%9c%ea%b5%ad-%eb%9c%bb%eb%b0%96%ec%9d%98-bm-%ec%9d%bc%eb%b3%b8%ec%9d%98-%ec%95%84%ec%9d%b4%eb%8f%8c-%ec%b9%b4%ed%8e%98/",
+    "modified": "2022-02-19"
+   },
+   {
+    "link": "https://ahnboat.xyz/2023/01/30/uzbekistan_2023_01/",
+    "modified": "2023-01-30"
+   },
+   {
+    "link": "https://ahnboat.xyz/2024/01/29/2023_japan_osaka_tour_01/",
+    "modified": "2024-02-02"
+   },
+   {
+    "link": "https://ahnboat.xyz/2023/01/31/uzbekistan_bus/",
+    "modified": "2023-02-03"
+   },
+   {
+    "link": "https://ahnboat.xyz/2023/02/03/startup_uz01/",
+    "modified": "2023-02-04"
+   },
+   {
+    "link": "https://ahnboat.xyz/2023/02/04/uzbekistan_food_tech/",
+    "modified": "2023-02-04"
+   },
+   {
+    "link": "https://ahnboat.xyz/2023/02/22/uz_market01/",
+    "modified": "2023-02-21"
+   },
+   {
+    "link": "https://ahnboat.xyz/2023/02/16/meet_vc/",
+    "modified": "2023-02-15"
+   },
+   {
+    "link": "https://ahnboat.xyz/2023/07/17/crypto_insight_report_2023_07_16/",
+    "modified": "2023-07-17"
+   },
+   {
+    "link": "https://ahnboat.xyz/2024/02/10/2023_japan_osaka_tour_02/",
+    "modified": "2024-02-10"
+   },
+   {
+    "link": "https://ahnboat.xyz/2024/02/15/2023_japan_osaka_tour_03/",
+    "modified": "2024-02-15"
+   },
+   {
+    "link": "https://ahnboat.xyz/2024/03/02/2023_japan_osaka_tour_04/",
+    "modified": "2024-03-01"
+   },
+   {
+    "link": "https://ahnboat.xyz/my_profile/",
+    "modified": "2026-10-19"
+   },
+   {
+    "link": "https://ahnboat.xyz/pleae_wait/",
+    "modified": "2026-10-19"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20220118_003528555/",
+    "modified": "2022-01-17"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20220118_003528555-1/",
+    "modified": "2022-01-17"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20220118_004640590/",
+    "modified": "2022-01-17"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20220119_234049496/",
+    "modified": "2022-01-19"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20220119_234115323/",
+    "modified": "2022-01-19"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20220119_234049496-1/",
+    "modified": "2022-01-19"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20220123_151359130/",
+    "modified": "2022-01-23"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20220123_151347435/",
+    "modified": "2022-01-23"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20220123_151359130-1/",
+    "modified": "2022-01-23"
+   },
+   {
+    "link": "https://ahnboat.xyz/video1856728357/",
+    "modified": "2022-01-23"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20220201_232612034/",
+    "modified": "2022-02-01"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20220201_232612034-1/",
+    "modified": "2022-02-01"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20220210_162711223/",
+    "modified": "2022-02-10"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20220210_162711223-1/",
+    "modified": "2022-02-10"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20220215_030240176/",
+    "modified": "2022-02-14"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20230204_151619630/",
+    "modified": "2023-02-04"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20230204_160058396/",
+    "modified": "2023-02-04"
+   },
+   {
+    "link": "https://ahnboat.xyz/00_01_eb94a5eb9faceb8b9dec9d84-eca780ec9b90ed9598eb8a94-eab8b0ec88a0/",
+    "modified": "2024-02-10"
+   },
+   {
+    "link": "https://ahnboat.xyz/02_01_ec9db8eab3b5eca780eb8aa5ec9d98eab5aceca1b0/",
+    "modified": "2024-02-10"
+   },
+   {
+    "link": "https://ahnboat.xyz/03_01_eab8b0eab384ed9599ec8ab5_eab8b0ec88a0eab3bc-eab5aceca1b0/",
+    "modified": "2024-02-10"
+   },
+   {
+    "link": "https://ahnboat.xyz/04_01_ed8c8cec9db4ec8dacec9d84ed86b5ed95b4ebb0b0ec9ab0eb8a94_eab8b0eab384ed9599ec8ab5_eab590eab3bcec849c/",
+    "modified": "2024-02-10"
+   },
+   {
+    "link": "https://ahnboat.xyz/05_01_ai_ec8898ed9599ec958ceab3a0eba6aceca698/",
+    "modified": "2024-02-10"
+   },
+   {
+    "link": "https://ahnboat.xyz/ec9db8eab3b5eca780eb8aa5ec9d84-ec9c84ed959c-ec8898ed9599/",
+    "modified": "2024-02-10"
+   },
+   {
+    "link": "https://ahnboat.xyz/chat_gpt_ec9d98-eba8b8eba6ac-eca491ec9599ec9790-online-video-cutter-com_/",
+    "modified": "2024-02-10"
+   },
+   {
+    "link": "https://ahnboat.xyz/temp_1707555906331-1603174419/",
+    "modified": "2024-02-10"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20240215_104421311/",
+    "modified": "2024-02-15"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20240215_104421311-1/",
+    "modified": "2024-02-15"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20240215_103638758/",
+    "modified": "2024-02-15"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20240215_101107883/",
+    "modified": "2024-02-15"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20240215_100726439/",
+    "modified": "2024-02-15"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20240215_103700376/",
+    "modified": "2024-02-15"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20240215_004229290/",
+    "modified": "2024-02-15"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20240215_002134001/",
+    "modified": "2024-02-15"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20240215_114643866/",
+    "modified": "2024-02-15"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20240215_004229290-2/",
+    "modified": "2024-02-15"
    }
-  ],
-  "sitemap": []
+  ]
  },
  "catalog": [
   {
@@ -643,6 +897,19 @@
     "vi"
    ],
    "summary": "수만 건의 결제·전표·센서 기록에서 사람이 먼저 봐야 할 몇 건을 고르는 법. Z 점수, 마할라노비스 거리, 고립 숲, 오토인코더의 복원 오차, 문턱값 정하기를 법인카드·출장비·결제·매장 방문객 예시로 직접 돌려 본다. 7개 언어."
+  },
+  {
+   "title": "비지도학습 물고기 연구실 — 라벨링 없이 맞추는 AI (목차)",
+   "cat": "머신러닝",
+   "mid": "프로그래밍",
+   "sub": "",
+   "site_url": "https://adminmrobo.github.io/unsupervised_fish_lab/",
+   "repo_url": "https://github.com/adminmrobo/unsupervised_fish_lab",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": ""
   },
   {
    "title": "딥러닝 A to Z · 초파리 특별편",
@@ -864,6 +1131,58 @@
    "summary": "가림막 뒤 얼굴이 누구인지 박사·초파리 연구원·주판봇이 이어달리기로 맞히는 20챕터 게임. 합성곱, 풀링, 소프트맥스까지 CNN 공식 열 개를 비전공자용으로 풀었습니다. 2편 포함."
   },
   {
+   "title": "구조 먼저 보는 캐릭터 그리기 연구실 — 픽셀 캐릭터를 실사까지",
+   "cat": "AI 감각·생성",
+   "mid": "생성형 AI활용",
+   "sub": "캐릭터 디자인",
+   "site_url": "https://adminmrobo.github.io/adminmrobo-structure_first_drawing_lab/",
+   "repo_url": "https://github.com/adminmrobo/adminmrobo-structure_first_drawing_lab",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": ""
+  },
+  {
+   "title": "구조 먼저 그리기 연구실 01 · 옷장 편 — 같은 원리, 다른 옷",
+   "cat": "AI 감각·생성",
+   "mid": "생성형 AI활용",
+   "sub": "캐릭터 디자인",
+   "site_url": "https://adminmrobo.github.io/structure_first_drawing_lab_01/",
+   "repo_url": "https://github.com/adminmrobo/structure_first_drawing_lab_01",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": ""
+  },
+  {
+   "title": "구조 먼저 그리기 연구실 02 · 실천편 — 주름과 그림자를 직접 넣어 보기",
+   "cat": "AI 감각·생성",
+   "mid": "생성형 AI활용",
+   "sub": "캐릭터 디자인",
+   "site_url": "https://adminmrobo.github.io/structure_first_drawing_lab_02/",
+   "repo_url": "https://github.com/adminmrobo/structure_first_drawing_lab_02",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": ""
+  },
+  {
+   "title": "그리기 연구실 01 · 기분 편 — 같은 얼굴, 다른 마음",
+   "cat": "AI 감각·생성",
+   "mid": "생성형 AI활용",
+   "sub": "캐릭터 디자인",
+   "site_url": "https://adminmrobo.github.io/drawing_lab_01/",
+   "repo_url": "https://github.com/adminmrobo/drawing_lab_01",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": ""
+  },
+  {
    "title": "AI 글 읽기 어려움",
    "cat": "AI 감각·생성",
    "mid": "읽고 이해하기",
@@ -894,6 +1213,19 @@
     "ko"
    ],
    "summary": "ICLR 2027에서 심사위원 전원이 만점을 줬다고 알려진 논문 세 편(Context Language Models, Zero-Shot Control, Latent Taxonomies)을 연구실 식구들이 장난감 실험으로 다시 심사하는 비전공자용 해설."
+  },
+  {
+   "title": "AI 에이전트 공식 속성 가이드 — 하루봇을 만들며 배우는 13장",
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "LLM 이해",
+   "sub": "AI에이젠트",
+   "site_url": "https://adminmrobo.github.io/agentic_ai_crash_guide/",
+   "repo_url": "https://github.com/adminmrobo/agentic_ai_crash_guide",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": ""
   },
   {
    "title": "기억 3부작 · LLM은 어디까지 기억할 수 있을까",
@@ -971,6 +1303,32 @@
     "ko"
    ],
    "summary": "AI 에이전트가 늘면서 30년 넘은 개념인 온톨로지가 다시 주목받는 현상을 발표 타임라인·표준·숫자로 정리한 리포트. 2026년 11월 13일 기준, 의견이나 전망 없이 사실 중심."
+  },
+  {
+   "title": "자연어 분석 연구실",
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "LLM 이해",
+   "sub": "자연어 분석",
+   "site_url": "https://adminmrobo.github.io/ai-nlp-data-analysis/",
+   "repo_url": "https://github.com/adminmrobo/ai-nlp-data-analysis",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": ""
+  },
+  {
+   "title": "스스로 고치는 AI는 어디까지 왔나 — 재귀적 자기개선(RSI) 기초 정리 · 연구실 해설",
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "LLM 이해",
+   "sub": "재귀적 자기개선",
+   "site_url": "https://adminmrobo.github.io/Recursive-Self-Improvement/",
+   "repo_url": "https://github.com/adminmrobo/Recursive-Self-Improvement",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": ""
   },
   {
    "title": "목차 · 인퍼런스 스터디 북",
@@ -1188,6 +1546,19 @@
    "summary": "이 자료로 2장 후반(2.3–2.5)의 병목 진단을 약 30분 발표 흐름으로 따라갈 수 있습니다."
   },
   {
+   "title": "하루의 첫 브리핑 — 리만 가설은 &#x27;약속&#x27;이다",
+   "cat": "경제·수학·최적화",
+   "mid": "",
+   "sub": "",
+   "site_url": "https://adminmrobo.github.io/riemann_hypothesis_lab/",
+   "repo_url": "https://github.com/adminmrobo/riemann_hypothesis_lab",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": ""
+  },
+  {
    "title": "노후 가계부와 AI 예측 모형",
    "cat": "경제·수학·최적화",
    "mid": "경제 연구",
@@ -1250,12 +1621,38 @@
    "summary": ""
   },
   {
+   "title": "경제학의 이해",
+   "cat": "경제·수학·최적화",
+   "mid": "경제학",
+   "sub": "",
+   "site_url": "https://adminmrobo.github.io/basic_economic_lab/",
+   "repo_url": "https://github.com/adminmrobo/basic_economic_lab",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": ""
+  },
+  {
    "title": "미시경제학 연구실 — 미시경제학 연구실 블로그",
    "cat": "경제·수학·최적화",
    "mid": "경제학",
    "sub": "미시경제학",
    "site_url": "https://adminmrobo.github.io/micro_economics/",
    "repo_url": "https://github.com/adminmrobo/micro_economics",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": ""
+  },
+  {
+   "title": "돈의 경맥 · 목차",
+   "cat": "경제·수학·최적화",
+   "mid": "금융 연구",
+   "sub": "",
+   "site_url": "https://adminmrobo.github.io/fof-money-meridian-/",
+   "repo_url": "https://github.com/adminmrobo/fof-money-meridian-",
    "link": "",
    "langs": [
     "ko"
@@ -1282,6 +1679,45 @@
    "sub": "벡터 미적분",
    "site_url": "https://adminmrobo.github.io/nabla_field_lab/",
    "repo_url": "https://github.com/adminmrobo/nabla_field_lab",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": ""
+  },
+  {
+   "title": "벡터 분석 랩 — 네 개의 자로 읽는 화살표",
+   "cat": "경제·수학·최적화",
+   "mid": "선형대수",
+   "sub": "벡터 미적분",
+   "site_url": "https://adminmrobo.github.io/vector_analysis_lab/",
+   "repo_url": "https://github.com/adminmrobo/vector_analysis_lab",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": ""
+  },
+  {
+   "title": "벡터 DB 연구실 — 표에 담기지 않는 말을 저장하는 법 | 목차",
+   "cat": "경제·수학·최적화",
+   "mid": "선형대수",
+   "sub": "벡터 미적분",
+   "site_url": "https://adminmrobo.github.io/vector_db_lab/",
+   "repo_url": "https://github.com/adminmrobo/vector_db_lab",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": ""
+  },
+  {
+   "title": "주판봇의 초파리 추적 대작전 ① 공변미분 — 진짜로 꺾인 만큼만 재기",
+   "cat": "경제·수학·최적화",
+   "mid": "좌표 공간(space)",
+   "sub": "",
+   "site_url": "https://adminmrobo.github.io/covariant_chase_lab/",
+   "repo_url": "https://github.com/adminmrobo/covariant_chase_lab",
    "link": "",
    "langs": [
     "ko"
@@ -1334,12 +1770,38 @@
    "summary": ""
   },
   {
+   "title": "hello_space_lab",
+   "cat": "경제·수학·최적화",
+   "mid": "좌표 공간(space)",
+   "sub": "공간",
+   "site_url": "https://adminmrobo.github.io/hello_space_lab/",
+   "repo_url": "https://github.com/adminmrobo/hello_space_lab",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": ""
+  },
+  {
    "title": "두 장의 지도 — 라그랑지안 vs 해밀토니안",
    "cat": "경제·수학·최적화",
    "mid": "최적화 모델",
    "sub": "라그랑지안·해밀토니안",
    "site_url": "https://adminmrobo.github.io/lagrangian_hamiltonian_lab/",
    "repo_url": "https://github.com/adminmrobo/lagrangian_hamiltonian_lab",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": ""
+  },
+  {
+   "title": "좌표로 본 라그랑주 승수 — 울타리 안의 최적점",
+   "cat": "경제·수학·최적화",
+   "mid": "최적화 모델",
+   "sub": "라그랑지안·해밀토니안",
+   "site_url": "https://adminmrobo.github.io/lagrange_multiplier_lab/",
+   "repo_url": "https://github.com/adminmrobo/lagrange_multiplier_lab",
    "link": "",
    "langs": [
     "ko"
@@ -1358,6 +1820,19 @@
     "ko"
    ],
    "summary": "가중치를 좌표축으로, 오차를 높이로 놓은 3D 지도 위에서 기울기·굽음·안장점·야코비안(1편), 배치·학습률·에포크(2편), 화살표 밭과 ∇(3편)를 연구실 식구와 함께 보는 해설. 입문 세 편 「최적화 첫걸음」(⓪ 인공지능 모델에서의 최적화 · ① 혹시… 미분 좋아하세요? · ② 공장에서 인공지능까지)이 함께 있습니다."
+  },
+  {
+   "title": "인공지능을 위한 수학 기초",
+   "cat": "경제·수학·최적화",
+   "mid": "최적화 모델",
+   "sub": "수학기초",
+   "site_url": "https://adminmrobo.github.io/math_for_ai_lab/",
+   "repo_url": "https://github.com/adminmrobo/math_for_ai_lab",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": ""
   },
   {
    "title": "암호화폐 자산의 정보 효율성",
@@ -1439,6 +1914,19 @@
     "ko"
    ],
    "summary": "우리나라 주식시장의 변동성 분해 분석 : 산업별·기간별 변동성 분해 분석과 수익률 효과 분석 — 안상선(2012) 박사학위논문을 스무 쪽의 인터랙티브 해설로 풀어 쓴 시리즈의 표지."
+  },
+  {
+   "title": "핀테크 데이터 연구실",
+   "cat": "금융·핀테크·블록체인",
+   "mid": "보험·핀테크",
+   "sub": "데이터 분석",
+   "site_url": "https://adminmrobo.github.io/fintech_data_analysis/",
+   "repo_url": "https://github.com/adminmrobo/fintech_data_analysis",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": ""
   },
   {
    "title": "인슈어테크 #1 · 분류 모델",
@@ -1602,74 +2090,28 @@
    "summary": ""
   },
   {
-   "title": "데이터시각화 1주차 · 과정 안내",
+   "title": "모든 데이터는 숫자가 된다 — 시리즈 목차 · 연구실 해설",
    "cat": "통계·데이터 기초",
-   "mid": "데이터 시각화",
-   "sub": "데이터시각화",
-   "site_url": "https://adminmrobo.github.io/Data_visuialization_lecture_01/",
-   "repo_url": "https://github.com/adminmrobo/Data_visuialization_lecture_01",
+   "mid": "개념 지도",
+   "sub": "",
+   "site_url": "https://adminmrobo.github.io/data_to_numbers_lab/",
+   "repo_url": "https://github.com/adminmrobo/data_to_numbers_lab",
    "link": "",
    "langs": [
-    "ko",
-    "en",
-    "zh",
-    "ja",
-    "uz",
-    "ru"
+    "ko"
    ],
    "summary": ""
   },
   {
-   "title": "데이터시각화 2주차 · 그래프 이론과 첫 실습",
+   "title": "데이터베이스 설계 연구실 — 데이터베이스 설계 15회차 연구실 해설",
    "cat": "통계·데이터 기초",
-   "mid": "데이터 시각화",
-   "sub": "데이터시각화",
-   "site_url": "https://adminmrobo.github.io/Data_visuialization_lecture_02/",
-   "repo_url": "https://github.com/adminmrobo/Data_visuialization_lecture_02",
+   "mid": "데이터베이스",
+   "sub": "데이터베이스 설계",
+   "site_url": "https://adminmrobo.github.io/data_base_design/",
+   "repo_url": "https://github.com/adminmrobo/data_base_design",
    "link": "",
    "langs": [
-    "ko",
-    "en",
-    "zh",
-    "ja",
-    "uz",
-    "ru"
-   ],
-   "summary": ""
-  },
-  {
-   "title": "데이터시각화 3주차 · 생성형 AI 데이터 전처리",
-   "cat": "통계·데이터 기초",
-   "mid": "데이터 시각화",
-   "sub": "데이터시각화",
-   "site_url": "https://adminmrobo.github.io/Data_visuialization_lecture_03/",
-   "repo_url": "https://github.com/adminmrobo/Data_visuialization_lecture_03",
-   "link": "",
-   "langs": [
-    "ko",
-    "en",
-    "zh",
-    "ja",
-    "uz",
-    "ru"
-   ],
-   "summary": ""
-  },
-  {
-   "title": "데이터시각화 4주차 · 산업별 데이터 시각화",
-   "cat": "통계·데이터 기초",
-   "mid": "데이터 시각화",
-   "sub": "데이터시각화",
-   "site_url": "https://adminmrobo.github.io/Data_visuialization_lecture_04/",
-   "repo_url": "https://github.com/adminmrobo/Data_visuialization_lecture_04",
-   "link": "",
-   "langs": [
-    "ko",
-    "en",
-    "zh",
-    "ja",
-    "uz",
-    "ru"
+    "ko"
    ],
    "summary": ""
   },
@@ -1737,6 +2179,19 @@
    "summary": ""
   },
   {
+   "title": "우연의 과학통계학",
+   "cat": "통계·데이터 기초",
+   "mid": "확률·통계",
+   "sub": "",
+   "site_url": "https://adminmrobo.github.io/statistics_note/",
+   "repo_url": "https://github.com/adminmrobo/statistics_note",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": ""
+  },
+  {
    "title": "데이터 사이언티스트를 위한 베이지안 통계학",
    "cat": "통계·데이터 기초",
    "mid": "확률·통계",
@@ -1789,6 +2244,227 @@
    "summary": "확률분포 21종의 관계를 3D 지도로 보는 딕셔너리(분포별 식·용도·파이썬 호출)와, Z·t·χ²·F·이항·포아송 분포표 읽는 법, 단측·양측검정, 신뢰구간, 1종·2종 오류와 검정력을 다루는 연구실 해설."
   },
   {
+   "title": "목차 · AI 범죄 연구실",
+   "cat": "인공지능 응용",
+   "mid": "AI 범죄학",
+   "sub": "목차와 분야 지도",
+   "site_url": "https://adminmrobo.github.io/ai_crime_lab/",
+   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "『AI 범죄와 자기 방어』 사례 보충본 — 범죄자의 계산서를 범죄경제학·게임이론·AI 분석으로 계산하고, 제도와 습관으로 다시 뒤집어 봅니다."
+  },
+  {
+   "title": "AI 범죄학 온톨로지 지도",
+   "cat": "인공지능 응용",
+   "mid": "AI 범죄학",
+   "sub": "목차와 분야 지도",
+   "site_url": "https://adminmrobo.github.io/ai_crime_lab/ontology.html",
+   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "책의 분석 틀로 짠 13개 영역·49개 주제 위에, 책이 다룬 개념과 리포트로 확인된 개념을 겹쳐 보는 3D 지도입니다."
+  },
+  {
+   "title": "서장 · 진화하는 사이버 범죄",
+   "cat": "인공지능 응용",
+   "mid": "AI 범죄학",
+   "sub": "책 보충본 (서장~10장·실전 연습장)",
+   "site_url": "https://adminmrobo.github.io/ai_crime_lab/ch00.html",
+   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "의심했는데도 속는 이유, 그리고 범죄자의 계산법"
+  },
+  {
+   "title": "1장 · AI 범죄, 새로운 디지털 위험의 시대",
+   "cat": "인공지능 응용",
+   "mid": "AI 범죄학",
+   "sub": "책 보충본 (서장~10장·실전 연습장)",
+   "site_url": "https://adminmrobo.github.io/ai_crime_lab/ch01.html",
+   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "사기꾼 한 명이 하루 몇 명을 속이던 시대에서, AI 한 대가 수천 명과 동시에 대화하는 시대로"
+  },
+  {
+   "title": "2장 · 범죄자의 경제학 — AI가 범죄를 매력적으로 만드는 이유",
+   "cat": "인공지능 응용",
+   "mid": "AI 범죄학",
+   "sub": "책 보충본 (서장~10장·실전 연습장)",
+   "site_url": "https://adminmrobo.github.io/ai_crime_lab/ch02.html",
+   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "베커의 부등식으로 계산한 AI 범죄의 손익분기점"
+  },
+  {
+   "title": "3장 · 진짜인 듯 가짜인 세상 — 딥페이크의 위협",
+   "cat": "인공지능 응용",
+   "mid": "AI 범죄학",
+   "sub": "책 보충본 (서장~10장·실전 연습장)",
+   "site_url": "https://adminmrobo.github.io/ai_crime_lab/ch03.html",
+   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "보는 것이 믿는 것이던 시대가 끝났을 때, 성공 확률 π는 얼마나 오르는가"
+  },
+  {
+   "title": "4장 · 완벽한 사기꾼 — AI가 바꾸는 피싱과 사회공학",
+   "cat": "인공지능 응용",
+   "mid": "AI 범죄학",
+   "sub": "책 보충본 (서장~10장·실전 연습장)",
+   "site_url": "https://adminmrobo.github.io/ai_crime_lab/ch04.html",
+   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "정교함과 대량을 동시에 — 개인화 비용이 0에 가까워질 때"
+  },
+  {
+   "title": "5장 · 끊임없는 진화 — AI 기반 자동화 공격의 세계",
+   "cat": "인공지능 응용",
+   "mid": "AI 범죄학",
+   "sub": "책 보충본 (서장~10장·실전 연습장)",
+   "site_url": "https://adminmrobo.github.io/ai_crime_lab/ch05.html",
+   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "막히면 배우고, 배우면 다시 온다 — 공격은 싸지고 입증은 비싸졌다"
+  },
+  {
+   "title": "6장 · 보이지 않는 눈 — AI 감시와 프라이버시의 위기",
+   "cat": "인공지능 응용",
+   "mid": "AI 범죄학",
+   "sub": "책 보충본 (서장~10장·실전 연습장)",
+   "site_url": "https://adminmrobo.github.io/ai_crime_lab/ch06.html",
+   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "개인정보는 범죄의 원재료다 — 조각 몇 개면 '세상에 나 하나'가 된다"
+  },
+  {
+   "title": "7장 · 보이지 않는 손의 조작 — AI와 금융 범죄",
+   "cat": "인공지능 응용",
+   "mid": "AI 범죄학",
+   "sub": "책 보충본 (서장~10장·실전 연습장)",
+   "site_url": "https://adminmrobo.github.io/ai_crime_lab/ch07.html",
+   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "AI는 앞단을, 암호화폐는 뒷단을 맡는다 — 훔친 돈이 '확정'되는 구조"
+  },
+  {
+   "title": "8장 · 나만의 디지털 방패 만들기",
+   "cat": "인공지능 응용",
+   "mid": "AI 범죄학",
+   "sub": "책 보충본 (서장~10장·실전 연습장)",
+   "site_url": "https://adminmrobo.github.io/ai_crime_lab/ch08.html",
+   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "개인 보안도 투자다 — 생활유형별로 계산한 비용과 효과"
+  },
+  {
+   "title": "9장 · 함께 만드는 안전한 AI 사회",
+   "cat": "인공지능 응용",
+   "mid": "AI 범죄학",
+   "sub": "책 보충본 (서장~10장·실전 연습장)",
+   "site_url": "https://adminmrobo.github.io/ai_crime_lab/ch09.html",
+   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "나만 지키면 위험은 이웃으로 간다 — 외부성과 사이버 집단 면역"
+  },
+  {
+   "title": "10장 · 미래를 준비하는 디지털 생존 전략",
+   "cat": "인공지능 응용",
+   "mid": "AI 범죄학",
+   "sub": "책 보충본 (서장~10장·실전 연습장)",
+   "site_url": "https://adminmrobo.github.io/ai_crime_lab/ch10.html",
+   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "막는 힘에서 버티는 힘으로 — 그리고 범죄자의 계산서를 마지막으로 뒤집기"
+  },
+  {
+   "title": "마지막 장 · 실전 연습장",
+   "cat": "인공지능 응용",
+   "mid": "AI 범죄학",
+   "sub": "책 보충본 (서장~10장·실전 연습장)",
+   "site_url": "https://adminmrobo.github.io/ai_crime_lab/practice/",
+   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "콜센터·검사 게임·랜섬 협상·기업 연결망 네 사업장을 직접 운영해 범죄자의 계산서를 뒤집어 봅니다."
+  },
+  {
+   "title": "리포트·뉴스 검증 INDEX",
+   "cat": "인공지능 응용",
+   "mid": "AI 범죄학",
+   "sub": "리포트·뉴스 검증",
+   "site_url": "https://adminmrobo.github.io/ai_crime_lab/reports/",
+   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "새로 나온 보고서와 뉴스를 책의 장과 나란히 놓고, 책의 분석이 현장에서 어떻게 확인되는지 쌓아 갑니다."
+  },
+  {
+   "title": "리포트 No.001 · 만들어진 신원과 딥페이크 사기",
+   "cat": "인공지능 응용",
+   "mid": "AI 범죄학",
+   "sub": "리포트·뉴스 검증",
+   "site_url": "https://adminmrobo.github.io/ai_crime_lab/reports/2026-11-23_lnrs-synthetic-identity-deepfake/",
+   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "합성 신원이 전체 보고 사기의 11%로 늘었다는 업계 집계와, 가입 순간 한 번 확인하는 방식 대신 가입 뒤에도 신호를 모으자는 제안을 책 11개 항목과 대조했다."
+  },
+  {
+   "title": "catch_phishing",
+   "cat": "인공지능 응용",
+   "mid": "AI 범죄학",
+   "sub": "피싱",
+   "site_url": "https://adminmrobo.github.io/catch_phishing/",
+   "repo_url": "https://github.com/adminmrobo/catch_phishing",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": ""
+  },
+  {
    "title": "비즈니스를 위한 데이터 과학 연구실",
    "cat": "인공지능 응용",
    "mid": "경영·회계",
@@ -1815,6 +2491,32 @@
    "summary": "회계등식에서 출발해 매출·재고, 매입·비용, 자산·세금, 파이썬 기초, 재무상태표, 회전율, 현금흐름표와 재무비율, 관리회계까지. 대학 강의 「파이썬과 회계데이터 분석」을 3D 회계 컨설팅회사 콘셉트로 묶은 해설 시리즈."
   },
   {
+   "title": "산업재해 패널 데이터를 활용한 머신러닝 모델 (목차) — 재활 서비스 예측 연구실",
+   "cat": "인공지능 응용",
+   "mid": "경제 연구",
+   "sub": "머신러닝  모델",
+   "site_url": "https://adminmrobo.github.io/industrial-accident-prediction/",
+   "repo_url": "https://github.com/adminmrobo/industrial-accident-prediction",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": ""
+  },
+  {
+   "title": "AI로 풀어보는 게임 시리즈 — 연구실 식구들과 게임으로 배우는 AI",
+   "cat": "인공지능 응용",
+   "mid": "로봇·강화학습",
+   "sub": "",
+   "site_url": "https://adminmrobo.github.io/ai_game_lab/",
+   "repo_url": "https://github.com/adminmrobo/ai_game_lab",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": ""
+  },
+  {
    "title": "잘 못들었습니다... 불완전한 텍스트 명령을 극복하는 로봇의 강화학습 및 베이지안 추론",
    "cat": "인공지능 응용",
    "mid": "로봇·강화학습",
@@ -1826,6 +2528,19 @@
     "ko"
    ],
    "summary": "Langcon 2026 발표(2026-02-28) 해설. 불완전한 텍스트 명령을 받은 로봇이 확신이 낮으면 되묻도록 만든 강화학습·베이지안 추론 연구를 겸손한 로봇 연구실 9장으로 풀고, 3D 가상 주자 실습 가이드까지 담았습니다."
+  },
+  {
+   "title": "자율주행차 배터리 AI 공장 — 공장 목록",
+   "cat": "인공지능 응용",
+   "mid": "산업·인프라",
+   "sub": "AI 제조업 및 스마트팩토리",
+   "site_url": "https://adminmrobo.github.io/how_to_make_ai_model_factory_version/",
+   "repo_url": "https://github.com/adminmrobo/how_to_make_ai_model_factory_version",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": ""
   },
   {
    "title": "생성형 AI 활용 전략 · 목차",
@@ -1880,12 +2595,23 @@
    "summary": ""
   },
   {
-   "title": "목차 · AI 범죄 연구실",
+   "title": "AI 범죄와 자기 방어",
    "cat": "인공지능 응용",
-   "mid": "이상탐지·보안",
-   "sub": "AI 범죄·범죄경제학",
-   "site_url": "https://adminmrobo.github.io/ai_crime_lab/",
-   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
+   "mid": "외부_콘텐츠",
+   "sub": "저서",
+   "site_url": "",
+   "repo_url": "",
+   "link": "커뮤니케이션북스 · 인공지능총서",
+   "langs": [],
+   "summary": "AI가 범죄의 비용 구조와 수익 모델을 어떻게 바꾸었는지 범죄경제학으로 풀어낸 책"
+  },
+  {
+   "title": "보건통계 연구실",
+   "cat": "인공지능 응용",
+   "mid": "의료 및 보건통계학",
+   "sub": "의료AI",
+   "site_url": "https://adminmrobo.github.io/health_stats_lab/",
+   "repo_url": "https://github.com/adminmrobo/health_stats_lab",
    "link": "",
    "langs": [
     "ko"
@@ -1992,32 +2718,6 @@
    "summary": "업종별 3D 공장과 동적 대시보드. 시멘트 공장 World(가마 37분 지연·병목 신호판·결정 기록)와 28일 타임머신(생산일 강도 예측 → 28일 압축 시험). AI가 제안하고 사람이 승인하는 흐름을 3D로 본다."
   },
   {
-   "title": "그린루트 · 모바일 경로 안내",
-   "cat": "공공·사회 프로젝트",
-   "mid": "산업·인프라",
-   "sub": "모빌리티",
-   "site_url": "https://adminmrobo.github.io/green_route/",
-   "repo_url": "https://github.com/adminmrobo/green_route",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "summary": ""
-  },
-  {
-   "title": "AI가 쓰는 전기, 어디서 모자랄까",
-   "cat": "공공·사회 프로젝트",
-   "mid": "산업·인프라",
-   "sub": "에너지·전력",
-   "site_url": "https://adminmrobo.github.io/ai-power-chain-simulator/",
-   "repo_url": "https://github.com/adminmrobo/ai-power-chain-simulator",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "summary": ""
-  },
-  {
    "title": "현장형 AX 전문강사 양성과정 — 제조현장 AX",
    "cat": "공공·사회 프로젝트",
    "mid": "외부_콘텐츠",
@@ -2062,6 +2762,19 @@
    "summary": "태양광 데이터로 폭염 피해를 예측하는 시스템"
   },
   {
+   "title": "서버실 지킴이 — Reon Ahn's Lab Server",
+   "cat": "연구실 운영",
+   "mid": "연구실 소개",
+   "sub": "랩 당직",
+   "site_url": "https://adminmrobo.github.io/ahnboat_server_room_guards/",
+   "repo_url": "https://github.com/adminmrobo/ahnboat_server_room_guards",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": ""
+  },
+  {
    "title": "안보트 연구실 타운 (Ahn Lab Town)",
    "cat": "연구실 운영",
    "mid": "연구실 소개",
@@ -2093,6 +2806,19 @@
    "summary": ""
   },
   {
+   "title": "Ahn-boat Lab 식구 갤러리",
+   "cat": "연구실 운영",
+   "mid": "제작 도구",
+   "sub": "",
+   "site_url": "https://adminmrobo.github.io/ahnboat_lab_gallery/",
+   "repo_url": "https://github.com/adminmrobo/ahnboat_lab_gallery",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": ""
+  },
+  {
    "title": "캐릭터 표정 라이브러리",
    "cat": "연구실 운영",
    "mid": "제작 도구",
@@ -2102,6 +2828,25 @@
    "link": "",
    "langs": [
     "ko"
+   ],
+   "summary": ""
+  },
+  {
+   "title": "Haru &amp; Intern's TIMER",
+   "cat": "연구실 운영",
+   "mid": "제작 도구",
+   "sub": "타이머",
+   "site_url": "https://adminmrobo.github.io/timer_ver001/",
+   "repo_url": "https://github.com/adminmrobo/timer_ver001",
+   "link": "",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
    ],
    "summary": ""
   }
@@ -2127,7 +2872,7 @@
    "repo_url": "",
    "link": "https://adminmrobo.github.io/who_am_i/who_am_i.html",
    "langs": [],
-   "summary": "AI가 범죄의 비용 구조와 수익 모델을 어떻게 바꾸었는지 범죄경제학으로 풀어낸 책"
+   "summary": "AI 범죄 시대, 자기 방어의 지혜 — 메신저·보이스피싱 등 일상 속 AI 범죄를 범죄경제학으로 분석하고, 개인 보안 수칙과 윤리·제도 대응을 제안한 책"
   },
   {
    "title": "핀테크 데이터분석 기초",

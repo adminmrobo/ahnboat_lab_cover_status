@@ -2,10 +2,14 @@
 
 ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전·오후 자동으로 다시 만들고, Actions에서 수동으로도 돌릴 수 있습니다.
 
-- 갱신: **2026-11-22 23:31 KST**
-- 홈페이지 글 32 · 페이지 4
-- GitHub 해설 콘텐츠 115 · 포트폴리오 10 · 일정 18
+- 갱신: **2026-11-23 16:40 KST**
+- 홈페이지 글 32 · 페이지 0 · 사이트맵 주소 73
+- GitHub 해설 콘텐츠 154 · 포트폴리오 10 · 일정 18
 - 기계용 원본: `data/site_contents.json`
+
+> ⚠ 이번에 읽지 못한 곳
+
+> - 워드프레스 REST API 읽기 실패: HTTP Error 429: Too Many Requests
 
 ## 1. 홈페이지 글 (ahnboat.xyz)
 
@@ -46,16 +50,11 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 
 ## 2. 홈페이지 페이지
 
-| 제목 | 주소 | 고친 날 |
-|---|---|---|
-| Article & Study | https://ahnboat.xyz/articlestudy/ | 2026-10-04 |
-| Global Business Story | https://ahnboat.xyz/global_business/ | 2026-10-04 |
-| Hello! Everyone! | https://ahnboat.xyz/my_profile/ | 2026-10-19 |
-| 곧 나옵니다.. 아마도요..! (Coming Soon-ish! 🐌) | https://ahnboat.xyz/pleae_wait/ | 2026-10-19 |
+(없음 또는 읽지 못함)
 
 ## 3. GitHub 해설 콘텐츠 (공개 카탈로그)
 
-### 머신러닝 (12)
+### 머신러닝 (13)
 
 | 제목 | 중분류 | 주소 | 언어 |
 |---|---|---|---|
@@ -71,6 +70,7 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | Fish Market 연구실 · 머신러닝 핵심 개념 2 | 실습으로 배우기 / Fish Market 머신러닝 | https://adminmrobo.github.io/fish_market_learning_epoch_etc/ | ko |
 | 릿지와 라쏘 · 농어 무게로 배우는 과적합 막기 | 실습으로 배우기 / 규제 회귀 | https://adminmrobo.github.io/Regression_ridge_lasso/ | ko en zh ja uz ru vi |
 | 평소와 다른 한 건 찾기 · 이상 탐지의 다섯 도구 | 실습으로 배우기 / 이상 탐지 | https://adminmrobo.github.io/Anomaly_detection_tatics/ | ko en zh ja uz ru vi |
+| 비지도학습 물고기 연구실 — 라벨링 없이 맞추는 AI (목차) | 프로그래밍 | https://adminmrobo.github.io/unsupervised_fish_lab/ | ko |
 
 ### 딥러닝·뇌과학 (10)
 
@@ -87,7 +87,7 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | 역전파 연구실 · 손잡이 33개를 한 번에 돌리는 법 | 딥러닝 모델 / 역전파 연구실 | https://adminmrobo.github.io/backprop_lab/ | ko |
 | 텐서 연구실 | 딥러닝 모델 / 텐서 연구실 | https://adminmrobo.github.io/what_is_tensor/ | ko |
 
-### AI 감각·생성 (5)
+### AI 감각·생성 (9)
 
 | 제목 | 중분류 | 주소 | 언어 |
 |---|---|---|---|
@@ -95,18 +95,25 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | AI는 동작을 어떻게 알아보고 만들까? | 보고 알아보기 / 모션 AI | https://adminmrobo.github.io/motion_ai_series_01/ | ko en zh ja uz ru |
 | AI는 이미지를 어떻게 구분할까? | 보고 알아보기 / 이미지 인식 | https://adminmrobo.github.io/AI_image_classification/ | ko en zh ja uz ru |
 | 얼굴 알아맞히기 게임 · 20챕터로 배우는 CNN | 보고 알아보기 / 이미지 인식 | https://adminmrobo.github.io/cnn_face_game_lab/ | ko |
+| 구조 먼저 보는 캐릭터 그리기 연구실 — 픽셀 캐릭터를 실사까지 | 생성형 AI활용 / 캐릭터 디자인 | https://adminmrobo.github.io/adminmrobo-structure_first_drawing_lab/ | ko |
+| 구조 먼저 그리기 연구실 01 · 옷장 편 — 같은 원리, 다른 옷 | 생성형 AI활용 / 캐릭터 디자인 | https://adminmrobo.github.io/structure_first_drawing_lab_01/ | ko |
+| 구조 먼저 그리기 연구실 02 · 실천편 — 주름과 그림자를 직접 넣어 보기 | 생성형 AI활용 / 캐릭터 디자인 | https://adminmrobo.github.io/structure_first_drawing_lab_02/ | ko |
+| 그리기 연구실 01 · 기분 편 — 같은 얼굴, 다른 마음 | 생성형 AI활용 / 캐릭터 디자인 | https://adminmrobo.github.io/drawing_lab_01/ | ko |
 | AI 글 읽기 어려움 | 읽고 이해하기 / AI 글 읽기 | https://adminmrobo.github.io/ai_text_read_ability/ | ko en zh ja uz ru vi |
 
-### LLM·추론 엔지니어링 (21)
+### LLM·추론 엔지니어링 (24)
 
 | 제목 | 중분류 | 주소 | 언어 |
 |---|---|---|---|
 | 4만 3천 편 중 만점 3편 · 연구실 모의 심사회 (ICLR 2027) | AI 연구 동향 / AI 학회 논문 | https://adminmrobo.github.io/iclr2027_top3_lab_review/ | ko |
+| AI 에이전트 공식 속성 가이드 — 하루봇을 만들며 배우는 13장 | LLM 이해 / AI에이젠트 | https://adminmrobo.github.io/agentic_ai_crash_guide/ | ko |
 | 기억 3부작 · LLM은 어디까지 기억할 수 있을까 | LLM 이해 / LLM 기억 | https://adminmrobo.github.io/llm_memory_trilogy/ | ko |
 | AI 점수는 무엇을 잰 것일까 | LLM 이해 / LLM 평가 | https://adminmrobo.github.io/LLM_evaluation/ | ko en zh ja uz ru vi |
 | rule base에서 일하는 AI까지 | LLM 이해 / rule base에서 에이전트까지 | https://adminmrobo.github.io/rulebase_to_agent/ | ko en zh ja uz ru vi |
 | 확률로 읽는 보안 사건 · 승인 기록 유출 | LLM 이해 / 에이전트 보안 | https://adminmrobo.github.io/agent_secret_leak_lab/ | ko |
 | 왜 지금 온톨로지인가 · 연구실 리포트(동향) | LLM 이해 / 연구실 리포트 | https://adminmrobo.github.io/ontology_trend_report/ | ko |
+| 자연어 분석 연구실 | LLM 이해 / 자연어 분석 | https://adminmrobo.github.io/ai-nlp-data-analysis/ | ko |
+| 스스로 고치는 AI는 어디까지 왔나 — 재귀적 자기개선(RSI) 기초 정리 · 연구실 해설 | LLM 이해 / 재귀적 자기개선 | https://adminmrobo.github.io/Recursive-Self-Improvement/ | ko |
 | 목차 · 인퍼런스 스터디 북 | 추론 엔지니어링 스터디 / 스터디 북 · 보드 | https://adminmrobo.github.io/inference_engineering_study/ | ko en zh ja ru uz vi |
 | 스터디 보드 · Inference Korea | 추론 엔지니어링 스터디 / 스터디 북 · 보드 | https://adminmrobo.github.io/inference_korea_study_page/ | ko en zh |
 | 서문 · 추론은 이제 모두의 일 | 추론 엔지니어링 스터디 / 1장 · 시작 전에 정할 것 (서문·0장 포함) | https://adminmrobo.github.io/inference_engineering_study/week_01_textbook_preface/ | ko |
@@ -123,24 +130,33 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | 4장 논문 · 페이지드 어텐션 (PagedAttention) | 추론 엔지니어링 스터디 / 4장 · 소프트웨어 | https://adminmrobo.github.io/inference_engineering_study/week_05_article_01/ | ko |
 | 2장 후반 발표 · 병목을 찾아라 | 추론 엔지니어링 스터디 / 부록 · 발표 자료 | https://adminmrobo.github.io/inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide/ | ko |
 
-### 경제·수학·최적화 (12)
+### 경제·수학·최적화 (21)
 
 | 제목 | 중분류 | 주소 | 언어 |
 |---|---|---|---|
+| 하루의 첫 브리핑 — 리만 가설은 &#x27;약속&#x27;이다 |  | https://adminmrobo.github.io/riemann_hypothesis_lab/ | ko |
 | 노후 가계부와 AI 예측 모형 | 경제 연구 / 경제·사회 | https://adminmrobo.github.io/my_article_05_consumer_expenditure_predict/ | ko en zh ja uz ru vi |
 | 산업재해 패널 데이터를 활용한 머신러닝 모델 | 경제 연구 / 경제·사회 | 제10회 산재보험패널 학술대회 |  |
 | 조건부 노동수요와 생성형 AI | 경제 연구 / 경제·사회 | https://adminmrobo.github.io/my_article_06_AI_effect_to_labor_demand/ | ko en zh ja uz ru vi |
 | 여론조사 보정 연구실 | 경제 연구 / 경제·사회 | https://adminmrobo.github.io/my_article_08_poll_reweighting_lab/ | ko |
+| 경제학의 이해 | 경제학 | https://adminmrobo.github.io/basic_economic_lab/ | ko |
 | 미시경제학 연구실 — 미시경제학 연구실 블로그 | 경제학 / 미시경제학 | https://adminmrobo.github.io/micro_economics/ | ko |
+| 돈의 경맥 · 목차 | 금융 연구 | https://adminmrobo.github.io/fof-money-meridian-/ | ko |
 | ∇ 특별편 — 화살표 하나로 보는 미분·적분과 다섯 현장 · ∇ 특별편 | 선형대수 / 벡터 미적분 | https://adminmrobo.github.io/vector_calculus_lab/ | ko |
 | 같은 ∇, 다른 현장 | 선형대수 / 벡터 미적분 | https://adminmrobo.github.io/nabla_field_lab/ | ko |
+| 벡터 분석 랩 — 네 개의 자로 읽는 화살표 | 선형대수 / 벡터 미적분 | https://adminmrobo.github.io/vector_analysis_lab/ | ko |
+| 벡터 DB 연구실 — 표에 담기지 않는 말을 저장하는 법 \| 목차 | 선형대수 / 벡터 미적분 | https://adminmrobo.github.io/vector_db_lab/ | ko |
+| 주판봇의 초파리 추적 대작전 ① 공변미분 — 진짜로 꺾인 만큼만 재기 | 좌표 공간(space) | https://adminmrobo.github.io/covariant_chase_lab/ | ko |
 | 자와 각도기의 방 — 시아·모아의 유클리드 공간 | 좌표 공간(space) / 공간 | https://adminmrobo.github.io/euclidean_space_lab/ | ko en zh ja uz ru vi |
 | 유클리드 공간 · 힐베르트 공간 — 연구실 복도의 방 탈출 | 좌표 공간(space) / 공간 | https://adminmrobo.github.io/hilbert_space_lab/ | ko |
 | 마이너스 칸이 있는 방 — 시아·모아의 민코프스키 시공간 | 좌표 공간(space) / 공간 | https://adminmrobo.github.io/minkowski_space_lab/ | ko |
+| hello_space_lab | 좌표 공간(space) / 공간 | https://adminmrobo.github.io/hello_space_lab/ | ko |
 | 두 장의 지도 — 라그랑지안 vs 해밀토니안 | 최적화 모델 / 라그랑지안·해밀토니안 | https://adminmrobo.github.io/lagrangian_hamiltonian_lab/ | ko |
+| 좌표로 본 라그랑주 승수 — 울타리 안의 최적점 | 최적화 모델 / 라그랑지안·해밀토니안 | https://adminmrobo.github.io/lagrange_multiplier_lab/ | ko |
 | 좌표축 위의 그릇 · 3D 지도로 본 모델 최적화 | 최적화 모델 / 모델 최적화 | https://adminmrobo.github.io/optimization_3d_map/ | ko |
+| 인공지능을 위한 수학 기초 | 최적화 모델 / 수학기초 | https://adminmrobo.github.io/math_for_ai_lab/ | ko |
 
-### 금융·핀테크·블록체인 (18)
+### 금융·핀테크·블록체인 (19)
 
 | 제목 | 중분류 | 주소 | 언어 |
 |---|---|---|---|
@@ -149,6 +165,7 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | 가상자산 시계열 데이터의 분석과 예측 | 금융 연구 / 가상자산 | https://adminmrobo.github.io/my_article_02_crypto_predict_model_analytics/ | ko en zh ja uz ru vi |
 | 미디어 토큰 경제 연구실 | 금융 연구 / 가상자산 | https://adminmrobo.github.io/my_article_07_media_blockchain/ | ko en zh ja uz ru vi |
 | 우리나라 주식시장의 변동성 분해 분석 (박사논문) | 금융 연구 / 주식·금융시장 | https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ | ko |
+| 핀테크 데이터 연구실 | 보험·핀테크 / 데이터 분석 | https://adminmrobo.github.io/fintech_data_analysis/ | ko |
 | 인슈어테크 #1 · 분류 모델 | 보험·핀테크 / 인슈어테크 사례 | https://adminmrobo.github.io/insurtech__case_classification_model_01/ | ko |
 | 인슈어테크 #2 · 분류 모델 실전 | 보험·핀테크 / 인슈어테크 사례 | https://adminmrobo.github.io/insurtech__case_classification_model_02/ | ko |
 | 인슈어테크 #3 · 회귀 모델 | 보험·핀테크 / 인슈어테크 사례 | https://adminmrobo.github.io/insurtech__case_regreesion_model_01/ | ko |
@@ -163,36 +180,56 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | 현금흐름표 연구실 | 회계·거시금융 / 회계·기업가치 | https://adminmrobo.github.io/cashflow-lab/ | ko |
 | 매출이 없어도 기업가치는 만들 수 있다 | 회계·거시금융 / 회계·기업가치 | https://adminmrobo.github.io/valuation_without_revenue/ | ko |
 
-### 통계·데이터 기초 (13)
+### 통계·데이터 기초 (12)
 
 | 제목 | 중분류 | 주소 | 언어 |
 |---|---|---|---|
-| 데이터시각화 1주차 · 과정 안내 | 데이터 시각화 / 데이터시각화 | https://adminmrobo.github.io/Data_visuialization_lecture_01/ | ko en zh ja uz ru |
-| 데이터시각화 2주차 · 그래프 이론과 첫 실습 | 데이터 시각화 / 데이터시각화 | https://adminmrobo.github.io/Data_visuialization_lecture_02/ | ko en zh ja uz ru |
-| 데이터시각화 3주차 · 생성형 AI 데이터 전처리 | 데이터 시각화 / 데이터시각화 | https://adminmrobo.github.io/Data_visuialization_lecture_03/ | ko en zh ja uz ru |
-| 데이터시각화 4주차 · 산업별 데이터 시각화 | 데이터 시각화 / 데이터시각화 | https://adminmrobo.github.io/Data_visuialization_lecture_04/ | ko en zh ja uz ru |
+| 모든 데이터는 숫자가 된다 — 시리즈 목차 · 연구실 해설 | 개념 지도 | https://adminmrobo.github.io/data_to_numbers_lab/ | ko |
+| 데이터베이스 설계 연구실 — 데이터베이스 설계 15회차 연구실 해설 | 데이터베이스 / 데이터베이스 설계 | https://adminmrobo.github.io/data_base_design/ | ko |
 | 하루의 구글시트 연구실 | 프로그래밍 / 구글 시트 | https://adminmrobo.github.io/google-sheets-lab/ | ko |
 | 초보자도 쉽게 따라하는 DB 환경 설치 | 프로그래밍 / 데이터베이스 | https://adminmrobo.github.io/how_to_start_db/ | ko |
 | 데이터베이스 설계 야간 연구실 | 프로그래밍 / 데이터베이스 | https://adminmrobo.github.io/database_01of04/ |  |
 | 보면서 배우는 pandas | 프로그래밍 / 파이썬·판다스 | https://adminmrobo.github.io/learn-pandas-visually_korean/ | ko |
 | 해보며 배우는 파이썬 | 프로그래밍 / 파이썬·판다스 | https://adminmrobo.github.io/learn-python-by-doing_Korean/ | ko |
+| 우연의 과학통계학 | 확률·통계 | https://adminmrobo.github.io/statistics_note/ | ko |
 | 데이터 사이언티스트를 위한 베이지안 통계학 | 확률·통계 / 베이지안 통계 | https://adminmrobo.github.io/bayesian-statistics-for-data-scientists/ | ko |
 | 시계열 3부작 · ARIMA와 LSTM | 확률·통계 / 시계열 | https://adminmrobo.github.io/timeseries-trilogy/ | ko |
 | 점추정과 신뢰구간 | 확률·통계 / 통계 노트 | https://adminmrobo.github.io/statistics_note_ch04_Statistical-Estimation_01_a/ | ko |
 | 확률분포 딕셔너리와 분포표 연구실 | 확률·통계 / 확률분포 딕셔너리 | https://adminmrobo.github.io/probability_distribution_dictionary/ | ko |
 
-### 인공지능 응용 (15)
+### 인공지능 응용 (36)
 
 | 제목 | 중분류 | 주소 | 언어 |
 |---|---|---|---|
+| 목차 · AI 범죄 연구실 | AI 범죄학 / 목차와 분야 지도 | https://adminmrobo.github.io/ai_crime_lab/ | ko |
+| AI 범죄학 온톨로지 지도 | AI 범죄학 / 목차와 분야 지도 | https://adminmrobo.github.io/ai_crime_lab/ontology.html | ko |
+| 서장 · 진화하는 사이버 범죄 | AI 범죄학 / 책 보충본 (서장~10장·실전 연습장) | https://adminmrobo.github.io/ai_crime_lab/ch00.html | ko |
+| 1장 · AI 범죄, 새로운 디지털 위험의 시대 | AI 범죄학 / 책 보충본 (서장~10장·실전 연습장) | https://adminmrobo.github.io/ai_crime_lab/ch01.html | ko |
+| 2장 · 범죄자의 경제학 — AI가 범죄를 매력적으로 만드는 이유 | AI 범죄학 / 책 보충본 (서장~10장·실전 연습장) | https://adminmrobo.github.io/ai_crime_lab/ch02.html | ko |
+| 3장 · 진짜인 듯 가짜인 세상 — 딥페이크의 위협 | AI 범죄학 / 책 보충본 (서장~10장·실전 연습장) | https://adminmrobo.github.io/ai_crime_lab/ch03.html | ko |
+| 4장 · 완벽한 사기꾼 — AI가 바꾸는 피싱과 사회공학 | AI 범죄학 / 책 보충본 (서장~10장·실전 연습장) | https://adminmrobo.github.io/ai_crime_lab/ch04.html | ko |
+| 5장 · 끊임없는 진화 — AI 기반 자동화 공격의 세계 | AI 범죄학 / 책 보충본 (서장~10장·실전 연습장) | https://adminmrobo.github.io/ai_crime_lab/ch05.html | ko |
+| 6장 · 보이지 않는 눈 — AI 감시와 프라이버시의 위기 | AI 범죄학 / 책 보충본 (서장~10장·실전 연습장) | https://adminmrobo.github.io/ai_crime_lab/ch06.html | ko |
+| 7장 · 보이지 않는 손의 조작 — AI와 금융 범죄 | AI 범죄학 / 책 보충본 (서장~10장·실전 연습장) | https://adminmrobo.github.io/ai_crime_lab/ch07.html | ko |
+| 8장 · 나만의 디지털 방패 만들기 | AI 범죄학 / 책 보충본 (서장~10장·실전 연습장) | https://adminmrobo.github.io/ai_crime_lab/ch08.html | ko |
+| 9장 · 함께 만드는 안전한 AI 사회 | AI 범죄학 / 책 보충본 (서장~10장·실전 연습장) | https://adminmrobo.github.io/ai_crime_lab/ch09.html | ko |
+| 10장 · 미래를 준비하는 디지털 생존 전략 | AI 범죄학 / 책 보충본 (서장~10장·실전 연습장) | https://adminmrobo.github.io/ai_crime_lab/ch10.html | ko |
+| 마지막 장 · 실전 연습장 | AI 범죄학 / 책 보충본 (서장~10장·실전 연습장) | https://adminmrobo.github.io/ai_crime_lab/practice/ | ko |
+| 리포트·뉴스 검증 INDEX | AI 범죄학 / 리포트·뉴스 검증 | https://adminmrobo.github.io/ai_crime_lab/reports/ | ko |
+| 리포트 No.001 · 만들어진 신원과 딥페이크 사기 | AI 범죄학 / 리포트·뉴스 검증 | https://adminmrobo.github.io/ai_crime_lab/reports/2026-11-23_lnrs-synthetic-identity-deepfake/ | ko |
+| catch_phishing | AI 범죄학 / 피싱 | https://adminmrobo.github.io/catch_phishing/ | ko |
 | 비즈니스를 위한 데이터 과학 연구실 | 경영·회계 / 비즈니스를 위한 데이터 과학 | https://adminmrobo.github.io/data_science_for_business/ | ko |
 | AI 회계 컨설팅 연구실 · 파이썬과 회계데이터 분석 | 경영·회계 / 파이썬과 회계데이터 분석 | https://adminmrobo.github.io/python-accounting-analytics/ | ko |
+| 산업재해 패널 데이터를 활용한 머신러닝 모델 (목차) — 재활 서비스 예측 연구실 | 경제 연구 / 머신러닝  모델 | https://adminmrobo.github.io/industrial-accident-prediction/ | ko |
+| AI로 풀어보는 게임 시리즈 — 연구실 식구들과 게임으로 배우는 AI | 로봇·강화학습 | https://adminmrobo.github.io/ai_game_lab/ | ko |
 | 잘 못들었습니다... 불완전한 텍스트 명령을 극복하는 로봇의 강화학습 및 베이지안 추론 | 로봇·강화학습 / AI·로봇 | https://adminmrobo.github.io/Reinforcement-Learning-lab_project_01/ | ko |
+| 자율주행차 배터리 AI 공장 — 공장 목록 | 산업·인프라 / AI 제조업 및 스마트팩토리 | https://adminmrobo.github.io/how_to_make_ai_model_factory_version/ | ko |
 | 생성형 AI 활용 전략 · 목차 | 생성형 AI 활용 / 생성형AI활용전략 | https://adminmrobo.github.io/generative-ai-prompt-strategy/ | ko |
 | 생성형 AI 활용전략 · 중간고사 시뮬레이션 | 생성형 AI 활용 / 생성형AI활용전략 | https://adminmrobo.github.io/Gen_AI_Hannam_univ/ | ko |
 | 생성형 AI 활용전략 5장 | 생성형 AI 활용 / 생성형AI활용전략 | https://adminmrobo.github.io/Gen_AI_strategy_ch05/ | ko |
 | 생성형 AI 활용전략 6장 | 생성형 AI 활용 / 생성형AI활용전략 | https://adminmrobo.github.io/Gen_AI_strategy_ch06/ | ko |
-| 목차 · AI 범죄 연구실 | 이상탐지·보안 / AI 범죄·범죄경제학 | https://adminmrobo.github.io/ai_crime_lab/ | ko |
+| AI 범죄와 자기 방어 | 외부_콘텐츠 / 저서 | 커뮤니케이션북스 · 인공지능총서 |  |
+| 보건통계 연구실 | 의료 및 보건통계학 / 의료AI | https://adminmrobo.github.io/health_stats_lab/ | ko |
 | SNS 은어와 이상탐지 | 이상탐지·보안 / AI·보안 | https://adminmrobo.github.io/my_article_03_drug-slang-detection/ | ko en zh ja uz ru vi |
 | 금융 이상탐지 모델 보안과 적대적 공격 | 이상탐지·보안 / AI·보안 | https://adminmrobo.github.io/my_article_04_adversarial_finance_attack/ | ko en zh ja uz ru vi |
 | 스마트 제조 연구실 · 3D로 보는 15주 | 제조 / 스마트 제조 | https://adminmrobo.github.io/smart_product/ | ko |
@@ -201,24 +238,25 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | 시멘트 공정 AI · 설명가능 AI와 원가 최적화 | 제조 / 시멘트 공정 AI | https://adminmrobo.github.io/ai_for_cement_produce_08/ |  |
 | 스마트 팩토리 World · 시멘트 제조업 | 제조 / 시멘트 공정 AI | https://adminmrobo.github.io/smart_factory_world/ | ko |
 
-### 공공·사회 프로젝트 (6)
+### 공공·사회 프로젝트 (4)
 
 | 제목 | 중분류 | 주소 | 언어 |
 |---|---|---|---|
-| 그린루트 · 모바일 경로 안내 | 산업·인프라 / 모빌리티 | https://adminmrobo.github.io/green_route/ | ko |
-| AI가 쓰는 전기, 어디서 모자랄까 | 산업·인프라 / 에너지·전력 | https://adminmrobo.github.io/ai-power-chain-simulator/ | ko |
 | 현장형 AX 전문강사 양성과정 — 제조현장 AX | 외부_콘텐츠 / 공공 사업 | 한국IT여성기업인협회 · 정보통신산업진흥원 |  |
 | 핀테크 API 개발지원사업 (총괄 PM) | 외부_콘텐츠 / 공공 사업 | 2017·2019·2021년 수행 |  |
 | 뉴스 빅데이터 스타트업 지원사업 (총괄 PM) | 외부_콘텐츠 / 공공 사업 | 한국언론진흥재단 |  |
 | 태양광 데이터를 이용한 폭염피해 예측 시스템 (특허) | 외부_콘텐츠 / 특허 | 제 10-2486672 호 |  |
 
-### 연구실 운영 (3)
+### 연구실 운영 (6)
 
 | 제목 | 중분류 | 주소 | 언어 |
 |---|---|---|---|
+| 서버실 지킴이 — Reon Ahn's Lab Server | 연구실 소개 / 랩 당직 | https://adminmrobo.github.io/ahnboat_server_room_guards/ | ko |
 | 안보트 연구실 타운 (Ahn Lab Town) | 연구실 소개 / 랩타운 | https://adminmrobo.github.io/ahn_boat_lab_town/ | ko |
 | 초파리 연구원과 주판봇이 소개하는 안상선 | 연구실 소개 / 소개 | https://adminmrobo.github.io/who_am_i/ | ko en zh ja uz ru |
+| Ahn-boat Lab 식구 갤러리 | 제작 도구 | https://adminmrobo.github.io/ahnboat_lab_gallery/ | ko |
 | 캐릭터 표정 라이브러리 | 제작 도구 / 제작 도구 | https://adminmrobo.github.io/fruitfly-lab-expressions/ | ko |
+| Haru &amp; Intern's TIMER | 제작 도구 / 타이머 | https://adminmrobo.github.io/timer_ver001/ | ko en zh ja uz ru vi |
 
 ## 4. 포트폴리오
 
