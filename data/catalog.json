@@ -3093,6 +3093,21 @@
    "thumb": ""
   },
   {
+   "title": "서버실 지킴이 — Reon Ahn's Lab Server",
+   "summary": "",
+   "cat": "연구실 운영",
+   "mid": "연구실 소개",
+   "sub": "랩 당직",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/ahnboat_server_room_guards",
+   "site_url": "https://adminmrobo.github.io/ahnboat_server_room_guards/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": ""
+  },
+  {
    "title": "안보트 연구실 타운 (Ahn Lab Town)",
    "summary": "",
    "cat": "연구실 운영",
@@ -3141,6 +3156,27 @@
     "ko"
    ],
    "thumb": "thumbs/repos/fruitfly-lab-expressions.jpg"
+  },
+  {
+   "title": "Haru &amp; Intern's TIMER",
+   "summary": "",
+   "cat": "연구실 운영",
+   "mid": "제작 도구",
+   "sub": "타이머",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/timer_ver001",
+   "site_url": "https://adminmrobo.github.io/timer_ver001/",
+   "link": "",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru",
+    "vi"
+   ],
+   "thumb": ""
   }
  ]
 }

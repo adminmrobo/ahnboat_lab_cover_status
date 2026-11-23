@@ -1303,6 +1303,58 @@
   "has_pages": true
  },
  {
+  "repo": "ahnboat_lab_gallery",
+  "series_ko": "Ahn-boat Lab 식구 갤러리",
+  "title_ko": "Ahn-boat Lab 식구 갤러리",
+  "repo_url": "https://github.com/adminmrobo/ahnboat_lab_gallery",
+  "pages_url": "https://adminmrobo.github.io/ahnboat_lab_gallery/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-23T05:38:20Z",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-23",
+  "site_title": "Ahn-boat Lab 식구 갤러리",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 1,
+   "pages_checked": 1,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 1
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/ahnboat_lab_gallery/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 1
+   }
+  },
+  "has_pages": true
+ },
+ {
   "repo": "ahnboat_lab_langpack",
   "series_ko": "ahnboat_lab_langpack",
   "title_ko": null,
@@ -15018,7 +15070,7 @@
   "repo_url": "https://github.com/adminmrobo/math_for_ai_lab",
   "pages_url": "https://adminmrobo.github.io/math_for_ai_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-22T00:09:04Z",
+  "pushed_at": "2026-11-23T06:33:17Z",
   "has_manifest": true,
   "covers": [
    {
@@ -19248,7 +19300,7 @@
   "repo_url": "https://github.com/adminmrobo/optimization_3d_map",
   "pages_url": "https://adminmrobo.github.io/optimization_3d_map/",
   "default_branch": "main",
-  "pushed_at": "2026-11-21T23:27:42Z",
+  "pushed_at": "2026-11-23T06:33:15Z",
   "has_manifest": true,
   "covers": [
    {

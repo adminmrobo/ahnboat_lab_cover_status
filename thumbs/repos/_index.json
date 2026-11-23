@@ -26,6 +26,10 @@
   "src": null,
   "pushed_at": "2026-11-22T16:35:37Z"
  },
+ "ahnboat_lab_gallery": {
+  "src": null,
+  "pushed_at": "2026-11-23T05:38:20Z"
+ },
  "ahnboat_lab_langpack": {
   "src": null,
   "pushed_at": "2026-11-11T09:01:16Z"
@@ -456,7 +460,7 @@
  },
  "math_for_ai_lab": {
   "src": "manifest:assets/og/og_part1.jpg",
-  "pushed_at": "2026-11-22T00:09:04Z",
+  "pushed_at": "2026-11-23T06:33:17Z",
   "made": "2026-11-23"
  },
  "micro_economics": {
@@ -599,8 +603,8 @@
  },
  "optimization_3d_map": {
   "src": "manifest:img/cover_index.webp",
-  "pushed_at": "2026-11-21T23:27:42Z",
-  "made": "2026-11-22"
+  "pushed_at": "2026-11-23T06:33:15Z",
+  "made": "2026-11-23"
  },
  "probability_distribution_dictionary": {
   "src": "file:thumbs/part1.webp",
