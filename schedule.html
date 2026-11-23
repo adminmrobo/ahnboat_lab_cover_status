@@ -57,7 +57,7 @@ h1{margin:0;font-size:clamp(28px,3.2vw,38px);line-height:1.15}
 .foot{margin:16px 0 0;font-size:12.5px;color:var(--muted)}
 @media (prefers-reduced-motion:no-preference){.sc li{animation:pop .35s ease both}@keyframes pop{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}}
 </style>
-</head>
+<!-- px-fix v1 --><style id="px-fix">img{image-rendering:auto!important}</style><script id="px-fix-js">(function(){var R=window.ResizeObserver;function f(i){var n=i.naturalWidth,w=i.getBoundingClientRect().width;if(!n||!w)return;var s=w*(window.devicePixelRatio||1)/n;i.style.setProperty("image-rendering",s>=1.95?"pixelated":"auto","important")}var ro=R?new R(function(es){es.forEach(function(e){f(e.target)})}):null;function a(i){if(i.__px)return;i.__px=1;i.addEventListener("load",function(){f(i)});if(ro)ro.observe(i);f(i)}function all(r){(r||document).querySelectorAll&&(r||document).querySelectorAll("img").forEach(a)}function go(){all();if(window.MutationObserver)new MutationObserver(function(ms){ms.forEach(function(m){m.addedNodes.forEach(function(n){if(n.nodeType!==1)return;if(n.tagName==="IMG")a(n);else all(n)})})}).observe(document.documentElement,{childList:true,subtree:true});window.addEventListener("resize",function(){document.querySelectorAll("img").forEach(f)})}if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",go);else go()})();</script><!-- /px-fix --></head>
 <body>
 <div class="wrap">
   <div class="head"><span class="kicker">AHNBOAT LAB · SCHEDULE</span><h1>Ahn's Schedule</h1></div>
