@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>그림 점검 · AHNBOAT LAB</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@500;700&display=swap">
+<style>
+:root{
+  --bg:#f3f1ec; --paper:#fbfaf7; --panel:#ffffff; --ink:#1f2224; --muted:#5f6663; --line:#1f2224; --rule:#e4e0d8;
+  --violet:#8f74ef; --violet-ink:#6b4fd6; --pink:#d9668f; --sun:#e0a92a; --up:#1f9e66; --down:#c0392b;
+  --font:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace; color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:15px;line-height:1.55;overflow-x:hidden;word-break:keep-all}
+.wrap{max-width:1080px;margin:0 auto;padding:18px max(16px,env(safe-area-inset-left,0px)) 28px}
+.kicker{display:inline-block;font-family:var(--mono);font-size:12px;letter-spacing:.1em;border:1.5px solid var(--line);border-radius:99px;padding:3px 10px;background:#fff}
+h1{margin:6px 0 2px;font-size:clamp(26px,3.4vw,34px);line-height:1.15}
+.sub{margin:0 0 16px;color:var(--muted);font-size:14px}
+.card{background:var(--panel);border:2px solid var(--line);border-radius:18px;box-shadow:4px 4px 0 var(--line);padding:16px 18px;min-width:0}
+.dot{background:radial-gradient(circle at 1px 1px,#e9e5dc 1px,transparent 1.5px) 0 0/18px 18px,var(--paper)}
+button{font:inherit;color:inherit}
+.btn{cursor:pointer;border:2px solid var(--line);border-radius:12px;padding:8px 14px;font-weight:700;background:#fff;box-shadow:3px 3px 0 var(--line);transition:transform .12s,box-shadow .12s}
+.btn:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--line)}
+.btn:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--line)}
+.btn.sun{background:var(--sun)}
+.btn:disabled{opacity:.45;cursor:default;transform:none;box-shadow:3px 3px 0 var(--line)}
+/* 잠금 */
+.lock{display:flex;justify-content:center;padding-top:40px}
+.lockcard{max-width:440px;width:100%}
+.lockcard h2{margin:0 0 6px;font-size:20px}
+.lockcard p{margin:0 0 12px;color:var(--muted);font-size:14px}
+.lockcard form{display:flex;gap:8px}
+.lockcard input[type=password]{flex:1;min-width:0;font:inherit;border:2px solid var(--line);border-radius:12px;padding:8px 12px}
+/* 그림 점검 */
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:16px 0}
+@media (max-width:760px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.kpi .l{font-size:12.5px;color:var(--muted)}
+.kpi .v{font-size:28px;font-weight:700;line-height:1.2;font-variant-numeric:tabular-nums}
+.kpi .d{font-size:12.5px;color:var(--muted)}
+.kpi.need .v{color:var(--down)} .kpi.ok .v{color:var(--up)}
+h2.sec{margin:0 0 10px;font-size:17px}
+.mt{margin-top:16px}
+.hist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.hist li{display:grid;grid-template-columns:96px minmax(0,1fr);gap:10px;border-bottom:1px dashed var(--rule);padding-bottom:8px}
+.hist .dt{font-family:var(--mono);font-size:12.5px;color:var(--muted)}
+.hist b{display:block}
+.hist .k{display:inline-block;font-size:11px;font-weight:700;border:1.5px solid var(--line);border-radius:99px;padding:0 7px;margin-right:6px;background:#fff}
+.hist .k.fix{background:#d9f2e6}.hist .k.audit{background:#efe9ff}.hist .k.auto{background:#fff3cf}.hist .k.skill{background:#ffe1ea}
+.hist p{margin:2px 0 0;font-size:13.5px;color:var(--muted)}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;align-items:center}
+.tabs button{cursor:pointer;border:1.5px solid var(--line);border-radius:99px;padding:2px 10px;background:#fff;font-size:12.5px;font-weight:700}
+.tabs button[aria-pressed=true]{background:var(--ink);color:#fff}
+.tabs input{margin-left:auto;font:inherit;font-size:13px;border:1.5px solid var(--line);border-radius:10px;padding:4px 10px;min-width:0;width:220px;max-width:100%}
+.tbl{width:100%;border-collapse:collapse;font-size:13.5px}
+.tbl th{text-align:left;font-size:12px;color:var(--muted);border-bottom:2px solid var(--line);padding:6px 8px;white-space:nowrap}
+.tbl td{border-bottom:1px solid var(--rule);padding:6px 8px;vertical-align:top}
+.tbl td.n{font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+.tbl a{color:var(--violet-ink)}
+.scroll{overflow-x:auto}
+.st{display:inline-block;font-size:11.5px;font-weight:700;border:1.5px solid var(--line);border-radius:99px;padding:0 8px;white-space:nowrap}
+.st.need{background:#ffd9d2}.st.ok{background:#d9f2e6}.st.clear{background:#eeeeee}
+.bv{display:inline-block;font-family:var(--mono);font-weight:700;font-size:12px;border-radius:6px;padding:0 6px}
+.bv.A{background:#ffd9d2}.bv.B{background:#fff1c2}.bv.C{background:#e3f4ea}
+.ex{font-size:12px;color:var(--muted);word-break:break-all}
+.foot{margin-top:16px;font-size:12.5px;color:var(--muted)}
+.foot p{margin:4px 0}
+.topnav{display:flex;gap:12px;flex-wrap:wrap;font-size:13px;margin:6px 0 12px}
+.topnav a{color:var(--ink)}
+</style>
+<!-- px-fix v1 --><style id="px-fix">img{image-rendering:auto!important}</style><script id="px-fix-js">(function(){var R=window.ResizeObserver;function f(i){var n=i.naturalWidth,w=i.getBoundingClientRect().width;if(!n||!w)return;var s=w*(window.devicePixelRatio||1)/n;i.style.setProperty("image-rendering",s>=1.95?"pixelated":"auto","important")}var ro=R?new R(function(es){es.forEach(function(e){f(e.target)})}):null;function a(i){if(i.__px)return;i.__px=1;i.addEventListener("load",function(){f(i)});if(ro)ro.observe(i);f(i)}function all(r){(r||document).querySelectorAll&&(r||document).querySelectorAll("img").forEach(a)}function go(){all();if(window.MutationObserver)new MutationObserver(function(ms){ms.forEach(function(m){m.addedNodes.forEach(function(n){if(n.nodeType!==1)return;if(n.tagName==="IMG")a(n);else all(n)})})}).observe(document.documentElement,{childList:true,subtree:true});window.addEventListener("resize",function(){document.querySelectorAll("img").forEach(f)})}if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",go);else go()})();</script><!-- /px-fix --></head>
+<body>
+<div class="wrap">
+  <span class="kicker">AHNBOAT LAB · IMAGE CHECK</span>
+  <h1>그림 점검</h1>
+  <p class="sub">각진 픽셀 설정 때문에 그림이 깨져 보이는 문제를 저장소마다 추적합니다. 2026-11-23 정밀 점검과 보정이 시작점입니다.</p>
+  <nav class="topnav" aria-label="관리 메뉴"><a href="admin.html">← 콘텐츠 관리실</a><a href="hub.html">콘텐츠 현황판</a><a href="index.html">표지 현황</a></nav>
+
+  <section class="lock" id="lock" aria-labelledby="lockTitle">
+    <div class="card lockcard dot">
+      <h2 id="lockTitle">관리자 키를 넣어 주세요</h2>
+      <p>점검 기록은 관리자 키로 잠겨 있습니다. 키는 이 브라우저 안에서만 쓰이고 어디로도 보내지지 않습니다.</p>
+      <form id="lockForm" autocomplete="off">
+        <input type="password" id="keyIn" placeholder="관리자 키" aria-label="관리자 키" autocomplete="current-password" required>
+        <button type="submit" class="btn sun" id="unlockBtn">열기</button>
+      </form>
+      <label class="remember"><input type="checkbox" id="remember"> 이 탭을 닫을 때까지 기억</label>
+      <p class="err" id="lockErr" role="alert"></p>
+    </div>
+  </section>
+
+  <div id="app" hidden>
+    <div class="kpis">
+      <div class="card kpi need"><div class="l">보정 권장 저장소</div><div class="v" id="kNeed">-</div><div class="d" id="kNeedP"></div></div>
+      <div class="card kpi ok"><div class="l">보정됨</div><div class="v" id="kOk">-</div><div class="d">보정 코드가 들어 있음</div></div>
+      <div class="card kpi"><div class="l">해당 없음</div><div class="v" id="kClear">-</div><div class="d">각진 픽셀을 쓰지 않음</div></div>
+      <div class="card kpi"><div class="l">결과가 바뀐 날</div><div class="v" id="kDate" style="font-size:20px;white-space:nowrap">-</div><div class="d" id="kRepos"></div></div>
+    </div>
+
+    <section class="card" aria-labelledby="hT">
+      <h2 class="sec" id="hT">관리 이력</h2>
+      <ul class="hist" id="hist"></ul>
+    </section>
+
+    <section class="card mt" aria-labelledby="tT">
+      <h2 class="sec" id="tT">저장소별 상태</h2>
+      <div class="tabs" role="group" aria-label="상태로 거르기">
+        <button type="button" data-f="need" aria-pressed="true">보정 권장</button>
+        <button type="button" data-f="ok" aria-pressed="false">보정됨</button>
+        <button type="button" data-f="clear" aria-pressed="false">해당 없음</button>
+        <button type="button" data-f="all" aria-pressed="false">전체</button>
+        <input type="search" id="q" placeholder="저장소 이름 찾기" aria-label="저장소 이름 찾기">
+      </div>
+      <div class="scroll"><table class="tbl">
+        <thead><tr><th>지금 상태</th><th>저장소</th><th>보정된 페이지</th><th>보정 권장 페이지</th><th>11-23 첫 판정</th><th>예시</th></tr></thead>
+        <tbody id="rows"></tbody>
+      </table></div>
+      <p class="empty" id="none" hidden>해당하는 저장소가 없습니다.</p>
+    </section>
+
+    <div class="foot">
+      <p><b>판정 기준</b> — 보정됨: 페이지에 보정 코드(px-fix v1)가 있음 · 보정 권장: 보정 코드 없이 페이지나 같은 저장소의 CSS·JS에 각진 픽셀(pixelated) 설정이 있음 → 화면 배율·확대에 따라 깨질 수 있음 · 해당 없음: 각진 픽셀을 쓰지 않음.</p>
+      <p><b>11-23 첫 판정</b>(브라우저 정밀 측정) — <span class="bv A">A</span> 큰 그림 깨짐 · <span class="bv B">B</span> 얼굴·작은 그림만 거침 · <span class="bv C">C</span> 그날 첫 화면 기준 정상. <span id="sheet"></span></p>
+      <p>자동 점검은 표지 현황 수집과 함께 하루 두 번 돕니다. 바뀐 저장소의 바뀐 파일만 다시 받습니다. 실제 화면을 여는 정밀 측정은 필요할 때 따로 돌립니다.</p>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var enc=new TextEncoder(),dec=new TextDecoder(),SS='hub-admin-key',D=null,F='need',PAGES={};
+  function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e;}
+  function b64d(s){var b=atob(s),u=new Uint8Array(b.length);for(var k=0;k<b.length;k++)u[k]=b.charCodeAt(k);return u;}
+  function unlock(o,pass){
+    return crypto.subtle.importKey('raw',enc.encode(pass),'PBKDF2',false,['deriveKey']).then(function(base){
+      return crypto.subtle.deriveKey({name:'PBKDF2',hash:'SHA-256',salt:b64d(o.salt),iterations:o.iter},base,{name:'AES-GCM',length:256},false,['decrypt']);})
+      .then(function(k){return crypto.subtle.decrypt({name:'AES-GCM',iv:b64d(o.iv)},k,b64d(o.ct));});
+  }
+  /* 잠긴 파일이 있으면 풀고, 아직 잠기기 전(첫 수집 전)이면 평문을 읽는다 */
+  function load(pass){
+    return fetch('data/pixel_audit.json.enc',{cache:'no-cache'}).then(function(r){
+      if(r.ok)return r.json().then(function(o){return unlock(o,pass);}).then(function(b){return JSON.parse(dec.decode(b));});
+      return fetch('data/pixel_audit.json',{cache:'no-cache'}).then(function(r2){if(!r2.ok)throw new Error('점검 기록이 아직 없습니다');return r2.json();});
+    });
+  }
+  function loadPages(){
+    return fetch('data/repos.json',{cache:'no-cache'}).then(function(r){return r.ok?r.json():[];})
+      .then(function(a){(a||[]).forEach(function(x){PAGES[x.repo]=x.pages_url||x.repo_url;});}).catch(function(){});
+  }
+  function tryUnlock(pass,quiet){
+    var err=document.getElementById('lockErr'),btn=document.getElementById('unlockBtn');
+    err.textContent='';btn.disabled=true;btn.textContent='여는 중…';
+    return Promise.all([load(pass),loadPages()]).then(function(v){
+      D=v[0];
+      try{if(document.getElementById('remember').checked||quiet)sessionStorage.setItem(SS,pass);}catch(e){}
+      show();
+    }).catch(function(e){
+      try{sessionStorage.removeItem(SS);}catch(x){}
+      if(!quiet)err.textContent=(e&&e.name==='OperationError')?'키가 맞지 않습니다.':(e.message||String(e));
+    }).then(function(){btn.disabled=false;btn.textContent='열기';});
+  }
+  var KIND={audit:'점검',fix:'보정',auto:'자동',skill:'스킬'};
+  function show(){
+    document.getElementById('lock').hidden=true;document.getElementById('app').hidden=false;
+    var s=D.summary||{};
+    document.getElementById('kNeed').textContent=(s.need||0)+'곳';
+    document.getElementById('kNeedP').textContent=(s.need_pages||0)+'페이지';
+    document.getElementById('kOk').textContent=(s.ok||0)+'곳';
+    document.getElementById('kClear').textContent=(s.clear||0)+'곳';
+    document.getElementById('kDate').textContent=D.checked_on||'-';
+    document.getElementById('kRepos').textContent='점검 대상 '+(s.repos||0)+'곳';
+    if(D.sheet_url){var a=el('a','', '11-23 점검 원본 시트');a.href=D.sheet_url;a.target='_blank';a.rel='noopener';var sp=document.getElementById('sheet');sp.textContent='';sp.appendChild(a);}
+    var ul=document.getElementById('hist');ul.textContent='';
+    (D.history||[]).slice().reverse().forEach(function(h){
+      var li=el('li'),dt=el('span','dt',h.date),box=el('div'),b=el('b');
+      var k=el('span','k '+(h.kind||''),KIND[h.kind]||h.kind||'');b.appendChild(k);b.appendChild(document.createTextNode(h.title||''));
+      box.appendChild(b);
+      var det=h.detail;if(!det&&h.summary){det='보정됨 '+h.summary.ok+'곳 · 보정 권장 '+h.summary.need+'곳('+h.summary.need_pages+'페이지) · 해당 없음 '+h.summary.clear+'곳';}
+      if(det)box.appendChild(el('p','',det));
+      li.appendChild(dt);li.appendChild(box);ul.appendChild(li);
+    });
+    rows();
+  }
+  var ST={need:'보정 권장',ok:'보정됨',clear:'해당 없음'},ORDER={need:0,ok:1,clear:2};
+  function rows(){
+    var tb=document.getElementById('rows'),q=document.getElementById('q').value.trim().toLowerCase(),base=(D.baseline||{}).repos||{},n=0;
+    tb.textContent='';
+    Object.keys(D.state||{}).map(function(k){return [k,D.state[k]];})
+      .filter(function(x){return (F==='all'||x[1].status===F)&&(!q||x[0].toLowerCase().indexOf(q)>=0);})
+      .sort(function(a,b){return (ORDER[a[1].status]-ORDER[b[1].status])||(b[1].need_pages-a[1].need_pages)||a[0].localeCompare(b[0]);})
+      .forEach(function(x){
+        var k=x[0],v=x[1],tr=el('tr'),b=base[k];n++;
+        var t1=el('td');t1.appendChild(el('span','st '+v.status,ST[v.status]||v.status));tr.appendChild(t1);
+        var t2=el('td'),a=el('a','',k);a.href=PAGES[k]||('https://github.com/adminmrobo/'+k);a.target='_blank';a.rel='noopener';t2.appendChild(a);tr.appendChild(t2);
+        tr.appendChild(el('td','n',v.fixed_pages+' / '+v.pages));
+        tr.appendChild(el('td','n',String(v.need_pages)));
+        var t5=el('td');if(b){t5.appendChild(el('span','bv '+b.verdict,b.verdict));}else{t5.textContent='-';}tr.appendChild(t5);
+        var t6=el('td','ex');
+        if(v.status==='need'&&v.need_examples&&v.need_examples.length){
+          v.need_examples.slice(0,3).forEach(function(p,i){if(i)t6.appendChild(document.createTextNode(' · '));var u=(PAGES[k]||'');var aa=el('a','',p);aa.href=u?u+p:'#';aa.target='_blank';aa.rel='noopener';t6.appendChild(aa);});
+        }else if(b&&b.example){t6.textContent='11-23: '+b.example;}
+        tr.appendChild(t6);tb.appendChild(tr);
+      });
+    document.getElementById('none').hidden=n>0;
+  }
+  document.querySelectorAll('.tabs button').forEach(function(btn){btn.addEventListener('click',function(){
+    F=btn.getAttribute('data-f');document.querySelectorAll('.tabs button').forEach(function(x){x.setAttribute('aria-pressed',String(x===btn));});rows();});});
+  document.getElementById('q').addEventListener('input',function(){if(D)rows();});
+  document.getElementById('lockForm').addEventListener('submit',function(e){e.preventDefault();tryUnlock(document.getElementById('keyIn').value,false);});
+  var saved='';try{saved=sessionStorage.getItem(SS)||'';}catch(e){}
+  if(saved)tryUnlock(saved,true);
+})();
+</script>
+</body>
+</html>
