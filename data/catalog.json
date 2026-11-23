@@ -575,6 +575,19 @@
    "image": "thumbs/cats/C07-M2.webp"
   },
   {
+   "name": "데이터 시각화",
+   "id": "C07-M3",
+   "desc": "그래프 이론부터 생성형 AI 전처리, 산업별 시각화까지 데이터를 그림으로 읽는 과정입니다.",
+   "keywords": [
+    "그래프 이론",
+    "시각화 실습",
+    "데이터 전처리",
+    "산업별 시각화"
+   ],
+   "image": "thumbs/cats/C07-M3.webp",
+   "cat": "통계·데이터 기초"
+  },
+  {
    "cat": "인공지능 응용",
    "name": "제조",
    "id": "C08-A1",
@@ -1246,6 +1259,21 @@
    "thumb": "thumbs/repos/drawing_lab_01.jpg"
   },
   {
+   "title": "그리기 연구실 02 · 머리카락 편 — 같은 얼굴, 다른 머리",
+   "summary": "",
+   "cat": "AI 감각·생성",
+   "mid": "생성형 AI활용",
+   "sub": "캐릭터 디자인",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/drawing_lab_02",
+   "site_url": "https://adminmrobo.github.io/drawing_lab_02/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/drawing_lab_02.jpg"
+  },
+  {
    "title": "AI 글 읽기 어려움",
    "summary": "",
    "cat": "AI 감각·생성",
@@ -1280,6 +1308,36 @@
     "ko"
    ],
    "thumb": "thumbs/repos/iclr2027_top3_lab_review.jpg"
+  },
+  {
+   "title": "LLM_summary_note",
+   "summary": "",
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "LLM 이해",
+   "sub": "",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/LLM_summary_note",
+   "site_url": "https://adminmrobo.github.io/LLM_summary_note/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/LLM_summary_note.jpg"
+  },
+  {
+   "title": "Automate_prompt_lab",
+   "summary": "",
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "LLM 이해",
+   "sub": "",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/Automate_prompt_lab",
+   "site_url": "https://adminmrobo.github.io/Automate_prompt_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/Automate_prompt_lab.jpg"
   },
   {
    "title": "AI 에이전트 공식 속성 가이드 — 하루봇을 만들며 배우는 13장",
@@ -1935,6 +1993,21 @@
    "thumb": "thumbs/repos/hello_space_lab.jpg"
   },
   {
+   "title": "최적화 연습실 — 미공개 X1·X2·X3의 몰래 연습",
+   "summary": "",
+   "cat": "경제·수학·최적화",
+   "mid": "최적화 모델",
+   "sub": "",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/optimization_test_lab",
+   "site_url": "https://adminmrobo.github.io/optimization_test_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/optimization_test_lab.jpg"
+  },
+  {
    "title": "두 장의 지도 — 라그랑지안 vs 해밀토니안",
    "summary": "",
    "cat": "경제·수학·최적화",
@@ -2308,6 +2381,21 @@
     "ko"
    ],
    "thumb": "thumbs/repos/data_to_numbers_lab.jpg"
+  },
+  {
+   "title": "시각화 차트 도감 — 차트 32장이 답하는 질문",
+   "summary": "",
+   "cat": "통계·데이터 기초",
+   "mid": "데이터 시각화",
+   "sub": "",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/data_visualization_lab",
+   "site_url": "https://adminmrobo.github.io/data_visualization_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/data_visualization_lab.jpg"
   },
   {
    "title": "데이터베이스 설계 연구실 — 데이터베이스 설계 15회차 연구실 해설",
@@ -2919,6 +3007,21 @@
    ],
    "thumb": "thumbs/repos/health_stats_lab.jpg",
    "lecture": "Y"
+  },
+  {
+   "title": "AI의 추론을 방해하는 것은 나쁜가? — AI 추론 장벽 찬반 토론 | 초파리 연구실",
+   "summary": "",
+   "cat": "인공지능 응용",
+   "mid": "이상탐지·보안",
+   "sub": "",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/defense_for_ai_lab",
+   "site_url": "https://adminmrobo.github.io/defense_for_ai_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/defense_for_ai_lab.jpg"
   },
   {
    "title": "SNS 은어와 이상탐지",

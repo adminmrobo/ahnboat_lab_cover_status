@@ -3774,45 +3774,66 @@
  },
  {
   "repo": "Automate_prompt_lab",
-  "series_ko": "Automate_prompt_lab",
-  "title_ko": null,
+  "series_ko": "LLM의 마법 주문서 — Automate Anything (하루판)",
+  "title_ko": "LLM의 마법 주문서 — Automate Anything (하루판)",
   "repo_url": "https://github.com/adminmrobo/Automate_prompt_lab",
   "pages_url": "https://adminmrobo.github.io/Automate_prompt_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-23T17:24:33Z",
+  "pushed_at": "2026-11-23T21:02:48Z",
   "has_manifest": false,
-  "covers": [],
+  "covers": [
+   {
+    "path": "images/G01_cover_blank.png",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "images/G01_cover_text.png",
+    "role": "cover",
+    "estimated": true
+   }
+  ],
   "redraw_count": 0,
   "redraw_ids": [],
-  "thumb": null,
-  "status": "unknown",
+  "thumb": "thumbs/repos/Automate_prompt_lab.jpg",
+  "status": "ok",
   "checked_at": "2026-11-24",
-  "site_title": null,
+  "site_title": "LLM의 마법 주문서 — Automate Anything (하루판)",
   "ontology": {
    "status": "none",
    "pages_with_kg": 0,
-   "pages_total": 0,
-   "pages_checked": 0,
+   "pages_total": 1,
+   "pages_checked": 1,
    "kg_links": [],
    "export_links": [],
    "files": []
   },
   "i18n": {
-   "langs": [],
-   "count": 0,
-   "pages": {},
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 1
+   },
    "partial": [],
    "complete": true,
    "readme_langs": [],
-   "links": {}
+   "links": {
+    "ko": "https://adminmrobo.github.io/Automate_prompt_lab/index.html"
+   }
   },
   "languages": {
-   "codes": [],
-   "count": 0,
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
    "complete": true,
-   "pages_by_lang": {}
+   "pages_by_lang": {
+    "ko": 1
+   }
   },
-  "has_pages": false
+  "has_pages": true
  },
  {
   "repo": "backprop_lab",
@@ -8708,13 +8729,39 @@
   "repo_url": "https://github.com/adminmrobo/data_visualization_lab",
   "pages_url": "https://adminmrobo.github.io/data_visualization_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-23T16:59:17Z",
+  "pushed_at": "2026-11-23T21:05:48Z",
   "has_manifest": false,
-  "covers": [],
+  "covers": [
+   {
+    "path": "images/cover_alt_book.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "images/cover_alt_map.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "images/cover_main.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "thumbs/cover.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "thumbs/cover_480.webp",
+    "role": "cover",
+    "estimated": true
+   }
+  ],
   "redraw_count": 0,
   "redraw_ids": [],
-  "thumb": null,
-  "status": "unknown",
+  "thumb": "thumbs/repos/data_visualization_lab.jpg",
+  "status": "ok",
   "checked_at": "2026-11-24",
   "site_title": "시각화 차트 도감 — 차트 32장이 답하는 질문",
   "ontology": {
@@ -9260,7 +9307,7 @@
   "repo_url": "https://github.com/adminmrobo/defense_for_ai_lab",
   "pages_url": "https://adminmrobo.github.io/defense_for_ai_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-23T16:06:01Z",
+  "pushed_at": "2026-11-23T20:25:02Z",
   "has_manifest": false,
   "covers": [
    {
@@ -9563,7 +9610,7 @@
   "repo_url": "https://github.com/adminmrobo/drawing_lab_02",
   "pages_url": "https://adminmrobo.github.io/drawing_lab_02/",
   "default_branch": "main",
-  "pushed_at": "2026-11-23T17:46:28Z",
+  "pushed_at": "2026-11-23T21:05:17Z",
   "has_manifest": true,
   "covers": [],
   "redraw_count": 0,
@@ -9624,7 +9671,7 @@
     "ko": 8
    }
   },
-  "has_pages": false
+  "has_pages": true
  },
  {
   "repo": "drug-crime-social-cost",
@@ -27197,7 +27244,7 @@
   "repo_url": "https://github.com/adminmrobo/what_is_p_value_lab",
   "pages_url": "https://adminmrobo.github.io/what_is_p_value_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-23T16:51:58Z",
+  "pushed_at": "2026-11-23T21:16:37Z",
   "has_manifest": true,
   "covers": [
    {
@@ -27220,27 +27267,27 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "assets/img/cover_pv_thumb.webp",
     "role": "thumb",
     "id": "cover_pv_thumb",
     "size": [
-     600,
-     400
+     810,
+     540
     ],
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "assets/img/cover_pv_og.webp",
     "role": "og",
     "id": "cover_pv_og",
     "size": [
-     1200,
-     630
+     960,
+     504
     ],
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "assets/img/sc_pv_outro.webp",
@@ -27262,12 +27309,12 @@
      "x3"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    }
   ],
   "redraw_count": 0,
   "redraw_ids": [],
-  "thumb": "https://adminmrobo.github.io/what_is_p_value_lab/assets/img/cover_pv_og.webp",
+  "thumb": "thumbs/repos/what_is_p_value_lab.jpg",
   "status": "ok",
   "checked_at": "2026-11-24",
   "site_title": "맞다는 건가, 틀리다는 건가? — 매번 헷갈리는 p-value, 한 번에 이해하기",
