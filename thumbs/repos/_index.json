@@ -1,7 +1,7 @@
 {
  "adminmrobo-structure_first_drawing_lab": {
   "src": "manifest:assets/img/cover_index.webp",
-  "pushed_at": "2026-11-22T05:17:20Z",
+  "pushed_at": "2026-11-23T00:39:31Z",
   "made": "2026-11-23"
  },
  "agent_secret_leak_lab": {
@@ -116,7 +116,7 @@
  },
  "basic_economic_lab": {
   "src": "name:assets/og/cover_01.jpg",
-  "pushed_at": "2026-11-22T17:36:04Z",
+  "pushed_at": "2026-11-23T00:08:33Z",
   "made": "2026-11-23"
  },
  "bayesian-statistics-for-data-scientists": {
@@ -152,7 +152,7 @@
  },
  "covariant_chase_lab": {
   "src": "manifest:assets/img/cover_01.webp",
-  "pushed_at": "2026-11-22T17:40:22Z",
+  "pushed_at": "2026-11-22T23:52:31Z",
   "made": "2026-11-23"
  },
  "data_base_design": {
@@ -290,8 +290,8 @@
   "made": "2026-11-21"
  },
  "hello_space_lab": {
-  "src": "file:img/og/ch1.png",
-  "pushed_at": "2026-11-22T17:42:47Z",
+  "src": "name:img/cover_ch1.webp",
+  "pushed_at": "2026-11-22T23:54:24Z",
   "made": "2026-11-23"
  },
  "hilbert_space_lab": {
@@ -656,13 +656,13 @@
   "pushed_at": "2026-11-05T11:19:12Z"
  },
  "structure_first_drawing_lab_01": {
-  "src": "name:assets/og/og_01.jpg",
-  "pushed_at": "2026-11-22T19:19:22Z",
+  "src": "manifest:assets/img/cover_index.webp",
+  "pushed_at": "2026-11-23T00:39:42Z",
   "made": "2026-11-23"
  },
  "structure_first_drawing_lab_02": {
-  "src": "name:assets/og/og_01.jpg",
-  "pushed_at": "2026-11-22T19:25:34Z",
+  "src": "name:assets/img/cover_01.webp",
+  "pushed_at": "2026-11-23T00:39:48Z",
   "made": "2026-11-23"
  },
  "test": {

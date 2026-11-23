@@ -6,7 +6,7 @@
   "repo_url": "https://github.com/adminmrobo/adminmrobo-structure_first_drawing_lab",
   "pages_url": "https://adminmrobo.github.io/adminmrobo-structure_first_drawing_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-22T05:17:20Z",
+  "pushed_at": "2026-11-23T00:39:31Z",
   "has_manifest": true,
   "covers": [
    {
@@ -686,6 +686,172 @@
     "characters": [],
     "robot": "none",
     "status": "from_cover"
+   },
+   {
+    "path": "assets/img/p1_try_step1.webp",
+    "role": "try",
+    "id": "p1_try_step1",
+    "size": [
+     1024,
+     1536
+    ],
+    "characters": [],
+    "robot": "none",
+    "status": "done"
+   },
+   {
+    "path": "assets/img/p1_try_step2.webp",
+    "role": "try",
+    "id": "p1_try_step2",
+    "size": [
+     1024,
+     1536
+    ],
+    "characters": [
+     "haru"
+    ],
+    "robot": "none",
+    "status": "done"
+   },
+   {
+    "path": "assets/img/p2_try_left.webp",
+    "role": "try",
+    "id": "p2_try_left",
+    "size": [
+     1024,
+     1536
+    ],
+    "characters": [
+     "sia"
+    ],
+    "robot": "none",
+    "status": "done"
+   },
+   {
+    "path": "assets/img/p2_try_back.webp",
+    "role": "try",
+    "id": "p2_try_back",
+    "size": [
+     1024,
+     1536
+    ],
+    "characters": [
+     "sia"
+    ],
+    "robot": "none",
+    "status": "done"
+   },
+   {
+    "path": "assets/img/p3_try_still.webp",
+    "role": "try",
+    "id": "p3_try_still",
+    "size": [
+     1024,
+     1536
+    ],
+    "characters": [
+     "moa"
+    ],
+    "robot": "none",
+    "status": "done"
+   },
+   {
+    "path": "assets/img/p3_try_wind.webp",
+    "role": "try",
+    "id": "p3_try_wind",
+    "size": [
+     1024,
+     1536
+    ],
+    "characters": [
+     "moa"
+    ],
+    "robot": "none",
+    "status": "done"
+   },
+   {
+    "path": "assets/img/p5_try_assembled.webp",
+    "role": "try",
+    "id": "p5_try_assembled",
+    "size": [
+     1024,
+     1536
+    ],
+    "characters": [
+     "moa"
+    ],
+    "robot": "none",
+    "status": "done"
+   },
+   {
+    "path": "assets/img/p4_try_name_only.webp",
+    "role": "try",
+    "id": "p4_try_name_only",
+    "size": [
+     1024,
+     1536
+    ],
+    "characters": [
+     "haru"
+    ],
+    "robot": "none",
+    "status": "done"
+   },
+   {
+    "path": "assets/img/p4_try_features.webp",
+    "role": "try",
+    "id": "p4_try_features",
+    "size": [
+     1024,
+     1536
+    ],
+    "characters": [
+     "haru"
+    ],
+    "robot": "none",
+    "status": "done"
+   },
+   {
+    "path": "assets/img/p6_try_fix_f3.webp",
+    "role": "try",
+    "id": "p6_try_fix_f3",
+    "size": [
+     1024,
+     1536
+    ],
+    "characters": [
+     "sia"
+    ],
+    "robot": "none",
+    "status": "done"
+   },
+   {
+    "path": "assets/img/p6_try_fix_f4.webp",
+    "role": "try",
+    "id": "p6_try_fix_f4",
+    "size": [
+     1024,
+     1536
+    ],
+    "characters": [
+     "moa"
+    ],
+    "robot": "none",
+    "status": "done"
+   },
+   {
+    "path": "assets/img/p5_try_group.webp",
+    "role": "try",
+    "id": "p5_try_group",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "haru"
+    ],
+    "robot": "none",
+    "status": "done"
    }
   ],
   "redraw_count": 0,
@@ -3555,7 +3721,7 @@
   "repo_url": "https://github.com/adminmrobo/basic_economic_lab",
   "pages_url": "https://adminmrobo.github.io/basic_economic_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-22T17:36:04Z",
+  "pushed_at": "2026-11-23T00:08:33Z",
   "has_manifest": false,
   "covers": [
    {
@@ -3630,6 +3796,81 @@
    },
    {
     "path": "assets/og/cover_prac.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_01.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_02.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_03.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_04.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_05.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_05m.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_06.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_07.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_08.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_09.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_10.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_11.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_11f.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_idx.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_prac.webp",
     "role": "cover",
     "estimated": true
    },
@@ -3782,7 +4023,7 @@
     "ko": 16
    }
   },
-  "has_pages": false
+  "has_pages": true
  },
  {
   "repo": "bayesian-statistics-for-data-scientists",
@@ -5209,7 +5450,7 @@
   "repo_url": "https://github.com/adminmrobo/covariant_chase_lab",
   "pages_url": "https://adminmrobo.github.io/covariant_chase_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-22T17:40:22Z",
+  "pushed_at": "2026-11-22T23:52:31Z",
   "has_manifest": true,
   "covers": [
    {
@@ -5478,7 +5719,7 @@
      "x3"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "assets/img/og_02.webp",
@@ -5488,9 +5729,19 @@
      1200,
      630
     ],
-    "characters": [],
+    "characters": [
+     "jupanbot",
+     "fly",
+     "doc",
+     "asst",
+     "sia",
+     "moa",
+     "x1",
+     "x2",
+     "x3"
+    ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "part2/index.html#figure[data-img=s2_01]",
@@ -5506,7 +5757,7 @@
      "fly"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "part2/index.html#figure[data-img=s2_02]",
@@ -5522,7 +5773,7 @@
      "doc"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "part2/index.html#figure[data-img=s2_03]",
@@ -5538,7 +5789,7 @@
      "fly"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "part2/index.html#figure[data-img=s2_04]",
@@ -5554,7 +5805,7 @@
      "doc"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "part2/index.html#figure[data-img=s2_05]",
@@ -5570,7 +5821,7 @@
      "moa"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "part2/index.html#figure[data-img=s2_06]",
@@ -5592,7 +5843,26 @@
      "x3"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/thumb_02.webp",
+    "role": "thumb",
+    "id": "thumb_02",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "jupanbot",
+     "fly",
+     "doc",
+     "asst",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    }
   ],
   "redraw_count": 0,
@@ -11046,7 +11316,7 @@
   "repo_url": "https://github.com/adminmrobo/hello_space_lab",
   "pages_url": "https://adminmrobo.github.io/hello_space_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-22T17:42:47Z",
+  "pushed_at": "2026-11-22T23:54:24Z",
   "has_manifest": true,
   "covers": [],
   "redraw_count": 0,
@@ -21799,7 +22069,7 @@
   "repo_url": "https://github.com/adminmrobo/structure_first_drawing_lab_01",
   "pages_url": "https://adminmrobo.github.io/structure_first_drawing_lab_01/",
   "default_branch": "main",
-  "pushed_at": "2026-11-22T19:19:22Z",
+  "pushed_at": "2026-11-23T00:39:42Z",
   "has_manifest": true,
   "covers": [
    {
@@ -21811,7 +22081,7 @@
      900
     ],
     "characters": [],
-    "status": "requested"
+    "status": "done"
    },
    {
     "path": "assets/img/cover_01.webp",
@@ -21822,7 +22092,7 @@
      900
     ],
     "characters": [],
-    "status": "requested"
+    "status": "done"
    },
    {
     "path": "assets/img/cover_02.webp",
@@ -21833,7 +22103,7 @@
      900
     ],
     "characters": [],
-    "status": "requested"
+    "status": "done"
    },
    {
     "path": "assets/img/cover_03.webp",
@@ -21844,7 +22114,7 @@
      900
     ],
     "characters": [],
-    "status": "requested"
+    "status": "done"
    },
    {
     "path": "assets/img/cover_04.webp",
@@ -21855,7 +22125,7 @@
      900
     ],
     "characters": [],
-    "status": "requested"
+    "status": "done"
    },
    {
     "path": "assets/img/cover_05.webp",
@@ -21866,7 +22136,7 @@
      900
     ],
     "characters": [],
-    "status": "requested"
+    "status": "done"
    },
    {
     "path": "assets/img/cover_06.webp",
@@ -21877,7 +22147,7 @@
      900
     ],
     "characters": [],
-    "status": "requested"
+    "status": "done"
    },
    {
     "path": "assets/img/cover_07.webp",
@@ -21888,7 +22158,7 @@
      900
     ],
     "characters": [],
-    "status": "requested"
+    "status": "done"
    },
    {
     "path": "assets/img/p1_moa_photo_vs_drawing.webp",
@@ -21901,7 +22171,7 @@
     "characters": [
      "moa"
     ],
-    "status": "requested"
+    "status": "done"
    },
    {
     "path": "assets/img/p1_moa_shadow_steps.webp",
@@ -21914,7 +22184,7 @@
     "characters": [
      "moa"
     ],
-    "status": "requested"
+    "status": "done"
    },
    {
     "path": "assets/img/p2_haru_tee_fit_compare.webp",
@@ -21927,7 +22197,7 @@
     "characters": [
      "haru"
     ],
-    "status": "requested"
+    "status": "done"
    },
    {
     "path": "assets/img/p2_haru_tee_poses.webp",
@@ -21940,7 +22210,7 @@
     "characters": [
      "haru"
     ],
-    "status": "requested"
+    "status": "done"
    },
    {
     "path": "assets/img/p2_haru_loose_tee_shading.webp",
@@ -21953,7 +22223,7 @@
     "characters": [
      "haru"
     ],
-    "status": "requested"
+    "status": "done"
    },
    {
     "path": "assets/img/p3_moa_knit_vs_coat.webp",
@@ -21967,7 +22237,7 @@
      "moa",
      "doctor"
     ],
-    "status": "requested"
+    "status": "done"
    },
    {
     "path": "assets/img/p3_doctor_shirt_diamond.webp",
@@ -21981,7 +22251,7 @@
      "moa",
      "doctor"
     ],
-    "status": "requested"
+    "status": "done"
    },
    {
     "path": "assets/img/p3_moa_coat_memory.webp",
@@ -21995,7 +22265,7 @@
      "moa",
      "doctor"
     ],
-    "status": "requested"
+    "status": "done"
    },
    {
     "path": "assets/img/p4_sia_walk_skirt.webp",
@@ -22009,7 +22279,7 @@
      "sia",
      "doctor"
     ],
-    "status": "requested"
+    "status": "done"
    },
    {
     "path": "assets/img/p4_sia_sit_bend.webp",
@@ -22023,7 +22293,7 @@
      "sia",
      "doctor"
     ],
-    "status": "requested"
+    "status": "done"
    },
    {
     "path": "assets/img/p4_sia_bag_props.webp",
@@ -22037,7 +22307,7 @@
      "sia",
      "doctor"
     ],
-    "status": "requested"
+    "status": "done"
    },
    {
     "path": "assets/img/p5_outfit_swap_lineup.webp",
@@ -22052,7 +22322,7 @@
      "sia",
      "moa"
     ],
-    "status": "requested"
+    "status": "done"
    },
    {
     "path": "assets/img/p5_haru_inpaint_steps.webp",
@@ -22067,7 +22337,7 @@
      "sia",
      "moa"
     ],
-    "status": "requested"
+    "status": "done"
    },
    {
     "path": "assets/img/p5_vfx_fabric_presets.webp",
@@ -22082,7 +22352,7 @@
      "sia",
      "moa"
     ],
-    "status": "requested"
+    "status": "done"
    },
    {
     "path": "assets/img/p5_sia_style_pixel.webp",
@@ -22097,7 +22367,7 @@
      "sia",
      "moa"
     ],
-    "status": "requested"
+    "status": "done"
    },
    {
     "path": "assets/img/p5_sia_style_anime.webp",
@@ -22112,7 +22382,7 @@
      "sia",
      "moa"
     ],
-    "status": "requested"
+    "status": "done"
    },
    {
     "path": "assets/img/p5_sia_style_semireal.webp",
@@ -22127,7 +22397,7 @@
      "sia",
      "moa"
     ],
-    "status": "requested"
+    "status": "done"
    },
    {
     "path": "assets/img/p5_sia_style_photo.webp",
@@ -22142,7 +22412,7 @@
      "sia",
      "moa"
     ],
-    "status": "requested"
+    "status": "done"
    },
    {
     "path": "assets/img/f1_traced_too_many.webp",
@@ -22153,7 +22423,7 @@
      900
     ],
     "characters": [],
-    "status": "requested"
+    "status": "done"
    },
    {
     "path": "assets/img/f2_coat_like_silk.webp",
@@ -22164,7 +22434,7 @@
      900
     ],
     "characters": [],
-    "status": "requested"
+    "status": "done"
    },
    {
     "path": "assets/img/f3_loose_tee_clinging.webp",
@@ -22175,7 +22445,7 @@
      900
     ],
     "characters": [],
-    "status": "requested"
+    "status": "done"
    },
    {
     "path": "assets/img/f4_floating_strap.webp",
@@ -22186,7 +22456,7 @@
      900
     ],
     "characters": [],
-    "status": "requested"
+    "status": "done"
    },
    {
     "path": "assets/img/f5_fold_shadow_wrong_side.webp",
@@ -22197,7 +22467,7 @@
      900
     ],
     "characters": [],
-    "status": "requested"
+    "status": "done"
    },
    {
     "path": "assets/img/f6_frill_against_flare.webp",
@@ -22208,7 +22478,7 @@
      900
     ],
     "characters": [],
-    "status": "requested"
+    "status": "done"
    },
    {
     "path": "assets/img/f7_pleats_both_sides.webp",
@@ -22219,7 +22489,7 @@
      900
     ],
     "characters": [],
-    "status": "requested"
+    "status": "done"
    },
    {
     "path": "assets/img/f8_mask_changed_face.webp",
@@ -22230,7 +22500,7 @@
      900
     ],
     "characters": [],
-    "status": "requested"
+    "status": "done"
    }
   ],
   "redraw_count": 0,
@@ -22291,7 +22561,7 @@
     "ko": 8
    }
   },
-  "has_pages": false
+  "has_pages": true
  },
  {
   "repo": "structure_first_drawing_lab_02",
@@ -22300,9 +22570,39 @@
   "repo_url": "https://github.com/adminmrobo/structure_first_drawing_lab_02",
   "pages_url": "https://adminmrobo.github.io/structure_first_drawing_lab_02/",
   "default_branch": "main",
-  "pushed_at": "2026-11-22T19:25:34Z",
+  "pushed_at": "2026-11-23T00:39:48Z",
   "has_manifest": false,
   "covers": [
+   {
+    "path": "assets/img/cover_01.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_02.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_03.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_04.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_05.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_index.webp",
+    "role": "cover",
+    "estimated": true
+   },
    {
     "path": "assets/og/og_01.jpg",
     "role": "og",
@@ -22388,7 +22688,7 @@
     "ko": 6
    }
   },
-  "has_pages": false
+  "has_pages": true
  },
  {
   "repo": "test",
