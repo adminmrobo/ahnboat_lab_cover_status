@@ -575,19 +575,6 @@
    "image": "thumbs/cats/C07-M2.webp"
   },
   {
-   "name": "데이터 시각화",
-   "id": "C07-M3",
-   "desc": "그래프 이론부터 생성형 AI 전처리, 산업별 시각화까지 데이터를 그림으로 읽는 과정입니다.",
-   "keywords": [
-    "그래프 이론",
-    "시각화 실습",
-    "데이터 전처리",
-    "산업별 시각화"
-   ],
-   "image": "thumbs/cats/C07-M3.webp",
-   "cat": "통계·데이터 기초"
-  },
-  {
    "cat": "인공지능 응용",
    "name": "제조",
    "id": "C08-A1",
@@ -668,19 +655,6 @@
     "Sim-to-Real"
    ],
    "image": "thumbs/cats/C08-A5.webp"
-  },
-  {
-   "cat": "공공·사회 프로젝트",
-   "name": "산업·인프라",
-   "id": "C09-M3",
-   "desc": "AI가 쓰는 전력과 모바일 경로 안내처럼 산업·인프라 데이터를 다룹니다.",
-   "keywords": [
-    "전력 수요",
-    "데이터센터",
-    "경로 안내",
-    "모빌리티"
-   ],
-   "image": "thumbs/cats/C09-M3.webp"
   },
   {
    "cat": "공공·사회 프로젝트",
@@ -950,6 +924,21 @@
    "thumb": "thumbs/repos/Anomaly_detection_tatics.jpg"
   },
   {
+   "title": "비지도학습 물고기 연구실 — 라벨링 없이 맞추는 AI (목차)",
+   "summary": "",
+   "cat": "머신러닝",
+   "mid": "프로그래밍",
+   "sub": "",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/unsupervised_fish_lab",
+   "site_url": "https://adminmrobo.github.io/unsupervised_fish_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/unsupervised_fish_lab.jpg"
+  },
+  {
    "title": "딥러닝 A to Z · 초파리 특별편",
    "summary": "초파리 뇌 연구가 인공지능에 주는 힌트를 정리한 리뷰",
    "cat": "딥러닝·뇌과학",
@@ -1197,6 +1186,51 @@
    "thumb": "thumbs/repos/cnn_face_game_lab.jpg"
   },
   {
+   "title": "구조 먼저 보는 캐릭터 그리기 연구실 — 픽셀 캐릭터를 실사까지",
+   "summary": "",
+   "cat": "AI 감각·생성",
+   "mid": "생성형 AI활용",
+   "sub": "캐릭터 디자인",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/adminmrobo-structure_first_drawing_lab",
+   "site_url": "https://adminmrobo.github.io/adminmrobo-structure_first_drawing_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/adminmrobo-structure_first_drawing_lab.jpg"
+  },
+  {
+   "title": "구조 먼저 그리기 연구실 01 · 옷장 편 — 같은 원리, 다른 옷",
+   "summary": "",
+   "cat": "AI 감각·생성",
+   "mid": "생성형 AI활용",
+   "sub": "캐릭터 디자인",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/structure_first_drawing_lab_01",
+   "site_url": "https://adminmrobo.github.io/structure_first_drawing_lab_01/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/structure_first_drawing_lab_01.jpg"
+  },
+  {
+   "title": "구조 먼저 그리기 연구실 02 · 실천편 — 주름과 그림자를 직접 넣어 보기",
+   "summary": "",
+   "cat": "AI 감각·생성",
+   "mid": "생성형 AI활용",
+   "sub": "캐릭터 디자인",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/structure_first_drawing_lab_02",
+   "site_url": "https://adminmrobo.github.io/structure_first_drawing_lab_02/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/structure_first_drawing_lab_02.jpg"
+  },
+  {
    "title": "AI 글 읽기 어려움",
    "summary": "",
    "cat": "AI 감각·생성",
@@ -1348,6 +1382,21 @@
     "ko"
    ],
    "thumb": "thumbs/repos/ai-nlp-data-analysis.jpg"
+  },
+  {
+   "title": "스스로 고치는 AI는 어디까지 왔나 — 재귀적 자기개선(RSI) 기초 정리 · 연구실 해설",
+   "summary": "",
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "LLM 이해",
+   "sub": "재귀적 자기개선",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/Recursive-Self-Improvement",
+   "site_url": "https://adminmrobo.github.io/Recursive-Self-Improvement/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/Recursive-Self-Improvement.jpg"
   },
   {
    "title": "목차 · 인퍼런스 스터디 북",
@@ -1595,6 +1644,21 @@
    "thumb": "https://adminmrobo.github.io/inference_engineering_study/cards/inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide.jpg"
   },
   {
+   "title": "하루의 첫 브리핑 — 리만 가설은 &#x27;약속&#x27;이다",
+   "summary": "",
+   "cat": "경제·수학·최적화",
+   "mid": "",
+   "sub": "",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/riemann_hypothesis_lab",
+   "site_url": "https://adminmrobo.github.io/riemann_hypothesis_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/riemann_hypothesis_lab.jpg"
+  },
+  {
    "title": "노후 가계부와 AI 예측 모형",
    "summary": "",
    "cat": "경제·수학·최적화",
@@ -1667,6 +1731,22 @@
    ],
    "thumb": "thumbs/repos/my_article_08_poll_reweighting_lab.jpg",
    "article": "경제·사회 논문"
+  },
+  {
+   "title": "경제학의 이해",
+   "summary": "",
+   "cat": "경제·수학·최적화",
+   "mid": "경제학",
+   "sub": "",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/basic_economic_lab",
+   "site_url": "https://adminmrobo.github.io/basic_economic_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/basic_economic_lab.jpg",
+   "lecture": "Y"
   },
   {
    "title": "미시경제학 연구실 — 미시경제학 연구실 블로그",
@@ -1757,6 +1837,21 @@
     "ko"
    ],
    "thumb": "thumbs/repos/vector_db_lab.jpg"
+  },
+  {
+   "title": "주판봇의 초파리 추적 대작전 ① 공변미분 — 진짜로 꺾인 만큼만 재기",
+   "summary": "",
+   "cat": "경제·수학·최적화",
+   "mid": "좌표 공간(space)",
+   "sub": "",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/covariant_chase_lab",
+   "site_url": "https://adminmrobo.github.io/covariant_chase_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/covariant_chase_lab.jpg"
   },
   {
    "title": "자와 각도기의 방 — 시아·모아의 유클리드 공간",
@@ -1868,6 +1963,21 @@
     "ko"
    ],
    "thumb": "thumbs/repos/optimization_3d_map.jpg"
+  },
+  {
+   "title": "인공지능을 위한 수학 기초",
+   "summary": "",
+   "cat": "경제·수학·최적화",
+   "mid": "최적화 모델",
+   "sub": "수학기초",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/math_for_ai_lab",
+   "site_url": "https://adminmrobo.github.io/math_for_ai_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/math_for_ai_lab.jpg"
   },
   {
    "title": "암호화폐 자산의 정보 효율성",
@@ -2170,88 +2280,19 @@
    "thumb": ""
   },
   {
-   "title": "데이터시각화 1주차 · 과정 안내",
+   "title": "모든 데이터는 숫자가 된다 — 시리즈 목차 · 연구실 해설",
    "summary": "",
    "cat": "통계·데이터 기초",
-   "mid": "데이터 시각화",
-   "sub": "데이터시각화",
+   "mid": "개념 지도",
+   "sub": "",
    "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/Data_visuialization_lecture_01",
-   "site_url": "https://adminmrobo.github.io/Data_visuialization_lecture_01/",
+   "repo_url": "https://github.com/adminmrobo/data_to_numbers_lab",
+   "site_url": "https://adminmrobo.github.io/data_to_numbers_lab/",
    "link": "",
    "langs": [
-    "ko",
-    "en",
-    "zh",
-    "ja",
-    "uz",
-    "ru"
+    "ko"
    ],
-   "thumb": "thumbs/repos/Data_visuialization_lecture_01.jpg",
-   "lecture": "Y"
-  },
-  {
-   "title": "데이터시각화 2주차 · 그래프 이론과 첫 실습",
-   "summary": "",
-   "cat": "통계·데이터 기초",
-   "mid": "데이터 시각화",
-   "sub": "데이터시각화",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/Data_visuialization_lecture_02",
-   "site_url": "https://adminmrobo.github.io/Data_visuialization_lecture_02/",
-   "link": "",
-   "langs": [
-    "ko",
-    "en",
-    "zh",
-    "ja",
-    "uz",
-    "ru"
-   ],
-   "thumb": "thumbs/repos/Data_visuialization_lecture_02.jpg",
-   "lecture": "Y"
-  },
-  {
-   "title": "데이터시각화 3주차 · 생성형 AI 데이터 전처리",
-   "summary": "",
-   "cat": "통계·데이터 기초",
-   "mid": "데이터 시각화",
-   "sub": "데이터시각화",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/Data_visuialization_lecture_03",
-   "site_url": "https://adminmrobo.github.io/Data_visuialization_lecture_03/",
-   "link": "",
-   "langs": [
-    "ko",
-    "en",
-    "zh",
-    "ja",
-    "uz",
-    "ru"
-   ],
-   "thumb": "thumbs/repos/Data_visuialization_lecture_03.jpg",
-   "lecture": "Y"
-  },
-  {
-   "title": "데이터시각화 4주차 · 산업별 데이터 시각화",
-   "summary": "",
-   "cat": "통계·데이터 기초",
-   "mid": "데이터 시각화",
-   "sub": "데이터시각화",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/Data_visuialization_lecture_04",
-   "site_url": "https://adminmrobo.github.io/Data_visuialization_lecture_04/",
-   "link": "",
-   "langs": [
-    "ko",
-    "en",
-    "zh",
-    "ja",
-    "uz",
-    "ru"
-   ],
-   "thumb": "thumbs/repos/Data_visuialization_lecture_04.jpg",
-   "lecture": "Y"
+   "thumb": "thumbs/repos/data_to_numbers_lab.jpg"
   },
   {
    "title": "데이터베이스 설계 연구실 — 데이터베이스 설계 15회차 연구실 해설",
@@ -2342,6 +2383,22 @@
     "ko"
    ],
    "thumb": "thumbs/repos/learn-python-by-doing_Korean.jpg"
+  },
+  {
+   "title": "우연의 과학통계학",
+   "summary": "",
+   "cat": "통계·데이터 기초",
+   "mid": "확률·통계",
+   "sub": "",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/statistics_note",
+   "site_url": "https://adminmrobo.github.io/statistics_note/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/statistics_note.jpg",
+   "lecture": "Y"
   },
   {
    "title": "데이터 사이언티스트를 위한 베이지안 통계학",
@@ -2645,6 +2702,21 @@
    "thumb": "https://adminmrobo.github.io/ai_crime_lab/reports/2026-11-23_lnrs-synthetic-identity-deepfake/thumb.webp"
   },
   {
+   "title": "catch_phishing",
+   "summary": "",
+   "cat": "인공지능 응용",
+   "mid": "AI 범죄학",
+   "sub": "피싱",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/catch_phishing",
+   "site_url": "https://adminmrobo.github.io/catch_phishing/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/catch_phishing.jpg"
+  },
+  {
    "title": "비즈니스를 위한 데이터 과학 연구실",
    "summary": "AI를 전혀 모르는 경영·사무직을 위한 15주 강의 해설. 가상 다국적 기업 「오션마켓 글로벌」 본사 15층을 한 층씩 오르며 데이터 수집·전처리, 분류·회귀·시계열, 시각화·BI·KPI, 군집·자연어 처리·딥러닝을 버튼으로 실험합니다. 8·15층은 연습(문제풀이).",
    "cat": "인공지능 응용",
@@ -2692,6 +2764,21 @@
    "thumb": "thumbs/repos/industrial-accident-prediction.jpg",
    "article": "경제·사회 논문",
    "lecture": "Y"
+  },
+  {
+   "title": "AI로 풀어보는 게임 시리즈 — 연구실 식구들과 게임으로 배우는 AI",
+   "summary": "",
+   "cat": "인공지능 응용",
+   "mid": "로봇·강화학습",
+   "sub": "",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/ai_game_lab",
+   "site_url": "https://adminmrobo.github.io/ai_game_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/ai_game_lab.jpg"
   },
   {
    "title": "잘 못들었습니다... 불완전한 텍스트 명령을 극복하는 로봇의 강화학습 및 베이지안 추론",
@@ -2921,36 +3008,6 @@
    ],
    "thumb": "thumbs/repos/smart_factory_world.jpg",
    "lecture": "Y"
-  },
-  {
-   "title": "그린루트 · 모바일 경로 안내",
-   "summary": "",
-   "cat": "공공·사회 프로젝트",
-   "mid": "산업·인프라",
-   "sub": "모빌리티",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/green_route",
-   "site_url": "https://adminmrobo.github.io/green_route/",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": ""
-  },
-  {
-   "title": "AI가 쓰는 전기, 어디서 모자랄까",
-   "summary": "",
-   "cat": "공공·사회 프로젝트",
-   "mid": "산업·인프라",
-   "sub": "에너지·전력",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/ai-power-chain-simulator",
-   "site_url": "https://adminmrobo.github.io/ai-power-chain-simulator/",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": ""
   },
   {
    "title": "현장형 AX 전문강사 양성과정 — 제조현장 AX",
