@@ -4,6 +4,26 @@
   "random": 3,
   "extras": [
    {
+    "name": "좌표 첫걸음",
+    "label": "SPECIAL · 입문 6장",
+    "color": "#0f7f86",
+    "desc": "「나는 어디에 있는가?」 수직선에서 시작해 좌표평면·극좌표·공간좌표, 위도·경도와 지도, 데이터의 좌표까지. 박사의 강의실에서 장마다 게임으로 익히고, 마지막 실전 연습장에서 네 현장을 운영해 보는 좌표 입문입니다. 최적화 첫걸음의 자매편.",
+    "keywords": [
+     "좌표계",
+     "위도·경도",
+     "지도 매핑",
+     "특성 공간"
+    ],
+    "url": "https://adminmrobo.github.io/hello_space_lab/index.html",
+    "repo": "hello_space_lab",
+    "sprites": [
+     {
+      "src": "thumbs/chars/atlas/doc_intro.webp",
+      "h": 92
+     }
+    ]
+   },
+   {
     "name": "최적화 첫걸음",
     "label": "SPECIAL · 입문 3편",
     "color": "#b0476b",
