@@ -3721,7 +3721,7 @@
   "repo_url": "https://github.com/adminmrobo/basic_economic_lab",
   "pages_url": "https://adminmrobo.github.io/basic_economic_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-23T00:08:33Z",
+  "pushed_at": "2026-11-23T01:40:51Z",
   "has_manifest": false,
   "covers": [
    {
@@ -9154,6 +9154,76 @@
   "has_pages": true
  },
  {
+  "repo": "drawing_lab_01",
+  "series_ko": "연구실 특별편 · 그리기와 렌더링",
+  "title_ko": "그리기 연구실 01 · 기분 편 — 같은 얼굴, 다른 마음",
+  "repo_url": "https://github.com/adminmrobo/drawing_lab_01",
+  "pages_url": "https://adminmrobo.github.io/drawing_lab_01/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-23T03:42:03Z",
+  "has_manifest": true,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": "thumbs/repos/drawing_lab_01.jpg",
+  "status": "ok",
+  "checked_at": "2026-11-23",
+  "site_title": "그리기 연구실 01 · 기분 편 — 같은 얼굴, 다른 마음",
+  "ontology": {
+   "status": "full",
+   "pages_with_kg": 8,
+   "pages_total": 8,
+   "pages_checked": 8,
+   "kg_links": [
+    "https://adminmrobo.github.io/drawing_lab_01/01_body_mood.html#kg",
+    "https://adminmrobo.github.io/drawing_lab_01/02_six_emotions.html#kg",
+    "https://adminmrobo.github.io/drawing_lab_01/03_eyes.html#kg",
+    "https://adminmrobo.github.io/drawing_lab_01/04_light_mood.html#kg",
+    "https://adminmrobo.github.io/drawing_lab_01/05_ai_vfx.html#kg",
+    "https://adminmrobo.github.io/drawing_lab_01/06_failure_lab.html#kg",
+    "https://adminmrobo.github.io/drawing_lab_01/index.html#kg",
+    "https://adminmrobo.github.io/drawing_lab_01/practice/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/drawing_lab_01/01_body_mood.html#export",
+    "https://adminmrobo.github.io/drawing_lab_01/02_six_emotions.html#export",
+    "https://adminmrobo.github.io/drawing_lab_01/03_eyes.html#export",
+    "https://adminmrobo.github.io/drawing_lab_01/04_light_mood.html#export",
+    "https://adminmrobo.github.io/drawing_lab_01/05_ai_vfx.html#export",
+    "https://adminmrobo.github.io/drawing_lab_01/06_failure_lab.html#export",
+    "https://adminmrobo.github.io/drawing_lab_01/index.html#export",
+    "https://adminmrobo.github.io/drawing_lab_01/practice/index.html#export"
+   ],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 8
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/drawing_lab_01/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 8
+   }
+  },
+  "has_pages": true
+ },
+ {
   "repo": "drug-crime-social-cost",
   "series_ko": "마약류 사회적 비용 연구",
   "title_ko": "마약류 사회적 비용 연구",
@@ -10421,7 +10491,7 @@
   "repo_url": "https://github.com/adminmrobo/g2b-bid-strategy",
   "pages_url": "https://adminmrobo.github.io/g2b-bid-strategy/",
   "default_branch": "main",
-  "pushed_at": "2026-11-22T00:40:18Z",
+  "pushed_at": "2026-11-23T01:15:04Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -22069,7 +22139,7 @@
   "repo_url": "https://github.com/adminmrobo/structure_first_drawing_lab_01",
   "pages_url": "https://adminmrobo.github.io/structure_first_drawing_lab_01/",
   "default_branch": "main",
-  "pushed_at": "2026-11-23T00:39:42Z",
+  "pushed_at": "2026-11-23T01:24:18Z",
   "has_manifest": true,
   "covers": [
    {

@@ -116,7 +116,7 @@
  },
  "basic_economic_lab": {
   "src": "name:assets/og/cover_01.jpg",
-  "pushed_at": "2026-11-23T00:08:33Z",
+  "pushed_at": "2026-11-23T01:40:51Z",
   "made": "2026-11-23"
  },
  "bayesian-statistics-for-data-scientists": {
@@ -208,6 +208,11 @@
   "pushed_at": "2026-11-06T12:33:53Z",
   "made": "2026-11-07"
  },
+ "drawing_lab_01": {
+  "src": "name:assets/img/cover_01.webp",
+  "pushed_at": "2026-11-23T03:42:03Z",
+  "made": "2026-11-23"
+ },
  "drug-crime-social-cost": {
   "src": null,
   "pushed_at": "2026-11-22T16:39:40Z"
@@ -253,7 +258,7 @@
  },
  "g2b-bid-strategy": {
   "src": null,
-  "pushed_at": "2026-11-22T00:40:18Z"
+  "pushed_at": "2026-11-23T01:15:04Z"
  },
  "Gen_AI_Hannam_univ": {
   "src": "redraw:R109:index.html#px",
@@ -657,7 +662,7 @@
  },
  "structure_first_drawing_lab_01": {
   "src": "manifest:assets/img/cover_index.webp",
-  "pushed_at": "2026-11-23T00:39:42Z",
+  "pushed_at": "2026-11-23T01:24:18Z",
   "made": "2026-11-23"
  },
  "structure_first_drawing_lab_02": {

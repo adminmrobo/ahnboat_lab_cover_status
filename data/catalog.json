@@ -1233,6 +1233,21 @@
    "thumb": "thumbs/repos/iclr2027_top3_lab_review.jpg"
   },
   {
+   "title": "AI 에이전트 공식 속성 가이드 — 하루봇을 만들며 배우는 13장",
+   "summary": "",
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "LLM 이해",
+   "sub": "AI에이젠트",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/agentic_ai_crash_guide",
+   "site_url": "https://adminmrobo.github.io/agentic_ai_crash_guide/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/agentic_ai_crash_guide.jpg"
+  },
+  {
    "title": "기억 3부작 · LLM은 어디까지 기억할 수 있을까",
    "summary": "시계열의 창에서 출발해 LLM의 문맥 창, 대화 압축, 바깥 저장소, 기억 돌보기, 기억 토큰까지 넓혀 가는 3부 18편의 연구실 해설 시리즈. 시계열 3부작의 후속.",
    "cat": "LLM·추론 엔지니어링",
@@ -1318,6 +1333,21 @@
     "ko"
    ],
    "thumb": ""
+  },
+  {
+   "title": "자연어 분석 연구실",
+   "summary": "",
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "LLM 이해",
+   "sub": "자연어 분석",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/ai-nlp-data-analysis",
+   "site_url": "https://adminmrobo.github.io/ai-nlp-data-analysis/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/ai-nlp-data-analysis.jpg"
   },
   {
    "title": "목차 · 인퍼런스 스터디 북",
@@ -1654,6 +1684,21 @@
    "thumb": "thumbs/repos/micro_economics.jpg"
   },
   {
+   "title": "돈의 경맥 · 목차",
+   "summary": "",
+   "cat": "경제·수학·최적화",
+   "mid": "금융 연구",
+   "sub": "",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/fof-money-meridian-",
+   "site_url": "https://adminmrobo.github.io/fof-money-meridian-/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/fof-money-meridian-.jpg"
+  },
+  {
    "title": "∇ 특별편 — 화살표 하나로 보는 미분·적분과 다섯 현장 · ∇ 특별편",
    "summary": "",
    "cat": "경제·수학·최적화",
@@ -1919,6 +1964,23 @@
    ],
    "thumb": "thumbs/repos/my_article_00_Korean_stockmarket_volatility_study.jpg",
    "article": "금융·자산 논문"
+  },
+  {
+   "title": "핀테크 데이터 연구실",
+   "summary": "",
+   "cat": "금융·핀테크·블록체인",
+   "mid": "보험·핀테크",
+   "sub": "데이터 분석",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/fintech_data_analysis",
+   "site_url": "https://adminmrobo.github.io/fintech_data_analysis/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/fintech_data_analysis.jpg",
+   "article": "외부_콘텐츠",
+   "lecture": "Y"
   },
   {
    "title": "인슈어테크 #1 · 분류 모델",
@@ -2190,6 +2252,21 @@
    ],
    "thumb": "thumbs/repos/Data_visuialization_lecture_04.jpg",
    "lecture": "Y"
+  },
+  {
+   "title": "데이터베이스 설계 연구실 — 데이터베이스 설계 15회차 연구실 해설",
+   "summary": "",
+   "cat": "통계·데이터 기초",
+   "mid": "데이터베이스",
+   "sub": "데이터베이스 설계",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/data_base_design",
+   "site_url": "https://adminmrobo.github.io/data_base_design/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/data_base_design.jpg"
   },
   {
    "title": "하루의 구글시트 연구실",
@@ -2600,6 +2677,23 @@
    "lecture": "Y"
   },
   {
+   "title": "산업재해 패널 데이터를 활용한 머신러닝 모델 (목차) — 재활 서비스 예측 연구실",
+   "summary": "",
+   "cat": "인공지능 응용",
+   "mid": "경제 연구",
+   "sub": "머신러닝  모델",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/industrial-accident-prediction",
+   "site_url": "https://adminmrobo.github.io/industrial-accident-prediction/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/industrial-accident-prediction.jpg",
+   "article": "경제·사회 논문",
+   "lecture": "Y"
+  },
+  {
    "title": "잘 못들었습니다... 불완전한 텍스트 명령을 극복하는 로봇의 강화학습 및 베이지안 추론",
    "summary": "Langcon 2026 발표(2026-02-28) 해설. 불완전한 텍스트 명령을 받은 로봇이 확신이 낮으면 되묻도록 만든 강화학습·베이지안 추론 연구를 겸손한 로봇 연구실 9장으로 풀고, 3D 가상 주자 실습 가이드까지 담았습니다.",
    "cat": "인공지능 응용",
@@ -2614,6 +2708,21 @@
    ],
    "thumb": "thumbs/repos/Reinforcement-Learning-lab_project_01.jpg",
    "article": "외부_콘텐츠"
+  },
+  {
+   "title": "자율주행차 배터리 AI 공장 — 공장 목록",
+   "summary": "",
+   "cat": "인공지능 응용",
+   "mid": "산업·인프라",
+   "sub": "AI 제조업 및 스마트팩토리",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/how_to_make_ai_model_factory_version",
+   "site_url": "https://adminmrobo.github.io/how_to_make_ai_model_factory_version/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/how_to_make_ai_model_factory_version.jpg"
   },
   {
    "title": "생성형 AI 활용 전략 · 목차",
@@ -2678,6 +2787,20 @@
    ],
    "thumb": "thumbs/repos/Gen_AI_strategy_ch06.jpg",
    "lecture": "Y"
+  },
+  {
+   "title": "AI 범죄와 자기 방어",
+   "summary": "AI가 범죄의 비용 구조와 수익 모델을 어떻게 바꾸었는지 범죄경제학으로 풀어낸 책",
+   "cat": "인공지능 응용",
+   "mid": "외부_콘텐츠",
+   "sub": "저서",
+   "kind": "ext",
+   "repo_url": "",
+   "site_url": "",
+   "link": "커뮤니케이션북스 · 인공지능총서",
+   "langs": [],
+   "thumb": "",
+   "article": "AI 응용 논문"
   },
   {
    "title": "SNS 은어와 이상탐지",
