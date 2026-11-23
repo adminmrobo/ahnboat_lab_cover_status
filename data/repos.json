@@ -921,7 +921,7 @@
   "repo_url": "https://github.com/adminmrobo/agent_secret_leak_lab",
   "pages_url": "https://adminmrobo.github.io/agent_secret_leak_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-12T02:18:38Z",
+  "pushed_at": "2026-11-23T07:31:02Z",
   "has_manifest": true,
   "covers": [
    {
@@ -1019,7 +1019,7 @@
   "repo_url": "https://github.com/adminmrobo/agentic_ai_crash_guide",
   "pages_url": "https://adminmrobo.github.io/agentic_ai_crash_guide/",
   "default_branch": "main",
-  "pushed_at": "2026-11-21T15:14:59Z",
+  "pushed_at": "2026-11-23T07:30:28Z",
   "has_manifest": false,
   "covers": [
    {
@@ -1445,7 +1445,7 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_server_room_guards",
   "pages_url": "https://adminmrobo.github.io/ahnboat_server_room_guards/",
   "default_branch": "main",
-  "pushed_at": "2026-11-14T05:09:03Z",
+  "pushed_at": "2026-11-23T07:30:57Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -2031,7 +2031,7 @@
   "repo_url": "https://github.com/adminmrobo/ai_crime_lab",
   "pages_url": "https://adminmrobo.github.io/ai_crime_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-22T17:02:09Z",
+  "pushed_at": "2026-11-23T07:30:31Z",
   "has_manifest": true,
   "covers": [
    {
@@ -2462,7 +2462,7 @@
   "repo_url": "https://github.com/adminmrobo/AI_for_cement_produce",
   "pages_url": "https://adminmrobo.github.io/AI_for_cement_produce/",
   "default_branch": "main",
-  "pushed_at": "2026-11-17T12:10:51Z",
+  "pushed_at": "2026-11-23T07:31:01Z",
   "has_manifest": true,
   "covers": [
    {
@@ -2668,7 +2668,7 @@
   "repo_url": "https://github.com/adminmrobo/ai_game_lab",
   "pages_url": "https://adminmrobo.github.io/ai_game_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-21T15:18:28Z",
+  "pushed_at": "2026-11-23T07:30:41Z",
   "has_manifest": false,
   "covers": [
    {
@@ -2756,7 +2756,7 @@
   "repo_url": "https://github.com/adminmrobo/AI_image_classification",
   "pages_url": "https://adminmrobo.github.io/AI_image_classification/",
   "default_branch": "main",
-  "pushed_at": "2026-10-08T12:08:40Z",
+  "pushed_at": "2026-11-23T07:30:44Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 5,
@@ -2892,6 +2892,58 @@
   "has_pages": true
  },
  {
+  "repo": "ai_industry_lab",
+  "series_ko": "AI 산업 연구실 · 순환 거래, 가치사슬, 거시환경으로 본 AI 기업",
+  "title_ko": "AI 산업 연구실 · 순환 거래, 가치사슬, 거시환경으로 본 AI 기업",
+  "repo_url": "https://github.com/adminmrobo/ai_industry_lab",
+  "pages_url": "https://adminmrobo.github.io/ai_industry_lab/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-23T08:46:15Z",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-23",
+  "site_title": "AI 산업 연구실 · 순환 거래, 가치사슬, 거시환경으로 본 AI 기업",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 4,
+   "pages_checked": 4,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 4
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/ai_industry_lab/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 4
+   }
+  },
+  "has_pages": false
+ },
+ {
   "repo": "AI_Model_Review",
   "series_ko": "AI Model Review — 초파리 연구실의 딥러닝 A to Z",
   "title_ko": "AI Model Review — 초파리 연구실의 딥러닝 A to Z",
@@ -2977,7 +3029,7 @@
   "repo_url": "https://github.com/adminmrobo/AI_Model_Review_Fruit_fly_special",
   "pages_url": "https://adminmrobo.github.io/AI_Model_Review_Fruit_fly_special/",
   "default_branch": "main",
-  "pushed_at": "2026-11-12T14:34:18Z",
+  "pushed_at": "2026-11-23T07:30:58Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 2,
@@ -3773,7 +3825,7 @@
   "repo_url": "https://github.com/adminmrobo/basic_economic_lab",
   "pages_url": "https://adminmrobo.github.io/basic_economic_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-23T01:40:51Z",
+  "pushed_at": "2026-11-23T07:30:26Z",
   "has_manifest": false,
   "covers": [
    {
@@ -4689,7 +4741,7 @@
   "repo_url": "https://github.com/adminmrobo/catch_phishing",
   "pages_url": "https://adminmrobo.github.io/catch_phishing/",
   "default_branch": "main",
-  "pushed_at": "2026-11-21T07:02:34Z",
+  "pushed_at": "2026-11-23T07:30:47Z",
   "has_manifest": true,
   "covers": [
    {
@@ -5169,7 +5221,7 @@
   "repo_url": "https://github.com/adminmrobo/cnn_face_game_lab",
   "pages_url": "https://adminmrobo.github.io/cnn_face_game_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-15T04:49:46Z",
+  "pushed_at": "2026-11-23T07:30:49Z",
   "has_manifest": true,
   "covers": [
    {
@@ -5502,7 +5554,7 @@
   "repo_url": "https://github.com/adminmrobo/covariant_chase_lab",
   "pages_url": "https://adminmrobo.github.io/covariant_chase_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-22T23:52:31Z",
+  "pushed_at": "2026-11-23T07:30:51Z",
   "has_manifest": true,
   "covers": [
    {
@@ -5987,7 +6039,7 @@
   "repo_url": "https://github.com/adminmrobo/data_base_design",
   "pages_url": "https://adminmrobo.github.io/data_base_design/",
   "default_branch": "main",
-  "pushed_at": "2026-11-22T10:40:04Z",
+  "pushed_at": "2026-11-23T07:30:28Z",
   "has_manifest": true,
   "covers": [
    {
@@ -6621,7 +6673,7 @@
   "repo_url": "https://github.com/adminmrobo/data_science_for_business",
   "pages_url": "https://adminmrobo.github.io/data_science_for_business/",
   "default_branch": "main",
-  "pushed_at": "2026-11-12T08:54:12Z",
+  "pushed_at": "2026-11-23T07:31:03Z",
   "has_manifest": true,
   "covers": [
    {
@@ -7990,7 +8042,7 @@
   "repo_url": "https://github.com/adminmrobo/data_to_numbers_lab",
   "pages_url": "https://adminmrobo.github.io/data_to_numbers_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-21T16:10:37Z",
+  "pushed_at": "2026-11-23T07:30:46Z",
   "has_manifest": true,
   "covers": [
    {
@@ -9091,7 +9143,7 @@
   "repo_url": "https://github.com/adminmrobo/DL_model_hiring_committee",
   "pages_url": "https://adminmrobo.github.io/DL_model_hiring_committee/",
   "default_branch": "main",
-  "pushed_at": "2026-11-06T12:33:53Z",
+  "pushed_at": "2026-11-23T07:30:34Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 2,
@@ -9588,7 +9640,7 @@
   "repo_url": "https://github.com/adminmrobo/fintech_data_analysis",
   "pages_url": "https://adminmrobo.github.io/fintech_data_analysis/",
   "default_branch": "main",
-  "pushed_at": "2026-11-19T18:49:53Z",
+  "pushed_at": "2026-11-23T07:30:31Z",
   "has_manifest": false,
   "covers": [
    {
@@ -9923,7 +9975,7 @@
   "repo_url": "https://github.com/adminmrobo/Fish_Market_Data_Machine_Learning",
   "pages_url": "https://adminmrobo.github.io/Fish_Market_Data_Machine_Learning/",
   "default_branch": "main",
-  "pushed_at": "2026-10-14T13:43:51Z",
+  "pushed_at": "2026-11-23T07:30:47Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 1,
@@ -10230,7 +10282,7 @@
   "repo_url": "https://github.com/adminmrobo/fof-money-meridian-",
   "pages_url": "https://adminmrobo.github.io/fof-money-meridian-/",
   "default_branch": "main",
-  "pushed_at": "2026-11-22T16:04:52Z",
+  "pushed_at": "2026-11-23T07:30:57Z",
   "has_manifest": false,
   "covers": [
    {
@@ -10460,7 +10512,7 @@
   "repo_url": "https://github.com/adminmrobo/fruitfly-lab-expressions",
   "pages_url": "https://adminmrobo.github.io/fruitfly-lab-expressions/",
   "default_branch": "main",
-  "pushed_at": "2026-11-19T14:16:02Z",
+  "pushed_at": "2026-11-23T07:31:06Z",
   "has_manifest": false,
   "covers": [
    {
@@ -10595,7 +10647,7 @@
   "repo_url": "https://github.com/adminmrobo/Gen_AI_Hannam_univ",
   "pages_url": "https://adminmrobo.github.io/Gen_AI_Hannam_univ/",
   "default_branch": "main",
-  "pushed_at": "2026-11-21T17:25:05Z",
+  "pushed_at": "2026-11-23T07:30:45Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 1,
@@ -10923,7 +10975,7 @@
   "repo_url": "https://github.com/adminmrobo/google-sheets-lab",
   "pages_url": "https://adminmrobo.github.io/google-sheets-lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-06T12:36:32Z",
+  "pushed_at": "2026-11-23T07:30:49Z",
   "has_manifest": false,
   "covers": [
    {
@@ -11132,7 +11184,7 @@
   "repo_url": "https://github.com/adminmrobo/health_stats_lab",
   "pages_url": "https://adminmrobo.github.io/health_stats_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-21T04:55:12Z",
+  "pushed_at": "2026-11-23T07:30:42Z",
   "has_manifest": true,
   "covers": [
    {
@@ -11438,7 +11490,7 @@
   "repo_url": "https://github.com/adminmrobo/hello_space_lab",
   "pages_url": "https://adminmrobo.github.io/hello_space_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-22T23:54:24Z",
+  "pushed_at": "2026-11-23T07:30:33Z",
   "has_manifest": true,
   "covers": [],
   "redraw_count": 0,
@@ -11899,7 +11951,7 @@
   "repo_url": "https://github.com/adminmrobo/iclr2027_top3_lab_review",
   "pages_url": "https://adminmrobo.github.io/iclr2027_top3_lab_review/",
   "default_branch": "main",
-  "pushed_at": "2026-11-12T00:46:25Z",
+  "pushed_at": "2026-11-23T07:30:53Z",
   "has_manifest": true,
   "covers": [
    {
@@ -12036,7 +12088,7 @@
   "repo_url": "https://github.com/adminmrobo/industrial-accident-prediction",
   "pages_url": "https://adminmrobo.github.io/industrial-accident-prediction/",
   "default_branch": "main",
-  "pushed_at": "2026-11-20T17:47:39Z",
+  "pushed_at": "2026-11-23T07:30:50Z",
   "has_manifest": true,
   "covers": [
    {
@@ -12495,7 +12547,7 @@
   "repo_url": "https://github.com/adminmrobo/inference_engineering_study",
   "pages_url": "https://adminmrobo.github.io/inference_engineering_study/",
   "default_branch": "main",
-  "pushed_at": "2026-11-21T16:07:54Z",
+  "pushed_at": "2026-11-23T07:30:43Z",
   "has_manifest": true,
   "covers": [
    {
@@ -13446,7 +13498,7 @@
   "repo_url": "https://github.com/adminmrobo/inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide",
   "pages_url": "https://adminmrobo.github.io/inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide/",
   "default_branch": "main",
-  "pushed_at": "2026-11-09T09:08:59Z",
+  "pushed_at": "2026-11-23T07:30:42Z",
   "has_manifest": false,
   "covers": [
    {
@@ -13707,7 +13759,7 @@
   "repo_url": "https://github.com/adminmrobo/inference_korea_study_page",
   "pages_url": "https://adminmrobo.github.io/inference_korea_study_page/",
   "default_branch": "main",
-  "pushed_at": "2026-11-14T12:10:38Z",
+  "pushed_at": "2026-11-23T07:30:58Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -14267,7 +14319,7 @@
   "repo_url": "https://github.com/adminmrobo/learn-pandas-visually_korean",
   "pages_url": "https://adminmrobo.github.io/learn-pandas-visually_korean/",
   "default_branch": "main",
-  "pushed_at": "2026-11-06T12:33:38Z",
+  "pushed_at": "2026-11-23T07:31:02Z",
   "has_manifest": false,
   "covers": [
    {
@@ -14377,7 +14429,7 @@
   "repo_url": "https://github.com/adminmrobo/learn-python-by-doing_Korean",
   "pages_url": "https://adminmrobo.github.io/learn-python-by-doing_Korean/",
   "default_branch": "main",
-  "pushed_at": "2026-11-06T12:34:04Z",
+  "pushed_at": "2026-11-23T07:31:03Z",
   "has_manifest": false,
   "covers": [
    {
@@ -14883,6 +14935,48 @@
   "has_pages": true
  },
  {
+  "repo": "LLM_summary_note",
+  "series_ko": "LLM_summary_note",
+  "title_ko": null,
+  "repo_url": "https://github.com/adminmrobo/LLM_summary_note",
+  "pages_url": "https://adminmrobo.github.io/LLM_summary_note/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-23T08:42:25Z",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "status": "unknown",
+  "checked_at": "2026-11-23",
+  "site_title": null,
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 0,
+   "pages_checked": 0,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [],
+   "count": 0,
+   "pages": {},
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {}
+  },
+  "languages": {
+   "codes": [],
+   "count": 0,
+   "complete": true,
+   "pages_by_lang": {}
+  },
+  "has_pages": false
+ },
+ {
   "repo": "machine_learning_in_3d",
   "series_ko": "머신러닝 연구소 — 3D로 설명하는 머신러닝",
   "title_ko": "머신러닝 연구소 — 3D로 설명하는 머신러닝",
@@ -15070,7 +15164,7 @@
   "repo_url": "https://github.com/adminmrobo/math_for_ai_lab",
   "pages_url": "https://adminmrobo.github.io/math_for_ai_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-23T06:59:21Z",
+  "pushed_at": "2026-11-23T07:30:23Z",
   "has_manifest": true,
   "covers": [
    {
@@ -15482,7 +15576,7 @@
   "repo_url": "https://github.com/adminmrobo/micro_economics",
   "pages_url": "https://adminmrobo.github.io/micro_economics/",
   "default_branch": "main",
-  "pushed_at": "2026-11-21T04:36:19Z",
+  "pushed_at": "2026-11-23T07:30:49Z",
   "has_manifest": false,
   "covers": [
    {
@@ -16365,7 +16459,7 @@
   "repo_url": "https://github.com/adminmrobo/ML_00_Algorithm-family-build_01",
   "pages_url": "https://adminmrobo.github.io/ML_00_Algorithm-family-build_01/",
   "default_branch": "main",
-  "pushed_at": "2026-11-06T12:36:22Z",
+  "pushed_at": "2026-11-23T07:30:39Z",
   "has_manifest": false,
   "covers": [
    {
@@ -16534,7 +16628,7 @@
   "repo_url": "https://github.com/adminmrobo/ML_00_Algorithm-family-build_02",
   "pages_url": "https://adminmrobo.github.io/ML_00_Algorithm-family-build_02/",
   "default_branch": "main",
-  "pushed_at": "2026-11-06T12:36:55Z",
+  "pushed_at": "2026-11-23T07:30:39Z",
   "has_manifest": false,
   "covers": [
    {
@@ -16665,7 +16759,7 @@
   "repo_url": "https://github.com/adminmrobo/ML_00_Algorithm-family-build_03",
   "pages_url": "https://adminmrobo.github.io/ML_00_Algorithm-family-build_03/",
   "default_branch": "main",
-  "pushed_at": "2026-11-06T12:37:21Z",
+  "pushed_at": "2026-11-23T07:30:38Z",
   "has_manifest": false,
   "covers": [
    {
@@ -16802,7 +16896,7 @@
   "repo_url": "https://github.com/adminmrobo/ML_model_hiring_committee",
   "pages_url": "https://adminmrobo.github.io/ML_model_hiring_committee/",
   "default_branch": "main",
-  "pushed_at": "2026-11-06T12:35:06Z",
+  "pushed_at": "2026-11-23T07:30:37Z",
   "has_manifest": false,
   "covers": [
    {
@@ -17000,7 +17094,7 @@
   "repo_url": "https://github.com/adminmrobo/motion_ai_series_01",
   "pages_url": "https://adminmrobo.github.io/motion_ai_series_01/",
   "default_branch": "main",
-  "pushed_at": "2026-11-06T12:34:17Z",
+  "pushed_at": "2026-11-23T07:30:32Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 2,
@@ -17399,7 +17493,7 @@
   "repo_url": "https://github.com/adminmrobo/my_article_02_crypto_predict_model_analytics",
   "pages_url": "https://adminmrobo.github.io/my_article_02_crypto_predict_model_analytics/",
   "default_branch": "main",
-  "pushed_at": "2026-11-06T12:35:53Z",
+  "pushed_at": "2026-11-23T07:30:58Z",
   "has_manifest": false,
   "covers": [
    {
@@ -17527,7 +17621,7 @@
   "repo_url": "https://github.com/adminmrobo/my_article_03_drug-slang-detection",
   "pages_url": "https://adminmrobo.github.io/my_article_03_drug-slang-detection/",
   "default_branch": "main",
-  "pushed_at": "2026-11-06T12:34:34Z",
+  "pushed_at": "2026-11-23T07:30:33Z",
   "has_manifest": false,
   "covers": [
    {
@@ -17631,7 +17725,7 @@
   "repo_url": "https://github.com/adminmrobo/my_article_04_adversarial_finance_attack",
   "pages_url": "https://adminmrobo.github.io/my_article_04_adversarial_finance_attack/",
   "default_branch": "main",
-  "pushed_at": "2026-11-06T12:35:35Z",
+  "pushed_at": "2026-11-23T07:30:44Z",
   "has_manifest": false,
   "covers": [
    {
@@ -17862,7 +17956,7 @@
   "repo_url": "https://github.com/adminmrobo/my_article_06_AI_effect_to_labor_demand",
   "pages_url": "https://adminmrobo.github.io/my_article_06_AI_effect_to_labor_demand/",
   "default_branch": "main",
-  "pushed_at": "2026-11-06T12:33:42Z",
+  "pushed_at": "2026-11-23T07:30:59Z",
   "has_manifest": false,
   "covers": [
    {
@@ -18313,7 +18407,7 @@
   "repo_url": "https://github.com/adminmrobo/nabla_field_lab",
   "pages_url": "https://adminmrobo.github.io/nabla_field_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-21T15:41:14Z",
+  "pushed_at": "2026-11-23T07:30:51Z",
   "has_manifest": false,
   "covers": [
    {
@@ -18472,6 +18566,133 @@
    }
   },
   "has_pages": true
+ },
+ {
+  "repo": "neural_see_lab",
+  "series_ko": "AI 기초 · 컴퓨터 비전 (CNN)",
+  "title_ko": "신경망은 고양이를 어떻게 &quot;볼까&quot; — 쪽지시험 대비반 | 신경망이 보는 법 연구실",
+  "repo_url": "https://github.com/adminmrobo/neural_see_lab",
+  "pages_url": "https://adminmrobo.github.io/neural_see_lab/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-23T08:35:10Z",
+  "has_manifest": true,
+  "covers": [
+   {
+    "path": "img/cover_00.webp",
+    "role": "cover",
+    "id": "cover_00",
+    "size": [
+     1920,
+     1080
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "sia",
+     "moa",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "missing"
+   },
+   {
+    "path": "img/thumb_00.webp",
+    "role": "thumb",
+    "id": "thumb_00",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "sia",
+     "moa",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "missing"
+   },
+   {
+    "path": "img/og_00.webp",
+    "role": "og",
+    "id": "og_00",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "sia",
+     "moa",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "missing"
+   }
+  ],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": "https://adminmrobo.github.io/neural_see_lab/img/cover_00.webp",
+  "status": "ok",
+  "checked_at": "2026-11-23",
+  "site_title": "신경망은 고양이를 어떻게 \"볼까\" — 쪽지시험 대비반",
+  "ontology": {
+   "status": "full",
+   "pages_with_kg": 1,
+   "pages_total": 1,
+   "pages_checked": 1,
+   "kg_links": [
+    "https://adminmrobo.github.io/neural_see_lab/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/neural_see_lab/index.html#export"
+   ],
+   "files": [
+    {
+     "path": "KG_new_ids.json",
+     "url": "https://github.com/adminmrobo/neural_see_lab/blob/main/KG_new_ids.json"
+    },
+    {
+     "path": "build/backbone_ai.json",
+     "url": "https://github.com/adminmrobo/neural_see_lab/blob/main/build/backbone_ai.json"
+    },
+    {
+     "path": "kg/index/kg.json",
+     "url": "https://github.com/adminmrobo/neural_see_lab/blob/main/kg/index/kg.json"
+    }
+   ]
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 1
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/neural_see_lab/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 1
+   }
+  },
+  "has_pages": false
  },
  {
   "repo": "neuralink_animal_brain_ai",
@@ -19035,7 +19256,7 @@
   "repo_url": "https://github.com/adminmrobo/nlp20_five_floor_map",
   "pages_url": "https://adminmrobo.github.io/nlp20_five_floor_map/",
   "default_branch": "main",
-  "pushed_at": "2026-11-20T17:27:57Z",
+  "pushed_at": "2026-11-23T07:30:53Z",
   "has_manifest": true,
   "covers": [],
   "redraw_count": 0,
@@ -19096,7 +19317,7 @@
   "repo_url": "https://github.com/adminmrobo/one_day_deep_learning",
   "pages_url": "https://adminmrobo.github.io/one_day_deep_learning/",
   "default_branch": "main",
-  "pushed_at": "2026-11-12T21:48:48Z",
+  "pushed_at": "2026-11-23T07:30:51Z",
   "has_manifest": true,
   "covers": [
    {
@@ -19316,7 +19537,7 @@
   "repo_url": "https://github.com/adminmrobo/one_day_machine_learning",
   "pages_url": "https://adminmrobo.github.io/one_day_machine_learning/",
   "default_branch": "main",
-  "pushed_at": "2026-11-12T21:54:03Z",
+  "pushed_at": "2026-11-23T07:30:51Z",
   "has_manifest": true,
   "covers": [
    {
@@ -19493,7 +19714,7 @@
   "repo_url": "https://github.com/adminmrobo/ontology_kg_vfx",
   "pages_url": "https://adminmrobo.github.io/ontology_kg_vfx/",
   "default_branch": "main",
-  "pushed_at": "2026-11-19T11:02:33Z",
+  "pushed_at": "2026-11-23T07:30:53Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -19554,7 +19775,7 @@
   "repo_url": "https://github.com/adminmrobo/ontology_trend_report",
   "pages_url": "https://adminmrobo.github.io/ontology_trend_report/",
   "default_branch": "main",
-  "pushed_at": "2026-11-13T12:15:26Z",
+  "pushed_at": "2026-11-23T07:31:04Z",
   "has_manifest": true,
   "covers": [],
   "redraw_count": 0,
@@ -19615,7 +19836,7 @@
   "repo_url": "https://github.com/adminmrobo/optimization_3d_map",
   "pages_url": "https://adminmrobo.github.io/optimization_3d_map/",
   "default_branch": "main",
-  "pushed_at": "2026-11-23T06:33:15Z",
+  "pushed_at": "2026-11-23T07:30:37Z",
   "has_manifest": true,
   "covers": [
    {
@@ -19886,13 +20107,74 @@
   "has_pages": true
  },
  {
+  "repo": "optimization_test_lab",
+  "series_ko": "최적화 연습실",
+  "title_ko": "최적화 연습실 — 미공개 X1·X2·X3의 몰래 연습",
+  "repo_url": "https://github.com/adminmrobo/optimization_test_lab",
+  "pages_url": "https://adminmrobo.github.io/optimization_test_lab/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-23T08:41:09Z",
+  "has_manifest": true,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": "thumbs/repos/optimization_test_lab.jpg",
+  "status": "ok",
+  "checked_at": "2026-11-23",
+  "site_title": "최적화 연습실 — 미공개 X1·X2·X3의 몰래 연습",
+  "ontology": {
+   "status": "full",
+   "pages_with_kg": 1,
+   "pages_total": 1,
+   "pages_checked": 1,
+   "kg_links": [
+    "https://adminmrobo.github.io/optimization_test_lab/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/optimization_test_lab/index.html#export"
+   ],
+   "files": [
+    {
+     "path": "build/kg_0.json",
+     "url": "https://github.com/adminmrobo/optimization_test_lab/blob/main/build/kg_0.json"
+    }
+   ]
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 1
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/optimization_test_lab/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 1
+   }
+  },
+  "has_pages": false
+ },
+ {
   "repo": "probability_distribution_dictionary",
   "series_ko": "확률분포 딕셔너리와 분포표 연구실",
   "title_ko": "확률분포 딕셔너리와 분포표 연구실",
   "repo_url": "https://github.com/adminmrobo/probability_distribution_dictionary",
   "pages_url": "https://adminmrobo.github.io/probability_distribution_dictionary/",
   "default_branch": "main",
-  "pushed_at": "2026-11-15T15:06:40Z",
+  "pushed_at": "2026-11-23T07:30:53Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -19944,7 +20226,7 @@
   "repo_url": "https://github.com/adminmrobo/python-accounting-analytics",
   "pages_url": "https://adminmrobo.github.io/python-accounting-analytics/",
   "default_branch": "main",
-  "pushed_at": "2026-11-16T10:09:46Z",
+  "pushed_at": "2026-11-23T07:31:05Z",
   "has_manifest": false,
   "covers": [
    {
@@ -20194,7 +20476,7 @@
   "repo_url": "https://github.com/adminmrobo/Recursive-Self-Improvement",
   "pages_url": "https://adminmrobo.github.io/Recursive-Self-Improvement/",
   "default_branch": "main",
-  "pushed_at": "2026-11-20T13:28:48Z",
+  "pushed_at": "2026-11-23T07:30:52Z",
   "has_manifest": true,
   "covers": [
    {
@@ -20736,7 +21018,7 @@
   "repo_url": "https://github.com/adminmrobo/Reinforcement-Learning-lab_project_01",
   "pages_url": "https://adminmrobo.github.io/Reinforcement-Learning-lab_project_01/",
   "default_branch": "main",
-  "pushed_at": "2026-11-19T01:31:57Z",
+  "pushed_at": "2026-11-23T07:30:57Z",
   "has_manifest": true,
   "covers": [
    {
@@ -21383,7 +21665,7 @@
   "repo_url": "https://github.com/adminmrobo/rulebase_to_agent",
   "pages_url": "https://adminmrobo.github.io/rulebase_to_agent/",
   "default_branch": "main",
-  "pushed_at": "2026-11-06T18:36:29Z",
+  "pushed_at": "2026-11-23T07:30:56Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -23007,7 +23289,7 @@
   "repo_url": "https://github.com/adminmrobo/structure_first_drawing_lab_02",
   "pages_url": "https://adminmrobo.github.io/structure_first_drawing_lab_02/",
   "default_branch": "main",
-  "pushed_at": "2026-11-23T00:39:48Z",
+  "pushed_at": "2026-11-23T07:30:36Z",
   "has_manifest": false,
   "covers": [
    {
@@ -23218,7 +23500,7 @@
   "repo_url": "https://github.com/adminmrobo/timer_ver001",
   "pages_url": "https://adminmrobo.github.io/timer_ver001/",
   "default_branch": "main",
-  "pushed_at": "2026-11-21T16:46:15Z",
+  "pushed_at": "2026-11-23T07:30:43Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -23835,7 +24117,7 @@
   "repo_url": "https://github.com/adminmrobo/unsupervised_fish_lab",
   "pages_url": "https://adminmrobo.github.io/unsupervised_fish_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-21T16:08:03Z",
+  "pushed_at": "2026-11-23T07:30:48Z",
   "has_manifest": true,
   "covers": [
    {
@@ -24344,7 +24626,7 @@
   "repo_url": "https://github.com/adminmrobo/vector_analysis_lab",
   "pages_url": "https://adminmrobo.github.io/vector_analysis_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-22T00:18:30Z",
+  "pushed_at": "2026-11-23T07:30:47Z",
   "has_manifest": false,
   "covers": [
    {
@@ -24437,7 +24719,7 @@
   "repo_url": "https://github.com/adminmrobo/vector_calculus_lab",
   "pages_url": "https://adminmrobo.github.io/vector_calculus_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-21T15:41:03Z",
+  "pushed_at": "2026-11-23T07:30:46Z",
   "has_manifest": true,
   "covers": [
    {
@@ -24816,7 +25098,7 @@
   "repo_url": "https://github.com/adminmrobo/vector_db_lab",
   "pages_url": "https://adminmrobo.github.io/vector_db_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-22T15:46:02Z",
+  "pushed_at": "2026-11-23T07:30:33Z",
   "has_manifest": true,
   "covers": [
    {
