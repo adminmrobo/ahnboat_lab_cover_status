@@ -1231,6 +1231,21 @@
    "thumb": "thumbs/repos/structure_first_drawing_lab_02.jpg"
   },
   {
+   "title": "그리기 연구실 01 · 기분 편 — 같은 얼굴, 다른 마음",
+   "summary": "",
+   "cat": "AI 감각·생성",
+   "mid": "생성형 AI활용",
+   "sub": "캐릭터 디자인",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/drawing_lab_01",
+   "site_url": "https://adminmrobo.github.io/drawing_lab_01/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/drawing_lab_01.jpg"
+  },
+  {
    "title": "AI 글 읽기 어려움",
    "summary": "",
    "cat": "AI 감각·생성",
@@ -2888,6 +2903,22 @@
    "langs": [],
    "thumb": "",
    "article": "AI 응용 논문"
+  },
+  {
+   "title": "보건통계 연구실",
+   "summary": "",
+   "cat": "인공지능 응용",
+   "mid": "의료 및 보건통계학",
+   "sub": "의료AI",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/health_stats_lab",
+   "site_url": "https://adminmrobo.github.io/health_stats_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/health_stats_lab.jpg",
+   "lecture": "Y"
   },
   {
    "title": "SNS 은어와 이상탐지",
