@@ -55,6 +55,15 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
 .say{position:absolute;top:14px;right:16px;max-width:min(320px,70%);background:#fff;border:2px solid var(--line);border-radius:14px 14px 4px 14px;padding:8px 12px;font-size:.85rem;box-shadow:3px 3px 0 var(--line);opacity:0;transform:translateY(-4px);transition:opacity .25s,transform .25s;pointer-events:none}
 .say.on{opacity:1;transform:none}
 .say b{display:block;font-size:.7rem;color:var(--muted)}
+/* 바로가기 배지 — 내 아이디어 검증하기 (ahnboat_ontology_feed) */
+.idea{position:absolute;top:14px;right:16px;z-index:3;display:flex;align-items:center;gap:10px;max-width:min(340px,44%);text-decoration:none;color:var(--ink);background:#fff;border:2px solid var(--line);border-radius:14px;padding:5px 12px 5px 6px;box-shadow:3px 3px 0 var(--line);transition:transform .15s,box-shadow .15s}
+.idea:hover,.idea:focus-visible{transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--line)}
+.idea .ipx{flex:none;width:48px;height:48px;border-radius:10px;background:var(--paper) url(https://adminmrobo.github.io/ahnboat_ontology_feed/assets/char/asst_spark.webp) center/cover no-repeat;image-rendering:pixelated}
+.idea .itx{min-width:0;display:flex;flex-direction:column;line-height:1.3}
+.idea .itx b{font-size:.88rem}
+.idea .itx small{font-size:.72rem;color:var(--muted)}
+.idea .inew{flex:none;align-self:flex-start;font-family:var(--mono);font-size:.6rem;font-weight:700;color:#fff;background:var(--pink);border-radius:5px;padding:0 5px;margin-top:2px}
+.crew .say{top:84px}
 .notice{margin-top:16px;border:2px solid var(--line);border-radius:16px;background:#fff;display:flex;align-items:stretch;overflow:hidden;box-shadow:4px 4px 0 var(--line)}
 .notice .lb{flex:none;display:flex;align-items:center;gap:6px;background:var(--sun);color:var(--ink);font-weight:700;padding:0 16px;border-right:2px solid var(--line);font-size:.92rem}
 .notice ul{list-style:none;margin:0;padding:6px 6px;flex:1;min-width:0;display:flex;flex-direction:column}
@@ -75,6 +84,8 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
   .hero{grid-template-columns:minmax(0,1fr)}
   .htext{padding:22px 20px 4px}
   .crew{padding-top:66px}
+  .idea{position:static;margin:12px 20px 0;max-width:none;justify-self:start}
+  .crew .say{top:14px}
   .notice{flex-direction:column}
   .notice .lb{padding:8px 14px;border-right:0;border-bottom:2px solid var(--line)}
   .notice .t{white-space:normal}
@@ -98,6 +109,11 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
         <a class="map" id="omap" href="ontology.html" target="_blank" rel="noopener">🧭 <span id="omapT">온톨로지 3D 지도</span></a>
       </div>
     </div>
+    <a class="idea" id="idea" href="https://adminmrobo.github.io/ahnboat_ontology_feed/" target="_blank" rel="noopener">
+      <span class="ipx" aria-hidden="true"></span>
+      <span class="itx"><b id="ideaT">💡 내 아이디어 검증하기</b><small id="ideaS">연구실 개념 지도로 AI 검증 받기 →</small></span>
+      <span class="inew">NEW</span>
+    </a>
     <div class="crew" id="crew" aria-label="연구실 식구들 (눌러 보세요)">
       <p class="say" id="say" aria-live="polite"><b id="sayWho"></b><span id="sayTxt"></span></p>
     </div>
@@ -197,6 +213,16 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
     document.getElementById('sq').placeholder=T('콘텐츠 찾아보기 (제목·개념)');document.getElementById('sq').setAttribute('aria-label',T('콘텐츠 찾아보기'));
     document.getElementById('sgo').setAttribute('aria-label',T('찾기'));
     document.getElementById('omapT').textContent=T('온톨로지 3D 지도');
+    var IDEA={ko:['💡 내 아이디어 검증하기','연구실 개념 지도로 AI 검증 받기 →',''],
+      en:['💡 Check Your Idea','AI checks grounded in the lab’s concept map →','Opens a page in Korean'],
+      zh:['💡 验证我的想法','用研究室概念地图让 AI 验证 →','打开韩文页面'],
+      ja:['💡 アイデアを検証する','研究室の概念マップでAIに検証してもらう →','韓国語のページが開きます'],
+      uz:['💡 G‘oyangizni tekshiring','Laboratoriya tushunchalar xaritasi bilan AI tekshiruvi →','Koreyscha sahifa ochiladi'],
+      ru:['💡 Проверьте свою идею','Проверка ИИ по карте понятий лаборатории →','Откроется страница на корейском'],
+      vi:['💡 Kiểm chứng ý tưởng','AI kiểm chứng theo bản đồ khái niệm của lab →','Mở trang tiếng Hàn']};
+    var it=IDEA[AhnI18n.lang]||IDEA.ko;
+    document.getElementById('ideaT').textContent=it[0];document.getElementById('ideaS').textContent=it[1];
+    document.getElementById('idea').title=it[2]||'';
     document.getElementById('omap').title=T('분야별 온톨로지 3D 지도');
     var g=document.getElementById('langs');g.setAttribute('aria-label',T('언어'));g.textContent='';
     AhnI18n.langs.forEach(function(l){var b=el('button','lg',AhnI18n.names[l]);b.type='button';b.lang=l;b.setAttribute('aria-pressed',String(l===AhnI18n.lang));
