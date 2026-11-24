@@ -14,6 +14,7 @@
   domains — 학문 분야(등록부 18개). 노드의 d. 노드 자신의 domain → 뼈대 주제(broader·이름 맞춤) → 콘텐츠의 주 분야 순으로 정한다.
 뼈대 주제와 이름이 맞는 노드는 data/crosswalk.json에 후보로 남긴다(다시 걸기용, ai-lab-retrofit 15장).
 """
+import html
 import argparse
 import datetime as dt
 import json
@@ -206,7 +207,7 @@ def main():
             pid = "P%03d" % len(pages)
             page = {"id": pid, "repo": r["repo"], "url": url, "cat": it["cat"],
                     "d": [c for c in cdom.get(r["repo"], []) if c in DOM],
-                    "title": short(re.sub(r"<[^>]+>", "", t.group(1)) if t else r.get("site_title") or r["repo"], 80),
+                    "title": short(html.unescape(re.sub(r"<[^>]+>", "", t.group(1))) if t else r.get("site_title") or r["repo"], 80),
                     "content": it["title"], "n": 0}
             ids = set()
             for n in kg.get("nodes", []):

@@ -11,6 +11,7 @@
 """
 import argparse
 import base64
+import html as htmllib
 import datetime as dt
 import json
 import os
@@ -112,14 +113,41 @@ def covers_from_manifest(man):
 
 def title_from_html(text):
     m = re.search(r"<title[^>]*>(.*?)</title>", text or "", re.I | re.S)
-    return re.sub(r"\s+", " ", m.group(1)).strip() if m else None
+    return unescape(re.sub(r"\s+", " ", m.group(1)).strip()) if m else None
+
+
+def unescape(t):
+    """&#x27; · &amp; 같은 HTML 글자 표기를 실제 글자로 (두 번 겹친 &amp;#x27; 도 풀림)"""
+    if not t:
+        return t
+    for _ in range(3):
+        u = htmllib.unescape(t)
+        if u == t:
+            break
+        t = u
+    return t
+
+
+DESC_RES = [re.compile(r'<meta[^>]+name\s*=\s*["\']description["\'][^>]*content\s*=\s*"([^"]*)"', re.I),
+            re.compile(r"<meta[^>]+name\s*=\s*[\"']description[\"'][^>]*content\s*=\s*'([^']*)'", re.I),
+            re.compile(r'<meta[^>]+content\s*=\s*"([^"]*)"[^>]*name\s*=\s*["\']description["\']', re.I),
+            re.compile(r'<meta[^>]+property\s*=\s*["\']og:description["\'][^>]*content\s*=\s*"([^"]*)"', re.I)]
+
+
+def desc_from_html(text):
+    """첫 페이지의 소개 문장 (meta description → og:description). 현황판 '주요내용'이 비었을 때 카드 소개로 쓴다."""
+    for rx in DESC_RES:
+        m = rx.search(text or "")
+        if m and m.group(1).strip():
+            return unescape(re.sub(r"\s+", " ", m.group(1)).strip())
+    return None
 
 
 def h1_from_html(text):
     m = re.search(r"<h1[^>]*>(.*?)</h1>", text or "", re.I | re.S)
     if not m:
         return None
-    t = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", m.group(1))).strip()
+    t = unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", m.group(1))).strip())
     return t or None
 
 
@@ -298,11 +326,14 @@ def collect_site(paths, read, pages_url, blob_url, readme=None, pages_path=None,
     return {"site_title": site_title, "ontology": ontology, "i18n": i18n, "languages": languages}
 
 
-def pick_thumb(repo, pages_url, covers, og, redraw_thumb):
+def pick_thumb(repo, pages_url, covers, og, redraw_thumb, existing=None):
     local = "thumbs/repos/%s.jpg" % repo
     if os.path.exists(os.path.join(ROOT, local)):
         return local
     files = [c for c in covers if c.get("path") and "#" not in c["path"] and IMG_RE.search(c["path"])]
+    if existing is not None:  # cover_manifest.json에 적혀 있어도 저장소에 없는 그림은 쓰지 않는다 (카드에 빈 그림)
+        have = set(existing)
+        files = [c for c in files if c["path"] in have]
     files = [c["path"] for c in sorted(files, key=lambda c: (c["path"].count("/"), ROLE_ORDER.get(c["role"], 9)))]
     if og and not og.startswith("http") and og in files:
         return pages_url + og
@@ -321,7 +352,8 @@ def base_status(has_manifest, covers, redraw_count):
     return "unknown"
 
 
-def make_entry(repo, branch, pushed_at, manifest, tree_paths, title, og, redraw, thumbs, series, prev, extra=None):
+def make_entry(repo, branch, pushed_at, manifest, tree_paths, title, og, redraw, thumbs, series, prev, extra=None,
+               existing=None, site_desc=None):
     pages_url = "https://%s.github.io/%s/" % (OWNER, repo)
     if manifest:
         covers = covers_from_manifest(manifest)
@@ -343,7 +375,8 @@ def make_entry(repo, branch, pushed_at, manifest, tree_paths, title, og, redraw,
         "covers": covers,
         "redraw_count": len(ids),
         "redraw_ids": ids,
-        "thumb": pick_thumb(repo, pages_url, covers, og, thumbs.get(repo)),
+        "thumb": pick_thumb(repo, pages_url, covers, og, thumbs.get(repo), existing),
+        "site_desc": site_desc or (prev or {}).get("site_desc"),
         "status": base_status(bool(manifest), covers, len(ids)),
         "checked_at": today(),
     }
@@ -448,7 +481,8 @@ def scan_api(token):
                             "https://github.com/%s/%s/blob/%s/" % (OWNER, name, branch), readme, pages_path, manifest)
         site["has_pages"] = bool(r.get("has_pages"))
         out.append(make_entry(name, branch, r.get("pushed_at"), manifest, None if manifest else all_paths,
-                              title_from_html(head), og, redraw, thumbs, series, prev.get(name), site))
+                              title_from_html(head), og, redraw, thumbs, series, prev.get(name), site,
+                              existing=all_paths if tree else None, site_desc=desc_from_html(head)))
         print("  %-55s %s" % (name, out[-1]["status"]))
     print("API 호출 %d회, 저장소 %d개" % (api.calls, len(out)))
     return out
@@ -497,7 +531,7 @@ def scan_local(list_file, repos_dir):
         site["local_copy"] = True
         out.append(make_entry(name, branch, pushed, manifest, None if manifest else all_paths,
                               title_from_html(html[:65536]), m.group(1) if m else None, redraw, thumbs, series,
-                              prev.get(name), site))
+                              prev.get(name), site, existing=all_paths, site_desc=desc_from_html(html[:65536])))
     return out
 
 

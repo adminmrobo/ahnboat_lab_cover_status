@@ -328,7 +328,7 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
     var k=el('article','card'+(i.kind==='ext'&&!i.thumb?' ext':''));k.style.setProperty('--c',c.color);
     var LK=AhnI18n.link(i.repo_url,i.site_url),URL1=LK[0];
     var th=el(i.site_url?'a':'div','thumb');if(i.site_url){th.href=URL1;th.target='_blank';th.rel='noopener';th.setAttribute('aria-label',T('{0} 열기',T(i.title)));gcTag(th,i);}
-    if(i.thumb){var im=el('img');im.src=i.thumb;im.alt='';im.loading='lazy';im.addEventListener('load',post);im.addEventListener('error',function(){im.remove();th.appendChild(el('span','ph',T(S(i))));});th.appendChild(im);}
+    if(i.thumb){var im=el('img');im.src=i.thumb;im.alt='';im.loading='lazy';im.addEventListener('load',post);var fb=[(MIDS.filter(function(x){return x.cat===i.cat&&x.name===i.mid;})[0]||{}).image,c.image].filter(function(x){return x&&x!==i.thumb;});im.addEventListener('error',function(){var nx=fb.shift();if(nx){im.src=nx;return;}im.remove();th.appendChild(el('span','ph',T(S(i))));});th.appendChild(im);}
     else th.appendChild(el('span','ph',T(S(i))));
     k.appendChild(th);
     var b=el('div','cbody');

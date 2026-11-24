@@ -137,7 +137,7 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 
 | 제목 | 중분류 | 주소 | 언어 |
 |---|---|---|---|
-| 하루의 첫 브리핑 — 리만 가설은 &#x27;약속&#x27;이다 |  | https://adminmrobo.github.io/riemann_hypothesis_lab/ | ko |
+| 하루의 첫 브리핑 — 리만 가설은 '약속'이다 |  | https://adminmrobo.github.io/riemann_hypothesis_lab/ | ko |
 | 노후 가계부와 AI 예측 모형 | 경제 연구 / 경제·사회 | https://adminmrobo.github.io/my_article_05_consumer_expenditure_predict/ | ko en zh ja uz ru vi |
 | 산업재해 패널 데이터를 활용한 머신러닝 모델 | 경제 연구 / 경제·사회 | 제10회 산재보험패널 학술대회 |  |
 | 조건부 노동수요와 생성형 AI | 경제 연구 / 경제·사회 | https://adminmrobo.github.io/my_article_06_AI_effect_to_labor_demand/ | ko en zh ja uz ru vi |
@@ -262,7 +262,7 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | 초파리 연구원과 주판봇이 소개하는 안상선 | 연구실 소개 / 소개 | https://adminmrobo.github.io/who_am_i/ | ko en zh ja uz ru |
 | Ahn-boat Lab 식구 갤러리 | 제작 도구 | https://adminmrobo.github.io/ahnboat_lab_gallery/ | ko |
 | 캐릭터 표정 라이브러리 | 제작 도구 / 제작 도구 | https://adminmrobo.github.io/fruitfly-lab-expressions/ | ko |
-| Haru &amp; Intern's TIMER | 제작 도구 / 타이머 | https://adminmrobo.github.io/timer_ver001/ | ko en zh ja uz ru vi |
+| Haru & Intern's TIMER | 제작 도구 / 타이머 | https://adminmrobo.github.io/timer_ver001/ | ko en zh ja uz ru vi |
 
 ## 4. 포트폴리오
 

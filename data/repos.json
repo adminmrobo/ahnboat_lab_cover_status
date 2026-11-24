@@ -1002,7 +1002,8 @@
     "ko": 8
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "캐릭터를 한 번에 그리지 않고 구조 → 빛 → 주름 순서로 잡는 원리를 실험으로 익히고, 그 원리로 연구실 픽셀 캐릭터를 애니풍·실사풍으로 옮기는 프롬프트를 실습합니다. 실패 사례 8종 진단까지."
  },
  {
   "repo": "agent_secret_leak_lab",
@@ -1237,7 +1238,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "조수 하루를 닮은 AI 에이전트 챗봇 '하루봇'을 만들며, 에이전트의 수학 공식 13개를 한 장씩 익히는 비전공자용 속성 가이드."
  },
  {
   "repo": "ahn_boat_lab_town",
@@ -1494,7 +1496,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "Ahn-boat Lab 연구실 식구(박사·하루·초파리 연구원·주판봇·시아·모아·X1~X3)의 그림을 원본·프롬프트·콘텐츠·저장소·생성일과 함께 모아 보는 갤러리"
  },
  {
   "repo": "ahnboat_lab_langpack",
@@ -1689,7 +1692,8 @@
     "ko": 2
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "ahnboat lab 공개 콘텐츠의 최신 온톨로지를 분야별 RSS로 받아, 생성 AI에게 내 아이디어를 검증해 달라고 요청하는 지시문을 만듭니다. 하루·시아·모아가 사용법을 안내합니다."
  },
  {
   "repo": "ahnboat_server_room_guards",
@@ -1741,7 +1745,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "ahnboat.xyz 서버실을 지키는 조수 하루와 인턴 시아·모아의 픽셀아트 루프 영상"
  },
  {
   "repo": "ai-nlp-data-analysis",
@@ -2223,7 +2228,8 @@
     "ko": 27
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "자연어 데이터의 특징과 수집·전처리, 형태소 분석, TF-IDF·LDA, Word2Vec, RNN·LSTM·Seq2Seq, 어텐션·트랜스포머, GPT·BERT·프롬프트·RAG까지 강의 8회차의 학습내용 24개를 한 쪽씩, 비전공자용 연구실 해설 26쪽으로 묶은 시리즈."
  },
  {
   "repo": "ai-power-chain-simulator",
@@ -3000,7 +3006,8 @@
     "ko": 3
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "하루·시아·모아가 플레이어로 나서서 게임을 직접 풀어 보고, AI가 같은 게임을 어떻게 푸는지 따라가는 연구실 해설 시리즈. ① 스도쿠 — 에너지 모델, ② 대항해시대 4 코인 게임 — 게임 나무·강화학습·탐색."
  },
  {
   "repo": "AI_image_classification",
@@ -3704,7 +3711,8 @@
     "vi": 19
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "정답표 없이 배우기에서 시작해 사진에서 3D를 되찾고, 적게 그린 화면을 AI로 채우기까지 — 미션 15개."
  },
  {
   "repo": "ai_text_read_ability",
@@ -3824,7 +3832,8 @@
     "vi": 2
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "AI가 써 준 글은 왜 잘 읽히지 않을까 — Clark·Martin·Mahowald(2026) 논문을 안상선이 리뷰한 인터랙티브 해설. 박사·조수(하루)·초파리 연구원·주판봇이 진행합니다."
  },
  {
   "repo": "Anomaly_detection_tatics",
@@ -4086,7 +4095,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "어떤 생성 AI에도 붙여 넣어 쓰는 자동화 주문서. 먼저 이해하고, 자동화는 그다음."
  },
  {
   "repo": "backprop_lab",
@@ -4449,7 +4459,8 @@
     "ko": 16
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "희소성과 기회비용에서 출발해 수요와 공급, 탄력성, 가격규제와 세금, 시장의 효율성, 조세의 비용, 시장구조, 시장실패와 재정, 국민경제와 경기변동, 재정·통화정책까지 11장을 비전공자용 강의실 해설로 묶은 경제학 원론 시리즈. 한국체육대학교 교양과정 「경제학의 이해」, 「생활 속의 경제학」 강의노트 기반."
  },
  {
   "repo": "bayesian-statistics-for-data-scientists",
@@ -5054,7 +5065,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "직접법·간접법으로 현금흐름표를 읽고, 뤼튼테크놀로지스 2025년 감사보고서와 오픈AI·Anthropic 사례로 손실과 현금의 차이를 본 뒤, 작성 원칙을 프롬프트로 만들어 생성AI가 쓴 파이썬 코드를 검산한다."
  },
  {
   "repo": "catch_phishing",
@@ -5534,7 +5546,8 @@
     "ko": 7
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "UCI 피싱 사이트 데이터 1,353개와 단서 아홉 개로 여는 AI 모델 대회. 인턴 시아·모아와 조수 하루가 출전하고 박사·주판봇·초파리가 심사하는 6장짜리 인터랙티브 해설."
  },
  {
   "repo": "cnn_face_game_lab",
@@ -6352,7 +6365,8 @@
     "ko": 4
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "초파리를 쫓는 주판봇의 끈끈이 미사일로 배우는 공변미분: 가짜 변화, 보정표 Γ, 평행이동, 곡률, 측지선. 게임 5개로 직접 확인합니다."
  },
  {
   "repo": "data_base_design",
@@ -6986,7 +7000,8 @@
     "ko": 16
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "데이터베이스 설계 15회차 연구실 해설 — 1~7주 이론, 8주 중간 REVIEW, 9~14주 SQL·설계·정규화·트랜잭션·응용, 15주 기말 REVIEW. SQL 실습은 노션 실습 페이지와 페이지 안 SQL 실습실로."
  },
  {
   "repo": "data_science_for_business",
@@ -8973,7 +8988,8 @@
     "ko": 7
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "사진·영상·글·소리가 AI 안에서 숫자가 되고 다듬어지기까지. 논문 26편을 바탕으로 한 6장 연구실 해설 시리즈."
  },
  {
   "repo": "data_visualization_lab",
@@ -9068,7 +9084,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "데이터 시각화 특집. 분포·관계·모델 평가·진단과 해석·줄이기와 묶기·시계열, 6교시 32장의 차트를 3D 관계 지도와 연구실 수업으로 배웁니다."
  },
  {
   "repo": "Data_visuialization_lecture_01",
@@ -9663,7 +9680,8 @@
     "ko": 2
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "시험지 패치·숨은 지시·네트워크 관문으로 AI 추론에 장벽을 세우는 원리를 베이즈 정리와 적대적 예제로 풀고, 공격인지 방어인지 찬반 토론으로 따져 보는 인터랙티브 해설."
  },
  {
   "repo": "DL_model_hiring_committee",
@@ -9854,7 +9872,8 @@
     "ko": 8
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "얼굴이 안 보여도 읽히는 몸의 기분, 喜怒哀楽+驚虚 여섯 감정, 공 위에 그리는 눈, 기분을 더하는 빛과 그림자를 실험으로 익히고, AI 표정 문장·가림 영역·VFX 표정 값으로 옮겨 봅니다. 표정 그림 실패 8종 진단까지."
  },
  {
   "repo": "drawing_lab_02",
@@ -9924,7 +9943,8 @@
     "ko": 8
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "연구실 등장인물이 가발로 변장합니다. 이마 선·가르마·부피, 다발과 묶은 점, 흑백의 머리색과 윤기 띠, 바람·늦게 따라오기·젖은 머리를 실험으로 익히고, AI 머리 문장·가림 영역·VFX 가이드 가닥으로 옮겨 봅니다. 머리카락 그림 실패 8종 진단까지."
  },
  {
   "repo": "drawing_lab_03",
@@ -9994,7 +10014,8 @@
     "ko": 8
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "원과 기준선에서 시작해 정면·옆얼굴의 남녀 차이를 실험으로 익히고, 그 기준선을 AI 얼굴 문장·가림 영역으로 옮겨 봅니다. 얼굴 그림 실패 8종 진단까지."
  },
  {
   "repo": "drug-crime-social-cost",
@@ -10239,7 +10260,8 @@
     "vi": 4
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "데이터 한 줄을 방 안의 점 하나로 놓고 거리와 각도를 재는 법. 원자료 @eeanimation 인포그래픽 10장을 방 탈출형 연구실 해설로 다시 만들었습니다."
  },
  {
   "repo": "fabric_ai_project",
@@ -10635,7 +10657,8 @@
     "ko": 16
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "핀테크 산업과 데이터 수집에서 시작해 전처리, KNN·SVM·로지스틱·결정나무·회귀·딥러닝·시계열, 모델 평가, 시각화, 로보어드바이저 서비스 기획, 데이터 보안과 품질까지 15회차를 실제 공개 금융 데이터로 실습하는 비전공자용 연구실 해설."
  },
  {
   "repo": "Fish_Market_Data_Machine_Learning",
@@ -10942,7 +10965,8 @@
     "ko": 6
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "생선 가게 물고기 158마리로 따라가는 머신러닝 최적화의 네 층위: 판 짜기, 손실과 경사하강, 학습률·배치·에포크, 튜닝과 신뢰도, 앙상블"
  },
  {
   "repo": "fof-money-meridian-",
@@ -11172,7 +11196,8 @@
     "ko": 6
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "자금순환표로 읽는 거시경제 — 경제순환·IS-LM·AD-AS를 회계의 재무제표 세 가지 비유로 자금순환표와 잇고, 상세자금순환표와 2025~2026년 한국 통계로 돈의 쏠림과 연결을 읽는 해설 시리즈. 처음 오신 분을 위한 판(2026-11-23). 연구실 리포트 2편(40대 마이너스통장 연체, 머스크의 AI 운전자본 경고)으로 문을 엽니다."
  },
  {
   "repo": "fruitfly-lab-expressions",
@@ -11442,7 +11467,8 @@
     "ko": 2
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "강의"
  },
  {
   "repo": "Gen_AI_strategy_ch06",
@@ -11519,7 +11545,8 @@
     "ko": 2
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "강의"
  },
  {
   "repo": "generative-ai-prompt-strategy",
@@ -12253,7 +12280,8 @@
     "ko": 8
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "좌표 첫걸음. 박사가 강의하고 조교 하루·초파리·주판봇이 돕고, 시아·모아·X1~X3가 듣는 강의실에서 수직선 → 좌표평면 → 극좌표 → 공간좌표 → 위도·경도와 지도 → 데이터의 좌표까지, 장마다 게임 부록과 마지막 실전 연습장으로 배우는 친절한 좌표 안내서."
  },
  {
   "repo": "hilbert_space_lab",
@@ -12326,7 +12354,8 @@
     "ko": 4
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "시아·모아가 연구실 복도의 방을 하나씩 통과하며 유클리드 공간과 힐베르트 공간을 배웁니다. 데이터를 점으로 놓고 거리·각도·그림자로 인공지능·머신러닝을 읽는 연구실 해설 시리즈."
  },
  {
   "repo": "how_to_make_ai_model_factory_version",
@@ -12537,7 +12566,8 @@
     "ko": 7
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "제조업 AI 강의 커리큘럼의 프로그램·데이터 분석·모델 분석 내용을 쉬운 이해와 시연을 위해 다시 구성한 AI 공장 시리즈의 첫 페이지. 제작 안상선. ① 배터리 불량품 판정기, ② 배터리 수명 예측 장치, ③ 배터리 생산 공장, ④ 태양광 패널 셀 생산 공장, ⑤ 배터리 열폭주 실험 랩, 그리고 앞으로 지을 예비 부지, 시제품 테스트 랩실(생선 통조림 분류 장비)과 이웃 시멘트 공장."
  },
  {
   "repo": "how_to_start_db",
@@ -13207,7 +13237,8 @@
     "ko": 7
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "산재보험패널 2,728명으로 재활 서비스 이용을 예측하는 KNN·로지스틱·의사결정나무 모델과, 정확도의 함정·불균형 데이터 보완을 여섯 장으로 풉니다. 제10회 산재보험패널 학술대회 포스터 발표 해설."
  },
  {
   "repo": "inference_engineering_study",
@@ -14907,7 +14938,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "울타리(제약)가 있는 최적화를 좌표평면과 미분으로 함께 보는 연구실 해설. 원 위의 x + y, 공장의 최적 노동·자본 투입점(λ = 한계비용), 회귀의 경사하강과 릿지, 라쏘가 이 방법으로 풀리지 않는 이유까지."
  },
  {
   "repo": "lagrangian_hamiltonian_lab",
@@ -14979,7 +15011,8 @@
     "ko": 9
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "같은 움직임을 빼서(T − V) 그리면 라그랑지안, 더해서(T + V) 그리면 해밀토니안. AI 모델·경제학·양자까지 두 지도의 쓰임을 연구실 해설로 봅니다."
  },
  {
   "repo": "learn-pandas-visually_korean",
@@ -15437,7 +15470,8 @@
     "vi": 2
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "분류 모델 채점에서 LLM 리더보드까지, 다섯 칸으로 직접 돌려 보며 배우는 LLM 평가 해설 대시보드의 첫 화면입니다."
  },
  {
   "repo": "llm_memory_trilogy",
@@ -15823,7 +15857,8 @@
     "ko": 2
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "박사의 쪽지시험 전날 밤, 인턴 시아와 모아가 자연어 분석 입문 범위를 여섯 교시 14단계로 정리합니다. 전처리, 토큰, TF-IDF, 임베딩, 감성 분류, 개체명, 트랜스포머, BERT·GPT, 검색과 평가까지 단계마다 게임과 시연으로."
  },
  {
   "repo": "machine_learning_in_3d",
@@ -16416,7 +16451,8 @@
     "ko": 4
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "공식 12장을 생선 가게 AI 모델 하나로 엮는 연구실 해설. 1부는 함수·행렬·벡터·행렬 연산·연립방정식. 장마다 끝에 실습 대시보드가 있습니다."
  },
  {
   "repo": "micro_economics",
@@ -16950,7 +16986,8 @@
     "ko": 48
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "경제모형을 읽는 법에서 출발해 소비자·생산자·시장지배력, 게임이론, 일반균형과 자산, 후생과 정책, 정보경제학까지 8장을 비전공자용 연구실 해설로 묶은 미시경제학 시리즈."
  },
  {
   "repo": "minkowski_space_lab",
@@ -17033,7 +17070,8 @@
     "ko": 3
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "시간 항목 하나만 마이너스로 세는 방, 민코프스키 시공간. 시아·모아가 벽시계가 걸린 복도의 방을 통과하며 빛원뿔·쌍곡선·원인과 결과를 배우는 연구실 해설. 공간 시리즈 세 번째 복도."
  },
  {
   "repo": "ML_00_Algorithm-family-build_00",
@@ -19307,7 +19345,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "로봇 팔이 닿는 곳, 드론 길 찾기, 옵션 가격의 움직임을 같은 ∇와 좌표 바꾸기로 보는 연구실 해설."
  },
  {
   "repo": "neural_network_atlas",
@@ -19417,7 +19456,7 @@
  {
   "repo": "neural_see_lab",
   "series_ko": "AI 기초 · 컴퓨터 비전 (CNN)",
-  "title_ko": "신경망은 고양이를 어떻게 &quot;볼까&quot; — 쪽지시험 대비반 | 신경망이 보는 법 연구실",
+  "title_ko": "신경망은 고양이를 어떻게 \"볼까\" — 쪽지시험 대비반 | 신경망이 보는 법 연구실",
   "repo_url": "https://github.com/adminmrobo/neural_see_lab",
   "pages_url": "https://adminmrobo.github.io/neural_see_lab/",
   "default_branch": "main",
@@ -19706,7 +19745,8 @@
     "ko": 2
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "뉴럴링크의 돼지·원숭이 뇌 칩 실험을 초파리·까마귀 뇌, 테슬라 자율주행·YOLO, 자율비행 드론과 한 줄로 잇는 인터랙티브 해설 페이지의 목차."
  },
  {
   "repo": "neuron_reaction",
@@ -21012,7 +21052,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "미분의 네 가지 뜻(기울기·변화율·기울기 0·작은 증분)을 손으로 확인하고, 휘어진 골짜기에서 바닐라 SGD·모멘텀·Adam을 직접 경주시켜 보는 최적화 연습실. 순위가 뒤집히는 조건까지 미션으로 찾아봅니다."
  },
  {
   "repo": "probability_distribution_dictionary",
@@ -21637,7 +21678,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "재귀적 자기개선(RSI)의 기원과 정의, 무엇을 고치고 무엇으로 확인하는지, 모델 붕괴와 안전 논쟁까지 문헌 10편으로 정리한 연구실 해설. 움직이는 대시보드와 4컷 만화로 읽는다."
  },
  {
   "repo": "Regression_ridge_lasso",
@@ -22503,7 +22545,8 @@
     "ko": 2
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "AI와 수학자가 리만 가설을 증명했다는 2026년 11월 소식을, 주판봇과 초파리의 말다툼으로 쉽게 풀어 쓴 연구실 해설. 세기와 증명은 무엇이 다른가."
  },
  {
   "repo": "rulebase_to_agent",
@@ -23521,7 +23564,8 @@
     "ko": 29
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "통계학의 기초에서 확률, 확률분포, 추정, 가설검정, 회귀분석까지 — 연구실 해설 시리즈"
  },
  {
   "repo": "statistics_note_ch04_02",
@@ -24127,7 +24171,8 @@
     "ko": 8
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "사진 속 옷을 그림으로 옮기는 순서, 핏·체형·소재·동작에 따라 달라지는 주름을 실험으로 익히고, AI 프롬프트·가림 영역·VFX 천 시뮬레이션으로 옷을 갈아입혀 봅니다. 옷 그림 실패 8종 진단까지."
  },
  {
   "repo": "structure_first_drawing_lab_02",
@@ -24254,7 +24299,8 @@
     "ko": 6
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "주름 없는 선화에 접점 → 주름 → 그림자 순서로 직접 넣어 보는 실천편입니다. 서 있는 자세, 주름 많은 옷, 앉은 자세, 광원 방향별 그림자를 실험으로 익힙니다."
  },
  {
   "repo": "test",
@@ -24342,8 +24388,8 @@
  },
  {
   "repo": "timer_ver001",
-  "series_ko": "Haru &amp; Intern's TIMER",
-  "title_ko": "Haru &amp; Intern's TIMER",
+  "series_ko": "Haru & Intern's TIMER",
+  "title_ko": "Haru & Intern's TIMER",
   "repo_url": "https://github.com/adminmrobo/timer_ver001",
   "pages_url": "https://adminmrobo.github.io/timer_ver001/",
   "default_branch": "main",
@@ -24355,7 +24401,7 @@
   "thumb": null,
   "status": "unknown",
   "checked_at": "2026-11-24",
-  "site_title": "Haru &amp; Intern's TIMER",
+  "site_title": "Haru & Intern's TIMER",
   "ontology": {
    "status": "none",
    "pages_with_kg": 0,
@@ -25992,7 +26038,8 @@
     "ko": 17
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "중학생도 따라오는 위상수학 15장 + 실전 연습장. 박사 선생님과 두 조교, 수강생 6명이 함께하는 연구실 해설 시리즈."
  },
  {
   "repo": "unsupervised_fish_lab",
@@ -26394,7 +26441,8 @@
     "ko": 6
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "어시장 물고기 1,554마리의 종 이름표를 덮고 묶기(군집화)·접기(PCA)·맞히기(자기지도학습)를 기초부터 배우는 연구실 해설 시리즈. 지도학습과 나란히 비교."
  },
  {
   "repo": "usa_stock_reporter_project_python_version",
@@ -26501,7 +26549,8 @@
     "ko": 4
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "페르미 추정·트래픽 KPI·추정손익계산서·VC 방법에서 DDM·DCF·RIM·Ohlson 모형까지 — 라이브 대시보드와 생성 AI(코랩) 실습이 들어 있는 회계 해설 3편"
  },
  {
   "repo": "vector_analysis_lab",
@@ -26594,7 +26643,8 @@
     "ko": 9
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "피자·지도·환전에서 경제·금융, 인공지능까지. 원자료 카드 네 장의 좌표와 ∇를 하루의 첫 수업으로 배웁니다."
  },
  {
   "repo": "vector_calculus_lab",
@@ -26973,7 +27023,8 @@
     "ko": 9
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "기초 두 편(미분 쪽·적분 쪽)과 현장 다섯 편(머신러닝·딥러닝·렌더링·공장·생선 분류)으로 이루어진 연구실 해설입니다. 시아와 모아가 방 26개를 통과합니다."
  },
  {
   "repo": "vector_db_lab",
@@ -27556,7 +27607,8 @@
     "ko": 9
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "관계형 DB의 한계와 자연어 데이터의 특징에서 출발해 임베딩, 벡터 DB 색인, LLM과 RAG, 현장 사례까지 실험으로 배우는 연구실 해설 시리즈."
  },
  {
   "repo": "what_is_p_value_lab",
@@ -27677,7 +27729,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "p-value를 귀무가설의 참일 확률, 틀릴 가능성 5%, 효과 크기, 재현 확률로 잘못 읽는 여섯 가지 오해를 연구실 식구들이 직접 실험하며 바로잡는다. 모집단과 표본으로 현실을 검증하는 통계학과 훈련·테스트 세트로 성능을 재는 AI 모델의 차이까지."
  },
  {
   "repo": "what_is_tensor",
@@ -27817,7 +27870,8 @@
     "ko": 7
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "site_desc": "텐서를 축 세기부터 연산, 분해, 격투 게임 특별편까지 직접 돌려 보며 배우는 초보자용 해설 시리즈."
  },
  {
   "repo": "who_am_i",

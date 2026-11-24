@@ -297,6 +297,11 @@ def main():
         migrate(it, {it["repo"], it["title"]}, MOVES, item_fields)
         apply_rules(it, [it["repo"], it["title"]], RULES, item_fields[:3])
         rename_mid(it, RENAMES, item_fields[:3])
+    # 카드 다듬기: 깨진 글자(&#x27; 등) · 빈 소개 · 빈/없는 그림 보완 (scripts/catalog_polish.py, data/catalog_fill.json)
+    import sys as _s0
+    _s0.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import catalog_polish
+    catalog_polish.polish(items, by, cats, meta.get("mids", []))
     # 시리즈 챕터: 상위 카드의 사이트 주소 + 파일 (외부링크에 주소가 있으면 그 주소)
     for it in items:
         if it["series"] != "Y":
@@ -309,7 +314,8 @@ def main():
             path = h["저장소"].split("/", 1)[1] if "/" in h["저장소"] else ""
             rd = norm_date(h.get("공개일"))
             pub = (h.get("공개대상여부") or "").strip()
-            lst.append({"no": h.get("챕터", ""), "title": h.get("제목") or path, "summary": h.get("주요내용", ""),
+            lst.append({"no": h.get("챕터", ""), "title": catalog_polish.unescape(h.get("제목") or path),
+                        "summary": catalog_polish.unescape(h.get("주요내용", "")),
                         "url": _url(h.get("외부링크", "")) or base_url + path, "file": path, "release": rd,
                         "public": "Y" if yes(pub) else ("검토" if pub == "검토" else "N"),
                         "released": "Y" if (not rd or rd <= BASE) else "N"})
