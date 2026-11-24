@@ -1457,7 +1457,7 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_lab_gallery",
   "pages_url": "https://adminmrobo.github.io/ahnboat_lab_gallery/",
   "default_branch": "main",
-  "pushed_at": "2026-11-23T05:38:20Z",
+  "pushed_at": "2026-11-24T17:37:54Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -2729,7 +2729,7 @@
   "repo_url": "https://github.com/adminmrobo/ai_cube_lab",
   "pages_url": "https://adminmrobo.github.io/ai_cube_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-24T16:08:16Z",
+  "pushed_at": "2026-11-24T17:36:45Z",
   "has_manifest": true,
   "covers": [
    {
@@ -3265,7 +3265,7 @@
     "ko": 17
    }
   },
-  "has_pages": false
+  "has_pages": true
  },
  {
   "repo": "AI_for_cement_produce",
@@ -10660,7 +10660,7 @@
   "repo_url": "https://github.com/adminmrobo/drug-crime-social-cost",
   "pages_url": "https://adminmrobo.github.io/drug-crime-social-cost/",
   "default_branch": "main",
-  "pushed_at": "2026-11-22T16:39:40Z",
+  "pushed_at": "2026-11-24T17:22:43Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -15545,6 +15545,68 @@
   "has_pages": true
  },
  {
+  "repo": "karpathy_method_korean",
+  "series_ko": "카파시의 방법론",
+  "title_ko": "카파시의 방법론 — 한국어 데이터로 검증하다",
+  "repo_url": "https://github.com/adminmrobo/karpathy_method_korean",
+  "pages_url": "https://adminmrobo.github.io/karpathy_method_korean/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-24T17:47:03Z",
+  "has_manifest": true,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": "thumbs/repos/karpathy_method_korean.jpg",
+  "site_desc": "안드레이 카파시의 무료 학습 저장소 7개를 연구실이 CPU에서 직접 돌리고, 네이버 영화 리뷰 20만 개로 한국어에서도 같은 결과가 나오는지 검증합니다.",
+  "status": "ok",
+  "checked_at": "2026-11-25",
+  "site_title": "카파시의 방법론 — 한국어 데이터로 검증하다",
+  "ontology": {
+   "status": "full",
+   "pages_with_kg": 1,
+   "pages_total": 1,
+   "pages_checked": 1,
+   "kg_links": [
+    "https://adminmrobo.github.io/karpathy_method_korean/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/karpathy_method_korean/index.html#export"
+   ],
+   "files": [
+    {
+     "path": "kg/kg.json",
+     "url": "https://github.com/adminmrobo/karpathy_method_korean/blob/main/kg/kg.json"
+    }
+   ]
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 1
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/karpathy_method_korean/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 1
+   }
+  },
+  "has_pages": false
+ },
+ {
   "repo": "kma_2023_01",
   "series_ko": "kma_2023_01",
   "title_ko": null,
@@ -15627,6 +15689,219 @@
    "count": 0,
    "complete": true,
    "pages_by_lang": {}
+  },
+  "has_pages": false
+ },
+ {
+  "repo": "labor_economics",
+  "series_ko": "노동경제학 연구실",
+  "title_ko": "노동경제학 연구실",
+  "repo_url": "https://github.com/adminmrobo/labor_economics",
+  "pages_url": "https://adminmrobo.github.io/labor_economics/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-24T17:21:41Z",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "assets/og/cover_01.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_02.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_03.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_04.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_05.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_05m.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_06.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_07.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_08.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_09.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_09f.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_idx.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_prac.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_01.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_02.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_03.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_04.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_05.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_05m.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_06.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_07.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_08.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_09.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_09f.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_idx.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_prac.webp",
+    "role": "thumb",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": "thumbs/repos/labor_economics.jpg",
+  "site_desc": "노동시장의 세 주체, 노동공급(여가-소비 선택·대체효과와 소득효과·EITC), 노동수요(VMP·비용 최소화·AI 대체), 노동시장균형(최저임금·이민), 보상적 임금격차, 교육, 임금 불평등, 노동 이동까지 9장을 비전공자용 강의실 해설로 묶은 노동경제학 시리즈. 한국기술교육대학교 고용정책과 노동경제학 2026년 1학기 강의 기반.",
+  "status": "ok",
+  "checked_at": "2026-11-25",
+  "site_title": "노동경제학 연구실",
+  "ontology": {
+   "status": "partial",
+   "pages_with_kg": 11,
+   "pages_total": 14,
+   "pages_checked": 14,
+   "kg_links": [
+    "https://adminmrobo.github.io/labor_economics/01_what_is_labor_econ.html#kg",
+    "https://adminmrobo.github.io/labor_economics/02_labor_supply.html#kg",
+    "https://adminmrobo.github.io/labor_economics/03_labor_supply_policy.html#kg",
+    "https://adminmrobo.github.io/labor_economics/04_labor_demand.html#kg",
+    "https://adminmrobo.github.io/labor_economics/05_labor_market_equilibrium.html#kg",
+    "https://adminmrobo.github.io/labor_economics/05m_midterm_review.html#kg",
+    "https://adminmrobo.github.io/labor_economics/06_compensating_differentials.html#kg",
+    "https://adminmrobo.github.io/labor_economics/07_education.html#kg",
+    "https://adminmrobo.github.io/labor_economics/08_wage_distribution.html#kg",
+    "https://adminmrobo.github.io/labor_economics/09_labor_mobility.html#kg",
+    "https://adminmrobo.github.io/labor_economics/09f_final_review.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/labor_economics/01_what_is_labor_econ.html#export",
+    "https://adminmrobo.github.io/labor_economics/02_labor_supply.html#export",
+    "https://adminmrobo.github.io/labor_economics/03_labor_supply_policy.html#export",
+    "https://adminmrobo.github.io/labor_economics/04_labor_demand.html#export",
+    "https://adminmrobo.github.io/labor_economics/05_labor_market_equilibrium.html#export",
+    "https://adminmrobo.github.io/labor_economics/05m_midterm_review.html#export",
+    "https://adminmrobo.github.io/labor_economics/06_compensating_differentials.html#export",
+    "https://adminmrobo.github.io/labor_economics/07_education.html#export",
+    "https://adminmrobo.github.io/labor_economics/08_wage_distribution.html#export",
+    "https://adminmrobo.github.io/labor_economics/09_labor_mobility.html#export",
+    "https://adminmrobo.github.io/labor_economics/09f_final_review.html#export"
+   ],
+   "files": [
+    {
+     "path": "KG_00_registry.json",
+     "url": "https://github.com/adminmrobo/labor_economics/blob/main/KG_00_registry.json"
+    }
+   ]
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 14
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/labor_economics/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 14
+   }
   },
   "has_pages": false
  },
@@ -17249,7 +17524,7 @@
   "repo_url": "https://github.com/adminmrobo/micro_economics",
   "pages_url": "https://adminmrobo.github.io/micro_economics/",
   "default_branch": "main",
-  "pushed_at": "2026-11-23T23:25:22Z",
+  "pushed_at": "2026-11-24T17:13:16Z",
   "has_manifest": false,
   "covers": [
    {
@@ -17663,7 +17938,7 @@
   "ontology": {
    "status": "partial",
    "pages_with_kg": 35,
-   "pages_total": 48,
+   "pages_total": 49,
    "pages_checked": 40,
    "kg_links": [
     "https://adminmrobo.github.io/micro_economics/00_economic_models.html#kg",
@@ -17756,7 +18031,7 @@
    ],
    "count": 1,
    "pages": {
-    "ko": 48
+    "ko": 49
    },
    "partial": [],
    "complete": true,
@@ -17772,7 +18047,7 @@
    "count": 1,
    "complete": true,
    "pages_by_lang": {
-    "ko": 48
+    "ko": 49
    }
   },
   "has_pages": true
@@ -24640,7 +24915,7 @@
   "repo_url": "https://github.com/adminmrobo/Stochastic_labs",
   "pages_url": "https://adminmrobo.github.io/Stochastic_labs/",
   "default_branch": "main",
-  "pushed_at": "2026-11-24T16:23:23Z",
+  "pushed_at": "2026-11-24T17:36:14Z",
   "has_manifest": true,
   "covers": [
    {
@@ -25363,7 +25638,7 @@
     "ko": 15
    }
   },
-  "has_pages": false
+  "has_pages": true
  },
  {
   "repo": "structure_first_drawing_lab_01",

@@ -28,7 +28,7 @@
  },
  "ahnboat_lab_gallery": {
   "src": null,
-  "pushed_at": "2026-11-23T05:38:20Z"
+  "pushed_at": "2026-11-24T17:37:54Z"
  },
  "ahnboat_lab_langpack": {
   "src": null,
@@ -63,7 +63,7 @@
  },
  "ai_cube_lab": {
   "src": "manifest:img/og/og_index.webp",
-  "pushed_at": "2026-11-24T16:08:16Z",
+  "pushed_at": "2026-11-24T17:36:45Z",
   "made": "2026-11-25"
  },
  "AI_for_cement_produce": {
@@ -259,7 +259,7 @@
  },
  "drug-crime-social-cost": {
   "src": null,
-  "pushed_at": "2026-11-22T16:39:40Z"
+  "pushed_at": "2026-11-24T17:22:43Z"
  },
  "economics_lab": {
   "src": null,
@@ -438,6 +438,11 @@
   "pushed_at": "2026-11-24T14:16:28Z",
   "made": "2026-11-25"
  },
+ "karpathy_method_korean": {
+  "src": "embedded:index.html",
+  "pushed_at": "2026-11-24T17:47:03Z",
+  "made": "2026-11-25"
+ },
  "kma_2023_01": {
   "src": null,
   "pushed_at": "2023-07-28T07:40:49Z"
@@ -445,6 +450,11 @@
  "kwangju_data_learn": {
   "src": null,
   "pushed_at": "2023-08-27T09:24:23Z"
+ },
+ "labor_economics": {
+  "src": "name:assets/og/cover_01.jpg",
+  "pushed_at": "2026-11-24T17:21:41Z",
+  "made": "2026-11-25"
  },
  "lagrange_multiplier_lab": {
   "src": "name:img/cover.webp",
@@ -510,8 +520,8 @@
  },
  "micro_economics": {
   "src": "name:assets/og/cover_00.jpg",
-  "pushed_at": "2026-11-23T23:25:22Z",
-  "made": "2026-11-24"
+  "pushed_at": "2026-11-24T17:13:16Z",
+  "made": "2026-11-25"
  },
  "minkowski_space_lab": {
   "src": "name:build/img/cover_index.webp",
@@ -720,7 +730,7 @@
  },
  "Stochastic_labs": {
   "src": "manifest:img/og/og_index.webp",
-  "pushed_at": "2026-11-24T16:23:23Z",
+  "pushed_at": "2026-11-24T17:36:14Z",
   "made": "2026-11-25"
  },
  "structure_first_drawing_lab_01": {
