@@ -1491,6 +1491,117 @@
   "has_pages": false
  },
  {
+  "repo": "ahnboat_ontology_feed",
+  "series_ko": "내 아이디어 검증하기 — ahnboat lab 온톨로지 피드",
+  "title_ko": "내 아이디어 검증하기 — ahnboat lab 온톨로지 피드",
+  "repo_url": "https://github.com/adminmrobo/ahnboat_ontology_feed",
+  "pages_url": "https://adminmrobo.github.io/ahnboat_ontology_feed/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-24T02:56:39Z",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "assets/cover.png",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/cover.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og.png",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "assets/bg_hero.png",
+    "role": "hero",
+    "estimated": true
+   },
+   {
+    "path": "assets/bg_hero.webp",
+    "role": "hero",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": "thumbs/repos/ahnboat_ontology_feed.jpg",
+  "status": "ok",
+  "checked_at": "2026-11-24",
+  "site_title": "내 아이디어 검증하기 — ahnboat lab 온톨로지 피드",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 2,
+   "pages_checked": 2,
+   "kg_links": [],
+   "export_links": [],
+   "files": [
+    {
+     "path": "ontology/ai-senses-generation.jsonld",
+     "url": "https://github.com/adminmrobo/ahnboat_ontology_feed/blob/main/ontology/ai-senses-generation.jsonld"
+    },
+    {
+     "path": "ontology/applied-ai.jsonld",
+     "url": "https://github.com/adminmrobo/ahnboat_ontology_feed/blob/main/ontology/applied-ai.jsonld"
+    },
+    {
+     "path": "ontology/deep-learning-neuroscience.jsonld",
+     "url": "https://github.com/adminmrobo/ahnboat_ontology_feed/blob/main/ontology/deep-learning-neuroscience.jsonld"
+    },
+    {
+     "path": "ontology/economics-math-optimization.jsonld",
+     "url": "https://github.com/adminmrobo/ahnboat_ontology_feed/blob/main/ontology/economics-math-optimization.jsonld"
+    },
+    {
+     "path": "ontology/finance-fintech-blockchain.jsonld",
+     "url": "https://github.com/adminmrobo/ahnboat_ontology_feed/blob/main/ontology/finance-fintech-blockchain.jsonld"
+    },
+    {
+     "path": "ontology/llm-inference-engineering.jsonld",
+     "url": "https://github.com/adminmrobo/ahnboat_ontology_feed/blob/main/ontology/llm-inference-engineering.jsonld"
+    },
+    {
+     "path": "ontology/machine-learning.jsonld",
+     "url": "https://github.com/adminmrobo/ahnboat_ontology_feed/blob/main/ontology/machine-learning.jsonld"
+    },
+    {
+     "path": "ontology/statistics-data-basics.jsonld",
+     "url": "https://github.com/adminmrobo/ahnboat_ontology_feed/blob/main/ontology/statistics-data-basics.jsonld"
+    }
+   ]
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 2
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/ahnboat_ontology_feed/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 2
+   }
+  },
+  "has_pages": true
+ },
+ {
   "repo": "ahnboat_server_room_guards",
   "series_ko": "서버실 지킴이 — Reon Ahn's Lab Server",
   "title_ko": "서버실 지킴이 — Reon Ahn's Lab Server",
@@ -9711,6 +9822,76 @@
    "readme_langs": [],
    "links": {
     "ko": "https://adminmrobo.github.io/drawing_lab_02/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 8
+   }
+  },
+  "has_pages": true
+ },
+ {
+  "repo": "drawing_lab_03",
+  "series_ko": "연구실 특별편 · 그리기와 렌더링",
+  "title_ko": "구조 먼저 그리기 연구실 03 · 얼굴 편 — 같은 기준선, 다른 얼굴",
+  "repo_url": "https://github.com/adminmrobo/drawing_lab_03",
+  "pages_url": "https://adminmrobo.github.io/drawing_lab_03/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-24T03:00:16Z",
+  "has_manifest": true,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": "thumbs/repos/drawing_lab_03.jpg",
+  "status": "ok",
+  "checked_at": "2026-11-24",
+  "site_title": "구조 먼저 그리기 연구실 03 · 얼굴 편 — 같은 기준선, 다른 얼굴",
+  "ontology": {
+   "status": "full",
+   "pages_with_kg": 8,
+   "pages_total": 8,
+   "pages_checked": 8,
+   "kg_links": [
+    "https://adminmrobo.github.io/drawing_lab_03/01_front_female.html#kg",
+    "https://adminmrobo.github.io/drawing_lab_03/02_front_male.html#kg",
+    "https://adminmrobo.github.io/drawing_lab_03/03_profile.html#kg",
+    "https://adminmrobo.github.io/drawing_lab_03/04_variation.html#kg",
+    "https://adminmrobo.github.io/drawing_lab_03/05_ai_face.html#kg",
+    "https://adminmrobo.github.io/drawing_lab_03/06_failure_lab.html#kg",
+    "https://adminmrobo.github.io/drawing_lab_03/index.html#kg",
+    "https://adminmrobo.github.io/drawing_lab_03/practice/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/drawing_lab_03/01_front_female.html#export",
+    "https://adminmrobo.github.io/drawing_lab_03/02_front_male.html#export",
+    "https://adminmrobo.github.io/drawing_lab_03/03_profile.html#export",
+    "https://adminmrobo.github.io/drawing_lab_03/04_variation.html#export",
+    "https://adminmrobo.github.io/drawing_lab_03/05_ai_face.html#export",
+    "https://adminmrobo.github.io/drawing_lab_03/06_failure_lab.html#export",
+    "https://adminmrobo.github.io/drawing_lab_03/index.html#export",
+    "https://adminmrobo.github.io/drawing_lab_03/practice/index.html#export"
+   ],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 8
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/drawing_lab_03/index.html"
    }
   },
   "languages": {
