@@ -1274,6 +1274,21 @@
    "thumb": "thumbs/repos/drawing_lab_02.jpg"
   },
   {
+   "title": "구조 먼저 그리기 연구실 03 · 얼굴 편 — 같은 기준선, 다른 얼굴",
+   "summary": "",
+   "cat": "AI 감각·생성",
+   "mid": "생성형 AI활용",
+   "sub": "캐릭터 제작",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/drawing_lab_03",
+   "site_url": "https://adminmrobo.github.io/drawing_lab_03/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/drawing_lab_03.jpg"
+  },
+  {
    "title": "AI 글 읽기 어려움",
    "summary": "",
    "cat": "AI 감각·생성",
@@ -1912,6 +1927,21 @@
    "thumb": "thumbs/repos/vector_db_lab.jpg"
   },
   {
+   "title": "위상수학 교실 — 고무찰흙 세상의 수학 · 오리엔테이션",
+   "summary": "",
+   "cat": "경제·수학·최적화",
+   "mid": "위상수학",
+   "sub": "",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/topology_ai_lab",
+   "site_url": "https://adminmrobo.github.io/topology_ai_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/topology_ai_lab.jpg"
+  },
+  {
    "title": "주판봇의 초파리 추적 대작전 ① 공변미분 — 진짜로 꺾인 만큼만 재기",
    "summary": "",
    "cat": "경제·수학·최적화",
@@ -2502,6 +2532,21 @@
    ],
    "thumb": "thumbs/repos/statistics_note.jpg",
    "lecture": "Y"
+  },
+  {
+   "title": "맞다는 건가, 틀리다는 건가? — 매번 헷갈리는 p-value, 한 번에 이해하기",
+   "summary": "",
+   "cat": "통계·데이터 기초",
+   "mid": "확률·통계",
+   "sub": "",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/what_is_p_value_lab",
+   "site_url": "https://adminmrobo.github.io/what_is_p_value_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/what_is_p_value_lab.jpg"
   },
   {
    "title": "데이터 사이언티스트를 위한 베이지안 통계학",
@@ -3194,6 +3239,21 @@
    "link": "제 10-2486672 호",
    "langs": [],
    "thumb": ""
+  },
+  {
+   "title": "내 아이디어 검증하기 — ahnboat lab 온톨로지 피드",
+   "summary": "",
+   "cat": "연구실 운영",
+   "mid": "연구 설계",
+   "sub": "온톨로지 활용",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/ahnboat_ontology_feed",
+   "site_url": "https://adminmrobo.github.io/ahnboat_ontology_feed/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/ahnboat_ontology_feed.jpg"
   },
   {
    "title": "서버실 지킴이 — Reon Ahn's Lab Server",

@@ -1,6 +1,6 @@
 {
 "note": "뼈대 주제와 이름이 맞는 노드(자동 후보). 사람이 보고 맞는 것만 해설 페이지 kg-raw에 broader로 옮긴다(ai-lab-retrofit 15-2).",
-"count": 86,
+"count": 89,
 "items": [
 {
 "node": "lab:concept/anomaly-detection",
@@ -93,6 +93,30 @@
 ]
 },
 {
+"node": "lab:concept/compactness",
+"ko": "콤팩트",
+"topics": [
+"lab:topic/compactness"
+],
+"auto": true,
+"confidence": "low",
+"pages": [
+"topology_ai_lab/04_compactness.html"
+]
+},
+{
+"node": "lab:concept/connectedness",
+"ko": "연결과 분리",
+"topics": [
+"lab:topic/connectedness"
+],
+"auto": true,
+"confidence": "low",
+"pages": [
+"topology_ai_lab/03_connectedness.html"
+]
+},
+{
 "node": "lab:concept/cross-validation",
 "ko": "교차검증",
 "topics": [
@@ -151,8 +175,7 @@
 "auto": true,
 "confidence": "low",
 "pages": [
-"micro_economics/20_asset_markets.html",
-"my_article_00_Korean_stockmarket_volatility_study/2-6_independence-correlation.html"
+"micro_economics/20_asset_markets.html"
 ]
 },
 {
@@ -794,6 +817,18 @@
 "ai-nlp-data-analysis/02-1_analysis_process.html",
 "ai-nlp-data-analysis/03-1_morpheme_overview.html",
 "ai-nlp-data-analysis/05_midterm_review.html"
+]
+},
+{
+"node": "lab:method/train-val-test",
+"ko": "훈련·검증·테스트 분할",
+"topics": [
+"lab:topic/data-splitting"
+],
+"auto": true,
+"confidence": "mid",
+"pages": [
+"what_is_p_value_lab/index.html"
 ]
 },
 {

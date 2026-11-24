@@ -6,7 +6,7 @@
   "repo_url": "https://github.com/adminmrobo/adminmrobo-structure_first_drawing_lab",
   "pages_url": "https://adminmrobo.github.io/adminmrobo-structure_first_drawing_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-23T23:30:37Z",
+  "pushed_at": "2026-11-24T13:19:41Z",
   "has_manifest": true,
   "covers": [
    {
@@ -852,6 +852,96 @@
     ],
     "robot": "none",
     "status": "done"
+   },
+   {
+    "path": "",
+    "role": "exercise",
+    "status": "done"
+   },
+   {
+    "path": "",
+    "role": "exercise",
+    "status": "done"
+   },
+   {
+    "path": "",
+    "role": "exercise",
+    "status": "done"
+   },
+   {
+    "path": "",
+    "role": "exercise",
+    "status": "done"
+   },
+   {
+    "path": "",
+    "role": "exercise",
+    "status": "done"
+   },
+   {
+    "path": "",
+    "role": "exercise",
+    "status": "done"
+   },
+   {
+    "path": "",
+    "role": "exercise",
+    "status": "done"
+   },
+   {
+    "path": "",
+    "role": "exercise",
+    "status": "done"
+   },
+   {
+    "path": "",
+    "role": "exercise",
+    "status": "done"
+   },
+   {
+    "path": "",
+    "role": "exercise",
+    "status": "done"
+   },
+   {
+    "path": "",
+    "role": "exercise",
+    "status": "done"
+   },
+   {
+    "path": "",
+    "role": "exercise",
+    "status": "done"
+   },
+   {
+    "path": "",
+    "role": "exercise_retry",
+    "status": "done"
+   },
+   {
+    "path": "",
+    "role": "exercise_retry",
+    "status": "done"
+   },
+   {
+    "path": "",
+    "role": "exercise_retry",
+    "status": "done"
+   },
+   {
+    "path": "",
+    "role": "exercise_retry",
+    "status": "done"
+   },
+   {
+    "path": "",
+    "role": "exercise_retry",
+    "status": "done"
+   },
+   {
+    "path": "",
+    "role": "exercise_retry",
+    "status": "done"
    }
   ],
   "redraw_count": 0,
@@ -1497,7 +1587,7 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_ontology_feed",
   "pages_url": "https://adminmrobo.github.io/ahnboat_ontology_feed/",
   "default_branch": "main",
-  "pushed_at": "2026-11-24T02:56:39Z",
+  "pushed_at": "2026-11-24T13:17:30Z",
   "has_manifest": false,
   "covers": [
    {
@@ -3061,7 +3151,7 @@
   "repo_url": "https://github.com/adminmrobo/ai_industry_lab",
   "pages_url": "https://adminmrobo.github.io/ai_industry_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-23T09:56:25Z",
+  "pushed_at": "2026-11-24T06:05:22Z",
   "has_manifest": false,
   "covers": [
    {
@@ -9703,7 +9793,7 @@
   "repo_url": "https://github.com/adminmrobo/drawing_lab_01",
   "pages_url": "https://adminmrobo.github.io/drawing_lab_01/",
   "default_branch": "main",
-  "pushed_at": "2026-11-23T23:30:43Z",
+  "pushed_at": "2026-11-24T13:21:39Z",
   "has_manifest": true,
   "covers": [],
   "redraw_count": 0,
@@ -9773,7 +9863,7 @@
   "repo_url": "https://github.com/adminmrobo/drawing_lab_02",
   "pages_url": "https://adminmrobo.github.io/drawing_lab_02/",
   "default_branch": "main",
-  "pushed_at": "2026-11-23T23:30:44Z",
+  "pushed_at": "2026-11-24T13:20:23Z",
   "has_manifest": true,
   "covers": [],
   "redraw_count": 0,
@@ -9843,7 +9933,7 @@
   "repo_url": "https://github.com/adminmrobo/drawing_lab_03",
   "pages_url": "https://adminmrobo.github.io/drawing_lab_03/",
   "default_branch": "main",
-  "pushed_at": "2026-11-24T03:00:16Z",
+  "pushed_at": "2026-11-24T13:20:17Z",
   "has_manifest": true,
   "covers": [],
   "redraw_count": 0,
@@ -11174,7 +11264,7 @@
   "repo_url": "https://github.com/adminmrobo/g2b-bid-strategy",
   "pages_url": "https://adminmrobo.github.io/g2b-bid-strategy/",
   "default_branch": "main",
-  "pushed_at": "2026-11-23T01:15:04Z",
+  "pushed_at": "2026-11-24T05:12:03Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -17729,7 +17819,7 @@
    "status": "none",
    "pages_with_kg": 0,
    "pages_total": 60,
-   "pages_checked": 34,
+   "pages_checked": 33,
    "kg_links": [],
    "export_links": [],
    "files": []
@@ -18062,9 +18152,9 @@
   "site_title": "우리나라 주식시장의 변동성 분해 분석 — 연구실 해설",
   "ontology": {
    "status": "partial",
-   "pages_with_kg": 20,
+   "pages_with_kg": 19,
    "pages_total": 24,
-   "pages_checked": 24,
+   "pages_checked": 23,
    "kg_links": [
     "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch1/1-1_time-series.html#kg",
     "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch1/1-2_efficient-market.html#kg",
@@ -18078,7 +18168,6 @@
     "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch2/2-3_research-model.html#kg",
     "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch2/2-4_periods-chow.html#kg",
     "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch2/2-5_descriptive-stats.html#kg",
-    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch2/2-6_independence-correlation.html#kg",
     "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch3/3-1_garch-m-risk-premium.html#kg",
     "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch3/3-2_volatility-decomposition.html#kg",
     "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch3/3-3_decomposition-check.html#kg",
@@ -18100,7 +18189,6 @@
     "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch2/2-3_research-model.html#export",
     "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch2/2-4_periods-chow.html#export",
     "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch2/2-5_descriptive-stats.html#export",
-    "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch2/2-6_independence-correlation.html#export",
     "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch3/3-1_garch-m-risk-premium.html#export",
     "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch3/3-2_volatility-decomposition.html#export",
     "https://adminmrobo.github.io/my_article_00_Korean_stockmarket_volatility_study/ch3/3-3_decomposition-check.html#export",
@@ -23547,7 +23635,7 @@
   "repo_url": "https://github.com/adminmrobo/structure_first_drawing_lab_01",
   "pages_url": "https://adminmrobo.github.io/structure_first_drawing_lab_01/",
   "default_branch": "main",
-  "pushed_at": "2026-11-23T23:30:39Z",
+  "pushed_at": "2026-11-24T13:21:21Z",
   "has_manifest": true,
   "covers": [
    {
@@ -24048,7 +24136,7 @@
   "repo_url": "https://github.com/adminmrobo/structure_first_drawing_lab_02",
   "pages_url": "https://adminmrobo.github.io/structure_first_drawing_lab_02/",
   "default_branch": "main",
-  "pushed_at": "2026-11-23T23:30:41Z",
+  "pushed_at": "2026-11-24T13:19:06Z",
   "has_manifest": false,
   "covers": [
    {
