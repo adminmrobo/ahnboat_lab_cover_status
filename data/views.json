@@ -44,6 +44,25 @@
     ]
    },
    {
+    "name": "시각화 도감",
+    "label": "SPECIAL · 도감",
+    "color": "#2a6fbd",
+    "desc": "데이터 분석에서 자주 만나는 차트 32장을 한눈에 펼치고, 그림마다 답하는 질문과 흔한 오독을 짚은 뒤 6교시 연구실 수업과 3D 관계 지도로 익힙니다.",
+    "keywords": [
+     "데이터 시각화",
+     "차트 32장",
+     "3D 관계 지도"
+    ],
+    "url": "https://adminmrobo.github.io/data_visualization_lab/",
+    "repo": "data_visualization_lab",
+    "sprites": [
+     {
+      "src": "thumbs/chars/atlas/duo_intro.webp",
+      "h": 92
+     }
+    ]
+   },
+   {
     "name": "확률 분포 도감",
     "label": "SPECIAL · 도감",
     "color": "#1f8a8a",
