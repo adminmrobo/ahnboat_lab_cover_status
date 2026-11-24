@@ -128,6 +128,25 @@ def polish(items, repos_by_name, cats, mids, fill=None):
     return n
 
 
+def missing_mids(items, mids):
+    """공개 콘텐츠가 쓰는 (대분류, 중분류) 가운데 중분류 카드 정보가 없는 것 → 자동 카드.
+    그림은 그 갈래의 첫 저장소 표지(로컬 파일), 소개는 비워 둔다. hub_meta.json에 적으면 그쪽이 쓰인다."""
+    have = {(m.get("cat"), m.get("name")) for m in mids or []}
+    out, seen = [], set()
+    for it in items:
+        key = (it.get("cat"), it.get("mid") or "기타")
+        if key in have or key in seen:
+            continue
+        seen.add(key)
+        grp = [i for i in items if (i.get("cat"), i.get("mid") or "기타") == key]
+        img = next((i["thumb"] for i in grp if i.get("thumb") and not i["thumb"].startswith("http")
+                    and "thumbs/cats/" not in i["thumb"] and os.path.exists(os.path.join(ROOT, i["thumb"]))), "")
+        if not img:
+            img = next((i["thumb"] for i in grp if i.get("thumb")), "")
+        out.append({"cat": key[0], "name": key[1], "id": "", "desc": "", "keywords": [], "image": img, "auto": True})
+    return out
+
+
 def _repos():
     scan = _load(os.path.join(DATA, "repos.json"), [])
     repos = scan.get("repos", scan) if isinstance(scan, dict) else scan

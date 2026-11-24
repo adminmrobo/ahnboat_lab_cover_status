@@ -330,7 +330,7 @@ def main():
     names = {c["name"] for c in cats}
     pub = [it for it in items if it["public"] == "Y" and it["exists"] == "Y" and it["released"] == "Y" and it["cat"] in names]
     keep = ["title", "summary", "cat", "mid", "sub", "kind", "repo_url", "site_url", "link", "langs", "thumb"]
-    used = {(it["cat"], it["mid"]) for it in pub}
+    used = {(it["cat"], it["mid"] or "기타") for it in pub}  # 중분류가 빈 항목은 화면에서 '기타'로 묶인다
     # Ahn's Articles & Presentations: 랙과 상관없이 'Articles_갈래'가 있는 항목을 모은다 (data/views.json → articles.only = 갈래 묶음 이름)
     art_name = (load_json(os.path.join(DATA, "views.json"), {}).get("articles") or {}).get("only") or "논문 해설"
     used |= {(art_name, it["article"]) for it in pub if it.get("article")}
@@ -354,6 +354,8 @@ def main():
     catalog = {"updated": out["updated"], "categories": cats,
                "mids": [m for m in out["mids"] if (m.get("cat"), m.get("name")) in used],
                "hero": out["hero"], "items": [public_item(it) for it in pub]}
+    # 중분류 카드가 hub_meta.json에 없으면(새 중분류) 그 갈래 콘텐츠의 표지로 카드 그림을 채운다 — 줄무늬 빈 카드 방지
+    catalog["mids"] += catalog_polish.missing_mids(catalog["items"], catalog["mids"])
     # 시리즈 카드(data/series_cards.json): 한 저장소 안 여러 편을 장(챕터)별 소분류로 묶고 제목·소개·썸네일을 한 틀로
     import sys as _sys
     _sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))

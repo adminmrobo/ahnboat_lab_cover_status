@@ -800,6 +800,19 @@
    "image": "thumbs/cats/C01-M2.webp"
   },
   {
+   "cat": "머신러닝",
+   "name": "프로그래밍",
+   "id": "C01-A1",
+   "desc": "라벨 없이 물고기를 묶고·접고·맞히는 비지도학습을 지도학습과 나란히 놓고 직접 따라 합니다.",
+   "keywords": [
+    "비지도학습",
+    "군집화",
+    "PCA",
+    "자기지도학습"
+   ],
+   "image": "thumbs/repos/unsupervised_fish_lab.jpg"
+  },
+  {
    "cat": "딥러닝·뇌과학",
    "name": "뇌과학",
    "id": "C02-M1",
@@ -864,6 +877,19 @@
     "언어 모델"
    ],
    "image": "thumbs/cats/C03-M3.webp"
+  },
+  {
+   "cat": "AI 감각·생성",
+   "name": "생성형 AI활용",
+   "id": "C03-A1",
+   "desc": "생성 AI로 캐릭터를 그릴 때 구조를 먼저 잡고 기분·머리카락·얼굴·옷 주름을 바꿔 가며, 픽셀 캐릭터에서 실사까지 따라 그립니다.",
+   "keywords": [
+    "캐릭터 디자인",
+    "구조 먼저",
+    "옷 주름",
+    "표정"
+   ],
+   "image": "thumbs/repos/adminmrobo-structure_first_drawing_lab.jpg"
   },
   {
    "cat": "LLM·추론 엔지니어링",
@@ -968,6 +994,42 @@
     "벡터 미적분"
    ],
    "image": "thumbs/cats/C05-O5.webp"
+  },
+  {
+   "cat": "경제·수학·최적화",
+   "name": "기타",
+   "id": "C05-A1",
+   "desc": "한 갈래로 묶기 전의 수학 소식을 모았습니다. 리만 가설 증명 소식을 주판봇과 초파리의 말다툼으로 풀어 봅니다.",
+   "keywords": [
+    "리만 가설",
+    "증명",
+    "소수"
+   ],
+   "image": "thumbs/repos/riemann_hypothesis_lab.jpg"
+  },
+  {
+   "cat": "경제·수학·최적화",
+   "name": "금융 연구",
+   "id": "C05-A2",
+   "desc": "자금순환표로 거시경제를 읽습니다. 돈이 어디로 쏠리고 어떻게 이어지는지 한국 통계로 따라갑니다.",
+   "keywords": [
+    "자금순환표",
+    "거시경제",
+    "IS-LM"
+   ],
+   "image": "thumbs/repos/fof-money-meridian-.jpg"
+  },
+  {
+   "cat": "경제·수학·최적화",
+   "name": "위상수학",
+   "id": "C05-A3",
+   "desc": "고무찰흙처럼 늘이고 구부려도 변하지 않는 성질을 중학생 눈높이로 배우는 위상수학 교실입니다.",
+   "keywords": [
+    "위상수학",
+    "연결성",
+    "구멍"
+   ],
+   "image": "thumbs/repos/topology_ai_lab.jpg"
   },
   {
    "cat": "논문 해설",
@@ -1151,6 +1213,30 @@
    "cat": "통계·데이터 기초"
   },
   {
+   "cat": "통계·데이터 기초",
+   "name": "개념 지도",
+   "id": "C07-A1",
+   "desc": "사진·영상·글·소리가 AI 안에서 숫자가 되고 다듬어지는 과정을 한눈에 봅니다.",
+   "keywords": [
+    "데이터 표현",
+    "벡터",
+    "인코딩"
+   ],
+   "image": "thumbs/repos/data_to_numbers_lab.jpg"
+  },
+  {
+   "cat": "통계·데이터 기초",
+   "name": "데이터베이스",
+   "id": "C07-A2",
+   "desc": "이론부터 SQL·설계·정규화·트랜잭션까지, 데이터베이스 설계 15회차를 연구실 해설로 따라갑니다.",
+   "keywords": [
+    "ERD",
+    "정규화",
+    "SQL"
+   ],
+   "image": "thumbs/repos/data_base_design.jpg"
+  },
+  {
    "cat": "인공지능 응용",
    "name": "제조",
    "id": "C08-A1",
@@ -1233,6 +1319,53 @@
    "image": "thumbs/cats/C08-A5.webp"
   },
   {
+   "cat": "인공지능 응용",
+   "name": "경제 연구",
+   "id": "C08-A7",
+   "desc": "산재보험패널 데이터로 재활 서비스 이용을 예측하는 머신러닝 연구를 풀어 씁니다.",
+   "keywords": [
+    "산재보험패널",
+    "재활 서비스",
+    "불균형 데이터"
+   ],
+   "image": "thumbs/repos/industrial-accident-prediction.jpg"
+  },
+  {
+   "cat": "인공지능 응용",
+   "name": "산업·인프라",
+   "id": "C08-A8",
+   "desc": "배터리·태양광 공장을 무대로 제조업 AI 모델을 만들고 시연하는 AI 공장 시리즈입니다.",
+   "keywords": [
+    "배터리",
+    "스마트팩토리",
+    "불량 판정"
+   ],
+   "image": "thumbs/repos/how_to_make_ai_model_factory_version.jpg"
+  },
+  {
+   "cat": "인공지능 응용",
+   "name": "외부_콘텐츠",
+   "id": "EXT",
+   "desc": "GitHub 밖에 있는 저서·발표 등 인공지능 응용 실적입니다.",
+   "keywords": [
+    "저서",
+    "AI 범죄"
+   ],
+   "image": "thumbs/cats/EXT.webp"
+  },
+  {
+   "cat": "인공지능 응용",
+   "name": "의료 및 보건통계학",
+   "id": "C08-A9",
+   "desc": "임상시험 통계와 의료 AI를 비전공 독자도 끝까지 읽게 풀어 쓴 보건통계 연구실입니다.",
+   "keywords": [
+    "임상시험",
+    "신뢰구간",
+    "의료AI"
+   ],
+   "image": "thumbs/repos/health_stats_lab.jpg"
+  },
+  {
    "cat": "공공·사회 프로젝트",
    "name": "공공 사업",
    "id": "C09-M1",
@@ -1306,6 +1439,18 @@
     "스프라이트"
    ],
    "image": "thumbs/cats/C10-M2.webp"
+  },
+  {
+   "cat": "연구실 운영",
+   "name": "연구 설계",
+   "id": "C10-A1",
+   "desc": "공개 콘텐츠의 온톨로지를 받아, 내 아이디어를 생성 AI에게 검증받는 지시문을 만드는 도구입니다.",
+   "keywords": [
+    "온톨로지",
+    "아이디어 검증",
+    "RSS"
+   ],
+   "image": "thumbs/repos/ahnboat_ontology_feed.jpg"
   }
  ],
  "hero": {
