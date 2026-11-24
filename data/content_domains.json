@@ -386,6 +386,57 @@
   ],
   "learn-python-by-doing_Korean": [
    "data"
+  ],
+  "inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide": [
+   "llm",
+   "ai"
+  ],
+  "inference_korea_study_page": [
+   "llm",
+   "ai"
+  ],
+  "insurtech__case_classification_model_01": [
+   "ml",
+   "biz"
+  ],
+  "insurtech__case_classification_model_02": [
+   "ml",
+   "biz"
+  ],
+  "insurtech__case_regreesion_model_01": [
+   "ml",
+   "stats",
+   "biz"
+  ],
+  "insurtech__case_regreesion_model_02": [
+   "ml",
+   "stats",
+   "biz"
+  ],
+  "ML_00_Algorithm-family-build_01": [
+   "ml",
+   "ai"
+  ],
+  "ML_00_Algorithm-family-build_02": [
+   "ml",
+   "ai"
+  ],
+  "ML_00_Algorithm-family-build_03": [
+   "ml",
+   "ai"
+  ],
+  "machine_learning_in_3d": [
+   "ml"
+  ],
+  "smart_factory_world": [
+   "ai",
+   "biz"
   ]
- }
+ },
+ "redirect": {
+  "ai_for_cement_produce_07": "AI_for_cement_produce",
+  "ai_for_cement_produce_08": "AI_for_cement_produce",
+  "database_01of04": "data_base_design"
+ },
+ "note_redirect": "redirect: 새 주소로 옮겨 가는 안내 페이지만 남은 저장소 → 내용이 있는 저장소. 지식 지도의 분야별 콘텐츠 수를 셀 때 따라간다."
 }

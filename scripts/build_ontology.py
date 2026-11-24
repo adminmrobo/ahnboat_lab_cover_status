@@ -312,6 +312,18 @@ def main():
                         "gaps": [[t["id"], t["ko"], t["en"]] for t in tps if t["id"] not in hit][:40]})
 
     # 분야별 총계
+    redirect = dict(load(os.path.join(DATA, "content_domains.json"), {}).get("redirect", {}))
+    for k, v in (load(os.path.join(DATA, "moved.json"), {}).get("moved") or {}).items():
+        m = re.search(r"github\.com/%s/([^/?#]+)" % OWNER, v.get("repo_url") or "")
+        if m:
+            redirect.setdefault(k, m.group(1))
+    indexed = {p["repo"] for p in pages}
+
+    def item_repo(it):
+        m = re.search(r"github\.com/%s/([^/?#]+)" % OWNER, it.get("repo_url") or "")
+        r = m.group(1) if m else None
+        return redirect.get(r, r)
+
     totals = []
     for c in cats:
         ps = [p for p in pages if p["cat"] == c["name"]]
@@ -319,12 +331,17 @@ def main():
         es = [e for e in edges.values() if c["name"] in nodes[e[0]]["c"] and c["name"] in nodes[e[1]]["c"]]
         if not ps:
             continue
-        totals.append({"cat": c["name"], "color": c.get("color") or "#888", "contents": len({p["repo"] for p in ps}),
+        # 콘텐츠 수는 홈페이지(카탈로그)와 같은 단위로 센다: 카탈로그 항목 가운데 지식 색인이 있는 저장소(옮긴 저장소는 새 주소)를 가리키는 것
+        items = [it for it in catalog.get("items", []) if it.get("cat") == c["name"]]
+        n_idx = sum(1 for it in items if item_repo(it) in indexed)
+        totals.append({"cat": c["name"], "color": c.get("color") or "#888", "contents": n_idx or len({p["repo"] for p in ps}),
+                       "listed": len(items),
                        "pages": len(ps), "concepts": len(ns), "relations": len(es)})
     shared = sum(1 for n in nodes.values() if len(n["c"]) > 1)
     out = {
         "updated": dt.datetime.now(dt.timezone(dt.timedelta(hours=9))).strftime("%Y-%m-%d"),
         "summary": {"fields": len(totals), "contents": len({p["repo"] for p in pages}), "pages": len(pages),
+                    "listed_indexed": sum(t["contents"] for t in totals), "listed": sum(t["listed"] for t in totals),
                     "concepts": len(nodes), "relations": len(edges), "shared": shared},
         "fields": totals,
         "domains": domains,

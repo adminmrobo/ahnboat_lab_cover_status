@@ -3032,12 +3032,22 @@
   "checked_at": "2026-11-24",
   "site_title": "AI는 이미지를 어떻게 구분할까? — 긴급 미션 네 개",
   "ontology": {
-   "status": "none",
-   "pages_with_kg": 0,
+   "status": "partial",
+   "pages_with_kg": 4,
    "pages_total": 5,
    "pages_checked": 5,
-   "kg_links": [],
-   "export_links": [],
+   "kg_links": [
+    "https://adminmrobo.github.io/AI_image_classification/4-1_bream_smelt.html#kg",
+    "https://adminmrobo.github.io/AI_image_classification/4-2_cat_human.html#kg",
+    "https://adminmrobo.github.io/AI_image_classification/4-3_cat_dog.html#kg",
+    "https://adminmrobo.github.io/AI_image_classification/4-4_chihuahua_muffin.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/AI_image_classification/4-1_bream_smelt.html#export",
+    "https://adminmrobo.github.io/AI_image_classification/4-2_cat_human.html#export",
+    "https://adminmrobo.github.io/AI_image_classification/4-3_cat_dog.html#export",
+    "https://adminmrobo.github.io/AI_image_classification/4-4_chihuahua_muffin.html#export"
+   ],
    "files": []
   },
   "i18n": {
@@ -3116,12 +3126,16 @@
   "checked_at": "2026-11-24",
   "site_title": "신경망 연구소 — 3D로 설명하는 AI",
   "ontology": {
-   "status": "none",
-   "pages_with_kg": 0,
+   "status": "partial",
+   "pages_with_kg": 1,
    "pages_total": 4,
    "pages_checked": 4,
-   "kg_links": [],
-   "export_links": [],
+   "kg_links": [
+    "https://adminmrobo.github.io/ai_in_3d/math_behind_ai/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/ai_in_3d/math_behind_ai/index.html#export"
+   ],
    "files": []
   },
   "i18n": {
@@ -3226,14 +3240,34 @@
   "checked_at": "2026-11-24",
   "site_title": "AI Model Review — 초파리 연구실의 딥러닝 A to Z",
   "ontology": {
-   "status": "partial",
-   "pages_with_kg": 1,
+   "status": "full",
+   "pages_with_kg": 10,
    "pages_total": 10,
    "pages_checked": 10,
    "kg_links": [
-    "https://adminmrobo.github.io/AI_Model_Review/3-7_sequence_models.html#kg"
+    "https://adminmrobo.github.io/AI_Model_Review/3-1_how_ai_works.html#kg",
+    "https://adminmrobo.github.io/AI_Model_Review/3-2_building_blocks.html#kg",
+    "https://adminmrobo.github.io/AI_Model_Review/3-3_image_cnn.html#kg",
+    "https://adminmrobo.github.io/AI_Model_Review/3-4_speech.html#kg",
+    "https://adminmrobo.github.io/AI_Model_Review/3-5_text.html#kg",
+    "https://adminmrobo.github.io/AI_Model_Review/3-6_timeseries_stock.html#kg",
+    "https://adminmrobo.github.io/AI_Model_Review/3-7_sequence_models.html#kg",
+    "https://adminmrobo.github.io/AI_Model_Review/3-8_attention_transformer.html#kg",
+    "https://adminmrobo.github.io/AI_Model_Review/answers.html#kg",
+    "https://adminmrobo.github.io/AI_Model_Review/index.html#kg"
    ],
-   "export_links": [],
+   "export_links": [
+    "https://adminmrobo.github.io/AI_Model_Review/3-1_how_ai_works.html#export",
+    "https://adminmrobo.github.io/AI_Model_Review/3-2_building_blocks.html#export",
+    "https://adminmrobo.github.io/AI_Model_Review/3-3_image_cnn.html#export",
+    "https://adminmrobo.github.io/AI_Model_Review/3-4_speech.html#export",
+    "https://adminmrobo.github.io/AI_Model_Review/3-5_text.html#export",
+    "https://adminmrobo.github.io/AI_Model_Review/3-6_timeseries_stock.html#export",
+    "https://adminmrobo.github.io/AI_Model_Review/3-7_sequence_models.html#export",
+    "https://adminmrobo.github.io/AI_Model_Review/3-8_attention_transformer.html#export",
+    "https://adminmrobo.github.io/AI_Model_Review/answers.html#export",
+    "https://adminmrobo.github.io/AI_Model_Review/index.html#export"
+   ],
    "files": []
   },
   "i18n": {
@@ -4062,12 +4096,16 @@
   "checked_at": "2026-11-24",
   "site_title": "LLM의 마법 주문서 — Automate Anything (하루판)",
   "ontology": {
-   "status": "none",
-   "pages_with_kg": 0,
+   "status": "full",
+   "pages_with_kg": 1,
    "pages_total": 1,
    "pages_checked": 1,
-   "kg_links": [],
-   "export_links": [],
+   "kg_links": [
+    "https://adminmrobo.github.io/Automate_prompt_lab/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/Automate_prompt_lab/index.html#export"
+   ],
    "files": []
   },
   "i18n": {
@@ -4115,12 +4153,16 @@
   "checked_at": "2026-11-24",
   "site_title": "역전파 연구실 · 실험 노트 — 손잡이 33개를 한 번에 돌리는 법",
   "ontology": {
-   "status": "none",
-   "pages_with_kg": 0,
+   "status": "full",
+   "pages_with_kg": 1,
    "pages_total": 1,
    "pages_checked": 1,
-   "kg_links": [],
-   "export_links": [],
+   "kg_links": [
+    "https://adminmrobo.github.io/backprop_lab/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/backprop_lab/index.html#export"
+   ],
    "files": []
   },
   "i18n": {
@@ -9501,14 +9543,30 @@
   "checked_at": "2026-11-24",
   "site_title": "신경망은 틀리면서 배운다 · 처음 화면",
   "ontology": {
-   "status": "partial",
-   "pages_with_kg": 1,
+   "status": "full",
+   "pages_with_kg": 8,
    "pages_total": 8,
    "pages_checked": 8,
    "kg_links": [
-    "https://adminmrobo.github.io/deep_learning_00_neural_net_learns/6_regions_probability.html#kg"
+    "https://adminmrobo.github.io/deep_learning_00_neural_net_learns/1_perceptron.html#kg",
+    "https://adminmrobo.github.io/deep_learning_00_neural_net_learns/2_activation.html#kg",
+    "https://adminmrobo.github.io/deep_learning_00_neural_net_learns/3_cost_function.html#kg",
+    "https://adminmrobo.github.io/deep_learning_00_neural_net_learns/4_normalization.html#kg",
+    "https://adminmrobo.github.io/deep_learning_00_neural_net_learns/5_lab.html#kg",
+    "https://adminmrobo.github.io/deep_learning_00_neural_net_learns/6_regions_probability.html#kg",
+    "https://adminmrobo.github.io/deep_learning_00_neural_net_learns/answers.html#kg",
+    "https://adminmrobo.github.io/deep_learning_00_neural_net_learns/index.html#kg"
    ],
-   "export_links": [],
+   "export_links": [
+    "https://adminmrobo.github.io/deep_learning_00_neural_net_learns/1_perceptron.html#export",
+    "https://adminmrobo.github.io/deep_learning_00_neural_net_learns/2_activation.html#export",
+    "https://adminmrobo.github.io/deep_learning_00_neural_net_learns/3_cost_function.html#export",
+    "https://adminmrobo.github.io/deep_learning_00_neural_net_learns/4_normalization.html#export",
+    "https://adminmrobo.github.io/deep_learning_00_neural_net_learns/5_lab.html#export",
+    "https://adminmrobo.github.io/deep_learning_00_neural_net_learns/6_regions_probability.html#export",
+    "https://adminmrobo.github.io/deep_learning_00_neural_net_learns/answers.html#export",
+    "https://adminmrobo.github.io/deep_learning_00_neural_net_learns/index.html#export"
+   ],
    "files": []
   },
   "i18n": {
@@ -10679,12 +10737,26 @@
   "checked_at": "2026-11-24",
   "site_title": "Fish Market Data로 쉽게 따라하는 머신러닝 — 초파리 연구실",
   "ontology": {
-   "status": "none",
-   "pages_with_kg": 0,
+   "status": "partial",
+   "pages_with_kg": 6,
    "pages_total": 7,
    "pages_checked": 7,
-   "kg_links": [],
-   "export_links": [],
+   "kg_links": [
+    "https://adminmrobo.github.io/Fish_Market_Data_Machine_Learning/1_classification_models.html#kg",
+    "https://adminmrobo.github.io/Fish_Market_Data_Machine_Learning/2_improve_performance.html#kg",
+    "https://adminmrobo.github.io/Fish_Market_Data_Machine_Learning/3_lab_models.html#kg",
+    "https://adminmrobo.github.io/Fish_Market_Data_Machine_Learning/4_lab_methods.html#kg",
+    "https://adminmrobo.github.io/Fish_Market_Data_Machine_Learning/5_model_animation.html#kg",
+    "https://adminmrobo.github.io/Fish_Market_Data_Machine_Learning/answers.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/Fish_Market_Data_Machine_Learning/1_classification_models.html#export",
+    "https://adminmrobo.github.io/Fish_Market_Data_Machine_Learning/2_improve_performance.html#export",
+    "https://adminmrobo.github.io/Fish_Market_Data_Machine_Learning/3_lab_models.html#export",
+    "https://adminmrobo.github.io/Fish_Market_Data_Machine_Learning/4_lab_methods.html#export",
+    "https://adminmrobo.github.io/Fish_Market_Data_Machine_Learning/5_model_animation.html#export",
+    "https://adminmrobo.github.io/Fish_Market_Data_Machine_Learning/answers.html#export"
+   ],
    "files": []
   },
   "i18n": {
@@ -11353,12 +11425,16 @@
   "checked_at": "2026-11-24",
   "site_title": "중간고사 시뮬레이션 — 생성형 AI의 활용전략",
   "ontology": {
-   "status": "none",
-   "pages_with_kg": 0,
+   "status": "full",
+   "pages_with_kg": 1,
    "pages_total": 1,
    "pages_checked": 1,
-   "kg_links": [],
-   "export_links": [],
+   "kg_links": [
+    "https://adminmrobo.github.io/Gen_AI_Hannam_univ/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/Gen_AI_Hannam_univ/index.html#export"
+   ],
    "files": []
   },
   "i18n": {
@@ -14224,12 +14300,20 @@
   "checked_at": "2026-11-24",
   "site_title": "병목을 찾아라 발표",
   "ontology": {
-   "status": "none",
-   "pages_with_kg": 0,
+   "status": "full",
+   "pages_with_kg": 3,
    "pages_total": 3,
    "pages_checked": 3,
-   "kg_links": [],
-   "export_links": [],
+   "kg_links": [
+    "https://adminmrobo.github.io/inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide/easy_guide.html#kg",
+    "https://adminmrobo.github.io/inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide/gpu_dance_simulator.html#kg",
+    "https://adminmrobo.github.io/inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide/easy_guide.html#export",
+    "https://adminmrobo.github.io/inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide/gpu_dance_simulator.html#export",
+    "https://adminmrobo.github.io/inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide/index.html#export"
+   ],
    "files": []
   },
   "i18n": {
@@ -14469,12 +14553,20 @@
   "checked_at": "2026-11-24",
   "site_title": "Inference Korea 스터디 보드",
   "ontology": {
-   "status": "none",
-   "pages_with_kg": 0,
+   "status": "partial",
+   "pages_with_kg": 3,
    "pages_total": 4,
    "pages_checked": 4,
-   "kg_links": [],
-   "export_links": [],
+   "kg_links": [
+    "https://adminmrobo.github.io/inference_korea_study_page/guide.html#kg",
+    "https://adminmrobo.github.io/inference_korea_study_page/index.html#kg",
+    "https://adminmrobo.github.io/inference_korea_study_page/topic.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/inference_korea_study_page/guide.html#export",
+    "https://adminmrobo.github.io/inference_korea_study_page/index.html#export",
+    "https://adminmrobo.github.io/inference_korea_study_page/topic.html#export"
+   ],
    "files": []
   },
   "i18n": {
@@ -14549,12 +14641,30 @@
   "checked_at": "2026-11-24",
   "site_title": "AI(인공지능) x 비즈니스 #1 인슈어테크_01_분류모델",
   "ontology": {
-   "status": "none",
-   "pages_with_kg": 0,
+   "status": "full",
+   "pages_with_kg": 8,
    "pages_total": 8,
    "pages_checked": 8,
-   "kg_links": [],
-   "export_links": [],
+   "kg_links": [
+    "https://adminmrobo.github.io/insurtech__case_classification_model_01/1_claim_question.html#kg",
+    "https://adminmrobo.github.io/insurtech__case_classification_model_01/2_data_cleaning.html#kg",
+    "https://adminmrobo.github.io/insurtech__case_classification_model_01/3_five_models.html#kg",
+    "https://adminmrobo.github.io/insurtech__case_classification_model_01/4_threshold_lab.html#kg",
+    "https://adminmrobo.github.io/insurtech__case_classification_model_01/5_surrogate_tree.html#kg",
+    "https://adminmrobo.github.io/insurtech__case_classification_model_01/6_judge_app.html#kg",
+    "https://adminmrobo.github.io/insurtech__case_classification_model_01/answers.html#kg",
+    "https://adminmrobo.github.io/insurtech__case_classification_model_01/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/insurtech__case_classification_model_01/1_claim_question.html#export",
+    "https://adminmrobo.github.io/insurtech__case_classification_model_01/2_data_cleaning.html#export",
+    "https://adminmrobo.github.io/insurtech__case_classification_model_01/3_five_models.html#export",
+    "https://adminmrobo.github.io/insurtech__case_classification_model_01/4_threshold_lab.html#export",
+    "https://adminmrobo.github.io/insurtech__case_classification_model_01/5_surrogate_tree.html#export",
+    "https://adminmrobo.github.io/insurtech__case_classification_model_01/6_judge_app.html#export",
+    "https://adminmrobo.github.io/insurtech__case_classification_model_01/answers.html#export",
+    "https://adminmrobo.github.io/insurtech__case_classification_model_01/index.html#export"
+   ],
    "files": []
   },
   "i18n": {
@@ -14614,13 +14724,27 @@
   "checked_at": "2026-11-24",
   "site_title": "AI(인공지능) x 비즈니스 #1 인슈어테크_02_분류모델_실전",
   "ontology": {
-   "status": "none",
-   "pages_with_kg": 0,
+   "status": "full",
+   "pages_with_kg": 7,
    "pages_total": 7,
    "pages_checked": 7,
-   "kg_links": [],
+   "kg_links": [
+    "https://adminmrobo.github.io/insurtech__case_classification_model_02/1_kfold_cv.html#kg",
+    "https://adminmrobo.github.io/insurtech__case_classification_model_02/2_conditional_accuracy.html#kg",
+    "https://adminmrobo.github.io/insurtech__case_classification_model_02/3_problems_fixes.html#kg",
+    "https://adminmrobo.github.io/insurtech__case_classification_model_02/4_html_deploy.html#kg",
+    "https://adminmrobo.github.io/insurtech__case_classification_model_02/5_similar_cases.html#kg",
+    "https://adminmrobo.github.io/insurtech__case_classification_model_02/answers.html#kg",
+    "https://adminmrobo.github.io/insurtech__case_classification_model_02/index.html#kg"
+   ],
    "export_links": [
-    "https://adminmrobo.github.io/insurtech__case_classification_model_02/4_html_deploy.html#export"
+    "https://adminmrobo.github.io/insurtech__case_classification_model_02/1_kfold_cv.html#export",
+    "https://adminmrobo.github.io/insurtech__case_classification_model_02/2_conditional_accuracy.html#export",
+    "https://adminmrobo.github.io/insurtech__case_classification_model_02/3_problems_fixes.html#export",
+    "https://adminmrobo.github.io/insurtech__case_classification_model_02/4_html_deploy.html#export",
+    "https://adminmrobo.github.io/insurtech__case_classification_model_02/5_similar_cases.html#export",
+    "https://adminmrobo.github.io/insurtech__case_classification_model_02/answers.html#export",
+    "https://adminmrobo.github.io/insurtech__case_classification_model_02/index.html#export"
    ],
    "files": []
   },
@@ -14682,12 +14806,28 @@
   "checked_at": "2026-11-24",
   "site_title": "인슈어테크 #3 | 처음 화면",
   "ontology": {
-   "status": "none",
-   "pages_with_kg": 0,
+   "status": "partial",
+   "pages_with_kg": 7,
    "pages_total": 8,
    "pages_checked": 8,
-   "kg_links": [],
-   "export_links": [],
+   "kg_links": [
+    "https://adminmrobo.github.io/insurtech__case_regreesion_model_01/1_charges_question.html#kg",
+    "https://adminmrobo.github.io/insurtech__case_regreesion_model_01/2_data_cleaning.html#kg",
+    "https://adminmrobo.github.io/insurtech__case_regreesion_model_01/3_five_models.html#kg",
+    "https://adminmrobo.github.io/insurtech__case_regreesion_model_01/4_margin_lab.html#kg",
+    "https://adminmrobo.github.io/insurtech__case_regreesion_model_01/5_surrogate_tree.html#kg",
+    "https://adminmrobo.github.io/insurtech__case_regreesion_model_01/6_quote_app.html#kg",
+    "https://adminmrobo.github.io/insurtech__case_regreesion_model_01/answers.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/insurtech__case_regreesion_model_01/1_charges_question.html#export",
+    "https://adminmrobo.github.io/insurtech__case_regreesion_model_01/2_data_cleaning.html#export",
+    "https://adminmrobo.github.io/insurtech__case_regreesion_model_01/3_five_models.html#export",
+    "https://adminmrobo.github.io/insurtech__case_regreesion_model_01/4_margin_lab.html#export",
+    "https://adminmrobo.github.io/insurtech__case_regreesion_model_01/5_surrogate_tree.html#export",
+    "https://adminmrobo.github.io/insurtech__case_regreesion_model_01/6_quote_app.html#export",
+    "https://adminmrobo.github.io/insurtech__case_regreesion_model_01/answers.html#export"
+   ],
    "files": []
   },
   "i18n": {
@@ -14747,13 +14887,27 @@
   "checked_at": "2026-11-24",
   "site_title": "인슈어테크 #4 실전 | 처음 화면",
   "ontology": {
-   "status": "none",
-   "pages_with_kg": 0,
+   "status": "full",
+   "pages_with_kg": 7,
    "pages_total": 7,
    "pages_checked": 7,
-   "kg_links": [],
+   "kg_links": [
+    "https://adminmrobo.github.io/insurtech__case_regreesion_model_02/1_kfold_cv.html#kg",
+    "https://adminmrobo.github.io/insurtech__case_regreesion_model_02/2_group_errors.html#kg",
+    "https://adminmrobo.github.io/insurtech__case_regreesion_model_02/3_problems_fixes.html#kg",
+    "https://adminmrobo.github.io/insurtech__case_regreesion_model_02/4_html_deploy.html#kg",
+    "https://adminmrobo.github.io/insurtech__case_regreesion_model_02/5_similar_cases.html#kg",
+    "https://adminmrobo.github.io/insurtech__case_regreesion_model_02/answers.html#kg",
+    "https://adminmrobo.github.io/insurtech__case_regreesion_model_02/index.html#kg"
+   ],
    "export_links": [
-    "https://adminmrobo.github.io/insurtech__case_regreesion_model_02/4_html_deploy.html#export"
+    "https://adminmrobo.github.io/insurtech__case_regreesion_model_02/1_kfold_cv.html#export",
+    "https://adminmrobo.github.io/insurtech__case_regreesion_model_02/2_group_errors.html#export",
+    "https://adminmrobo.github.io/insurtech__case_regreesion_model_02/3_problems_fixes.html#export",
+    "https://adminmrobo.github.io/insurtech__case_regreesion_model_02/4_html_deploy.html#export",
+    "https://adminmrobo.github.io/insurtech__case_regreesion_model_02/5_similar_cases.html#export",
+    "https://adminmrobo.github.io/insurtech__case_regreesion_model_02/answers.html#export",
+    "https://adminmrobo.github.io/insurtech__case_regreesion_model_02/index.html#export"
    ],
    "files": []
   },
@@ -15039,12 +15193,16 @@
   "checked_at": "2026-11-24",
   "site_title": "보면서 배우는 pandas",
   "ontology": {
-   "status": "none",
-   "pages_with_kg": 0,
+   "status": "full",
+   "pages_with_kg": 1,
    "pages_total": 1,
    "pages_checked": 1,
-   "kg_links": [],
-   "export_links": [],
+   "kg_links": [
+    "https://adminmrobo.github.io/learn-pandas-visually_korean/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/learn-pandas-visually_korean/index.html#export"
+   ],
    "files": []
   },
   "i18n": {
@@ -15154,12 +15312,22 @@
   "checked_at": "2026-11-24",
   "site_title": "쉽게 따라 해 보면서 배우는 파이썬 - 쉽게 따라 해 보면서 배우는 파이썬",
   "ontology": {
-   "status": "none",
-   "pages_with_kg": 0,
+   "status": "partial",
+   "pages_with_kg": 4,
    "pages_total": 53,
-   "pages_checked": 40,
-   "kg_links": [],
-   "export_links": [],
+   "pages_checked": 53,
+   "kg_links": [
+    "https://adminmrobo.github.io/learn-python-by-doing_Korean/ep2/03-mean-or-sum/index.html#kg",
+    "https://adminmrobo.github.io/learn-python-by-doing_Korean/ep3/05-weekend-ffill/index.html#kg",
+    "https://adminmrobo.github.io/learn-python-by-doing_Korean/ep3/06-weighted-rate/index.html#kg",
+    "https://adminmrobo.github.io/learn-python-by-doing_Korean/ep3/07-rate-vs-orders/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/learn-python-by-doing_Korean/ep2/03-mean-or-sum/index.html#export",
+    "https://adminmrobo.github.io/learn-python-by-doing_Korean/ep3/05-weekend-ffill/index.html#export",
+    "https://adminmrobo.github.io/learn-python-by-doing_Korean/ep3/06-weighted-rate/index.html#export",
+    "https://adminmrobo.github.io/learn-python-by-doing_Korean/ep3/07-rate-vs-orders/index.html#export"
+   ],
    "files": []
   },
   "i18n": {
@@ -15877,12 +16045,16 @@
   "checked_at": "2026-11-24",
   "site_title": "머신러닝 연구소 — 3D로 설명하는 머신러닝",
   "ontology": {
-   "status": "none",
-   "pages_with_kg": 0,
+   "status": "partial",
+   "pages_with_kg": 1,
    "pages_total": 3,
    "pages_checked": 3,
-   "kg_links": [],
-   "export_links": [],
+   "kg_links": [
+    "https://adminmrobo.github.io/machine_learning_in_3d/guide.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/machine_learning_in_3d/guide.html#export"
+   ],
    "files": []
   },
   "i18n": {
@@ -15929,12 +16101,18 @@
   "checked_at": "2026-11-24",
   "site_title": "머신러닝 모델 도감 · 엣센스",
   "ontology": {
-   "status": "none",
-   "pages_with_kg": 0,
+   "status": "full",
+   "pages_with_kg": 2,
    "pages_total": 2,
    "pages_checked": 2,
-   "kg_links": [],
-   "export_links": [],
+   "kg_links": [
+    "https://adminmrobo.github.io/machine_learning_model_atlas/criteria.html#kg",
+    "https://adminmrobo.github.io/machine_learning_model_atlas/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/machine_learning_model_atlas/criteria.html#export",
+    "https://adminmrobo.github.io/machine_learning_model_atlas/index.html#export"
+   ],
    "files": []
   },
   "i18n": {
@@ -17448,12 +17626,26 @@
   "checked_at": "2026-11-24",
   "site_title": "인공지능 알고리즘 패밀리 조직도 — 목차",
   "ontology": {
-   "status": "none",
-   "pages_with_kg": 0,
+   "status": "partial",
+   "pages_with_kg": 6,
    "pages_total": 8,
    "pages_checked": 8,
-   "kg_links": [],
-   "export_links": [],
+   "kg_links": [
+    "https://adminmrobo.github.io/ML_00_Algorithm-family-build_01/4-1_ml_family_map.html#kg",
+    "https://adminmrobo.github.io/ML_00_Algorithm-family-build_01/4-2_supervised.html#kg",
+    "https://adminmrobo.github.io/ML_00_Algorithm-family-build_01/4-3_unsupervised.html#kg",
+    "https://adminmrobo.github.io/ML_00_Algorithm-family-build_01/4-4_reinforcement.html#kg",
+    "https://adminmrobo.github.io/ML_00_Algorithm-family-build_01/4-5_ensemble.html#kg",
+    "https://adminmrobo.github.io/ML_00_Algorithm-family-build_01/4-A_learning_methods.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/ML_00_Algorithm-family-build_01/4-1_ml_family_map.html#export",
+    "https://adminmrobo.github.io/ML_00_Algorithm-family-build_01/4-2_supervised.html#export",
+    "https://adminmrobo.github.io/ML_00_Algorithm-family-build_01/4-3_unsupervised.html#export",
+    "https://adminmrobo.github.io/ML_00_Algorithm-family-build_01/4-4_reinforcement.html#export",
+    "https://adminmrobo.github.io/ML_00_Algorithm-family-build_01/4-5_ensemble.html#export",
+    "https://adminmrobo.github.io/ML_00_Algorithm-family-build_01/4-A_learning_methods.html#export"
+   ],
    "files": []
   },
   "i18n": {
@@ -17579,12 +17771,24 @@
   "checked_at": "2026-11-24",
   "site_title": "인공지능 알고리즘 패밀리 조직도 — 목차",
   "ontology": {
-   "status": "none",
-   "pages_with_kg": 0,
+   "status": "partial",
+   "pages_with_kg": 5,
    "pages_total": 7,
    "pages_checked": 7,
-   "kg_links": [],
-   "export_links": [],
+   "kg_links": [
+    "https://adminmrobo.github.io/ML_00_Algorithm-family-build_02/4-10_ensemble_lineage.html#kg",
+    "https://adminmrobo.github.io/ML_00_Algorithm-family-build_02/4-6_regression_seven.html#kg",
+    "https://adminmrobo.github.io/ML_00_Algorithm-family-build_02/4-7_classification_eight.html#kg",
+    "https://adminmrobo.github.io/ML_00_Algorithm-family-build_02/4-8_unsupervised_nine.html#kg",
+    "https://adminmrobo.github.io/ML_00_Algorithm-family-build_02/4-9_rl_three.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/ML_00_Algorithm-family-build_02/4-10_ensemble_lineage.html#export",
+    "https://adminmrobo.github.io/ML_00_Algorithm-family-build_02/4-6_regression_seven.html#export",
+    "https://adminmrobo.github.io/ML_00_Algorithm-family-build_02/4-7_classification_eight.html#export",
+    "https://adminmrobo.github.io/ML_00_Algorithm-family-build_02/4-8_unsupervised_nine.html#export",
+    "https://adminmrobo.github.io/ML_00_Algorithm-family-build_02/4-9_rl_three.html#export"
+   ],
    "files": []
   },
   "i18n": {
@@ -17716,12 +17920,24 @@
   "checked_at": "2026-11-24",
   "site_title": "인공지능 알고리즘 패밀리 조직도 — 목차",
   "ontology": {
-   "status": "none",
-   "pages_with_kg": 0,
+   "status": "partial",
+   "pages_with_kg": 5,
    "pages_total": 7,
    "pages_checked": 7,
-   "kg_links": [],
-   "export_links": [],
+   "kg_links": [
+    "https://adminmrobo.github.io/ML_00_Algorithm-family-build_03/4-11_fair_rules.html#kg",
+    "https://adminmrobo.github.io/ML_00_Algorithm-family-build_03/4-12_supervised_metrics.html#kg",
+    "https://adminmrobo.github.io/ML_00_Algorithm-family-build_03/4-13_unsupervised_metrics.html#kg",
+    "https://adminmrobo.github.io/ML_00_Algorithm-family-build_03/4-14_rl_metrics.html#kg",
+    "https://adminmrobo.github.io/ML_00_Algorithm-family-build_03/4-15_final_and_choice.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/ML_00_Algorithm-family-build_03/4-11_fair_rules.html#export",
+    "https://adminmrobo.github.io/ML_00_Algorithm-family-build_03/4-12_supervised_metrics.html#export",
+    "https://adminmrobo.github.io/ML_00_Algorithm-family-build_03/4-13_unsupervised_metrics.html#export",
+    "https://adminmrobo.github.io/ML_00_Algorithm-family-build_03/4-14_rl_metrics.html#export",
+    "https://adminmrobo.github.io/ML_00_Algorithm-family-build_03/4-15_final_and_choice.html#export"
+   ],
    "files": []
   },
   "i18n": {
@@ -17854,12 +18070,82 @@
   "checked_at": "2026-11-24",
   "site_title": "5-0 채용 공고 — 판단을 데이터로 | 모델 채용 위원회",
   "ontology": {
-   "status": "none",
-   "pages_with_kg": 0,
-   "pages_total": 60,
-   "pages_checked": 33,
-   "kg_links": [],
-   "export_links": [],
+   "status": "full",
+   "pages_with_kg": 34,
+   "pages_total": 34,
+   "pages_checked": 34,
+   "kg_links": [
+    "https://adminmrobo.github.io/ML_model_hiring_committee/5-0_job_posting.html#kg",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/5-10_kmeans.html#kg",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/5-11_hierarchical.html#kg",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/5-12_dbscan.html#kg",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/5-13_gmm.html#kg",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/5-14_pca.html#kg",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/5-15_tsne_umap.html#kg",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/5-1_knn.html#kg",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/5-2_linear_regression.html#kg",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/5-3_polynomial_regularization.html#kg",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/5-4_logistic_regression.html#kg",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/5-5_naive_bayes.html#kg",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/5-6_decision_tree.html#kg",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/5-7_random_forest.html#kg",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/5-8_svm.html#kg",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/5-9_gbm.html#kg",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/index.html#kg",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/site/5-0_job_posting.html#kg",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/site/5-10_kmeans.html#kg",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/site/5-11_hierarchical.html#kg",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/site/5-12_dbscan.html#kg",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/site/5-13_gmm.html#kg",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/site/5-14_pca.html#kg",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/site/5-15_tsne_umap.html#kg",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/site/5-1_knn.html#kg",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/site/5-2_linear_regression.html#kg",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/site/5-3_polynomial_regularization.html#kg",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/site/5-4_logistic_regression.html#kg",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/site/5-5_naive_bayes.html#kg",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/site/5-6_decision_tree.html#kg",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/site/5-7_random_forest.html#kg",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/site/5-8_svm.html#kg",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/site/5-9_gbm.html#kg",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/site/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/ML_model_hiring_committee/5-0_job_posting.html#export",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/5-10_kmeans.html#export",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/5-11_hierarchical.html#export",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/5-12_dbscan.html#export",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/5-13_gmm.html#export",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/5-14_pca.html#export",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/5-15_tsne_umap.html#export",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/5-1_knn.html#export",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/5-2_linear_regression.html#export",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/5-3_polynomial_regularization.html#export",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/5-4_logistic_regression.html#export",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/5-5_naive_bayes.html#export",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/5-6_decision_tree.html#export",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/5-7_random_forest.html#export",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/5-8_svm.html#export",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/5-9_gbm.html#export",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/index.html#export",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/site/5-0_job_posting.html#export",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/site/5-10_kmeans.html#export",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/site/5-11_hierarchical.html#export",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/site/5-12_dbscan.html#export",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/site/5-13_gmm.html#export",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/site/5-14_pca.html#export",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/site/5-15_tsne_umap.html#export",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/site/5-1_knn.html#export",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/site/5-2_linear_regression.html#export",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/site/5-3_polynomial_regularization.html#export",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/site/5-4_logistic_regression.html#export",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/site/5-5_naive_bayes.html#export",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/site/5-6_decision_tree.html#export",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/site/5-7_random_forest.html#export",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/site/5-8_svm.html#export",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/site/5-9_gbm.html#export",
+    "https://adminmrobo.github.io/ML_model_hiring_committee/site/index.html#export"
+   ],
    "files": []
   },
   "i18n": {
@@ -17994,12 +18280,26 @@
   "checked_at": "2026-11-24",
   "site_title": "AI는 동작을 어떻게 알아보고 만들까? — 긴급 미션 다섯 개",
   "ontology": {
-   "status": "none",
-   "pages_with_kg": 0,
+   "status": "full",
+   "pages_with_kg": 6,
    "pages_total": 6,
    "pages_checked": 6,
-   "kg_links": [],
-   "export_links": [],
+   "kg_links": [
+    "https://adminmrobo.github.io/motion_ai_series_01/5-1_cctv_litter.html#kg",
+    "https://adminmrobo.github.io/motion_ai_series_01/5-2_recognize_to_generate.html#kg",
+    "https://adminmrobo.github.io/motion_ai_series_01/5-3_encoder_decoder.html#kg",
+    "https://adminmrobo.github.io/motion_ai_series_01/5-4_text_to_motion.html#kg",
+    "https://adminmrobo.github.io/motion_ai_series_01/5-5_prompt_to_dance.html#kg",
+    "https://adminmrobo.github.io/motion_ai_series_01/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/motion_ai_series_01/5-1_cctv_litter.html#export",
+    "https://adminmrobo.github.io/motion_ai_series_01/5-2_recognize_to_generate.html#export",
+    "https://adminmrobo.github.io/motion_ai_series_01/5-3_encoder_decoder.html#export",
+    "https://adminmrobo.github.io/motion_ai_series_01/5-4_text_to_motion.html#export",
+    "https://adminmrobo.github.io/motion_ai_series_01/5-5_prompt_to_dance.html#export",
+    "https://adminmrobo.github.io/motion_ai_series_01/index.html#export"
+   ],
    "files": []
   },
   "i18n": {
@@ -21072,12 +21372,18 @@
   "checked_at": "2026-11-24",
   "site_title": "확률분포 딕셔너리와 분포표 연구실",
   "ontology": {
-   "status": "none",
-   "pages_with_kg": 0,
+   "status": "partial",
+   "pages_with_kg": 2,
    "pages_total": 3,
    "pages_checked": 3,
-   "kg_links": [],
-   "export_links": [],
+   "kg_links": [
+    "https://adminmrobo.github.io/probability_distribution_dictionary/dictionary.html#kg",
+    "https://adminmrobo.github.io/probability_distribution_dictionary/tables.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/probability_distribution_dictionary/dictionary.html#export",
+    "https://adminmrobo.github.io/probability_distribution_dictionary/tables.html#export"
+   ],
    "files": []
   },
   "i18n": {
@@ -22517,7 +22823,9 @@
    "kg_links": [
     "https://adminmrobo.github.io/riemann_hypothesis_lab/briefing.html#kg"
    ],
-   "export_links": [],
+   "export_links": [
+    "https://adminmrobo.github.io/riemann_hypothesis_lab/briefing.html#export"
+   ],
    "files": []
   },
   "i18n": {
@@ -22789,12 +23097,16 @@
   "checked_at": "2026-11-24",
   "site_title": "스마트 팩토리 World",
   "ontology": {
-   "status": "none",
-   "pages_with_kg": 0,
+   "status": "partial",
+   "pages_with_kg": 1,
    "pages_total": 4,
    "pages_checked": 4,
-   "kg_links": [],
-   "export_links": [],
+   "kg_links": [
+    "https://adminmrobo.github.io/smart_factory_world/cement/factory/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/smart_factory_world/cement/factory/index.html#export"
+   ],
    "files": []
   },
   "i18n": {
@@ -26595,15 +26907,20 @@
   "checked_at": "2026-11-24",
   "site_title": "벡터 분석 랩 — 네 개의 자로 읽는 화살표",
   "ontology": {
-   "status": "partial",
-   "pages_with_kg": 4,
+   "status": "full",
+   "pages_with_kg": 9,
    "pages_total": 9,
    "pages_checked": 9,
    "kg_links": [
     "https://adminmrobo.github.io/vector_analysis_lab/00_orientation.html#kg",
     "https://adminmrobo.github.io/vector_analysis_lab/01_everyday.html#kg",
     "https://adminmrobo.github.io/vector_analysis_lab/02_economy.html#kg",
-    "https://adminmrobo.github.io/vector_analysis_lab/03_ai_ml.html#kg"
+    "https://adminmrobo.github.io/vector_analysis_lab/03_ai_ml.html#kg",
+    "https://adminmrobo.github.io/vector_analysis_lab/dash_00.html#kg",
+    "https://adminmrobo.github.io/vector_analysis_lab/dash_01.html#kg",
+    "https://adminmrobo.github.io/vector_analysis_lab/dash_02.html#kg",
+    "https://adminmrobo.github.io/vector_analysis_lab/dash_03.html#kg",
+    "https://adminmrobo.github.io/vector_analysis_lab/index.html#kg"
    ],
    "export_links": [
     "https://adminmrobo.github.io/vector_analysis_lab/00_orientation.html#export",

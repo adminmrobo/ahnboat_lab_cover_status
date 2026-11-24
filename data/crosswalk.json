@@ -1,20 +1,7 @@
 {
 "note": "뼈대 주제와 이름이 맞는 노드(자동 후보). 사람이 보고 맞는 것만 해설 페이지 kg-raw에 broader로 옮긴다(ai-lab-retrofit 15-2).",
-"count": 89,
+"count": 75,
 "items": [
-{
-"node": "lab:concept/anomaly-detection",
-"ko": "이상 탐지",
-"topics": [
-"lab:topic/anomaly-detection"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"Anomaly_detection_tatics/index.html",
-"my_article_04_adversarial_finance_attack/01_adversarial_finance.html"
-]
-},
 {
 "node": "lab:concept/autoregressive",
 "ko": "자기회귀 생성",
@@ -26,20 +13,6 @@
 "pages": [
 "inference_engineering_study/01_transformer.html",
 "inference_engineering_study/index.html"
-]
-},
-{
-"node": "lab:concept/bayes-theorem",
-"ko": "베이즈 정리",
-"topics": [
-"lab:topic/bayes-theorem"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"agent_secret_leak_lab/01_settings_leak_probability.html",
-"agentic_ai_crash_guide/index.html",
-"defense_for_ai_lab/index.html"
 ]
 },
 {
@@ -69,18 +42,6 @@
 ]
 },
 {
-"node": "lab:concept/bootstrap",
-"ko": "부트스트랩",
-"topics": [
-"lab:topic/bootstrap"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"fish_market_learning_epoch_etc/05_many_shooters.html"
-]
-},
-{
 "node": "lab:concept/classification",
 "ko": "분류",
 "topics": [
@@ -89,7 +50,9 @@
 "auto": true,
 "confidence": "low",
 "pages": [
-"AI_for_cement_produce/cement_quality.html"
+"AI_for_cement_produce/cement_quality.html",
+"ML_00_Algorithm-family-build_01/4-1_ml_family_map.html",
+"ML_00_Algorithm-family-build_01/4-2_supervised.html"
 ]
 },
 {
@@ -105,6 +68,20 @@
 ]
 },
 {
+"node": "lab:concept/compensation",
+"ko": "보상",
+"topics": [
+"lab:topic/reward"
+],
+"auto": true,
+"confidence": "mid",
+"pages": [
+"insurtech__case_classification_model_01/1_claim_question.html",
+"insurtech__case_classification_model_01/4_threshold_lab.html",
+"insurtech__case_classification_model_01/6_judge_app.html"
+]
+},
+{
 "node": "lab:concept/connectedness",
 "ko": "연결과 분리",
 "topics": [
@@ -114,43 +91,6 @@
 "confidence": "low",
 "pages": [
 "topology_ai_lab/03_connectedness.html"
-]
-},
-{
-"node": "lab:concept/cross-validation",
-"ko": "교차검증",
-"topics": [
-"lab:topic/cross-validation"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"industrial-accident-prediction/ch5_imbalance.html",
-"LLM_evaluation/llm_evaluation.html"
-]
-},
-{
-"node": "lab:concept/data-augmentation",
-"ko": "데이터 증강",
-"topics": [
-"lab:topic/data-augmentation"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"how_to_make_ai_model_factory_version/testlab.html"
-]
-},
-{
-"node": "lab:concept/decision-tree",
-"ko": "의사결정나무",
-"topics": [
-"lab:topic/decision-tree"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"industrial-accident-prediction/ch3_models.html"
 ]
 },
 {
@@ -176,18 +116,6 @@
 "confidence": "low",
 "pages": [
 "micro_economics/20_asset_markets.html"
-]
-},
-{
-"node": "lab:concept/exploration-exploitation",
-"ko": "탐험과 활용",
-"topics": [
-"lab:topic/exploration"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"Reinforcement-Learning-lab_project_01/ch9_general.html"
 ]
 },
 {
@@ -291,18 +219,6 @@
 ]
 },
 {
-"node": "lab:concept/precision-recall",
-"ko": "정밀도와 재현율",
-"topics": [
-"lab:topic/precision-recall"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"llm_memory_trilogy/3_1_what_to_remember.html"
-]
-},
-{
 "node": "lab:concept/principal-component",
 "ko": "주성분",
 "topics": [
@@ -312,6 +228,7 @@
 "confidence": "low",
 "pages": [
 "ai_rendering/1-3_faces_on_a_map.html",
+"motion_ai_series_01/5-3_encoder_decoder.html",
 "what_is_tensor/02_tensor_map.html"
 ]
 },
@@ -325,18 +242,6 @@
 "confidence": "low",
 "pages": [
 "data_to_numbers_lab/01_why_numbers.html"
-]
-},
-{
-"node": "lab:concept/random-forest",
-"ko": "랜덤 포레스트",
-"topics": [
-"lab:topic/random-forest"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"industrial-accident-prediction/ch5_imbalance.html"
 ]
 },
 {
@@ -463,20 +368,8 @@
 "confidence": "low",
 "pages": [
 "AI_Model_Review_Fruit_fly_special/1_fruitfly_brain_deep_learning.html",
-"how_to_make_ai_model_factory_version/classifier.html",
-"how_to_make_ai_model_factory_version/regression.html"
-]
-},
-{
-"node": "lab:concept/weight-and-bias",
-"ko": "가중치와 편향",
-"topics": [
-"lab:topic/weights-and-biases"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"one_day_deep_learning/index.html"
+"Fish_Market_Data_Machine_Learning/2_improve_performance.html",
+"how_to_make_ai_model_factory_version/classifier.html"
 ]
 },
 {
@@ -603,19 +496,6 @@
 ]
 },
 {
-"node": "lab:method/kv-cache",
-"ko": "KV 캐시",
-"topics": [
-"lab:topic/kv-cache"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"inference_engineering_study/02_models.html",
-"inference_engineering_study/index.html"
-]
-},
-{
 "node": "lab:method/llm-as-a-judge",
 "ko": "LLM 심판",
 "topics": [
@@ -715,18 +595,6 @@
 ]
 },
 {
-"node": "lab:method/normalization",
-"ko": "정규화",
-"topics": [
-"lab:topic/normalization-db"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"ai-nlp-data-analysis/02-1_analysis_process.html"
-]
-},
-{
 "node": "lab:method/regularization",
 "ko": "정규화",
 "topics": [
@@ -735,8 +603,9 @@
 "auto": true,
 "confidence": "low",
 "pages": [
-"fintech_data_analysis/07_model_evaluation.html",
-"math_for_ai_lab/part3.html"
+"AI_Model_Review/3-6_timeseries_stock.html",
+"deep_learning_00_neural_net_learns/1_perceptron.html",
+"deep_learning_00_neural_net_learns/4_normalization.html"
 ]
 },
 {
@@ -751,20 +620,6 @@
 "ai_text_read_ability/07_ai_text_readability.html",
 "neuralink_animal_brain_ai/4_neuralink_animal_brain_ai.html",
 "rulebase_to_agent/1-8_rlhf.html"
-]
-},
-{
-"node": "lab:method/self-attention",
-"ko": "셀프 어텐션",
-"topics": [
-"lab:topic/self-attention"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"ai-nlp-data-analysis/08-3_transformer.html",
-"inference_engineering_study/01_transformer.html",
-"inference_engineering_study/index.html"
 ]
 },
 {
@@ -803,20 +658,6 @@
 "confidence": "mid",
 "pages": [
 "fish_market_learning_epoch_etc/05_many_shooters.html"
-]
-},
-{
-"node": "lab:method/tokenization",
-"ko": "토큰화",
-"topics": [
-"lab:topic/tokenization"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"ai-nlp-data-analysis/02-1_analysis_process.html",
-"ai-nlp-data-analysis/03-1_morpheme_overview.html",
-"ai-nlp-data-analysis/05_midterm_review.html"
 ]
 },
 {
@@ -1052,18 +893,6 @@
 "confidence": "mid",
 "pages": [
 "bayesian-statistics-for-data-scientists/10_nlp_bayes.html"
-]
-},
-{
-"node": "lab:term/transformer",
-"ko": "트랜스포머",
-"topics": [
-"lab:topic/transformer"
-],
-"auto": true,
-"confidence": "mid",
-"pages": [
-"ai-nlp-data-analysis/02-3_models_methods.html"
 ]
 },
 {
