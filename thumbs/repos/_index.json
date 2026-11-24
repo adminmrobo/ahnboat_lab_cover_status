@@ -1,8 +1,8 @@
 {
  "adminmrobo-structure_first_drawing_lab": {
   "src": "manifest:assets/img/cover_index.webp",
-  "pushed_at": "2026-11-23T00:39:31Z",
-  "made": "2026-11-23"
+  "pushed_at": "2026-11-23T23:30:37Z",
+  "made": "2026-11-24"
  },
  "agent_secret_leak_lab": {
   "src": null,
@@ -24,7 +24,7 @@
  },
  "ahnboat_lab_explainer": {
   "src": null,
-  "pushed_at": "2026-11-23T08:48:02Z"
+  "pushed_at": "2026-11-23T23:31:05Z"
  },
  "ahnboat_lab_gallery": {
   "src": null,
@@ -130,29 +130,29 @@
  },
  "basic_economic_lab": {
   "src": "name:assets/og/cover_01.jpg",
-  "pushed_at": "2026-11-23T07:30:26Z",
-  "made": "2026-11-23"
+  "pushed_at": "2026-11-23T23:25:25Z",
+  "made": "2026-11-24"
  },
  "bayesian-statistics-for-data-scientists": {
   "src": "name:assets/og/cover_00.jpg",
-  "pushed_at": "2026-11-20T13:01:19Z",
-  "made": "2026-11-21"
+  "pushed_at": "2026-11-23T23:27:27Z",
+  "made": "2026-11-24"
  },
  "blockchain_finance_ch01": {
   "src": null,
-  "pushed_at": "2026-11-05T11:16:46Z"
+  "pushed_at": "2026-11-23T23:30:17Z"
  },
  "blockchain_finance_ch02": {
   "src": null,
-  "pushed_at": "2026-11-05T11:16:50Z"
+  "pushed_at": "2026-11-23T23:30:19Z"
  },
  "blockchain_finance_ch03": {
   "src": null,
-  "pushed_at": "2026-11-05T11:16:53Z"
+  "pushed_at": "2026-11-23T23:30:20Z"
  },
  "cashflow-lab": {
   "src": null,
-  "pushed_at": "2026-11-06T04:32:07Z"
+  "pushed_at": "2026-11-23T23:30:28Z"
  },
  "catch_phishing": {
   "src": "manifest:img/cover_00.webp",
@@ -166,18 +166,18 @@
  },
  "covariant_chase_lab": {
   "src": "manifest:assets/img/cover_01.webp",
-  "pushed_at": "2026-11-23T07:30:51Z",
-  "made": "2026-11-23"
+  "pushed_at": "2026-11-23T23:25:33Z",
+  "made": "2026-11-24"
  },
  "data_base_design": {
   "src": "manifest:assets/img/cover_index.webp",
-  "pushed_at": "2026-11-23T07:30:28Z",
-  "made": "2026-11-23"
+  "pushed_at": "2026-11-23T23:27:39Z",
+  "made": "2026-11-24"
  },
  "data_science_for_business": {
   "src": "manifest:index.html#cover_index",
-  "pushed_at": "2026-11-23T07:31:03Z",
-  "made": "2026-11-23"
+  "pushed_at": "2026-11-23T23:30:31Z",
+  "made": "2026-11-24"
  },
  "data_set_2024_fintech": {
   "src": null,
@@ -185,12 +185,12 @@
  },
  "data_to_numbers_lab": {
   "src": "manifest:img/cover_index.webp",
-  "pushed_at": "2026-11-23T07:30:46Z",
-  "made": "2026-11-23"
+  "pushed_at": "2026-11-23T23:27:41Z",
+  "made": "2026-11-24"
  },
  "data_visualization_lab": {
   "src": "name:images/cover_alt_book.webp",
-  "pushed_at": "2026-11-23T21:05:48Z",
+  "pushed_at": "2026-11-24T00:09:02Z",
   "made": "2026-11-24"
  },
  "Data_visuialization_lecture_01": {
@@ -234,12 +234,12 @@
  },
  "drawing_lab_01": {
   "src": "name:assets/img/cover_01.webp",
-  "pushed_at": "2026-11-23T03:42:03Z",
-  "made": "2026-11-23"
+  "pushed_at": "2026-11-23T23:30:43Z",
+  "made": "2026-11-24"
  },
  "drawing_lab_02": {
   "src": "name:assets/img/cover_01.webp",
-  "pushed_at": "2026-11-23T21:05:17Z",
+  "pushed_at": "2026-11-23T23:30:44Z",
   "made": "2026-11-24"
  },
  "drug-crime-social-cost": {
@@ -252,8 +252,8 @@
  },
  "euclidean_space_lab": {
   "src": "manifest:assets/og/og_index.jpg",
-  "pushed_at": "2026-11-21T15:43:18Z",
-  "made": "2026-11-22"
+  "pushed_at": "2026-11-23T23:25:40Z",
+  "made": "2026-11-24"
  },
  "fabric_ai_project": {
   "src": "file:slides/img/gs/GS01.webp",
@@ -262,8 +262,8 @@
  },
  "fintech_data_analysis": {
   "src": "name:assets/og/cover_00.jpg",
-  "pushed_at": "2026-11-23T07:30:31Z",
-  "made": "2026-11-23"
+  "pushed_at": "2026-11-23T23:30:12Z",
+  "made": "2026-11-24"
  },
  "Fish_Market_Data_Machine_Learning": {
   "src": "redraw:R116:en/index.html#img",
@@ -277,8 +277,8 @@
  },
  "fof-money-meridian-": {
   "src": "name:cover_fof01.webp",
-  "pushed_at": "2026-11-23T07:30:57Z",
-  "made": "2026-11-23"
+  "pushed_at": "2026-11-23T23:25:27Z",
+  "made": "2026-11-24"
  },
  "fruitfly-lab-expressions": {
   "src": "name:images/scenes/optimization_first_step/fs_cover_01.webp",
@@ -311,8 +311,8 @@
  },
  "google-sheets-lab": {
   "src": "redraw:R025:assets/covers/cover-index.webp",
-  "pushed_at": "2026-11-23T07:30:49Z",
-  "made": "2026-11-23"
+  "pushed_at": "2026-11-23T23:27:44Z",
+  "made": "2026-11-24"
  },
  "green_route": {
   "src": null,
@@ -320,17 +320,17 @@
  },
  "health_stats_lab": {
   "src": "manifest:assets/img/cover_01.webp",
-  "pushed_at": "2026-11-23T07:30:42Z",
-  "made": "2026-11-23"
+  "pushed_at": "2026-11-23T23:27:37Z",
+  "made": "2026-11-24"
  },
  "hello_space_lab": {
   "src": "name:img/cover_ch1.webp",
-  "pushed_at": "2026-11-23T07:30:33Z",
-  "made": "2026-11-23"
+  "pushed_at": "2026-11-23T23:25:44Z",
+  "made": "2026-11-24"
  },
  "hilbert_space_lab": {
   "src": null,
-  "pushed_at": "2026-11-21T15:29:37Z"
+  "pushed_at": "2026-11-23T23:25:38Z"
  },
  "how_to_make_ai_model_factory_version": {
   "src": "manifest:img/cover_01.webp",
@@ -339,7 +339,7 @@
  },
  "how_to_start_db": {
   "src": null,
-  "pushed_at": "2026-11-13T00:07:14Z"
+  "pushed_at": "2026-11-23T23:27:46Z"
  },
  "iclr2027_top3_lab_review": {
   "src": "manifest:images/cover_iclr27.jpg",
@@ -433,13 +433,13 @@
  },
  "lagrange_multiplier_lab": {
   "src": "name:img/cover.webp",
-  "pushed_at": "2026-11-22T05:34:20Z",
-  "made": "2026-11-23"
+  "pushed_at": "2026-11-23T23:25:36Z",
+  "made": "2026-11-24"
  },
  "lagrangian_hamiltonian_lab": {
   "src": "name:assets/img/cover_00.webp",
-  "pushed_at": "2026-11-21T15:45:41Z",
-  "made": "2026-11-22"
+  "pushed_at": "2026-11-23T23:25:34Z",
+  "made": "2026-11-24"
  },
  "learn-pandas-visually_korean": {
   "src": "redraw:R071:assets/hero/hero.jpg",
@@ -490,18 +490,18 @@
  },
  "math_for_ai_lab": {
   "src": "manifest:assets/cover/cover_part1.webp",
-  "pushed_at": "2026-11-23T07:30:23Z",
-  "made": "2026-11-23"
+  "pushed_at": "2026-11-23T23:25:47Z",
+  "made": "2026-11-24"
  },
  "micro_economics": {
   "src": "name:assets/og/cover_00.jpg",
-  "pushed_at": "2026-11-23T07:30:49Z",
-  "made": "2026-11-23"
+  "pushed_at": "2026-11-23T23:25:22Z",
+  "made": "2026-11-24"
  },
  "minkowski_space_lab": {
   "src": "name:build/img/cover_index.webp",
-  "pushed_at": "2026-11-21T15:19:30Z",
-  "made": "2026-11-22"
+  "pushed_at": "2026-11-23T23:25:42Z",
+  "made": "2026-11-24"
  },
  "ML_00_Algorithm-family-build_00": {
   "src": "name:4-6_regression_seven.html/idx_hero_1280.png",
@@ -544,8 +544,8 @@
  },
  "my_article_00_Korean_stockmarket_volatility_study": {
   "src": "redraw:R076:img/cover.jpg",
-  "pushed_at": "2026-11-06T12:34:28Z",
-  "made": "2026-11-07"
+  "pushed_at": "2026-11-23T23:30:15Z",
+  "made": "2026-11-24"
  },
  "my_article_01_bitcoin_price_analytics": {
   "src": null,
@@ -573,18 +573,18 @@
  },
  "my_article_06_AI_effect_to_labor_demand": {
   "src": "redraw:R071:hero_01_ledger.webp",
-  "pushed_at": "2026-11-23T07:30:59Z",
-  "made": "2026-11-23"
+  "pushed_at": "2026-11-23T23:25:29Z",
+  "made": "2026-11-24"
  },
  "my_article_07_media_blockchain": {
   "src": "redraw:R094:index.en.html#cover_index",
-  "pushed_at": "2026-11-06T12:49:32Z",
-  "made": "2026-11-07"
+  "pushed_at": "2026-11-23T23:30:25Z",
+  "made": "2026-11-24"
  },
  "my_article_08_poll_reweighting_lab": {
   "src": "redraw:R099:images/cover_index.webp",
-  "pushed_at": "2026-11-06T12:37:29Z",
-  "made": "2026-11-07"
+  "pushed_at": "2026-11-23T23:27:35Z",
+  "made": "2026-11-24"
  },
  "my_document_01": {
   "src": null,
@@ -633,12 +633,12 @@
  },
  "ontology_trend_report": {
   "src": null,
-  "pushed_at": "2026-11-23T07:31:04Z"
+  "pushed_at": "2026-11-23T23:30:46Z"
  },
  "optimization_3d_map": {
   "src": "manifest:img/cover_index.webp",
-  "pushed_at": "2026-11-23T07:30:37Z",
-  "made": "2026-11-23"
+  "pushed_at": "2026-11-23T23:25:46Z",
+  "made": "2026-11-24"
  },
  "optimization_test_lab": {
   "src": "name:img/cover_01.webp",
@@ -652,8 +652,8 @@
  },
  "python-accounting-analytics": {
   "src": "name:assets/og/cover_00.jpg",
-  "pushed_at": "2026-11-23T07:31:05Z",
-  "made": "2026-11-23"
+  "pushed_at": "2026-11-23T23:30:34Z",
+  "made": "2026-11-24"
  },
  "Recursive-Self-Improvement": {
   "src": "manifest:img/cover_rsi.webp",
@@ -687,13 +687,13 @@
  },
  "smart_product": {
   "src": "manifest:img/cover.webp",
-  "pushed_at": "2026-11-13T15:36:34Z",
-  "made": "2026-11-14"
+  "pushed_at": "2026-11-23T23:30:36Z",
+  "made": "2026-11-24"
  },
  "statistics_note": {
   "src": "name:ch01/assets/og_ch01_1.png",
-  "pushed_at": "2026-11-21T03:06:55Z",
-  "made": "2026-11-21"
+  "pushed_at": "2026-11-23T23:27:29Z",
+  "made": "2026-11-24"
  },
  "statistics_note_ch04_02": {
   "src": null,
@@ -701,17 +701,17 @@
  },
  "statistics_note_ch04_Statistical-Estimation_01_a": {
   "src": null,
-  "pushed_at": "2026-11-05T11:19:12Z"
+  "pushed_at": "2026-11-23T23:27:31Z"
  },
  "structure_first_drawing_lab_01": {
   "src": "manifest:assets/img/cover_index.webp",
-  "pushed_at": "2026-11-23T01:24:18Z",
-  "made": "2026-11-23"
+  "pushed_at": "2026-11-23T23:30:39Z",
+  "made": "2026-11-24"
  },
  "structure_first_drawing_lab_02": {
   "src": "name:assets/img/cover_01.webp",
-  "pushed_at": "2026-11-23T07:30:36Z",
-  "made": "2026-11-23"
+  "pushed_at": "2026-11-23T23:30:41Z",
+  "made": "2026-11-24"
  },
  "test": {
   "src": null,
@@ -727,8 +727,8 @@
  },
  "timeseries-trilogy": {
   "src": "manifest:assets/img/cover_index.webp",
-  "pushed_at": "2026-11-11T14:42:57Z",
-  "made": "2026-11-13"
+  "pushed_at": "2026-11-23T23:27:33Z",
+  "made": "2026-11-24"
  },
  "topology_ai_lab": {
   "src": "manifest:img/og/og_01.webp",
@@ -746,7 +746,7 @@
  },
  "valuation_without_revenue": {
   "src": null,
-  "pushed_at": "2026-11-06T04:27:09Z"
+  "pushed_at": "2026-11-23T23:30:26Z"
  },
  "vector_analysis_lab": {
   "src": "og:assets/og/index.webp",
@@ -755,13 +755,13 @@
  },
  "vector_calculus_lab": {
   "src": "manifest:assets/og/index.jpg",
-  "pushed_at": "2026-11-23T07:30:46Z",
-  "made": "2026-11-23"
+  "pushed_at": "2026-11-23T23:25:31Z",
+  "made": "2026-11-24"
  },
  "vector_db_lab": {
   "src": "manifest:img/cover_00.webp",
-  "pushed_at": "2026-11-23T07:30:33Z",
-  "made": "2026-11-23"
+  "pushed_at": "2026-11-23T23:27:49Z",
+  "made": "2026-11-24"
  },
  "what_is_p_value_lab": {
   "src": "manifest:assets/img/cover_pv.webp",
