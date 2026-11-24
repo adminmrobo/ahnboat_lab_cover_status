@@ -15,8 +15,8 @@
  },
  "ahn_boat_lab_town": {
   "src": "redraw:R019:assets/cut1_panic.webp",
-  "pushed_at": "2026-11-14T05:09:06Z",
-  "made": "2026-11-15"
+  "pushed_at": "2026-11-24T13:33:59Z",
+  "made": "2026-11-25"
  },
  "ahnboat_lab_character_add_packs": {
   "src": null,
@@ -24,7 +24,7 @@
  },
  "ahnboat_lab_explainer": {
   "src": null,
-  "pushed_at": "2026-11-23T23:31:05Z"
+  "pushed_at": "2026-11-24T14:24:31Z"
  },
  "ahnboat_lab_gallery": {
   "src": null,
@@ -40,8 +40,8 @@
  },
  "ahnboat_ontology_feed": {
   "src": "name:assets/cover.png",
-  "pushed_at": "2026-11-24T13:17:30Z",
-  "made": "2026-11-24"
+  "pushed_at": "2026-11-24T14:24:10Z",
+  "made": "2026-11-25"
  },
  "ahnboat_server_room_guards": {
   "src": null,
@@ -60,6 +60,11 @@
   "src": "manifest:assets/covers/index.webp",
   "pushed_at": "2026-11-23T07:30:31Z",
   "made": "2026-11-23"
+ },
+ "ai_cube_lab": {
+  "src": "manifest:img/og/og_index.webp",
+  "pushed_at": "2026-11-24T16:08:16Z",
+  "made": "2026-11-25"
  },
  "AI_for_cement_produce": {
   "src": "manifest:ch08_timeseries_lag_preprocessing/img/COVER.webp",
@@ -83,12 +88,12 @@
  },
  "AI_image_classification": {
   "src": "redraw:R117:en/index.html#img",
-  "pushed_at": "2026-11-23T07:30:44Z",
-  "made": "2026-11-23"
+  "pushed_at": "2026-11-24T14:15:50Z",
+  "made": "2026-11-25"
  },
  "ai_in_3d": {
   "src": null,
-  "pushed_at": "2026-11-14T05:20:00Z"
+  "pushed_at": "2026-11-24T14:16:34Z"
  },
  "ai_industry_lab": {
   "src": "name:assets/og.png",
@@ -97,8 +102,8 @@
  },
  "AI_Model_Review": {
   "src": "embedded:index.html#hero",
-  "pushed_at": "2026-10-08T12:11:10Z",
-  "made": "2026-11-07"
+  "pushed_at": "2026-11-24T14:16:32Z",
+  "made": "2026-11-25"
  },
  "AI_Model_Review_Fruit_fly_special": {
   "src": "redraw:R107:en/index.html#bg",
@@ -126,12 +131,12 @@
  },
  "Automate_prompt_lab": {
   "src": "og:images/G01_cover_text.png",
-  "pushed_at": "2026-11-23T21:02:48Z",
-  "made": "2026-11-24"
+  "pushed_at": "2026-11-24T14:16:02Z",
+  "made": "2026-11-25"
  },
  "backprop_lab": {
   "src": null,
-  "pushed_at": "2026-11-12T15:32:17Z"
+  "pushed_at": "2026-11-24T14:16:37Z"
  },
  "basic_economic_lab": {
   "src": "name:assets/og/cover_01.jpg",
@@ -224,8 +229,8 @@
  },
  "deep_learning_00_neural_net_learns": {
   "src": "redraw:R022:en/index.html#hero-img",
-  "pushed_at": "2026-11-06T12:34:51Z",
-  "made": "2026-11-07"
+  "pushed_at": "2026-11-24T14:16:42Z",
+  "made": "2026-11-25"
  },
  "defense_for_ai_lab": {
   "src": "og:assets/img/og.png",
@@ -277,8 +282,8 @@
  },
  "Fish_Market_Data_Machine_Learning": {
   "src": "redraw:R116:en/index.html#img",
-  "pushed_at": "2026-11-23T07:30:47Z",
-  "made": "2026-11-23"
+  "pushed_at": "2026-11-24T14:16:44Z",
+  "made": "2026-11-25"
  },
  "fish_market_learning_epoch_etc": {
   "src": "og:assets/img/og_index.webp",
@@ -301,8 +306,8 @@
  },
  "Gen_AI_Hannam_univ": {
   "src": "redraw:R109:index.html#px",
-  "pushed_at": "2026-11-23T07:30:45Z",
-  "made": "2026-11-23"
+  "pushed_at": "2026-11-24T14:17:10Z",
+  "made": "2026-11-25"
  },
  "Gen_AI_strategy_ch05": {
   "src": "redraw:R004:05_startup_prompt.html#cover_05",
@@ -396,8 +401,8 @@
  },
  "inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide": {
   "src": "name:images/s03_cover.webp",
-  "pushed_at": "2026-11-23T07:30:42Z",
-  "made": "2026-11-23"
+  "pushed_at": "2026-11-24T14:16:05Z",
+  "made": "2026-11-25"
  },
  "inference_engineering_study_week_03_article_01": {
   "src": "name:assets/img/cover_03.webp",
@@ -411,27 +416,27 @@
  },
  "inference_korea_study_page": {
   "src": null,
-  "pushed_at": "2026-11-23T07:30:58Z"
+  "pushed_at": "2026-11-24T14:16:07Z"
  },
  "insurtech__case_classification_model_01": {
   "src": "redraw:R045:assets/hero.webp",
-  "pushed_at": "2026-11-06T12:36:40Z",
-  "made": "2026-11-07"
+  "pushed_at": "2026-11-24T14:16:19Z",
+  "made": "2026-11-25"
  },
  "insurtech__case_classification_model_02": {
   "src": "redraw:R046:assets/hero.webp",
-  "pushed_at": "2026-11-06T12:36:10Z",
-  "made": "2026-11-07"
+  "pushed_at": "2026-11-24T14:16:22Z",
+  "made": "2026-11-25"
  },
  "insurtech__case_regreesion_model_01": {
   "src": "redraw:R047:assets/hero.webp",
-  "pushed_at": "2026-11-06T12:36:47Z",
-  "made": "2026-11-07"
+  "pushed_at": "2026-11-24T14:16:25Z",
+  "made": "2026-11-25"
  },
  "insurtech__case_regreesion_model_02": {
   "src": "redraw:R048:assets/hero.webp",
-  "pushed_at": "2026-11-06T12:35:42Z",
-  "made": "2026-11-07"
+  "pushed_at": "2026-11-24T14:16:28Z",
+  "made": "2026-11-25"
  },
  "kma_2023_01": {
   "src": null,
@@ -453,8 +458,8 @@
  },
  "learn-pandas-visually_korean": {
   "src": "redraw:R071:assets/hero/hero.jpg",
-  "pushed_at": "2026-11-23T07:31:02Z",
-  "made": "2026-11-23"
+  "pushed_at": "2026-11-24T14:17:16Z",
+  "made": "2026-11-25"
  },
  "learn-python-by-doing": {
   "src": "redraw:R072:docs/assets/hero/hero.jpg",
@@ -463,8 +468,8 @@
  },
  "learn-python-by-doing_Korean": {
   "src": "redraw:R073:docs/assets/hero/hero.jpg",
-  "pushed_at": "2026-11-23T07:31:03Z",
-  "made": "2026-11-23"
+  "pushed_at": "2026-11-24T14:17:19Z",
+  "made": "2026-11-25"
  },
  "llm_applied_lab": {
   "src": "manifest:assets/img/cover_A1.webp",
@@ -487,11 +492,11 @@
  },
  "machine_learning_in_3d": {
   "src": null,
-  "pushed_at": "2026-11-13T09:27:53Z"
+  "pushed_at": "2026-11-24T14:17:04Z"
  },
  "machine_learning_model_atlas": {
   "src": null,
-  "pushed_at": "2026-11-15T09:38:10Z"
+  "pushed_at": "2026-11-24T14:17:07Z"
  },
  "markov_player": {
   "src": "name:assets/og_mk.jpg",
@@ -520,23 +525,23 @@
  },
  "ML_00_Algorithm-family-build_01": {
   "src": "name:assets/sc_alley.webp",
-  "pushed_at": "2026-11-23T07:30:39Z",
-  "made": "2026-11-23"
+  "pushed_at": "2026-11-24T14:16:47Z",
+  "made": "2026-11-25"
  },
  "ML_00_Algorithm-family-build_02": {
   "src": "name:assets/sc_alley.webp",
-  "pushed_at": "2026-11-23T07:30:39Z",
-  "made": "2026-11-23"
+  "pushed_at": "2026-11-24T14:16:52Z",
+  "made": "2026-11-25"
  },
  "ML_00_Algorithm-family-build_03": {
   "src": "name:assets/sc_alley.webp",
-  "pushed_at": "2026-11-23T07:30:38Z",
-  "made": "2026-11-23"
+  "pushed_at": "2026-11-24T14:16:55Z",
+  "made": "2026-11-25"
  },
  "ML_model_hiring_committee": {
   "src": "name:assets/sc_alley.webp",
-  "pushed_at": "2026-11-23T07:30:37Z",
-  "made": "2026-11-23"
+  "pushed_at": "2026-11-24T14:17:01Z",
+  "made": "2026-11-25"
  },
  "money-robo_news_rebuild": {
   "src": null,
@@ -544,8 +549,8 @@
  },
  "motion_ai_series_01": {
   "src": "redraw:R074:5-2_recognize_to_generate.en.html#pixelart",
-  "pushed_at": "2026-11-23T07:30:32Z",
-  "made": "2026-11-23"
+  "pushed_at": "2026-11-24T14:15:59Z",
+  "made": "2026-11-25"
  },
  "moving_factory_dashboard": {
   "src": "name:assets/scenes/fs_cover_01.webp",
@@ -602,8 +607,8 @@
  },
  "nabla_field_lab": {
   "src": "og:assets/og/index.webp",
-  "pushed_at": "2026-11-23T07:30:51Z",
-  "made": "2026-11-23"
+  "pushed_at": "2026-11-24T14:16:10Z",
+  "made": "2026-11-25"
  },
  "neural_network_atlas": {
   "src": null,
@@ -657,8 +662,8 @@
  },
  "probability_distribution_dictionary": {
   "src": "file:thumbs/part1.webp",
-  "pushed_at": "2026-11-23T07:30:53Z",
-  "made": "2026-11-23"
+  "pushed_at": "2026-11-24T14:17:22Z",
+  "made": "2026-11-25"
  },
  "python-accounting-analytics": {
   "src": "name:assets/og/cover_00.jpg",
@@ -682,8 +687,8 @@
  },
  "riemann_hypothesis_lab": {
   "src": "name:assets/img/cover_briefing.webp",
-  "pushed_at": "2026-11-23T10:20:50Z",
-  "made": "2026-11-24"
+  "pushed_at": "2026-11-24T15:26:54Z",
+  "made": "2026-11-25"
  },
  "rulebase_to_agent": {
   "src": "embedded:1-1_rulebase.en.html#hero",
@@ -692,8 +697,8 @@
  },
  "smart_factory_world": {
   "src": "manifest:cement/img/cement_cover.webp",
-  "pushed_at": "2026-11-12T15:37:47Z",
-  "made": "2026-11-13"
+  "pushed_at": "2026-11-24T14:17:13Z",
+  "made": "2026-11-25"
  },
  "smart_product": {
   "src": "manifest:img/cover.webp",
@@ -713,10 +718,15 @@
   "src": null,
   "pushed_at": "2026-11-23T23:27:31Z"
  },
+ "Stochastic_labs": {
+  "src": "manifest:img/og/og_index.webp",
+  "pushed_at": "2026-11-24T16:23:23Z",
+  "made": "2026-11-25"
+ },
  "structure_first_drawing_lab_01": {
   "src": "manifest:assets/img/cover_index.webp",
-  "pushed_at": "2026-11-24T13:21:21Z",
-  "made": "2026-11-24"
+  "pushed_at": "2026-11-24T13:36:02Z",
+  "made": "2026-11-25"
  },
  "structure_first_drawing_lab_02": {
   "src": "name:assets/img/cover_01.webp",
@@ -760,8 +770,8 @@
  },
  "vector_analysis_lab": {
   "src": "og:assets/og/index.webp",
-  "pushed_at": "2026-11-23T07:30:47Z",
-  "made": "2026-11-23"
+  "pushed_at": "2026-11-24T14:16:15Z",
+  "made": "2026-11-25"
  },
  "vector_calculus_lab": {
   "src": "manifest:assets/og/index.jpg",
