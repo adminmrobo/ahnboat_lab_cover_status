@@ -104,3 +104,18 @@ jobs:
             sleep $((i * 5))
           done
           exit 1
+
+      - name: 온톨로지 피드·갤러리에 바로 알리기 (토큰이 있을 때만)
+        # DISPATCH_TOKEN(Actions 쓰기 권한이 있는 개인 토큰)이 Secrets에 있으면 수집이 끝나자마자 두 저장소를 부른다.
+        # 없어도 두 저장소가 한 시간마다 이 저장소의 새 커밋을 확인해 스스로 다시 만든다.
+        if: always()
+        env:
+          TOKEN: ${{ secrets.DISPATCH_TOKEN }}
+        run: |
+          if [ -z "$TOKEN" ]; then echo "DISPATCH_TOKEN 없음 — 피드·갤러리는 한 시간 안에 스스로 반영"; exit 0; fi
+          for r in ahnboat_ontology_feed ahnboat_lab_gallery; do
+            curl -sS -o /dev/null -w "$r %{http_code}\n" -X POST \
+              -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.github+json" \
+              "https://api.github.com/repos/adminmrobo/$r/actions/workflows/build.yml/dispatches" \
+              -d '{"ref":"main"}' || true
+          done
