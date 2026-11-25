@@ -1,5 +1,311 @@
 [
  {
+  "repo": "adminmrobo-lhopital_lab",
+  "series_ko": "로피탈 교실 — 0/0의 정체를 밝히는 수업",
+  "title_ko": "로피탈 교실 — 0/0의 정체를 밝히는 수업 · 오리엔테이션",
+  "repo_url": "https://github.com/adminmrobo/adminmrobo-lhopital_lab",
+  "pages_url": "https://adminmrobo.github.io/adminmrobo-lhopital_lab/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-24T22:23:04Z",
+  "has_manifest": true,
+  "covers": [
+   {
+    "path": "index.html#top",
+    "role": "cover",
+    "id": "cover_00",
+    "size": [
+     1920,
+     1080
+    ],
+    "characters": [
+     "doc",
+     "fly",
+     "robo",
+     "sia",
+     "moa",
+     "asst"
+    ],
+    "status": "substitute"
+   },
+   {
+    "path": "01_limits.html#top",
+    "role": "cover",
+    "id": "cover_01",
+    "size": [
+     1920,
+     1080
+    ],
+    "characters": [
+     "doc",
+     "fly",
+     "robo",
+     "sia"
+    ],
+    "status": "substitute"
+   },
+   {
+    "path": "02_zero_over_zero.html#top",
+    "role": "cover",
+    "id": "cover_02",
+    "size": [
+     1920,
+     1080
+    ],
+    "characters": [
+     "doc",
+     "fly",
+     "robo",
+     "moa"
+    ],
+    "status": "substitute"
+   },
+   {
+    "path": "03_slope_derivative.html#top",
+    "role": "cover",
+    "id": "cover_03",
+    "size": [
+     1920,
+     1080
+    ],
+    "characters": [
+     "doc",
+     "fly",
+     "robo",
+     "asst"
+    ],
+    "status": "substitute"
+   },
+   {
+    "path": "04_tangent_ratio.html#top",
+    "role": "cover",
+    "id": "cover_04",
+    "size": [
+     1920,
+     1080
+    ],
+    "characters": [
+     "doc",
+     "fly",
+     "robo",
+     "sia"
+    ],
+    "status": "substitute"
+   },
+   {
+    "path": "05_lhopital_rule.html#top",
+    "role": "cover",
+    "id": "cover_05",
+    "size": [
+     1920,
+     1080
+    ],
+    "characters": [
+     "doc",
+     "fly",
+     "robo",
+     "robo"
+    ],
+    "status": "substitute"
+   },
+   {
+    "path": "06_repeat_and_stop.html#top",
+    "role": "cover",
+    "id": "cover_06",
+    "size": [
+     1920,
+     1080
+    ],
+    "characters": [
+     "doc",
+     "fly",
+     "robo",
+     "x2"
+    ],
+    "status": "substitute"
+   },
+   {
+    "path": "07_infinity_race.html#top",
+    "role": "cover",
+    "id": "cover_07",
+    "size": [
+     1920,
+     1080
+    ],
+    "characters": [
+     "doc",
+     "fly",
+     "robo",
+     "x3"
+    ],
+    "status": "substitute"
+   },
+   {
+    "path": "08_other_forms.html#top",
+    "role": "cover",
+    "id": "cover_08",
+    "size": [
+     1920,
+     1080
+    ],
+    "characters": [
+     "doc",
+     "fly",
+     "robo",
+     "moa"
+    ],
+    "status": "substitute"
+   },
+   {
+    "path": "09_mistakes_calc.html#top",
+    "role": "cover",
+    "id": "cover_09",
+    "size": [
+     1920,
+     1080
+    ],
+    "characters": [
+     "doc",
+     "fly",
+     "robo",
+     "fly"
+    ],
+    "status": "substitute"
+   },
+   {
+    "path": "10_mistakes_conditions.html#top",
+    "role": "cover",
+    "id": "cover_10",
+    "size": [
+     1920,
+     1080
+    ],
+    "characters": [
+     "doc",
+     "fly",
+     "robo",
+     "asst"
+    ],
+    "status": "substitute"
+   },
+   {
+    "path": "11_history_ai.html#top",
+    "role": "cover",
+    "id": "cover_11",
+    "size": [
+     1920,
+     1080
+    ],
+    "characters": [
+     "doc",
+     "fly",
+     "robo",
+     "moa"
+    ],
+    "status": "substitute"
+   },
+   {
+    "path": "12_final_review.html#top",
+    "role": "cover",
+    "id": "cover_12",
+    "size": [
+     1920,
+     1080
+    ],
+    "characters": [
+     "doc",
+     "fly",
+     "robo",
+     "doc"
+    ],
+    "status": "substitute"
+   },
+   {
+    "path": "practice/index.html#top",
+    "role": "cover",
+    "id": "cover_practice",
+    "size": [
+     1920,
+     1080
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "moa",
+     "robo"
+    ],
+    "status": "substitute"
+   }
+  ],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": "thumbs/repos/adminmrobo-lhopital_lab.jpg",
+  "site_desc": "미분이 아직 헷갈리는 학생도 따라오는 로피탈의 정리 12장 + 실전 연습장. 박사 선생님과 두 조교, 수강생 6명이 함께하는 연구실 해설 시리즈.",
+  "status": "ok",
+  "checked_at": "2026-11-25",
+  "site_title": "로피탈 교실 · 미분이 아직 헷갈리는 학생도 따라오는 로피탈의 정리 12장 + 실전 연습장",
+  "ontology": {
+   "status": "partial",
+   "pages_with_kg": 12,
+   "pages_total": 14,
+   "pages_checked": 14,
+   "kg_links": [
+    "https://adminmrobo.github.io/adminmrobo-lhopital_lab/01_limits.html#kg",
+    "https://adminmrobo.github.io/adminmrobo-lhopital_lab/02_zero_over_zero.html#kg",
+    "https://adminmrobo.github.io/adminmrobo-lhopital_lab/03_slope_derivative.html#kg",
+    "https://adminmrobo.github.io/adminmrobo-lhopital_lab/04_tangent_ratio.html#kg",
+    "https://adminmrobo.github.io/adminmrobo-lhopital_lab/05_lhopital_rule.html#kg",
+    "https://adminmrobo.github.io/adminmrobo-lhopital_lab/06_repeat_and_stop.html#kg",
+    "https://adminmrobo.github.io/adminmrobo-lhopital_lab/07_infinity_race.html#kg",
+    "https://adminmrobo.github.io/adminmrobo-lhopital_lab/08_other_forms.html#kg",
+    "https://adminmrobo.github.io/adminmrobo-lhopital_lab/09_mistakes_calc.html#kg",
+    "https://adminmrobo.github.io/adminmrobo-lhopital_lab/10_mistakes_conditions.html#kg",
+    "https://adminmrobo.github.io/adminmrobo-lhopital_lab/11_history_ai.html#kg",
+    "https://adminmrobo.github.io/adminmrobo-lhopital_lab/12_final_review.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/adminmrobo-lhopital_lab/01_limits.html#export",
+    "https://adminmrobo.github.io/adminmrobo-lhopital_lab/02_zero_over_zero.html#export",
+    "https://adminmrobo.github.io/adminmrobo-lhopital_lab/03_slope_derivative.html#export",
+    "https://adminmrobo.github.io/adminmrobo-lhopital_lab/04_tangent_ratio.html#export",
+    "https://adminmrobo.github.io/adminmrobo-lhopital_lab/05_lhopital_rule.html#export",
+    "https://adminmrobo.github.io/adminmrobo-lhopital_lab/06_repeat_and_stop.html#export",
+    "https://adminmrobo.github.io/adminmrobo-lhopital_lab/07_infinity_race.html#export",
+    "https://adminmrobo.github.io/adminmrobo-lhopital_lab/08_other_forms.html#export",
+    "https://adminmrobo.github.io/adminmrobo-lhopital_lab/09_mistakes_calc.html#export",
+    "https://adminmrobo.github.io/adminmrobo-lhopital_lab/10_mistakes_conditions.html#export",
+    "https://adminmrobo.github.io/adminmrobo-lhopital_lab/11_history_ai.html#export",
+    "https://adminmrobo.github.io/adminmrobo-lhopital_lab/12_final_review.html#export"
+   ],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 14
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/adminmrobo-lhopital_lab/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 14
+   }
+  },
+  "has_pages": true
+ },
+ {
   "repo": "adminmrobo-structure_first_drawing_lab",
   "series_ko": "연구실 특별편 · 그리기와 렌더링",
   "title_ko": "구조 먼저 보는 캐릭터 그리기 연구실 — 픽셀 캐릭터를 실사까지",
@@ -1596,7 +1902,7 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_ontology_feed",
   "pages_url": "https://adminmrobo.github.io/ahnboat_ontology_feed/",
   "default_branch": "main",
-  "pushed_at": "2026-11-24T14:24:10Z",
+  "pushed_at": "2026-11-24T21:30:26Z",
   "has_manifest": false,
   "covers": [
    {
@@ -2729,7 +3035,7 @@
   "repo_url": "https://github.com/adminmrobo/ai_cube_lab",
   "pages_url": "https://adminmrobo.github.io/ai_cube_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-24T17:36:45Z",
+  "pushed_at": "2026-11-24T22:07:17Z",
   "has_manifest": true,
   "covers": [
    {
@@ -2747,7 +3053,7 @@
      "moa"
     ],
     "robot": "jupanbot-v2",
-    "status": "placeholder"
+    "status": "ok"
    },
    {
     "path": "img/og/og_index.webp",
@@ -2774,7 +3080,7 @@
      "x3"
     ],
     "robot": "jupanbot-v2",
-    "status": "placeholder"
+    "status": "ok"
    },
    {
     "path": "img/og/og_01.webp",
@@ -2801,7 +3107,7 @@
      "asst"
     ],
     "robot": "jupanbot-v2",
-    "status": "placeholder"
+    "status": "ok"
    },
    {
     "path": "img/og/og_02.webp",
@@ -2828,7 +3134,7 @@
      "robo"
     ],
     "robot": "jupanbot-v2",
-    "status": "placeholder"
+    "status": "ok"
    },
    {
     "path": "img/og/og_03.webp",
@@ -2855,7 +3161,7 @@
      "sia"
     ],
     "robot": "jupanbot-v2",
-    "status": "placeholder"
+    "status": "ok"
    },
    {
     "path": "img/og/og_04.webp",
@@ -2882,7 +3188,7 @@
      "moa"
     ],
     "robot": "jupanbot-v2",
-    "status": "placeholder"
+    "status": "ok"
    },
    {
     "path": "img/og/og_05.webp",
@@ -2909,7 +3215,7 @@
      "x2"
     ],
     "robot": "jupanbot-v2",
-    "status": "placeholder"
+    "status": "ok"
    },
    {
     "path": "img/og/og_06.webp",
@@ -2936,7 +3242,7 @@
      "x1"
     ],
     "robot": "jupanbot-v2",
-    "status": "placeholder"
+    "status": "ok"
    },
    {
     "path": "img/og/og_07.webp",
@@ -2963,7 +3269,7 @@
      "moa"
     ],
     "robot": "jupanbot-v2",
-    "status": "placeholder"
+    "status": "ok"
    },
    {
     "path": "img/og/og_08.webp",
@@ -2990,7 +3296,7 @@
      "sia"
     ],
     "robot": "jupanbot-v2",
-    "status": "placeholder"
+    "status": "ok"
    },
    {
     "path": "img/og/og_09.webp",
@@ -3017,7 +3323,7 @@
      "robo"
     ],
     "robot": "jupanbot-v2",
-    "status": "placeholder"
+    "status": "ok"
    },
    {
     "path": "img/og/og_10.webp",
@@ -3044,7 +3350,7 @@
      "asst"
     ],
     "robot": "jupanbot-v2",
-    "status": "placeholder"
+    "status": "ok"
    },
    {
     "path": "img/og/og_11.webp",
@@ -3071,7 +3377,7 @@
      "x3"
     ],
     "robot": "jupanbot-v2",
-    "status": "placeholder"
+    "status": "ok"
    },
    {
     "path": "img/og/og_12.webp",
@@ -3098,7 +3404,7 @@
      "fly"
     ],
     "robot": "jupanbot-v2",
-    "status": "placeholder"
+    "status": "ok"
    },
    {
     "path": "img/og/og_13.webp",
@@ -3125,7 +3431,7 @@
      "x2"
     ],
     "robot": "jupanbot-v2",
-    "status": "placeholder"
+    "status": "ok"
    },
    {
     "path": "img/og/og_14.webp",
@@ -3152,7 +3458,7 @@
      "sia"
     ],
     "robot": "jupanbot-v2",
-    "status": "placeholder"
+    "status": "ok"
    },
    {
     "path": "img/og/og_15.webp",
@@ -3179,7 +3485,7 @@
      "moa"
     ],
     "robot": "jupanbot-v2",
-    "status": "placeholder"
+    "status": "ok"
    },
    {
     "path": "img/og/og_practice.webp",
@@ -3188,6 +3494,306 @@
     "size": [
      1200,
      630
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "img/scene/scene_01_lv1.webp",
+    "role": "scene",
+    "id": "scene_01_lv1",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "img/scene/scene_01_lv2.webp",
+    "role": "scene",
+    "id": "scene_01_lv2",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "img/scene/scene_02_lv1.webp",
+    "role": "scene",
+    "id": "scene_02_lv1",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "img/scene/scene_02_lv2.webp",
+    "role": "scene",
+    "id": "scene_02_lv2",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "img/scene/scene_03_lv1.webp",
+    "role": "scene",
+    "id": "scene_03_lv1",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "img/scene/scene_03_lv2.webp",
+    "role": "scene",
+    "id": "scene_03_lv2",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "img/scene/scene_04_lv1.webp",
+    "role": "scene",
+    "id": "scene_04_lv1",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "img/scene/scene_04_lv2.webp",
+    "role": "scene",
+    "id": "scene_04_lv2",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "img/scene/scene_05_lv1.webp",
+    "role": "scene",
+    "id": "scene_05_lv1",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "img/scene/scene_05_lv2.webp",
+    "role": "scene",
+    "id": "scene_05_lv2",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "img/scene/scene_06_lv1.webp",
+    "role": "scene",
+    "id": "scene_06_lv1",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "img/scene/scene_06_lv2.webp",
+    "role": "scene",
+    "id": "scene_06_lv2",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "img/scene/scene_07_lv1.webp",
+    "role": "scene",
+    "id": "scene_07_lv1",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "img/scene/scene_07_lv2.webp",
+    "role": "scene",
+    "id": "scene_07_lv2",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "img/scene/scene_08_lv1.webp",
+    "role": "scene",
+    "id": "scene_08_lv1",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "img/scene/scene_08_lv2.webp",
+    "role": "scene",
+    "id": "scene_08_lv2",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "img/scene/scene_09_lv1.webp",
+    "role": "scene",
+    "id": "scene_09_lv1",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "img/scene/scene_09_lv2.webp",
+    "role": "scene",
+    "id": "scene_09_lv2",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "img/scene/scene_10_lv1.webp",
+    "role": "scene",
+    "id": "scene_10_lv1",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "img/scene/scene_10_lv2.webp",
+    "role": "scene",
+    "id": "scene_10_lv2",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "img/scene/scene_11_lv1.webp",
+    "role": "scene",
+    "id": "scene_11_lv1",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "img/scene/scene_11_lv2.webp",
+    "role": "scene",
+    "id": "scene_11_lv2",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "img/scene/scene_12_lv1.webp",
+    "role": "scene",
+    "id": "scene_12_lv1",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "img/scene/scene_12_lv2.webp",
+    "role": "scene",
+    "id": "scene_12_lv2",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "img/scene/scene_13_lv1.webp",
+    "role": "scene",
+    "id": "scene_13_lv1",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "img/scene/scene_13_lv2.webp",
+    "role": "scene",
+    "id": "scene_13_lv2",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "img/scene/scene_14_lv1.webp",
+    "role": "scene",
+    "id": "scene_14_lv1",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "img/scene/scene_14_lv2.webp",
+    "role": "scene",
+    "id": "scene_14_lv2",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "img/scene/scene_15_lv1.webp",
+    "role": "scene",
+    "id": "scene_15_lv1",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "img/scene/scene_15_lv2.webp",
+    "role": "scene",
+    "id": "scene_15_lv2",
+    "size": [
+     1200,
+     800
     ],
     "status": "ok"
    }
@@ -10654,6 +11260,77 @@
   "has_pages": true
  },
  {
+  "repo": "drawing_lab_fun",
+  "series_ko": "연구실 특별편 · 그리기와 렌더링",
+  "title_ko": "구조 먼저 그리기 연구실 · 웃음 편 — 같은 구조, 웃기는 변형",
+  "repo_url": "https://github.com/adminmrobo/drawing_lab_fun",
+  "pages_url": "https://adminmrobo.github.io/drawing_lab_fun/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-24T22:30:57Z",
+  "has_manifest": true,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": "thumbs/repos/drawing_lab_fun.jpg",
+  "site_desc": "웃긴 그림과 짧은 애니메이션을 원리부터 만드는 연구실 해설. 어긋남·과장·등신, 올려다보기 챌린지, 예비동작·찌그러짐·타이밍, 4컷 구성, AI 웃음 문장과 반복 영상, 실패 8종과 실전 연습장.",
+  "status": "ok",
+  "checked_at": "2026-11-25",
+  "site_title": "구조 먼저 그리기 연구실 · 웃음 편 — 같은 구조, 웃기는 변형",
+  "ontology": {
+   "status": "full",
+   "pages_with_kg": 8,
+   "pages_total": 8,
+   "pages_checked": 8,
+   "kg_links": [
+    "https://adminmrobo.github.io/drawing_lab_fun/01_exaggeration.html#kg",
+    "https://adminmrobo.github.io/drawing_lab_fun/02_reaction.html#kg",
+    "https://adminmrobo.github.io/drawing_lab_fun/03_motion.html#kg",
+    "https://adminmrobo.github.io/drawing_lab_fun/04_comic.html#kg",
+    "https://adminmrobo.github.io/drawing_lab_fun/05_ai_fun.html#kg",
+    "https://adminmrobo.github.io/drawing_lab_fun/06_failure_lab.html#kg",
+    "https://adminmrobo.github.io/drawing_lab_fun/index.html#kg",
+    "https://adminmrobo.github.io/drawing_lab_fun/practice/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/drawing_lab_fun/01_exaggeration.html#export",
+    "https://adminmrobo.github.io/drawing_lab_fun/02_reaction.html#export",
+    "https://adminmrobo.github.io/drawing_lab_fun/03_motion.html#export",
+    "https://adminmrobo.github.io/drawing_lab_fun/04_comic.html#export",
+    "https://adminmrobo.github.io/drawing_lab_fun/05_ai_fun.html#export",
+    "https://adminmrobo.github.io/drawing_lab_fun/06_failure_lab.html#export",
+    "https://adminmrobo.github.io/drawing_lab_fun/index.html#export",
+    "https://adminmrobo.github.io/drawing_lab_fun/practice/index.html#export"
+   ],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 8
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/drawing_lab_fun/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 8
+   }
+  },
+  "has_pages": true
+ },
+ {
   "repo": "drug-crime-social-cost",
   "series_ko": "마약류 사회적 비용 연구",
   "title_ko": "마약류 사회적 비용 연구",
@@ -15699,7 +16376,7 @@
   "repo_url": "https://github.com/adminmrobo/labor_economics",
   "pages_url": "https://adminmrobo.github.io/labor_economics/",
   "default_branch": "main",
-  "pushed_at": "2026-11-24T17:21:41Z",
+  "pushed_at": "2026-11-24T22:38:56Z",
   "has_manifest": false,
   "covers": [
    {
@@ -15719,6 +16396,11 @@
    },
    {
     "path": "assets/og/cover_04.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/og/cover_04s.jpg",
     "role": "cover",
     "estimated": true
    },
@@ -15768,6 +16450,76 @@
     "estimated": true
    },
    {
+    "path": "src/build/covers/cover_01.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_02.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_03.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_04.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_04s.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_05.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_05m.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_06.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_07.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_08.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_09.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_09f.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_idx.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_prac.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
     "path": "src/build/thumbs_ph/thumb_01.webp",
     "role": "thumb",
     "estimated": true
@@ -15784,6 +16536,11 @@
    },
    {
     "path": "src/build/thumbs_ph/thumb_04.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "src/build/thumbs_ph/thumb_04s.webp",
     "role": "thumb",
     "estimated": true
    },
@@ -15842,14 +16599,15 @@
   "site_title": "노동경제학 연구실",
   "ontology": {
    "status": "partial",
-   "pages_with_kg": 11,
-   "pages_total": 14,
-   "pages_checked": 14,
+   "pages_with_kg": 12,
+   "pages_total": 15,
+   "pages_checked": 15,
    "kg_links": [
     "https://adminmrobo.github.io/labor_economics/01_what_is_labor_econ.html#kg",
     "https://adminmrobo.github.io/labor_economics/02_labor_supply.html#kg",
     "https://adminmrobo.github.io/labor_economics/03_labor_supply_policy.html#kg",
     "https://adminmrobo.github.io/labor_economics/04_labor_demand.html#kg",
+    "https://adminmrobo.github.io/labor_economics/04s_special_ai_substitution.html#kg",
     "https://adminmrobo.github.io/labor_economics/05_labor_market_equilibrium.html#kg",
     "https://adminmrobo.github.io/labor_economics/05m_midterm_review.html#kg",
     "https://adminmrobo.github.io/labor_economics/06_compensating_differentials.html#kg",
@@ -15863,6 +16621,7 @@
     "https://adminmrobo.github.io/labor_economics/02_labor_supply.html#export",
     "https://adminmrobo.github.io/labor_economics/03_labor_supply_policy.html#export",
     "https://adminmrobo.github.io/labor_economics/04_labor_demand.html#export",
+    "https://adminmrobo.github.io/labor_economics/04s_special_ai_substitution.html#export",
     "https://adminmrobo.github.io/labor_economics/05_labor_market_equilibrium.html#export",
     "https://adminmrobo.github.io/labor_economics/05m_midterm_review.html#export",
     "https://adminmrobo.github.io/labor_economics/06_compensating_differentials.html#export",
@@ -15884,7 +16643,7 @@
    ],
    "count": 1,
    "pages": {
-    "ko": 14
+    "ko": 15
    },
    "partial": [],
    "complete": true,
@@ -15900,10 +16659,10 @@
    "count": 1,
    "complete": true,
    "pages_by_lang": {
-    "ko": 14
+    "ko": 15
    }
   },
-  "has_pages": false
+  "has_pages": true
  },
  {
   "repo": "lagrange_multiplier_lab",
@@ -24915,7 +25674,7 @@
   "repo_url": "https://github.com/adminmrobo/Stochastic_labs",
   "pages_url": "https://adminmrobo.github.io/Stochastic_labs/",
   "default_branch": "main",
-  "pushed_at": "2026-11-24T17:36:14Z",
+  "pushed_at": "2026-11-24T22:30:02Z",
   "has_manifest": true,
   "covers": [
    {
@@ -24923,8 +25682,8 @@
     "role": "cover",
     "id": "cover_00",
     "size": [
-     1920,
-     1080
+     2048,
+     1152
     ],
     "characters": [
      "doc",
@@ -24932,7 +25691,7 @@
      "jupanbot",
      "moa"
     ],
-    "status": "fallback"
+    "status": "ok"
    },
    {
     "path": "img/og/og_index.webp",
@@ -24949,8 +25708,8 @@
     "role": "cover",
     "id": "cover_01",
     "size": [
-     1920,
-     1080
+     2048,
+     1152
     ],
     "characters": [
      "doc",
@@ -24958,7 +25717,7 @@
      "jupanbot",
      "asst"
     ],
-    "status": "fallback"
+    "status": "ok"
    },
    {
     "path": "img/og/og_01.webp",
@@ -24975,28 +25734,28 @@
     "role": "scene",
     "id": "scene_01_lv1",
     "size": [
-     1200,
-     800
+     1404,
+     936
     ],
-    "status": "todo"
+    "status": "ok"
    },
    {
     "path": "01_random_variables.html#lv2",
     "role": "scene",
     "id": "scene_01_lv2",
     "size": [
-     1200,
-     800
+     1404,
+     936
     ],
-    "status": "todo"
+    "status": "ok"
    },
    {
     "path": "02_stochastic_process.html#top",
     "role": "cover",
     "id": "cover_02",
     "size": [
-     1920,
-     1080
+     2048,
+     1152
     ],
     "characters": [
      "doc",
@@ -25004,7 +25763,7 @@
      "jupanbot",
      "sia"
     ],
-    "status": "fallback"
+    "status": "ok"
    },
    {
     "path": "img/og/og_02.webp",
@@ -25021,28 +25780,28 @@
     "role": "scene",
     "id": "scene_02_lv1",
     "size": [
-     1200,
-     800
+     1404,
+     936
     ],
-    "status": "todo"
+    "status": "ok"
    },
    {
     "path": "02_stochastic_process.html#lv2",
     "role": "scene",
     "id": "scene_02_lv2",
     "size": [
-     1200,
-     800
+     1404,
+     936
     ],
-    "status": "todo"
+    "status": "ok"
    },
    {
     "path": "03_filtration.html#top",
     "role": "cover",
     "id": "cover_03",
     "size": [
-     1920,
-     1080
+     2048,
+     1152
     ],
     "characters": [
      "doc",
@@ -25050,7 +25809,7 @@
      "jupanbot",
      "moa"
     ],
-    "status": "fallback"
+    "status": "ok"
    },
    {
     "path": "img/og/og_03.webp",
@@ -25067,28 +25826,28 @@
     "role": "scene",
     "id": "scene_03_lv1",
     "size": [
-     1200,
-     800
+     1404,
+     936
     ],
-    "status": "todo"
+    "status": "ok"
    },
    {
     "path": "03_filtration.html#lv2",
     "role": "scene",
     "id": "scene_03_lv2",
     "size": [
-     1200,
-     800
+     1404,
+     936
     ],
-    "status": "todo"
+    "status": "ok"
    },
    {
     "path": "04_brownian_motion.html#top",
     "role": "cover",
     "id": "cover_04",
     "size": [
-     1920,
-     1080
+     2048,
+     1152
     ],
     "characters": [
      "doc",
@@ -25096,7 +25855,7 @@
      "jupanbot",
      "x1"
     ],
-    "status": "fallback"
+    "status": "ok"
    },
    {
     "path": "img/og/og_04.webp",
@@ -25113,28 +25872,28 @@
     "role": "scene",
     "id": "scene_04_lv1",
     "size": [
-     1200,
-     800
+     1404,
+     936
     ],
-    "status": "todo"
+    "status": "ok"
    },
    {
     "path": "04_brownian_motion.html#lv2",
     "role": "scene",
     "id": "scene_04_lv2",
     "size": [
-     1200,
-     800
+     1404,
+     936
     ],
-    "status": "todo"
+    "status": "ok"
    },
    {
     "path": "05_sqrt_t_quadratic_variation.html#top",
     "role": "cover",
     "id": "cover_05",
     "size": [
-     1920,
-     1080
+     2048,
+     1152
     ],
     "characters": [
      "doc",
@@ -25142,7 +25901,7 @@
      "jupanbot",
      "jupanbot"
     ],
-    "status": "fallback"
+    "status": "ok"
    },
    {
     "path": "img/og/og_05.webp",
@@ -25159,28 +25918,28 @@
     "role": "scene",
     "id": "scene_05_lv1",
     "size": [
-     1200,
-     800
+     1404,
+     936
     ],
-    "status": "todo"
+    "status": "ok"
    },
    {
     "path": "05_sqrt_t_quadratic_variation.html#lv2",
     "role": "scene",
     "id": "scene_05_lv2",
     "size": [
-     1200,
-     800
+     1404,
+     936
     ],
-    "status": "todo"
+    "status": "ok"
    },
    {
     "path": "06_martingale.html#top",
     "role": "cover",
     "id": "cover_06",
     "size": [
-     1920,
-     1080
+     2048,
+     1152
     ],
     "characters": [
      "doc",
@@ -25188,7 +25947,7 @@
      "jupanbot",
      "moa"
     ],
-    "status": "fallback"
+    "status": "ok"
    },
    {
     "path": "img/og/og_06.webp",
@@ -25205,28 +25964,28 @@
     "role": "scene",
     "id": "scene_06_lv1",
     "size": [
-     1200,
-     800
+     1404,
+     936
     ],
-    "status": "todo"
+    "status": "ok"
    },
    {
     "path": "06_martingale.html#lv2",
     "role": "scene",
     "id": "scene_06_lv2",
     "size": [
-     1200,
-     800
+     1404,
+     936
     ],
-    "status": "todo"
+    "status": "ok"
    },
    {
     "path": "07_ito_integral.html#top",
     "role": "cover",
     "id": "cover_07",
     "size": [
-     1920,
-     1080
+     2048,
+     1152
     ],
     "characters": [
      "doc",
@@ -25234,7 +25993,7 @@
      "jupanbot",
      "asst"
     ],
-    "status": "fallback"
+    "status": "ok"
    },
    {
     "path": "img/og/og_07.webp",
@@ -25251,28 +26010,28 @@
     "role": "scene",
     "id": "scene_07_lv1",
     "size": [
-     1200,
-     800
+     1404,
+     936
     ],
-    "status": "todo"
+    "status": "ok"
    },
    {
     "path": "07_ito_integral.html#lv2",
     "role": "scene",
     "id": "scene_07_lv2",
     "size": [
-     1200,
-     800
+     1404,
+     936
     ],
-    "status": "todo"
+    "status": "ok"
    },
    {
     "path": "08_ito_formula.html#top",
     "role": "cover",
     "id": "cover_08",
     "size": [
-     1920,
-     1080
+     2048,
+     1152
     ],
     "characters": [
      "doc",
@@ -25280,7 +26039,7 @@
      "jupanbot",
      "x1"
     ],
-    "status": "fallback"
+    "status": "ok"
    },
    {
     "path": "img/og/og_08.webp",
@@ -25297,28 +26056,28 @@
     "role": "scene",
     "id": "scene_08_lv1",
     "size": [
-     1200,
-     800
+     1404,
+     936
     ],
-    "status": "todo"
+    "status": "ok"
    },
    {
     "path": "08_ito_formula.html#lv2",
     "role": "scene",
     "id": "scene_08_lv2",
     "size": [
-     1200,
-     800
+     1404,
+     936
     ],
-    "status": "todo"
+    "status": "ok"
    },
    {
     "path": "09_sde.html#top",
     "role": "cover",
     "id": "cover_09",
     "size": [
-     1920,
-     1080
+     2048,
+     1152
     ],
     "characters": [
      "doc",
@@ -25326,7 +26085,7 @@
      "jupanbot",
      "sia"
     ],
-    "status": "fallback"
+    "status": "ok"
    },
    {
     "path": "img/og/og_09.webp",
@@ -25343,28 +26102,28 @@
     "role": "scene",
     "id": "scene_09_lv1",
     "size": [
-     1200,
-     800
+     1404,
+     936
     ],
-    "status": "todo"
+    "status": "ok"
    },
    {
     "path": "09_sde.html#lv2",
     "role": "scene",
     "id": "scene_09_lv2",
     "size": [
-     1200,
-     800
+     1404,
+     936
     ],
-    "status": "todo"
+    "status": "ok"
    },
    {
     "path": "10_fokker_planck.html#top",
     "role": "cover",
     "id": "cover_10",
     "size": [
-     1920,
-     1080
+     2048,
+     1152
     ],
     "characters": [
      "doc",
@@ -25372,7 +26131,7 @@
      "jupanbot",
      "moa"
     ],
-    "status": "fallback"
+    "status": "ok"
    },
    {
     "path": "img/og/og_10.webp",
@@ -25389,28 +26148,28 @@
     "role": "scene",
     "id": "scene_10_lv1",
     "size": [
-     1200,
-     800
+     1404,
+     936
     ],
-    "status": "todo"
+    "status": "ok"
    },
    {
     "path": "10_fokker_planck.html#lv2",
     "role": "scene",
     "id": "scene_10_lv2",
     "size": [
-     1200,
-     800
+     1404,
+     936
     ],
-    "status": "todo"
+    "status": "ok"
    },
    {
     "path": "11_stopping_times.html#top",
     "role": "cover",
     "id": "cover_11",
     "size": [
-     1920,
-     1080
+     2048,
+     1152
     ],
     "characters": [
      "doc",
@@ -25418,7 +26177,7 @@
      "jupanbot",
      "x3"
     ],
-    "status": "fallback"
+    "status": "ok"
    },
    {
     "path": "img/og/og_11.webp",
@@ -25435,28 +26194,28 @@
     "role": "scene",
     "id": "scene_11_lv1",
     "size": [
-     1200,
-     800
+     1404,
+     936
     ],
-    "status": "todo"
+    "status": "ok"
    },
    {
     "path": "11_stopping_times.html#lv2",
     "role": "scene",
     "id": "scene_11_lv2",
     "size": [
-     1200,
-     800
+     1404,
+     936
     ],
-    "status": "todo"
+    "status": "ok"
    },
    {
     "path": "12_optional_stopping.html#top",
     "role": "cover",
     "id": "cover_12",
     "size": [
-     1920,
-     1080
+     2048,
+     1152
     ],
     "characters": [
      "doc",
@@ -25464,7 +26223,7 @@
      "jupanbot",
      "fly"
     ],
-    "status": "fallback"
+    "status": "ok"
    },
    {
     "path": "img/og/og_12.webp",
@@ -25481,28 +26240,28 @@
     "role": "scene",
     "id": "scene_12_lv1",
     "size": [
-     1200,
-     800
+     1404,
+     936
     ],
-    "status": "todo"
+    "status": "ok"
    },
    {
     "path": "12_optional_stopping.html#lv2",
     "role": "scene",
     "id": "scene_12_lv2",
     "size": [
-     1200,
-     800
+     1404,
+     936
     ],
-    "status": "todo"
+    "status": "ok"
    },
    {
     "path": "13_final_review.html#top",
     "role": "cover",
     "id": "cover_13",
     "size": [
-     1920,
-     1080
+     2048,
+     1152
     ],
     "characters": [
      "doc",
@@ -25510,7 +26269,7 @@
      "jupanbot",
      "moa"
     ],
-    "status": "fallback"
+    "status": "ok"
    },
    {
     "path": "img/og/og_13.webp",
@@ -25527,28 +26286,28 @@
     "role": "scene",
     "id": "scene_13_lv1",
     "size": [
-     1200,
-     800
+     1404,
+     936
     ],
-    "status": "todo"
+    "status": "ok"
    },
    {
     "path": "13_final_review.html#lv2",
     "role": "scene",
     "id": "scene_13_lv2",
     "size": [
-     1200,
-     800
+     1404,
+     936
     ],
-    "status": "todo"
+    "status": "ok"
    },
    {
     "path": "practice/index.html#top",
     "role": "cover",
     "id": "cover_practice",
     "size": [
-     1920,
-     1080
+     2048,
+     1152
     ],
     "characters": [
      "doc",
@@ -25556,7 +26315,7 @@
      "asst",
      "jupanbot"
     ],
-    "status": "fallback"
+    "status": "ok"
    },
    {
     "path": "img/og/og_practice.webp",

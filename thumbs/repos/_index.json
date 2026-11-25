@@ -1,4 +1,9 @@
 {
+ "adminmrobo-lhopital_lab": {
+  "src": "og:img/og/og_index.webp",
+  "pushed_at": "2026-11-24T22:23:04Z",
+  "made": "2026-11-25"
+ },
  "adminmrobo-structure_first_drawing_lab": {
   "src": "manifest:assets/img/cover_index.webp",
   "pushed_at": "2026-11-24T13:19:41Z",
@@ -40,7 +45,7 @@
  },
  "ahnboat_ontology_feed": {
   "src": "name:assets/cover.png",
-  "pushed_at": "2026-11-24T14:24:10Z",
+  "pushed_at": "2026-11-24T21:30:26Z",
   "made": "2026-11-25"
  },
  "ahnboat_server_room_guards": {
@@ -63,7 +68,7 @@
  },
  "ai_cube_lab": {
   "src": "manifest:img/og/og_index.webp",
-  "pushed_at": "2026-11-24T17:36:45Z",
+  "pushed_at": "2026-11-24T22:07:17Z",
   "made": "2026-11-25"
  },
  "AI_for_cement_produce": {
@@ -256,6 +261,11 @@
   "src": "name:assets/img/cover_01.webp",
   "pushed_at": "2026-11-24T13:20:17Z",
   "made": "2026-11-24"
+ },
+ "drawing_lab_fun": {
+  "src": "name:assets/img/cover_01.webp",
+  "pushed_at": "2026-11-24T22:30:57Z",
+  "made": "2026-11-25"
  },
  "drug-crime-social-cost": {
   "src": null,
@@ -453,7 +463,7 @@
  },
  "labor_economics": {
   "src": "name:assets/og/cover_01.jpg",
-  "pushed_at": "2026-11-24T17:21:41Z",
+  "pushed_at": "2026-11-24T22:38:56Z",
   "made": "2026-11-25"
  },
  "lagrange_multiplier_lab": {
@@ -730,7 +740,7 @@
  },
  "Stochastic_labs": {
   "src": "manifest:img/og/og_index.webp",
-  "pushed_at": "2026-11-24T17:36:14Z",
+  "pushed_at": "2026-11-24T22:30:02Z",
   "made": "2026-11-25"
  },
  "structure_first_drawing_lab_01": {
