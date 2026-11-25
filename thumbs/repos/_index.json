@@ -45,8 +45,8 @@
  },
  "ahnboat_ontology_feed": {
   "src": "name:assets/cover.png",
-  "pushed_at": "2026-11-24T21:30:26Z",
-  "made": "2026-11-25"
+  "pushed_at": "2026-11-25T16:59:36Z",
+  "made": "2026-11-26"
  },
  "ahnboat_server_room_guards": {
   "src": null,
@@ -68,8 +68,8 @@
  },
  "ai_cube_lab": {
   "src": "manifest:img/og/og_index.webp",
-  "pushed_at": "2026-11-24T22:07:17Z",
-  "made": "2026-11-25"
+  "pushed_at": "2026-11-25T14:35:22Z",
+  "made": "2026-11-26"
  },
  "AI_for_cement_produce": {
   "src": "manifest:ch08_timeseries_lag_preprocessing/img/COVER.webp",
@@ -102,8 +102,8 @@
  },
  "ai_industry_lab": {
   "src": "name:assets/og.png",
-  "pushed_at": "2026-11-24T06:05:22Z",
-  "made": "2026-11-24"
+  "pushed_at": "2026-11-25T04:54:35Z",
+  "made": "2026-11-26"
  },
  "AI_Model_Review": {
   "src": "embedded:index.html#hero",
@@ -181,8 +181,8 @@
  },
  "covariant_chase_lab": {
   "src": "manifest:assets/img/cover_01.webp",
-  "pushed_at": "2026-11-23T23:25:33Z",
-  "made": "2026-11-24"
+  "pushed_at": "2026-11-25T14:38:06Z",
+  "made": "2026-11-26"
  },
  "data_base_design": {
   "src": "manifest:assets/img/cover_index.webp",
@@ -228,6 +228,11 @@
   "pushed_at": "2026-11-06T12:33:34Z",
   "made": "2026-11-07"
  },
+ "Data_visuialization_lecture_lab": {
+  "src": "name:assets/img/og_00.png",
+  "pushed_at": "2026-11-25T16:00:49Z",
+  "made": "2026-11-26"
+ },
  "database_01of04": {
   "src": null,
   "pushed_at": "2026-11-19T16:27:02Z"
@@ -241,6 +246,11 @@
   "src": "og:assets/img/og.png",
   "pushed_at": "2026-11-23T20:25:02Z",
   "made": "2026-11-24"
+ },
+ "discrete_topology_lab": {
+  "src": "og:img/og/og_index.webp",
+  "pushed_at": "2026-11-25T15:39:34Z",
+  "made": "2026-11-26"
  },
  "DL_model_hiring_committee": {
   "src": "redraw:R007:6-0_job_posting.html#sc_meeting",
@@ -262,10 +272,25 @@
   "pushed_at": "2026-11-24T13:20:17Z",
   "made": "2026-11-24"
  },
+ "drawing_lab_04": {
+  "src": "name:assets/img/cover_01.webp",
+  "pushed_at": "2026-11-25T11:48:59Z",
+  "made": "2026-11-26"
+ },
+ "drawing_lab_05": {
+  "src": "name:assets/refs/pixel_style_ref_prev_cover.png",
+  "pushed_at": "2026-11-25T16:15:08Z",
+  "made": "2026-11-26"
+ },
  "drawing_lab_fun": {
   "src": "name:assets/img/cover_01.webp",
-  "pushed_at": "2026-11-24T22:30:57Z",
-  "made": "2026-11-25"
+  "pushed_at": "2026-11-25T15:59:21Z",
+  "made": "2026-11-26"
+ },
+ "drawing_lab_fun_02": {
+  "src": "name:assets/img/cover_01.webp",
+  "pushed_at": "2026-11-25T15:27:49Z",
+  "made": "2026-11-26"
  },
  "drug-crime-social-cost": {
   "src": null,
@@ -312,7 +337,7 @@
  },
  "g2b-bid-strategy": {
   "src": null,
-  "pushed_at": "2026-11-24T05:12:03Z"
+  "pushed_at": "2026-11-25T04:02:21Z"
  },
  "Gen_AI_Hannam_univ": {
   "src": "redraw:R109:index.html#px",
@@ -338,6 +363,11 @@
   "src": "redraw:R025:assets/covers/cover-index.webp",
   "pushed_at": "2026-11-23T23:27:44Z",
   "made": "2026-11-24"
+ },
+ "graph_theory_lab": {
+  "src": "og:img/og/og_index.webp",
+  "pushed_at": "2026-11-25T16:18:10Z",
+  "made": "2026-11-26"
  },
  "green_route": {
   "src": null,
@@ -449,13 +479,18 @@
   "made": "2026-11-25"
  },
  "karpathy_method_korean": {
-  "src": "embedded:index.html",
-  "pushed_at": "2026-11-24T17:47:03Z",
-  "made": "2026-11-25"
+  "src": "manifest:img/cover.webp",
+  "pushed_at": "2026-11-25T14:38:40Z",
+  "made": "2026-11-26"
  },
  "kma_2023_01": {
   "src": null,
   "pushed_at": "2023-07-28T07:40:49Z"
+ },
+ "knn_svc_svm_lab": {
+  "src": "name:assets/img/cover_index.webp",
+  "pushed_at": "2026-11-25T15:37:26Z",
+  "made": "2026-11-26"
  },
  "kwangju_data_learn": {
   "src": null,
@@ -681,14 +716,19 @@
   "made": "2026-11-24"
  },
  "probability_distribution_dictionary": {
-  "src": "file:thumbs/part1.webp",
-  "pushed_at": "2026-11-24T14:17:22Z",
-  "made": "2026-11-25"
+  "src": "file:assets/cm_fn.png",
+  "pushed_at": "2026-11-25T16:02:32Z",
+  "made": "2026-11-26"
  },
  "python-accounting-analytics": {
   "src": "name:assets/og/cover_00.jpg",
   "pushed_at": "2026-11-23T23:30:34Z",
   "made": "2026-11-24"
+ },
+ "python_machine_learning_lab": {
+  "src": "name:assets/img/og_cover.png",
+  "pushed_at": "2026-11-25T16:02:13Z",
+  "made": "2026-11-26"
  },
  "Recursive-Self-Improvement": {
   "src": "manifest:img/cover_rsi.webp",
