@@ -111,7 +111,7 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
     </div>
     <a class="idea" id="idea" href="https://adminmrobo.github.io/ahnboat_ontology_feed/" target="_blank" rel="noopener">
       <span class="ipx" aria-hidden="true"></span>
-      <span class="itx"><b id="ideaT">💡 내 아이디어 검증하기</b><small id="ideaS">연구실 개념 지도로 AI 검증 받기 →</small></span>
+      <span class="itx"><b id="ideaT">🧪 연구실 도구함</b><small id="ideaS">아이디어 검증 · 결과물 평가 →</small></span>
       <span class="inew">NEW</span>
     </a>
     <div class="crew" id="crew" aria-label="연구실 식구들 (눌러 보세요)">
@@ -213,13 +213,13 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
     document.getElementById('sq').placeholder=T('콘텐츠 찾아보기 (제목·개념)');document.getElementById('sq').setAttribute('aria-label',T('콘텐츠 찾아보기'));
     document.getElementById('sgo').setAttribute('aria-label',T('찾기'));
     document.getElementById('omapT').textContent=T('온톨로지 3D 지도');
-    var IDEA={ko:['💡 내 아이디어 검증하기','연구실 개념 지도로 AI 검증 받기 →',''],
-      en:['💡 Check Your Idea','AI checks grounded in the lab’s concept map →','Opens a page in Korean'],
-      zh:['💡 验证我的想法','用研究室概念地图让 AI 验证 →','打开韩文页面'],
-      ja:['💡 アイデアを検証する','研究室の概念マップでAIに検証してもらう →','韓国語のページが開きます'],
-      uz:['💡 G‘oyangizni tekshiring','Laboratoriya tushunchalar xaritasi bilan AI tekshiruvi →','Koreyscha sahifa ochiladi'],
-      ru:['💡 Проверьте свою идею','Проверка ИИ по карте понятий лаборатории →','Откроется страница на корейском'],
-      vi:['💡 Kiểm chứng ý tưởng','AI kiểm chứng theo bản đồ khái niệm của lab →','Mở trang tiếng Hàn']};
+    var IDEA={ko:['🧪 연구실 도구함','아이디어 검증 · 결과물 평가 →',''],
+      en:['🧪 Lab Toolbox','Idea check · Work review →','Opens pages in Korean'],
+      zh:['🧪 研究室工具箱','想法验证 · 成果评估 →','打开韩文页面'],
+      ja:['🧪 研究室ツールボックス','アイデア検証 · 成果物の評価 →','韓国語のページが開きます'],
+      uz:['🧪 Laboratoriya asboblari','G‘oyani tekshirish · Natijani baholash →','Koreyscha sahifa ochiladi'],
+      ru:['🧪 Инструменты лаборатории','Проверка идеи · Оценка результата →','Откроется страница на корейском'],
+      vi:['🧪 Hộp công cụ phòng lab','Kiểm chứng ý tưởng · Đánh giá kết quả →','Mở trang tiếng Hàn']};
     var it=IDEA[AhnI18n.lang]||IDEA.ko;
     document.getElementById('ideaT').textContent=it[0];document.getElementById('ideaS').textContent=it[1];
     document.getElementById('idea').title=it[2]||'';
