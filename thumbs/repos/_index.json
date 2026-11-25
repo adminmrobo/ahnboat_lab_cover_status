@@ -33,7 +33,7 @@
  },
  "ahnboat_lab_gallery": {
   "src": null,
-  "pushed_at": "2026-11-24T17:37:54Z"
+  "pushed_at": "2026-11-25T19:13:47Z"
  },
  "ahnboat_lab_langpack": {
   "src": null,
@@ -45,7 +45,7 @@
  },
  "ahnboat_ontology_feed": {
   "src": "name:assets/cover.png",
-  "pushed_at": "2026-11-25T18:05:50Z",
+  "pushed_at": "2026-11-25T19:11:04Z",
   "made": "2026-11-26"
  },
  "ahnboat_server_room_guards": {
@@ -68,7 +68,7 @@
  },
  "ai_cube_lab": {
   "src": "manifest:img/og/og_index.webp",
-  "pushed_at": "2026-11-25T14:35:22Z",
+  "pushed_at": "2026-11-25T19:10:56Z",
   "made": "2026-11-26"
  },
  "AI_for_cement_produce": {
@@ -230,7 +230,7 @@
  },
  "Data_visuialization_lecture_lab": {
   "src": "manifest:assets/img/cover_00.webp",
-  "pushed_at": "2026-11-25T18:44:50Z",
+  "pushed_at": "2026-11-25T19:21:00Z",
   "made": "2026-11-26"
  },
  "database_01of04": {
@@ -279,7 +279,7 @@
  },
  "drawing_lab_05": {
   "src": "name:assets/img/cover_01.webp",
-  "pushed_at": "2026-11-25T18:58:41Z",
+  "pushed_at": "2026-11-25T19:14:17Z",
   "made": "2026-11-26"
  },
  "drawing_lab_fun": {
@@ -366,7 +366,7 @@
  },
  "graph_theory_lab": {
   "src": "og:img/og/og_index.webp",
-  "pushed_at": "2026-11-25T18:41:34Z",
+  "pushed_at": "2026-11-25T19:14:26Z",
   "made": "2026-11-26"
  },
  "green_route": {
@@ -489,7 +489,7 @@
  },
  "knn_svc_svm_lab": {
   "src": "name:assets/img/cover_index.png",
-  "pushed_at": "2026-11-25T18:50:50Z",
+  "pushed_at": "2026-11-25T19:11:55Z",
   "made": "2026-11-26"
  },
  "kwangju_data_learn": {

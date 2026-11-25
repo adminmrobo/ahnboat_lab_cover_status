@@ -1763,7 +1763,7 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_lab_gallery",
   "pages_url": "https://adminmrobo.github.io/ahnboat_lab_gallery/",
   "default_branch": "main",
-  "pushed_at": "2026-11-24T17:37:54Z",
+  "pushed_at": "2026-11-25T19:13:47Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -1902,7 +1902,7 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_ontology_feed",
   "pages_url": "https://adminmrobo.github.io/ahnboat_ontology_feed/",
   "default_branch": "main",
-  "pushed_at": "2026-11-25T18:05:50Z",
+  "pushed_at": "2026-11-25T19:11:04Z",
   "has_manifest": false,
   "covers": [
    {
@@ -3035,7 +3035,7 @@
   "repo_url": "https://github.com/adminmrobo/ai_cube_lab",
   "pages_url": "https://adminmrobo.github.io/ai_cube_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-25T14:35:22Z",
+  "pushed_at": "2026-11-25T19:10:56Z",
   "has_manifest": true,
   "covers": [
    {
@@ -10655,7 +10655,7 @@
   "repo_url": "https://github.com/adminmrobo/Data_visuialization_lecture_lab",
   "pages_url": "https://adminmrobo.github.io/Data_visuialization_lecture_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-25T18:44:50Z",
+  "pushed_at": "2026-11-25T19:21:00Z",
   "has_manifest": true,
   "covers": [
    {
@@ -10778,22 +10778,28 @@
    "count": 6,
    "pages": {
     "ko": 11,
-    "en": 21,
-    "zh": 23,
+    "en": 23,
+    "zh": 34,
     "ja": 23,
     "uz": 23,
     "ru": 23
    },
    "partial": [
     "ko",
-    "en"
+    "en",
+    "ja",
+    "uz",
+    "ru"
    ],
    "complete": false,
-   "readme_langs": [],
+   "readme_langs": [
+    "ko",
+    "zh"
+   ],
    "links": {
     "ko": "https://adminmrobo.github.io/Data_visuialization_lecture_lab/index.html",
-    "en": "https://adminmrobo.github.io/Data_visuialization_lecture_lab/lecture_01/en/week1_3_codeguide.html",
-    "zh": "https://adminmrobo.github.io/Data_visuialization_lecture_lab/lecture_01/zh/week1_1_intro.html",
+    "en": "https://adminmrobo.github.io/Data_visuialization_lecture_lab/lecture_01/en/week1_1_intro.html",
+    "zh": "https://adminmrobo.github.io/Data_visuialization_lecture_lab/index.zh.html",
     "ja": "https://adminmrobo.github.io/Data_visuialization_lecture_lab/lecture_01/ja/week1_1_intro.html",
     "uz": "https://adminmrobo.github.io/Data_visuialization_lecture_lab/lecture_01/uz/week1_1_intro.html",
     "ru": "https://adminmrobo.github.io/Data_visuialization_lecture_lab/lecture_01/ru/week1_1_intro.html"
@@ -10812,8 +10818,8 @@
    "complete": false,
    "pages_by_lang": {
     "ko": 11,
-    "en": 21,
-    "zh": 23,
+    "en": 23,
+    "zh": 34,
     "ja": 23,
     "uz": 23,
     "ru": 23
@@ -12108,7 +12114,7 @@
   "repo_url": "https://github.com/adminmrobo/drawing_lab_05",
   "pages_url": "https://adminmrobo.github.io/drawing_lab_05/",
   "default_branch": "main",
-  "pushed_at": "2026-11-25T18:58:41Z",
+  "pushed_at": "2026-11-25T19:14:17Z",
   "has_manifest": true,
   "covers": [],
   "redraw_count": 0,
@@ -14158,9 +14164,64 @@
   "repo_url": "https://github.com/adminmrobo/graph_theory_lab",
   "pages_url": "https://adminmrobo.github.io/graph_theory_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-25T18:41:34Z",
+  "pushed_at": "2026-11-25T19:14:26Z",
   "has_manifest": false,
   "covers": [
+   {
+    "path": "img/cover/cover_00.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "img/cover/cover_01.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "img/cover/cover_02.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "img/cover/cover_03.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "img/cover/cover_04.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "img/cover/cover_05.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "img/cover/cover_06.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "img/cover/cover_07.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "img/cover/cover_08.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "img/cover/cover_09.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "img/cover/cover_practice.webp",
+    "role": "cover",
+    "estimated": true
+   },
    {
     "path": "img/og/og_01.webp",
     "role": "og",
@@ -14227,8 +14288,8 @@
   "ontology": {
    "status": "partial",
    "pages_with_kg": 9,
-   "pages_total": 11,
-   "pages_checked": 11,
+   "pages_total": 12,
+   "pages_checked": 12,
    "kg_links": [
     "https://adminmrobo.github.io/graph_theory_lab/01_graph_fundamentals.html#kg",
     "https://adminmrobo.github.io/graph_theory_lab/02_representations.html#kg",
@@ -14259,7 +14320,7 @@
    ],
    "count": 1,
    "pages": {
-    "ko": 11
+    "ko": 12
    },
    "partial": [],
    "complete": true,
@@ -14275,7 +14336,7 @@
    "count": 1,
    "complete": true,
    "pages_by_lang": {
-    "ko": 11
+    "ko": 12
    }
   },
   "has_pages": true
@@ -17552,7 +17613,7 @@
   "repo_url": "https://github.com/adminmrobo/knn_svc_svm_lab",
   "pages_url": "https://adminmrobo.github.io/knn_svc_svm_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-25T18:50:50Z",
+  "pushed_at": "2026-11-25T19:11:55Z",
   "has_manifest": false,
   "covers": [
    {
