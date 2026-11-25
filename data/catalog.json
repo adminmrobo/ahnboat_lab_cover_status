@@ -849,6 +849,33 @@
     "RSS"
    ],
    "image": "thumbs/repos/ahnboat_ontology_feed.jpg"
+  },
+  {
+   "cat": "머신러닝",
+   "name": "머신러닝 모델",
+   "id": "",
+   "desc": "",
+   "keywords": [],
+   "image": "thumbs/repos/knn_svc_svm_lab.jpg",
+   "auto": true
+  },
+  {
+   "cat": "LLM·추론 엔지니어링",
+   "name": "인공지능 수학",
+   "id": "",
+   "desc": "",
+   "keywords": [],
+   "image": "thumbs/repos/graph_theory_lab.jpg",
+   "auto": true
+  },
+  {
+   "cat": "경제·수학·최적화",
+   "name": "인공지능 수학",
+   "id": "",
+   "desc": "",
+   "keywords": [],
+   "image": "thumbs/repos/ai_cube_lab.jpg",
+   "auto": true
   }
  ],
  "hero": {
@@ -1003,6 +1030,37 @@
     "ru"
    ],
    "thumb": "thumbs/repos/ML_00_Algorithm-family-build_03.jpg"
+  },
+  {
+   "title": "거리로 가르는 분류 대회 — LDA·KNN·SVM·SVC·커널 · 거리로 가르는 분류 대회",
+   "summary": "벡터와 행렬을 처음 배우는 분을 위한 분류 모델 해설 시리즈. 운동장 지도 위에서 초파리 팀과 주판봇 팀이 LDA, KNN, SVM·SVC, 커널로 겨룹니다.",
+   "cat": "머신러닝",
+   "mid": "머신러닝 모델",
+   "sub": "",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/knn_svc_svm_lab",
+   "site_url": "https://adminmrobo.github.io/knn_svc_svm_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/knn_svc_svm_lab.jpg"
+  },
+  {
+   "title": "파이썬 머신러닝 연구소 — 파이썬 머신러닝 15층 연구실 해설",
+   "summary": "파이썬 머신러닝 연구소 — 15층 건물을 한 주에 한 층씩. 초파리팀과 주판봇팀이 발표·상담·대항전으로 머신러닝을 처음부터 풀어 주는 강의 해설 (2026-2학기 파이썬머신러닝).",
+   "cat": "머신러닝",
+   "mid": "머신러닝 모델",
+   "sub": "",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/python_machine_learning_lab",
+   "site_url": "https://adminmrobo.github.io/python_machine_learning_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/python_machine_learning_lab.jpg",
+   "lecture": "Y"
   },
   {
    "title": "Fish Market Data로 쉽게 따라하는 머신러닝",
@@ -1344,6 +1402,21 @@
    "thumb": "thumbs/repos/cnn_face_game_lab.jpg"
   },
   {
+   "title": "구조 먼저 그리기 연구실 05 · 콘티 편 — 콘티 먼저, 컷은 그다음",
+   "summary": "이야기를 여덟 컷으로 나누고, 카메라와 컷 잇기, 인물의 자세를 정한 콘티를 바탕으로 그림 생성 AI에게 컷 그림을 만들게 하는 방법을 실험으로 익힙니다. 콘티·컷 실패 8종 진단과 빈 콘티 양식까지.",
+   "cat": "AI 감각·생성",
+   "mid": "생성형 AI활용",
+   "sub": "스토리 제작",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/drawing_lab_05",
+   "site_url": "https://adminmrobo.github.io/drawing_lab_05/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/drawing_lab_05.jpg"
+  },
+  {
    "title": "구조 먼저 보는 캐릭터 그리기 연구실 — 픽셀 캐릭터를 실사까지",
    "summary": "캐릭터를 한 번에 그리지 않고 구조 → 빛 → 주름 순서로 잡는 원리를 실험으로 익히고, 그 원리로 연구실 픽셀 캐릭터를 애니풍·실사풍으로 옮기는 프롬프트를 실습합니다. 실패 사례 8종 진단까지.",
    "cat": "AI 감각·생성",
@@ -1417,6 +1490,51 @@
     "ko"
    ],
    "thumb": "thumbs/repos/drawing_lab_02.jpg"
+  },
+  {
+   "title": "구조 먼저 그리기 연구실 · 웃음 편 — 같은 구조, 웃기는 변형",
+   "summary": "웃긴 그림과 짧은 애니메이션을 원리부터 만드는 연구실 해설. 어긋남·과장·등신, 올려다보기 챌린지, 예비동작·찌그러짐·타이밍, 4컷 구성, AI 웃음 문장과 반복 영상, 실패 8종과 실전 연습장.",
+   "cat": "AI 감각·생성",
+   "mid": "생성형 AI활용",
+   "sub": "캐릭터 디자인",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/drawing_lab_fun",
+   "site_url": "https://adminmrobo.github.io/drawing_lab_fun/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/drawing_lab_fun.jpg"
+  },
+  {
+   "title": "구조 먼저 그리기 연구실 04 · 디테일 편 — 육각형 하나, 덩어리 몇 개",
+   "summary": "눈을 육각형에서, 머리카락을 덩어리에서 시작해 눈·눈 칠하기·표정·코·귀·입·머리카락의 디테일을 실험으로 익히고, 부위마다 정보량을 맞춘 AI 디테일 문장과 부분 수정으로 옮깁니다. 디테일 실패 8종 진단까지.",
+   "cat": "AI 감각·생성",
+   "mid": "생성형 AI활용",
+   "sub": "캐릭터 디자인",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/drawing_lab_04",
+   "site_url": "https://adminmrobo.github.io/drawing_lab_04/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/drawing_lab_04.jpg"
+  },
+  {
+   "title": "구조 먼저 그리기 연구실 · 웃음 편 2 · 베리에이션 — 같은 캐릭터, 다른 그림",
+   "summary": "참고 그림 70여 장을 비슷한 것끼리 넓게 묶은 일곱 군집(시대·선과 지역·흑백·등신·표정·매체와 옷·실패)을 따라, 같은 캐릭터를 다양한 그림체로 즐겁게 바꿔 그리는 법을 실험으로 익힙니다.",
+   "cat": "AI 감각·생성",
+   "mid": "생성형 AI활용",
+   "sub": "캐릭터 디자인",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/drawing_lab_fun_02",
+   "site_url": "https://adminmrobo.github.io/drawing_lab_fun_02/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/drawing_lab_fun_02.jpg"
   },
   {
    "title": "구조 먼저 그리기 연구실 03 · 얼굴 편 — 같은 기준선, 다른 얼굴",
@@ -1498,6 +1616,21 @@
     "ko"
    ],
    "thumb": "thumbs/repos/Automate_prompt_lab.jpg"
+  },
+  {
+   "title": "카파시의 방법론 — 한국어 데이터로 검증하다",
+   "summary": "안드레이 카파시의 무료 학습 저장소 7개를 연구실이 CPU에서 직접 돌리고, 네이버 영화 리뷰 20만 개로 한국어에서도 같은 결과가 나오는지 검증합니다.",
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "LLM 이해",
+   "sub": "",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/karpathy_method_korean",
+   "site_url": "https://adminmrobo.github.io/karpathy_method_korean/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/karpathy_method_korean.jpg"
   },
   {
    "title": "AI 에이전트 공식 속성 가이드 — 하루봇을 만들며 배우는 13장",
@@ -1630,6 +1763,21 @@
     "ko"
    ],
    "thumb": "thumbs/repos/Recursive-Self-Improvement.jpg"
+  },
+  {
+   "title": "그래프 이론 연구실 — 점과 선으로 관계를 보는 법 · 오리엔테이션",
+   "summary": "데이터·코드를 처음 배우는 분을 위한 그래프 이론 9장 + 실전 연습장. 심판 박사, 조장 초파리·주판봇, 조원 여섯이 조별발표·개인발표·상담으로 배우는 연구실 해설 시리즈.",
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "인공지능 수학",
+   "sub": "",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/graph_theory_lab",
+   "site_url": "https://adminmrobo.github.io/graph_theory_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/graph_theory_lab.jpg"
   },
   {
    "title": "목차 · 인퍼런스 스터디 북",
@@ -1982,6 +2130,22 @@
    "lecture": "Y"
   },
   {
+   "title": "노동경제학 연구실",
+   "summary": "노동시장의 세 주체, 노동공급(여가-소비 선택·대체효과와 소득효과·EITC), 노동수요(VMP·비용 최소화·AI 대체), 노동시장균형(최저임금·이민), 보상적 임금격차, 교육, 임금 불평등, 노동 이동까지 9장을 비전공자용 강의실 해설로 묶은 노동경제학 시리즈. 한국기술교육대학교 고용정책과 노동경제학 2026년 1학기 강의 기반.",
+   "cat": "경제·수학·최적화",
+   "mid": "경제학",
+   "sub": "",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/labor_economics",
+   "site_url": "https://adminmrobo.github.io/labor_economics/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/labor_economics.jpg",
+   "lecture": "Y"
+  },
+  {
    "title": "미시경제학 연구실 — 미시경제학 연구실 블로그",
    "summary": "경제모형을 읽는 법에서 출발해 소비자·생산자·시장지배력, 게임이론, 일반균형과 자산, 후생과 정책, 정보경제학까지 8장을 비전공자용 연구실 해설로 묶은 미시경제학 시리즈.",
    "cat": "경제·수학·최적화",
@@ -2087,6 +2251,36 @@
    "thumb": "thumbs/repos/topology_ai_lab.jpg"
   },
   {
+   "title": "큐브 교실 — 루빅스 큐브로 배우는 군·탐색·AI · 오리엔테이션",
+   "summary": "중학생도 따라오는 루빅스 큐브의 수학 15장 + 실전 연습장. 사람의 풀이법, 군론, 컴퓨터 탐색과 AI를 박사 선생님·두 조교·수강생 6명과 함께.",
+   "cat": "경제·수학·최적화",
+   "mid": "인공지능 수학",
+   "sub": "",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/ai_cube_lab",
+   "site_url": "https://adminmrobo.github.io/ai_cube_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/ai_cube_lab.jpg"
+  },
+  {
+   "title": "이산위상 연구실 — 점 하나하나가 섬인 세상 · 오리엔테이션",
+   "summary": "중학생도 따라오는 이산 위상 29장 + 실전 연습장. 박사 선생님과 조교 둘, 수강생 여섯이 함께하는 연구실 해설 시리즈. 행렬·벡터를 처음 배우는 분을 위한 「첫걸음」 상자 포함.",
+   "cat": "경제·수학·최적화",
+   "mid": "인공지능 수학",
+   "sub": "",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/discrete_topology_lab",
+   "site_url": "https://adminmrobo.github.io/discrete_topology_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/discrete_topology_lab.jpg"
+  },
+  {
    "title": "주판봇의 초파리 추적 대작전 ① 공변미분 — 진짜로 꺾인 만큼만 재기",
    "summary": "초파리를 쫓는 주판봇의 끈끈이 미사일로 배우는 공변미분: 가짜 변화, 보정표 Γ, 평행이동, 곡률, 측지선. 게임 5개로 직접 확인합니다.",
    "cat": "경제·수학·최적화",
@@ -2181,6 +2375,21 @@
     "ko"
    ],
    "thumb": "thumbs/repos/optimization_test_lab.jpg"
+  },
+  {
+   "title": "로피탈 교실 — 0/0의 정체를 밝히는 수업 · 오리엔테이션",
+   "summary": "미분이 아직 헷갈리는 학생도 따라오는 로피탈의 정리 12장 + 실전 연습장. 박사 선생님과 두 조교, 수강생 6명이 함께하는 연구실 해설 시리즈.",
+   "cat": "경제·수학·최적화",
+   "mid": "최적화 모델",
+   "sub": "",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/adminmrobo-lhopital_lab",
+   "site_url": "https://adminmrobo.github.io/adminmrobo-lhopital_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/adminmrobo-lhopital_lab.jpg"
   },
   {
    "title": "두 장의 지도 — 라그랑지안 vs 해밀토니안",
@@ -2573,6 +2782,27 @@
    "thumb": "thumbs/repos/data_visualization_lab.jpg"
   },
   {
+   "title": "데이터 시각화 디자인 연구실 — 데이터 시각화 15주 연구실 해설",
+   "summary": "데이터 시각화를 처음 배우는 사람을 위한 15주 연구실 해설. 디자인 연구실 건물을 한 층씩 오르며, 초파리 조와 주판봇 조가 조별발표·개인발표·상담으로 차트 고르기, 전처리, 산업별 시각화, 대시보드를 실제 사례로 익힌다.",
+   "cat": "통계·데이터 기초",
+   "mid": "데이터 시각화",
+   "sub": "",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/Data_visuialization_lecture_lab",
+   "site_url": "https://adminmrobo.github.io/Data_visuialization_lecture_lab/",
+   "link": "",
+   "langs": [
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "uz",
+    "ru"
+   ],
+   "thumb": "thumbs/repos/Data_visuialization_lecture_lab.jpg",
+   "lecture": "Y"
+  },
+  {
    "title": "데이터베이스 설계 연구실 — 데이터베이스 설계 15회차 연구실 해설",
    "summary": "데이터베이스 설계 15회차 연구실 해설 — 1~7주 이론, 8주 중간 REVIEW, 9~14주 SQL·설계·정규화·트랜잭션·응용, 15주 기말 REVIEW. SQL 실습은 노션 실습 페이지와 페이지 안 SQL 실습실로.",
    "cat": "통계·데이터 기초",
@@ -2692,6 +2922,21 @@
     "ko"
    ],
    "thumb": "thumbs/repos/what_is_p_value_lab.jpg"
+  },
+  {
+   "title": "확률해석 교실 — 불확실한 세상의 미적분 · 오리엔테이션",
+   "summary": "중학생도 따라오는 확률해석 13장 + 실전 연습장. 박사 선생님과 두 조교, 수강생 6명이 함께하는 연구실 해설 시리즈.",
+   "cat": "통계·데이터 기초",
+   "mid": "확률·통계",
+   "sub": "",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/Stochastic_labs",
+   "site_url": "https://adminmrobo.github.io/Stochastic_labs/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/Stochastic_labs.jpg"
   },
   {
    "title": "데이터 사이언티스트를 위한 베이지안 통계학",

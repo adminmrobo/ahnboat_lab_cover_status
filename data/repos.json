@@ -1902,7 +1902,7 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_ontology_feed",
   "pages_url": "https://adminmrobo.github.io/ahnboat_ontology_feed/",
   "default_branch": "main",
-  "pushed_at": "2026-11-25T16:59:36Z",
+  "pushed_at": "2026-11-25T18:05:50Z",
   "has_manifest": false,
   "covers": [
    {
@@ -10655,50 +10655,50 @@
   "repo_url": "https://github.com/adminmrobo/Data_visuialization_lecture_lab",
   "pages_url": "https://adminmrobo.github.io/Data_visuialization_lecture_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-25T16:00:49Z",
+  "pushed_at": "2026-11-25T18:44:50Z",
   "has_manifest": true,
   "covers": [
    {
-    "path": "",
+    "path": "assets/img/cover_00.webp",
     "role": "cover",
     "id": "cover_00",
-    "status": "pixel-fallback"
+    "status": "ok"
    },
    {
-    "path": "",
+    "path": "assets/img/cover_01.webp",
     "role": "cover",
     "id": "cover_01",
-    "status": "pixel-fallback"
+    "status": "ok"
    },
    {
-    "path": "",
+    "path": "assets/img/cover_02.webp",
     "role": "cover",
     "id": "cover_02",
-    "status": "pixel-fallback"
+    "status": "ok"
    },
    {
-    "path": "",
+    "path": "assets/img/cover_03.webp",
     "role": "cover",
     "id": "cover_03",
-    "status": "pixel-fallback"
+    "status": "ok"
    },
    {
-    "path": "",
+    "path": "assets/img/cover_04.webp",
     "role": "cover",
     "id": "cover_04",
-    "status": "pixel-fallback"
+    "status": "ok"
    },
    {
-    "path": "",
+    "path": "assets/img/cover_08.webp",
     "role": "cover",
     "id": "cover_08",
-    "status": "pixel-fallback"
+    "status": "ok"
    },
    {
-    "path": "",
+    "path": "assets/img/cover_09.webp",
     "role": "cover",
     "id": "cover_09",
-    "status": "pixel-fallback"
+    "status": "ok"
    },
    {
     "path": "",
@@ -10707,22 +10707,22 @@
     "status": "pixel-fallback"
    },
    {
-    "path": "",
+    "path": "assets/img/cover_11.webp",
     "role": "cover",
     "id": "cover_11",
-    "status": "pixel-fallback"
+    "status": "ok"
    },
    {
-    "path": "",
+    "path": "assets/img/cover_12.webp",
     "role": "cover",
     "id": "cover_12",
-    "status": "pixel-fallback"
+    "status": "ok"
    },
    {
-    "path": "",
+    "path": "assets/img/cover_99.webp",
     "role": "cover",
     "id": "cover_99",
-    "status": "pixel-fallback"
+    "status": "ok"
    }
   ],
   "redraw_count": 0,
@@ -10819,7 +10819,7 @@
     "ru": 23
    }
   },
-  "has_pages": false
+  "has_pages": true
  },
  {
   "repo": "database_01of04",
@@ -11104,7 +11104,7 @@
   "repo_url": "https://github.com/adminmrobo/discrete_topology_lab",
   "pages_url": "https://adminmrobo.github.io/discrete_topology_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-25T15:39:34Z",
+  "pushed_at": "2026-11-25T18:51:11Z",
   "has_manifest": true,
   "covers": [
    {
@@ -11112,18 +11112,18 @@
     "role": "cover",
     "id": "cover_00",
     "size": [
-     2048,
-     1152
+     1920,
+     1080
     ],
-    "status": "ok"
+    "status": "regenerate"
    },
    {
     "path": "01_open_sets.html#top",
     "role": "cover",
     "id": "cover_01",
     "size": [
-     2048,
-     1152
+     1920,
+     1080
     ],
     "characters": [
      "doc",
@@ -11131,15 +11131,15 @@
      "jupanbot",
      "asst"
     ],
-    "status": "ok"
+    "status": "regenerate"
    },
    {
     "path": "02_closed_sets_boundary.html#top",
     "role": "cover",
     "id": "cover_02",
     "size": [
-     2048,
-     1152
+     1920,
+     1080
     ],
     "characters": [
      "doc",
@@ -11147,15 +11147,15 @@
      "jupanbot",
      "sia"
     ],
-    "status": "ok"
+    "status": "regenerate"
    },
    {
     "path": "03_basis.html#top",
     "role": "cover",
     "id": "cover_03",
     "size": [
-     2048,
-     1152
+     1920,
+     1080
     ],
     "characters": [
      "doc",
@@ -11163,15 +11163,15 @@
      "jupanbot",
      "x2"
     ],
-    "status": "ok"
+    "status": "regenerate"
    },
    {
     "path": "04_discrete_vs_indiscrete.html#top",
     "role": "cover",
     "id": "cover_04",
     "size": [
-     2048,
-     1152
+     1920,
+     1080
     ],
     "characters": [
      "doc",
@@ -11179,15 +11179,15 @@
      "jupanbot",
      "moa"
     ],
-    "status": "ok"
+    "status": "regenerate"
    },
    {
     "path": "05_topology_as_table.html#top",
     "role": "cover",
     "id": "cover_05",
     "size": [
-     2048,
-     1152
+     1920,
+     1080
     ],
     "characters": [
      "doc",
@@ -11195,15 +11195,15 @@
      "jupanbot",
      "x3"
     ],
-    "status": "ok"
+    "status": "regenerate"
    },
    {
     "path": "06_connectedness.html#top",
     "role": "cover",
     "id": "cover_06",
     "size": [
-     2048,
-     1152
+     1920,
+     1080
     ],
     "characters": [
      "doc",
@@ -11211,15 +11211,15 @@
      "jupanbot",
      "x1"
     ],
-    "status": "ok"
+    "status": "regenerate"
    },
    {
     "path": "07_paths_in_punctured_plane.html#top",
     "role": "cover",
     "id": "cover_07",
     "size": [
-     2048,
-     1152
+     1920,
+     1080
     ],
     "characters": [
      "doc",
@@ -11227,15 +11227,15 @@
      "jupanbot",
      "moa"
     ],
-    "status": "ok"
+    "status": "regenerate"
    },
    {
     "path": "08_compactness.html#top",
     "role": "cover",
     "id": "cover_08",
     "size": [
-     2048,
-     1152
+     1920,
+     1080
     ],
     "characters": [
      "doc",
@@ -11243,15 +11243,15 @@
      "jupanbot",
      "robo"
     ],
-    "status": "ok"
+    "status": "regenerate"
    },
    {
     "path": "09_hausdorff_compact.html#top",
     "role": "cover",
     "id": "cover_09",
     "size": [
-     2048,
-     1152
+     1920,
+     1080
     ],
     "characters": [
      "doc",
@@ -11259,15 +11259,15 @@
      "jupanbot",
      "sia"
     ],
-    "status": "ok"
+    "status": "regenerate"
    },
    {
     "path": "10_smallest_neighborhoods.html#top",
     "role": "cover",
     "id": "cover_10",
     "size": [
-     2048,
-     1152
+     1920,
+     1080
     ],
     "characters": [
      "doc",
@@ -11275,15 +11275,15 @@
      "jupanbot",
      "moa"
     ],
-    "status": "ok"
+    "status": "regenerate"
    },
    {
     "path": "11_order_and_neighbor_matrix.html#top",
     "role": "cover",
     "id": "cover_11",
     "size": [
-     2048,
-     1152
+     1920,
+     1080
     ],
     "characters": [
      "doc",
@@ -11291,15 +11291,15 @@
      "jupanbot",
      "x2"
     ],
-    "status": "ok"
+    "status": "regenerate"
    },
    {
     "path": "12_pixel_paradox.html#top",
     "role": "cover",
     "id": "cover_12",
     "size": [
-     2048,
-     1152
+     1920,
+     1080
     ],
     "characters": [
      "doc",
@@ -11307,15 +11307,15 @@
      "jupanbot",
      "asst"
     ],
-    "status": "ok"
+    "status": "regenerate"
    },
    {
     "path": "13_khalimsky.html#top",
     "role": "cover",
     "id": "cover_13",
     "size": [
-     2048,
-     1152
+     1920,
+     1080
     ],
     "characters": [
      "doc",
@@ -11323,15 +11323,15 @@
      "jupanbot",
      "x3"
     ],
-    "status": "ok"
+    "status": "regenerate"
    },
    {
     "path": "14_groups_and_matrices.html#top",
     "role": "cover",
     "id": "cover_14",
     "size": [
-     2048,
-     1152
+     1920,
+     1080
     ],
     "characters": [
      "doc",
@@ -11339,15 +11339,15 @@
      "jupanbot",
      "x1"
     ],
-    "status": "ok"
+    "status": "regenerate"
    },
    {
     "path": "15_orbits_quotients.html#top",
     "role": "cover",
     "id": "cover_15",
     "size": [
-     2048,
-     1152
+     1920,
+     1080
     ],
     "characters": [
      "doc",
@@ -11355,15 +11355,15 @@
      "jupanbot",
      "sia"
     ],
-    "status": "ok"
+    "status": "regenerate"
    },
    {
     "path": "16_proper_actions.html#top",
     "role": "cover",
     "id": "cover_16",
     "size": [
-     2048,
-     1152
+     1920,
+     1080
     ],
     "characters": [
      "doc",
@@ -11371,15 +11371,15 @@
      "jupanbot",
      "fly"
     ],
-    "status": "ok"
+    "status": "regenerate"
    },
    {
     "path": "17_tiles_dirichlet.html#top",
     "role": "cover",
     "id": "cover_17",
     "size": [
-     2048,
-     1152
+     1920,
+     1080
     ],
     "characters": [
      "doc",
@@ -11387,15 +11387,15 @@
      "jupanbot",
      "x2"
     ],
-    "status": "ok"
+    "status": "regenerate"
    },
    {
     "path": "18_lattices_modular.html#top",
     "role": "cover",
     "id": "cover_18",
     "size": [
-     2048,
-     1152
+     1920,
+     1080
     ],
     "characters": [
      "doc",
@@ -11403,15 +11403,15 @@
      "jupanbot",
      "asst"
     ],
-    "status": "ok"
+    "status": "regenerate"
    },
    {
     "path": "19_covering_spaces.html#top",
     "role": "cover",
     "id": "cover_19",
     "size": [
-     2048,
-     1152
+     1920,
+     1080
     ],
     "characters": [
      "doc",
@@ -11419,15 +11419,15 @@
      "jupanbot",
      "moa"
     ],
-    "status": "ok"
+    "status": "regenerate"
    },
    {
     "path": "20_deck_galois.html#top",
     "role": "cover",
     "id": "cover_20",
     "size": [
-     2048,
-     1152
+     1920,
+     1080
     ],
     "characters": [
      "doc",
@@ -11435,15 +11435,15 @@
      "jupanbot",
      "x3"
     ],
-    "status": "ok"
+    "status": "regenerate"
    },
    {
     "path": "21_functors_adjunction.html#top",
     "role": "cover",
     "id": "cover_21",
     "size": [
-     2048,
-     1152
+     1920,
+     1080
     ],
     "characters": [
      "doc",
@@ -11451,15 +11451,15 @@
      "jupanbot",
      "sia"
     ],
-    "status": "ok"
+    "status": "regenerate"
    },
    {
     "path": "22_ultrafilters_stone_cech.html#top",
     "role": "cover",
     "id": "cover_22",
     "size": [
-     2048,
-     1152
+     1920,
+     1080
     ],
     "characters": [
      "doc",
@@ -11467,15 +11467,15 @@
      "jupanbot",
      "moa"
     ],
-    "status": "ok"
+    "status": "regenerate"
    },
    {
     "path": "23_extremal_profinite.html#top",
     "role": "cover",
     "id": "cover_23",
     "size": [
-     2048,
-     1152
+     1920,
+     1080
     ],
     "characters": [
      "doc",
@@ -11483,15 +11483,15 @@
      "jupanbot",
      "x3"
     ],
-    "status": "ok"
+    "status": "regenerate"
    },
    {
     "path": "24_final_review.html#top",
     "role": "cover",
     "id": "cover_24",
     "size": [
-     2048,
-     1152
+     1920,
+     1080
     ],
     "characters": [
      "doc",
@@ -11499,31 +11499,111 @@
      "jupanbot",
      "moa"
     ],
-    "status": "ok"
+    "status": "regenerate"
+   },
+   {
+    "path": "25_why_discrete_data.html#top",
+    "role": "cover",
+    "id": "cover_25",
+    "size": [
+     1920,
+     1080
+    ],
+    "characters": [
+     "doc",
+     "fly",
+     "jupanbot",
+     "x1"
+    ],
+    "status": "placeholder"
+   },
+   {
+    "path": "26_image_medical.html#top",
+    "role": "cover",
+    "id": "cover_26",
+    "size": [
+     1920,
+     1080
+    ],
+    "characters": [
+     "doc",
+     "fly",
+     "jupanbot",
+     "moa"
+    ],
+    "status": "placeholder"
+   },
+   {
+    "path": "27_mesh_holes.html#top",
+    "role": "cover",
+    "id": "cover_27",
+    "size": [
+     1920,
+     1080
+    ],
+    "characters": [
+     "doc",
+     "fly",
+     "jupanbot",
+     "x3"
+    ],
+    "status": "placeholder"
+   },
+   {
+    "path": "28_sensor_network.html#top",
+    "role": "cover",
+    "id": "cover_28",
+    "size": [
+     1920,
+     1080
+    ],
+    "characters": [
+     "doc",
+     "fly",
+     "jupanbot",
+     "x2"
+    ],
+    "status": "placeholder"
+   },
+   {
+    "path": "29_tda_python.html#top",
+    "role": "cover",
+    "id": "cover_29",
+    "size": [
+     1920,
+     1080
+    ],
+    "characters": [
+     "doc",
+     "fly",
+     "jupanbot",
+     "sia"
+    ],
+    "status": "placeholder"
    },
    {
     "path": "practice/index.html#top",
     "role": "cover",
     "id": "cover_practice",
     "size": [
-     2048,
-     1152
+     1920,
+     1080
     ],
-    "status": "ok"
+    "status": "regenerate"
    }
   ],
   "redraw_count": 0,
   "redraw_ids": [],
   "thumb": "thumbs/repos/discrete_topology_lab.jpg",
-  "site_desc": "중학생도 따라오는 이산 위상 24장 + 실전 연습장. 박사 선생님과 조교 둘, 수강생 여섯이 함께하는 연구실 해설 시리즈. 행렬·벡터를 처음 배우는 분을 위한 「첫걸음」 상자 포함.",
+  "site_desc": "중학생도 따라오는 이산 위상 29장 + 실전 연습장. 박사 선생님과 조교 둘, 수강생 여섯이 함께하는 연구실 해설 시리즈. 행렬·벡터를 처음 배우는 분을 위한 「첫걸음」 상자 포함.",
   "status": "ok",
   "checked_at": "2026-11-26",
-  "site_title": "이산위상 연구실 · 중학생도 따라오는 이산 위상 24장 + 실전 연습장",
+  "site_title": "이산위상 연구실 · 중학생도 따라오는 이산 위상 29장(활용 편 5장 포함) + 실전 연습장",
   "ontology": {
    "status": "partial",
-   "pages_with_kg": 24,
-   "pages_total": 26,
-   "pages_checked": 26,
+   "pages_with_kg": 29,
+   "pages_total": 31,
+   "pages_checked": 31,
    "kg_links": [
     "https://adminmrobo.github.io/discrete_topology_lab/01_open_sets.html#kg",
     "https://adminmrobo.github.io/discrete_topology_lab/02_closed_sets_boundary.html#kg",
@@ -11548,7 +11628,12 @@
     "https://adminmrobo.github.io/discrete_topology_lab/21_functors_adjunction.html#kg",
     "https://adminmrobo.github.io/discrete_topology_lab/22_ultrafilters_stone_cech.html#kg",
     "https://adminmrobo.github.io/discrete_topology_lab/23_extremal_profinite.html#kg",
-    "https://adminmrobo.github.io/discrete_topology_lab/24_final_review.html#kg"
+    "https://adminmrobo.github.io/discrete_topology_lab/24_final_review.html#kg",
+    "https://adminmrobo.github.io/discrete_topology_lab/25_why_discrete_data.html#kg",
+    "https://adminmrobo.github.io/discrete_topology_lab/26_image_medical.html#kg",
+    "https://adminmrobo.github.io/discrete_topology_lab/27_mesh_holes.html#kg",
+    "https://adminmrobo.github.io/discrete_topology_lab/28_sensor_network.html#kg",
+    "https://adminmrobo.github.io/discrete_topology_lab/29_tda_python.html#kg"
    ],
    "export_links": [
     "https://adminmrobo.github.io/discrete_topology_lab/01_open_sets.html#export",
@@ -11574,7 +11659,12 @@
     "https://adminmrobo.github.io/discrete_topology_lab/21_functors_adjunction.html#export",
     "https://adminmrobo.github.io/discrete_topology_lab/22_ultrafilters_stone_cech.html#export",
     "https://adminmrobo.github.io/discrete_topology_lab/23_extremal_profinite.html#export",
-    "https://adminmrobo.github.io/discrete_topology_lab/24_final_review.html#export"
+    "https://adminmrobo.github.io/discrete_topology_lab/24_final_review.html#export",
+    "https://adminmrobo.github.io/discrete_topology_lab/25_why_discrete_data.html#export",
+    "https://adminmrobo.github.io/discrete_topology_lab/26_image_medical.html#export",
+    "https://adminmrobo.github.io/discrete_topology_lab/27_mesh_holes.html#export",
+    "https://adminmrobo.github.io/discrete_topology_lab/28_sensor_network.html#export",
+    "https://adminmrobo.github.io/discrete_topology_lab/29_tda_python.html#export"
    ],
    "files": []
   },
@@ -11584,7 +11674,7 @@
    ],
    "count": 1,
    "pages": {
-    "ko": 26
+    "ko": 31
    },
    "partial": [],
    "complete": true,
@@ -11600,7 +11690,7 @@
    "count": 1,
    "complete": true,
    "pages_by_lang": {
-    "ko": 26
+    "ko": 31
    }
   },
   "has_pages": true
@@ -11947,7 +12037,7 @@
   "repo_url": "https://github.com/adminmrobo/drawing_lab_04",
   "pages_url": "https://adminmrobo.github.io/drawing_lab_04/",
   "default_branch": "main",
-  "pushed_at": "2026-11-25T11:48:59Z",
+  "pushed_at": "2026-11-25T18:19:42Z",
   "has_manifest": true,
   "covers": [],
   "redraw_count": 0,
@@ -12018,7 +12108,7 @@
   "repo_url": "https://github.com/adminmrobo/drawing_lab_05",
   "pages_url": "https://adminmrobo.github.io/drawing_lab_05/",
   "default_branch": "main",
-  "pushed_at": "2026-11-25T16:15:08Z",
+  "pushed_at": "2026-11-25T18:58:41Z",
   "has_manifest": true,
   "covers": [],
   "redraw_count": 0,
@@ -12030,9 +12120,9 @@
   "site_title": "구조 먼저 그리기 연구실 05 · 콘티 편 — 콘티 먼저, 컷은 그다음",
   "ontology": {
    "status": "partial",
-   "pages_with_kg": 8,
-   "pages_total": 9,
-   "pages_checked": 9,
+   "pages_with_kg": 9,
+   "pages_total": 10,
+   "pages_checked": 10,
    "kg_links": [
     "https://adminmrobo.github.io/drawing_lab_05/01_beats.html#kg",
     "https://adminmrobo.github.io/drawing_lab_05/02_camera.html#kg",
@@ -12040,6 +12130,7 @@
     "https://adminmrobo.github.io/drawing_lab_05/04_pose.html#kg",
     "https://adminmrobo.github.io/drawing_lab_05/05_ai_cuts.html#kg",
     "https://adminmrobo.github.io/drawing_lab_05/06_failure_lab.html#kg",
+    "https://adminmrobo.github.io/drawing_lab_05/08_conti_book.html#kg",
     "https://adminmrobo.github.io/drawing_lab_05/index.html#kg",
     "https://adminmrobo.github.io/drawing_lab_05/practice/index.html#kg"
    ],
@@ -12050,6 +12141,7 @@
     "https://adminmrobo.github.io/drawing_lab_05/04_pose.html#export",
     "https://adminmrobo.github.io/drawing_lab_05/05_ai_cuts.html#export",
     "https://adminmrobo.github.io/drawing_lab_05/06_failure_lab.html#export",
+    "https://adminmrobo.github.io/drawing_lab_05/08_conti_book.html#export",
     "https://adminmrobo.github.io/drawing_lab_05/index.html#export",
     "https://adminmrobo.github.io/drawing_lab_05/practice/index.html#export"
    ],
@@ -12061,7 +12153,7 @@
    ],
    "count": 1,
    "pages": {
-    "ko": 9
+    "ko": 10
    },
    "partial": [],
    "complete": true,
@@ -12077,10 +12169,10 @@
    "count": 1,
    "complete": true,
    "pages_by_lang": {
-    "ko": 9
+    "ko": 10
    }
   },
-  "has_pages": false
+  "has_pages": true
  },
  {
   "repo": "drawing_lab_fun",
@@ -12089,7 +12181,7 @@
   "repo_url": "https://github.com/adminmrobo/drawing_lab_fun",
   "pages_url": "https://adminmrobo.github.io/drawing_lab_fun/",
   "default_branch": "main",
-  "pushed_at": "2026-11-25T15:59:21Z",
+  "pushed_at": "2026-11-25T18:20:46Z",
   "has_manifest": true,
   "covers": [],
   "redraw_count": 0,
@@ -12543,7 +12635,7 @@
   "repo_url": "https://github.com/adminmrobo/fintech_data_analysis",
   "pages_url": "https://adminmrobo.github.io/fintech_data_analysis/",
   "default_branch": "main",
-  "pushed_at": "2026-11-23T23:30:12Z",
+  "pushed_at": "2026-11-25T19:00:57Z",
   "has_manifest": false,
   "covers": [
    {
@@ -12801,9 +12893,9 @@
   "site_title": "핀테크 데이터 연구실",
   "ontology": {
    "status": "partial",
-   "pages_with_kg": 15,
-   "pages_total": 16,
-   "pages_checked": 16,
+   "pages_with_kg": 16,
+   "pages_total": 17,
+   "pages_checked": 17,
    "kg_links": [
     "https://adminmrobo.github.io/fintech_data_analysis/01_fintech_industry.html#kg",
     "https://adminmrobo.github.io/fintech_data_analysis/02_data_collection.html#kg",
@@ -12819,7 +12911,8 @@
     "https://adminmrobo.github.io/fintech_data_analysis/12_visualization.html#kg",
     "https://adminmrobo.github.io/fintech_data_analysis/13_robo_advisor.html#kg",
     "https://adminmrobo.github.io/fintech_data_analysis/14_security_quality.html#kg",
-    "https://adminmrobo.github.io/fintech_data_analysis/15_final_review.html#kg"
+    "https://adminmrobo.github.io/fintech_data_analysis/15_final_review.html#kg",
+    "https://adminmrobo.github.io/fintech_data_analysis/hands_on_01.html#kg"
    ],
    "export_links": [
     "https://adminmrobo.github.io/fintech_data_analysis/01_fintech_industry.html#export",
@@ -12836,7 +12929,8 @@
     "https://adminmrobo.github.io/fintech_data_analysis/12_visualization.html#export",
     "https://adminmrobo.github.io/fintech_data_analysis/13_robo_advisor.html#export",
     "https://adminmrobo.github.io/fintech_data_analysis/14_security_quality.html#export",
-    "https://adminmrobo.github.io/fintech_data_analysis/15_final_review.html#export"
+    "https://adminmrobo.github.io/fintech_data_analysis/15_final_review.html#export",
+    "https://adminmrobo.github.io/fintech_data_analysis/hands_on_01.html#export"
    ],
    "files": [
     {
@@ -12851,7 +12945,7 @@
    ],
    "count": 1,
    "pages": {
-    "ko": 16
+    "ko": 17
    },
    "partial": [],
    "complete": true,
@@ -12867,7 +12961,7 @@
    "count": 1,
    "complete": true,
    "pages_by_lang": {
-    "ko": 16
+    "ko": 17
    }
   },
   "has_pages": true
@@ -14064,7 +14158,7 @@
   "repo_url": "https://github.com/adminmrobo/graph_theory_lab",
   "pages_url": "https://adminmrobo.github.io/graph_theory_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-25T16:18:10Z",
+  "pushed_at": "2026-11-25T18:41:34Z",
   "has_manifest": false,
   "covers": [
    {
@@ -14184,7 +14278,7 @@
     "ko": 11
    }
   },
-  "has_pages": false
+  "has_pages": true
  },
  {
   "repo": "green_route",
@@ -17458,11 +17552,21 @@
   "repo_url": "https://github.com/adminmrobo/knn_svc_svm_lab",
   "pages_url": "https://adminmrobo.github.io/knn_svc_svm_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-25T15:37:26Z",
+  "pushed_at": "2026-11-25T18:50:50Z",
   "has_manifest": false,
   "covers": [
    {
+    "path": "assets/img/cover_index.png",
+    "role": "cover",
+    "estimated": true
+   },
+   {
     "path": "assets/img/cover_index.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_part1.png",
     "role": "cover",
     "estimated": true
    },
@@ -17472,7 +17576,17 @@
     "estimated": true
    },
    {
+    "path": "assets/img/cover_part2.png",
+    "role": "cover",
+    "estimated": true
+   },
+   {
     "path": "assets/img/cover_part2.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_part3.png",
     "role": "cover",
     "estimated": true
    },
@@ -17482,7 +17596,17 @@
     "estimated": true
    },
    {
+    "path": "assets/img/cover_part4.png",
+    "role": "cover",
+    "estimated": true
+   },
+   {
     "path": "assets/img/cover_part4.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_practice.png",
     "role": "cover",
     "estimated": true
    },
@@ -17519,6 +17643,31 @@
    {
     "path": "assets/img/og_practice.webp",
     "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/thumb_part1.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/thumb_part2.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/thumb_part3.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/thumb_part4.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/thumb_practice.webp",
+    "role": "thumb",
     "estimated": true
    }
   ],
@@ -24606,12 +24755,177 @@
   "repo_url": "https://github.com/adminmrobo/python_machine_learning_lab",
   "pages_url": "https://adminmrobo.github.io/python_machine_learning_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-25T16:02:13Z",
+  "pushed_at": "2026-11-25T18:40:59Z",
   "has_manifest": false,
   "covers": [
    {
-    "path": "assets/img/og_cover.png",
-    "role": "og",
+    "path": "assets/img/cover_01.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_02.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_03.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_04.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_05.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_06.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_07.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_08.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_09.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_10.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_11.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_12.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_13.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_14.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_15.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_index.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_practice.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/og/cover_01.png",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/og/cover_02.png",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/og/cover_03.png",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/og/cover_04.png",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/og/cover_05.png",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/og/cover_06.png",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/og/cover_07.png",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/og/cover_08.png",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/og/cover_09.png",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/og/cover_10.png",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/og/cover_11.png",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/og/cover_12.png",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/og/cover_13.png",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/og/cover_14.png",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/og/cover_15.png",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/og/cover_index.png",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/og/cover_practice.png",
+    "role": "cover",
     "estimated": true
    }
   ],
@@ -24683,7 +24997,7 @@
     "ko": 17
    }
   },
-  "has_pages": false
+  "has_pages": true
  },
  {
   "repo": "Recursive-Self-Improvement",

@@ -1,6 +1,6 @@
 {
 "note": "뼈대 주제와 이름이 맞는 노드(자동 후보). 사람이 보고 맞는 것만 해설 페이지 kg-raw에 broader로 옮긴다(ai-lab-retrofit 15-2).",
-"count": 75,
+"count": 93,
 "items": [
 {
 "node": "lab:concept/autoregressive",
@@ -120,6 +120,18 @@
 ]
 },
 {
+"node": "lab:concept/euler-characteristic",
+"ko": "오일러 수 V − E + F",
+"topics": [
+"lab:topic/euler-characteristic"
+],
+"auto": true,
+"confidence": "low",
+"pages": [
+"discrete_topology_lab/27_mesh_holes.html"
+]
+},
+{
 "node": "lab:concept/first-party-fraud",
 "ko": "제1자 사기",
 "topics": [
@@ -178,8 +190,21 @@
 "confidence": "mid",
 "pages": [
 "industrial-accident-prediction/ch3_models.html",
-"Reinforcement-Learning-lab_project_01/ch2_text.html",
-"Reinforcement-Learning-lab_project_01/ch3_image.html"
+"python_machine_learning_lab/w06_logistic_perceptron_svm.html",
+"Reinforcement-Learning-lab_project_01/ch2_text.html"
+]
+},
+{
+"node": "lab:concept/normalization",
+"ko": "정규화(첫날=100)",
+"topics": [
+"lab:topic/normalization-db"
+],
+"auto": true,
+"confidence": "low",
+"pages": [
+"fintech_data_analysis/hands_on_01.html",
+"generative-ai-prompt-strategy/07_character_prompt.html"
 ]
 },
 {
@@ -204,6 +229,18 @@
 "confidence": "low",
 "pages": [
 "industrial-accident-prediction/ch2_data.html"
+]
+},
+{
+"node": "lab:concept/perceptron",
+"ko": "퍼셉트론",
+"topics": [
+"lab:topic/perceptron"
+],
+"auto": true,
+"confidence": "low",
+"pages": [
+"python_machine_learning_lab/w06_logistic_perceptron_svm.html"
 ]
 },
 {
@@ -747,6 +784,18 @@
 ]
 },
 {
+"node": "lab:term/annotation",
+"ko": "주석",
+"topics": [
+"lab:topic/notes-fs"
+],
+"auto": true,
+"confidence": "low",
+"pages": [
+"Data_visuialization_lecture_lab/w11_smartcity-logistics.html"
+]
+},
+{
 "node": "lab:term/classification",
 "ko": "분류",
 "topics": [
@@ -755,7 +804,8 @@
 "auto": true,
 "confidence": "low",
 "pages": [
-"ai-nlp-data-analysis/07-1_nlp_ai_models.html"
+"ai-nlp-data-analysis/07-1_nlp_ai_models.html",
+"python_machine_learning_lab/w02_classification_and_regression.html"
 ]
 },
 {
@@ -773,6 +823,66 @@
 ]
 },
 {
+"node": "lab:term/cross-validation",
+"ko": "교차검증",
+"topics": [
+"lab:topic/cross-validation"
+],
+"auto": true,
+"confidence": "low",
+"pages": [
+"python_machine_learning_lab/w03_scores_and_cross_validation.html"
+]
+},
+{
+"node": "lab:term/dashboard",
+"ko": "대시보드",
+"topics": [
+"lab:topic/dashboards"
+],
+"auto": true,
+"confidence": "low",
+"pages": [
+"Data_visuialization_lecture_lab/w04_industry-fintech.html"
+]
+},
+{
+"node": "lab:term/elasticity",
+"ko": "탄력성",
+"topics": [
+"lab:topic/elasticity"
+],
+"auto": true,
+"confidence": "low",
+"pages": [
+"python_machine_learning_lab/w09_reading_regression_models.html"
+]
+},
+{
+"node": "lab:term/fairness",
+"ko": "공정성",
+"topics": [
+"lab:topic/fairness"
+],
+"auto": true,
+"confidence": "low",
+"pages": [
+"python_machine_learning_lab/w10_real_cases_insurance.html"
+]
+},
+{
+"node": "lab:term/feature-engineering",
+"ko": "특성공학",
+"topics": [
+"lab:topic/feature-engineering"
+],
+"auto": true,
+"confidence": "mid",
+"pages": [
+"python_machine_learning_lab/w05_one_function_rule_knn_tree.html"
+]
+},
+{
 "node": "lab:term/hallucination",
 "ko": "할루시네이션",
 "topics": [
@@ -785,6 +895,18 @@
 ]
 },
 {
+"node": "lab:term/indifference-curve",
+"ko": "무차별곡선",
+"topics": [
+"lab:topic/indifference-curves"
+],
+"auto": true,
+"confidence": "mid",
+"pages": [
+"labor_economics/02_labor_supply.html"
+]
+},
+{
 "node": "lab:term/information-system",
 "ko": "정보 시스템",
 "topics": [
@@ -794,6 +916,30 @@
 "confidence": "low",
 "pages": [
 "data_base_design/w02_data_and_database.html"
+]
+},
+{
+"node": "lab:term/irr",
+"ko": "내부수익률",
+"topics": [
+"lab:topic/irr"
+],
+"auto": true,
+"confidence": "low",
+"pages": [
+"labor_economics/07_education.html"
+]
+},
+{
+"node": "lab:term/iv",
+"ko": "도구변수",
+"topics": [
+"lab:topic/instrumental-variables"
+],
+"auto": true,
+"confidence": "low",
+"pages": [
+"labor_economics/07_education.html"
 ]
 },
 {
@@ -824,6 +970,18 @@
 ]
 },
 {
+"node": "lab:term/p-value",
+"ko": "p값",
+"topics": [
+"lab:topic/p-value"
+],
+"auto": true,
+"confidence": "low",
+"pages": [
+"python_machine_learning_lab/w09_reading_regression_models.html"
+]
+},
+{
 "node": "lab:term/pca",
 "ko": "PCA",
 "topics": [
@@ -833,6 +991,30 @@
 "confidence": "mid",
 "pages": [
 "ai-nlp-data-analysis/06-2_vector_visualization.html"
+]
+},
+{
+"node": "lab:term/perceptron",
+"ko": "퍼셉트론",
+"topics": [
+"lab:topic/perceptron"
+],
+"auto": true,
+"confidence": "low",
+"pages": [
+"python_machine_learning_lab/w06_logistic_perceptron_svm.html"
+]
+},
+{
+"node": "lab:term/phishing",
+"ko": "피싱",
+"topics": [
+"lab:topic/phishing"
+],
+"auto": true,
+"confidence": "low",
+"pages": [
+"fintech_data_analysis/hands_on_01.html"
 ]
 },
 {
@@ -856,7 +1038,8 @@
 "auto": true,
 "confidence": "mid",
 "pages": [
-"ai-nlp-data-analysis/08-1_seq2seq_limits.html"
+"ai-nlp-data-analysis/08-1_seq2seq_limits.html",
+"python_machine_learning_lab/w07_improving_models_battery.html"
 ]
 },
 {
@@ -885,6 +1068,18 @@
 ]
 },
 {
+"node": "lab:term/supervised-learning",
+"ko": "지도학습",
+"topics": [
+"lab:topic/supervised-learning"
+],
+"auto": true,
+"confidence": "mid",
+"pages": [
+"python_machine_learning_lab/w01_ai_model_overview.html"
+]
+},
+{
 "node": "lab:term/tokenization",
 "ko": "토큰화",
 "topics": [
@@ -894,6 +1089,30 @@
 "confidence": "mid",
 "pages": [
 "bayesian-statistics-for-data-scientists/10_nlp_bayes.html"
+]
+},
+{
+"node": "lab:term/unemployment-rate",
+"ko": "실업률",
+"topics": [
+"lab:topic/unemployment-rate"
+],
+"auto": true,
+"confidence": "mid",
+"pages": [
+"labor_economics/02_labor_supply.html"
+]
+},
+{
+"node": "lab:term/unsupervised-learning",
+"ko": "비지도학습",
+"topics": [
+"lab:topic/unsupervised-learning"
+],
+"auto": true,
+"confidence": "mid",
+"pages": [
+"python_machine_learning_lab/w01_ai_model_overview.html"
 ]
 },
 {
@@ -943,7 +1162,7 @@
 "pages": [
 "neural_network_atlas/1_neural_network_atlas_chart.html",
 "neural_network_atlas/2_neural_network_atlas_after.html",
-"timeseries-trilogy/3_6_neural_irony.html"
+"python_machine_learning_lab/w06_logistic_perceptron_svm.html"
 ]
 }
 ]
