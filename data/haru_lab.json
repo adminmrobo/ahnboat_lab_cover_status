@@ -1,20 +1,23 @@
 {
-  "title": "하루의 실험실",
-  "kicker": "AHNBOAT LAB · HARU'S LAB",
-  "intro": "실험조수 하루가 AI 실험 하나를 직접 다시 돌리고, 나온 숫자와 그림으로 설명하는 연재입니다.",
+  "title": "조수 하루의 3차원 실험실",
+  "kicker": "HARU'S 3D LAB",
+  "intro": "좌표로 이루어진 거대한 방에서 실험조수 하루가 실험을 직접 다시 돌리고, 숫자와 그림으로 보여 줍니다.",
+  "room": "https://adminmrobo.github.io/ahn_boat_lab_town/haru3d.html",
   "episodes": [
     {
       "ep": "EP.01",
       "title": "뉴런의 드롭아웃",
-      "desc": "학습할 때 뉴런 절반을 끄면 새 점 오차가 3배 작아집니다. 같은 1-64-1 망을 두 번 학습시켜 비교했어요.",
+      "desc": "뉴런 절반을 끄면 새 점 오차가 3배 작아져요",
       "url": "https://adminmrobo.github.io/Dropout-neural-network-tutorial/",
-      "repo": "https://github.com/adminmrobo/Dropout-neural-network-tutorial",
       "thumb": "thumbs/haru_lab/ep01.webp",
-      "stats": [["일반 망 오차", "0.135"], ["드롭아웃 망 오차", "0.045"], ["대사", "35개"]],
-      "tags": ["신경망", "규제", "과적합"],
+      "pos": "(12, 0, 12)",
+      "stats": [["0.135", "일반"], ["0.045", "드롭아웃"]],
       "date": "2026-11-26",
       "status": "open"
-    }
-  ],
-  "next": "다음 실험 준비 중"
+    },
+    {"ep": "EP.02", "title": "준비 중", "pos": "(16, 0, 4)", "status": "soon"},
+    {"ep": "EP.03", "title": "준비 중", "pos": "(4, 0, 16)", "status": "soon"},
+    {"ep": "EP.04", "title": "준비 중", "pos": "(5, 0, 5)", "status": "soon"},
+    {"ep": "EP.05", "title": "준비 중", "pos": "(11, 5, 4)", "status": "soon"}
+  ]
 }
