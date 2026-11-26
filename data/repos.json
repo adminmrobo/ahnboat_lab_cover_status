@@ -1763,7 +1763,7 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_lab_gallery",
   "pages_url": "https://adminmrobo.github.io/ahnboat_lab_gallery/",
   "default_branch": "main",
-  "pushed_at": "2026-11-25T19:13:47Z",
+  "pushed_at": "2026-11-26T11:10:31Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -1902,7 +1902,7 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_ontology_feed",
   "pages_url": "https://adminmrobo.github.io/ahnboat_ontology_feed/",
   "default_branch": "main",
-  "pushed_at": "2026-11-26T01:09:04Z",
+  "pushed_at": "2026-11-26T02:29:32Z",
   "has_manifest": false,
   "covers": [
    {
@@ -4336,7 +4336,7 @@
   "repo_url": "https://github.com/adminmrobo/ai_industry_lab",
   "pages_url": "https://adminmrobo.github.io/ai_industry_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-25T04:54:35Z",
+  "pushed_at": "2026-11-26T04:11:11Z",
   "has_manifest": false,
   "covers": [
    {
@@ -10655,7 +10655,7 @@
   "repo_url": "https://github.com/adminmrobo/Data_visuialization_lecture_lab",
   "pages_url": "https://adminmrobo.github.io/Data_visuialization_lecture_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-25T19:21:00Z",
+  "pushed_at": "2026-11-26T10:06:26Z",
   "has_manifest": true,
   "covers": [
    {
@@ -11110,7 +11110,7 @@
   "repo_url": "https://github.com/adminmrobo/discrete_topology_lab",
   "pages_url": "https://adminmrobo.github.io/discrete_topology_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-25T23:25:10Z",
+  "pushed_at": "2026-11-26T08:57:35Z",
   "has_manifest": true,
   "covers": [
    {
@@ -12641,7 +12641,7 @@
   "repo_url": "https://github.com/adminmrobo/fintech_data_analysis",
   "pages_url": "https://adminmrobo.github.io/fintech_data_analysis/",
   "default_branch": "main",
-  "pushed_at": "2026-11-26T00:09:22Z",
+  "pushed_at": "2026-11-26T11:24:04Z",
   "has_manifest": false,
   "covers": [
    {
@@ -13627,7 +13627,7 @@
   "repo_url": "https://github.com/adminmrobo/g2b-bid-strategy",
   "pages_url": "https://adminmrobo.github.io/g2b-bid-strategy/",
   "default_branch": "main",
-  "pushed_at": "2026-11-25T04:02:21Z",
+  "pushed_at": "2026-11-26T03:25:40Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -19333,6 +19333,49 @@
   "has_pages": false
  },
  {
+  "repo": "math_basic_for_ai_dictionary",
+  "series_ko": "math_basic_for_ai_dictionary",
+  "title_ko": null,
+  "repo_url": "https://github.com/adminmrobo/math_basic_for_ai_dictionary",
+  "pages_url": "https://adminmrobo.github.io/math_basic_for_ai_dictionary/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-26T10:59:54Z",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "site_desc": null,
+  "status": "unknown",
+  "checked_at": "2026-11-26",
+  "site_title": null,
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 0,
+   "pages_checked": 0,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [],
+   "count": 0,
+   "pages": {},
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {}
+  },
+  "languages": {
+   "codes": [],
+   "count": 0,
+   "complete": true,
+   "pages_by_lang": {}
+  },
+  "has_pages": false
+ },
+ {
   "repo": "math_for_ai_lab",
   "series_ko": "인공지능을 위한 수학",
   "title_ko": "인공지능을 위한 수학 1부 — 숫자로 담고, 한 번에 풀기",
@@ -24826,7 +24869,7 @@
   "repo_url": "https://github.com/adminmrobo/python_machine_learning_lab",
   "pages_url": "https://adminmrobo.github.io/python_machine_learning_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-25T18:40:59Z",
+  "pushed_at": "2026-11-26T10:02:06Z",
   "has_manifest": false,
   "covers": [
    {
@@ -25045,27 +25088,35 @@
   },
   "i18n": {
    "langs": [
-    "ko"
+    "ko",
+    "zh"
    ],
-   "count": 1,
+   "count": 2,
    "pages": {
-    "ko": 17
+    "ko": 17,
+    "zh": 17
    },
    "partial": [],
    "complete": true,
-   "readme_langs": [],
+   "readme_langs": [
+    "ko",
+    "zh"
+   ],
    "links": {
-    "ko": "https://adminmrobo.github.io/python_machine_learning_lab/index.html"
+    "ko": "https://adminmrobo.github.io/python_machine_learning_lab/index.html",
+    "zh": "https://adminmrobo.github.io/python_machine_learning_lab/index.zh.html"
    }
   },
   "languages": {
    "codes": [
-    "ko"
+    "ko",
+    "zh"
    ],
-   "count": 1,
+   "count": 2,
    "complete": true,
    "pages_by_lang": {
-    "ko": 17
+    "ko": 17,
+    "zh": 17
    }
   },
   "has_pages": true
@@ -26183,6 +26234,61 @@
    "complete": true,
    "pages_by_lang": {
     "ko": 10
+   }
+  },
+  "has_pages": true
+ },
+ {
+  "repo": "riemann_frontiers_lab",
+  "series_ko": "초파리의 세 전선 — 리만 가설 연구실 해설 3부",
+  "title_ko": "초파리의 세 전선 — 리만 가설 연구실 해설 3부",
+  "repo_url": "https://github.com/adminmrobo/riemann_frontiers_lab",
+  "pages_url": "https://adminmrobo.github.io/riemann_frontiers_lab/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-26T10:10:20Z",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "site_desc": "증명 소식 이전, 수학자들은 리만 가설에 어디까지 다가와 있었나. 확인한 점의 개수, 줄 위 점의 비율, 양쪽에서 조이는 집게를 초파리의 어려운 말과 X1·X2·X3의 쉬운 풀이로.",
+  "status": "unknown",
+  "checked_at": "2026-11-26",
+  "site_title": "초파리의 세 전선 — 리만 가설 연구실 해설 3부",
+  "ontology": {
+   "status": "partial",
+   "pages_with_kg": 1,
+   "pages_total": 2,
+   "pages_checked": 2,
+   "kg_links": [
+    "https://adminmrobo.github.io/riemann_frontiers_lab/frontiers.html#kg"
+   ],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 2
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/riemann_frontiers_lab/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 2
    }
   },
   "has_pages": true

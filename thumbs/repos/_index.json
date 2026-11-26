@@ -33,7 +33,7 @@
  },
  "ahnboat_lab_gallery": {
   "src": null,
-  "pushed_at": "2026-11-25T19:13:47Z"
+  "pushed_at": "2026-11-26T11:10:31Z"
  },
  "ahnboat_lab_langpack": {
   "src": null,
@@ -45,7 +45,7 @@
  },
  "ahnboat_ontology_feed": {
   "src": "name:assets/cover.png",
-  "pushed_at": "2026-11-26T01:09:04Z",
+  "pushed_at": "2026-11-26T02:29:32Z",
   "made": "2026-11-26"
  },
  "ahnboat_server_room_guards": {
@@ -102,7 +102,7 @@
  },
  "ai_industry_lab": {
   "src": "name:assets/og.png",
-  "pushed_at": "2026-11-25T04:54:35Z",
+  "pushed_at": "2026-11-26T04:11:11Z",
   "made": "2026-11-26"
  },
  "AI_Model_Review": {
@@ -230,7 +230,7 @@
  },
  "Data_visuialization_lecture_lab": {
   "src": "manifest:assets/img/cover_00.webp",
-  "pushed_at": "2026-11-25T19:21:00Z",
+  "pushed_at": "2026-11-26T10:06:26Z",
   "made": "2026-11-26"
  },
  "database_01of04": {
@@ -249,7 +249,7 @@
  },
  "discrete_topology_lab": {
   "src": "og:img/og/og_index.webp",
-  "pushed_at": "2026-11-25T23:25:10Z",
+  "pushed_at": "2026-11-26T08:57:35Z",
   "made": "2026-11-26"
  },
  "DL_model_hiring_committee": {
@@ -312,7 +312,7 @@
  },
  "fintech_data_analysis": {
   "src": "name:assets/og/cover_00.jpg",
-  "pushed_at": "2026-11-26T00:09:22Z",
+  "pushed_at": "2026-11-26T11:24:04Z",
   "made": "2026-11-26"
  },
  "Fish_Market_Data_Machine_Learning": {
@@ -337,7 +337,7 @@
  },
  "g2b-bid-strategy": {
   "src": null,
-  "pushed_at": "2026-11-25T04:02:21Z"
+  "pushed_at": "2026-11-26T03:25:40Z"
  },
  "Gen_AI_Hannam_univ": {
   "src": "redraw:R109:index.html#px",
@@ -558,6 +558,10 @@
   "pushed_at": "2026-11-07T05:41:16Z",
   "made": "2026-11-08"
  },
+ "math_basic_for_ai_dictionary": {
+  "src": null,
+  "pushed_at": "2026-11-26T10:59:54Z"
+ },
  "math_for_ai_lab": {
   "src": "manifest:assets/cover/cover_part1.webp",
   "pushed_at": "2026-11-23T23:25:47Z",
@@ -727,7 +731,7 @@
  },
  "python_machine_learning_lab": {
   "src": "name:assets/img/cover_01.webp",
-  "pushed_at": "2026-11-25T18:40:59Z",
+  "pushed_at": "2026-11-26T10:02:06Z",
   "made": "2026-11-26"
  },
  "Recursive-Self-Improvement": {
@@ -744,6 +748,10 @@
   "src": "manifest:img/cover_00.webp",
   "pushed_at": "2026-11-23T07:30:57Z",
   "made": "2026-11-23"
+ },
+ "riemann_frontiers_lab": {
+  "src": null,
+  "pushed_at": "2026-11-26T10:10:20Z"
  },
  "riemann_hypothesis_lab": {
   "src": "name:assets/img/cover_briefing.webp",
