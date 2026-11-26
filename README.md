@@ -96,7 +96,7 @@ https://adminmrobo.github.io/ahnboat_lab_cover_status/admin.html
 - `catalog.html` — Reon Ahn's Lab Server (콘텐츠 10개 랙)
 - `catalog.html?view=articles` — Ahn's Articles & Presentations. 주인장이 직접 쓴 논문·학술대회 발표만 모은다. 랙 이름이 아니라 관리실의 **주인장 저자** 체크(hub.csv `주인장_저자_여부` = Y)로 모이고, 체크하지 않으면 Articles(논문·발표·강연)에서 빠진다. 관리실의 **저자강의** 체크(`저자_강의_여부` = Y)는 LECTURE 갈래로 모인다. 논문 갈래는 `Articles_갈래` 칸(AI 응용 논문·경제·사회 논문·금융·자산 논문·외부_콘텐츠, 비우면 기타 논문·발표). 그래서, 같은 글이 Lab Server에서는 주제에 맞는 랙에 들어 있다.
 - `catalog.html?view=portfolio` — Ahn's Portfolio. 목록은 `data/portfolio.csv`(엑셀로 고쳐 그대로 올림: 대분류, 중분류, 제목, 소개, 링크, 이미지, 버튼글씨, 비고, 순서, 공개), 추가링크 — "버튼글씨|주소"를 ; 로 이어 쓰면 보조 버튼이 붙는다(예: 저서 카드의 보충본·Lab Server 위치), 분야 설정은 `data/portfolio_meta.json`. 링크가 비면 '링크 준비 중'.
-- `haru_lab.html` — **조수 하루의 3차원 실험실** 가로 막대 블록. 홈 'SERIES · 대표 시리즈' 바로 위. 회차 카드 5장은 `data/haru_lab.json`의 episodes(`status`: open 공개 / soon 준비 중, 썸네일 `thumbs/haru_lab/`). 실험 방은 랩타운 2층 `haru3d.html`. 워드프레스에 붙이는 코드는 `docs/wp_haru_lab_block.html`, 바로가기 주소 `ahnboat.xyz/#haru-lab`.
+- `haru_lab.html` — **조수 하루의 3차원 실험실** 가로 막대 블록. 홈 'SERIES · 대표 시리즈' 바로 위. 회차 카드 5장은 `data/haru_lab.json`의 episodes(`status`: open 공개 / soon 준비 중, 썸네일 `thumbs/haru_lab/`). 실험 방은 랩타운 2층 `haru3d.html`. 워드프레스에는 '주인장은 누구?' 블록 v8(`docs/wp_intro_block_v8.html`) 안에 iframe(class `ahnboat-embed`, 높이는 v7부터 있던 맞춤 코드가 처리)으로 들어 있다, 바로가기 주소 `ahnboat.xyz/#haru-lab`.
 - `progress.html` — Progress Board. 공개 콘텐츠만, 랙별 온톨로지·외국어팩 진행, 언어별 콘텐츠, 최근 업데이트, 다음에 손볼 곳.
 - 화면 설정(제목·배너·갈래 이름 바꾸기)은 `data/views.json`.
 - 모두 `?embed=1&theme=light`를 붙여 끼워 넣으면 머리글 없이 보이고, 높이를 바깥 페이지에 알려 준다.
