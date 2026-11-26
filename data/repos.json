@@ -1902,7 +1902,7 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_ontology_feed",
   "pages_url": "https://adminmrobo.github.io/ahnboat_ontology_feed/",
   "default_branch": "main",
-  "pushed_at": "2026-11-25T19:11:04Z",
+  "pushed_at": "2026-11-26T01:09:04Z",
   "has_manifest": false,
   "covers": [
    {
@@ -1934,15 +1934,15 @@
   "redraw_count": 0,
   "redraw_ids": [],
   "thumb": "thumbs/repos/ahnboat_ontology_feed.jpg",
-  "site_desc": "ahnboat lab 연구실 도구함. 아이디어 검증, 결과물 평가 등 연구실 개념 지도(온톨로지)를 근거로 생성 AI를 쓰는 도구 모음. 하루·시아·모아가 안내합니다.",
+  "site_desc": "ahnboat lab 연구실 도구함. 아이디어 검증, 결과물 평가, 강의 PPT 지시서 만들기 등 연구실 개념 지도(온톨로지)를 근거로 생성 AI를 쓰는 도구 모음. 하루·시아·모아가 안내합니다.",
   "status": "ok",
   "checked_at": "2026-11-26",
   "site_title": "연구실 도구함 — ahnboat lab",
   "ontology": {
    "status": "none",
    "pages_with_kg": 0,
-   "pages_total": 4,
-   "pages_checked": 4,
+   "pages_total": 5,
+   "pages_checked": 5,
    "kg_links": [],
    "export_links": [],
    "files": [
@@ -1986,7 +1986,7 @@
    ],
    "count": 1,
    "pages": {
-    "ko": 4
+    "ko": 5
    },
    "partial": [],
    "complete": true,
@@ -2002,7 +2002,7 @@
    "count": 1,
    "complete": true,
    "pages_by_lang": {
-    "ko": 4
+    "ko": 5
    }
   },
   "has_pages": true
@@ -11110,7 +11110,7 @@
   "repo_url": "https://github.com/adminmrobo/discrete_topology_lab",
   "pages_url": "https://adminmrobo.github.io/discrete_topology_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-25T18:51:11Z",
+  "pushed_at": "2026-11-25T23:25:10Z",
   "has_manifest": true,
   "covers": [
    {
@@ -11121,7 +11121,7 @@
      1920,
      1080
     ],
-    "status": "regenerate"
+    "status": "ok"
    },
    {
     "path": "01_open_sets.html#top",
@@ -11137,7 +11137,7 @@
      "jupanbot",
      "asst"
     ],
-    "status": "regenerate"
+    "status": "ok"
    },
    {
     "path": "02_closed_sets_boundary.html#top",
@@ -11153,7 +11153,7 @@
      "jupanbot",
      "sia"
     ],
-    "status": "regenerate"
+    "status": "ok"
    },
    {
     "path": "03_basis.html#top",
@@ -11169,7 +11169,7 @@
      "jupanbot",
      "x2"
     ],
-    "status": "regenerate"
+    "status": "ok"
    },
    {
     "path": "04_discrete_vs_indiscrete.html#top",
@@ -11185,7 +11185,7 @@
      "jupanbot",
      "moa"
     ],
-    "status": "regenerate"
+    "status": "ok"
    },
    {
     "path": "05_topology_as_table.html#top",
@@ -11201,7 +11201,7 @@
      "jupanbot",
      "x3"
     ],
-    "status": "regenerate"
+    "status": "ok"
    },
    {
     "path": "06_connectedness.html#top",
@@ -11217,7 +11217,7 @@
      "jupanbot",
      "x1"
     ],
-    "status": "regenerate"
+    "status": "ok"
    },
    {
     "path": "07_paths_in_punctured_plane.html#top",
@@ -11233,7 +11233,7 @@
      "jupanbot",
      "moa"
     ],
-    "status": "regenerate"
+    "status": "ok"
    },
    {
     "path": "08_compactness.html#top",
@@ -11249,7 +11249,7 @@
      "jupanbot",
      "robo"
     ],
-    "status": "regenerate"
+    "status": "ok"
    },
    {
     "path": "09_hausdorff_compact.html#top",
@@ -11265,7 +11265,7 @@
      "jupanbot",
      "sia"
     ],
-    "status": "regenerate"
+    "status": "ok"
    },
    {
     "path": "10_smallest_neighborhoods.html#top",
@@ -11281,7 +11281,7 @@
      "jupanbot",
      "moa"
     ],
-    "status": "regenerate"
+    "status": "ok"
    },
    {
     "path": "11_order_and_neighbor_matrix.html#top",
@@ -11297,7 +11297,7 @@
      "jupanbot",
      "x2"
     ],
-    "status": "regenerate"
+    "status": "ok"
    },
    {
     "path": "12_pixel_paradox.html#top",
@@ -11313,7 +11313,7 @@
      "jupanbot",
      "asst"
     ],
-    "status": "regenerate"
+    "status": "ok"
    },
    {
     "path": "13_khalimsky.html#top",
@@ -11329,7 +11329,7 @@
      "jupanbot",
      "x3"
     ],
-    "status": "regenerate"
+    "status": "ok"
    },
    {
     "path": "14_groups_and_matrices.html#top",
@@ -11345,7 +11345,7 @@
      "jupanbot",
      "x1"
     ],
-    "status": "regenerate"
+    "status": "ok"
    },
    {
     "path": "15_orbits_quotients.html#top",
@@ -11361,7 +11361,7 @@
      "jupanbot",
      "sia"
     ],
-    "status": "regenerate"
+    "status": "ok"
    },
    {
     "path": "16_proper_actions.html#top",
@@ -11377,7 +11377,7 @@
      "jupanbot",
      "fly"
     ],
-    "status": "regenerate"
+    "status": "ok"
    },
    {
     "path": "17_tiles_dirichlet.html#top",
@@ -11393,7 +11393,7 @@
      "jupanbot",
      "x2"
     ],
-    "status": "regenerate"
+    "status": "ok"
    },
    {
     "path": "18_lattices_modular.html#top",
@@ -11409,7 +11409,7 @@
      "jupanbot",
      "asst"
     ],
-    "status": "regenerate"
+    "status": "ok"
    },
    {
     "path": "19_covering_spaces.html#top",
@@ -11425,7 +11425,7 @@
      "jupanbot",
      "moa"
     ],
-    "status": "regenerate"
+    "status": "ok"
    },
    {
     "path": "20_deck_galois.html#top",
@@ -11441,7 +11441,7 @@
      "jupanbot",
      "x3"
     ],
-    "status": "regenerate"
+    "status": "ok"
    },
    {
     "path": "21_functors_adjunction.html#top",
@@ -11457,7 +11457,7 @@
      "jupanbot",
      "sia"
     ],
-    "status": "regenerate"
+    "status": "ok"
    },
    {
     "path": "22_ultrafilters_stone_cech.html#top",
@@ -11473,7 +11473,7 @@
      "jupanbot",
      "moa"
     ],
-    "status": "regenerate"
+    "status": "ok"
    },
    {
     "path": "23_extremal_profinite.html#top",
@@ -11489,7 +11489,7 @@
      "jupanbot",
      "x3"
     ],
-    "status": "regenerate"
+    "status": "ok"
    },
    {
     "path": "24_final_review.html#top",
@@ -11505,7 +11505,7 @@
      "jupanbot",
      "moa"
     ],
-    "status": "regenerate"
+    "status": "ok"
    },
    {
     "path": "25_why_discrete_data.html#top",
@@ -11521,7 +11521,7 @@
      "jupanbot",
      "x1"
     ],
-    "status": "placeholder"
+    "status": "ok"
    },
    {
     "path": "26_image_medical.html#top",
@@ -11537,7 +11537,7 @@
      "jupanbot",
      "moa"
     ],
-    "status": "placeholder"
+    "status": "ok"
    },
    {
     "path": "27_mesh_holes.html#top",
@@ -11553,7 +11553,7 @@
      "jupanbot",
      "x3"
     ],
-    "status": "placeholder"
+    "status": "ok"
    },
    {
     "path": "28_sensor_network.html#top",
@@ -11569,7 +11569,7 @@
      "jupanbot",
      "x2"
     ],
-    "status": "placeholder"
+    "status": "ok"
    },
    {
     "path": "29_tda_python.html#top",
@@ -11585,7 +11585,7 @@
      "jupanbot",
      "sia"
     ],
-    "status": "placeholder"
+    "status": "ok"
    },
    {
     "path": "practice/index.html#top",
@@ -11595,7 +11595,7 @@
      1920,
      1080
     ],
-    "status": "regenerate"
+    "status": "ok"
    }
   ],
   "redraw_count": 0,
@@ -12114,7 +12114,7 @@
   "repo_url": "https://github.com/adminmrobo/drawing_lab_05",
   "pages_url": "https://adminmrobo.github.io/drawing_lab_05/",
   "default_branch": "main",
-  "pushed_at": "2026-11-25T19:14:17Z",
+  "pushed_at": "2026-11-25T23:29:27Z",
   "has_manifest": true,
   "covers": [],
   "redraw_count": 0,
@@ -12641,7 +12641,7 @@
   "repo_url": "https://github.com/adminmrobo/fintech_data_analysis",
   "pages_url": "https://adminmrobo.github.io/fintech_data_analysis/",
   "default_branch": "main",
-  "pushed_at": "2026-11-25T19:00:57Z",
+  "pushed_at": "2026-11-26T00:09:22Z",
   "has_manifest": false,
   "covers": [
    {
@@ -12725,6 +12725,11 @@
     "estimated": true
    },
    {
+    "path": "assets/og/cover_hands_on_01.jpg",
+    "role": "cover",
+    "estimated": true
+   },
+   {
     "path": "src/build/covers/cover_00.webp",
     "role": "cover",
     "estimated": true
@@ -12801,6 +12806,11 @@
    },
    {
     "path": "src/build/covers/cover_15.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "src/build/covers/cover_hands_on_01.webp",
     "role": "cover",
     "estimated": true
    },
@@ -14164,7 +14174,7 @@
   "repo_url": "https://github.com/adminmrobo/graph_theory_lab",
   "pages_url": "https://adminmrobo.github.io/graph_theory_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-25T19:14:26Z",
+  "pushed_at": "2026-11-25T19:25:17Z",
   "has_manifest": false,
   "covers": [
    {
