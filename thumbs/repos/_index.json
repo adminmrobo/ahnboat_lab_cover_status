@@ -33,7 +33,7 @@
  },
  "ahnboat_lab_gallery": {
   "src": null,
-  "pushed_at": "2026-11-26T11:10:31Z"
+  "pushed_at": "2026-11-26T15:47:57Z"
  },
  "ahnboat_lab_langpack": {
   "src": null,
@@ -45,8 +45,8 @@
  },
  "ahnboat_ontology_feed": {
   "src": "name:assets/cover.png",
-  "pushed_at": "2026-11-26T02:29:32Z",
-  "made": "2026-11-26"
+  "pushed_at": "2026-11-26T15:39:58Z",
+  "made": "2026-11-27"
  },
  "ahnboat_server_room_guards": {
   "src": null,
@@ -248,7 +248,7 @@
  },
  "deep_learning_model_design_lab_01": {
   "src": "manifest:assets/img/covers/cover_00.webp",
-  "pushed_at": "2026-11-26T15:23:30Z",
+  "pushed_at": "2026-11-26T16:38:16Z",
   "made": "2026-11-27"
  },
  "defense_for_ai_lab": {
@@ -290,6 +290,10 @@
   "src": "name:assets/img/cover_01.webp",
   "pushed_at": "2026-11-25T23:29:27Z",
   "made": "2026-11-26"
+ },
+ "drawing_lab_06": {
+  "src": null,
+  "pushed_at": "2026-11-26T16:39:48Z"
  },
  "drawing_lab_fun": {
   "src": "name:assets/img/cover_01.webp",
