@@ -15,7 +15,17 @@
       "date": "2026-11-26",
       "status": "open"
     },
-    {"ep": "EP.02", "title": "준비 중", "pos": "(16, 0, 4)", "status": "soon"},
+    {
+      "ep": "EP.02",
+      "title": "얼려 두고 덧붙이는 LoRA",
+      "desc": "큰 W는 얼리고 얇은 B·A만 배워 뒤집은 숫자를 가르쳐요",
+      "url": "https://adminmrobo.github.io/LoRA-fine-tuning-tutorial/",
+      "thumb": "thumbs/haru_lab/ep02.webp",
+      "pos": "(16, 0, 4)",
+      "stats": [["1,536개", "배운 가중치"], ["91.8%", "뒤집은 숫자"]],
+      "date": "2026-11-26",
+      "status": "open"
+    },
     {"ep": "EP.03", "title": "준비 중", "pos": "(4, 0, 16)", "status": "soon"},
     {"ep": "EP.04", "title": "준비 중", "pos": "(5, 0, 5)", "status": "soon"},
     {"ep": "EP.05", "title": "준비 중", "pos": "(11, 5, 4)", "status": "soon"}
