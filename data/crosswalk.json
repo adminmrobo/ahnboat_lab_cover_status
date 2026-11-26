@@ -1,6 +1,6 @@
 {
 "note": "뼈대 주제와 이름이 맞는 노드(자동 후보). 사람이 보고 맞는 것만 해설 페이지 kg-raw에 broader로 옮긴다(ai-lab-retrofit 15-2).",
-"count": 93,
+"count": 103,
 "items": [
 {
 "node": "lab:concept/autoregressive",
@@ -181,6 +181,18 @@
 ]
 },
 {
+"node": "lab:concept/linear-algebra",
+"ko": "선형대수",
+"topics": [
+"lab:topic/linear-algebra"
+],
+"auto": true,
+"confidence": "mid",
+"pages": [
+"math_basic_for_ai_dictionary/index.html"
+]
+},
+{
 "node": "lab:concept/logistic-regression",
 "ko": "로지스틱 회귀",
 "topics": [
@@ -192,6 +204,102 @@
 "industrial-accident-prediction/ch3_models.html",
 "python_machine_learning_lab/w06_logistic_perceptron_svm.html",
 "Reinforcement-Learning-lab_project_01/ch2_text.html"
+]
+},
+{
+"node": "lab:concept/m06-cond",
+"ko": "조건부 확률 맛보기",
+"topics": [
+"lab:topic/conditional-probability"
+],
+"auto": true,
+"confidence": "low",
+"pages": [
+"math_basic_for_ai_dictionary/06_probability.html"
+]
+},
+{
+"node": "lab:concept/m07-bayes",
+"ko": "베이즈 정리",
+"topics": [
+"lab:topic/bayes-theorem"
+],
+"auto": true,
+"confidence": "low",
+"pages": [
+"math_basic_for_ai_dictionary/07_bayes.html"
+]
+},
+{
+"node": "lab:concept/m08-center",
+"ko": "가운데를 재는 숫자",
+"topics": [
+"lab:topic/central-tendency"
+],
+"auto": true,
+"confidence": "low",
+"pages": [
+"math_basic_for_ai_dictionary/08_statistics.html"
+]
+},
+{
+"node": "lab:concept/m08-spread",
+"ko": "퍼짐을 재는 숫자",
+"topics": [
+"lab:topic/dispersion"
+],
+"auto": true,
+"confidence": "low",
+"pages": [
+"math_basic_for_ai_dictionary/08_statistics.html"
+]
+},
+{
+"node": "lab:concept/m11-integral",
+"ko": "적분",
+"topics": [
+"lab:topic/riemann-integral"
+],
+"auto": true,
+"confidence": "mid",
+"pages": [
+"math_basic_for_ai_dictionary/11_calculus.html"
+]
+},
+{
+"node": "lab:concept/m12-grad",
+"ko": "그래디언트",
+"topics": [
+"lab:topic/gradient"
+],
+"auto": true,
+"confidence": "mid",
+"pages": [
+"math_basic_for_ai_dictionary/12_gradient.html"
+]
+},
+{
+"node": "lab:concept/m13-gd",
+"ko": "경사하강",
+"topics": [
+"lab:topic/gradient-descent"
+],
+"auto": true,
+"confidence": "mid",
+"pages": [
+"math_basic_for_ai_dictionary/13_optimization.html"
+]
+},
+{
+"node": "lab:concept/m15-la",
+"ko": "선형대수 빠른 공식",
+"topics": [
+"lab:topic/linear-algebra"
+],
+"auto": true,
+"confidence": "mid",
+"pages": [
+"math_basic_for_ai_dictionary/15_quick_revision.html"
 ]
 },
 {
@@ -268,6 +376,18 @@
 "ai_rendering/1-3_faces_on_a_map.html",
 "motion_ai_series_01/5-3_encoder_decoder.html",
 "what_is_tensor/02_tensor_map.html"
+]
+},
+{
+"node": "lab:concept/prob-stats",
+"ko": "확률·통계",
+"topics": [
+"lab:topic/probability-statistics"
+],
+"auto": true,
+"confidence": "mid",
+"pages": [
+"math_basic_for_ai_dictionary/index.html"
 ]
 },
 {

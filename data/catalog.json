@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26",
+ "updated": "2026-11-27",
  "categories": [
   {
    "name": "머신러닝",
@@ -1191,6 +1191,66 @@
    "thumb": "thumbs/repos/neuralink_animal_brain_ai.jpg"
   },
   {
+   "title": "하루의 실험실 : 뉴런의 드롭아웃",
+   "summary": "실험조수 하루가 드롭아웃 실험(1-64-1 tanh 망, 60,000 스텝)을 다시 돌려 숫자와 그림으로 설명합니다.",
+   "cat": "딥러닝·뇌과학",
+   "mid": "딥러닝 모델",
+   "sub": "",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/Dropout-neural-network-tutorial",
+   "site_url": "https://adminmrobo.github.io/Dropout-neural-network-tutorial/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/cats/C02-M2.webp"
+  },
+  {
+   "title": "딥러닝 설계도면 연구실 01 — 하루·모아·시아가 직접 그린 딥러닝 설계도면 9장 + 감수",
+   "summary": "조수 하루, 인턴 모아·시아가 딥러닝 모델 9종을 한 장씩 설계도면으로 그려 전달하고, 초파리와 주판봇이 총괄 도면을 감수한다.",
+   "cat": "딥러닝·뇌과학",
+   "mid": "딥러닝 모델",
+   "sub": "",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/deep_learning_model_design_lab_01",
+   "site_url": "https://adminmrobo.github.io/deep_learning_model_design_lab_01/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/deep_learning_model_design_lab_01.jpg"
+  },
+  {
+   "title": "하루의 실험실 : 필터를 미끄러뜨리는 망 (CNN)",
+   "summary": "실험조수 하루가 CNN 실험(16x16 고양이·개·여우, 3x3 필터 4→8개, 40바퀴)을 다시 돌려, 옮긴 그림에서 일반 망 25.8%·CNN 98.0% 정답률을 숫자와 그림으로 설명합니다.",
+   "cat": "딥러닝·뇌과학",
+   "mid": "딥러닝 모델",
+   "sub": "",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/CNN-neural-network-tutorial",
+   "site_url": "https://adminmrobo.github.io/CNN-neural-network-tutorial/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/cats/C02-M2.webp"
+  },
+  {
+   "title": "하루의 실험실 : 얼려 두고 덧붙이는 LoRA",
+   "summary": "실험조수 하루가 LoRA 실험(256-128-10 숫자 읽는 망, 뒤집은 숫자 과제)을 다시 돌려 숫자와 그림, 3D 좌표로 설명합니다.",
+   "cat": "딥러닝·뇌과학",
+   "mid": "딥러닝 모델",
+   "sub": "",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/LoRA-fine-tuning-tutorial",
+   "site_url": "https://adminmrobo.github.io/LoRA-fine-tuning-tutorial/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/cats/C02-M2.webp"
+  },
+  {
    "title": "뉴런 반응 연구실 · 신경망 칸은 어떻게 반응하고 배울까",
    "summary": "신경망의 칸이 곱하고 더한 값을 함수에 통과시켜 넘기는 '반응'을 직접 돌려 보며 배우는 시리즈. 활성화 함수(시그모이드·tanh·ReLU·GELU)와 연구실 반응속도 대회. 텐서 연구실에서 이어지는 편.",
    "cat": "딥러닝·뇌과학",
@@ -2280,6 +2340,36 @@
     "ko"
    ],
    "thumb": "thumbs/repos/discrete_topology_lab.jpg"
+  },
+  {
+   "title": "수리 도감 — 인공지능을 위한 수리적 기초 | 연구소 식구가 돌아가며 안내하는 열다섯 장",
+   "summary": "수리 도감. 인공지능에 쓰이는 수학(함수, 벡터·행렬, 연립방정식, 확률·베이즈, 통계·분포·상관, 미분·그래디언트·최적화, 고윳값·PCA)을 열다섯 장 125개 항목으로 찾아보는 도감. 장마다 웃는 그림 둘, 실험실, 코랩 실습(생성 AI 프롬프트와 실제 코드).",
+   "cat": "경제·수학·최적화",
+   "mid": "인공지능 수학",
+   "sub": "",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/math_basic_for_ai_dictionary",
+   "site_url": "https://adminmrobo.github.io/math_basic_for_ai_dictionary/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/math_basic_for_ai_dictionary.jpg"
+  },
+  {
+   "title": "초파리의 세 전선 — 리만 가설 연구실 해설 3부",
+   "summary": "증명 소식 이전, 수학자들은 리만 가설에 어디까지 다가와 있었나. 확인한 점의 개수, 줄 위 점의 비율, 양쪽에서 조이는 집게를 초파리의 어려운 말과 X1·X2·X3의 쉬운 풀이로.",
+   "cat": "경제·수학·최적화",
+   "mid": "인공지능 수학",
+   "sub": "",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/riemann_frontiers_lab",
+   "site_url": "https://adminmrobo.github.io/riemann_frontiers_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/cats/C05.webp"
   },
   {
    "title": "주판봇의 초파리 추적 대작전 ① 공변미분 — 진짜로 꺾인 만큼만 재기",
