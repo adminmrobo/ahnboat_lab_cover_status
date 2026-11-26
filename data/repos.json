@@ -1555,7 +1555,7 @@
   "repo_url": "https://github.com/adminmrobo/ahn_boat_lab_town",
   "pages_url": "https://adminmrobo.github.io/ahn_boat_lab_town/",
   "default_branch": "main",
-  "pushed_at": "2026-11-24T13:33:59Z",
+  "pushed_at": "2026-11-26T13:03:53Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 3,
@@ -1572,8 +1572,8 @@
   "ontology": {
    "status": "none",
    "pages_with_kg": 0,
-   "pages_total": 1,
-   "pages_checked": 1,
+   "pages_total": 2,
+   "pages_checked": 2,
    "kg_links": [],
    "export_links": [],
    "files": []
@@ -1584,13 +1584,13 @@
    ],
    "count": 1,
    "pages": {
-    "ko": 1
+    "ko": 2
    },
    "partial": [],
    "complete": true,
    "readme_langs": [],
    "links": {
-    "ko": "https://adminmrobo.github.io/ahn_boat_lab_town/projects.html"
+    "ko": "https://adminmrobo.github.io/ahn_boat_lab_town/haru3d.html"
    }
   },
   "languages": {
@@ -1600,7 +1600,7 @@
    "count": 1,
    "complete": true,
    "pages_by_lang": {
-    "ko": 1
+    "ko": 2
    }
   },
   "has_pages": true
@@ -10991,6 +10991,49 @@
   "has_pages": true
  },
  {
+  "repo": "deep_learning_model_design_lab_01",
+  "series_ko": "deep_learning_model_design_lab_01",
+  "title_ko": null,
+  "repo_url": "https://github.com/adminmrobo/deep_learning_model_design_lab_01",
+  "pages_url": "https://adminmrobo.github.io/deep_learning_model_design_lab_01/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-26T13:05:20Z",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "site_desc": null,
+  "status": "unknown",
+  "checked_at": "2026-11-26",
+  "site_title": null,
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 0,
+   "pages_checked": 0,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [],
+   "count": 0,
+   "pages": {},
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {}
+  },
+  "languages": {
+   "codes": [],
+   "count": 0,
+   "complete": true,
+   "pages_by_lang": {}
+  },
+  "has_pages": false
+ },
+ {
   "repo": "defense_for_ai_lab",
   "series_ko": "AI의 추론을 방해하는 것은 나쁜가? — AI 추론 장벽 찬반 토론 | 초파리 연구실",
   "title_ko": "AI의 추론을 방해하는 것은 나쁜가? — AI 추론 장벽 찬반 토론 | 초파리 연구실",
@@ -12331,7 +12374,7 @@
   "repo_url": "https://github.com/adminmrobo/Dropout-neural-network-tutorial",
   "pages_url": "https://adminmrobo.github.io/Dropout-neural-network-tutorial/",
   "default_branch": "main",
-  "pushed_at": "2026-11-26T12:00:12Z",
+  "pushed_at": "2026-11-26T13:05:03Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -12375,7 +12418,7 @@
     "ko": 1
    }
   },
-  "has_pages": false
+  "has_pages": true
  },
  {
   "repo": "drug-crime-social-cost",
@@ -19392,12 +19435,12 @@
   "repo_url": "https://github.com/adminmrobo/math_basic_for_ai_dictionary",
   "pages_url": "https://adminmrobo.github.io/math_basic_for_ai_dictionary/",
   "default_branch": "main",
-  "pushed_at": "2026-11-26T10:59:54Z",
+  "pushed_at": "2026-11-26T12:51:48Z",
   "has_manifest": true,
   "covers": [],
   "redraw_count": 0,
   "redraw_ids": [],
-  "thumb": null,
+  "thumb": "thumbs/repos/math_basic_for_ai_dictionary.jpg",
   "site_desc": "수리 도감. 인공지능에 쓰이는 수학(함수, 벡터·행렬, 연립방정식, 확률·베이즈, 통계·분포·상관, 미분·그래디언트·최적화, 고윳값·PCA)을 열다섯 장 125개 항목으로 찾아보는 도감. 장마다 웃는 그림 둘, 실험실, 코랩 실습(생성 AI 프롬프트와 실제 코드).",
   "status": "ok",
   "checked_at": "2026-11-26",
@@ -19541,7 +19584,7 @@
     "ko": 17
    }
   },
-  "has_pages": false
+  "has_pages": true
  },
  {
   "repo": "math_for_ai_lab",

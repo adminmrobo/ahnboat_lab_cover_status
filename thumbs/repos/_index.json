@@ -20,8 +20,8 @@
  },
  "ahn_boat_lab_town": {
   "src": "redraw:R019:assets/cut1_panic.webp",
-  "pushed_at": "2026-11-24T13:33:59Z",
-  "made": "2026-11-25"
+  "pushed_at": "2026-11-26T13:03:53Z",
+  "made": "2026-11-26"
  },
  "ahnboat_lab_character_add_packs": {
   "src": null,
@@ -242,6 +242,10 @@
   "pushed_at": "2026-11-24T14:16:42Z",
   "made": "2026-11-25"
  },
+ "deep_learning_model_design_lab_01": {
+  "src": null,
+  "pushed_at": "2026-11-26T13:05:20Z"
+ },
  "defense_for_ai_lab": {
   "src": "og:assets/img/og.png",
   "pushed_at": "2026-11-23T20:25:02Z",
@@ -294,7 +298,7 @@
  },
  "Dropout-neural-network-tutorial": {
   "src": null,
-  "pushed_at": "2026-11-26T12:00:12Z"
+  "pushed_at": "2026-11-26T13:05:03Z"
  },
  "drug-crime-social-cost": {
   "src": null,
@@ -563,8 +567,9 @@
   "made": "2026-11-08"
  },
  "math_basic_for_ai_dictionary": {
-  "src": null,
-  "pushed_at": "2026-11-26T10:59:54Z"
+  "src": "name:img/cover_ch01.webp",
+  "pushed_at": "2026-11-26T12:51:48Z",
+  "made": "2026-11-26"
  },
  "math_for_ai_lab": {
   "src": "manifest:assets/cover/cover_part1.webp",
