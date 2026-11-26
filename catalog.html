@@ -133,6 +133,7 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
 .tile.big.extra .xsp{position:absolute;right:14px;bottom:0;max-height:62%;display:flex;align-items:flex-end;gap:2px}
 .tile.big.extra .xsp img{position:static;width:auto;height:90px;image-rendering:pixelated;display:block}
 .tile.big.extra .n{font-weight:700;color:var(--c)}
+.step.xstep{margin:28px 0 10px;padding-top:18px;border-top:1px dashed var(--line,#d9dee3)}
 .tile.big.extra.soon{cursor:default}
 .tile.big.extra.soon .n{color:#8a94a0}
 .tile.big.extra.hl{outline:3px solid var(--c);outline-offset:3px;animation:ahnhl 1s ease-in-out 4}
@@ -259,9 +260,11 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
     CATS.forEach(function(c){var its=inCat(c.name);if(!its.length)return;var om=onlyMid(c.name);g.appendChild(bigTile(c,c,H(om?[c.name,om]:[c.name]),its.length,label(c)));});
     if(!SINGLE&&VC.fill_to){for(var q=g.children.length,z=0;q<VC.fill_to;q++,z++)g.appendChild(soonTile({color:'#8a94a0'},z));if(VC.fill_to===6)g.classList.add('six');}
     var EX=(!SINGLE&&VC.extras)||[];
-    if(EX.length){var nr=g.children.length;EX.forEach(function(o){g.appendChild(extraTile(o));});EXG={g:g,n:nr,k:EX.length};}else EXG=null;
+    if(EX.length&&!VC.extras_row){var nr=g.children.length;EX.forEach(function(o){g.appendChild(extraTile(o));});EXG={g:g,n:nr,k:EX.length};}else EXG=null;
     m.appendChild(g);
     if(EXG)placeExtras();
+    /* extras_row=true: 특별 카드(도감·입문)는 랙과 섞지 않고 아래 줄에 따로 */
+    if(EX.length&&VC.extras_row){m.appendChild(el('p','step xstep',T(VC.extras_label||'도감·입문 찾아보기')));var g2=el('div','grid big xrow');EX.forEach(function(o){g2.appendChild(extraTile(o));});m.appendChild(g2);}
     if(VC.random)randomPicks(m,VC.random);
   }
   /* 특별 카드(도감·입문): 랙 다음 줄(2행)의 마지막 열들에 놓고, 랙과는 extras_gap 칸(기본 1) 띄운다. 자리가 모자라면 다음 줄 끝으로, 좁은 화면(2열 이하)은 그냥 이어서 */

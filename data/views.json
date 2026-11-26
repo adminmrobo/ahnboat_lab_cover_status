@@ -1,5 +1,5 @@
 {
- "_guide": "공개 카탈로그(catalog.html)의 화면 설정. ?view=이름 으로 고른다. server=Lab Server(기본), articles=논문·발표, portfolio=포트폴리오. server.extras = Lab Server 랙 옆에 붙는 특별 카드(2행 마지막 열들, 랙과 extras_gap 칸 띄움 — 기본 1, server는 0). articles는 랙 이름이 아니라 항목의 article 표시로 모은다(관리실 '주인장 저자' 체크 = hub.csv 주인장_저자_여부 Y인 항목만, 갈래는 Articles_갈래 칸): article=true이면 article 표시가 있는 항목을 랙과 상관없이 모아 only 이름의 갈래 묶음(cat 설정) 아래, 중분류 = Articles 갈래로 보여 준다. lecture_mid: 저자 강의(관리실 '저자강의' 체크 = hub.csv 저자_강의_여부 Y) 항목이 모이는 갈래 이름. mid_info.<갈래>.label이 있으면 카드 위 꼬리표(예: LECTURE)로 쓴다. extras의 slug = 공유 주소 이름표(ahnboat.xyz/#/lab-server/special/<slug>, 한 번 정하면 바꾸지 말 것). soon=true면 카드는 보이되 링크 없이 '곧 열립니다'로 나온다 — 페이지를 올리면 soon을 지우거나 false로.",
+ "_guide": "공개 카탈로그(catalog.html)의 화면 설정. ?view=이름 으로 고른다. server=Lab Server(기본), articles=논문·발표, portfolio=포트폴리오. server.extras = Lab Server 랙 옆에 붙는 특별 카드(2행 마지막 열들, 랙과 extras_gap 칸 띄움 — 기본 1, server는 0). articles는 랙 이름이 아니라 항목의 article 표시로 모은다(관리실 '주인장 저자' 체크 = hub.csv 주인장_저자_여부 Y인 항목만, 갈래는 Articles_갈래 칸): article=true이면 article 표시가 있는 항목을 랙과 상관없이 모아 only 이름의 갈래 묶음(cat 설정) 아래, 중분류 = Articles 갈래로 보여 준다. lecture_mid: 저자 강의(관리실 '저자강의' 체크 = hub.csv 저자_강의_여부 Y) 항목이 모이는 갈래 이름. mid_info.<갈래>.label이 있으면 카드 위 꼬리표(예: LECTURE)로 쓴다. extras의 slug = 공유 주소 이름표(ahnboat.xyz/#/lab-server/special/<slug>, 한 번 정하면 바꾸지 말 것). soon=true면 카드는 보이되 링크 없이 '곧 열립니다'로 나온다 — 페이지를 올리면 soon을 지우거나 false로. extras_row=true면 특별 카드를 랙과 섞지 않고 랙 아래 따로 한 묶음(제목 extras_label)으로 놓는다(extras_gap은 쓰지 않음).",
  "server": {
   "random": 3,
   "extras": [
@@ -148,7 +148,9 @@
     ]
    }
   ],
-  "extras_gap": 0
+  "extras_gap": 0,
+  "extras_row": true,
+  "extras_label": "도감·입문 찾아보기"
  },
  "articles": {
   "only": "논문 해설",
