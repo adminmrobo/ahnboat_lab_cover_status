@@ -26,7 +26,17 @@
       "date": "2026-11-26",
       "status": "open"
     },
-    {"ep": "EP.03", "title": "준비 중", "pos": "(4, 0, 16)", "status": "soon"},
+    {
+      "ep": "EP.03",
+      "title": "필터를 미끄러뜨리는 망 (CNN)",
+      "desc": "옮긴 고양이를 일반 망은 25.8%, CNN은 98.0% 맞혀요",
+      "url": "https://adminmrobo.github.io/CNN-neural-network-tutorial/",
+      "thumb": "thumbs/haru_lab/ep03.webp",
+      "pos": "(4, 0, 16)",
+      "stats": [["25.8%", "일반"], ["98.0%", "CNN"]],
+      "date": "2026-11-26",
+      "status": "open"
+    },
     {"ep": "EP.04", "title": "준비 중", "pos": "(5, 0, 5)", "status": "soon"},
     {"ep": "EP.05", "title": "준비 중", "pos": "(11, 5, 4)", "status": "soon"}
   ]
