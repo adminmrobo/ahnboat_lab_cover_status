@@ -8,7 +8,6 @@
     "slug": "math-basics",
     "label": "SPECIAL · 도감 15장",
     "color": "#4a5a8c",
-    "soon": true,
     "desc": "AI 공부하다 막힌 수학을 125개 항목으로 바로 찾아보는 도감. 함수·행렬부터 베이즈·경사하강·PCA까지, 연구소 식구 아홉 명이 장마다 돌아가며 안내하고 코랩 실습을 붙였습니다.",
     "keywords": [
      "AI 수학",
