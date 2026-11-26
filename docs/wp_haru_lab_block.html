@@ -1,0 +1,20 @@
+<!-- ahnboat.xyz 홈 '하루의 실험실' 블록 (2026-11-26)
+     워드프레스 홈 편집 화면에서 'Reon Ahn Page 지식 노드 현황'(growth.html) 블록 바로 위에
+     '사용자 정의 HTML' 블록을 하나 만들고 이 코드를 그대로 붙인다.
+     - 바로가기 주소: ahnboat.xyz/#haru-lab
+     - 회차 추가: 이 코드는 그대로 두고 저장소 data/haru_lab.json의 episodes에 한 줄 더한다. -->
+<div id="haru-lab" style="scroll-margin-top:80px">
+  <iframe src="https://adminmrobo.github.io/ahnboat_lab_cover_status/haru_lab.html?embed=1&amp;theme=light"
+          title="하루의 실험실" loading="lazy"
+          style="display:block;width:100%;height:560px;border:0;overflow:hidden"></iframe>
+</div>
+<script>
+(function(){
+  var box=document.getElementById('haru-lab'),f=box&&box.querySelector('iframe');if(!f)return;
+  window.addEventListener('message',function(e){
+    var d=e.data;if(!d||d.type!=='ahnboat-catalog-height'||e.source!==f.contentWindow)return;
+    var h=Math.max(200,Math.min(4000,Number(d.height)||0));if(h)f.style.height=h+'px';
+  });
+  if(location.hash==='#haru-lab')setTimeout(function(){box.scrollIntoView({behavior:'smooth'});},600);
+})();
+</script>
