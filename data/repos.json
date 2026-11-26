@@ -1555,7 +1555,7 @@
   "repo_url": "https://github.com/adminmrobo/ahn_boat_lab_town",
   "pages_url": "https://adminmrobo.github.io/ahn_boat_lab_town/",
   "default_branch": "main",
-  "pushed_at": "2026-11-26T13:03:53Z",
+  "pushed_at": "2026-11-26T13:52:54Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 3,
@@ -6766,6 +6766,59 @@
   "has_pages": true
  },
  {
+  "repo": "CNN-neural-network-tutorial",
+  "series_ko": "하루의 실험실 : 필터를 미끄러뜨리는 망 (CNN)",
+  "title_ko": "하루의 실험실 : 필터를 미끄러뜨리는 망 (CNN)",
+  "repo_url": "https://github.com/adminmrobo/CNN-neural-network-tutorial",
+  "pages_url": "https://adminmrobo.github.io/CNN-neural-network-tutorial/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-26T13:52:50Z",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "site_desc": "실험조수 하루가 CNN 실험(16x16 고양이·개·여우, 3x3 필터 4→8개, 40바퀴)을 다시 돌려, 옮긴 그림에서 일반 망 25.8%·CNN 98.0% 정답률을 숫자와 그림으로 설명합니다.",
+  "status": "unknown",
+  "checked_at": "2026-11-26",
+  "site_title": "하루의 실험실 : 필터를 미끄러뜨리는 망 (CNN)",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 1,
+   "pages_checked": 1,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 1
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/CNN-neural-network-tutorial/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 1
+   }
+  },
+  "has_pages": true
+ },
+ {
   "repo": "cnn_face_game_lab",
   "series_ko": "AI 연구실 해설 · CNN 특집",
   "title_ko": "얼굴 알아맞히기 게임 — 20챕터로 배우는 CNN",
@@ -10992,44 +11045,449 @@
  },
  {
   "repo": "deep_learning_model_design_lab_01",
-  "series_ko": "deep_learning_model_design_lab_01",
-  "title_ko": null,
+  "series_ko": "딥러닝 설계도면 연구실 01",
+  "title_ko": "딥러닝 설계도면 연구실 01 — 하루·모아·시아가 직접 그린 딥러닝 설계도면 9장 + 감수",
   "repo_url": "https://github.com/adminmrobo/deep_learning_model_design_lab_01",
   "pages_url": "https://adminmrobo.github.io/deep_learning_model_design_lab_01/",
   "default_branch": "main",
-  "pushed_at": "2026-11-26T13:05:20Z",
-  "has_manifest": false,
-  "covers": [],
+  "pushed_at": "2026-11-26T13:43:05Z",
+  "has_manifest": true,
+  "covers": [
+   {
+    "path": "assets/img/covers/cover_00.webp",
+    "role": "cover",
+    "id": "cover_00",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "asst",
+     "moa",
+     "sia",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "placeholder"
+   },
+   {
+    "path": "assets/img/covers/cover_01.webp",
+    "role": "cover",
+    "id": "cover_01",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "asst"
+    ],
+    "status": "placeholder"
+   },
+   {
+    "path": "assets/img/covers/cover_02.webp",
+    "role": "cover",
+    "id": "cover_02",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "asst"
+    ],
+    "status": "placeholder"
+   },
+   {
+    "path": "assets/img/covers/cover_03.webp",
+    "role": "cover",
+    "id": "cover_03",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "moa"
+    ],
+    "status": "placeholder"
+   },
+   {
+    "path": "assets/img/covers/cover_04.webp",
+    "role": "cover",
+    "id": "cover_04",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "moa"
+    ],
+    "status": "placeholder"
+   },
+   {
+    "path": "assets/img/covers/cover_05.webp",
+    "role": "cover",
+    "id": "cover_05",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "moa"
+    ],
+    "status": "placeholder"
+   },
+   {
+    "path": "assets/img/covers/cover_06.webp",
+    "role": "cover",
+    "id": "cover_06",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "sia"
+    ],
+    "status": "placeholder"
+   },
+   {
+    "path": "assets/img/covers/cover_07.webp",
+    "role": "cover",
+    "id": "cover_07",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "sia"
+    ],
+    "status": "placeholder"
+   },
+   {
+    "path": "assets/img/covers/cover_08.webp",
+    "role": "cover",
+    "id": "cover_08",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "sia"
+    ],
+    "status": "placeholder"
+   },
+   {
+    "path": "assets/img/covers/cover_09.webp",
+    "role": "cover",
+    "id": "cover_09",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "asst"
+    ],
+    "status": "placeholder"
+   },
+   {
+    "path": "assets/img/covers/cover_10.webp",
+    "role": "cover",
+    "id": "cover_10",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "placeholder"
+   },
+   {
+    "path": "assets/img/covers/thumb_00.webp",
+    "role": "thumb",
+    "id": "thumb_00",
+    "size": [
+     600,
+     400
+    ],
+    "status": "placeholder"
+   },
+   {
+    "path": "assets/img/covers/og_00.jpg",
+    "role": "og",
+    "id": "og_00",
+    "size": [
+     1200,
+     630
+    ],
+    "status": "placeholder"
+   },
+   {
+    "path": "assets/img/covers/thumb_01.webp",
+    "role": "thumb",
+    "id": "thumb_01",
+    "size": [
+     600,
+     400
+    ],
+    "status": "placeholder"
+   },
+   {
+    "path": "assets/img/covers/og_01.jpg",
+    "role": "og",
+    "id": "og_01",
+    "size": [
+     1200,
+     630
+    ],
+    "status": "placeholder"
+   },
+   {
+    "path": "assets/img/covers/thumb_02.webp",
+    "role": "thumb",
+    "id": "thumb_02",
+    "size": [
+     600,
+     400
+    ],
+    "status": "placeholder"
+   },
+   {
+    "path": "assets/img/covers/og_02.jpg",
+    "role": "og",
+    "id": "og_02",
+    "size": [
+     1200,
+     630
+    ],
+    "status": "placeholder"
+   },
+   {
+    "path": "assets/img/covers/thumb_03.webp",
+    "role": "thumb",
+    "id": "thumb_03",
+    "size": [
+     600,
+     400
+    ],
+    "status": "placeholder"
+   },
+   {
+    "path": "assets/img/covers/og_03.jpg",
+    "role": "og",
+    "id": "og_03",
+    "size": [
+     1200,
+     630
+    ],
+    "status": "placeholder"
+   },
+   {
+    "path": "assets/img/covers/thumb_04.webp",
+    "role": "thumb",
+    "id": "thumb_04",
+    "size": [
+     600,
+     400
+    ],
+    "status": "placeholder"
+   },
+   {
+    "path": "assets/img/covers/og_04.jpg",
+    "role": "og",
+    "id": "og_04",
+    "size": [
+     1200,
+     630
+    ],
+    "status": "placeholder"
+   },
+   {
+    "path": "assets/img/covers/thumb_05.webp",
+    "role": "thumb",
+    "id": "thumb_05",
+    "size": [
+     600,
+     400
+    ],
+    "status": "placeholder"
+   },
+   {
+    "path": "assets/img/covers/og_05.jpg",
+    "role": "og",
+    "id": "og_05",
+    "size": [
+     1200,
+     630
+    ],
+    "status": "placeholder"
+   },
+   {
+    "path": "assets/img/covers/thumb_06.webp",
+    "role": "thumb",
+    "id": "thumb_06",
+    "size": [
+     600,
+     400
+    ],
+    "status": "placeholder"
+   },
+   {
+    "path": "assets/img/covers/og_06.jpg",
+    "role": "og",
+    "id": "og_06",
+    "size": [
+     1200,
+     630
+    ],
+    "status": "placeholder"
+   },
+   {
+    "path": "assets/img/covers/thumb_07.webp",
+    "role": "thumb",
+    "id": "thumb_07",
+    "size": [
+     600,
+     400
+    ],
+    "status": "placeholder"
+   },
+   {
+    "path": "assets/img/covers/og_07.jpg",
+    "role": "og",
+    "id": "og_07",
+    "size": [
+     1200,
+     630
+    ],
+    "status": "placeholder"
+   },
+   {
+    "path": "assets/img/covers/thumb_08.webp",
+    "role": "thumb",
+    "id": "thumb_08",
+    "size": [
+     600,
+     400
+    ],
+    "status": "placeholder"
+   },
+   {
+    "path": "assets/img/covers/og_08.jpg",
+    "role": "og",
+    "id": "og_08",
+    "size": [
+     1200,
+     630
+    ],
+    "status": "placeholder"
+   },
+   {
+    "path": "assets/img/covers/thumb_09.webp",
+    "role": "thumb",
+    "id": "thumb_09",
+    "size": [
+     600,
+     400
+    ],
+    "status": "placeholder"
+   },
+   {
+    "path": "assets/img/covers/og_09.jpg",
+    "role": "og",
+    "id": "og_09",
+    "size": [
+     1200,
+     630
+    ],
+    "status": "placeholder"
+   },
+   {
+    "path": "assets/img/covers/thumb_10.webp",
+    "role": "thumb",
+    "id": "thumb_10",
+    "size": [
+     600,
+     400
+    ],
+    "status": "placeholder"
+   },
+   {
+    "path": "assets/img/covers/og_10.jpg",
+    "role": "og",
+    "id": "og_10",
+    "size": [
+     1200,
+     630
+    ],
+    "status": "placeholder"
+   }
+  ],
   "redraw_count": 0,
   "redraw_ids": [],
-  "thumb": null,
-  "site_desc": null,
-  "status": "unknown",
+  "thumb": "thumbs/repos/deep_learning_model_design_lab_01.jpg",
+  "site_desc": "조수 하루, 인턴 모아·시아가 딥러닝 모델 9종을 한 장씩 설계도면으로 그려 전달하고, 초파리와 주판봇이 총괄 도면을 감수한다.",
+  "status": "ok",
   "checked_at": "2026-11-26",
-  "site_title": null,
+  "site_title": "딥러닝 설계도면 연구실 01 — 하루·모아·시아가 그린 딥러닝 설계도면 9장 + 감수",
   "ontology": {
-   "status": "none",
-   "pages_with_kg": 0,
-   "pages_total": 0,
-   "pages_checked": 0,
-   "kg_links": [],
-   "export_links": [],
+   "status": "partial",
+   "pages_with_kg": 11,
+   "pages_total": 12,
+   "pages_checked": 12,
+   "kg_links": [
+    "https://adminmrobo.github.io/deep_learning_model_design_lab_01/01_fnn.html#kg",
+    "https://adminmrobo.github.io/deep_learning_model_design_lab_01/02_cnn.html#kg",
+    "https://adminmrobo.github.io/deep_learning_model_design_lab_01/03_rnn.html#kg",
+    "https://adminmrobo.github.io/deep_learning_model_design_lab_01/04_lstm.html#kg",
+    "https://adminmrobo.github.io/deep_learning_model_design_lab_01/05_gru.html#kg",
+    "https://adminmrobo.github.io/deep_learning_model_design_lab_01/06_autoencoder.html#kg",
+    "https://adminmrobo.github.io/deep_learning_model_design_lab_01/07_dbn.html#kg",
+    "https://adminmrobo.github.io/deep_learning_model_design_lab_01/08_gan.html#kg",
+    "https://adminmrobo.github.io/deep_learning_model_design_lab_01/09_transformer.html#kg",
+    "https://adminmrobo.github.io/deep_learning_model_design_lab_01/10_review.html#kg",
+    "https://adminmrobo.github.io/deep_learning_model_design_lab_01/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/deep_learning_model_design_lab_01/01_fnn.html#export",
+    "https://adminmrobo.github.io/deep_learning_model_design_lab_01/02_cnn.html#export",
+    "https://adminmrobo.github.io/deep_learning_model_design_lab_01/03_rnn.html#export",
+    "https://adminmrobo.github.io/deep_learning_model_design_lab_01/04_lstm.html#export",
+    "https://adminmrobo.github.io/deep_learning_model_design_lab_01/05_gru.html#export",
+    "https://adminmrobo.github.io/deep_learning_model_design_lab_01/06_autoencoder.html#export",
+    "https://adminmrobo.github.io/deep_learning_model_design_lab_01/07_dbn.html#export",
+    "https://adminmrobo.github.io/deep_learning_model_design_lab_01/08_gan.html#export",
+    "https://adminmrobo.github.io/deep_learning_model_design_lab_01/09_transformer.html#export",
+    "https://adminmrobo.github.io/deep_learning_model_design_lab_01/10_review.html#export",
+    "https://adminmrobo.github.io/deep_learning_model_design_lab_01/index.html#export"
+   ],
    "files": []
   },
   "i18n": {
-   "langs": [],
-   "count": 0,
-   "pages": {},
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 12
+   },
    "partial": [],
    "complete": true,
    "readme_langs": [],
-   "links": {}
+   "links": {
+    "ko": "https://adminmrobo.github.io/deep_learning_model_design_lab_01/index.html"
+   }
   },
   "languages": {
-   "codes": [],
-   "count": 0,
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
    "complete": true,
-   "pages_by_lang": {}
+   "pages_by_lang": {
+    "ko": 12
+   }
   },
   "has_pages": false
  },
@@ -19235,6 +19693,59 @@
   "has_pages": true
  },
  {
+  "repo": "LoRA-fine-tuning-tutorial",
+  "series_ko": "하루의 실험실 : 얼려 두고 덧붙이는 LoRA",
+  "title_ko": "하루의 실험실 : 얼려 두고 덧붙이는 LoRA",
+  "repo_url": "https://github.com/adminmrobo/LoRA-fine-tuning-tutorial",
+  "pages_url": "https://adminmrobo.github.io/LoRA-fine-tuning-tutorial/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-26T13:52:45Z",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "site_desc": "실험조수 하루가 LoRA 실험(256-128-10 숫자 읽는 망, 뒤집은 숫자 과제)을 다시 돌려 숫자와 그림, 3D 좌표로 설명합니다.",
+  "status": "unknown",
+  "checked_at": "2026-11-26",
+  "site_title": "하루의 실험실 : 얼려 두고 덧붙이는 LoRA",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 1,
+   "pages_checked": 1,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 1
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/LoRA-fine-tuning-tutorial/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 1
+   }
+  },
+  "has_pages": true
+ },
+ {
   "repo": "machine_learning_in_3d",
   "series_ko": "머신러닝 연구소 — 3D로 설명하는 머신러닝",
   "title_ko": "머신러닝 연구소 — 3D로 설명하는 머신러닝",
@@ -19435,7 +19946,7 @@
   "repo_url": "https://github.com/adminmrobo/math_basic_for_ai_dictionary",
   "pages_url": "https://adminmrobo.github.io/math_basic_for_ai_dictionary/",
   "default_branch": "main",
-  "pushed_at": "2026-11-26T13:17:13Z",
+  "pushed_at": "2026-11-26T13:53:41Z",
   "has_manifest": true,
   "covers": [],
   "redraw_count": 0,
