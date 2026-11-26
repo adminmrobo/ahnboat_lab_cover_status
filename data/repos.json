@@ -1655,7 +1655,7 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_lab_explainer",
   "pages_url": "https://adminmrobo.github.io/ahnboat_lab_explainer/",
   "default_branch": "main",
-  "pushed_at": "2026-11-24T14:24:31Z",
+  "pushed_at": "2026-11-26T11:37:06Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -12325,6 +12325,59 @@
   "has_pages": true
  },
  {
+  "repo": "Dropout-neural-network-tutorial",
+  "series_ko": "하루의 실험실 : 뉴런의 드롭아웃",
+  "title_ko": "하루의 실험실 : 뉴런의 드롭아웃",
+  "repo_url": "https://github.com/adminmrobo/Dropout-neural-network-tutorial",
+  "pages_url": "https://adminmrobo.github.io/Dropout-neural-network-tutorial/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-26T12:00:12Z",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "site_desc": "실험조수 하루가 드롭아웃 실험(1-64-1 tanh 망, 60,000 스텝)을 다시 돌려 숫자와 그림으로 설명합니다.",
+  "status": "unknown",
+  "checked_at": "2026-11-26",
+  "site_title": "하루의 실험실 : 뉴런의 드롭아웃",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 1,
+   "pages_checked": 1,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 1
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/Dropout-neural-network-tutorial/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 1
+   }
+  },
+  "has_pages": false
+ },
+ {
   "repo": "drug-crime-social-cost",
   "series_ko": "마약류 사회적 비용 연구",
   "title_ko": "마약류 사회적 비용 연구",
@@ -12641,7 +12694,7 @@
   "repo_url": "https://github.com/adminmrobo/fintech_data_analysis",
   "pages_url": "https://adminmrobo.github.io/fintech_data_analysis/",
   "default_branch": "main",
-  "pushed_at": "2026-11-26T11:24:04Z",
+  "pushed_at": "2026-11-26T11:58:51Z",
   "has_manifest": false,
   "covers": [
    {
@@ -19334,44 +19387,159 @@
  },
  {
   "repo": "math_basic_for_ai_dictionary",
-  "series_ko": "math_basic_for_ai_dictionary",
-  "title_ko": null,
+  "series_ko": "수리 도감 — 인공지능을 위한 수리적 기초 | 연구소 식구가 돌아가며 안내하는 열다섯 장",
+  "title_ko": "수리 도감 — 인공지능을 위한 수리적 기초 | 연구소 식구가 돌아가며 안내하는 열다섯 장",
   "repo_url": "https://github.com/adminmrobo/math_basic_for_ai_dictionary",
   "pages_url": "https://adminmrobo.github.io/math_basic_for_ai_dictionary/",
   "default_branch": "main",
   "pushed_at": "2026-11-26T10:59:54Z",
-  "has_manifest": false,
+  "has_manifest": true,
   "covers": [],
   "redraw_count": 0,
   "redraw_ids": [],
   "thumb": null,
-  "site_desc": null,
-  "status": "unknown",
+  "site_desc": "수리 도감. 인공지능에 쓰이는 수학(함수, 벡터·행렬, 연립방정식, 확률·베이즈, 통계·분포·상관, 미분·그래디언트·최적화, 고윳값·PCA)을 열다섯 장 125개 항목으로 찾아보는 도감. 장마다 웃는 그림 둘, 실험실, 코랩 실습(생성 AI 프롬프트와 실제 코드).",
+  "status": "ok",
   "checked_at": "2026-11-26",
-  "site_title": null,
+  "site_title": "수리 도감 — 인공지능을 위한 수리적 기초 | 연구소 식구가 돌아가며 안내하는 열다섯 장",
   "ontology": {
-   "status": "none",
-   "pages_with_kg": 0,
-   "pages_total": 0,
-   "pages_checked": 0,
-   "kg_links": [],
-   "export_links": [],
-   "files": []
+   "status": "full",
+   "pages_with_kg": 17,
+   "pages_total": 17,
+   "pages_checked": 17,
+   "kg_links": [
+    "https://adminmrobo.github.io/math_basic_for_ai_dictionary/01_math_basics.html#kg",
+    "https://adminmrobo.github.io/math_basic_for_ai_dictionary/02_linear_algebra.html#kg",
+    "https://adminmrobo.github.io/math_basic_for_ai_dictionary/03_vector_ops.html#kg",
+    "https://adminmrobo.github.io/math_basic_for_ai_dictionary/04_matrix_ops.html#kg",
+    "https://adminmrobo.github.io/math_basic_for_ai_dictionary/05_linear_systems.html#kg",
+    "https://adminmrobo.github.io/math_basic_for_ai_dictionary/06_probability.html#kg",
+    "https://adminmrobo.github.io/math_basic_for_ai_dictionary/07_bayes.html#kg",
+    "https://adminmrobo.github.io/math_basic_for_ai_dictionary/08_statistics.html#kg",
+    "https://adminmrobo.github.io/math_basic_for_ai_dictionary/09_distributions.html#kg",
+    "https://adminmrobo.github.io/math_basic_for_ai_dictionary/10_correlation.html#kg",
+    "https://adminmrobo.github.io/math_basic_for_ai_dictionary/11_calculus.html#kg",
+    "https://adminmrobo.github.io/math_basic_for_ai_dictionary/12_gradient.html#kg",
+    "https://adminmrobo.github.io/math_basic_for_ai_dictionary/13_optimization.html#kg",
+    "https://adminmrobo.github.io/math_basic_for_ai_dictionary/14_eigen_pca.html#kg",
+    "https://adminmrobo.github.io/math_basic_for_ai_dictionary/15_quick_revision.html#kg",
+    "https://adminmrobo.github.io/math_basic_for_ai_dictionary/index.html#kg",
+    "https://adminmrobo.github.io/math_basic_for_ai_dictionary/practice/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/math_basic_for_ai_dictionary/01_math_basics.html#export",
+    "https://adminmrobo.github.io/math_basic_for_ai_dictionary/02_linear_algebra.html#export",
+    "https://adminmrobo.github.io/math_basic_for_ai_dictionary/03_vector_ops.html#export",
+    "https://adminmrobo.github.io/math_basic_for_ai_dictionary/04_matrix_ops.html#export",
+    "https://adminmrobo.github.io/math_basic_for_ai_dictionary/05_linear_systems.html#export",
+    "https://adminmrobo.github.io/math_basic_for_ai_dictionary/06_probability.html#export",
+    "https://adminmrobo.github.io/math_basic_for_ai_dictionary/07_bayes.html#export",
+    "https://adminmrobo.github.io/math_basic_for_ai_dictionary/08_statistics.html#export",
+    "https://adminmrobo.github.io/math_basic_for_ai_dictionary/09_distributions.html#export",
+    "https://adminmrobo.github.io/math_basic_for_ai_dictionary/10_correlation.html#export",
+    "https://adminmrobo.github.io/math_basic_for_ai_dictionary/11_calculus.html#export",
+    "https://adminmrobo.github.io/math_basic_for_ai_dictionary/12_gradient.html#export",
+    "https://adminmrobo.github.io/math_basic_for_ai_dictionary/13_optimization.html#export",
+    "https://adminmrobo.github.io/math_basic_for_ai_dictionary/14_eigen_pca.html#export",
+    "https://adminmrobo.github.io/math_basic_for_ai_dictionary/15_quick_revision.html#export",
+    "https://adminmrobo.github.io/math_basic_for_ai_dictionary/index.html#export",
+    "https://adminmrobo.github.io/math_basic_for_ai_dictionary/practice/index.html#export"
+   ],
+   "files": [
+    {
+     "path": "build/kg/kg_ch01.json",
+     "url": "https://github.com/adminmrobo/math_basic_for_ai_dictionary/blob/main/build/kg/kg_ch01.json"
+    },
+    {
+     "path": "build/kg/kg_ch02.json",
+     "url": "https://github.com/adminmrobo/math_basic_for_ai_dictionary/blob/main/build/kg/kg_ch02.json"
+    },
+    {
+     "path": "build/kg/kg_ch03.json",
+     "url": "https://github.com/adminmrobo/math_basic_for_ai_dictionary/blob/main/build/kg/kg_ch03.json"
+    },
+    {
+     "path": "build/kg/kg_ch04.json",
+     "url": "https://github.com/adminmrobo/math_basic_for_ai_dictionary/blob/main/build/kg/kg_ch04.json"
+    },
+    {
+     "path": "build/kg/kg_ch05.json",
+     "url": "https://github.com/adminmrobo/math_basic_for_ai_dictionary/blob/main/build/kg/kg_ch05.json"
+    },
+    {
+     "path": "build/kg/kg_ch06.json",
+     "url": "https://github.com/adminmrobo/math_basic_for_ai_dictionary/blob/main/build/kg/kg_ch06.json"
+    },
+    {
+     "path": "build/kg/kg_ch07.json",
+     "url": "https://github.com/adminmrobo/math_basic_for_ai_dictionary/blob/main/build/kg/kg_ch07.json"
+    },
+    {
+     "path": "build/kg/kg_ch08.json",
+     "url": "https://github.com/adminmrobo/math_basic_for_ai_dictionary/blob/main/build/kg/kg_ch08.json"
+    },
+    {
+     "path": "build/kg/kg_ch09.json",
+     "url": "https://github.com/adminmrobo/math_basic_for_ai_dictionary/blob/main/build/kg/kg_ch09.json"
+    },
+    {
+     "path": "build/kg/kg_ch10.json",
+     "url": "https://github.com/adminmrobo/math_basic_for_ai_dictionary/blob/main/build/kg/kg_ch10.json"
+    },
+    {
+     "path": "build/kg/kg_ch11.json",
+     "url": "https://github.com/adminmrobo/math_basic_for_ai_dictionary/blob/main/build/kg/kg_ch11.json"
+    },
+    {
+     "path": "build/kg/kg_ch12.json",
+     "url": "https://github.com/adminmrobo/math_basic_for_ai_dictionary/blob/main/build/kg/kg_ch12.json"
+    },
+    {
+     "path": "build/kg/kg_ch13.json",
+     "url": "https://github.com/adminmrobo/math_basic_for_ai_dictionary/blob/main/build/kg/kg_ch13.json"
+    },
+    {
+     "path": "build/kg/kg_ch14.json",
+     "url": "https://github.com/adminmrobo/math_basic_for_ai_dictionary/blob/main/build/kg/kg_ch14.json"
+    },
+    {
+     "path": "build/kg/kg_ch15.json",
+     "url": "https://github.com/adminmrobo/math_basic_for_ai_dictionary/blob/main/build/kg/kg_ch15.json"
+    },
+    {
+     "path": "build/kg/kg_index.json",
+     "url": "https://github.com/adminmrobo/math_basic_for_ai_dictionary/blob/main/build/kg/kg_index.json"
+    },
+    {
+     "path": "build/kg/kg_practice.json",
+     "url": "https://github.com/adminmrobo/math_basic_for_ai_dictionary/blob/main/build/kg/kg_practice.json"
+    }
+   ]
   },
   "i18n": {
-   "langs": [],
-   "count": 0,
-   "pages": {},
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 17
+   },
    "partial": [],
    "complete": true,
    "readme_langs": [],
-   "links": {}
+   "links": {
+    "ko": "https://adminmrobo.github.io/math_basic_for_ai_dictionary/index.html"
+   }
   },
   "languages": {
-   "codes": [],
-   "count": 0,
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
    "complete": true,
-   "pages_by_lang": {}
+   "pages_by_lang": {
+    "ko": 17
+   }
   },
   "has_pages": false
  },
