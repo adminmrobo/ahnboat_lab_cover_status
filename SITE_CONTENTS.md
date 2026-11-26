@@ -2,14 +2,10 @@
 
 ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전·오후 자동으로 다시 만들고, Actions에서 수동으로도 돌릴 수 있습니다.
 
-- 갱신: **2026-11-26 17:20 KST**
-- 홈페이지 글 32 · 페이지 0 · 사이트맵 주소 73
-- GitHub 해설 콘텐츠 178 · 포트폴리오 10 · 일정 18
+- 갱신: **2026-11-27 01:51 KST**
+- 홈페이지 글 32 · 페이지 4
+- GitHub 해설 콘텐츠 184 · 포트폴리오 10 · 일정 18
 - 기계용 원본: `data/site_contents.json`
-
-> ⚠ 이번에 읽지 못한 곳
-
-> - 워드프레스 REST API 읽기 실패: HTTP Error 429: Too Many Requests
 
 ## 1. 홈페이지 글 (ahnboat.xyz)
 
@@ -50,7 +46,12 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 
 ## 2. 홈페이지 페이지
 
-(없음 또는 읽지 못함)
+| 제목 | 주소 | 고친 날 |
+|---|---|---|
+| Article & Study | https://ahnboat.xyz/articlestudy/ | 2026-10-04 |
+| Global Business Story | https://ahnboat.xyz/global_business/ | 2026-10-04 |
+| Hello! Everyone! | https://ahnboat.xyz/my_profile/ | 2026-10-19 |
+| 곧 나옵니다.. 아마도요..! (Coming Soon-ish! 🐌) | https://ahnboat.xyz/pleae_wait/ | 2026-10-19 |
 
 ## 3. GitHub 해설 콘텐츠 (공개 카탈로그)
 
@@ -67,19 +68,23 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | 알고리즘 패밀리 2부 · 조직원 명부 | 개념 지도 / 알고리즘 패밀리 | https://adminmrobo.github.io/ML_00_Algorithm-family-build_02/ | ko en zh ja uz ru |
 | 알고리즘 패밀리 3부 · 가문 회합 | 개념 지도 / 알고리즘 패밀리 | https://adminmrobo.github.io/ML_00_Algorithm-family-build_03/ | ko en zh ja uz ru |
 | 거리로 가르는 분류 대회 — LDA·KNN·SVM·SVC·커널 · 거리로 가르는 분류 대회 | 머신러닝 모델 | https://adminmrobo.github.io/knn_svc_svm_lab/ | ko |
-| 파이썬 머신러닝 연구소 — 파이썬 머신러닝 15층 연구실 해설 | 머신러닝 모델 | https://adminmrobo.github.io/python_machine_learning_lab/ | ko |
+| 파이썬 머신러닝 연구소 — 파이썬 머신러닝 15층 연구실 해설 | 머신러닝 모델 | https://adminmrobo.github.io/python_machine_learning_lab/ | ko zh |
 | Fish Market Data로 쉽게 따라하는 머신러닝 | 실습으로 배우기 / Fish Market 머신러닝 | https://adminmrobo.github.io/Fish_Market_Data_Machine_Learning/ | ko en zh ja uz ru |
 | Fish Market 연구실 · 머신러닝 핵심 개념 2 | 실습으로 배우기 / Fish Market 머신러닝 | https://adminmrobo.github.io/fish_market_learning_epoch_etc/ | ko |
 | 릿지와 라쏘 · 농어 무게로 배우는 과적합 막기 | 실습으로 배우기 / 규제 회귀 | https://adminmrobo.github.io/Regression_ridge_lasso/ | ko en zh ja uz ru vi |
 | 평소와 다른 한 건 찾기 · 이상 탐지의 다섯 도구 | 실습으로 배우기 / 이상 탐지 | https://adminmrobo.github.io/Anomaly_detection_tatics/ | ko en zh ja uz ru vi |
 | 비지도학습 물고기 연구실 — 라벨링 없이 맞추는 AI (목차) | 프로그래밍 | https://adminmrobo.github.io/unsupervised_fish_lab/ | ko |
 
-### 딥러닝·뇌과학 (10)
+### 딥러닝·뇌과학 (14)
 
 | 제목 | 중분류 | 주소 | 언어 |
 |---|---|---|---|
 | 딥러닝 A to Z · 초파리 특별편 | 뇌과학 / 초파리 특별편 | https://adminmrobo.github.io/AI_Model_Review_Fruit_fly_special/ | ko en zh ja uz ru |
 | 뉴럴링크와 동물의 뇌 | 뇌과학 / 초파리 특별편 | https://adminmrobo.github.io/neuralink_animal_brain_ai/ | ko |
+| 하루의 실험실 : 뉴런의 드롭아웃 | 딥러닝 모델 | https://adminmrobo.github.io/Dropout-neural-network-tutorial/ | ko |
+| 딥러닝 설계도면 연구실 01 — 하루·모아·시아가 직접 그린 딥러닝 설계도면 9장 + 감수 | 딥러닝 모델 | https://adminmrobo.github.io/deep_learning_model_design_lab_01/ | ko |
+| 하루의 실험실 : 필터를 미끄러뜨리는 망 (CNN) | 딥러닝 모델 | https://adminmrobo.github.io/CNN-neural-network-tutorial/ | ko |
+| 하루의 실험실 : 얼려 두고 덧붙이는 LoRA | 딥러닝 모델 | https://adminmrobo.github.io/LoRA-fine-tuning-tutorial/ | ko |
 | 뉴런 반응 연구실 · 신경망 칸은 어떻게 반응하고 배울까 | 딥러닝 모델 / 뉴런 반응 연구실 | https://adminmrobo.github.io/neuron_reaction/ | ko |
 | 초파리 연구실의 딥러닝 A to Z | 딥러닝 모델 / 딥러닝 A to Z | https://adminmrobo.github.io/AI_Model_Review/ | ko en zh ja uz ru |
 | 신경망은 틀리면서 배운다 | 딥러닝 모델 / 딥러닝 A to Z | https://adminmrobo.github.io/deep_learning_00_neural_net_learns/ | ko en zh ja uz ru |
@@ -142,7 +147,7 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | 4장 논문 · 페이지드 어텐션 (PagedAttention) | 추론 엔지니어링 스터디 / 4장 · 소프트웨어 | https://adminmrobo.github.io/inference_engineering_study/week_05_article_01/ | ko |
 | 2장 후반 발표 · 병목을 찾아라 | 추론 엔지니어링 스터디 / 부록 · 발표 자료 | https://adminmrobo.github.io/inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide/ | ko |
 
-### 경제·수학·최적화 (27)
+### 경제·수학·최적화 (29)
 
 | 제목 | 중분류 | 주소 | 언어 |
 |---|---|---|---|
@@ -162,6 +167,8 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | 위상수학 교실 — 고무찰흙 세상의 수학 · 오리엔테이션 | 위상수학 | https://adminmrobo.github.io/topology_ai_lab/ | ko |
 | 큐브 교실 — 루빅스 큐브로 배우는 군·탐색·AI · 오리엔테이션 | 인공지능 수학 | https://adminmrobo.github.io/ai_cube_lab/ | ko |
 | 이산위상 연구실 — 점 하나하나가 섬인 세상 · 오리엔테이션 | 인공지능 수학 | https://adminmrobo.github.io/discrete_topology_lab/ | ko |
+| 수리 도감 — 인공지능을 위한 수리적 기초 \| 연구소 식구가 돌아가며 안내하는 열다섯 장 | 인공지능 수학 | https://adminmrobo.github.io/math_basic_for_ai_dictionary/ | ko |
+| 초파리의 세 전선 — 리만 가설 연구실 해설 3부 | 인공지능 수학 | https://adminmrobo.github.io/riemann_frontiers_lab/ | ko |
 | 주판봇의 초파리 추적 대작전 ① 공변미분 — 진짜로 꺾인 만큼만 재기 | 좌표 공간(space) | https://adminmrobo.github.io/covariant_chase_lab/ | ko |
 | 자와 각도기의 방 — 시아·모아의 유클리드 공간 | 좌표 공간(space) / 공간 | https://adminmrobo.github.io/euclidean_space_lab/ | ko en zh ja uz ru vi |
 | 유클리드 공간 · 힐베르트 공간 — 연구실 복도의 방 탈출 | 좌표 공간(space) / 공간 | https://adminmrobo.github.io/hilbert_space_lab/ | ko |
