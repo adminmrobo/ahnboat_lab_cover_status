@@ -1,10 +1,11 @@
 {
- "_guide": "공개 카탈로그(catalog.html)의 화면 설정. ?view=이름 으로 고른다. server=Lab Server(기본), articles=논문·발표, portfolio=포트폴리오. server.extras = Lab Server 랙 옆에 붙는 특별 카드(2행 마지막 열들, 랙과 extras_gap 칸 띄움 — 기본 1, server는 0). articles는 랙 이름이 아니라 항목의 article 표시로 모은다(관리실 '주인장 저자' 체크 = hub.csv 주인장_저자_여부 Y인 항목만, 갈래는 Articles_갈래 칸): article=true이면 article 표시가 있는 항목을 랙과 상관없이 모아 only 이름의 갈래 묶음(cat 설정) 아래, 중분류 = Articles 갈래로 보여 준다. lecture_mid: 저자 강의(관리실 '저자강의' 체크 = hub.csv 저자_강의_여부 Y) 항목이 모이는 갈래 이름. mid_info.<갈래>.label이 있으면 카드 위 꼬리표(예: LECTURE)로 쓴다.",
+ "_guide": "공개 카탈로그(catalog.html)의 화면 설정. ?view=이름 으로 고른다. server=Lab Server(기본), articles=논문·발표, portfolio=포트폴리오. server.extras = Lab Server 랙 옆에 붙는 특별 카드(2행 마지막 열들, 랙과 extras_gap 칸 띄움 — 기본 1, server는 0). articles는 랙 이름이 아니라 항목의 article 표시로 모은다(관리실 '주인장 저자' 체크 = hub.csv 주인장_저자_여부 Y인 항목만, 갈래는 Articles_갈래 칸): article=true이면 article 표시가 있는 항목을 랙과 상관없이 모아 only 이름의 갈래 묶음(cat 설정) 아래, 중분류 = Articles 갈래로 보여 준다. lecture_mid: 저자 강의(관리실 '저자강의' 체크 = hub.csv 저자_강의_여부 Y) 항목이 모이는 갈래 이름. mid_info.<갈래>.label이 있으면 카드 위 꼬리표(예: LECTURE)로 쓴다. extras의 slug = 공유 주소 이름표(ahnboat.xyz/#/lab-server/special/<slug>, 한 번 정하면 바꾸지 말 것). soon=true면 카드는 보이되 링크 없이 '곧 열립니다'로 나온다 — 페이지를 올리면 soon을 지우거나 false로.",
  "server": {
   "random": 3,
   "extras": [
    {
     "name": "좌표 첫걸음",
+    "slug": "coordinates",
     "label": "SPECIAL · 입문 6장",
     "color": "#0f7f86",
     "desc": "「나는 어디에 있는가?」 수직선에서 시작해 좌표평면·극좌표·공간좌표, 위도·경도와 지도, 데이터의 좌표까지. 박사의 강의실에서 장마다 게임으로 익히고, 마지막 실전 연습장에서 네 현장을 운영해 보는 좌표 입문입니다. 최적화 첫걸음의 자매편.",
@@ -25,6 +26,7 @@
    },
    {
     "name": "최적화 첫걸음",
+    "slug": "optimization",
     "label": "SPECIAL · 입문 3편",
     "color": "#b0476b",
     "desc": "⓪ 「모델은 한 번에 만들어지지 않는다」에서 인공지능이 배우는 모습을 보고, ① 「혹시… 미분 좋아하세요?」로 미분을 익힌 뒤, ② 공장 이야기로 MR = MC·라그랑지안·경사하강까지 따라가는 세 편짜리 최적화 입문입니다.",
@@ -45,6 +47,7 @@
    },
    {
     "name": "시각화 도감",
+    "slug": "visualization",
     "label": "SPECIAL · 도감",
     "color": "#2a6fbd",
     "desc": "데이터 분석에서 자주 만나는 차트 32장을 한눈에 펼치고, 그림마다 답하는 질문과 흔한 오독을 짚은 뒤 6교시 연구실 수업과 3D 관계 지도로 익힙니다.",
@@ -64,6 +67,7 @@
    },
    {
     "name": "확률 분포 도감",
+    "slug": "probability-distributions",
     "label": "SPECIAL · 도감",
     "color": "#1f8a8a",
     "desc": "확률분포들이 서로 어떻게 이어지는지 3D 관계 지도로 보고, 분포마다 쓰임새와 파이썬 호출법을 찾아봅니다.",
@@ -83,6 +87,7 @@
    },
    {
     "name": "머신러닝 도감",
+    "slug": "machine-learning",
     "label": "SPECIAL · 도감",
     "color": "#c2571a",
     "desc": "머신러닝 모델 27가지를 같은 모눈 위에 하나씩 그리고, 무엇을 긋는 모델인지와 강점·약점을 쉬운 말로 풉니다.",
@@ -102,6 +107,7 @@
    },
    {
     "name": "신경망 도감",
+    "slug": "neural-networks",
     "label": "SPECIAL · 도감",
     "color": "#6a4fb3",
     "desc": "신경망 42가지를 구조 도감으로 정리하고, 초파리만 한 로봇의 뇌에 넣어 RPG 대전으로 비교합니다.",
@@ -116,6 +122,27 @@
     "sprites": [
      {
       "src": "thumbs/chars/atlas/sia_intro.webp",
+      "h": 92
+     }
+    ]
+   },
+   {
+    "name": "AI 수학 기초 도감",
+    "slug": "math-basics",
+    "label": "SPECIAL · 도감",
+    "color": "#4a5a8c",
+    "soon": true,
+    "desc": "인공지능을 공부하다 막히는 수학 기초를 한곳에 모아, 필요한 개념을 바로 찾아보는 도감입니다.",
+    "keywords": [
+     "AI 수학",
+     "수학 기초",
+     "찾아보기"
+    ],
+    "url": "https://adminmrobo.github.io/math_basic_for_ai_dictionary/",
+    "repo": "math_basic_for_ai_dictionary",
+    "sprites": [
+     {
+      "src": "thumbs/chars/atlas/doc_intro.webp",
       "h": 92
      }
     ]

@@ -133,6 +133,10 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
 .tile.big.extra .xsp{position:absolute;right:14px;bottom:0;max-height:62%;display:flex;align-items:flex-end;gap:2px}
 .tile.big.extra .xsp img{position:static;width:auto;height:90px;image-rendering:pixelated;display:block}
 .tile.big.extra .n{font-weight:700;color:var(--c)}
+.tile.big.extra.soon{cursor:default}
+.tile.big.extra.soon .n{color:#8a94a0}
+.tile.big.extra.hl{outline:3px solid var(--c);outline-offset:3px;animation:ahnhl 1s ease-in-out 4}
+@keyframes ahnhl{50%{outline-offset:9px}}
 .tile.big.soon{cursor:default}
 .tile.big.soon .tbody{opacity:.75}
 .tile.big.soon:hover,.lightview .tile.big.soon:hover{transform:none;box-shadow:4px 4px 0 #1f2224}
@@ -173,7 +177,7 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
   /* 화면 종류: server(기본, Lab Server) · articles(논문·발표) · portfolio(포트폴리오). 설정은 data/views.json */
   var VIEW=Q.get('view')||'server',VC={},SINGLE='',ALIAS={};
   /* 공유 주소: 부모 창(ahnboat.xyz)에 지금 위치를 알려 주소창을 ahnboat.xyz/#/lab-server/rack01/... 처럼 바꾼다. 이름표는 data/routes.json */
-  var ROUTES={},NAVQ=false,PENDING=null,LANDED='';
+  var ROUTES={},NAVQ=false,PENDING=null,LANDED='',SPECIALQ=null;
   function el(t,c,txt){var e=document.createElement(t);if(c)e.className=c;if(txt!=null)e.textContent=txt;return e;}
   function rackNo(c){return 'RACK '+String(c.rack).padStart(2,'0');}
   function label(c){return c.label||(c.rack?rackNo(c):'');}
@@ -276,8 +280,10 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
   function extraTile(o){
     var t=el('a','tile big extra');t.style.setProperty('--c',o.color||'#1f2224');
     var u=o.url;if(AhnI18n.lang!=='ko'&&o.lang_url)u=o.lang_url.replace('{lang}',AhnI18n.lang);
-    t.href=u;t.target='_blank';t.rel='noopener';
-    t.setAttribute('data-gc','click/'+VIEW+'/'+(o.repo||o.name));t.setAttribute('data-gc-title',o.name);
+    t.id='sp-'+exSlug(o);
+    if(o.soon){t.classList.add('soon');t.setAttribute('aria-disabled','true');}
+    else{t.href=u;t.target='_blank';t.rel='noopener';t.setAttribute('data-gc','click/'+VIEW+'/'+(o.repo||o.name));t.setAttribute('data-gc-title',o.name);}
+    t.addEventListener('click',function(ev){if(o.soon)ev.preventDefault();postSpecial(o,false);});
     var f=el('span','pic xpic');
     var sp=el('span','xsp');sp.setAttribute('aria-hidden','true');
     (o.sprites||[]).forEach(function(s){var im=el('img');im.alt='';im.src=s.src;if(s.h)im.style.height=s.h+'px';im.addEventListener('load',post);sp.appendChild(im);});
@@ -287,7 +293,7 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
     b.appendChild(el('h3','',T(o.name)));
     if(o.desc)b.appendChild(el('p','',T(o.desc)));
     if(o.keywords&&o.keywords.length){var s2=el('span','kw');o.keywords.forEach(function(x){s2.appendChild(el('span','','#'+(AhnI18n.lang==='ko'?T(x).replace(/\s+/g,''):T(x))));});b.appendChild(s2);}
-    b.appendChild(el('span','n',T('새 창에서 열기 ↗')));
+    b.appendChild(el('span','n',o.soon?T('곧 열립니다'):T('새 창에서 열기 ↗')));
     t.appendChild(b);return t;
   }
   window.addEventListener('resize',function(){placeExtras();});
@@ -386,7 +392,9 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
     if(!c)step1(m);else if(!st.mid)step2(m,c);else step3(m,c,st.mid);
     if(!EMBED)window.scrollTo(0,0);
     post(FIRST?false:true);FIRST=false;
-    postRoute(st,NAVQ);NAVQ=false;
+    if(SPECIALQ){var sq=SPECIALQ;SPECIALQ=null;LANDED='';setTimeout(function(){landSpecial(sq);},60);}
+    else postRoute(st,NAVQ);
+    NAVQ=false;
   }
   function post(nav){if(window.parent!==window){try{var h=Math.ceil(document.body.getBoundingClientRect().height);window.parent.postMessage({type:'ahnboat-catalog-height',height:h,nav:!!nav},'*');}catch(e){}}}
   window.addEventListener('hashchange',function(){NAVQ=true;render();});
@@ -418,9 +426,26 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
     var m=segs[1]?findMid(c.name,segs[1]):'';if(!m)m=onlyMid(c.name);
     return H(m?[c.name,m]:[c.name]);
   }
+  /* 특별 카드(도감·입문)의 공유 주소: lab-server/special/<slug> — 첫 화면을 열고 그 카드를 반짝이며 그 자리로 스크롤 */
+  function exSlug(o){return o.slug||slugify(o.repo||o.name);}
+  function findSpecial(seg){seg=low(seg);return ((!SINGLE&&VC.extras)||[]).filter(function(o){return low(exSlug(o))===seg||low(o.name)===seg||low(o.repo||'')===seg;})[0];}
+  function postSpecial(o,land,y){
+    var path=prefix()+'/special/'+exSlug(o);
+    count((land?'land/':'view/')+path);
+    if(window.parent!==window){try{window.parent.postMessage({type:'ahnboat-route',view:VIEW,path:path,title:T(VC.root_label||'Lab Server')+' › '+T(o.name),nav:true,land:!!land,y:(typeof y==='number'?y:null)},'*');}catch(e){}}
+  }
+  function landSpecial(o){
+    placeExtras();var t=document.getElementById('sp-'+exSlug(o));if(!t)return;
+    t.classList.add('hl');setTimeout(function(){t.classList.remove('hl');},4500);
+    var y=Math.max(0,Math.round(t.getBoundingClientRect().top+window.scrollY));
+    if(!EMBED)t.scrollIntoView({behavior:'smooth',block:'center'});
+    postSpecial(o,true,y);
+  }
   function applyRoute(path){
     var segs=String(path||'').split('/').filter(Boolean);
     if(!segs.length||low(segs[0])!==low(prefix()))return;
+    if(segs[1]&&low(segs[1])==='special'){var sp=segs[2]&&findSpecial(segs[2]);if(sp)SPECIALQ=sp;var h0=H([]);
+      if(location.hash===h0||(!location.hash&&h0==='#/'))render();else location.replace(location.href.split('#')[0]+h0);return;}
     var h=toHash(segs.slice(1));LANDED=segs.join('/');
     if(location.hash===h){NAVQ=true;render();}else{location.replace(location.href.split('#')[0]+h);}
   }

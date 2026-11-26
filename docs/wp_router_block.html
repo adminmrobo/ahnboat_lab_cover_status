@@ -1,17 +1,18 @@
-<!-- ahnboat.xyz 공유 주소 라우터 v1 (2026-11-23)
+<!-- ahnboat.xyz 공유 주소 라우터 v2 (2026-11-26) — v1에서 바뀐 점: 특별 카드(도감·입문) 주소 #/lab-server/special/<이름>으로 들어오면 그 카드 자리까지 스크롤
      워드프레스 홈 화면 맨 끝에 '사용자 정의 HTML' 블록을 하나 더 만들고 이 코드를 그대로 붙인다. 화면에는 아무것도 보이지 않는다.
      하는 일
        1) Lab Server·Articles·Portfolio 화면(catalog.html iframe)에서 랙·갈래를 누르면 주소창이
           ahnboat.xyz/#/lab-server/rack01/concept-map 처럼 바뀐다(뒤로 가기 기록은 늘리지 않음).
        2) 그 주소로 들어오면 해당 iframe을 그 위치로 열고 그 블록까지 스크롤한다.
-       3) #/schedule · #/top 은 그 블록으로 스크롤만 한다.
+       3) #/lab-server/special/neural-networks 처럼 도감·입문 카드 주소로 들어오면 그 카드까지 스크롤하고 카드가 반짝인다.
+       4) #/schedule · #/top 은 그 블록으로 스크롤만 한다.
      MODE='path' 는 서버에 주소 규칙(docs/wp_path_rewrite.php)을 넣은 뒤에만 켠다 → ahnboat.xyz/lab-server/rack01 -->
 <script>
 (function(){
   'use strict';
   var MODE='hash';                       /* 'hash' = ahnboat.xyz/#/lab-server/rack01 · 'path' = ahnboat.xyz/lab-server/rack01 */
   var SECTIONS={schedule:'schedule.html',top:'top.html'};   /* 스크롤만 하는 블록: 이름 → iframe 주소에 든 파일 이름 */
-  var BASE_TITLE=document.title,LANDING=read(),DONE={};
+  var BASE_TITLE=document.title,LANDING=read(),DONE={},OFF=0,TARGET=null;
 
   function read(){
     var p=MODE==='path'?location.pathname:(location.hash.indexOf('#/')===0?location.hash.slice(2):'');
@@ -24,7 +25,8 @@
   }
   function frames(){return Array.prototype.slice.call(document.querySelectorAll('iframe'));}
   function frameOf(win){return frames().filter(function(f){return f.contentWindow===win;})[0];}
-  function show(f){if(!f)return;[200,900,2000].forEach(function(t){setTimeout(function(){f.scrollIntoView({behavior:'smooth',block:'start'});},t);});}
+  function show(f){if(!f)return;TARGET=f;[200,900,2000].forEach(function(t){setTimeout(go,t);});}
+  function go(){if(!TARGET)return;var y=TARGET.getBoundingClientRect().top+window.scrollY+(OFF?OFF-90:0);window.scrollTo({top:Math.max(0,y),behavior:'smooth'});}
 
   window.addEventListener('message',function(e){
     var d=e.data;if(!d||typeof d!=='object')return;
@@ -36,6 +38,7 @@
     }
     if(d.type==='ahnboat-route'&&d.nav&&typeof d.path==='string'){
       write(d.path);
+      if(d.land&&typeof d.y==='number'){OFF=d.y;TARGET=frameOf(e.source)||TARGET;go();}
       document.title=d.title?d.title+' · '+BASE_TITLE:BASE_TITLE;
     }
   });
@@ -43,8 +46,8 @@
   /* #/schedule 처럼 스크롤만 하는 블록 */
   var first=LANDING.split('/')[0];
   if(SECTIONS[first]){
-    var go=function(){show(frames().filter(function(f){return (f.getAttribute('src')||'').indexOf(SECTIONS[first])>=0;})[0]);};
-    if(document.readyState==='complete')go();else window.addEventListener('load',go);
+    var goSec=function(){show(frames().filter(function(f){return (f.getAttribute('src')||'').indexOf(SECTIONS[first])>=0;})[0]);};
+    if(document.readyState==="complete")goSec();else window.addEventListener("load",goSec);
   }
 })();
 </script>
