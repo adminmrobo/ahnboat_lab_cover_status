@@ -1763,7 +1763,7 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_lab_gallery",
   "pages_url": "https://adminmrobo.github.io/ahnboat_lab_gallery/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T03:46:22Z",
+  "pushed_at": "2026-11-27T04:06:19Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -1902,7 +1902,7 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_ontology_feed",
   "pages_url": "https://adminmrobo.github.io/ahnboat_ontology_feed/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T03:43:44Z",
+  "pushed_at": "2026-11-27T04:24:02Z",
   "has_manifest": false,
   "covers": [
    {
@@ -4336,7 +4336,7 @@
   "repo_url": "https://github.com/adminmrobo/ai_industry_lab",
   "pages_url": "https://adminmrobo.github.io/ai_industry_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-26T04:11:11Z",
+  "pushed_at": "2026-11-27T04:17:08Z",
   "has_manifest": false,
   "covers": [
    {
@@ -23734,7 +23734,7 @@
   "repo_url": "https://github.com/adminmrobo/neural_see_lab",
   "pages_url": "https://adminmrobo.github.io/neural_see_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-23T08:35:10Z",
+  "pushed_at": "2026-11-27T04:17:08Z",
   "has_manifest": true,
   "covers": [
    {
@@ -23754,7 +23754,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "missing"
+    "status": "ok"
    },
    {
     "path": "img/thumb_00.webp",
@@ -23773,7 +23773,7 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "missing"
+    "status": "ok"
    },
    {
     "path": "img/og_00.webp",
@@ -23792,12 +23792,12 @@
      "jupanbot"
     ],
     "robot": "jupanbot-v2",
-    "status": "missing"
+    "status": "ok"
    }
   ],
   "redraw_count": 0,
   "redraw_ids": [],
-  "thumb": null,
+  "thumb": "thumbs/repos/neural_see_lab.jpg",
   "site_desc": "사진이 숫자가 되고, 3×3 필터가 경계를 찾고, ReLU·풀링이 강한 신호만 남기고, 깊은 층이 귀·눈·입과 그 자리를 보아 \"고양이\"라고 답하기까지. 인턴 시아·모아가 조수 하루와 쪽지시험 4문항을 준비합니다.",
   "status": "ok",
   "checked_at": "2026-11-27",
@@ -24414,17 +24414,69 @@
  },
  {
   "repo": "nlp20_five_floor_map",
-  "series_ko": "말을 숫자로 바꾸는 20가지 방법 — NLP 치트시트를 5층 지도로 다시 읽기",
+  "series_ko": "자연어 분석과 LLM · 연구실 해설",
   "title_ko": "말을 숫자로 바꾸는 20가지 방법 — NLP 치트시트를 5층 지도로 다시 읽기",
   "repo_url": "https://github.com/adminmrobo/nlp20_five_floor_map",
   "pages_url": "https://adminmrobo.github.io/nlp20_five_floor_map/",
   "default_branch": "main",
-  "pushed_at": "2026-11-26T15:09:52Z",
+  "pushed_at": "2026-11-27T04:24:05Z",
   "has_manifest": true,
-  "covers": [],
+  "covers": [
+   {
+    "path": "cover_nlp20.webp",
+    "role": "cover",
+    "id": "cover_nlp20",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "thumb_nlp20.webp",
+    "role": "thumb",
+    "id": "thumb_nlp20",
+    "size": [
+     640,
+     360
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "og_nlp20.jpg",
+    "role": "og",
+    "id": "og_nlp20",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   }
+  ],
   "redraw_count": 0,
   "redraw_ids": [],
-  "thumb": null,
+  "thumb": "thumbs/repos/nlp20_five_floor_map.jpg",
   "site_desc": "NLP 20가지 기술을 '글자→숫자→고르기→뜻 좌표→문맥→언어 모델' 5층 지도로 다시 묶은 비전공자용 연구실 해설 페이지",
   "status": "ok",
   "checked_at": "2026-11-27",

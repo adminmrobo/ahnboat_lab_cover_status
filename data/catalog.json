@@ -1316,7 +1316,7 @@
    "langs": [
     "ko"
    ],
-   "thumb": "thumbs/cats/C02-M2.webp"
+   "thumb": "thumbs/repos/neural_see_lab.jpg"
   },
   {
    "title": "하루의 실험실 : 뉴런의 드롭아웃",
@@ -1794,7 +1794,7 @@
    "langs": [
     "ko"
    ],
-   "thumb": "thumbs/cats/C04-M1.webp"
+   "thumb": "thumbs/repos/nlp20_five_floor_map.jpg"
   },
   {
    "title": "하루에 다 끝내는 자연어 분석 서머리 노트",
@@ -4330,7 +4330,7 @@
     "연구실 해설",
     "따라 하기"
    ],
-   "image": "",
+   "image": "thumbs/cats/subs/practice-and-explanation.webp",
    "_note": "공통 카드 — cat·mid가 \"*\"이면 '실습 및 해설'이 쓰이는 모든 대분류·중분류에 붙는다(build_hub.py). 그림 지시문: docs/genspark/practice-and-explanation/"
   },
   {
@@ -4343,7 +4343,7 @@
     "연구실 해설",
     "따라 하기"
    ],
-   "image": "",
+   "image": "thumbs/cats/subs/practice-and-explanation.webp",
    "_note": "공통 카드 — cat·mid가 \"*\"이면 '실습 및 해설'이 쓰이는 모든 대분류·중분류에 붙는다(build_hub.py). 그림 지시문: docs/genspark/practice-and-explanation/"
   },
   {
@@ -4356,7 +4356,7 @@
     "연구실 해설",
     "따라 하기"
    ],
-   "image": "",
+   "image": "thumbs/cats/subs/practice-and-explanation.webp",
    "_note": "공통 카드 — cat·mid가 \"*\"이면 '실습 및 해설'이 쓰이는 모든 대분류·중분류에 붙는다(build_hub.py). 그림 지시문: docs/genspark/practice-and-explanation/"
   },
   {
@@ -4369,7 +4369,7 @@
     "연구실 해설",
     "따라 하기"
    ],
-   "image": "",
+   "image": "thumbs/cats/subs/practice-and-explanation.webp",
    "_note": "공통 카드 — cat·mid가 \"*\"이면 '실습 및 해설'이 쓰이는 모든 대분류·중분류에 붙는다(build_hub.py). 그림 지시문: docs/genspark/practice-and-explanation/"
   },
   {
@@ -4382,7 +4382,7 @@
     "연구실 해설",
     "따라 하기"
    ],
-   "image": "",
+   "image": "thumbs/cats/subs/practice-and-explanation.webp",
    "_note": "공통 카드 — cat·mid가 \"*\"이면 '실습 및 해설'이 쓰이는 모든 대분류·중분류에 붙는다(build_hub.py). 그림 지시문: docs/genspark/practice-and-explanation/"
   },
   {
@@ -4395,7 +4395,7 @@
     "연구실 해설",
     "따라 하기"
    ],
-   "image": "",
+   "image": "thumbs/cats/subs/practice-and-explanation.webp",
    "_note": "공통 카드 — cat·mid가 \"*\"이면 '실습 및 해설'이 쓰이는 모든 대분류·중분류에 붙는다(build_hub.py). 그림 지시문: docs/genspark/practice-and-explanation/"
   },
   {
@@ -4408,7 +4408,7 @@
     "연구실 해설",
     "따라 하기"
    ],
-   "image": "",
+   "image": "thumbs/cats/subs/practice-and-explanation.webp",
    "_note": "공통 카드 — cat·mid가 \"*\"이면 '실습 및 해설'이 쓰이는 모든 대분류·중분류에 붙는다(build_hub.py). 그림 지시문: docs/genspark/practice-and-explanation/"
   }
  ]

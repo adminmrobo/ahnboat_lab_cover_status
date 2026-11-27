@@ -33,7 +33,7 @@
  },
  "ahnboat_lab_gallery": {
   "src": null,
-  "pushed_at": "2026-11-27T03:46:22Z"
+  "pushed_at": "2026-11-27T04:06:19Z"
  },
  "ahnboat_lab_langpack": {
   "src": null,
@@ -45,7 +45,7 @@
  },
  "ahnboat_ontology_feed": {
   "src": "name:assets/cover.png",
-  "pushed_at": "2026-11-27T03:43:44Z",
+  "pushed_at": "2026-11-27T04:24:02Z",
   "made": "2026-11-27"
  },
  "ahnboat_server_room_guards": {
@@ -102,8 +102,8 @@
  },
  "ai_industry_lab": {
   "src": "name:assets/og.png",
-  "pushed_at": "2026-11-26T04:11:11Z",
-  "made": "2026-11-26"
+  "pushed_at": "2026-11-27T04:17:08Z",
+  "made": "2026-11-27"
  },
  "AI_Model_Review": {
   "src": "embedded:index.html#hero",
@@ -697,8 +697,9 @@
   "pushed_at": "2026-11-13T16:28:03Z"
  },
  "neural_see_lab": {
-  "src": null,
-  "pushed_at": "2026-11-23T08:35:10Z"
+  "src": "manifest:img/cover_00.webp",
+  "pushed_at": "2026-11-27T04:17:08Z",
+  "made": "2026-11-27"
  },
  "neuralink_animal_brain_ai": {
   "src": "manifest:assets/img/cover_index.webp",
@@ -711,8 +712,9 @@
   "made": "2026-11-27"
  },
  "nlp20_five_floor_map": {
-  "src": null,
-  "pushed_at": "2026-11-26T15:09:52Z"
+  "src": "manifest:cover_nlp20.webp",
+  "pushed_at": "2026-11-27T04:24:05Z",
+  "made": "2026-11-27"
  },
  "one_day_deep_learning": {
   "src": "manifest:assets/og_one_day_dl_pm.jpg",
