@@ -47,8 +47,14 @@ a.ep:hover{transform:translate(-2px,-2px);box-shadow:5px 5px 0 var(--line)}
 .ep.soon .shot{background:#eef0f3;background-image:linear-gradient(#d5d9e0 1px,transparent 1px),linear-gradient(90deg,#d5d9e0 1px,transparent 1px);background-size:12px 12px;display:flex;align-items:center;justify-content:center}
 .ep.soon .q{font:700 26px var(--mono);color:#9aa1ab;background:#fff;border:2px dashed #9aa1ab;border-radius:10px;width:46px;height:46px;display:flex;align-items:center;justify-content:center}
 .ep.soon b{color:var(--muted)}
+/* 회차가 5개를 넘으면 최신 4개 + '전체 회차 보기' 카드 (전체는 ?all=1) */
+.ep.more{background:#d9ccff;justify-content:center;align-items:center;text-align:center;gap:6px;padding:14px 10px}
+.ep.more .n{font:700 28px/1 var(--mono)}
+.ep.more b{font-size:14px}
+.ep.more small{font-size:11.5px;color:#3d3f42}
+html.all .cards{grid-template-columns:repeat(auto-fill,minmax(190px,1fr))}
 @media (max-width:1100px){.bar{grid-template-columns:1fr}.lead{flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:flex-start;gap:8px 14px}.lead p{flex:1 1 260px}}
-@media (max-width:760px){.cards{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px}.ep{flex:0 0 46%;scroll-snap-align:start}.ep.soon{flex-basis:34%}}
+@media (max-width:760px){html:not(.all) .cards{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px}.ep{flex:0 0 46%;scroll-snap-align:start}.ep.soon{flex-basis:34%}}
 @media (max-width:420px){.ep{flex-basis:64%}.ep.soon{flex-basis:42%}}
 @media (prefers-reduced-motion:reduce){a.ep,.room{transition:none}}
 </style>
@@ -70,6 +76,7 @@ a.ep:hover{transform:translate(-2px,-2px);box-shadow:5px 5px 0 var(--line)}
   'use strict';
   var Q=new URLSearchParams(location.search);
   if(Q.get('embed')==='1')document.documentElement.classList.add('embed');
+  var ALL=Q.get('all')==='1';if(ALL)document.documentElement.classList.add('all');
   if(Q.get('theme')==='dark'||Q.get('theme')==='light')document.documentElement.setAttribute('data-theme',Q.get('theme'));
   function el(t,c,txt){var e=document.createElement(t);if(c)e.className=c;if(txt!=null)e.textContent=txt;return e;}
   function post(){if(window.parent!==window){try{window.parent.postMessage({type:'ahnboat-catalog-height',height:Math.ceil(document.body.getBoundingClientRect().height),nav:false},'*');}catch(e){}}}
@@ -77,7 +84,13 @@ a.ep:hover{transform:translate(-2px,-2px);box-shadow:5px 5px 0 var(--line)}
     ['kicker','title','intro'].forEach(function(k){if(d[k])document.getElementById(k).textContent=d[k];});
     if(d.room)document.getElementById('room').href=d.room;
     var box=document.getElementById('cards');box.textContent='';
-    (d.episodes||[]).forEach(function(e){
+    // 최신 회차가 앞으로. 공개 회차 먼저(최신순), 준비 중은 뒤에.
+    var all=(d.episodes||[]).slice().reverse(),eps=all.filter(function(e){return e.status==='open'&&e.url;}).concat(all.filter(function(e){return !(e.status==='open'&&e.url);}));
+    var nOpen=eps.filter(function(e){return e.status==='open'&&e.url;}).length,MAX=5;
+    if(ALL)eps=(d.episodes||[]).slice();  // 전체 보기는 EP.01부터 차례대로
+    var more=!ALL&&eps.length>MAX;
+    if(more)eps=eps.slice(0,MAX-1);
+    eps.forEach(function(e){
       var open=e.status==='open'&&e.url, c=el(open?'a':'div','ep'+(open?'':' soon'));
       if(open){c.href=e.url;c.target='_blank';c.rel='noopener';}else c.setAttribute('aria-label',e.ep+' 준비 중');
       var sh=el('div','shot');
@@ -88,6 +101,8 @@ a.ep:hover{transform:translate(-2px,-2px);box-shadow:5px 5px 0 var(--line)}
       if(open&&e.stats){var st=el('div','st');e.stats.forEach(function(s,i){var x=el('span',null,s[0]);x.style.color=i?'var(--drop)':'var(--plain)';x.appendChild(el('small',null,s[1]));st.appendChild(x);});bd.appendChild(st);}
       c.appendChild(bd);box.appendChild(c);
     });
+    if(more){var m=el('a','ep more');m.href=location.pathname.replace(/[^/]*$/,'')+'haru_lab.html?all=1';m.target='_blank';m.rel='noopener';
+      m.appendChild(el('span','n',String(all.length)));m.appendChild(el('b',null,'전체 회차 보기'));m.appendChild(el('small',null,'공개 '+nOpen+'편 · EP.01부터 모아 보기'));box.appendChild(m);}
     post();
   }
   fetch('data/haru_lab.json',{cache:'no-cache'}).then(function(r){return r.json();}).then(render).catch(post);
