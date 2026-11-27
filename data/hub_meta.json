@@ -2061,6 +2061,810 @@
     "확률해석"
    ],
    "image": "thumbs/cats/subs/statistics-hands-on.webp"
+  },
+  {
+   "cat": "AI 감각·생성",
+   "mid": "만들어 내기",
+   "name": "AI 렌더링",
+   "desc": "정답표 없이 배우기에서 시작해 사진에서 3D를 되찾고, 적게 그린 화면을 AI로 채우기까지 — 미션 15개.",
+   "keywords": [
+    "AI 렌더링",
+    "3D 복원",
+    "화면 채우기"
+   ],
+   "image": "thumbs/repos/ai_rendering.jpg"
+  },
+  {
+   "cat": "AI 감각·생성",
+   "mid": "보고 알아보기",
+   "name": "모션 AI",
+   "desc": "동작을 알아보는 AI와 동작을 만드는 AI — 관절 점으로 몸짓을 읽고 새 움직임을 만들어 내는 원리.",
+   "keywords": [
+    "동작 인식",
+    "관절 점",
+    "동작 생성"
+   ],
+   "image": "thumbs/repos/motion_ai_series_01.jpg"
+  },
+  {
+   "cat": "AI 감각·생성",
+   "mid": "보고 알아보기",
+   "name": "이미지 인식",
+   "desc": "AI가 사진을 어떻게 구분하는지 따라 해 보고, 가림막 뒤 얼굴 맞히기 게임으로 CNN 공식 열 개를 익힙니다.",
+   "keywords": [
+    "이미지 분류",
+    "CNN",
+    "얼굴 맞히기"
+   ],
+   "image": "thumbs/repos/AI_image_classification.jpg"
+  },
+  {
+   "cat": "AI 감각·생성",
+   "mid": "읽고 이해하기",
+   "name": "AI 글 읽기",
+   "desc": "AI가 써 준 글은 왜 잘 안 읽힐까 — 읽기 어려움을 재는 논문을 리뷰한 인터랙티브 해설.",
+   "keywords": [
+    "가독성",
+    "AI 글쓰기",
+    "논문 리뷰"
+   ],
+   "image": "thumbs/repos/ai_text_read_ability.jpg"
+  },
+  {
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "AI 연구 동향",
+   "name": "AI 학회 논문",
+   "desc": "ICLR 2027 만점 논문 세 편을 연구실 식구들이 장난감 실험으로 다시 심사하는 모의 심사회.",
+   "keywords": [
+    "ICLR",
+    "논문 심사",
+    "모의 심사회"
+   ],
+   "image": "thumbs/repos/iclr2027_top3_lab_review.jpg"
+  },
+  {
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "LLM 이해",
+   "name": "LLM 기억",
+   "desc": "문맥 창에서 바깥 저장소까지 LLM 기억 3부작, 그리고 어떤 생성 AI에도 붙여 쓰는 자동화 주문서.",
+   "keywords": [
+    "LLM 기억",
+    "문맥 창",
+    "자동화 프롬프트"
+   ],
+   "image": "thumbs/repos/Automate_prompt_lab.jpg"
+  },
+  {
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "LLM 이해",
+   "name": "LLM 평가",
+   "desc": "분류 채점에서 LLM 리더보드까지 AI 점수가 무엇을 쟀는지 따져 보고, 카파시의 방법을 한국어 데이터로 검증합니다.",
+   "keywords": [
+    "LLM 평가",
+    "리더보드",
+    "재현 검증"
+   ],
+   "image": "thumbs/repos/LLM_evaluation.jpg"
+  },
+  {
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "LLM 이해",
+   "name": "에이전트 보안",
+   "desc": "AI 코딩 비서 승인 기록에서 비밀값이 나온 사건을 조건부확률·베이지안 갱신으로 읽고, 책임 토론까지.",
+   "keywords": [
+    "에이전트 보안",
+    "조건부확률",
+    "비밀값 유출"
+   ],
+   "image": "thumbs/cats/C04-M1.webp"
+  },
+  {
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "LLM 이해",
+   "name": "연구실 리포트",
+   "desc": "최근 현상·사건·발표를 의견 없이 사실 중심으로 정리하는 연구실 리포트(동향).",
+   "keywords": [
+    "동향 리포트",
+    "타임라인",
+    "사실 확인"
+   ],
+   "image": "thumbs/cats/C04-M1.webp"
+  },
+  {
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "LLM 이해",
+   "name": "온톨로지",
+   "desc": "온톨로지 설계도에서 지식 그래프, 시각화, 움직이는 VFX 3D 그래프까지 — VFX 공정을 예로 따라오는 해설.",
+   "keywords": [
+    "온톨로지",
+    "지식 그래프",
+    "VFX 시각화"
+   ],
+   "image": "thumbs/cats/C04-M1.webp"
+  },
+  {
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "추론 엔지니어링 스터디",
+   "name": "1장 · 시작 전에 정할 것 (서문·0장 포함)",
+   "desc": "서문·0장·1장과 라이브벤치 논문 — 추론이 왜 모두의 일인지, 우리 앱에 맞는 모델과 목표 눈금을 정하는 법.",
+   "keywords": [
+    "추론 목표",
+    "TTFT·TPS",
+    "라이브벤치"
+   ],
+   "image": "https://adminmrobo.github.io/inference_engineering_study/week_01_textbook_preface/thumb.jpg"
+  },
+  {
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "추론 엔지니어링 스터디",
+   "name": "2장 · 모델",
+   "desc": "질문 한 줄이 토큰이 되어 모델을 지나기까지, 트랜스포머·번개 어텐션 논문과 병목 찾기.",
+   "keywords": [
+    "토큰",
+    "어텐션",
+    "병목"
+   ],
+   "image": "https://adminmrobo.github.io/inference_engineering_study/week_02_textbook_ch02_p1_p2/thumb.jpg"
+  },
+  {
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "추론 엔지니어링 스터디",
+   "name": "3장 · 하드웨어",
+   "desc": "모델이 어떤 GPU에 들어가고 얼마나 빠를지 — VRAM과 메모리 대역폭, 루프라인으로 어림하기.",
+   "keywords": [
+    "GPU",
+    "VRAM",
+    "루프라인"
+   ],
+   "image": "https://adminmrobo.github.io/inference_engineering_study/week_04_textbook_ch03/thumb.jpg"
+  },
+  {
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "추론 엔지니어링 스터디",
+   "name": "4장 · 소프트웨어",
+   "desc": "CUDA부터 추론 엔진·Dynamo까지 소프트웨어 네 층, 그리고 KV 캐시를 블록으로 나누는 페이지드 어텐션.",
+   "keywords": [
+    "추론 엔진",
+    "KV 캐시",
+    "페이지드 어텐션"
+   ],
+   "image": "https://adminmrobo.github.io/inference_engineering_study/week_05_textbook_ch04/thumb.jpg"
+  },
+  {
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "추론 엔지니어링 스터디",
+   "name": "부록 · 발표 자료",
+   "desc": "2장 후반 병목 진단을 약 30분 발표 흐름으로 따라가는 발표 자료.",
+   "keywords": [
+    "발표 자료",
+    "병목 진단",
+    "스터디 발표"
+   ],
+   "image": "https://adminmrobo.github.io/inference_engineering_study/cards/inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide.jpg"
+  },
+  {
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "추론 엔지니어링 스터디",
+   "name": "스터디 북 · 보드",
+   "desc": "『Inference Engineering』 10주 스터디를 묶은 스터디 북과 매주 토요일 Zoom 스터디 보드.",
+   "keywords": [
+    "스터디 북",
+    "10주 스터디",
+    "스터디 보드"
+   ],
+   "image": "https://adminmrobo.github.io/inference_engineering_study/thumb.jpg"
+  },
+  {
+   "cat": "경제·수학·최적화",
+   "mid": "경제 연구",
+   "name": "경제·사회",
+   "desc": "국민노후보장패널, 산재보험패널, 구인 행정데이터, 여론조사 — 경제·사회 데이터를 AI 모형으로 풀어 쓴 논문 해설.",
+   "keywords": [
+    "패널 데이터",
+    "노동수요",
+    "여론조사 보정"
+   ],
+   "image": "thumbs/repos/my_article_05_consumer_expenditure_predict.jpg"
+  },
+  {
+   "cat": "경제·수학·최적화",
+   "mid": "금융 연구",
+   "name": "경제·사회",
+   "desc": "자금순환표로 읽는 거시경제 — 경제순환·IS-LM·AD-AS를 재무제표 비유로 잇고 한국 통계로 돈의 흐름을 봅니다.",
+   "keywords": [
+    "자금순환표",
+    "거시경제",
+    "돈의 흐름"
+   ],
+   "image": "thumbs/repos/fof-money-meridian-.jpg"
+  },
+  {
+   "cat": "공공·사회 프로젝트",
+   "mid": "외부_콘텐츠",
+   "name": "공공 사업",
+   "desc": "제조현장 AX 강사 양성, 핀테크 API 개발지원, 뉴스 빅데이터 스타트업 지원 — 총괄 PM으로 수행한 공공 사업.",
+   "keywords": [
+    "공공 사업",
+    "총괄 PM",
+    "AX 교육"
+   ],
+   "image": ""
+  },
+  {
+   "cat": "공공·사회 프로젝트",
+   "mid": "외부_콘텐츠",
+   "name": "특허",
+   "desc": "태양광 발전 데이터로 폭염 피해를 미리 내다보는 시스템 특허.",
+   "keywords": [
+    "특허",
+    "태양광 데이터",
+    "폭염 예측"
+   ],
+   "image": ""
+  },
+  {
+   "cat": "금융·핀테크·블록체인",
+   "mid": "금융 연구",
+   "name": "가상자산",
+   "desc": "코인 값과 코스피, 가상자산 시계열 예측, ERC-20과 미디어 토큰의 경제적 성과 — 가상자산 논문 해설.",
+   "keywords": [
+    "가상자산",
+    "시계열 예측",
+    "토큰 경제"
+   ],
+   "image": "thumbs/repos/my_article_02_crypto_predict_model_analytics.jpg"
+  },
+  {
+   "cat": "금융·핀테크·블록체인",
+   "mid": "금융 연구",
+   "name": "주식·금융시장",
+   "desc": "우리나라 주식시장의 변동성을 산업별·기간별로 나눠 본 박사논문을 스무 쪽 인터랙티브 해설로.",
+   "keywords": [
+    "변동성 분해",
+    "주식시장",
+    "박사논문"
+   ],
+   "image": "thumbs/repos/my_article_00_Korean_stockmarket_volatility_study.jpg"
+  },
+  {
+   "cat": "금융·핀테크·블록체인",
+   "mid": "보험·핀테크",
+   "name": "인슈어테크 사례",
+   "desc": "여행자보험 청구 분류, 건강보험 의료비 회귀 — 보험 데이터로 모델을 만들고 실전 과제까지 풀어 봅니다.",
+   "keywords": [
+    "인슈어테크",
+    "분류 모델",
+    "회귀 모델"
+   ],
+   "image": "thumbs/repos/insurtech__case_classification_model_01.jpg"
+  },
+  {
+   "cat": "금융·핀테크·블록체인",
+   "mid": "블록체인",
+   "name": "블록체인 금융",
+   "desc": "기억에서 분산원장까지 장부의 진화, 블록·해시·채굴, 그리고 비트코인의 합의와 반감기.",
+   "keywords": [
+    "분산원장",
+    "해시",
+    "비트코인"
+   ],
+   "image": "thumbs/cats/C06-M2.webp"
+  },
+  {
+   "cat": "금융·핀테크·블록체인",
+   "mid": "외부_콘텐츠",
+   "name": "로봇저널리즘",
+   "desc": "공시·시세 데이터로 기사를 자동으로 쓰는 Money-Robo 로봇저널리즘 신문과 관련 특허.",
+   "keywords": [
+    "로봇저널리즘",
+    "기사 자동 생성",
+    "특허"
+   ],
+   "image": ""
+  },
+  {
+   "cat": "금융·핀테크·블록체인",
+   "mid": "외부_콘텐츠",
+   "name": "특허",
+   "desc": "블록체인 데이터를 감시해 이상 징후를 찾아내는 시스템 특허.",
+   "keywords": [
+    "특허",
+    "블록체인 감시",
+    "이상 징후"
+   ],
+   "image": ""
+  },
+  {
+   "cat": "금융·핀테크·블록체인",
+   "mid": "회계·거시금융",
+   "name": "회계·기업가치",
+   "desc": "현금흐름표를 직접법·간접법으로 읽고, 매출이 없는 회사의 기업가치를 DCF·RIM까지 계산해 봅니다.",
+   "keywords": [
+    "현금흐름표",
+    "기업가치",
+    "DCF"
+   ],
+   "image": "thumbs/cats/C06-M3.webp"
+  },
+  {
+   "cat": "딥러닝·뇌과학",
+   "mid": "뇌과학",
+   "name": "초파리 특별편",
+   "desc": "초파리 뇌 연구가 AI에 주는 힌트, 그리고 뉴럴링크의 동물 뇌 실험을 자율주행·드론과 잇는 해설.",
+   "keywords": [
+    "초파리 뇌",
+    "뉴럴링크",
+    "뇌과학"
+   ],
+   "image": "thumbs/repos/AI_Model_Review_Fruit_fly_special.jpg"
+  },
+  {
+   "cat": "딥러닝·뇌과학",
+   "mid": "딥러닝 모델",
+   "name": "뉴런 반응 연구실",
+   "desc": "곱하고 더한 값을 함수에 통과시켜 넘기는 뉴런의 '반응' — 활성화 함수와 연구실 반응속도 대회.",
+   "keywords": [
+    "활성화 함수",
+    "ReLU",
+    "반응속도 대회"
+   ],
+   "image": "thumbs/repos/neuron_reaction.jpg"
+  },
+  {
+   "cat": "딥러닝·뇌과학",
+   "mid": "딥러닝 모델",
+   "name": "딥러닝 A to Z",
+   "desc": "초파리 연구원과 딥러닝 모델을 지도처럼 훑고, 퍼셉트론 비교와 신경망 42종 RPG 대전까지.",
+   "keywords": [
+    "딥러닝 지도",
+    "퍼셉트론",
+    "신경망 도감"
+   ],
+   "image": "thumbs/repos/AI_Model_Review.jpg"
+  },
+  {
+   "cat": "딥러닝·뇌과학",
+   "mid": "딥러닝 모델",
+   "name": "서머리 노트",
+   "desc": "딥러닝 필기 노트 열한 장을 6교시와 모의고사 열 문제로 — 뉴런에서 트랜스포머까지 비전공자용.",
+   "keywords": [
+    "서머리 노트",
+    "모의고사",
+    "딥러닝 입문"
+   ],
+   "image": "thumbs/repos/one_day_deep_learning.jpg"
+  },
+  {
+   "cat": "딥러닝·뇌과학",
+   "mid": "딥러닝 모델",
+   "name": "신경망 연구소",
+   "desc": "신경망 27종을 한 층씩 3D로 살펴보는 27층 건물 — 돌려 보고 값을 바꿔 보며 읽습니다.",
+   "keywords": [
+    "3D 신경망",
+    "27층 건물",
+    "신경망 연구소"
+   ],
+   "image": "thumbs/cats/C02-M2.webp"
+  },
+  {
+   "cat": "딥러닝·뇌과학",
+   "mid": "딥러닝 모델",
+   "name": "역전파 연구실",
+   "desc": "손잡이 33개짜리 작은 신경망으로 하나씩·무작위·역전파 세 학습법을 같은 조건에서 비교한 실험 노트.",
+   "keywords": [
+    "역전파",
+    "손잡이 33개",
+    "학습 비교"
+   ],
+   "image": "thumbs/cats/C02-M2.webp"
+  },
+  {
+   "cat": "딥러닝·뇌과학",
+   "mid": "딥러닝 모델",
+   "name": "좌표 공간(space)",
+   "desc": "하루가 LoRA 실험을 다시 돌려 숫자와 그림, 3D 좌표로 설명합니다 — 얼려 두고 덧붙이는 미세조정.",
+   "keywords": [
+    "LoRA",
+    "미세조정",
+    "3D 좌표"
+   ],
+   "image": "thumbs/cats/C02-M2.webp"
+  },
+  {
+   "cat": "딥러닝·뇌과학",
+   "mid": "딥러닝 모델",
+   "name": "텐서 연구실",
+   "desc": "텐서를 축 세기부터 연산·분해, 격투 게임 특별편까지 직접 돌려 보며 배웁니다.",
+   "keywords": [
+    "텐서",
+    "축",
+    "텐서 분해"
+   ],
+   "image": "thumbs/repos/what_is_tensor.jpg"
+  },
+  {
+   "cat": "머신러닝",
+   "mid": "개념 지도",
+   "name": "머신러닝 모델 도감",
+   "desc": "고전 머신러닝 모델 27가지를 같은 모눈 위에 하나씩 그려 강점·약점을 쉬운 말로 푼 한 장 도감.",
+   "keywords": [
+    "모델 도감",
+    "모눈",
+    "강점과 약점"
+   ],
+   "image": "thumbs/cats/C01-M1.webp"
+  },
+  {
+   "cat": "머신러닝",
+   "mid": "개념 지도",
+   "name": "머신러닝 연구소",
+   "desc": "머신러닝 모델 27종을 한 층씩 3D로 살펴보는 27층 건물, 강사용 8차시 수업 안내 포함.",
+   "keywords": [
+    "3D 머신러닝",
+    "27층 건물",
+    "수업 안내"
+   ],
+   "image": "thumbs/cats/C01-M1.webp"
+  },
+  {
+   "cat": "머신러닝",
+   "mid": "개념 지도",
+   "name": "모델 채용 위원회",
+   "desc": "모델 지원자 열다섯 명의 면접 — 1차는 머신러닝, 2차는 딥러닝 공채. 합격선과 재시험 규칙까지.",
+   "keywords": [
+    "모델 채용",
+    "면접",
+    "치트시트"
+   ],
+   "image": "thumbs/repos/DL_model_hiring_committee.jpg"
+  },
+  {
+   "cat": "머신러닝",
+   "mid": "개념 지도",
+   "name": "서머리 노트",
+   "desc": "머신러닝 입문 범위를 교시로 나눠 공책에 정리 — 회귀·분류까지 코드와 수식 없이 쪽지시험 대비.",
+   "keywords": [
+    "서머리 노트",
+    "쪽지시험",
+    "머신러닝 입문"
+   ],
+   "image": "thumbs/repos/one_day_machine_learning.jpg"
+  },
+  {
+   "cat": "머신러닝",
+   "mid": "개념 지도",
+   "name": "알고리즘 패밀리",
+   "desc": "AI 알고리즘을 한 가문으로 — 가계도, 조직원 명부, 가문 회합 세 편의 특별편.",
+   "keywords": [
+    "가계도",
+    "알고리즘 비교",
+    "특별편"
+   ],
+   "image": "thumbs/repos/ML_00_Algorithm-family-build_01.jpg"
+  },
+  {
+   "cat": "머신러닝",
+   "mid": "머신러닝 모델",
+   "name": "머신러닝  모델",
+   "desc": "거리로 가르는 분류 대회, 회귀 예측·분석 대회, 파이썬 머신러닝 15층 연구소 — 팀 대항전으로 배우는 모델.",
+   "keywords": [
+    "분류 대회",
+    "회귀 대회",
+    "팀 대항전"
+   ],
+   "image": "thumbs/repos/knn_svc_svm_lab.jpg"
+  },
+  {
+   "cat": "머신러닝",
+   "mid": "실습으로 배우기",
+   "name": "Fish Market 머신러닝",
+   "desc": "생선 가게 데이터로 회귀·분류를 따라 하고, 손실·경사하강·학습률·앙상블까지 최적화의 네 층위.",
+   "keywords": [
+    "Fish Market",
+    "경사하강",
+    "앙상블"
+   ],
+   "image": "thumbs/repos/Fish_Market_Data_Machine_Learning.jpg"
+  },
+  {
+   "cat": "머신러닝",
+   "mid": "실습으로 배우기",
+   "name": "규제 회귀",
+   "desc": "농어 56마리로 과적합을 일부러 만들고, 릿지·라쏘와 교차 검증으로 되살리는 실습.",
+   "keywords": [
+    "과적합",
+    "릿지",
+    "라쏘"
+   ],
+   "image": "thumbs/repos/Regression_ridge_lasso.jpg"
+  },
+  {
+   "cat": "머신러닝",
+   "mid": "실습으로 배우기",
+   "name": "이상 탐지",
+   "desc": "수만 건의 결제·전표·센서 기록에서 먼저 봐야 할 몇 건을 고르는 이상 탐지의 다섯 도구.",
+   "keywords": [
+    "이상 탐지",
+    "고립 숲",
+    "문턱값"
+   ],
+   "image": "thumbs/repos/Anomaly_detection_tatics.jpg"
+  },
+  {
+   "cat": "머신러닝",
+   "mid": "프로그래밍",
+   "name": "머신러닝  모델",
+   "desc": "이름표를 덮은 물고기 1,554마리를 묶고·접고·맞히며 배우는 비지도학습 — 지도학습과 나란히 비교.",
+   "keywords": [
+    "비지도학습",
+    "군집화",
+    "PCA"
+   ],
+   "image": "thumbs/repos/unsupervised_fish_lab.jpg"
+  },
+  {
+   "cat": "연구실 운영",
+   "mid": "연구실 소개",
+   "name": "랩타운",
+   "desc": "연구실 식구들이 사는 하얀 툰 마을 — 층마다 돌아다니며 식구들과 이야기하고 콘텐츠를 만나는 게임형 안내.",
+   "keywords": [
+    "랩타운",
+    "게임형 안내",
+    "연구실 식구"
+   ],
+   "image": "thumbs/repos/ahn_boat_lab_town.jpg"
+  },
+  {
+   "cat": "연구실 운영",
+   "mid": "연구실 소개",
+   "name": "소개",
+   "desc": "초파리 연구원과 주판봇이 소개하는 저자 안상선(Reon Ahn)의 이력·연구·강의.",
+   "keywords": [
+    "저자 소개",
+    "이력",
+    "연구와 강의"
+   ],
+   "image": "thumbs/repos/who_am_i.jpg"
+  },
+  {
+   "cat": "연구실 운영",
+   "mid": "제작 도구",
+   "name": "제작 도구",
+   "desc": "연구실 식구들의 표정 24종과 동작·의상·3D 설정 그림을 명세·프롬프트와 함께 모은 라이브러리.",
+   "keywords": [
+    "표정 라이브러리",
+    "설정 그림",
+    "프롬프트"
+   ],
+   "image": "thumbs/repos/fruitfly-lab-expressions.jpg"
+  },
+  {
+   "cat": "연구실 운영",
+   "mid": "제작 도구",
+   "name": "캐릭터 디자인",
+   "desc": "연구실 식구들의 그림을 원본·프롬프트·콘텐츠·저장소·생성일과 함께 모아 보는 갤러리.",
+   "keywords": [
+    "식구 갤러리",
+    "원본 그림",
+    "프롬프트"
+   ],
+   "image": "thumbs/cats/C10-M2.webp"
+  },
+  {
+   "cat": "인공지능 응용",
+   "mid": "AI 범죄학",
+   "name": "리포트·뉴스 검증",
+   "desc": "새로 나온 보고서와 뉴스를 책의 장과 나란히 놓고, 책의 분석이 현장에서 어떻게 확인되는지 쌓아 갑니다.",
+   "keywords": [
+    "리포트 검증",
+    "딥페이크 사기",
+    "사례 대조"
+   ],
+   "image": "https://adminmrobo.github.io/ai_crime_lab/reports/2026-11-23_lnrs-synthetic-identity-deepfake/thumb.webp"
+  },
+  {
+   "cat": "인공지능 응용",
+   "mid": "AI 범죄학",
+   "name": "목차와 분야 지도",
+   "desc": "『AI 범죄와 자기 방어』 보충본의 목차와, 13개 영역·49개 주제를 겹쳐 보는 3D 온톨로지 지도.",
+   "keywords": [
+    "목차",
+    "온톨로지 지도",
+    "AI 범죄학"
+   ],
+   "image": "https://adminmrobo.github.io/ai_crime_lab/assets/og/index.webp"
+  },
+  {
+   "cat": "인공지능 응용",
+   "mid": "AI 범죄학",
+   "name": "책 보충본 (서장~10장·실전 연습장)",
+   "desc": "서장부터 10장과 실전 연습장까지 — 범죄자의 계산서를 범죄경제학·게임이론·AI 분석으로 다시 계산합니다.",
+   "keywords": [
+    "범죄경제학",
+    "게임이론",
+    "딥페이크"
+   ],
+   "image": "https://adminmrobo.github.io/ai_crime_lab/assets/thumbs/ch00.webp"
+  },
+  {
+   "cat": "인공지능 응용",
+   "mid": "경영·회계",
+   "name": "비즈니스를 위한 데이터 과학",
+   "desc": "AI를 모르는 경영·사무직을 위한 15주 — 가상 기업 본사 15층을 오르며 데이터 수집부터 딥러닝까지.",
+   "keywords": [
+    "경영 데이터",
+    "BI·KPI",
+    "15주 강의"
+   ],
+   "image": "thumbs/repos/data_science_for_business.jpg"
+  },
+  {
+   "cat": "인공지능 응용",
+   "mid": "경영·회계",
+   "name": "파이썬과 회계데이터 분석",
+   "desc": "회계등식에서 관리회계까지, 파이썬으로 회계 데이터를 분석하는 3D 회계 컨설팅 회사.",
+   "keywords": [
+    "회계 데이터",
+    "재무제표",
+    "파이썬"
+   ],
+   "image": "thumbs/repos/python-accounting-analytics.jpg"
+  },
+  {
+   "cat": "인공지능 응용",
+   "mid": "생성형 AI 활용",
+   "name": "생성형AI활용전략",
+   "desc": "생성형 AI 활용 전략 강의를 장마다 하나의 해설로 — 창업 장부, 8요소 프레임워크, 캐릭터 프롬프트, 중간고사 시뮬레이션.",
+   "keywords": [
+    "프롬프트",
+    "창업 기획",
+    "생성형 AI"
+   ],
+   "image": "thumbs/repos/generative-ai-prompt-strategy.jpg"
+  },
+  {
+   "cat": "인공지능 응용",
+   "mid": "외부_콘텐츠",
+   "name": "저서",
+   "desc": "AI가 범죄의 비용 구조와 수익 모델을 어떻게 바꾸었는지 범죄경제학으로 풀어낸 책.",
+   "keywords": [
+    "저서",
+    "범죄경제학",
+    "AI 범죄"
+   ],
+   "image": ""
+  },
+  {
+   "cat": "인공지능 응용",
+   "mid": "이상탐지·보안",
+   "name": "AI·보안",
+   "desc": "SNS 은어 속 불법 거래 탐지, 금융 이상탐지 모델의 적대적 공격, 그리고 AI 추론 장벽 찬반 토론.",
+   "keywords": [
+    "은어 탐지",
+    "적대적 공격",
+    "AI 보안"
+   ],
+   "image": "thumbs/repos/my_article_03_drug-slang-detection.jpg"
+  },
+  {
+   "cat": "인공지능 응용",
+   "mid": "제조",
+   "name": "스마트 제조",
+   "desc": "「스마트 제조」 15주를 차시마다 다른 3D 공장으로 — 코딩 없이 생성형 AI로 공장 데이터를 분석합니다.",
+   "keywords": [
+    "스마트 제조",
+    "3D 공장",
+    "생성형 AI"
+   ],
+   "image": "thumbs/repos/smart_product.jpg"
+  },
+  {
+   "cat": "인공지능 응용",
+   "mid": "제조",
+   "name": "시멘트 공정 AI",
+   "desc": "시멘트 품질을 AI로 미리 맞히고, 설명가능 AI와 원가 최적화, 3D 시멘트 공장 World까지.",
+   "keywords": [
+    "시멘트 품질",
+    "설명가능 AI",
+    "원가 최적화"
+   ],
+   "image": "thumbs/repos/AI_for_cement_produce.jpg"
+  },
+  {
+   "cat": "통계·데이터 기초",
+   "mid": "데이터 시각화",
+   "name": "통계 노트",
+   "desc": "분포·관계·모델 평가·시계열 — 32장의 차트가 답하는 질문을 3D 관계 지도와 수업으로 배우는 차트 도감.",
+   "keywords": [
+    "차트 도감",
+    "분포",
+    "관계 지도"
+   ],
+   "image": "thumbs/repos/data_visualization_lab.jpg"
+  },
+  {
+   "cat": "통계·데이터 기초",
+   "mid": "프로그래밍",
+   "name": "구글 시트",
+   "desc": "구글시트의 원본·처리·결과를 데이터 테이블로 배우는 캐릭터 실습 교재.",
+   "keywords": [
+    "구글시트",
+    "데이터 테이블",
+    "실습 교재"
+   ],
+   "image": "thumbs/repos/google-sheets-lab.jpg"
+  },
+  {
+   "cat": "통계·데이터 기초",
+   "mid": "프로그래밍",
+   "name": "데이터베이스",
+   "desc": "데이터베이스 설계 야간 연구실의 교육 자료 전체 안내.",
+   "keywords": [
+    "DB 설계",
+    "야간 연구실",
+    "교육 자료"
+   ],
+   "image": "thumbs/R110.jpg"
+  },
+  {
+   "cat": "통계·데이터 기초",
+   "mid": "프로그래밍",
+   "name": "파이썬·판다스",
+   "desc": "카페·편의점·쇼핑몰 데이터로 한 절씩 따라 하는 파이썬 연습장 — Colab 코드, 실행 결과, 바꿔 보기.",
+   "keywords": [
+    "파이썬",
+    "Colab",
+    "데이터 연습"
+   ],
+   "image": "thumbs/repos/learn-python-by-doing_Korean.jpg"
+  },
+  {
+   "cat": "통계·데이터 기초",
+   "mid": "확률·통계",
+   "name": "베이지안 통계",
+   "desc": "13회차 베이지안 통계를 다국적 기업 본사 타워로 — 층마다 한 부서가 베이지안 도구로 일합니다.",
+   "keywords": [
+    "베이지안",
+    "사전·사후 분포",
+    "13회차"
+   ],
+   "image": "thumbs/repos/bayesian-statistics-for-data-scientists.jpg"
+  },
+  {
+   "cat": "통계·데이터 기초",
+   "mid": "확률·통계",
+   "name": "시계열",
+   "desc": "며칠을 돌아볼지에서 시작하는 시계열 3부작 — 같은 창을 보고 ARIMA는 가중 평균을, LSTM은 조합을 찾습니다.",
+   "keywords": [
+    "시계열",
+    "ARIMA",
+    "LSTM"
+   ],
+   "image": "thumbs/repos/timeseries-trilogy.jpg"
+  },
+  {
+   "cat": "통계·데이터 기초",
+   "mid": "확률·통계",
+   "name": "통계 노트",
+   "desc": "표본 100개로 모평균을 말하는 법 — 점추정, 표본평균의 분포, 신뢰구간을 연구실 저울 위에서 뽑아 봅니다.",
+   "keywords": [
+    "점추정",
+    "신뢰구간",
+    "표본평균"
+   ],
+   "image": "thumbs/cats/C07-M2.webp"
+  },
+  {
+   "cat": "통계·데이터 기초",
+   "mid": "확률·통계",
+   "name": "확률분포 딕셔너리",
+   "desc": "확률분포 21종의 관계를 3D 지도로 보는 딕셔너리와, Z·t·χ²·F 분포표 읽는 법.",
+   "keywords": [
+    "확률분포",
+    "분포표",
+    "3D 지도"
+   ],
+   "image": "thumbs/repos/probability_distribution_dictionary.jpg"
   }
  ]
 }
