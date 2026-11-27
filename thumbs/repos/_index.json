@@ -33,7 +33,7 @@
  },
  "ahnboat_lab_gallery": {
   "src": null,
-  "pushed_at": "2026-11-27T04:06:19Z"
+  "pushed_at": "2026-11-27T04:40:18Z"
  },
  "ahnboat_lab_langpack": {
   "src": null,
@@ -45,7 +45,7 @@
  },
  "ahnboat_ontology_feed": {
   "src": "name:assets/cover.png",
-  "pushed_at": "2026-11-27T04:24:02Z",
+  "pushed_at": "2026-11-27T04:37:21Z",
   "made": "2026-11-27"
  },
  "ahnboat_server_room_guards": {
@@ -87,8 +87,8 @@
   "made": "2026-11-11"
  },
  "ai_game_lab": {
-  "src": "name:coin/img/coin_cover.webp",
-  "pushed_at": "2026-11-26T15:09:22Z",
+  "src": "name:blackjack/img/blackjack_cover.webp",
+  "pushed_at": "2026-11-27T04:28:13Z",
   "made": "2026-11-27"
  },
  "AI_image_classification": {
@@ -698,7 +698,7 @@
  },
  "neural_see_lab": {
   "src": "manifest:img/cover_00.webp",
-  "pushed_at": "2026-11-27T04:17:08Z",
+  "pushed_at": "2026-11-27T04:24:07Z",
   "made": "2026-11-27"
  },
  "neuralink_animal_brain_ai": {
@@ -742,6 +742,11 @@
  "optimization_test_lab": {
   "src": "name:img/cover_01.webp",
   "pushed_at": "2026-11-26T15:09:59Z",
+  "made": "2026-11-27"
+ },
+ "polygon_series_lab": {
+  "src": "manifest:img/cover_01.webp",
+  "pushed_at": "2026-11-27T04:42:35Z",
   "made": "2026-11-27"
  },
  "probability_distribution_dictionary": {

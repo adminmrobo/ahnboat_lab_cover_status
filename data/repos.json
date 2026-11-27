@@ -1763,7 +1763,7 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_lab_gallery",
   "pages_url": "https://adminmrobo.github.io/ahnboat_lab_gallery/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T04:06:19Z",
+  "pushed_at": "2026-11-27T04:40:18Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -1902,7 +1902,7 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_ontology_feed",
   "pages_url": "https://adminmrobo.github.io/ahnboat_ontology_feed/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T04:24:02Z",
+  "pushed_at": "2026-11-27T04:37:21Z",
   "has_manifest": false,
   "covers": [
    {
@@ -4089,7 +4089,7 @@
   "repo_url": "https://github.com/adminmrobo/ai_game_lab",
   "pages_url": "https://adminmrobo.github.io/ai_game_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-26T15:09:22Z",
+  "pushed_at": "2026-11-27T04:28:13Z",
   "has_manifest": false,
   "covers": [
    {
@@ -4116,27 +4116,45 @@
   "redraw_count": 0,
   "redraw_ids": [],
   "thumb": "thumbs/repos/ai_game_lab.jpg",
-  "site_desc": "하루·시아·모아가 플레이어로 나서서 게임을 직접 풀어 보고, AI가 같은 게임을 어떻게 푸는지 따라가는 연구실 해설 시리즈. ① 스도쿠 — 에너지 모델, ② 대항해시대 4 코인 게임 — 게임 나무·강화학습·탐색.",
+  "site_desc": "하루·시아·모아가 플레이어로 나서서 게임을 직접 풀어 보고, AI가 같은 게임을 어떻게 푸는지 따라가는 연구실 해설 시리즈. ① 스도쿠 — 에너지 모델, ② 대항해시대 4 코인 게임 — 게임 나무·강화학습·탐색, ③ 대항해시대 2 다이스 — 확률·몬테카를로, ④ 대항해시대 2 블랙잭 — 기댓값·몬테카를로 학습, ⑤ 슬라임 레이스 — 탐험과 활용(밴딧).",
   "status": "ok",
   "checked_at": "2026-11-27",
   "site_title": "AI로 풀어보는 게임 시리즈 — 연구실 식구들과 게임으로 배우는 AI",
   "ontology": {
    "status": "partial",
-   "pages_with_kg": 2,
-   "pages_total": 3,
-   "pages_checked": 3,
+   "pages_with_kg": 5,
+   "pages_total": 6,
+   "pages_checked": 6,
    "kg_links": [
+    "https://adminmrobo.github.io/ai_game_lab/blackjack/index.html#kg",
     "https://adminmrobo.github.io/ai_game_lab/coin/index.html#kg",
+    "https://adminmrobo.github.io/ai_game_lab/dice/index.html#kg",
+    "https://adminmrobo.github.io/ai_game_lab/slime/index.html#kg",
     "https://adminmrobo.github.io/ai_game_lab/sudoku/index.html#kg"
    ],
    "export_links": [
+    "https://adminmrobo.github.io/ai_game_lab/blackjack/index.html#export",
     "https://adminmrobo.github.io/ai_game_lab/coin/index.html#export",
+    "https://adminmrobo.github.io/ai_game_lab/dice/index.html#export",
+    "https://adminmrobo.github.io/ai_game_lab/slime/index.html#export",
     "https://adminmrobo.github.io/ai_game_lab/sudoku/index.html#export"
    ],
    "files": [
     {
+     "path": "build/blackjack/kg.json",
+     "url": "https://github.com/adminmrobo/ai_game_lab/blob/main/build/blackjack/kg.json"
+    },
+    {
      "path": "build/coin/kg.json",
      "url": "https://github.com/adminmrobo/ai_game_lab/blob/main/build/coin/kg.json"
+    },
+    {
+     "path": "build/dice/kg.json",
+     "url": "https://github.com/adminmrobo/ai_game_lab/blob/main/build/dice/kg.json"
+    },
+    {
+     "path": "build/slime/kg.json",
+     "url": "https://github.com/adminmrobo/ai_game_lab/blob/main/build/slime/kg.json"
     },
     {
      "path": "build/sudoku/kg.json",
@@ -4150,7 +4168,7 @@
    ],
    "count": 1,
    "pages": {
-    "ko": 3
+    "ko": 6
    },
    "partial": [],
    "complete": true,
@@ -4166,7 +4184,7 @@
    "count": 1,
    "complete": true,
    "pages_by_lang": {
-    "ko": 3
+    "ko": 6
    }
   },
   "has_pages": true
@@ -22406,7 +22424,7 @@
     "ko": 12
    }
   },
-  "has_pages": false
+  "has_pages": true
  },
  {
   "repo": "my_article_00_Korean_stockmarket_volatility_study",
@@ -23734,7 +23752,7 @@
   "repo_url": "https://github.com/adminmrobo/neural_see_lab",
   "pages_url": "https://adminmrobo.github.io/neural_see_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T04:17:08Z",
+  "pushed_at": "2026-11-27T04:24:07Z",
   "has_manifest": true,
   "covers": [
    {
@@ -25375,6 +25393,161 @@
    "readme_langs": [],
    "links": {
     "ko": "https://adminmrobo.github.io/optimization_test_lab/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 1
+   }
+  },
+  "has_pages": true
+ },
+ {
+  "repo": "polygon_series_lab",
+  "series_ko": "데이터시각화 연구실 · 그릴 수 있는 등비급수",
+  "title_ko": "그릴 수 있는 등비급수 — 정다각형 속 나선의 넓이",
+  "repo_url": "https://github.com/adminmrobo/polygon_series_lab",
+  "pages_url": "https://adminmrobo.github.io/polygon_series_lab/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-27T04:42:35Z",
+  "has_manifest": true,
+  "covers": [
+   {
+    "path": "img/cover_01.webp",
+    "role": "cover",
+    "id": "cover_01",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "sia",
+     "fly",
+     "jupanbot",
+     "moa",
+     "x1",
+     "x2",
+     "x3"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "img/sc_01_aic.webp",
+    "role": "scene",
+    "id": "sc_01_aic",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "sia",
+     "jupanbot",
+     "x2"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "img/sc_01_outro.webp",
+    "role": "scene",
+    "id": "sc_01_outro",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "sia",
+     "fly",
+     "jupanbot",
+     "moa",
+     "x1",
+     "x2",
+     "x3"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "img/og_cover.webp",
+    "role": "og",
+    "id": "og_cover",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [],
+    "status": "ok"
+   },
+   {
+    "path": "img/thumb_01.webp",
+    "role": "thumb",
+    "id": "thumb_01",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [],
+    "status": "ok"
+   }
+  ],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": "thumbs/repos/polygon_series_lab.jpg",
+  "site_desc": "정다각형의 변의 중점을 이으면 작은 정다각형이 안에 생깁니다. 이것을 끝없이 되풀이하면 넓이가 등비수열로 줄고, 색칠한 나선의 넓이는 등비급수가 됩니다. 축과 단위를 읽는 데이터시각화 연습까지 연구실 식구들과 함께 봅니다.",
+  "status": "ok",
+  "checked_at": "2026-11-27",
+  "site_title": "그릴 수 있는 등비급수 — 정다각형 속 나선의 넓이",
+  "ontology": {
+   "status": "full",
+   "pages_with_kg": 1,
+   "pages_total": 1,
+   "pages_checked": 1,
+   "kg_links": [
+    "https://adminmrobo.github.io/polygon_series_lab/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/polygon_series_lab/index.html#export"
+   ],
+   "files": [
+    {
+     "path": "build/backbone_data.json",
+     "url": "https://github.com/adminmrobo/polygon_series_lab/blob/main/build/backbone_data.json"
+    },
+    {
+     "path": "build/backbone_math.json",
+     "url": "https://github.com/adminmrobo/polygon_series_lab/blob/main/build/backbone_math.json"
+    },
+    {
+     "path": "build/kg_0.json",
+     "url": "https://github.com/adminmrobo/polygon_series_lab/blob/main/build/kg_0.json"
+    }
+   ]
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 1
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/polygon_series_lab/index.html"
    }
   },
   "languages": {
