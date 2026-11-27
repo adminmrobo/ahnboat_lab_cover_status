@@ -19261,7 +19261,7 @@
     "ko": 1
    }
   },
-  "has_pages": false
+  "has_pages": true
  },
  {
   "repo": "LLM_evaluation",
@@ -23853,7 +23853,7 @@
     "ko": 1
    }
   },
-  "has_pages": false
+  "has_pages": true
  },
  {
   "repo": "neuralink_animal_brain_ai",
@@ -24472,7 +24472,7 @@
     "ko": 1
    }
   },
-  "has_pages": false
+  "has_pages": true
  },
  {
   "repo": "one_day_deep_learning",
@@ -24933,7 +24933,7 @@
     "ko": 1
    }
   },
-  "has_pages": false
+  "has_pages": true
  },
  {
   "repo": "ontology_trend_report",
@@ -26468,7 +26468,7 @@
     "ko": 8
    }
   },
-  "has_pages": false
+  "has_pages": true
  },
  {
   "repo": "Regression_ridge_lasso",

@@ -1,6 +1,6 @@
 {
 "note": "뼈대 주제와 이름이 맞는 노드(자동 후보). 사람이 보고 맞는 것만 해설 페이지 kg-raw에 broader로 옮긴다(ai-lab-retrofit 15-2).",
-"count": 103,
+"count": 112,
 "items": [
 {
 "node": "lab:concept/autoregressive",
@@ -28,6 +28,18 @@
 ]
 },
 {
+"node": "lab:concept/bias-variance",
+"ko": "편향-분산 균형",
+"topics": [
+"lab:topic/bias-variance"
+],
+"auto": true,
+"confidence": "mid",
+"pages": [
+"Regression_model_lab_01/part4_learn.html"
+]
+},
+{
 "node": "lab:concept/block",
 "ko": "블록",
 "topics": [
@@ -39,6 +51,30 @@
 "blockchain_finance_ch02/2-01_block-bundle.html",
 "blockchain_finance_ch02/2-02_hash-fingerprint.html",
 "blockchain_finance_ch02/2-03_hash-chain.html"
+]
+},
+{
+"node": "lab:concept/boosting",
+"ko": "부스팅(XGBoost)",
+"topics": [
+"lab:topic/boosting"
+],
+"auto": true,
+"confidence": "mid",
+"pages": [
+"Regression_model_lab_01/part5_curve.html"
+]
+},
+{
+"node": "lab:concept/ci",
+"ko": "95% 신뢰구간",
+"topics": [
+"lab:topic/confidence-interval"
+],
+"auto": true,
+"confidence": "low",
+"pages": [
+"Regression_model_lab_01/part2_table.html"
 ]
 },
 {
@@ -144,6 +180,18 @@
 ]
 },
 {
+"node": "lab:concept/gradient-descent",
+"ko": "경사 하강",
+"topics": [
+"lab:topic/gradient-descent"
+],
+"auto": true,
+"confidence": "mid",
+"pages": [
+"Regression_model_lab_01/part4_learn.html"
+]
+},
+{
 "node": "lab:concept/instrumental-variables",
 "ko": "도구변수",
 "topics": [
@@ -190,6 +238,30 @@
 "confidence": "mid",
 "pages": [
 "math_basic_for_ai_dictionary/index.html"
+]
+},
+{
+"node": "lab:concept/logistic",
+"ko": "로지스틱 회귀",
+"topics": [
+"lab:topic/logistic-regression"
+],
+"auto": true,
+"confidence": "mid",
+"pages": [
+"Regression_model_lab_01/part6_family.html"
+]
+},
+{
+"node": "lab:concept/logistic",
+"ko": "로지스틱 회귀",
+"topics": [
+"lab:topic/glm-logistic"
+],
+"auto": true,
+"confidence": "low",
+"pages": [
+"Regression_model_lab_01/part6_family.html"
 ]
 },
 {
@@ -340,6 +412,18 @@
 ]
 },
 {
+"node": "lab:concept/pca",
+"ko": "주성분 분석(PCA)",
+"topics": [
+"lab:topic/pca"
+],
+"auto": true,
+"confidence": "mid",
+"pages": [
+"Regression_model_lab_01/part2_table.html"
+]
+},
+{
 "node": "lab:concept/perceptron",
 "ko": "퍼셉트론",
 "topics": [
@@ -362,6 +446,18 @@
 "pages": [
 "ai_rendering/2-1_why_photos_are_flat.html",
 "generative-ai-prompt-strategy/07_character_prompt.html"
+]
+},
+{
+"node": "lab:concept/poisson",
+"ko": "포아송 회귀",
+"topics": [
+"lab:topic/poisson-regression"
+],
+"auto": true,
+"confidence": "low",
+"pages": [
+"Regression_model_lab_01/part6_family.html"
 ]
 },
 {
@@ -1283,6 +1379,18 @@
 "neural_network_atlas/1_neural_network_atlas_chart.html",
 "neural_network_atlas/2_neural_network_atlas_after.html",
 "python_machine_learning_lab/w06_logistic_perceptron_svm.html"
+]
+},
+{
+"node": "lab:topic/logistic-regression",
+"ko": "로지스틱 회귀",
+"topics": [
+"lab:topic/glm-logistic"
+],
+"auto": true,
+"confidence": "low",
+"pages": [
+"nlp20_five_floor_map/index.html"
 ]
 }
 ]
