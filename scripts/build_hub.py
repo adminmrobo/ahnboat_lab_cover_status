@@ -27,7 +27,8 @@ LANGS_FULL = 7  # 한국어 + en·zh·ja·uz·ru·vi
 
 COLS = ["저장소", "제목", "주요내용", "콘텐츠_카테고리_대분류", "콘텐츠_카테고리_중분류", "콘텐츠_카테고리_소분류",
         "공개대상여부", "연구실_시리즈_적용대상_여부", "외국어팩대상_여부", "온톨로지_적용대상_여부", "순서", "외부링크", "비고",
-        "공개일", "시리즈물", "상위시리즈", "챕터", "주인장_저자_여부", "Articles_갈래", "저자_강의_여부"]
+        "공개일", "시리즈물", "상위시리즈", "챕터", "주인장_저자_여부", "Articles_갈래", "저자_강의_여부",
+        "콘텐츠_카테고리_중분류_영문", "콘텐츠_카테고리_소분류_영문"]
 LECT_COL = "저자_강의_여부"  # Y면 Ahn's Articles & Presentations의 LECTURE(주인장이 직접 한 강의)에 나온다
 OWNER_COL = "주인장_저자_여부"  # Y면 Ahn's Articles & Presentations(논문·발표·강연)에 나온다. 비우면 제외
 EXT = "외부:"  # GitHub 밖 실적(논문·특허·저서·사업)은 저장소 칸을 '외부:이름'으로 적는다
@@ -161,6 +162,53 @@ def rename_mid(obj, renames, fields):
     return False
 
 
+# ── 중분류·소분류 영문명 (공유 주소 rackNN/<중분류>/<소분류>) ──
+# data/routes.json의 mid·sub 이름표가 기준. 관리실에서 새 분류를 넣을 때 적은 영문명(*_영문 칸)은 여기에 더하고,
+# 이미 정한 이름표는 주소가 깨지지 않게 바꾸지 않는다. 표의 빈 영문 칸은 이름표로 채운다.
+EN_COLS = (("콘텐츠_카테고리_중분류", "콘텐츠_카테고리_중분류_영문", "mid"),
+           ("콘텐츠_카테고리_소분류", "콘텐츠_카테고리_소분류_영문", "sub"))
+
+
+def en_slug(v):
+    v = re.sub(r"[^a-z0-9]+", "-", str(v or "").strip().lower())
+    return v.strip("-")
+
+
+def sync_english(rows):
+    """표 ↔ routes.json 영문명 맞추기. (표가 바뀌었나, routes.json이 바뀌었나, 영문명 없는 분류) 를 돌려준다."""
+    rp = os.path.join(DATA, "routes.json")
+    routes = load_json(rp, {})
+    row_changed = route_changed = False
+    missing = set()
+    for ko_col, en_col, key in EN_COLS:
+        table = routes.setdefault(key, {})
+        used = {v: k for k, v in table.items()}
+        for r in rows:
+            ko = (r.get(ko_col) or "").strip()
+            if not ko:
+                continue
+            want = en_slug(r.get(en_col))
+            if ko not in table and want:
+                slug, n = want, 2
+                while slug in used and used[slug] != ko and key == "sub":
+                    slug, n = "%s-%d" % (want, n), n + 1
+                table[ko] = slug
+                used[slug] = ko
+                route_changed = True
+                print("영문명 추가 (%s): %s → %s" % (key, ko, slug))
+            if ko in table:
+                if (r.get(en_col) or "") != table[ko]:
+                    r[en_col] = table[ko]
+                    row_changed = True
+            else:
+                missing.add("%s: %s" % (key, ko))
+    if route_changed:
+        with open(rp, "w", encoding="utf-8") as f:
+            json.dump(routes, f, ensure_ascii=False, indent=1)
+            f.write("\n")
+    return row_changed, route_changed, sorted(missing)
+
+
 def main():
     hub_p = os.path.join(DATA, "hub.csv")
     rows = read_csv(hub_p) if os.path.exists(hub_p) else []
@@ -211,7 +259,10 @@ def main():
                 migrated.append(r["저장소"])
     if migrated:
         print("랙 개편으로 옮긴 행 %d개" % len(migrated))
-    if added or migrated:  # 관리실에서 더한 칸(표준 칸 밖)도 지우지 않는다
+    en_rows, _, en_missing = sync_english(rows)
+    if en_missing:
+        print("영문명이 없는 분류 %d개 (관리실에서 영문명을 넣어 주세요): %s" % (len(en_missing), ", ".join(en_missing)))
+    if added or migrated or en_rows:  # 관리실에서 더한 칸(표준 칸 밖)도 지우지 않는다
         extra = []
         for r in rows:
             for k in r:

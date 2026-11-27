@@ -81,6 +81,7 @@ td input.ord{width:56px}
 #drawer label input,#drawer label select{width:100%;margin-top:3px}
 #drawer .row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 #drawer .row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+#drawer .row3.en{align-items:end}#drawer .row3.en>span{align-self:center}#drawer input[readonly]{background:#f2f4f7;color:#555}
 #drawer .act{display:flex;gap:8px;margin-top:16px;justify-content:space-between}
 #toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:var(--ink);color:#fff;border-radius:10px;padding:10px 16px;font-size:13.5px;z-index:30;max-width:90vw;opacity:0;pointer-events:none;transition:opacity .2s}
 #toast.show{opacity:1;pointer-events:auto}
@@ -228,8 +229,14 @@ td input.ord{width:56px}
     <div class="row3">
       <label>대분류 <select name="콘텐츠_카테고리_대분류"></select></label>
       <label>중분류 <input name="콘텐츠_카테고리_중분류" list="midList"></label>
-      <label>소분류 <input name="콘텐츠_카테고리_소분류"></label>
+      <label>소분류 <input name="콘텐츠_카테고리_소분류" list="subList"></label>
     </div>
+    <div class="row3 en">
+      <span class="hint">공유 주소용 영문명 →</span>
+      <label>중분류 영문 <input name="콘텐츠_카테고리_중분류_영문" placeholder="예: concept-map" pattern="[a-z0-9]+(-[a-z0-9]+)*"><small class="hint" id="midEnHint"></small></label>
+      <label>소분류 영문 <input name="콘텐츠_카테고리_소분류_영문" placeholder="예: ml-model-atlas" pattern="[a-z0-9]+(-[a-z0-9]+)*"><small class="hint" id="subEnHint"></small></label>
+    </div>
+    <p class="hint" style="margin-top:-4px">주소는 <code>ahnboat.xyz/#/lab-server/rack번호/중분류-영문/소분류-영문</code>. 이미 쓰는 분류는 영문명이 자동으로 들어가고 고정됩니다(공유한 주소가 깨지지 않게). <b>새 중분류·소분류</b>를 만들 때만 영문명을 직접 넣습니다 — 소문자·숫자·하이픈(-).</p>
     <div class="row3">
       <label>공개 <select name="공개대상여부"><option>Y</option><option>N</option><option>검토</option></select></label>
       <label>공개일 <input type="date" name="공개일"></label>
@@ -253,7 +260,7 @@ td input.ord{width:56px}
     <div class="act"><button type="button" class="warn" id="dDel">이 줄 지우기</button><span style="display:flex;gap:8px"><button type="button" id="dCancel">닫기</button><button type="submit" class="pri">적용</button></span></div>
     <p class="hint">적용은 화면에만 반영됩니다. 위의 <b>저장</b>을 눌러야 저장소에 올라갑니다.</p>
   </form>
-  <datalist id="midList"></datalist>
+  <datalist id="midList"></datalist><datalist id="subList"></datalist>
 </aside>
 <div id="toast" role="status"></div>
 
@@ -262,7 +269,8 @@ td input.ord{width:56px}
 'use strict';
 var OWNER='adminmrobo',REPO='ahnboat_lab_cover_status',BRANCH='main',API='https://api.github.com';
 var VAULT_PATH='data/admin_vault.enc',CSV_PATH='data/hub.csv.enc',SET_PATH='data/publish_settings.json';
-var STD=['저장소','제목','주요내용','콘텐츠_카테고리_대분류','콘텐츠_카테고리_중분류','콘텐츠_카테고리_소분류','공개대상여부','연구실_시리즈_적용대상_여부','외국어팩대상_여부','온톨로지_적용대상_여부','순서','외부링크','비고','공개일','시리즈물','상위시리즈','챕터','주인장_저자_여부','Articles_갈래','저자_강의_여부'];
+var STD=['저장소','제목','주요내용','콘텐츠_카테고리_대분류','콘텐츠_카테고리_중분류','콘텐츠_카테고리_소분류','공개대상여부','연구실_시리즈_적용대상_여부','외국어팩대상_여부','온톨로지_적용대상_여부','순서','외부링크','비고','공개일','시리즈물','상위시리즈','챕터','주인장_저자_여부','Articles_갈래','저자_강의_여부','콘텐츠_카테고리_중분류_영문','콘텐츠_카테고리_소분류_영문'];
+var ROUTES={mid:{},sub:{}};  /* data/routes.json — 공유 주소에 쓰는 중분류·소분류 영문명 */
 var SS='ahnboat-admin-pw';
 var $=function(id){return document.getElementById(id);};
 var PASS='',V=null,HDR=[],ROWS=[],ORIG='',CSV_SHA='',CATS=[],REPOS={},MOVED={},OPEN={},FILTER='all',SETTINGS={mode:'auto',base_date:''};
@@ -469,16 +477,36 @@ function openDrawer(r){
   var cs=f.elements['콘텐츠_카테고리_대분류'];cs.innerHTML='';CATS.concat(['미분류']).forEach(function(c){var o=el('option','',c);o.value=c;cs.appendChild(o);});
   var src=r||{'공개대상여부':'검토','콘텐츠_카테고리_대분류':'미분류'};
   if(src['콘텐츠_카테고리_대분류']&&CATS.indexOf(src['콘텐츠_카테고리_대분류'])<0&&src['콘텐츠_카테고리_대분류']!=='미분류'){var o=el('option','',src['콘텐츠_카테고리_대분류']);o.value=o.textContent;cs.appendChild(o);}
+  [EN.mid[1],EN.sub[1]].forEach(function(n){f.elements[n].dataset.auto='0';});
   Array.prototype.forEach.call(f.elements,function(x){if(!x.name)return;var v=src[x.name]||'';if(x.type==='date')v=normDate(v);x.value=v;
     if(x.tagName==='SELECT'&&x.value!==v&&v){var o=el('option','',v);o.value=v;x.appendChild(o);x.value=v;}});
-  var mids={};ROWS.forEach(function(x){if(x['콘텐츠_카테고리_중분류'])mids[x['콘텐츠_카테고리_중분류']]=1;});$('midList').innerHTML=Object.keys(mids).sort().map(function(m){return '<option value="'+esc(m)+'">';}).join('');
+  var mids={},subs={};ROWS.forEach(function(x){if(x['콘텐츠_카테고리_중분류'])mids[x['콘텐츠_카테고리_중분류']]=1;if(x['콘텐츠_카테고리_소분류'])subs[x['콘텐츠_카테고리_소분류']]=1;});$('midList').innerHTML=Object.keys(mids).sort().map(function(m){return '<option value="'+esc(m)+'">';}).join('');
+  $('subList').innerHTML=Object.keys(subs).sort().map(function(m){return '<option value="'+esc(m)+'">';}).join('');
+  enSync(f,'mid');enSync(f,'sub');
   var extra=columns().filter(function(c){return STD.indexOf(c)<0;});var ex=$('dExtra');ex.innerHTML='';
   extra.forEach(function(c){var l=el('label','',c+' ');var i=el('input');i.name='x:'+c;i.value=src[c]||'';l.appendChild(i);ex.appendChild(l);});
   $('dDel').classList.toggle('hidden',!r);$('drawer').classList.add('open');f.elements['제목'].focus();}
+
+/* ---------- 중분류·소분류 영문명 ---------- */
+var EN={mid:['콘텐츠_카테고리_중분류','콘텐츠_카테고리_중분류_영문','midEnHint'],sub:['콘텐츠_카테고리_소분류','콘텐츠_카테고리_소분류_영문','subEnHint']};
+function enSlug(v){return String(v||'').trim().toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'');}
+/* 표 안에서 이미 같은 한글명에 영문명을 적은 줄(아직 수집 전)도 기존 이름표로 본다 */
+function enKnown(key,ko){if(!ko)return '';if(ROUTES[key][ko])return ROUTES[key][ko];var c=EN[key];
+  for(var k=0;k<ROWS.length;k++){var r=ROWS[k];if(r!==EDIT&&(r[c[0]]||'').trim()===ko&&(r[c[1]]||'').trim())return enSlug(r[c[1]]);}return '';}
+function enSync(f,key){var c=EN[key],ko=(f.elements[c[0]].value||'').trim(),inp=f.elements[c[1]],known=enKnown(key,ko);
+  if(!ko){inp.value='';inp.readOnly=true;inp.required=false;inp.dataset.auto='1';$(c[2]).textContent='';return;}
+  if(known){inp.value=known;inp.readOnly=true;inp.required=false;inp.dataset.auto='1';$(c[2]).textContent='고정 (이미 쓰는 이름표)';}
+  else{if(inp.dataset.auto==='1')inp.value='';inp.dataset.auto='0';inp.readOnly=false;inp.required=true;$(c[2]).textContent='새 분류 · 영문명을 넣어 주세요';}}
+function enMissing(){var out=[];ROWS.forEach(function(r){['mid','sub'].forEach(function(key){var c=EN[key],ko=(r[c[0]]||'').trim();
+  if(ko&&!enSlug(r[c[1]])&&!ROUTES[key][ko]&&out.indexOf(ko)<0)out.push(ko);});});return out;}
+['mid','sub'].forEach(function(key){$('dForm').elements[EN[key][0]].addEventListener('input',function(){enSync($('dForm'),key);});});
 function closeDrawer(){$('drawer').classList.remove('open');EDIT=null;}
 $('dForm').addEventListener('submit',function(ev){ev.preventDefault();var f=ev.target,r=EDIT,old=r?r['저장소']:null;
   var name=f.elements['저장소'].value.trim();if(!name)return;
   if(ROWS.some(function(x){return x!==r&&x['저장소']===name;})){toast('같은 저장소 이름이 이미 있습니다.');return;}
+  var miss=['mid','sub'].filter(function(key){var c=EN[key];return (f.elements[c[0]].value||'').trim()&&!enSlug(f.elements[c[1]].value);});
+  if(miss.length){toast('새 '+(miss.map(function(k){return k==='mid'?'중분류':'소분류';}).join('·'))+'의 영문명을 넣어 주세요. 공유 주소에 쓰입니다.',6000);f.elements[EN[miss[0]][1]].focus();return;}
+  f.elements[EN.mid[1]].value=enSlug(f.elements[EN.mid[1]].value);f.elements[EN.sub[1]].value=enSlug(f.elements[EN.sub[1]].value);
   if(!r){r={};ROWS.push(r);}
   Array.prototype.forEach.call(f.elements,function(x){if(!x.name)return;var k=x.name.indexOf('x:')===0?x.name.slice(2):x.name;r[k]=(x.value||'').trim();});
   if(old&&old!==name)ROWS.forEach(function(c){if((c['상위시리즈']||'')===old){c['상위시리즈']=name;c['저장소']=name+'/'+(c['저장소']||'').split('/').slice(1).join('/');c._d=true;}});
@@ -565,8 +593,10 @@ function start(){
     getJSON('data/hub_meta.json').catch(function(){return {};}),
     getJSON('data/repos.json').catch(function(){return [];}),
     getJSON('data/moved.json').catch(function(){return {};}),
-    getFile(SET_PATH).then(function(f){return JSON.parse(f.text);}).catch(function(){return {mode:'auto',base_date:''};})
+    getFile(SET_PATH).then(function(f){return JSON.parse(f.text);}).catch(function(){return {mode:'auto',base_date:''};}),
+    getJSON('data/routes.json').catch(function(){return {};})
   ]).then(function(a){
+    ROUTES={mid:(a[5]||{}).mid||{},sub:(a[5]||{}).sub||{}};
     var p=parseCSV(dec.decode(a[0]));HDR=p.hdr;ROWS=p.rows;
     CATS=(a[1].categories||[]).map(function(c){return c.name;});
     var rp=Array.isArray(a[2])?a[2]:(a[2].repos||[]);REPOS={};rp.forEach(function(r){REPOS[r.repo]=r;});
@@ -586,6 +616,7 @@ $('saveBtn').addEventListener('click',function(){
   var btn=this;if(!dirty())return;
   var bad=ROWS.filter(function(r){return isChap(r)&&!/\/.+/.test(r['저장소']||'');});
   if(bad.length){toast('파일 칸이 빈 챕터가 '+bad.length+'개 있습니다. 채우거나 지운 뒤 저장하세요.',6000);return;}
+  var noEn=enMissing();if(noEn.length){toast('영문명이 없는 새 분류가 있습니다: <b>'+noEn.map(esc).join('</b>, <b>')+'</b> — 그 줄을 열어 영문명을 넣은 뒤 저장하세요.',9000);return;}
   btn.disabled=true;btn.textContent='저장하는 중…';
   var mode=$('baseAuto').checked?'auto':'fixed',base=mode==='fixed'?normDate($('baseDate').value)||kstToday():'';
   var st={_설명:'콘텐츠 관리실에서 저장. mode auto=매일 빌드하는 날(한국 시간)이 기준일, fixed=base_date가 기준일. 공개일이 기준일보다 늦은 콘텐츠·챕터는 카탈로그·서버실에 아직 나오지 않는다.',mode:mode,base_date:base,saved_at:new Date(Date.now()+9*3600e3).toISOString().slice(0,16).replace('T',' ')+' KST'};
@@ -608,7 +639,7 @@ $('saveBtn').addEventListener('click',function(){
     return commitFiles([{path:CSV_PATH,content:blob},{path:SET_PATH,content:JSON.stringify(st,null,1)+'\n'}],'콘텐츠 관리실 저장 · 기준일 '+(base||'매일 자동'));
   }).then(function(){return getFile(CSV_PATH);}).then(function(f){
     CSV_SHA=f.sha;ORIG=csv;SETTINGS=st;ROWS.forEach(function(r){delete r._d;});render();
-    toast('저장했습니다. 몇 분 뒤 카탈로그·서버실에 반영됩니다. <a href="https://github.com/'+OWNER+'/'+REPO+'/actions" target="_blank" rel="noopener">진행 보기</a>',8000);
+    toast('저장했습니다. 몇 분 뒤 카탈로그·서버실이, 이어서 온톨로지 피드·캐릭터 갤러리가 자동으로 갱신됩니다. <a href="https://github.com/'+OWNER+'/'+REPO+'/actions" target="_blank" rel="noopener">진행 보기</a>',8000);
   }).catch(function(e){toast('저장하지 못했습니다: '+esc(e.message)+(e.status===409||e.status===422?' — 잠시 뒤 다시 눌러 주세요.':''),8000);dirty();})
   .then(function(){btn.textContent=dirty()?'저장 •':'저장';});});
 window.addEventListener('beforeunload',function(e){if($('app').classList.contains('hidden'))return;if(dirty()||(NLOADED&&nDirty())){e.preventDefault();e.returnValue='';}});
