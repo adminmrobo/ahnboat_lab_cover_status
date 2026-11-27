@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27 22:36 KST",
+ "updated": "2026-11-28 02:07 KST",
  "rule": {
   "ok": "가로 1200 px 이상",
   "warn": "가로 960~1199 px",
@@ -18,7 +18,7 @@
    "path": "img/og/og_index.webp",
    "w": 1200,
    "h": 630,
-   "pushed_at": "2026-11-24T22:23:04Z",
+   "pushed_at": "2026-11-27T16:52:24Z",
    "declared": 14,
    "declared_low": 0,
    "grade": "ok"
@@ -58,7 +58,7 @@
    "path": "assets/cut1_panic.webp",
    "w": 1376,
    "h": 768,
-   "pushed_at": "2026-11-27T12:06:45Z",
+   "pushed_at": "2026-11-27T13:35:56Z",
    "declared": 0,
    "declared_low": 0,
    "grade": "ok"
@@ -88,7 +88,7 @@
    "path": null,
    "w": 0,
    "h": 0,
-   "pushed_at": "2026-11-27T12:14:24Z",
+   "pushed_at": "2026-11-27T13:42:53Z",
    "declared": 0,
    "declared_low": 0,
    "grade": "none"
@@ -118,7 +118,7 @@
    "path": "assets/cover.png",
    "w": 1920,
    "h": 1080,
-   "pushed_at": "2026-11-27T12:00:39Z",
+   "pushed_at": "2026-11-27T13:40:43Z",
    "declared": 0,
    "declared_low": 0,
    "grade": "ok"
@@ -588,7 +588,7 @@
    "path": "images/cover_part1.webp",
    "w": 960,
    "h": 540,
-   "pushed_at": "2026-11-27T13:01:02Z",
+   "pushed_at": "2026-11-27T16:51:03Z",
    "declared": 0,
    "declared_low": 0,
    "grade": "warn"
@@ -698,7 +698,7 @@
    "path": null,
    "w": 0,
    "h": 0,
-   "pushed_at": "2026-11-27T13:14:52Z",
+   "pushed_at": "2026-11-27T14:07:51Z",
    "declared": 0,
    "declared_low": 0,
    "grade": "none"

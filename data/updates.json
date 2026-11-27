@@ -8,6 +8,22 @@
  },
  "log": [
   {
+   "date": "2026-11-28",
+   "repo": "Distance-metrics-tutorial",
+   "kind": "update",
+   "title": "하루의 실험실 EP.04 1부 : 시아와 모아는 얼마나 멀까 — 공간 속 거리",
+   "link": "https://adminmrobo.github.io/Distance-metrics-tutorial/",
+   "size": 385663
+  },
+  {
+   "date": "2026-11-28",
+   "repo": "adminmrobo-lhopital_lab",
+   "kind": "update",
+   "title": "로피탈 교실 — 0/0의 정체를 밝히는 수업 · 오리엔테이션",
+   "link": "https://adminmrobo.github.io/adminmrobo-lhopital_lab/",
+   "size": 14446
+  },
+  {
    "date": "2026-11-27",
    "repo": "fruitfly-lab-expressions",
    "kind": "update",
@@ -93,7 +109,7 @@
    "kind": "update",
    "title": "내 아이디어 검증하기 — ahnboat lab 온톨로지 피드",
    "link": "https://adminmrobo.github.io/ahnboat_ontology_feed/",
-   "size": 30381381
+   "size": 30498993
   },
   {
    "date": "2026-11-27",
@@ -165,7 +181,7 @@
    "kind": "update",
    "title": "안보트 연구실 타운 (Ahn Lab Town)",
    "link": "https://adminmrobo.github.io/ahn_boat_lab_town/",
-   "size": 15624522
+   "size": 15624568
   },
   {
    "date": "2026-11-27",
@@ -309,7 +325,7 @@
    "kind": "update",
    "title": "Ahn-boat Lab 식구 갤러리",
    "link": "https://adminmrobo.github.io/ahnboat_lab_gallery/",
-   "size": 6236882
+   "size": 6292533
   },
   {
    "date": "2026-11-27",
@@ -1174,8 +1190,8 @@
    "size": 34858582
   },
   "Distance-metrics-tutorial": {
-   "pushed_at": "2026-11-27T13:01:02Z",
-   "size": 678912
+   "pushed_at": "2026-11-27T16:51:03Z",
+   "size": 1064575
   },
   "Dropout-neural-network-tutorial": {
    "pushed_at": "2026-11-26T13:05:03Z",
@@ -1247,11 +1263,11 @@
   },
   "Tokenization-BPE-tutorial": {
    "pushed_at": "2026-11-27T13:01:31Z",
-   "size": 1381681
+   "size": 1482138
   },
   "adminmrobo-lhopital_lab": {
-   "pushed_at": "2026-11-24T22:23:04Z",
-   "size": 2388115
+   "pushed_at": "2026-11-27T16:52:24Z",
+   "size": 2402561
   },
   "adminmrobo-structure_first_drawing_lab": {
    "pushed_at": "2026-11-27T03:21:20Z",
@@ -1266,16 +1282,16 @@
    "size": 1928640
   },
   "ahn_boat_lab_town": {
-   "pushed_at": "2026-11-27T12:06:45Z",
-   "size": 15624522
+   "pushed_at": "2026-11-27T13:35:56Z",
+   "size": 15624568
   },
   "ahnboat_lab_gallery": {
-   "pushed_at": "2026-11-27T12:14:24Z",
-   "size": 6236882
+   "pushed_at": "2026-11-27T13:42:53Z",
+   "size": 6292533
   },
   "ahnboat_ontology_feed": {
-   "pushed_at": "2026-11-27T12:00:39Z",
-   "size": 30381381
+   "pushed_at": "2026-11-27T13:40:43Z",
+   "size": 30498993
   },
   "ahnboat_server_room_guards": {
    "pushed_at": "2026-11-23T07:30:57Z",

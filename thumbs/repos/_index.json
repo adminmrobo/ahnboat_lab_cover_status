@@ -1,8 +1,8 @@
 {
  "adminmrobo-lhopital_lab": {
   "src": "og:img/og/og_index.webp",
-  "pushed_at": "2026-11-24T22:23:04Z",
-  "made": "2026-11-25"
+  "pushed_at": "2026-11-27T16:52:24Z",
+  "made": "2026-11-28"
  },
  "adminmrobo-structure_first_drawing_lab": {
   "src": "manifest:assets/img/cover_index.webp",
@@ -20,8 +20,8 @@
  },
  "ahn_boat_lab_town": {
   "src": "redraw:R019:assets/cut1_panic.webp",
-  "pushed_at": "2026-11-27T12:06:45Z",
-  "made": "2026-11-27"
+  "pushed_at": "2026-11-27T13:35:56Z",
+  "made": "2026-11-28"
  },
  "ahnboat_lab_character_add_packs": {
   "src": null,
@@ -33,7 +33,7 @@
  },
  "ahnboat_lab_gallery": {
   "src": null,
-  "pushed_at": "2026-11-27T12:14:24Z"
+  "pushed_at": "2026-11-27T13:42:53Z"
  },
  "ahnboat_lab_langpack": {
   "src": null,
@@ -45,8 +45,8 @@
  },
  "ahnboat_ontology_feed": {
   "src": "name:assets/cover.png",
-  "pushed_at": "2026-11-27T12:00:39Z",
-  "made": "2026-11-27"
+  "pushed_at": "2026-11-27T13:40:43Z",
+  "made": "2026-11-28"
  },
  "ahnboat_server_room_guards": {
   "src": null,
@@ -268,8 +268,8 @@
  },
  "Distance-metrics-tutorial": {
   "src": "name:images/cover_part1.webp",
-  "pushed_at": "2026-11-27T13:01:02Z",
-  "made": "2026-11-27"
+  "pushed_at": "2026-11-27T16:51:03Z",
+  "made": "2026-11-28"
  },
  "DL_model_hiring_committee": {
   "src": "redraw:R007:6-0_job_posting.html#sc_meeting",
@@ -322,7 +322,7 @@
  },
  "drug-crime-social-cost": {
   "src": null,
-  "pushed_at": "2026-11-27T13:14:52Z"
+  "pushed_at": "2026-11-27T14:07:51Z"
  },
  "economics_lab": {
   "src": null,
