@@ -30,7 +30,7 @@
 
 ## 4. Genspark 지시문
 
-참고 이미지로 EP.06·EP.07 썸네일과 캐릭터 기본 그림(`adminmrobo/fruitfly-lab-expressions`)을 함께 첨부합니다.
+참고 그림: 그림체 기준 EP.06·EP.07 썸네일 원본 + 캐릭터 설정샷 `fruitfly-lab-expressions/images/_sheets/lab6_lineup.png`(박사·하루·시아·모아·주판봇·초파리), `interns_turnaround8.png`(위 시아 · 아래 모아), `haru_A.png`. 모두 `haru_lab_prompts_all.zip`의 `3_references/`에 들어 있다.
 
 ### 공통 머리말 (모든 회차에 그대로)
 
@@ -66,7 +66,6 @@ Mood: "same filter everywhere — it still finds the cat".
 
 ### EP.08 박사의 과제 — 최적화 연습
 
-따로 만들지 않는다. 저장소 `haru_3d_optimization_01`의 `docs/genspark_prompts.md` **cover_part1**(1부 표지, 이미 준비된 지시문)을 받으면, 그 그림으로 `python3 scripts/haru_thumb.py <cover_part1 원본> 08`.
-인턴 시아·모아의 외형은 지시문에 글로 쓰지 말고 참고 그림(설정샷)으로만 맞춘다 — 그 파일과 같은 방식.
+다른 회차와 같이 **썸네일 지시서로 새로 만든다**. 장면만 저장소 `haru_3d_optimization_01`의 1부 표지(cover_part1)와 같게 한다. 저장소 지시서의 "홈 썸네일은 1부 표지를 씁니다" 문장은 이 규격으로 대체됐다.
 
 받은 그림은 `python3 scripts/haru_thumb.py <받은 그림> 01` 처럼 넣고, 위 표의 상태를 고칩니다.
