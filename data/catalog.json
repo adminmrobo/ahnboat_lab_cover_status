@@ -847,15 +847,6 @@
     "학습률"
    ],
    "image": "thumbs/cats/C05-O7.webp"
-  },
-  {
-   "cat": "AI 감각·생성",
-   "name": "딥러닝 모델",
-   "id": "",
-   "desc": "",
-   "keywords": [],
-   "image": "thumbs/cats/C03.webp",
-   "auto": true
   }
  ],
  "hero": {
@@ -1313,6 +1304,21 @@
    "thumb": "thumbs/cats/C02-M2.webp"
   },
   {
+   "title": "신경망은 고양이를 어떻게  볼까? — 쪽지시험 대비반 | 신경망이 보는 법",
+   "summary": "사진이 숫자가 되고, 3×3 필터가 경계를 찾고, ReLU·풀링이 강한 신호만 남기고, 깊은 층이 귀·눈·입과 그 자리를 보아 \"고양이\"라고 답하기까지. 인턴 시아·모아가 조수 하루와 쪽지시험 4문항을 준비합니다.",
+   "cat": "딥러닝·뇌과학",
+   "mid": "딥러닝 모델",
+   "sub": "실습 및 해설",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/neural_see_lab",
+   "site_url": "https://adminmrobo.github.io/neural_see_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/cats/C02-M2.webp"
+  },
+  {
    "title": "하루의 실험실 : 뉴런의 드롭아웃",
    "summary": "실험조수 하루가 드롭아웃 실험(1-64-1 tanh 망, 60,000 스텝)을 다시 돌려 숫자와 그림으로 설명합니다.",
    "cat": "딥러닝·뇌과학",
@@ -1401,21 +1407,6 @@
     "ko"
    ],
    "thumb": "thumbs/repos/what_is_tensor.jpg"
-  },
-  {
-   "title": "신경망은 고양이를 어떻게 \"볼까\" — 쪽지시험 대비반 | 신경망이 보는 법 연구실",
-   "summary": "사진이 숫자가 되고, 3×3 필터가 경계를 찾고, ReLU·풀링이 강한 신호만 남기고, 깊은 층이 귀·눈·입과 그 자리를 보아 \"고양이\"라고 답하기까지. 인턴 시아·모아가 조수 하루와 쪽지시험 4문항을 준비합니다.",
-   "cat": "AI 감각·생성",
-   "mid": "딥러닝 모델",
-   "sub": "실습 및 해설",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/neural_see_lab",
-   "site_url": "https://adminmrobo.github.io/neural_see_lab/",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "thumbs/cats/C03.webp"
   },
   {
    "title": "AI 렌더링 연구실 3부작",
@@ -4328,6 +4319,97 @@
     "신약 허가"
    ],
    "image": "thumbs/cats/subs/medical-ai.webp"
+  },
+  {
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "LLM 이해",
+   "name": "실습 및 해설",
+   "desc": "직접 해 보며 배우는 연구실 해설 묶음입니다. 연구실 식구들과 함께 실험대 위에서 개념을 하나씩 손으로 확인합니다.",
+   "keywords": [
+    "실습",
+    "연구실 해설",
+    "따라 하기"
+   ],
+   "image": "",
+   "_note": "공통 카드 — cat·mid가 \"*\"이면 '실습 및 해설'이 쓰이는 모든 대분류·중분류에 붙는다(build_hub.py). 그림 지시문: docs/genspark/practice-and-explanation/"
+  },
+  {
+   "cat": "경제·수학·최적화",
+   "mid": "최적화 방법",
+   "name": "실습 및 해설",
+   "desc": "직접 해 보며 배우는 연구실 해설 묶음입니다. 연구실 식구들과 함께 실험대 위에서 개념을 하나씩 손으로 확인합니다.",
+   "keywords": [
+    "실습",
+    "연구실 해설",
+    "따라 하기"
+   ],
+   "image": "",
+   "_note": "공통 카드 — cat·mid가 \"*\"이면 '실습 및 해설'이 쓰이는 모든 대분류·중분류에 붙는다(build_hub.py). 그림 지시문: docs/genspark/practice-and-explanation/"
+  },
+  {
+   "cat": "딥러닝·뇌과학",
+   "mid": "딥러닝 모델",
+   "name": "실습 및 해설",
+   "desc": "직접 해 보며 배우는 연구실 해설 묶음입니다. 연구실 식구들과 함께 실험대 위에서 개념을 하나씩 손으로 확인합니다.",
+   "keywords": [
+    "실습",
+    "연구실 해설",
+    "따라 하기"
+   ],
+   "image": "",
+   "_note": "공통 카드 — cat·mid가 \"*\"이면 '실습 및 해설'이 쓰이는 모든 대분류·중분류에 붙는다(build_hub.py). 그림 지시문: docs/genspark/practice-and-explanation/"
+  },
+  {
+   "cat": "통계·데이터 기초",
+   "mid": "데이터 시각화",
+   "name": "실습 및 해설",
+   "desc": "직접 해 보며 배우는 연구실 해설 묶음입니다. 연구실 식구들과 함께 실험대 위에서 개념을 하나씩 손으로 확인합니다.",
+   "keywords": [
+    "실습",
+    "연구실 해설",
+    "따라 하기"
+   ],
+   "image": "",
+   "_note": "공통 카드 — cat·mid가 \"*\"이면 '실습 및 해설'이 쓰이는 모든 대분류·중분류에 붙는다(build_hub.py). 그림 지시문: docs/genspark/practice-and-explanation/"
+  },
+  {
+   "cat": "통계·데이터 기초",
+   "mid": "데이터베이스",
+   "name": "실습 및 해설",
+   "desc": "직접 해 보며 배우는 연구실 해설 묶음입니다. 연구실 식구들과 함께 실험대 위에서 개념을 하나씩 손으로 확인합니다.",
+   "keywords": [
+    "실습",
+    "연구실 해설",
+    "따라 하기"
+   ],
+   "image": "",
+   "_note": "공통 카드 — cat·mid가 \"*\"이면 '실습 및 해설'이 쓰이는 모든 대분류·중분류에 붙는다(build_hub.py). 그림 지시문: docs/genspark/practice-and-explanation/"
+  },
+  {
+   "cat": "통계·데이터 기초",
+   "mid": "프로그래밍",
+   "name": "실습 및 해설",
+   "desc": "직접 해 보며 배우는 연구실 해설 묶음입니다. 연구실 식구들과 함께 실험대 위에서 개념을 하나씩 손으로 확인합니다.",
+   "keywords": [
+    "실습",
+    "연구실 해설",
+    "따라 하기"
+   ],
+   "image": "",
+   "_note": "공통 카드 — cat·mid가 \"*\"이면 '실습 및 해설'이 쓰이는 모든 대분류·중분류에 붙는다(build_hub.py). 그림 지시문: docs/genspark/practice-and-explanation/"
+  },
+  {
+   "cat": "통계·데이터 기초",
+   "mid": "확률·통계",
+   "name": "실습 및 해설",
+   "desc": "직접 해 보며 배우는 연구실 해설 묶음입니다. 연구실 식구들과 함께 실험대 위에서 개념을 하나씩 손으로 확인합니다.",
+   "keywords": [
+    "실습",
+    "연구실 해설",
+    "따라 하기"
+   ],
+   "image": "",
+   "_note": "공통 카드 — cat·mid가 \"*\"이면 '실습 및 해설'이 쓰이는 모든 대분류·중분류에 붙는다(build_hub.py). 그림 지시문: docs/genspark/practice-and-explanation/"
   }
  ]
 }
