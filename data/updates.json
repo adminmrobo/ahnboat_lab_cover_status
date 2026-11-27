@@ -41,6 +41,14 @@
   },
   {
    "date": "2026-11-27",
+   "repo": "cost_theory_economic_view_lab",
+   "kind": "new",
+   "title": "비용 이론 연구실",
+   "link": "https://adminmrobo.github.io/cost_theory_economic_view_lab/",
+   "size": 40316101
+  },
+  {
+   "date": "2026-11-27",
    "repo": "drawing_lab_03",
    "kind": "update",
    "title": "구조 먼저 그리기 연구실 03 · 얼굴 편 — 같은 기준선, 다른 얼굴",
@@ -97,6 +105,14 @@
   },
   {
    "date": "2026-11-27",
+   "repo": "likelihood_vs_probability",
+   "kind": "new",
+   "title": "확률 vs 가능도(우도) — 초파리의 케이크 상자 | 고급통계 연구실",
+   "link": "https://adminmrobo.github.io/likelihood_vs_probability/",
+   "size": 25913360
+  },
+  {
+   "date": "2026-11-27",
    "repo": "drawing_lab_04",
    "kind": "update",
    "title": "구조 먼저 그리기 연구실 04 · 디테일 편 — 육각형 하나, 덩어리 몇 개",
@@ -149,7 +165,7 @@
    "kind": "update",
    "title": "안보트 연구실 타운 (Ahn Lab Town)",
    "link": "https://adminmrobo.github.io/ahn_boat_lab_town/",
-   "size": 15622751
+   "size": 15624522
   },
   {
    "date": "2026-11-27",
@@ -241,6 +257,14 @@
   },
   {
    "date": "2026-11-27",
+   "repo": "Recursive-Self-Improvement",
+   "kind": "update",
+   "title": "스스로 고치는 AI는 어디까지 왔나 — 재귀적 자기개선(RSI) 기초 정리 · 연구실 해설",
+   "link": "https://adminmrobo.github.io/Recursive-Self-Improvement/",
+   "size": 7759599
+  },
+  {
+   "date": "2026-11-27",
    "repo": "unsupervised_fish_lab",
    "kind": "update",
    "title": "비지도학습 물고기 연구실 — 라벨링 없이 맞추는 AI (목차)",
@@ -285,7 +309,7 @@
    "kind": "update",
    "title": "Ahn-boat Lab 식구 갤러리",
    "link": "https://adminmrobo.github.io/ahnboat_lab_gallery/",
-   "size": 6228758
+   "size": 6236882
   },
   {
    "date": "2026-11-27",
@@ -326,14 +350,6 @@
    "title": "마이너스 칸이 있는 방 — 시아·모아의 민코프스키 시공간",
    "link": "https://adminmrobo.github.io/minkowski_space_lab/",
    "size": 5059347
-  },
-  {
-   "date": "2026-11-27",
-   "repo": "Recursive-Self-Improvement",
-   "kind": "update",
-   "title": "스스로 고치는 AI는 어디까지 왔나 — 재귀적 자기개선(RSI) 기초 정리 · 연구실 해설",
-   "link": "https://adminmrobo.github.io/Recursive-Self-Improvement/",
-   "size": 4305104
   },
   {
    "date": "2026-11-27",
@@ -385,6 +401,14 @@
   },
   {
    "date": "2026-11-27",
+   "repo": "Tokenization-BPE-tutorial",
+   "kind": "new",
+   "title": "하루의 실험실 EP.05 : 글을 조각으로 — 토큰 나누기(BPE)",
+   "link": "https://adminmrobo.github.io/Tokenization-BPE-tutorial/",
+   "size": 1381681
+  },
+  {
+   "date": "2026-11-27",
    "repo": "optimization_test_lab",
    "kind": "update",
    "title": "최적화 연습실 — 미공개 X1·X2·X3의 몰래 연습",
@@ -406,6 +430,14 @@
    "title": "초보자도 쉽게 따라하는 DB 환경 설치",
    "link": "https://adminmrobo.github.io/how_to_start_db/",
    "size": 859821
+  },
+  {
+   "date": "2026-11-27",
+   "repo": "Distance-metrics-tutorial",
+   "kind": "new",
+   "title": "하루의 실험실 EP.04 1부 : 시아와 모아는 얼마나 멀까 — 공간 속 거리",
+   "link": "https://adminmrobo.github.io/Distance-metrics-tutorial/",
+   "size": 678912
   },
   {
    "date": "2026-11-27",
@@ -1141,6 +1173,10 @@
    "pushed_at": "2026-11-27T05:02:48Z",
    "size": 34858582
   },
+  "Distance-metrics-tutorial": {
+   "pushed_at": "2026-11-27T13:01:02Z",
+   "size": 678912
+  },
   "Dropout-neural-network-tutorial": {
    "pushed_at": "2026-11-26T13:05:03Z",
    "size": 629174
@@ -1190,8 +1226,8 @@
    "size": 196054888
   },
   "Recursive-Self-Improvement": {
-   "pushed_at": "2026-11-26T15:09:15Z",
-   "size": 4305104
+   "pushed_at": "2026-11-27T13:20:25Z",
+   "size": 7759599
   },
   "Regression_model_lab_01": {
    "pushed_at": "2026-11-27T01:43:19Z",
@@ -1208,6 +1244,10 @@
   "Stochastic_labs": {
    "pushed_at": "2026-11-24T22:30:02Z",
    "size": 10966140
+  },
+  "Tokenization-BPE-tutorial": {
+   "pushed_at": "2026-11-27T13:01:31Z",
+   "size": 1381681
   },
   "adminmrobo-lhopital_lab": {
    "pushed_at": "2026-11-24T22:23:04Z",
@@ -1226,15 +1266,15 @@
    "size": 1928640
   },
   "ahn_boat_lab_town": {
-   "pushed_at": "2026-11-27T11:28:05Z",
-   "size": 15622751
+   "pushed_at": "2026-11-27T12:06:45Z",
+   "size": 15624522
   },
   "ahnboat_lab_gallery": {
-   "pushed_at": "2026-11-27T11:36:03Z",
-   "size": 6228758
+   "pushed_at": "2026-11-27T12:14:24Z",
+   "size": 6236882
   },
   "ahnboat_ontology_feed": {
-   "pushed_at": "2026-11-27T10:52:32Z",
+   "pushed_at": "2026-11-27T12:00:39Z",
    "size": 30381381
   },
   "ahnboat_server_room_guards": {
@@ -1312,6 +1352,10 @@
   "cnn_face_game_lab": {
    "pushed_at": "2026-11-23T07:30:49Z",
    "size": 1699407
+  },
+  "cost_theory_economic_view_lab": {
+   "pushed_at": "2026-11-27T12:58:00Z",
+   "size": 40316101
   },
   "covariant_chase_lab": {
    "pushed_at": "2026-11-25T14:38:06Z",
@@ -1500,6 +1544,10 @@
   "learn-python-by-doing_Korean": {
    "pushed_at": "2026-11-24T14:17:19Z",
    "size": 8023596
+  },
+  "likelihood_vs_probability": {
+   "pushed_at": "2026-11-27T11:55:15Z",
+   "size": 25913360
   },
   "llm_applied_lab": {
    "pushed_at": "2026-11-27T06:05:55Z",

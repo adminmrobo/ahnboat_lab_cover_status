@@ -20,7 +20,7 @@
  },
  "ahn_boat_lab_town": {
   "src": "redraw:R019:assets/cut1_panic.webp",
-  "pushed_at": "2026-11-27T11:28:05Z",
+  "pushed_at": "2026-11-27T12:06:45Z",
   "made": "2026-11-27"
  },
  "ahnboat_lab_character_add_packs": {
@@ -33,7 +33,7 @@
  },
  "ahnboat_lab_gallery": {
   "src": null,
-  "pushed_at": "2026-11-27T11:36:03Z"
+  "pushed_at": "2026-11-27T12:14:24Z"
  },
  "ahnboat_lab_langpack": {
   "src": null,
@@ -45,7 +45,7 @@
  },
  "ahnboat_ontology_feed": {
   "src": "name:assets/cover.png",
-  "pushed_at": "2026-11-27T10:52:32Z",
+  "pushed_at": "2026-11-27T12:00:39Z",
   "made": "2026-11-27"
  },
  "ahnboat_server_room_guards": {
@@ -184,8 +184,9 @@
   "made": "2026-11-23"
  },
  "cost_theory_economic_view_lab": {
-  "src": null,
-  "pushed_at": "2026-11-27T11:26:29Z"
+  "src": "name:cost_theory/img/og/og_01.webp",
+  "pushed_at": "2026-11-27T12:58:00Z",
+  "made": "2026-11-27"
  },
  "covariant_chase_lab": {
   "src": "manifest:assets/img/cover_01.webp",
@@ -267,7 +268,7 @@
  },
  "Distance-metrics-tutorial": {
   "src": "name:images/cover_part1.webp",
-  "pushed_at": "2026-11-27T11:26:50Z",
+  "pushed_at": "2026-11-27T13:01:02Z",
   "made": "2026-11-27"
  },
  "DL_model_hiring_committee": {
@@ -321,7 +322,7 @@
  },
  "drug-crime-social-cost": {
   "src": null,
-  "pushed_at": "2026-11-27T11:41:51Z"
+  "pushed_at": "2026-11-27T13:14:52Z"
  },
  "economics_lab": {
   "src": null,
@@ -758,6 +759,11 @@
   "pushed_at": "2026-11-26T15:09:59Z",
   "made": "2026-11-27"
  },
+ "pacing_problem_lab": {
+  "src": "manifest:index.html#cover",
+  "pushed_at": "2026-11-27T13:21:06Z",
+  "made": "2026-11-27"
+ },
  "polygon_series_lab": {
   "src": "manifest:img/cover_01.webp",
   "pushed_at": "2026-11-27T04:53:14Z",
@@ -780,7 +786,7 @@
  },
  "Recursive-Self-Improvement": {
   "src": "manifest:img/cover_rsi.webp",
-  "pushed_at": "2026-11-26T15:09:15Z",
+  "pushed_at": "2026-11-27T13:20:25Z",
   "made": "2026-11-27"
  },
  "Regression_model_lab_01": {
@@ -869,7 +875,7 @@
  },
  "Tokenization-BPE-tutorial": {
   "src": "name:images/cover.webp",
-  "pushed_at": "2026-11-27T11:48:27Z",
+  "pushed_at": "2026-11-27T13:01:31Z",
   "made": "2026-11-27"
  },
  "topology_ai_lab": {

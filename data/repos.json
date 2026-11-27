@@ -1628,7 +1628,7 @@
   "repo_url": "https://github.com/adminmrobo/ahn_boat_lab_town",
   "pages_url": "https://adminmrobo.github.io/ahn_boat_lab_town/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T11:28:05Z",
+  "pushed_at": "2026-11-27T12:06:45Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 3,
@@ -1686,7 +1686,7 @@
    "pages_checked": 2
   },
   "has_pages": true,
-  "size_bytes": 15622751
+  "size_bytes": 15624522
  },
  {
   "repo": "ahnboat_lab_character_add_packs",
@@ -1865,7 +1865,7 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_lab_gallery",
   "pages_url": "https://adminmrobo.github.io/ahnboat_lab_gallery/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T11:36:03Z",
+  "pushed_at": "2026-11-27T12:14:24Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -1919,7 +1919,7 @@
    "pages_checked": 1
   },
   "has_pages": true,
-  "size_bytes": 6228758
+  "size_bytes": 6236882
  },
  {
   "repo": "ahnboat_lab_langpack",
@@ -2034,7 +2034,7 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_ontology_feed",
   "pages_url": "https://adminmrobo.github.io/ahnboat_ontology_feed/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T10:52:32Z",
+  "pushed_at": "2026-11-27T12:00:39Z",
   "has_manifest": false,
   "covers": [
    {
@@ -7881,55 +7881,144 @@
  },
  {
   "repo": "cost_theory_economic_view_lab",
-  "series_ko": "cost_theory_economic_view_lab",
-  "title_ko": null,
+  "series_ko": "비용 이론 연구실",
+  "title_ko": "비용 이론 연구실",
   "repo_url": "https://github.com/adminmrobo/cost_theory_economic_view_lab",
   "pages_url": "https://adminmrobo.github.io/cost_theory_economic_view_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T11:26:29Z",
+  "pushed_at": "2026-11-27T12:58:00Z",
   "has_manifest": false,
-  "covers": [],
+  "covers": [
+   {
+    "path": "cost_theory/img/og/og_01.webp",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "cost_theory/img/og/og_02.webp",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "cost_theory/img/og/og_03.webp",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "cost_theory/img/og/og_04.webp",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "cost_theory/img/og/og_05.webp",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "cost_theory/img/og/og_06.webp",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "cost_theory/img/og/og_07.webp",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "cost_theory/img/og/og_08.webp",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "cost_theory/img/og/og_index.webp",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "cost_theory/img/og/og_practice.webp",
+    "role": "og",
+    "estimated": true
+   }
+  ],
   "redraw_count": 0,
   "redraw_ids": [],
-  "thumb": null,
+  "thumb": "thumbs/repos/cost_theory_economic_view_lab.jpg",
   "site_desc": null,
-  "status": "unknown",
+  "status": "ok",
   "checked_at": "2026-11-27",
-  "site_title": null,
+  "site_title": "비용 이론 연구실",
   "ontology": {
-   "status": "none",
-   "pages_with_kg": 0,
-   "pages_total": 0,
-   "pages_checked": 0,
-   "kg_links": [],
-   "export_links": [],
+   "status": "partial",
+   "pages_with_kg": 8,
+   "pages_total": 11,
+   "pages_checked": 11,
+   "kg_links": [
+    "https://adminmrobo.github.io/cost_theory_economic_view_lab/cost_theory/01_what_is_cost.html#kg",
+    "https://adminmrobo.github.io/cost_theory_economic_view_lab/cost_theory/02_fixed_variable_cost.html#kg",
+    "https://adminmrobo.github.io/cost_theory_economic_view_lab/cost_theory/03_average_marginal_cost.html#kg",
+    "https://adminmrobo.github.io/cost_theory_economic_view_lab/cost_theory/04_contribution_breakeven.html#kg",
+    "https://adminmrobo.github.io/cost_theory_economic_view_lab/cost_theory/05_industry_cost_structure.html#kg",
+    "https://adminmrobo.github.io/cost_theory_economic_view_lab/cost_theory/06_operating_leverage.html#kg",
+    "https://adminmrobo.github.io/cost_theory_economic_view_lab/cost_theory/07_future_scenarios.html#kg",
+    "https://adminmrobo.github.io/cost_theory_economic_view_lab/cost_theory/08_long_run_cost.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/cost_theory_economic_view_lab/cost_theory/01_what_is_cost.html#export",
+    "https://adminmrobo.github.io/cost_theory_economic_view_lab/cost_theory/02_fixed_variable_cost.html#export",
+    "https://adminmrobo.github.io/cost_theory_economic_view_lab/cost_theory/03_average_marginal_cost.html#export",
+    "https://adminmrobo.github.io/cost_theory_economic_view_lab/cost_theory/04_contribution_breakeven.html#export",
+    "https://adminmrobo.github.io/cost_theory_economic_view_lab/cost_theory/05_industry_cost_structure.html#export",
+    "https://adminmrobo.github.io/cost_theory_economic_view_lab/cost_theory/06_operating_leverage.html#export",
+    "https://adminmrobo.github.io/cost_theory_economic_view_lab/cost_theory/07_future_scenarios.html#export",
+    "https://adminmrobo.github.io/cost_theory_economic_view_lab/cost_theory/08_long_run_cost.html#export"
+   ],
    "files": []
   },
   "i18n": {
-   "langs": [],
-   "count": 0,
-   "pages": {},
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 11
+   },
    "partial": [],
    "complete": true,
    "readme_langs": [],
-   "links": {}
+   "links": {
+    "ko": "https://adminmrobo.github.io/cost_theory_economic_view_lab/cost_theory/index.html"
+   }
   },
   "languages": {
-   "codes": [],
-   "count": 0,
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
    "complete": true,
-   "pages_by_lang": {}
+   "pages_by_lang": {
+    "ko": 11
+   }
   },
   "skills": {
-   "items": [],
+   "items": [
+    {
+     "name": "px-fix",
+     "version": "1",
+     "versions": [
+      "1"
+     ],
+     "pages": 11
+    }
+   ],
    "main": "",
    "estimate": "",
    "explicit": false,
    "retrofit": 0,
-   "px_fix": 0,
-   "pages_checked": 0
+   "px_fix": 11,
+   "pages_checked": 11
   },
-  "has_pages": false
+  "has_pages": true,
+  "size_bytes": 40316101
  },
  {
   "repo": "covariant_chase_lab",
@@ -13276,7 +13365,7 @@
   "repo_url": "https://github.com/adminmrobo/Distance-metrics-tutorial",
   "pages_url": "https://adminmrobo.github.io/Distance-metrics-tutorial/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T11:26:50Z",
+  "pushed_at": "2026-11-27T13:01:02Z",
   "has_manifest": false,
   "covers": [
    {
@@ -13345,8 +13434,8 @@
    "px_fix": 0,
    "pages_checked": 1
   },
-  "has_pages": false,
-  "size_bytes": 672160
+  "has_pages": true,
+  "size_bytes": 678912
  },
  {
   "repo": "DL_model_hiring_committee",
@@ -14221,7 +14310,7 @@
   "repo_url": "https://github.com/adminmrobo/drug-crime-social-cost",
   "pages_url": "https://adminmrobo.github.io/drug-crime-social-cost/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T11:41:51Z",
+  "pushed_at": "2026-11-27T13:14:52Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -14275,7 +14364,7 @@
    "pages_checked": 5
   },
   "has_pages": true,
-  "size_bytes": 22947513
+  "size_bytes": 23251494
  },
  {
   "repo": "economics_lab",
@@ -29612,6 +29701,522 @@
   "size_bytes": 1266598
  },
  {
+  "repo": "pacing_problem_lab",
+  "series_ko": "페이싱 문제 연구실",
+  "title_ko": "페이싱 문제 연구실 · 기술·사회·정책 세 가지 속도",
+  "repo_url": "https://github.com/adminmrobo/pacing_problem_lab",
+  "pages_url": "https://adminmrobo.github.io/pacing_problem_lab/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-27T13:21:06Z",
+  "has_manifest": true,
+  "covers": [
+   {
+    "path": "index.html#header#cover",
+    "role": "cover",
+    "id": "cover_01",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/og/cover_01.jpg",
+    "role": "og",
+    "id": "og",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/comic/ep0_p1.webp",
+    "role": "scene",
+    "id": "ep0_p1",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "sia",
+     "moa"
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "assets/comic/ep0_p2.webp",
+    "role": "scene",
+    "id": "ep0_p2",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "asst",
+     "sia"
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "assets/comic/ep0_p3.webp",
+    "role": "scene",
+    "id": "ep0_p3",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "asst",
+     "moa"
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "assets/comic/ep0_p4.webp",
+    "role": "scene",
+    "id": "ep0_p4",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "x1",
+     "robo"
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "assets/comic/ep1_p1.webp",
+    "role": "scene",
+    "id": "ep1_p1",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "moa",
+     "sia"
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "assets/comic/ep1_p2.webp",
+    "role": "scene",
+    "id": "ep1_p2",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "robo",
+     "fly"
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "assets/comic/ep1_p3.webp",
+    "role": "scene",
+    "id": "ep1_p3",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "asst",
+     "doc"
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "assets/comic/ep1_p4.webp",
+    "role": "scene",
+    "id": "ep1_p4",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "sia",
+     "moa"
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "assets/comic/ep2_p1.webp",
+    "role": "scene",
+    "id": "ep2_p1",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "sia",
+     "moa"
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "assets/comic/ep2_p2.webp",
+    "role": "scene",
+    "id": "ep2_p2",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "robo",
+     "fly"
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "assets/comic/ep2_p3.webp",
+    "role": "scene",
+    "id": "ep2_p3",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "asst",
+     "doc"
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "assets/comic/ep2_p4.webp",
+    "role": "scene",
+    "id": "ep2_p4",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "moa",
+     "sia"
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "assets/comic/ep3_p1.webp",
+    "role": "scene",
+    "id": "ep3_p1",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "sia",
+     "moa"
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "assets/comic/ep3_p2.webp",
+    "role": "scene",
+    "id": "ep3_p2",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "robo",
+     "fly"
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "assets/comic/ep3_p3.webp",
+    "role": "scene",
+    "id": "ep3_p3",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "asst",
+     "doc"
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "assets/comic/ep3_p4.webp",
+    "role": "scene",
+    "id": "ep3_p4",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "sia",
+     "moa"
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "assets/comic/ep4_p1.webp",
+    "role": "scene",
+    "id": "ep4_p1",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "moa",
+     "sia"
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "assets/comic/ep4_p2.webp",
+    "role": "scene",
+    "id": "ep4_p2",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "robo",
+     "fly"
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "assets/comic/ep4_p3.webp",
+    "role": "scene",
+    "id": "ep4_p3",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "asst",
+     "doc"
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "assets/comic/ep4_p4.webp",
+    "role": "scene",
+    "id": "ep4_p4",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "sia",
+     "asst"
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "assets/comic/sp_p1.webp",
+    "role": "scene",
+    "id": "sp_p1",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "asst",
+     "sia"
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "assets/comic/sp_p2.webp",
+    "role": "scene",
+    "id": "sp_p2",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "robo",
+     "fly"
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "assets/comic/sp_p3.webp",
+    "role": "scene",
+    "id": "sp_p3",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "moa"
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "assets/comic/sp_p4.webp",
+    "role": "scene",
+    "id": "sp_p4",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "moa",
+     "sia"
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "assets/comic/ep_out1.webp",
+    "role": "scene",
+    "id": "ep_out1",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "sia",
+     "moa"
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "assets/comic/ep_out2.webp",
+    "role": "scene",
+    "id": "ep_out2",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "fly",
+     "robo"
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "assets/comic/ep_out3.webp",
+    "role": "scene",
+    "id": "ep_out3",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "asst",
+     "doc",
+     "x2"
+    ],
+    "status": "ok"
+   }
+  ],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": "thumbs/repos/pacing_problem_lab.jpg",
+  "site_desc": "가상 나라의 뉴스를 읽던 인턴 시아·모아와 조수 하루의 만화 대화로 시작해, 박사·초파리 연구원·주판봇·X1~X3가 차례로 해설하는 연구실 해설. 솔로우 모형, 기술 흡수 속도, 정책 시차(틈 = 사회 변화 속도 ÷ 정책 속도), 해밀토니안으로 기술·사회·정책 세 속도의 차이를 계산하고, 3D 속도 공간에서 가상의 세 나라 가람·나래·다솜의 30년을 비교합니다.",
+  "status": "ok",
+  "checked_at": "2026-11-27",
+  "site_title": "기술 200km, 사회 50km, 정책 20km — 세 가지 속도로 그려 보는 나라의 성장 경로",
+  "ontology": {
+   "status": "full",
+   "pages_with_kg": 1,
+   "pages_total": 1,
+   "pages_checked": 1,
+   "kg_links": [
+    "https://adminmrobo.github.io/pacing_problem_lab/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/pacing_problem_lab/index.html#export"
+   ],
+   "files": [
+    {
+     "path": "KG_00_registry.json",
+     "url": "https://github.com/adminmrobo/pacing_problem_lab/blob/main/KG_00_registry.json"
+    }
+   ]
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 1
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/pacing_problem_lab/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 1
+   }
+  },
+  "skills": {
+   "items": [
+    {
+     "name": "ai-lab-explainer",
+     "version": "1.19",
+     "versions": [
+      "1.19"
+     ],
+     "pages": 1
+    },
+    {
+     "name": "ai-lab-explainer-plain",
+     "version": "",
+     "versions": [],
+     "pages": 1
+    },
+    {
+     "name": "ai-lab-extend",
+     "version": "",
+     "versions": [],
+     "pages": 1
+    },
+    {
+     "name": "px-fix",
+     "version": "1",
+     "versions": [
+      "1"
+     ],
+     "pages": 1
+    }
+   ],
+   "main": "ai-lab-explainer 1.19",
+   "estimate": "",
+   "explicit": true,
+   "retrofit": 0,
+   "px_fix": 1,
+   "pages_checked": 1
+  },
+  "has_pages": true,
+  "size_bytes": 5101152
+ },
+ {
   "repo": "polygon_series_lab",
   "series_ko": "데이터시각화 연구실 · 그릴 수 있는 등비급수",
   "title_ko": "그릴 수 있는 등비급수 — 정다각형 속 나선의 넓이",
@@ -30553,7 +31158,7 @@
   "repo_url": "https://github.com/adminmrobo/Recursive-Self-Improvement",
   "pages_url": "https://adminmrobo.github.io/Recursive-Self-Improvement/",
   "default_branch": "main",
-  "pushed_at": "2026-11-26T15:09:15Z",
+  "pushed_at": "2026-11-27T13:20:25Z",
   "has_manifest": true,
   "covers": [
    {
@@ -30816,6 +31421,219 @@
     ],
     "robot": "none",
     "status": "redraw"
+   },
+   {
+    "path": "part2/img/cover_rsi2.webp",
+    "role": "cover",
+    "id": "p2_cover",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "part2/img/og_rsi2.jpg",
+    "role": "og",
+    "id": "p2_og",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "part2/img/c2m1_1.webp",
+    "role": "scene",
+    "id": "p2_sc_c2m1_1",
+    "size": [
+     1024,
+     1024
+    ],
+    "characters": [
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "part2/img/c2m1_2.webp",
+    "role": "scene",
+    "id": "p2_sc_c2m1_2",
+    "size": [
+     1024,
+     1024
+    ],
+    "characters": [
+     "fly",
+     "asst",
+     "sia",
+     "moa"
+    ],
+    "robot": "none",
+    "status": "ok"
+   },
+   {
+    "path": "part2/img/c2m1_3.webp",
+    "role": "scene",
+    "id": "p2_sc_c2m1_3",
+    "size": [
+     1024,
+     1024
+    ],
+    "characters": [
+     "jupanbot",
+     "x1",
+     "x2",
+     "x3"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "part2/img/c2m1_4.webp",
+    "role": "scene",
+    "id": "p2_sc_c2m1_4",
+    "size": [
+     1024,
+     1024
+    ],
+    "characters": [
+     "doc"
+    ],
+    "robot": "none",
+    "status": "ok"
+   },
+   {
+    "path": "part2/img/c2m2_1.webp",
+    "role": "scene",
+    "id": "p2_sc_c2m2_1",
+    "size": [
+     1024,
+     1024
+    ],
+    "characters": [
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "part2/img/c2m2_2.webp",
+    "role": "scene",
+    "id": "p2_sc_c2m2_2",
+    "size": [
+     1024,
+     1024
+    ],
+    "characters": [
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "part2/img/c2m2_3.webp",
+    "role": "scene",
+    "id": "p2_sc_c2m2_3",
+    "size": [
+     1024,
+     1024
+    ],
+    "characters": [
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "part2/img/c2m2_4.webp",
+    "role": "scene",
+    "id": "p2_sc_c2m2_4",
+    "size": [
+     1024,
+     1024
+    ],
+    "characters": [
+     "asst"
+    ],
+    "robot": "none",
+    "status": "ok"
+   },
+   {
+    "path": "part2/img/c2mo_1.webp",
+    "role": "outro",
+    "id": "p2_sc_c2mo_1",
+    "size": [
+     1024,
+     1024
+    ],
+    "characters": [
+     "doc"
+    ],
+    "robot": "none",
+    "status": "ok"
+   },
+   {
+    "path": "part2/img/c2mo_2.webp",
+    "role": "outro",
+    "id": "p2_sc_c2mo_2",
+    "size": [
+     1024,
+     1024
+    ],
+    "characters": [
+     "asst"
+    ],
+    "robot": "none",
+    "status": "ok"
+   },
+   {
+    "path": "part2/img/c2mo_3.webp",
+    "role": "outro",
+    "id": "p2_sc_c2mo_3",
+    "size": [
+     1024,
+     1024
+    ],
+    "characters": [
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "part2/img/c2mo_4.webp",
+    "role": "outro",
+    "id": "p2_sc_c2mo_4",
+    "size": [
+     1024,
+     1024
+    ],
+    "characters": [
+     "asst",
+     "moa",
+     "x1",
+     "x2",
+     "x3"
+    ],
+    "robot": "none",
+    "status": "ok"
    }
   ],
   "redraw_count": 0,
@@ -30827,19 +31645,25 @@
   "site_title": "스스로 고치는 AI는 어디까지 왔나 — 재귀적 자기개선(RSI) 기초 정리 · 연구실 해설",
   "ontology": {
    "status": "full",
-   "pages_with_kg": 1,
-   "pages_total": 1,
-   "pages_checked": 1,
+   "pages_with_kg": 2,
+   "pages_total": 2,
+   "pages_checked": 2,
    "kg_links": [
-    "https://adminmrobo.github.io/Recursive-Self-Improvement/index.html#kg"
+    "https://adminmrobo.github.io/Recursive-Self-Improvement/index.html#kg",
+    "https://adminmrobo.github.io/Recursive-Self-Improvement/part2/index.html#kg"
    ],
    "export_links": [
-    "https://adminmrobo.github.io/Recursive-Self-Improvement/index.html#export"
+    "https://adminmrobo.github.io/Recursive-Self-Improvement/index.html#export",
+    "https://adminmrobo.github.io/Recursive-Self-Improvement/part2/index.html#export"
    ],
    "files": [
     {
      "path": "kg/kg.json",
      "url": "https://github.com/adminmrobo/Recursive-Self-Improvement/blob/main/kg/kg.json"
+    },
+    {
+     "path": "kg/part2/kg.json",
+     "url": "https://github.com/adminmrobo/Recursive-Self-Improvement/blob/main/kg/part2/kg.json"
     }
    ]
   },
@@ -30849,7 +31673,7 @@
    ],
    "count": 1,
    "pages": {
-    "ko": 1
+    "ko": 2
    },
    "partial": [],
    "complete": true,
@@ -30865,16 +31689,24 @@
    "count": 1,
    "complete": true,
    "pages_by_lang": {
-    "ko": 1
+    "ko": 2
    }
   },
   "skills": {
    "items": [
     {
+     "name": "ai-lab-explainer-plain",
+     "version": "1.6",
+     "versions": [
+      "1.6"
+     ],
+     "pages": 1
+    },
+    {
      "name": "ai-lab-retrofit",
      "version": "",
      "versions": [],
-     "pages": 1
+     "pages": 2
     },
     {
      "name": "px-fix",
@@ -30882,18 +31714,18 @@
      "versions": [
       "1"
      ],
-     "pages": 1
+     "pages": 2
     }
    ],
-   "main": "",
+   "main": "ai-lab-explainer-plain 1.6",
    "estimate": "",
-   "explicit": false,
-   "retrofit": 1,
-   "px_fix": 1,
-   "pages_checked": 1
+   "explicit": true,
+   "retrofit": 2,
+   "px_fix": 2,
+   "pages_checked": 2
   },
   "has_pages": true,
-  "size_bytes": 4305104
+  "size_bytes": 7759599
  },
  {
   "repo": "Regression_model_lab_01",
@@ -35513,11 +36345,16 @@
   "repo_url": "https://github.com/adminmrobo/Tokenization-BPE-tutorial",
   "pages_url": "https://adminmrobo.github.io/Tokenization-BPE-tutorial/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T11:48:27Z",
+  "pushed_at": "2026-11-27T13:01:31Z",
   "has_manifest": false,
   "covers": [
    {
     "path": "images/cover.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "images/src/cover_genspark.webp",
     "role": "cover",
     "estimated": true
    }
@@ -35572,8 +36409,8 @@
    "px_fix": 0,
    "pages_checked": 1
   },
-  "has_pages": false,
-  "size_bytes": 688665
+  "has_pages": true,
+  "size_bytes": 1381681
  },
  {
   "repo": "topology_ai_lab",
