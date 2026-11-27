@@ -33,7 +33,7 @@
  },
  "ahnboat_lab_gallery": {
   "src": null,
-  "pushed_at": "2026-11-27T10:10:27Z"
+  "pushed_at": "2026-11-27T11:09:33Z"
  },
  "ahnboat_lab_langpack": {
   "src": null,
@@ -549,8 +549,8 @@
   "made": "2026-11-25"
  },
  "likelihood_vs_probability": {
-  "src": "file:c5d_1280.png",
-  "pushed_at": "2026-11-27T09:10:34Z",
+  "src": "manifest:assets/img/cover_01.webp",
+  "pushed_at": "2026-11-27T10:56:57Z",
   "made": "2026-11-27"
  },
  "llm_applied_lab": {

@@ -303,7 +303,8 @@
     "ko": 14
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 2388115
  },
  {
   "repo": "adminmrobo-structure_first_drawing_lab",
@@ -1309,7 +1310,8 @@
     "ko": 8
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 5829464
  },
  {
   "repo": "agent_secret_leak_lab",
@@ -1408,7 +1410,8 @@
     "ko": 2
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 1002135
  },
  {
   "repo": "agentic_ai_crash_guide",
@@ -1546,7 +1549,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 1928640
  },
  {
   "repo": "ahn_boat_lab_town",
@@ -1603,7 +1607,8 @@
     "ko": 2
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 15620070
  },
  {
   "repo": "ahnboat_lab_character_add_packs",
@@ -1754,7 +1759,8 @@
    "complete": true,
    "pages_by_lang": {}
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 38722646
  },
  {
   "repo": "ahnboat_lab_gallery",
@@ -1763,7 +1769,7 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_lab_gallery",
   "pages_url": "https://adminmrobo.github.io/ahnboat_lab_gallery/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T10:10:27Z",
+  "pushed_at": "2026-11-27T11:09:33Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -1807,7 +1813,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 6188871
  },
  {
   "repo": "ahnboat_lab_langpack",
@@ -1850,7 +1857,8 @@
    "complete": true,
    "pages_by_lang": {}
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 918194
  },
  {
   "repo": "ahnboat_lab_town_floor_b01",
@@ -1893,7 +1901,8 @@
    "complete": true,
    "pages_by_lang": {}
   },
-  "has_pages": false
+  "has_pages": false,
+  "size_bytes": 44889
  },
  {
   "repo": "ahnboat_ontology_feed",
@@ -2005,7 +2014,8 @@
     "ko": 5
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 30381381
  },
  {
   "repo": "ahnboat_server_room_guards",
@@ -2058,7 +2068,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 37038970
  },
  {
   "repo": "ai-nlp-data-analysis",
@@ -2541,7 +2552,8 @@
     "ko": 27
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 34104019
  },
  {
   "repo": "ai-power-chain-simulator",
@@ -2594,7 +2606,8 @@
     "ko": 2
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 192841
  },
  {
   "repo": "ai_crime_lab",
@@ -3026,7 +3039,8 @@
     "ko": 21
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 5664032
  },
  {
   "repo": "ai_cube_lab",
@@ -3871,7 +3885,8 @@
     "ko": 17
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 11680796
  },
  {
   "repo": "AI_for_cement_produce",
@@ -3988,7 +4003,8 @@
     "ko": 10
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 10022394
  },
  {
   "repo": "ai_for_cement_produce_07",
@@ -4031,7 +4047,8 @@
    "complete": true,
    "pages_by_lang": {}
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 2835738
  },
  {
   "repo": "ai_for_cement_produce_08",
@@ -4080,7 +4097,8 @@
    "complete": true,
    "pages_by_lang": {}
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 1410819
  },
  {
   "repo": "ai_game_lab",
@@ -4217,7 +4235,8 @@
     "ko": 6
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 5814800
  },
  {
   "repo": "AI_image_classification",
@@ -4318,7 +4337,8 @@
     "ru": 5
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 23114001
  },
  {
   "repo": "ai_in_3d",
@@ -4375,7 +4395,8 @@
     "ko": 4
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 669342
  },
  {
   "repo": "ai_industry_lab",
@@ -4434,7 +4455,8 @@
     "ko": 5
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 6426721
  },
  {
   "repo": "AI_Model_Review",
@@ -4534,7 +4556,8 @@
     "ru": 10
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 27330389
  },
  {
   "repo": "AI_Model_Review_Fruit_fly_special",
@@ -4641,7 +4664,8 @@
     "ru": 5
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 20232066
  },
  {
   "repo": "ai_rendering",
@@ -4961,7 +4985,8 @@
     "vi": 19
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 163403040
  },
  {
   "repo": "ai_text_read_ability",
@@ -5082,7 +5107,8 @@
     "vi": 2
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 7782282
  },
  {
   "repo": "Anomaly_detection_tatics",
@@ -5240,7 +5266,8 @@
     "vi": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 5080496
  },
  {
   "repo": "article_02_crypto_asset_price_predict",
@@ -5351,7 +5378,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 1975689
  },
  {
   "repo": "backprop_lab",
@@ -5408,7 +5436,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 188532
  },
  {
   "repo": "basic_economic_lab",
@@ -5720,7 +5749,8 @@
     "ko": 16
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 24256113
  },
  {
   "repo": "bayesian-statistics-for-data-scientists",
@@ -6051,7 +6081,8 @@
     "ko": 17
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 18469967
  },
  {
   "repo": "blockchain_finance_ch01",
@@ -6125,7 +6156,8 @@
     "ko": 8
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 1386446
  },
  {
   "repo": "blockchain_finance_ch02",
@@ -6199,7 +6231,8 @@
     "ko": 8
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 1460482
  },
  {
   "repo": "blockchain_finance_ch03",
@@ -6273,7 +6306,8 @@
     "ko": 8
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 1533041
  },
  {
   "repo": "cashflow-lab",
@@ -6330,7 +6364,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 650654
  },
  {
   "repo": "catch_phishing",
@@ -6811,7 +6846,8 @@
     "ko": 7
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 6983314
  },
  {
   "repo": "CNN-neural-network-tutorial",
@@ -6864,7 +6900,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 465803
  },
  {
   "repo": "cnn_face_game_lab",
@@ -7198,7 +7235,8 @@
     "ko": 3
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 1699407
  },
  {
   "repo": "covariant_chase_lab",
@@ -7684,7 +7722,8 @@
     "ko": 4
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 3846720
  },
  {
   "repo": "data_base_design",
@@ -8319,7 +8358,8 @@
     "ko": 16
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 36647534
  },
  {
   "repo": "data_science_for_business",
@@ -9647,7 +9687,8 @@
     "ko": 16
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 20748823
  },
  {
   "repo": "data_set_2024_fintech",
@@ -9690,7 +9731,8 @@
    "complete": true,
    "pages_by_lang": {}
   },
-  "has_pages": false
+  "has_pages": false,
+  "size_bytes": 9492
  },
  {
   "repo": "data_to_numbers_lab",
@@ -10309,7 +10351,8 @@
     "ko": 7
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 8383608
  },
  {
   "repo": "data_visualization_lab",
@@ -10405,7 +10448,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 3829316
  },
  {
   "repo": "Data_visuialization_lecture_01",
@@ -10491,7 +10535,8 @@
     "ru": 5
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 18517006
  },
  {
   "repo": "Data_visuialization_lecture_02",
@@ -10577,7 +10622,8 @@
     "ru": 6
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 13384498
  },
  {
   "repo": "Data_visuialization_lecture_03",
@@ -10661,7 +10707,8 @@
     "ru": 6
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 16906803
  },
  {
   "repo": "Data_visuialization_lecture_04",
@@ -10747,7 +10794,8 @@
     "ru": 6
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 8567045
  },
  {
   "repo": "Data_visuialization_lecture_lab",
@@ -10934,7 +10982,8 @@
     "ru": 23
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 34858582
  },
  {
   "repo": "database_01of04",
@@ -10984,7 +11033,8 @@
    "complete": true,
    "pages_by_lang": {}
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 15205
  },
  {
   "repo": "deep_learning_00_neural_net_learns",
@@ -11097,7 +11147,8 @@
     "ru": 8
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 25914999
  },
  {
   "repo": "deep_learning_model_design_lab_01",
@@ -11545,7 +11596,8 @@
     "ko": 12
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 7228480
  },
  {
   "repo": "defense_for_ai_lab",
@@ -11658,7 +11710,8 @@
     "ko": 2
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 2695018
  },
  {
   "repo": "discrete_topology_lab",
@@ -12256,7 +12309,8 @@
     "ko": 31
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 47483475
  },
  {
   "repo": "Distance-metrics-tutorial",
@@ -12421,7 +12475,8 @@
     "vi": 17
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 84884792
  },
  {
   "repo": "drawing_lab_01",
@@ -12492,7 +12547,8 @@
     "ko": 8
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 20421920
  },
  {
   "repo": "drawing_lab_02",
@@ -12563,7 +12619,8 @@
     "ko": 8
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 25182046
  },
  {
   "repo": "drawing_lab_03",
@@ -12634,7 +12691,8 @@
     "ko": 8
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 39420475
  },
  {
   "repo": "drawing_lab_04",
@@ -12705,7 +12763,8 @@
     "ko": 8
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 25425246
  },
  {
   "repo": "drawing_lab_05",
@@ -12778,7 +12837,8 @@
     "ko": 10
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 27096583
  },
  {
   "repo": "drawing_lab_06",
@@ -12853,7 +12913,8 @@
     "ko": 11
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 122752490
  },
  {
   "repo": "drawing_lab_fun",
@@ -12924,7 +12985,8 @@
     "ko": 8
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 22277138
  },
  {
   "repo": "drawing_lab_fun_02",
@@ -12997,7 +13059,8 @@
     "ko": 9
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 14531730
  },
  {
   "repo": "Dropout-neural-network-tutorial",
@@ -13050,7 +13113,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 629174
  },
  {
   "repo": "drug-crime-social-cost",
@@ -13103,7 +13167,8 @@
     "ko": 5
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 22906410
  },
  {
   "repo": "economics_lab",
@@ -13298,7 +13363,8 @@
     "vi": 4
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 3856870
  },
  {
   "repo": "fabric_ai_project",
@@ -13360,7 +13426,8 @@
     "ko": 16
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 7642470
  },
  {
   "repo": "fintech_data_analysis",
@@ -13708,7 +13775,8 @@
     "ko": 17
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 277657408
  },
  {
   "repo": "Fish_Market_Data_Machine_Learning",
@@ -13815,7 +13883,8 @@
     "ru": 6
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 19530555
  },
  {
   "repo": "fish_market_learning_epoch_etc",
@@ -14031,7 +14100,8 @@
     "ko": 6
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 26723118
  },
  {
   "repo": "fof-money-meridian-",
@@ -14262,7 +14332,8 @@
     "ko": 6
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 8332385
  },
  {
   "repo": "fruitfly-lab-expressions",
@@ -14346,7 +14417,8 @@
     "ko": 9
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 334009128
  },
  {
   "repo": "g2b-bid-strategy",
@@ -14399,7 +14471,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 60031456
  },
  {
   "repo": "Gen_AI_Hannam_univ",
@@ -14458,7 +14531,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 8084273
  },
  {
   "repo": "Gen_AI_strategy_ch05",
@@ -14540,7 +14614,8 @@
     "ko": 2
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 1302032
  },
  {
   "repo": "Gen_AI_strategy_ch06",
@@ -14618,7 +14693,8 @@
     "ko": 2
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 650871
  },
  {
   "repo": "generative-ai-prompt-strategy",
@@ -14735,7 +14811,8 @@
     "ko": 4
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 2278459
  },
  {
   "repo": "google-sheets-lab",
@@ -14893,7 +14970,8 @@
     "ko": 12
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 11188993
  },
  {
   "repo": "graph_theory_lab",
@@ -15077,7 +15155,8 @@
     "ko": 12
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 5825776
  },
  {
   "repo": "green_route",
@@ -15130,7 +15209,8 @@
     "ko": 4
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 108754
  },
  {
   "repo": "health_stats_lab",
@@ -15437,7 +15517,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 2949354
  },
  {
   "repo": "hello_space_lab",
@@ -15541,7 +15622,8 @@
     "ko": 8
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 8241089
  },
  {
   "repo": "hilbert_space_lab",
@@ -15615,7 +15697,8 @@
     "ko": 4
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 2544167
  },
  {
   "repo": "how_to_make_ai_model_factory_version",
@@ -15827,7 +15910,8 @@
     "ko": 7
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 10963424
  },
  {
   "repo": "how_to_start_db",
@@ -15902,7 +15986,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 859821
  },
  {
   "repo": "iclr2027_top3_lab_review",
@@ -16040,7 +16125,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 4111376
  },
  {
   "repo": "industrial-accident-prediction",
@@ -16500,7 +16586,8 @@
     "ko": 7
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 6369204
  },
  {
   "repo": "inference_engineering_study",
@@ -16888,7 +16975,8 @@
     "vi": 2
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 38986542
  },
  {
   "repo": "inference_engineering_study_week_01_article_01",
@@ -17009,7 +17097,8 @@
     "vi": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 14451900
  },
  {
   "repo": "inference_engineering_study_week_01_textbook_ch00",
@@ -17155,7 +17244,8 @@
     "vi": 2
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 5755590
  },
  {
   "repo": "inference_engineering_study_week_01_textbook_preface",
@@ -17321,7 +17411,8 @@
     "vi": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 6496390
  },
  {
   "repo": "inference_engineering_study_week_02_textbook_ch02_p1_p2",
@@ -17458,7 +17549,8 @@
     "vi": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 12027487
  },
  {
   "repo": "inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide",
@@ -17535,7 +17627,8 @@
     "ko": 3
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 3041178
  },
  {
   "repo": "inference_engineering_study_week_03_article_01",
@@ -17647,7 +17740,8 @@
     "ko": 2
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 6603190
  },
  {
   "repo": "inference_engineering_study_week_03_textbook_ch02_p3_to_end",
@@ -17730,7 +17824,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 1341609
  },
  {
   "repo": "inference_korea_study_page",
@@ -17805,7 +17900,8 @@
     "zh": 4
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 664600
  },
  {
   "repo": "insurtech__case_classification_model_01",
@@ -17890,7 +17986,8 @@
     "ko": 8
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 4512879
  },
  {
   "repo": "insurtech__case_classification_model_02",
@@ -17972,7 +18069,8 @@
     "ko": 7
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 8527341
  },
  {
   "repo": "insurtech__case_regreesion_model_01",
@@ -18055,7 +18153,8 @@
     "ko": 8
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 3435979
  },
  {
   "repo": "insurtech__case_regreesion_model_02",
@@ -18137,7 +18236,8 @@
     "ko": 7
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 3439424
  },
  {
   "repo": "karpathy_method_korean",
@@ -18299,7 +18399,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 1972773
  },
  {
   "repo": "kma_2023_01",
@@ -18521,7 +18622,8 @@
     "ko": 6
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 5317653
  },
  {
   "repo": "kwangju_data_learn",
@@ -18859,7 +18961,8 @@
     "ko": 15
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 18822285
  },
  {
   "repo": "lagrange_multiplier_lab",
@@ -18932,7 +19035,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 1991475
  },
  {
   "repo": "lagrangian_hamiltonian_lab",
@@ -19005,7 +19109,8 @@
     "ko": 9
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 3279328
  },
  {
   "repo": "learn-pandas-visually_korean",
@@ -19070,7 +19175,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 1345754
  },
  {
   "repo": "learn-python-by-doing",
@@ -19121,7 +19227,8 @@
    "complete": true,
    "pages_by_lang": {}
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 1481348
  },
  {
   "repo": "learn-python-by-doing_Korean",
@@ -19191,7 +19298,8 @@
     "ko": 53
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 8023596
  },
  {
   "repo": "likelihood_vs_probability",
@@ -19200,7 +19308,7 @@
   "repo_url": "https://github.com/adminmrobo/likelihood_vs_probability",
   "pages_url": "https://adminmrobo.github.io/likelihood_vs_probability/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T09:10:34Z",
+  "pushed_at": "2026-11-27T10:56:57Z",
   "has_manifest": true,
   "covers": [
    {
@@ -19396,7 +19504,8 @@
     "ko": 2
    }
   },
-  "has_pages": false
+  "has_pages": false,
+  "size_bytes": 25320693
  },
  {
   "repo": "llm_applied_lab",
@@ -19931,7 +20040,8 @@
     "ko": 5
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 5679111
  },
  {
   "repo": "LLM_evaluation",
@@ -20047,7 +20157,8 @@
     "vi": 2
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 6027842
  },
  {
   "repo": "llm_memory_trilogy",
@@ -20212,7 +20323,8 @@
     "ko": 19
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 7540558
  },
  {
   "repo": "LLM_summary_note",
@@ -20435,7 +20547,8 @@
     "ko": 2
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 2573363
  },
  {
   "repo": "LoRA-fine-tuning-tutorial",
@@ -20488,7 +20601,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 488950
  },
  {
   "repo": "machine_learning_in_3d",
@@ -20545,7 +20659,8 @@
     "ko": 3
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 594249
  },
  {
   "repo": "machine_learning_model_atlas",
@@ -20604,7 +20719,8 @@
     "ko": 2
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 476387
  },
  {
   "repo": "markov_player",
@@ -20682,7 +20798,8 @@
     "ko": 2
    }
   },
-  "has_pages": false
+  "has_pages": false,
+  "size_bytes": 1144163
  },
  {
   "repo": "math_basic_for_ai_dictionary",
@@ -20840,7 +20957,8 @@
     "ko": 17
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 35427702
  },
  {
   "repo": "math_for_ai_lab",
@@ -21253,7 +21371,8 @@
     "ko": 4
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 3924413
  },
  {
   "repo": "micro_economics",
@@ -21788,7 +21907,8 @@
     "ko": 49
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 39903668
  },
  {
   "repo": "minkowski_space_lab",
@@ -21872,7 +21992,8 @@
     "ko": 3
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 5059347
  },
  {
   "repo": "ML_00_Algorithm-family-build_00",
@@ -22139,7 +22260,8 @@
    "complete": true,
    "pages_by_lang": {}
   },
-  "has_pages": false
+  "has_pages": false,
+  "size_bytes": 34337741
  },
  {
   "repo": "ML_00_Algorithm-family-build_01",
@@ -22323,7 +22445,8 @@
     "ru": 8
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 39779512
  },
  {
   "repo": "ML_00_Algorithm-family-build_02",
@@ -22467,7 +22590,8 @@
     "ru": 7
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 29659066
  },
  {
   "repo": "ML_00_Algorithm-family-build_03",
@@ -22617,7 +22741,8 @@
     "ru": 7
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 29863336
  },
  {
   "repo": "ML_model_hiring_committee",
@@ -22832,7 +22957,8 @@
     "ru": 34
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 196054888
  },
  {
   "repo": "money-robo_news_rebuild",
@@ -22887,7 +23013,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 223587
  },
  {
   "repo": "motion_ai_series_01",
@@ -22989,7 +23116,8 @@
     "ru": 6
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 56230430
  },
  {
   "repo": "moving_factory_dashboard",
@@ -23222,7 +23350,8 @@
     "ko": 12
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 8500562
  },
  {
   "repo": "my_article_00_Korean_stockmarket_volatility_study",
@@ -23355,7 +23484,8 @@
     "ko": 24
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 10151165
  },
  {
   "repo": "my_article_01_bitcoin_price_analytics",
@@ -23450,7 +23580,8 @@
     "vi": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 3735949
  },
  {
   "repo": "my_article_02_crypto_predict_model_analytics",
@@ -23579,7 +23710,8 @@
     "vi": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 16320493
  },
  {
   "repo": "my_article_03_drug-slang-detection",
@@ -23684,7 +23816,8 @@
     "vi": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 19981253
  },
  {
   "repo": "my_article_04_adversarial_finance_attack",
@@ -23812,7 +23945,8 @@
     "vi": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 45219057
  },
  {
   "repo": "my_article_05_consumer_expenditure_predict",
@@ -23917,7 +24051,8 @@
     "vi": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 31943016
  },
  {
   "repo": "my_article_06_AI_effect_to_labor_demand",
@@ -24019,7 +24154,8 @@
     "vi": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 1771015
  },
  {
   "repo": "my_article_07_media_blockchain",
@@ -24157,7 +24293,8 @@
     "vi": 5
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 27951127
  },
  {
   "repo": "my_article_08_poll_reweighting_lab",
@@ -24319,7 +24456,8 @@
     "ko": 3
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 3373370
  },
  {
   "repo": "my_document_01",
@@ -24372,7 +24510,8 @@
     "ko": 3
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 60073
  },
  {
   "repo": "nabla_field_lab",
@@ -24435,7 +24574,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 951995
  },
  {
   "repo": "neural_network_atlas",
@@ -24541,7 +24681,8 @@
     "vi": 6
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 10125827
  },
  {
   "repo": "neural_see_lab",
@@ -24669,7 +24810,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 1483535
  },
  {
   "repo": "neuralink_animal_brain_ai",
@@ -24837,7 +24979,8 @@
     "ko": 2
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 945271
  },
  {
   "repo": "neuron_reaction",
@@ -25226,7 +25369,8 @@
     "ko": 5
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 12130447
  },
  {
   "repo": "nlp20_five_floor_map",
@@ -25340,7 +25484,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 992311
  },
  {
   "repo": "one_day_deep_learning",
@@ -25561,7 +25706,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 725742
  },
  {
   "repo": "one_day_machine_learning",
@@ -25739,7 +25885,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 805056
  },
  {
   "repo": "ontology_kg_vfx",
@@ -25801,7 +25948,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 591086
  },
  {
   "repo": "ontology_trend_report",
@@ -25863,7 +26011,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 649056
  },
  {
   "repo": "optimization_3d_map",
@@ -26141,7 +26290,8 @@
     "ko": 7
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 14988400
  },
  {
   "repo": "optimization_test_lab",
@@ -26203,7 +26353,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 1266598
  },
  {
   "repo": "polygon_series_lab",
@@ -26358,7 +26509,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 1752752
  },
  {
   "repo": "probability_distribution_dictionary",
@@ -26429,7 +26581,8 @@
     "ko": 9
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 21669902
  },
  {
   "repo": "python-accounting-analytics",
@@ -26680,7 +26833,8 @@
     "ko": 14
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 13136250
  },
  {
   "repo": "python_machine_learning_lab",
@@ -27026,7 +27180,8 @@
     "zh": 17
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 37437734
  },
  {
   "repo": "Recursive-Self-Improvement",
@@ -27350,7 +27505,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 4305104
  },
  {
   "repo": "Regression_model_lab_01",
@@ -27578,7 +27734,8 @@
     "ko": 8
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 8802164
  },
  {
   "repo": "Regression_ridge_lasso",
@@ -27798,7 +27955,8 @@
     "vi": 2
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 7207335
  },
  {
   "repo": "Reinforcement-Learning-lab_project_01",
@@ -28371,7 +28529,8 @@
     "ko": 10
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 14208648
  },
  {
   "repo": "riemann_frontiers_lab",
@@ -28426,7 +28585,8 @@
     "ko": 2
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 3433111
  },
  {
   "repo": "riemann_hypothesis_lab",
@@ -28505,7 +28665,8 @@
     "ko": 3
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 9021037
  },
  {
   "repo": "rulebase_to_agent",
@@ -28693,7 +28854,8 @@
     "vi": 16
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 67642896
  },
  {
   "repo": "smart_factory_world",
@@ -28787,7 +28949,8 @@
     "ko": 4
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 855204
  },
  {
   "repo": "smart_product",
@@ -29188,7 +29351,8 @@
     "ko": 25
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 5547748
  },
  {
   "repo": "statistics_note",
@@ -29531,7 +29695,8 @@
     "ko": 29
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 27431460
  },
  {
   "repo": "statistics_note_ch04_02",
@@ -29638,7 +29803,8 @@
     "ko": 2
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 1265428
  },
  {
   "repo": "Stochastic_labs",
@@ -30370,7 +30536,8 @@
     "ko": 15
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 10966140
  },
  {
   "repo": "structure_first_drawing_lab_01",
@@ -30872,7 +31039,8 @@
     "ko": 8
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 16903808
  },
  {
   "repo": "structure_first_drawing_lab_02",
@@ -31000,7 +31168,8 @@
     "ko": 6
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 6313791
  },
  {
   "repo": "test",
@@ -31086,7 +31255,8 @@
    "complete": true,
    "pages_by_lang": {}
   },
-  "has_pages": false
+  "has_pages": false,
+  "size_bytes": 17220
  },
  {
   "repo": "timer_ver001",
@@ -31177,7 +31347,8 @@
     "vi": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 37308960
  },
  {
   "repo": "timeseries-trilogy",
@@ -31705,7 +31876,8 @@
     "ko": 23
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 48883992
  },
  {
   "repo": "topology_ai_lab",
@@ -32743,7 +32915,8 @@
     "ko": 17
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 10258796
  },
  {
   "repo": "unsupervised_fish_lab",
@@ -33146,7 +33319,8 @@
     "ko": 6
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 7756112
  },
  {
   "repo": "usa_stock_reporter_project_python_version",
@@ -33189,7 +33363,8 @@
    "complete": true,
    "pages_by_lang": {}
   },
-  "has_pages": false
+  "has_pages": false,
+  "size_bytes": 557279
  },
  {
   "repo": "valuation_without_revenue",
@@ -33255,7 +33430,8 @@
     "ko": 4
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 1349617
  },
  {
   "repo": "vector_analysis_lab",
@@ -33354,7 +33530,8 @@
     "ko": 9
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 2969372
  },
  {
   "repo": "vector_calculus_lab",
@@ -33734,7 +33911,8 @@
     "ko": 9
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 3997499
  },
  {
   "repo": "vector_db_lab",
@@ -34318,7 +34496,8 @@
     "ko": 9
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 13675170
  },
  {
   "repo": "what_is_p_value_lab",
@@ -34440,7 +34619,8 @@
     "ko": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 1994538
  },
  {
   "repo": "what_is_tensor",
@@ -34581,7 +34761,8 @@
     "ko": 7
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 8971709
  },
  {
   "repo": "who_am_i",
@@ -34659,7 +34840,8 @@
     "ru": 1
    }
   },
-  "has_pages": true
+  "has_pages": true,
+  "size_bytes": 5032985
  },
  {
   "repo": "who_am_i_package",
@@ -34718,6 +34900,7 @@
     "ko": 2
    }
   },
-  "has_pages": false
+  "has_pages": false,
+  "size_bytes": 6789938
  }
 ]
