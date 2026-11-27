@@ -1007,7 +1007,7 @@
    "summary": "벡터와 행렬을 처음 배우는 분을 위한 분류 모델 해설 시리즈. 운동장 지도 위에서 초파리 팀과 주판봇 팀이 LDA, KNN, SVM·SVC, 커널로 겨룹니다.",
    "cat": "머신러닝",
    "mid": "머신러닝 모델",
-   "sub": "",
+   "sub": "머신러닝  모델",
    "kind": "repo",
    "repo_url": "https://github.com/adminmrobo/knn_svc_svm_lab",
    "site_url": "https://adminmrobo.github.io/knn_svc_svm_lab/",
@@ -1022,7 +1022,7 @@
    "summary": "파이썬 머신러닝 연구소 — 15층 건물을 한 주에 한 층씩. 초파리팀과 주판봇팀이 발표·상담·대항전으로 머신러닝을 처음부터 풀어 주는 강의 해설 (2026-2학기 파이썬머신러닝).",
    "cat": "머신러닝",
    "mid": "머신러닝 모델",
-   "sub": "",
+   "sub": "머신러닝  모델",
    "kind": "repo",
    "repo_url": "https://github.com/adminmrobo/python_machine_learning_lab",
    "site_url": "https://adminmrobo.github.io/python_machine_learning_lab/",
@@ -1137,7 +1137,7 @@
    "summary": "어시장 물고기 1,554마리의 종 이름표를 덮고 묶기(군집화)·접기(PCA)·맞히기(자기지도학습)를 기초부터 배우는 연구실 해설 시리즈. 지도학습과 나란히 비교.",
    "cat": "머신러닝",
    "mid": "프로그래밍",
-   "sub": "",
+   "sub": "머신러닝  모델",
    "kind": "repo",
    "repo_url": "https://github.com/adminmrobo/unsupervised_fish_lab",
    "site_url": "https://adminmrobo.github.io/unsupervised_fish_lab/",
@@ -1181,66 +1181,6 @@
     "ko"
    ],
    "thumb": "thumbs/repos/neuralink_animal_brain_ai.jpg"
-  },
-  {
-   "title": "하루의 실험실 : 뉴런의 드롭아웃",
-   "summary": "실험조수 하루가 드롭아웃 실험(1-64-1 tanh 망, 60,000 스텝)을 다시 돌려 숫자와 그림으로 설명합니다.",
-   "cat": "딥러닝·뇌과학",
-   "mid": "딥러닝 모델",
-   "sub": "",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/Dropout-neural-network-tutorial",
-   "site_url": "https://adminmrobo.github.io/Dropout-neural-network-tutorial/",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "thumbs/cats/C02-M2.webp"
-  },
-  {
-   "title": "딥러닝 설계도면 연구실 01 — 하루·모아·시아가 직접 그린 딥러닝 설계도면 9장 + 감수",
-   "summary": "조수 하루, 인턴 모아·시아가 딥러닝 모델 9종을 한 장씩 설계도면으로 그려 전달하고, 초파리와 주판봇이 총괄 도면을 감수한다.",
-   "cat": "딥러닝·뇌과학",
-   "mid": "딥러닝 모델",
-   "sub": "",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/deep_learning_model_design_lab_01",
-   "site_url": "https://adminmrobo.github.io/deep_learning_model_design_lab_01/",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "thumbs/repos/deep_learning_model_design_lab_01.jpg"
-  },
-  {
-   "title": "하루의 실험실 : 필터를 미끄러뜨리는 망 (CNN)",
-   "summary": "실험조수 하루가 CNN 실험(16x16 고양이·개·여우, 3x3 필터 4→8개, 40바퀴)을 다시 돌려, 옮긴 그림에서 일반 망 25.8%·CNN 98.0% 정답률을 숫자와 그림으로 설명합니다.",
-   "cat": "딥러닝·뇌과학",
-   "mid": "딥러닝 모델",
-   "sub": "",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/CNN-neural-network-tutorial",
-   "site_url": "https://adminmrobo.github.io/CNN-neural-network-tutorial/",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "thumbs/cats/C02-M2.webp"
-  },
-  {
-   "title": "하루의 실험실 : 얼려 두고 덧붙이는 LoRA",
-   "summary": "실험조수 하루가 LoRA 실험(256-128-10 숫자 읽는 망, 뒤집은 숫자 과제)을 다시 돌려 숫자와 그림, 3D 좌표로 설명합니다.",
-   "cat": "딥러닝·뇌과학",
-   "mid": "딥러닝 모델",
-   "sub": "",
-   "kind": "repo",
-   "repo_url": "https://github.com/adminmrobo/LoRA-fine-tuning-tutorial",
-   "site_url": "https://adminmrobo.github.io/LoRA-fine-tuning-tutorial/",
-   "link": "",
-   "langs": [
-    "ko"
-   ],
-   "thumb": "thumbs/cats/C02-M2.webp"
   },
   {
    "title": "뉴런 반응 연구실 · 신경망 칸은 어떻게 반응하고 배울까",
@@ -1349,6 +1289,51 @@
    "thumb": "thumbs/cats/C02-M2.webp"
   },
   {
+   "title": "하루의 실험실 : 뉴런의 드롭아웃",
+   "summary": "실험조수 하루가 드롭아웃 실험(1-64-1 tanh 망, 60,000 스텝)을 다시 돌려 숫자와 그림으로 설명합니다.",
+   "cat": "딥러닝·뇌과학",
+   "mid": "딥러닝 모델",
+   "sub": "실습 및 해설",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/Dropout-neural-network-tutorial",
+   "site_url": "https://adminmrobo.github.io/Dropout-neural-network-tutorial/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/cats/C02-M2.webp"
+  },
+  {
+   "title": "딥러닝 설계도면 연구실 01 — 하루·모아·시아가 직접 그린 딥러닝 설계도면 9장 + 감수",
+   "summary": "조수 하루, 인턴 모아·시아가 딥러닝 모델 9종을 한 장씩 설계도면으로 그려 전달하고, 초파리와 주판봇이 총괄 도면을 감수한다.",
+   "cat": "딥러닝·뇌과학",
+   "mid": "딥러닝 모델",
+   "sub": "실습 및 해설",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/deep_learning_model_design_lab_01",
+   "site_url": "https://adminmrobo.github.io/deep_learning_model_design_lab_01/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/deep_learning_model_design_lab_01.jpg"
+  },
+  {
+   "title": "하루의 실험실 : 필터를 미끄러뜨리는 망 (CNN)",
+   "summary": "실험조수 하루가 CNN 실험(16x16 고양이·개·여우, 3x3 필터 4→8개, 40바퀴)을 다시 돌려, 옮긴 그림에서 일반 망 25.8%·CNN 98.0% 정답률을 숫자와 그림으로 설명합니다.",
+   "cat": "딥러닝·뇌과학",
+   "mid": "딥러닝 모델",
+   "sub": "실습 및 해설",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/CNN-neural-network-tutorial",
+   "site_url": "https://adminmrobo.github.io/CNN-neural-network-tutorial/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/cats/C02-M2.webp"
+  },
+  {
    "title": "역전파 연구실 · 손잡이 33개를 한 번에 돌리는 법",
    "summary": "2012년 워싱턴 DC 자전거 대여 366일을 기온 하나로 맞히는 작은 신경망(손잡이 33개)으로, 손잡이 하나씩·무작위·역전파 세 학습 방법을 같은 조건에서 비교한 실험 노트. 역전파는 같은 답을 훨씬 싸게 내고, 손잡이가 늘수록 역전파만 남는다. 텐서 연구실 → 활성화 함수에 이어지는 편.",
    "cat": "딥러닝·뇌과학",
@@ -1357,6 +1342,21 @@
    "kind": "repo",
    "repo_url": "https://github.com/adminmrobo/backprop_lab",
    "site_url": "https://adminmrobo.github.io/backprop_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/cats/C02-M2.webp"
+  },
+  {
+   "title": "하루의 실험실 : 얼려 두고 덧붙이는 LoRA",
+   "summary": "실험조수 하루가 LoRA 실험(256-128-10 숫자 읽는 망, 뒤집은 숫자 과제)을 다시 돌려 숫자와 그림, 3D 좌표로 설명합니다.",
+   "cat": "딥러닝·뇌과학",
+   "mid": "딥러닝 모델",
+   "sub": "좌표 공간(space)",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/LoRA-fine-tuning-tutorial",
+   "site_url": "https://adminmrobo.github.io/LoRA-fine-tuning-tutorial/",
    "link": "",
    "langs": [
     "ko"
@@ -3835,7 +3835,7 @@
     "픽셀에서 실사",
     "빛과 주름"
    ],
-   "image": "thumbs/repos/adminmrobo-structure_first_drawing_lab.jpg"
+   "image": "thumbs/cats/subs/character-design.webp"
   },
   {
    "cat": "LLM·추론 엔지니어링",
@@ -3847,7 +3847,7 @@
     "도구 사용",
     "하루봇"
    ],
-   "image": "thumbs/repos/agentic_ai_crash_guide.jpg"
+   "image": "thumbs/cats/subs/ai-agents.webp"
   },
   {
    "cat": "LLM·추론 엔지니어링",
@@ -3859,7 +3859,7 @@
     "TF-IDF",
     "단어 임베딩"
    ],
-   "image": "thumbs/repos/ai-nlp-data-analysis.jpg"
+   "image": "thumbs/cats/subs/nlp.webp"
   },
   {
    "cat": "LLM·추론 엔지니어링",
@@ -3871,7 +3871,7 @@
     "자기개선",
     "모델 붕괴"
    ],
-   "image": "thumbs/repos/Recursive-Self-Improvement.jpg"
+   "image": "thumbs/cats/subs/recursive-self-improvement.webp"
   },
   {
    "cat": "경제·수학·최적화",
@@ -3883,7 +3883,7 @@
     "수요와 공급",
     "탄력성"
    ],
-   "image": "thumbs/repos/basic_economic_lab.jpg"
+   "image": "thumbs/cats/subs/principles-of-economics.webp"
   },
   {
    "cat": "경제·수학·최적화",
@@ -3895,7 +3895,7 @@
     "노동수요",
     "임금"
    ],
-   "image": "thumbs/repos/labor_economics.jpg"
+   "image": "thumbs/cats/subs/labor-economics.webp"
   },
   {
    "cat": "경제·수학·최적화",
@@ -3907,7 +3907,7 @@
     "게임이론",
     "일반균형"
    ],
-   "image": "thumbs/repos/micro_economics.jpg"
+   "image": "thumbs/cats/subs/microeconomics.webp"
   },
   {
    "cat": "경제·수학·최적화",
@@ -3919,7 +3919,7 @@
     "기울기 ∇",
     "벡터 DB"
    ],
-   "image": "thumbs/repos/vector_db_lab.jpg"
+   "image": "thumbs/cats/subs/vector-calculus.webp"
   },
   {
    "cat": "경제·수학·최적화",
@@ -3931,7 +3931,7 @@
     "연결망",
     "최단 경로"
    ],
-   "image": "thumbs/repos/graph_theory_lab.jpg"
+   "image": "thumbs/cats/subs/graph-theory.webp"
   },
   {
    "cat": "경제·수학·최적화",
@@ -3943,7 +3943,7 @@
     "0/0",
     "미분"
    ],
-   "image": "thumbs/repos/adminmrobo-lhopital_lab.jpg"
+   "image": "thumbs/cats/subs/lhopitals-rule.webp"
   },
   {
    "cat": "경제·수학·최적화",
@@ -3955,7 +3955,7 @@
     "소수",
     "제타 함수"
    ],
-   "image": "thumbs/repos/riemann_hypothesis_lab.jpg"
+   "image": "thumbs/cats/subs/riemann-hypothesis.webp"
   },
   {
    "cat": "경제·수학·최적화",
@@ -3967,7 +3967,7 @@
     "미분·적분",
     "공변미분"
    ],
-   "image": "thumbs/repos/covariant_chase_lab.jpg"
+   "image": "thumbs/cats/subs/calculus.webp"
   },
   {
    "cat": "경제·수학·최적화",
@@ -3979,7 +3979,7 @@
     "행렬",
     "벡터"
    ],
-   "image": "thumbs/repos/math_for_ai_lab.jpg"
+   "image": "thumbs/cats/subs/math-basics.webp"
   },
   {
    "cat": "경제·수학·최적화",
@@ -3991,7 +3991,7 @@
     "군론",
     "탐색"
    ],
-   "image": "thumbs/repos/ai_cube_lab.jpg"
+   "image": "thumbs/cats/subs/applied-math.webp"
   },
   {
    "cat": "경제·수학·최적화",
@@ -4003,7 +4003,7 @@
     "안장점",
     "학습률"
    ],
-   "image": "thumbs/repos/optimization_3d_map.jpg"
+   "image": "thumbs/cats/subs/applied-math-optimization.webp"
   },
   {
    "cat": "경제·수학·최적화",
@@ -4015,7 +4015,7 @@
     "이산 위상",
     "연결성"
    ],
-   "image": "thumbs/repos/topology_ai_lab.jpg"
+   "image": "thumbs/cats/subs/topology.webp"
   },
   {
    "cat": "경제·수학·최적화",
@@ -4027,7 +4027,7 @@
     "확률·베이즈",
     "행렬"
    ],
-   "image": "thumbs/repos/math_basic_for_ai_dictionary.jpg"
+   "image": "thumbs/cats/subs/math-for-ai.webp"
   },
   {
    "cat": "경제·수학·최적화",
@@ -4039,7 +4039,7 @@
     "힐베르트 공간",
     "좌표계"
    ],
-   "image": "thumbs/repos/hello_space_lab.jpg"
+   "image": "thumbs/cats/subs/coordinate-space.webp"
   },
   {
    "cat": "경제·수학·최적화",
@@ -4051,7 +4051,7 @@
     "라그랑주 승수",
     "제약 최적화"
    ],
-   "image": "thumbs/repos/lagrangian_hamiltonian_lab.jpg"
+   "image": "thumbs/cats/subs/optimization-methods.webp"
   },
   {
    "cat": "금융·핀테크·블록체인",
@@ -4063,7 +4063,7 @@
     "모델 평가",
     "시계열"
    ],
-   "image": "thumbs/repos/fintech_data_analysis.jpg"
+   "image": "thumbs/cats/subs/data-analysis.webp"
   },
   {
    "cat": "머신러닝",
@@ -4075,7 +4075,7 @@
     "추론 모델",
     "에이전트"
    ],
-   "image": "thumbs/repos/rulebase_to_agent.jpg"
+   "image": "thumbs/cats/subs/rule-base-to-agents.webp"
   },
   {
    "cat": "연구실 운영",
@@ -4087,7 +4087,7 @@
     "결과물 평가",
     "온톨로지"
    ],
-   "image": "thumbs/repos/ahnboat_ontology_feed.jpg"
+   "image": "thumbs/cats/subs/ontology-use.webp"
   },
   {
    "cat": "연구실 운영",
@@ -4099,7 +4099,7 @@
     "픽셀아트",
     "루프 영상"
    ],
-   "image": "thumbs/cats/C10-M1.webp"
+   "image": "thumbs/cats/subs/lab-duty.webp"
   },
   {
    "cat": "연구실 운영",
@@ -4111,7 +4111,7 @@
     "알림음",
     "전체 화면"
    ],
-   "image": "thumbs/cats/C10-M2.webp"
+   "image": "thumbs/cats/subs/timer.webp"
   },
   {
    "cat": "인공지능 응용",
@@ -4123,7 +4123,7 @@
     "분류 모델",
     "모델 대회"
    ],
-   "image": "thumbs/repos/catch_phishing.jpg"
+   "image": "thumbs/cats/subs/phishing.webp"
   },
   {
    "cat": "인공지능 응용",
@@ -4135,7 +4135,7 @@
     "재활 예측",
     "정확도의 함정"
    ],
-   "image": "thumbs/repos/industrial-accident-prediction.jpg"
+   "image": "thumbs/cats/subs/ml-models.webp"
   },
   {
    "cat": "인공지능 응용",
@@ -4147,7 +4147,7 @@
     "베이지안 추론",
     "되묻는 로봇"
    ],
-   "image": "thumbs/repos/Reinforcement-Learning-lab_project_01.jpg"
+   "image": "thumbs/cats/subs/ai-robotics.webp"
   },
   {
    "cat": "인공지능 응용",
@@ -4159,7 +4159,7 @@
     "불량 예측",
     "스마트팩토리"
    ],
-   "image": "thumbs/repos/how_to_make_ai_model_factory_version.jpg"
+   "image": "thumbs/cats/subs/ai-manufacturing-smart-factory.webp"
   },
   {
    "cat": "인공지능 응용",
@@ -4171,7 +4171,7 @@
     "임상시험",
     "신약 허가"
    ],
-   "image": "thumbs/repos/health_stats_lab.jpg"
+   "image": "thumbs/cats/subs/medical-ai.webp"
   },
   {
    "cat": "통계·데이터 기초",
@@ -4183,7 +4183,7 @@
     "ER 모델링",
     "정규화"
    ],
-   "image": "thumbs/repos/data_base_design.jpg"
+   "image": "thumbs/cats/subs/database-design.webp"
   }
  ]
 }
