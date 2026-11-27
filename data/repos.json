@@ -1902,7 +1902,7 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_ontology_feed",
   "pages_url": "https://adminmrobo.github.io/ahnboat_ontology_feed/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T06:23:32Z",
+  "pushed_at": "2026-11-27T10:52:32Z",
   "has_manifest": false,
   "covers": [
    {
@@ -12259,6 +12259,49 @@
   "has_pages": true
  },
  {
+  "repo": "Distance-metrics-tutorial",
+  "series_ko": "Distance-metrics-tutorial",
+  "title_ko": null,
+  "repo_url": "https://github.com/adminmrobo/Distance-metrics-tutorial",
+  "pages_url": "https://adminmrobo.github.io/Distance-metrics-tutorial/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-27T10:44:01Z",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "site_desc": null,
+  "status": "unknown",
+  "checked_at": "2026-11-27",
+  "site_title": null,
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 0,
+   "pages_checked": 0,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [],
+   "count": 0,
+   "pages": {},
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {}
+  },
+  "languages": {
+   "codes": [],
+   "count": 0,
+   "complete": true,
+   "pages_by_lang": {}
+  },
+  "has_pages": false
+ },
+ {
   "repo": "DL_model_hiring_committee",
   "series_ko": "6-0 2차 채용 공고 · 딥러닝 치트시트 | 모델 채용 위원회 2차 공채",
   "title_ko": "6-0 2차 채용 공고 · 딥러닝 치트시트 | 모델 채용 위원회 2차 공채",
@@ -13016,7 +13059,7 @@
   "repo_url": "https://github.com/adminmrobo/drug-crime-social-cost",
   "pages_url": "https://adminmrobo.github.io/drug-crime-social-cost/",
   "default_branch": "main",
-  "pushed_at": "2026-11-24T17:22:43Z",
+  "pushed_at": "2026-11-27T10:49:54Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -14228,7 +14271,7 @@
   "repo_url": "https://github.com/adminmrobo/fruitfly-lab-expressions",
   "pages_url": "https://adminmrobo.github.io/fruitfly-lab-expressions/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T09:30:40Z",
+  "pushed_at": "2026-11-27T10:48:01Z",
   "has_manifest": false,
   "covers": [
    {
@@ -19177,7 +19220,7 @@
      "moa"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "assets/img/og_01.jpg",
@@ -19196,7 +19239,7 @@
      "moa"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
    },
    {
     "path": "assets/img/cover_01b.webp",
@@ -19215,7 +19258,86 @@
      "moa"
     ],
     "robot": "jupanbot-v2",
-    "status": "pending"
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/og_01b.jpg",
+    "role": "og",
+    "id": "og_01b",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/sc_01_duel.webp",
+    "role": "scene",
+    "id": "sc_01_duel",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/sc_01b_trial.webp",
+    "role": "scene",
+    "id": "sc_01b_trial",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/sc_01b_act2.webp",
+    "role": "scene",
+    "id": "sc_01b_act2",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/sc_01_act1.webp",
+    "role": "scene",
+    "id": "sc_01_act1",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [],
+    "robot": "jupanbot-v2",
+    "status": "redo"
+   },
+   {
+    "path": "assets/img/sc_01_act2.webp",
+    "role": "scene",
+    "id": "sc_01_act2",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [],
+    "robot": "jupanbot-v2",
+    "status": "redo"
    }
   ],
   "redraw_count": 0,
