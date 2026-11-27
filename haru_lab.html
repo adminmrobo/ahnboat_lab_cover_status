@@ -80,6 +80,12 @@ html.all .cards{grid-template-columns:repeat(auto-fill,minmax(190px,1fr))}
   var ALL=Q.get('all')==='1';if(ALL)document.documentElement.classList.add('all');
   if(Q.get('theme')==='dark'||Q.get('theme')==='light')document.documentElement.setAttribute('data-theme',Q.get('theme'));
   function el(t,c,txt){var e=document.createElement(t);if(c)e.className=c;if(txt!=null)e.textContent=txt;return e;}
+  /* 홈(ahnboat.xyz)의 주소 라우터 v3가 있으면 회차를 홈 안에서 열고 주소를 #/haru3d/<저장소>로 바꾼다. 없으면 새 탭. */
+  var ROUTER=false;
+  function openIn(ev){if(!ROUTER||ev.ctrlKey||ev.metaKey||ev.shiftKey||ev.button===1)return;var a=ev.currentTarget;if(!a.dataset.key)return;
+    ev.preventDefault();try{window.parent.postMessage({type:'ahnboat-haru-open',key:a.dataset.key,url:a.href,title:a.dataset.title},'*');}catch(e){window.open(a.href,'_blank','noopener');}}
+  window.addEventListener('message',function(e){var d=e.data;if(d&&d.type==='ahnboat-router-hello'&&e.source===window.parent)ROUTER=true;});
+  if(window.parent!==window){try{window.parent.postMessage({type:'ahnboat-route-ready',view:'haru3d',prefix:'haru3d'},'*');}catch(e){}}
   function post(){if(window.parent!==window){try{window.parent.postMessage({type:'ahnboat-catalog-height',height:Math.ceil(document.body.getBoundingClientRect().height),nav:false},'*');}catch(e){}}}
   var T=function(x){return window.AhnI18n?AhnI18n.t.apply(null,arguments):x;},DATA=null;
   function render(d){
@@ -96,7 +102,7 @@ html.all .cards{grid-template-columns:repeat(auto-fill,minmax(190px,1fr))}
     if(more)eps=eps.slice(0,MAX-1);
     eps.forEach(function(e){
       var open=e.status==='open'&&e.url, c=el(open?'a':'div','ep'+(open?'':' soon'));
-      if(open){c.href=e.url;if(window.AhnI18n&&AhnI18n.lang!=='ko'){var m0=/github\.io\/([^\/]+)/.exec(e.url),lk=m0&&AhnI18n.link('https://github.com/adminmrobo/'+m0[1],e.url);if(lk&&lk[1])c.href=lk[0];}c.target='_blank';c.rel='noopener';}else c.setAttribute('aria-label',e.ep+' '+T('준비 중'));
+      if(open){c.href=e.url;if(window.AhnI18n&&AhnI18n.lang!=='ko'){var m0=/github\.io\/([^\/]+)/.exec(e.url),lk=m0&&AhnI18n.link('https://github.com/adminmrobo/'+m0[1],e.url);if(lk&&lk[1])c.href=lk[0];}c.target='_blank';c.rel='noopener';c.dataset.key=(/github\.io\/([^\/]+)/.exec(e.url)||[])[1]||'';c.dataset.title=T(e.ep)+' '+T(e.title);c.addEventListener('click',openIn);}else c.setAttribute('aria-label',e.ep+' '+T('준비 중'));
       var sh=el('div','shot');
       if(open&&e.thumb){var im=el('img');im.src=e.thumb;im.alt='';im.loading='lazy';im.addEventListener('load',post);sh.appendChild(im);}else sh.appendChild(el('span','q','?'));
       sh.appendChild(el('span','no',e.ep));c.appendChild(sh);
