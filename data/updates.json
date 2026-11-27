@@ -9,11 +9,59 @@
  "log": [
   {
    "date": "2026-11-28",
+   "repo": "pacing_problem_lab",
+   "kind": "new",
+   "title": "페이싱 문제 연구실 · 기술·사회·정책 세 가지 속도",
+   "link": "https://adminmrobo.github.io/pacing_problem_lab/",
+   "size": 5101152
+  },
+  {
+   "date": "2026-11-28",
    "repo": "Distance-metrics-tutorial",
    "kind": "update",
    "title": "하루의 실험실 EP.04 1부 : 시아와 모아는 얼마나 멀까 — 공간 속 거리",
    "link": "https://adminmrobo.github.io/Distance-metrics-tutorial/",
-   "size": 385663
+   "size": 530867
+  },
+  {
+   "date": "2026-11-28",
+   "repo": "llm_applied_lab",
+   "kind": "update",
+   "title": "LLM 공식에서 GPT-6까지 · 응용편",
+   "link": "https://adminmrobo.github.io/llm_applied_lab/",
+   "size": 335458
+  },
+  {
+   "date": "2026-11-28",
+   "repo": "CNN-neural-network-tutorial",
+   "kind": "update",
+   "title": "하루의 실험실 : 필터를 미끄러뜨리는 망 (CNN)",
+   "link": "https://adminmrobo.github.io/CNN-neural-network-tutorial/",
+   "size": 102524
+  },
+  {
+   "date": "2026-11-28",
+   "repo": "LoRA-fine-tuning-tutorial",
+   "kind": "update",
+   "title": "하루의 실험실 : 얼려 두고 덧붙이는 LoRA",
+   "link": "https://adminmrobo.github.io/LoRA-fine-tuning-tutorial/",
+   "size": 96467
+  },
+  {
+   "date": "2026-11-28",
+   "repo": "Dropout-neural-network-tutorial",
+   "kind": "update",
+   "title": "하루의 실험실 : 뉴런의 드롭아웃",
+   "link": "https://adminmrobo.github.io/Dropout-neural-network-tutorial/",
+   "size": 94991
+  },
+  {
+   "date": "2026-11-28",
+   "repo": "ahnboat_ontology_feed",
+   "kind": "update",
+   "title": "내 아이디어 검증하기 — ahnboat lab 온톨로지 피드",
+   "link": "https://adminmrobo.github.io/ahnboat_ontology_feed/",
+   "size": 23888
   },
   {
    "date": "2026-11-28",
@@ -21,7 +69,15 @@
    "kind": "update",
    "title": "로피탈 교실 — 0/0의 정체를 밝히는 수업 · 오리엔테이션",
    "link": "https://adminmrobo.github.io/adminmrobo-lhopital_lab/",
-   "size": 14446
+   "size": 17213
+  },
+  {
+   "date": "2026-11-28",
+   "repo": "Tokenization-BPE-tutorial",
+   "kind": "update",
+   "title": "하루의 실험실 EP.05 : 글을 조각으로 — 토큰 나누기(BPE)",
+   "link": "https://adminmrobo.github.io/Tokenization-BPE-tutorial/",
+   "size": 0
   },
   {
    "date": "2026-11-27",
@@ -1178,8 +1234,8 @@
    "size": 1975689
   },
   "CNN-neural-network-tutorial": {
-   "pushed_at": "2026-11-26T14:02:34Z",
-   "size": 465803
+   "pushed_at": "2026-11-27T17:03:49Z",
+   "size": 568327
   },
   "DL_model_hiring_committee": {
    "pushed_at": "2026-11-26T15:09:11Z",
@@ -1190,12 +1246,12 @@
    "size": 34858582
   },
   "Distance-metrics-tutorial": {
-   "pushed_at": "2026-11-27T16:51:03Z",
-   "size": 1064575
+   "pushed_at": "2026-11-27T17:58:08Z",
+   "size": 1209779
   },
   "Dropout-neural-network-tutorial": {
-   "pushed_at": "2026-11-26T13:05:03Z",
-   "size": 629174
+   "pushed_at": "2026-11-27T17:03:45Z",
+   "size": 724165
   },
   "Fish_Market_Data_Machine_Learning": {
    "pushed_at": "2026-11-24T14:16:44Z",
@@ -1222,8 +1278,8 @@
    "size": 2573363
   },
   "LoRA-fine-tuning-tutorial": {
-   "pushed_at": "2026-11-26T13:52:45Z",
-   "size": 488950
+   "pushed_at": "2026-11-27T17:03:47Z",
+   "size": 585417
   },
   "ML_00_Algorithm-family-build_01": {
    "pushed_at": "2026-11-24T14:16:47Z",
@@ -1262,12 +1318,12 @@
    "size": 10966140
   },
   "Tokenization-BPE-tutorial": {
-   "pushed_at": "2026-11-27T13:01:31Z",
+   "pushed_at": "2026-11-27T17:03:51Z",
    "size": 1482138
   },
   "adminmrobo-lhopital_lab": {
-   "pushed_at": "2026-11-27T16:52:24Z",
-   "size": 2402561
+   "pushed_at": "2026-11-27T17:14:27Z",
+   "size": 2399794
   },
   "adminmrobo-structure_first_drawing_lab": {
    "pushed_at": "2026-11-27T03:21:20Z",
@@ -1290,8 +1346,8 @@
    "size": 6292533
   },
   "ahnboat_ontology_feed": {
-   "pushed_at": "2026-11-27T13:40:43Z",
-   "size": 30498993
+   "pushed_at": "2026-11-27T17:11:11Z",
+   "size": 30522881
   },
   "ahnboat_server_room_guards": {
    "pushed_at": "2026-11-23T07:30:57Z",
@@ -1566,8 +1622,8 @@
    "size": 25913360
   },
   "llm_applied_lab": {
-   "pushed_at": "2026-11-27T06:05:55Z",
-   "size": 5679111
+   "pushed_at": "2026-11-27T17:22:24Z",
+   "size": 6014569
   },
   "llm_memory_trilogy": {
    "pushed_at": "2026-11-12T12:58:29Z",
@@ -1688,6 +1744,10 @@
   "optimization_test_lab": {
    "pushed_at": "2026-11-26T15:09:59Z",
    "size": 1266598
+  },
+  "pacing_problem_lab": {
+   "pushed_at": "2026-11-27T13:21:06Z",
+   "size": 5101152
   },
   "polygon_series_lab": {
    "pushed_at": "2026-11-27T04:53:14Z",

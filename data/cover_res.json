@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-28 02:07 KST",
+ "updated": "2026-11-28 07:40 KST",
  "rule": {
   "ok": "가로 1200 px 이상",
   "warn": "가로 960~1199 px",
@@ -8,8 +8,8 @@
  },
  "summary": {
   "ok": 125,
-  "none": 48,
-  "warn": 13,
+  "none": 49,
+  "warn": 16,
   "low": 10
  },
  "repos": {
@@ -18,7 +18,7 @@
    "path": "img/og/og_index.webp",
    "w": 1200,
    "h": 630,
-   "pushed_at": "2026-11-27T16:52:24Z",
+   "pushed_at": "2026-11-27T17:14:27Z",
    "declared": 14,
    "declared_low": 0,
    "grade": "ok"
@@ -78,7 +78,7 @@
    "path": null,
    "w": 0,
    "h": 0,
-   "pushed_at": "2026-11-26T15:07:57Z",
+   "pushed_at": "2026-11-27T17:04:39Z",
    "declared": 0,
    "declared_low": 0,
    "grade": "none"
@@ -118,7 +118,7 @@
    "path": "assets/cover.png",
    "w": 1920,
    "h": 1080,
-   "pushed_at": "2026-11-27T13:40:43Z",
+   "pushed_at": "2026-11-27T17:11:11Z",
    "declared": 0,
    "declared_low": 0,
    "grade": "ok"
@@ -393,12 +393,22 @@
    "declared_low": 0,
    "grade": "ok"
   },
+  "classic_ml_overview_01_lab": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-27T17:16:28Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
   "CNN-neural-network-tutorial": {
    "src": null,
    "path": null,
    "w": 0,
    "h": 0,
-   "pushed_at": "2026-11-26T14:02:34Z",
+   "pushed_at": "2026-11-27T17:03:49Z",
    "declared": 0,
    "declared_low": 0,
    "grade": "none"
@@ -588,7 +598,7 @@
    "path": "images/cover_part1.webp",
    "w": 960,
    "h": 540,
-   "pushed_at": "2026-11-27T16:51:03Z",
+   "pushed_at": "2026-11-27T17:58:08Z",
    "declared": 0,
    "declared_low": 0,
    "grade": "warn"
@@ -688,7 +698,7 @@
    "path": null,
    "w": 0,
    "h": 0,
-   "pushed_at": "2026-11-26T13:05:03Z",
+   "pushed_at": "2026-11-27T17:03:45Z",
    "declared": 0,
    "declared_low": 0,
    "grade": "none"
@@ -862,6 +872,36 @@
    "declared": 0,
    "declared_low": 0,
    "grade": "none"
+  },
+  "haru_3d_classic_learning_model_01_lab": {
+   "src": "name:images/cover.webp",
+   "path": "images/cover.webp",
+   "w": 960,
+   "h": 540,
+   "pushed_at": "2026-11-27T18:18:28Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "warn"
+  },
+  "haru_3d_classic_learning_model_02_lab": {
+   "src": "name:images/cover.webp",
+   "path": "images/cover.webp",
+   "w": 960,
+   "h": 540,
+   "pushed_at": "2026-11-27T18:19:48Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "warn"
+  },
+  "haru_3d_optimization_01": {
+   "src": "name:images/cover_part1.webp",
+   "path": "images/cover_part1.webp",
+   "w": 960,
+   "h": 540,
+   "pushed_at": "2026-11-27T22:02:53Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "warn"
   },
   "health_stats_lab": {
    "src": "manifest:assets/img/cover_01.webp",
@@ -1198,7 +1238,7 @@
    "path": "assets/img/cover_A1.webp",
    "w": 1600,
    "h": 900,
-   "pushed_at": "2026-11-27T06:05:55Z",
+   "pushed_at": "2026-11-27T17:22:24Z",
    "declared": 8,
    "declared_low": 0,
    "grade": "ok"
@@ -1238,7 +1278,7 @@
    "path": null,
    "w": 0,
    "h": 0,
-   "pushed_at": "2026-11-26T13:52:45Z",
+   "pushed_at": "2026-11-27T17:03:47Z",
    "declared": 0,
    "declared_low": 0,
    "grade": "none"
@@ -1858,7 +1898,7 @@
    "path": "images/cover.webp",
    "w": 960,
    "h": 540,
-   "pushed_at": "2026-11-27T13:01:31Z",
+   "pushed_at": "2026-11-27T17:03:51Z",
    "declared": 0,
    "declared_low": 0,
    "grade": "warn"

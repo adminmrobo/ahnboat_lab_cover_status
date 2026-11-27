@@ -6,7 +6,7 @@
   "repo_url": "https://github.com/adminmrobo/adminmrobo-lhopital_lab",
   "pages_url": "https://adminmrobo.github.io/adminmrobo-lhopital_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T16:52:24Z",
+  "pushed_at": "2026-11-27T17:14:27Z",
   "has_manifest": true,
   "covers": [
    {
@@ -322,7 +322,7 @@
    "pages_checked": 14
   },
   "has_pages": true,
-  "size_bytes": 2402561
+  "size_bytes": 2399794
  },
  {
   "repo": "adminmrobo-structure_first_drawing_lab",
@@ -1747,7 +1747,7 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_lab_explainer",
   "pages_url": "https://adminmrobo.github.io/ahnboat_lab_explainer/",
   "default_branch": "main",
-  "pushed_at": "2026-11-26T15:07:57Z",
+  "pushed_at": "2026-11-27T17:04:39Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -1856,7 +1856,7 @@
    "pages_checked": 0
   },
   "has_pages": true,
-  "size_bytes": 38722646
+  "size_bytes": 38746990
  },
  {
   "repo": "ahnboat_lab_gallery",
@@ -2034,7 +2034,7 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_ontology_feed",
   "pages_url": "https://adminmrobo.github.io/ahnboat_ontology_feed/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T13:40:43Z",
+  "pushed_at": "2026-11-27T17:11:11Z",
   "has_manifest": false,
   "covers": [
    {
@@ -2147,7 +2147,7 @@
    "pages_checked": 5
   },
   "has_pages": true,
-  "size_bytes": 30498993
+  "size_bytes": 30522881
  },
  {
   "repo": "ahnboat_server_room_guards",
@@ -7464,13 +7464,65 @@
   "size_bytes": 6983314
  },
  {
+  "repo": "classic_ml_overview_01_lab",
+  "series_ko": "classic_ml_overview_01_lab",
+  "title_ko": null,
+  "repo_url": "https://github.com/adminmrobo/classic_ml_overview_01_lab",
+  "pages_url": "https://adminmrobo.github.io/classic_ml_overview_01_lab/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-27T17:16:28Z",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "site_desc": null,
+  "status": "unknown",
+  "checked_at": "2026-11-28",
+  "site_title": null,
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 0,
+   "pages_checked": 0,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [],
+   "count": 0,
+   "pages": {},
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {}
+  },
+  "languages": {
+   "codes": [],
+   "count": 0,
+   "complete": true,
+   "pages_by_lang": {}
+  },
+  "skills": {
+   "items": [],
+   "main": "",
+   "estimate": "",
+   "explicit": false,
+   "retrofit": 0,
+   "px_fix": 0,
+   "pages_checked": 0
+  },
+  "has_pages": false
+ },
+ {
   "repo": "CNN-neural-network-tutorial",
   "series_ko": "하루의 실험실 : 필터를 미끄러뜨리는 망 (CNN)",
   "title_ko": "하루의 실험실 : 필터를 미끄러뜨리는 망 (CNN)",
   "repo_url": "https://github.com/adminmrobo/CNN-neural-network-tutorial",
   "pages_url": "https://adminmrobo.github.io/CNN-neural-network-tutorial/",
   "default_branch": "main",
-  "pushed_at": "2026-11-26T14:02:34Z",
+  "pushed_at": "2026-11-27T17:03:49Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -7481,12 +7533,16 @@
   "checked_at": "2026-11-28",
   "site_title": "하루의 실험실 : 필터를 미끄러뜨리는 망 (CNN)",
   "ontology": {
-   "status": "none",
-   "pages_with_kg": 0,
+   "status": "full",
+   "pages_with_kg": 1,
    "pages_total": 1,
    "pages_checked": 1,
-   "kg_links": [],
-   "export_links": [],
+   "kg_links": [
+    "https://adminmrobo.github.io/CNN-neural-network-tutorial/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/CNN-neural-network-tutorial/index.html#export"
+   ],
    "files": []
   },
   "i18n": {
@@ -7515,16 +7571,23 @@
    }
   },
   "skills": {
-   "items": [],
+   "items": [
+    {
+     "name": "ai-lab-retrofit",
+     "version": "",
+     "versions": [],
+     "pages": 1
+    }
+   ],
    "main": "",
    "estimate": "",
    "explicit": false,
-   "retrofit": 0,
+   "retrofit": 1,
    "px_fix": 0,
    "pages_checked": 1
   },
   "has_pages": true,
-  "size_bytes": 465803
+  "size_bytes": 568327
  },
  {
   "repo": "cnn_face_game_lab",
@@ -13365,7 +13428,7 @@
   "repo_url": "https://github.com/adminmrobo/Distance-metrics-tutorial",
   "pages_url": "https://adminmrobo.github.io/Distance-metrics-tutorial/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T16:51:03Z",
+  "pushed_at": "2026-11-27T17:58:08Z",
   "has_manifest": false,
   "covers": [
    {
@@ -13392,12 +13455,18 @@
   "checked_at": "2026-11-28",
   "site_title": "하루의 실험실 EP.04 1부 : 시아와 모아는 얼마나 멀까 — 공간 속 거리",
   "ontology": {
-   "status": "none",
-   "pages_with_kg": 0,
+   "status": "full",
+   "pages_with_kg": 2,
    "pages_total": 2,
    "pages_checked": 2,
-   "kg_links": [],
-   "export_links": [],
+   "kg_links": [
+    "https://adminmrobo.github.io/Distance-metrics-tutorial/index.html#kg",
+    "https://adminmrobo.github.io/Distance-metrics-tutorial/part2/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/Distance-metrics-tutorial/index.html#export",
+    "https://adminmrobo.github.io/Distance-metrics-tutorial/part2/index.html#export"
+   ],
    "files": []
   },
   "i18n": {
@@ -13426,16 +13495,23 @@
    }
   },
   "skills": {
-   "items": [],
+   "items": [
+    {
+     "name": "ai-lab-retrofit",
+     "version": "",
+     "versions": [],
+     "pages": 2
+    }
+   ],
    "main": "",
    "estimate": "",
    "explicit": false,
-   "retrofit": 0,
+   "retrofit": 2,
    "px_fix": 0,
    "pages_checked": 2
   },
   "has_pages": true,
-  "size_bytes": 1064575
+  "size_bytes": 1209779
  },
  {
   "repo": "DL_model_hiring_committee",
@@ -14247,7 +14323,7 @@
   "repo_url": "https://github.com/adminmrobo/Dropout-neural-network-tutorial",
   "pages_url": "https://adminmrobo.github.io/Dropout-neural-network-tutorial/",
   "default_branch": "main",
-  "pushed_at": "2026-11-26T13:05:03Z",
+  "pushed_at": "2026-11-27T17:03:45Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -14258,12 +14334,16 @@
   "checked_at": "2026-11-28",
   "site_title": "하루의 실험실 : 뉴런의 드롭아웃",
   "ontology": {
-   "status": "none",
-   "pages_with_kg": 0,
+   "status": "full",
+   "pages_with_kg": 1,
    "pages_total": 1,
    "pages_checked": 1,
-   "kg_links": [],
-   "export_links": [],
+   "kg_links": [
+    "https://adminmrobo.github.io/Dropout-neural-network-tutorial/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/Dropout-neural-network-tutorial/index.html#export"
+   ],
    "files": []
   },
   "i18n": {
@@ -14292,16 +14372,23 @@
    }
   },
   "skills": {
-   "items": [],
+   "items": [
+    {
+     "name": "ai-lab-retrofit",
+     "version": "",
+     "versions": [],
+     "pages": 1
+    }
+   ],
    "main": "",
    "estimate": "",
    "explicit": false,
-   "retrofit": 0,
+   "retrofit": 1,
    "px_fix": 0,
    "pages_checked": 1
   },
   "has_pages": true,
-  "size_bytes": 629174
+  "size_bytes": 724165
  },
  {
   "repo": "drug-crime-social-cost",
@@ -17208,6 +17295,243 @@
   },
   "has_pages": true,
   "size_bytes": 108754
+ },
+ {
+  "repo": "haru_3d_classic_learning_model_01_lab",
+  "series_ko": "하루의 실험실 EP.07 : X1 · X2 · X3가 열어 준 3차원 — 지도학습 다섯 장면",
+  "title_ko": "하루의 실험실 EP.07 : X1 · X2 · X3가 열어 준 3차원 — 지도학습 다섯 장면",
+  "repo_url": "https://github.com/adminmrobo/haru_3d_classic_learning_model_01_lab",
+  "pages_url": "https://adminmrobo.github.io/haru_3d_classic_learning_model_01_lab/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-27T18:18:28Z",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "images/cover.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "images/genspark_v2/cover.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "images/thumb_ep07.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "images/genspark_v2/thumb_ep07.webp",
+    "role": "thumb",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": "thumbs/repos/haru_3d_classic_learning_model_01_lab.jpg",
+  "site_desc": "조수 하루가 새 식구 X1·X2·X3의 이름에서 3차원 공간을 떠올리고, 초파리·주판봇과 함께 하숙집 400채로 지도학습 다섯 장면(한 행은 한 점, 선형회귀 평면, 로지스틱 언덕, 결정나무 상자, 랜덤포레스트 투표)을 3D 좌표로 보여 줍니다.",
+  "status": "ok",
+  "checked_at": "2026-11-28",
+  "site_title": "하루의 실험실 EP.07 : X1 · X2 · X3가 열어 준 3차원 — 지도학습 다섯 장면",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 1,
+   "pages_checked": 1,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 1
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/haru_3d_classic_learning_model_01_lab/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 1
+   }
+  },
+  "skills": {
+   "items": [],
+   "main": "",
+   "estimate": "",
+   "explicit": false,
+   "retrofit": 0,
+   "px_fix": 0,
+   "pages_checked": 1
+  },
+  "has_pages": true,
+  "size_bytes": 1685847
+ },
+ {
+  "repo": "haru_3d_classic_learning_model_02_lab",
+  "series_ko": "하루의 실험실 EP.06 : 주판봇의 고전 머신러닝 — 나누고, 묶고, 줄이고, 재 보기",
+  "title_ko": "하루의 실험실 EP.06 : 주판봇의 고전 머신러닝 — 나누고, 묶고, 줄이고, 재 보기",
+  "repo_url": "https://github.com/adminmrobo/haru_3d_classic_learning_model_02_lab",
+  "pages_url": "https://adminmrobo.github.io/haru_3d_classic_learning_model_02_lab/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-27T18:19:48Z",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "images/cover.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "images/src/cover_genspark.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "images/thumb_ep06.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "images/src/thumb_ep06_genspark.webp",
+    "role": "thumb",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": "thumbs/repos/haru_3d_classic_learning_model_02_lab.jpg",
+  "site_desc": "조수 하루가 주판봇의 주판을 보고 '고전'을 떠올리고, 주판봇과 함께 SVM·커널·KNN·K-means·PCA·편향과 분산을 주판알 데이터로 직접 돌려 3차원 좌표 방에서 보여 줍니다. 서포트 3/80 · PCA 0.989 · 차수 12 오차 0.565.",
+  "status": "ok",
+  "checked_at": "2026-11-28",
+  "site_title": "하루의 실험실 EP.06 : 주판봇의 고전 머신러닝 — 나누고, 묶고, 줄이고, 재 보기",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 1,
+   "pages_checked": 1,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 1
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/haru_3d_classic_learning_model_02_lab/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 1
+   }
+  },
+  "skills": {
+   "items": [],
+   "main": "",
+   "estimate": "",
+   "explicit": false,
+   "retrofit": 0,
+   "px_fix": 0,
+   "pages_checked": 1
+  },
+  "has_pages": true,
+  "size_bytes": 1922498
+ },
+ {
+  "repo": "haru_3d_optimization_01",
+  "series_ko": "하루의 실험실 EP.08 1부 : 박사의 과제 — 최적화 연습 — 기울기 나침반",
+  "title_ko": "하루의 실험실 EP.08 1부 : 박사의 과제 — 최적화 연습 — 기울기 나침반",
+  "repo_url": "https://github.com/adminmrobo/haru_3d_optimization_01",
+  "pages_url": "https://adminmrobo.github.io/haru_3d_optimization_01/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-27T22:02:53Z",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "images/cover_part1.webp",
+    "role": "cover",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": "thumbs/repos/haru_3d_optimization_01.jpg",
+  "site_desc": "박사의 첫 과제: 안개 낀 그릇 모양 언덕 f(x, z) = x² + 3z²의 (2, 1)에서 인턴 시아가 360방향을 재 가장 가파른 방향 56°와 기울기 길이 7.211을 찾고, 보폭 0.01로 손으로 잰 기울기의 오차 0.032를 확인합니다.",
+  "status": "ok",
+  "checked_at": "2026-11-28",
+  "site_title": "하루의 실험실 EP.08 1부 : 박사의 과제 — 최적화 연습 — 기울기 나침반",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 2,
+   "pages_checked": 2,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 2
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/haru_3d_optimization_01/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 2
+   }
+  },
+  "skills": {
+   "items": [],
+   "main": "",
+   "estimate": "",
+   "explicit": false,
+   "retrofit": 0,
+   "px_fix": 0,
+   "pages_checked": 2
+  },
+  "has_pages": true,
+  "size_bytes": 849581
  },
  {
   "repo": "health_stats_lab",
@@ -22096,7 +22420,7 @@
   "repo_url": "https://github.com/adminmrobo/llm_applied_lab",
   "pages_url": "https://adminmrobo.github.io/llm_applied_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T06:05:55Z",
+  "pushed_at": "2026-11-27T17:22:24Z",
   "has_manifest": true,
   "covers": [
    {
@@ -22332,7 +22656,7 @@
      "moa"
     ],
     "robot": "jupanbot-v2",
-    "status": "redraw"
+    "status": "ok"
    },
    {
     "path": "assets/img/thumb_A4.webp",
@@ -22351,7 +22675,7 @@
      "moa"
     ],
     "robot": "jupanbot-v2",
-    "status": "redraw"
+    "status": "ok"
    },
    {
     "path": "assets/img/og_A4.jpg",
@@ -22370,7 +22694,7 @@
      "moa"
     ],
     "robot": "jupanbot-v2",
-    "status": "redraw"
+    "status": "ok"
    },
    {
     "path": "assets/img/cut_A2_lv4.webp",
@@ -22641,7 +22965,7 @@
    "pages_checked": 5
   },
   "has_pages": true,
-  "size_bytes": 5679111
+  "size_bytes": 6014569
  },
  {
   "repo": "LLM_evaluation",
@@ -23191,7 +23515,7 @@
   "repo_url": "https://github.com/adminmrobo/LoRA-fine-tuning-tutorial",
   "pages_url": "https://adminmrobo.github.io/LoRA-fine-tuning-tutorial/",
   "default_branch": "main",
-  "pushed_at": "2026-11-26T13:52:45Z",
+  "pushed_at": "2026-11-27T17:03:47Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -23202,12 +23526,16 @@
   "checked_at": "2026-11-28",
   "site_title": "하루의 실험실 : 얼려 두고 덧붙이는 LoRA",
   "ontology": {
-   "status": "none",
-   "pages_with_kg": 0,
+   "status": "full",
+   "pages_with_kg": 1,
    "pages_total": 1,
    "pages_checked": 1,
-   "kg_links": [],
-   "export_links": [],
+   "kg_links": [
+    "https://adminmrobo.github.io/LoRA-fine-tuning-tutorial/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/LoRA-fine-tuning-tutorial/index.html#export"
+   ],
    "files": []
   },
   "i18n": {
@@ -23236,16 +23564,23 @@
    }
   },
   "skills": {
-   "items": [],
+   "items": [
+    {
+     "name": "ai-lab-retrofit",
+     "version": "",
+     "versions": [],
+     "pages": 1
+    }
+   ],
    "main": "",
    "estimate": "",
    "explicit": false,
-   "retrofit": 0,
+   "retrofit": 1,
    "px_fix": 0,
    "pages_checked": 1
   },
   "has_pages": true,
-  "size_bytes": 488950
+  "size_bytes": 585417
  },
  {
   "repo": "machine_learning_in_3d",
@@ -36345,7 +36680,7 @@
   "repo_url": "https://github.com/adminmrobo/Tokenization-BPE-tutorial",
   "pages_url": "https://adminmrobo.github.io/Tokenization-BPE-tutorial/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T13:01:31Z",
+  "pushed_at": "2026-11-27T17:03:51Z",
   "has_manifest": false,
   "covers": [
    {
