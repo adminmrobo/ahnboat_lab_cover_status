@@ -546,7 +546,7 @@
  },
  "llm_applied_lab": {
   "src": "manifest:assets/img/cover_A1.webp",
-  "pushed_at": "2026-11-27T05:47:59Z",
+  "pushed_at": "2026-11-27T06:05:55Z",
   "made": "2026-11-27"
  },
  "LLM_evaluation": {
@@ -761,7 +761,7 @@
  },
  "python_machine_learning_lab": {
   "src": "name:assets/img/cover_01.webp",
-  "pushed_at": "2026-11-27T05:09:10Z",
+  "pushed_at": "2026-11-27T06:05:31Z",
   "made": "2026-11-27"
  },
  "Recursive-Self-Improvement": {

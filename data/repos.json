@@ -19157,7 +19157,7 @@
   "repo_url": "https://github.com/adminmrobo/llm_applied_lab",
   "pages_url": "https://adminmrobo.github.io/llm_applied_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T05:47:59Z",
+  "pushed_at": "2026-11-27T06:05:55Z",
   "has_manifest": true,
   "covers": [
    {
@@ -19279,7 +19279,7 @@
      "moa"
     ],
     "robot": "jupanbot-v2",
-    "status": "redraw"
+    "status": "ok"
    },
    {
     "path": "assets/img/thumb_A2.webp",
@@ -19298,7 +19298,7 @@
      "moa"
     ],
     "robot": "jupanbot-v2",
-    "status": "redraw"
+    "status": "ok"
    },
    {
     "path": "assets/img/og_A2.jpg",
@@ -19317,7 +19317,7 @@
      "moa"
     ],
     "robot": "jupanbot-v2",
-    "status": "redraw"
+    "status": "ok"
    },
    {
     "path": "assets/img/cover_A3.webp",
@@ -19336,7 +19336,7 @@
      "moa"
     ],
     "robot": "jupanbot-v2",
-    "status": "redraw"
+    "status": "ok"
    },
    {
     "path": "assets/img/thumb_A3.webp",
@@ -19355,7 +19355,7 @@
      "moa"
     ],
     "robot": "jupanbot-v2",
-    "status": "redraw"
+    "status": "ok"
    },
    {
     "path": "assets/img/og_A3.jpg",
@@ -19374,7 +19374,7 @@
      "moa"
     ],
     "robot": "jupanbot-v2",
-    "status": "redraw"
+    "status": "ok"
    },
    {
     "path": "assets/img/cover_A4.webp",
@@ -19432,6 +19432,183 @@
     ],
     "robot": "jupanbot-v2",
     "status": "redraw"
+   },
+   {
+    "path": "assets/img/cut_A2_lv4.webp",
+    "role": "scene",
+    "id": "cut_A2_lv4",
+    "size": [
+     960,
+     540
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/cut_A2_versus.webp",
+    "role": "scene",
+    "id": "cut_A2_versus",
+    "size": [
+     960,
+     540
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/sc_A2_outro.webp",
+    "role": "outro",
+    "id": "sc_A2_outro",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/cut_A3_lv2.webp",
+    "role": "scene",
+    "id": "cut_A3_lv2",
+    "size": [
+     960,
+     540
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa",
+     "x1",
+     "x2",
+     "x3"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/cut_A3_versus.webp",
+    "role": "scene",
+    "id": "cut_A3_versus",
+    "size": [
+     960,
+     540
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/sc_A3_outro.webp",
+    "role": "outro",
+    "id": "sc_A3_outro",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa",
+     "x1",
+     "x2",
+     "x3"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/cut_A4_lv4.webp",
+    "role": "scene",
+    "id": "cut_A4_lv4",
+    "size": [
+     720,
+     540
+    ],
+    "characters": [
+     "doc",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/cut_A4_raid.webp",
+    "role": "scene",
+    "id": "cut_A4_raid",
+    "size": [
+     960,
+     540
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa",
+     "x1",
+     "x2",
+     "x3"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/sc_A4_outro.webp",
+    "role": "outro",
+    "id": "sc_A4_outro",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa",
+     "x1",
+     "x2",
+     "x3"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    }
   ],
   "redraw_count": 0,
@@ -26264,7 +26441,7 @@
   "repo_url": "https://github.com/adminmrobo/python_machine_learning_lab",
   "pages_url": "https://adminmrobo.github.io/python_machine_learning_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T05:09:10Z",
+  "pushed_at": "2026-11-27T06:05:31Z",
   "has_manifest": false,
   "covers": [
    {
