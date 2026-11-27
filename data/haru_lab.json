@@ -38,6 +38,16 @@
       "status": "open"
     },
     {"ep": "EP.04", "title": "준비 중", "pos": "(5, 0, 5)", "status": "soon"},
-    {"ep": "EP.05", "title": "준비 중", "pos": "(11, 5, 4)", "status": "soon"}
+    {
+      "ep": "EP.05",
+      "title": "글을 조각으로 — 토큰 나누기(BPE)",
+      "desc": "177글자를 가장 많은 짝부터 30번 합치니 토큰 66개, 시아·모아가 도와요",
+      "url": "https://adminmrobo.github.io/Tokenization-BPE-tutorial/",
+      "thumb": "thumbs/haru_lab/ep05.webp",
+      "pos": "(11, 5, 4)",
+      "stats": [["177 → 66", "글자 → 토큰"], ["2.7배", "짧아진 길이"]],
+      "date": "2026-11-27",
+      "status": "open"
+    }
   ]
 }
