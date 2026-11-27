@@ -99,6 +99,7 @@ https://adminmrobo.github.io/ahnboat_lab_cover_status/admin.html
 - `haru_lab.html` — **조수 하루의 3차원 실험실** 가로 막대 블록. 홈 'SERIES · 대표 시리즈' 바로 위. 회차 카드 5장은 `data/haru_lab.json`의 episodes(`status`: open 공개 / soon 준비 중, 썸네일 `thumbs/haru_lab/`). 실험 방은 랩타운 2층 `haru3d.html`. 워드프레스에는 '주인장은 누구?' 블록 v9(`docs/wp_intro_block_v9.html`) 안에 iframe(class `ahnboat-embed`, 높이는 v7부터 있던 맞춤 코드가 처리)으로 들어 있다, 바로가기 주소 `ahnboat.xyz/#haru-lab`.
 - **홈 공지(top.html)** — 손으로 쓴 공지 `data/notices.csv`(콘텐츠 관리실 '공지사항' 탭) + 업데이트 이력 자동 공지 `data/notices_auto.csv`를 합쳐 최근 4개를 보인다. 자동 공지는 `scripts/build_updates.py`가 표지 현황 수집 때마다 공개 콘텐츠의 새 공개·업데이트를 `data/updates.json`에 기록해 만든다(하루 최대 4건, 바뀐 용량이 큰 순서, 1KB 미만 수정 제외). 관리실 '업데이트 이력' 탭에서 볼 수 있다.
 - **서울 시계·음악(top.html 왼쪽 위)** — 대한민국 표준시(Asia/Seoul)로 날짜·요일·시:분을 보여 주고, 옆 ▶ 버튼으로 OST를 튼다. 설정은 `data/music.json`(켜기·순서·음량·곡 목록), 음원은 `music/` 폴더. 콘텐츠 관리실 '음악' 탭에서 파일 올리기·곡 정리·저장. 소리 자동 재생은 브라우저가 막으므로 방문자가 눌러야 재생된다.
+- **하루의 실험실 썸네일 규격** — `docs/haru_thumb_spec.md`: 16:9 · 960×540 WebP, 고해상도 픽셀아트 · 3D 좌표축 · 하루 등장 · 그림 안 글자 금지. `python3 scripts/haru_thumb.py <원본> <회차>`로 `thumbs/haru_lab/epNN.webp`를 만든다.
 - `progress.html` — Progress Board. 공개 콘텐츠만, 랙별 온톨로지·외국어팩 진행, 언어별 콘텐츠, 최근 업데이트, 다음에 손볼 곳.
 - 화면 설정(제목·배너·갈래 이름 바꾸기)은 `data/views.json`.
 - 모두 `?embed=1&theme=light`를 붙여 끼워 넣으면 머리글 없이 보이고, 높이를 바깥 페이지에 알려 준다.

@@ -58,6 +58,38 @@
       "stats": [["177 → 66", "글자 → 토큰"], ["2.7배", "짧아진 길이"]],
       "date": "2026-11-27",
       "status": "open"
+    },
+    {
+      "ep": "EP.06",
+      "title": "주판봇의 고전 머신러닝 — 나누고, 묶고, 줄이고, 재 보기",
+      "desc": "주판알 다섯 줄로 SVM·KNN·K-means·PCA·편향과 분산을 튕겨 봐요",
+      "url": "https://adminmrobo.github.io/haru_3d_classic_learning_model_02_lab/",
+      "thumb": "thumbs/haru_lab/ep06.webp",
+      "pos": "(4, 0, 10)",
+      "stats": [["3 / 80", "서포트 벡터"], ["0.989", "PCA 축 2개"]],
+      "date": "2026-11-28",
+      "status": "open"
+    },
+    {
+      "ep": "EP.07",
+      "title": "X1 · X2 · X3가 열어 준 3차원 — 지도학습 다섯 장면",
+      "desc": "하숙집 400채를 세 축에 찍고, 평면·S자 언덕·나무와 숲으로 집값을 맞혀요",
+      "url": "https://adminmrobo.github.io/haru_3d_classic_learning_model_01_lab/",
+      "thumb": "thumbs/haru_lab/ep07.webp",
+      "stats": [["0.862", "평면 R²"], ["0.910", "숲 정답률"]],
+      "date": "2026-11-28",
+      "status": "open"
+    },
+    {
+      "ep": "EP.08",
+      "title": "박사의 과제 — 최적화 연습 (1부 기울기 나침반)",
+      "desc": "시아·모아가 기울기 나침반으로 가장 가파른 방향을 찾아요 (6부작, 2~6부 준비 중)",
+      "url": "https://adminmrobo.github.io/haru_3d_optimization_01/",
+      "thumb": "thumbs/haru_lab/ep08.webp",
+      "pos": "(4, 0, 22)",
+      "stats": [["7.211", "기울기 길이"], ["56°", "가장 가파른 방향"]],
+      "date": "2026-11-28",
+      "status": "open"
     }
   ]
 }
