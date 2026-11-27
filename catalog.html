@@ -302,7 +302,7 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
     (o.sprites||[]).forEach(function(s){var im=el('img');im.alt='';im.src=s.src;if(s.h)im.style.height=s.h+'px';im.addEventListener('load',post);sp.appendChild(im);});
     f.appendChild(sp);t.appendChild(f);
     var b=el('span','tbody');
-    b.appendChild(el('span','rack',o.label||'SPECIAL'));
+    b.appendChild(el('span','rack',T(o.label||'SPECIAL')));
     b.appendChild(el('h3','',T(o.name)));
     if(o.desc)b.appendChild(el('p','',T(o.desc)));
     if(o.keywords&&o.keywords.length){var s2=el('span','kw');o.keywords.forEach(function(x){s2.appendChild(el('span','','#'+(AhnI18n.lang==='ko'?T(x).replace(/\s+/g,''):T(x))));});b.appendChild(s2);}

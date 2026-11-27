@@ -70,10 +70,22 @@ def collect(projects=None):
         add(list((v.get("mid_alias") or {}).values()))
         for mi in (v.get("mid_info") or {}).values():
             add(mi.get("desc")); add(mi.get("keywords", []))
+        for ex in v.get("extras") or []:   # 특별 카드(도감·입문)
+            add([ex.get("label"), ex.get("name"), ex.get("desc")]); add(ex.get("keywords", []))
+        add(v.get("extras_label"))
+    hl = load(D("haru_lab.json"), {})   # 하루의 3차원 실험실 막대
+    add([hl.get("title"), hl.get("intro")])
+    for e in hl.get("episodes", []):
+        add([e.get("title"), e.get("desc")]); add([x[1] for x in e.get("stats", []) if len(x) > 1])
     for nf in ("notices.csv", "notices_auto.csv"):   # 손으로 쓴 공지 + 업데이트 이력 자동 공지
         if os.path.exists(D(nf)):
             for r in csv_rows(D(nf)):
-                add(r.get("제목"))
+                t = r.get("제목") or ""
+                m = re.match(r"^(업데이트|새 콘텐츠 공개) — (.+)$", t)
+                if nf == "notices_auto.csv" and m:   # 자동 공지는 머리말·콘텐츠 제목을 따로 번역해 잇는다(top.html TN)
+                    add([m.group(1), m.group(2)])
+                else:
+                    add(t)
     if projects and os.path.exists(projects):
         for r in csv_rows(projects):
             add([r.get("프로젝트명"), r.get("카테고리")])

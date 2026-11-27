@@ -71,6 +71,7 @@ html.all .cards{grid-template-columns:repeat(auto-fill,minmax(190px,1fr))}
     <div class="cards" id="cards" aria-label="회차"></div>
   </section>
 </div>
+<script src="i18n.js"></script>
 <script>
 (function(){
   'use strict';
@@ -80,8 +81,11 @@ html.all .cards{grid-template-columns:repeat(auto-fill,minmax(190px,1fr))}
   if(Q.get('theme')==='dark'||Q.get('theme')==='light')document.documentElement.setAttribute('data-theme',Q.get('theme'));
   function el(t,c,txt){var e=document.createElement(t);if(c)e.className=c;if(txt!=null)e.textContent=txt;return e;}
   function post(){if(window.parent!==window){try{window.parent.postMessage({type:'ahnboat-catalog-height',height:Math.ceil(document.body.getBoundingClientRect().height),nav:false},'*');}catch(e){}}}
+  var T=function(x){return window.AhnI18n?AhnI18n.t.apply(null,arguments):x;},DATA=null;
   function render(d){
-    ['kicker','title','intro'].forEach(function(k){if(d[k])document.getElementById(k).textContent=d[k];});
+    DATA=d;
+    ['kicker','title','intro'].forEach(function(k){var x=document.getElementById(k);if(!x.dataset.ko)x.dataset.ko=d[k]||x.textContent;x.textContent=T(x.dataset.ko);});
+    var rm=document.getElementById('room');if(!rm.dataset.ko)rm.dataset.ko=rm.textContent;rm.textContent=T(rm.dataset.ko);
     if(d.room)document.getElementById('room').href=d.room;
     var box=document.getElementById('cards');box.textContent='';
     // 최신 회차가 앞으로. 공개 회차 먼저(최신순), 준비 중은 뒤에.
@@ -92,20 +96,21 @@ html.all .cards{grid-template-columns:repeat(auto-fill,minmax(190px,1fr))}
     if(more)eps=eps.slice(0,MAX-1);
     eps.forEach(function(e){
       var open=e.status==='open'&&e.url, c=el(open?'a':'div','ep'+(open?'':' soon'));
-      if(open){c.href=e.url;c.target='_blank';c.rel='noopener';}else c.setAttribute('aria-label',e.ep+' 준비 중');
+      if(open){c.href=e.url;if(window.AhnI18n&&AhnI18n.lang!=='ko'){var m0=/github\.io\/([^\/]+)/.exec(e.url),lk=m0&&AhnI18n.link('https://github.com/adminmrobo/'+m0[1],e.url);if(lk&&lk[1])c.href=lk[0];}c.target='_blank';c.rel='noopener';}else c.setAttribute('aria-label',e.ep+' '+T('준비 중'));
       var sh=el('div','shot');
       if(open&&e.thumb){var im=el('img');im.src=e.thumb;im.alt='';im.loading='lazy';im.addEventListener('load',post);sh.appendChild(im);}else sh.appendChild(el('span','q','?'));
       sh.appendChild(el('span','no',e.ep));c.appendChild(sh);
-      var bd=el('div','bd');bd.appendChild(el('b',null,open?e.title:'준비 중'));
-      if(e.pos)bd.appendChild(el('span','pos','실험대 '+e.pos));
-      if(open&&e.stats){var st=el('div','st');e.stats.forEach(function(s,i){var x=el('span',null,s[0]);x.style.color=i?'var(--drop)':'var(--plain)';x.appendChild(el('small',null,s[1]));st.appendChild(x);});bd.appendChild(st);}
+      var bd=el('div','bd');bd.appendChild(el('b',null,open?T(e.title):T('준비 중')));if(open&&e.desc)c.title=T(e.desc);
+      if(e.pos)bd.appendChild(el('span','pos',T('실험대')+' '+e.pos));
+      if(open&&e.stats){var st=el('div','st');e.stats.forEach(function(s,i){var x=el('span',null,T(s[0]));x.style.color=i?'var(--drop)':'var(--plain)';x.appendChild(el('small',null,T(s[1])));st.appendChild(x);});bd.appendChild(st);}
       c.appendChild(bd);box.appendChild(c);
     });
     if(more){var m=el('a','ep more');m.href=location.pathname.replace(/[^/]*$/,'')+'haru_lab.html?all=1';m.target='_blank';m.rel='noopener';
-      m.appendChild(el('span','n',String(all.length)));m.appendChild(el('b',null,'전체 회차 보기'));m.appendChild(el('small',null,'공개 '+nOpen+'편 · EP.01부터 모아 보기'));box.appendChild(m);}
+      m.appendChild(el('span','n',String(all.length)));m.appendChild(el('b',null,T('전체 회차 보기')));m.appendChild(el('small',null,T('공개 {0}편 · EP.01부터 모아 보기',nOpen)));box.appendChild(m);}
     post();
   }
-  fetch('data/haru_lab.json',{cache:'no-cache'}).then(function(r){return r.json();}).then(render).catch(post);
+  fetch('data/haru_lab.json',{cache:'no-cache'}).then(function(r){return r.json();}).then(function(d){return (window.AhnI18n?AhnI18n.ready:Promise.resolve()).then(function(){render(d);});}).catch(post);
+  if(window.AhnI18n)AhnI18n.onChange(function(){if(DATA)render(DATA);});
   window.addEventListener('resize',post);
   if(window.ResizeObserver)new ResizeObserver(post).observe(document.body);
   post();
