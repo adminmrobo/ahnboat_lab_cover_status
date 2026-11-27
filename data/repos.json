@@ -22346,7 +22346,7 @@
   "repo_url": "https://github.com/adminmrobo/moving_factory_dashboard",
   "pages_url": "https://adminmrobo.github.io/moving_factory_dashboard/",
   "default_branch": "main",
-  "pushed_at": "2026-11-18T19:10:32Z",
+  "pushed_at": "2026-11-27T05:12:00Z",
   "has_manifest": true,
   "covers": [
    {
@@ -22369,16 +22369,162 @@
      "x3"
     ],
     "robot": "jupanbot-v2",
-    "status": "todo"
+    "status": "ok"
    },
    {
-    "path": "assets/scenes/fs_cover_01.webp",
+    "path": "assets/scenes/mf_cover.webp",
     "role": "scene",
     "id": "hero",
     "characters": [
-     "sia",
+     "doc",
      "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa",
+     "x1",
+     "x2",
+     "x3"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "img/cover_alt.jpg",
+    "role": "cover_alt",
+    "id": "cover_alt",
+    "size": [
+     1600,
+     1067
+    ],
+    "characters": [
+     "asst",
+     "sia",
      "moa"
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "img/thumb.jpg",
+    "role": "thumbnail",
+    "id": "thumb",
+    "size": [
+     640,
+     640
+    ],
+    "characters": [
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
+   },
+   {
+    "path": "assets/scenes/card_01.webp",
+    "role": "scene",
+    "id": "card_01",
+    "size": [
+     1280,
+     720
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "assets/scenes/card_02.webp",
+    "role": "scene",
+    "id": "card_02",
+    "size": [
+     1280,
+     720
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "assets/scenes/card_03.webp",
+    "role": "scene",
+    "id": "card_03",
+    "size": [
+     1280,
+     720
+    ],
+    "status": "redo"
+   },
+   {
+    "path": "assets/scenes/card_04.webp",
+    "role": "scene",
+    "id": "card_04",
+    "size": [
+     1280,
+     720
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "assets/scenes/card_05.webp",
+    "role": "scene",
+    "id": "card_05",
+    "size": [
+     1280,
+     720
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "assets/scenes/card_06.webp",
+    "role": "scene",
+    "id": "card_06",
+    "size": [
+     1280,
+     720
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "assets/scenes/card_07.webp",
+    "role": "scene",
+    "id": "card_07",
+    "size": [
+     1280,
+     720
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "assets/scenes/card_08.webp",
+    "role": "scene",
+    "id": "card_08",
+    "size": [
+     1280,
+     720
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "assets/scenes/card_09.webp",
+    "role": "scene",
+    "id": "card_09",
+    "size": [
+     1280,
+     720
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "assets/scenes/card_10.webp",
+    "role": "scene",
+    "id": "card_10",
+    "size": [
+     1280,
+     720
+    ],
+    "status": "ok"
+   },
+   {
+    "path": "assets/scenes/card_11.webp",
+    "role": "scene",
+    "id": "card_11",
+    "size": [
+     1280,
+     720
     ],
     "status": "ok"
    }
