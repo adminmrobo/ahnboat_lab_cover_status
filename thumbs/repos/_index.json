@@ -33,7 +33,7 @@
  },
  "ahnboat_lab_gallery": {
   "src": null,
-  "pushed_at": "2026-11-26T15:47:57Z"
+  "pushed_at": "2026-11-26T20:19:27Z"
  },
  "ahnboat_lab_langpack": {
   "src": null,
@@ -45,7 +45,7 @@
  },
  "ahnboat_ontology_feed": {
   "src": "name:assets/cover.png",
-  "pushed_at": "2026-11-26T15:39:58Z",
+  "pushed_at": "2026-11-26T20:33:42Z",
   "made": "2026-11-27"
  },
  "ahnboat_server_room_guards": {
@@ -292,8 +292,9 @@
   "made": "2026-11-26"
  },
  "drawing_lab_06": {
-  "src": null,
-  "pushed_at": "2026-11-26T16:39:48Z"
+  "src": "name:assets/img/cover_01.webp",
+  "pushed_at": "2026-11-26T18:11:01Z",
+  "made": "2026-11-27"
  },
  "drawing_lab_fun": {
   "src": "name:assets/img/cover_01.webp",
@@ -759,6 +760,11 @@
  "Recursive-Self-Improvement": {
   "src": "manifest:img/cover_rsi.webp",
   "pushed_at": "2026-11-26T15:09:15Z",
+  "made": "2026-11-27"
+ },
+ "Regression_model_lab_01": {
+  "src": "name:assets/img/cover_index.png",
+  "pushed_at": "2026-11-26T18:50:39Z",
   "made": "2026-11-27"
  },
  "Regression_ridge_lasso": {

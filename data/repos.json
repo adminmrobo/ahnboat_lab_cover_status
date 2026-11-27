@@ -1763,7 +1763,7 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_lab_gallery",
   "pages_url": "https://adminmrobo.github.io/ahnboat_lab_gallery/",
   "default_branch": "main",
-  "pushed_at": "2026-11-26T15:47:57Z",
+  "pushed_at": "2026-11-26T20:19:27Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -1902,7 +1902,7 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_ontology_feed",
   "pages_url": "https://adminmrobo.github.io/ahnboat_ontology_feed/",
   "default_branch": "main",
-  "pushed_at": "2026-11-26T15:39:58Z",
+  "pushed_at": "2026-11-26T20:33:42Z",
   "has_manifest": false,
   "covers": [
    {
@@ -12683,46 +12683,78 @@
  },
  {
   "repo": "drawing_lab_06",
-  "series_ko": "drawing_lab_06",
-  "title_ko": null,
+  "series_ko": "구조 먼저 그리기 연구실 06 · 표정 편 — 감정 낱말보다 부품 먼저",
+  "title_ko": "구조 먼저 그리기 연구실 06 · 표정 편 — 감정 낱말보다 부품 먼저",
   "repo_url": "https://github.com/adminmrobo/drawing_lab_06",
   "pages_url": "https://adminmrobo.github.io/drawing_lab_06/",
   "default_branch": "main",
-  "pushed_at": "2026-11-26T16:39:48Z",
-  "has_manifest": false,
+  "pushed_at": "2026-11-26T18:11:01Z",
+  "has_manifest": true,
   "covers": [],
   "redraw_count": 0,
   "redraw_ids": [],
-  "thumb": null,
-  "site_desc": null,
-  "status": "unknown",
+  "thumb": "thumbs/repos/drawing_lab_06.jpg",
+  "site_desc": "눈썹·눈·입·기호 네 부품과 기본 감정 섞기로 복합 표정을 읽고 그리는 원리를 실험으로 익히고, 그 원리를 문장으로 옮겨 그림 생성 AI로 같은 캐릭터의 표정 시트를 만드는 방법까지. 애정·믿음·흔들림·몸 상태·극적인 장면의 표정 40여 가지와 실패 8종 진단.",
+  "status": "ok",
   "checked_at": "2026-11-27",
-  "site_title": null,
+  "site_title": "구조 먼저 그리기 연구실 06 · 표정 편 — 감정 낱말보다 부품 먼저",
   "ontology": {
-   "status": "none",
-   "pages_with_kg": 0,
-   "pages_total": 0,
-   "pages_checked": 0,
-   "kg_links": [],
-   "export_links": [],
+   "status": "partial",
+   "pages_with_kg": 10,
+   "pages_total": 11,
+   "pages_checked": 11,
+   "kg_links": [
+    "https://adminmrobo.github.io/drawing_lab_06/01_parts.html#kg",
+    "https://adminmrobo.github.io/drawing_lab_06/02_love.html#kg",
+    "https://adminmrobo.github.io/drawing_lab_06/03_trust.html#kg",
+    "https://adminmrobo.github.io/drawing_lab_06/04_unease.html#kg",
+    "https://adminmrobo.github.io/drawing_lab_06/05_body.html#kg",
+    "https://adminmrobo.github.io/drawing_lab_06/06_drama.html#kg",
+    "https://adminmrobo.github.io/drawing_lab_06/07_ai_faces.html#kg",
+    "https://adminmrobo.github.io/drawing_lab_06/08_failure_lab.html#kg",
+    "https://adminmrobo.github.io/drawing_lab_06/index.html#kg",
+    "https://adminmrobo.github.io/drawing_lab_06/practice/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/drawing_lab_06/01_parts.html#export",
+    "https://adminmrobo.github.io/drawing_lab_06/02_love.html#export",
+    "https://adminmrobo.github.io/drawing_lab_06/03_trust.html#export",
+    "https://adminmrobo.github.io/drawing_lab_06/04_unease.html#export",
+    "https://adminmrobo.github.io/drawing_lab_06/05_body.html#export",
+    "https://adminmrobo.github.io/drawing_lab_06/06_drama.html#export",
+    "https://adminmrobo.github.io/drawing_lab_06/07_ai_faces.html#export",
+    "https://adminmrobo.github.io/drawing_lab_06/08_failure_lab.html#export",
+    "https://adminmrobo.github.io/drawing_lab_06/index.html#export",
+    "https://adminmrobo.github.io/drawing_lab_06/practice/index.html#export"
+   ],
    "files": []
   },
   "i18n": {
-   "langs": [],
-   "count": 0,
-   "pages": {},
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 11
+   },
    "partial": [],
    "complete": true,
    "readme_langs": [],
-   "links": {}
+   "links": {
+    "ko": "https://adminmrobo.github.io/drawing_lab_06/index.html"
+   }
   },
   "languages": {
-   "codes": [],
-   "count": 0,
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
    "complete": true,
-   "pages_by_lang": {}
+   "pages_by_lang": {
+    "ko": 11
+   }
   },
-  "has_pages": false
+  "has_pages": true
  },
  {
   "repo": "drawing_lab_fun",
@@ -26209,6 +26241,234 @@
    }
   },
   "has_pages": true
+ },
+ {
+  "repo": "Regression_model_lab_01",
+  "series_ko": "회귀 예측·분석 대회 — 직선 하나에서 회귀의 가족까지 · 회귀 예측·분석 대회",
+  "title_ko": "회귀 예측·분석 대회 — 직선 하나에서 회귀의 가족까지 · 회귀 예측·분석 대회",
+  "repo_url": "https://github.com/adminmrobo/Regression_model_lab_01",
+  "pages_url": "https://adminmrobo.github.io/Regression_model_lab_01/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-26T18:50:39Z",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "assets/img/cover_index.png",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_index.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_part1.png",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_part1.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_part2.png",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_part2.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_part3.png",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_part3.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_part4.png",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_part4.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_part5.png",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_part5.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_part6.png",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_part6.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_practice.png",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_practice.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/og_index.webp",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/og_part1.webp",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/og_part2.webp",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/og_part3.webp",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/og_part4.webp",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/og_part5.webp",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/og_part6.webp",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/og_practice.webp",
+    "role": "og",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/thumb_index.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/thumb_part1.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/thumb_part2.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/thumb_part3.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/thumb_part4.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/thumb_part5.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/thumb_part6.webp",
+    "role": "thumb",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/thumb_practice.webp",
+    "role": "thumb",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": "thumbs/repos/Regression_model_lab_01.jpg",
+  "site_desc": "행렬·벡터를 처음 배우는 분을 위한 회귀 해설 시리즈. 초파리 팀과 주판봇 팀이 최소제곱, 회귀분석 결과표, 잔차분석, 경사 하강·릿지·라쏘, 나무·부스팅·신경망과 SHAP, 로지스틱·포아송·분위수·다층 회귀로 여섯 라운드를 겨룹니다.",
+  "status": "ok",
+  "checked_at": "2026-11-27",
+  "site_title": "회귀 예측·분석 대회 — 직선 하나에서 회귀의 가족까지 · 회귀 예측·분석 대회",
+  "ontology": {
+   "status": "partial",
+   "pages_with_kg": 6,
+   "pages_total": 8,
+   "pages_checked": 8,
+   "kg_links": [
+    "https://adminmrobo.github.io/Regression_model_lab_01/part1_line.html#kg",
+    "https://adminmrobo.github.io/Regression_model_lab_01/part2_table.html#kg",
+    "https://adminmrobo.github.io/Regression_model_lab_01/part3_resid.html#kg",
+    "https://adminmrobo.github.io/Regression_model_lab_01/part4_learn.html#kg",
+    "https://adminmrobo.github.io/Regression_model_lab_01/part5_curve.html#kg",
+    "https://adminmrobo.github.io/Regression_model_lab_01/part6_family.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/Regression_model_lab_01/part1_line.html#export",
+    "https://adminmrobo.github.io/Regression_model_lab_01/part2_table.html#export",
+    "https://adminmrobo.github.io/Regression_model_lab_01/part3_resid.html#export",
+    "https://adminmrobo.github.io/Regression_model_lab_01/part4_learn.html#export",
+    "https://adminmrobo.github.io/Regression_model_lab_01/part5_curve.html#export",
+    "https://adminmrobo.github.io/Regression_model_lab_01/part6_family.html#export"
+   ],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 8
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/Regression_model_lab_01/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 8
+   }
+  },
+  "has_pages": false
  },
  {
   "repo": "Regression_ridge_lasso",
