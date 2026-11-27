@@ -34,16 +34,16 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
 .stats li{display:flex;align-items:baseline;gap:6px}
 .stats b{font-family:var(--mono);font-size:1.35rem;line-height:1}
 .stats span{font-size:.8rem;color:var(--muted)}
-.langs{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+.langs{display:flex;flex-wrap:wrap;gap:8px 8px;margin-top:16px}
 .langs .lg{font:inherit;font-size:.78rem;font-weight:700;cursor:pointer;border:1.5px solid var(--line);border-radius:99px;padding:3px 11px;background:#fff;color:var(--ink);box-shadow:2px 2px 0 var(--line)}
 .langs .lg[aria-pressed=true]{background:var(--ink);color:#fff}
 .langs .lg:hover{transform:translate(-1px,-1px)}
 /* 언어 버튼 아래 번역률 (data/i18n_status.json — 표지 현황 수집 때 갱신) */
-.langs .lgw{display:flex;flex-direction:column;align-items:center;gap:3px}
+.langs .lgw{display:flex;flex-direction:column;align-items:center;gap:8px}
 .langs .pct{font-family:var(--mono,ui-monospace,monospace);font-size:.68rem;line-height:1;color:var(--muted);display:flex;flex-direction:column;align-items:center;gap:2px;min-width:3.2em}
 .langs .pct i{display:block;width:100%;height:3px;border-radius:99px;background:var(--rule);overflow:hidden}
 .langs .pct i b{display:block;height:100%;background:var(--ink)}
-.langs .lgcap{flex-basis:100%;font-size:.7rem;color:var(--muted);margin-top:-2px}
+.langs .lgcap{flex-basis:100%;font-size:.7rem;color:var(--muted);margin-top:2px}
 .langs .lgcap[hidden]{display:none}
 .crew{position:relative;display:flex;justify-content:center;align-items:flex-end;gap:clamp(0px,1vw,14px);padding:20px 16px 10px;height:100%}
 .crew::after{content:"";position:absolute;left:6%;right:6%;bottom:0;height:16px;border-radius:50%;background:rgba(31,34,36,.08)}

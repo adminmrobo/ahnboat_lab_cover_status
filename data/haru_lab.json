@@ -37,7 +37,17 @@
       "date": "2026-11-26",
       "status": "open"
     },
-    {"ep": "EP.04", "title": "준비 중", "pos": "(5, 0, 5)", "status": "soon"},
+    {
+      "ep": "EP.04",
+      "title": "시아와 모아는 얼마나 멀까 — 거리 재기",
+      "desc": "같은 두 점도 유클리드 9.9, 맨해튼 16, 체비쇼프 8 — 재는 법마다 달라요",
+      "url": "https://adminmrobo.github.io/Distance-metrics-tutorial/",
+      "thumb": "thumbs/haru_lab/ep04.webp",
+      "pos": "(5, 0, 5)",
+      "stats": [["9.899", "유클리드"], ["16", "맨해튼"]],
+      "date": "2026-11-27",
+      "status": "open"
+    },
     {
       "ep": "EP.05",
       "title": "글을 조각으로 — 토큰 나누기(BPE)",
