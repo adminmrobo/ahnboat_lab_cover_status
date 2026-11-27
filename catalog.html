@@ -148,6 +148,12 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
 .jump{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 18px}
 .jump a{font-size:13px;text-decoration:none;color:var(--ink);background:var(--panel);border:1px solid var(--rule);border-radius:99px;padding:4px 12px}
 .jump a.on{border-color:var(--c,#1f2224);font-weight:700}
+.subcard{display:flex;gap:16px;align-items:center;margin:0 0 14px;padding:12px;border:1px solid var(--rule);border-left:4px solid var(--c);border-radius:12px;background:var(--panel)}
+.subcard .spic{flex:0 0 200px;aspect-ratio:16/9;border-radius:8px;overflow:hidden;background:#eef0f3}
+.subcard .spic img{width:100%;height:100%;object-fit:cover;display:block}
+.subcard .sbody{min-width:0}.subcard .subh{margin:0 0 4px;border-left:0;padding-left:0}.subcard p{margin:0 0 6px;font-size:14px;line-height:1.55;color:var(--ink)}
+.subcard .kw{display:flex;flex-wrap:wrap;gap:6px;font-size:12px;color:var(--muted)}
+@media(max-width:640px){.subcard{flex-direction:column;align-items:stretch}.subcard .spic{flex-basis:auto;width:100%}}
 .subsec.hl{outline:3px solid var(--c);outline-offset:6px;border-radius:10px;animation:ahnhl 1s ease-in-out 3}
 .subsec{margin:0 0 26px;scroll-margin-top:12px}
 .subh{display:flex;align-items:baseline;gap:8px;margin:0 0 10px;font-size:17px;padding-left:10px;border-left:4px solid var(--c)}
@@ -200,6 +206,7 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
     var ord=MIDS.filter(function(x){return x.cat===n;}).map(function(x){return x.name;});
     return have.sort(function(a,b){var ia=ord.indexOf(a),ib=ord.indexOf(b);if(a==='외부_콘텐츠')ia=999;if(b==='외부_콘텐츠')ib=999;return (ia<0?500:ia)-(ib<0?500:ib);});
   }
+  function subInfo(cat,mid,name){return ((D&&D.subs)||[]).filter(function(x){return x.cat===cat&&x.mid===mid&&x.name===name;})[0]||null;}
   function inMid(n,m){return inCat(n).filter(function(i){return M(i)===m;});}
   function subsOf(n,m){return uniq(inMid(n,m),S);}
 
@@ -387,7 +394,15 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
     subs.forEach(function(s,k){
       var sec=el('section','subsec');sec.id='sub'+k;sec.style.setProperty('--c',c.color);
       var its=inMid(c.name,md).filter(function(i){return S(i)===s;});
-      var h=el('h3','subh',T(s));h.appendChild(el('small','',T('{0}개',its.length)));sec.appendChild(h);
+      var si=subInfo(c.name,md,s);
+      if(si&&(si.desc||si.image)){  /* 소분류 카드: 그림 · 이름 · 소개 · 색인어 (hub_meta.json subs) */
+        var sc=el('div','subcard');
+        if(si.image){var sf=el('span','spic');var sim=el('img');sim.alt='';sim.loading='lazy';sim.src=si.image;sim.addEventListener('load',post);sim.addEventListener('error',function(){sf.remove();});sf.appendChild(sim);sc.appendChild(sf);}
+        var sb=el('div','sbody');var h=el('h3','subh',T(s));h.appendChild(el('small','',T('{0}개',its.length)));sb.appendChild(h);
+        if(si.desc)sb.appendChild(el('p','',T(si.desc)));
+        if(si.keywords&&si.keywords.length){var kw=el('span','kw');kw.setAttribute('aria-label',T('주요 색인어'));si.keywords.forEach(function(x){kw.appendChild(el('span','','#'+(AhnI18n.lang==='ko'?T(x).replace(/\s+/g,''):T(x))));});sb.appendChild(kw);}
+        sc.appendChild(sb);sec.appendChild(sc);
+      }else{var h=el('h3','subh',T(s));h.appendChild(el('small','',T('{0}개',its.length)));sec.appendChild(h);}
       var g=el('div','cards');its.forEach(function(i){g.appendChild(card(i,c));});sec.appendChild(g);
       m.appendChild(sec);
     });

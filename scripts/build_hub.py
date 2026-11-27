@@ -412,6 +412,9 @@ def main():
     _sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     import series_cards
     series_cards.apply(catalog["items"])
+    # 소분류 카드(hub_meta.json subs): 카탈로그 3단계에서 소분류 묶음 머리에 소개·색인어·그림으로 보인다
+    used_sub = {(i.get("cat"), i.get("mid") or "기타", i.get("sub") or "기타") for i in catalog["items"]}
+    catalog["subs"] = [_img(x) for x in meta.get("subs", []) if (x.get("cat"), x.get("mid"), x.get("name")) in used_sub]
     with open(os.path.join(DATA, "catalog.json"), "w", encoding="utf-8") as f:
         json.dump(catalog, f, ensure_ascii=False, indent=1)
 

@@ -1,5 +1,5 @@
 {
- "_guide": "categories 순서가 서버실 랙 순서(RACK 01~10, 최대 10개). tr은 서버실 외국어 이름. server_translations는 서버실 외국어 제목·소개(옛 servers.csv에서 가져옴). mids는 중분류 카드(소개·색인어·그림). 그림은 thumbs/cats/<id>.webp, 없으면 색 상자로 보인다. 현황판 표(hub.csv)·합본(hub.json)은 관리자 키로 잠근 .enc 파일로만 저장한다. 2026-11-21 개편: RACK 05 논문 해설 → 경제·수학·최적화, RACK 08 강의·저서 → 인공지능 응용. 논문 해설 중분류(cat '논문 해설')는 랙이 아니라 Ahn's Articles & Presentations의 갈래로 남긴다(항목은 hub.csv 'Articles_갈래' 칸으로 모임).",
+ "_guide": "categories 순서가 서버실 랙 순서(RACK 01~10, 최대 10개). tr은 서버실 외국어 이름. server_translations는 서버실 외국어 제목·소개(옛 servers.csv에서 가져옴). mids는 중분류 카드(소개·색인어·그림). 그림은 thumbs/cats/<id>.webp, 없으면 색 상자로 보인다. 현황판 표(hub.csv)·합본(hub.json)은 관리자 키로 잠근 .enc 파일로만 저장한다. 2026-11-21 개편: RACK 05 논문 해설 → 경제·수학·최적화, RACK 08 강의·저서 → 인공지능 응용. 논문 해설 중분류(cat '논문 해설')는 랙이 아니라 Ahn's Articles & Presentations의 갈래로 남긴다(항목은 hub.csv 'Articles_갈래' 칸으로 모임). subs는 소분류 카드(소개·색인어·그림) — 카탈로그 3단계에서 소분류 묶음 머리에 카드로 보인다. 그림이 없으면 그 소분류 첫 콘텐츠 표지를 쓴다.",
  "categories": [
   {
    "name": "머신러닝",
@@ -1451,6 +1451,79 @@
     "RSS"
    ],
    "image": "thumbs/repos/ahnboat_ontology_feed.jpg"
+  },
+  {
+   "cat": "머신러닝",
+   "name": "머신러닝 모델",
+   "id": "C01-M3",
+   "desc": "분류 대회와 15층 연구소에서 KNN·SVM부터 앙상블까지 머신러닝 모델을 한 무리씩 직접 비교합니다.",
+   "keywords": [
+    "분류 모델",
+    "거리 기반 분류",
+    "모델 비교"
+   ],
+   "image": "thumbs/cats/C01-M3.webp"
+  },
+  {
+   "cat": "머신러닝",
+   "name": "인공지능 역사",
+   "id": "C01-M4",
+   "desc": "사람이 IF-THEN을 써 넣던 규칙 시스템에서 스스로 도구를 쓰는 AI 에이전트까지, 인공지능이 걸어온 길을 따라갑니다.",
+   "keywords": [
+    "규칙 기반",
+    "추론 모델",
+    "AI 에이전트"
+   ],
+   "image": "thumbs/cats/C01-M4.webp"
+  },
+  {
+   "cat": "AI 감각·생성",
+   "name": "캐릭터 디자인",
+   "id": "C03-M4",
+   "desc": "구조 → 빛 → 주름 순서로 캐릭터를 잡는 원리를 익히고, 그 원리를 그림 생성 AI 지시문으로 옮깁니다.",
+   "keywords": [
+    "구조 먼저",
+    "캐릭터 그리기",
+    "그림 생성 AI"
+   ],
+   "image": "thumbs/cats/C03-M4.webp"
+  },
+  {
+   "cat": "AI 감각·생성",
+   "name": "케릭터 디자인",
+   "id": "C03-M5",
+   "desc": "표정·머리카락·옷·디테일·콘티를 편마다 하나씩, 같은 캐릭터를 원리부터 다르게 그려 보는 구조 먼저 그리기 연구실.",
+   "keywords": [
+    "표정과 머리카락",
+    "옷 주름",
+    "콘티"
+   ],
+   "image": "thumbs/cats/C03-M5.webp"
+  },
+  {
+   "cat": "경제·수학·최적화",
+   "name": "수학",
+   "id": "C05-O6",
+   "desc": "좌표 공간, 미분과 적분, 위상수학, 그래프 이론, 리만 가설까지 — 인공지능 뒤에 있는 수학을 교실·게임으로 하나씩 엽니다.",
+   "keywords": [
+    "좌표 공간",
+    "미분과 적분",
+    "위상수학",
+    "AI 수학"
+   ],
+   "image": "thumbs/cats/C05-O6.webp"
+  },
+  {
+   "cat": "경제·수학·최적화",
+   "name": "최적화 방법",
+   "id": "C05-O7",
+   "desc": "가장 좋은 값을 찾는 길. 3D 오차 지도, 경사하강의 몰래 연습, 제약이 있는 최적화까지 손으로 확인합니다.",
+   "keywords": [
+    "경사하강",
+    "오차 지도",
+    "학습률"
+   ],
+   "image": "thumbs/cats/C05-O7.webp"
   }
  ],
  "hero": {
@@ -1458,5 +1531,451 @@
   "kicker": "AHNBOAT LAB · 10 RACKS",
   "title": "Reon Ahn's Lab Server",
   "desc": "안상선(Reon Ahn)의 연구실 서버입니다. 박사·조수·초파리 연구원·주판봇이 지키는 열 개의 랙에서 분야를 고르면 중분류와 콘텐츠가 이어집니다."
- }
+ },
+ "subs": [
+  {
+   "cat": "AI 감각·생성",
+   "mid": "생성형 AI활용",
+   "name": "캐릭터 표정 설정",
+   "desc": "눈썹·눈·입·기호 네 부품과 감정 섞기로 복합 표정을 설계하고, 표정 설정표를 AI 지시문으로 만듭니다.",
+   "keywords": [
+    "표정 부품",
+    "복합 감정",
+    "표정 설정표"
+   ],
+   "image": "thumbs/repos/drawing_lab_06.jpg"
+  },
+  {
+   "cat": "AI 감각·생성",
+   "mid": "캐릭터 디자인",
+   "name": "캐릭터 디자인",
+   "desc": "픽셀 캐릭터를 실사까지 — 구조, 빛, 주름 순서로 한 캐릭터를 완성합니다.",
+   "keywords": [
+    "구조 먼저",
+    "픽셀에서 실사",
+    "빛과 주름"
+   ],
+   "image": "thumbs/repos/adminmrobo-structure_first_drawing_lab.jpg"
+  },
+  {
+   "cat": "AI 감각·생성",
+   "mid": "케릭터 디자인",
+   "name": "스토리 제작",
+   "desc": "이야기를 여덟 컷으로 나누고 카메라·컷 잇기·자세를 정한 콘티로 그림 생성 AI에게 컷을 맡깁니다.",
+   "keywords": [
+    "콘티",
+    "컷 나누기",
+    "카메라"
+   ],
+   "image": "thumbs/repos/drawing_lab_05.jpg"
+  },
+  {
+   "cat": "AI 감각·생성",
+   "mid": "케릭터 디자인",
+   "name": "캐릭터 변형",
+   "desc": "어긋남·과장·등신으로 웃기는 변형을 만들고, 참고 그림을 군집으로 묶어 베리에이션을 찾습니다.",
+   "keywords": [
+    "과장과 등신",
+    "웃음 원리",
+    "베리에이션"
+   ],
+   "image": "thumbs/repos/drawing_lab_fun.jpg"
+  },
+  {
+   "cat": "AI 감각·생성",
+   "mid": "케릭터 디자인",
+   "name": "캐릭터 세부 표현",
+   "desc": "눈은 육각형에서, 머리카락은 덩어리에서 — 눈·코·귀·입·머리카락의 디테일을 순서대로 넣습니다.",
+   "keywords": [
+    "눈 그리기",
+    "머리카락 덩어리",
+    "디테일"
+   ],
+   "image": "thumbs/repos/drawing_lab_04.jpg"
+  },
+  {
+   "cat": "AI 감각·생성",
+   "mid": "케릭터 디자인",
+   "name": "캐릭터 의상",
+   "desc": "사진 속 옷을 그림으로 옮기고, 핏·소재·동작에 따라 달라지는 주름과 그림자를 직접 넣어 봅니다.",
+   "keywords": [
+    "옷 주름",
+    "그림자",
+    "소재와 핏"
+   ],
+   "image": "thumbs/repos/structure_first_drawing_lab_01.jpg"
+  },
+  {
+   "cat": "AI 감각·생성",
+   "mid": "케릭터 디자인",
+   "name": "캐릭터 표정",
+   "desc": "몸으로 읽히는 기분과 여섯 감정, 원과 기준선에서 시작하는 얼굴까지 표정의 기본을 익힙니다.",
+   "keywords": [
+    "여섯 감정",
+    "얼굴 기준선",
+    "몸의 기분"
+   ],
+   "image": "thumbs/repos/drawing_lab_01.jpg"
+  },
+  {
+   "cat": "AI 감각·생성",
+   "mid": "케릭터 디자인",
+   "name": "캐릭터 헤어 스타일",
+   "desc": "이마 선·가르마·부피와 다발로 같은 얼굴에 다른 머리를 씌워 봅니다.",
+   "keywords": [
+    "가르마와 부피",
+    "머리 다발",
+    "윤기"
+   ],
+   "image": "thumbs/repos/drawing_lab_02.jpg"
+  },
+  {
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "LLM 이해",
+   "name": "AI에이젠트",
+   "desc": "조수 하루를 닮은 챗봇을 만들며 AI 에이전트의 공식 13개를 한 장씩 익힙니다.",
+   "keywords": [
+    "AI 에이전트",
+    "도구 사용",
+    "하루봇"
+   ],
+   "image": "thumbs/repos/agentic_ai_crash_guide.jpg"
+  },
+  {
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "LLM 이해",
+   "name": "자연어 분석",
+   "desc": "형태소 분석, TF-IDF·LDA, 단어 임베딩, RNN·LSTM까지 말을 숫자로 바꾸는 자연어 분석의 흐름.",
+   "keywords": [
+    "형태소 분석",
+    "TF-IDF",
+    "단어 임베딩"
+   ],
+   "image": "thumbs/repos/ai-nlp-data-analysis.jpg"
+  },
+  {
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "LLM 이해",
+   "name": "재귀적 자기개선",
+   "desc": "스스로 고치는 AI의 기원과 정의, 무엇으로 확인하는지, 모델 붕괴와 안전 논쟁을 문헌으로 정리합니다.",
+   "keywords": [
+    "RSI",
+    "자기개선",
+    "모델 붕괴"
+   ],
+   "image": "thumbs/repos/Recursive-Self-Improvement.jpg"
+  },
+  {
+   "cat": "경제·수학·최적화",
+   "mid": "경제학",
+   "name": "경제학 원론",
+   "desc": "희소성과 기회비용에서 수요·공급, 탄력성, 세금, 시장구조까지 경제학의 기본기를 다집니다.",
+   "keywords": [
+    "기회비용",
+    "수요와 공급",
+    "탄력성"
+   ],
+   "image": "thumbs/repos/basic_economic_lab.jpg"
+  },
+  {
+   "cat": "경제·수학·최적화",
+   "mid": "경제학",
+   "name": "노동경제학",
+   "desc": "노동공급과 노동수요, 임금 결정과 정책 효과를 모형과 데이터로 살펴봅니다.",
+   "keywords": [
+    "노동공급",
+    "노동수요",
+    "임금"
+   ],
+   "image": "thumbs/repos/labor_economics.jpg"
+  },
+  {
+   "cat": "경제·수학·최적화",
+   "mid": "경제학",
+   "name": "미시경제학",
+   "desc": "소비자·생산자·시장지배력, 게임이론, 일반균형과 정보경제학까지 미시경제학 연구실 블로그.",
+   "keywords": [
+    "소비자 이론",
+    "게임이론",
+    "일반균형"
+   ],
+   "image": "thumbs/repos/micro_economics.jpg"
+  },
+  {
+   "cat": "경제·수학·최적화",
+   "mid": "선형대수",
+   "name": "벡터 미적분",
+   "desc": "화살표 하나로 읽는 좌표와 ∇, 그리고 말을 벡터로 저장하는 벡터 DB까지.",
+   "keywords": [
+    "벡터",
+    "기울기 ∇",
+    "벡터 DB"
+   ],
+   "image": "thumbs/repos/vector_db_lab.jpg"
+  },
+  {
+   "cat": "경제·수학·최적화",
+   "mid": "수학",
+   "name": "그래프 이론",
+   "desc": "점과 선으로 관계를 보는 법. 그래프 이론 9장과 실전 연습장을 팀 대항전으로 풉니다.",
+   "keywords": [
+    "점과 선",
+    "연결망",
+    "최단 경로"
+   ],
+   "image": "thumbs/repos/graph_theory_lab.jpg"
+  },
+  {
+   "cat": "경제·수학·최적화",
+   "mid": "수학",
+   "name": "로피탈 정리",
+   "desc": "0/0의 정체를 밝히는 수업. 극한과 기울기에서 로피탈의 정리까지 12장과 실전 연습장.",
+   "keywords": [
+    "극한",
+    "0/0",
+    "미분"
+   ],
+   "image": "thumbs/repos/adminmrobo-lhopital_lab.jpg"
+  },
+  {
+   "cat": "경제·수학·최적화",
+   "mid": "수학",
+   "name": "리만가설",
+   "desc": "리만 가설 증명 소식과, 그 전까지 수학자들이 어디까지 다가와 있었는지를 연구실 식구들의 말다툼으로 풉니다.",
+   "keywords": [
+    "리만 가설",
+    "소수",
+    "제타 함수"
+   ],
+   "image": "thumbs/repos/riemann_hypothesis_lab.jpg"
+  },
+  {
+   "cat": "경제·수학·최적화",
+   "mid": "수학",
+   "name": "미분과 적분",
+   "desc": "∇ 하나로 보는 미분·적분과 다섯 현장, 그리고 진짜로 꺾인 만큼만 재는 공변미분.",
+   "keywords": [
+    "∇",
+    "미분·적분",
+    "공변미분"
+   ],
+   "image": "thumbs/repos/covariant_chase_lab.jpg"
+  },
+  {
+   "cat": "경제·수학·최적화",
+   "mid": "수학",
+   "name": "수학 기초",
+   "desc": "공식 12장을 생선 가게 AI 모델 하나로 엮어, 함수·행렬·벡터부터 차근차근 익힙니다.",
+   "keywords": [
+    "함수",
+    "행렬",
+    "벡터"
+   ],
+   "image": "thumbs/repos/math_for_ai_lab.jpg"
+  },
+  {
+   "cat": "경제·수학·최적화",
+   "mid": "수학",
+   "name": "수학 응용",
+   "desc": "루빅스 큐브로 배우는 군론과 탐색, 그리고 AI가 큐브를 푸는 법.",
+   "keywords": [
+    "루빅스 큐브",
+    "군론",
+    "탐색"
+   ],
+   "image": "thumbs/repos/ai_cube_lab.jpg"
+  },
+  {
+   "cat": "경제·수학·최적화",
+   "mid": "최적화 방법",
+   "name": "수학 응용",
+   "desc": "가중치를 좌표축으로, 오차를 높이로 놓은 3D 지도에서 기울기·안장점·학습률을 봅니다.",
+   "keywords": [
+    "3D 오차 지도",
+    "안장점",
+    "학습률"
+   ],
+   "image": "thumbs/repos/optimization_3d_map.jpg"
+  },
+  {
+   "cat": "경제·수학·최적화",
+   "mid": "수학",
+   "name": "위상수학",
+   "desc": "고무찰흙 세상의 수학과, 점 하나하나가 섬인 이산 위상까지 중학생 눈높이로 엽니다.",
+   "keywords": [
+    "위상수학",
+    "이산 위상",
+    "연결성"
+   ],
+   "image": "thumbs/repos/topology_ai_lab.jpg"
+  },
+  {
+   "cat": "경제·수학·최적화",
+   "mid": "수학",
+   "name": "인공지능 수학",
+   "desc": "AI 공부하다 막힌 수학을 125개 항목으로 바로 찾아보는 수리 도감.",
+   "keywords": [
+    "수리 도감",
+    "확률·베이즈",
+    "행렬"
+   ],
+   "image": "thumbs/repos/math_basic_for_ai_dictionary.jpg"
+  },
+  {
+   "cat": "경제·수학·최적화",
+   "mid": "수학",
+   "name": "좌표 공간(space)",
+   "desc": "데이터 한 줄을 방 안의 점으로 — 유클리드·힐베르트·민코프스키 공간과 좌표 첫걸음.",
+   "keywords": [
+    "유클리드 공간",
+    "힐베르트 공간",
+    "좌표계"
+   ],
+   "image": "thumbs/repos/hello_space_lab.jpg"
+  },
+  {
+   "cat": "경제·수학·최적화",
+   "mid": "수학",
+   "name": "최적화 방법",
+   "desc": "라그랑지안과 해밀토니안, 울타리 안의 최적점을 찾는 라그랑주 승수.",
+   "keywords": [
+    "라그랑지안",
+    "라그랑주 승수",
+    "제약 최적화"
+   ],
+   "image": "thumbs/repos/lagrangian_hamiltonian_lab.jpg"
+  },
+  {
+   "cat": "금융·핀테크·블록체인",
+   "mid": "보험·핀테크",
+   "name": "데이터 분석",
+   "desc": "핀테크 데이터 수집과 전처리부터 분류·회귀·딥러닝·시계열 모델 평가까지.",
+   "keywords": [
+    "핀테크 데이터",
+    "모델 평가",
+    "시계열"
+   ],
+   "image": "thumbs/repos/fintech_data_analysis.jpg"
+  },
+  {
+   "cat": "머신러닝",
+   "mid": "인공지능 역사",
+   "name": "rule base에서 에이전트까지",
+   "desc": "플로우차트가 LLM 추론 모델이 되고, 그 모델이 도구를 쥔 에이전트가 되기까지.",
+   "keywords": [
+    "규칙 기반",
+    "추론 모델",
+    "에이전트"
+   ],
+   "image": "thumbs/repos/rulebase_to_agent.jpg"
+  },
+  {
+   "cat": "연구실 운영",
+   "mid": "연구 설계",
+   "name": "온톨로지 활용",
+   "desc": "연구실 온톨로지로 아이디어를 검증하고 결과물을 평가하는 도구함.",
+   "keywords": [
+    "아이디어 검증",
+    "결과물 평가",
+    "온톨로지"
+   ],
+   "image": "thumbs/repos/ahnboat_ontology_feed.jpg"
+  },
+  {
+   "cat": "연구실 운영",
+   "mid": "연구실 소개",
+   "name": "랩 당직",
+   "desc": "서버실을 지키는 조수 하루와 인턴 시아·모아의 픽셀아트 루프 영상.",
+   "keywords": [
+    "서버실",
+    "픽셀아트",
+    "루프 영상"
+   ],
+   "image": "thumbs/cats/C10-M1.webp"
+  },
+  {
+   "cat": "연구실 운영",
+   "mid": "제작 도구",
+   "name": "타이머",
+   "desc": "시간이 줄수록 하루와 시아·모아가 점점 당황하는 픽셀 타이머.",
+   "keywords": [
+    "픽셀 타이머",
+    "알림음",
+    "전체 화면"
+   ],
+   "image": "thumbs/cats/C10-M2.webp"
+  },
+  {
+   "cat": "인공지능 응용",
+   "mid": "AI 범죄학",
+   "name": "피싱",
+   "desc": "피싱 사이트 데이터와 단서 아홉 개로 여는 탐지 모델 대회.",
+   "keywords": [
+    "피싱 탐지",
+    "분류 모델",
+    "모델 대회"
+   ],
+   "image": "thumbs/repos/catch_phishing.jpg"
+  },
+  {
+   "cat": "인공지능 응용",
+   "mid": "경제 연구",
+   "name": "머신러닝  모델",
+   "desc": "산재보험패널 데이터로 재활 서비스 이용을 예측하고 정확도의 함정을 짚습니다.",
+   "keywords": [
+    "산재보험패널",
+    "재활 예측",
+    "정확도의 함정"
+   ],
+   "image": "thumbs/repos/industrial-accident-prediction.jpg"
+  },
+  {
+   "cat": "인공지능 응용",
+   "mid": "로봇·강화학습",
+   "name": "AI·로봇",
+   "desc": "불완전한 말을 들은 로봇이 확신이 낮으면 되묻는 법 — 강화학습과 베이지안 추론.",
+   "keywords": [
+    "강화학습",
+    "베이지안 추론",
+    "되묻는 로봇"
+   ],
+   "image": "thumbs/repos/Reinforcement-Learning-lab_project_01.jpg"
+  },
+  {
+   "cat": "인공지능 응용",
+   "mid": "산업·인프라",
+   "name": "AI 제조업 및 스마트팩토리",
+   "desc": "자율주행차 배터리 공장을 무대로 제조업 AI의 데이터·모델 분석을 시연합니다.",
+   "keywords": [
+    "배터리 공장",
+    "불량 예측",
+    "스마트팩토리"
+   ],
+   "image": "thumbs/repos/how_to_make_ai_model_factory_version.jpg"
+  },
+  {
+   "cat": "인공지능 응용",
+   "mid": "의료 및 보건통계학",
+   "name": "의료AI",
+   "desc": "신약 허가의 숫자부터, 보건통계를 비전공 독자도 끝까지 읽게 푼 연구실 해설.",
+   "keywords": [
+    "보건통계",
+    "임상시험",
+    "신약 허가"
+   ],
+   "image": "thumbs/repos/health_stats_lab.jpg"
+  },
+  {
+   "cat": "통계·데이터 기초",
+   "mid": "데이터베이스",
+   "name": "데이터베이스 설계",
+   "desc": "15회차 데이터베이스 설계 — 이론, SQL, 모델링과 정규화를 연구실 해설로.",
+   "keywords": [
+    "SQL",
+    "ER 모델링",
+    "정규화"
+   ],
+   "image": "thumbs/repos/data_base_design.jpg"
+  }
+ ]
 }
