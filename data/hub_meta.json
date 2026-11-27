@@ -1977,6 +1977,90 @@
    ],
    "image": "thumbs/cats/subs/practice-and-explanation.webp",
    "_note": "공통 카드 — cat·mid가 \"*\"이면 '실습 및 해설'이 쓰이는 모든 대분류·중분류에 붙는다(build_hub.py). 그림 지시문: docs/genspark/practice-and-explanation/"
+  },
+  {
+   "cat": "딥러닝·뇌과학",
+   "mid": "딥러닝 모델",
+   "name": "실습 및 해설",
+   "desc": "드롭아웃·CNN 실험을 하루가 다시 돌리고, 인턴들이 설계도면과 쪽지시험으로 신경망이 보는 법을 정리합니다.",
+   "keywords": [
+    "드롭아웃",
+    "CNN",
+    "설계도면"
+   ],
+   "image": "thumbs/repos/deep_learning_model_design_lab_01.jpg"
+  },
+  {
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "LLM 이해",
+   "name": "실습 및 해설",
+   "desc": "RAG·미세조정·평가·에이전트 응용편, NLP 20가지를 다섯 층 지도로 다시 읽기, 쪽지시험 전날의 자연어 분석 서머리 노트.",
+   "keywords": [
+    "RAG",
+    "NLP 지도",
+    "서머리 노트"
+   ],
+   "image": "thumbs/repos/LLM_summary_note.jpg"
+  },
+  {
+   "cat": "경제·수학·최적화",
+   "mid": "최적화 방법",
+   "name": "실습 및 해설",
+   "desc": "미분의 네 가지 뜻을 손으로 확인하고, 휘어진 골짜기에서 SGD·모멘텀·Adam을 경주시켜 순위가 뒤집히는 조건을 찾습니다.",
+   "keywords": [
+    "SGD",
+    "모멘텀",
+    "Adam"
+   ],
+   "image": "thumbs/repos/optimization_test_lab.jpg"
+  },
+  {
+   "cat": "통계·데이터 기초",
+   "mid": "데이터 시각화",
+   "name": "실습 및 해설",
+   "desc": "움직이는 공장 대시보드와 15주 시각화 디자인 연구실 — 차트를 고르고, 다듬고, 움직이게 만드는 실습.",
+   "keywords": [
+    "애니메이션 차트",
+    "대시보드",
+    "차트 고르기"
+   ],
+   "image": "thumbs/repos/moving_factory_dashboard.jpg"
+  },
+  {
+   "cat": "통계·데이터 기초",
+   "mid": "데이터베이스",
+   "name": "실습 및 해설",
+   "desc": "DB 환경을 처음부터 설치해 접속까지 확인하고, 15회차 데이터베이스 설계를 이론·SQL·정규화 순서로 실습합니다.",
+   "keywords": [
+    "DB 설치",
+    "SQL",
+    "정규화"
+   ],
+   "image": "thumbs/repos/data_base_design.jpg"
+  },
+  {
+   "cat": "통계·데이터 기초",
+   "mid": "프로그래밍",
+   "name": "실습 및 해설",
+   "desc": "카페·편의점·쇼핑몰 장부로 pandas 명령어 72장을 익힙니다. 표가 단계별로 움직이는 그림과 Colab 코드로.",
+   "keywords": [
+    "pandas",
+    "장부 데이터",
+    "Colab"
+   ],
+   "image": "thumbs/repos/learn-pandas-visually_korean.jpg"
+  },
+  {
+   "cat": "통계·데이터 기초",
+   "mid": "확률·통계",
+   "name": "실습 및 해설",
+   "desc": "우연의 과학통계학 시리즈, p-value의 여섯 가지 오해 바로잡기, 확률해석 교실까지 — 직접 실험하며 익히는 통계.",
+   "keywords": [
+    "p-value",
+    "가설검정",
+    "확률해석"
+   ],
+   "image": "thumbs/repos/what_is_p_value_lab.jpg"
   }
  ]
 }
