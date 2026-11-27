@@ -1543,7 +1543,7 @@
     "복합 감정",
     "표정 설정표"
    ],
-   "image": "thumbs/repos/drawing_lab_06.jpg"
+   "image": "thumbs/cats/subs/character-expression-sheets.webp"
   },
   {
    "cat": "AI 감각·생성",
@@ -1555,7 +1555,7 @@
     "픽셀에서 실사",
     "빛과 주름"
    ],
-   "image": "thumbs/repos/adminmrobo-structure_first_drawing_lab.jpg"
+   "image": "thumbs/cats/subs/character-design.webp"
   },
   {
    "cat": "AI 감각·생성",
@@ -1567,7 +1567,7 @@
     "컷 나누기",
     "카메라"
    ],
-   "image": "thumbs/repos/drawing_lab_05.jpg"
+   "image": "thumbs/cats/subs/storyboarding.webp"
   },
   {
    "cat": "AI 감각·생성",
@@ -1579,7 +1579,7 @@
     "웃음 원리",
     "베리에이션"
    ],
-   "image": "thumbs/repos/drawing_lab_fun.jpg"
+   "image": "thumbs/cats/subs/character-variations.webp"
   },
   {
    "cat": "AI 감각·생성",
@@ -1591,7 +1591,7 @@
     "머리카락 덩어리",
     "디테일"
    ],
-   "image": "thumbs/repos/drawing_lab_04.jpg"
+   "image": "thumbs/cats/subs/character-details.webp"
   },
   {
    "cat": "AI 감각·생성",
@@ -1603,7 +1603,7 @@
     "그림자",
     "소재와 핏"
    ],
-   "image": "thumbs/repos/structure_first_drawing_lab_01.jpg"
+   "image": "thumbs/cats/subs/character-outfits.webp"
   },
   {
    "cat": "AI 감각·생성",
@@ -1615,7 +1615,7 @@
     "얼굴 기준선",
     "몸의 기분"
    ],
-   "image": "thumbs/repos/drawing_lab_01.jpg"
+   "image": "thumbs/cats/subs/character-expressions.webp"
   },
   {
    "cat": "AI 감각·생성",
@@ -1627,7 +1627,7 @@
     "머리 다발",
     "윤기"
    ],
-   "image": "thumbs/repos/drawing_lab_02.jpg"
+   "image": "thumbs/cats/subs/character-hairstyles.webp"
   },
   {
    "cat": "LLM·추론 엔지니어링",
@@ -1639,7 +1639,7 @@
     "도구 사용",
     "하루봇"
    ],
-   "image": "thumbs/repos/agentic_ai_crash_guide.jpg"
+   "image": "thumbs/cats/subs/ai-agents.webp"
   },
   {
    "cat": "LLM·추론 엔지니어링",
@@ -1651,7 +1651,7 @@
     "TF-IDF",
     "단어 임베딩"
    ],
-   "image": "thumbs/repos/ai-nlp-data-analysis.jpg"
+   "image": "thumbs/cats/subs/nlp.webp"
   },
   {
    "cat": "LLM·추론 엔지니어링",
@@ -1663,7 +1663,7 @@
     "자기개선",
     "모델 붕괴"
    ],
-   "image": "thumbs/repos/Recursive-Self-Improvement.jpg"
+   "image": "thumbs/cats/subs/recursive-self-improvement.webp"
   },
   {
    "cat": "경제·수학·최적화",
@@ -1675,7 +1675,7 @@
     "수요와 공급",
     "탄력성"
    ],
-   "image": "thumbs/repos/basic_economic_lab.jpg"
+   "image": "thumbs/cats/subs/principles-of-economics.webp"
   },
   {
    "cat": "경제·수학·최적화",
@@ -1687,7 +1687,7 @@
     "노동수요",
     "임금"
    ],
-   "image": "thumbs/repos/labor_economics.jpg"
+   "image": "thumbs/cats/subs/labor-economics.webp"
   },
   {
    "cat": "경제·수학·최적화",
@@ -1699,7 +1699,7 @@
     "게임이론",
     "일반균형"
    ],
-   "image": "thumbs/repos/micro_economics.jpg"
+   "image": "thumbs/cats/subs/microeconomics.webp"
   },
   {
    "cat": "경제·수학·최적화",
@@ -1711,7 +1711,7 @@
     "기울기 ∇",
     "벡터 DB"
    ],
-   "image": "thumbs/repos/vector_db_lab.jpg"
+   "image": "thumbs/cats/subs/vector-calculus.webp"
   },
   {
    "cat": "경제·수학·최적화",
@@ -1723,7 +1723,7 @@
     "연결망",
     "최단 경로"
    ],
-   "image": "thumbs/repos/graph_theory_lab.jpg"
+   "image": "thumbs/cats/subs/graph-theory.webp"
   },
   {
    "cat": "경제·수학·최적화",
@@ -1735,7 +1735,7 @@
     "0/0",
     "미분"
    ],
-   "image": "thumbs/repos/adminmrobo-lhopital_lab.jpg"
+   "image": "thumbs/cats/subs/lhopitals-rule.webp"
   },
   {
    "cat": "경제·수학·최적화",
@@ -1747,7 +1747,7 @@
     "소수",
     "제타 함수"
    ],
-   "image": "thumbs/repos/riemann_hypothesis_lab.jpg"
+   "image": "thumbs/cats/subs/riemann-hypothesis.webp"
   },
   {
    "cat": "경제·수학·최적화",
@@ -1759,7 +1759,7 @@
     "미분·적분",
     "공변미분"
    ],
-   "image": "thumbs/repos/covariant_chase_lab.jpg"
+   "image": "thumbs/cats/subs/calculus.webp"
   },
   {
    "cat": "경제·수학·최적화",
@@ -1771,7 +1771,7 @@
     "행렬",
     "벡터"
    ],
-   "image": "thumbs/repos/math_for_ai_lab.jpg"
+   "image": "thumbs/cats/subs/math-basics.webp"
   },
   {
    "cat": "경제·수학·최적화",
@@ -1783,7 +1783,7 @@
     "군론",
     "탐색"
    ],
-   "image": "thumbs/repos/ai_cube_lab.jpg"
+   "image": "thumbs/cats/subs/applied-math.webp"
   },
   {
    "cat": "경제·수학·최적화",
@@ -1795,7 +1795,7 @@
     "안장점",
     "학습률"
    ],
-   "image": "thumbs/repos/optimization_3d_map.jpg"
+   "image": "thumbs/cats/subs/applied-math-optimization.webp"
   },
   {
    "cat": "경제·수학·최적화",
@@ -1807,7 +1807,7 @@
     "이산 위상",
     "연결성"
    ],
-   "image": "thumbs/repos/topology_ai_lab.jpg"
+   "image": "thumbs/cats/subs/topology.webp"
   },
   {
    "cat": "경제·수학·최적화",
@@ -1819,7 +1819,7 @@
     "확률·베이즈",
     "행렬"
    ],
-   "image": "thumbs/repos/math_basic_for_ai_dictionary.jpg"
+   "image": "thumbs/cats/subs/math-for-ai.webp"
   },
   {
    "cat": "경제·수학·최적화",
@@ -1831,7 +1831,7 @@
     "힐베르트 공간",
     "좌표계"
    ],
-   "image": "thumbs/repos/hello_space_lab.jpg"
+   "image": "thumbs/cats/subs/coordinate-space.webp"
   },
   {
    "cat": "경제·수학·최적화",
@@ -1843,7 +1843,7 @@
     "라그랑주 승수",
     "제약 최적화"
    ],
-   "image": "thumbs/repos/lagrangian_hamiltonian_lab.jpg"
+   "image": "thumbs/cats/subs/optimization-methods.webp"
   },
   {
    "cat": "금융·핀테크·블록체인",
@@ -1855,7 +1855,7 @@
     "모델 평가",
     "시계열"
    ],
-   "image": "thumbs/repos/fintech_data_analysis.jpg"
+   "image": "thumbs/cats/subs/data-analysis.webp"
   },
   {
    "cat": "머신러닝",
@@ -1867,7 +1867,7 @@
     "추론 모델",
     "에이전트"
    ],
-   "image": "thumbs/repos/rulebase_to_agent.jpg"
+   "image": "thumbs/cats/subs/rule-base-to-agents.webp"
   },
   {
    "cat": "연구실 운영",
@@ -1879,7 +1879,7 @@
     "결과물 평가",
     "온톨로지"
    ],
-   "image": "thumbs/repos/ahnboat_ontology_feed.jpg"
+   "image": "thumbs/cats/subs/ontology-use.webp"
   },
   {
    "cat": "연구실 운영",
@@ -1891,7 +1891,7 @@
     "픽셀아트",
     "루프 영상"
    ],
-   "image": "thumbs/cats/C10-M1.webp"
+   "image": "thumbs/cats/subs/lab-duty.webp"
   },
   {
    "cat": "연구실 운영",
@@ -1903,7 +1903,7 @@
     "알림음",
     "전체 화면"
    ],
-   "image": "thumbs/cats/C10-M2.webp"
+   "image": "thumbs/cats/subs/timer.webp"
   },
   {
    "cat": "인공지능 응용",
@@ -1915,7 +1915,7 @@
     "분류 모델",
     "모델 대회"
    ],
-   "image": "thumbs/repos/catch_phishing.jpg"
+   "image": "thumbs/cats/subs/phishing.webp"
   },
   {
    "cat": "인공지능 응용",
@@ -1927,7 +1927,7 @@
     "재활 예측",
     "정확도의 함정"
    ],
-   "image": "thumbs/repos/industrial-accident-prediction.jpg"
+   "image": "thumbs/cats/subs/ml-models.webp"
   },
   {
    "cat": "인공지능 응용",
@@ -1939,7 +1939,7 @@
     "베이지안 추론",
     "되묻는 로봇"
    ],
-   "image": "thumbs/repos/Reinforcement-Learning-lab_project_01.jpg"
+   "image": "thumbs/cats/subs/ai-robotics.webp"
   },
   {
    "cat": "인공지능 응용",
@@ -1951,7 +1951,7 @@
     "불량 예측",
     "스마트팩토리"
    ],
-   "image": "thumbs/repos/how_to_make_ai_model_factory_version.jpg"
+   "image": "thumbs/cats/subs/ai-manufacturing-smart-factory.webp"
   },
   {
    "cat": "인공지능 응용",
@@ -1963,7 +1963,7 @@
     "임상시험",
     "신약 허가"
    ],
-   "image": "thumbs/repos/health_stats_lab.jpg"
+   "image": "thumbs/cats/subs/medical-ai.webp"
   },
   {
    "cat": "통계·데이터 기초",
@@ -1975,7 +1975,7 @@
     "ER 모델링",
     "정규화"
    ],
-   "image": "thumbs/repos/data_base_design.jpg"
+   "image": "thumbs/cats/subs/database-design.webp"
   }
  ]
 }
