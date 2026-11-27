@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27 20:53 KST",
+ "updated": "2026-11-27 21:07 KST",
  "rule": {
   "ok": "가로 1200 px 이상",
   "warn": "가로 960~1199 px",
@@ -9,7 +9,7 @@
  "summary": {
   "ok": 123,
   "none": 49,
-  "warn": 12,
+  "warn": 13,
   "low": 10
  },
  "repos": {
@@ -698,7 +698,7 @@
    "path": null,
    "w": 0,
    "h": 0,
-   "pushed_at": "2026-11-27T11:25:46Z",
+   "pushed_at": "2026-11-27T11:41:51Z",
    "declared": 0,
    "declared_low": 0,
    "grade": "none"
@@ -1188,7 +1188,7 @@
    "path": "assets/img/cover_01.webp",
    "w": 1600,
    "h": 900,
-   "pushed_at": "2026-11-27T10:56:57Z",
+   "pushed_at": "2026-11-27T11:55:15Z",
    "declared": 4,
    "declared_low": 0,
    "grade": "ok"
@@ -1842,6 +1842,16 @@
    "declared": 6,
    "declared_low": 0,
    "grade": "ok"
+  },
+  "Tokenization-BPE-tutorial": {
+   "src": "name:images/cover.webp",
+   "path": "images/cover.webp",
+   "w": 960,
+   "h": 540,
+   "pushed_at": "2026-11-27T11:48:27Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "warn"
   },
   "topology_ai_lab": {
    "src": "manifest:img/og/og_01.webp",

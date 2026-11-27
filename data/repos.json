@@ -14221,7 +14221,7 @@
   "repo_url": "https://github.com/adminmrobo/drug-crime-social-cost",
   "pages_url": "https://adminmrobo.github.io/drug-crime-social-cost/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T11:25:46Z",
+  "pushed_at": "2026-11-27T11:41:51Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -21777,7 +21777,7 @@
   "repo_url": "https://github.com/adminmrobo/likelihood_vs_probability",
   "pages_url": "https://adminmrobo.github.io/likelihood_vs_probability/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T10:56:57Z",
+  "pushed_at": "2026-11-27T11:55:15Z",
   "has_manifest": true,
   "covers": [
    {
@@ -21902,7 +21902,7 @@
     ],
     "characters": [],
     "robot": "jupanbot-v2",
-    "status": "redo"
+    "status": "ok"
    },
    {
     "path": "assets/img/sc_01_act2.webp",
@@ -21914,7 +21914,7 @@
     ],
     "characters": [],
     "robot": "jupanbot-v2",
-    "status": "redo"
+    "status": "ok"
    }
   ],
   "redraw_count": 0,
@@ -21998,7 +21998,7 @@
    "pages_checked": 2
   },
   "has_pages": true,
-  "size_bytes": 25320693
+  "size_bytes": 25913360
  },
  {
   "repo": "llm_applied_lab",
@@ -35505,6 +35505,75 @@
   },
   "has_pages": true,
   "size_bytes": 48883992
+ },
+ {
+  "repo": "Tokenization-BPE-tutorial",
+  "series_ko": "하루의 실험실 EP.05 : 글을 조각으로 — 토큰 나누기(BPE)",
+  "title_ko": "하루의 실험실 EP.05 : 글을 조각으로 — 토큰 나누기(BPE)",
+  "repo_url": "https://github.com/adminmrobo/Tokenization-BPE-tutorial",
+  "pages_url": "https://adminmrobo.github.io/Tokenization-BPE-tutorial/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-27T11:48:27Z",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "images/cover.webp",
+    "role": "cover",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": "thumbs/repos/Tokenization-BPE-tutorial.jpg",
+  "site_desc": "실험조수 하루가 영어 글 177글자를 가장 자주 붙는 짝부터 30번 합쳐 토큰 66개(2.7배 짧게)로 나누는 BPE 토큰화를 설명하고, 숨이 찬 하루를 인턴 시아·모아가 도와 사전·번호·벡터까지 보여 줍니다.",
+  "status": "ok",
+  "checked_at": "2026-11-27",
+  "site_title": "하루의 실험실 EP.05 : 글을 조각으로 — 토큰 나누기(BPE)",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 1,
+   "pages_checked": 1,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 1
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/Tokenization-BPE-tutorial/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 1
+   }
+  },
+  "skills": {
+   "items": [],
+   "main": "",
+   "estimate": "",
+   "explicit": false,
+   "retrofit": 0,
+   "px_fix": 0,
+   "pages_checked": 1
+  },
+  "has_pages": false,
+  "size_bytes": 688665
  },
  {
   "repo": "topology_ai_lab",
