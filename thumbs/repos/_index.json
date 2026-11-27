@@ -88,7 +88,7 @@
  },
  "ai_game_lab": {
   "src": "name:blackjack/img/blackjack_cover.webp",
-  "pushed_at": "2026-11-27T04:28:13Z",
+  "pushed_at": "2026-11-27T04:57:39Z",
   "made": "2026-11-27"
  },
  "AI_image_classification": {
@@ -234,7 +234,7 @@
  },
  "Data_visuialization_lecture_lab": {
   "src": "manifest:assets/img/cover_00.webp",
-  "pushed_at": "2026-11-26T15:09:13Z",
+  "pushed_at": "2026-11-27T05:02:48Z",
   "made": "2026-11-27"
  },
  "database_01of04": {
@@ -746,7 +746,7 @@
  },
  "polygon_series_lab": {
   "src": "manifest:img/cover_01.webp",
-  "pushed_at": "2026-11-27T04:42:35Z",
+  "pushed_at": "2026-11-27T04:53:14Z",
   "made": "2026-11-27"
  },
  "probability_distribution_dictionary": {

@@ -4089,9 +4089,19 @@
   "repo_url": "https://github.com/adminmrobo/ai_game_lab",
   "pages_url": "https://adminmrobo.github.io/ai_game_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T04:28:13Z",
+  "pushed_at": "2026-11-27T04:57:39Z",
   "has_manifest": false,
   "covers": [
+   {
+    "path": "blackjack/img/blackjack_cover.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "blackjack/img/blackjack_cover_960.webp",
+    "role": "cover",
+    "estimated": true
+   },
    {
     "path": "coin/img/coin_cover.webp",
     "role": "cover",
@@ -4099,6 +4109,26 @@
    },
    {
     "path": "coin/img/coin_cover_960.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "dice/img/dice_cover.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "dice/img/dice_cover_960.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "slime/img/slime_cover.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "slime/img/slime_cover_960.webp",
     "role": "cover",
     "estimated": true
    },
@@ -10726,7 +10756,7 @@
   "repo_url": "https://github.com/adminmrobo/Data_visuialization_lecture_lab",
   "pages_url": "https://adminmrobo.github.io/Data_visuialization_lecture_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-26T15:09:13Z",
+  "pushed_at": "2026-11-27T05:02:48Z",
   "has_manifest": true,
   "covers": [
    {
@@ -10772,10 +10802,10 @@
     "status": "ok"
    },
    {
-    "path": "",
+    "path": "assets/img/cover_10.webp",
     "role": "cover",
     "id": "cover_10",
-    "status": "pixel-fallback"
+    "status": "ok"
    },
    {
     "path": "assets/img/cover_11.webp",
@@ -10787,6 +10817,12 @@
     "path": "assets/img/cover_12.webp",
     "role": "cover",
     "id": "cover_12",
+    "status": "ok"
+   },
+   {
+    "path": "assets/img/cover_13.webp",
+    "role": "cover",
+    "id": "cover_13",
     "status": "ok"
    },
    {
@@ -10805,9 +10841,9 @@
   "site_title": "데이터 시각화 디자인 연구실 — 데이터 시각화 15주 연구실 해설",
   "ontology": {
    "status": "partial",
-   "pages_with_kg": 9,
-   "pages_total": 11,
-   "pages_checked": 11,
+   "pages_with_kg": 10,
+   "pages_total": 12,
+   "pages_checked": 12,
    "kg_links": [
     "https://adminmrobo.github.io/Data_visuialization_lecture_lab/weeks/w01_orientation.html#kg",
     "https://adminmrobo.github.io/Data_visuialization_lecture_lab/weeks/w02_chart-theory.html#kg",
@@ -10817,7 +10853,8 @@
     "https://adminmrobo.github.io/Data_visuialization_lecture_lab/weeks/w09_midterm-review.html#kg",
     "https://adminmrobo.github.io/Data_visuialization_lecture_lab/weeks/w10_healthcare.html#kg",
     "https://adminmrobo.github.io/Data_visuialization_lecture_lab/weeks/w11_smartcity-logistics.html#kg",
-    "https://adminmrobo.github.io/Data_visuialization_lecture_lab/weeks/w12_ai-studio-dashboard.html#kg"
+    "https://adminmrobo.github.io/Data_visuialization_lecture_lab/weeks/w12_ai-studio-dashboard.html#kg",
+    "https://adminmrobo.github.io/Data_visuialization_lecture_lab/weeks/w13_qwen-prompt-chain-lab.html#kg"
    ],
    "export_links": [
     "https://adminmrobo.github.io/Data_visuialization_lecture_lab/weeks/w01_orientation.html#export",
@@ -10828,7 +10865,8 @@
     "https://adminmrobo.github.io/Data_visuialization_lecture_lab/weeks/w09_midterm-review.html#export",
     "https://adminmrobo.github.io/Data_visuialization_lecture_lab/weeks/w10_healthcare.html#export",
     "https://adminmrobo.github.io/Data_visuialization_lecture_lab/weeks/w11_smartcity-logistics.html#export",
-    "https://adminmrobo.github.io/Data_visuialization_lecture_lab/weeks/w12_ai-studio-dashboard.html#export"
+    "https://adminmrobo.github.io/Data_visuialization_lecture_lab/weeks/w12_ai-studio-dashboard.html#export",
+    "https://adminmrobo.github.io/Data_visuialization_lecture_lab/weeks/w13_qwen-prompt-chain-lab.html#export"
    ],
    "files": [
     {
@@ -10848,9 +10886,9 @@
    ],
    "count": 6,
    "pages": {
-    "ko": 11,
+    "ko": 12,
     "en": 23,
-    "zh": 34,
+    "zh": 35,
     "ja": 23,
     "uz": 23,
     "ru": 23
@@ -10888,9 +10926,9 @@
    "count": 6,
    "complete": false,
    "pages_by_lang": {
-    "ko": 11,
+    "ko": 12,
     "en": 23,
-    "zh": 34,
+    "zh": 35,
     "ja": 23,
     "uz": 23,
     "ru": 23
@@ -22346,7 +22384,7 @@
   "repo_url": "https://github.com/adminmrobo/moving_factory_dashboard",
   "pages_url": "https://adminmrobo.github.io/moving_factory_dashboard/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T05:12:00Z",
+  "pushed_at": "2026-11-18T19:10:32Z",
   "has_manifest": true,
   "covers": [
    {
@@ -25560,7 +25598,7 @@
   "repo_url": "https://github.com/adminmrobo/polygon_series_lab",
   "pages_url": "https://adminmrobo.github.io/polygon_series_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T04:42:35Z",
+  "pushed_at": "2026-11-27T04:53:14Z",
   "has_manifest": true,
   "covers": [
    {
@@ -26046,7 +26084,17 @@
     "estimated": true
    },
    {
+    "path": "assets/img/cover_01@2x.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
     "path": "assets/img/cover_02.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_02@2x.webp",
     "role": "cover",
     "estimated": true
    },
@@ -26056,7 +26104,17 @@
     "estimated": true
    },
    {
+    "path": "assets/img/cover_03@2x.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
     "path": "assets/img/cover_04.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_04@2x.webp",
     "role": "cover",
     "estimated": true
    },
@@ -26066,7 +26124,17 @@
     "estimated": true
    },
    {
+    "path": "assets/img/cover_05@2x.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
     "path": "assets/img/cover_06.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_06@2x.webp",
     "role": "cover",
     "estimated": true
    },
@@ -26076,7 +26144,17 @@
     "estimated": true
    },
    {
+    "path": "assets/img/cover_07@2x.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
     "path": "assets/img/cover_08.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_08@2x.webp",
     "role": "cover",
     "estimated": true
    },
@@ -26086,7 +26164,17 @@
     "estimated": true
    },
    {
+    "path": "assets/img/cover_09@2x.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
     "path": "assets/img/cover_10.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_10@2x.webp",
     "role": "cover",
     "estimated": true
    },
@@ -26096,7 +26184,17 @@
     "estimated": true
    },
    {
+    "path": "assets/img/cover_11@2x.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
     "path": "assets/img/cover_12.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_12@2x.webp",
     "role": "cover",
     "estimated": true
    },
@@ -26106,7 +26204,17 @@
     "estimated": true
    },
    {
+    "path": "assets/img/cover_13@2x.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
     "path": "assets/img/cover_14.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_14@2x.webp",
     "role": "cover",
     "estimated": true
    },
@@ -26116,12 +26224,27 @@
     "estimated": true
    },
    {
+    "path": "assets/img/cover_15@2x.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
     "path": "assets/img/cover_index.webp",
     "role": "cover",
     "estimated": true
    },
    {
+    "path": "assets/img/cover_index@2x.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
     "path": "assets/img/cover_practice.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "assets/img/cover_practice@2x.webp",
     "role": "cover",
     "estimated": true
    },
@@ -26220,7 +26343,7 @@
   "site_title": "파이썬 머신러닝 연구소 — 파이썬 머신러닝 15층 연구실 해설",
   "ontology": {
    "status": "partial",
-   "pages_with_kg": 10,
+   "pages_with_kg": 11,
    "pages_total": 17,
    "pages_checked": 17,
    "kg_links": [
@@ -26233,7 +26356,8 @@
     "https://adminmrobo.github.io/python_machine_learning_lab/weeks/w07_improving_models_battery.html#kg",
     "https://adminmrobo.github.io/python_machine_learning_lab/weeks/w08_midterm_review.html#kg",
     "https://adminmrobo.github.io/python_machine_learning_lab/weeks/w09_reading_regression_models.html#kg",
-    "https://adminmrobo.github.io/python_machine_learning_lab/weeks/w10_real_cases_insurance.html#kg"
+    "https://adminmrobo.github.io/python_machine_learning_lab/weeks/w10_real_cases_insurance.html#kg",
+    "https://adminmrobo.github.io/python_machine_learning_lab/weeks/w11_fish_trees_forest_gradient.html#kg"
    ],
    "export_links": [
     "https://adminmrobo.github.io/python_machine_learning_lab/weeks/w01_ai_model_overview.html#export",
@@ -26245,7 +26369,8 @@
     "https://adminmrobo.github.io/python_machine_learning_lab/weeks/w07_improving_models_battery.html#export",
     "https://adminmrobo.github.io/python_machine_learning_lab/weeks/w08_midterm_review.html#export",
     "https://adminmrobo.github.io/python_machine_learning_lab/weeks/w09_reading_regression_models.html#export",
-    "https://adminmrobo.github.io/python_machine_learning_lab/weeks/w10_real_cases_insurance.html#export"
+    "https://adminmrobo.github.io/python_machine_learning_lab/weeks/w10_real_cases_insurance.html#export",
+    "https://adminmrobo.github.io/python_machine_learning_lab/weeks/w11_fish_trees_forest_gradient.html#export"
    ],
    "files": [
     {
