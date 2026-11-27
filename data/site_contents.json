@@ -1,9 +1,11 @@
 {
- "fetched_at": "2026-11-27 17:36 KST",
+ "fetched_at": "2026-11-28 01:36 KST",
  "site": "https://ahnboat.xyz",
- "errors": [],
+ "errors": [
+  "워드프레스 REST API 읽기 실패: HTTP Error 429: Too Many Requests"
+ ],
  "wordpress": {
-  "source": "rest",
+  "source": "sitemap",
   "posts": [
    {
     "id": 3290,
@@ -400,49 +402,301 @@
     "parent": 0
    }
   ],
-  "pages": [
+  "pages": [],
+  "sitemap": [
    {
-    "id": 3442,
-    "title": "곧 나옵니다.. 아마도요..! (Coming Soon-ish! 🐌)",
-    "link": "https://ahnboat.xyz/pleae_wait/",
-    "date": "2026-10-04",
-    "modified": "2026-10-19",
-    "excerpt": "",
-    "categories": [],
-    "parent": 0
+    "link": "https://ahnboat.xyz/",
+    "modified": ""
    },
    {
-    "id": 3398,
-    "title": "Hello! Everyone!",
-    "link": "https://ahnboat.xyz/my_profile/",
-    "date": "2026-10-03",
-    "modified": "2026-10-19",
-    "excerpt": "00. Basic Info. Name : Ahn Sang Sun (안상선) Birth Day : 1982.07.24 E-mail : sangsun.ahn@gmail.com https://www.facebook.com/sangsun.ahn.5 https://www.linkedin.com/in/saladent/ 한국전기안전공사, 매일경제신문을 거쳐 현재 매일경",
-    "categories": [],
-    "parent": 0
+    "link": "https://ahnboat.xyz/2019/02/15/token-economy-%ea%b3%a0%eb%9e%98-%ec%a0%95%eb%a7%90-%eb%82%98%ec%81%9c%ea%b0%80/",
+    "modified": "2022-01-17"
    },
    {
-    "id": 895,
-    "title": "Article & Study",
-    "link": "https://ahnboat.xyz/articlestudy/",
-    "date": "2022-01-16",
-    "modified": "2026-10-04",
-    "excerpt": "인공지능기술, 경제학, 블록체인, 암호화폐 NFT 등 주요 관심사에 대해서 쓴 글입니다. 글 목록",
-    "categories": [],
-    "parent": 0
+    "link": "https://ahnboat.xyz/2023/06/17/cov19_crypro_report_01/",
+    "modified": "2023-06-18"
    },
    {
-    "id": 884,
-    "title": "Global Business Story",
+    "link": "https://ahnboat.xyz/2019/05/30/start-up-%ed%95%b4%ec%99%b8-%ec%b0%b8%ea%b4%80%ea%b8%b0-taipei-innovex2019/",
+    "modified": "2022-01-17"
+   },
+   {
+    "link": "https://ahnboat.xyz/2019/06/02/start-up-%ed%95%b4%ec%99%b8-%ec%b0%b8%ea%b4%80%ea%b8%b0-taipei-innovex2019-2%ec%9d%bc%ec%b0%a8/",
+    "modified": "2022-01-17"
+   },
+   {
+    "link": "https://ahnboat.xyz/2019/06/03/start-up-%ed%95%b4%ec%99%b8-%ec%b0%b8%ea%b4%80%ea%b8%b0-taipei-innovex2019-3%ec%9d%bc%ec%b0%a8%eb%a7%88%ec%a7%80%eb%a7%89%eb%82%a0/",
+    "modified": "2022-01-17"
+   },
+   {
+    "link": "https://ahnboat.xyz/portfolio/2019%eb%85%84-%ed%95%b4%ec%99%b8-%ec%a0%84%ec%8b%9c-%ec%82%ac%ec%97%85-2-taipei-computex2019/",
+    "modified": "2019-06-05"
+   },
+   {
+    "link": "https://ahnboat.xyz/2019/06/16/%eb%8c%80%eb%a7%8c_computex2019_%eb%b2%88%ec%99%b8%ed%8e%b8-%eb%8c%80%eb%a7%8c%ec%9d%98-%eb%85%b8%eb%9f%89%ec%a7%84-1/",
+    "modified": "2022-01-17"
+   },
+   {
+    "link": "https://ahnboat.xyz/2020/01/13/%ec%9a%b0%ec%a6%88%eb%b2%a0%ed%82%a4%ec%8a%a4%ed%83%84_starttech-it-%ec%bb%a8%ed%8d%bc%eb%9f%b0%ec%8a%a4-%ec%b0%b8%ea%b4%80%ed%9b%84%ea%b8%b01/",
+    "modified": "2022-01-17"
+   },
+   {
+    "link": "https://ahnboat.xyz/2020/01/13/%ec%9a%b0%ec%a6%88%eb%b2%a0%ed%82%a4%ec%8a%a4%ed%83%84-%eb%b9%84%ec%a6%88%eb%8b%88%ec%8a%a4-%ed%88%ac%ec%96%b41-%ec%b0%bd%ec%97%85-%eb%a9%98%ed%86%a0%eb%a7%81-%ec%b0%b8%ea%b4%80%ed%9b%84/",
+    "modified": "2022-01-17"
+   },
+   {
+    "link": "https://ahnboat.xyz/2020/01/20/%ec%9a%b0%ec%a6%88%eb%b2%a0%ed%82%a4%ec%8a%a4%ed%83%84-%eb%b9%84%ec%a6%88%eb%8b%88%ec%8a%a4-%ed%88%ac%ec%96%b43-%ec%9a%b0%ec%a6%88%eb%b2%a0%ed%82%a4%ec%8a%a4%ed%83%84%ec%97%90%ec%84%9c/",
+    "modified": "2022-01-17"
+   },
+   {
+    "link": "https://ahnboat.xyz/2020/01/27/%ec%b9%b4%ec%9e%90%ed%9d%90%ec%8a%a4%ed%83%84%ec%97%90%ec%84%9c-%ed%95%80%ed%85%8c%ed%81%ac%eb%a5%bc-%ed%95%9c%eb%8b%a4%eb%a9%b4-1-%ea%b0%84%ed%8e%b8%ea%b2%b0%ec%a0%9c%eb%8a%94-%ec%9d%b4%eb%af%b8/",
+    "modified": "2022-01-17"
+   },
+   {
     "link": "https://ahnboat.xyz/global_business/",
-    "date": "2022-01-16",
-    "modified": "2026-10-04",
-    "excerpt": "해외 출장을 다니면서 각 나라의 문화나 현지인들의 라이프 스타일 등을 기록으로 남긴 것입니다. 해외 현지 비즈니스를 준비하시는 분께 미력하나마다 도움이 되길 바라면서 정리했습니다. 2023년 1월 현재는 대만, 태국, 우즈베키스탄, 카자흐스탄이 업데이트됐습니다. 글 목록",
-    "categories": [],
-    "parent": 0
+    "modified": "2026-10-03"
+   },
+   {
+    "link": "https://ahnboat.xyz/articlestudy/",
+    "modified": "2026-10-03"
+   },
+   {
+    "link": "https://ahnboat.xyz/2022/01/18/%ec%bd%94%eb%a1%9c%eb%82%9819-%ec%9d%b4%ed%9b%84%ec%9d%98-%ed%83%9c%ea%b5%ad-1-%eb%b0%b0%eb%8b%ac%ec%95%b1-%eb%88%84%ea%b0%80-%ec%9b%83%ea%b3%a0-%ec%9e%88%ec%9d%84%ea%b9%8c/",
+    "modified": "2023-02-04"
+   },
+   {
+    "link": "https://ahnboat.xyz/2022/01/19/%ec%bd%94%eb%a1%9c%eb%82%9819-%ec%9d%b4%ed%9b%84%ec%9d%98-%ed%83%9c%ea%b5%ad-%ec%9d%8c%ec%8b%9d-%eb%b0%b0%eb%8b%ac-%ed%94%8c%eb%9e%ab%ed%8f%bc-2-%ed%91%b8%eb%93%9c%ed%8c%90%eb%8b%a4%ec%9d%98/",
+    "modified": "2022-01-19"
+   },
+   {
+    "link": "https://ahnboat.xyz/2022/01/23/%ec%bd%94%eb%a1%9c%eb%82%9819-%ec%9d%b4%ed%9b%84%ec%9d%98-%ed%83%9c%ea%b5%ad-%ec%9d%8c%ec%8b%9d-%eb%b0%b0%eb%8b%ac-%ed%94%8c%eb%9e%ab%ed%8f%bc-3-%ed%83%9c%ea%b5%ad-%ec%9d%b4%ec%9a%a9%ec%9e%90/",
+    "modified": "2022-01-30"
+   },
+   {
+    "link": "https://ahnboat.xyz/2022/01/30/%ec%bd%94%eb%a1%9c%eb%82%9819-%ec%9d%b4%ed%9b%84%ec%9d%98-%ed%83%9c%ea%b5%ad-%ec%9d%8c%ec%8b%9d-%eb%b0%b0%eb%8b%ac-%ed%94%8c%eb%9e%ab%ed%8f%bc-3-%ed%83%9c%ea%b5%ad-%ec%9d%b4%ec%9a%a9%ec%9e%90-2/",
+    "modified": "2022-01-30"
+   },
+   {
+    "link": "https://ahnboat.xyz/2022/02/02/%ec%bd%94%eb%a1%9c%eb%82%9819-%ec%9d%b4%ed%9b%84%ec%9d%98-%ed%83%9c%ea%b5%ad-%ec%9d%8c%ec%8b%9d-%eb%b0%b0%eb%8b%ac-%ed%94%8c%eb%9e%ab%ed%8f%bc-3-%ed%83%9c%ea%b5%ad-%ec%9d%b4%ec%9a%a9%ec%9e%90-3/",
+    "modified": "2022-02-01"
+   },
+   {
+    "link": "https://ahnboat.xyz/2022/02/02/%ec%bd%94%eb%a1%9c%eb%82%9819-%ec%9d%b4%ed%9b%84%ec%9d%98-%ed%83%9c%ea%b5%ad-%ec%9d%8c%ec%8b%9d-%eb%b0%b0%eb%8b%ac-%ed%94%8c%eb%9e%ab%ed%8f%bc-3-%ed%83%9c%ea%b5%ad-%ec%9d%b4%ec%9a%a9%ec%9e%90-4/",
+    "modified": "2022-02-02"
+   },
+   {
+    "link": "https://ahnboat.xyz/2022/02/05/%ec%bd%94%eb%a1%9c%eb%82%9819-%ec%9d%b4%ed%9b%84%ec%9d%98-%ed%83%9c%ea%b5%ad-%ed%95%9c%eb%a5%98-%ec%a0%9c%ed%92%88-%ec%a7%84%ec%a7%9c-%ec%9e%98-%ed%8c%94%eb%a6%ac%ea%b3%a0-%ec%9e%88%ec%9d%84/",
+    "modified": "2022-02-05"
+   },
+   {
+    "link": "https://ahnboat.xyz/2022/02/10/%ec%bd%94%eb%a1%9c%eb%82%9819-%ec%9d%b4%ed%9b%84%ec%9d%98-%ed%83%9c%ea%b5%ad-%ed%95%9c%eb%a5%98-%ec%a0%9c%ed%92%88-%ec%a7%84%ec%a7%9c-%ec%9e%98-%ed%8c%94%eb%a6%ac%ea%b3%a0-%ec%9e%88%ec%9d%84-2/",
+    "modified": "2022-02-10"
+   },
+   {
+    "link": "https://ahnboat.xyz/2022/02/12/%ec%bd%94%eb%a1%9c%eb%82%9819-%ec%9d%b4%ed%9b%84%ec%9d%98-%ed%83%9c%ea%b5%ad-%ed%83%9c%ea%b5%ad%ec%9d%98-%ec%95%94%ed%98%b8%ed%99%94%ed%8f%90-%ed%94%8c%eb%9e%ab%ed%8f%bcbitkub/",
+    "modified": "2022-02-12"
+   },
+   {
+    "link": "https://ahnboat.xyz/2022/02/15/%ec%bd%94%eb%a1%9c%eb%82%9819-%ec%9d%b4%ed%9b%84%ec%9d%98-%ed%83%9c%ea%b5%ad-%ea%b0%84%ed%8e%b8-%ea%b2%b0%ec%a0%9c/",
+    "modified": "2022-02-15"
+   },
+   {
+    "link": "https://ahnboat.xyz/2022/02/19/%ec%bd%94%eb%a1%9c%eb%82%9819-%ec%9d%b4%ed%9b%84%ec%9d%98-%ed%83%9c%ea%b5%ad-%eb%9c%bb%eb%b0%96%ec%9d%98-bm-%ec%9d%bc%eb%b3%b8%ec%9d%98-%ec%95%84%ec%9d%b4%eb%8f%8c-%ec%b9%b4%ed%8e%98/",
+    "modified": "2022-02-19"
+   },
+   {
+    "link": "https://ahnboat.xyz/2023/01/30/uzbekistan_2023_01/",
+    "modified": "2023-01-30"
+   },
+   {
+    "link": "https://ahnboat.xyz/2024/01/29/2023_japan_osaka_tour_01/",
+    "modified": "2024-02-02"
+   },
+   {
+    "link": "https://ahnboat.xyz/2023/01/31/uzbekistan_bus/",
+    "modified": "2023-02-03"
+   },
+   {
+    "link": "https://ahnboat.xyz/2023/02/03/startup_uz01/",
+    "modified": "2023-02-04"
+   },
+   {
+    "link": "https://ahnboat.xyz/2023/02/04/uzbekistan_food_tech/",
+    "modified": "2023-02-04"
+   },
+   {
+    "link": "https://ahnboat.xyz/2023/02/22/uz_market01/",
+    "modified": "2023-02-21"
+   },
+   {
+    "link": "https://ahnboat.xyz/2023/02/16/meet_vc/",
+    "modified": "2023-02-15"
+   },
+   {
+    "link": "https://ahnboat.xyz/2023/07/17/crypto_insight_report_2023_07_16/",
+    "modified": "2023-07-17"
+   },
+   {
+    "link": "https://ahnboat.xyz/2024/02/10/2023_japan_osaka_tour_02/",
+    "modified": "2024-02-10"
+   },
+   {
+    "link": "https://ahnboat.xyz/2024/02/15/2023_japan_osaka_tour_03/",
+    "modified": "2024-02-15"
+   },
+   {
+    "link": "https://ahnboat.xyz/2024/03/02/2023_japan_osaka_tour_04/",
+    "modified": "2024-03-01"
+   },
+   {
+    "link": "https://ahnboat.xyz/my_profile/",
+    "modified": "2026-10-19"
+   },
+   {
+    "link": "https://ahnboat.xyz/pleae_wait/",
+    "modified": "2026-10-19"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20220118_003528555/",
+    "modified": "2022-01-17"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20220118_003528555-1/",
+    "modified": "2022-01-17"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20220118_004640590/",
+    "modified": "2022-01-17"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20220119_234049496/",
+    "modified": "2022-01-19"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20220119_234115323/",
+    "modified": "2022-01-19"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20220119_234049496-1/",
+    "modified": "2022-01-19"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20220123_151359130/",
+    "modified": "2022-01-23"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20220123_151347435/",
+    "modified": "2022-01-23"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20220123_151359130-1/",
+    "modified": "2022-01-23"
+   },
+   {
+    "link": "https://ahnboat.xyz/video1856728357/",
+    "modified": "2022-01-23"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20220201_232612034/",
+    "modified": "2022-02-01"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20220201_232612034-1/",
+    "modified": "2022-02-01"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20220210_162711223/",
+    "modified": "2022-02-10"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20220210_162711223-1/",
+    "modified": "2022-02-10"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20220215_030240176/",
+    "modified": "2022-02-14"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20230204_151619630/",
+    "modified": "2023-02-04"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20230204_160058396/",
+    "modified": "2023-02-04"
+   },
+   {
+    "link": "https://ahnboat.xyz/00_01_eb94a5eb9faceb8b9dec9d84-eca780ec9b90ed9598eb8a94-eab8b0ec88a0/",
+    "modified": "2024-02-10"
+   },
+   {
+    "link": "https://ahnboat.xyz/02_01_ec9db8eab3b5eca780eb8aa5ec9d98eab5aceca1b0/",
+    "modified": "2024-02-10"
+   },
+   {
+    "link": "https://ahnboat.xyz/03_01_eab8b0eab384ed9599ec8ab5_eab8b0ec88a0eab3bc-eab5aceca1b0/",
+    "modified": "2024-02-10"
+   },
+   {
+    "link": "https://ahnboat.xyz/04_01_ed8c8cec9db4ec8dacec9d84ed86b5ed95b4ebb0b0ec9ab0eb8a94_eab8b0eab384ed9599ec8ab5_eab590eab3bcec849c/",
+    "modified": "2024-02-10"
+   },
+   {
+    "link": "https://ahnboat.xyz/05_01_ai_ec8898ed9599ec958ceab3a0eba6aceca698/",
+    "modified": "2024-02-10"
+   },
+   {
+    "link": "https://ahnboat.xyz/ec9db8eab3b5eca780eb8aa5ec9d84-ec9c84ed959c-ec8898ed9599/",
+    "modified": "2024-02-10"
+   },
+   {
+    "link": "https://ahnboat.xyz/chat_gpt_ec9d98-eba8b8eba6ac-eca491ec9599ec9790-online-video-cutter-com_/",
+    "modified": "2024-02-10"
+   },
+   {
+    "link": "https://ahnboat.xyz/temp_1707555906331-1603174419/",
+    "modified": "2024-02-10"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20240215_104421311/",
+    "modified": "2024-02-15"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20240215_104421311-1/",
+    "modified": "2024-02-15"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20240215_103638758/",
+    "modified": "2024-02-15"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20240215_101107883/",
+    "modified": "2024-02-15"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20240215_100726439/",
+    "modified": "2024-02-15"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20240215_103700376/",
+    "modified": "2024-02-15"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20240215_004229290/",
+    "modified": "2024-02-15"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20240215_002134001/",
+    "modified": "2024-02-15"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20240215_114643866/",
+    "modified": "2024-02-15"
+   },
+   {
+    "link": "https://ahnboat.xyz/kakaotalk_20240215_004229290-2/",
+    "modified": "2024-02-15"
    }
-  ],
-  "sitemap": []
+  ]
  },
  "catalog": [
   {
@@ -1338,6 +1592,19 @@
    "summary": "자연어 데이터의 특징과 수집·전처리, 형태소 분석, TF-IDF·LDA, Word2Vec, RNN·LSTM·Seq2Seq, 어텐션·트랜스포머, GPT·BERT·프롬프트·RAG까지 강의 8회차의 학습내용 24개를 한 쪽씩, 비전공자용 연구실 해설 26쪽으로 묶은 시리즈."
   },
   {
+   "title": "하루의 실험실 EP.05 : 글을 조각으로 — 토큰 나누기(BPE)",
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "LLM 이해",
+   "sub": "자연어 분석",
+   "site_url": "https://adminmrobo.github.io/Tokenization-BPE-tutorial/",
+   "repo_url": "https://github.com/adminmrobo/Tokenization-BPE-tutorial",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "실험조수 하루가 영어 글 177글자를 가장 자주 붙는 짝부터 30번 합쳐 토큰 66개(2.7배 짧게)로 나누는 BPE 토큰화를 설명하고, 숨이 찬 하루를 인턴 시아·모아가 도와 사전·번호·벡터까지 보여 줍니다."
+  },
+  {
    "title": "스스로 고치는 AI는 어디까지 왔나 — 재귀적 자기개선(RSI) 기초 정리 · 연구실 해설",
    "cat": "LLM·추론 엔지니어링",
    "mid": "LLM 이해",
@@ -1641,6 +1908,19 @@
    "summary": "희소성과 기회비용에서 출발해 수요와 공급, 탄력성, 가격규제와 세금, 시장의 효율성, 조세의 비용, 시장구조, 시장실패와 재정, 국민경제와 경기변동, 재정·통화정책까지 11장을 비전공자용 강의실 해설로 묶은 경제학 원론 시리즈. 한국체육대학교 교양과정 「경제학의 이해」, 「생활 속의 경제학」 강의노트 기반."
   },
   {
+   "title": "비용 이론 연구실",
+   "cat": "경제·수학·최적화",
+   "mid": "경제학",
+   "sub": "경제학 원론",
+   "site_url": "https://adminmrobo.github.io/cost_theory_economic_view_lab/",
+   "repo_url": "https://github.com/adminmrobo/cost_theory_economic_view_lab",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": ""
+  },
+  {
    "title": "노동경제학 연구실",
    "cat": "경제·수학·최적화",
    "mid": "경제학",
@@ -1931,6 +2211,19 @@
     "ko"
    ],
    "summary": "좌표 첫걸음. 박사가 강의하고 조교 하루·초파리·주판봇이 돕고, 시아·모아·X1~X3가 듣는 강의실에서 수직선 → 좌표평면 → 극좌표 → 공간좌표 → 위도·경도와 지도 → 데이터의 좌표까지, 장마다 게임 부록과 마지막 실전 연습장으로 배우는 친절한 좌표 안내서."
+  },
+  {
+   "title": "하루의 실험실 EP.04 1부 : 시아와 모아는 얼마나 멀까 — 공간 속 거리",
+   "cat": "경제·수학·최적화",
+   "mid": "수학",
+   "sub": "좌표 공간(space)",
+   "site_url": "https://adminmrobo.github.io/Distance-metrics-tutorial/",
+   "repo_url": "https://github.com/adminmrobo/Distance-metrics-tutorial",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "실험조수 하루가 2층 좌표 방의 시아 (4, 0, 10)와 모아 (12, 5, 7) 사이를 유클리드 9.899·맨해튼 16·체비쇼프 8·민코프스키로 재고, 피규어 후기 코사인 0.990, 서울–런던 하버사인 8,857 km까지 숫자와 그림으로 설명합니다."
   },
   {
    "title": "두 장의 지도 — 라그랑지안 vs 해밀토니안",
@@ -2449,6 +2742,19 @@
     "ko"
    ],
    "summary": "통계적 추정 2.1.a — 표본 100개로 모평균을 말하는 법. 점추정, 표본평균의 분포, 신뢰구간을 연구실 저울 위에서 직접 뽑아 보며 배운다."
+  },
+  {
+   "title": "확률 vs 가능도(우도) — 초파리의 케이크 상자 | 고급통계 연구실",
+   "cat": "통계·데이터 기초",
+   "mid": "확률·통계",
+   "sub": "통계 노트",
+   "site_url": "https://adminmrobo.github.io/likelihood_vs_probability/",
+   "repo_url": "https://github.com/adminmrobo/likelihood_vs_probability",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "같은 숫자 표를 가로로 읽으면 확률, 세로로 읽으면 가능도(우도). 케이크 상자와 야근 판결로 따라가는 통계 입문 연구실 해설."
   },
   {
    "title": "확률분포 딕셔너리와 분포표 연구실",
