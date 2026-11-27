@@ -33,7 +33,7 @@
  },
  "ahnboat_lab_gallery": {
   "src": null,
-  "pushed_at": "2026-11-27T01:34:34Z"
+  "pushed_at": "2026-11-27T01:38:32Z"
  },
  "ahnboat_lab_langpack": {
   "src": null,
@@ -45,7 +45,7 @@
  },
  "ahnboat_ontology_feed": {
   "src": "name:assets/cover.png",
-  "pushed_at": "2026-11-27T01:34:32Z",
+  "pushed_at": "2026-11-27T01:34:45Z",
   "made": "2026-11-27"
  },
  "ahnboat_server_room_guards": {
@@ -764,7 +764,7 @@
  },
  "Regression_model_lab_01": {
   "src": "name:assets/img/cover_index.png",
-  "pushed_at": "2026-11-26T18:50:39Z",
+  "pushed_at": "2026-11-27T01:43:19Z",
   "made": "2026-11-27"
  },
  "Regression_ridge_lasso": {
