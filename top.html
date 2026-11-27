@@ -34,6 +34,15 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
 .stats li{display:flex;align-items:baseline;gap:6px}
 .stats b{font-family:var(--mono);font-size:1.35rem;line-height:1}
 .stats span{font-size:.8rem;color:var(--muted)}
+/* 왼쪽 위 서울 시계(대한민국 표준시) + 음악 버튼 (data/music.json — 관리실 '음악' 탭) */
+.clk{display:inline-flex;align-items:center;gap:7px;flex-wrap:wrap;margin:0 0 12px;padding:4px 6px 4px 12px;border:1.5px solid var(--line);border-radius:99px;background:#1f2224;color:#f2c744;font-family:var(--mono);font-size:.78rem;line-height:1.4;box-shadow:2px 2px 0 var(--line)}
+.clk .cz{font-size:.66rem;letter-spacing:.1em;color:#c9c3b4}
+.clk time{font-weight:700;letter-spacing:.03em;color:#fff}
+.clk .mbtn{font:inherit;font-size:.72rem;width:24px;height:24px;border-radius:50%;border:1.5px solid #f2c744;background:#2c3033;color:#f2c744;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;padding:0}
+.clk .mbtn[hidden],.clk .mtt[hidden]{display:none}
+.clk .mbtn:hover{background:#f2c744;color:#1f2224}
+.clk .mtt{max-width:16em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:.7rem;color:#c9c3b4;padding-right:6px}
+
 .langs{display:flex;flex-wrap:wrap;gap:8px 8px;margin-top:16px}
 .langs .lg{font:inherit;font-size:.78rem;font-weight:700;cursor:pointer;border:1.5px solid var(--line);border-radius:99px;padding:3px 11px;background:#fff;color:var(--ink);box-shadow:2px 2px 0 var(--line)}
 .langs .lg[aria-pressed=true]{background:var(--ink);color:#fff}
@@ -105,6 +114,7 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
 <div class="wrap">
   <section class="hero" aria-labelledby="ttl">
     <div class="htext">
+      <div class="clk" id="clk" aria-live="off"><span class="cz">SEOUL</span><time id="clkT"></time><span class="cz">KST</span><button type="button" class="mbtn" id="mBtn" hidden aria-label="음악 재생">▶</button><span class="mtt" id="mTt" hidden></span></div>
       <p class="kicker">AHNBOAT LAB</p>
       <h1 id="ttl">Reon Ahn's page</h1>
       <p class="tag">Small but interesting things.</p>
@@ -247,7 +257,30 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
     if(I18S&&I18S.langs){var cap=el('span','lgcap',T('콘텐츠 번역률'));cap.title=T('공개 콘텐츠 {0}개 중 이 언어로 옮긴 비율 (일부만 옮긴 콘텐츠는 옮긴 페이지 비율로 셈)',I18S.contents);g.appendChild(cap);}
     build();
   }
-  AhnI18n.onChange(function(){statics();notices();stats();});
+  /* 서울 시계 — 방문자 시간대와 상관없이 대한민국 표준시(Asia/Seoul) */
+  function clock(){var t=document.getElementById('clkT');if(!t)return;var d=new Date(),L=(window.AhnI18n&&AhnI18n.lang)||'ko';
+    try{var f=new Intl.DateTimeFormat(L==='ko'?'ko-KR':L,{timeZone:'Asia/Seoul',month:'2-digit',day:'2-digit',weekday:'short'}).formatToParts(d),g={};f.forEach(function(p){g[p.type]=p.value;});
+      var hm=new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Seoul',hour:'2-digit',minute:'2-digit',hour12:false}).format(d);
+      t.textContent=g.month+'.'+g.day+' ('+g.weekday+') '+hm;}
+    catch(e){var k=new Date(d.getTime()+9*3600e3);t.textContent=k.toISOString().slice(5,10).replace('-','.')+' '+k.toISOString().slice(11,16);}
+    t.dateTime=d.toISOString();}
+  clock();setTimeout(function(){clock();setInterval(clock,60000);},60000-Date.now()%60000+50);
+  /* 음악 — 방문자가 ▶를 눌러야 재생(브라우저 자동 재생 제한). 곡이 끝나면 다음 곡. */
+  (function(){var btn=document.getElementById('mBtn'),tt=document.getElementById('mTt'),M=null,au=null,i=0,order=[];
+    function cur(){return M.tracks[order[i]];}
+    function load(){var t=cur();au.src=t.url;tt.textContent='♪ '+(t.title||'OST');tt.title=(t.title||'')+(t.credit?' — '+t.credit:'');}
+    function ui(on){btn.textContent=on?'❚❚':'▶';btn.setAttribute('aria-label',on?'음악 멈춤':'음악 재생');tt.hidden=!on;post();}
+    fetch('data/music.json',{cache:'no-cache'}).then(function(r){return r.ok?r.json():null;}).then(function(m){
+      if(!m||!m.enabled)return;m.tracks=(m.tracks||[]).filter(function(t){return t&&t.url&&t.on!==false;});if(!m.tracks.length)return;M=m;
+      order=M.tracks.map(function(_,k){return k;});
+      if(M.order==='shuffle')for(var k=order.length-1;k>0;k--){var j=Math.floor(Math.random()*(k+1)),x=order[k];order[k]=order[j];order[j]=x;}
+      au=new Audio();au.preload='none';au.volume=Math.max(0,Math.min(1,Number(M.volume)||0.5));
+      au.addEventListener('ended',function(){if(M.order==='one'){au.currentTime=0;au.play();return;}i=(i+1)%order.length;load();au.play().catch(function(){ui(false);});});
+      au.addEventListener('pause',function(){ui(false);});au.addEventListener('play',function(){ui(true);});
+      load();btn.hidden=false;post();
+      btn.addEventListener('click',function(){if(au.paused)au.play().catch(function(){ui(false);});else au.pause();});
+    }).catch(function(){});})();
+  AhnI18n.onChange(function(){statics();notices();stats();clock();});
   AhnI18n.ready.then(function(){statics();AhnI18n.announce();});
   function post(){if(window.parent!==window){try{window.parent.postMessage({type:'ahnboat-catalog-height',height:Math.ceil(document.body.getBoundingClientRect().height),nav:false},'*');}catch(e){}}}
   window.addEventListener('resize',post);

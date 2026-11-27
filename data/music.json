@@ -1,0 +1,7 @@
+{
+ "_guide": "홈(top.html) 왼쪽 위 서울 시계 옆 음악 버튼 설정 — 콘텐츠 관리실 '음악' 탭에서 고친다. enabled가 true이고 곡이 하나 이상이면 ▶ 버튼이 보인다. 브라우저가 소리 자동 재생을 막으므로 방문자가 ▶를 눌러야 재생된다. url은 이 저장소의 music/ 폴더 파일(예: music/theme.mp3)이나 https 주소.",
+ "enabled": false,
+ "volume": 0.5,
+ "order": "list",
+ "tracks": []
+}

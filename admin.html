@@ -188,6 +188,7 @@ td input.ord{width:56px}
     <button type="button" role="tab" id="tabN" aria-selected="false">공지사항</button>
     <button type="button" role="tab" id="tabU" aria-selected="false">업데이트 이력</button>
     <button type="button" role="tab" id="tabI" aria-selected="false">점검 · 번역</button>
+    <button type="button" role="tab" id="tabM" aria-selected="false">음악</button>
   </div>
   <div id="paneC">
   <div class="scanbox"><span>새 저장소를 만들거나 표지를 바꿨나요? 하루 두 번(아침·저녁쯤) 저절로 가져오지만, 지금 바로 가져올 수도 있습니다.</span><button type="button" id="scanBtn">지금 새 저장소 가져오기</button></div>
@@ -237,6 +238,30 @@ td input.ord{width:56px}
     <h2 style="margin-top:24px">홈페이지에 보일 모습</h2>
     <div class="prev"><div class="lb">📢 공지</div><ul id="nPrev"></ul></div>
     <p class="foot">공지는 비밀번호로 잠그지 않는 공개 파일(data/notices.csv)입니다. 저장하면 1~2분 뒤 홈페이지에 반영됩니다. 미리보기에는 <b>업데이트 이력</b>에서 자동으로 만든 공지(data/notices_auto.csv)도 함께 보입니다. 다른 언어 화면에서는 번역하기 전까지 한국어로 보입니다.</p>
+  </div>
+
+  <!-- 음악 -->
+  <div id="paneM" class="hidden">
+    <div class="bar">
+      <div class="grp grow"><b>음악 (OST)</b><span class="hint" style="margin:0">홈페이지 왼쪽 위 <b>서울 시계</b> 옆 ▶ 버튼으로 트는 곡입니다. 브라우저가 소리 자동 재생을 막아, 방문자가 ▶를 눌러야 재생됩니다.</span></div>
+      <div class="grp">
+        <button id="mAdd" type="button">+ 곡 (주소로)</button>
+        <label class="hint" style="margin:0"><button type="button" id="mUpBtn">파일 올리기</button><input type="file" id="mUp" accept="audio/*,.mp3,.m4a,.ogg,.wav" class="hidden"></label>
+        <button id="mSave" class="pri" type="button" disabled>음악 저장</button>
+      </div>
+    </div>
+    <div class="bar" style="margin-top:10px">
+      <div class="grp"><label><input type="checkbox" id="mOn"> 홈페이지에 음악 버튼 보이기</label></div>
+      <div class="grp"><label>재생 순서 <select id="mOrder"><option value="list">목록 차례대로 (끝나면 처음부터)</option><option value="shuffle">섞어서</option><option value="one">첫 곡만 반복</option></select></label></div>
+      <div class="grp"><label>시작 음량 <input type="range" id="mVol" min="0" max="100" step="5" style="vertical-align:middle"> <span id="mVolT"></span></label></div>
+    </div>
+    <div style="overflow-x:auto">
+    <table class="nt">
+      <thead><tr><th>켬</th><th>곡 제목 (방문자에게 보임)</th><th>파일 주소</th><th>출처 · 저작권 메모</th><th></th></tr></thead>
+      <tbody id="mRows"></tbody>
+    </table>
+    </div>
+    <p class="foot">설정은 공개 파일 data/music.json, 올린 음원은 저장소 music/ 폴더에 저장됩니다(한 곡 20MB 이하 권장, mp3·m4a·ogg). 저장하면 1~2분 뒤 홈페이지에 반영됩니다. 직접 만들었거나 사용 허가가 있는 음원만 올려 주세요. 방문자가 다른 페이지로 옮기면 음악은 멈춥니다.</p>
   </div>
 
   <!-- 업데이트 이력 -->
@@ -731,9 +756,9 @@ window.addEventListener('beforeunload',function(e){if($('app').classList.contain
 
 
 /* ---------- 탭 ---------- */
-function tab(n){['C','N','U','I'].forEach(function(k){$('tab'+k).setAttribute('aria-selected',n===k);$('pane'+k).classList.toggle('hidden',n!==k);});
-  if(n==='N'&&!NLOADED)loadNotices();if(n==='U'&&!ULOADED)loadUpdates();if(n==='I'){if(!ILOADED)loadCheck();else iRender();}}
-$('tabC').addEventListener('click',function(){tab('C');});$('tabN').addEventListener('click',function(){tab('N');});$('tabU').addEventListener('click',function(){tab('U');});$('tabI').addEventListener('click',function(){tab('I');});
+function tab(n){['C','N','U','I','M'].forEach(function(k){$('tab'+k).setAttribute('aria-selected',n===k);$('pane'+k).classList.toggle('hidden',n!==k);});
+  if(n==='N'&&!NLOADED)loadNotices();if(n==='U'&&!ULOADED)loadUpdates();if(n==='I'){if(!ILOADED)loadCheck();else iRender();}if(n==='M'&&!MLOADED)loadMusic();}
+$('tabC').addEventListener('click',function(){tab('C');});$('tabN').addEventListener('click',function(){tab('N');});$('tabU').addEventListener('click',function(){tab('U');});$('tabI').addEventListener('click',function(){tab('I');});$('tabM').addEventListener('click',function(){tab('M');});
 
 /* ---------- 지금 새 저장소 가져오기 (표지 현황 수집 실행) ---------- */
 $('scanBtn').addEventListener('click',function(){
@@ -783,6 +808,65 @@ function nPreview(){
   list.forEach(function(n){var li=el('li');li.appendChild(el('time','',(n['날짜']||'').slice(5).replace('-','.')));
     var dd=n['날짜']?(Date.now()-Date.parse(n['날짜']))/864e5:99;if(dd<7)li.appendChild(el('span','new','NEW'));
     li.appendChild(el('span','t',n['제목']+(n._auto?'  (자동)':'')));ul.appendChild(li);});}
+/* ---------- 음악 (data/music.json + music/ 폴더) ---------- */
+var M_PATH='data/music.json',MDOC=null,MORIG='',MLOADED=false,MAUD=null;
+function mText(){return JSON.stringify(MDOC,null,1)+'\n';}
+function mDirty(){var d=mText()!==MORIG;$('mSave').disabled=!d;$('mSave').textContent=d?'음악 저장 •':'음악 저장';return d;}
+function mUrl(u){return /^https?:/i.test(u)?u:'https://'+OWNER+'.github.io/'+REPO+'/'+String(u||'').replace(/^\/+/,'');}
+function loadMusic(){
+  var tb=$('mRows');tb.innerHTML='<tr><td colspan="5">불러오는 중…</td></tr>';
+  (V&&V.token?getFile(M_PATH).then(function(f){return f.text;}):Promise.reject()).catch(function(){return fetch(M_PATH+'?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.ok?r.text():'{}';});})
+  .then(function(t){var j={};try{j=JSON.parse(t);}catch(e){}
+    MDOC={_guide:j._guide||'홈(top.html) 서울 시계 옆 음악 버튼 설정 — 콘텐츠 관리실 음악 탭에서 고친다.',enabled:!!j.enabled,volume:typeof j.volume==='number'?j.volume:0.5,order:j.order||'list',tracks:(j.tracks||[]).map(function(x){return {title:x.title||'',url:x.url||'',credit:x.credit||'',on:x.on!==false};})};
+    MORIG=mText();MLOADED=true;mRender();})
+  .catch(function(e){tb.innerHTML='';toast('음악 설정을 불러오지 못했습니다: '+esc(e.message),8000);});}
+function mRender(){
+  $('mOn').checked=MDOC.enabled;$('mOrder').value=MDOC.order;$('mVol').value=Math.round(MDOC.volume*100);$('mVolT').textContent=Math.round(MDOC.volume*100)+'%';
+  var tb=$('mRows');tb.innerHTML='';
+  if(!MDOC.tracks.length){var tr=el('tr'),td=el('td','','곡이 없습니다. 파일 올리기나 + 곡으로 넣어 보세요.');td.colSpan=5;tr.appendChild(td);tb.appendChild(tr);}
+  MDOC.tracks.forEach(function(t,i){var tr=el('tr',t.on?'':'off');
+    var c0=el('td','yn');var cb=el('input');cb.type='checkbox';cb.checked=t.on;cb.addEventListener('change',function(){t.on=cb.checked;mRender();});c0.appendChild(cb);tr.appendChild(c0);
+    [['title','예: Ahn-boat Lab 테마'],['url','music/theme.mp3 또는 https://…'],['credit','예: 직접 작곡 / ○○ 라이선스']].forEach(function(f){var td=el('td');var ip=el('input');ip.type='text';ip.value=t[f[0]];ip.placeholder=f[1];ip.addEventListener('input',function(){t[f[0]]=f[0]==='url'?ip.value.trim():ip.value;mDirty();});td.appendChild(ip);tr.appendChild(td);});
+    var ac=el('td','ac');
+    var pl=el('button','sm','▶ 듣기');pl.type='button';pl.addEventListener('click',function(){if(MAUD&&!MAUD.paused&&MAUD._i===i){MAUD.pause();pl.textContent='▶ 듣기';return;}if(MAUD)MAUD.pause();MAUD=new Audio(mUrl(t.url));MAUD._i=i;MAUD.volume=MDOC.volume;MAUD.play().then(function(){pl.textContent='❚❚ 멈춤';},function(e){toast('재생하지 못했습니다: 주소를 확인해 주세요. (방금 올린 파일은 1~2분 뒤 들을 수 있습니다)',8000);});});ac.appendChild(pl);
+    var up=el('button','sm','↑');up.type='button';up.style.marginLeft='4px';up.disabled=!i;up.addEventListener('click',function(){MDOC.tracks.splice(i-1,0,MDOC.tracks.splice(i,1)[0]);mRender();});ac.appendChild(up);
+    var dn=el('button','sm','↓');dn.type='button';dn.style.marginLeft='4px';dn.disabled=i===MDOC.tracks.length-1;dn.addEventListener('click',function(){MDOC.tracks.splice(i+1,0,MDOC.tracks.splice(i,1)[0]);mRender();});ac.appendChild(dn);
+    var del=el('button','sm warn','지우기');del.type='button';del.style.marginLeft='4px';del.title='목록에서만 빠집니다(music/ 폴더의 파일은 남음)';del.addEventListener('click',function(){if(confirm('"'+(t.title||t.url||'빈 곡')+'"를 목록에서 뺄까요? (음악 저장을 눌러야 반영)')){MDOC.tracks.splice(i,1);mRender();}});ac.appendChild(del);
+    tr.appendChild(ac);tb.appendChild(tr);});
+  mDirty();}
+$('mOn').addEventListener('change',function(){MDOC.enabled=this.checked;mDirty();});
+$('mOrder').addEventListener('change',function(){MDOC.order=this.value;mDirty();});
+$('mVol').addEventListener('input',function(){MDOC.volume=Number(this.value)/100;$('mVolT').textContent=this.value+'%';if(MAUD)MAUD.volume=MDOC.volume;mDirty();});
+$('mAdd').addEventListener('click',function(){MDOC.tracks.push({title:'',url:'',credit:'',on:true});mRender();var f=$('mRows').querySelectorAll('input[type=text]');if(f.length)f[f.length-3].focus();});
+$('mUpBtn').addEventListener('click',function(){$('mUp').click();});
+$('mUp').addEventListener('change',function(){var f=this.files&&this.files[0];this.value='';if(!f)return;
+  if(f.size>20*1024*1024&&!confirm('파일이 '+(f.size/1048576).toFixed(1)+'MB입니다. 20MB가 넘으면 홈페이지가 느려질 수 있습니다. 그래도 올릴까요?'))return;
+  var ext=(f.name.match(/\.[a-z0-9]+$/i)||['.mp3'])[0].toLowerCase(),base=f.name.replace(/\.[^.]+$/,'');
+  var safe=base.normalize('NFKD').replace(/[^\w\-]+/g,'_').replace(/^_+|_+$/g,'').slice(0,40)||'track';
+  var path='music/'+safe+'-'+kstToday().replace(/-/g,'')+ext;
+  if(!V||!V.token){var upu='https://github.com/'+OWNER+'/'+REPO+'/upload/'+BRANCH+'/music';window.open(upu,'_blank','noopener');
+    MDOC.tracks.push({title:base,url:'music/'+f.name,credit:'',on:true});mRender();
+    toast('토큰이 없어 바로 올리지 못했습니다. 열린 GitHub 화면에 파일을 끌어다 놓고 Commit 한 뒤, 여기서 <b>음악 저장</b>을 눌러 주세요.',20000);return;}
+  $('mUpBtn').disabled=true;$('mUpBtn').textContent='올리는 중…';
+  f.arrayBuffer().then(function(buf){var R='/repos/'+OWNER+'/'+REPO;
+    return gh(R+'/git/blobs',{method:'POST',body:{content:b64e(new Uint8Array(buf)),encoding:'base64'}}).then(function(b){var head;
+      return gh(R+'/git/ref/heads/'+BRANCH).then(function(ref){head=ref.object.sha;return gh(R+'/git/commits/'+head);})
+      .then(function(c){return gh(R+'/git/trees',{method:'POST',body:{base_tree:c.tree.sha,tree:[{path:path,mode:'100644',type:'blob',sha:b.sha}]}});})
+      .then(function(t){return gh(R+'/git/commits',{method:'POST',body:{message:'음악 올리기: '+path,tree:t.sha,parents:[head]}});})
+      .then(function(nc){return gh(R+'/git/refs/heads/'+BRANCH,{method:'PATCH',body:{sha:nc.sha,force:false}});});});})
+  .then(function(){MDOC.tracks.push({title:base,url:path,credit:'',on:true});if(!MDOC.tracks.some(function(x){return x.on;})||MDOC.tracks.length===1)MDOC.enabled=true;mRender();
+    toast('올렸습니다: '+esc(path)+' — 제목·출처를 확인하고 <b>음악 저장</b>을 눌러 주세요.',10000);})
+  .catch(function(e){toast('올리지 못했습니다: '+esc(e.message),8000);})
+  .then(function(){$('mUpBtn').disabled=false;$('mUpBtn').textContent='파일 올리기';});});
+$('mSave').addEventListener('click',function(){var btn=this;if(!mDirty())return;
+  MDOC.tracks=MDOC.tracks.filter(function(t){return t.url||t.title;});
+  var bad=MDOC.tracks.filter(function(t){return !t.url;});if(bad.length){toast('파일 주소가 빈 곡이 있습니다.',6000);mRender();return;}
+  var txt=mText();
+  if(!V||!V.token){var up='https://github.com/'+OWNER+'/'+REPO+'/upload/'+BRANCH+'/data';download('music.json',txt,'application/json');window.open(up,'_blank','noopener');MORIG=txt;mRender();
+    toast('music.json을 내려받았습니다. 열린 GitHub 화면에 끌어다 놓고 <b>Commit changes</b>를 누르면 끝입니다.',20000);return;}
+  btn.disabled=true;btn.textContent='저장하는 중…';
+  commitFiles([{path:M_PATH,content:txt}],'음악 설정 저장').then(function(){MORIG=txt;mRender();toast('음악 설정을 저장했습니다. 1~2분 뒤 홈페이지 시계 옆에 반영됩니다.',8000);})
+  .catch(function(e){toast('저장하지 못했습니다: '+esc(e.message),8000);mDirty();});});
 /* ---------- 업데이트 이력 ---------- */
 var ULOADED=false;
 function kb(b){b=Number(b)||0;return b>=1048576?(b/1048576).toFixed(1)+' MB':b>=1024?Math.round(b/1024)+' KB':b+' B';}
