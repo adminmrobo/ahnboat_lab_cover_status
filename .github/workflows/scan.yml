@@ -37,6 +37,8 @@ jobs:
         run: |
           pip install --quiet pillow
           python scripts/make_thumbs.py --fetch
+          # 대표 표지의 실제 픽셀 크기 → 저해상도 점검(data/cover_res.json, 관리실 '점검 · 번역' 탭) — 실패해도 수집은 계속
+          python scripts/cover_res.py || echo "표지 해상도 점검 실패 — 다음 수집 때 다시"
 
       - name: 콘텐츠 현황판 DB와 서버실 목록 만들기 (관리 데이터는 관리자 키로 잠금)
         env:
@@ -52,6 +54,7 @@ jobs:
           python scripts/build_portfolio.py
           python scripts/build_updates.py    # 업데이트 이력 → 홈페이지 자동 공지(data/notices_auto.csv, 하루 최대 4건 · 용량 큰 순서)
           python scripts/build_ontology.py   # 공개 콘텐츠 지식 색인 → 분야별 온톨로지 지도 데이터
+          python scripts/build_i18n_status.py   # 언어별 콘텐츠 번역률(홈페이지 언어 버튼 아래) · 끝난 번역 요청 '완료' 표시
           python scripts/build_growth.py     # 온톨로지 → 'Reon Ahn Page 지식 노드 현황'(growth.html) 데이터 · 하루의 이번 주 읽기
           python scripts/build_growth_crime.py   # ai_crime_lab data/crime_kg.json → 'AI 범죄학 지식 노드 현황'(growth_crime.html) 데이터
           # 그림 점검(pixel.html): 페이지마다 픽셀 깨짐 보정 코드 유무 — 실패해도 수집은 계속, 기록은 관리자 키로 잠근다
@@ -87,13 +90,16 @@ jobs:
             echo "다른 커밋이 먼저 올라옴 — 최신을 받아 다시 만든다 ($i)"
             rm -rf /tmp/scan && mkdir -p /tmp/scan
             cp data/repos.json /tmp/scan/repos.json && cp -r thumbs/repos /tmp/scan/thumbs_repos
+            cp data/cover_res.json /tmp/scan/cover_res.json 2>/dev/null || true
             git fetch -q origin main && git reset -q --hard origin/main
             cp /tmp/scan/repos.json data/repos.json && rm -rf thumbs/repos && cp -r /tmp/scan/thumbs_repos thumbs/repos
+            cp /tmp/scan/cover_res.json data/cover_res.json 2>/dev/null || true
             python scripts/rekey.py
             python scripts/hub_secure.py
             python scripts/build_portfolio.py
             python scripts/build_updates.py
             python scripts/build_ontology.py
+            python scripts/build_i18n_status.py
             python scripts/build_growth.py
             python scripts/build_growth_crime.py
             python scripts/pixel_check.py || python scripts/pixel_check.py --lock-only

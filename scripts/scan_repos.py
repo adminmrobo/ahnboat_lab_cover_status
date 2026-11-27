@@ -164,6 +164,84 @@ SKIP_DIRS = {"src", "dist", "build", "overrides", "locked", "archive", "archives
              "templates", "template", "partials", "tools", "scripts", "test", "tests", "backup", "old"}
 ONTO_RE = re.compile(r"(^|/)(KG_[^/]*\.json|[^/]*\.jsonld|[^/]*\.ttl|kg\.json|nodes\.csv|edges\.csv|backbone_[^/]*\.json)$", re.I)
 README_RE = re.compile(r"^README[._-]([A-Za-z-]+)\.md$", re.I)
+# 적용 스킬·버전: 페이지에 남은 표기(주석·꼬리말·메타)에서 읽는다.
+#   앞으로 권장 표기: <meta name="ahnboat:skill" content="ai-lab-explainer-plain 1.5">
+SKILL_META_RE = re.compile(r"<meta[^>]+name\s*=\s*[\"']ahnboat:skill[\"'][^>]*content\s*=\s*[\"']([^\"']+)", re.I)
+SKILL_RE = re.compile(r"(ai-lab-explainer-plain|ai-lab-explainer|ai-lab-extend|ai-lab-report-news|ai-lab-report-finding|ai-lab-retrofit|ahnboat-lab-translate)"
+                      r"(?:\s*(?:스킬|skill))?\s*(?:v(\d+(?:\.\d+)+)|(\d+\.\d+)(?=\s*(?:규격|디자인|형식|판|스킬|\)|·|,)))?", re.I)
+B64_RE = re.compile(r"data:[a-z/+.-]+;base64,[A-Za-z0-9+/=]{200,}")
+SKILL_ORDER = ["ai-lab-explainer", "ai-lab-explainer-plain", "ai-lab-extend", "ai-lab-report-news", "ai-lab-report-finding",
+               "ai-lab-retrofit", "ahnboat-lab-translate"]
+
+
+def vkey(v):
+    return tuple(int(x) for x in v.split(".")) if v else ()
+
+
+def skills_in(text):
+    """한 페이지에서 찾은 {스킬: 가장 높은 버전 또는 ''}."""
+    t = B64_RE.sub("", text)
+    found = {}
+    def put(name, ver):
+        name = name.lower()
+        if name not in found or vkey(ver) > vkey(found[name]):
+            found[name] = ver or found.get(name, "")
+    for m in SKILL_META_RE.finditer(t):
+        parts = m.group(1).split()
+        if parts:
+            put(parts[0], parts[1].lstrip("vV") if len(parts) > 1 else "")
+    for m in SKILL_RE.finditer(t):
+        put(m.group(1), m.group(2) or m.group(3) or "")
+    if "lab-kg:script" in t or "lab-kg:" in t:
+        put("ai-lab-retrofit", "")
+    # 디자인 표기: "낮의 연구실"(흰 배경, 본 스킬 v1.14부터) · "밤의 연구실"(v1.13까지)
+    if "낮의 연구실" in t:
+        found.setdefault("design:day", "")
+    if "밤의 연구실" in t and "폐기" not in t[t.find("밤의 연구실"):t.find("밤의 연구실") + 40]:
+        found.setdefault("design:night", "")
+    if "px-fix v1" in t:
+        found.setdefault("px-fix", "1")
+    return found
+
+
+def summarize_skills(per_page, n_pages):
+    """페이지별 결과 → 저장소 요약. 'main'은 대표 표기(버전 있는 본 스킬 계열 우선)."""
+    agg = {}
+    for f in per_page:
+        for k, v in f.items():
+            a = agg.setdefault(k, {"name": k, "version": "", "versions": set(), "pages": 0})
+            a["pages"] += 1
+            if v:
+                a["versions"].add(v)
+                if vkey(v) > vkey(a["version"]):
+                    a["version"] = v
+    items = []
+    for k in sorted(agg, key=lambda k: (SKILL_ORDER.index(k) if k in SKILL_ORDER else 99, k)):
+        a = agg[k]
+        items.append({"name": k, "version": a["version"], "versions": sorted(a["versions"], key=vkey), "pages": a["pages"]})
+    core = [i for i in items if i["name"] in SKILL_ORDER[:5]]
+    main = next((i for i in core if i["version"]), None) or (core[0] if core else None)
+    label = ("%s %s" % (main["name"], main["version"])).strip() if main else ""
+    explicit = any(i["version"] for i in core)
+    # 버전 표기가 없으면 디자인 표기로 범위를 추정한다 (본 스킬 CHANGELOG: v1.14에서 '밤의 연구실' → '낮의 연구실')
+    estimate = ""
+    if not explicit:
+        if "design:day" in agg:
+            estimate = "v1.14 이후"
+        elif "design:night" in agg:
+            estimate = "v1.13 이전"
+    items = [i for i in items if not i["name"].startswith("design:")]
+    return {
+        "items": items,
+        "main": label,
+        "estimate": estimate,
+        "explicit": explicit,
+        "retrofit": agg.get("ai-lab-retrofit", {}).get("pages", 0),
+        "px_fix": agg.get("px-fix", {}).get("pages", 0),
+        "pages_checked": n_pages,
+    }
+
+
 MAX_HTML = 40      # 저장소마다 내용을 받아 볼 HTML 수
 MAX_HTML_BYTES = 40 * 1024 * 1024
 
@@ -269,6 +347,7 @@ def collect_site(paths, read, pages_url, blob_url, readme=None, pages_path=None,
         i["export"] = bool(EXPORT_RE.search(t))
         i["title"] = title_from_html(t) or h1_from_html(t)
         if not i["translated"]:
+            i["skills"] = skills_in(t)
             m = HTML_LANG_RE.search(t[:8192])
             i["lang"] = norm_lang(m.group(1)) if m else None
     first = next((i for i in info if i["path"] == root + "index.html"), None)
@@ -323,7 +402,9 @@ def collect_site(paths, read, pages_url, blob_url, readme=None, pages_path=None,
     }
     languages = {"codes": langs, "count": len(langs), "complete": not partial,
                  "pages_by_lang": i18n["pages"]}
-    return {"site_title": site_title, "ontology": ontology, "i18n": i18n, "languages": languages}
+    sk_pages = [i["skills"] for i in base if i.get("checked") and "skills" in i]
+    skills = summarize_skills(sk_pages, len(sk_pages))
+    return {"site_title": site_title, "ontology": ontology, "i18n": i18n, "languages": languages, "skills": skills}
 
 
 def pick_thumb(repo, pages_url, covers, og, redraw_thumb, existing=None):

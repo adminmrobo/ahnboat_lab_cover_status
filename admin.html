@@ -102,6 +102,26 @@ td input.ord{width:56px}
 .prev .new{font-family:var(--mono);font-size:10.5px;font-weight:700;color:#fff;background:#d6457a;border-radius:5px;padding:0 5px}
 .prev .t{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
 .scanbox{background:var(--blue-soft);border-radius:10px;padding:10px 14px;margin-top:14px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-size:13.5px}
+/* 점검 · 번역 */
+.ibox{border:1px solid var(--rule);border-radius:12px;padding:12px 14px;margin-top:14px}
+.ihead{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.rates{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px 16px;margin-top:8px}
+.rate{font-size:12.5px}.rate .nm{display:flex;justify-content:space-between;gap:6px}.rate .nm b{font-family:var(--mono)}
+.rate .tr{height:7px;background:var(--gray-soft);border-radius:99px;overflow:hidden;margin-top:3px}.rate .tr i{display:block;height:100%;background:var(--mint)}
+.rate small{color:var(--muted)}
+.bulk{display:flex;flex-wrap:wrap;gap:8px;align-items:center;background:var(--violet-soft);border-radius:10px;padding:8px 12px;font-size:13px;margin-bottom:10px}
+.lt{display:inline-flex;align-items:center;gap:3px;border:1px solid var(--rule);border-radius:6px;padding:1px 6px;font-size:12px;background:#fff;cursor:pointer;margin:1px;white-space:nowrap;user-select:none}
+.lt input{margin:0}.lt.has{background:var(--mint-soft);color:var(--mint);border-color:transparent;cursor:default}
+.lt.part{background:var(--amber-soft);color:var(--amber);border-color:transparent}
+.lt.q{background:var(--blue-soft);color:var(--blue);border-color:transparent}
+.lt.sel{border-color:var(--violet);background:var(--violet-soft);color:var(--violet);font-weight:700}
+.it td{font-size:12.5px}.it td.ttl{min-width:200px;font-size:13.5px}
+.it .sub{color:var(--muted);font-size:11.5px;margin-top:2px}
+.it img.th{width:96px;height:54px;object-fit:cover;border-radius:6px;border:1px solid var(--rule);display:block;margin-bottom:3px;background:var(--soft)}
+.it tr.queued td:first-child{box-shadow:inset 3px 0 0 var(--blue)}
+.it tr.picked td:first-child{box-shadow:inset 3px 0 0 var(--violet)}
+.badges{display:flex;gap:4px;flex-wrap:wrap;margin-top:3px}
+.badges .st{font-size:11px;font-weight:500}
 @media (max-width:820px){.hide-s{display:none}.bar{position:static}}
 </style>
 <!-- px-fix v1 --><style id="px-fix">img{image-rendering:auto!important}</style><script id="px-fix-js">(function(){var R=window.ResizeObserver;function f(i){var n=i.naturalWidth,w=i.getBoundingClientRect().width;if(!n||!w)return;var s=w*(window.devicePixelRatio||1)/n;i.style.setProperty("image-rendering",s>=1.95?"pixelated":"auto","important")}var ro=R?new R(function(es){es.forEach(function(e){f(e.target)})}):null;function a(i){if(i.__px)return;i.__px=1;i.addEventListener("load",function(){f(i)});if(ro)ro.observe(i);f(i)}function all(r){(r||document).querySelectorAll&&(r||document).querySelectorAll("img").forEach(a)}function go(){all();if(window.MutationObserver)new MutationObserver(function(ms){ms.forEach(function(m){m.addedNodes.forEach(function(n){if(n.nodeType!==1)return;if(n.tagName==="IMG")a(n);else all(n)})})}).observe(document.documentElement,{childList:true,subtree:true});window.addEventListener("resize",function(){document.querySelectorAll("img").forEach(f)})}if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",go);else go()})();</script><!-- /px-fix --></head>
@@ -110,7 +130,7 @@ td input.ord{width:56px}
 <header class="site">
   <div>
     <h1>콘텐츠 관리실</h1>
-    <p class="lede">콘텐츠 내역(hub.csv)을 화면에서 바로 보고 고친 뒤 <b>저장</b>합니다. 기준일과 공개일로 카탈로그에 나오는 콘텐츠를 정합니다. <b>공지사항</b> 탭에서는 홈페이지 맨 위 공지를 직접 씁니다.</p>
+    <p class="lede">콘텐츠 내역(hub.csv)을 화면에서 바로 보고 고친 뒤 <b>저장</b>합니다. 기준일과 공개일로 카탈로그에 나오는 콘텐츠를 정합니다. <b>공지사항</b> 탭에서는 홈페이지 맨 위 공지를 직접 씁니다. <b>점검 · 번역</b> 탭에서는 콘텐츠마다 온톨로지·번역·적용 스킬·표지 해상도를 보고 언어별 번역을 요청합니다.</p>
   </div>
   <nav class="links"><a href="hub.html">콘텐츠 현황판</a><a href="pixel.html">그림 점검</a><a href="catalog.html" target="_blank" rel="noopener">공개 카탈로그</a><a href="index.html">표지 현황</a></nav>
 </header>
@@ -167,6 +187,7 @@ td input.ord{width:56px}
     <button type="button" role="tab" id="tabC" aria-selected="true">콘텐츠</button>
     <button type="button" role="tab" id="tabN" aria-selected="false">공지사항</button>
     <button type="button" role="tab" id="tabU" aria-selected="false">업데이트 이력</button>
+    <button type="button" role="tab" id="tabI" aria-selected="false">점검 · 번역</button>
   </div>
   <div id="paneC">
   <div class="scanbox"><span>새 저장소를 만들거나 표지를 바꿨나요? 하루 두 번(아침·저녁쯤) 저절로 가져오지만, 지금 바로 가져올 수도 있습니다.</span><button type="button" id="scanBtn">지금 새 저장소 가져오기</button></div>
@@ -230,6 +251,47 @@ td input.ord{width:56px}
     </table>
     </div>
     <p class="foot">이력은 공개 파일 data/updates.json, 자동 공지는 data/notices_auto.csv 입니다. 자동 공지를 숨기려면 같은 날짜·같은 제목으로 공지사항 탭에 <b>표시 N</b> 공지를 하나 넣으세요.</p>
+  </div>
+
+  <!-- 점검 · 번역 -->
+  <div id="paneI" class="hidden">
+    <div class="ibox">
+      <div class="ihead"><b>홈페이지 번역률</b> <span class="hint" id="iRateNote" style="margin:0"></span></div>
+      <div class="rates" id="iRates"></div>
+    </div>
+    <div class="bar">
+      <div class="grp grow">
+        <input type="text" id="iq" placeholder="찾기: 제목·저장소" style="min-width:200px;flex:1">
+        <select id="iCat"><option value="">대분류 전체</option></select>
+        <label class="hint" style="margin:0;display:flex;gap:4px;align-items:center"><input type="checkbox" id="iPub"> 공개(노출) 콘텐츠만</label>
+      </div>
+      <div class="grp">
+        <button id="iCopy" type="button" title="대기 중인 번역 요청을 Claude Code에 붙여 넣을 지시문으로 복사">Claude Code 지시문 복사</button>
+        <button id="iSave" class="pri" type="button" disabled>번역 요청 저장</button>
+      </div>
+    </div>
+    <div class="chips" id="iChips"></div>
+    <div class="bulk" id="iBulk">
+      <span><b>언어 일괄 선택</b> — 지금 보이는 콘텐츠 <b id="iVis">0</b>개에</span>
+      <span id="iBulkLangs"></span>
+      <button type="button" class="sm" id="iBulkOn">요청에 담기</button>
+      <button type="button" class="sm" id="iBulkOff">선택 비우기</button>
+    </div>
+    <div style="overflow-x:auto">
+    <table class="it">
+      <thead><tr><th>콘텐츠</th><th>온톨로지</th><th>번역</th><th>적용 스킬</th><th>대표 표지</th><th>번역 요청 (언어 고르기)</th></tr></thead>
+      <tbody id="iRows"></tbody>
+    </table>
+    </div>
+    <h2 style="margin-top:24px">번역 대기열 <span class="hint" style="display:inline;margin:0" id="iQNote"></span></h2>
+    <div style="overflow-x:auto">
+    <table class="nt">
+      <thead><tr><th>요청일</th><th>콘텐츠</th><th>언어</th><th>상태</th><th></th></tr></thead>
+      <tbody id="iQRows"></tbody>
+    </table>
+    </div>
+    <p class="foot">번역 요청은 공개 파일 <b>data/translate_queue.json</b>에 쌓입니다. 이 화면은 요청만 저장하고, 실제 번역은 <b>Claude Code</b>(지시문 복사 → 붙여 넣기)나 API 번역 실행기가 맡습니다. 번역판이 저장소에 올라가면 다음 표지 현황 수집(하루 두 번 또는 '지금 새 저장소 가져오기') 때 이 표와 홈페이지 번역률이 저절로 바뀌고, 끝난 요청은 <b>완료</b>로 바뀝니다.<br>
+    온톨로지는 원본(한국어) 페이지 중 지식 색인(#kg)이 붙은 페이지 수, 적용 스킬은 페이지에 남은 스킬 표기(없으면 디자인 표기로 범위 추정), 표지는 카드에 쓰는 대표 그림의 실제 픽셀 크기입니다(가로 1200 이상 양호 · 960~1199 주의 · 960 미만 저해상도).</p>
   </div>
 </section>
 </div>
@@ -410,7 +472,13 @@ function rowEl(r){
   var t1=el('td');var o=el('input','ord');o.type='number';o.min='0';o.value=r['순서']||'';o.addEventListener('change',function(){set(r,'순서',o.value);});t1.appendChild(o);tr.appendChild(t1);
   var t2=el('td','ttl');t2.appendChild(el('div','t',r['제목']||'(제목 없음)'));var rr=el('div','r');
   var g=REPOS[r['저장소']];if(g&&g.pages_url){var a=el('a','',r['저장소']);a.href=g.pages_url;a.target='_blank';a.rel='noopener';rr.appendChild(a);}else rr.textContent=r['저장소'];
-  t2.appendChild(rr);tr.appendChild(t2);
+  t2.appendChild(rr);
+  if(g){var x=info(r['저장소']),bd=el('div','badges'),ob=ontoBadge(x),rb=resBadge(x);
+    bd.appendChild(el('span','st '+ob[0],'온톨로지 '+ob[1]));
+    bd.appendChild(el('span','st '+(x.tr==='all'?'on':x.tr==='some'?'rev':'off'),x.tr==='all'?'번역 전체':x.tr==='some'?'번역 일부 '+(x.full.length+x.some.length)+'/6':'한국어만'));
+    if(x.grade&&x.grade!=='ok')bd.appendChild(el('span','st '+rb[0],'표지 '+rb[1]));
+    t2.appendChild(bd);}
+  tr.appendChild(t2);
   tr.appendChild(el('td','cat hide-s',[r['콘텐츠_카테고리_대분류']||'미분류',r['콘텐츠_카테고리_중분류'],r['콘텐츠_카테고리_소분류']].filter(Boolean).join(' › ')));
   var t4=el('td');t4.appendChild(sel([['Y','Y 공개'],['N','N 비공개'],['검토','검토']],(r['공개대상여부']||'').trim()||'N',function(v){set(r,'공개대상여부',v);}));tr.appendChild(t4);
   var t5=el('td');t5.appendChild(dateInput(r['공개일'],function(v){set(r,'공개일',v);}));tr.appendChild(t5);
@@ -609,8 +677,10 @@ function start(){
     getJSON('data/repos.json').catch(function(){return [];}),
     getJSON('data/moved.json').catch(function(){return {};}),
     getFile(SET_PATH).then(function(f){return JSON.parse(f.text);}).catch(function(){return {mode:'auto',base_date:''};}),
-    getJSON('data/routes.json').catch(function(){return {};})
+    getJSON('data/routes.json').catch(function(){return {};}),
+    getJSON('data/cover_res.json').catch(function(){return {};})
   ]).then(function(a){
+    RES=(a[6]&&a[6].repos)||{};
     ROUTES={mid:(a[5]||{}).mid||{},sub:(a[5]||{}).sub||{}};
     var p=parseCSV(dec.decode(a[0]));HDR=p.hdr;ROWS=p.rows;
     CATS=(a[1].categories||[]).map(function(c){return c.name;});
@@ -619,7 +689,7 @@ function start(){
     SETTINGS=a[4]||{mode:'auto'};$('baseAuto').checked=SETTINGS.mode!=='fixed';$('baseDate').value=normDate(SETTINGS.base_date)||kstToday();$('baseDate').disabled=$('baseAuto').checked;
     var fc=$('fCat');fc.innerHTML='<option value="">대분류 전체</option>';CATS.concat(['미분류']).forEach(function(c){var o=el('option','',c);o.value=c;fc.appendChild(o);});
     ORIG=toCSV();$('gate').classList.add('hidden');$('app').classList.remove('hidden');render();
-    if(/notice/.test(location.hash))tab('N');
+    if(/notice/.test(location.hash))tab('N');else if(/check|i18n|translate/.test(location.hash))tab('I');
   }).catch(function(e){msg('gateMsg','내용 표를 열지 못했습니다: '+e.message+(e.status===401?' — 토큰이 만료되었을 수 있습니다. 토큰을 다시 등록해 주세요.':''),'err');
     if(e.status===401){var b=el('button','sm','토큰 다시 등록');b.type='button';b.style.marginTop='8px';b.addEventListener('click',function(){$('gate').classList.add('hidden');$('setup').classList.remove('hidden');});$('gateMsg').appendChild(el('br'));$('gateMsg').appendChild(b);}});}
 
@@ -657,13 +727,13 @@ $('saveBtn').addEventListener('click',function(){
     toast('저장했습니다. 몇 분 뒤 카탈로그·서버실이, 이어서 온톨로지 피드·캐릭터 갤러리가 자동으로 갱신됩니다. <a href="https://github.com/'+OWNER+'/'+REPO+'/actions" target="_blank" rel="noopener">진행 보기</a>',8000);
   }).catch(function(e){toast('저장하지 못했습니다: '+esc(e.message)+(e.status===409||e.status===422?' — 잠시 뒤 다시 눌러 주세요.':''),8000);dirty();})
   .then(function(){btn.textContent=dirty()?'저장 •':'저장';});});
-window.addEventListener('beforeunload',function(e){if($('app').classList.contains('hidden'))return;if(dirty()||(NLOADED&&nDirty())){e.preventDefault();e.returnValue='';}});
+window.addEventListener('beforeunload',function(e){if($('app').classList.contains('hidden'))return;if(dirty()||(NLOADED&&nDirty())||(ILOADED&&iDirty())){e.preventDefault();e.returnValue='';}});
 
 
 /* ---------- 탭 ---------- */
-function tab(n){['C','N','U'].forEach(function(k){$('tab'+k).setAttribute('aria-selected',n===k);$('pane'+k).classList.toggle('hidden',n!==k);});
-  if(n==='N'&&!NLOADED)loadNotices();if(n==='U'&&!ULOADED)loadUpdates();}
-$('tabC').addEventListener('click',function(){tab('C');});$('tabN').addEventListener('click',function(){tab('N');});$('tabU').addEventListener('click',function(){tab('U');});
+function tab(n){['C','N','U','I'].forEach(function(k){$('tab'+k).setAttribute('aria-selected',n===k);$('pane'+k).classList.toggle('hidden',n!==k);});
+  if(n==='N'&&!NLOADED)loadNotices();if(n==='U'&&!ULOADED)loadUpdates();if(n==='I'){if(!ILOADED)loadCheck();else iRender();}}
+$('tabC').addEventListener('click',function(){tab('C');});$('tabN').addEventListener('click',function(){tab('N');});$('tabU').addEventListener('click',function(){tab('U');});$('tabI').addEventListener('click',function(){tab('I');});
 
 /* ---------- 지금 새 저장소 가져오기 (표지 현황 수집 실행) ---------- */
 $('scanBtn').addEventListener('click',function(){
@@ -747,6 +817,154 @@ $('nSave').addEventListener('click',function(){
   commitFiles([{path:N_PATH,content:csv}],'공지사항 저장').then(function(){return getFile(N_PATH);}).then(function(f){
     NSHA=f.sha;NORIG=csv;nRender();toast('공지를 저장했습니다. 1~2분 뒤 홈페이지 맨 위에 보입니다.',8000);
   }).catch(function(e){toast('저장하지 못했습니다: '+esc(e.message),8000);nDirty();});});
+
+/* ---------- 점검 · 번역 ---------- */
+var LG=['en','zh','ja','uz','ru','vi'],LGN={ko:'한국어',en:'English',zh:'中文',ja:'日本語',uz:'Oʻzbekcha',ru:'Русский',vi:'Tiếng Việt'};
+var Q_PATH='data/translate_queue.json',QDOC={requests:[]},QORIG='',QSHA='',ILOADED=false,RES={},I18S=null,SEL={},IFILTER='all',BULK={};
+function qText(){return JSON.stringify(QDOC,null,1)+'\n';}
+function iDirty(){var d=qText()!==QORIG||Object.keys(SEL).some(function(k){return SEL[k]&&SEL[k].length;});$('iSave').disabled=!d;$('iSave').textContent=d?'번역 요청 저장 •':'번역 요청 저장';return d;}
+/* 콘텐츠 한 줄의 현황 (repos.json · cover_res.json · 대기열) */
+function info(repo){
+  var g=REPOS[repo]||{},i=g.i18n||{},pg=i.pages||{},base=pg.ko||0,o=g.ontology||{},sk=g.skills||null,cr=RES[repo]||null;
+  var lang={};LG.forEach(function(l){var n=pg[l]||0;lang[l]=!n?0:(base&&n<base?n/base:1);});
+  var full=LG.filter(function(l){return lang[l]>=1;}),some=LG.filter(function(l){return lang[l]>0&&lang[l]<1;});
+  var tr=full.length===LG.length?'all':(full.length||some.length)?'some':'ko';
+  var q=(QDOC.requests||[]).filter(function(r){return r.repo===repo&&r.status==='queued';});
+  var ql={};q.forEach(function(r){(r.langs||[]).forEach(function(l){ql[l]=1;});});
+  return {g:g,pages:pg,base:base,lang:lang,full:full,some:some,tr:tr,onto:o.status||(g.ontology===undefined?'':'none'),okg:o.pages_with_kg||0,ototal:o.pages_total||0,
+    sk:sk,res:cr,grade:cr?cr.grade:'',queued:ql,known:!!REPOS[repo]};}
+function ontoBadge(x){if(!x.known)return ['','—'];
+  return x.onto==='full'?['on','완료 '+x.okg+'/'+x.ototal]:x.onto==='partial'?['rev','일부 '+x.okg+'/'+x.ototal]:['off','없음'];}
+function trLabel(x){if(!x.known)return '—';
+  if(x.tr==='all')return '전체 (7개 언어)';if(x.tr==='ko')return '한국어만';
+  return '일부: '+x.full.concat(x.some).map(function(l){return LGN[l];}).join(' · ');}
+function skLabel(x){var s=x.sk;if(!s)return ['','—'];
+  if(s.main&&s.explicit)return ['on',s.main.replace('ai-lab-','')];
+  if(s.estimate)return ['rev','추정 '+s.estimate];
+  if(s.main)return ['rev',s.main.replace('ai-lab-','')+' (버전 표기 없음)'];
+  if(s.retrofit)return ['off','온톨로지 보강만 표기'];
+  return ['off','표기 없음'];}
+function resBadge(x){var g=x.grade;return g==='ok'?['on','양호']:g==='warn'?['rev','주의']:g==='low'?['warn','저해상도']:g==='none'?['off','표지 없음']:['','—'];}
+function iCounts(list){var c={all:list.length,all7:0,some:0,ko:0,noonto:0,low:0,nosk:0,queued:0,picked:0};
+  list.forEach(function(r){var x=info(r['저장소']);if(x.tr==='all')c.all7++;else if(x.tr==='some')c.some++;else c.ko++;
+    if(x.known&&x.onto!=='full')c.noonto++;if(x.grade==='low'||x.grade==='warn'||x.grade==='none')c.low++;
+    if(!x.sk||!x.sk.explicit)c.nosk++;if(Object.keys(x.queued).length)c.queued++;if((SEL[r['저장소']]||[]).length)c.picked++;});return c;}
+function iBase(){var pub=$('iPub').checked,q=$('iq').value.trim().toLowerCase(),fc=$('iCat').value;
+  return ROWS.filter(function(r){if(isChap(r))return false;if(pub&&status(r).k!=='on')return false;
+    if(fc&&(r['콘텐츠_카테고리_대분류']||'미분류')!==fc)return false;
+    if(q&&[r['저장소'],r['제목']].join(' ').toLowerCase().indexOf(q)<0)return false;return true;});}
+function iMatch(r){var x=info(r['저장소']);switch(IFILTER){
+  case 'all7':return x.tr==='all';case 'some':return x.tr==='some';case 'ko':return x.tr==='ko';
+  case 'noonto':return x.known&&x.onto!=='full';case 'low':return x.grade==='low'||x.grade==='warn'||x.grade==='none';
+  case 'nosk':return !x.sk||!x.sk.explicit;case 'queued':return Object.keys(x.queued).length>0;case 'picked':return (SEL[r['저장소']]||[]).length>0;}return true;}
+function iChipsDraw(base){var c=iCounts(base),box=$('iChips');box.innerHTML='';
+  [['all','전체'],['all7','번역 전체'],['some','번역 일부'],['ko','한국어만'],['noonto','온톨로지 미완'],['low','표지 저해상도·주의·없음'],['nosk','스킬 버전 표기 없음'],['queued','번역 대기'],['picked','이번에 고른 것']].forEach(function(k){
+    var b=el('span','chip'+(IFILTER===k[0]?' on':''));b.innerHTML=k[1]+' <b>'+c[k[0]]+'</b>';b.addEventListener('click',function(){IFILTER=k[0];iRender();});box.appendChild(b);});}
+function iRender(){
+  var base=iBase();iChipsDraw(base);
+  var list=base.filter(iMatch),tb=$('iRows');tb.innerHTML='';$('iVis').textContent=list.length;
+  list.forEach(function(r){tb.appendChild(iRow(r));});
+  if(!list.length){var tr=el('tr'),td=el('td','','조건에 맞는 콘텐츠가 없습니다.');td.colSpan=6;tr.appendChild(td);tb.appendChild(tr);}
+  iQueue();iDirty();}
+function iRow(r){
+  var repo=r['저장소'],x=info(repo),pick=SEL[repo]||[];
+  var tr=el('tr',(Object.keys(x.queued).length?'queued ':'')+(pick.length?'picked':''));
+  var t0=el('td','ttl');t0.appendChild(el('div','t',r['제목']||'(제목 없음)'));var rr=el('div','r');
+  if(x.g.pages_url){var a=el('a','',repo);a.href=x.g.pages_url;a.target='_blank';a.rel='noopener';rr.appendChild(a);}else rr.textContent=repo;t0.appendChild(rr);
+  var st=status(r);var bd=el('div','badges');bd.appendChild(el('span','st '+st.k,st.t));
+  if(yes(r['외국어팩대상_여부']))bd.appendChild(el('span','st ser','번역 대상'));t0.appendChild(bd);tr.appendChild(t0);
+  var ob=ontoBadge(x),t1=el('td');t1.appendChild(el('span','st '+ob[0],ob[1]));
+  if(yes(r['온톨로지_적용대상_여부'])&&x.onto!=='full')t1.appendChild(el('div','sub','적용 대상'));
+  if(x.g.ontology&&x.g.ontology.kg_links&&x.g.ontology.kg_links.length){var ka=el('a','',' 색인 보기');ka.href=x.g.ontology.kg_links[0];ka.target='_blank';ka.rel='noopener';ka.style.fontSize='11.5px';t1.appendChild(ka);}
+  tr.appendChild(t1);
+  var t2=el('td');t2.appendChild(el('span','st '+(x.tr==='all'?'on':x.tr==='some'?'rev':'off'),trLabel(x)));
+  if(x.known&&x.base)t2.appendChild(el('div','sub','한국어 '+x.base+'쪽'+(x.some.length?' · 일부: '+x.some.map(function(l){return l+' '+(x.pages[l]||0)+'쪽';}).join(', '):'')));
+  tr.appendChild(t2);
+  var sb=skLabel(x),t3=el('td');t3.appendChild(el('span','st '+sb[0],sb[1]));
+  if(x.sk&&x.sk.items&&x.sk.items.length){var d=el('div','sub',x.sk.items.filter(function(i){return i.name!=='px-fix';}).map(function(i){return i.name.replace('ai-lab-','')+(i.version?' '+i.version:'')+' ('+i.pages+'쪽)';}).join(', '));d.title='페이지에서 찾은 스킬 표기';t3.appendChild(d);}
+  tr.appendChild(t3);
+  var t4=el('td');if(x.g.thumb){var im=el('img','th');im.loading='lazy';im.src=x.g.thumb;im.alt='';t4.appendChild(im);}
+  var rb=resBadge(x);t4.appendChild(el('span','st '+rb[0],rb[1]));
+  if(x.res&&x.res.w)t4.appendChild(el('div','sub',x.res.w+'×'+x.res.h+' px'));
+  if(x.res&&x.res.declared_low)t4.appendChild(el('div','sub','목록의 표지 중 저해상도 '+x.res.declared_low+'장'));
+  tr.appendChild(t4);
+  var t5=el('td');
+  if(!x.known){t5.appendChild(el('span','hint','저장소 수집 전'));}
+  else LG.forEach(function(l){
+    var has=x.lang[l]>=1,part=x.lang[l]>0&&!has,qd=x.queued[l],on=pick.indexOf(l)>=0;
+    var lb=el('label','lt'+(has?' has':qd?' q':on?' sel':part?' part':''));
+    if(has){lb.textContent='✓ '+l;lb.title=LGN[l]+' 번역판 있음';}
+    else if(qd){lb.textContent='⏳ '+l;lb.title=LGN[l]+' 번역 대기 중';}
+    else{var cb=el('input');cb.type='checkbox';cb.checked=on;cb.addEventListener('change',function(){var s=SEL[repo]||(SEL[repo]=[]);
+        if(cb.checked){if(s.indexOf(l)<0)s.push(l);}else s.splice(s.indexOf(l),1);
+        if(tr.parentNode)tr.parentNode.replaceChild(iRow(r),tr);iChipsDraw(iBase());iDirty();});
+      lb.appendChild(cb);lb.appendChild(document.createTextNode(l+(part?' (일부)':'')));lb.title=LGN[l]+(part?' — 일부만 있음, 고르면 나머지를 옮깁니다':'');}
+    t5.appendChild(lb);});
+  tr.appendChild(t5);return tr;}
+function iQueue(){var tb=$('iQRows');tb.innerHTML='';var rs=(QDOC.requests||[]).slice().sort(function(a,b){
+    var o={queued:0,done:1,cancelled:2};return (o[a.status]-o[b.status])||(b.requested_at||'').localeCompare(a.requested_at||'');});
+  var nq=rs.filter(function(r){return r.status==='queued';}).length;$('iQNote').textContent='대기 '+nq+'건 · 전체 '+rs.length+'건';
+  if(!rs.length){var tr=el('tr'),td=el('td','','아직 요청이 없습니다. 위 표에서 언어를 고르고 번역 요청 저장을 누르세요.');td.colSpan=5;tr.appendChild(td);tb.appendChild(tr);return;}
+  rs.forEach(function(q){var tr=el('tr',q.status==='queued'?'':'off');
+    tr.appendChild(el('td','dt',q.requested_at||''));
+    var row=ROWS.filter(function(r){return r['저장소']===q.repo&&!isChap(r);})[0];
+    tr.appendChild(el('td','',(row&&row['제목']?row['제목']+' · ':'')+q.repo));
+    tr.appendChild(el('td','',(q.langs||[]).join(', ')));
+    tr.appendChild(el('td','yn',q.status==='queued'?'대기':q.status==='done'?'완료 '+(q.done_at||''):'취소'));
+    var t=el('td','ac');if(q.status==='queued'){var b=el('button','sm warn','취소');b.type='button';b.addEventListener('click',function(){q.status='cancelled';iRender();});t.appendChild(b);}
+    tr.appendChild(t);tb.appendChild(tr);});}
+function iRates(){var box=$('iRates');box.innerHTML='';if(!I18S){$('iRateNote').textContent='번역 현황 파일이 아직 없습니다(다음 수집 때 생김).';return;}
+  $('iRateNote').textContent='공개 콘텐츠 '+I18S.contents+'개 기준 · 전체 번역 '+I18S.states.all+' · 일부 '+I18S.states.some+' · 한국어만 '+I18S.states.ko+' · '+I18S.updated;
+  ['ko'].concat(LG).forEach(function(l){var v=I18S.langs[l]||{rate:0,full:0,partial:0};var d=el('div','rate');
+    var nm=el('div','nm');nm.appendChild(el('span','',LGN[l]));nm.appendChild(el('b','',(v.rate*100).toFixed(1)+'%'));d.appendChild(nm);
+    var t=el('div','tr'),i=el('i');i.style.width=(v.rate*100).toFixed(1)+'%';t.appendChild(i);d.appendChild(t);
+    if(l!=='ko')d.appendChild(el('small','','전체 '+v.full+' · 일부 '+v.partial));box.appendChild(d);});}
+function loadCheck(){
+  $('iRows').innerHTML='<tr><td colspan="6">불러오는 중…</td></tr>';
+  var fc=$('iCat');fc.innerHTML='<option value="">대분류 전체</option>';CATS.concat(['미분류']).forEach(function(c){var o=el('option','',c);o.value=c;fc.appendChild(o);});
+  var qp=(V&&V.token?getFile(Q_PATH).then(function(f){QSHA=f.sha;return JSON.parse(f.text);}):Promise.reject()).catch(function(){
+    return fetch(Q_PATH+'?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.ok?r.json():null;});}).catch(function(){return null;});
+  Promise.all([getJSON('data/cover_res.json?t='+Date.now()).catch(function(){return {};}),getJSON('data/i18n_status.json?t='+Date.now()).catch(function(){return null;}),qp])
+  .then(function(a){RES=(a[0]&&a[0].repos)||{};I18S=a[1];
+    QDOC=a[2]&&Array.isArray(a[2].requests)?a[2]:{_설명:'관리실 점검·번역 탭의 번역 요청 대기열. status: queued(대기) · done(완료, 수집 때 자동) · cancelled(취소). 처리: Claude Code(ahnboat-lab-translate 스킬) 또는 API 번역 실행기.',requests:[]};
+    QORIG=qText();ILOADED=true;iRates();iRender();})
+  .catch(function(e){$('iRows').innerHTML='';toast('점검 자료를 불러오지 못했습니다: '+esc(e.message),8000);});}
+LG.forEach(function(l){var lb=el('label','lt');var cb=el('input');cb.type='checkbox';cb.addEventListener('change',function(){BULK[l]=cb.checked;});
+  lb.appendChild(cb);lb.appendChild(document.createTextNode(LGN[l]));$('iBulkLangs').appendChild(lb);});
+$('iBulkOn').addEventListener('click',function(){var ls=LG.filter(function(l){return BULK[l];});if(!ls.length){toast('담을 언어를 먼저 고르세요.');return;}
+  var n=0;iBase().filter(iMatch).forEach(function(r){var x=info(r['저장소']);if(!x.known)return;var s=SEL[r['저장소']]||(SEL[r['저장소']]=[]);
+    ls.forEach(function(l){if(x.lang[l]<1&&!x.queued[l]&&s.indexOf(l)<0){s.push(l);n++;}});});
+  iRender();toast(n?'언어 '+n+'개를 요청에 담았습니다. <b>번역 요청 저장</b>을 눌러야 대기열에 올라갑니다.':'담을 것이 없습니다(이미 번역됐거나 대기 중).',6000);});
+$('iBulkOff').addEventListener('click',function(){SEL={};iRender();});
+$('iq').addEventListener('input',function(){if(ILOADED)iRender();});$('iCat').addEventListener('change',iRender);$('iPub').addEventListener('change',iRender);
+function pickedToQueue(){var today=kstToday(),n=0;
+  Object.keys(SEL).forEach(function(repo){var ls=SEL[repo];if(!ls||!ls.length)return;
+    var q=(QDOC.requests||[]).filter(function(r){return r.repo===repo&&r.status==='queued';})[0];
+    if(q){ls.forEach(function(l){if(q.langs.indexOf(l)<0)q.langs.push(l);});q.langs.sort(function(a,b){return LG.indexOf(a)-LG.indexOf(b);});}
+    else QDOC.requests.push({repo:repo,langs:ls.slice().sort(function(a,b){return LG.indexOf(a)-LG.indexOf(b);}),requested_at:today,status:'queued'});
+    n+=ls.length;});SEL={};return n;}
+$('iSave').addEventListener('click',function(){
+  var btn=this;pickedToQueue();var txt=qText();if(txt===QORIG){iRender();return;}
+  if(!V||!V.token){var up='https://github.com/'+OWNER+'/'+REPO+'/upload/'+BRANCH+'/data';
+    download('translate_queue.json',txt,'application/json');window.open(up,'_blank','noopener');QORIG=txt;iRender();
+    toast('translate_queue.json을 내려받았습니다. 열린 GitHub 화면에 끌어다 놓고 <b>Commit changes</b>를 누르면 끝입니다.',20000);return;}
+  btn.disabled=true;btn.textContent='저장하는 중…';
+  commitFiles([{path:Q_PATH,content:txt}],'번역 요청 저장 ('+QDOC.requests.filter(function(r){return r.status==='queued';}).length+'건 대기)').then(function(){
+    QORIG=txt;iRender();toast('번역 요청을 저장했습니다. <b>Claude Code 지시문 복사</b>로 바로 번역을 맡길 수 있습니다.',9000);
+  }).catch(function(e){toast('저장하지 못했습니다: '+esc(e.message),8000);iRender();});});
+$('iCopy').addEventListener('click',function(){
+  var qs=(QDOC.requests||[]).filter(function(r){return r.status==='queued';}),extra=Object.keys(SEL).filter(function(k){return SEL[k]&&SEL[k].length;});
+  if(!qs.length&&!extra.length){toast('대기 중인 번역 요청이 없습니다.');return;}
+  var lines=qs.map(function(r){return '- '+r.repo+' : '+r.langs.join(', ');}).concat(extra.map(function(k){return '- '+k+' : '+SEL[k].join(', ')+'  (아직 저장 안 함)';}));
+  var t='ahnboat-lab-translate 스킬로 아래 저장소들의 외국어판을 만들어 줘.\n'+
+    '대기열 원본: https://github.com/'+OWNER+'/'+REPO+'/blob/'+BRANCH+'/'+Q_PATH+' (status가 queued인 요청)\n\n'+lines.join('\n')+'\n\n'+
+    '규칙\n- 저장소마다 언어팩(langpack)으로 extract → 번역 → check → merge → browser_check까지 하고, "번역 없음"·"마크업에 남은 한글" 0, 브라우저 검사 "모두 통과"일 때만 올린다.\n'+
+    '- 이미 있는 언어판은 번역 메모리를 재사용하고, 일부만 있는 언어는 빠진 페이지만 채운다.\n'+
+    '- 검사를 통과하면 그 저장소 main에 커밋한다. 커밋 작성자·커미터는 adminmrobo <sangsun.ahn@gmail.com>만 쓰고, Co-Authored-By·Claude-Session 줄은 넣지 않는다.\n'+
+    '- 실패한 저장소는 건너뛰고 끝에 이유를 모아 알려 준다. 토큰 사용량은 cost-add로 기록한 값만 보고한다.\n'+
+    '- 끝나면 표지 현황 수집(scan.yml)을 실행해 관리실 번역률을 갱신한다.';
+  (navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){toast('Claude Code 지시문을 복사했습니다 ('+lines.length+'개 저장소). Claude Code에 붙여 넣으세요.',8000);},
+    function(){download('translate_request.txt',t,'text/plain;charset=utf-8');toast('복사가 막혀 지시문을 파일로 내려받았습니다.');});});
 
 /* ---------- 엑셀 ---------- */
 function download(name,data,type){var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([data],{type:type}));a.download=name;document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},500);}

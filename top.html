@@ -38,6 +38,13 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
 .langs .lg{font:inherit;font-size:.78rem;font-weight:700;cursor:pointer;border:1.5px solid var(--line);border-radius:99px;padding:3px 11px;background:#fff;color:var(--ink);box-shadow:2px 2px 0 var(--line)}
 .langs .lg[aria-pressed=true]{background:var(--ink);color:#fff}
 .langs .lg:hover{transform:translate(-1px,-1px)}
+/* 언어 버튼 아래 번역률 (data/i18n_status.json — 표지 현황 수집 때 갱신) */
+.langs .lgw{display:flex;flex-direction:column;align-items:center;gap:3px}
+.langs .pct{font-family:var(--mono,ui-monospace,monospace);font-size:.68rem;line-height:1;color:var(--muted);display:flex;flex-direction:column;align-items:center;gap:2px;min-width:3.2em}
+.langs .pct i{display:block;width:100%;height:3px;border-radius:99px;background:var(--rule);overflow:hidden}
+.langs .pct i b{display:block;height:100%;background:var(--ink)}
+.langs .lgcap{flex-basis:100%;font-size:.7rem;color:var(--muted);margin-top:-2px}
+.langs .lgcap[hidden]{display:none}
 .crew{position:relative;display:flex;justify-content:center;align-items:flex-end;gap:clamp(0px,1vw,14px);padding:20px 16px 10px;height:100%}
 .crew::after{content:"";position:absolute;left:6%;right:6%;bottom:0;height:16px;border-radius:50%;background:rgba(31,34,36,.08)}
 .mate{position:relative;display:flex;flex-direction:column;align-items:center;cursor:pointer;background:none;border:0;padding:0;font:inherit}
@@ -208,6 +215,9 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
     var loc=AhnI18n.lang==='zh'?'zh-CN':AhnI18n.lang;
     STAT.forEach(function(x){if(!x[1])return;var li=el('li');li.appendChild(el('b','',Number(x[1]).toLocaleString(loc)));li.appendChild(el('span','',T(x[0]).replace(/^규모:/,'')));ul.appendChild(li);});
     ul.hidden=!ul.children.length;ul.setAttribute('aria-label',T('연구실 규모'));post();}
+  /* 언어별 콘텐츠 번역률 — 받아 오면 언어 버튼을 다시 그린다 */
+  var I18S=null;
+  getJ('data/i18n_status.json').then(function(d){I18S=d;return AhnI18n.ready;}).then(function(){statics();post();}).catch(function(){});
   /* 언어 고르기 — 고르면 아래 블록이 모두 함께 바뀐다 */
   function statics(){
     document.getElementById('boatTxt').textContent=T('연구실 식구들을 태운 작은 배입니다.');
@@ -229,7 +239,12 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
     document.getElementById('omap').title=T('분야별 온톨로지 3D 지도');
     var g=document.getElementById('langs');g.setAttribute('aria-label',T('언어'));g.textContent='';
     AhnI18n.langs.forEach(function(l){var b=el('button','lg',AhnI18n.names[l]);b.type='button';b.lang=l;b.setAttribute('aria-pressed',String(l===AhnI18n.lang));
-      b.addEventListener('click',function(){AhnI18n.set(l);});g.appendChild(b);});
+      b.addEventListener('click',function(){AhnI18n.set(l);});var w=el('span','lgw');w.appendChild(b);
+      var v=I18S&&I18S.langs&&I18S.langs[l];
+      if(v){var r=Math.round(v.rate*1000)/10,p=el('small','pct',(r>=10||r===0?Math.round(r):r)+'%'),bar=el('i'),fill=el('b');fill.style.width=r+'%';bar.appendChild(fill);p.appendChild(bar);
+        p.title=T('공개 콘텐츠 {0}개 중 이 언어로 옮긴 비율 (일부만 옮긴 콘텐츠는 옮긴 페이지 비율로 셈)',I18S.contents);w.appendChild(p);}
+      g.appendChild(w);});
+    if(I18S&&I18S.langs){var cap=el('span','lgcap',T('콘텐츠 번역률'));cap.title=T('공개 콘텐츠 {0}개 중 이 언어로 옮긴 비율 (일부만 옮긴 콘텐츠는 옮긴 페이지 비율로 셈)',I18S.contents);g.appendChild(cap);}
     build();
   }
   AhnI18n.onChange(function(){statics();notices();stats();});

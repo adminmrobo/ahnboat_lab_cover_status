@@ -1,0 +1,4 @@
+{
+ "_설명": "관리실 점검·번역 탭의 번역 요청 대기열. status: queued(대기) · done(완료, 수집 때 자동) · cancelled(취소). 처리: Claude Code(ahnboat-lab-translate 스킬) 또는 API 번역 실행기.",
+ "requests": []
+}

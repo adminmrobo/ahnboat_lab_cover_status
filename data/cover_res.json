@@ -1,0 +1,1947 @@
+{
+ "updated": "2026-11-27 20:38 KST",
+ "rule": {
+  "ok": "가로 1200 px 이상",
+  "warn": "가로 960~1199 px",
+  "low": "가로 960 px 미만",
+  "none": "대표 표지 없음"
+ },
+ "summary": {
+  "ok": 123,
+  "none": 49,
+  "warn": 11,
+  "low": 10
+ },
+ "repos": {
+  "adminmrobo-lhopital_lab": {
+   "src": "og:img/og/og_index.webp",
+   "path": "img/og/og_index.webp",
+   "w": 1200,
+   "h": 630,
+   "pushed_at": "2026-11-24T22:23:04Z",
+   "declared": 14,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "adminmrobo-structure_first_drawing_lab": {
+   "src": "manifest:assets/img/cover_index.webp",
+   "path": "assets/img/cover_index.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-27T03:21:20Z",
+   "declared": 16,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "agent_secret_leak_lab": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-23T07:31:02Z",
+   "declared": 2,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "agentic_ai_crash_guide": {
+   "src": "name:assets/img/cover.webp",
+   "path": "assets/img/cover.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-26T15:09:21Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "ahn_boat_lab_town": {
+   "src": "redraw:R019:assets/cut1_panic.webp",
+   "path": "assets/cut1_panic.webp",
+   "w": 1376,
+   "h": 768,
+   "pushed_at": "2026-11-27T10:04:32Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "ahnboat_lab_character_add_packs": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-02T03:02:54Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "ahnboat_lab_explainer": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-26T15:07:57Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "ahnboat_lab_gallery": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-27T11:09:33Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "ahnboat_lab_langpack": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-11T09:01:16Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "ahnboat_lab_town_floor_b01": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-10-28T10:45:21Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "ahnboat_ontology_feed": {
+   "src": "name:assets/cover.png",
+   "path": "assets/cover.png",
+   "w": 1920,
+   "h": 1080,
+   "pushed_at": "2026-11-27T10:52:32Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "ahnboat_server_room_guards": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-23T07:30:57Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "ai-nlp-data-analysis": {
+   "src": "name:assets/og/cover_00.jpg",
+   "path": "assets/og/cover_00.jpg",
+   "w": 1440,
+   "h": 810,
+   "pushed_at": "2026-11-22T10:43:47Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "ai-power-chain-simulator": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-06T03:12:38Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "ai_crime_lab": {
+   "src": "manifest:assets/covers/index.webp",
+   "path": "assets/covers/index.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-23T07:30:31Z",
+   "declared": 2,
+   "declared_low": 1,
+   "grade": "ok"
+  },
+  "ai_cube_lab": {
+   "src": "manifest:img/og/og_index.webp",
+   "path": "img/og/og_index.webp",
+   "w": 1200,
+   "h": 630,
+   "pushed_at": "2026-11-25T19:10:56Z",
+   "declared": 34,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "AI_for_cement_produce": {
+   "src": "manifest:ch08_timeseries_lag_preprocessing/img/COVER.webp",
+   "path": "ch08_timeseries_lag_preprocessing/img/COVER.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-26T15:09:07Z",
+   "declared": 3,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "ai_for_cement_produce_07": {
+   "src": "file:img/F01_cement_mortar_concrete.webp",
+   "path": "img/F01_cement_mortar_concrete.webp",
+   "w": 1600,
+   "h": 700,
+   "pushed_at": "2026-11-10T09:50:06Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "ai_for_cement_produce_08": {
+   "src": "name:img/Y03_28day_press_thumb.webp",
+   "path": "img/Y03_28day_press_thumb.webp",
+   "w": 1600,
+   "h": 700,
+   "pushed_at": "2026-11-10T09:50:09Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "ai_game_lab": {
+   "src": "name:blackjack/img/blackjack_cover.webp",
+   "path": "blackjack/img/blackjack_cover.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-27T04:57:39Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "AI_image_classification": {
+   "src": "redraw:R117:en/index.html#img",
+   "path": "en/index.html",
+   "w": 1200,
+   "h": 800,
+   "pushed_at": "2026-11-24T14:15:50Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "ai_in_3d": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-24T14:16:34Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "ai_industry_lab": {
+   "src": "name:assets/og.png",
+   "path": "assets/og.png",
+   "w": 1200,
+   "h": 630,
+   "pushed_at": "2026-11-27T04:17:08Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "AI_Model_Review": {
+   "src": "embedded:index.html#hero",
+   "path": "index.html",
+   "w": 1280,
+   "h": 853,
+   "pushed_at": "2026-11-24T14:16:32Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "AI_Model_Review_Fruit_fly_special": {
+   "src": "redraw:R107:en/index.html#bg",
+   "path": "en/index.html",
+   "w": 1280,
+   "h": 853,
+   "pushed_at": "2026-11-26T15:09:05Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "ai_rendering": {
+   "src": "name:specs/assets/covers/cover_1-1.webp",
+   "path": "specs/assets/covers/cover_1-1.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-06T18:30:46Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "ai_text_read_ability": {
+   "src": "og:og_07.jpg",
+   "path": "og_07.jpg",
+   "w": 1200,
+   "h": 630,
+   "pushed_at": "2026-11-06T22:16:09Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "Anomaly_detection_tatics": {
+   "src": "manifest:img/og.jpg",
+   "path": "img/og.jpg",
+   "w": 1200,
+   "h": 630,
+   "pushed_at": "2026-11-11T11:23:11Z",
+   "declared": 2,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "article_02_crypto_asset_price_predict": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-10-22T14:40:31Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "Automate_prompt_lab": {
+   "src": "og:images/G01_cover_text.png",
+   "path": "images/G01_cover_text.png",
+   "w": 1100,
+   "h": 1480,
+   "pushed_at": "2026-11-24T14:16:02Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "warn"
+  },
+  "backprop_lab": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-24T14:16:37Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "basic_economic_lab": {
+   "src": "name:assets/og/cover_01.jpg",
+   "path": "assets/og/cover_01.jpg",
+   "w": 1200,
+   "h": 630,
+   "pushed_at": "2026-11-23T23:25:25Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "bayesian-statistics-for-data-scientists": {
+   "src": "name:assets/og/cover_00.jpg",
+   "path": "assets/og/cover_00.jpg",
+   "w": 1200,
+   "h": 630,
+   "pushed_at": "2026-11-23T23:27:27Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "blockchain_finance_ch01": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-23T23:30:17Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "blockchain_finance_ch02": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-23T23:30:19Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "blockchain_finance_ch03": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-23T23:30:20Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "cashflow-lab": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-23T23:30:28Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "catch_phishing": {
+   "src": "manifest:img/cover_00.webp",
+   "path": "img/cover_00.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-26T15:09:24Z",
+   "declared": 14,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "CNN-neural-network-tutorial": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-26T14:02:34Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "cnn_face_game_lab": {
+   "src": "embedded:index.html",
+   "path": "index.html",
+   "w": 540,
+   "h": 360,
+   "pushed_at": "2026-11-23T07:30:49Z",
+   "declared": 2,
+   "declared_low": 0,
+   "grade": "low"
+  },
+  "covariant_chase_lab": {
+   "src": "manifest:assets/img/cover_01.webp",
+   "path": "assets/img/cover_01.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-25T14:38:06Z",
+   "declared": 4,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "data_base_design": {
+   "src": "manifest:assets/img/cover_index.webp",
+   "path": "assets/img/cover_index.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-26T15:09:27Z",
+   "declared": 32,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "data_science_for_business": {
+   "src": "manifest:index.html#cover_index",
+   "path": "index.html",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-23T23:30:31Z",
+   "declared": 45,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "data_set_2024_fintech": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2024-07-19T11:29:10Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "data_to_numbers_lab": {
+   "src": "manifest:img/cover_index.webp",
+   "path": "img/cover_index.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-26T15:09:29Z",
+   "declared": 14,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "data_visualization_lab": {
+   "src": "name:images/cover_alt_book.webp",
+   "path": "images/cover_alt_book.webp",
+   "w": 1360,
+   "h": 768,
+   "pushed_at": "2026-11-26T15:09:31Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "Data_visuialization_lecture_01": {
+   "src": "redraw:R001:en/week1_index.html#hero-img",
+   "path": "en/week1_index.html",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-06T12:32:38Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "Data_visuialization_lecture_02": {
+   "src": "redraw:R002:en/week2_index.html#hero-img",
+   "path": "en/week2_index.html",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-06T12:33:30Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "Data_visuialization_lecture_03": {
+   "src": "embedded:week3_index.html#hero",
+   "path": "week3_index.html",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-05T11:15:29Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "Data_visuialization_lecture_04": {
+   "src": "redraw:R003:en/week4_index.html#hero-img",
+   "path": "en/week4_index.html",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-06T12:33:34Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "Data_visuialization_lecture_lab": {
+   "src": "manifest:assets/img/cover_00.webp",
+   "path": "assets/img/cover_00.webp",
+   "w": 1920,
+   "h": 1080,
+   "pushed_at": "2026-11-27T05:02:48Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "database_01of04": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-19T16:27:02Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "deep_learning_00_neural_net_learns": {
+   "src": "redraw:R022:en/index.html#hero-img",
+   "path": "en/index.html",
+   "w": 1800,
+   "h": 524,
+   "pushed_at": "2026-11-24T14:16:42Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "deep_learning_model_design_lab_01": {
+   "src": "manifest:assets/img/covers/cover_00.webp",
+   "path": "assets/img/covers/cover_00.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-26T16:38:16Z",
+   "declared": 22,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "defense_for_ai_lab": {
+   "src": "og:assets/img/og.png",
+   "path": "assets/img/og.png",
+   "w": 1440,
+   "h": 756,
+   "pushed_at": "2026-11-23T20:25:02Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "discrete_topology_lab": {
+   "src": "og:img/og/og_index.webp",
+   "path": "img/og/og_index.webp",
+   "w": 1200,
+   "h": 630,
+   "pushed_at": "2026-11-26T08:57:35Z",
+   "declared": 31,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "Distance-metrics-tutorial": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-27T10:44:01Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "DL_model_hiring_committee": {
+   "src": "redraw:R007:6-0_job_posting.html#sc_meeting",
+   "path": "6-0_job_posting.html",
+   "w": 760,
+   "h": 507,
+   "pushed_at": "2026-11-26T15:09:11Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "low"
+  },
+  "drawing_lab_01": {
+   "src": "name:assets/img/cover_01.webp",
+   "path": "assets/img/cover_01.webp",
+   "w": 1920,
+   "h": 1080,
+   "pushed_at": "2026-11-27T03:21:21Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "drawing_lab_02": {
+   "src": "name:assets/img/cover_01.webp",
+   "path": "assets/img/cover_01.webp",
+   "w": 1920,
+   "h": 1080,
+   "pushed_at": "2026-11-27T03:21:23Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "drawing_lab_03": {
+   "src": "name:assets/img/cover_01.webp",
+   "path": "assets/img/cover_01.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-27T03:21:24Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "drawing_lab_04": {
+   "src": "name:assets/img/cover_01.webp",
+   "path": "assets/img/cover_01.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-27T03:21:26Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "drawing_lab_05": {
+   "src": "name:assets/img/cover_01.webp",
+   "path": "assets/img/cover_01.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-27T03:21:28Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "drawing_lab_06": {
+   "src": "name:assets/img/cover_01.webp",
+   "path": "assets/img/cover_01.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-27T07:59:19Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "drawing_lab_fun": {
+   "src": "name:assets/img/cover_01.webp",
+   "path": "assets/img/cover_01.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-27T03:21:29Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "drawing_lab_fun_02": {
+   "src": "name:assets/img/cover_01.webp",
+   "path": "assets/img/cover_01.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-27T03:21:31Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "Dropout-neural-network-tutorial": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-26T13:05:03Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "drug-crime-social-cost": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-27T10:49:54Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "economics_lab": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-22T16:32:12Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "euclidean_space_lab": {
+   "src": "manifest:assets/og/og_index.jpg",
+   "path": "assets/og/og_index.jpg",
+   "w": 1200,
+   "h": 630,
+   "pushed_at": "2026-11-23T23:25:40Z",
+   "declared": 4,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "fabric_ai_project": {
+   "src": "file:slides/img/gs/GS01.webp",
+   "path": "slides/img/gs/GS01.webp",
+   "w": 1360,
+   "h": 585,
+   "pushed_at": "2026-11-18T10:05:15Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "fintech_data_analysis": {
+   "src": "name:assets/og/cover_00.jpg",
+   "path": "assets/og/cover_00.jpg",
+   "w": 1200,
+   "h": 630,
+   "pushed_at": "2026-11-26T11:58:51Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "Fish_Market_Data_Machine_Learning": {
+   "src": "redraw:R116:en/index.html#img",
+   "path": "en/index.html",
+   "w": 1280,
+   "h": 1168,
+   "pushed_at": "2026-11-24T14:16:44Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "fish_market_learning_epoch_etc": {
+   "src": "og:assets/img/og_index.webp",
+   "path": "assets/img/og_index.webp",
+   "w": 1200,
+   "h": 630,
+   "pushed_at": "2026-11-12T14:34:22Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "fof-money-meridian-": {
+   "src": "name:cover_fof01.webp",
+   "path": "cover_fof01.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-26T15:09:33Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "fruitfly-lab-expressions": {
+   "src": "name:images/scenes/optimization_first_step/fs_cover_01.webp",
+   "path": "images/scenes/optimization_first_step/fs_cover_01.webp",
+   "w": 1920,
+   "h": 1080,
+   "pushed_at": "2026-11-27T10:48:01Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "g2b-bid-strategy": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-27T03:21:24Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "Gen_AI_Hannam_univ": {
+   "src": "redraw:R109:index.html#px",
+   "path": "index.html",
+   "w": 900,
+   "h": 600,
+   "pushed_at": "2026-11-24T14:17:10Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "low"
+  },
+  "Gen_AI_strategy_ch05": {
+   "src": "redraw:R004:05_startup_prompt.html#cover_05",
+   "path": "05_startup_prompt.html",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-06T12:34:56Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "Gen_AI_strategy_ch06": {
+   "src": "og:og_06.webp",
+   "path": "og_06.webp",
+   "w": 1200,
+   "h": 630,
+   "pushed_at": "2026-11-05T11:15:33Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "generative-ai-prompt-strategy": {
+   "src": "og:assets/og_index.webp",
+   "path": "assets/og_index.webp",
+   "w": 1200,
+   "h": 630,
+   "pushed_at": "2026-11-10T04:48:36Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "google-sheets-lab": {
+   "src": "redraw:R025:assets/covers/cover-index.webp",
+   "path": "assets/covers/cover-index.webp",
+   "w": 1280,
+   "h": 1280,
+   "pushed_at": "2026-11-23T23:27:44Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "graph_theory_lab": {
+   "src": "og:img/og/og_index.webp",
+   "path": "img/og/og_index.webp",
+   "w": 1200,
+   "h": 630,
+   "pushed_at": "2026-11-25T19:25:17Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "green_route": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2025-12-07T14:22:07Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "health_stats_lab": {
+   "src": "manifest:assets/img/cover_01.webp",
+   "path": "assets/img/cover_01.webp",
+   "w": 1920,
+   "h": 1080,
+   "pushed_at": "2026-11-23T23:27:37Z",
+   "declared": 2,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "hello_space_lab": {
+   "src": "name:img/cover_ch1.webp",
+   "path": "img/cover_ch1.webp",
+   "w": 1920,
+   "h": 1080,
+   "pushed_at": "2026-11-26T15:09:36Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "hilbert_space_lab": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-26T15:09:38Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "how_to_make_ai_model_factory_version": {
+   "src": "manifest:img/cover_01.webp",
+   "path": "img/cover_01.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-26T15:09:40Z",
+   "declared": 7,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "how_to_start_db": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-26T15:09:42Z",
+   "declared": 1,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "iclr2027_top3_lab_review": {
+   "src": "manifest:images/cover_iclr27.jpg",
+   "path": "images/cover_iclr27.jpg",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-23T07:30:53Z",
+   "declared": 4,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "industrial-accident-prediction": {
+   "src": "manifest:img/cover_00.webp",
+   "path": "img/cover_00.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-26T15:09:44Z",
+   "declared": 14,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "inference_engineering_study": {
+   "src": "manifest:cover_factory.jpg",
+   "path": "cover_factory.jpg",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-23T07:30:43Z",
+   "declared": 13,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "inference_engineering_study_week_01_article_01": {
+   "src": "redraw:R037:images/sc_lb_hero.png",
+   "path": "images/sc_lb_hero.png",
+   "w": 1200,
+   "h": 800,
+   "pushed_at": "2026-11-06T12:38:24Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "inference_engineering_study_week_01_textbook_ch00": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-10-25T17:43:03Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "inference_engineering_study_week_01_textbook_ch01": {
+   "src": "redraw:R038:og_01.png",
+   "path": "og_01.png",
+   "w": 1200,
+   "h": 630,
+   "pushed_at": "2026-11-06T12:34:00Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "inference_engineering_study_week_01_textbook_preface": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-10-25T17:43:36Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "inference_engineering_study_week_02_article_01": {
+   "src": "redraw:R039:assets/img/cover_01.webp",
+   "path": "assets/img/cover_01.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-06T12:35:21Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "inference_engineering_study_week_02_textbook_ch02_p1_p2": {
+   "src": "redraw:R040:assets/img/src/cover_ch2_1920.png",
+   "path": "assets/img/src/cover_ch2_1920.png",
+   "w": 1920,
+   "h": 1080,
+   "pushed_at": "2026-11-06T12:36:03Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide": {
+   "src": "name:images/s03_cover.webp",
+   "path": "images/s03_cover.webp",
+   "w": 1360,
+   "h": 768,
+   "pushed_at": "2026-11-24T14:16:05Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "inference_engineering_study_week_03_article_01": {
+   "src": "name:assets/img/cover_03.webp",
+   "path": "assets/img/cover_03.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-07T05:49:35Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "inference_engineering_study_week_03_textbook_ch02_p3_to_end": {
+   "src": "name:images/cover_03.webp",
+   "path": "images/cover_03.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-09T09:08:56Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "inference_korea_study_page": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-24T14:16:07Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "insurtech__case_classification_model_01": {
+   "src": "redraw:R045:assets/hero.webp",
+   "path": "assets/hero.webp",
+   "w": 1100,
+   "h": 320,
+   "pushed_at": "2026-11-24T14:16:19Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "warn"
+  },
+  "insurtech__case_classification_model_02": {
+   "src": "redraw:R046:assets/hero.webp",
+   "path": "assets/hero.webp",
+   "w": 1100,
+   "h": 320,
+   "pushed_at": "2026-11-24T14:16:22Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "warn"
+  },
+  "insurtech__case_regreesion_model_01": {
+   "src": "redraw:R047:assets/hero.webp",
+   "path": "assets/hero.webp",
+   "w": 1100,
+   "h": 320,
+   "pushed_at": "2026-11-24T14:16:25Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "warn"
+  },
+  "insurtech__case_regreesion_model_02": {
+   "src": "redraw:R048:assets/hero.webp",
+   "path": "assets/hero.webp",
+   "w": 1100,
+   "h": 320,
+   "pushed_at": "2026-11-24T14:16:28Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "warn"
+  },
+  "karpathy_method_korean": {
+   "src": "manifest:img/cover.webp",
+   "path": "img/cover.webp",
+   "w": 1536,
+   "h": 864,
+   "pushed_at": "2026-11-25T14:38:40Z",
+   "declared": 2,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "kma_2023_01": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2023-07-28T07:40:49Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "knn_svc_svm_lab": {
+   "src": "name:assets/img/cover_index.png",
+   "path": "assets/img/cover_index.png",
+   "w": 960,
+   "h": 540,
+   "pushed_at": "2026-11-25T19:11:55Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "warn"
+  },
+  "kwangju_data_learn": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2023-08-27T09:24:23Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "labor_economics": {
+   "src": "name:assets/og/cover_01.jpg",
+   "path": "assets/og/cover_01.jpg",
+   "w": 1200,
+   "h": 630,
+   "pushed_at": "2026-11-24T22:38:56Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "lagrange_multiplier_lab": {
+   "src": "name:img/cover.webp",
+   "path": "img/cover.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-26T15:09:46Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "lagrangian_hamiltonian_lab": {
+   "src": "name:assets/img/cover_00.webp",
+   "path": "assets/img/cover_00.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-23T23:25:34Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "learn-pandas-visually_korean": {
+   "src": "redraw:R071:assets/hero/hero.jpg",
+   "path": "assets/hero/hero.jpg",
+   "w": 1536,
+   "h": 1024,
+   "pushed_at": "2026-11-24T14:17:16Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "learn-python-by-doing": {
+   "src": "redraw:R072:docs/assets/hero/hero.jpg",
+   "path": "docs/assets/hero/hero.jpg",
+   "w": 1200,
+   "h": 800,
+   "pushed_at": "2026-11-06T12:33:45Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "learn-python-by-doing_Korean": {
+   "src": "redraw:R073:docs/assets/hero/hero.jpg",
+   "path": "docs/assets/hero/hero.jpg",
+   "w": 1536,
+   "h": 1024,
+   "pushed_at": "2026-11-24T14:17:19Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "likelihood_vs_probability": {
+   "src": "manifest:assets/img/cover_01.webp",
+   "path": "assets/img/cover_01.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-27T10:56:57Z",
+   "declared": 4,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "llm_applied_lab": {
+   "src": "manifest:assets/img/cover_A1.webp",
+   "path": "assets/img/cover_A1.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-27T06:05:55Z",
+   "declared": 8,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "LLM_evaluation": {
+   "src": "name:assets/cover_llmeval.webp",
+   "path": "assets/cover_llmeval.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-06T18:33:31Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "llm_memory_trilogy": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-12T12:58:29Z",
+   "declared": 4,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "LLM_summary_note": {
+   "src": "manifest:cover_one_day_nlp_pm.webp",
+   "path": "cover_one_day_nlp_pm.webp",
+   "w": 1920,
+   "h": 1080,
+   "pushed_at": "2026-11-23T10:58:07Z",
+   "declared": 3,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "LoRA-fine-tuning-tutorial": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-26T13:52:45Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "machine_learning_in_3d": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-24T14:17:04Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "machine_learning_model_atlas": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-24T14:17:07Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "markov_player": {
+   "src": "name:assets/og_mk.jpg",
+   "path": "assets/og_mk.jpg",
+   "w": 1200,
+   "h": 630,
+   "pushed_at": "2026-11-07T05:41:16Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "math_basic_for_ai_dictionary": {
+   "src": "name:img/cover_ch01.webp",
+   "path": "img/cover_ch01.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-26T15:07:42Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "math_for_ai_lab": {
+   "src": "manifest:assets/cover/cover_part1.webp",
+   "path": "assets/cover/cover_part1.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-23T23:25:47Z",
+   "declared": 6,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "micro_economics": {
+   "src": "name:assets/og/cover_00.jpg",
+   "path": "assets/og/cover_00.jpg",
+   "w": 1200,
+   "h": 630,
+   "pushed_at": "2026-11-24T17:13:16Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "minkowski_space_lab": {
+   "src": "name:build/img/cover_index.webp",
+   "path": "build/img/cover_index.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-26T15:09:48Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "ML_00_Algorithm-family-build_00": {
+   "src": "name:4-6_regression_seven.html/idx_hero_1280.png",
+   "path": "4-6_regression_seven.html/idx_hero_1280.png",
+   "w": 1280,
+   "h": 900,
+   "pushed_at": "2026-11-06T12:37:53Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "ML_00_Algorithm-family-build_01": {
+   "src": "name:assets/sc_alley.webp",
+   "path": "assets/sc_alley.webp",
+   "w": 760,
+   "h": 507,
+   "pushed_at": "2026-11-24T14:16:47Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "low"
+  },
+  "ML_00_Algorithm-family-build_02": {
+   "src": "name:assets/sc_alley.webp",
+   "path": "assets/sc_alley.webp",
+   "w": 760,
+   "h": 507,
+   "pushed_at": "2026-11-24T14:16:52Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "low"
+  },
+  "ML_00_Algorithm-family-build_03": {
+   "src": "name:assets/sc_alley.webp",
+   "path": "assets/sc_alley.webp",
+   "w": 760,
+   "h": 507,
+   "pushed_at": "2026-11-24T14:16:55Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "low"
+  },
+  "ML_model_hiring_committee": {
+   "src": "name:assets/sc_alley.webp",
+   "path": "assets/sc_alley.webp",
+   "w": 760,
+   "h": 507,
+   "pushed_at": "2026-11-24T14:17:01Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "low"
+  },
+  "money-robo_news_rebuild": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-27T03:26:03Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "motion_ai_series_01": {
+   "src": "redraw:R074:5-2_recognize_to_generate.en.html#pixelart",
+   "path": "5-2_recognize_to_generate.en.html",
+   "w": 1100,
+   "h": 880,
+   "pushed_at": "2026-11-24T14:15:59Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "warn"
+  },
+  "moving_factory_dashboard": {
+   "src": "manifest:img/cover.jpg",
+   "path": "img/cover.jpg",
+   "w": 1600,
+   "h": 1067,
+   "pushed_at": "2026-11-27T05:07:45Z",
+   "declared": 1,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "my_article_00_Korean_stockmarket_volatility_study": {
+   "src": "redraw:R076:img/cover.jpg",
+   "path": "img/cover.jpg",
+   "w": 1200,
+   "h": 630,
+   "pushed_at": "2026-11-23T23:30:15Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "my_article_01_bitcoin_price_analytics": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-05T11:18:23Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "my_article_02_crypto_predict_model_analytics": {
+   "src": "redraw:R079:img/sc_01_hero.png",
+   "path": "img/sc_01_hero.png",
+   "w": 1200,
+   "h": 800,
+   "pushed_at": "2026-11-23T07:30:58Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "my_article_03_drug-slang-detection": {
+   "src": "redraw:R084:01_drug-slang-detection.en.html#sc_01_hero",
+   "path": "01_drug-slang-detection.en.html",
+   "w": 760,
+   "h": 507,
+   "pushed_at": "2026-11-23T07:30:33Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "low"
+  },
+  "my_article_04_adversarial_finance_attack": {
+   "src": "redraw:R087:sc_01_hero.png",
+   "path": "sc_01_hero.png",
+   "w": 1200,
+   "h": 800,
+   "pushed_at": "2026-11-23T07:30:44Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "my_article_05_consumer_expenditure_predict": {
+   "src": "redraw:R091:01_kreis_expenditure.en.html#img",
+   "path": "01_kreis_expenditure.en.html",
+   "w": 1920,
+   "h": 720,
+   "pushed_at": "2026-11-06T12:34:43Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "my_article_06_AI_effect_to_labor_demand": {
+   "src": "redraw:R071:hero_01_ledger.webp",
+   "path": "hero_01_ledger.webp",
+   "w": 1200,
+   "h": 800,
+   "pushed_at": "2026-11-23T23:25:29Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "my_article_07_media_blockchain": {
+   "src": "redraw:R094:index.en.html#cover_index",
+   "path": "index.en.html",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-23T23:30:25Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "my_article_08_poll_reweighting_lab": {
+   "src": "redraw:R099:images/cover_index.webp",
+   "path": "images/cover_index.webp",
+   "w": 1600,
+   "h": 686,
+   "pushed_at": "2026-11-23T23:27:35Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "my_document_01": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-21T03:13:10Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "nabla_field_lab": {
+   "src": "og:assets/og/index.webp",
+   "path": "assets/og/index.webp",
+   "w": 1200,
+   "h": 630,
+   "pushed_at": "2026-11-24T14:16:10Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "neural_network_atlas": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-13T16:28:03Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "neural_see_lab": {
+   "src": "manifest:img/cover_00.webp",
+   "path": "img/cover_00.webp",
+   "w": 1920,
+   "h": 1080,
+   "pushed_at": "2026-11-27T04:24:07Z",
+   "declared": 2,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "neuralink_animal_brain_ai": {
+   "src": "manifest:assets/img/cover_index.webp",
+   "path": "assets/img/cover_index.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-12T15:37:36Z",
+   "declared": 2,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "neuron_reaction": {
+   "src": "manifest:assets/img/cover_01.webp",
+   "path": "assets/img/cover_01.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-26T15:09:50Z",
+   "declared": 16,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "nlp20_five_floor_map": {
+   "src": "manifest:cover_nlp20.webp",
+   "path": "cover_nlp20.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-27T04:24:05Z",
+   "declared": 2,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "one_day_deep_learning": {
+   "src": "manifest:assets/og_one_day_dl_pm.jpg",
+   "path": "assets/og_one_day_dl_pm.jpg",
+   "w": 1200,
+   "h": 630,
+   "pushed_at": "2026-11-23T07:30:51Z",
+   "declared": 2,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "one_day_machine_learning": {
+   "src": "manifest:cover_one_day_ml_am.webp",
+   "path": "cover_one_day_ml_am.webp",
+   "w": 1600,
+   "h": 893,
+   "pushed_at": "2026-11-23T07:30:51Z",
+   "declared": 2,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "ontology_kg_vfx": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-26T15:09:54Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "ontology_trend_report": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-26T15:09:55Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "optimization_3d_map": {
+   "src": "manifest:img/cover_index.webp",
+   "path": "img/cover_index.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-26T15:09:58Z",
+   "declared": 7,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "optimization_test_lab": {
+   "src": "name:img/cover_01.webp",
+   "path": "img/cover_01.webp",
+   "w": 1920,
+   "h": 1080,
+   "pushed_at": "2026-11-26T15:09:59Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "polygon_series_lab": {
+   "src": "manifest:img/cover_01.webp",
+   "path": "img/cover_01.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-27T04:53:14Z",
+   "declared": 2,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "probability_distribution_dictionary": {
+   "src": "file:assets/cm_fn.png",
+   "path": "assets/cm_fn.png",
+   "w": 600,
+   "h": 372,
+   "pushed_at": "2026-11-25T16:02:32Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "low"
+  },
+  "python-accounting-analytics": {
+   "src": "name:assets/og/cover_00.jpg",
+   "path": "assets/og/cover_00.jpg",
+   "w": 1200,
+   "h": 630,
+   "pushed_at": "2026-11-23T23:30:34Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "python_machine_learning_lab": {
+   "src": "name:assets/img/cover_01.webp",
+   "path": "assets/img/cover_01.webp",
+   "w": 1920,
+   "h": 1080,
+   "pushed_at": "2026-11-27T06:05:31Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "Recursive-Self-Improvement": {
+   "src": "manifest:img/cover_rsi.webp",
+   "path": "img/cover_rsi.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-26T15:09:15Z",
+   "declared": 2,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "Regression_model_lab_01": {
+   "src": "name:assets/img/cover_index.png",
+   "path": "assets/img/cover_index.png",
+   "w": 800,
+   "h": 450,
+   "pushed_at": "2026-11-27T01:43:19Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "low"
+  },
+  "Regression_ridge_lasso": {
+   "src": "manifest:cover_index.webp",
+   "path": "cover_index.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-22T00:18:51Z",
+   "declared": 4,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "Reinforcement-Learning-lab_project_01": {
+   "src": "manifest:img/cover_00.webp",
+   "path": "img/cover_00.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-26T15:09:19Z",
+   "declared": 20,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "riemann_frontiers_lab": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-26T10:10:20Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "riemann_hypothesis_lab": {
+   "src": "name:assets/img/cover_briefing.webp",
+   "path": "assets/img/cover_briefing.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-24T15:26:54Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "rulebase_to_agent": {
+   "src": "embedded:1-1_rulebase.en.html#hero",
+   "path": "1-1_rulebase.en.html",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-26T15:10:05Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "smart_factory_world": {
+   "src": "manifest:cement/img/cement_cover.webp",
+   "path": "cement/img/cement_cover.webp",
+   "w": 960,
+   "h": 540,
+   "pushed_at": "2026-11-24T14:17:13Z",
+   "declared": 1,
+   "declared_low": 0,
+   "grade": "warn"
+  },
+  "smart_product": {
+   "src": "manifest:img/cover.webp",
+   "path": "img/cover.webp",
+   "w": 960,
+   "h": 540,
+   "pushed_at": "2026-11-26T15:10:07Z",
+   "declared": 1,
+   "declared_low": 0,
+   "grade": "warn"
+  },
+  "statistics_note": {
+   "src": "name:ch01/assets/og_ch01_1.png",
+   "path": "ch01/assets/og_ch01_1.png",
+   "w": 1200,
+   "h": 630,
+   "pushed_at": "2026-11-23T23:27:29Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "statistics_note_ch04_02": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-04T00:03:44Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "statistics_note_ch04_Statistical-Estimation_01_a": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-23T23:27:31Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "Stochastic_labs": {
+   "src": "manifest:img/og/og_index.webp",
+   "path": "img/og/og_index.webp",
+   "w": 1200,
+   "h": 630,
+   "pushed_at": "2026-11-24T22:30:02Z",
+   "declared": 30,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "structure_first_drawing_lab_01": {
+   "src": "manifest:assets/img/cover_index.webp",
+   "path": "assets/img/cover_index.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-27T03:21:32Z",
+   "declared": 8,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "structure_first_drawing_lab_02": {
+   "src": "name:assets/img/cover_01.webp",
+   "path": "assets/img/cover_01.webp",
+   "w": 1920,
+   "h": 1080,
+   "pushed_at": "2026-11-27T03:21:34Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "test": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-02-03T11:52:44Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "The-Ultimate-Bitcoin-Price-Prediction-Model": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-03-02T12:35:34Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "timer_ver001": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-23T07:30:43Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "timeseries-trilogy": {
+   "src": "manifest:assets/img/cover_index.webp",
+   "path": "assets/img/cover_index.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-23T23:27:33Z",
+   "declared": 6,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "topology_ai_lab": {
+   "src": "manifest:img/og/og_01.webp",
+   "path": "img/og/og_01.webp",
+   "w": 1200,
+   "h": 630,
+   "pushed_at": "2026-11-23T16:02:11Z",
+   "declared": 31,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "unsupervised_fish_lab": {
+   "src": "manifest:img/cover_00.webp",
+   "path": "img/cover_00.webp",
+   "w": 1600,
+   "h": 900,
+   "pushed_at": "2026-11-26T15:10:10Z",
+   "declared": 12,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "usa_stock_reporter_project_python_version": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2023-07-01T04:29:03Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "valuation_without_revenue": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-23T23:30:26Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
+  "vector_analysis_lab": {
+   "src": "og:assets/og/index.webp",
+   "path": "assets/og/index.webp",
+   "w": 1200,
+   "h": 630,
+   "pushed_at": "2026-11-24T14:16:15Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "vector_calculus_lab": {
+   "src": "manifest:assets/og/index.jpg",
+   "path": "assets/og/index.jpg",
+   "w": 1200,
+   "h": 673,
+   "pushed_at": "2026-11-23T23:25:31Z",
+   "declared": 18,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "vector_db_lab": {
+   "src": "manifest:img/cover_00.webp",
+   "path": "img/cover_00.webp",
+   "w": 1920,
+   "h": 1080,
+   "pushed_at": "2026-11-23T23:27:49Z",
+   "declared": 18,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "what_is_p_value_lab": {
+   "src": "manifest:assets/img/cover_pv.webp",
+   "path": "assets/img/cover_pv.webp",
+   "w": 1920,
+   "h": 1080,
+   "pushed_at": "2026-11-23T21:16:37Z",
+   "declared": 2,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "what_is_tensor": {
+   "src": "name:assets/img/og_w01.jpg",
+   "path": "assets/img/og_w01.jpg",
+   "w": 1200,
+   "h": 630,
+   "pushed_at": "2026-11-12T12:24:41Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "ok"
+  },
+  "who_am_i": {
+   "src": "embedded:who_am_i.en.html#hero",
+   "path": "who_am_i.en.html",
+   "w": 1100,
+   "h": 733,
+   "pushed_at": "2026-11-08T07:30:25Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "warn"
+  },
+  "who_am_i_package": {
+   "src": "name:img/sc_night.webp",
+   "path": "img/sc_night.webp",
+   "w": 1100,
+   "h": 733,
+   "pushed_at": "2026-11-05T11:19:20Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "warn"
+  }
+ }
+}
