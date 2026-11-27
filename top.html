@@ -169,7 +169,7 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
     setInterval(function(){var w=order[t%order.length];speak(w);hop(parts[OF[w]||w]);t++;},4200);}
   var rw;window.addEventListener('resize',function(){clearTimeout(rw);rw=setTimeout(build,250);});
 
-  // 공지: data/notices.csv (날짜, 제목, 링크, 표시)
+  // 공지: data/notices.csv + data/notices_auto.csv (날짜, 제목, 링크, 표시) — 최근 4개
   function parseCSV(t){
     var rows=[],row=[],f='',q=false;t=t.replace(/^﻿/,'');
     for(var i=0;i<t.length;i++){var ch=t[i];
@@ -179,11 +179,14 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
     var h=rows.shift()||[];return rows.filter(function(r){return r.join('').trim();}).map(function(r){var o={};h.forEach(function(k,i){o[k.trim()]=(r[i]||'').trim();});return o;});
   }
   var NOTI=null;
-  fetch('data/notices.csv',{cache:'no-cache'}).then(function(r){if(!r.ok)throw new Error(r.status);return r.text();}).then(function(t){NOTI=parseCSV(t);return AhnI18n.ready;}).then(notices)
+  // 손으로 쓴 공지(notices.csv) + 업데이트 이력에서 자동으로 만든 공지(notices_auto.csv, scripts/build_updates.py)
+  var autoN=fetch('data/notices_auto.csv',{cache:'no-cache'}).then(function(r){return r.ok?r.text():'';}).then(function(t){return t?parseCSV(t):[];}).catch(function(){return [];});
+  fetch('data/notices.csv',{cache:'no-cache'}).then(function(r){if(!r.ok)throw new Error(r.status);return r.text();}).then(function(t){var m=parseCSV(t);return autoN.then(function(a){NOTI=m.concat(a);return AhnI18n.ready;});}).then(notices)
   .catch(function(){var ul=document.getElementById('nlist');ul.textContent='';ul.appendChild(el('li')).appendChild(el('span','t',T('공지를 불러오지 못했습니다.')));});
   function notices(){if(!NOTI)return;
-    var list=NOTI.filter(function(n){return (n['표시']||'Y').toUpperCase()!=='N'&&n['제목'];})
-      .sort(function(a,b){return (b['날짜']||'').localeCompare(a['날짜']||'');}).slice(0,3);
+    var off={};NOTI.forEach(function(n){if((n['표시']||'Y').toUpperCase()==='N')off[n['날짜']+'|'+n['제목']]=1;});  // 손 공지 N이 같은 날짜·제목 자동 공지를 숨긴다
+    var list=NOTI.filter(function(n){return (n['표시']||'Y').toUpperCase()!=='N'&&n['제목']&&!off[n['날짜']+'|'+n['제목']];})
+      .sort(function(a,b){return (b['날짜']||'').localeCompare(a['날짜']||'');}).slice(0,4);
     var ul=document.getElementById('nlist');ul.textContent='';
     if(!list.length){ul.appendChild(el('li','',null)).appendChild(el('span','t',T('새 공지가 없습니다.')));}
     list.forEach(function(n){

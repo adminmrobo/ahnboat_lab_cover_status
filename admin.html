@@ -166,6 +166,7 @@ td input.ord{width:56px}
   <div class="tabs" role="tablist">
     <button type="button" role="tab" id="tabC" aria-selected="true">콘텐츠</button>
     <button type="button" role="tab" id="tabN" aria-selected="false">공지사항</button>
+    <button type="button" role="tab" id="tabU" aria-selected="false">업데이트 이력</button>
   </div>
   <div id="paneC">
   <div class="scanbox"><span>새 저장소를 만들거나 표지를 바꿨나요? 하루 두 번(아침·저녁쯤) 저절로 가져오지만, 지금 바로 가져올 수도 있습니다.</span><button type="button" id="scanBtn">지금 새 저장소 가져오기</button></div>
@@ -200,7 +201,7 @@ td input.ord{width:56px}
   <!-- 공지사항 -->
   <div id="paneN" class="hidden">
     <div class="bar">
-      <div class="grp grow"><b>공지사항</b><span class="hint" style="margin:0">홈페이지 맨 위 공지 칸에 <b>표시 Y</b>인 공지 중 최근 3개가 나옵니다. 7일 안의 공지에는 NEW가 붙습니다.</span></div>
+      <div class="grp grow"><b>공지사항</b><span class="hint" style="margin:0">홈페이지 맨 위 공지 칸에 <b>표시 Y</b>인 공지(업데이트 이력 자동 공지 포함) 중 최근 4개가 나옵니다. 7일 안의 공지에는 NEW가 붙습니다.</span></div>
       <div class="grp">
         <button id="nAdd" type="button">+ 공지</button>
         <button id="nSave" class="pri" type="button" disabled>공지 저장</button>
@@ -214,7 +215,21 @@ td input.ord{width:56px}
     </div>
     <h2 style="margin-top:24px">홈페이지에 보일 모습</h2>
     <div class="prev"><div class="lb">📢 공지</div><ul id="nPrev"></ul></div>
-    <p class="foot">공지는 비밀번호로 잠그지 않는 공개 파일(data/notices.csv)입니다. 저장하면 1~2분 뒤 홈페이지에 반영됩니다. 다른 언어 화면에서는 번역하기 전까지 한국어로 보입니다.</p>
+    <p class="foot">공지는 비밀번호로 잠그지 않는 공개 파일(data/notices.csv)입니다. 저장하면 1~2분 뒤 홈페이지에 반영됩니다. 미리보기에는 <b>업데이트 이력</b>에서 자동으로 만든 공지(data/notices_auto.csv)도 함께 보입니다. 다른 언어 화면에서는 번역하기 전까지 한국어로 보입니다.</p>
+  </div>
+
+  <!-- 업데이트 이력 -->
+  <div id="paneU" class="hidden">
+    <div class="bar">
+      <div class="grp grow"><b>업데이트 이력</b><span class="hint" style="margin:0">표지 현황 수집(하루 두 번) 때 공개 콘텐츠의 새 공개·업데이트를 기록합니다. 날짜마다 <b>용량이 큰 순서로 최대 4건</b>이 홈페이지 공지로 자동으로 올라갑니다(1KB 미만 수정은 공지 제외).</span></div>
+    </div>
+    <div style="overflow-x:auto">
+    <table class="nt">
+      <thead><tr><th>날짜</th><th>구분</th><th>콘텐츠</th><th>바뀐 용량</th><th>공지</th></tr></thead>
+      <tbody id="uRows"></tbody>
+    </table>
+    </div>
+    <p class="foot">이력은 공개 파일 data/updates.json, 자동 공지는 data/notices_auto.csv 입니다. 자동 공지를 숨기려면 같은 날짜·같은 제목으로 공지사항 탭에 <b>표시 N</b> 공지를 하나 넣으세요.</p>
   </div>
 </section>
 </div>
@@ -646,9 +661,9 @@ window.addEventListener('beforeunload',function(e){if($('app').classList.contain
 
 
 /* ---------- 탭 ---------- */
-function tab(n){$('tabC').setAttribute('aria-selected',n==='C');$('tabN').setAttribute('aria-selected',n==='N');
-  $('paneC').classList.toggle('hidden',n!=='C');$('paneN').classList.toggle('hidden',n!=='N');if(n==='N'&&!NLOADED)loadNotices();}
-$('tabC').addEventListener('click',function(){tab('C');});$('tabN').addEventListener('click',function(){tab('N');});
+function tab(n){['C','N','U'].forEach(function(k){$('tab'+k).setAttribute('aria-selected',n===k);$('pane'+k).classList.toggle('hidden',n!==k);});
+  if(n==='N'&&!NLOADED)loadNotices();if(n==='U'&&!ULOADED)loadUpdates();}
+$('tabC').addEventListener('click',function(){tab('C');});$('tabN').addEventListener('click',function(){tab('N');});$('tabU').addEventListener('click',function(){tab('U');});
 
 /* ---------- 지금 새 저장소 가져오기 (표지 현황 수집 실행) ---------- */
 $('scanBtn').addEventListener('click',function(){
@@ -686,13 +701,36 @@ function nRender(){
     var del=el('button','sm warn','지우기');del.type='button';del.style.marginLeft='4px';del.addEventListener('click',function(){if(confirm('"'+(r['제목']||'빈 공지')+'"를 지울까요? (공지 저장을 눌러야 반영됩니다)')){NROWS.splice(i,1);nRender();}});t4.appendChild(del);
     tr.appendChild(t4);tb.appendChild(tr);});
   nPreview();nDirty();}
+var NAUTO=[];
+fetch('data/notices_auto.csv?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.ok?r.text():'';}).then(function(t){if(t){NAUTO=parseCSV(t).rows;if(NLOADED)nPreview();}}).catch(function(){});
 function nPreview(){
   var ul=$('nPrev');ul.innerHTML='';
-  var list=nSorted().filter(function(n){return n['표시']!=='N'&&n['제목'].trim();}).slice(0,3);
+  var all=NROWS.concat(NAUTO.map(function(r){return {'날짜':r['날짜']||'','제목':r['제목']||'','링크':r['링크']||'','표시':r['표시']||'Y',_auto:true};}));
+  var off={};all.forEach(function(n){if(n['표시']==='N')off[n['날짜']+'|'+n['제목'].trim()]=1;});
+  var list=all.filter(function(n){return n['표시']!=='N'&&n['제목'].trim()&&!off[n['날짜']+'|'+n['제목'].trim()];})
+    .sort(function(a,b){return (b['날짜']||'').localeCompare(a['날짜']||'');}).slice(0,4);
   if(!list.length){ul.appendChild(el('li','','새 공지가 없습니다.'));return;}
   list.forEach(function(n){var li=el('li');li.appendChild(el('time','',(n['날짜']||'').slice(5).replace('-','.')));
     var dd=n['날짜']?(Date.now()-Date.parse(n['날짜']))/864e5:99;if(dd<7)li.appendChild(el('span','new','NEW'));
-    li.appendChild(el('span','t',n['제목']));ul.appendChild(li);});}
+    li.appendChild(el('span','t',n['제목']+(n._auto?'  (자동)':'')));ul.appendChild(li);});}
+/* ---------- 업데이트 이력 ---------- */
+var ULOADED=false;
+function kb(b){b=Number(b)||0;return b>=1048576?(b/1048576).toFixed(1)+' MB':b>=1024?Math.round(b/1024)+' KB':b+' B';}
+function loadUpdates(){
+  var tb=$('uRows');tb.innerHTML='<tr><td colspan="5">불러오는 중…</td></tr>';
+  Promise.all([fetch('data/updates.json?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.ok?r.json():{log:[]};}),
+    fetch('data/notices_auto.csv?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.ok?r.text():'';})]).then(function(a){
+    ULOADED=true;var log=(a[0]&&a[0].log)||[],pub={};
+    (a[1]?parseCSV(a[1]).rows:[]).forEach(function(r){pub[r['날짜']+'|'+r['링크']]=1;});
+    tb.innerHTML='';
+    if(!log.length){var tr=el('tr'),td=el('td','','아직 기록이 없습니다. 다음 표지 현황 수집 때부터 쌓입니다.');td.colSpan=5;tr.appendChild(td);tb.appendChild(tr);return;}
+    log.forEach(function(e){var on=pub[e.date+'|'+e.link];var tr=el('tr',on?'':'off');
+      tr.appendChild(el('td','dt',e.date));
+      tr.appendChild(el('td','',e.kind==='new'?'새 공개':'업데이트'));
+      var t=el('td');var a2=el('a','',e.title);a2.href=e.link;a2.target='_blank';a2.rel='noopener';t.appendChild(a2);tr.appendChild(t);
+      tr.appendChild(el('td','',(e.kind==='new'?'전체 ':'')+kb(e.size)));
+      tr.appendChild(el('td','yn',on?'공지됨':'—'));tb.appendChild(tr);});
+  }).catch(function(e){tb.innerHTML='';toast('업데이트 이력을 불러오지 못했습니다: '+esc(e.message),8000);});}
 $('nAdd').addEventListener('click',function(){NROWS.unshift({'날짜':kstToday(),'제목':'','링크':'https://ahnboat.xyz/','표시':'Y'});nRender();
   var f=$('nRows').querySelector('input[type=text]');if(f)f.focus();});
 $('nSave').addEventListener('click',function(){

@@ -70,9 +70,10 @@ def collect(projects=None):
         add(list((v.get("mid_alias") or {}).values()))
         for mi in (v.get("mid_info") or {}).values():
             add(mi.get("desc")); add(mi.get("keywords", []))
-    if os.path.exists(D("notices.csv")):
-        for r in csv_rows(D("notices.csv")):
-            add(r.get("제목"))
+    for nf in ("notices.csv", "notices_auto.csv"):   # 손으로 쓴 공지 + 업데이트 이력 자동 공지
+        if os.path.exists(D(nf)):
+            for r in csv_rows(D(nf)):
+                add(r.get("제목"))
     if projects and os.path.exists(projects):
         for r in csv_rows(projects):
             add([r.get("프로젝트명"), r.get("카테고리")])

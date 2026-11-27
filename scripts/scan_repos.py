@@ -480,6 +480,9 @@ def scan_api(token):
                             "https://%s.github.io/%s/" % (OWNER, name),
                             "https://github.com/%s/%s/blob/%s/" % (OWNER, name, branch), readme, pages_path, manifest)
         site["has_pages"] = bool(r.get("has_pages"))
+        # 저장소 파일 용량 합계(바이트) — 업데이트 이력(build_updates.py)이 '얼마나 바뀌었나'를 재는 데 쓴다
+        if tree:
+            site["size_bytes"] = sum(t.get("size") or 0 for t in tree.get("tree", []) if t.get("type") == "blob")
         out.append(make_entry(name, branch, r.get("pushed_at"), manifest, None if manifest else all_paths,
                               title_from_html(head), og, redraw, thumbs, series, prev.get(name), site,
                               existing=all_paths if tree else None, site_desc=desc_from_html(head)))
