@@ -149,7 +149,7 @@
    "kind": "update",
    "title": "안보트 연구실 타운 (Ahn Lab Town)",
    "link": "https://adminmrobo.github.io/ahn_boat_lab_town/",
-   "size": 15620070
+   "size": 15622751
   },
   {
    "date": "2026-11-27",
@@ -285,7 +285,7 @@
    "kind": "update",
    "title": "Ahn-boat Lab 식구 갤러리",
    "link": "https://adminmrobo.github.io/ahnboat_lab_gallery/",
-   "size": 6188871
+   "size": 6228758
   },
   {
    "date": "2026-11-27",
@@ -422,6 +422,14 @@
    "title": "온톨로지를 VFX로 그리면 — 지식 그래프와 시각화 · 자연어 분석과 LLM 연구실",
    "link": "https://adminmrobo.github.io/ontology_kg_vfx/",
    "size": 591086
+  },
+  {
+   "date": "2026-11-27",
+   "repo": "fintech_data_analysis",
+   "kind": "update",
+   "title": "핀테크 데이터 연구실",
+   "link": "https://adminmrobo.github.io/fintech_data_analysis/",
+   "size": 106276
   },
   {
    "date": "2026-11-26",
@@ -1218,12 +1226,12 @@
    "size": 1928640
   },
   "ahn_boat_lab_town": {
-   "pushed_at": "2026-11-27T10:04:32Z",
-   "size": 15620070
+   "pushed_at": "2026-11-27T11:28:05Z",
+   "size": 15622751
   },
   "ahnboat_lab_gallery": {
-   "pushed_at": "2026-11-27T11:09:33Z",
-   "size": 6188871
+   "pushed_at": "2026-11-27T11:36:03Z",
+   "size": 6228758
   },
   "ahnboat_ontology_feed": {
    "pushed_at": "2026-11-27T10:52:32Z",
@@ -1382,8 +1390,8 @@
    "size": 3856870
   },
   "fintech_data_analysis": {
-   "pushed_at": "2026-11-26T11:58:51Z",
-   "size": 277657408
+   "pushed_at": "2026-11-27T11:34:40Z",
+   "size": 277763684
   },
   "fish_market_learning_epoch_etc": {
    "pushed_at": "2026-11-12T14:34:22Z",

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27 20:38 KST",
+ "updated": "2026-11-27 20:53 KST",
  "rule": {
   "ok": "가로 1200 px 이상",
   "warn": "가로 960~1199 px",
@@ -9,7 +9,7 @@
  "summary": {
   "ok": 123,
   "none": 49,
-  "warn": 11,
+  "warn": 12,
   "low": 10
  },
  "repos": {
@@ -58,7 +58,7 @@
    "path": "assets/cut1_panic.webp",
    "w": 1376,
    "h": 768,
-   "pushed_at": "2026-11-27T10:04:32Z",
+   "pushed_at": "2026-11-27T11:28:05Z",
    "declared": 0,
    "declared_low": 0,
    "grade": "ok"
@@ -88,7 +88,7 @@
    "path": null,
    "w": 0,
    "h": 0,
-   "pushed_at": "2026-11-27T11:09:33Z",
+   "pushed_at": "2026-11-27T11:36:03Z",
    "declared": 0,
    "declared_low": 0,
    "grade": "none"
@@ -413,6 +413,16 @@
    "declared_low": 0,
    "grade": "low"
   },
+  "cost_theory_economic_view_lab": {
+   "src": null,
+   "path": null,
+   "w": 0,
+   "h": 0,
+   "pushed_at": "2026-11-27T11:26:29Z",
+   "declared": 0,
+   "declared_low": 0,
+   "grade": "none"
+  },
   "covariant_chase_lab": {
    "src": "manifest:assets/img/cover_01.webp",
    "path": "assets/img/cover_01.webp",
@@ -574,14 +584,14 @@
    "grade": "ok"
   },
   "Distance-metrics-tutorial": {
-   "src": null,
-   "path": null,
-   "w": 0,
-   "h": 0,
-   "pushed_at": "2026-11-27T10:44:01Z",
+   "src": "name:images/cover_part1.webp",
+   "path": "images/cover_part1.webp",
+   "w": 960,
+   "h": 540,
+   "pushed_at": "2026-11-27T11:26:50Z",
    "declared": 0,
    "declared_low": 0,
-   "grade": "none"
+   "grade": "warn"
   },
   "DL_model_hiring_committee": {
    "src": "redraw:R007:6-0_job_posting.html#sc_meeting",
@@ -688,7 +698,7 @@
    "path": null,
    "w": 0,
    "h": 0,
-   "pushed_at": "2026-11-27T10:49:54Z",
+   "pushed_at": "2026-11-27T11:25:46Z",
    "declared": 0,
    "declared_low": 0,
    "grade": "none"
@@ -724,12 +734,12 @@
    "grade": "ok"
   },
   "fintech_data_analysis": {
-   "src": "name:assets/og/cover_00.jpg",
-   "path": "assets/og/cover_00.jpg",
-   "w": 1200,
-   "h": 630,
-   "pushed_at": "2026-11-26T11:58:51Z",
-   "declared": 0,
+   "src": "manifest:index.html#img",
+   "path": "index.html",
+   "w": 1920,
+   "h": 1080,
+   "pushed_at": "2026-11-27T11:34:40Z",
+   "declared": 34,
    "declared_low": 0,
    "grade": "ok"
   },

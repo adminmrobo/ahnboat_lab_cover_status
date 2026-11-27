@@ -303,8 +303,6 @@
     "ko": 14
    }
   },
-  "has_pages": true,
-  "size_bytes": 2388115,
   "skills": {
    "items": [
     {
@@ -322,7 +320,9 @@
    "retrofit": 0,
    "px_fix": 14,
    "pages_checked": 14
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 2388115
  },
  {
   "repo": "adminmrobo-structure_first_drawing_lab",
@@ -1328,8 +1328,6 @@
     "ko": 8
    }
   },
-  "has_pages": true,
-  "size_bytes": 5829464,
   "skills": {
    "items": [],
    "main": "",
@@ -1338,7 +1336,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 8
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 5829464
  },
  {
   "repo": "agent_secret_leak_lab",
@@ -1437,8 +1437,6 @@
     "ko": 2
    }
   },
-  "has_pages": true,
-  "size_bytes": 1002135,
   "skills": {
    "items": [
     {
@@ -1456,7 +1454,9 @@
    "retrofit": 0,
    "px_fix": 2,
    "pages_checked": 2
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 1002135
  },
  {
   "repo": "agentic_ai_crash_guide",
@@ -1594,8 +1594,6 @@
     "ko": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 1928640,
   "skills": {
    "items": [
     {
@@ -1619,7 +1617,9 @@
    "retrofit": 1,
    "px_fix": 1,
    "pages_checked": 1
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 1928640
  },
  {
   "repo": "ahn_boat_lab_town",
@@ -1628,7 +1628,7 @@
   "repo_url": "https://github.com/adminmrobo/ahn_boat_lab_town",
   "pages_url": "https://adminmrobo.github.io/ahn_boat_lab_town/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T10:04:32Z",
+  "pushed_at": "2026-11-27T11:28:05Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 3,
@@ -1676,8 +1676,6 @@
     "ko": 2
    }
   },
-  "has_pages": true,
-  "size_bytes": 15620070,
   "skills": {
    "items": [],
    "main": "",
@@ -1686,7 +1684,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 2
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 15622751
  },
  {
   "repo": "ahnboat_lab_character_add_packs",
@@ -1728,6 +1728,15 @@
    "count": 0,
    "complete": true,
    "pages_by_lang": {}
+  },
+  "skills": {
+   "items": [],
+   "main": "",
+   "estimate": "",
+   "explicit": false,
+   "retrofit": 0,
+   "px_fix": 0,
+   "pages_checked": 0
   },
   "has_pages": false
  },
@@ -1837,8 +1846,6 @@
    "complete": true,
    "pages_by_lang": {}
   },
-  "has_pages": true,
-  "size_bytes": 38722646,
   "skills": {
    "items": [],
    "main": "",
@@ -1847,7 +1854,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 0
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 38722646
  },
  {
   "repo": "ahnboat_lab_gallery",
@@ -1856,7 +1865,7 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_lab_gallery",
   "pages_url": "https://adminmrobo.github.io/ahnboat_lab_gallery/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T11:09:33Z",
+  "pushed_at": "2026-11-27T11:36:03Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -1900,8 +1909,6 @@
     "ko": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 6188871,
   "skills": {
    "items": [],
    "main": "",
@@ -1910,7 +1917,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 1
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 6228758
  },
  {
   "repo": "ahnboat_lab_langpack",
@@ -1953,8 +1962,6 @@
    "complete": true,
    "pages_by_lang": {}
   },
-  "has_pages": true,
-  "size_bytes": 918194,
   "skills": {
    "items": [],
    "main": "",
@@ -1963,7 +1970,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 0
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 918194
  },
  {
   "repo": "ahnboat_lab_town_floor_b01",
@@ -2005,6 +2014,15 @@
    "count": 0,
    "complete": true,
    "pages_by_lang": {}
+  },
+  "skills": {
+   "items": [],
+   "main": "",
+   "estimate": "",
+   "explicit": false,
+   "retrofit": 0,
+   "px_fix": 0,
+   "pages_checked": 0
   },
   "has_pages": false,
   "size_bytes": 44889
@@ -2119,8 +2137,6 @@
     "ko": 5
    }
   },
-  "has_pages": true,
-  "size_bytes": 30381381,
   "skills": {
    "items": [],
    "main": "",
@@ -2129,7 +2145,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 5
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 30381381
  },
  {
   "repo": "ahnboat_server_room_guards",
@@ -2182,8 +2200,6 @@
     "ko": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 37038970,
   "skills": {
    "items": [
     {
@@ -2201,7 +2217,9 @@
    "retrofit": 0,
    "px_fix": 1,
    "pages_checked": 1
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 37038970
  },
  {
   "repo": "ai-nlp-data-analysis",
@@ -2684,8 +2702,6 @@
     "ko": 27
    }
   },
-  "has_pages": true,
-  "size_bytes": 34104019,
   "skills": {
    "items": [
     {
@@ -2713,7 +2729,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 27
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 34104019
  },
  {
   "repo": "ai-power-chain-simulator",
@@ -2766,8 +2784,6 @@
     "ko": 2
    }
   },
-  "has_pages": true,
-  "size_bytes": 192841,
   "skills": {
    "items": [],
    "main": "",
@@ -2776,7 +2792,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 2
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 192841
  },
  {
   "repo": "ai_crime_lab",
@@ -3208,8 +3226,6 @@
     "ko": 21
    }
   },
-  "has_pages": true,
-  "size_bytes": 5664032,
   "skills": {
    "items": [
     {
@@ -3233,7 +3249,9 @@
    "retrofit": 1,
    "px_fix": 21,
    "pages_checked": 21
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 5664032
  },
  {
   "repo": "ai_cube_lab",
@@ -4078,8 +4096,6 @@
     "ko": 17
    }
   },
-  "has_pages": true,
-  "size_bytes": 11680796,
   "skills": {
    "items": [
     {
@@ -4097,7 +4113,9 @@
    "retrofit": 0,
    "px_fix": 17,
    "pages_checked": 17
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 11680796
  },
  {
   "repo": "AI_for_cement_produce",
@@ -4214,8 +4232,6 @@
     "ko": 10
    }
   },
-  "has_pages": true,
-  "size_bytes": 10022394,
   "skills": {
    "items": [
     {
@@ -4253,7 +4269,9 @@
    "retrofit": 1,
    "px_fix": 10,
    "pages_checked": 10
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 10022394
  },
  {
   "repo": "ai_for_cement_produce_07",
@@ -4296,8 +4314,6 @@
    "complete": true,
    "pages_by_lang": {}
   },
-  "has_pages": true,
-  "size_bytes": 2835738,
   "skills": {
    "items": [],
    "main": "",
@@ -4306,7 +4322,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 0
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 2835738
  },
  {
   "repo": "ai_for_cement_produce_08",
@@ -4355,8 +4373,6 @@
    "complete": true,
    "pages_by_lang": {}
   },
-  "has_pages": true,
-  "size_bytes": 1410819,
   "skills": {
    "items": [],
    "main": "",
@@ -4365,7 +4381,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 0
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 1410819
  },
  {
   "repo": "ai_game_lab",
@@ -4502,8 +4520,6 @@
     "ko": 6
    }
   },
-  "has_pages": true,
-  "size_bytes": 5814800,
   "skills": {
    "items": [
     {
@@ -4535,7 +4551,9 @@
    "retrofit": 5,
    "px_fix": 3,
    "pages_checked": 6
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 5814800
  },
  {
   "repo": "AI_image_classification",
@@ -4636,8 +4654,6 @@
     "ru": 5
    }
   },
-  "has_pages": true,
-  "size_bytes": 23114001,
   "skills": {
    "items": [
     {
@@ -4661,7 +4677,9 @@
    "retrofit": 4,
    "px_fix": 5,
    "pages_checked": 5
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 23114001
  },
  {
   "repo": "ai_in_3d",
@@ -4718,8 +4736,6 @@
     "ko": 4
    }
   },
-  "has_pages": true,
-  "size_bytes": 669342,
   "skills": {
    "items": [
     {
@@ -4735,7 +4751,9 @@
    "retrofit": 1,
    "px_fix": 0,
    "pages_checked": 4
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 669342
  },
  {
   "repo": "ai_industry_lab",
@@ -4794,8 +4812,6 @@
     "ko": 5
    }
   },
-  "has_pages": true,
-  "size_bytes": 6426721,
   "skills": {
    "items": [],
    "main": "",
@@ -4804,7 +4820,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 5
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 6426721
  },
  {
   "repo": "AI_Model_Review",
@@ -4904,8 +4922,6 @@
     "ru": 10
    }
   },
-  "has_pages": true,
-  "size_bytes": 27330389,
   "skills": {
    "items": [
     {
@@ -4921,7 +4937,9 @@
    "retrofit": 10,
    "px_fix": 0,
    "pages_checked": 10
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 27330389
  },
  {
   "repo": "AI_Model_Review_Fruit_fly_special",
@@ -5028,8 +5046,6 @@
     "ru": 5
    }
   },
-  "has_pages": true,
-  "size_bytes": 20232066,
   "skills": {
    "items": [
     {
@@ -5053,7 +5069,9 @@
    "retrofit": 3,
    "px_fix": 5,
    "pages_checked": 5
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 20232066
  },
  {
   "repo": "ai_rendering",
@@ -5373,8 +5391,6 @@
     "vi": 19
    }
   },
-  "has_pages": true,
-  "size_bytes": 163403040,
   "skills": {
    "items": [],
    "main": "",
@@ -5383,7 +5399,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 20
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 163403040
  },
  {
   "repo": "ai_text_read_ability",
@@ -5504,8 +5522,6 @@
     "vi": 2
    }
   },
-  "has_pages": true,
-  "size_bytes": 7782282,
   "skills": {
    "items": [
     {
@@ -5521,7 +5537,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 2
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 7782282
  },
  {
   "repo": "Anomaly_detection_tatics",
@@ -5679,8 +5697,6 @@
     "vi": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 5080496,
   "skills": {
    "items": [
     {
@@ -5698,7 +5714,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 1
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 5080496
  },
  {
   "repo": "article_02_crypto_asset_price_predict",
@@ -5740,6 +5758,15 @@
    "count": 0,
    "complete": true,
    "pages_by_lang": {}
+  },
+  "skills": {
+   "items": [],
+   "main": "",
+   "estimate": "",
+   "explicit": false,
+   "retrofit": 0,
+   "px_fix": 0,
+   "pages_checked": 0
   },
   "has_pages": false
  },
@@ -5809,8 +5836,6 @@
     "ko": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 1975689,
   "skills": {
    "items": [
     {
@@ -5826,7 +5851,9 @@
    "retrofit": 1,
    "px_fix": 0,
    "pages_checked": 1
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 1975689
  },
  {
   "repo": "backprop_lab",
@@ -5883,8 +5910,6 @@
     "ko": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 188532,
   "skills": {
    "items": [
     {
@@ -5900,7 +5925,9 @@
    "retrofit": 1,
    "px_fix": 0,
    "pages_checked": 1
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 188532
  },
  {
   "repo": "basic_economic_lab",
@@ -6212,8 +6239,6 @@
     "ko": 16
    }
   },
-  "has_pages": true,
-  "size_bytes": 24256113,
   "skills": {
    "items": [
     {
@@ -6249,7 +6274,9 @@
    "retrofit": 0,
    "px_fix": 16,
    "pages_checked": 16
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 24256113
  },
  {
   "repo": "bayesian-statistics-for-data-scientists",
@@ -6580,8 +6607,6 @@
     "ko": 17
    }
   },
-  "has_pages": true,
-  "size_bytes": 18469967,
   "skills": {
    "items": [
     {
@@ -6609,7 +6634,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 17
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 18469967
  },
  {
   "repo": "blockchain_finance_ch01",
@@ -6683,8 +6710,6 @@
     "ko": 8
    }
   },
-  "has_pages": true,
-  "size_bytes": 1386446,
   "skills": {
    "items": [],
    "main": "",
@@ -6693,7 +6718,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 8
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 1386446
  },
  {
   "repo": "blockchain_finance_ch02",
@@ -6767,8 +6794,6 @@
     "ko": 8
    }
   },
-  "has_pages": true,
-  "size_bytes": 1460482,
   "skills": {
    "items": [],
    "main": "",
@@ -6777,7 +6802,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 8
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 1460482
  },
  {
   "repo": "blockchain_finance_ch03",
@@ -6851,8 +6878,6 @@
     "ko": 8
    }
   },
-  "has_pages": true,
-  "size_bytes": 1533041,
   "skills": {
    "items": [],
    "main": "",
@@ -6861,7 +6886,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 8
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 1533041
  },
  {
   "repo": "cashflow-lab",
@@ -6918,8 +6945,6 @@
     "ko": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 650654,
   "skills": {
    "items": [],
    "main": "",
@@ -6928,7 +6953,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 1
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 650654
  },
  {
   "repo": "catch_phishing",
@@ -7409,8 +7436,6 @@
     "ko": 7
    }
   },
-  "has_pages": true,
-  "size_bytes": 6983314,
   "skills": {
    "items": [
     {
@@ -7434,7 +7459,9 @@
    "retrofit": 7,
    "px_fix": 7,
    "pages_checked": 7
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 6983314
  },
  {
   "repo": "CNN-neural-network-tutorial",
@@ -7487,8 +7514,6 @@
     "ko": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 465803,
   "skills": {
    "items": [],
    "main": "",
@@ -7497,7 +7522,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 1
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 465803
  },
  {
   "repo": "cnn_face_game_lab",
@@ -7831,8 +7858,6 @@
     "ko": 3
    }
   },
-  "has_pages": true,
-  "size_bytes": 1699407,
   "skills": {
    "items": [
     {
@@ -7850,7 +7875,61 @@
    "retrofit": 0,
    "px_fix": 3,
    "pages_checked": 3
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 1699407
+ },
+ {
+  "repo": "cost_theory_economic_view_lab",
+  "series_ko": "cost_theory_economic_view_lab",
+  "title_ko": null,
+  "repo_url": "https://github.com/adminmrobo/cost_theory_economic_view_lab",
+  "pages_url": "https://adminmrobo.github.io/cost_theory_economic_view_lab/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-27T11:26:29Z",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "site_desc": null,
+  "status": "unknown",
+  "checked_at": "2026-11-27",
+  "site_title": null,
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 0,
+   "pages_checked": 0,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [],
+   "count": 0,
+   "pages": {},
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {}
+  },
+  "languages": {
+   "codes": [],
+   "count": 0,
+   "complete": true,
+   "pages_by_lang": {}
+  },
+  "skills": {
+   "items": [],
+   "main": "",
+   "estimate": "",
+   "explicit": false,
+   "retrofit": 0,
+   "px_fix": 0,
+   "pages_checked": 0
+  },
+  "has_pages": false
  },
  {
   "repo": "covariant_chase_lab",
@@ -8336,8 +8415,6 @@
     "ko": 4
    }
   },
-  "has_pages": true,
-  "size_bytes": 3846720,
   "skills": {
    "items": [
     {
@@ -8361,7 +8438,9 @@
    "retrofit": 3,
    "px_fix": 4,
    "pages_checked": 4
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 3846720
  },
  {
   "repo": "data_base_design",
@@ -8996,8 +9075,6 @@
     "ko": 16
    }
   },
-  "has_pages": true,
-  "size_bytes": 36647534,
   "skills": {
    "items": [
     {
@@ -9021,7 +9098,9 @@
    "retrofit": 15,
    "px_fix": 16,
    "pages_checked": 16
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 36647534
  },
  {
   "repo": "data_science_for_business",
@@ -10349,8 +10428,6 @@
     "ko": 16
    }
   },
-  "has_pages": true,
-  "size_bytes": 20748823,
   "skills": {
    "items": [
     {
@@ -10376,7 +10453,9 @@
    "retrofit": 0,
    "px_fix": 16,
    "pages_checked": 16
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 20748823
  },
  {
   "repo": "data_set_2024_fintech",
@@ -10418,6 +10497,15 @@
    "count": 0,
    "complete": true,
    "pages_by_lang": {}
+  },
+  "skills": {
+   "items": [],
+   "main": "",
+   "estimate": "",
+   "explicit": false,
+   "retrofit": 0,
+   "px_fix": 0,
+   "pages_checked": 0
   },
   "has_pages": false,
   "size_bytes": 9492
@@ -11039,8 +11127,6 @@
     "ko": 7
    }
   },
-  "has_pages": true,
-  "size_bytes": 8383608,
   "skills": {
    "items": [
     {
@@ -11070,7 +11156,9 @@
    "retrofit": 6,
    "px_fix": 7,
    "pages_checked": 7
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 8383608
  },
  {
   "repo": "data_visualization_lab",
@@ -11166,8 +11254,6 @@
     "ko": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 3829316,
   "skills": {
    "items": [
     {
@@ -11183,7 +11269,9 @@
    "retrofit": 1,
    "px_fix": 0,
    "pages_checked": 1
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 3829316
  },
  {
   "repo": "Data_visuialization_lecture_01",
@@ -11269,8 +11357,6 @@
     "ru": 5
    }
   },
-  "has_pages": true,
-  "size_bytes": 18517006,
   "skills": {
    "items": [],
    "main": "",
@@ -11279,7 +11365,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 6
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 18517006
  },
  {
   "repo": "Data_visuialization_lecture_02",
@@ -11365,8 +11453,6 @@
     "ru": 6
    }
   },
-  "has_pages": true,
-  "size_bytes": 13384498,
   "skills": {
    "items": [],
    "main": "",
@@ -11375,7 +11461,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 7
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 13384498
  },
  {
   "repo": "Data_visuialization_lecture_03",
@@ -11459,8 +11547,6 @@
     "ru": 6
    }
   },
-  "has_pages": true,
-  "size_bytes": 16906803,
   "skills": {
    "items": [],
    "main": "",
@@ -11469,7 +11555,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 7
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 16906803
  },
  {
   "repo": "Data_visuialization_lecture_04",
@@ -11555,8 +11643,6 @@
     "ru": 6
    }
   },
-  "has_pages": true,
-  "size_bytes": 8567045,
   "skills": {
    "items": [],
    "main": "",
@@ -11565,7 +11651,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 7
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 8567045
  },
  {
   "repo": "Data_visuialization_lecture_lab",
@@ -11752,8 +11840,6 @@
     "ru": 23
    }
   },
-  "has_pages": true,
-  "size_bytes": 34858582,
   "skills": {
    "items": [
     {
@@ -11769,7 +11855,9 @@
    "retrofit": 10,
    "px_fix": 0,
    "pages_checked": 12
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 34858582
  },
  {
   "repo": "database_01of04",
@@ -11819,8 +11907,6 @@
    "complete": true,
    "pages_by_lang": {}
   },
-  "has_pages": true,
-  "size_bytes": 15205,
   "skills": {
    "items": [],
    "main": "",
@@ -11829,7 +11915,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 0
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 15205
  },
  {
   "repo": "deep_learning_00_neural_net_learns",
@@ -11942,8 +12030,6 @@
     "ru": 8
    }
   },
-  "has_pages": true,
-  "size_bytes": 25914999,
   "skills": {
    "items": [
     {
@@ -11959,7 +12045,9 @@
    "retrofit": 8,
    "px_fix": 0,
    "pages_checked": 8
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 25914999
  },
  {
   "repo": "deep_learning_model_design_lab_01",
@@ -12407,8 +12495,6 @@
     "ko": 12
    }
   },
-  "has_pages": true,
-  "size_bytes": 7228480,
   "skills": {
    "items": [
     {
@@ -12432,7 +12518,9 @@
    "retrofit": 11,
    "px_fix": 12,
    "pages_checked": 12
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 7228480
  },
  {
   "repo": "defense_for_ai_lab",
@@ -12545,8 +12633,6 @@
     "ko": 2
    }
   },
-  "has_pages": true,
-  "size_bytes": 2695018,
   "skills": {
    "items": [
     {
@@ -12562,7 +12648,9 @@
    "retrofit": 1,
    "px_fix": 0,
    "pages_checked": 2
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 2695018
  },
  {
   "repo": "discrete_topology_lab",
@@ -13160,8 +13248,6 @@
     "ko": 31
    }
   },
-  "has_pages": true,
-  "size_bytes": 47483475,
   "skills": {
    "items": [
     {
@@ -13179,50 +13265,88 @@
    "retrofit": 0,
    "px_fix": 31,
    "pages_checked": 31
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 47483475
  },
  {
   "repo": "Distance-metrics-tutorial",
-  "series_ko": "Distance-metrics-tutorial",
-  "title_ko": null,
+  "series_ko": "하루의 실험실 EP.04 1부 : 시아와 모아는 얼마나 멀까 — 공간 속 거리",
+  "title_ko": "하루의 실험실 EP.04 1부 : 시아와 모아는 얼마나 멀까 — 공간 속 거리",
   "repo_url": "https://github.com/adminmrobo/Distance-metrics-tutorial",
   "pages_url": "https://adminmrobo.github.io/Distance-metrics-tutorial/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T10:44:01Z",
+  "pushed_at": "2026-11-27T11:26:50Z",
   "has_manifest": false,
-  "covers": [],
+  "covers": [
+   {
+    "path": "images/cover_part1.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "images/cover_part2.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "images/thumb_ep04.webp",
+    "role": "thumb",
+    "estimated": true
+   }
+  ],
   "redraw_count": 0,
   "redraw_ids": [],
-  "thumb": null,
-  "site_desc": null,
-  "status": "unknown",
+  "thumb": "thumbs/repos/Distance-metrics-tutorial.jpg",
+  "site_desc": "실험조수 하루가 2층 좌표 방의 시아 (4, 0, 10)와 모아 (12, 5, 7) 사이를 유클리드 9.899·맨해튼 16·체비쇼프 8·민코프스키로 재고, 피규어 후기 코사인 0.990, 서울–런던 하버사인 8,857 km까지 숫자와 그림으로 설명합니다.",
+  "status": "ok",
   "checked_at": "2026-11-27",
-  "site_title": null,
+  "site_title": "하루의 실험실 EP.04 1부 : 시아와 모아는 얼마나 멀까 — 공간 속 거리",
   "ontology": {
    "status": "none",
    "pages_with_kg": 0,
-   "pages_total": 0,
-   "pages_checked": 0,
+   "pages_total": 1,
+   "pages_checked": 1,
    "kg_links": [],
    "export_links": [],
    "files": []
   },
   "i18n": {
-   "langs": [],
-   "count": 0,
-   "pages": {},
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 1
+   },
    "partial": [],
    "complete": true,
    "readme_langs": [],
-   "links": {}
+   "links": {
+    "ko": "https://adminmrobo.github.io/Distance-metrics-tutorial/index.html"
+   }
   },
   "languages": {
-   "codes": [],
-   "count": 0,
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
    "complete": true,
-   "pages_by_lang": {}
+   "pages_by_lang": {
+    "ko": 1
+   }
   },
-  "has_pages": false
+  "skills": {
+   "items": [],
+   "main": "",
+   "estimate": "",
+   "explicit": false,
+   "retrofit": 0,
+   "px_fix": 0,
+   "pages_checked": 1
+  },
+  "has_pages": false,
+  "size_bytes": 672160
  },
  {
   "repo": "DL_model_hiring_committee",
@@ -13344,8 +13468,6 @@
     "vi": 17
    }
   },
-  "has_pages": true,
-  "size_bytes": 84884792,
   "skills": {
    "items": [
     {
@@ -13369,7 +13491,9 @@
    "retrofit": 17,
    "px_fix": 17,
    "pages_checked": 17
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 84884792
  },
  {
   "repo": "drawing_lab_01",
@@ -13440,8 +13564,6 @@
     "ko": 8
    }
   },
-  "has_pages": true,
-  "size_bytes": 20421920,
   "skills": {
    "items": [],
    "main": "",
@@ -13450,7 +13572,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 8
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 20421920
  },
  {
   "repo": "drawing_lab_02",
@@ -13521,8 +13645,6 @@
     "ko": 8
    }
   },
-  "has_pages": true,
-  "size_bytes": 25182046,
   "skills": {
    "items": [],
    "main": "",
@@ -13531,7 +13653,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 8
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 25182046
  },
  {
   "repo": "drawing_lab_03",
@@ -13602,8 +13726,6 @@
     "ko": 8
    }
   },
-  "has_pages": true,
-  "size_bytes": 39420475,
   "skills": {
    "items": [],
    "main": "",
@@ -13612,7 +13734,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 8
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 39420475
  },
  {
   "repo": "drawing_lab_04",
@@ -13683,8 +13807,6 @@
     "ko": 8
    }
   },
-  "has_pages": true,
-  "size_bytes": 25425246,
   "skills": {
    "items": [],
    "main": "",
@@ -13693,7 +13815,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 8
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 25425246
  },
  {
   "repo": "drawing_lab_05",
@@ -13766,8 +13890,6 @@
     "ko": 10
    }
   },
-  "has_pages": true,
-  "size_bytes": 27096583,
   "skills": {
    "items": [],
    "main": "",
@@ -13776,7 +13898,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 10
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 27096583
  },
  {
   "repo": "drawing_lab_06",
@@ -13851,8 +13975,6 @@
     "ko": 11
    }
   },
-  "has_pages": true,
-  "size_bytes": 122752490,
   "skills": {
    "items": [],
    "main": "",
@@ -13861,7 +13983,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 11
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 122752490
  },
  {
   "repo": "drawing_lab_fun",
@@ -13932,8 +14056,6 @@
     "ko": 8
    }
   },
-  "has_pages": true,
-  "size_bytes": 22277138,
   "skills": {
    "items": [],
    "main": "",
@@ -13942,7 +14064,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 8
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 22277138
  },
  {
   "repo": "drawing_lab_fun_02",
@@ -14015,8 +14139,6 @@
     "ko": 9
    }
   },
-  "has_pages": true,
-  "size_bytes": 14531730,
   "skills": {
    "items": [],
    "main": "",
@@ -14025,7 +14147,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 9
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 14531730
  },
  {
   "repo": "Dropout-neural-network-tutorial",
@@ -14078,8 +14202,6 @@
     "ko": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 629174,
   "skills": {
    "items": [],
    "main": "",
@@ -14088,7 +14210,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 1
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 629174
  },
  {
   "repo": "drug-crime-social-cost",
@@ -14097,7 +14221,7 @@
   "repo_url": "https://github.com/adminmrobo/drug-crime-social-cost",
   "pages_url": "https://adminmrobo.github.io/drug-crime-social-cost/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T10:49:54Z",
+  "pushed_at": "2026-11-27T11:25:46Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -14141,8 +14265,6 @@
     "ko": 5
    }
   },
-  "has_pages": true,
-  "size_bytes": 22906410,
   "skills": {
    "items": [],
    "main": "",
@@ -14151,7 +14273,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 5
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 22947513
  },
  {
   "repo": "economics_lab",
@@ -14193,6 +14317,15 @@
    "count": 0,
    "complete": true,
    "pages_by_lang": {}
+  },
+  "skills": {
+   "items": [],
+   "main": "",
+   "estimate": "",
+   "explicit": false,
+   "retrofit": 0,
+   "px_fix": 0,
+   "pages_checked": 0
   },
   "has_pages": false
  },
@@ -14346,8 +14479,6 @@
     "vi": 4
    }
   },
-  "has_pages": true,
-  "size_bytes": 3856870,
   "skills": {
    "items": [],
    "main": "",
@@ -14356,7 +14487,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 4
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 3856870
  },
  {
   "repo": "fabric_ai_project",
@@ -14418,8 +14551,6 @@
     "ko": 16
    }
   },
-  "has_pages": true,
-  "size_bytes": 7642470,
   "skills": {
    "items": [],
    "main": "",
@@ -14428,272 +14559,811 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 16
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 7642470
  },
  {
   "repo": "fintech_data_analysis",
-  "series_ko": "핀테크 데이터 연구실",
+  "series_ko": "핀테크 데이터 분석 기초 · 연구실 해설",
   "title_ko": "핀테크 데이터 연구실",
   "repo_url": "https://github.com/adminmrobo/fintech_data_analysis",
   "pages_url": "https://adminmrobo.github.io/fintech_data_analysis/",
   "default_branch": "main",
-  "pushed_at": "2026-11-26T11:58:51Z",
-  "has_manifest": false,
+  "pushed_at": "2026-11-27T11:34:40Z",
+  "has_manifest": true,
   "covers": [
    {
-    "path": "assets/og/cover_00.jpg",
+    "path": "index.html#.cover img",
     "role": "cover",
-    "estimated": true
+    "id": "cover_00",
+    "size": [
+     1920,
+     1080
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
+   },
+   {
+    "path": "assets/og/cover_00.jpg",
+    "role": "og",
+    "id": "og_00",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
+   },
+   {
+    "path": "01_fintech_industry.html#.cover img",
+    "role": "cover",
+    "id": "cover_01",
+    "size": [
+     1920,
+     1080
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
    },
    {
     "path": "assets/og/cover_01.jpg",
+    "role": "og",
+    "id": "og_01",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
+   },
+   {
+    "path": "02_data_collection.html#.cover img",
     "role": "cover",
-    "estimated": true
+    "id": "cover_02",
+    "size": [
+     1920,
+     1080
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
    },
    {
     "path": "assets/og/cover_02.jpg",
+    "role": "og",
+    "id": "og_02",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
+   },
+   {
+    "path": "03_collection_plan.html#.cover img",
     "role": "cover",
-    "estimated": true
+    "id": "cover_03",
+    "size": [
+     1920,
+     1080
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
    },
    {
     "path": "assets/og/cover_03.jpg",
+    "role": "og",
+    "id": "og_03",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
+   },
+   {
+    "path": "04_analysis_concepts.html#.cover img",
     "role": "cover",
-    "estimated": true
+    "id": "cover_04",
+    "size": [
+     1920,
+     1080
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
    },
    {
     "path": "assets/og/cover_04.jpg",
+    "role": "og",
+    "id": "og_04",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
+   },
+   {
+    "path": "05_preprocessing.html#.cover img",
     "role": "cover",
-    "estimated": true
+    "id": "cover_05",
+    "size": [
+     1920,
+     1080
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
    },
    {
     "path": "assets/og/cover_05.jpg",
+    "role": "og",
+    "id": "og_05",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
+   },
+   {
+    "path": "06_knn_svm.html#.cover img",
     "role": "cover",
-    "estimated": true
+    "id": "cover_06",
+    "size": [
+     1920,
+     1080
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
    },
    {
     "path": "assets/og/cover_06.jpg",
+    "role": "og",
+    "id": "og_06",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
+   },
+   {
+    "path": "07_model_evaluation.html#.cover img",
     "role": "cover",
-    "estimated": true
+    "id": "cover_07",
+    "size": [
+     1920,
+     1080
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
    },
    {
     "path": "assets/og/cover_07.jpg",
+    "role": "og",
+    "id": "og_07",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
+   },
+   {
+    "path": "08_midterm_review.html#.cover img",
     "role": "cover",
-    "estimated": true
+    "id": "cover_08",
+    "size": [
+     1920,
+     1080
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
    },
    {
     "path": "assets/og/cover_08.jpg",
+    "role": "og",
+    "id": "og_08",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
+   },
+   {
+    "path": "09_regression.html#.cover img",
     "role": "cover",
-    "estimated": true
+    "id": "cover_09",
+    "size": [
+     1920,
+     1080
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
    },
    {
     "path": "assets/og/cover_09.jpg",
+    "role": "og",
+    "id": "og_09",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
+   },
+   {
+    "path": "10_logistic_tree.html#.cover img",
     "role": "cover",
-    "estimated": true
+    "id": "cover_10",
+    "size": [
+     1920,
+     1080
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
    },
    {
     "path": "assets/og/cover_10.jpg",
+    "role": "og",
+    "id": "og_10",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
+   },
+   {
+    "path": "11_deep_learning_timeseries.html#.cover img",
     "role": "cover",
-    "estimated": true
+    "id": "cover_11",
+    "size": [
+     1920,
+     1080
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
    },
    {
     "path": "assets/og/cover_11.jpg",
+    "role": "og",
+    "id": "og_11",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
+   },
+   {
+    "path": "12_visualization.html#.cover img",
     "role": "cover",
-    "estimated": true
+    "id": "cover_12",
+    "size": [
+     1920,
+     1080
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
    },
    {
     "path": "assets/og/cover_12.jpg",
+    "role": "og",
+    "id": "og_12",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
+   },
+   {
+    "path": "13_robo_advisor.html#.cover img",
     "role": "cover",
-    "estimated": true
+    "id": "cover_13",
+    "size": [
+     1920,
+     1080
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
    },
    {
     "path": "assets/og/cover_13.jpg",
+    "role": "og",
+    "id": "og_13",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
+   },
+   {
+    "path": "14_security_quality.html#.cover img",
     "role": "cover",
-    "estimated": true
+    "id": "cover_14",
+    "size": [
+     1920,
+     1080
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
    },
    {
     "path": "assets/og/cover_14.jpg",
+    "role": "og",
+    "id": "og_14",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
+   },
+   {
+    "path": "15_final_review.html#.cover img",
     "role": "cover",
-    "estimated": true
+    "id": "cover_15",
+    "size": [
+     1920,
+     1080
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
    },
    {
     "path": "assets/og/cover_15.jpg",
+    "role": "og",
+    "id": "og_15",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
+   },
+   {
+    "path": "hands_on_01.html#.cover img",
     "role": "cover",
-    "estimated": true
+    "id": "cover_hands_on_01",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    },
    {
     "path": "assets/og/cover_hands_on_01.jpg",
-    "role": "cover",
-    "estimated": true
-   },
-   {
-    "path": "src/build/covers/cover_00.webp",
-    "role": "cover",
-    "estimated": true
-   },
-   {
-    "path": "src/build/covers/cover_01.webp",
-    "role": "cover",
-    "estimated": true
-   },
-   {
-    "path": "src/build/covers/cover_02.webp",
-    "role": "cover",
-    "estimated": true
-   },
-   {
-    "path": "src/build/covers/cover_03.webp",
-    "role": "cover",
-    "estimated": true
-   },
-   {
-    "path": "src/build/covers/cover_04.webp",
-    "role": "cover",
-    "estimated": true
-   },
-   {
-    "path": "src/build/covers/cover_05.webp",
-    "role": "cover",
-    "estimated": true
-   },
-   {
-    "path": "src/build/covers/cover_06.webp",
-    "role": "cover",
-    "estimated": true
-   },
-   {
-    "path": "src/build/covers/cover_07.webp",
-    "role": "cover",
-    "estimated": true
-   },
-   {
-    "path": "src/build/covers/cover_08.webp",
-    "role": "cover",
-    "estimated": true
-   },
-   {
-    "path": "src/build/covers/cover_09.webp",
-    "role": "cover",
-    "estimated": true
-   },
-   {
-    "path": "src/build/covers/cover_10.webp",
-    "role": "cover",
-    "estimated": true
-   },
-   {
-    "path": "src/build/covers/cover_11.webp",
-    "role": "cover",
-    "estimated": true
-   },
-   {
-    "path": "src/build/covers/cover_12.webp",
-    "role": "cover",
-    "estimated": true
-   },
-   {
-    "path": "src/build/covers/cover_13.webp",
-    "role": "cover",
-    "estimated": true
-   },
-   {
-    "path": "src/build/covers/cover_14.webp",
-    "role": "cover",
-    "estimated": true
-   },
-   {
-    "path": "src/build/covers/cover_15.webp",
-    "role": "cover",
-    "estimated": true
-   },
-   {
-    "path": "src/build/covers/cover_hands_on_01.webp",
-    "role": "cover",
-    "estimated": true
-   },
-   {
-    "path": "assets/og_series.jpg",
     "role": "og",
-    "estimated": true
+    "id": "og_hands_on_01",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    },
    {
-    "path": "assets/thumb_portfolio.webp",
-    "role": "thumb",
-    "estimated": true
+    "path": "assets/img/h01/h01_A.webp",
+    "role": "scene",
+    "id": "h01_A",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "fly",
+     "asst"
+    ],
+    "robot": "none",
+    "status": "ok"
    },
    {
-    "path": "src/build/thumbs/thumb_01.webp",
-    "role": "thumb",
-    "estimated": true
+    "path": "assets/img/h01/h01_B.webp",
+    "role": "scene",
+    "id": "h01_B",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    },
    {
-    "path": "src/build/thumbs/thumb_02.webp",
-    "role": "thumb",
-    "estimated": true
+    "path": "assets/img/h01/h01_C.webp",
+    "role": "scene",
+    "id": "h01_C",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    },
    {
-    "path": "src/build/thumbs/thumb_03.webp",
-    "role": "thumb",
-    "estimated": true
+    "path": "assets/img/h01/h01_D.webp",
+    "role": "scene",
+    "id": "h01_D",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc"
+    ],
+    "robot": "none",
+    "status": "ok"
    },
    {
-    "path": "src/build/thumbs/thumb_04.webp",
-    "role": "thumb",
-    "estimated": true
+    "path": "assets/img/h01/h01_E.webp",
+    "role": "scene",
+    "id": "h01_E",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst"
+    ],
+    "robot": "none",
+    "status": "ok"
    },
    {
-    "path": "src/build/thumbs/thumb_05.webp",
-    "role": "thumb",
-    "estimated": true
+    "path": "assets/img/h01/h01_F.webp",
+    "role": "scene",
+    "id": "h01_F",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    },
    {
-    "path": "src/build/thumbs/thumb_06.webp",
-    "role": "thumb",
-    "estimated": true
+    "path": "assets/img/h01/h01_score.webp",
+    "role": "outro",
+    "id": "h01_score",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    },
    {
-    "path": "src/build/thumbs/thumb_07.webp",
-    "role": "thumb",
-    "estimated": true
+    "path": "assets/img/h01/h01_ig_skel.webp",
+    "role": "scene",
+    "id": "h01_ig_skel",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    },
    {
-    "path": "src/build/thumbs/thumb_08.webp",
-    "role": "thumb",
-    "estimated": true
+    "path": "assets/img/h01/h01_ig_A.webp",
+    "role": "scene",
+    "id": "h01_ig_A",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "asst",
+     "fly"
+    ],
+    "robot": "none",
+    "status": "ok"
    },
    {
-    "path": "src/build/thumbs/thumb_09.webp",
-    "role": "thumb",
-    "estimated": true
+    "path": "assets/img/h01/h01_ig_B.webp",
+    "role": "scene",
+    "id": "h01_ig_B",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    },
    {
-    "path": "src/build/thumbs/thumb_10.webp",
-    "role": "thumb",
-    "estimated": true
+    "path": "assets/img/h01/h01_ig_C.webp",
+    "role": "scene",
+    "id": "h01_ig_C",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "fly",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    },
    {
-    "path": "src/build/thumbs/thumb_11.webp",
-    "role": "thumb",
-    "estimated": true
+    "path": "assets/img/h01/h01_ig_D.webp",
+    "role": "scene",
+    "id": "h01_ig_D",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    },
    {
-    "path": "src/build/thumbs/thumb_12.webp",
-    "role": "thumb",
-    "estimated": true
+    "path": "assets/img/h01/h01_ig_E.webp",
+    "role": "scene",
+    "id": "h01_ig_E",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    },
    {
-    "path": "src/build/thumbs/thumb_13.webp",
-    "role": "thumb",
-    "estimated": true
-   },
-   {
-    "path": "src/build/thumbs/thumb_14.webp",
-    "role": "thumb",
-    "estimated": true
-   },
-   {
-    "path": "src/build/thumbs/thumb_15.webp",
-    "role": "thumb",
-    "estimated": true
+    "path": "assets/img/h01/h01_ig_F.webp",
+    "role": "scene",
+    "id": "h01_ig_F",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "ok"
    }
   ],
   "redraw_count": 0,
@@ -14776,8 +15446,6 @@
     "ko": 17
    }
   },
-  "has_pages": true,
-  "size_bytes": 277657408,
   "skills": {
    "items": [
     {
@@ -14797,15 +15465,25 @@
      "version": "",
      "versions": [],
      "pages": 17
+    },
+    {
+     "name": "px-fix",
+     "version": "1",
+     "versions": [
+      "1"
+     ],
+     "pages": 17
     }
    ],
    "main": "ai-lab-explainer",
    "estimate": "",
    "explicit": false,
    "retrofit": 0,
-   "px_fix": 0,
+   "px_fix": 17,
    "pages_checked": 17
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 277763684
  },
  {
   "repo": "Fish_Market_Data_Machine_Learning",
@@ -14912,8 +15590,6 @@
     "ru": 6
    }
   },
-  "has_pages": true,
-  "size_bytes": 19530555,
   "skills": {
    "items": [
     {
@@ -14937,7 +15613,9 @@
    "retrofit": 6,
    "px_fix": 7,
    "pages_checked": 7
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 19530555
  },
  {
   "repo": "fish_market_learning_epoch_etc",
@@ -15153,8 +15831,6 @@
     "ko": 6
    }
   },
-  "has_pages": true,
-  "size_bytes": 26723118,
   "skills": {
    "items": [],
    "main": "",
@@ -15163,7 +15839,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 6
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 26723118
  },
  {
   "repo": "fof-money-meridian-",
@@ -15394,8 +16072,6 @@
     "ko": 6
    }
   },
-  "has_pages": true,
-  "size_bytes": 8332385,
   "skills": {
    "items": [
     {
@@ -15419,7 +16095,9 @@
    "retrofit": 2,
    "px_fix": 6,
    "pages_checked": 6
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 8332385
  },
  {
   "repo": "fruitfly-lab-expressions",
@@ -15503,8 +16181,6 @@
     "ko": 9
    }
   },
-  "has_pages": true,
-  "size_bytes": 334009128,
   "skills": {
    "items": [
     {
@@ -15522,7 +16198,9 @@
    "retrofit": 0,
    "px_fix": 9,
    "pages_checked": 9
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 334009128
  },
  {
   "repo": "g2b-bid-strategy",
@@ -15575,8 +16253,6 @@
     "ko": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 60031456,
   "skills": {
    "items": [],
    "main": "",
@@ -15585,7 +16261,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 1
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 60031456
  },
  {
   "repo": "Gen_AI_Hannam_univ",
@@ -15644,8 +16322,6 @@
     "ko": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 8084273,
   "skills": {
    "items": [
     {
@@ -15669,7 +16345,9 @@
    "retrofit": 1,
    "px_fix": 1,
    "pages_checked": 1
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 8084273
  },
  {
   "repo": "Gen_AI_strategy_ch05",
@@ -15751,8 +16429,6 @@
     "ko": 2
    }
   },
-  "has_pages": true,
-  "size_bytes": 1302032,
   "skills": {
    "items": [
     {
@@ -15768,7 +16444,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 2
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 1302032
  },
  {
   "repo": "Gen_AI_strategy_ch06",
@@ -15846,8 +16524,6 @@
     "ko": 2
    }
   },
-  "has_pages": true,
-  "size_bytes": 650871,
   "skills": {
    "items": [
     {
@@ -15863,7 +16539,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 2
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 650871
  },
  {
   "repo": "generative-ai-prompt-strategy",
@@ -15980,8 +16658,6 @@
     "ko": 4
    }
   },
-  "has_pages": true,
-  "size_bytes": 2278459,
   "skills": {
    "items": [
     {
@@ -15997,7 +16673,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 4
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 2278459
  },
  {
   "repo": "google-sheets-lab",
@@ -16155,8 +16833,6 @@
     "ko": 12
    }
   },
-  "has_pages": true,
-  "size_bytes": 11188993,
   "skills": {
    "items": [
     {
@@ -16174,7 +16850,9 @@
    "retrofit": 0,
    "px_fix": 12,
    "pages_checked": 12
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 11188993
  },
  {
   "repo": "graph_theory_lab",
@@ -16358,8 +17036,6 @@
     "ko": 12
    }
   },
-  "has_pages": true,
-  "size_bytes": 5825776,
   "skills": {
    "items": [
     {
@@ -16377,7 +17053,9 @@
    "retrofit": 0,
    "px_fix": 12,
    "pages_checked": 12
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 5825776
  },
  {
   "repo": "green_route",
@@ -16430,8 +17108,6 @@
     "ko": 4
    }
   },
-  "has_pages": true,
-  "size_bytes": 108754,
   "skills": {
    "items": [],
    "main": "",
@@ -16439,8 +17115,10 @@
    "explicit": false,
    "retrofit": 0,
    "px_fix": 0,
-   "pages_checked": 0
-  }
+   "pages_checked": 4
+  },
+  "has_pages": true,
+  "size_bytes": 108754
  },
  {
   "repo": "health_stats_lab",
@@ -16747,8 +17425,6 @@
     "ko": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 2949354,
   "skills": {
    "items": [
     {
@@ -16766,7 +17442,9 @@
    "retrofit": 0,
    "px_fix": 1,
    "pages_checked": 1
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 2949354
  },
  {
   "repo": "hello_space_lab",
@@ -16870,8 +17548,6 @@
     "ko": 8
    }
   },
-  "has_pages": true,
-  "size_bytes": 8241089,
   "skills": {
    "items": [
     {
@@ -16909,7 +17585,9 @@
    "retrofit": 8,
    "px_fix": 8,
    "pages_checked": 8
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 8241089
  },
  {
   "repo": "hilbert_space_lab",
@@ -16983,8 +17661,6 @@
     "ko": 4
    }
   },
-  "has_pages": true,
-  "size_bytes": 2544167,
   "skills": {
    "items": [
     {
@@ -17008,7 +17684,9 @@
    "retrofit": 3,
    "px_fix": 0,
    "pages_checked": 4
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 2544167
  },
  {
   "repo": "how_to_make_ai_model_factory_version",
@@ -17220,8 +17898,6 @@
     "ko": 7
    }
   },
-  "has_pages": true,
-  "size_bytes": 10963424,
   "skills": {
    "items": [
     {
@@ -17245,7 +17921,9 @@
    "retrofit": 6,
    "px_fix": 0,
    "pages_checked": 7
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 10963424
  },
  {
   "repo": "how_to_start_db",
@@ -17320,8 +17998,6 @@
     "ko": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 859821,
   "skills": {
    "items": [
     {
@@ -17337,7 +18013,9 @@
    "retrofit": 1,
    "px_fix": 0,
    "pages_checked": 1
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 859821
  },
  {
   "repo": "iclr2027_top3_lab_review",
@@ -17475,8 +18153,6 @@
     "ko": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 4111376,
   "skills": {
    "items": [
     {
@@ -17494,7 +18170,9 @@
    "retrofit": 0,
    "px_fix": 1,
    "pages_checked": 1
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 4111376
  },
  {
   "repo": "industrial-accident-prediction",
@@ -17954,8 +18632,6 @@
     "ko": 7
    }
   },
-  "has_pages": true,
-  "size_bytes": 6369204,
   "skills": {
    "items": [
     {
@@ -17979,7 +18655,9 @@
    "retrofit": 7,
    "px_fix": 7,
    "pages_checked": 7
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 6369204
  },
  {
   "repo": "inference_engineering_study",
@@ -18367,8 +19045,6 @@
     "vi": 2
    }
   },
-  "has_pages": true,
-  "size_bytes": 38986542,
   "skills": {
    "items": [
     {
@@ -18400,7 +19076,9 @@
    "retrofit": 0,
    "px_fix": 17,
    "pages_checked": 17
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 38986542
  },
  {
   "repo": "inference_engineering_study_week_01_article_01",
@@ -18521,8 +19199,6 @@
     "vi": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 14451900,
   "skills": {
    "items": [],
    "main": "",
@@ -18531,7 +19207,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 1
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 14451900
  },
  {
   "repo": "inference_engineering_study_week_01_textbook_ch00",
@@ -18573,6 +19251,15 @@
    "count": 0,
    "complete": true,
    "pages_by_lang": {}
+  },
+  "skills": {
+   "items": [],
+   "main": "",
+   "estimate": "",
+   "explicit": false,
+   "retrofit": 0,
+   "px_fix": 0,
+   "pages_checked": 0
   },
   "has_pages": false
  },
@@ -18677,8 +19364,6 @@
     "vi": 2
    }
   },
-  "has_pages": true,
-  "size_bytes": 5755590,
   "skills": {
    "items": [],
    "main": "",
@@ -18687,7 +19372,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 2
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 5755590
  },
  {
   "repo": "inference_engineering_study_week_01_textbook_preface",
@@ -18729,6 +19416,15 @@
    "count": 0,
    "complete": true,
    "pages_by_lang": {}
+  },
+  "skills": {
+   "items": [],
+   "main": "",
+   "estimate": "",
+   "explicit": false,
+   "retrofit": 0,
+   "px_fix": 0,
+   "pages_checked": 0
   },
   "has_pages": false
  },
@@ -18853,8 +19549,6 @@
     "vi": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 6496390,
   "skills": {
    "items": [],
    "main": "",
@@ -18863,7 +19557,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 2
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 6496390
  },
  {
   "repo": "inference_engineering_study_week_02_textbook_ch02_p1_p2",
@@ -19000,8 +19696,6 @@
     "vi": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 12027487,
   "skills": {
    "items": [],
    "main": "",
@@ -19010,7 +19704,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 2
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 12027487
  },
  {
   "repo": "inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide",
@@ -19087,8 +19783,6 @@
     "ko": 3
    }
   },
-  "has_pages": true,
-  "size_bytes": 3041178,
   "skills": {
    "items": [
     {
@@ -19112,7 +19806,9 @@
    "retrofit": 3,
    "px_fix": 3,
    "pages_checked": 3
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 3041178
  },
  {
   "repo": "inference_engineering_study_week_03_article_01",
@@ -19224,8 +19920,6 @@
     "ko": 2
    }
   },
-  "has_pages": true,
-  "size_bytes": 6603190,
   "skills": {
    "items": [],
    "main": "",
@@ -19234,7 +19928,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 2
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 6603190
  },
  {
   "repo": "inference_engineering_study_week_03_textbook_ch02_p3_to_end",
@@ -19317,8 +20013,6 @@
     "ko": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 1341609,
   "skills": {
    "items": [],
    "main": "",
@@ -19327,7 +20021,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 1
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 1341609
  },
  {
   "repo": "inference_korea_study_page",
@@ -19402,8 +20098,6 @@
     "zh": 4
    }
   },
-  "has_pages": true,
-  "size_bytes": 664600,
   "skills": {
    "items": [
     {
@@ -19427,7 +20121,9 @@
    "retrofit": 3,
    "px_fix": 4,
    "pages_checked": 4
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 664600
  },
  {
   "repo": "insurtech__case_classification_model_01",
@@ -19512,8 +20208,6 @@
     "ko": 8
    }
   },
-  "has_pages": true,
-  "size_bytes": 4512879,
   "skills": {
    "items": [
     {
@@ -19529,7 +20223,9 @@
    "retrofit": 8,
    "px_fix": 0,
    "pages_checked": 8
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 4512879
  },
  {
   "repo": "insurtech__case_classification_model_02",
@@ -19611,8 +20307,6 @@
     "ko": 7
    }
   },
-  "has_pages": true,
-  "size_bytes": 8527341,
   "skills": {
    "items": [
     {
@@ -19628,7 +20322,9 @@
    "retrofit": 7,
    "px_fix": 0,
    "pages_checked": 7
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 8527341
  },
  {
   "repo": "insurtech__case_regreesion_model_01",
@@ -19711,8 +20407,6 @@
     "ko": 8
    }
   },
-  "has_pages": true,
-  "size_bytes": 3435979,
   "skills": {
    "items": [
     {
@@ -19728,7 +20422,9 @@
    "retrofit": 7,
    "px_fix": 0,
    "pages_checked": 8
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 3435979
  },
  {
   "repo": "insurtech__case_regreesion_model_02",
@@ -19810,8 +20506,6 @@
     "ko": 7
    }
   },
-  "has_pages": true,
-  "size_bytes": 3439424,
   "skills": {
    "items": [
     {
@@ -19827,7 +20521,9 @@
    "retrofit": 7,
    "px_fix": 0,
    "pages_checked": 7
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 3439424
  },
  {
   "repo": "karpathy_method_korean",
@@ -19989,8 +20685,6 @@
     "ko": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 1972773,
   "skills": {
    "items": [
     {
@@ -20014,7 +20708,9 @@
    "retrofit": 1,
    "px_fix": 1,
    "pages_checked": 1
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 1972773
  },
  {
   "repo": "kma_2023_01",
@@ -20056,6 +20752,15 @@
    "count": 0,
    "complete": true,
    "pages_by_lang": {}
+  },
+  "skills": {
+   "items": [],
+   "main": "",
+   "estimate": "",
+   "explicit": false,
+   "retrofit": 0,
+   "px_fix": 0,
+   "pages_checked": 0
   },
   "has_pages": false
  },
@@ -20236,8 +20941,6 @@
     "ko": 6
    }
   },
-  "has_pages": true,
-  "size_bytes": 5317653,
   "skills": {
    "items": [],
    "main": "",
@@ -20246,7 +20949,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 6
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 5317653
  },
  {
   "repo": "kwangju_data_learn",
@@ -20288,6 +20993,15 @@
    "count": 0,
    "complete": true,
    "pages_by_lang": {}
+  },
+  "skills": {
+   "items": [],
+   "main": "",
+   "estimate": "",
+   "explicit": false,
+   "retrofit": 0,
+   "px_fix": 0,
+   "pages_checked": 0
   },
   "has_pages": false
  },
@@ -20584,8 +21298,6 @@
     "ko": 15
    }
   },
-  "has_pages": true,
-  "size_bytes": 18822285,
   "skills": {
    "items": [
     {
@@ -20621,7 +21333,9 @@
    "retrofit": 0,
    "px_fix": 15,
    "pages_checked": 15
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 18822285
  },
  {
   "repo": "lagrange_multiplier_lab",
@@ -20694,8 +21408,6 @@
     "ko": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 1991475,
   "skills": {
    "items": [
     {
@@ -20725,7 +21437,9 @@
    "retrofit": 1,
    "px_fix": 0,
    "pages_checked": 1
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 1991475
  },
  {
   "repo": "lagrangian_hamiltonian_lab",
@@ -20798,8 +21512,6 @@
     "ko": 9
    }
   },
-  "has_pages": true,
-  "size_bytes": 3279328,
   "skills": {
    "items": [],
    "main": "",
@@ -20808,7 +21520,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 9
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 3279328
  },
  {
   "repo": "learn-pandas-visually_korean",
@@ -20873,8 +21587,6 @@
     "ko": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 1345754,
   "skills": {
    "items": [
     {
@@ -20898,7 +21610,9 @@
    "retrofit": 1,
    "px_fix": 1,
    "pages_checked": 1
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 1345754
  },
  {
   "repo": "learn-python-by-doing",
@@ -20949,8 +21663,6 @@
    "complete": true,
    "pages_by_lang": {}
   },
-  "has_pages": true,
-  "size_bytes": 1481348,
   "skills": {
    "items": [],
    "main": "",
@@ -20959,7 +21671,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 0
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 1481348
  },
  {
   "repo": "learn-python-by-doing_Korean",
@@ -21029,8 +21743,6 @@
     "ko": 53
    }
   },
-  "has_pages": true,
-  "size_bytes": 8023596,
   "skills": {
    "items": [
     {
@@ -21054,7 +21766,9 @@
    "retrofit": 1,
    "px_fix": 40,
    "pages_checked": 40
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 8023596
  },
  {
   "repo": "likelihood_vs_probability",
@@ -21259,7 +21973,31 @@
     "ko": 2
    }
   },
-  "has_pages": false,
+  "skills": {
+   "items": [
+    {
+     "name": "ai-lab-retrofit",
+     "version": "",
+     "versions": [],
+     "pages": 2
+    },
+    {
+     "name": "px-fix",
+     "version": "1",
+     "versions": [
+      "1"
+     ],
+     "pages": 2
+    }
+   ],
+   "main": "",
+   "estimate": "",
+   "explicit": false,
+   "retrofit": 2,
+   "px_fix": 2,
+   "pages_checked": 2
+  },
+  "has_pages": true,
   "size_bytes": 25320693
  },
  {
@@ -21795,8 +22533,6 @@
     "ko": 5
    }
   },
-  "has_pages": true,
-  "size_bytes": 5679111,
   "skills": {
    "items": [
     {
@@ -21814,7 +22550,9 @@
    "retrofit": 0,
    "px_fix": 4,
    "pages_checked": 5
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 5679111
  },
  {
   "repo": "LLM_evaluation",
@@ -21930,8 +22668,6 @@
     "vi": 2
    }
   },
-  "has_pages": true,
-  "size_bytes": 6027842,
   "skills": {
    "items": [],
    "main": "",
@@ -21940,7 +22676,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 2
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 6027842
  },
  {
   "repo": "llm_memory_trilogy",
@@ -22105,8 +22843,6 @@
     "ko": 19
    }
   },
-  "has_pages": true,
-  "size_bytes": 7540558,
   "skills": {
    "items": [
     {
@@ -22122,7 +22858,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 19
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 7540558
  },
  {
   "repo": "LLM_summary_note",
@@ -22345,8 +23083,6 @@
     "ko": 2
    }
   },
-  "has_pages": true,
-  "size_bytes": 2573363,
   "skills": {
    "items": [],
    "main": "",
@@ -22355,7 +23091,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 2
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 2573363
  },
  {
   "repo": "LoRA-fine-tuning-tutorial",
@@ -22408,8 +23146,6 @@
     "ko": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 488950,
   "skills": {
    "items": [],
    "main": "",
@@ -22418,7 +23154,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 1
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 488950
  },
  {
   "repo": "machine_learning_in_3d",
@@ -22475,8 +23213,6 @@
     "ko": 3
    }
   },
-  "has_pages": true,
-  "size_bytes": 594249,
   "skills": {
    "items": [
     {
@@ -22492,7 +23228,9 @@
    "retrofit": 1,
    "px_fix": 0,
    "pages_checked": 3
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 594249
  },
  {
   "repo": "machine_learning_model_atlas",
@@ -22551,8 +23289,6 @@
     "ko": 2
    }
   },
-  "has_pages": true,
-  "size_bytes": 476387,
   "skills": {
    "items": [
     {
@@ -22568,7 +23304,9 @@
    "retrofit": 2,
    "px_fix": 0,
    "pages_checked": 2
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 476387
  },
  {
   "repo": "markov_player",
@@ -22645,6 +23383,22 @@
    "pages_by_lang": {
     "ko": 2
    }
+  },
+  "skills": {
+   "items": [
+    {
+     "name": "ai-lab-explainer",
+     "version": "",
+     "versions": [],
+     "pages": 1
+    }
+   ],
+   "main": "ai-lab-explainer",
+   "estimate": "v1.13 이전",
+   "explicit": false,
+   "retrofit": 0,
+   "px_fix": 0,
+   "pages_checked": 2
   },
   "has_pages": false,
   "size_bytes": 1144163
@@ -22805,8 +23559,6 @@
     "ko": 17
    }
   },
-  "has_pages": true,
-  "size_bytes": 35427702,
   "skills": {
    "items": [
     {
@@ -22844,7 +23596,9 @@
    "retrofit": 17,
    "px_fix": 17,
    "pages_checked": 17
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 35427702
  },
  {
   "repo": "math_for_ai_lab",
@@ -23257,8 +24011,6 @@
     "ko": 4
    }
   },
-  "has_pages": true,
-  "size_bytes": 3924413,
   "skills": {
    "items": [
     {
@@ -23276,7 +24028,9 @@
    "retrofit": 0,
    "px_fix": 4,
    "pages_checked": 4
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 3924413
  },
  {
   "repo": "micro_economics",
@@ -23811,8 +24565,6 @@
     "ko": 49
    }
   },
-  "has_pages": true,
-  "size_bytes": 39903668,
   "skills": {
    "items": [
     {
@@ -23848,7 +24600,9 @@
    "retrofit": 0,
    "px_fix": 2,
    "pages_checked": 40
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 39903668
  },
  {
   "repo": "minkowski_space_lab",
@@ -23932,8 +24686,6 @@
     "ko": 3
    }
   },
-  "has_pages": true,
-  "size_bytes": 5059347,
   "skills": {
    "items": [
     {
@@ -23957,7 +24709,9 @@
    "retrofit": 2,
    "px_fix": 0,
    "pages_checked": 3
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 5059347
  },
  {
   "repo": "ML_00_Algorithm-family-build_00",
@@ -24224,6 +24978,15 @@
    "complete": true,
    "pages_by_lang": {}
   },
+  "skills": {
+   "items": [],
+   "main": "",
+   "estimate": "",
+   "explicit": false,
+   "retrofit": 0,
+   "px_fix": 0,
+   "pages_checked": 0
+  },
   "has_pages": false,
   "size_bytes": 34337741
  },
@@ -24409,8 +25172,6 @@
     "ru": 8
    }
   },
-  "has_pages": true,
-  "size_bytes": 39779512,
   "skills": {
    "items": [
     {
@@ -24434,7 +25195,9 @@
    "retrofit": 6,
    "px_fix": 8,
    "pages_checked": 8
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 39779512
  },
  {
   "repo": "ML_00_Algorithm-family-build_02",
@@ -24578,8 +25341,6 @@
     "ru": 7
    }
   },
-  "has_pages": true,
-  "size_bytes": 29659066,
   "skills": {
    "items": [
     {
@@ -24603,7 +25364,9 @@
    "retrofit": 5,
    "px_fix": 7,
    "pages_checked": 7
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 29659066
  },
  {
   "repo": "ML_00_Algorithm-family-build_03",
@@ -24753,8 +25516,6 @@
     "ru": 7
    }
   },
-  "has_pages": true,
-  "size_bytes": 29863336,
   "skills": {
    "items": [
     {
@@ -24778,7 +25539,9 @@
    "retrofit": 5,
    "px_fix": 7,
    "pages_checked": 7
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 29863336
  },
  {
   "repo": "ML_model_hiring_committee",
@@ -24993,8 +25756,6 @@
     "ru": 34
    }
   },
-  "has_pages": true,
-  "size_bytes": 196054888,
   "skills": {
    "items": [
     {
@@ -25018,7 +25779,9 @@
    "retrofit": 34,
    "px_fix": 34,
    "pages_checked": 34
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 196054888
  },
  {
   "repo": "money-robo_news_rebuild",
@@ -25073,8 +25836,6 @@
     "ko": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 223587,
   "skills": {
    "items": [],
    "main": "",
@@ -25083,7 +25844,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 1
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 223587
  },
  {
   "repo": "motion_ai_series_01",
@@ -25185,8 +25948,6 @@
     "ru": 6
    }
   },
-  "has_pages": true,
-  "size_bytes": 56230430,
   "skills": {
    "items": [
     {
@@ -25210,7 +25971,9 @@
    "retrofit": 6,
    "px_fix": 6,
    "pages_checked": 6
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 56230430
  },
  {
   "repo": "moving_factory_dashboard",
@@ -25443,8 +26206,6 @@
     "ko": 12
    }
   },
-  "has_pages": true,
-  "size_bytes": 8500562,
   "skills": {
    "items": [],
    "main": "",
@@ -25453,7 +26214,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 12
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 8500562
  },
  {
   "repo": "my_article_00_Korean_stockmarket_volatility_study",
@@ -25586,8 +26349,6 @@
     "ko": 24
    }
   },
-  "has_pages": true,
-  "size_bytes": 10151165,
   "skills": {
    "items": [],
    "main": "",
@@ -25596,7 +26357,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 24
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 10151165
  },
  {
   "repo": "my_article_01_bitcoin_price_analytics",
@@ -25691,8 +26454,6 @@
     "vi": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 3735949,
   "skills": {
    "items": [],
    "main": "",
@@ -25701,7 +26462,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 1
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 3735949
  },
  {
   "repo": "my_article_02_crypto_predict_model_analytics",
@@ -25830,8 +26593,6 @@
     "vi": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 16320493,
   "skills": {
    "items": [
     {
@@ -25849,7 +26610,9 @@
    "retrofit": 0,
    "px_fix": 2,
    "pages_checked": 2
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 16320493
  },
  {
   "repo": "my_article_03_drug-slang-detection",
@@ -25954,8 +26717,6 @@
     "vi": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 19981253,
   "skills": {
    "items": [
     {
@@ -25973,7 +26734,9 @@
    "retrofit": 0,
    "px_fix": 1,
    "pages_checked": 1
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 19981253
  },
  {
   "repo": "my_article_04_adversarial_finance_attack",
@@ -26101,8 +26864,6 @@
     "vi": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 45219057,
   "skills": {
    "items": [
     {
@@ -26120,7 +26881,9 @@
    "retrofit": 0,
    "px_fix": 2,
    "pages_checked": 2
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 45219057
  },
  {
   "repo": "my_article_05_consumer_expenditure_predict",
@@ -26225,8 +26988,6 @@
     "vi": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 31943016,
   "skills": {
    "items": [],
    "main": "",
@@ -26235,7 +26996,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 1
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 31943016
  },
  {
   "repo": "my_article_06_AI_effect_to_labor_demand",
@@ -26337,8 +27100,6 @@
     "vi": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 1771015,
   "skills": {
    "items": [
     {
@@ -26356,7 +27117,9 @@
    "retrofit": 0,
    "px_fix": 2,
    "pages_checked": 2
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 1771015
  },
  {
   "repo": "my_article_07_media_blockchain",
@@ -26494,8 +27257,6 @@
     "vi": 5
    }
   },
-  "has_pages": true,
-  "size_bytes": 27951127,
   "skills": {
    "items": [],
    "main": "",
@@ -26504,7 +27265,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 5
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 27951127
  },
  {
   "repo": "my_article_08_poll_reweighting_lab",
@@ -26666,8 +27429,6 @@
     "ko": 3
    }
   },
-  "has_pages": true,
-  "size_bytes": 3373370,
   "skills": {
    "items": [],
    "main": "",
@@ -26676,7 +27437,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 3
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 3373370
  },
  {
   "repo": "my_document_01",
@@ -26729,8 +27492,6 @@
     "ko": 3
    }
   },
-  "has_pages": true,
-  "size_bytes": 60073,
   "skills": {
    "items": [],
    "main": "",
@@ -26739,7 +27500,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 3
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 60073
  },
  {
   "repo": "nabla_field_lab",
@@ -26802,8 +27565,6 @@
     "ko": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 951995,
   "skills": {
    "items": [
     {
@@ -26827,7 +27588,9 @@
    "retrofit": 1,
    "px_fix": 1,
    "pages_checked": 1
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 951995
  },
  {
   "repo": "neural_network_atlas",
@@ -26933,8 +27696,6 @@
     "vi": 6
    }
   },
-  "has_pages": true,
-  "size_bytes": 10125827,
   "skills": {
    "items": [
     {
@@ -26950,7 +27711,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 6
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 10125827
  },
  {
   "repo": "neural_see_lab",
@@ -27078,8 +27841,6 @@
     "ko": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 1483535,
   "skills": {
    "items": [
     {
@@ -27095,7 +27856,9 @@
    "retrofit": 1,
    "px_fix": 0,
    "pages_checked": 1
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 1483535
  },
  {
   "repo": "neuralink_animal_brain_ai",
@@ -27263,8 +28026,6 @@
     "ko": 2
    }
   },
-  "has_pages": true,
-  "size_bytes": 945271,
   "skills": {
    "items": [
     {
@@ -27280,7 +28041,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 2
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 945271
  },
  {
   "repo": "neuron_reaction",
@@ -27669,8 +28432,6 @@
     "ko": 5
    }
   },
-  "has_pages": true,
-  "size_bytes": 12130447,
   "skills": {
    "items": [
     {
@@ -27686,7 +28447,9 @@
    "retrofit": 3,
    "px_fix": 0,
    "pages_checked": 5
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 12130447
  },
  {
   "repo": "nlp20_five_floor_map",
@@ -27800,8 +28563,6 @@
     "ko": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 992311,
   "skills": {
    "items": [
     {
@@ -27825,7 +28586,9 @@
    "retrofit": 1,
    "px_fix": 1,
    "pages_checked": 1
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 992311
  },
  {
   "repo": "one_day_deep_learning",
@@ -28046,8 +28809,6 @@
     "ko": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 725742,
   "skills": {
    "items": [
     {
@@ -28065,7 +28826,9 @@
    "retrofit": 0,
    "px_fix": 1,
    "pages_checked": 1
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 725742
  },
  {
   "repo": "one_day_machine_learning",
@@ -28243,8 +29006,6 @@
     "ko": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 805056,
   "skills": {
    "items": [
     {
@@ -28262,7 +29023,9 @@
    "retrofit": 0,
    "px_fix": 1,
    "pages_checked": 1
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 805056
  },
  {
   "repo": "ontology_kg_vfx",
@@ -28324,8 +29087,6 @@
     "ko": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 591086,
   "skills": {
    "items": [
     {
@@ -28349,7 +29110,9 @@
    "retrofit": 1,
    "px_fix": 1,
    "pages_checked": 1
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 591086
  },
  {
   "repo": "ontology_trend_report",
@@ -28411,8 +29174,6 @@
     "ko": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 649056,
   "skills": {
    "items": [
     {
@@ -28436,7 +29197,9 @@
    "retrofit": 1,
    "px_fix": 1,
    "pages_checked": 1
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 649056
  },
  {
   "repo": "optimization_3d_map",
@@ -28714,8 +29477,6 @@
     "ko": 7
    }
   },
-  "has_pages": true,
-  "size_bytes": 14988400,
   "skills": {
    "items": [
     {
@@ -28753,7 +29514,9 @@
    "retrofit": 7,
    "px_fix": 7,
    "pages_checked": 7
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 14988400
  },
  {
   "repo": "optimization_test_lab",
@@ -28815,8 +29578,6 @@
     "ko": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 1266598,
   "skills": {
    "items": [
     {
@@ -28846,7 +29607,9 @@
    "retrofit": 1,
    "px_fix": 0,
    "pages_checked": 1
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 1266598
  },
  {
   "repo": "polygon_series_lab",
@@ -29001,8 +29764,6 @@
     "ko": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 1752752,
   "skills": {
    "items": [
     {
@@ -29034,7 +29795,9 @@
    "retrofit": 1,
    "px_fix": 1,
    "pages_checked": 1
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 1752752
  },
  {
   "repo": "probability_distribution_dictionary",
@@ -29105,8 +29868,6 @@
     "ko": 9
    }
   },
-  "has_pages": true,
-  "size_bytes": 21669902,
   "skills": {
    "items": [
     {
@@ -29130,7 +29891,9 @@
    "retrofit": 8,
    "px_fix": 9,
    "pages_checked": 9
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 21669902
  },
  {
   "repo": "python-accounting-analytics",
@@ -29381,8 +30144,6 @@
     "ko": 14
    }
   },
-  "has_pages": true,
-  "size_bytes": 13136250,
   "skills": {
    "items": [
     {
@@ -29418,7 +30179,9 @@
    "retrofit": 0,
    "px_fix": 14,
    "pages_checked": 14
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 13136250
  },
  {
   "repo": "python_machine_learning_lab",
@@ -29764,8 +30527,6 @@
     "zh": 17
    }
   },
-  "has_pages": true,
-  "size_bytes": 37437734,
   "skills": {
    "items": [
     {
@@ -29781,7 +30542,9 @@
    "retrofit": 11,
    "px_fix": 0,
    "pages_checked": 17
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 37437734
  },
  {
   "repo": "Recursive-Self-Improvement",
@@ -30105,8 +30868,6 @@
     "ko": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 4305104,
   "skills": {
    "items": [
     {
@@ -30130,7 +30891,9 @@
    "retrofit": 1,
    "px_fix": 1,
    "pages_checked": 1
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 4305104
  },
  {
   "repo": "Regression_model_lab_01",
@@ -30358,8 +31121,6 @@
     "ko": 8
    }
   },
-  "has_pages": true,
-  "size_bytes": 8802164,
   "skills": {
    "items": [],
    "main": "",
@@ -30368,7 +31129,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 8
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 8802164
  },
  {
   "repo": "Regression_ridge_lasso",
@@ -30588,8 +31351,6 @@
     "vi": 2
    }
   },
-  "has_pages": true,
-  "size_bytes": 7207335,
   "skills": {
    "items": [],
    "main": "",
@@ -30598,7 +31359,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 2
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 7207335
  },
  {
   "repo": "Reinforcement-Learning-lab_project_01",
@@ -31171,8 +31934,6 @@
     "ko": 10
    }
   },
-  "has_pages": true,
-  "size_bytes": 14208648,
   "skills": {
    "items": [
     {
@@ -31196,7 +31957,9 @@
    "retrofit": 10,
    "px_fix": 10,
    "pages_checked": 10
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 14208648
  },
  {
   "repo": "riemann_frontiers_lab",
@@ -31251,8 +32014,6 @@
     "ko": 2
    }
   },
-  "has_pages": true,
-  "size_bytes": 3433111,
   "skills": {
    "items": [],
    "main": "",
@@ -31261,7 +32022,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 2
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 3433111
  },
  {
   "repo": "riemann_hypothesis_lab",
@@ -31340,8 +32103,6 @@
     "ko": 3
    }
   },
-  "has_pages": true,
-  "size_bytes": 9021037,
   "skills": {
    "items": [
     {
@@ -31357,7 +32118,9 @@
    "retrofit": 1,
    "px_fix": 0,
    "pages_checked": 3
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 9021037
  },
  {
   "repo": "rulebase_to_agent",
@@ -31545,8 +32308,6 @@
     "vi": 16
    }
   },
-  "has_pages": true,
-  "size_bytes": 67642896,
   "skills": {
    "items": [
     {
@@ -31570,7 +32331,9 @@
    "retrofit": 15,
    "px_fix": 16,
    "pages_checked": 16
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 67642896
  },
  {
   "repo": "smart_factory_world",
@@ -31664,8 +32427,6 @@
     "ko": 4
    }
   },
-  "has_pages": true,
-  "size_bytes": 855204,
   "skills": {
    "items": [
     {
@@ -31681,7 +32442,9 @@
    "retrofit": 1,
    "px_fix": 0,
    "pages_checked": 4
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 855204
  },
  {
   "repo": "smart_product",
@@ -32082,8 +32845,6 @@
     "ko": 25
    }
   },
-  "has_pages": true,
-  "size_bytes": 5547748,
   "skills": {
    "items": [
     {
@@ -32099,7 +32860,9 @@
    "retrofit": 17,
    "px_fix": 0,
    "pages_checked": 25
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 5547748
  },
  {
   "repo": "statistics_note",
@@ -32442,8 +33205,6 @@
     "ko": 29
    }
   },
-  "has_pages": true,
-  "size_bytes": 27431460,
   "skills": {
    "items": [],
    "main": "",
@@ -32452,7 +33213,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 29
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 27431460
  },
  {
   "repo": "statistics_note_ch04_02",
@@ -32494,6 +33257,15 @@
    "count": 0,
    "complete": true,
    "pages_by_lang": {}
+  },
+  "skills": {
+   "items": [],
+   "main": "",
+   "estimate": "",
+   "explicit": false,
+   "retrofit": 0,
+   "px_fix": 0,
+   "pages_checked": 0
   },
   "has_pages": false
  },
@@ -32559,8 +33331,6 @@
     "ko": 2
    }
   },
-  "has_pages": true,
-  "size_bytes": 1265428,
   "skills": {
    "items": [],
    "main": "",
@@ -32569,7 +33339,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 2
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 1265428
  },
  {
   "repo": "Stochastic_labs",
@@ -33301,8 +34073,6 @@
     "ko": 15
    }
   },
-  "has_pages": true,
-  "size_bytes": 10966140,
   "skills": {
    "items": [
     {
@@ -33320,7 +34090,9 @@
    "retrofit": 0,
    "px_fix": 15,
    "pages_checked": 15
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 10966140
  },
  {
   "repo": "structure_first_drawing_lab_01",
@@ -33822,8 +34594,6 @@
     "ko": 8
    }
   },
-  "has_pages": true,
-  "size_bytes": 16903808,
   "skills": {
    "items": [],
    "main": "",
@@ -33832,7 +34602,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 8
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 16903808
  },
  {
   "repo": "structure_first_drawing_lab_02",
@@ -33960,8 +34732,6 @@
     "ko": 6
    }
   },
-  "has_pages": true,
-  "size_bytes": 6313791,
   "skills": {
    "items": [
     {
@@ -33979,7 +34749,9 @@
    "retrofit": 0,
    "px_fix": 6,
    "pages_checked": 6
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 6313791
  },
  {
   "repo": "test",
@@ -34021,6 +34793,15 @@
    "count": 0,
    "complete": true,
    "pages_by_lang": {}
+  },
+  "skills": {
+   "items": [],
+   "main": "",
+   "estimate": "",
+   "explicit": false,
+   "retrofit": 0,
+   "px_fix": 0,
+   "pages_checked": 0
   },
   "has_pages": false
  },
@@ -34064,6 +34845,15 @@
    "count": 0,
    "complete": true,
    "pages_by_lang": {}
+  },
+  "skills": {
+   "items": [],
+   "main": "",
+   "estimate": "",
+   "explicit": false,
+   "retrofit": 0,
+   "px_fix": 0,
+   "pages_checked": 0
   },
   "has_pages": false,
   "size_bytes": 17220
@@ -34157,8 +34947,6 @@
     "vi": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 37308960,
   "skills": {
    "items": [
     {
@@ -34176,7 +34964,9 @@
    "retrofit": 0,
    "px_fix": 1,
    "pages_checked": 1
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 37308960
  },
  {
   "repo": "timeseries-trilogy",
@@ -34704,8 +35494,6 @@
     "ko": 23
    }
   },
-  "has_pages": true,
-  "size_bytes": 48883992,
   "skills": {
    "items": [],
    "main": "",
@@ -34714,7 +35502,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 23
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 48883992
  },
  {
   "repo": "topology_ai_lab",
@@ -35752,8 +36542,6 @@
     "ko": 17
    }
   },
-  "has_pages": true,
-  "size_bytes": 10258796,
   "skills": {
    "items": [
     {
@@ -35771,7 +36559,9 @@
    "retrofit": 0,
    "px_fix": 17,
    "pages_checked": 17
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 10258796
  },
  {
   "repo": "unsupervised_fish_lab",
@@ -36174,8 +36964,6 @@
     "ko": 6
    }
   },
-  "has_pages": true,
-  "size_bytes": 7756112,
   "skills": {
    "items": [
     {
@@ -36199,7 +36987,9 @@
    "retrofit": 6,
    "px_fix": 6,
    "pages_checked": 6
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 7756112
  },
  {
   "repo": "usa_stock_reporter_project_python_version",
@@ -36241,6 +37031,15 @@
    "count": 0,
    "complete": true,
    "pages_by_lang": {}
+  },
+  "skills": {
+   "items": [],
+   "main": "",
+   "estimate": "",
+   "explicit": false,
+   "retrofit": 0,
+   "px_fix": 0,
+   "pages_checked": 0
   },
   "has_pages": false,
   "size_bytes": 557279
@@ -36309,8 +37108,6 @@
     "ko": 4
    }
   },
-  "has_pages": true,
-  "size_bytes": 1349617,
   "skills": {
    "items": [
     {
@@ -36328,7 +37125,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 4
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 1349617
  },
  {
   "repo": "vector_analysis_lab",
@@ -36427,8 +37226,6 @@
     "ko": 9
    }
   },
-  "has_pages": true,
-  "size_bytes": 2969372,
   "skills": {
    "items": [
     {
@@ -36452,7 +37249,9 @@
    "retrofit": 9,
    "px_fix": 9,
    "pages_checked": 9
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 2969372
  },
  {
   "repo": "vector_calculus_lab",
@@ -36832,8 +37631,6 @@
     "ko": 9
    }
   },
-  "has_pages": true,
-  "size_bytes": 3997499,
   "skills": {
    "items": [
     {
@@ -36851,7 +37648,9 @@
    "retrofit": 0,
    "px_fix": 9,
    "pages_checked": 9
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 3997499
  },
  {
   "repo": "vector_db_lab",
@@ -37435,8 +38234,6 @@
     "ko": 9
    }
   },
-  "has_pages": true,
-  "size_bytes": 13675170,
   "skills": {
    "items": [
     {
@@ -37460,7 +38257,9 @@
    "retrofit": 9,
    "px_fix": 9,
    "pages_checked": 9
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 13675170
  },
  {
   "repo": "what_is_p_value_lab",
@@ -37582,8 +38381,6 @@
     "ko": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 1994538,
   "skills": {
    "items": [
     {
@@ -37601,7 +38398,9 @@
    "retrofit": 0,
    "px_fix": 1,
    "pages_checked": 1
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 1994538
  },
  {
   "repo": "what_is_tensor",
@@ -37742,8 +38541,6 @@
     "ko": 7
    }
   },
-  "has_pages": true,
-  "size_bytes": 8971709,
   "skills": {
    "items": [],
    "main": "",
@@ -37752,7 +38549,9 @@
    "retrofit": 0,
    "px_fix": 0,
    "pages_checked": 7
-  }
+  },
+  "has_pages": true,
+  "size_bytes": 8971709
  },
  {
   "repo": "who_am_i",
@@ -37830,17 +38629,17 @@
     "ru": 1
    }
   },
-  "has_pages": true,
-  "size_bytes": 5032985,
   "skills": {
    "items": [],
    "main": "",
-   "estimate": "",
+   "estimate": "v1.13 이전",
    "explicit": false,
    "retrofit": 0,
    "px_fix": 0,
-   "pages_checked": 0
-  }
+   "pages_checked": 1
+  },
+  "has_pages": true,
+  "size_bytes": 5032985
  },
  {
   "repo": "who_am_i_package",
@@ -37898,6 +38697,15 @@
    "pages_by_lang": {
     "ko": 2
    }
+  },
+  "skills": {
+   "items": [],
+   "main": "",
+   "estimate": "v1.13 이전",
+   "explicit": false,
+   "retrofit": 0,
+   "px_fix": 0,
+   "pages_checked": 2
   },
   "has_pages": false,
   "size_bytes": 6789938
