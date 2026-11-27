@@ -210,7 +210,7 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
       var li=el('li');var a=el('a');a.href=n['링크']||'#';a.target='_top';
       var tm=el('time','',(n['날짜']||'').slice(5).replace('-','.'));tm.dateTime=n['날짜']||'';a.appendChild(tm);
       var d=n['날짜']?(Date.now()-Date.parse(n['날짜']))/864e5:99;if(d<7)a.appendChild(el('span','new','NEW'));
-      a.appendChild(el('span','t',T(n['제목'])));li.appendChild(a);ul.appendChild(li);
+      a.appendChild(el('span','t',TN(n['제목'])));li.appendChild(a);ul.appendChild(li);
     });
     post();
   }
@@ -257,6 +257,8 @@ h1{margin:0;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-
     if(I18S&&I18S.langs){var cap=el('span','lgcap',T('콘텐츠 번역률'));cap.title=T('공개 콘텐츠 {0}개 중 이 언어로 옮긴 비율 (일부만 옮긴 콘텐츠는 옮긴 페이지 비율로 셈)',I18S.contents);g.appendChild(cap);}
     build();
   }
+  /* 공지 제목 번역 — 통째로 사전에 있으면 그것, 자동 공지('업데이트 — 콘텐츠 제목')는 머리말과 콘텐츠 제목을 따로 번역해 잇는다 */
+  function TN(t){var x=T(t);if(x!==t)return x;var m=/^(업데이트|새 콘텐츠 공개) — (.+)$/.exec(t);return m?T(m[1])+' — '+T(m[2]):t;}
   /* 서울 시계 — 방문자 시간대와 상관없이 대한민국 표준시(Asia/Seoul) */
   function clock(){var t=document.getElementById('clkT');if(!t)return;var d=new Date(),L=(window.AhnI18n&&AhnI18n.lang)||'ko';
     try{var f=new Intl.DateTimeFormat(L==='ko'?'ko-KR':L,{timeZone:'Asia/Seoul',month:'2-digit',day:'2-digit',weekday:'short'}).formatToParts(d),g={};f.forEach(function(p){g[p.type]=p.value;});
