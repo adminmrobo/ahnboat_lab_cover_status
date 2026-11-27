@@ -2072,7 +2072,7 @@
     "3D 복원",
     "화면 채우기"
    ],
-   "image": "thumbs/repos/ai_rendering.jpg"
+   "image": "thumbs/cats/subs/generation--ai-rendering.webp"
   },
   {
    "cat": "AI 감각·생성",
@@ -2084,7 +2084,7 @@
     "관절 점",
     "동작 생성"
    ],
-   "image": "thumbs/repos/motion_ai_series_01.jpg"
+   "image": "thumbs/cats/subs/vision--motion-ai.webp"
   },
   {
    "cat": "AI 감각·생성",
@@ -2096,7 +2096,7 @@
     "CNN",
     "얼굴 맞히기"
    ],
-   "image": "thumbs/repos/AI_image_classification.jpg"
+   "image": "thumbs/cats/subs/vision--image-recognition.webp"
   },
   {
    "cat": "AI 감각·생성",
@@ -2108,7 +2108,7 @@
     "AI 글쓰기",
     "논문 리뷰"
    ],
-   "image": "thumbs/repos/ai_text_read_ability.jpg"
+   "image": "thumbs/cats/subs/reading--ai-text-reading.webp"
   },
   {
    "cat": "LLM·추론 엔지니어링",
@@ -2120,7 +2120,7 @@
     "논문 심사",
     "모의 심사회"
    ],
-   "image": "thumbs/repos/iclr2027_top3_lab_review.jpg"
+   "image": "thumbs/cats/subs/ai-trends--ai-conference-papers.webp"
   },
   {
    "cat": "LLM·추론 엔지니어링",
@@ -2132,7 +2132,7 @@
     "문맥 창",
     "자동화 프롬프트"
    ],
-   "image": "thumbs/repos/Automate_prompt_lab.jpg"
+   "image": "thumbs/cats/subs/llm-basics--llm-memory.webp"
   },
   {
    "cat": "LLM·추론 엔지니어링",
@@ -2144,7 +2144,7 @@
     "리더보드",
     "재현 검증"
    ],
-   "image": "thumbs/repos/LLM_evaluation.jpg"
+   "image": "thumbs/cats/subs/llm-basics--llm-evaluation.webp"
   },
   {
    "cat": "LLM·추론 엔지니어링",
@@ -2156,7 +2156,7 @@
     "조건부확률",
     "비밀값 유출"
    ],
-   "image": "thumbs/cats/C04-M1.webp"
+   "image": "thumbs/cats/subs/llm-basics--agent-security.webp"
   },
   {
    "cat": "LLM·추론 엔지니어링",
@@ -2168,7 +2168,7 @@
     "타임라인",
     "사실 확인"
    ],
-   "image": "thumbs/cats/C04-M1.webp"
+   "image": "thumbs/cats/subs/llm-basics--lab-reports.webp"
   },
   {
    "cat": "LLM·추론 엔지니어링",
@@ -2180,7 +2180,7 @@
     "지식 그래프",
     "VFX 시각화"
    ],
-   "image": "thumbs/cats/C04-M1.webp"
+   "image": "thumbs/cats/subs/llm-basics--ontology.webp"
   },
   {
    "cat": "LLM·추론 엔지니어링",
@@ -2192,7 +2192,7 @@
     "TTFT·TPS",
     "라이브벤치"
    ],
-   "image": "https://adminmrobo.github.io/inference_engineering_study/week_01_textbook_preface/thumb.jpg"
+   "image": "thumbs/cats/subs/inference-engineering--ch01-before-you-start.webp"
   },
   {
    "cat": "LLM·추론 엔지니어링",
@@ -2204,7 +2204,7 @@
     "어텐션",
     "병목"
    ],
-   "image": "https://adminmrobo.github.io/inference_engineering_study/week_02_textbook_ch02_p1_p2/thumb.jpg"
+   "image": "thumbs/cats/subs/inference-engineering--ch02-models.webp"
   },
   {
    "cat": "LLM·추론 엔지니어링",
@@ -2216,7 +2216,7 @@
     "VRAM",
     "루프라인"
    ],
-   "image": "https://adminmrobo.github.io/inference_engineering_study/week_04_textbook_ch03/thumb.jpg"
+   "image": "thumbs/cats/subs/inference-engineering--ch03-hardware.webp"
   },
   {
    "cat": "LLM·추론 엔지니어링",
@@ -2228,7 +2228,7 @@
     "KV 캐시",
     "페이지드 어텐션"
    ],
-   "image": "https://adminmrobo.github.io/inference_engineering_study/week_05_textbook_ch04/thumb.jpg"
+   "image": "thumbs/cats/subs/inference-engineering--ch04-software.webp"
   },
   {
    "cat": "LLM·추론 엔지니어링",
@@ -2240,7 +2240,7 @@
     "병목 진단",
     "스터디 발표"
    ],
-   "image": "https://adminmrobo.github.io/inference_engineering_study/cards/inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide.jpg"
+   "image": "thumbs/cats/subs/inference-engineering--appendix-slides.webp"
   },
   {
    "cat": "LLM·추론 엔지니어링",
@@ -2252,7 +2252,7 @@
     "10주 스터디",
     "스터디 보드"
    ],
-   "image": "https://adminmrobo.github.io/inference_engineering_study/thumb.jpg"
+   "image": "thumbs/cats/subs/inference-engineering--study-book-board.webp"
   },
   {
    "cat": "경제·수학·최적화",
@@ -2264,7 +2264,7 @@
     "노동수요",
     "여론조사 보정"
    ],
-   "image": "thumbs/repos/my_article_05_consumer_expenditure_predict.jpg"
+   "image": "thumbs/cats/subs/economic-research--economy-society.webp"
   },
   {
    "cat": "경제·수학·최적화",
@@ -2276,7 +2276,7 @@
     "거시경제",
     "돈의 흐름"
    ],
-   "image": "thumbs/repos/fof-money-meridian-.jpg"
+   "image": "thumbs/cats/subs/finance-research--economy-society.webp"
   },
   {
    "cat": "공공·사회 프로젝트",
@@ -2288,7 +2288,7 @@
     "총괄 PM",
     "AX 교육"
    ],
-   "image": ""
+   "image": "thumbs/cats/subs/external--public-projects.webp"
   },
   {
    "cat": "공공·사회 프로젝트",
@@ -2300,7 +2300,7 @@
     "태양광 데이터",
     "폭염 예측"
    ],
-   "image": ""
+   "image": "thumbs/cats/subs/external--patents.webp"
   },
   {
    "cat": "금융·핀테크·블록체인",
@@ -2312,7 +2312,7 @@
     "시계열 예측",
     "토큰 경제"
    ],
-   "image": "thumbs/repos/my_article_02_crypto_predict_model_analytics.jpg"
+   "image": "thumbs/cats/subs/finance-research--crypto-assets.webp"
   },
   {
    "cat": "금융·핀테크·블록체인",
@@ -2324,7 +2324,7 @@
     "주식시장",
     "박사논문"
    ],
-   "image": "thumbs/repos/my_article_00_Korean_stockmarket_volatility_study.jpg"
+   "image": "thumbs/cats/subs/finance-research--stock-financial-markets.webp"
   },
   {
    "cat": "금융·핀테크·블록체인",
@@ -2336,7 +2336,7 @@
     "분류 모델",
     "회귀 모델"
    ],
-   "image": "thumbs/repos/insurtech__case_classification_model_01.jpg"
+   "image": "thumbs/cats/subs/insurtech-fintech--insurtech-cases.webp"
   },
   {
    "cat": "금융·핀테크·블록체인",
@@ -2348,7 +2348,7 @@
     "해시",
     "비트코인"
    ],
-   "image": "thumbs/cats/C06-M2.webp"
+   "image": "thumbs/cats/subs/blockchain--blockchain-finance.webp"
   },
   {
    "cat": "금융·핀테크·블록체인",
@@ -2360,7 +2360,7 @@
     "기사 자동 생성",
     "특허"
    ],
-   "image": ""
+   "image": "thumbs/cats/subs/external--robot-journalism.webp"
   },
   {
    "cat": "금융·핀테크·블록체인",
@@ -2372,7 +2372,7 @@
     "블록체인 감시",
     "이상 징후"
    ],
-   "image": ""
+   "image": "thumbs/cats/subs/external--patents-2.webp"
   },
   {
    "cat": "금융·핀테크·블록체인",
@@ -2384,7 +2384,7 @@
     "기업가치",
     "DCF"
    ],
-   "image": "thumbs/cats/C06-M3.webp"
+   "image": "thumbs/cats/subs/accounting-macro-finance--accounting-valuation.webp"
   },
   {
    "cat": "딥러닝·뇌과학",
@@ -2396,7 +2396,7 @@
     "뉴럴링크",
     "뇌과학"
    ],
-   "image": "thumbs/repos/AI_Model_Review_Fruit_fly_special.jpg"
+   "image": "thumbs/cats/subs/neuroscience--fruit-fly-special.webp"
   },
   {
    "cat": "딥러닝·뇌과학",
@@ -2408,7 +2408,7 @@
     "ReLU",
     "반응속도 대회"
    ],
-   "image": "thumbs/repos/neuron_reaction.jpg"
+   "image": "thumbs/cats/subs/deep-learning-models--neuron-reaction-lab.webp"
   },
   {
    "cat": "딥러닝·뇌과학",
@@ -2420,7 +2420,7 @@
     "퍼셉트론",
     "신경망 도감"
    ],
-   "image": "thumbs/repos/AI_Model_Review.jpg"
+   "image": "thumbs/cats/subs/deep-learning-models--deep-learning-a-to-z.webp"
   },
   {
    "cat": "딥러닝·뇌과학",
@@ -2432,7 +2432,7 @@
     "모의고사",
     "딥러닝 입문"
    ],
-   "image": "thumbs/repos/one_day_deep_learning.jpg"
+   "image": "thumbs/cats/subs/deep-learning-models--summary-notes.webp"
   },
   {
    "cat": "딥러닝·뇌과학",
@@ -2444,7 +2444,7 @@
     "27층 건물",
     "신경망 연구소"
    ],
-   "image": "thumbs/cats/C02-M2.webp"
+   "image": "thumbs/cats/subs/deep-learning-models--neural-network-institute.webp"
   },
   {
    "cat": "딥러닝·뇌과학",
@@ -2456,7 +2456,7 @@
     "손잡이 33개",
     "학습 비교"
    ],
-   "image": "thumbs/cats/C02-M2.webp"
+   "image": "thumbs/cats/subs/deep-learning-models--backprop-lab.webp"
   },
   {
    "cat": "딥러닝·뇌과학",
@@ -2468,7 +2468,7 @@
     "미세조정",
     "3D 좌표"
    ],
-   "image": "thumbs/cats/C02-M2.webp"
+   "image": "thumbs/cats/subs/deep-learning-models--coordinate-space.webp"
   },
   {
    "cat": "딥러닝·뇌과학",
@@ -2480,7 +2480,7 @@
     "축",
     "텐서 분해"
    ],
-   "image": "thumbs/repos/what_is_tensor.jpg"
+   "image": "thumbs/cats/subs/deep-learning-models--tensor-lab.webp"
   },
   {
    "cat": "머신러닝",
@@ -2492,7 +2492,7 @@
     "모눈",
     "강점과 약점"
    ],
-   "image": "thumbs/cats/C01-M1.webp"
+   "image": "thumbs/cats/subs/concept-map--ml-model-atlas.webp"
   },
   {
    "cat": "머신러닝",
@@ -2504,7 +2504,7 @@
     "27층 건물",
     "수업 안내"
    ],
-   "image": "thumbs/cats/C01-M1.webp"
+   "image": "thumbs/cats/subs/concept-map--ml-institute.webp"
   },
   {
    "cat": "머신러닝",
@@ -2516,7 +2516,7 @@
     "면접",
     "치트시트"
    ],
-   "image": "thumbs/repos/DL_model_hiring_committee.jpg"
+   "image": "thumbs/cats/subs/concept-map--model-hiring-committee.webp"
   },
   {
    "cat": "머신러닝",
@@ -2528,7 +2528,7 @@
     "쪽지시험",
     "머신러닝 입문"
    ],
-   "image": "thumbs/repos/one_day_machine_learning.jpg"
+   "image": "thumbs/cats/subs/concept-map--summary-notes.webp"
   },
   {
    "cat": "머신러닝",
@@ -2540,7 +2540,7 @@
     "알고리즘 비교",
     "특별편"
    ],
-   "image": "thumbs/repos/ML_00_Algorithm-family-build_01.jpg"
+   "image": "thumbs/cats/subs/concept-map--algorithm-family.webp"
   },
   {
    "cat": "머신러닝",
@@ -2552,7 +2552,7 @@
     "회귀 대회",
     "팀 대항전"
    ],
-   "image": "thumbs/repos/knn_svc_svm_lab.jpg"
+   "image": "thumbs/cats/subs/ml-models--ml-models.webp"
   },
   {
    "cat": "머신러닝",
@@ -2564,7 +2564,7 @@
     "경사하강",
     "앙상블"
    ],
-   "image": "thumbs/repos/Fish_Market_Data_Machine_Learning.jpg"
+   "image": "thumbs/cats/subs/hands-on--fish-market-ml.webp"
   },
   {
    "cat": "머신러닝",
@@ -2576,7 +2576,7 @@
     "릿지",
     "라쏘"
    ],
-   "image": "thumbs/repos/Regression_ridge_lasso.jpg"
+   "image": "thumbs/cats/subs/hands-on--regularized-regression.webp"
   },
   {
    "cat": "머신러닝",
@@ -2588,7 +2588,7 @@
     "고립 숲",
     "문턱값"
    ],
-   "image": "thumbs/repos/Anomaly_detection_tatics.jpg"
+   "image": "thumbs/cats/subs/hands-on--anomaly-detection.webp"
   },
   {
    "cat": "머신러닝",
@@ -2600,7 +2600,7 @@
     "군집화",
     "PCA"
    ],
-   "image": "thumbs/repos/unsupervised_fish_lab.jpg"
+   "image": "thumbs/cats/subs/programming--ml-models.webp"
   },
   {
    "cat": "연구실 운영",
@@ -2612,7 +2612,7 @@
     "게임형 안내",
     "연구실 식구"
    ],
-   "image": "thumbs/repos/ahn_boat_lab_town.jpg"
+   "image": "thumbs/cats/subs/about-lab--lab-town.webp"
   },
   {
    "cat": "연구실 운영",
@@ -2624,7 +2624,7 @@
     "이력",
     "연구와 강의"
    ],
-   "image": "thumbs/repos/who_am_i.jpg"
+   "image": "thumbs/cats/subs/about-lab--about.webp"
   },
   {
    "cat": "연구실 운영",
@@ -2636,7 +2636,7 @@
     "설정 그림",
     "프롬프트"
    ],
-   "image": "thumbs/repos/fruitfly-lab-expressions.jpg"
+   "image": "thumbs/cats/subs/tools--tools.webp"
   },
   {
    "cat": "연구실 운영",
@@ -2648,7 +2648,7 @@
     "원본 그림",
     "프롬프트"
    ],
-   "image": "thumbs/cats/C10-M2.webp"
+   "image": "thumbs/cats/subs/tools--character-design.webp"
   },
   {
    "cat": "인공지능 응용",
@@ -2660,7 +2660,7 @@
     "딥페이크 사기",
     "사례 대조"
    ],
-   "image": "https://adminmrobo.github.io/ai_crime_lab/reports/2026-11-23_lnrs-synthetic-identity-deepfake/thumb.webp"
+   "image": "thumbs/cats/subs/ai-criminology--report-news-check.webp"
   },
   {
    "cat": "인공지능 응용",
@@ -2672,7 +2672,7 @@
     "온톨로지 지도",
     "AI 범죄학"
    ],
-   "image": "https://adminmrobo.github.io/ai_crime_lab/assets/og/index.webp"
+   "image": "thumbs/cats/subs/ai-criminology--contents-field-map.webp"
   },
   {
    "cat": "인공지능 응용",
@@ -2684,7 +2684,7 @@
     "게임이론",
     "딥페이크"
    ],
-   "image": "https://adminmrobo.github.io/ai_crime_lab/assets/thumbs/ch00.webp"
+   "image": "thumbs/cats/subs/ai-criminology--book-supplement.webp"
   },
   {
    "cat": "인공지능 응용",
@@ -2696,7 +2696,7 @@
     "BI·KPI",
     "15주 강의"
    ],
-   "image": "thumbs/repos/data_science_for_business.jpg"
+   "image": "thumbs/cats/subs/business-accounting--data-science-for-business.webp"
   },
   {
    "cat": "인공지능 응용",
@@ -2708,7 +2708,7 @@
     "재무제표",
     "파이썬"
    ],
-   "image": "thumbs/repos/python-accounting-analytics.jpg"
+   "image": "thumbs/cats/subs/business-accounting--python-accounting-analytics.webp"
   },
   {
    "cat": "인공지능 응용",
@@ -2720,7 +2720,7 @@
     "창업 기획",
     "생성형 AI"
    ],
-   "image": "thumbs/repos/generative-ai-prompt-strategy.jpg"
+   "image": "thumbs/cats/subs/genai-use--genai-strategy.webp"
   },
   {
    "cat": "인공지능 응용",
@@ -2732,7 +2732,7 @@
     "범죄경제학",
     "AI 범죄"
    ],
-   "image": ""
+   "image": "thumbs/cats/subs/external--books.webp"
   },
   {
    "cat": "인공지능 응용",
@@ -2744,7 +2744,7 @@
     "적대적 공격",
     "AI 보안"
    ],
-   "image": "thumbs/repos/my_article_03_drug-slang-detection.jpg"
+   "image": "thumbs/cats/subs/anomaly-security--ai-security.webp"
   },
   {
    "cat": "인공지능 응용",
@@ -2756,7 +2756,7 @@
     "3D 공장",
     "생성형 AI"
    ],
-   "image": "thumbs/repos/smart_product.jpg"
+   "image": "thumbs/cats/subs/manufacturing--smart-manufacturing.webp"
   },
   {
    "cat": "인공지능 응용",
@@ -2768,7 +2768,7 @@
     "설명가능 AI",
     "원가 최적화"
    ],
-   "image": "thumbs/repos/AI_for_cement_produce.jpg"
+   "image": "thumbs/cats/subs/manufacturing--cement-process-ai.webp"
   },
   {
    "cat": "통계·데이터 기초",
@@ -2780,7 +2780,7 @@
     "분포",
     "관계 지도"
    ],
-   "image": "thumbs/repos/data_visualization_lab.jpg"
+   "image": "thumbs/cats/subs/data-visualization--statistics-notes.webp"
   },
   {
    "cat": "통계·데이터 기초",
@@ -2792,7 +2792,7 @@
     "데이터 테이블",
     "실습 교재"
    ],
-   "image": "thumbs/repos/google-sheets-lab.jpg"
+   "image": "thumbs/cats/subs/programming--google-sheets.webp"
   },
   {
    "cat": "통계·데이터 기초",
@@ -2804,7 +2804,7 @@
     "야간 연구실",
     "교육 자료"
    ],
-   "image": "thumbs/R110.jpg"
+   "image": "thumbs/cats/subs/programming--database.webp"
   },
   {
    "cat": "통계·데이터 기초",
@@ -2816,7 +2816,7 @@
     "Colab",
     "데이터 연습"
    ],
-   "image": "thumbs/repos/learn-python-by-doing_Korean.jpg"
+   "image": "thumbs/cats/subs/programming--python-pandas.webp"
   },
   {
    "cat": "통계·데이터 기초",
@@ -2828,7 +2828,7 @@
     "사전·사후 분포",
     "13회차"
    ],
-   "image": "thumbs/repos/bayesian-statistics-for-data-scientists.jpg"
+   "image": "thumbs/cats/subs/probability-statistics--bayesian-statistics.webp"
   },
   {
    "cat": "통계·데이터 기초",
@@ -2840,7 +2840,7 @@
     "ARIMA",
     "LSTM"
    ],
-   "image": "thumbs/repos/timeseries-trilogy.jpg"
+   "image": "thumbs/cats/subs/probability-statistics--time-series.webp"
   },
   {
    "cat": "통계·데이터 기초",
@@ -2852,7 +2852,7 @@
     "신뢰구간",
     "표본평균"
    ],
-   "image": "thumbs/cats/C07-M2.webp"
+   "image": "thumbs/cats/subs/probability-statistics--statistics-notes.webp"
   },
   {
    "cat": "통계·데이터 기초",
@@ -2864,7 +2864,7 @@
     "분포표",
     "3D 지도"
    ],
-   "image": "thumbs/repos/probability_distribution_dictionary.jpg"
+   "image": "thumbs/cats/subs/probability-statistics--probability-distribution-dictionary.webp"
   }
  ]
 }
