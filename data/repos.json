@@ -1763,7 +1763,7 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_lab_gallery",
   "pages_url": "https://adminmrobo.github.io/ahnboat_lab_gallery/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T04:40:18Z",
+  "pushed_at": "2026-11-27T05:09:54Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -1902,7 +1902,7 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_ontology_feed",
   "pages_url": "https://adminmrobo.github.io/ahnboat_ontology_feed/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T04:37:21Z",
+  "pushed_at": "2026-11-27T05:06:55Z",
   "has_manifest": false,
   "covers": [
    {
@@ -19157,7 +19157,7 @@
   "repo_url": "https://github.com/adminmrobo/llm_applied_lab",
   "pages_url": "https://adminmrobo.github.io/llm_applied_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-21T02:21:16Z",
+  "pushed_at": "2026-11-27T05:15:05Z",
   "has_manifest": true,
   "covers": [
    {
@@ -19261,25 +19261,202 @@
     ],
     "robot": "jupanbot-v2",
     "status": "ok"
+   },
+   {
+    "path": "assets/img/cover_A2.webp",
+    "role": "cover",
+    "id": "cover_A2",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
+   },
+   {
+    "path": "assets/img/thumb_A2.webp",
+    "role": "thumb",
+    "id": "thumb_A2",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
+   },
+   {
+    "path": "assets/img/og_A2.jpg",
+    "role": "og",
+    "id": "og_A2",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
+   },
+   {
+    "path": "assets/img/cover_A3.webp",
+    "role": "cover",
+    "id": "cover_A3",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
+   },
+   {
+    "path": "assets/img/thumb_A3.webp",
+    "role": "thumb",
+    "id": "thumb_A3",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
+   },
+   {
+    "path": "assets/img/og_A3.jpg",
+    "role": "og",
+    "id": "og_A3",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
+   },
+   {
+    "path": "assets/img/cover_A4.webp",
+    "role": "cover",
+    "id": "cover_A4",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
+   },
+   {
+    "path": "assets/img/thumb_A4.webp",
+    "role": "thumb",
+    "id": "thumb_A4",
+    "size": [
+     600,
+     400
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
+   },
+   {
+    "path": "assets/img/og_A4.jpg",
+    "role": "og",
+    "id": "og_A4",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "redraw"
    }
   ],
   "redraw_count": 0,
   "redraw_ids": [],
   "thumb": "thumbs/repos/llm_applied_lab.jpg",
-  "site_desc": null,
+  "site_desc": "RAG, 미세조정, 평가, 에이전트를 직접 눌러 보며 배우는 연구실 해설 응용편 네 편.",
   "status": "ok",
   "checked_at": "2026-11-27",
-  "site_title": "RAG 연구실 — 사서가 찾아온 문장으로 LLM이 답한다",
+  "site_title": "LLM 공식에서 GPT-6까지 · 응용편",
   "ontology": {
-   "status": "full",
-   "pages_with_kg": 1,
-   "pages_total": 1,
-   "pages_checked": 1,
+   "status": "partial",
+   "pages_with_kg": 4,
+   "pages_total": 5,
+   "pages_checked": 5,
    "kg_links": [
-    "https://adminmrobo.github.io/llm_applied_lab/A1_rag_lab.html#kg"
+    "https://adminmrobo.github.io/llm_applied_lab/A1_rag_lab.html#kg",
+    "https://adminmrobo.github.io/llm_applied_lab/A2_finetune_lab.html#kg",
+    "https://adminmrobo.github.io/llm_applied_lab/A3_eval_lab.html#kg",
+    "https://adminmrobo.github.io/llm_applied_lab/A4_agent_lab.html#kg"
    ],
    "export_links": [
-    "https://adminmrobo.github.io/llm_applied_lab/A1_rag_lab.html#export"
+    "https://adminmrobo.github.io/llm_applied_lab/A1_rag_lab.html#export",
+    "https://adminmrobo.github.io/llm_applied_lab/A2_finetune_lab.html#export",
+    "https://adminmrobo.github.io/llm_applied_lab/A3_eval_lab.html#export",
+    "https://adminmrobo.github.io/llm_applied_lab/A4_agent_lab.html#export"
    ],
    "files": [
     {
@@ -19289,6 +19466,18 @@
     {
      "path": "kg/kg_A1.json",
      "url": "https://github.com/adminmrobo/llm_applied_lab/blob/main/kg/kg_A1.json"
+    },
+    {
+     "path": "kg/kg_A2.json",
+     "url": "https://github.com/adminmrobo/llm_applied_lab/blob/main/kg/kg_A2.json"
+    },
+    {
+     "path": "kg/kg_A3.json",
+     "url": "https://github.com/adminmrobo/llm_applied_lab/blob/main/kg/kg_A3.json"
+    },
+    {
+     "path": "kg/kg_A4.json",
+     "url": "https://github.com/adminmrobo/llm_applied_lab/blob/main/kg/kg_A4.json"
     }
    ]
   },
@@ -19298,13 +19487,13 @@
    ],
    "count": 1,
    "pages": {
-    "ko": 1
+    "ko": 5
    },
    "partial": [],
    "complete": true,
    "readme_langs": [],
    "links": {
-    "ko": "https://adminmrobo.github.io/llm_applied_lab/A1_rag_lab.html"
+    "ko": "https://adminmrobo.github.io/llm_applied_lab/index.html"
    }
   },
   "languages": {
@@ -19314,7 +19503,7 @@
    "count": 1,
    "complete": true,
    "pages_by_lang": {
-    "ko": 1
+    "ko": 5
    }
   },
   "has_pages": true
@@ -22384,7 +22573,7 @@
   "repo_url": "https://github.com/adminmrobo/moving_factory_dashboard",
   "pages_url": "https://adminmrobo.github.io/moving_factory_dashboard/",
   "default_branch": "main",
-  "pushed_at": "2026-11-18T19:10:32Z",
+  "pushed_at": "2026-11-27T05:07:45Z",
   "has_manifest": true,
   "covers": [
    {
@@ -26075,7 +26264,7 @@
   "repo_url": "https://github.com/adminmrobo/python_machine_learning_lab",
   "pages_url": "https://adminmrobo.github.io/python_machine_learning_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-26T15:10:02Z",
+  "pushed_at": "2026-11-27T05:09:10Z",
   "has_manifest": false,
   "covers": [
    {
