@@ -20,7 +20,7 @@
  },
  "ahn_boat_lab_town": {
   "src": "redraw:R019:assets/cut1_panic.webp",
-  "pushed_at": "2026-11-26T14:03:10Z",
+  "pushed_at": "2026-11-27T10:04:32Z",
   "made": "2026-11-27"
  },
  "ahnboat_lab_character_add_packs": {
@@ -33,7 +33,7 @@
  },
  "ahnboat_lab_gallery": {
   "src": null,
-  "pushed_at": "2026-11-27T05:23:44Z"
+  "pushed_at": "2026-11-27T10:10:27Z"
  },
  "ahnboat_lab_langpack": {
   "src": null,
@@ -45,7 +45,7 @@
  },
  "ahnboat_ontology_feed": {
   "src": "name:assets/cover.png",
-  "pushed_at": "2026-11-27T05:31:26Z",
+  "pushed_at": "2026-11-27T06:23:32Z",
   "made": "2026-11-27"
  },
  "ahnboat_server_room_guards": {
@@ -293,7 +293,7 @@
  },
  "drawing_lab_06": {
   "src": "name:assets/img/cover_01.webp",
-  "pushed_at": "2026-11-26T18:11:01Z",
+  "pushed_at": "2026-11-27T07:59:19Z",
   "made": "2026-11-27"
  },
  "drawing_lab_fun": {
@@ -350,8 +350,8 @@
  },
  "fruitfly-lab-expressions": {
   "src": "name:images/scenes/optimization_first_step/fs_cover_01.webp",
-  "pushed_at": "2026-11-23T07:31:06Z",
-  "made": "2026-11-23"
+  "pushed_at": "2026-11-27T09:30:40Z",
+  "made": "2026-11-27"
  },
  "g2b-bid-strategy": {
   "src": null,
@@ -543,6 +543,11 @@
   "src": "redraw:R073:docs/assets/hero/hero.jpg",
   "pushed_at": "2026-11-24T14:17:19Z",
   "made": "2026-11-25"
+ },
+ "likelihood_vs_probability": {
+  "src": "file:c5d_1280.png",
+  "pushed_at": "2026-11-27T09:10:34Z",
+  "made": "2026-11-27"
  },
  "llm_applied_lab": {
   "src": "manifest:assets/img/cover_A1.webp",

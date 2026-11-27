@@ -1555,7 +1555,7 @@
   "repo_url": "https://github.com/adminmrobo/ahn_boat_lab_town",
   "pages_url": "https://adminmrobo.github.io/ahn_boat_lab_town/",
   "default_branch": "main",
-  "pushed_at": "2026-11-26T14:03:10Z",
+  "pushed_at": "2026-11-27T10:04:32Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 3,
@@ -1763,7 +1763,7 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_lab_gallery",
   "pages_url": "https://adminmrobo.github.io/ahnboat_lab_gallery/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T05:23:44Z",
+  "pushed_at": "2026-11-27T10:10:27Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -1902,7 +1902,7 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_ontology_feed",
   "pages_url": "https://adminmrobo.github.io/ahnboat_ontology_feed/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T05:31:26Z",
+  "pushed_at": "2026-11-27T06:23:32Z",
   "has_manifest": false,
   "covers": [
    {
@@ -12744,7 +12744,7 @@
   "repo_url": "https://github.com/adminmrobo/drawing_lab_06",
   "pages_url": "https://adminmrobo.github.io/drawing_lab_06/",
   "default_branch": "main",
-  "pushed_at": "2026-11-26T18:11:01Z",
+  "pushed_at": "2026-11-27T07:59:19Z",
   "has_manifest": true,
   "covers": [],
   "redraw_count": 0,
@@ -14228,7 +14228,7 @@
   "repo_url": "https://github.com/adminmrobo/fruitfly-lab-expressions",
   "pages_url": "https://adminmrobo.github.io/fruitfly-lab-expressions/",
   "default_branch": "main",
-  "pushed_at": "2026-11-23T07:31:06Z",
+  "pushed_at": "2026-11-27T09:30:40Z",
   "has_manifest": false,
   "covers": [
    {
@@ -14272,8 +14272,8 @@
   "ontology": {
    "status": "none",
    "pages_with_kg": 0,
-   "pages_total": 8,
-   "pages_checked": 8,
+   "pages_total": 9,
+   "pages_checked": 9,
    "kg_links": [],
    "export_links": [],
    "files": []
@@ -14284,7 +14284,7 @@
    ],
    "count": 1,
    "pages": {
-    "ko": 8
+    "ko": 9
    },
    "partial": [],
    "complete": true,
@@ -14300,7 +14300,7 @@
    "count": 1,
    "complete": true,
    "pages_by_lang": {
-    "ko": 8
+    "ko": 9
    }
   },
   "has_pages": true
@@ -19149,6 +19149,132 @@
    }
   },
   "has_pages": true
+ },
+ {
+  "repo": "likelihood_vs_probability",
+  "series_ko": "고급통계 연구실 · 확률 vs 가능도",
+  "title_ko": "확률 vs 가능도(우도) — 초파리의 케이크 상자 | 고급통계 연구실",
+  "repo_url": "https://github.com/adminmrobo/likelihood_vs_probability",
+  "pages_url": "https://adminmrobo.github.io/likelihood_vs_probability/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-27T09:10:34Z",
+  "has_manifest": true,
+  "covers": [
+   {
+    "path": "assets/img/cover_01.webp",
+    "role": "cover",
+    "id": "cover_01",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "pending"
+   },
+   {
+    "path": "assets/img/og_01.jpg",
+    "role": "og",
+    "id": "og_01",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "pending"
+   },
+   {
+    "path": "assets/img/cover_01b.webp",
+    "role": "cover",
+    "id": "cover_01b",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "pending"
+   }
+  ],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": "thumbs/repos/likelihood_vs_probability.jpg",
+  "site_desc": "같은 숫자 표를 가로로 읽으면 확률, 세로로 읽으면 가능도(우도). 케이크 상자와 야근 판결로 따라가는 통계 입문 연구실 해설.",
+  "status": "ok",
+  "checked_at": "2026-11-27",
+  "site_title": "확률 vs 가능도(우도) — 초파리의 케이크 상자",
+  "ontology": {
+   "status": "full",
+   "pages_with_kg": 2,
+   "pages_total": 2,
+   "pages_checked": 2,
+   "kg_links": [
+    "https://adminmrobo.github.io/likelihood_vs_probability/court.html#kg",
+    "https://adminmrobo.github.io/likelihood_vs_probability/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/likelihood_vs_probability/court.html#export",
+    "https://adminmrobo.github.io/likelihood_vs_probability/index.html#export"
+   ],
+   "files": [
+    {
+     "path": "kg/court/kg.json",
+     "url": "https://github.com/adminmrobo/likelihood_vs_probability/blob/main/kg/court/kg.json"
+    },
+    {
+     "path": "kg/kg.json",
+     "url": "https://github.com/adminmrobo/likelihood_vs_probability/blob/main/kg/kg.json"
+    }
+   ]
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 2
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/likelihood_vs_probability/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 2
+   }
+  },
+  "has_pages": false
  },
  {
   "repo": "llm_applied_lab",
