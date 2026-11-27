@@ -414,7 +414,19 @@ def main():
     series_cards.apply(catalog["items"])
     # 소분류 카드(hub_meta.json subs): 카탈로그 3단계에서 소분류 묶음 머리에 소개·색인어·그림으로 보인다
     used_sub = {(i.get("cat"), i.get("mid") or "기타", i.get("sub") or "기타") for i in catalog["items"]}
-    catalog["subs"] = [_img(x) for x in meta.get("subs", []) if (x.get("cat"), x.get("mid"), x.get("name")) in used_sub]
+    # 공통 소분류 카드: cat·mid를 "*"로 적으면 그 이름의 소분류가 쓰이는 모든 대분류·중분류에 같은 카드가 붙는다
+    # (예: '실습 및 해설'). 같은 자리에 따로 적은 카드가 있으면 그쪽이 먼저다.
+    exact = [x for x in meta.get("subs", []) if x.get("cat") != "*" and x.get("mid") != "*"]
+    have = {(x.get("cat"), x.get("mid"), x.get("name")) for x in exact}
+    common = []
+    for x in meta.get("subs", []):
+        if x.get("cat") != "*" and x.get("mid") != "*":
+            continue
+        for (c_, m_, s_) in sorted(used_sub):
+            if s_ == x.get("name") and x.get("cat") in ("*", c_) and x.get("mid") in ("*", m_) and (c_, m_, s_) not in have:
+                common.append(dict(x, cat=c_, mid=m_))
+                have.add((c_, m_, s_))
+    catalog["subs"] = [_img(x) for x in exact + common if (x.get("cat"), x.get("mid"), x.get("name")) in used_sub]
     with open(os.path.join(DATA, "catalog.json"), "w", encoding="utf-8") as f:
         json.dump(catalog, f, ensure_ascii=False, indent=1)
 

@@ -1964,6 +1964,19 @@
     "정규화"
    ],
    "image": "thumbs/cats/subs/database-design.webp"
+  },
+  {
+   "cat": "*",
+   "mid": "*",
+   "name": "실습 및 해설",
+   "desc": "직접 해 보며 배우는 연구실 해설 묶음입니다. 연구실 식구들과 함께 실험대 위에서 개념을 하나씩 손으로 확인합니다.",
+   "keywords": [
+    "실습",
+    "연구실 해설",
+    "따라 하기"
+   ],
+   "image": "thumbs/cats/subs/practice-and-explanation.webp",
+   "_note": "공통 카드 — cat·mid가 \"*\"이면 '실습 및 해설'이 쓰이는 모든 대분류·중분류에 붙는다(build_hub.py). 그림 지시문: docs/genspark/practice-and-explanation/"
   }
  ]
 }

@@ -1,0 +1,31 @@
+[사용법] 참고 그림 4장(GitHub adminmrobo/fruitfly-lab-expressions 의 images/doctor/E13_neutral.png, images/haru/E13_neutral.png, images/fruitfly/E13_neutral.png, images/jupanbot/E13_neutral.png (주판봇은 v2 베이지 CRT판))을 Genspark에 함께 올리고, 아래 줄 전체를 그대로 붙여 넣으세요.
+
+연구실 사이트의 소분류 카드 그림 1장을 만들어 줘.
+- 비율 16:9 (받은 뒤 800×450으로 줄임)
+- 그림체는 반드시 16비트 RPG 픽셀아트 (네모 픽셀이 보이게, 매끈한 일러스트·벡터·수채화·3D 금지)
+- 첨부한 참고 이미지의 캐릭터를 같은 외형·같은 방향으로 (좌우 반전 금지)
+- 밝은 낮의 연구실, 흰 벽과 햇빛 (밤·어둠·네온 금지)
+- 그림 안에 글자·숫자·말풍선·로고 금지 (참고 그림의 이름표가 따라 들어오지 않게)
+- 특정 분야(LLM·딥러닝·통계·데이터베이스 등) 하나에 치우치지 않는, 모든 실습 묶음에 공통으로 쓰는 그림
+아래 영어 프롬프트를 그대로 써 줘.
+
+Category card illustration, wide 16:9.
+Art style (required, always): detailed 16-bit SNES-era RPG pixel art, crisp visible square pixels, limited palette, bold dark outline (#1d1a22), 2-3 tone shading, small highlights; no smooth gradients, no vector, no anime cel painting, no watercolor, no 3D render.
+Match the attached reference images exactly in proportions, colors and pixel density.
+Scene: a bright daytime lab workshop, white walls, big window with sunlight, small lavender, mint and pink props. One long light-wood workbench across the middle holds a general hands-on practice set that fits any subject: an open notebook with blank pages and a pencil, a small terminal screen showing only abstract colored blocks, a tray of small colored square tiles being arranged into a simple bar shape, a stack of blank paper cards, a tiny graph made of pins and string, and a small toolbox. Everything is in the middle of being tried out - learning by doing.
+Characters:
+  chibi scientist, thin teal rectangular glasses, spiky black hair with one white streak, small ponytail at the back, white lab coat over black vest and tie, standing behind the bench explaining with an open palm;
+  girl researcher, long pink hair with two round buns and a navy streak, blue eyes, white lab coat over lavender hoodie, jeans, arranging the colored tiles with both hands;
+  anthropomorphic fruit fly researcher, black body, big red compound eyes, blue helmet with a gold stripe and pink and blue cables, white lab coat over a black vest, black gloves, transparent wings, on the left facing right, checking a blank paper card with a magnifying glass, curious;
+  boxy beige retro CRT-monitor robot, dark green screen face with mint pixel eyes and mouth, short antenna topped with a red-brown abacus bead, gray segmented arms, two small tank treads, on the right facing left, sliding beads on a wooden abacus, happy.
+Height ratio: doctor 1.00, girl 0.90, robot 0.72, fruit fly 0.41.
+Mood: busy, friendly, learning by doing.
+Composition: subjects in the center, generous empty margins on all sides (the card is shown small and may be cropped), simple bright background.
+No text, no letters, no numbers, no logos, no weapons, no cigarettes, no alcohol, no blood, no real brands.
+
+[고칠 때 · 같은 대화에서]
+Same characters, same 16-bit pixel art style and composition. Change only: {고칠 점}. Still no text.
+
+[받은 뒤]
+저장 이름: practice-and-explanation.png
+800×450 WebP로 줄여 이 저장소 thumbs/cats/subs/practice-and-explanation.webp 로 넣습니다.
