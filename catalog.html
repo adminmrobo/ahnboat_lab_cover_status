@@ -425,7 +425,8 @@ footer{color:var(--muted);font-size:12.5px;padding-block:0 32px}
     else postRoute(st,NAVQ);
     NAVQ=false;
   }
-  function post(nav){if(window.parent!==window){try{var h=Math.ceil(document.body.getBoundingClientRect().height);window.parent.postMessage({type:'ahnboat-catalog-height',height:h,nav:!!nav},'*');}catch(e){}}}
+  /* nav는 화면을 직접 바꿀 때만 true. 그림 load·resize 이벤트 객체가 들어와도 nav로 치지 않는다(스크롤 되돌림 방지) */
+  function post(nav){if(window.parent!==window){try{var h=Math.ceil(document.body.getBoundingClientRect().height);window.parent.postMessage({type:'ahnboat-catalog-height',height:h,nav:nav===true},'*');}catch(e){}}}
   window.addEventListener('hashchange',function(){NAVQ=true;render();});
   /* ── 공유 주소(라우트) ── */
   function slugify(s){return String(s).trim().replace(/\s+/g,'-');}
