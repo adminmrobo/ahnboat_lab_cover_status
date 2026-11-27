@@ -1988,7 +1988,7 @@
     "CNN",
     "설계도면"
    ],
-   "image": "thumbs/repos/deep_learning_model_design_lab_01.jpg"
+   "image": "thumbs/cats/subs/deep-learning-hands-on.webp"
   },
   {
    "cat": "LLM·추론 엔지니어링",
@@ -2000,7 +2000,7 @@
     "NLP 지도",
     "서머리 노트"
    ],
-   "image": "thumbs/repos/LLM_summary_note.jpg"
+   "image": "thumbs/cats/subs/llm-hands-on.webp"
   },
   {
    "cat": "경제·수학·최적화",
@@ -2012,7 +2012,7 @@
     "모멘텀",
     "Adam"
    ],
-   "image": "thumbs/repos/optimization_test_lab.jpg"
+   "image": "thumbs/cats/subs/optimization-hands-on.webp"
   },
   {
    "cat": "통계·데이터 기초",
@@ -2024,7 +2024,7 @@
     "대시보드",
     "차트 고르기"
    ],
-   "image": "thumbs/repos/moving_factory_dashboard.jpg"
+   "image": "thumbs/cats/subs/data-visualization-hands-on.webp"
   },
   {
    "cat": "통계·데이터 기초",
@@ -2036,7 +2036,7 @@
     "SQL",
     "정규화"
    ],
-   "image": "thumbs/repos/data_base_design.jpg"
+   "image": "thumbs/cats/subs/database-hands-on.webp"
   },
   {
    "cat": "통계·데이터 기초",
@@ -2048,7 +2048,7 @@
     "장부 데이터",
     "Colab"
    ],
-   "image": "thumbs/repos/learn-pandas-visually_korean.jpg"
+   "image": "thumbs/cats/subs/programming-hands-on.webp"
   },
   {
    "cat": "통계·데이터 기초",
@@ -2060,7 +2060,7 @@
     "가설검정",
     "확률해석"
    ],
-   "image": "thumbs/repos/what_is_p_value_lab.jpg"
+   "image": "thumbs/cats/subs/statistics-hands-on.webp"
   }
  ]
 }
