@@ -218,7 +218,7 @@ h1{margin:0;font-size:clamp(1.8rem,3.6vw,2.8rem);line-height:1.1}
     document.title=T('분야별 온톨로지 지도')+' · Reon Ahn\'s page';
     $('ttl').textContent=T('분야별 온톨로지 지도');
     $('lede').textContent=T('연구실 해설 페이지마다 달린 지식 색인을 한데 모아, 분야 → 콘텐츠 → 개념으로 이어지는 3D 지도로 그렸습니다. 끌어서 돌리고, 굴려서 확대하고, 점을 누르면 그 개념이 나오는 페이지로 갈 수 있습니다.');
-    $('q').placeholder=T('개념 찾기 (예: 과적합, 역전파)');$('q').setAttribute('aria-label',T('개념 찾기'));
+    $('q').placeholder=T('개념·콘텐츠 찾기 (예: 과적합, 자연어 분석)');$('q').setAttribute('aria-label',T('개념·콘텐츠 찾기'));
     $('reset').textContent='⟲ '+T('처음 시점');
     $('spin').textContent=(spin?'⏸ ':'▶ ')+T('자동 회전');
     $('hint').textContent=T('끌기: 돌리기 · 휠/두 손가락: 확대 · 점 누르기: 자세히');
@@ -476,7 +476,16 @@ h1{margin:0;font-size:clamp(1.8rem,3.6vw,2.8rem);line-height:1.1}
       b.addEventListener('click',function(){sug.classList.remove('on');qi.value=nm(n);
         if(cur.field&&n.c.indexOf(cur.field)<0||cur.mode==='shared'&&n.c.length<2){cur.field=null;cur.mode='all';statics();build();setTimeout(function(){select('c:'+n.id);},2400);}else select('c:'+n.id);});
       sug.appendChild(el('li')).appendChild(b);});
-    if(!r.length&&qi.value.trim())sug.appendChild(el('li','',T('찾는 개념이 없습니다.'))).style.padding='6px 8px';
+    /* 콘텐츠(해설 시리즈) 이름·페이지 제목·저장소 이름으로도 찾는다 */
+    var q=norm(qi.value),seen={},pr=[];
+    if(q)D.pages.forEach(function(p){if(pr.length>=5||seen[p.content])return;
+      var hit=[p.content,p.title,p.repo,p.url].some(function(x){return x&&norm(x).indexOf(q)>=0;});
+      if(hit){seen[p.content]=1;pr.push(p);}});
+    pr.forEach(function(p){var b=el('button');b.type='button';var d=el('span','dot');d.style.background=lighten(COLOR[p.cat]||'#888',.35);b.appendChild(d);
+      b.appendChild(el('span','',T(p.content)));b.appendChild(el('small','',T('콘텐츠')+' · '+CN(p.cat)));
+      b.addEventListener('click',function(){sug.classList.remove('on');qi.value=T(p.content);select('p:'+p.id);});
+      sug.appendChild(el('li')).appendChild(b);});
+    if(!r.length&&!pr.length&&qi.value.trim())sug.appendChild(el('li','',T('찾는 개념이나 콘텐츠가 없습니다.'))).style.padding='6px 8px';
     sug.classList.toggle('on',!!qi.value.trim());});
   qi.addEventListener('keydown',function(e){if(e.key==='Enter'){var f=sug.querySelector('button');if(f)f.click();}if(e.key==='Escape')sug.classList.remove('on');});
   document.addEventListener('click',function(e){if(!e.target.closest('.find'))sug.classList.remove('on');});
