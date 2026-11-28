@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-28",
+ "updated": "2026-11-29",
  "categories": [
   {
    "name": "머신러닝",
@@ -847,6 +847,15 @@
     "학습률"
    ],
    "image": "thumbs/cats/C05-O7.webp"
+  },
+  {
+   "cat": "머신러닝",
+   "name": "로봇·강화학습",
+   "id": "",
+   "desc": "",
+   "keywords": [],
+   "image": "thumbs/repos/haru_3d_reinforcement_learning_01_lab.jpg",
+   "auto": true
   }
  ],
  "hero": {
@@ -1003,6 +1012,21 @@
    "thumb": "thumbs/repos/ML_00_Algorithm-family-build_03.jpg"
   },
   {
+   "title": "하루의 실험실 EP.10 : 정답 대신 꿀 한 방울 — 강화학습 다섯 장면",
+   "summary": "초파리가 7×7×7 좌표 격자를 날며 정답 없이 보상(꿀 +1, 거미줄 −1)만으로 길을 배우는 강화학습을, 조수 하루가 주판봇의 Q표·가치 색 구름·화살표 밭·두 가지 만약(작은 꿀과 호기심 초파리)으로 3D로 보여 줍니다.",
+   "cat": "머신러닝",
+   "mid": "로봇·강화학습",
+   "sub": "좌표 공간(space)",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/haru_3d_reinforcement_learning_01_lab",
+   "site_url": "https://adminmrobo.github.io/haru_3d_reinforcement_learning_01_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/haru_3d_reinforcement_learning_01_lab.jpg"
+  },
+  {
    "title": "거리로 가르는 분류 대회 — LDA·KNN·SVM·SVC·커널 · 거리로 가르는 분류 대회",
    "summary": "벡터와 행렬을 처음 배우는 분을 위한 분류 모델 해설 시리즈. 운동장 지도 위에서 초파리 팀과 주판봇 팀이 LDA, KNN, SVM·SVC, 커널로 겨룹니다.",
    "cat": "머신러닝",
@@ -1093,6 +1117,36 @@
     "ko"
    ],
    "thumb": "thumbs/repos/haru_3d_optimization_01.jpg"
+  },
+  {
+   "title": "하루의 실험실 EP.12 : 생선 가게 영점 잡기 — 학습률 · 배치 · 에포크와 앙상블",
+   "summary": "조수 하루가 생선 가게 물고기 158마리를 길이·높이·두께 세 축에 찍고, 박사·초파리·주판봇과 함께 봉인된 시험지, 손실 그릇과 경사하강법, 학습률·배치·에포크, 규제 손잡이 C, 앙상블을 직접 다시 돌려 봅니다.",
+   "cat": "머신러닝",
+   "mid": "머신러닝 모델",
+   "sub": "좌표 공간(space)",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/haru_3d_fish_market_tuning_01_lab",
+   "site_url": "https://adminmrobo.github.io/haru_3d_fish_market_tuning_01_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/cats/C01-M3.webp"
+  },
+  {
+   "title": "하루의 실험실 EP.09 : 가격표가 사라진 하숙집 — 비지도학습 다섯 장면",
+   "summary": "가격표(정답)가 사라진 하숙집 400채를 3차원 좌표에 찍고, 조수 하루가 초파리·주판봇과 함께 K-means·와드 묶음 나무·DBSCAN·가우시안 혼합·고립 숲·PCA로 점들이 스스로 무리를 찾는 비지도학습을 3D로 보여 줍니다.",
+   "cat": "머신러닝",
+   "mid": "머신러닝 모델",
+   "sub": "좌표 공간(space)",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/haru_3d_unsupervised_learning_01_lab",
+   "site_url": "https://adminmrobo.github.io/haru_3d_unsupervised_learning_01_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/haru_3d_unsupervised_learning_01_lab.jpg"
   },
   {
    "title": "Fish Market Data로 쉽게 따라하는 머신러닝",
@@ -1437,6 +1491,21 @@
     "ko"
    ],
    "thumb": "thumbs/cats/C02-M2.webp"
+  },
+  {
+   "title": "하루의 실험실 EP.11 : 틀리면서 배우는 주판봇 — 퍼셉트론 · 비용 · 정규화",
+   "summary": "조수 하루가 가상 메일 660통을 (링크, 글자 수, 느낌표) 3차원 공간에 찍고, 주판봇·초파리·박사와 함께 퍼셉트론, 활성화 함수, 비용과 경사하강법, 정규화를 직접 계산한 숫자로 보여 주는 실험 페이지",
+   "cat": "딥러닝·뇌과학",
+   "mid": "딥러닝 모델",
+   "sub": "좌표 공간(space)",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/haru_3d_neural_net_learns_01_lab",
+   "site_url": "https://adminmrobo.github.io/haru_3d_neural_net_learns_01_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/haru_3d_neural_net_learns_01_lab.jpg"
   },
   {
    "title": "텐서 연구실",
@@ -2175,6 +2244,36 @@
     "ko"
    ],
    "thumb": "https://adminmrobo.github.io/inference_engineering_study/week_05_article_01/thumb.jpg"
+  },
+  {
+   "title": "5장 전반 · 튜닝 공방 ①",
+   "summary": "이 편을 읽으면 숫자를 작게 담는 양자화로 무엇을 얻고 무엇을 조심할지, 작은 모델이 초안을 쓰고 큰 모델이 검수하는 추측 디코딩이 언제 빨라지는지 설명할 수 있습니다.",
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "추론 엔지니어링 스터디",
+   "sub": "5장 · 최적화 기법",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study/tree/main/week_06_textbook_ch05_01",
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study/week_06_textbook_ch05_01/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "https://adminmrobo.github.io/inference_engineering_study/week_06_textbook_ch05_01/thumb.jpg"
+  },
+  {
+   "title": "5장 논문 · 한 번에 쓰는 초안 (DFlash)",
+   "summary": "이 편을 읽으면 추측 디코딩의 초안을 빈자리 채우기(디퓨전)로 한 번에 쓰고, 큰 모델의 속 메모를 건네 품질 손해 없이 최대 6배 남짓 빨라지는 원리와 그 조건을 설명할 수 있습니다.",
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "추론 엔지니어링 스터디",
+   "sub": "5장 · 최적화 기법",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study/tree/main/week_06_article_01",
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study/week_06_article_01/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "https://adminmrobo.github.io/inference_engineering_study/week_06_article_01/thumb.jpg"
   },
   {
    "title": "2장 후반 발표 · 병목을 찾아라",

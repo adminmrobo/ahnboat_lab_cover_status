@@ -12,6 +12,7 @@
 "confidence": "mid",
 "pages": [
 "inference_engineering_study/01_transformer.html",
+"inference_engineering_study/index.html",
 "inference_engineering_study/index.html"
 ]
 },
@@ -900,6 +901,8 @@
 "auto": true,
 "confidence": "mid",
 "pages": [
+"inference_engineering_study/index.html",
+"inference_engineering_study/index.html",
 "inference_engineering_study/index.html"
 ]
 },

@@ -201,6 +201,34 @@
    "site_url": "https://adminmrobo.github.io/inference_engineering_study/week_05_article_01/",
    "repo_url": "https://github.com/adminmrobo/inference_engineering_study/tree/main/week_05_article_01",
    "thumb": "https://adminmrobo.github.io/inference_engineering_study/week_05_article_01/thumb.jpg"
+  },
+  {
+   "folder": "week_06_textbook_ch05_01",
+   "kind": "textbook",
+   "chap": "5장",
+   "order": 13,
+   "title": "5장 전반 · 튜닝 공방 ①",
+   "summary": "이 편을 읽으면 숫자를 작게 담는 양자화로 무엇을 얻고 무엇을 조심할지, 작은 모델이 초안을 쓰고 큰 모델이 검수하는 추측 디코딩이 언제 빨라지는지 설명할 수 있습니다.",
+   "langs": [
+    "ko"
+   ],
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study/week_06_textbook_ch05_01/",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study/tree/main/week_06_textbook_ch05_01",
+   "thumb": "https://adminmrobo.github.io/inference_engineering_study/week_06_textbook_ch05_01/thumb.jpg"
+  },
+  {
+   "folder": "week_06_article_01",
+   "kind": "article",
+   "chap": "5장",
+   "order": 14,
+   "title": "5장 논문 · 한 번에 쓰는 초안 (DFlash)",
+   "summary": "이 편을 읽으면 추측 디코딩의 초안을 빈자리 채우기(디퓨전)로 한 번에 쓰고, 큰 모델의 속 메모를 건네 품질 손해 없이 최대 6배 남짓 빨라지는 원리와 그 조건을 설명할 수 있습니다.",
+   "langs": [
+    "ko"
+   ],
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study/week_06_article_01/",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study/tree/main/week_06_article_01",
+   "thumb": "https://adminmrobo.github.io/inference_engineering_study/week_06_article_01/thumb.jpg"
   }
  ],
  "related": [

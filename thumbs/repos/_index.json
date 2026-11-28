@@ -33,7 +33,7 @@
  },
  "ahnboat_lab_gallery": {
   "src": null,
-  "pushed_at": "2026-11-28T02:13:14Z"
+  "pushed_at": "2026-11-28T07:16:22Z"
  },
  "ahnboat_lab_langpack": {
   "src": null,
@@ -45,8 +45,8 @@
  },
  "ahnboat_ontology_feed": {
   "src": "name:assets/cover.png",
-  "pushed_at": "2026-11-28T01:41:40Z",
-  "made": "2026-11-28"
+  "pushed_at": "2026-11-28T07:13:31Z",
+  "made": "2026-11-29"
  },
  "ahnboat_server_room_guards": {
   "src": null,
@@ -474,8 +474,8 @@
  },
  "inference_engineering_study": {
   "src": "manifest:cover_factory.jpg",
-  "pushed_at": "2026-11-23T07:30:43Z",
-  "made": "2026-11-23"
+  "pushed_at": "2026-11-28T09:59:25Z",
+  "made": "2026-11-29"
  },
  "inference_engineering_study_week_01_article_01": {
   "src": "redraw:R037:images/sc_lb_hero.png",
