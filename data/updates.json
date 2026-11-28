@@ -9,6 +9,14 @@
  "log": [
   {
    "date": "2026-11-28",
+   "repo": "adminmrobo-lhopital_lab",
+   "kind": "update",
+   "title": "로피탈 교실 — 0/0의 정체를 밝히는 수업 · 오리엔테이션",
+   "link": "https://adminmrobo.github.io/adminmrobo-lhopital_lab/",
+   "size": 7724527
+  },
+  {
+   "date": "2026-11-28",
    "repo": "pacing_problem_lab",
    "kind": "new",
    "title": "페이싱 문제 연구실 · 기술·사회·정책 세 가지 속도",
@@ -30,6 +38,14 @@
    "title": "LLM 공식에서 GPT-6까지 · 응용편",
    "link": "https://adminmrobo.github.io/llm_applied_lab/",
    "size": 335458
+  },
+  {
+   "date": "2026-11-28",
+   "repo": "ahnboat_ontology_feed",
+   "kind": "update",
+   "title": "내 아이디어 검증하기 — ahnboat lab 온톨로지 피드",
+   "link": "https://adminmrobo.github.io/ahnboat_ontology_feed/",
+   "size": 163948
   },
   {
    "date": "2026-11-28",
@@ -57,19 +73,11 @@
   },
   {
    "date": "2026-11-28",
-   "repo": "ahnboat_ontology_feed",
+   "repo": "ahnboat_lab_gallery",
    "kind": "update",
-   "title": "내 아이디어 검증하기 — ahnboat lab 온톨로지 피드",
-   "link": "https://adminmrobo.github.io/ahnboat_ontology_feed/",
-   "size": 23888
-  },
-  {
-   "date": "2026-11-28",
-   "repo": "adminmrobo-lhopital_lab",
-   "kind": "update",
-   "title": "로피탈 교실 — 0/0의 정체를 밝히는 수업 · 오리엔테이션",
-   "link": "https://adminmrobo.github.io/adminmrobo-lhopital_lab/",
-   "size": 17213
+   "title": "Ahn-boat Lab 식구 갤러리",
+   "link": "https://adminmrobo.github.io/ahnboat_lab_gallery/",
+   "size": 15165
   },
   {
    "date": "2026-11-28",
@@ -1322,8 +1330,8 @@
    "size": 1482138
   },
   "adminmrobo-lhopital_lab": {
-   "pushed_at": "2026-11-27T17:14:27Z",
-   "size": 2399794
+   "pushed_at": "2026-11-27T23:07:59Z",
+   "size": 10107108
   },
   "adminmrobo-structure_first_drawing_lab": {
    "pushed_at": "2026-11-27T03:21:20Z",
@@ -1342,12 +1350,12 @@
    "size": 15624568
   },
   "ahnboat_lab_gallery": {
-   "pushed_at": "2026-11-27T13:42:53Z",
-   "size": 6292533
+   "pushed_at": "2026-11-27T22:50:37Z",
+   "size": 6307698
   },
   "ahnboat_ontology_feed": {
-   "pushed_at": "2026-11-27T17:11:11Z",
-   "size": 30522881
+   "pushed_at": "2026-11-27T22:47:12Z",
+   "size": 30662941
   },
   "ahnboat_server_room_guards": {
    "pushed_at": "2026-11-23T07:30:57Z",

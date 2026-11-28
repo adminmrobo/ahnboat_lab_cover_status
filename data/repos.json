@@ -6,7 +6,7 @@
   "repo_url": "https://github.com/adminmrobo/adminmrobo-lhopital_lab",
   "pages_url": "https://adminmrobo.github.io/adminmrobo-lhopital_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T17:14:27Z",
+  "pushed_at": "2026-11-27T23:07:59Z",
   "has_manifest": true,
   "covers": [
    {
@@ -25,7 +25,7 @@
      "moa",
      "asst"
     ],
-    "status": "substitute"
+    "status": "final"
    },
    {
     "path": "01_limits.html#top",
@@ -41,7 +41,7 @@
      "robo",
      "sia"
     ],
-    "status": "substitute"
+    "status": "final"
    },
    {
     "path": "02_zero_over_zero.html#top",
@@ -57,7 +57,7 @@
      "robo",
      "moa"
     ],
-    "status": "substitute"
+    "status": "final"
    },
    {
     "path": "03_slope_derivative.html#top",
@@ -73,7 +73,7 @@
      "robo",
      "asst"
     ],
-    "status": "substitute"
+    "status": "final"
    },
    {
     "path": "04_tangent_ratio.html#top",
@@ -89,7 +89,7 @@
      "robo",
      "sia"
     ],
-    "status": "substitute"
+    "status": "final"
    },
    {
     "path": "05_lhopital_rule.html#top",
@@ -105,7 +105,7 @@
      "robo",
      "robo"
     ],
-    "status": "substitute"
+    "status": "final"
    },
    {
     "path": "06_repeat_and_stop.html#top",
@@ -121,7 +121,7 @@
      "robo",
      "x2"
     ],
-    "status": "substitute"
+    "status": "final"
    },
    {
     "path": "07_infinity_race.html#top",
@@ -137,7 +137,7 @@
      "robo",
      "x3"
     ],
-    "status": "substitute"
+    "status": "final"
    },
    {
     "path": "08_other_forms.html#top",
@@ -153,7 +153,7 @@
      "robo",
      "moa"
     ],
-    "status": "substitute"
+    "status": "final"
    },
    {
     "path": "09_mistakes_calc.html#top",
@@ -169,7 +169,7 @@
      "robo",
      "fly"
     ],
-    "status": "substitute"
+    "status": "final"
    },
    {
     "path": "10_mistakes_conditions.html#top",
@@ -185,7 +185,7 @@
      "robo",
      "asst"
     ],
-    "status": "substitute"
+    "status": "final"
    },
    {
     "path": "11_history_ai.html#top",
@@ -201,7 +201,7 @@
      "robo",
      "moa"
     ],
-    "status": "substitute"
+    "status": "final"
    },
    {
     "path": "12_final_review.html#top",
@@ -217,7 +217,7 @@
      "robo",
      "doc"
     ],
-    "status": "substitute"
+    "status": "final"
    },
    {
     "path": "practice/index.html#top",
@@ -233,7 +233,145 @@
      "moa",
      "robo"
     ],
-    "status": "substitute"
+    "status": "final"
+   },
+   {
+    "path": "index.html#comic",
+    "role": "scene",
+    "id": "comic_lhopital",
+    "size": [
+     1200,
+     1200
+    ],
+    "characters": [
+     "doc",
+     "robo",
+     "asst",
+     "sia",
+     "moa",
+     "fly"
+    ],
+    "status": "final"
+   },
+   {
+    "path": "#lv1",
+    "role": "scene",
+    "id": "scene_01_lv1",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "final"
+   },
+   {
+    "path": "#lv2",
+    "role": "scene",
+    "id": "scene_02_lv2",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "final"
+   },
+   {
+    "path": "#lv2",
+    "role": "scene",
+    "id": "scene_03_lv2",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "final"
+   },
+   {
+    "path": "#lv2",
+    "role": "scene",
+    "id": "scene_04_lv2",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "final"
+   },
+   {
+    "path": "#lv1",
+    "role": "scene",
+    "id": "scene_05_lv1",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "final"
+   },
+   {
+    "path": "#lv2",
+    "role": "scene",
+    "id": "scene_06_lv2",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "final"
+   },
+   {
+    "path": "#lv2",
+    "role": "scene",
+    "id": "scene_07_lv2",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "final"
+   },
+   {
+    "path": "#lv1",
+    "role": "scene",
+    "id": "scene_08_lv1",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "final"
+   },
+   {
+    "path": "#lv1",
+    "role": "scene",
+    "id": "scene_09_lv1",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "final"
+   },
+   {
+    "path": "#lv1",
+    "role": "scene",
+    "id": "scene_10_lv1",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "final"
+   },
+   {
+    "path": "#lv1",
+    "role": "scene",
+    "id": "scene_11_lv1",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "final"
+   },
+   {
+    "path": "#lv1",
+    "role": "scene",
+    "id": "scene_12_lv1",
+    "size": [
+     1200,
+     800
+    ],
+    "status": "final"
    }
   ],
   "redraw_count": 0,
@@ -322,7 +460,7 @@
    "pages_checked": 14
   },
   "has_pages": true,
-  "size_bytes": 2399794
+  "size_bytes": 10107108
  },
  {
   "repo": "adminmrobo-structure_first_drawing_lab",
@@ -1865,7 +2003,7 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_lab_gallery",
   "pages_url": "https://adminmrobo.github.io/ahnboat_lab_gallery/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T13:42:53Z",
+  "pushed_at": "2026-11-27T22:50:37Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -1919,7 +2057,7 @@
    "pages_checked": 1
   },
   "has_pages": true,
-  "size_bytes": 6292533
+  "size_bytes": 6307698
  },
  {
   "repo": "ahnboat_lab_langpack",
@@ -2034,7 +2172,7 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_ontology_feed",
   "pages_url": "https://adminmrobo.github.io/ahnboat_ontology_feed/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T17:11:11Z",
+  "pushed_at": "2026-11-27T22:47:12Z",
   "has_manifest": false,
   "covers": [
    {
@@ -2147,7 +2285,7 @@
    "pages_checked": 5
   },
   "has_pages": true,
-  "size_bytes": 30522881
+  "size_bytes": 30662941
  },
  {
   "repo": "ahnboat_server_room_guards",
