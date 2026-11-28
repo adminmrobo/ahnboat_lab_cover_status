@@ -104,12 +104,14 @@
     },
     {
       "ep": "EP.10",
-      "title": "정답 대신 꿀 한 방울 — 강화학습",
-      "desc": "초파리가 3차원 격자를 날며 보상만으로 꿀 가는 길을 배워요 (준비 중)",
-      "url": "",
+      "title": "정답 대신 꿀 한 방울 — 강화학습 다섯 장면",
+      "desc": "초파리가 3차원 격자를 날며 정답 없이 보상만으로 꿀 가는 길을 배워요 (지도·비지도에 이은 세 번째)",
+      "url": "https://adminmrobo.github.io/haru_3d_reinforcement_learning_01_lab/",
+      "thumb": "thumbs/haru_lab/ep10.webp",
       "pos": "(10, 0, 22)",
+      "stats": [["35.9 → 18.0", "걸음 · 무작위 → 학습 뒤"], ["0% → 100%", "만약 B · 호기심 초파리"]],
       "date": "2026-11-28",
-      "status": "soon"
+      "status": "open"
     }
   ]
 }
