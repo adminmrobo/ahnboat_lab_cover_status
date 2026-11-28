@@ -11,7 +11,16 @@
       "url": "https://adminmrobo.github.io/Dropout-neural-network-tutorial/",
       "thumb": "thumbs/haru_lab/ep01.webp",
       "pos": "(12, 0, 12)",
-      "stats": [["0.135", "일반"], ["0.045", "드롭아웃"]],
+      "stats": [
+        [
+          "0.135",
+          "일반"
+        ],
+        [
+          "0.045",
+          "드롭아웃"
+        ]
+      ],
       "date": "2026-11-26",
       "status": "open"
     },
@@ -22,7 +31,16 @@
       "url": "https://adminmrobo.github.io/LoRA-fine-tuning-tutorial/",
       "thumb": "thumbs/haru_lab/ep02.webp",
       "pos": "(16, 0, 4)",
-      "stats": [["1,536개", "배운 가중치"], ["91.8%", "뒤집은 숫자"]],
+      "stats": [
+        [
+          "1,536개",
+          "배운 가중치"
+        ],
+        [
+          "91.8%",
+          "뒤집은 숫자"
+        ]
+      ],
       "date": "2026-11-26",
       "status": "open"
     },
@@ -33,7 +51,16 @@
       "url": "https://adminmrobo.github.io/CNN-neural-network-tutorial/",
       "thumb": "thumbs/haru_lab/ep03.webp",
       "pos": "(4, 0, 16)",
-      "stats": [["25.8%", "일반"], ["98.0%", "CNN"]],
+      "stats": [
+        [
+          "25.8%",
+          "일반"
+        ],
+        [
+          "98.0%",
+          "CNN"
+        ]
+      ],
       "date": "2026-11-26",
       "status": "open"
     },
@@ -44,7 +71,16 @@
       "url": "https://adminmrobo.github.io/Distance-metrics-tutorial/",
       "thumb": "thumbs/haru_lab/ep04.webp",
       "pos": "(5, 0, 5)",
-      "stats": [["9.899", "유클리드"], ["16", "맨해튼"]],
+      "stats": [
+        [
+          "9.899",
+          "유클리드"
+        ],
+        [
+          "16",
+          "맨해튼"
+        ]
+      ],
       "date": "2026-11-27",
       "status": "open"
     },
@@ -55,7 +91,16 @@
       "url": "https://adminmrobo.github.io/Tokenization-BPE-tutorial/",
       "thumb": "thumbs/haru_lab/ep05.webp",
       "pos": "(11, 5, 4)",
-      "stats": [["177 → 66", "글자 → 토큰"], ["2.7배", "짧아진 길이"]],
+      "stats": [
+        [
+          "177 → 66",
+          "글자 → 토큰"
+        ],
+        [
+          "2.7배",
+          "짧아진 길이"
+        ]
+      ],
       "date": "2026-11-27",
       "status": "open"
     },
@@ -66,7 +111,16 @@
       "url": "https://adminmrobo.github.io/haru_3d_classic_learning_model_02_lab/",
       "thumb": "thumbs/haru_lab/ep06.webp",
       "pos": "(4, 0, 10)",
-      "stats": [["3 / 80", "서포트 벡터"], ["0.989", "PCA 축 2개"]],
+      "stats": [
+        [
+          "3 / 80",
+          "서포트 벡터"
+        ],
+        [
+          "0.989",
+          "PCA 축 2개"
+        ]
+      ],
       "date": "2026-11-28",
       "status": "open"
     },
@@ -76,7 +130,16 @@
       "desc": "하숙집 400채를 세 축에 찍고, 평면·S자 언덕·나무와 숲으로 집값을 맞혀요",
       "url": "https://adminmrobo.github.io/haru_3d_classic_learning_model_01_lab/",
       "thumb": "thumbs/haru_lab/ep07.webp",
-      "stats": [["0.862", "평면 R²"], ["0.910", "숲 정답률"]],
+      "stats": [
+        [
+          "0.862",
+          "평면 R²"
+        ],
+        [
+          "0.910",
+          "숲 정답률"
+        ]
+      ],
       "date": "2026-11-28",
       "status": "open"
     },
@@ -87,7 +150,16 @@
       "url": "https://adminmrobo.github.io/haru_3d_optimization_01/",
       "thumb": "thumbs/haru_lab/ep08.webp",
       "pos": "(4, 0, 22)",
-      "stats": [["7.211", "기울기 길이"], ["56°", "가장 가파른 방향"]],
+      "stats": [
+        [
+          "7.211",
+          "기울기 길이"
+        ],
+        [
+          "56°",
+          "가장 가파른 방향"
+        ]
+      ],
       "date": "2026-11-28",
       "status": "open"
     },
@@ -98,7 +170,16 @@
       "url": "https://adminmrobo.github.io/haru_3d_unsupervised_learning_01_lab/",
       "thumb": "thumbs/haru_lab/ep09.webp",
       "pos": "(22, 0, 4)",
-      "stats": [["0.649 → 0.996", "숨은 동네와 맞은 정도"], ["8 / 10", "고립 숲이 찾은 외딴 집"]],
+      "stats": [
+        [
+          "0.649 → 0.996",
+          "숨은 동네와 맞은 정도"
+        ],
+        [
+          "8 / 10",
+          "고립 숲이 찾은 외딴 집"
+        ]
+      ],
       "date": "2026-11-28",
       "status": "open"
     },
@@ -109,7 +190,16 @@
       "url": "https://adminmrobo.github.io/haru_3d_reinforcement_learning_01_lab/",
       "thumb": "thumbs/haru_lab/ep10.webp",
       "pos": "(10, 0, 22)",
-      "stats": [["35.9 → 18.0", "걸음 · 무작위 → 학습 뒤"], ["0% → 100%", "만약 B · 호기심 초파리"]],
+      "stats": [
+        [
+          "35.9 → 18.0",
+          "걸음 · 무작위 → 학습 뒤"
+        ],
+        [
+          "0% → 100%",
+          "만약 B · 호기심 초파리"
+        ]
+      ],
       "date": "2026-11-28",
       "status": "open"
     },
@@ -120,8 +210,37 @@
       "url": "https://adminmrobo.github.io/haru_3d_neural_net_learns_01_lab/",
       "thumb": "thumbs/haru_lab/ep11.webp",
       "pos": "(22, 0, 10)",
-      "stats": [["1.000", "쉬운 메일 · 퍼셉트론"], ["0.683 → 0.983", "어려운 메일 · 두 축 → 세 축+표준화"]],
+      "stats": [
+        [
+          "1.000",
+          "쉬운 메일 · 퍼셉트론"
+        ],
+        [
+          "0.683 → 0.983",
+          "어려운 메일 · 두 축 → 세 축+표준화"
+        ]
+      ],
       "date": "2026-11-28",
+      "status": "open"
+    },
+    {
+      "ep": "EP.12",
+      "title": "생선 가게 영점 잡기 — 학습률 · 배치 · 에포크와 앙상블",
+      "desc": "물고기 158마리를 (길이, 높이, 두께) 좌표에 찍고, 시험지를 봉인한 채 판 짜기 · 가중치 · 손잡이 · 결합을 돌려요 (Fish Market 해설 하루 버전)",
+      "url": "https://adminmrobo.github.io/haru_3d_fish_market_tuning_01_lab/",
+      "thumb": "thumbs/haru_lab/ep12.webp",
+      "pos": "(16, 0, 22)",
+      "stats": [
+        [
+          "+4.9%p",
+          "시험지로 고른 k · 부풀림"
+        ],
+        [
+          "+5.6%p · +3.2%p",
+          "C 손잡이 · 나무 하나 → 숲"
+        ]
+      ],
+      "date": "2026-11-29",
       "status": "open"
     }
   ]
