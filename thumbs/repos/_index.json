@@ -20,8 +20,8 @@
  },
  "ahn_boat_lab_town": {
   "src": "redraw:R019:assets/cut1_panic.webp",
-  "pushed_at": "2026-11-28T06:38:39Z",
-  "made": "2026-11-28"
+  "pushed_at": "2026-11-28T15:31:27Z",
+  "made": "2026-11-29"
  },
  "ahnboat_lab_character_add_packs": {
   "src": null,
@@ -33,7 +33,7 @@
  },
  "ahnboat_lab_gallery": {
   "src": null,
-  "pushed_at": "2026-11-28T07:16:22Z"
+  "pushed_at": "2026-11-28T15:06:09Z"
  },
  "ahnboat_lab_langpack": {
   "src": null,
@@ -45,7 +45,7 @@
  },
  "ahnboat_ontology_feed": {
   "src": "name:assets/cover.png",
-  "pushed_at": "2026-11-28T07:13:31Z",
+  "pushed_at": "2026-11-28T15:03:46Z",
   "made": "2026-11-29"
  },
  "ahnboat_server_room_guards": {
@@ -416,13 +416,14 @@
   "made": "2026-11-28"
  },
  "haru_3d_fish_market_tuning_01_lab": {
-  "src": null,
-  "pushed_at": "2026-11-28T06:47:56Z"
+  "src": "name:images/cover.webp",
+  "pushed_at": "2026-11-28T15:29:58Z",
+  "made": "2026-11-29"
  },
  "haru_3d_neural_net_learns_01_lab": {
   "src": "name:images/cover.webp",
-  "pushed_at": "2026-11-28T06:46:38Z",
-  "made": "2026-11-28"
+  "pushed_at": "2026-11-28T15:22:27Z",
+  "made": "2026-11-29"
  },
  "haru_3d_optimization_01": {
   "src": "name:images/cover_part1.webp",
@@ -431,13 +432,13 @@
  },
  "haru_3d_reinforcement_learning_01_lab": {
   "src": "name:images/cover.webp",
-  "pushed_at": "2026-11-28T06:30:25Z",
-  "made": "2026-11-28"
+  "pushed_at": "2026-11-28T15:39:29Z",
+  "made": "2026-11-29"
  },
  "haru_3d_unsupervised_learning_01_lab": {
   "src": "name:images/cover.webp",
-  "pushed_at": "2026-11-28T05:36:44Z",
-  "made": "2026-11-28"
+  "pushed_at": "2026-11-28T15:42:40Z",
+  "made": "2026-11-29"
  },
  "health_stats_lab": {
   "src": "manifest:assets/img/cover_01.webp",

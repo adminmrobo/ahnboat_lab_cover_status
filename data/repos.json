@@ -1766,7 +1766,7 @@
   "repo_url": "https://github.com/adminmrobo/ahn_boat_lab_town",
   "pages_url": "https://adminmrobo.github.io/ahn_boat_lab_town/",
   "default_branch": "main",
-  "pushed_at": "2026-11-28T06:38:39Z",
+  "pushed_at": "2026-11-28T15:31:27Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 3,
@@ -1824,7 +1824,7 @@
    "pages_checked": 2
   },
   "has_pages": true,
-  "size_bytes": 15660585
+  "size_bytes": 15662862
  },
  {
   "repo": "ahnboat_lab_character_add_packs",
@@ -2003,7 +2003,7 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_lab_gallery",
   "pages_url": "https://adminmrobo.github.io/ahnboat_lab_gallery/",
   "default_branch": "main",
-  "pushed_at": "2026-11-28T07:16:22Z",
+  "pushed_at": "2026-11-28T15:06:09Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -2057,7 +2057,7 @@
    "pages_checked": 1
   },
   "has_pages": true,
-  "size_bytes": 6347610
+  "size_bytes": 6347988
  },
  {
   "repo": "ahnboat_lab_langpack",
@@ -2172,7 +2172,7 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_ontology_feed",
   "pages_url": "https://adminmrobo.github.io/ahnboat_ontology_feed/",
   "default_branch": "main",
-  "pushed_at": "2026-11-28T07:13:31Z",
+  "pushed_at": "2026-11-28T15:03:46Z",
   "has_manifest": false,
   "covers": [
    {
@@ -17609,14 +17609,20 @@
   "repo_url": "https://github.com/adminmrobo/haru_3d_fish_market_tuning_01_lab",
   "pages_url": "https://adminmrobo.github.io/haru_3d_fish_market_tuning_01_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-28T06:47:56Z",
+  "pushed_at": "2026-11-28T15:29:58Z",
   "has_manifest": false,
-  "covers": [],
+  "covers": [
+   {
+    "path": "images/cover.webp",
+    "role": "cover",
+    "estimated": true
+   }
+  ],
   "redraw_count": 0,
   "redraw_ids": [],
-  "thumb": null,
+  "thumb": "thumbs/repos/haru_3d_fish_market_tuning_01_lab.jpg",
   "site_desc": "조수 하루가 생선 가게 물고기 158마리를 길이·높이·두께 세 축에 찍고, 박사·초파리·주판봇과 함께 봉인된 시험지, 손실 그릇과 경사하강법, 학습률·배치·에포크, 규제 손잡이 C, 앙상블을 직접 다시 돌려 봅니다.",
-  "status": "unknown",
+  "status": "ok",
   "checked_at": "2026-11-29",
   "site_title": "하루의 실험실 EP.12 : 생선 가게 영점 잡기 — 학습률 · 배치 · 에포크와 앙상블",
   "ontology": {
@@ -17663,7 +17669,7 @@
    "pages_checked": 1
   },
   "has_pages": true,
-  "size_bytes": 704810
+  "size_bytes": 1392262
  },
  {
   "repo": "haru_3d_neural_net_learns_01_lab",
@@ -17672,7 +17678,7 @@
   "repo_url": "https://github.com/adminmrobo/haru_3d_neural_net_learns_01_lab",
   "pages_url": "https://adminmrobo.github.io/haru_3d_neural_net_learns_01_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-28T06:46:38Z",
+  "pushed_at": "2026-11-28T15:22:27Z",
   "has_manifest": false,
   "covers": [
    {
@@ -17732,7 +17738,7 @@
    "pages_checked": 1
   },
   "has_pages": true,
-  "size_bytes": 691046
+  "size_bytes": 1130254
  },
  {
   "repo": "haru_3d_optimization_01",
@@ -17835,7 +17841,7 @@
   "repo_url": "https://github.com/adminmrobo/haru_3d_reinforcement_learning_01_lab",
   "pages_url": "https://adminmrobo.github.io/haru_3d_reinforcement_learning_01_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-28T06:30:25Z",
+  "pushed_at": "2026-11-28T15:39:29Z",
   "has_manifest": false,
   "covers": [
    {
@@ -17900,7 +17906,7 @@
    "pages_checked": 1
   },
   "has_pages": true,
-  "size_bytes": 727700
+  "size_bytes": 3576323
  },
  {
   "repo": "haru_3d_unsupervised_learning_01_lab",
@@ -17909,7 +17915,7 @@
   "repo_url": "https://github.com/adminmrobo/haru_3d_unsupervised_learning_01_lab",
   "pages_url": "https://adminmrobo.github.io/haru_3d_unsupervised_learning_01_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-28T05:36:44Z",
+  "pushed_at": "2026-11-28T15:42:40Z",
   "has_manifest": false,
   "covers": [
    {
@@ -17974,7 +17980,7 @@
    "pages_checked": 1
   },
   "has_pages": true,
-  "size_bytes": 690240
+  "size_bytes": 1058253
  },
  {
   "repo": "health_stats_lab",

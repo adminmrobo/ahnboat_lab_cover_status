@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-29 00:10 KST",
+ "updated": "2026-11-29 01:00 KST",
  "rule": {
   "ok": "가로 1200 px 이상",
   "warn": "가로 960~1199 px",
@@ -8,8 +8,8 @@
  },
  "summary": {
   "ok": 125,
-  "none": 52,
-  "warn": 19,
+  "none": 51,
+  "warn": 20,
   "low": 10
  },
  "repos": {
@@ -58,7 +58,7 @@
    "path": "assets/cut1_panic.webp",
    "w": 1376,
    "h": 768,
-   "pushed_at": "2026-11-28T06:38:39Z",
+   "pushed_at": "2026-11-28T15:31:27Z",
    "declared": 0,
    "declared_low": 0,
    "grade": "ok"
@@ -88,7 +88,7 @@
    "path": null,
    "w": 0,
    "h": 0,
-   "pushed_at": "2026-11-28T07:16:22Z",
+   "pushed_at": "2026-11-28T15:06:09Z",
    "declared": 0,
    "declared_low": 0,
    "grade": "none"
@@ -118,7 +118,7 @@
    "path": "assets/cover.png",
    "w": 1920,
    "h": 1080,
-   "pushed_at": "2026-11-28T07:13:31Z",
+   "pushed_at": "2026-11-28T15:03:46Z",
    "declared": 0,
    "declared_low": 0,
    "grade": "ok"
@@ -894,21 +894,21 @@
    "grade": "warn"
   },
   "haru_3d_fish_market_tuning_01_lab": {
-   "src": null,
-   "path": null,
-   "w": 0,
-   "h": 0,
-   "pushed_at": "2026-11-28T06:47:56Z",
+   "src": "name:images/cover.webp",
+   "path": "images/cover.webp",
+   "w": 960,
+   "h": 540,
+   "pushed_at": "2026-11-28T15:29:58Z",
    "declared": 0,
    "declared_low": 0,
-   "grade": "none"
+   "grade": "warn"
   },
   "haru_3d_neural_net_learns_01_lab": {
    "src": "name:images/cover.webp",
    "path": "images/cover.webp",
    "w": 960,
    "h": 540,
-   "pushed_at": "2026-11-28T06:46:38Z",
+   "pushed_at": "2026-11-28T15:22:27Z",
    "declared": 0,
    "declared_low": 0,
    "grade": "warn"
@@ -928,7 +928,7 @@
    "path": "images/cover.webp",
    "w": 960,
    "h": 540,
-   "pushed_at": "2026-11-28T06:30:25Z",
+   "pushed_at": "2026-11-28T15:39:29Z",
    "declared": 0,
    "declared_low": 0,
    "grade": "warn"
@@ -938,7 +938,7 @@
    "path": "images/cover.webp",
    "w": 960,
    "h": 540,
-   "pushed_at": "2026-11-28T05:36:44Z",
+   "pushed_at": "2026-11-28T15:42:40Z",
    "declared": 0,
    "declared_low": 0,
    "grade": "warn"

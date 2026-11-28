@@ -13,7 +13,7 @@
    "kind": "new",
    "title": "하루의 실험실 EP.10 : 정답 대신 꿀 한 방울 — 강화학습 다섯 장면",
    "link": "https://adminmrobo.github.io/haru_3d_reinforcement_learning_01_lab/",
-   "size": 727700
+   "size": 3576323
   },
   {
    "date": "2026-11-29",
@@ -21,7 +21,7 @@
    "kind": "new",
    "title": "하루의 실험실 EP.12 : 생선 가게 영점 잡기 — 학습률 · 배치 · 에포크와 앙상블",
    "link": "https://adminmrobo.github.io/haru_3d_fish_market_tuning_01_lab/",
-   "size": 704810
+   "size": 1392262
   },
   {
    "date": "2026-11-29",
@@ -29,7 +29,7 @@
    "kind": "new",
    "title": "하루의 실험실 EP.11 : 틀리면서 배우는 주판봇 — 퍼셉트론 · 비용 · 정규화",
    "link": "https://adminmrobo.github.io/haru_3d_neural_net_learns_01_lab/",
-   "size": 691046
+   "size": 1130254
   },
   {
    "date": "2026-11-29",
@@ -37,7 +37,31 @@
    "kind": "new",
    "title": "하루의 실험실 EP.09 : 가격표가 사라진 하숙집 — 비지도학습 다섯 장면",
    "link": "https://adminmrobo.github.io/haru_3d_unsupervised_learning_01_lab/",
-   "size": 690240
+   "size": 1058253
+  },
+  {
+   "date": "2026-11-29",
+   "repo": "ahn_boat_lab_town",
+   "kind": "update",
+   "title": "안보트 연구실 타운 (Ahn Lab Town)",
+   "link": "https://adminmrobo.github.io/ahn_boat_lab_town/",
+   "size": 2277
+  },
+  {
+   "date": "2026-11-29",
+   "repo": "ahnboat_lab_gallery",
+   "kind": "update",
+   "title": "Ahn-boat Lab 식구 갤러리",
+   "link": "https://adminmrobo.github.io/ahnboat_lab_gallery/",
+   "size": 378
+  },
+  {
+   "date": "2026-11-29",
+   "repo": "ahnboat_ontology_feed",
+   "kind": "update",
+   "title": "내 아이디어 검증하기 — ahnboat lab 온톨로지 피드",
+   "link": "https://adminmrobo.github.io/ahnboat_ontology_feed/",
+   "size": 0
   },
   {
    "date": "2026-11-28",
@@ -1418,15 +1442,15 @@
    "size": 1928640
   },
   "ahn_boat_lab_town": {
-   "pushed_at": "2026-11-28T06:38:39Z",
-   "size": 15660585
+   "pushed_at": "2026-11-28T15:31:27Z",
+   "size": 15662862
   },
   "ahnboat_lab_gallery": {
-   "pushed_at": "2026-11-28T07:16:22Z",
-   "size": 6347610
+   "pushed_at": "2026-11-28T15:06:09Z",
+   "size": 6347988
   },
   "ahnboat_ontology_feed": {
-   "pushed_at": "2026-11-28T07:13:31Z",
+   "pushed_at": "2026-11-28T15:03:46Z",
    "size": 30727262
   },
   "ahnboat_server_room_guards": {
@@ -1622,24 +1646,24 @@
    "size": 1922498
   },
   "haru_3d_fish_market_tuning_01_lab": {
-   "pushed_at": "2026-11-28T06:47:56Z",
-   "size": 704810
+   "pushed_at": "2026-11-28T15:29:58Z",
+   "size": 1392262
   },
   "haru_3d_neural_net_learns_01_lab": {
-   "pushed_at": "2026-11-28T06:46:38Z",
-   "size": 691046
+   "pushed_at": "2026-11-28T15:22:27Z",
+   "size": 1130254
   },
   "haru_3d_optimization_01": {
    "pushed_at": "2026-11-28T03:33:11Z",
    "size": 3685863
   },
   "haru_3d_reinforcement_learning_01_lab": {
-   "pushed_at": "2026-11-28T06:30:25Z",
-   "size": 727700
+   "pushed_at": "2026-11-28T15:39:29Z",
+   "size": 3576323
   },
   "haru_3d_unsupervised_learning_01_lab": {
-   "pushed_at": "2026-11-28T05:36:44Z",
-   "size": 690240
+   "pushed_at": "2026-11-28T15:42:40Z",
+   "size": 1058253
   },
   "health_stats_lab": {
    "pushed_at": "2026-11-23T23:27:37Z",
