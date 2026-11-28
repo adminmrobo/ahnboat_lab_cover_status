@@ -1050,6 +1050,51 @@
    "thumb": "thumbs/repos/Regression_model_lab_01.jpg"
   },
   {
+   "title": "하루의 실험실 EP.07 : X1 · X2 · X3가 열어 준 3차원 — 지도학습 다섯 장면",
+   "summary": "조수 하루가 새 식구 X1·X2·X3의 이름에서 3차원 공간을 떠올리고, 초파리·주판봇과 함께 하숙집 400채로 지도학습 다섯 장면(한 행은 한 점, 선형회귀 평면, 로지스틱 언덕, 결정나무 상자, 랜덤포레스트 투표)을 3D 좌표로 보여 줍니다.",
+   "cat": "머신러닝",
+   "mid": "머신러닝 모델",
+   "sub": "좌표 공간(space)",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/haru_3d_classic_learning_model_01_lab",
+   "site_url": "https://adminmrobo.github.io/haru_3d_classic_learning_model_01_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/haru_3d_classic_learning_model_01_lab.jpg"
+  },
+  {
+   "title": "하루의 실험실 EP.06 : 주판봇의 고전 머신러닝 — 나누고, 묶고, 줄이고, 재 보기",
+   "summary": "조수 하루가 주판봇의 주판을 보고 '고전'을 떠올리고, 주판봇과 함께 SVM·커널·KNN·K-means·PCA·편향과 분산을 주판알 데이터로 직접 돌려 3차원 좌표 방에서 보여 줍니다. 서포트 3/80 · PCA 0.989 · 차수 12 오차 0.565.",
+   "cat": "머신러닝",
+   "mid": "머신러닝 모델",
+   "sub": "좌표 공간(space)",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/haru_3d_classic_learning_model_02_lab",
+   "site_url": "https://adminmrobo.github.io/haru_3d_classic_learning_model_02_lab/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/haru_3d_classic_learning_model_02_lab.jpg"
+  },
+  {
+   "title": "하루의 실험실 EP.08 1부 : 박사의 과제 — 최적화 연습 — 기울기 나침반",
+   "summary": "박사의 첫 과제: 안개 낀 그릇 모양 언덕 f(x, z) = x² + 3z²의 (2, 1)에서 인턴 시아가 360방향을 재 가장 가파른 방향 56°와 기울기 길이 7.211을 찾고, 보폭 0.01로 손으로 잰 기울기의 오차 0.032를 확인합니다.",
+   "cat": "머신러닝",
+   "mid": "머신러닝 모델",
+   "sub": "좌표 공간(space)",
+   "kind": "repo",
+   "repo_url": "https://github.com/adminmrobo/haru_3d_optimization_01",
+   "site_url": "https://adminmrobo.github.io/haru_3d_optimization_01/",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "thumb": "thumbs/repos/haru_3d_optimization_01.jpg"
+  },
+  {
    "title": "Fish Market Data로 쉽게 따라하는 머신러닝",
    "summary": "생선 시장 데이터로 회귀·분류 모델을 처음부터 따라 해 보는 입문 강의",
    "cat": "머신러닝",

@@ -25,6 +25,30 @@
   },
   {
    "date": "2026-11-28",
+   "repo": "haru_3d_optimization_01",
+   "kind": "new",
+   "title": "하루의 실험실 EP.08 1부 : 박사의 과제 — 최적화 연습 — 기울기 나침반",
+   "link": "https://adminmrobo.github.io/haru_3d_optimization_01/",
+   "size": 3685863
+  },
+  {
+   "date": "2026-11-28",
+   "repo": "haru_3d_classic_learning_model_02_lab",
+   "kind": "new",
+   "title": "하루의 실험실 EP.06 : 주판봇의 고전 머신러닝 — 나누고, 묶고, 줄이고, 재 보기",
+   "link": "https://adminmrobo.github.io/haru_3d_classic_learning_model_02_lab/",
+   "size": 1922498
+  },
+  {
+   "date": "2026-11-28",
+   "repo": "haru_3d_classic_learning_model_01_lab",
+   "kind": "new",
+   "title": "하루의 실험실 EP.07 : X1 · X2 · X3가 열어 준 3차원 — 지도학습 다섯 장면",
+   "link": "https://adminmrobo.github.io/haru_3d_classic_learning_model_01_lab/",
+   "size": 1624757
+  },
+  {
+   "date": "2026-11-28",
    "repo": "Distance-metrics-tutorial",
    "kind": "update",
    "title": "하루의 실험실 EP.04 1부 : 시아와 모아는 얼마나 멀까 — 공간 속 거리",
@@ -77,7 +101,15 @@
    "kind": "update",
    "title": "Ahn-boat Lab 식구 갤러리",
    "link": "https://adminmrobo.github.io/ahnboat_lab_gallery/",
-   "size": 15165
+   "size": 43333
+  },
+  {
+   "date": "2026-11-28",
+   "repo": "ahn_boat_lab_town",
+   "kind": "update",
+   "title": "안보트 연구실 타운 (Ahn Lab Town)",
+   "link": "https://adminmrobo.github.io/ahn_boat_lab_town/",
+   "size": 36017
   },
   {
    "date": "2026-11-28",
@@ -1346,15 +1378,15 @@
    "size": 1928640
   },
   "ahn_boat_lab_town": {
-   "pushed_at": "2026-11-27T13:35:56Z",
-   "size": 15624568
+   "pushed_at": "2026-11-28T06:38:39Z",
+   "size": 15660585
   },
   "ahnboat_lab_gallery": {
-   "pushed_at": "2026-11-27T22:50:37Z",
-   "size": 6307698
+   "pushed_at": "2026-11-28T02:13:14Z",
+   "size": 6335866
   },
   "ahnboat_ontology_feed": {
-   "pushed_at": "2026-11-27T22:47:12Z",
+   "pushed_at": "2026-11-28T01:41:40Z",
    "size": 30662941
   },
   "ahnboat_server_room_guards": {
@@ -1540,6 +1572,18 @@
   "graph_theory_lab": {
    "pushed_at": "2026-11-25T19:25:17Z",
    "size": 5825776
+  },
+  "haru_3d_classic_learning_model_01_lab": {
+   "pushed_at": "2026-11-28T03:33:09Z",
+   "size": 1624757
+  },
+  "haru_3d_classic_learning_model_02_lab": {
+   "pushed_at": "2026-11-27T18:19:48Z",
+   "size": 1922498
+  },
+  "haru_3d_optimization_01": {
+   "pushed_at": "2026-11-28T03:33:11Z",
+   "size": 3685863
   },
   "health_stats_lab": {
    "pushed_at": "2026-11-23T23:27:37Z",

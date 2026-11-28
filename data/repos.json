@@ -1766,7 +1766,7 @@
   "repo_url": "https://github.com/adminmrobo/ahn_boat_lab_town",
   "pages_url": "https://adminmrobo.github.io/ahn_boat_lab_town/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T13:35:56Z",
+  "pushed_at": "2026-11-28T06:38:39Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 3,
@@ -1824,7 +1824,7 @@
    "pages_checked": 2
   },
   "has_pages": true,
-  "size_bytes": 15624568
+  "size_bytes": 15660585
  },
  {
   "repo": "ahnboat_lab_character_add_packs",
@@ -2003,7 +2003,7 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_lab_gallery",
   "pages_url": "https://adminmrobo.github.io/ahnboat_lab_gallery/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T22:50:37Z",
+  "pushed_at": "2026-11-28T02:13:14Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -2057,7 +2057,7 @@
    "pages_checked": 1
   },
   "has_pages": true,
-  "size_bytes": 6307698
+  "size_bytes": 6335866
  },
  {
   "repo": "ahnboat_lab_langpack",
@@ -2172,7 +2172,7 @@
   "repo_url": "https://github.com/adminmrobo/ahnboat_ontology_feed",
   "pages_url": "https://adminmrobo.github.io/ahnboat_ontology_feed/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T22:47:12Z",
+  "pushed_at": "2026-11-28T01:41:40Z",
   "has_manifest": false,
   "covers": [
    {
@@ -4900,7 +4900,7 @@
   "repo_url": "https://github.com/adminmrobo/ai_industry_lab",
   "pages_url": "https://adminmrobo.github.io/ai_industry_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T04:17:08Z",
+  "pushed_at": "2026-11-28T03:55:30Z",
   "has_manifest": false,
   "covers": [
    {
@@ -4960,7 +4960,7 @@
    "pages_checked": 5
   },
   "has_pages": true,
-  "size_bytes": 6426721
+  "size_bytes": 6435967
  },
  {
   "repo": "AI_Model_Review",
@@ -16523,7 +16523,7 @@
   "repo_url": "https://github.com/adminmrobo/g2b-bid-strategy",
   "pages_url": "https://adminmrobo.github.io/g2b-bid-strategy/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T03:21:24Z",
+  "pushed_at": "2026-11-28T03:07:06Z",
   "has_manifest": false,
   "covers": [],
   "redraw_count": 0,
@@ -16577,7 +16577,7 @@
    "pages_checked": 1
   },
   "has_pages": true,
-  "size_bytes": 60031456
+  "size_bytes": 60170769
  },
  {
   "repo": "Gen_AI_Hannam_univ",
@@ -17441,7 +17441,7 @@
   "repo_url": "https://github.com/adminmrobo/haru_3d_classic_learning_model_01_lab",
   "pages_url": "https://adminmrobo.github.io/haru_3d_classic_learning_model_01_lab/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T18:18:28Z",
+  "pushed_at": "2026-11-28T03:33:09Z",
   "has_manifest": false,
   "covers": [
    {
@@ -17516,7 +17516,7 @@
    "pages_checked": 1
   },
   "has_pages": true,
-  "size_bytes": 1685847
+  "size_bytes": 1624757
  },
  {
   "repo": "haru_3d_classic_learning_model_02_lab",
@@ -17603,17 +17603,174 @@
   "size_bytes": 1922498
  },
  {
+  "repo": "haru_3d_fish_market_tuning_01_lab",
+  "series_ko": "하루의 실험실 EP.12 : 생선 가게 영점 잡기 — 학습률 · 배치 · 에포크와 앙상블",
+  "title_ko": "하루의 실험실 EP.12 : 생선 가게 영점 잡기 — 학습률 · 배치 · 에포크와 앙상블",
+  "repo_url": "https://github.com/adminmrobo/haru_3d_fish_market_tuning_01_lab",
+  "pages_url": "https://adminmrobo.github.io/haru_3d_fish_market_tuning_01_lab/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-28T06:47:56Z",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "site_desc": "조수 하루가 생선 가게 물고기 158마리를 길이·높이·두께 세 축에 찍고, 박사·초파리·주판봇과 함께 봉인된 시험지, 손실 그릇과 경사하강법, 학습률·배치·에포크, 규제 손잡이 C, 앙상블을 직접 다시 돌려 봅니다.",
+  "status": "unknown",
+  "checked_at": "2026-11-28",
+  "site_title": "하루의 실험실 EP.12 : 생선 가게 영점 잡기 — 학습률 · 배치 · 에포크와 앙상블",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 1,
+   "pages_checked": 1,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 1
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/haru_3d_fish_market_tuning_01_lab/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 1
+   }
+  },
+  "skills": {
+   "items": [],
+   "main": "",
+   "estimate": "",
+   "explicit": false,
+   "retrofit": 0,
+   "px_fix": 0,
+   "pages_checked": 1
+  },
+  "has_pages": false,
+  "size_bytes": 704810
+ },
+ {
+  "repo": "haru_3d_neural_net_learns_01_lab",
+  "series_ko": "하루의 실험실 EP.11 : 틀리면서 배우는 주판봇 — 퍼셉트론 · 비용 · 정규화",
+  "title_ko": "하루의 실험실 EP.11 : 틀리면서 배우는 주판봇 — 퍼셉트론 · 비용 · 정규화",
+  "repo_url": "https://github.com/adminmrobo/haru_3d_neural_net_learns_01_lab",
+  "pages_url": "https://adminmrobo.github.io/haru_3d_neural_net_learns_01_lab/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-28T06:46:38Z",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "images/cover.webp",
+    "role": "cover",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": "thumbs/repos/haru_3d_neural_net_learns_01_lab.jpg",
+  "site_desc": "조수 하루가 가상 메일 660통을 (링크, 글자 수, 느낌표) 3차원 공간에 찍고, 주판봇·초파리·박사와 함께 퍼셉트론, 활성화 함수, 비용과 경사하강법, 정규화를 직접 계산한 숫자로 보여 주는 실험 페이지",
+  "status": "ok",
+  "checked_at": "2026-11-28",
+  "site_title": "하루의 실험실 EP.11 : 틀리면서 배우는 주판봇 — 퍼셉트론 · 비용 · 정규화",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 1,
+   "pages_checked": 1,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 1
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/haru_3d_neural_net_learns_01_lab/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 1
+   }
+  },
+  "skills": {
+   "items": [],
+   "main": "",
+   "estimate": "",
+   "explicit": false,
+   "retrofit": 0,
+   "px_fix": 0,
+   "pages_checked": 1
+  },
+  "has_pages": false,
+  "size_bytes": 691046
+ },
+ {
   "repo": "haru_3d_optimization_01",
   "series_ko": "하루의 실험실 EP.08 1부 : 박사의 과제 — 최적화 연습 — 기울기 나침반",
   "title_ko": "하루의 실험실 EP.08 1부 : 박사의 과제 — 최적화 연습 — 기울기 나침반",
   "repo_url": "https://github.com/adminmrobo/haru_3d_optimization_01",
   "pages_url": "https://adminmrobo.github.io/haru_3d_optimization_01/",
   "default_branch": "main",
-  "pushed_at": "2026-11-27T22:02:53Z",
+  "pushed_at": "2026-11-28T03:33:11Z",
   "has_manifest": false,
   "covers": [
    {
     "path": "images/cover_part1.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "images/cover_part2.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "images/cover_part3.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "images/cover_part4.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "images/cover_part5.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "images/cover_part6.webp",
     "role": "cover",
     "estimated": true
    }
@@ -17669,7 +17826,155 @@
    "pages_checked": 2
   },
   "has_pages": true,
-  "size_bytes": 849581
+  "size_bytes": 3685863
+ },
+ {
+  "repo": "haru_3d_reinforcement_learning_01_lab",
+  "series_ko": "하루의 실험실 EP.10 : 정답 대신 꿀 한 방울 — 강화학습 다섯 장면",
+  "title_ko": "하루의 실험실 EP.10 : 정답 대신 꿀 한 방울 — 강화학습 다섯 장면",
+  "repo_url": "https://github.com/adminmrobo/haru_3d_reinforcement_learning_01_lab",
+  "pages_url": "https://adminmrobo.github.io/haru_3d_reinforcement_learning_01_lab/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-28T06:30:25Z",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "images/cover.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "images/thumb_ep10.webp",
+    "role": "thumb",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": "thumbs/repos/haru_3d_reinforcement_learning_01_lab.jpg",
+  "site_desc": "초파리가 7×7×7 좌표 격자를 날며 정답 없이 보상(꿀 +1, 거미줄 −1)만으로 길을 배우는 강화학습을, 조수 하루가 주판봇의 Q표·가치 색 구름·화살표 밭·두 가지 만약(작은 꿀과 호기심 초파리)으로 3D로 보여 줍니다.",
+  "status": "ok",
+  "checked_at": "2026-11-28",
+  "site_title": "하루의 실험실 EP.10 : 정답 대신 꿀 한 방울 — 강화학습 다섯 장면",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 1,
+   "pages_checked": 1,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 1
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/haru_3d_reinforcement_learning_01_lab/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 1
+   }
+  },
+  "skills": {
+   "items": [],
+   "main": "",
+   "estimate": "",
+   "explicit": false,
+   "retrofit": 0,
+   "px_fix": 0,
+   "pages_checked": 1
+  },
+  "has_pages": true,
+  "size_bytes": 727700
+ },
+ {
+  "repo": "haru_3d_unsupervised_learning_01_lab",
+  "series_ko": "하루의 실험실 EP.09 : 가격표가 사라진 하숙집 — 비지도학습 다섯 장면",
+  "title_ko": "하루의 실험실 EP.09 : 가격표가 사라진 하숙집 — 비지도학습 다섯 장면",
+  "repo_url": "https://github.com/adminmrobo/haru_3d_unsupervised_learning_01_lab",
+  "pages_url": "https://adminmrobo.github.io/haru_3d_unsupervised_learning_01_lab/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-28T05:36:44Z",
+  "has_manifest": false,
+  "covers": [
+   {
+    "path": "images/cover.webp",
+    "role": "cover",
+    "estimated": true
+   },
+   {
+    "path": "images/thumb_ep09.webp",
+    "role": "thumb",
+    "estimated": true
+   }
+  ],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": "thumbs/repos/haru_3d_unsupervised_learning_01_lab.jpg",
+  "site_desc": "가격표(정답)가 사라진 하숙집 400채를 3차원 좌표에 찍고, 조수 하루가 초파리·주판봇과 함께 K-means·와드 묶음 나무·DBSCAN·가우시안 혼합·고립 숲·PCA로 점들이 스스로 무리를 찾는 비지도학습을 3D로 보여 줍니다.",
+  "status": "ok",
+  "checked_at": "2026-11-28",
+  "site_title": "하루의 실험실 EP.09 : 가격표가 사라진 하숙집 — 비지도학습 다섯 장면",
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 1,
+   "pages_checked": 1,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 1
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/haru_3d_unsupervised_learning_01_lab/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 1
+   }
+  },
+  "skills": {
+   "items": [],
+   "main": "",
+   "estimate": "",
+   "explicit": false,
+   "retrofit": 0,
+   "px_fix": 0,
+   "pages_checked": 1
+  },
+  "has_pages": true,
+  "size_bytes": 690240
  },
  {
   "repo": "health_stats_lab",
@@ -29153,6 +29458,298 @@
   "size_bytes": 992311
  },
  {
+  "repo": "numpy_basic_lab",
+  "series_ko": "보면서 배우는 NumPy",
+  "title_ko": "보면서 배우는 NumPy — 하루·시아·모아의 배열 수업",
+  "repo_url": "https://github.com/adminmrobo/numpy_basic_lab",
+  "pages_url": "https://adminmrobo.github.io/numpy_basic_lab/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-28T04:09:35Z",
+  "has_manifest": true,
+  "covers": [
+   {
+    "path": "assets/img/cover.webp",
+    "role": "cover",
+    "id": "cover",
+    "size": [
+     1600,
+     900
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa",
+     "x1",
+     "x2",
+     "x3"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "pending"
+   },
+   {
+    "path": "assets/img/og.webp",
+    "role": "og",
+    "id": "og",
+    "size": [
+     1200,
+     630
+    ],
+    "characters": [
+     "doc",
+     "asst",
+     "fly",
+     "jupanbot",
+     "sia",
+     "moa",
+     "x1",
+     "x2",
+     "x3"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "pending"
+   },
+   {
+    "path": "assets/img/scene_p1.webp",
+    "role": "scene",
+    "id": "scene_p1",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "asst",
+     "x1"
+    ],
+    "status": "pending"
+   },
+   {
+    "path": "assets/img/scene_p2.webp",
+    "role": "scene",
+    "id": "scene_p2",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "asst",
+     "x1"
+    ],
+    "status": "pending"
+   },
+   {
+    "path": "assets/img/scene_p3.webp",
+    "role": "scene",
+    "id": "scene_p3",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "asst",
+     "x1"
+    ],
+    "status": "pending"
+   },
+   {
+    "path": "assets/img/exam_p3.webp",
+    "role": "scene",
+    "id": "exam_p3",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "fly",
+     "asst"
+    ],
+    "status": "pending"
+   },
+   {
+    "path": "assets/img/scene_p4.webp",
+    "role": "scene",
+    "id": "scene_p4",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "sia",
+     "x2"
+    ],
+    "status": "pending"
+   },
+   {
+    "path": "assets/img/scene_p5.webp",
+    "role": "scene",
+    "id": "scene_p5",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "sia",
+     "x2",
+     "jupanbot"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "pending"
+   },
+   {
+    "path": "assets/img/scene_p6.webp",
+    "role": "scene",
+    "id": "scene_p6",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "sia",
+     "x2"
+    ],
+    "status": "pending"
+   },
+   {
+    "path": "assets/img/exam_p6.webp",
+    "role": "scene",
+    "id": "exam_p6",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "jupanbot",
+     "sia"
+    ],
+    "robot": "jupanbot-v2",
+    "status": "pending"
+   },
+   {
+    "path": "assets/img/scene_p7.webp",
+    "role": "scene",
+    "id": "scene_p7",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "moa",
+     "x3"
+    ],
+    "status": "pending"
+   },
+   {
+    "path": "assets/img/scene_p8.webp",
+    "role": "scene",
+    "id": "scene_p8",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "moa",
+     "x3"
+    ],
+    "status": "pending"
+   },
+   {
+    "path": "assets/img/exam_p8.webp",
+    "role": "scene",
+    "id": "exam_p8",
+    "size": [
+     1200,
+     800
+    ],
+    "characters": [
+     "doc",
+     "moa"
+    ],
+    "status": "pending"
+   }
+  ],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "site_desc": "프로그래밍을 처음 배우는 분을 위한 NumPy 입문. 배열이 움직이는 그림, Colab에 붙여 넣는 코드, 실제 실행 결과, 브라우저에서 바로 실행, 생성형 AI 프롬프트를 8부 52장 카드로 담았습니다.",
+  "status": "ok",
+  "checked_at": "2026-11-28",
+  "site_title": "보면서 배우는 NumPy — 하루·시아·모아의 배열 수업",
+  "ontology": {
+   "status": "partial",
+   "pages_with_kg": 1,
+   "pages_total": 2,
+   "pages_checked": 2,
+   "kg_links": [
+    "https://adminmrobo.github.io/numpy_basic_lab/index.html#kg"
+   ],
+   "export_links": [
+    "https://adminmrobo.github.io/numpy_basic_lab/index.html#export"
+   ],
+   "files": []
+  },
+  "i18n": {
+   "langs": [
+    "ko"
+   ],
+   "count": 1,
+   "pages": {
+    "ko": 2
+   },
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {
+    "ko": "https://adminmrobo.github.io/numpy_basic_lab/index.html"
+   }
+  },
+  "languages": {
+   "codes": [
+    "ko"
+   ],
+   "count": 1,
+   "complete": true,
+   "pages_by_lang": {
+    "ko": 2
+   }
+  },
+  "skills": {
+   "items": [
+    {
+     "name": "ai-lab-explainer-plain",
+     "version": "1.6",
+     "versions": [
+      "1.6"
+     ],
+     "pages": 2
+    },
+    {
+     "name": "ai-lab-retrofit",
+     "version": "",
+     "versions": [],
+     "pages": 1
+    },
+    {
+     "name": "px-fix",
+     "version": "1",
+     "versions": [
+      "1"
+     ],
+     "pages": 2
+    }
+   ],
+   "main": "ai-lab-explainer-plain 1.6",
+   "estimate": "",
+   "explicit": true,
+   "retrofit": 1,
+   "px_fix": 2,
+   "pages_checked": 2
+  },
+  "has_pages": false,
+  "size_bytes": 918186
+ },
+ {
   "repo": "one_day_deep_learning",
   "series_ko": "AI 연구실 해설 · 하루에 다 끝내는 시리즈",
   "title_ko": "하루에 다 끝내는 딥러닝 서머리 노트 — 오후반",
@@ -31260,6 +31857,58 @@
   },
   "has_pages": true,
   "size_bytes": 13136250
+ },
+ {
+  "repo": "python_library_lab",
+  "series_ko": "python_library_lab",
+  "title_ko": null,
+  "repo_url": "https://github.com/adminmrobo/python_library_lab",
+  "pages_url": "https://adminmrobo.github.io/python_library_lab/",
+  "default_branch": "main",
+  "pushed_at": "2026-11-28T03:55:15Z",
+  "has_manifest": false,
+  "covers": [],
+  "redraw_count": 0,
+  "redraw_ids": [],
+  "thumb": null,
+  "site_desc": null,
+  "status": "unknown",
+  "checked_at": "2026-11-28",
+  "site_title": null,
+  "ontology": {
+   "status": "none",
+   "pages_with_kg": 0,
+   "pages_total": 0,
+   "pages_checked": 0,
+   "kg_links": [],
+   "export_links": [],
+   "files": []
+  },
+  "i18n": {
+   "langs": [],
+   "count": 0,
+   "pages": {},
+   "partial": [],
+   "complete": true,
+   "readme_langs": [],
+   "links": {}
+  },
+  "languages": {
+   "codes": [],
+   "count": 0,
+   "complete": true,
+   "pages_by_lang": {}
+  },
+  "skills": {
+   "items": [],
+   "main": "",
+   "estimate": "",
+   "explicit": false,
+   "retrofit": 0,
+   "px_fix": 0,
+   "pages_checked": 0
+  },
+  "has_pages": false
  },
  {
   "repo": "python_machine_learning_lab",

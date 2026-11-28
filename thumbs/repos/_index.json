@@ -20,7 +20,7 @@
  },
  "ahn_boat_lab_town": {
   "src": "redraw:R019:assets/cut1_panic.webp",
-  "pushed_at": "2026-11-27T13:35:56Z",
+  "pushed_at": "2026-11-28T06:38:39Z",
   "made": "2026-11-28"
  },
  "ahnboat_lab_character_add_packs": {
@@ -33,7 +33,7 @@
  },
  "ahnboat_lab_gallery": {
   "src": null,
-  "pushed_at": "2026-11-27T22:50:37Z"
+  "pushed_at": "2026-11-28T02:13:14Z"
  },
  "ahnboat_lab_langpack": {
   "src": null,
@@ -45,7 +45,7 @@
  },
  "ahnboat_ontology_feed": {
   "src": "name:assets/cover.png",
-  "pushed_at": "2026-11-27T22:47:12Z",
+  "pushed_at": "2026-11-28T01:41:40Z",
   "made": "2026-11-28"
  },
  "ahnboat_server_room_guards": {
@@ -102,8 +102,8 @@
  },
  "ai_industry_lab": {
   "src": "name:assets/og.png",
-  "pushed_at": "2026-11-27T04:17:08Z",
-  "made": "2026-11-27"
+  "pushed_at": "2026-11-28T03:55:30Z",
+  "made": "2026-11-28"
  },
  "AI_Model_Review": {
   "src": "embedded:index.html#hero",
@@ -369,7 +369,7 @@
  },
  "g2b-bid-strategy": {
   "src": null,
-  "pushed_at": "2026-11-27T03:21:24Z"
+  "pushed_at": "2026-11-28T03:07:06Z"
  },
  "Gen_AI_Hannam_univ": {
   "src": "redraw:R109:index.html#px",
@@ -407,7 +407,7 @@
  },
  "haru_3d_classic_learning_model_01_lab": {
   "src": "name:images/cover.webp",
-  "pushed_at": "2026-11-27T18:18:28Z",
+  "pushed_at": "2026-11-28T03:33:09Z",
   "made": "2026-11-28"
  },
  "haru_3d_classic_learning_model_02_lab": {
@@ -415,9 +415,28 @@
   "pushed_at": "2026-11-27T18:19:48Z",
   "made": "2026-11-28"
  },
+ "haru_3d_fish_market_tuning_01_lab": {
+  "src": null,
+  "pushed_at": "2026-11-28T06:47:56Z"
+ },
+ "haru_3d_neural_net_learns_01_lab": {
+  "src": "name:images/cover.webp",
+  "pushed_at": "2026-11-28T06:46:38Z",
+  "made": "2026-11-28"
+ },
  "haru_3d_optimization_01": {
   "src": "name:images/cover_part1.webp",
-  "pushed_at": "2026-11-27T22:02:53Z",
+  "pushed_at": "2026-11-28T03:33:11Z",
+  "made": "2026-11-28"
+ },
+ "haru_3d_reinforcement_learning_01_lab": {
+  "src": "name:images/cover.webp",
+  "pushed_at": "2026-11-28T06:30:25Z",
+  "made": "2026-11-28"
+ },
+ "haru_3d_unsupervised_learning_01_lab": {
+  "src": "name:images/cover.webp",
+  "pushed_at": "2026-11-28T05:36:44Z",
   "made": "2026-11-28"
  },
  "health_stats_lab": {
@@ -750,6 +769,10 @@
   "pushed_at": "2026-11-27T04:24:05Z",
   "made": "2026-11-27"
  },
+ "numpy_basic_lab": {
+  "src": null,
+  "pushed_at": "2026-11-28T04:09:35Z"
+ },
  "one_day_deep_learning": {
   "src": "manifest:assets/og_one_day_dl_pm.jpg",
   "pushed_at": "2026-11-23T07:30:51Z",
@@ -797,6 +820,10 @@
   "src": "name:assets/og/cover_00.jpg",
   "pushed_at": "2026-11-23T23:30:34Z",
   "made": "2026-11-24"
+ },
+ "python_library_lab": {
+  "src": null,
+  "pushed_at": "2026-11-28T03:55:15Z"
  },
  "python_machine_learning_lab": {
   "src": "name:assets/img/cover_01.webp",

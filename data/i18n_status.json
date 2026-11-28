@@ -1,45 +1,45 @@
 {
- "updated": "2026-11-28 10:41 KST",
+ "updated": "2026-11-28 16:13 KST",
  "rule": "공개 콘텐츠마다 min(1, 그 언어 페이지 수 / 한국어 페이지 수)의 평균",
- "contents": 159,
+ "contents": 162,
  "states": {
   "all": 13,
   "some": 19,
-  "ko": 127
+  "ko": 130
  },
  "langs": {
   "ko": {
    "rate": 1.0,
-   "full": 159,
+   "full": 162,
    "partial": 0
   },
   "en": {
-   "rate": 0.176,
+   "rate": 0.1728,
    "full": 24,
    "partial": 7
   },
   "zh": {
-   "rate": 0.1823,
+   "rate": 0.179,
    "full": 25,
    "partial": 7
   },
   "ja": {
-   "rate": 0.1698,
+   "rate": 0.1666,
    "full": 23,
    "partial": 7
   },
   "uz": {
-   "rate": 0.1698,
+   "rate": 0.1666,
    "full": 23,
    "partial": 7
   },
   "ru": {
-   "rate": 0.1698,
+   "rate": 0.1666,
    "full": 23,
    "partial": 7
   },
   "vi": {
-   "rate": 0.0979,
+   "rate": 0.0961,
    "full": 13,
    "partial": 5
   }
