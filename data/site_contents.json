@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-28 01:36 KST",
+ "fetched_at": "2026-11-28 16:50 KST",
  "site": "https://ahnboat.xyz",
  "errors": [
   "워드프레스 REST API 읽기 실패: HTTP Error 429: Too Many Requests"
@@ -868,6 +868,45 @@
     "ko"
    ],
    "summary": "행렬·벡터를 처음 배우는 분을 위한 회귀 해설 시리즈. 초파리 팀과 주판봇 팀이 최소제곱, 회귀분석 결과표, 잔차분석, 경사 하강·릿지·라쏘, 나무·부스팅·신경망과 SHAP, 로지스틱·포아송·분위수·다층 회귀로 여섯 라운드를 겨룹니다."
+  },
+  {
+   "title": "하루의 실험실 EP.07 : X1 · X2 · X3가 열어 준 3차원 — 지도학습 다섯 장면",
+   "cat": "머신러닝",
+   "mid": "머신러닝 모델",
+   "sub": "좌표 공간(space)",
+   "site_url": "https://adminmrobo.github.io/haru_3d_classic_learning_model_01_lab/",
+   "repo_url": "https://github.com/adminmrobo/haru_3d_classic_learning_model_01_lab",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "조수 하루가 새 식구 X1·X2·X3의 이름에서 3차원 공간을 떠올리고, 초파리·주판봇과 함께 하숙집 400채로 지도학습 다섯 장면(한 행은 한 점, 선형회귀 평면, 로지스틱 언덕, 결정나무 상자, 랜덤포레스트 투표)을 3D 좌표로 보여 줍니다."
+  },
+  {
+   "title": "하루의 실험실 EP.06 : 주판봇의 고전 머신러닝 — 나누고, 묶고, 줄이고, 재 보기",
+   "cat": "머신러닝",
+   "mid": "머신러닝 모델",
+   "sub": "좌표 공간(space)",
+   "site_url": "https://adminmrobo.github.io/haru_3d_classic_learning_model_02_lab/",
+   "repo_url": "https://github.com/adminmrobo/haru_3d_classic_learning_model_02_lab",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "조수 하루가 주판봇의 주판을 보고 '고전'을 떠올리고, 주판봇과 함께 SVM·커널·KNN·K-means·PCA·편향과 분산을 주판알 데이터로 직접 돌려 3차원 좌표 방에서 보여 줍니다. 서포트 3/80 · PCA 0.989 · 차수 12 오차 0.565."
+  },
+  {
+   "title": "하루의 실험실 EP.08 1부 : 박사의 과제 — 최적화 연습 — 기울기 나침반",
+   "cat": "머신러닝",
+   "mid": "머신러닝 모델",
+   "sub": "좌표 공간(space)",
+   "site_url": "https://adminmrobo.github.io/haru_3d_optimization_01/",
+   "repo_url": "https://github.com/adminmrobo/haru_3d_optimization_01",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "박사의 첫 과제: 안개 낀 그릇 모양 언덕 f(x, z) = x² + 3z²의 (2, 1)에서 인턴 시아가 360방향을 재 가장 가파른 방향 56°와 기울기 길이 7.211을 찾고, 보폭 0.01로 손으로 잰 기울기의 오차 0.032를 확인합니다."
   },
   {
    "title": "Fish Market Data로 쉽게 따라하는 머신러닝",
@@ -1893,6 +1932,19 @@
     "ko"
    ],
    "summary": "강성층이 더 많이 답하는 여론조사로 유권자 전체를 추정하는 법. 정답을 아는 가상 세계에서 원시 평균·사후층화·지난 투표 가중·부분 풀링·여러 조사 합치기를 직접 돌려 봅니다."
+  },
+  {
+   "title": "페이싱 문제 연구실 · 기술·사회·정책 세 가지 속도",
+   "cat": "경제·수학·최적화",
+   "mid": "경제학",
+   "sub": "경제·사회",
+   "site_url": "https://adminmrobo.github.io/pacing_problem_lab/",
+   "repo_url": "https://github.com/adminmrobo/pacing_problem_lab",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "가상 나라의 뉴스를 읽던 인턴 시아·모아와 조수 하루의 만화 대화로 시작해, 박사·초파리 연구원·주판봇·X1~X3가 차례로 해설하는 연구실 해설. 솔로우 모형, 기술 흡수 속도, 정책 시차(틈 = 사회 변화 속도 ÷ 정책 속도), 해밀토니안으로 기술·사회·정책 세 속도의 차이를 계산하고, 3D 속도 공간에서 가상의 세 나라 가람·나래·다솜의 30년을 비교합니다."
   },
   {
    "title": "경제학의 이해",

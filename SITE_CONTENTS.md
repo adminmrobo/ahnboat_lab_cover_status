@@ -2,9 +2,9 @@
 
 ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전·오후 자동으로 다시 만들고, Actions에서 수동으로도 돌릴 수 있습니다.
 
-- 갱신: **2026-11-28 01:36 KST**
+- 갱신: **2026-11-28 16:50 KST**
 - 홈페이지 글 32 · 페이지 0 · 사이트맵 주소 73
-- GitHub 해설 콘텐츠 196 · 포트폴리오 10 · 일정 18
+- GitHub 해설 콘텐츠 200 · 포트폴리오 10 · 일정 18
 - 기계용 원본: `data/site_contents.json`
 
 > ⚠ 이번에 읽지 못한 곳
@@ -54,7 +54,7 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 
 ## 3. GitHub 해설 콘텐츠 (공개 카탈로그)
 
-### 머신러닝 (17)
+### 머신러닝 (20)
 
 | 제목 | 중분류 | 주소 | 언어 |
 |---|---|---|---|
@@ -69,6 +69,9 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | 거리로 가르는 분류 대회 — LDA·KNN·SVM·SVC·커널 · 거리로 가르는 분류 대회 | 머신러닝 모델 / 머신러닝  모델 | https://adminmrobo.github.io/knn_svc_svm_lab/ | ko |
 | 파이썬 머신러닝 연구소 — 파이썬 머신러닝 15층 연구실 해설 | 머신러닝 모델 / 머신러닝  모델 | https://adminmrobo.github.io/python_machine_learning_lab/ | ko zh |
 | 회귀 예측·분석 대회 — 직선 하나에서 회귀의 가족까지 · 회귀 예측·분석 대회 | 머신러닝 모델 / 머신러닝  모델 | https://adminmrobo.github.io/Regression_model_lab_01/ | ko |
+| 하루의 실험실 EP.07 : X1 · X2 · X3가 열어 준 3차원 — 지도학습 다섯 장면 | 머신러닝 모델 / 좌표 공간(space) | https://adminmrobo.github.io/haru_3d_classic_learning_model_01_lab/ | ko |
+| 하루의 실험실 EP.06 : 주판봇의 고전 머신러닝 — 나누고, 묶고, 줄이고, 재 보기 | 머신러닝 모델 / 좌표 공간(space) | https://adminmrobo.github.io/haru_3d_classic_learning_model_02_lab/ | ko |
+| 하루의 실험실 EP.08 1부 : 박사의 과제 — 최적화 연습 — 기울기 나침반 | 머신러닝 모델 / 좌표 공간(space) | https://adminmrobo.github.io/haru_3d_optimization_01/ | ko |
 | Fish Market Data로 쉽게 따라하는 머신러닝 | 실습으로 배우기 / Fish Market 머신러닝 | https://adminmrobo.github.io/Fish_Market_Data_Machine_Learning/ | ko en zh ja uz ru |
 | Fish Market 연구실 · 머신러닝 핵심 개념 2 | 실습으로 배우기 / Fish Market 머신러닝 | https://adminmrobo.github.io/fish_market_learning_epoch_etc/ | ko |
 | 릿지와 라쏘 · 농어 무게로 배우는 과적합 막기 | 실습으로 배우기 / 규제 회귀 | https://adminmrobo.github.io/Regression_ridge_lasso/ | ko en zh ja uz ru vi |
@@ -152,7 +155,7 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | 4장 논문 · 페이지드 어텐션 (PagedAttention) | 추론 엔지니어링 스터디 / 4장 · 소프트웨어 | https://adminmrobo.github.io/inference_engineering_study/week_05_article_01/ | ko |
 | 2장 후반 발표 · 병목을 찾아라 | 추론 엔지니어링 스터디 / 부록 · 발표 자료 | https://adminmrobo.github.io/inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide/ | ko |
 
-### 경제·수학·최적화 (33)
+### 경제·수학·최적화 (34)
 
 | 제목 | 중분류 | 주소 | 언어 |
 |---|---|---|---|
@@ -160,6 +163,7 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | 산업재해 패널 데이터를 활용한 머신러닝 모델 | 경제 연구 / 경제·사회 | 제10회 산재보험패널 학술대회 |  |
 | 조건부 노동수요와 생성형 AI | 경제 연구 / 경제·사회 | https://adminmrobo.github.io/my_article_06_AI_effect_to_labor_demand/ | ko en zh ja uz ru vi |
 | 여론조사 보정 연구실 | 경제 연구 / 경제·사회 | https://adminmrobo.github.io/my_article_08_poll_reweighting_lab/ | ko |
+| 페이싱 문제 연구실 · 기술·사회·정책 세 가지 속도 | 경제학 / 경제·사회 | https://adminmrobo.github.io/pacing_problem_lab/ | ko |
 | 경제학의 이해 | 경제학 / 경제학 원론 | https://adminmrobo.github.io/basic_economic_lab/ | ko |
 | 비용 이론 연구실 | 경제학 / 경제학 원론 | https://adminmrobo.github.io/cost_theory_economic_view_lab/ | ko |
 | 노동경제학 연구실 | 경제학 / 노동경제학 | https://adminmrobo.github.io/labor_economics/ | ko |
