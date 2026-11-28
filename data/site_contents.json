@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-28 16:50 KST",
+ "fetched_at": "2026-11-29 00:28 KST",
  "site": "https://ahnboat.xyz",
  "errors": [
   "워드프레스 REST API 읽기 실패: HTTP Error 429: Too Many Requests"
@@ -830,6 +830,19 @@
    "summary": "알고리즘들이 한자리에 모여 서로를 비교하는 특별편 3부"
   },
   {
+   "title": "하루의 실험실 EP.10 : 정답 대신 꿀 한 방울 — 강화학습 다섯 장면",
+   "cat": "머신러닝",
+   "mid": "로봇·강화학습",
+   "sub": "좌표 공간(space)",
+   "site_url": "https://adminmrobo.github.io/haru_3d_reinforcement_learning_01_lab/",
+   "repo_url": "https://github.com/adminmrobo/haru_3d_reinforcement_learning_01_lab",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "초파리가 7×7×7 좌표 격자를 날며 정답 없이 보상(꿀 +1, 거미줄 −1)만으로 길을 배우는 강화학습을, 조수 하루가 주판봇의 Q표·가치 색 구름·화살표 밭·두 가지 만약(작은 꿀과 호기심 초파리)으로 3D로 보여 줍니다."
+  },
+  {
    "title": "거리로 가르는 분류 대회 — LDA·KNN·SVM·SVC·커널 · 거리로 가르는 분류 대회",
    "cat": "머신러닝",
    "mid": "머신러닝 모델",
@@ -907,6 +920,32 @@
     "ko"
    ],
    "summary": "박사의 첫 과제: 안개 낀 그릇 모양 언덕 f(x, z) = x² + 3z²의 (2, 1)에서 인턴 시아가 360방향을 재 가장 가파른 방향 56°와 기울기 길이 7.211을 찾고, 보폭 0.01로 손으로 잰 기울기의 오차 0.032를 확인합니다."
+  },
+  {
+   "title": "하루의 실험실 EP.12 : 생선 가게 영점 잡기 — 학습률 · 배치 · 에포크와 앙상블",
+   "cat": "머신러닝",
+   "mid": "머신러닝 모델",
+   "sub": "좌표 공간(space)",
+   "site_url": "https://adminmrobo.github.io/haru_3d_fish_market_tuning_01_lab/",
+   "repo_url": "https://github.com/adminmrobo/haru_3d_fish_market_tuning_01_lab",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "조수 하루가 생선 가게 물고기 158마리를 길이·높이·두께 세 축에 찍고, 박사·초파리·주판봇과 함께 봉인된 시험지, 손실 그릇과 경사하강법, 학습률·배치·에포크, 규제 손잡이 C, 앙상블을 직접 다시 돌려 봅니다."
+  },
+  {
+   "title": "하루의 실험실 EP.09 : 가격표가 사라진 하숙집 — 비지도학습 다섯 장면",
+   "cat": "머신러닝",
+   "mid": "머신러닝 모델",
+   "sub": "좌표 공간(space)",
+   "site_url": "https://adminmrobo.github.io/haru_3d_unsupervised_learning_01_lab/",
+   "repo_url": "https://github.com/adminmrobo/haru_3d_unsupervised_learning_01_lab",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "가격표(정답)가 사라진 하숙집 400채를 3차원 좌표에 찍고, 조수 하루가 초파리·주판봇과 함께 K-means·와드 묶음 나무·DBSCAN·가우시안 혼합·고립 숲·PCA로 점들이 스스로 무리를 찾는 비지도학습을 3D로 보여 줍니다."
   },
   {
    "title": "Fish Market Data로 쉽게 따라하는 머신러닝",
@@ -1211,6 +1250,19 @@
     "ko"
    ],
    "summary": "실험조수 하루가 LoRA 실험(256-128-10 숫자 읽는 망, 뒤집은 숫자 과제)을 다시 돌려 숫자와 그림, 3D 좌표로 설명합니다."
+  },
+  {
+   "title": "하루의 실험실 EP.11 : 틀리면서 배우는 주판봇 — 퍼셉트론 · 비용 · 정규화",
+   "cat": "딥러닝·뇌과학",
+   "mid": "딥러닝 모델",
+   "sub": "좌표 공간(space)",
+   "site_url": "https://adminmrobo.github.io/haru_3d_neural_net_learns_01_lab/",
+   "repo_url": "https://github.com/adminmrobo/haru_3d_neural_net_learns_01_lab",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "조수 하루가 가상 메일 660통을 (링크, 글자 수, 느낌표) 3차원 공간에 찍고, 주판봇·초파리·박사와 함께 퍼셉트론, 활성화 함수, 비용과 경사하강법, 정규화를 직접 계산한 숫자로 보여 주는 실험 페이지"
   },
   {
    "title": "텐서 연구실",
@@ -1857,6 +1909,32 @@
     "ko"
    ],
    "summary": "이 편을 읽으면 KV 캐시를 작은 블록으로 나눠 담아 메모리 낭비를 줄이고, 같은 GPU로 동시에 더 많은 요청을 받는 원리를 설명할 수 있습니다."
+  },
+  {
+   "title": "5장 전반 · 튜닝 공방 ①",
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "추론 엔지니어링 스터디",
+   "sub": "5장 · 최적화 기법",
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study/week_06_textbook_ch05_01/",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study/tree/main/week_06_textbook_ch05_01",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "이 편을 읽으면 숫자를 작게 담는 양자화로 무엇을 얻고 무엇을 조심할지, 작은 모델이 초안을 쓰고 큰 모델이 검수하는 추측 디코딩이 언제 빨라지는지 설명할 수 있습니다."
+  },
+  {
+   "title": "5장 논문 · 한 번에 쓰는 초안 (DFlash)",
+   "cat": "LLM·추론 엔지니어링",
+   "mid": "추론 엔지니어링 스터디",
+   "sub": "5장 · 최적화 기법",
+   "site_url": "https://adminmrobo.github.io/inference_engineering_study/week_06_article_01/",
+   "repo_url": "https://github.com/adminmrobo/inference_engineering_study/tree/main/week_06_article_01",
+   "link": "",
+   "langs": [
+    "ko"
+   ],
+   "summary": "이 편을 읽으면 추측 디코딩의 초안을 빈자리 채우기(디퓨전)로 한 번에 쓰고, 큰 모델의 속 메모를 건네 품질 손해 없이 최대 6배 남짓 빨라지는 원리와 그 조건을 설명할 수 있습니다."
   },
   {
    "title": "2장 후반 발표 · 병목을 찾아라",

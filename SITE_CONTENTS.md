@@ -2,9 +2,9 @@
 
 ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전·오후 자동으로 다시 만들고, Actions에서 수동으로도 돌릴 수 있습니다.
 
-- 갱신: **2026-11-28 16:50 KST**
+- 갱신: **2026-11-29 00:28 KST**
 - 홈페이지 글 32 · 페이지 0 · 사이트맵 주소 73
-- GitHub 해설 콘텐츠 200 · 포트폴리오 10 · 일정 18
+- GitHub 해설 콘텐츠 206 · 포트폴리오 10 · 일정 18
 - 기계용 원본: `data/site_contents.json`
 
 > ⚠ 이번에 읽지 못한 곳
@@ -54,7 +54,7 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 
 ## 3. GitHub 해설 콘텐츠 (공개 카탈로그)
 
-### 머신러닝 (20)
+### 머신러닝 (23)
 
 | 제목 | 중분류 | 주소 | 언어 |
 |---|---|---|---|
@@ -66,12 +66,15 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | 알고리즘 패밀리 1부 · 가계도 | 개념 지도 / 알고리즘 패밀리 | https://adminmrobo.github.io/ML_00_Algorithm-family-build_01/ | ko en zh ja uz ru |
 | 알고리즘 패밀리 2부 · 조직원 명부 | 개념 지도 / 알고리즘 패밀리 | https://adminmrobo.github.io/ML_00_Algorithm-family-build_02/ | ko en zh ja uz ru |
 | 알고리즘 패밀리 3부 · 가문 회합 | 개념 지도 / 알고리즘 패밀리 | https://adminmrobo.github.io/ML_00_Algorithm-family-build_03/ | ko en zh ja uz ru |
+| 하루의 실험실 EP.10 : 정답 대신 꿀 한 방울 — 강화학습 다섯 장면 | 로봇·강화학습 / 좌표 공간(space) | https://adminmrobo.github.io/haru_3d_reinforcement_learning_01_lab/ | ko |
 | 거리로 가르는 분류 대회 — LDA·KNN·SVM·SVC·커널 · 거리로 가르는 분류 대회 | 머신러닝 모델 / 머신러닝  모델 | https://adminmrobo.github.io/knn_svc_svm_lab/ | ko |
 | 파이썬 머신러닝 연구소 — 파이썬 머신러닝 15층 연구실 해설 | 머신러닝 모델 / 머신러닝  모델 | https://adminmrobo.github.io/python_machine_learning_lab/ | ko zh |
 | 회귀 예측·분석 대회 — 직선 하나에서 회귀의 가족까지 · 회귀 예측·분석 대회 | 머신러닝 모델 / 머신러닝  모델 | https://adminmrobo.github.io/Regression_model_lab_01/ | ko |
 | 하루의 실험실 EP.07 : X1 · X2 · X3가 열어 준 3차원 — 지도학습 다섯 장면 | 머신러닝 모델 / 좌표 공간(space) | https://adminmrobo.github.io/haru_3d_classic_learning_model_01_lab/ | ko |
 | 하루의 실험실 EP.06 : 주판봇의 고전 머신러닝 — 나누고, 묶고, 줄이고, 재 보기 | 머신러닝 모델 / 좌표 공간(space) | https://adminmrobo.github.io/haru_3d_classic_learning_model_02_lab/ | ko |
 | 하루의 실험실 EP.08 1부 : 박사의 과제 — 최적화 연습 — 기울기 나침반 | 머신러닝 모델 / 좌표 공간(space) | https://adminmrobo.github.io/haru_3d_optimization_01/ | ko |
+| 하루의 실험실 EP.12 : 생선 가게 영점 잡기 — 학습률 · 배치 · 에포크와 앙상블 | 머신러닝 모델 / 좌표 공간(space) | https://adminmrobo.github.io/haru_3d_fish_market_tuning_01_lab/ | ko |
+| 하루의 실험실 EP.09 : 가격표가 사라진 하숙집 — 비지도학습 다섯 장면 | 머신러닝 모델 / 좌표 공간(space) | https://adminmrobo.github.io/haru_3d_unsupervised_learning_01_lab/ | ko |
 | Fish Market Data로 쉽게 따라하는 머신러닝 | 실습으로 배우기 / Fish Market 머신러닝 | https://adminmrobo.github.io/Fish_Market_Data_Machine_Learning/ | ko en zh ja uz ru |
 | Fish Market 연구실 · 머신러닝 핵심 개념 2 | 실습으로 배우기 / Fish Market 머신러닝 | https://adminmrobo.github.io/fish_market_learning_epoch_etc/ | ko |
 | 릿지와 라쏘 · 농어 무게로 배우는 과적합 막기 | 실습으로 배우기 / 규제 회귀 | https://adminmrobo.github.io/Regression_ridge_lasso/ | ko en zh ja uz ru vi |
@@ -79,7 +82,7 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | rule base에서 일하는 AI까지 | 인공지능 역사 / rule base에서 에이전트까지 | https://adminmrobo.github.io/rulebase_to_agent/ | ko en zh ja uz ru vi |
 | 비지도학습 물고기 연구실 — 라벨링 없이 맞추는 AI (목차) | 프로그래밍 / 머신러닝  모델 | https://adminmrobo.github.io/unsupervised_fish_lab/ | ko |
 
-### 딥러닝·뇌과학 (15)
+### 딥러닝·뇌과학 (16)
 
 | 제목 | 중분류 | 주소 | 언어 |
 |---|---|---|---|
@@ -97,6 +100,7 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | 하루의 실험실 : 필터를 미끄러뜨리는 망 (CNN) | 딥러닝 모델 / 실습 및 해설 | https://adminmrobo.github.io/CNN-neural-network-tutorial/ | ko |
 | 역전파 연구실 · 손잡이 33개를 한 번에 돌리는 법 | 딥러닝 모델 / 역전파 연구실 | https://adminmrobo.github.io/backprop_lab/ | ko |
 | 하루의 실험실 : 얼려 두고 덧붙이는 LoRA | 딥러닝 모델 / 좌표 공간(space) | https://adminmrobo.github.io/LoRA-fine-tuning-tutorial/ | ko |
+| 하루의 실험실 EP.11 : 틀리면서 배우는 주판봇 — 퍼셉트론 · 비용 · 정규화 | 딥러닝 모델 / 좌표 공간(space) | https://adminmrobo.github.io/haru_3d_neural_net_learns_01_lab/ | ko |
 | 텐서 연구실 | 딥러닝 모델 / 텐서 연구실 | https://adminmrobo.github.io/what_is_tensor/ | ko |
 
 ### AI 감각·생성 (16)
@@ -120,7 +124,7 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | 구조 먼저 그리기 연구실 06 표정 편 — 감정 낱말보다 부품 먼저 | 캐릭터 디자인 / 캐릭터 표정 | https://adminmrobo.github.io/drawing_lab_06/ | ko |
 | 그리기 연구실 02 · 머리카락 편 — 같은 얼굴, 다른 머리 | 캐릭터 디자인 / 캐릭터 헤어 스타일 | https://adminmrobo.github.io/drawing_lab_02/ | ko |
 
-### LLM·추론 엔지니어링 (30)
+### LLM·추론 엔지니어링 (32)
 
 | 제목 | 중분류 | 주소 | 언어 |
 |---|---|---|---|
@@ -153,6 +157,8 @@ ahnboat.xyz와 GitHub 해설 콘텐츠의 전체 목록입니다. 매일 오전�
 | 3장 논문 · 루프라인 (Roofline) | 추론 엔지니어링 스터디 / 3장 · 하드웨어 | https://adminmrobo.github.io/inference_engineering_study/week_04_article_01/ | ko |
 | 4장 · 엔진 제어실 | 추론 엔지니어링 스터디 / 4장 · 소프트웨어 | https://adminmrobo.github.io/inference_engineering_study/week_05_textbook_ch04/ | ko |
 | 4장 논문 · 페이지드 어텐션 (PagedAttention) | 추론 엔지니어링 스터디 / 4장 · 소프트웨어 | https://adminmrobo.github.io/inference_engineering_study/week_05_article_01/ | ko |
+| 5장 전반 · 튜닝 공방 ① | 추론 엔지니어링 스터디 / 5장 · 최적화 기법 | https://adminmrobo.github.io/inference_engineering_study/week_06_textbook_ch05_01/ | ko |
+| 5장 논문 · 한 번에 쓰는 초안 (DFlash) | 추론 엔지니어링 스터디 / 5장 · 최적화 기법 | https://adminmrobo.github.io/inference_engineering_study/week_06_article_01/ | ko |
 | 2장 후반 발표 · 병목을 찾아라 | 추론 엔지니어링 스터디 / 부록 · 발표 자료 | https://adminmrobo.github.io/inference_engineering_study_week_02_textbook_ch02_p3_to_end_slide/ | ko |
 
 ### 경제·수학·최적화 (34)
